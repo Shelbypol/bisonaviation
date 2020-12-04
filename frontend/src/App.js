@@ -24,7 +24,7 @@ import HomeScreen from "./screens/HomeScreen";
 const App = () => {
   return (
       <Router>
-        {/*<Header/>*/}
+        <Header/>
         <main className='py-3'>
           <Container>
             <Route path='/login' component={LoginScreen} />

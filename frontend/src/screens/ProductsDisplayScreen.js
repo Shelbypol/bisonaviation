@@ -34,7 +34,7 @@ const ProductsDisplayScreen = ({ match, history }) => {
 
     return (
         <>
-            <Meta title='Proshop | Home' />
+            <Meta title='Bison | Products' />
 
             {!keyword ? <ProductCarousel /> : <Link to='/' className='btn btn-light'>Back</Link>}
 
