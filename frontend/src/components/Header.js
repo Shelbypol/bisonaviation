@@ -23,8 +23,9 @@ const Header = () => {
 
     return (
         <header>
-            <Navbar bg="dark" variant='dark' expand="lg" collapseOnSelect className='navbar'>
-                <Container>
+            {/*<Navbar bg="dark" variant='dark' expand="lg" collapseOnSelect className='navbar'>*/}
+            <Navbar expand="lg" collapseOnSelect className='navbar navbar-expand-lg navbar-dark bg-primary'>
+                <Container >
                     <LinkContainer to='/'>
                         <Navbar.Brand>ProShop</Navbar.Brand>
                     </LinkContainer>
