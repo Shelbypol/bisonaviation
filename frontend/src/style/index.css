@@ -1,6 +1,7 @@
-body{
-    /*width: 100%;*/
-    /*background-image: url("public/images/graphics/body-bg.jpg");*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 main {

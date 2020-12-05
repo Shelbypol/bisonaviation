@@ -29,7 +29,7 @@ const Header = () => {
                 <Container >
                     {/*  LOGO  */}
                     <LinkContainer to='/'>
-                        <img src={logo} className='img-fluid' alt="Bison Aviation"/>
+                        <img id='slide1' src={logo} className='img-fluid' alt="Bison Aviation"/>
                     </LinkContainer>
                     <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                     <Navbar.Collapse id="basic-navbar-nav">
