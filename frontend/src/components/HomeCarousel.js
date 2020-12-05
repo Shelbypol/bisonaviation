@@ -69,6 +69,7 @@ const HomeCarousel = (props) => {
                 onExiting={() => setAnimating(true)}
                 onExited={() => setAnimating(false)}
                 key={item.src}
+                className='img-fluid w-100 h-100'
             >
                 <img src={item.src} alt={item.altText} />
                 <CarouselCaption captionText={item.caption} />

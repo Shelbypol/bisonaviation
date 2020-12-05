@@ -21,7 +21,6 @@ const Header = () => {
         dispatch(logout());
     };
 
-
     return (
         <>
         <header>
@@ -91,7 +90,7 @@ const Header = () => {
 
             {/*      SECOND HEADER       */}
             <header className='sticky-top bottomHeader'>
-                <Navbar expand="lg" collapseOnSelect className='navbar navbar-expand-lg bg-light py-0'>
+                <Navbar expand="lg" collapseOnSelect className='navbar navbar-expand-lg navbar-light bg-light py-0 border-0'>
                     <Container >
                         {/*  SEARCH BOX  */}
 
