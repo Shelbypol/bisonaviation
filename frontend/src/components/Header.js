@@ -29,7 +29,7 @@ const Header = () => {
                 <Container >
                     {/*  LOGO  */}
                     <LinkContainer to='/'>
-                        <img id='slide1' src={logo} className='img-fluid' alt="Bison Aviation"/>
+                        <img id='logoNav' src={logo} className='img-fluid' alt="Bison Aviation"/>
                     </LinkContainer>
                     <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                     <Navbar.Collapse id="basic-navbar-nav">
@@ -90,8 +90,8 @@ const Header = () => {
         </header>
 
             {/*      SECOND HEADER       */}
-            <header>
-                <Navbar expand="lg" collapseOnSelect className='navbar navbar-expand-lg bg-light py-1'>
+            <header className='sticky-top bottomHeader'>
+                <Navbar expand="lg" collapseOnSelect className='navbar navbar-expand-lg bg-light py-0'>
                     <Container >
                         {/*  SEARCH BOX  */}
 

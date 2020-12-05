@@ -6,6 +6,8 @@
 
 main {
     /*pushes down footer*/
+    border: 2px solid red;
+    width: 100%;
     min-height: 80vh;
 }
 
@@ -31,9 +33,15 @@ h2 {
     display: inline-block;
 }
 
-
-
 /* NAVBAR */
+#logoNav {
+    height: 6em;
+    max-height: 6em;
+}
+
+.bottomHeader {
+    margin-top: .2em;
+}
 
 /* MOBILE RESPONSIVE */
 @media (max-width: 900px) {

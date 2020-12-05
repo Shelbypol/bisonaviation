@@ -5,7 +5,14 @@ import '../style/homeCarousel.css'
 const HomeScreen = () => {
     return (
         <>
-            <HomeCarousel/>
+            <HomeCarousel />
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
         </>
     )
 };
