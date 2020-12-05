@@ -6,7 +6,7 @@ import { LinkContainer } from 'react-router-bootstrap'
 import {logout} from '../actions/userActions'
 import SearchBox from "./SearchBox";
 import { CART_RESET } from "../constants/cartConstants";
-
+import logo from '../images/activeImg/Final-Logo-Horizontal.png'
 
 const Header = () => {
 
@@ -21,6 +21,7 @@ const Header = () => {
         dispatch(logout());
     };
 
+
     return (
         <>
         <header>
@@ -28,7 +29,7 @@ const Header = () => {
                 <Container >
                     {/*  LOGO  */}
                     <LinkContainer to='/'>
-                        <Image src="/frontend/public/images/activeImg/Final-Logo-Horizontal.png" alt="Bison Aviation"/>
+                        <img src={logo} className='img-fluid' alt="Bison Aviation"/>
                     </LinkContainer>
                     <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                     <Navbar.Collapse id="basic-navbar-nav">
