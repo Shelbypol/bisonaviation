@@ -1,15 +1,13 @@
 import React from 'react'
 import { Route } from 'react-router-dom'
-import {Navbar, Nav, Container, NavDropdown} from 'react-bootstrap'
-// whenever you bring something in from the state it's useSelector
-// if you want to call an action it's useDispatch
+import { Navbar, Nav, Container, NavDropdown, Image } from 'react-bootstrap'
 import { useDispatch, useSelector} from 'react-redux'
-// LinkContainer does the same thing as link
 import { LinkContainer } from 'react-router-bootstrap'
 import {logout} from '../actions/userActions'
 import SearchBox from "./SearchBox";
-import {CART_RESET} from "../constants/cartConstants";
-
+import { CART_RESET } from "../constants/cartConstants";
+import logo from '../images/activeImg/Final-Logo-Horizontal.png'
+import divider from '../images/graphics/divider1.png'
 
 const Header = () => {
 
@@ -25,38 +23,46 @@ const Header = () => {
     };
 
     return (
-        <header>
-            {/*Add the variant dark or else it will be dark bg with dark text*/}
-            <Navbar bg="dark" variant='dark' expand="lg" collapseOnSelect>
-                <Container>
+        <>
+        <header className='topHeader'>
+
+            <Navbar expand="lg" collapseOnSelect className='topNav navbar navbar-expand-lg navbar-dark bg-primary my-0 py-0'>
+                <Container >
+                    {/*  LOGO  */}
                     <LinkContainer to='/'>
-                        <Navbar.Brand>ProShop</Navbar.Brand>
+                        <img id='logoNav' src={logo} className='img-fluid pb-1' alt="Bison Aviation"/>
+
                     </LinkContainer>
                     <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                     <Navbar.Collapse id="basic-navbar-nav">
 
+                        {/*/!*  SEARCH BOX  *!/*/}
                         <Route render={({ history}) => <SearchBox history={history} />} />
 
                         <Nav className="ml-auto">
+
+                            {/*  WISH LIST  */}
                             <LinkContainer to='/cart'>
                                 <Nav.Link>
-                                    <i className='fas fa-shopping-cart'> </i> Cart
+                                    <i className="fas fa-plane"> </i> Wishlist
                                 </Nav.Link>
                             </LinkContainer>
-                            {userInfo ? (
-                                <NavDropdown title={userInfo.name} id={'username'}>
-                                    <LinkContainer to='/profile'>
-                                        <NavDropdown.Item>Profile</NavDropdown.Item>
-                                    </LinkContainer>
 
-                                    <NavDropdown.Item onClick={logoutHandler}>Logout</NavDropdown.Item>
+                            {/*  PROFILE  /  SIGN IN  */}
+                            {userInfo ? (
+                                <NavDropdown style={{zIndex: '100'}} title={userInfo.name} id={'username'}>
+                                    <LinkContainer to='/profile'>
+                                        <NavDropdown.Item><i className="fas fa-user-cog"> </i>  Profile</NavDropdown.Item>
+                                    </LinkContainer>
+                                    <NavDropdown.Item onClick={logoutHandler}> <i className="fas fa-sign-out-alt"> </i> Logout</NavDropdown.Item>
                                 </NavDropdown>
+
                             ) : <LinkContainer to='/login'>
-                                <Nav.Link><i className='fas fa-user'> </i> Sign in
+                                <Nav.Link><i className='fas fa-sign-in-alt'> </i> Sign in
                                 </Nav.Link>
                             </LinkContainer>
                             }
-
+                            {/*  REGISTER  */}
                             {!userInfo && (
                                 <LinkContainer to='/Register'>
                                     <Nav.Link><i className='fas fa-user'> </i> Register
@@ -64,8 +70,9 @@ const Header = () => {
                                 </LinkContainer>)
                             }
 
+                            {/*  ADMIN DROPDOWN  */}
                             {userInfo && userInfo.isAdmin && (
-                                <NavDropdown title='Admin' id='adminmenu'>
+                                <NavDropdown style={{zIndex: '100'}} title='Admin' id='adminmenu'>
                                     <LinkContainer to='/admin/userlist'>
                                         <NavDropdown.Item>Users</NavDropdown.Item>
                                     </LinkContainer>
@@ -77,14 +84,73 @@ const Header = () => {
                                     </LinkContainer>
                                 </NavDropdown>
                             )}
-
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
         </header>
+            {/*<img id='dividerImg' className='img-fluid' src={divider} alt=""/>*/}
+
+
+            {/*      SECOND HEADER       */}
+            <header className='sticky-top bottomHeader'>
+
+                <Navbar expand="lg" collapseOnSelect className='navbar navbar-expand-lg navbar-light bg-light mb-0 mt-1 py-0 border-0'>
+
+                    <Container >
+
+                        <Navbar.Toggle aria-controls="basic-navbar-nav"/>
+                        <Navbar.Collapse id="basic-navbar-nav">
+
+                            <Nav className="m-auto">
+
+                                {/*  BROWSE PRODUCTS  */}
+                                <LinkContainer className='mx-1' to='/products'>
+                                    <Nav.Link>
+                                        Browse Products
+                                    </Nav.Link>
+                                </LinkContainer>
+
+                                    {/*  AIR CRAFT SERVICES  */}
+                                    <NavDropdown style={{zIndex: '100'}} className='mx-1'  title='Aircraft Services' id='aircraftservicesmenu'>
+                                        <NavDropdown.Item >Avionics</NavDropdown.Item>
+                                        <NavDropdown.Item >Maintenance</NavDropdown.Item>
+                                        <NavDropdown.Item >AOG Response</NavDropdown.Item>
+                                        <NavDropdown.Item >Acquisitions</NavDropdown.Item>
+                                        <NavDropdown.Item >Aircraft Parts</NavDropdown.Item>
+                                    </NavDropdown>
+
+                                {/*  EO/IR  */}
+                                <NavDropdown style={{zIndex: '100'}} className='mx-1'  title='EO/IR' id='eoirmenu'>
+                                    <NavDropdown.Item >EO/IR Maintenance</NavDropdown.Item>
+                                    <NavDropdown.Item >System Sales</NavDropdown.Item>
+                                    <NavDropdown.Item >EO/IR Parts</NavDropdown.Item>
+                                </NavDropdown>
+
+                                {/*  TEAM  */}
+                                <LinkContainer className='mx-1' to='/products'>
+                                    <Nav.Link>
+                                        Meet our Team
+                                    </Nav.Link>
+                                </LinkContainer>
+
+                                {/*  LOCATIONS  */}
+                                <NavDropdown style={{zIndex: '100'}} className='mx-1'  title='Locations' id='locationsmenu'>
+                                    <NavDropdown.Item >Bison Aviation@scl</NavDropdown.Item>
+                                    <NavDropdown.Item >Coming Soon - 2Q2020</NavDropdown.Item>
+                                </NavDropdown>
+
+                                {/*/!*  SEARCH BOX  *!/*/}
+                                {/*<Route render={({ history}) => <SearchBox className='ml-auto' history={history} />} />*/}
+                            </Nav>
+                        </Navbar.Collapse>
+                    </Container>
+                </Navbar>
+            </header>
+            {/*<img id='dividerImg' className='img-fluid' src={divider} alt=""/>*/}
+
+            </>
+
     )
 };
-
-// export as default means when we import on App.js we dont need to wrap in curly brackets ie: import {Header} is now import Header
 export default Header
