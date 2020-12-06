@@ -5,6 +5,8 @@ import Loader from "./Loader";
 import Message from "./Message";
 import {useDispatch, useSelector} from "react-redux";
 import { listTopProducts } from "../actions/productActions";
+// import '../style/productCarousel.css'
+
 
 const ProductCarousel =  () => {
 
