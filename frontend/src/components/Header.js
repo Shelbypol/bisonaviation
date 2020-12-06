@@ -113,11 +113,30 @@ const Header = () => {
 
                                     {/*  AIR CRAFT SERVICES  */}
                                     <NavDropdown style={{zIndex: '100'}} className='mx-1'  title='Aircraft Services' id='aircraftservicesmenu'>
-                                        <NavDropdown.Item >Avionics</NavDropdown.Item>
-                                        <NavDropdown.Item >Maintenance</NavDropdown.Item>
-                                        <NavDropdown.Item >AOG Response</NavDropdown.Item>
-                                        <NavDropdown.Item >Acquisitions</NavDropdown.Item>
-                                        <NavDropdown.Item >Aircraft Parts</NavDropdown.Item>
+                                        {/*   AVIONICS  */}
+                                        <LinkContainer to='/avionics'>
+                                            <NavDropdown.Item >Avionics</NavDropdown.Item>
+                                        </LinkContainer>
+
+                                        {/*   MAINTENANCE  */}
+                                        <LinkContainer to='/maintenance'>
+                                            <NavDropdown.Item >Maintenance</NavDropdown.Item>
+                                        </LinkContainer>
+
+                                        {/*   AOG RESPONSE  */}
+                                        <LinkContainer to='/aog'>
+                                            <NavDropdown.Item >AOG Response</NavDropdown.Item>
+                                        </LinkContainer>
+
+                                        {/*   ACQUISITIONS  */}
+                                        <LinkContainer to='/acquisitions'>
+                                            <NavDropdown.Item >Acquisitions</NavDropdown.Item>
+                                        </LinkContainer>
+
+                                        {/*   AIRCRAFT PARTS  */}
+                                        <LinkContainer to='/aircraftparts'>
+                                            <NavDropdown.Item >Aircraft Parts</NavDropdown.Item>
+                                        </LinkContainer>
                                     </NavDropdown>
 
                                 {/*  EO/IR  */}
