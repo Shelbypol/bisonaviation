@@ -43,6 +43,7 @@ h2 {
 }
 
 .bottomHeader {
+
     margin-top: -.3em;
     border-bottom: 2px solid #920009;
     z-index: 100;
@@ -74,3 +75,4 @@ h2 {
 /*        margin: 20px 0 0 50%;*/
 /*    }*/
 /*}*/
+
