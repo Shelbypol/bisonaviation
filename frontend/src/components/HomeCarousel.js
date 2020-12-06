@@ -6,11 +6,13 @@ import {
     CarouselIndicators,
     CarouselCaption
 } from 'reactstrap';
-import slide1 from '../images/homeSlider/fullscreen-slider5.jpg'
-import slide5 from '../images/homeSlider/fullscreen-slider1.jpg'
-import slide2 from '../images/homeSlider/fullscreen-slider2.jpg'
+import slide5 from '../images/homeSlider/fullscreen-slider5.jpg'
+import slide2 from '../images/homeSlider/fullscreen-slider1.jpg'
 import slide3 from '../images/homeSlider/fullscreen-slider3.jpg'
 import slide4 from '../images/homeSlider/fullscreen-slider4.jpg'
+import slide1 from '../images/homeSlider/fullscreen-slider2.jpg'
+import overlay from "../images/graphics/fs-slider-caption-bg.png";
+import divider from '../images/graphics/divider1.png'
 
 
 
@@ -79,6 +81,9 @@ const HomeCarousel = (props) => {
     });
 
     return (
+        <>
+        {/*<container className='carouselContainer'>*/}
+
         <Carousel
             activeIndex={activeIndex}
             next={next}
@@ -90,6 +95,10 @@ const HomeCarousel = (props) => {
             <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
             <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
         </Carousel>
+        <img id='overlayImg' className='img-fluid' src={overlay} alt=""/>
+        {/*</container>*/}
+        <img id='dividerImg' className='img-fluid' src={divider} alt=""/>
+        </>
     );
 };
 

@@ -1,8 +1,9 @@
 /* HOME CAROUSEL */
 
 .carousel {
-    height: 100vh;
     width: 100%;
+    height: 20em;
+    max-height: 20em;
 }
 
 .carousel-item-next,
@@ -23,12 +24,31 @@
 .carousel img {
     width: 150vw;
     max-width: 100vw;
-    height: 30em;
-    max-height: 30em;
+    height: 29em;
+    max-height: 29em;
     margin-left: auto;
     margin-right: auto;
 }
 
 .carousel a {
     margin: 0 auto;
+}
+
+#overlayImg {
+    position: relative;
+    height: 39em;
+    max-height: 39em;
+    margin-top: -30em;
+    /*z-index: 1;*/
+}
+
+#dividerImg {
+    margin-top: -5.9em;
+    height: 13.2em;
+    max-height: 13.2em;
+    width: 80vw;
+    z-index: -1;
+    position: relative;
+    contain: content;
+    transform: rotate(2.9deg);
 }

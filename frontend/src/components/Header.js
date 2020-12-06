@@ -7,6 +7,7 @@ import {logout} from '../actions/userActions'
 import SearchBox from "./SearchBox";
 import { CART_RESET } from "../constants/cartConstants";
 import logo from '../images/activeImg/Final-Logo-Horizontal.png'
+import divider from '../images/graphics/divider1.png'
 
 const Header = () => {
 
@@ -24,7 +25,7 @@ const Header = () => {
     return (
         <>
         <header>
-            <Navbar expand="lg" collapseOnSelect className='navbar navbar-expand-lg navbar-dark bg-primary py-1'>
+            <Navbar expand="lg" collapseOnSelect className='topHeader navbar navbar-expand-lg navbar-dark bg-primary py-1'>
                 <Container >
                     {/*  LOGO  */}
                     <LinkContainer to='/'>
@@ -81,34 +82,33 @@ const Header = () => {
                                     </LinkContainer>
                                 </NavDropdown>
                             )}
-
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
         </header>
+            {/*<img id='dividerImg' className='img-fluid' src={divider} alt=""/>*/}
+
 
             {/*      SECOND HEADER       */}
             <header className='sticky-top bottomHeader'>
-                <Navbar expand="lg" collapseOnSelect className='navbar navbar-expand-lg navbar-light bg-light py-0 border-0'>
+                <Navbar expand="lg" collapseOnSelect className='navbar navbar-expand-lg navbar-light bg-light px-0 py-0 border-0'>
                     <Container >
-                        {/*  SEARCH BOX  */}
 
                         <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                         <Navbar.Collapse id="basic-navbar-nav">
-                        {/*<Route render={({ history}) => <SearchBox history={history} />} />*/}
 
                             <Nav className="m-auto">
 
                                 {/*  BROWSE PRODUCTS  */}
-                                <LinkContainer to='/products'>
+                                <LinkContainer className='mx-1' to='/products'>
                                     <Nav.Link>
                                         Browse Products
                                     </Nav.Link>
                                 </LinkContainer>
 
                                     {/*  AIR CRAFT SERVICES  */}
-                                    <NavDropdown  title='Aircraft Services' id='aircraftservicesmenu'>
+                                    <NavDropdown className='mx-1'  title='Aircraft Services' id='aircraftservicesmenu'>
                                         <NavDropdown.Item >Avionics</NavDropdown.Item>
                                         <NavDropdown.Item >Maintenance</NavDropdown.Item>
                                         <NavDropdown.Item >AOG Response</NavDropdown.Item>
@@ -117,34 +117,35 @@ const Header = () => {
                                     </NavDropdown>
 
                                 {/*  EO/IR  */}
-                                <NavDropdown  title='EO/IR' id='eoirmenu'>
+                                <NavDropdown className='mx-1'  title='EO/IR' id='eoirmenu'>
                                     <NavDropdown.Item >EO/IR Maintenance</NavDropdown.Item>
                                     <NavDropdown.Item >System Sales</NavDropdown.Item>
                                     <NavDropdown.Item >EO/IR Parts</NavDropdown.Item>
                                 </NavDropdown>
 
                                 {/*  TEAM  */}
-                                <LinkContainer to='/products'>
+                                <LinkContainer className='mx-1' to='/products'>
                                     <Nav.Link>
                                         Meet our Team
                                     </Nav.Link>
                                 </LinkContainer>
 
                                 {/*  LOCATIONS  */}
-                                <NavDropdown  title='Locations' id='locationsmenu'>
+                                <NavDropdown className='mx-1'  title='Locations' id='locationsmenu'>
                                     <NavDropdown.Item >Bison Aviation@scl</NavDropdown.Item>
                                     <NavDropdown.Item >Coming Soon - 2Q2020</NavDropdown.Item>
                                 </NavDropdown>
 
-
+                                {/*/!*  SEARCH BOX  *!/*/}
+                                {/*<Route render={({ history}) => <SearchBox className='ml-auto' history={history} />} />*/}
                             </Nav>
                         </Navbar.Collapse>
                     </Container>
                 </Navbar>
             </header>
+            {/*<img id='dividerImg' className='img-fluid' src={divider} alt=""/>*/}
+
             </>
-
-
 
     )
 };

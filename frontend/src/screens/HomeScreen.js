@@ -6,6 +6,7 @@ const HomeScreen = () => {
     return (
         <>
             <HomeCarousel />
+
         </>
     )
 };
