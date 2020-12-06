@@ -24,7 +24,7 @@ const [keyword, setKeyword] = useState('');
                 className='searchBar searchInput'
             >
             </Form.Control>
-            <Button type='submit' variant='dark-outline' className='searchButton px-3 py-1 rounded-right'><i style={{color: 'red'}} className="fas fa-search"> </i></Button>
+            <Button type='submit' variant='outline-light' className='searchButton px-3 py-0 rounded-right'><i style={{color: 'red'}} className="fas fa-search"> </i></Button>
         </Form>
     )
 };
