@@ -40,6 +40,18 @@
     margin: 0 auto;
 }
 
+/*   SEARCH BAR   */
+.searchBar {
+    margin-left: 30vh;
+    height: 5vh;
+    min-height: 5vh;
+}
+
+.searchInput {
+    width: 50vh;
+    min-width: 50vh;
+}
+
 #overlayImg {
     position: relative;
     height: 39em;
@@ -51,9 +63,10 @@
     margin-top: -6em;
     height: 13.2em;
     max-height: 13.2em;
-    /*width: 80vw;*/
+    width: 80vw;
     z-index: -1;
     position: relative;
     contain: content;
     transform: rotate(2.9deg);
 }
+

@@ -75,12 +75,9 @@ const HomeCarousel = (props) => {
                 // className='img-fluid w-100 h-100'
             >
                 <img src={item.src} alt={item.altText} />
-                {/*<h1>*/}
-                {/*    <CarouselCaption captionText={item.caption} />*/}
-                {/*</h1>*/}
-                <h5>
-                    <CarouselCaption captionText={item.text} />
-                </h5>
+                    <CarouselCaption style={{color: 'white'}} captionText={item.text} />
+
+                    <CarouselCaption style={{color: 'white'}} captionHeader={item.caption} />
                 {/*<CarouselCaption captionText={item.caption} captionHeader={item.caption} />*/}
             </CarouselItem>
         );
