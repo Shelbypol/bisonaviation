@@ -18,9 +18,9 @@
     left: 8%;
 }
 
-.carousel-caption h5 {
-    margin-top: 30%;
-}
+/*.carousel-caption h5 {*/
+/*    margin-top: 30%;*/
+/*}*/
 
 /*.carousel-caption h2 {*/
 /*    color: #fff;*/
@@ -40,6 +40,22 @@
     margin: 0 auto;
 }
 
+/*   SEARCH BAR   */
+.searchBar {
+    margin-left: 30vh;
+    height: 5vh;
+    min-height: 5vh;
+}
+
+.searchInput {
+    width: 50vh;
+    min-width: 50vh;
+}
+
+.searchButton{
+    border-top: 3px solid white;
+}
+
 #overlayImg {
     position: relative;
     height: 39em;
@@ -57,3 +73,4 @@
     contain: content;
     transform: rotate(2.9deg);
 }
+

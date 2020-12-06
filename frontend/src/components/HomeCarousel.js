@@ -14,8 +14,6 @@ import slide1 from '../images/homeSlider/fullscreen-slider2.jpg'
 import overlay from "../images/graphics/fs-slider-caption-bg.png";
 import divider from '../images/graphics/divider1.png'
 
-
-
 const items = [
     {
         src: slide1,
@@ -72,15 +70,11 @@ const HomeCarousel = (props) => {
                 onExiting={() => setAnimating(true)}
                 onExited={() => setAnimating(false)}
                 key={item.src}
-                // className='img-fluid w-100 h-100'
+
             >
-                <img src={item.src} alt={item.altText} />
-                {/*<h1>*/}
-                {/*    <CarouselCaption captionText={item.caption} />*/}
-                {/*</h1>*/}
-                <h5>
-                    <CarouselCaption captionText={item.text} />
-                </h5>
+                <img src={item.src} alt={item.altText}/>
+                <CarouselCaption captionText={item.text} captionHeader={item.caption}/>
+
                 {/*<CarouselCaption captionText={item.caption} captionHeader={item.caption} />*/}
             </CarouselItem>
         );
@@ -88,20 +82,22 @@ const HomeCarousel = (props) => {
 
     return (
         <>
-        <Carousel
-            activeIndex={activeIndex}
-            next={next}
-            previous={previous}
-        >
-            <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
-            {slides}
-            <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
-            <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
-        </Carousel>
 
-        {/*      OVERLAY / DIVIDER IMAGE      */}
-        <img id='overlayImg' className='img-fluid' src={overlay} alt=""/>
-        <img id='dividerImg' className='img-fluid' src={divider} alt=""/>
+            <Carousel
+                activeIndex={activeIndex}
+                next={next}
+                previous={previous}
+            >
+                <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex}/>
+                {slides}
+                <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous}/>
+                <CarouselControl direction="next" directionText="Next" onClickHandler={next}/>
+            </Carousel>
+
+            {/*      OVERLAY / DIVIDER IMAGE      */}
+            <img id='overlayImg' className='img-fluid' src={overlay} alt=""/>
+            <img id='dividerImg' className='img-fluid' src={divider} alt=""/>
+
         </>
     );
 };

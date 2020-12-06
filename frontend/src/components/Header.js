@@ -25,11 +25,13 @@ const Header = () => {
     return (
         <>
         <header className='topHeader'>
-            <Navbar expand="lg" collapseOnSelect className='topNav navbar navbar-expand-lg navbar-dark bg-primary mb-1 py-2'>
+
+            <Navbar expand="lg" collapseOnSelect className='topNav navbar navbar-expand-lg navbar-dark bg-primary my-0 py-0'>
                 <Container >
                     {/*  LOGO  */}
                     <LinkContainer to='/'>
-                        <img id='logoNav' src={logo} className='img-fluid py-0' alt="Bison Aviation"/>
+                        <img id='logoNav' src={logo} className='img-fluid pb-1' alt="Bison Aviation"/>
+
                     </LinkContainer>
                     <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                     <Navbar.Collapse id="basic-navbar-nav">
@@ -92,7 +94,9 @@ const Header = () => {
 
             {/*      SECOND HEADER       */}
             <header className='sticky-top bottomHeader'>
-                <Navbar expand="lg" collapseOnSelect className='navbar navbar-expand-lg navbar-light bg-light px-0 py-0 border-0'>
+
+                <Navbar expand="lg" collapseOnSelect className='navbar navbar-expand-lg navbar-light bg-light mb-0 mt-1 py-0 border-0'>
+
                     <Container >
 
                         <Navbar.Toggle aria-controls="basic-navbar-nav"/>
