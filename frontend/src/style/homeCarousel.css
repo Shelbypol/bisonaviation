@@ -11,15 +11,21 @@
 .carousel-item.active {
     display: flex;
 }
+
 .carousel-caption {
-    position: absolute;
-    top: 0;
+    width: 30%;
+    top: 25%;
+    left: 8%;
 }
 
-.carousel-caption h2 {
-    color: #fff;
-    margin-top:5%;
+.carousel-caption h5 {
+    margin-top: 30%;
 }
+
+/*.carousel-caption h2 {*/
+/*    color: #fff;*/
+/*    margin-top:5%;*/
+/*}*/
 
 .carousel img {
     width: 150vw;
@@ -39,11 +45,10 @@
     height: 39em;
     max-height: 39em;
     margin-top: -30em;
-    /*z-index: 1;*/
 }
 
 #dividerImg {
-    margin-top: -5.9em;
+    margin-top: -6em;
     height: 13.2em;
     max-height: 13.2em;
     width: 80vw;

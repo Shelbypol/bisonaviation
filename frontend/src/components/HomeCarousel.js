@@ -6,9 +6,9 @@ import {
     CarouselIndicators,
     CarouselCaption
 } from 'reactstrap';
-import slide5 from '../images/homeSlider/fullscreen-slider5.jpg'
+import slide3 from '../images/homeSlider/fullscreen-slider5.jpg'
 import slide2 from '../images/homeSlider/fullscreen-slider1.jpg'
-import slide3 from '../images/homeSlider/fullscreen-slider3.jpg'
+import slide5 from '../images/homeSlider/fullscreen-slider3.jpg'
 import slide4 from '../images/homeSlider/fullscreen-slider4.jpg'
 import slide1 from '../images/homeSlider/fullscreen-slider2.jpg'
 import overlay from "../images/graphics/fs-slider-caption-bg.png";
@@ -20,7 +20,8 @@ const items = [
     {
         src: slide1,
         altText: 'Bison Aviation alt',
-        caption: 'Bison Aviation caption'
+        caption: 'BISON AVIATION',
+        text: 'WE WORK HARD ON THE GROUND, SO YOU CAN FLY WITH CONFIDENCE IN THE SKY.'
     },
     {
         src: slide2,
@@ -71,10 +72,15 @@ const HomeCarousel = (props) => {
                 onExiting={() => setAnimating(true)}
                 onExited={() => setAnimating(false)}
                 key={item.src}
-                className='img-fluid w-100 h-100'
+                // className='img-fluid w-100 h-100'
             >
                 <img src={item.src} alt={item.altText} />
-                <CarouselCaption captionText={item.caption} />
+                {/*<h1>*/}
+                {/*    <CarouselCaption captionText={item.caption} />*/}
+                {/*</h1>*/}
+                <h5>
+                    <CarouselCaption captionText={item.text} />
+                </h5>
                 {/*<CarouselCaption captionText={item.caption} captionHeader={item.caption} />*/}
             </CarouselItem>
         );
@@ -82,21 +88,19 @@ const HomeCarousel = (props) => {
 
     return (
         <>
-        {/*<container className='carouselContainer'>*/}
-
         <Carousel
             activeIndex={activeIndex}
             next={next}
             previous={previous}
-            className='justify-content-center'
         >
             <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
             {slides}
             <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
             <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
         </Carousel>
+
+        {/*      OVERLAY / DIVIDER IMAGE      */}
         <img id='overlayImg' className='img-fluid' src={overlay} alt=""/>
-        {/*</container>*/}
         <img id='dividerImg' className='img-fluid' src={divider} alt=""/>
         </>
     );

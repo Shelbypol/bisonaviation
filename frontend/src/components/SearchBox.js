@@ -14,7 +14,7 @@ const [keyword, setKeyword] = useState('');
     };
 
     return (
-        <Form onSubmit={submitHandler} inline className='m-auto'>
+        <Form onSubmit={submitHandler} inline className='mx-auto'>
             <Form.Control
                 type='text'
                 name='searchBar'

@@ -24,12 +24,12 @@ const Header = () => {
 
     return (
         <>
-        <header>
-            <Navbar expand="lg" collapseOnSelect className='topHeader navbar navbar-expand-lg navbar-dark bg-primary py-1'>
+        <header className='topHeader'>
+            <Navbar expand="lg" collapseOnSelect className='topNav navbar navbar-expand-lg navbar-dark bg-primary mb-1 py-2'>
                 <Container >
                     {/*  LOGO  */}
                     <LinkContainer to='/'>
-                        <img id='logoNav' src={logo} className='img-fluid' alt="Bison Aviation"/>
+                        <img id='logoNav' src={logo} className='img-fluid py-0' alt="Bison Aviation"/>
                     </LinkContainer>
                     <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                     <Navbar.Collapse id="basic-navbar-nav">
@@ -48,13 +48,13 @@ const Header = () => {
 
                             {/*  PROFILE  /  SIGN IN  */}
                             {userInfo ? (
-                                <NavDropdown title={userInfo.name} id={'username'}>
+                                <NavDropdown style={{zIndex: '100'}} title={userInfo.name} id={'username'}>
                                     <LinkContainer to='/profile'>
                                         <NavDropdown.Item><i className="fas fa-user-cog"> </i>  Profile</NavDropdown.Item>
                                     </LinkContainer>
-
                                     <NavDropdown.Item onClick={logoutHandler}> <i className="fas fa-sign-out-alt"> </i> Logout</NavDropdown.Item>
                                 </NavDropdown>
+
                             ) : <LinkContainer to='/login'>
                                 <Nav.Link><i className='fas fa-sign-in-alt'> </i> Sign in
                                 </Nav.Link>
@@ -70,7 +70,7 @@ const Header = () => {
 
                             {/*  ADMIN DROPDOWN  */}
                             {userInfo && userInfo.isAdmin && (
-                                <NavDropdown title='Admin' id='adminmenu'>
+                                <NavDropdown style={{zIndex: '100'}} title='Admin' id='adminmenu'>
                                     <LinkContainer to='/admin/userlist'>
                                         <NavDropdown.Item>Users</NavDropdown.Item>
                                     </LinkContainer>
@@ -108,7 +108,7 @@ const Header = () => {
                                 </LinkContainer>
 
                                     {/*  AIR CRAFT SERVICES  */}
-                                    <NavDropdown className='mx-1'  title='Aircraft Services' id='aircraftservicesmenu'>
+                                    <NavDropdown style={{zIndex: '100'}} className='mx-1'  title='Aircraft Services' id='aircraftservicesmenu'>
                                         <NavDropdown.Item >Avionics</NavDropdown.Item>
                                         <NavDropdown.Item >Maintenance</NavDropdown.Item>
                                         <NavDropdown.Item >AOG Response</NavDropdown.Item>
@@ -117,7 +117,7 @@ const Header = () => {
                                     </NavDropdown>
 
                                 {/*  EO/IR  */}
-                                <NavDropdown className='mx-1'  title='EO/IR' id='eoirmenu'>
+                                <NavDropdown style={{zIndex: '100'}} className='mx-1'  title='EO/IR' id='eoirmenu'>
                                     <NavDropdown.Item >EO/IR Maintenance</NavDropdown.Item>
                                     <NavDropdown.Item >System Sales</NavDropdown.Item>
                                     <NavDropdown.Item >EO/IR Parts</NavDropdown.Item>
@@ -131,7 +131,7 @@ const Header = () => {
                                 </LinkContainer>
 
                                 {/*  LOCATIONS  */}
-                                <NavDropdown className='mx-1'  title='Locations' id='locationsmenu'>
+                                <NavDropdown style={{zIndex: '100'}} className='mx-1'  title='Locations' id='locationsmenu'>
                                     <NavDropdown.Item >Bison Aviation@scl</NavDropdown.Item>
                                     <NavDropdown.Item >Coming Soon - 2Q2020</NavDropdown.Item>
                                 </NavDropdown>
