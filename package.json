@@ -12,6 +12,7 @@
     "data:import": "node backend/seeder",
     "data:destroy": "node backend/seeder -d"
   },
+
   "keywords": [],
   "author": "Shelby Polasek Andrew Brought",
   "license": "MIT",
