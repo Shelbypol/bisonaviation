@@ -39,7 +39,7 @@ h2 {
 }
 
 .topNav {
-    z-index: 4;
+    z-index: 1000;
 }
 
 .bottomHeader {
