@@ -36,7 +36,7 @@ const ProductsDisplayScreen = ({ match, history }) => {
         <>
             <Meta title='Bison | Products' />
 
-            {!keyword ? <ProductCarousel /> : <Link to='/' className='btn btn-light'>Back</Link>}
+            {/*{!keyword ? <ProductCarousel /> : <Link to='/' className='btn btn-light'>Back</Link>}*/}
 
             <h1>Latest Products</h1>
             {loading ?

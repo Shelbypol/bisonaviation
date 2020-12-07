@@ -28,6 +28,7 @@ import AircraftPartsScreen from "./screens/AircraftPartsScreen";
 import EoIrMaintenanceScreen from "./screens/EoIrMaintenanceScreen";
 import SystemSalesScreen from "./screens/SystemSalesScreen";
 import EoIrPartsScreen from "./screens/EoIrPartsScreen";
+import TeamScreen from "./screens/TeamScreen";
 
 const App = () => {
   return (
@@ -64,6 +65,7 @@ const App = () => {
             <Route path='/eoir/maintenance' component={EoIrMaintenanceScreen} />
             <Route path='/systemsales' component={SystemSalesScreen} />
             <Route path='/eoir/parts' component={EoIrPartsScreen} />
+            <Route path='/team' component={TeamScreen} />
 
             {/*<Route path='/' component={HomeScreen} exact />*/}
           </Container>
