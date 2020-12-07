@@ -19,7 +19,7 @@ const ProductEditScreen = ({ match, history }) => {
     const [brand, setBrand] = useState('');
     const [category, setCategory] = useState('');
     const [countInStock, setCountInStock] = useState(0);
-    const [description, setDescription] = useState(0);
+    const [description, setDescription] = useState('');
     const [uploading, setUploading] = useState(false);
 
     const dispatch = useDispatch();
@@ -45,7 +45,7 @@ const ProductEditScreen = ({ match, history }) => {
                 setImage(product.image);
                 setBrand(product.brand);
                 setCategory(product.category);
-                setCountInStock(product.category);
+                setCountInStock(product.countInStock);
                 setDescription(product.description);
             }
         }
@@ -60,11 +60,11 @@ const ProductEditScreen = ({ match, history }) => {
         try{
             const config = {
                 headers: {
-                    'Content-Type': 'mulitpart/form-data'
+                    'Content-Type': 'multipart/form-data'
                 }
             };
 
-            const { data } = await  axios.post('/api/upload', formData, config);
+            const { data } = await axios.post('/api/upload', formData, config);
 
             setImage(data);
             setUploading(false)
@@ -115,7 +115,7 @@ const ProductEditScreen = ({ match, history }) => {
                         {/* PRICE */}
                         <Form.Group controlId='price'>
                             <Form.Label>Price</Form.Label>
-                            <Form.Control type='price'
+                            <Form.Control type='number'
                                           placeholder='Enter price'
                                           value={price}
                                           onChange={(e) => setPrice(e.target.value)}>
@@ -133,7 +133,8 @@ const ProductEditScreen = ({ match, history }) => {
                                        label='Choose File'
                                        custom
                                        onChange={uploadFileHandler}
-                            > </Form.File>
+                            />
+
                             {uploading && <Loader />}
                         </Form.Group>
                         {/* BRAND */}

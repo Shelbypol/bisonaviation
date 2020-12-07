@@ -12,11 +12,6 @@ import ProductCarousel from "../components/ProductCarousel";
 
 const ProductsDisplayScreen = ({ match, history }) => {
 
-    window.onbeforeunload = () => {
-        // Clear the local storage
-        localStorage.clear()
-    };
-
     const keyword = match.params.keyword;
 
     const pageNumber = match.params.pageNumber || 1;
