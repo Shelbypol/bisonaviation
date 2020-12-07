@@ -25,6 +25,9 @@ import MaintenanceScreen from "./screens/MaintenanceScreen";
 import AogResponseScreen from "./screens/AogResponseScreen";
 import AcquisitionScreen from "./screens/AcquisitionScreen";
 import AircraftPartsScreen from "./screens/AircraftPartsScreen";
+import EoIrMaintenanceScreen from "./screens/EoIrMaintenanceScreen";
+import SystemSalesScreen from "./screens/SystemSalesScreen";
+import EoIrPartsScreen from "./screens/EoIrPartsScreen";
 
 const App = () => {
   return (
@@ -58,7 +61,9 @@ const App = () => {
             <Route path='/aog' component={AogResponseScreen} />
             <Route path='/acquisitions' component={AcquisitionScreen} />
             <Route path='/aircraftparts' component={AircraftPartsScreen} />
-
+            <Route path='/eoir/maintenance' component={EoIrMaintenanceScreen} />
+            <Route path='/systemsales' component={SystemSalesScreen} />
+            <Route path='/eoir/parts' component={EoIrPartsScreen} />
 
             {/*<Route path='/' component={HomeScreen} exact />*/}
           </Container>

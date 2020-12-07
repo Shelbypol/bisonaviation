@@ -141,13 +141,24 @@ const Header = () => {
 
                                 {/*  EO/IR  */}
                                 <NavDropdown style={{zIndex: '100'}} className='mx-1'  title='EO/IR' id='eoirmenu'>
-                                    <NavDropdown.Item >EO/IR Maintenance</NavDropdown.Item>
-                                    <NavDropdown.Item >System Sales</NavDropdown.Item>
-                                    <NavDropdown.Item >EO/IR Parts</NavDropdown.Item>
+                                    {/*   EO / IR MAINTENANCE */}
+                                    <LinkContainer to='/eoir/maintenance'>
+                                        <NavDropdown.Item >EO/IR Maintenance</NavDropdown.Item>
+                                    </LinkContainer>
+
+                                    {/*   SYSTEM SALES  */}
+                                    <LinkContainer to='/systemsales'>
+                                        <NavDropdown.Item >System Sales</NavDropdown.Item>
+                                    </LinkContainer>
+
+                                    {/*   EO / IR PARTS  */}
+                                    <LinkContainer to='/eoir/parts'>
+                                        <NavDropdown.Item >EO/IR Parts</NavDropdown.Item>
+                                    </LinkContainer>
                                 </NavDropdown>
 
                                 {/*  TEAM  */}
-                                <LinkContainer className='mx-1' to='/products'>
+                                <LinkContainer to='/products'>
                                     <Nav.Link>
                                         Meet our Team
                                     </Nav.Link>
