@@ -33,6 +33,7 @@ h2 {
 }
 
 /* NAVBAR */
+
 #logoNav {
     height: 6em;
     max-height: 6em;
@@ -43,36 +44,25 @@ h2 {
 }
 
 .bottomHeader {
-
     margin-top: -.3em;
     border-bottom: 2px solid #920009;
     z-index: 100;
 }
 
-/*#dividerImg {*/
-/*    margin-top: -5em;*/
-/*    height: 12em;*/
-/*    max-height: 12em;*/
-/*    z-index: 2;*/
-/*    position: relative;*/
+/*   SEARCH BAR   */
+
+.searchBar {
+    /*margin-left: 30vh;*/
+    height: 5vh;
+    min-height: 5vh;
+}
+
+/*.searchInput {*/
+/*    width: 50vh;*/
+/*    min-width: 50vh;*/
 /*}*/
 
-/*!* MOBILE RESPONSIVE *!*/
-/*@media (max-width: 900px) {*/
-/*    .carousel-caption h2 {*/
-/*        font-size: 2.5vw;*/
-/*    }*/
-/*}*/
-
-
-/*@media only screen and (min-width: 768px) and (max-width: 1200px) {*/
-
-/*    .product-page-section {*/
-/*        min-width: 350px;*/
-/*    }*/
-
-/*    .product-page-section:nth-child(3) {*/
-/*        margin: 20px 0 0 50%;*/
-/*    }*/
-/*}*/
+.searchButton{
+    border-top: 3px solid white;
+}
 

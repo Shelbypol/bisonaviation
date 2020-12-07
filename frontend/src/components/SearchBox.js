@@ -24,10 +24,10 @@ const [keyword, setKeyword] = useState('');
                 placeholder='Search for Products...'
                 onChange={(e) => setKeyword(e.target.value)}
 
-                className='searchBar searchInput'
+                className='searchBar searchInput ml-5 col-lg-10 col-xs-2'
             >
             </Form.Control>
-            <Button type='submit' variant='outline-light' className='searchButton px-3 py-0 rounded-right'><i style={{color: 'red'}} className="fas fa-search"> </i></Button>
+            <Button type='submit' variant='outline-light' className='col-lg-2 searchButton px-3 py-0 rounded-right'><i style={{color: 'red'}} className="fas fa-search"> </i></Button>
 
         </Form>
     )
