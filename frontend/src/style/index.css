@@ -51,13 +51,3 @@ h2 {
 
 /*   SEARCH BAR   */
 
-.searchBar {
-    /*margin-left: 30vh;*/
-    height: 5vh;
-    min-height: 5vh;
-}
-
-.searchButton{
-    border-top: 3px solid white;
-}
-

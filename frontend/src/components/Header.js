@@ -95,9 +95,9 @@ const Header = () => {
             {/*      SECOND HEADER       */}
             <header className='sticky-top bottomHeader'>
 
-                <Navbar expand="sm" collapseOnSelect className='navbar navbar-expand-lg navbar-light bg-light mb-0 mt-1 py-0 border-0'>
+                <Navbar className='navbar navbar-expand-lg navbar-light bg-light mb-0 mt-1 py-0 border-0'>
 
-                    <Container >
+                    <Container>
 
                         <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                         <Navbar.Collapse id="basic-navbar-nav">
@@ -177,6 +177,7 @@ const Header = () => {
                     </Container>
                 </Navbar>
             </header>
+
             {/*<img id='dividerImg' className='img-fluid' src={divider} alt=""/>*/}
             </>
 
