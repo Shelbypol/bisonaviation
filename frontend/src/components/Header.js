@@ -26,7 +26,7 @@ const Header = () => {
         <>
         <header className='topHeader'>
 
-            <Navbar expand="lg" collapseOnSelect className='topNav navbar navbar-expand-lg navbar-dark bg-primary my-0 py-0'>
+            <Navbar expand="md" collapseOnSelect className='topNav navbar navbar-expand-lg navbar-dark bg-primary my-0 py-0'>
                 <Container >
                     {/*  LOGO  */}
                     <LinkContainer to='/'>
@@ -95,7 +95,7 @@ const Header = () => {
             {/*      SECOND HEADER       */}
             <header className='sticky-top bottomHeader'>
 
-                <Navbar expand="lg" collapseOnSelect className='navbar navbar-expand-lg navbar-light bg-light mb-0 mt-1 py-0 border-0'>
+                <Navbar expand="md" collapseOnSelect className='navbar navbar-expand-lg navbar-light bg-light mb-0 mt-1 py-0 border-0'>
 
                     <Container >
 
@@ -178,7 +178,6 @@ const Header = () => {
                 </Navbar>
             </header>
             {/*<img id='dividerImg' className='img-fluid' src={divider} alt=""/>*/}
-
             </>
 
     )
