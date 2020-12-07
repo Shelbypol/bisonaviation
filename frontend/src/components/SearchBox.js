@@ -15,7 +15,7 @@ const [keyword, setKeyword] = useState('');
 
     return (
 
-        <Form onSubmit={submitHandler} inline className='m-auto'>
+        <Form onSubmit={submitHandler} inline className='m-auto '>
 
             <Form.Control
                 type='text'
@@ -24,7 +24,7 @@ const [keyword, setKeyword] = useState('');
                 placeholder='Search for Products...'
                 onChange={(e) => setKeyword(e.target.value)}
 
-                className='searchBar col-lg-10 col-md-8 col-sm-6 col-xs-4'
+                className='searchBar ml-lg-0 ml-sm-5 col-lg-10 col-md-8 col-sm-6 col-xs-4'
             >
             </Form.Control>
             <Button type='submit' variant='outline-light' className='col-lg-2 col-md-2 col-sm-2 col-xs-2 searchButton px-3 py-0 rounded-right'><i style={{color: 'red'}} className="fas fa-search"> </i></Button>
