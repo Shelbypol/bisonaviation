@@ -14,7 +14,6 @@ import slide1 from '../images/homeSlider/fullscreen-slider2.jpg'
 import overlay from "../images/graphics/fs-slider-caption-bg.png";
 import divider from '../images/graphics/divider1.png'
 
-
 const items = [
     {
         src: slide1,
@@ -96,6 +95,7 @@ const HomeCarousel = (props) => {
             {/*      OVERLAY / DIVIDER IMAGE      */}
             <img id='overlayImg' className='img-fluid' src={overlay} alt=""/>
             <img id='dividerImg' className='img-fluid' src={divider} alt=""/>
+
         </>
     );
 };
