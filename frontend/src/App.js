@@ -20,6 +20,15 @@ import ProductEditScreen from "./screens/ProductEditScreen";
 import OrderListScreen from "./screens/OrderListScreen";
 import ThankYouScreen from "./screens/ThankYouScreen";
 import HomeScreen from "./screens/HomeScreen";
+import AvionicsScreen from "./screens/AvionicsScreen";
+import MaintenanceScreen from "./screens/MaintenanceScreen";
+import AogResponseScreen from "./screens/AogResponseScreen";
+import AcquisitionScreen from "./screens/AcquisitionScreen";
+import AircraftPartsScreen from "./screens/AircraftPartsScreen";
+import EoIrMaintenanceScreen from "./screens/EoIrMaintenanceScreen";
+import SystemSalesScreen from "./screens/SystemSalesScreen";
+import EoIrPartsScreen from "./screens/EoIrPartsScreen";
+import TeamScreen from "./screens/TeamScreen";
 
 const App = () => {
   return (
@@ -48,6 +57,16 @@ const App = () => {
             <Route path='/page/:pageNumber' component={ProductsDisplayScreen} exact />
             <Route path='/search/:keyword/page/:pageNumber' component={ProductsDisplayScreen} />
             <Route path='/products' component={ProductsDisplayScreen} exact />
+            <Route path='/avionics' component={AvionicsScreen} />
+            <Route path='/maintenance' component={MaintenanceScreen} />
+            <Route path='/aog' component={AogResponseScreen} />
+            <Route path='/acquisitions' component={AcquisitionScreen} />
+            <Route path='/aircraftparts' component={AircraftPartsScreen} />
+            <Route path='/eoir/maintenance' component={EoIrMaintenanceScreen} />
+            <Route path='/systemsales' component={SystemSalesScreen} />
+            <Route path='/eoir/parts' component={EoIrPartsScreen} />
+            <Route path='/team' component={TeamScreen} />
+
             {/*<Route path='/' component={HomeScreen} exact />*/}
           </Container>
         </main>
