@@ -60,7 +60,6 @@ const ProductListScreen = ({ history, match }) => {
         dispatch(createProduct())
     };
 
-
     return (
         <>
             <Row className='align-items-center'>
