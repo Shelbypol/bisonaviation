@@ -113,32 +113,62 @@ const Header = () => {
 
                                     {/*  AIR CRAFT SERVICES  */}
                                     <NavDropdown style={{zIndex: '100'}} className='mx-1'  title='Aircraft Services' id='aircraftservicesmenu'>
-                                        <NavDropdown.Item >Avionics</NavDropdown.Item>
-                                        <NavDropdown.Item >Maintenance</NavDropdown.Item>
-                                        <NavDropdown.Item >AOG Response</NavDropdown.Item>
-                                        <NavDropdown.Item >Acquisitions</NavDropdown.Item>
-                                        <NavDropdown.Item >Aircraft Parts</NavDropdown.Item>
+                                        {/*   AVIONICS  */}
+                                        <LinkContainer to='/avionics'>
+                                            <NavDropdown.Item >Avionics</NavDropdown.Item>
+                                        </LinkContainer>
+
+                                        {/*   MAINTENANCE  */}
+                                        <LinkContainer to='/maintenance'>
+                                            <NavDropdown.Item >Maintenance</NavDropdown.Item>
+                                        </LinkContainer>
+
+                                        {/*   AOG RESPONSE  */}
+                                        <LinkContainer to='/aog'>
+                                            <NavDropdown.Item >AOG Response</NavDropdown.Item>
+                                        </LinkContainer>
+
+                                        {/*   ACQUISITIONS  */}
+                                        <LinkContainer to='/acquisitions'>
+                                            <NavDropdown.Item >Acquisitions</NavDropdown.Item>
+                                        </LinkContainer>
+
+                                        {/*   AIRCRAFT PARTS  */}
+                                        <LinkContainer to='/aircraftparts'>
+                                            <NavDropdown.Item >Aircraft Parts</NavDropdown.Item>
+                                        </LinkContainer>
                                     </NavDropdown>
 
                                 {/*  EO/IR  */}
                                 <NavDropdown style={{zIndex: '100'}} className='mx-1'  title='EO/IR' id='eoirmenu'>
-                                    <NavDropdown.Item >EO/IR Maintenance</NavDropdown.Item>
-                                    <NavDropdown.Item >System Sales</NavDropdown.Item>
-                                    <NavDropdown.Item >EO/IR Parts</NavDropdown.Item>
+                                    {/*   EO / IR MAINTENANCE */}
+                                    <LinkContainer to='/eoir/maintenance'>
+                                        <NavDropdown.Item >EO/IR Maintenance</NavDropdown.Item>
+                                    </LinkContainer>
+
+                                    {/*   SYSTEM SALES  */}
+                                    <LinkContainer to='/systemsales'>
+                                        <NavDropdown.Item >System Sales</NavDropdown.Item>
+                                    </LinkContainer>
+
+                                    {/*   EO / IR PARTS  */}
+                                    <LinkContainer to='/eoir/parts'>
+                                        <NavDropdown.Item >EO/IR Parts</NavDropdown.Item>
+                                    </LinkContainer>
                                 </NavDropdown>
 
                                 {/*  TEAM  */}
-                                <LinkContainer className='mx-1' to='/products'>
+                                <LinkContainer to='/team'>
                                     <Nav.Link>
                                         Meet our Team
                                     </Nav.Link>
                                 </LinkContainer>
 
                                 {/*  LOCATIONS  */}
-                                <NavDropdown style={{zIndex: '100'}} className='mx-1'  title='Locations' id='locationsmenu'>
-                                    <NavDropdown.Item >Bison Aviation@scl</NavDropdown.Item>
-                                    <NavDropdown.Item >Coming Soon - 2Q2020</NavDropdown.Item>
-                                </NavDropdown>
+                                {/*<NavDropdown style={{zIndex: '100'}} className='mx-1'  title='Locations' id='locationsmenu'>*/}
+                                {/*    <NavDropdown.Item >Bison Aviation@scl</NavDropdown.Item>*/}
+                                {/*    <NavDropdown.Item >Coming Soon - 2Q2020</NavDropdown.Item>*/}
+                                {/*</NavDropdown>*/}
 
                                 {/*/!*  SEARCH BOX  *!/*/}
                                 {/*<Route render={({ history}) => <SearchBox className='ml-auto' history={history} />} />*/}
