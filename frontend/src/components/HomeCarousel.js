@@ -70,7 +70,6 @@ const HomeCarousel = (props) => {
                 onExiting={() => setAnimating(true)}
                 onExited={() => setAnimating(false)}
                 key={item.src}
-
             >
                 <img src={item.src} alt={item.altText}/>
                 <CarouselCaption captionText={item.text} captionHeader={item.caption}/>
@@ -82,7 +81,6 @@ const HomeCarousel = (props) => {
 
     return (
         <>
-
             <Carousel
                 activeIndex={activeIndex}
                 next={next}
