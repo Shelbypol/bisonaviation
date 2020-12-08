@@ -24,7 +24,7 @@ const Header = () => {
 
     return (
         <>
-        <header className='topHeader'>
+        <header className='topHeader col-sm-12 col-xl-10 m-xl-auto'>
 
             <Navbar expand="sm" collapseOnSelect className='topNav navbar navbar-expand-lg navbar-dark bg-primary my-0 py-0'>
                 <Container >
@@ -93,7 +93,7 @@ const Header = () => {
 
 
             {/*      SECOND HEADER       */}
-            <header className='sticky-top bottomHeader'>
+            <header className='col-sm-12 col-xl-10 m-xl-auto sticky-top bottomHeader'>
 
                 <Navbar className='navbar navbar-expand-lg navbar-light bg-light mb-0 mt-1 py-0 border-0'>
 

@@ -85,6 +85,7 @@ const HomeCarousel = (props) => {
                 activeIndex={activeIndex}
                 next={next}
                 previous={previous}
+                className='col-xl-10 col-sm-12 m-xl-auto'
             >
                 <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex}/>
                 {slides}
