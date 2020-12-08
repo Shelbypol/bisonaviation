@@ -1,14 +1,17 @@
 Notes for pulling and running project:
 
+
 If you run into: ERESOLVE unable to resolve dependency tree, run this command:
 (Make sure you’re in the frontend)
 npm install --legacy-peer-deps
 
-# kill any process - xxxx = port and pid num
+
+######## kill any process - xxxx = port and pid num #####
 lsof -n -i4TCP:xxxx
 kill -9 xxxx
 
-# Mobile Responsive Sizes
+
+######## Mobile Responsive Sizes #######
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {}
@@ -24,3 +27,8 @@ kill -9 xxxx
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {}
+
+
+######### responsive carousel ########
+https://bootstrapcreative.com/create-full-width-bootstrap-4-responsive-carousel/
+

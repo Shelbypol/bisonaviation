@@ -11,8 +11,9 @@ import slide2 from '../images/homeSlider/fullscreen-slider1.jpg'
 import slide5 from '../images/homeSlider/fullscreen-slider3.jpg'
 import slide4 from '../images/homeSlider/fullscreen-slider4.jpg'
 import slide1 from '../images/homeSlider/fullscreen-slider2.jpg'
-import overlay from "../images/graphics/fs-slider-caption-bg.png";
+import overlay from '../images/graphics/fs-slider-caption-bg.png';
 import divider from '../images/graphics/divider1.png'
+import Header from "./Header";
 
 const items = [
     {
@@ -24,7 +25,8 @@ const items = [
     {
         src: slide2,
         altText: 'Slide 2',
-        caption: 'Slide 2'
+        caption: 'Slide 2',
+        text: 'FROM MINOR REPAIRS TO COMPLETE PANEL UPGRADES. ALL PERFORMED IN-HOUSE AT BISON AVIATION.'
     },
     {
         src: slide3,
@@ -71,11 +73,14 @@ const HomeCarousel = (props) => {
                 onExited={() => setAnimating(false)}
                 key={item.src}
             >
-                <img src={item.src} alt={item.altText}/>
-                <CarouselCaption captionText={item.text} captionHeader={item.caption}/>
 
-                {/*<CarouselCaption captionText={item.caption} captionHeader={item.caption} />*/}
+                <img className='img-fluid' src={item.src} alt={item.altText}/>
+                {/*      OVERLAY / DIVIDER IMAGE      */}
+                <img id='overlayImg' className=' img-fluid' src={overlay} alt=""/>
+                <img id='dividerImg' className=' img-fluid' src={divider} alt=""/>
+                <CarouselCaption captionText={item.text} captionHeader={item.caption}/>
             </CarouselItem>
+
         );
     });
 
@@ -87,6 +92,7 @@ const HomeCarousel = (props) => {
                 previous={previous}
                 // className='col-xl-10 col-sm-12 m-xl-auto'
             >
+
                 <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex}/>
                 {slides}
                 <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous}/>
@@ -94,8 +100,8 @@ const HomeCarousel = (props) => {
             </Carousel>
 
             {/*      OVERLAY / DIVIDER IMAGE      */}
-            <img id='overlayImg' className='img-fluid' src={overlay} alt=""/>
-            <img id='dividerImg' className='img-fluid' src={divider} alt=""/>
+            {/*<img id='overlayImg' className=' img-fluid' src={overlay} alt=""/>*/}
+            {/*<img id='dividerImg' className=' img-fluid' src={divider} alt=""/>*/}
 
         </>
     );

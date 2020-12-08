@@ -33,8 +33,10 @@ import TeamScreen from "./screens/TeamScreen";
 const App = () => {
   return (
       <Router>
-        <Header/>
+          <Header />
+        {/*<Container className='col-xl-10 col-lg-12 col-md-12 col-sm-12 m-auto p-0'>*/}
           <Route path='/' component={HomeScreen} exact />
+        {/*</Container>*/}
         <main className='py-3'>
           <Container>
             <Route path='/login' component={LoginScreen} />
