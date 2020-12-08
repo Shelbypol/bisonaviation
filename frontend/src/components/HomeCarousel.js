@@ -73,8 +73,8 @@ const HomeCarousel = (props) => {
                 onExited={() => setAnimating(false)}
                 key={item.src}
             >
-
-                <img className='img-fluid' src={item.src} alt={item.altText}/>
+                <img className="d-block w-100" src={item.src} alt={item.altText}/>
+                {/*<img className='img-fluid' src={item.src} alt={item.altText}/>*/}
                 {/*      OVERLAY / DIVIDER IMAGE      */}
                 <img id='overlayImg' className=' img-fluid' src={overlay} alt=""/>
                 <img id='dividerImg' className=' img-fluid' src={divider} alt=""/>

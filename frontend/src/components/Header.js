@@ -24,7 +24,7 @@ const Header = () => {
 
     return (
         <>
-        <header className='topHeader'>
+        <header className='topHeader d-block w-100'>
 
             {/*col-sm-12 col-xl-10 m-xl-auto*/}
 
@@ -90,14 +90,14 @@ const Header = () => {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-        </header>
+        {/*</header>*/}
             {/*<img id='dividerImg' className='img-fluid' src={divider} alt=""/>*/}
 
             {/*      SECOND HEADER       */}
-            <header className='sticky-top bottomHeader'>
+            {/*<header className='sticky-top bottomHeader' >*/}
                 {/*col-sm-12 col-xl-10 m-xl-auto*/}
 
-                <Navbar className='navbar navbar-expand-lg navbar-light bg-light mb-0 mt-1 py-0 border-0'>
+                <Navbar className='sticky-top bottomHeader navbar navbar-expand-lg navbar-light bg-light mb-0 mt-1 py-0 border-0'>
 
                     <Container>
 
