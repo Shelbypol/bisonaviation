@@ -26,7 +26,6 @@ import {
 } from '../constants/productConstants'
 
 // PRODUCTS PAGE REDUCER
-// A reducer takes in two things and initial state as an empty object and an action
 export const productListReducer = (state = { products: [] }, action) => {
     //evaluate the type that is in the action object
     switch(action.type){
@@ -45,7 +44,6 @@ export const productListReducer = (state = { products: [] }, action) => {
 
 // PRODUCT DETAILS REDUCER
 export const productDetailsReducer = (state = { product: { reviews: [] } }, action) => {
-    //evaluate the type that is in the action object
     switch(action.type){
         case PRODUCT_DETAILS_REQUEST:
             return { loading: true, ...state };
@@ -54,7 +52,6 @@ export const productDetailsReducer = (state = { product: { reviews: [] } }, acti
         case PRODUCT_DETAILS_FAIL:
             return { loading: false, error: action.payload };
         default:
-            // state is line 3 an empty array of products
             return state
     }
 };
