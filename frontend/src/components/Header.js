@@ -25,7 +25,7 @@ const Header = () => {
         <>
         <header className='header d-block px-0 col-sm-12 '>
 
-            <Navbar expand="md" collapseOnSelect className='topNav navbar navbar-expand-lg navbar-dark m-auto bg-primary p-0'>
+            <Navbar expand="md" collapseOnSelect className='topNav navbar navbar-expand-lg navbar-dark bg-dark m-auto bg-primary pl-0 pb-0 pt-0 pr-0'>
                 <Container className='col-sm-12 '>
 
                     {/*  LOGO  */}
