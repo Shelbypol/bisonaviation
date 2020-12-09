@@ -1,0 +1,62 @@
+
+.header{
+    width: 100vw;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+}
+
+#logoNav {
+    height: 15vh;
+    max-height: 100%;
+}
+
+.topNav {
+    z-index: 1000;
+}
+
+.bottomHeader {
+    margin-top: -.3em;
+    border-bottom: 2px solid #920009;
+    z-index: 999;
+}
+
+.searchBar {
+    height: 8vh;
+    max-height: 100%;
+    width: 100%;
+    max-width: 100%;
+    margin-left: 50vw;
+}
+
+.top-nav-item {
+    font-size: 1.2em;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1550px) {
+    .top-nav-item {
+        font-size: 1.5em;
+        padding-left: 7vw;
+        padding-right: 7vw;
+    }
+
+    .searchInput {
+        height: 5vh;
+        max-height: 100%;
+    }
+
+    .bottom-nav-item {
+        font-size: 1.5em ;
+    }
+
+
+}
+
