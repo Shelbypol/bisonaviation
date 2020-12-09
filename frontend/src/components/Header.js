@@ -24,9 +24,11 @@ const Header = () => {
 
     return (
         <>
-        <header className='topHeader'>
+        <header className='topHeader d-block w-100'>
 
-            <Navbar expand="lg" collapseOnSelect className='topNav navbar navbar-expand-lg navbar-dark bg-primary my-0 py-0'>
+            {/*col-sm-12 col-xl-10 m-xl-auto*/}
+
+            <Navbar expand="sm" collapseOnSelect className='topNav navbar navbar-expand-lg navbar-dark bg-primary my-0 py-0'>
                 <Container >
                     {/*  LOGO  */}
                     <LinkContainer to='/'>
@@ -88,16 +90,16 @@ const Header = () => {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-        </header>
+        {/*</header>*/}
             {/*<img id='dividerImg' className='img-fluid' src={divider} alt=""/>*/}
 
-
             {/*      SECOND HEADER       */}
-            <header className='sticky-top bottomHeader'>
+            {/*<header className='sticky-top bottomHeader' >*/}
+                {/*col-sm-12 col-xl-10 m-xl-auto*/}
 
-                <Navbar expand="lg" collapseOnSelect className='navbar navbar-expand-lg navbar-light bg-light mb-0 mt-1 py-0 border-0'>
+                <Navbar className='sticky-top bottomHeader navbar navbar-expand-lg navbar-light bg-light mb-0 mt-1 py-0 border-0'>
 
-                    <Container >
+                    <Container>
 
                         <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                         <Navbar.Collapse id="basic-navbar-nav">
@@ -177,8 +179,8 @@ const Header = () => {
                     </Container>
                 </Navbar>
             </header>
-            {/*<img id='dividerImg' className='img-fluid' src={divider} alt=""/>*/}
 
+            {/*<img id='dividerImg' className='img-fluid' src={divider} alt=""/>*/}
             </>
 
     )
