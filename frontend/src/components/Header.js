@@ -7,7 +7,6 @@ import {logout} from '../actions/userActions'
 import SearchBox from "./SearchBox";
 import { CART_RESET } from "../constants/cartConstants";
 import logo from '../images/activeImg/Final-Logo-Horizontal.png'
-import header from '../style/header.css'
 
 const Header = () => {
 
@@ -31,7 +30,7 @@ const Header = () => {
 
                     {/*  LOGO  */}
                     <LinkContainer to='/'>
-                        <img id='logoNav' src={logo} className='img-fluid pb-1' alt="Bison Aviation"/>
+                        <img id='logoNav' src={logo} className='img-fluid pb-1 pl-3' alt="Bison Aviation"/>
 
                     </LinkContainer>
                     <Navbar.Toggle aria-controls="basic-navbar-nav"/>
