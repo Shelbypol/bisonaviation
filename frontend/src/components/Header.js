@@ -7,6 +7,7 @@ import {logout} from '../actions/userActions'
 import SearchBox from "./SearchBox";
 import { CART_RESET } from "../constants/cartConstants";
 import logo from '../images/activeImg/Final-Logo-Horizontal.png'
+import header from '../style/header.css'
 import divider from '../images/graphics/divider1.png'
 
 const Header = () => {
@@ -24,12 +25,12 @@ const Header = () => {
 
     return (
         <>
-        <header className='topHeader d-block w-100'>
+        <header className='header d-block w-100 col-sm-12 px-0'>
 
             {/*col-sm-12 col-xl-10 m-xl-auto*/}
 
-            <Navbar expand="sm" collapseOnSelect className='topNav navbar navbar-expand-lg navbar-dark bg-primary my-0 py-0'>
-                <Container >
+            <Navbar expand="sm" collapseOnSelect className='topNav navbar navbar-expand-lg navbar-dark mx-auto bg-primary my-0 py-0 col-sm-12'>
+                <Container className='col-sm-12'>
                     {/*  LOGO  */}
                     <LinkContainer to='/'>
                         <img id='logoNav' src={logo} className='img-fluid pb-1' alt="Bison Aviation"/>
@@ -41,7 +42,7 @@ const Header = () => {
                         {/*/!*  SEARCH BOX  *!/*/}
                         <Route render={({ history}) => <SearchBox history={history} />} />
 
-                        <Nav className="ml-auto">
+                        <Nav className="ml-auto ">
 
                             {/*  WISH LIST  */}
                             <LinkContainer to='/cart'>
@@ -97,9 +98,9 @@ const Header = () => {
             {/*<header className='sticky-top bottomHeader' >*/}
                 {/*col-sm-12 col-xl-10 m-xl-auto*/}
 
-                <Navbar className='sticky-top bottomHeader navbar navbar-expand-lg navbar-light bg-light mb-0 mt-1 py-0 border-0'>
+                <Navbar className='sticky-top bottomNav navbar navbar-expand-lg navbar-light bg-light mb-0 mt-1 mx-auto py-0 border-0 col-sm-12'>
 
-                    <Container>
+                    <Container className='col-sm-12'>
 
                         <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                         <Navbar.Collapse id="basic-navbar-nav">

@@ -1,0 +1,38 @@
+
+.header{
+    width: 100vw;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+}
+
+#logoNav {
+    height: 15vh;
+    max-height: 100%;
+}
+
+.topNav {
+    z-index: 1000;
+    display: flex;
+}
+
+.bottomNav {
+    margin-top: -.3em;
+    border-bottom: 2px solid #920009;
+    z-index: 999;
+    display: flex;
+}
+
+.searchBar {
+    /*height: 6vh;*/
+    /*max-height: 100%;*/
+    width: 17vw;
+    max-width: 100%;
+}
+
+/*.searchButton {*/
+/*    height: 6vh;*/
+/*    max-height: 100%;*/
+/*    width: 2vw;*/
+/*    max-width: 100%;*/
+/*}*/
