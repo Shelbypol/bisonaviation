@@ -24,11 +24,11 @@ const SearchBox = ({history}) => {
                     placeholder='Search for Garmin Products...'
                     onChange={(e) => setKeyword(e.target.value)}
                     size='sm'
-                    className='rounded col-sm-9 searchInput '
+                    className='rounded-left col-sm-9 searchInput '
                 >
                 </Form.Control>
-                <Button type='submit' size='sm'
-                        className='col-sm-1'
+                <Button type='submit' size='md'
+                        className='col-sm-1 rounded-right'
                 >
                     <i style={{color: 'red'}} className="fas fa-search"> </i>
                 </Button>
