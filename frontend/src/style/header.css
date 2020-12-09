@@ -13,26 +13,21 @@
 
 .topNav {
     z-index: 1000;
-    display: flex;
+    /*display: flex;*/
 }
 
-.bottomNav {
+.bottomHeader {
     margin-top: -.3em;
     border-bottom: 2px solid #920009;
     z-index: 999;
-    display: flex;
 }
 
 .searchBar {
-    /*height: 6vh;*/
-    /*max-height: 100%;*/
-    width: 17vw;
+    height: 8vh;
+    max-height: 100%;
+    width: 100%;
     max-width: 100%;
+    margin-left: 50vw;
 }
 
-/*.searchButton {*/
-/*    height: 6vh;*/
-/*    max-height: 100%;*/
-/*    width: 2vw;*/
-/*    max-width: 100%;*/
-/*}*/
+

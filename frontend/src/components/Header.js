@@ -25,12 +25,12 @@ const Header = () => {
 
     return (
         <>
-        <header className='header d-block w-100 col-sm-12 px-0'>
+        <header className='header d-block px-0 col-sm-12 border-success'>
 
             {/*col-sm-12 col-xl-10 m-xl-auto*/}
 
-            <Navbar expand="sm" collapseOnSelect className='topNav navbar navbar-expand-lg navbar-dark mx-auto bg-primary my-0 py-0 col-sm-12'>
-                <Container className='col-sm-12'>
+            <Navbar expand="sm" collapseOnSelect className='topNav navbar navbar-expand-lg navbar-dark m-auto bg-primary my-0 py-0'>
+                <Container className='col-sm-12 m-auto'>
                     {/*  LOGO  */}
                     <LinkContainer to='/'>
                         <img id='logoNav' src={logo} className='img-fluid pb-1' alt="Bison Aviation"/>
@@ -40,9 +40,9 @@ const Header = () => {
                     <Navbar.Collapse id="basic-navbar-nav">
 
                         {/*/!*  SEARCH BOX  *!/*/}
-                        <Route render={({ history}) => <SearchBox history={history} />} />
+                        <Route render={({ history}) => <SearchBox className='col-sm-7' history={history} />} />
 
-                        <Nav className="ml-auto ">
+                        <Nav className='col-sm-5 '>
 
                             {/*  WISH LIST  */}
                             <LinkContainer to='/cart'>
@@ -61,7 +61,7 @@ const Header = () => {
                                 </NavDropdown>
 
                             ) : <LinkContainer to='/login'>
-                                <Nav.Link><i className='fas fa-sign-in-alt'> </i> Sign in
+                                <Nav.Link><i className='fas fa-sign-in-alt'> </i> Log in
                                 </Nav.Link>
                             </LinkContainer>
                             }
@@ -91,14 +91,14 @@ const Header = () => {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-        {/*</header>*/}
+        </header>
             {/*<img id='dividerImg' className='img-fluid' src={divider} alt=""/>*/}
 
             {/*      SECOND HEADER       */}
-            {/*<header className='sticky-top bottomHeader' >*/}
+            <header className='sticky-top bottomHeader' >
                 {/*col-sm-12 col-xl-10 m-xl-auto*/}
 
-                <Navbar className='sticky-top bottomNav navbar navbar-expand-lg navbar-light bg-light mb-0 mt-1 mx-auto py-0 border-0 col-sm-12'>
+                <Navbar className='navbar navbar-expand-lg navbar-light bg-light m-auto p-0 border-0'>
 
                     <Container className='col-sm-12'>
 
