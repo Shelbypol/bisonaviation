@@ -13,7 +13,6 @@ import slide4 from '../images/homeSlider/fullscreen-slider4.jpg'
 import slide1 from '../images/homeSlider/fullscreen-slider2.jpg'
 import overlay from '../images/graphics/fs-slider-caption-bg.png';
 import divider from '../images/graphics/divider1.png'
-import Header from "./Header";
 
 const items = [
     {

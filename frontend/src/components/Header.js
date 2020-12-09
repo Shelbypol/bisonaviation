@@ -8,7 +8,6 @@ import SearchBox from "./SearchBox";
 import { CART_RESET } from "../constants/cartConstants";
 import logo from '../images/activeImg/Final-Logo-Horizontal.png'
 import header from '../style/header.css'
-import divider from '../images/graphics/divider1.png'
 
 const Header = () => {
 
@@ -25,12 +24,11 @@ const Header = () => {
 
     return (
         <>
-        <header className='header d-block px-0 col-sm-12'>
+        <header className='header d-block px-0 col-sm-12 '>
 
-            {/*col-sm-12 col-xl-10 m-xl-auto*/}
+            <Navbar expand="md" collapseOnSelect className='topNav navbar navbar-expand-lg navbar-dark m-auto bg-primary p-0'>
+                <Container className='col-sm-12 '>
 
-            <Navbar expand="md" collapseOnSelect className='topNav navbar navbar-expand-lg navbar-dark m-auto bg-primary py-0'>
-                <Container className='col-sm-12 ml-5'>
                     {/*  LOGO  */}
                     <LinkContainer to='/'>
                         <img id='logoNav' src={logo} className='img-fluid pb-1' alt="Bison Aviation"/>
@@ -42,7 +40,7 @@ const Header = () => {
                         {/*/!*  SEARCH BOX  *!/*/}
                         <Route render={({ history}) => <SearchBox className='col-sm-7' history={history} />} />
 
-                        <Nav className='col-sm-5 pl-5 top-nav-item'>
+                        <Nav className='col-sm-5 top-nav-item'>
 
                             {/*  WISH LIST  */}
                             <LinkContainer to='/cart'>
@@ -163,7 +161,7 @@ const Header = () => {
                                 {/*  TEAM  */}
                                 <LinkContainer to='/team'>
                                     <Nav.Link>
-                                        Meet our Team
+                                    Team
                                     </Nav.Link>
                                 </LinkContainer>
 
