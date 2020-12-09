@@ -21,10 +21,10 @@ const SearchBox = ({history}) => {
                     type='text'
                     name='searchBar'
                     value={keyword}
-                    placeholder='Search for Products...'
+                    placeholder='Search for Garmin Products...'
                     onChange={(e) => setKeyword(e.target.value)}
                     size='sm'
-                    className='rounded col-sm-9 '
+                    className='rounded col-sm-9 searchInput '
                 >
                 </Form.Control>
                 <Button type='submit' size='sm'

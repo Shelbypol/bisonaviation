@@ -25,12 +25,12 @@ const Header = () => {
 
     return (
         <>
-        <header className='header d-block px-0 col-sm-12 border-success'>
+        <header className='header d-block px-0 col-sm-12'>
 
             {/*col-sm-12 col-xl-10 m-xl-auto*/}
 
-            <Navbar expand="sm" collapseOnSelect className='topNav navbar navbar-expand-lg navbar-dark m-auto bg-primary my-0 py-0'>
-                <Container className='col-sm-12 m-auto'>
+            <Navbar expand="md" collapseOnSelect className='topNav navbar navbar-expand-lg navbar-dark m-auto bg-primary py-0'>
+                <Container className='col-sm-12 ml-5'>
                     {/*  LOGO  */}
                     <LinkContainer to='/'>
                         <img id='logoNav' src={logo} className='img-fluid pb-1' alt="Bison Aviation"/>
@@ -42,7 +42,7 @@ const Header = () => {
                         {/*/!*  SEARCH BOX  *!/*/}
                         <Route render={({ history}) => <SearchBox className='col-sm-7' history={history} />} />
 
-                        <Nav className='col-sm-5 '>
+                        <Nav className='col-sm-5 pl-5 top-nav-item'>
 
                             {/*  WISH LIST  */}
                             <LinkContainer to='/cart'>
@@ -105,7 +105,7 @@ const Header = () => {
                         <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                         <Navbar.Collapse id="basic-navbar-nav">
 
-                            <Nav className="m-auto">
+                            <Nav className="m-auto bottom-nav-item">
 
                                 {/*  BROWSE PRODUCTS  */}
                                 <LinkContainer className='mx-1' to='/products'>
