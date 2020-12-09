@@ -7,7 +7,6 @@ import divider from '../images/graphics/divider1.png'
 const HomeScreen = () => {
 
     window.onbeforeunload = () => {
-        // Clear the local storage
         localStorage.clear()
     };
     return (
