@@ -6,13 +6,15 @@
     max-height: 100%;
 }
 
-#logoNav {
+
+.logoNav {
     height: 10vh;
     max-height: 100%;
 }
 
 .topNav {
     z-index: 1000;
+    background-color: #000;
 }
 
 .bottomHeader {

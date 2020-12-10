@@ -23,23 +23,23 @@ const Header = () => {
 
     return (
         <>
-        <header className='header d-block px-0 col-sm-12 '>
+        <header className='header d-block p-0 col-sm-12'>
 
-            <Navbar expand="md" collapseOnSelect className='topNav navbar navbar-expand-lg navbar-dark bg-dark m-auto bg-primary pl-0 pb-0 pt-0 pr-0'>
-                <Container className='col-sm-12 '>
+            <Navbar expand="md" collapseOnSelect style={{backgroundColor: 'black'}} className='topNav navbar navbar-dark navbar-expand-lg m-auto p-0'>
+                <Container className='col-md-12 col-xs-12 ml-5'>
 
                     {/*  LOGO  */}
-                    <LinkContainer to='/'>
-                        <img id='logoNav' src={logo} className='img-fluid pb-1 pl-3' alt="Bison Aviation"/>
+                    <LinkContainer className='col-md-2 col-xs-0' to='/'>
+                        <img src={logo} className='logoNav pb-1 ml-3' alt="Bison Aviation"/>
 
                     </LinkContainer>
                     <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                     <Navbar.Collapse id="basic-navbar-nav">
 
                         {/*/!*  SEARCH BOX  *!/*/}
-                        <Route render={({ history}) => <SearchBox className='col-sm-7' history={history} />} />
+                        <Route render={({ history}) => <SearchBox className='col-md-5 col-xs-0' history={history} />} />
 
-                        <Nav className='col-sm-5 top-nav-item'>
+                        <Nav className='col-md-5 col-xs-7 top-nav-item'>
 
                             {/*  WISH LIST  */}
                             <LinkContainer to='/cart'>
