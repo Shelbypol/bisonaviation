@@ -8,6 +8,7 @@ import SearchBox from "./SearchBox";
 import { CART_RESET } from "../constants/cartConstants";
 import logo from '../images/activeImg/Final-Logo-Horizontal.png'
 import '../style/homeCarousel.css'
+import '../style/header.css'
 import MobileHeader from "./MobileHeader";
 
 const Header = () => {

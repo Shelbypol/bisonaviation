@@ -8,6 +8,7 @@ const HomeScreen = () => {
     window.onbeforeunload = () => {
         localStorage.clear()
     };
+
     return (
         <>
             <HomeCarousel />
