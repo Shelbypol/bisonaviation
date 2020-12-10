@@ -7,6 +7,8 @@ import {logout} from '../actions/userActions'
 import SearchBox from "./SearchBox";
 import { CART_RESET } from "../constants/cartConstants";
 import logo from '../images/activeImg/Final-Logo-Horizontal.png'
+import '../style/homeCarousel.css'
+import MobileHeader from "./MobileHeader";
 
 const Header = () => {
 
@@ -23,13 +25,13 @@ const Header = () => {
 
     return (
         <>
-        <header className='header d-block p-0 col-sm-12'>
+        <header className='topHeader d-block p-0 col-sm-12'>
 
             <Navbar expand="md" collapseOnSelect style={{backgroundColor: 'black'}} className='topNav navbar navbar-dark navbar-expand-lg m-auto p-0'>
                 <Container className='col-md-12 col-xs-12 ml-5'>
 
                     {/*  LOGO  */}
-                    <LinkContainer className='col-md-2 col-xs-0' to='/'>
+                    <LinkContainer className='col-md-2 col-xs-2' to='/'>
                         <img src={logo} className='logoNav pb-1 ml-3' alt="Bison Aviation"/>
 
                     </LinkContainer>
@@ -178,7 +180,8 @@ const Header = () => {
                 </Navbar>
             </header>
 
-            {/*<img id='dividerImg' className='img-fluid' src={divider} alt=""/>*/}
+            {/*   MOBILE HEADER   */}
+                 <MobileHeader  className='mobileHeader' />
             </>
 
     )

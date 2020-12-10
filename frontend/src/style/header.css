@@ -40,10 +40,7 @@
     font-size: 1.2em ;
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-
-}
+/*     RESPONSIVE LARGE HEADER     */
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1550px) {
@@ -61,7 +58,4 @@
     .bottom-nav-item {
         font-size: 1.5em ;
     }
-
-
 }
-
