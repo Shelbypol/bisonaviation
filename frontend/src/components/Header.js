@@ -7,7 +7,6 @@ import {logout} from '../actions/userActions'
 import SearchBox from "./SearchBox";
 import { CART_RESET } from "../constants/cartConstants";
 import logo from '../images/activeImg/Final-Logo-Horizontal.png'
-import divider from '../images/graphics/divider1.png'
 
 const Header = () => {
 
@@ -24,22 +23,23 @@ const Header = () => {
 
     return (
         <>
-        <header className='topHeader'>
+        <header className='header d-block px-0 col-sm-12 '>
 
-            <Navbar expand="lg" collapseOnSelect className='topNav navbar navbar-expand-lg navbar-dark bg-primary my-0 py-0'>
-                <Container >
+            <Navbar expand="md" collapseOnSelect className='topNav navbar navbar-expand-lg navbar-dark bg-dark m-auto bg-primary pl-0 pb-0 pt-0 pr-0'>
+                <Container className='col-sm-12 '>
+
                     {/*  LOGO  */}
                     <LinkContainer to='/'>
-                        <img id='logoNav' src={logo} className='img-fluid pb-1' alt="Bison Aviation"/>
+                        <img id='logoNav' src={logo} className='img-fluid pb-1 pl-3' alt="Bison Aviation"/>
 
                     </LinkContainer>
                     <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                     <Navbar.Collapse id="basic-navbar-nav">
 
                         {/*/!*  SEARCH BOX  *!/*/}
-                        <Route render={({ history}) => <SearchBox history={history} />} />
+                        <Route render={({ history}) => <SearchBox className='col-sm-7' history={history} />} />
 
-                        <Nav className="ml-auto">
+                        <Nav className='col-sm-5 top-nav-item'>
 
                             {/*  WISH LIST  */}
                             <LinkContainer to='/cart'>
@@ -58,7 +58,7 @@ const Header = () => {
                                 </NavDropdown>
 
                             ) : <LinkContainer to='/login'>
-                                <Nav.Link><i className='fas fa-sign-in-alt'> </i> Sign in
+                                <Nav.Link><i className='fas fa-sign-in-alt'> </i> Log in
                                 </Nav.Link>
                             </LinkContainer>
                             }
@@ -91,18 +91,18 @@ const Header = () => {
         </header>
             {/*<img id='dividerImg' className='img-fluid' src={divider} alt=""/>*/}
 
-
             {/*      SECOND HEADER       */}
-            <header className='sticky-top bottomHeader'>
+            <header className='sticky-top bottomHeader' >
+                {/*col-sm-12 col-xl-10 m-xl-auto*/}
 
-                <Navbar expand="lg" collapseOnSelect className='navbar navbar-expand-lg navbar-light bg-light mb-0 mt-1 py-0 border-0'>
+                <Navbar className='navbar navbar-expand-lg navbar-light bg-light m-auto p-0 border-0'>
 
-                    <Container >
+                    <Container className='col-sm-12'>
 
                         <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                         <Navbar.Collapse id="basic-navbar-nav">
 
-                            <Nav className="m-auto">
+                            <Nav className="m-auto bottom-nav-item">
 
                                 {/*  BROWSE PRODUCTS  */}
                                 <LinkContainer className='mx-1' to='/products'>
@@ -160,7 +160,7 @@ const Header = () => {
                                 {/*  TEAM  */}
                                 <LinkContainer to='/team'>
                                     <Nav.Link>
-                                        Meet our Team
+                                    Team
                                     </Nav.Link>
                                 </LinkContainer>
 
@@ -177,8 +177,8 @@ const Header = () => {
                     </Container>
                 </Navbar>
             </header>
-            {/*<img id='dividerImg' className='img-fluid' src={divider} alt=""/>*/}
 
+            {/*<img id='dividerImg' className='img-fluid' src={divider} alt=""/>*/}
             </>
 
     )

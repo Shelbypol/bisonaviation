@@ -11,8 +11,7 @@ import slide2 from '../images/homeSlider/fullscreen-slider1.jpg'
 import slide5 from '../images/homeSlider/fullscreen-slider3.jpg'
 import slide4 from '../images/homeSlider/fullscreen-slider4.jpg'
 import slide1 from '../images/homeSlider/fullscreen-slider2.jpg'
-import overlay from "../images/graphics/fs-slider-caption-bg.png";
-import divider from '../images/graphics/divider1.png'
+import overlay from '../images/graphics/fs-slider-caption-bg.png';
 
 const items = [
     {
@@ -24,7 +23,8 @@ const items = [
     {
         src: slide2,
         altText: 'Slide 2',
-        caption: 'Slide 2'
+        caption: 'Slide 2',
+        text: 'FROM MINOR REPAIRS TO COMPLETE PANEL UPGRADES. ALL PERFORMED IN-HOUSE AT BISON AVIATION.'
     },
     {
         src: slide3,
@@ -71,11 +71,15 @@ const HomeCarousel = (props) => {
                 onExited={() => setAnimating(false)}
                 key={item.src}
             >
-                <img src={item.src} alt={item.altText}/>
-                <CarouselCaption captionText={item.text} captionHeader={item.caption}/>
+                {/*     SLIDER IMGS     */}
+                <img className="d-block w-100" src={item.src} alt={item.altText}/>
 
-                {/*<CarouselCaption captionText={item.caption} captionHeader={item.caption} />*/}
+                {/*      OVERLAY IMAGE      */}
+                <img id='overlayImg' className=' img-fluid' src={overlay} alt=""/>
+
+                <CarouselCaption captionText={item.text} captionHeader={item.caption}/>
             </CarouselItem>
+
         );
     });
 
@@ -86,15 +90,12 @@ const HomeCarousel = (props) => {
                 next={next}
                 previous={previous}
             >
+
                 <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex}/>
                 {slides}
                 <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous}/>
                 <CarouselControl direction="next" directionText="Next" onClickHandler={next}/>
             </Carousel>
-
-            {/*      OVERLAY / DIVIDER IMAGE      */}
-            <img id='overlayImg' className='img-fluid' src={overlay} alt=""/>
-            <img id='dividerImg' className='img-fluid' src={divider} alt=""/>
 
         </>
     );

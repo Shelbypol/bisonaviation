@@ -1,11 +1,12 @@
-import React, {  useState } from 'react'
-import { Form, Button } from 'react-bootstrap'
-const SearchBox = ({ history }) => {
-const [keyword, setKeyword] = useState('');
+import React, {useState} from 'react'
+import {Form, Button} from 'react-bootstrap'
+
+const SearchBox = ({history}) => {
+    const [keyword, setKeyword] = useState('');
 
     const submitHandler = (e) => {
         e.preventDefault();
-        if(keyword.trim()){
+        if (keyword.trim()) {
             history.push(`/search/${keyword}`);
         } else {
             history.push('/')
@@ -15,20 +16,22 @@ const [keyword, setKeyword] = useState('');
 
     return (
 
-        <Form onSubmit={submitHandler} inline className='m-auto'>
-
-            <Form.Control
-                type='text'
-                name='searchBar'
-                value={keyword}
-                placeholder='Search for Products...'
-                onChange={(e) => setKeyword(e.target.value)}
-
-                className='searchBar searchInput'
-            >
-            </Form.Control>
-            <Button type='submit' variant='outline-light' className='searchButton px-3 py-0 rounded-right'><i style={{color: 'red'}} className="fas fa-search"> </i></Button>
-
+        <Form onSubmit={submitHandler} inline className='ml-auto searchBar col-sm-5'>
+                <Form.Control
+                    type='text'
+                    name='searchBar'
+                    value={keyword}
+                    placeholder='Search for Garmin Products...'
+                    onChange={(e) => setKeyword(e.target.value)}
+                    size='sm'
+                    className='rounded-left col-sm-9 searchInput '
+                >
+                </Form.Control>
+                <Button type='submit' size='md'
+                        className='col-sm-1 rounded-right'
+                >
+                    <i style={{color: 'red'}} className="fas fa-search"> </i>
+                </Button>
         </Form>
     )
 };
