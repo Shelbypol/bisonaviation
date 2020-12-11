@@ -23,13 +23,13 @@ const MobileHeader = () => {
 
     return (
         <>
-            <header className='header d-block p-0 col-sm-12'>
+            <header style={{borderBottom: '3px solid red'}} className='m-auto header d-block p-0 col-xs-12'>
 
                 <Navbar expand="md" collapseOnSelect style={{backgroundColor: 'black'}} className='topNav navbar navbar-dark navbar-expand-lg m-auto px-0 py-3'>
                     <Container className='col-xs-12 ml-5'>
 
                         {/*  LOGO  */}
-                        <LinkContainer className='col-xs-2 ' to='/'>
+                        <LinkContainer className='col-xs-2' to='/'>
                             <img src={logo} className='logoNav' alt="Bison Aviation"/>
                         </LinkContainer>
 
@@ -39,7 +39,7 @@ const MobileHeader = () => {
                             {/*/!*  SEARCH BOX  *!/*/}
                             <Route render={({ history}) => <SearchBox className='' history={history} />} />
 
-                            <Nav className='col-md-5 col-xs-7 top-nav-item'>
+                            <Nav className='col-md-5 col-xs-7 navFont'>
 
                                 {/*  WISH LIST  */}
                                 <LinkContainer to='/cart'>

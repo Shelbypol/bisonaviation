@@ -15,7 +15,7 @@ const DesktopBottomHeader = () => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                     <Navbar.Collapse id="basic-navbar-nav">
 
-                        <Nav className="m-auto bottom-nav-item">
+                        <Nav className="m-auto navFont">
 
                             {/*  BROWSE PRODUCTS  */}
                             <LinkContainer className='mx-1' to='/products'>

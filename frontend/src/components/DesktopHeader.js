@@ -25,11 +25,11 @@ const DesktopHeader = () => {
 
     return (
         <>
-            <header className='topHeader d-block p-0 col-sm-12'>
+            <header className='p-0 col-xs-12 '>
 
                 <Navbar expand="md" collapseOnSelect style={{backgroundColor: 'black'}}
-                        className='topNav navbar navbar-dark navbar-expand-lg m-auto p-0'>
-                    <Container className='col-xs-12 ml-5'>
+                        className='topNav navbar navbar-dark navbar-expand-lg p-0 col-xs-12'>
+                    <Container className='col-xs-12 d-flex justify-content-around'>
 
                         {/*  LOGO  */}
                         <LinkContainer className='col-xs-2' to='/'>
@@ -43,7 +43,7 @@ const DesktopHeader = () => {
                             <Route
                                 render={({history}) => <SearchBox className='col-md-5 col-xs-0' history={history}/>}/>
 
-                            <Nav className='col-md-5 col-xs-7 top-nav-item'>
+                            <Nav className='col-md-5 col-xs-7 navFont'>
 
                                 {/*  WISH LIST  */}
                                 <LinkContainer to='/cart'>

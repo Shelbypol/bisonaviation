@@ -1,9 +1,7 @@
-import React, {useContext, useEffect, useState} from "react";
+import React, {useEffect, useState} from "react";
 import MobileHeader from "./MobileHeader";
 import DesktopHeader from "./DesktopHeader";
 
-
-// const viewportContext = React.createContext({});
 
 const Headers = () => {
     const [width, setWidth] = useState(window.innerWidth);

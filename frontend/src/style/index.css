@@ -46,6 +46,10 @@ h2 {
     max-height: 100%;
 }
 
+.navFont {
+    font-size: larger;
+}
+
 
 /* MOBILE RESPONSIVE */
 @media (max-width: 900px) {
