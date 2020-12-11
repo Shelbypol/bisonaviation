@@ -1,80 +1,80 @@
 
-.header{
-    width: 100vw;
-    max-width: 100%;
-    height: auto;
-    max-height: 100%;
-}
+/*.header{*/
+/*    width: 100vw;*/
+/*    max-width: 100%;*/
+/*    height: auto;*/
+/*    max-height: 100%;*/
+/*}*/
 
 
-.logoNav {
-    height: 10vh;
-    max-height: 100%;
-}
+/*.logoNav {*/
+/*    height: 10vh;*/
+/*    max-height: 100%;*/
+/*}*/
 
-.topNav {
-    z-index: 1000;
-    background-color: #000;
-}
+/*.topNav {*/
+/*    z-index: 1000;*/
+/*    background-color: #000;*/
+/*}*/
 
-.bottomHeader {
-    margin-top: -.3em;
-    border-bottom: 2px solid #920009;
-    z-index: 999;
-}
+/*.bottomHeader {*/
+/*    margin-top: -.3em;*/
+/*    border-bottom: 2px solid #920009;*/
+/*    z-index: 999;*/
+/*}*/
 
-.searchBar {
-    height: 8vh;
-    max-height: 100%;
-    width: 100%;
-    max-width: 100%;
-}
+/*.searchBar {*/
+/*    height: 8vh;*/
+/*    max-height: 100%;*/
+/*    width: 100%;*/
+/*    max-width: 100%;*/
+/*}*/
 
-.top-nav-item {
-    font-size: 1.2em;
-    padding-left: 4vw;
-    padding-right: 4vw;
-}
+/*.top-nav-item {*/
+/*    font-size: 1.2em;*/
+/*    padding-left: 4vw;*/
+/*    padding-right: 4vw;*/
+/*}*/
 
-.bottom-nav-item {
-    font-size: 1.2em ;
-}
+/*.bottom-nav-item {*/
+/*    font-size: 1.2em ;*/
+/*}*/
 
-/*     RESPONSIVE LARGE HEADER     */
+/*!*     RESPONSIVE LARGE HEADER     *!*/
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1550px) {
-    .top-nav-item {
-        font-size: 1.5em;
-        padding-left: 6vw;
-        padding-right: 6vw;
-    }
+/*!* Extra large devices (large laptops and desktops, 1200px and up) *!*/
+/*@media only screen and (min-width: 1550px) {*/
+/*    .top-nav-item {*/
+/*        font-size: 1.5em;*/
+/*        padding-left: 6vw;*/
+/*        padding-right: 6vw;*/
+/*    }*/
 
-    .searchInput {
-        height: 5vh;
-        max-height: 100%;
-    }
+/*    .searchInput {*/
+/*        height: 5vh;*/
+/*        max-height: 100%;*/
+/*    }*/
 
-    .bottom-nav-item {
-        font-size: 1.5em ;
-    }
-}
-
-
+/*    .bottom-nav-item {*/
+/*        font-size: 1.5em ;*/
+/*    }*/
+/*}*/
 
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
- .topHeader {
-     display: none;
- }
-}
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
 
-.topHeader {
-    display: none;
-}
+/*!* Extra small devices (phones, 600px and down) *!*/
+/*@media only screen and (max-width: 600px) {*/
+/* .topHeader {*/
+/*     display: none;*/
+/* }*/
+/*}*/
 
-}
+/*!* Small devices (portrait tablets and large phones, 600px and up) *!*/
+/*@media only screen and (min-width: 600px) {*/
+
+/*.topHeader {*/
+/*    display: none;*/
+/*}*/
+
+/*}*/

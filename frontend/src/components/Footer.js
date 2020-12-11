@@ -17,5 +17,5 @@ const Footer = () => {
     )
 }
 
-// export as default means when we import on App.js we dont need to wrap in curly brackets ie: import {Header} is now import Header
+// export as default means when we import on App.js we dont need to wrap in curly brackets ie: import {DesktopHeader} is now import DesktopHeader
 export default Footer
