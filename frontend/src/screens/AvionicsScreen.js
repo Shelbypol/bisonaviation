@@ -14,11 +14,11 @@ const AvionicsScreen = (props) => {
                 {/*    <Col md={6}>*/}
                 {/*        <Card>*/}
                 {/*            <Col xs={1}>*/}
-                {/*                <Card.Header className='sm'>*/}
+                {/*                <Card.DesktopHeader className='sm'>*/}
                 {/*                    <Accordion.Toggle as={Button} variant="link" eventKey="0">*/}
                 {/*                        <i className="fas fa-plane"> </i>*/}
                 {/*                    </Accordion.Toggle>*/}
-                {/*                </Card.Header>*/}
+                {/*                </Card.DesktopHeader>*/}
                 {/*            </Col>*/}
                 {/*            <Accordion.Collapse eventKey="0">*/}
                 {/*                <Card.Body>*/}

@@ -75,7 +75,7 @@ const HomeCarousel = (props) => {
                 <img className="d-block w-100" src={item.src} alt={item.altText}/>
 
                 {/*      OVERLAY IMAGE      */}
-                <img id='overlayImg' className=' img-fluid' src={overlay} alt=""/>
+                <img id='overlayImg' className='img-fluid' src={overlay} alt=""/>
 
                 <CarouselCaption captionText={item.text} captionHeader={item.caption}/>
             </CarouselItem>

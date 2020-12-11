@@ -27,8 +27,8 @@ const SearchBox = ({history}) => {
                     className='rounded-left col-sm-9 searchInput '
                 >
                 </Form.Control>
-                <Button type='submit' size='md'
-                        className='col-sm-1 rounded-right'
+                <Button type='submit' size='lg'
+                        style={{backgroundColor: 'black'}} className='p-2 col-sm-1 rounded-right'
                 >
                     <i style={{color: 'red'}} className="fas fa-search"> </i>
                 </Button>
