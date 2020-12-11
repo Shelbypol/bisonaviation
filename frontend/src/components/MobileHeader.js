@@ -7,7 +7,6 @@ import {logout} from '../actions/userActions'
 import SearchBox from "./SearchBox";
 import { CART_RESET } from "../constants/cartConstants";
 import logo from '../images/activeImg/Final-Logo-Horizontal.png'
-import '../style/mobileHeader.css'
 
 const MobileHeader = () => {
 

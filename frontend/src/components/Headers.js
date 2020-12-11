@@ -1,20 +1,35 @@
-import React from "react";
+import React, {useContext, useEffect, useState} from "react";
 import MobileHeader from "./MobileHeader";
 import DesktopHeader from "./DesktopHeader";
 
+
+// const viewportContext = React.createContext({});
+
 const Headers = () => {
+    const [width, setWidth] = useState(window.innerWidth);
 
-        let width = window.innerWidth;
-        if (width > 768) {
-            return (
-                  <DesktopHeader />
-            );
-        } else {
-            return (
-               <MobileHeader />
+    const handleWindowResize = () => {
+        setWidth(window.innerWidth);
 
-            );
-        }
+    };
+
+    useEffect(() => {
+        window.addEventListener("resize", handleWindowResize);
+        return () => window.removeEventListener("resize", handleWindowResize);
+    }, [width]);
+
+
+    const breakpoint = 620;
+
+    return(
+        width < breakpoint ? <MobileHeader /> : <DesktopHeader />
+
+    )
 };
+
+
+
+
+
 
 export default Headers
