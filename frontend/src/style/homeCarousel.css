@@ -25,11 +25,9 @@
 
 .imgTitle {
     top: 35%;
-    /*border: 2px solid blue;*/
 }
 
 .imgText {
-    /*border: 2px solid red;*/
     top: 45%;
 }
 
@@ -62,12 +60,52 @@
 @media only screen and (max-width: 600px) {}
 
 
+
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+@media only screen and (max-width: 1199px) and (min-width: 1000px) {
+
+    .carousel-item-next,
+    .carousel-item-prev
+    {
+        display: none;
+    }
+    /*.carousel {*/
+    /*    height: 25em;*/
+    /*}*/
+
+    /*.imgTitle {*/
+    /*    top: 55%;*/
+    /*    font-size: 1.2em;*/
+    /*}*/
+
+    /*.imgText {*/
+    /*    top: 65%;*/
+    /*    font-size: .9em;*/
+    /*}*/
+}
 
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+
+
+/* Medium devices (landscape tablets, 1200px and down) */
+@media only screen and (max-width: 1200px) {
+
+    .carousel {
+        height: 25em;
+    }
+
+    .imgTitle {
+        top: 35%;
+        font-size: 1.5em;
+    }
+
+    .imgText {
+        top: 45%;
+        font-size: 1.1em;
+    }
+
+}
 
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -95,7 +133,7 @@
 @media only screen and (min-width: 1472px) {
 
     .carousel {
-        height: 33em;
+        height: 35em;
     }
 
     .slider-img {
@@ -111,11 +149,13 @@
     }
 
     .imgTitle {
-        top: 25%;
+        top: 30%;
+        font-size: 2.8em;
     }
 
     .imgText {
-        top: 33%;
+        top: 40%;
+        font-size: 1.8em;
     }
 
     /*  DARK OVERLAY */
