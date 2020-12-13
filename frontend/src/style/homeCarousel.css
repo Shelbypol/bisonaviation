@@ -85,12 +85,16 @@
     /*}*/
 }
 
+/* Medium devices (landscape tablets, 1200px and down) */
+@media only screen and (max-width: 1050px) {
+
+
+}
 
 
 
 /* Medium devices (landscape tablets, 1200px and down) */
-@media only screen and (max-width: 1200px) {
-
+@media only screen and (max-width: 1200px) and (min-width:  1051px) {
     .carousel {
         height: 25em;
     }
@@ -149,12 +153,12 @@
     }
 
     .imgTitle {
-        top: 30%;
+        top: 32%;
         font-size: 2.8em;
     }
 
     .imgText {
-        top: 40%;
+        top: 42%;
         font-size: 1.8em;
     }
 
