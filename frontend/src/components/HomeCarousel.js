@@ -42,11 +42,6 @@ const items = [
         src: slide5,
         altText: 'Slide 3',
         caption: 'Slide 3'
-    },
-    {
-        src: slide6,
-        altText: 'Slide 3',
-        caption: 'Slide 3'
     }
 ];
 
