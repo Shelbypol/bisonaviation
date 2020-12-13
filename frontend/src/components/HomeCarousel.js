@@ -6,11 +6,13 @@ import {
     CarouselIndicators,
     CarouselCaption
 } from 'reactstrap';
-import slide3 from '../images/homeSlider/fullscreen-slider5.jpg'
-import slide2 from '../images/homeSlider/fullscreen-slider1.jpg'
-import slide5 from '../images/homeSlider/fullscreen-slider3.jpg'
-import slide4 from '../images/homeSlider/fullscreen-slider4.jpg'
-import slide1 from '../images/homeSlider/fullscreen-slider2.jpg'
+
+import slide1 from '../images/homeSlider/fullscreen-slider2_2000w_1000h.jpg'
+import slide2 from '../images/homeSlider/fullscreen-slider3_2000_1000.jpg'
+import slide3 from '../images/homeSlider/fullscreen-slider5_2000_1000.jpg'
+import slide4 from '../images/homeSlider/fullscreen-slider4_2000_1000.jpg'
+import slide5 from '../images/homeSlider/fullscreen-slider1_2000_1000.jpg'
+// import slide6 from '../images/homeSlider/fullscreen-slider7_2000_1000.jpg'
 import overlay from '../images/graphics/fs-slider-caption-bg.png';
 
 const items = [
@@ -38,6 +40,11 @@ const items = [
     },
     {
         src: slide5,
+        altText: 'Slide 3',
+        caption: 'Slide 3'
+    },
+    {
+        src: slide6,
         altText: 'Slide 3',
         caption: 'Slide 3'
     }
@@ -71,13 +78,13 @@ const HomeCarousel = (props) => {
                 onExited={() => setAnimating(false)}
                 key={item.src}
             >
+                <CarouselCaption captionText={item.text} captionHeader={item.caption}/>
                 {/*     SLIDER IMGS     */}
-                <img className="d-block w-100" src={item.src} alt={item.altText}/>
+                <img className="img-fluid slider-img col-xs-12" src={item.src} alt={item.altText}/>
 
                 {/*      OVERLAY IMAGE      */}
                 <img id='overlayImg' className='img-fluid' src={overlay} alt=""/>
 
-                <CarouselCaption captionText={item.text} captionHeader={item.caption}/>
             </CarouselItem>
 
         );
@@ -90,7 +97,6 @@ const HomeCarousel = (props) => {
                 next={next}
                 previous={previous}
             >
-
                 <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex}/>
                 {slides}
                 <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous}/>

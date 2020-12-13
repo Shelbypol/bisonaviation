@@ -30,14 +30,14 @@ const MobileHeader = () => {
 
                         {/*  LOGO  */}
                         <LinkContainer className='col-xs-2' to='/'>
-                            <img src={logo} className='logoNav' alt="Bison Aviation"/>
+                            <img src={logo} className='logoNav pb-2' alt="Bison Aviation"/>
                         </LinkContainer>
 
                         <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                         <Navbar.Collapse id="basic-navbar-nav">
 
                             {/*/!*  SEARCH BOX  *!/*/}
-                            <Route render={({ history}) => <SearchBox className='' history={history} />} />
+                            <Route render={({ history}) => <SearchBox history={history} />} />
 
                             <Nav className='col-md-5 col-xs-7 navFont'>
 
