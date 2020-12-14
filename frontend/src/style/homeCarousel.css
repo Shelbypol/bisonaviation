@@ -17,10 +17,10 @@
 /*   TITLE & TEXT   */
 .carousel-caption {
     position: absolute;
-    width: 40%;
     left: 3%;
     height: 2em;
     color: #fff !important;
+    width: 40%;
 }
 
 .imgTitle {
@@ -68,7 +68,7 @@
     .carousel-item-next,
     .carousel-item-prev
     {
-        display: none;
+        visibility: hidden;
     }
     /*.carousel {*/
     /*    height: 25em;*/

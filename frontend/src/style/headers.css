@@ -1,0 +1,29 @@
+
+    /* HEADER LOGO */
+.logoNav {
+    height: 18vh;
+    max-height: 100%;
+}
+
+.navFont {
+    font-size: larger;
+}
+
+.navBottomFont{
+    font-size: small;
+}
+
+.topNav {
+    height: 20vh;
+    /*max-height*/
+}
+
+.headerBtn:hover {
+    background-color: darkred;
+}
+
+.iconHover:hover{
+    color: darkred;
+}
+
+

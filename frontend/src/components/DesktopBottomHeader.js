@@ -1,9 +1,24 @@
 import React from "react";
-import {Container, Nav, Navbar, NavDropdown} from "react-bootstrap";
+import {Button, Container, Nav, Navbar, NavDropdown} from "react-bootstrap";
 import {LinkContainer} from "react-router-bootstrap";
+import SocialIcons from "./SocialIcons";
+import {useDispatch, useSelector} from "react-redux";
+import {CART_RESET} from "../constants/cartConstants";
+import {logout} from "../actions/userActions";
 
 
 const DesktopBottomHeader = () => {
+
+    const dispatch = useDispatch();
+
+    const userLogin = useSelector(state => state.userLogin);
+    const {userInfo} = userLogin;
+
+    const logoutHandler = () => {
+        // window.localStorage.clear();
+        dispatch({type: CART_RESET});
+        dispatch(logout());
+    };
 
     return (
         <header className='sticky-top bottomHeader'>
@@ -15,7 +30,7 @@ const DesktopBottomHeader = () => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                     <Navbar.Collapse id="basic-navbar-nav">
 
-                        <Nav className="m-auto navFont">
+                        <Nav className="m-auto navBottomFont">
 
                             {/*  BROWSE PRODUCTS  */}
                             <LinkContainer className='mx-1' to='/products'>
@@ -78,6 +93,87 @@ const DesktopBottomHeader = () => {
                                 </Nav.Link>
                             </LinkContainer>
 
+
+                        </Nav>
+                             {/*<SocialIcons style={'float-left'} />*/}
+                        <Nav className='navFont pr-5'>
+
+                            {/*/!*  WISH LIST  *!/*/}
+                            {/*<LinkContainer to='/cart'>*/}
+                            {/*    <Nav.Link>*/}
+                            {/*        /!*<i className="fas fa-plane"> </i> Wishlist*!/*/}
+                            {/*        <Button className='p-2 rounded-pill headerBtn'>*/}
+                            {/*            wish list*/}
+                            {/*        </Button>*/}
+                            {/*    </Nav.Link>*/}
+                            {/*</LinkContainer>*/}
+
+                            {/*  PROFILE  /  SIGN IN  */}
+                            {userInfo ? (
+                                <>
+                                    <LinkContainer to='/profile' className='pr-5'>
+                                        <Nav.Link>
+                                            {/*<i className="fas fa-plane"> </i> Wishlist*/}
+                                            {/*<Button className='p-2 rounded-pill headerBtn'>*/}
+                                               Welcome, {userInfo.name}
+                                            {/*</Button>*/}
+                                        </Nav.Link>
+                                    </LinkContainer>
+
+                                    <LinkContainer to='/profile'>
+                                        <Nav.Link onClick={logoutHandler}>
+                                            {/*<Button onClick={logoutHandler} className='rounded-pill headerBtn'>*/}
+                                            <i className="fas fa-sign-out-alt"> </i>
+                                            {/*</Button>*/}
+                                        </Nav.Link>
+                                    </LinkContainer>
+                                </>
+                                // <NavDropdown style={{zIndex: '100'}} title={(<p className='mt-1'>Welcome, {userInfo.name} </p> )} id={'username'}>
+                                //     <LinkContainer to='/profile'>
+                                //         <NavDropdown.Item>
+                                //             <i className="fas fa-user-cog"> </i> Profile
+                                //         </NavDropdown.Item>
+                                //     </LinkContainer>
+                                //     <NavDropdown.Item onClick={logoutHandler}>
+                                //         <i className="fas fa-sign-out-alt"> </i> Logout
+                                //     </NavDropdown.Item>
+                                // </NavDropdown>
+
+                            ) : <LinkContainer to='/login'>
+                                <Nav.Link>
+                                    {/*<i className='fas fa-sign-in-alt'> </i> Log in*/}
+                                    <Button className='px-3 py-2 rounded-pill headerBtn'>
+                                        log in
+                                    </Button>
+                                </Nav.Link>
+                            </LinkContainer>
+                            }
+                            {/*  REGISTER  */}
+                            {!userInfo && (
+                                <LinkContainer to='/Register'>
+                                    {/*<Nav.Link><i className='fas fa-user'> </i> Register*/}
+                                    <Nav.Link>
+                                        <Button className='px-3 py-2 rounded-pill headerBtn'>
+                                            register
+                                        </Button>
+                                    </Nav.Link>
+                                </LinkContainer>)
+                            }
+
+                            {/*  ADMIN DROPDOWN  */}
+                            {userInfo && userInfo.isAdmin && (
+                                <NavDropdown style={{zIndex: '100'}} title='Admin' id='adminmenu'>
+                                    <LinkContainer to='/admin/userlist'>
+                                        <NavDropdown.Item>Users</NavDropdown.Item>
+                                    </LinkContainer>
+                                    <LinkContainer to='/admin/productlist'>
+                                        <NavDropdown.Item>Products</NavDropdown.Item>
+                                    </LinkContainer>
+                                    <LinkContainer to='/admin/orderlist'>
+                                        <NavDropdown.Item>Orders</NavDropdown.Item>
+                                    </LinkContainer>
+                                </NavDropdown>
+                            )}
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
