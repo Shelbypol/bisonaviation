@@ -91,10 +91,11 @@ const DesktopBottomHeader = () => {
                                     Team
                                 </Nav.Link>
                             </LinkContainer>
-
-
                         </Nav>
-                        <Nav className='navFont pr-5'>
+
+
+
+                        <Nav className='navFont login pr-5'>
 
                             {/*  PROFILE  /  SIGN IN  */}
                             {userInfo ? (

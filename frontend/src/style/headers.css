@@ -11,6 +11,7 @@
 
 .navBottomFont{
     font-size: small;
+    padding-left: 6em;
 }
 
 .topNav {
@@ -22,8 +23,15 @@
     background-color: darkred;
 }
 
+.iconHover{
+    /*padding:0 .4em 0 .4em;*/
+}
+
 .iconHover:hover{
-    color: darkred;
+    background-color: darkred;
+    /*margin: .3em;*/
+    /*padding: .3em;*/
+    border-radius: 50%;
 }
 
 

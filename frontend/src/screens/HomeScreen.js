@@ -1,7 +1,5 @@
 import React from 'react'
-import HomeCarousel from "../components/HomeCarousel";
-import divider from '../images/graphics/divider1.png'
-
+import HomeJumbotron from "../components/HomeJumbotron";
 
 const HomeScreen = () => {
 
@@ -11,9 +9,7 @@ const HomeScreen = () => {
 
     return (
         <>
-            {/*<HomeCarousel />*/}
-            {/*     DIVIDER IMAGE      */}
-            {/*<img id='dividerImg' className='p-0 m-0' src={divider} alt=""/>*/}
+            <HomeJumbotron />
         </>
     )
 };
