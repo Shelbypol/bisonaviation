@@ -1,7 +1,6 @@
 import React from "react";
 import {Button, Container, Nav, Navbar, NavDropdown} from "react-bootstrap";
 import {LinkContainer} from "react-router-bootstrap";
-import SocialIcons from "./SocialIcons";
 import {useDispatch, useSelector} from "react-redux";
 import {CART_RESET} from "../constants/cartConstants";
 import {logout} from "../actions/userActions";
@@ -95,28 +94,14 @@ const DesktopBottomHeader = () => {
 
 
                         </Nav>
-                             {/*<SocialIcons style={'float-left'} />*/}
                         <Nav className='navFont pr-5'>
-
-                            {/*/!*  WISH LIST  *!/*/}
-                            {/*<LinkContainer to='/cart'>*/}
-                            {/*    <Nav.Link>*/}
-                            {/*        /!*<i className="fas fa-plane"> </i> Wishlist*!/*/}
-                            {/*        <Button className='p-2 rounded-pill headerBtn'>*/}
-                            {/*            wish list*/}
-                            {/*        </Button>*/}
-                            {/*    </Nav.Link>*/}
-                            {/*</LinkContainer>*/}
 
                             {/*  PROFILE  /  SIGN IN  */}
                             {userInfo ? (
                                 <>
                                     <LinkContainer to='/profile' className='pr-5'>
                                         <Nav.Link>
-                                            {/*<i className="fas fa-plane"> </i> Wishlist*/}
-                                            {/*<Button className='p-2 rounded-pill headerBtn'>*/}
                                                Welcome, {userInfo.name}
-                                            {/*</Button>*/}
                                         </Nav.Link>
                                     </LinkContainer>
 
@@ -128,16 +113,6 @@ const DesktopBottomHeader = () => {
                                         </Nav.Link>
                                     </LinkContainer>
                                 </>
-                                // <NavDropdown style={{zIndex: '100'}} title={(<p className='mt-1'>Welcome, {userInfo.name} </p> )} id={'username'}>
-                                //     <LinkContainer to='/profile'>
-                                //         <NavDropdown.Item>
-                                //             <i className="fas fa-user-cog"> </i> Profile
-                                //         </NavDropdown.Item>
-                                //     </LinkContainer>
-                                //     <NavDropdown.Item onClick={logoutHandler}>
-                                //         <i className="fas fa-sign-out-alt"> </i> Logout
-                                //     </NavDropdown.Item>
-                                // </NavDropdown>
 
                             ) : <LinkContainer to='/login'>
                                 <Nav.Link>
