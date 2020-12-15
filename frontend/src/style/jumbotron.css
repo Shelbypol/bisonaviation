@@ -1,15 +1,15 @@
-.jumboImg{
+.heroJumbo{
     background-image: url('../images/jumbotron/aircraft-double-decker-red-belt_1500.png');
-    /*background-image: url('../images/jumbotron/beachcraft-divider.png');*/
+    /*background-image: url('../images/jumbotron/beachcraft-fin_crop.png');*/
     background-repeat: no-repeat;
-    height: 68vh;
+    height: 70vh;
     max-height: 100%;
     background-color: black;
     margin: auto;
     padding: 0;
 }
 
-.jumboImg2{
+.fadeJumbo{
     background-image: url('../images/graphics/transparent-black-fade_1500.png');
     background-repeat: no-repeat;
     height: 50vh;

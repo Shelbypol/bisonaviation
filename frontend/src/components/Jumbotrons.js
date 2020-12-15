@@ -2,7 +2,7 @@ import React from 'react';
 import { Jumbotron, Container } from 'reactstrap';
 import '../style/jumbotron.css'
 
-const HeroJumbotron = ({ imgClass, title, text }) => {
+const Jumbotrons = ({ imgClass, title, text }) => {
     return (
         <div>
             <Jumbotron className={imgClass} fluid>
@@ -15,4 +15,4 @@ const HeroJumbotron = ({ imgClass, title, text }) => {
     );
 };
 
-export default HeroJumbotron;
+export default Jumbotrons;
