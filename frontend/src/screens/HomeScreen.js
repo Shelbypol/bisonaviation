@@ -15,7 +15,16 @@ const HomeScreen = () => {
             <Jumbotrons imgClass={'heroJumbo '} />
             <Jumbotrons imgClass={'fadeJumbo '} />
 
-            <CardFlipped imgSrc={aboutImg} imgAlt={''} title={'Bison Aviation'} titleClassName={''} subTitle={'who are we'} text={''} textClassName={''} btnTitle={''} btnClassName={''} />
+            <CardFlipped imgSrc={aboutImg}
+                         imgAlt={''}
+                         imgClassName={' img-fluid imgCard'}
+                         title={'Bison Aviation'}
+                         titleClassName={''}
+                         subTitle={'who are we'}
+                         text={'this is some text'}
+                         textClassName={''}
+                         btnTitle={'test button'}
+                         btnClassName={''} />
 
         </>
     )

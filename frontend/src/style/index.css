@@ -40,6 +40,15 @@ h2 {
     display: inline-block;
 }
 
+.flipCard {
+    transform: rotate(-90deg);
+}
+
+.imgCard {
+    width: 30vh;
+    max-width: 100%;
+}
+
 /* MOBILE RESPONSIVE */
 @media (max-width: 900px) {
     .carousel-caption h2 {
