@@ -12,7 +12,7 @@ const DesktopHeader = () => {
 
     return (
         <>
-            <DesktopStickyHeader/>
+            <DesktopStickyHeader />
 
             <Navbar expand="sm" collapseOnSelect style={{backgroundColor: 'black'}}
                     className='topNav navbar navbar-dark navbar-expand-lg p-0'>
@@ -24,7 +24,7 @@ const DesktopHeader = () => {
 
                         <Nav className='col-md-2 col-sm-6'>
                             <LinkContainer to='/'>
-                                <img src={logo} className='logoNav pb-1 ' alt="Bison Aviation"/>
+                                <img src={logo} className='logoNav pb-1 pl-1 pt-0' alt="Bison Aviation"/>
                             </LinkContainer>
                         </Nav>
 

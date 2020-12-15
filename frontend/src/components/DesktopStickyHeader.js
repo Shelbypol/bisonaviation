@@ -20,16 +20,17 @@ const DesktopStickyHeader = () => {
     };
 
     return (
-        <header className='sticky-top bottomHeader py-0'>
+        <>
+        <header className='sticky-top stickyHeader m-0 p-0'>
 
-            <Navbar className='navbar navbar-expand-lg navbar-light bg-light m-auto p-0 border-0'>
+            <Navbar className='navbar navbar-expand-lg navbar-light bg-light mx-auto my-0 p-0 border-0'>
 
                 <Container className='col-sm-12 col-md-12'>
 
                     <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                     <Navbar.Collapse id="basic-navbar-nav">
 
-                        <Nav className='col-md-8 navigationBtns justify-content-end'>
+                        <Nav className='col-md-8 m-0 navigationBtns justify-content-end'>
 
                             {/*  BROWSE PRODUCTS  */}
                             <LinkContainer className='mx-1' to='/products'>
@@ -94,7 +95,7 @@ const DesktopStickyHeader = () => {
                         </Nav>
 
                         {/*   PROFILE BTNS  */}
-                        <Nav className='col-md-4 profileBtns justify-content-end'>
+                        <Nav className='col-md-4 m-0 profileBtns justify-content-end'>
 
                             {/*  PROFILE  /  SIGN IN  */}
                             {userInfo ? (
@@ -117,7 +118,7 @@ const DesktopStickyHeader = () => {
                             ) : <LinkContainer to='/login'>
                                 <Nav.Link>
                                     {/*<i className='fas fa-sign-in-alt'> </i> Log in*/}
-                                    <Button className='px-3 py-2 rounded-pill headerBtn'>
+                                    <Button className='px-3 py-1 rounded-pill headerBtn'>
                                         log in
                                     </Button>
                                 </Nav.Link>
@@ -128,7 +129,7 @@ const DesktopStickyHeader = () => {
                                 <LinkContainer to='/Register'>
                                     {/*<Nav.Link><i className='fas fa-user'> </i> Register*/}
                                     <Nav.Link>
-                                        <Button className='px-3 py-2 rounded-pill headerBtn'>
+                                        <Button className='px-3 py-1 rounded-pill headerBtn'>
                                             register
                                         </Button>
                                     </Nav.Link>
@@ -153,7 +154,10 @@ const DesktopStickyHeader = () => {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
+            <div className='blackFade col-sm-12 position-sticky'> </div>
         </header>
+        </>
+
     )
 
 };
