@@ -20,7 +20,7 @@ const DesktopStickyHeader = () => {
     };
 
     return (
-        <header className='sticky-top bottomHeader'>
+        <header className='sticky-top bottomHeader py-0'>
 
             <Navbar className='navbar navbar-expand-lg navbar-light bg-light m-auto p-0 border-0'>
 
