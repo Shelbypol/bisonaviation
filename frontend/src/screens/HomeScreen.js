@@ -3,7 +3,8 @@ import Jumbotrons from "../components/Jumbotrons";
 import CardFlippedLeft from "../components/CardFlippedLeft";
 import CardFlippedRight from "../components/CardFlippedRight"
 import aboutImg from '../images/jumbotron/beachcraft-fin.png'
-import maintenance from '../images/activeImg/cirrusrobin2.jpg'
+import maintenance from '../images/activeImg/robin-cirrus-divider.png'
+import panel from '../images/activeImg/panel-divider.jpeg'
 
 
 const HomeScreen = () => {
@@ -25,9 +26,9 @@ const HomeScreen = () => {
                               btnTitle={'test button'}
             />
             {/*<Jumbotrons imgClass={'fadeCardJumbo '}/>*/}
-            <div className='fadeCardRight'> </div>
+            {/*<div className='fadeCardRight'> </div>*/}
 
-            <CardFlippedLeft imgSrc={maintenance}
+            <CardFlippedLeft imgSrc={panel}
                               imgAlt={''}
                               title={'Avionics'}
                               subTitle={'who are we'}
@@ -45,7 +46,7 @@ const HomeScreen = () => {
                               btnTitle={'test button'}
             />
             {/*<Jumbotrons imgClass={'fadeCardJumbo '}/>*/}
-           <div className='fadeCardRight'> </div>
+           {/*<div className='fadeCardRight'> </div>*/}
 
         </>
     )

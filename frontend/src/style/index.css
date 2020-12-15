@@ -54,10 +54,14 @@ h2 {
     max-height: 100%;
     }
 
+.cardStyle{
+    margin-top: 10vh;
+}
+
 .fadeCardLeft{
     background-image: url('../images/graphics/divider1.png');
     background-repeat: no-repeat;
-    height: 35vh;
+    height: 48vh;
     background-color: white;
     margin-top: -20vh;
     z-index: -1;
