@@ -6,7 +6,7 @@ import {CART_RESET} from "../constants/cartConstants";
 import {logout} from "../actions/userActions";
 
 
-const DesktopBottomHeader = () => {
+const DesktopStickyHeader = () => {
 
     const dispatch = useDispatch();
 
@@ -158,4 +158,4 @@ const DesktopBottomHeader = () => {
 
 };
 
-export default DesktopBottomHeader
+export default DesktopStickyHeader
