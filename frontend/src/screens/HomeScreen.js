@@ -17,14 +17,11 @@ const HomeScreen = () => {
 
             <CardFlipped imgSrc={aboutImg}
                          imgAlt={''}
-                         imgClassName={' img-fluid imgCard'}
                          title={'Bison Aviation'}
-                         titleClassName={''}
                          subTitle={'who are we'}
                          text={'this is some text'}
-                         textClassName={''}
                          btnTitle={'test button'}
-                         btnClassName={''} />
+                          />
 
         </>
     )

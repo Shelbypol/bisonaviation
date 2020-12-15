@@ -45,8 +45,10 @@ h2 {
 }
 
 .imgCard {
-    width: 30vh;
+    width: 100vh;
     max-width: 100%;
+    height: 20vw;
+    max-height: 100%;
 }
 
 /* MOBILE RESPONSIVE */
