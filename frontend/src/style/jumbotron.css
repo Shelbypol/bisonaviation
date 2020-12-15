@@ -2,7 +2,7 @@
     background-image: url('../images/jumbotron/aircraft-double-decker-red-belt_1500.png');
     /*background-image: url('../images/jumbotron/beachcraft-fin_crop.png');*/
     background-repeat: no-repeat;
-    height: 70vh;
+    height: 72vh;
     max-height: 100%;
     background-color: black;
     margin: auto;
@@ -14,6 +14,7 @@
     background-repeat: no-repeat;
     height: 48vh;
     background-color: white;
-    margin: auto ;
+    margin: auto;
     padding: 0;
 }
+
