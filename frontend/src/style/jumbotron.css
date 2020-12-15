@@ -1,4 +1,18 @@
 .jumboImg{
-    background-image: url('../images/homeSlider/fullscreen-slider2.jpg');
+    background-image: url('../images/jumbotron/aircraft-double-decker-red-belt_1500.png');
     background-repeat: no-repeat;
+    height: 60vh;
+    max-height: 100%;
+    background-color: black;
+    margin: auto;
+    padding: 0;
+}
+
+.jumboImg2{
+    background-image: url('../images/graphics/transparent-black-fade_1500.png');
+    background-repeat: no-repeat;
+    height: 50vh;
+    background-color: white;
+    margin: auto ;
+    padding: 0;
 }

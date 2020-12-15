@@ -1,5 +1,5 @@
 import React from 'react'
-import HomeJumbotron from "../components/HomeJumbotron";
+import HeroJumbotron from "../components/HeroJumbotron";
 
 const HomeScreen = () => {
 
@@ -9,7 +9,8 @@ const HomeScreen = () => {
 
     return (
         <>
-            <HomeJumbotron />
+            <HeroJumbotron imgClass={'jumboImg'} />
+            <HeroJumbotron imgClass={'jumboImg2'} />
         </>
     )
 };
