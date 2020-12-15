@@ -1,0 +1,53 @@
+
+.logoNav {
+    height: 15vh;
+    max-height: 100%;
+}
+
+.navigationBtns{
+    font-size: small;
+    /*padding-left: 15%;*/
+}
+
+.topNav {
+    height: 20vh;
+    max-height: 100%;
+    margin-top: -7vh;
+    z-index: 2;
+}
+
+.headerBtn {
+    background-color: darkred;
+}
+
+.headerBtn:hover {
+    background-color: black;
+}
+
+
+.iconHover:hover{
+    background-color: darkred;
+    border-radius: 20%;
+}
+
+.profileBtns {
+    font-size: larger;
+}
+
+.searchBtnColor{
+    background-color: #f7f7f9;
+}
+
+.searchBtnColor:hover{
+    background-color: darkred;
+    color: black;
+}
+
+.blackFade{
+    background-image: url("../images/graphics/black-fade.png");
+    position: relative;
+    margin-top: -5vh;
+    height: 12vh;
+    top:0;
+    z-index: -1;
+}

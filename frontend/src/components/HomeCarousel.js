@@ -6,6 +6,7 @@ import {
     CarouselIndicators,
     CarouselCaption
 } from 'reactstrap';
+import '../style/homeCarousel.css'
 
 import slide1 from '../images/homeSlider/fullscreen-slider2_2000w_1000h.jpg'
 import slide2 from '../images/homeSlider/fullscreen-slider3_2000_1000.jpg'
