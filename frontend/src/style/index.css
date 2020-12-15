@@ -47,9 +47,17 @@ h2 {
 .imgCard {
     width: 100vh;
     max-width: 100%;
-    height: 20vw;
+    height: 25vw;
     max-height: 100%;
 }
+
+.textCard {
+    width: 100vh;
+    max-width: 100%;
+    height: 25vw;
+    max-height: 100%;
+    background: transparent;
+    }
 
 /* MOBILE RESPONSIVE */
 @media (max-width: 900px) {
