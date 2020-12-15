@@ -24,12 +24,12 @@ const DesktopBottomHeader = () => {
 
             <Navbar className='navbar navbar-expand-lg navbar-light bg-light m-auto p-0 border-0'>
 
-                <Container className='col-sm-12'>
+                <Container className='col-sm-12 col-md-12'>
 
                     <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                     <Navbar.Collapse id="basic-navbar-nav">
 
-                        <Nav className="m-auto navBottomFont">
+                        <Nav className='col-md-8 navigationBtns justify-content-end'>
 
                             {/*  BROWSE PRODUCTS  */}
                             <LinkContainer className='mx-1' to='/products'>
@@ -93,9 +93,8 @@ const DesktopBottomHeader = () => {
                             </LinkContainer>
                         </Nav>
 
-
-
-                        <Nav className='navFont login pr-5'>
+                        {/*   PROFILE BTNS  */}
+                        <Nav className='col-md-4 profileBtns justify-content-end'>
 
                             {/*  PROFILE  /  SIGN IN  */}
                             {userInfo ? (

@@ -1,37 +1,35 @@
 
-    /* HEADER LOGO */
 .logoNav {
     height: 18vh;
     max-height: 100%;
 }
 
-.navFont {
-    font-size: larger;
-}
-
-.navBottomFont{
+.navigationBtns{
     font-size: small;
-    padding-left: 6em;
+    /*padding-left: 15%;*/
 }
 
 .topNav {
     height: 20vh;
-    /*max-height*/
+    max-height: 100%;
+}
+
+.headerBtn {
+    background-color: darkred;
 }
 
 .headerBtn:hover {
-    background-color: darkred;
+    background-color: black;
 }
 
-.iconHover{
-    /*padding:0 .4em 0 .4em;*/
-}
 
 .iconHover:hover{
     background-color: darkred;
-    /*margin: .3em;*/
-    /*padding: .3em;*/
     border-radius: 50%;
+}
+
+.profileBtns {
+    font-size: larger;
 }
 
 
