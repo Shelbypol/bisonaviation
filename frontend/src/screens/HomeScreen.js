@@ -5,11 +5,13 @@ import CardFlippedLeft from "../components/CardFlippedLeft";
 import CardFlippedRight from "../components/CardFlippedRight"
 import aboutImg from '../images/jumbotron/hangar.png'
 import panel from '../images/activeImg/panel-divider.jpeg'
+import maintenance from '../images/activeImg/robin-cirrus-divider.png'
 import AlertDismissible from "../components/AlertDismissible";
+import CardOverlay from "../components/CardImgOverlay";
 
 
 const HomeScreen = () => {
-    const [show, setShow] = useState(false)
+    const [show, setShow] = useState(false);
 
     window.onbeforeunload = () => {
         localStorage.clear()
@@ -29,11 +31,6 @@ const HomeScreen = () => {
                 <Col className='m-auto'>
                     <AlertDismissible icon={<i className='fas fa-tools' style={{color: 'white'}}/>}
                                       title={<h5 style={{color: 'white'}}>FAA Diamond Award Recipient </h5>}
-                                      note={'Bison Aviation is a fully licensed FAA Part 145 Repair Station with Airframe, Instrument and Radio capabilities, an accreditation which is extremely difficult to attain and sets Bison Aviation apart from most other general aviation shops. Among other privileges, this licensure allows Bison Aviation to conduct testing and re-certification of aircraft static systems and transponder equipment. Bison Aviation is the holder of FAA Air Agency Certificate Number 85NR497D.'}/>
-                </Col>
-                <Col className='m-auto'>
-                    <AlertDismissible icon={<i className='fas fa-tools' style={{color: 'white'}}/>}
-                                      title={<h5 style={{color: 'white'}}><em>NEW!</em> Certified Garmin Dealer </h5>}
                                       note={'Bison Aviation is a fully licensed FAA Part 145 Repair Station with Airframe, Instrument and Radio capabilities, an accreditation which is extremely difficult to attain and sets Bison Aviation apart from most other general aviation shops. Among other privileges, this licensure allows Bison Aviation to conduct testing and re-certification of aircraft static systems and transponder equipment. Bison Aviation is the holder of FAA Air Agency Certificate Number 85NR497D.'}/>
                 </Col>
             </Row>
@@ -69,15 +66,38 @@ const HomeScreen = () => {
             {/*<Jumbotrons imgClass={'fadeCardJumbo '}/>*/}
             <div className='fadeCardLeft'> </div>
 
-            {/*<CardFlippedRight imgSrc={maintenance}*/}
-            {/*                  imgAlt={''}*/}
-            {/*                  title={'Maintenance'}*/}
-            {/*                  subTitle={'who are we'}*/}
-            {/*                  text={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. A autem consectetur deleniti dicta dignissimos eligendi laborum, maiores neque, nesciunt nisi non odit perferendis quasi quidem quos recusandae soluta veniam voluptatum.'}*/}
-            {/*                  btnTitle={'test button'}*/}
-            {/*/>*/}
-            {/*/!*<Jumbotrons imgClass={'fadeCardJumbo '}/>*!/*/}
-            {/*/!*<div className='fadeCardRight'> </div>*!/*/}
+
+
+
+
+
+            <Row className='' style={{ marginBottom: '20vh' }} xs={12}>
+                <Col className=''>
+                    <CardOverlay />
+                </Col>
+                <Col className='m-auto'>
+                    <CardOverlay />
+                </Col>
+                <Col className='m-auto'>
+                    <CardOverlay />
+                </Col>
+            </Row>
+
+
+
+
+
+
+
+            <CardFlippedRight imgSrc={maintenance}
+                              imgAlt={''}
+                              title={'Maintenance'}
+                              subTitle={'who are we'}
+                              text={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. A autem consectetur deleniti dicta dignissimos eligendi laborum, maiores neque, nesciunt nisi non odit perferendis quasi quidem quos recusandae soluta veniam voluptatum.'}
+                              btnTitle={'test button'}
+            />
+            {/*<Jumbotrons imgClass={'fadeCardJumbo '}/>*/}
+            <div className='fadeCardRight'> </div>
         </>
     )
 };
