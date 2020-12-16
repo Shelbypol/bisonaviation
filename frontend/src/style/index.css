@@ -40,6 +40,15 @@ h2 {
     display: inline-block;
 }
 
+
+.circleHover:hover {
+    background-color: black;
+}
+
+/* HEADER LOGO */
+.logoNav {
+    height: 12vh;
+
 .imgCard {
     width: 103vh;
     max-width: 100%;
