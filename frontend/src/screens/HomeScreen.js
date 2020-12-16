@@ -19,7 +19,6 @@ import {CardBody} from "reactstrap";
 
 
 const HomeScreen = () => {
-    // const [show, setShow] = useState(false);
 
     window.onbeforeunload = () => {
         localStorage.clear()
@@ -48,7 +47,7 @@ const HomeScreen = () => {
                     </Row>
 
 
-                    {/*   CARD NAV  */}
+                    {/*  =============  CARD NAV  =============  */}
                     <Row className='mx-auto' style={{marginBottom: '30vh'}}>
                         <Link to='#'>
 
@@ -85,7 +84,7 @@ const HomeScreen = () => {
                     </Row>
 
 
-                    {/*   WHY BISON   */}
+                    {/*  =============  WHY BISON  =============  */}
                     <CardFlippedLeft imgSrc={aboutImg}
                                      imgClassName={'img-fluid float-left imgCardAbout'}
                                      imgAlt={''}
@@ -104,7 +103,7 @@ const HomeScreen = () => {
             </main>
 
 
-            {/*      AVIONICS SECTION       */}
+            {/*   =============   AVIONICS SECTION   =============    */}
 
             <CardFlippedLeft imgSrc={panel}
                              imgClassName={'img-fluid float-left imgCardAvionics'}
@@ -151,10 +150,10 @@ const HomeScreen = () => {
                              btnBottomVariant={'none'}
             />
 
-            <div className='fadeCardLeft'></div>
+            <div className='fadeCardLeft'> </div>
 
 
-            {/*      MECHANICS SECTION       */}
+            {/*   =============   MECHANICS SECTION    =============   */}
 
             <CardFlippedRight imgSrc={tayseerAvionics}
                               imgClassName={'img-fluid float-right imgCardAvionics'}
