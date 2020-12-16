@@ -1,16 +1,21 @@
 import React, {useState} from 'react'
-import {Col, Container, Row} from 'react-bootstrap'
+import {Button, Col, Container, Row} from 'react-bootstrap'
+import {Link} from 'react-router-dom'
 import Jumbotrons from "../components/Jumbotrons";
 import CardFlippedLeft from "../components/CardFlippedLeft";
 import CardFlippedRight from "../components/CardFlippedRight"
 import AlertDismissible from "../components/AlertDismissible";
-import CardOverlay from "../components/CardImgOverlay";
+import CardOverlay from "../components/CardOverlay";
 import aboutImg from '../images/jumbotron/hangar.png'
 import panel from '../images/activeImg/panel-divider.jpeg'
+import avionics from '../images/activeImg/panal-avionics.JPG'
 import maintenance from '../images/activeImg/robin-cirrus-divider.png'
+import flir from '../images/homeSlider/fullscreen-slider1.jpg'
 import cncMachine from "../images/jumbotron/cnc-machine-divider.png"
 import tayseerAvionics from "../images/activeImg/tayseer-1.jpg"
 import panelCard from '../images/jumbotron/fullscreen-slider2.jpg'
+import garmin from '../images/activeImg/garmin-dealership.png'
+import {CardBody} from "reactstrap";
 
 
 const HomeScreen = () => {
@@ -25,23 +30,62 @@ const HomeScreen = () => {
             <Jumbotrons imgClass={'heroJumbo '}/>
             <Jumbotrons imgClass={'fadeJumbo '}/>
 
-
-            <Row className='' style={{marginTop: '-40vh', marginBottom: '20vh' }} xs={12}>
-                <Col className=''>
-                    <AlertDismissible icon={<i className='fas fa-tools' style={{color: 'white'}}/>}
-                                      title={<h5 className='' style={{color: 'white'}}>FAA Part 145 Repair Station </h5>}
-                                      note={'Bison Aviation is a fully licensed FAA Part 145 Repair Station with Airframe, Instrument and Radio capabilities, an accreditation which is extremely difficult to attain and sets Bison Aviation apart from most other general aviation shops. Among other privileges, this licensure allows Bison Aviation to conduct testing and re-certification of aircraft static systems and transponder equipment. Bison Aviation is the holder of FAA Air Agency Certificate Number 85NR497D.'}/>
-                </Col>
-                <Col className='m-auto'>
-                    <AlertDismissible icon={<i className='fas fa-tools' style={{color: 'white'}}/>}
-                                      title={<h5 style={{color: 'white'}}>FAA Diamond Award Recipient </h5>}
-                                      note={'Bison Aviation is a fully licensed FAA Part 145 Repair Station with Airframe, Instrument and Radio capabilities, an accreditation which is extremely difficult to attain and sets Bison Aviation apart from most other general aviation shops. Among other privileges, this licensure allows Bison Aviation to conduct testing and re-certification of aircraft static systems and transponder equipment. Bison Aviation is the holder of FAA Air Agency Certificate Number 85NR497D.'}/>
-                </Col>
-            </Row>
-
-
-            <main className='mt-5 mx-5 '>
+            <main className='mx-auto' style={{marginTop: '-40vh', marginBottom: '30vh'}}>
                 <Container>
+
+                    {/*  =============   ICONS ROW  =============== */}
+                    <Row className='justify-content-center' style={{marginBottom: '20vh', marginTop: '20vh'}} xs={12}>
+                        <Col xs={6}>
+                            <Button className='display-inline-block py-2 px-3 rounded-circle'
+                                    variant='danger'><i className="fal fa-tools"> </i></Button>
+                            <h4> FAA Part 145 Repair Station</h4>
+                        </Col>
+                        <Col xs={6}>
+                            <Button className='display-inline-block py-2 px-3 rounded-circle'
+                                    variant='danger'><i className="fal fa-award"> </i></Button>
+                            <h4> FAA Diamond Award Recipient</h4>
+                        </Col>
+                    </Row>
+
+
+                    {/*   CARD NAV  */}
+                    <Row className='mx-auto' style={{marginBottom: '30vh'}}>
+                        <Link to='#'>
+
+                        </Link>
+                        <Col>
+                            <CardOverlay
+                                imgSrc={avionics}
+                                cardTitle={'AVIONICS'}
+                            >
+                            </CardOverlay>
+                        </Col>
+                        <Col>
+                            <CardOverlay
+                                imgSrc={maintenance}
+                                cardTitle={'MAINTENANCE'}
+                            >
+                            </CardOverlay>
+                        </Col>
+                        <Col>
+                            <CardOverlay
+                                imgSrc={flir}
+                                cardTitle={'EO / IR FLIR'}
+                            >
+                            </CardOverlay>
+                        </Col>
+
+                        <Col>
+                            <CardOverlay
+                                imgSrc={garmin}
+                                cardTitle={'Certified Garmin Dealer!'}
+                            >
+                            </CardOverlay>
+                        </Col>
+                    </Row>
+
+
+                    {/*   WHY BISON   */}
                     <CardFlippedLeft imgSrc={aboutImg}
                                      imgClassName={'img-fluid float-left imgCardAbout'}
                                      imgAlt={''}
@@ -55,18 +99,19 @@ const HomeScreen = () => {
                                      btnTitle={''}
                                      btnClassName={'none'}
                     />
+
                 </Container>
             </main>
 
-            {/*<Jumbotrons imgClass={'fadeCardJumbo '}/>*/}
-            {/*<div className='fadeCardRight'> </div>*/}
+
+            {/*      AVIONICS SECTION       */}
 
             <CardFlippedLeft imgSrc={panel}
                              imgClassName={'img-fluid float-left imgCardAvionics'}
                              titleStyle={''}
                              imgAlt={''}
                              title={'Avionics'}
-                             subTitle={'who are we'}
+                             subTitle={'full service avionics staff'}
                              btnIconStyle={''}
                              btnIconVariant={'danger'}
                              textIcon={<i className="fal fa-tachometer-alt-slow "> </i>}
@@ -77,18 +122,18 @@ const HomeScreen = () => {
             />
 
             <CardFlippedRight imgSrc={tayseerAvionics}
-                             imgClassName={'img-fluid float-right imgCardAvionics'}
-                             titleStyle={''}
-                             imgAlt={''}
-                             title={''}
-                             subTitle={''}
-                             btnIconStyle={''}
-                             btnIconVariant={'danger'}
-                             textIcon={<i className="fal fa-tachometer-alt-slow "> </i>}
-                             text={'Whether you need to add ADS-B OUT capabilities in order to meet the December 31, 2019 deadline, a routine pitot-static / transponder certification, or it\'s time for a completely new panel, Bison Aviation\'s Avionics Team is ready to bring your avionics systems into the 21st century! We are installers for virtually all major avionics manufacturers, so we can build you the very best panel for your mission and budget. Cutting-edge technology, such as CNC machining, laser engraving, and 3D printing, put our installations in a class of their own!'}
-                             btnTitle={'Avionics'}
-                             btnBottomStyle={{visibility: 'hidden'}}
-                             btnBottomVariant={'none'}
+                              imgClassName={'img-fluid float-right imgCardAvionics'}
+                              titleStyle={''}
+                              imgAlt={''}
+                              title={''}
+                              subTitle={'installers for virtually all major avionics manufacturers'}
+                              btnIconStyle={''}
+                              btnIconVariant={'danger'}
+                              textIcon={<i className="fal fa-tachometer-alt-slow "> </i>}
+                              text={'Whether you need to add ADS-B OUT capabilities in order to meet the December 31, 2019 deadline, a routine pitot-static / transponder certification, or it\'s time for a completely new panel, Bison Aviation\'s Avionics Team is ready to bring your avionics systems into the 21st century! We are installers for virtually all major avionics manufacturers, so we can build you the very best panel for your mission and budget. Cutting-edge technology, such as CNC machining, laser engraving, and 3D printing, put our installations in a class of their own!'}
+                              btnTitle={'Avionics'}
+                              btnBottomStyle={{visibility: 'hidden'}}
+                              btnBottomVariant={'none'}
             />
 
             <CardFlippedLeft imgSrc={cncMachine}
@@ -96,7 +141,7 @@ const HomeScreen = () => {
                              titleStyle={''}
                              imgAlt={''}
                              title={''}
-                             subTitle={''}
+                             subTitle={'CNC machining, laser engraving, 3D printing and more'}
                              btnIconStyle={''}
                              btnIconVariant={'danger'}
                              textIcon={<i className="fal fa-tachometer-alt-slow "> </i>}
@@ -106,46 +151,47 @@ const HomeScreen = () => {
                              btnBottomVariant={'none'}
             />
 
+            <div className='fadeCardLeft'></div>
+
+
+            {/*      MECHANICS SECTION       */}
+
+            <CardFlippedRight imgSrc={tayseerAvionics}
+                              imgClassName={'img-fluid float-right imgCardAvionics'}
+                              titleStyle={''}
+                              imgAlt={''}
+                              title={'Mechanics'}
+                              subTitle={'full service avionics staff'}
+                              btnIconStyle={''}
+                              btnIconVariant={'danger'}
+                              textIcon={<i className="fal fa-tachometer-alt-slow "> </i>}
+                              text={'Bison Aviation is proud to have a full-time avionics team in-house. While many shops “sub out” their avionics work, Bison Aviation maintains a full service avionics staff as a part of our workforce. Our capabilities range from basic troubleshooting to complete panel installations and by having all services in-house (including CNC panel fabrication, laser engraving, and 3D printing) we are able to save time and reduce costs for our customers.'}
+                              btnTitle={'Avionics'}
+                              btnBottomStyle={{visibility: 'hidden'}}
+                              btnBottomVariant={'none'}
+            />
+
+            <CardFlippedLeft imgSrc={panel}
+                             imgClassName={'img-fluid float-left imgCardAvionics'}
+                             titleStyle={''}
+                             imgAlt={''}
+                             title={''}
+                             subTitle={'installers for virtually all major avionics manufacturers'}
+                             btnIconStyle={''}
+                             btnIconVariant={'danger'}
+                             textIcon={<i className="fal fa-tachometer-alt-slow "> </i>}
+                             text={'Whether you need to add ADS-B OUT capabilities in order to meet the December 31, 2019 deadline, a routine pitot-static / transponder certification, or it\'s time for a completely new panel, Bison Aviation\'s Avionics Team is ready to bring your avionics systems into the 21st century! We are installers for virtually all major avionics manufacturers, so we can build you the very best panel for your mission and budget. Cutting-edge technology, such as CNC machining, laser engraving, and 3D printing, put our installations in a class of their own!'}
+                             btnTitle={'Avionics'}
+                             btnBottomStyle={{visibility: 'hidden'}}
+                             btnBottomVariant={'none'}
+            />
+
+
             <div className='fadeCardLeft'> </div>
 
 
-
-
-
-
-            {/*<Row className='' style={{ marginBottom: '30vh' }} xs={12}>*/}
-            {/*    <Col className=''>*/}
-            {/*        <CardOverlay imgSrc={cncMachine}*/}
-            {/*                     imgClassName={'overlayImg'}*/}
-            {/*                     cardTitle={''}*/}
-            {/*                     cardText={''}*/}
-            {/*                     cardSmallText={''} />*/}
-            {/*    </Col>*/}
-            {/*    <Col className='m-auto'>*/}
-            {/*        <CardOverlay imgSrc={tayseerAvionics}*/}
-            {/*                     imgClassName={'overlayImg'}*/}
-            {/*                     cardTitle={''}*/}
-            {/*                     cardText={''}*/}
-            {/*                     cardSmallText={''} />*/}
-            {/*    </Col>*/}
-            {/*    <Col className='m-auto'>*/}
-            {/*        <CardOverlay imgSrc={panelCard}*/}
-            {/*                     imgClassName={'overlayImg'}*/}
-            {/*                     cardTitle={''}*/}
-            {/*                     cardText={''}*/}
-            {/*                     cardSmallText={''} />*/}
-            {/*    </Col>*/}
-            {/*</Row>*/}
-
-
-
-
-
-
-
-
             {/*<Jumbotrons imgClass={'fadeCardJumbo '}/>*/}
-            <div className='fadeCardRight'> </div>
+            {/*<div className='fadeCardRight'> </div>*/}
         </>
     )
 };
