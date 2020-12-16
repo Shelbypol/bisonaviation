@@ -40,6 +40,7 @@ h2 {
     display: inline-block;
 }
 
+
 .circleHover:hover {
     background-color: black;
 }
@@ -47,13 +48,48 @@ h2 {
 /* HEADER LOGO */
 .logoNav {
     height: 12vh;
+
+.imgCard {
+    width: 103vh;
+    max-width: 100%;
+    height: 25vw;
     max-height: 100%;
 }
 
-.navFont {
-    font-size: larger;
+.textCard {
+    width: 100vh;
+    max-width: 100%;
+    height: 25vw;
+    max-height: 100%;
+    }
+
+.cardStyle{
+    margin-top: 10vh;
 }
 
+.fadeCardLeft{
+    background-image: url('../images/graphics/divider1.png');
+    background-repeat: no-repeat;
+    height: 48vh;
+    background-color: white;
+    margin-top: -20vh;
+    z-index: -1;
+    padding: 0;
+    /*transform: rotate(240deg);*/
+    transform: scale(-1, 1);
+}
+
+.fadeCardRight{
+    background-image: url('../images/graphics/divider1.png');
+    background-repeat: no-repeat;
+    height: 35vh;
+    background-color: white;
+    margin-top: -20vh;
+    z-index: -1;
+    padding: 0;
+    /*transform: rotate(240deg);*/
+    /*transform: scale(-1, -1);*/
+}
 
 /* MOBILE RESPONSIVE */
 @media (max-width: 900px) {

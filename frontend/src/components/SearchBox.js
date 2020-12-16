@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
-import {Form, Button} from 'react-bootstrap'
+import {Form, Button, Nav} from 'react-bootstrap'
 
-const SearchBox = ({history}) => {
+const SearchBox = ({history, navClasses ,searchClasses, formClasses, buttonClasses, buttonStyle, searchSize}) => {
     const [keyword, setKeyword] = useState('');
 
     const submitHandler = (e) => {
@@ -15,24 +15,23 @@ const SearchBox = ({history}) => {
     };
 
     return (
-
-        <Form onSubmit={submitHandler} inline className='ml-auto searchBar col-sm-5'>
+            <Form onSubmit={submitHandler} inline className={searchClasses}>
                 <Form.Control
                     type='text'
                     name='searchBar'
                     value={keyword}
                     placeholder='Search for Garmin Products...'
                     onChange={(e) => setKeyword(e.target.value)}
-                    size='sm'
-                    className='rounded-left col-sm-9 searchInput '
+                    size={searchSize}
+                    className={formClasses}
                 >
                 </Form.Control>
                 <Button type='submit' size='lg'
-                        style={{backgroundColor: 'black'}} className='p-2 col-sm-1 rounded-right'
+                        style={{buttonStyle}} className={buttonClasses}
                 >
-                    <i style={{color: 'red'}} className="fas fa-search"> </i>
+                    <i style={{color: 'black'}} className="fas fa-search"> </i>
                 </Button>
-        </Form>
+            </Form>
     )
 };
 
