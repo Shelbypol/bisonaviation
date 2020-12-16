@@ -10,7 +10,6 @@ const AlertDismissible = (props) => {
                 <p>
                     <h5 className='mt-2'>{props.title}</h5>
                     <Button onClick={() => setShow(true)} variant='danger' >{props.icon}</Button>
-
                 </p>
 
 
