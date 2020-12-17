@@ -167,7 +167,7 @@ const MobileHeader = () => {
                                 {/*  EO/IR  */}
                                 <NavDropdown style={{zIndex: '100'}}
                                              className='mx-1'
-                                             title='EO/IR'
+                                             title='EO/IR  Flir'
                                              id='eoirmenu'
                                 >
                                     {/*   EO / IR MAINTENANCE */}
@@ -182,7 +182,7 @@ const MobileHeader = () => {
 
                                     {/*   EO / IR PARTS  */}
                                     <LinkContainer to='/eoir/parts'>
-                                        <NavDropdown.Item>EO/IR Parts</NavDropdown.Item>
+                                        <NavDropdown.Item>EO/IR</NavDropdown.Item>
                                     </LinkContainer>
                                 </NavDropdown>
 
@@ -192,14 +192,6 @@ const MobileHeader = () => {
                                         Meet the Team
                                     </Nav.Link>
                                 </LinkContainer>
-
-                                {/*  BROWSE PRODUCTS  */}
-                                <LinkContainer className='mx-1' to='/products'>
-                                    <Nav.Link>
-                                        Contact
-                                    </Nav.Link>
-                                </LinkContainer>
-
                             </Nav>
 
                             {/*   SOCIAL ICONS   */}
@@ -208,6 +200,17 @@ const MobileHeader = () => {
                                          contactClassName={'d-none'}
                                          cartClassName={'d-none'}
                             />
+
+                            <Nav className='px-3'>
+                                {/*  BROWSE PRODUCTS  */}
+                                <LinkContainer className='mx-1' to='/'>
+                                    <Nav.Link>
+                                        <Button className='px-3 py-1 rounded-pill mobileHeaderBtn'>
+                                            Contact Us
+                                        </Button>
+                                    </Nav.Link>
+                                </LinkContainer>
+                            </Nav>
 
                         </Navbar.Collapse>
                     </Container>

@@ -24,6 +24,15 @@
     background-color: black;
 }
 
+.mobileHeaderBtn {
+    background-color: white;
+    color: black;
+}
+
+.mobileHeaderBtn:hover {
+    background-color: darkred;
+}
+
 
 .iconHover:hover{
     background-color: darkred;
