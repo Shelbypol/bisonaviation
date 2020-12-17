@@ -8,11 +8,9 @@ import DesktopStickyHeader from "./DesktopStickyHeader";
 import SocialIcons from "./SocialIcons";
 
 const DesktopHeader = () => {
-
-
     return (
         <>
-            <DesktopStickyHeader />
+            <DesktopStickyHeader/>
 
             <Navbar expand="sm" collapseOnSelect style={{backgroundColor: 'black'}}
                     className='topNav navbar navbar-dark navbar-expand-lg p-0'>
@@ -24,7 +22,9 @@ const DesktopHeader = () => {
 
                         <Nav className='col-md-2 col-sm-6'>
                             <LinkContainer to='/'>
-                                <img src={logo} className='logoNav pb-1 pl-1 pt-0' alt="Bison Aviation"/>
+                                <img src={logo}
+                                     className='logoNav pb-1 pl-1 pt-0'
+                                     alt="Bison Aviation"/>
                             </LinkContainer>
                         </Nav>
 
@@ -34,10 +34,14 @@ const DesktopHeader = () => {
                                                                      searchClasses={'p-0 ml-md-5 ml-sm-0 col-sm-12'}
                                                                      formClasses={'col-sm-10 rounded-left'}
                                                                      buttonClasses={'col-sm-1 py-md-2 py-sm-0 searchBtnColor rounded-right'}
-                                                                     buttonStyle={''}/>}/>
+                                                                     btnSize={'lg'}
+                            />
+                            }
+                            />
                         </Nav>
 
-                        <SocialIcons styleBootstrap={'float-left col-md-2 col-s4 justify-content-end'}/>
+                        <SocialIcons socialClassName={'col-md-2 col-sm-4 justify-content-end'}
+                                     socialStyle={{fontSize: '1.5em'}}/>
 
                     </Navbar.Collapse>
                 </Container>

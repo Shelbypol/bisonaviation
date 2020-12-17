@@ -44,7 +44,7 @@
 }
 
 .blackFade{
-    /*background-image: url("src/images/graphics/small-black-fade.png");*/
+    background-image: url("../images/graphics/small-black-fade.png");
     position: relative;
     margin-top: -5vh;
     height: 12vh;

@@ -1,7 +1,8 @@
 import React, {useState} from 'react'
 import {Form, Button, Nav} from 'react-bootstrap'
+import SocialIcons from "./SocialIcons";
 
-const SearchBox = ({history, navClasses ,searchClasses, formClasses, buttonClasses, buttonStyle, searchSize}) => {
+const SearchBox = ({history, searchClasses, formClasses, buttonClasses, btnSize, searchSize}) => {
     const [keyword, setKeyword] = useState('');
 
     const submitHandler = (e) => {
@@ -15,6 +16,8 @@ const SearchBox = ({history, navClasses ,searchClasses, formClasses, buttonClass
     };
 
     return (
+        <>
+            <SocialIcons/>
             <Form onSubmit={submitHandler} inline className={searchClasses}>
                 <Form.Control
                     type='text'
@@ -26,12 +29,12 @@ const SearchBox = ({history, navClasses ,searchClasses, formClasses, buttonClass
                     className={formClasses}
                 >
                 </Form.Control>
-                <Button type='submit' size='lg'
-                        style={{buttonStyle}} className={buttonClasses}
+                <Button type='submit' size={btnSize} className={buttonClasses}
                 >
                     <i style={{color: 'black'}} className="fas fa-search"> </i>
                 </Button>
             </Form>
+        </>
     )
 };
 
