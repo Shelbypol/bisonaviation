@@ -6,15 +6,15 @@ import CardFlippedLeft from "../components/CardFlippedLeft";
 import CardFlippedRight from "../components/CardFlippedRight"
 import AlertDismissible from "../components/AlertDismissible";
 import CardOverlay from "../components/CardOverlay";
-import aboutImg from '../images/jumbotron/hangar.png'
-import panel from '../images/activeImg/panel-divider.jpeg'
-import avionics from '../images/activeImg/panal-avionics.JPG'
-import maintenance from '../images/activeImg/robin-cirrus-divider.png'
-import flir from '../images/homeSlider/fullscreen-slider1.jpg'
-import cncMachine from "../images/jumbotron/cnc-machine-divider.png"
-import tayseerAvionics from "../images/activeImg/tayseer-1.jpg"
-import panelCard from '../images/jumbotron/fullscreen-slider2.jpg'
-import garmin from '../images/activeImg/garmin-dealership.png'
+import aboutImg from '../images/general/hangar.png'
+import panel from '../images/avionics/panel-divider.jpeg'
+import avionics from '../images/avionics/panal-avionics.JPG'
+import maintenance from '../images/mechanics/robin-cirrus-divider.png'
+import flir from '../images/flir/flir-1.jpg'
+import cncMachine from "../images/avionics/cnc-machine-divider.png"
+import tayseerAvionics from "../images/avionics/tayseer-1.jpg"
+import panelCard from '../images/avionics/panal-avionics.JPG'
+import garmin from '../images/avionics/garmin-dealership.png'
 import {CardBody} from "reactstrap";
 
 

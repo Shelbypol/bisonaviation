@@ -3,7 +3,7 @@ import {Route} from 'react-router-dom'
 import {Navbar, Container, Nav} from 'react-bootstrap'
 import {LinkContainer} from 'react-router-bootstrap'
 import SearchBox from "./SearchBox";
-import logo from '../images/activeImg/Final-Logo-Horizontal.png'
+import logo from '../images/general/Final-Logo-Horizontal.png'
 import DesktopStickyHeader from "./DesktopStickyHeader";
 import SocialIcons from "./SocialIcons";
 

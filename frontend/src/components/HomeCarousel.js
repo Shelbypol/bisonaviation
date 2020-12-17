@@ -14,7 +14,7 @@ import slide3 from '../images/homeSlider/fullscreen-slider5_2000_1000.jpg'
 import slide4 from '../images/homeSlider/fullscreen-slider4_2000_1000.jpg'
 import slide5 from '../images/homeSlider/fullscreen-slider1_2000_1000.jpg'
 
-import overlay from '../images/graphics/dark-overlays/fs-slider-caption-bg_1000_450.png';
+import overlay from '../images/dark-overlays/fs-slider-caption-bg_1000_450.png';
 
 const items = [
     {
