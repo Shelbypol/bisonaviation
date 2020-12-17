@@ -7,6 +7,12 @@ const AlertDismissible = (props) => {
 
     return (
         <>
+
+                <p>
+                    <h5 className='mt-2'>{props.title}</h5>
+                    <Button onClick={() => setShow(true)} variant='danger' >{props.icon}</Button>
+                </p>
+
             {show &&
 
             <Alert>
@@ -16,6 +22,7 @@ const AlertDismissible = (props) => {
                 {': ' + props.note}
                 {/*</p>*/}
             </Alert>
+
 
 
             }
