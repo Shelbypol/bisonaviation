@@ -43,6 +43,16 @@ h2 {
 
 /*  CARDS   */
 
+
+.circleHover:hover {
+    background-color: black;
+}
+
+/* HEADER LOGO */
+.logoNav {
+    height: 12vh;
+
+
 .imgCard {
     width: 80vh;
     max-width: 100%;
