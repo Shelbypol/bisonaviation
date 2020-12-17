@@ -8,6 +8,7 @@ const AlertDismissible = (props) => {
     return (
         <>
 
+
                 <p className='d-inline'>
                     <Button
                         onMouseOver={() => setShow(true)}
@@ -20,6 +21,7 @@ const AlertDismissible = (props) => {
                     <h5>{props.title2}</h5>
 
                 </p>
+
             {show &&
 
             <Alert>
@@ -30,6 +32,7 @@ const AlertDismissible = (props) => {
                 {props.note}
                 {/*</p>*/}
             </Alert>
+
 
             }
 
