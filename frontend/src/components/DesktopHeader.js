@@ -12,8 +12,11 @@ const DesktopHeader = () => {
         <>
             <DesktopStickyHeader/>
 
-            <Navbar expand="sm" collapseOnSelect style={{backgroundColor: 'black'}}
-                    className='topNav navbar navbar-dark navbar-expand-lg p-0'>
+            <Navbar expand="sm"
+                    collapseOnSelect
+                    style={{backgroundColor: 'black'}}
+                    className='topNav navbar navbar-dark navbar-expand-lg p-0'
+            >
 
                 <Container className='col-md-12 col-sm-12'>
 
@@ -35,9 +38,7 @@ const DesktopHeader = () => {
                                                                      formClasses={'col-sm-10 rounded-left'}
                                                                      buttonClasses={'col-sm-1 py-md-2 py-sm-0 searchBtnColor rounded-right'}
                                                                      btnSize={'lg'}
-                            />
-                            }
-                            />
+                            />}/>
                         </Nav>
 
                         <SocialIcons socialClassName={'col-md-2 col-sm-4 justify-content-end'}
