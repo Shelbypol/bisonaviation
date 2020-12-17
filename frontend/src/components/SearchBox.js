@@ -17,7 +17,6 @@ const SearchBox = ({history, searchClasses, formClasses, buttonClasses, btnSize,
 
     return (
         <>
-            <SocialIcons/>
             <Form onSubmit={submitHandler} inline className={searchClasses}>
                 <Form.Control
                     type='text'

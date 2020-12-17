@@ -3,43 +3,43 @@ import {Nav, Navbar} from "react-bootstrap";
 import {LinkContainer} from "react-router-bootstrap";
 
 
-const SocialIcons = ({socialClassName, socialStyle}) => {
+const SocialIcons = ({socialClassName, socialStyle, cartClassName, contactClassName, facebookClassName, instaClassName, twitterClassName}) => {
 
     return (
         <>
-            <Nav className={socialClassName} style={socialStyle}>
+            <Nav className={socialClassName} style={socialStyle} >
 
                 {/*  WISH LIST  */}
-                <LinkContainer to='/cart'>
-                    <Nav.Link >
+                <LinkContainer className={cartClassName} to='/cart'>
+                    <Nav.Link>
                         {/*<i className="fas fa-plane"> </i>*/}
                         <i style={{color: 'white'}} className="m-auto iconHover fas fa-shopping-cart"> </i>
                     </Nav.Link>
                 </LinkContainer>
 
                 {/*  CONTACT */}
-                <LinkContainer to='/'>
+                <LinkContainer className={contactClassName} to='/'>
                     <Nav.Link>
                         <i style={{color: 'white'}} className="m-auto iconHover far fa-envelope"> </i>
                     </Nav.Link>
                 </LinkContainer>
 
                 {/*  FACEBOOK  */}
-                <LinkContainer  to='/'>
+                <LinkContainer className={facebookClassName} to='/'>
                     <Nav.Link>
                         <i style={{color: 'white'}} className="m-auto iconHover fab fa-facebook"> </i>
                     </Nav.Link>
                 </LinkContainer>
 
                 {/*  INSTAGRAM */}
-                <LinkContainer to='/'>
+                <LinkContainer className={instaClassName} to='/'>
                     <Nav.Link>
                         <i style={{color: 'white'}} className="m-auto iconHover fab fa-instagram"> </i>
                     </Nav.Link>
                 </LinkContainer>
 
                 {/*  TWITTER */}
-                <LinkContainer to='/'>
+                <LinkContainer className={twitterClassName} to='/'>
                     <Nav.Link>
                         <i style={{color: 'white'}} className="m-auto iconHover fab fa-twitter"> </i>
                     </Nav.Link>

@@ -1,12 +1,13 @@
 import React from 'react'
 import {Route} from 'react-router-dom'
-import {Navbar, Nav, Container, NavDropdown, Image} from 'react-bootstrap'
+import {Navbar, Nav, Container, NavDropdown, Image, Button} from 'react-bootstrap'
 import {useDispatch, useSelector} from 'react-redux'
 import {LinkContainer} from 'react-router-bootstrap'
 import {logout} from '../actions/userActions'
 import SearchBox from "./SearchBox";
 import {CART_RESET} from "../constants/cartConstants";
 import logo from '../images/general/Final-Logo-Horizontal.png'
+import SocialIcons from "./SocialIcons";
 
 const MobileHeader = () => {
 
@@ -24,7 +25,8 @@ const MobileHeader = () => {
     return (
         <>
             <header style={{borderBottom: '3px solid red'}}
-                    className='m-auto header d-block p-0 col-xs-12'>
+                    className='m-auto header d-block p-0 col-xs-12'
+            >
 
                 <Navbar expand="md"
                         collapseOnSelect
@@ -32,7 +34,7 @@ const MobileHeader = () => {
                         className='topNav navbar navbar-dark navbar-expand-md ml-auto my-auto px-0 py-3 col-xs-12'
                 >
                     <Container
-                        className='m-2'
+                        className=''
                         style={{backgroundColor: 'black'}}
                     >
 
@@ -58,13 +60,6 @@ const MobileHeader = () => {
                                     />}/>
                                 </Nav.Link>
 
-                                {/*  WISH LIST  */}
-                                <LinkContainer to='/cart'>
-                                    <Nav.Link>
-                                        <i className="fas fa-cart"> </i> Wishlist
-                                    </Nav.Link>
-                                </LinkContainer>
-
                                 {/*  PROFILE  /  SIGN IN  */}
                                 {userInfo ? (
                                     <NavDropdown style={{zIndex: '100'}}
@@ -76,6 +71,7 @@ const MobileHeader = () => {
                                                 <i className="fas fa-user-cog"> </i> Profile
                                             </NavDropdown.Item>
                                         </LinkContainer>
+
                                         <NavDropdown.Item onClick={logoutHandler}>
                                             <i className="fas fa-sign-out-alt"> </i> Logout
                                         </NavDropdown.Item>
@@ -83,7 +79,10 @@ const MobileHeader = () => {
 
                                 ) : <LinkContainer to='/login'>
                                     <Nav.Link>
-                                        <i className='fas fa-sign-in-alt'> </i> Log in
+                                        {/*<i className='fas fa-sign-in-alt'> </i> Log in*/}
+                                        <Button className='px-3 py-1 rounded-pill headerBtn'>
+                                            Log in
+                                        </Button>
                                     </Nav.Link>
                                 </LinkContainer>
                                 }
@@ -91,7 +90,10 @@ const MobileHeader = () => {
                                 {!userInfo && (
                                     <LinkContainer to='/Register'>
                                         <Nav.Link>
-                                            <i className='fas fa-user'> </i> Register
+                                            {/*<i className='fas fa-user'> </i> Register*/}
+                                            <Button className='px-3 py-1 rounded-pill headerBtn'>
+                                                register
+                                            </Button>
                                         </Nav.Link>
                                     </LinkContainer>)
                                 }
@@ -105,14 +107,23 @@ const MobileHeader = () => {
                                         <LinkContainer to='/admin/userlist'>
                                             <NavDropdown.Item>Users</NavDropdown.Item>
                                         </LinkContainer>
+
                                         <LinkContainer to='/admin/productlist'>
                                             <NavDropdown.Item>Products</NavDropdown.Item>
                                         </LinkContainer>
+
                                         <LinkContainer to='/admin/orderlist'>
                                             <NavDropdown.Item>Orders</NavDropdown.Item>
                                         </LinkContainer>
                                     </NavDropdown>
                                 )}
+
+                                {/*  WISH LIST  */}
+                                <LinkContainer to='/cart'>
+                                    <Nav.Link>
+                                        <i className="fas fa-shopping-cart"> </i> Cart
+                                    </Nav.Link>
+                                </LinkContainer>
 
                                 {/*  BROWSE PRODUCTS  */}
                                 <LinkContainer className='mx-1' to='/products'>
@@ -178,11 +189,26 @@ const MobileHeader = () => {
                                 {/*  TEAM  */}
                                 <LinkContainer to='/team'>
                                     <Nav.Link>
-                                        Team
+                                        Meet the Team
+                                    </Nav.Link>
+                                </LinkContainer>
+
+                                {/*  BROWSE PRODUCTS  */}
+                                <LinkContainer className='mx-1' to='/products'>
+                                    <Nav.Link>
+                                        Contact
                                     </Nav.Link>
                                 </LinkContainer>
 
                             </Nav>
+
+                            {/*   SOCIAL ICONS   */}
+                            <SocialIcons socialClassName={'col-md-2 col-sm-4 px-3 d-inline-block justify-content-end'}
+                                         socialStyle={{fontSize: '1.5em'}}
+                                         contactClassName={'d-none'}
+                                         cartClassName={'d-none'}
+                            />
+
                         </Navbar.Collapse>
                     </Container>
                 </Navbar>
