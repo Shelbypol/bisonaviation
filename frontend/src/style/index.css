@@ -86,7 +86,7 @@ h2 {
 }
 
 .fadeCardLeft{
-    background-image: url('../images/graphics/divider1.png');
+    background-image: url('src/images/graphics/dividers/divider-black-top-large-left.png');
     background-repeat: no-repeat;
     height: 48vh;
     background-color: white;
@@ -98,7 +98,7 @@ h2 {
 }
 
 .fadeCardRight{
-    background-image: url('../images/graphics/divider1.png');
+    background-image: url('src/images/graphics/dividers/divider-black-top-large-left.png');
     background-repeat: no-repeat;
     height: 35vh;
     background-color: white;

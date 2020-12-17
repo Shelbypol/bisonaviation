@@ -10,7 +10,7 @@
 }
 
 .fadeJumbo{
-    background-image: url('../images/graphics/transparent-black-fade_1500.png');
+    background-image: url('src/images/graphics/dividers/transparent-black-fade_1500.png');
     background-repeat: no-repeat;
     height: 48vh;
     background-color: white;
