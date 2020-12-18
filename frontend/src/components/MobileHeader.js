@@ -24,12 +24,12 @@ const MobileHeader = () => {
 
     return (
         <>
-            <header className='m-auto bisonRedBtmBorder header d-block p-0 col-xs-12' >
+            <header className='m-auto bisonRedBtmBorder header d-block p-0 col-xs-12'>
 
                 <Navbar expand="md"
                         collapseOnSelect
                         style={{backgroundColor: 'black'}}
-                        className='topNav navbar navbar-dark navbar-expand-md ml-auto my-auto px-0 py-3 col-xs-12'
+                        className='topNav navbar navbar-dark navbar-expand-md ml-auto my-auto px-0 py-3 col-xs-12 border-0'
                 >
                     <Container
                         className=''
@@ -63,14 +63,14 @@ const MobileHeader = () => {
 
                             <Nav className='px-3'>
                                 {/*<Nav className='px-3'>*/}
-                                    {/*  BROWSE PRODUCTS  */}
-                                    <LinkContainer className='mx-1' to='/'>
-                                        <Nav.Link>
-                                            <Button className='px-3 py-1 rounded-pill bisonRedBtn'>
-                                                Contact Us
-                                            </Button>
-                                        </Nav.Link>
-                                    </LinkContainer>
+                                {/*  BROWSE PRODUCTS  */}
+                                <LinkContainer className='mx-1' to='/'>
+                                    <Nav.Link>
+                                        <Button className='px-3 py-1 rounded-pill bisonRedBtn'>
+                                            Contact Us
+                                        </Button>
+                                    </Nav.Link>
+                                </LinkContainer>
                                 {/*</Nav>*/}
 
                                 {/*  PROFILE  /  SIGN IN  */}
@@ -122,7 +122,7 @@ const MobileHeader = () => {
                                         </LinkContainer>
 
                                         <LinkContainer to='/admin/productlist'>
-                                            <NavDropdown.Item>Products</NavDropdown.Item>
+                                            <NavDropdown.Item> Products </NavDropdown.Item>
                                         </LinkContainer>
 
                                         <LinkContainer to='/admin/orderlist'>
@@ -147,34 +147,34 @@ const MobileHeader = () => {
 
                                 {/*  AIR CRAFT SERVICES  */}
                                 <NavDropdown style={{zIndex: '100'}}
-                                             className='mx-1'
+                                             className='mx-1 navDropdown'
                                              title='Aircraft Services'
                                              id='aircraftservicesmenu'
                                 >
-                                    {/*   AVIONICS  */}
-                                    <LinkContainer to='/avionics'>
-                                        <NavDropdown.Item>Avionics</NavDropdown.Item>
-                                    </LinkContainer>
+                                        {/*   AVIONICS  */}
+                                        <LinkContainer to='/avionics'>
+                                            <NavDropdown.Item> Avionics </NavDropdown.Item>
+                                        </LinkContainer>
 
-                                    {/*   MAINTENANCE  */}
-                                    <LinkContainer to='/maintenance'>
-                                        <NavDropdown.Item>Maintenance</NavDropdown.Item>
-                                    </LinkContainer>
+                                        {/*   MAINTENANCE  */}
+                                        <LinkContainer to='/maintenance'>
+                                            <NavDropdown.Item> Maintenance </NavDropdown.Item>
+                                        </LinkContainer>
 
-                                    {/*   AOG RESPONSE  */}
-                                    <LinkContainer to='/aog'>
-                                        <NavDropdown.Item>AOG Response</NavDropdown.Item>
-                                    </LinkContainer>
+                                        {/*   AOG RESPONSE  */}
+                                        <LinkContainer to='/aog'>
+                                            <NavDropdown.Item>AOG Response </NavDropdown.Item>
+                                        </LinkContainer>
 
-                                    {/*   ACQUISITIONS  */}
-                                    <LinkContainer to='/acquisitions'>
-                                        <NavDropdown.Item>Acquisitions</NavDropdown.Item>
-                                    </LinkContainer>
+                                        {/*   ACQUISITIONS  */}
+                                        <LinkContainer to='/acquisitions'>
+                                            <NavDropdown.Item> Acquisitions </NavDropdown.Item>
+                                        </LinkContainer>
 
-                                    {/*   AIRCRAFT PARTS  */}
-                                    <LinkContainer to='/aircraftparts'>
-                                        <NavDropdown.Item>Aircraft Parts</NavDropdown.Item>
-                                    </LinkContainer>
+                                        {/*   AIRCRAFT PARTS  */}
+                                        <LinkContainer to='/aircraftparts'>
+                                            <NavDropdown.Item>Aircraft Parts </NavDropdown.Item>
+                                        </LinkContainer>
                                 </NavDropdown>
 
                                 {/*  EO/IR  */}
@@ -185,12 +185,12 @@ const MobileHeader = () => {
                                 >
                                     {/*   EO / IR MAINTENANCE */}
                                     <LinkContainer to='/eoir/maintenance'>
-                                        <NavDropdown.Item>EO/IR Maintenance</NavDropdown.Item>
+                                        <NavDropdown.Item>EO/IR Maintenance </NavDropdown.Item>
                                     </LinkContainer>
 
                                     {/*   SYSTEM SALES  */}
                                     <LinkContainer to='/systemsales'>
-                                        <NavDropdown.Item>System Sales</NavDropdown.Item>
+                                        <NavDropdown.Item>System Sales </NavDropdown.Item>
                                     </LinkContainer>
 
                                     {/*   EO / IR PARTS  */}
