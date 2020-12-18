@@ -13,7 +13,7 @@ const SocialIcons = ({socialClassName, socialStyle, cartClassName, contactClassN
                 <LinkContainer className={cartClassName} to='/cart'>
                     <Nav.Link>
                         <span className={'socialIcons'}>
-                            <i className="far fa-cart-arrow-down"> </i>
+                            <i className="m-auto far fa-cart-arrow-down"> </i>
                         </span>
                     </Nav.Link>
                 </LinkContainer>
@@ -31,7 +31,7 @@ const SocialIcons = ({socialClassName, socialStyle, cartClassName, contactClassN
                 <LinkContainer className={facebookClassName} to='/'>
                     <Nav.Link>
                         <span className={'socialIcons'}>
-                         <i className="m-auto fab fa-facebook"> </i>
+                            <i className="m-auto fab fa-facebook"> </i>
                         </span>
                     </Nav.Link>
                 </LinkContainer>
