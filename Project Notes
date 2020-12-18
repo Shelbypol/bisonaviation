@@ -1,5 +1,7 @@
 Notes for pulling and running project:
 
+#900009 : BISON SITE RED RGB COLOR CODE
+
 
 If you run into: ERESOLVE unable to resolve dependency tree, run this command:
 (Make sure you’re in the frontend)

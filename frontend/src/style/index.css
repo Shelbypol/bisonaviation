@@ -18,6 +18,38 @@ main {
     min-height: 80vh;
 }
 
+/* SITE COLOR */
+.bisonRedBtmBorder{
+    border-bottom: 3px solid #900009;
+}
+
+.bisonRedTxt{
+    color: rgba(90, 00, 09, 1);
+}
+
+.bisonRedBgColor{
+    background-color: rgba(90, 00, 09, 1);
+}
+
+.bisonRedBtn{
+    background-color: rgba(90, 00, 09, 1);
+}
+
+.bisonRedBtn:hover {
+    background-color: white;
+    color: rgba(90, 00, 09, 1);
+}
+
+.bisonWhiteBtn{
+    background-color: #f6f5f8;
+    color: rgba(90, 00, 09, 1);
+}
+
+.bisonWhiteBtn:hover {
+    background-color: rgba(90, 00, 09, 1);
+    color: white;
+}
+
 
 h3 {
     padding: 1rem 0;

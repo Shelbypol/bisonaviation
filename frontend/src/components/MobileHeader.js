@@ -24,9 +24,7 @@ const MobileHeader = () => {
 
     return (
         <>
-            <header style={{borderBottom: '3px solid red'}}
-                    className='m-auto header d-block p-0 col-xs-12'
-            >
+            <header className='m-auto bisonRedBtmBorder header d-block p-0 col-xs-12' >
 
                 <Navbar expand="md"
                         collapseOnSelect
@@ -50,15 +48,30 @@ const MobileHeader = () => {
                         <Navbar.Collapse id="basic-navbar-nav">
 
                             {/*/!*  SEARCH BOX  *!/*/}
-                            <Nav className='px-3'>
+                            <Nav className=''>
                                 <Nav.Link>
                                     <Route render={({history}) => <SearchBox history={history}
                                                                              searchSize={'sm'}
-                                                                             searchClasses={'w-100'}
-                                                                             formClasses={''}
-                                                                             buttonClasses={'d-none'}
+                                                                             formClasses={'w-100 col-12'}
+                                                                             searchClasses={'col-10'}
+                                                                             btnSize={'sm'}
+                                                                             btnClasses={'bisonWhiteBtn px-1 col-2 rounded-right'}
+                                                                             iconStyle={{fontSize: '1.55em'}}
                                     />}/>
                                 </Nav.Link>
+                            </Nav>
+
+                            <Nav className='px-3'>
+                                {/*<Nav className='px-3'>*/}
+                                    {/*  BROWSE PRODUCTS  */}
+                                    <LinkContainer className='mx-1' to='/'>
+                                        <Nav.Link>
+                                            <Button className='px-3 py-1 rounded-pill bisonRedBtn'>
+                                                Contact Us
+                                            </Button>
+                                        </Nav.Link>
+                                    </LinkContainer>
+                                {/*</Nav>*/}
 
                                 {/*  PROFILE  /  SIGN IN  */}
                                 {userInfo ? (
@@ -80,23 +93,23 @@ const MobileHeader = () => {
                                 ) : <LinkContainer to='/login'>
                                     <Nav.Link>
                                         {/*<i className='fas fa-sign-in-alt'> </i> Log in*/}
-                                        <Button className='px-3 py-1 rounded-pill headerBtn'>
+                                        <Button className='px-3 py-1 rounded-pill bisonRedBtn'>
                                             Log in
                                         </Button>
                                     </Nav.Link>
                                 </LinkContainer>
                                 }
                                 {/*  REGISTER  */}
-                                {!userInfo && (
-                                    <LinkContainer to='/Register'>
-                                        <Nav.Link>
-                                            {/*<i className='fas fa-user'> </i> Register*/}
-                                            <Button className='px-3 py-1 rounded-pill headerBtn'>
-                                                register
-                                            </Button>
-                                        </Nav.Link>
-                                    </LinkContainer>)
-                                }
+                                {/*{!userInfo && (*/}
+                                {/*    // <LinkContainer to='/Register'>*/}
+                                {/*    //     <Nav.Link>*/}
+                                {/*    //         /!*<i className='fas fa-user'> </i> Register*!/*/}
+                                {/*    //         <Button className='px-3 py-1 rounded-pill bisonRedBtn'>*/}
+                                {/*    //             register*/}
+                                {/*    //         </Button>*/}
+                                {/*    //     </Nav.Link>*/}
+                                {/*    // </LinkContainer>)*/}
+                                {/*}*/}
 
                                 {/*  ADMIN DROPDOWN  */}
                                 {userInfo && userInfo.isAdmin && (
@@ -121,7 +134,7 @@ const MobileHeader = () => {
                                 {/*  WISH LIST  */}
                                 <LinkContainer to='/cart'>
                                     <Nav.Link>
-                                        <i className="fas fa-shopping-cart"> </i> Cart
+                                        <i className="fas fa-shopping-cart" style={{fontSize: '1.5em'}}> </i>
                                     </Nav.Link>
                                 </LinkContainer>
 
@@ -201,16 +214,6 @@ const MobileHeader = () => {
                                          cartClassName={'d-none'}
                             />
 
-                            <Nav className='px-3'>
-                                {/*  BROWSE PRODUCTS  */}
-                                <LinkContainer className='mx-1' to='/'>
-                                    <Nav.Link>
-                                        <Button className='px-3 py-1 rounded-pill mobileHeaderBtn'>
-                                            Contact Us
-                                        </Button>
-                                    </Nav.Link>
-                                </LinkContainer>
-                            </Nav>
 
                         </Navbar.Collapse>
                     </Container>
