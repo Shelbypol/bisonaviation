@@ -50,6 +50,11 @@ main {
     color: white;
 }
 
+/*   FONT-AWESOME   */
+.socialIcons:hover{
+    color: rgba(90, 00, 09, 1);
+}
+
 
 h3 {
     padding: 1rem 0;

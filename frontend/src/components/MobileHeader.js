@@ -60,93 +60,18 @@ const MobileHeader = () => {
                             {/*/!*  SEARCH BOX  *!/*/}
                             {/*<Nav className=''>*/}
                             {/*    <Nav.Link>*/}
-                                    <Route render={({history}) => <SearchBox history={history}
-                                                                             searchSize={'sm'}
-                                                                             formClasses={'col-12 my-4'}
-                                                                             searchClasses={'col-10'}
-                                                                             btnSize={'sm'}
-                                                                             btnClasses={'bisonWhiteBtn px-1 col-2 rounded-right'}
-                                                                             iconStyle={{fontSize: '1.53em'}}
-                                    />}/>
+                            <Route render={({history}) => <SearchBox history={history}
+                                                                     searchSize={'sm'}
+                                                                     formClasses={'col-12 my-4'}
+                                                                     searchClasses={'col-10'}
+                                                                     btnSize={'sm'}
+                                                                     btnClasses={'bisonWhiteBtn px-1 col-2 rounded-right'}
+                                                                     iconStyle={{fontSize: '1.53em'}}
+                            />}/>
                             {/*    </Nav.Link>*/}
                             {/*</Nav>*/}
 
                             <Nav className='px-3'>
-                                {/*<Nav className='px-3'>*/}
-                                {/*  BROWSE PRODUCTS  */}
-                                <LinkContainer className='mx-1' to='/'>
-                                    <Nav.Link>
-                                        <Button className='px-3 py-1 rounded-pill bisonRedBtn'>
-                                            Contact Us
-                                        </Button>
-                                    </Nav.Link>
-                                </LinkContainer>
-                                {/*</Nav>*/}
-
-                                {/*  PROFILE  /  SIGN IN  */}
-                                {userInfo ? (
-                                    <NavDropdown style={{zIndex: '100'}}
-                                                 title={userInfo.name}
-                                                 id={'username'}
-                                    >
-                                        <LinkContainer to='/profile'>
-                                            <NavDropdown.Item>
-                                                <i className="fas fa-user-cog"> </i> Profile
-                                            </NavDropdown.Item>
-                                        </LinkContainer>
-
-                                        <NavDropdown.Item onClick={logoutHandler}>
-                                            <i className="fas fa-sign-out-alt"> </i> Logout
-                                        </NavDropdown.Item>
-                                    </NavDropdown>
-
-                                ) : <LinkContainer to='/login'>
-                                    <Nav.Link>
-                                        {/*<i className='fas fa-sign-in-alt'> </i> Log in*/}
-                                        <Button className='px-3 py-1 rounded-pill bisonRedBtn'>
-                                            Log in
-                                        </Button>
-                                    </Nav.Link>
-                                </LinkContainer>
-                                }
-                                {/*  REGISTER  */}
-                                {/*{!userInfo && (*/}
-                                {/*    // <LinkContainer to='/Register'>*/}
-                                {/*    //     <Nav.Link>*/}
-                                {/*    //         /!*<i className='fas fa-user'> </i> Register*!/*/}
-                                {/*    //         <Button className='px-3 py-1 rounded-pill bisonRedBtn'>*/}
-                                {/*    //             register*/}
-                                {/*    //         </Button>*/}
-                                {/*    //     </Nav.Link>*/}
-                                {/*    // </LinkContainer>)*/}
-                                {/*}*/}
-
-                                {/*  ADMIN DROPDOWN  */}
-                                {userInfo && userInfo.isAdmin && (
-                                    <NavDropdown style={{zIndex: '100'}}
-                                                 title='Admin'
-                                                 id='adminmenu'
-                                    >
-                                        <LinkContainer to='/admin/userlist'>
-                                            <NavDropdown.Item>Users</NavDropdown.Item>
-                                        </LinkContainer>
-
-                                        <LinkContainer to='/admin/productlist'>
-                                            <NavDropdown.Item> Products </NavDropdown.Item>
-                                        </LinkContainer>
-
-                                        <LinkContainer to='/admin/orderlist'>
-                                            <NavDropdown.Item>Orders</NavDropdown.Item>
-                                        </LinkContainer>
-                                    </NavDropdown>
-                                )}
-
-                                {/*  WISH LIST  */}
-                                <LinkContainer to='/cart'>
-                                    <Nav.Link>
-                                        <i className="fas fa-shopping-cart" style={{fontSize: '1.5em'}}> </i>
-                                    </Nav.Link>
-                                </LinkContainer>
 
                                 {/*  BROWSE PRODUCTS  */}
                                 <LinkContainer className='mx-1' to='/products'>
@@ -219,11 +144,74 @@ const MobileHeader = () => {
 
                             {/*   SOCIAL ICONS   */}
                             <SocialIcons socialClassName={'col-md-2 col-sm-4 px-3 d-inline-block justify-content-end'}
-                                         socialStyle={{fontSize: '1.5em'}}
+                                         socialStyle={{fontSize: '1.8em'}}
                                          contactClassName={'d-none'}
-                                         cartClassName={'d-none'}
                             />
 
+                            <Nav className='px-3'>
+                                {/*  PROFILE  /  SIGN IN  */}
+                                {userInfo ? (
+                                    <NavDropdown style={{zIndex: '100'}}
+                                                 title={userInfo.name}
+                                                 id={'username'}
+                                    >
+                                        <LinkContainer to='/profile'>
+                                            <NavDropdown.Item>
+                                                <i style={{fontSize: '1.8em'}} className="pr-2 fas fa-user-cog"> </i> Profile
+                                            </NavDropdown.Item>
+                                        </LinkContainer>
+
+                                        <NavDropdown.Item onClick={logoutHandler}>
+                                            {/*<span className='socialIcons'>*/}
+                                            {/*<i style={{fontSize: '1.8em'}} className="fas fa-sign-out-alt"> </i>*/}
+                                            <i style={{fontSize: '1.8em'}}
+                                               className="pr-2 fal fa-plane-departure"> </i> Log out
+                                            {/*</span>*/}
+                                        </NavDropdown.Item>
+                                    </NavDropdown>
+
+                                ) : <LinkContainer to='/login'>
+                                    <Nav.Link>
+                                        <Button className='px-3 py-1 rounded-pill bisonRedBtn'>
+                                            {/*Log in*/}
+                                            <i style={{fontSize: '1.8em'}}
+                                               className="pr-2 fal fa-plane-arrival"> </i> Log in
+                                        </Button>
+                                    </Nav.Link>
+                                </LinkContainer>
+                                }
+
+                                {/*  ADMIN DROPDOWN  */}
+                                {userInfo && userInfo.isAdmin && (
+                                    <NavDropdown style={{zIndex: '100'}}
+                                                 title='Admin'
+                                                 id='adminmenu'
+                                    >
+                                        <LinkContainer to='/admin/userlist'>
+                                            <NavDropdown.Item>Users</NavDropdown.Item>
+                                        </LinkContainer>
+
+                                        <LinkContainer to='/admin/productlist'>
+                                            <NavDropdown.Item> Products </NavDropdown.Item>
+                                        </LinkContainer>
+
+                                        <LinkContainer to='/admin/orderlist'>
+                                            <NavDropdown.Item>Orders</NavDropdown.Item>
+                                        </LinkContainer>
+                                    </NavDropdown>
+                                )}
+
+
+                                {/*  CONTACT US  */}
+                                <LinkContainer className='mx-1' to='/'>
+                                    <Nav.Link>
+                                        <Button className='px-3 py-1 rounded-pill bisonRedBtn'>
+                                            Contact Us
+                                        </Button>
+                                    </Nav.Link>
+                                </LinkContainer>
+
+                            </Nav>
 
                         </Navbar.Collapse>
                     </Container>
