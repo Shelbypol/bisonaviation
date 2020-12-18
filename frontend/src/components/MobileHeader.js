@@ -29,7 +29,17 @@ const MobileHeader = () => {
                 <Navbar expand="md"
                         collapseOnSelect
                         style={{backgroundColor: 'black'}}
-                        className='topNav navbar navbar-dark navbar-expand-md ml-auto my-auto px-0 py-3 col-xs-12 border-0'
+                        className='
+                            topNav
+                            navbar
+                            navbar-dark
+                            navbar-expand-md
+                            ml-auto
+                            my-auto
+                            px-0
+                            py-3
+                            col-xs-12
+                            border-0'
                 >
                     <Container
                         className=''
@@ -48,18 +58,18 @@ const MobileHeader = () => {
                         <Navbar.Collapse id="basic-navbar-nav">
 
                             {/*/!*  SEARCH BOX  *!/*/}
-                            <Nav className=''>
-                                <Nav.Link>
+                            {/*<Nav className=''>*/}
+                            {/*    <Nav.Link>*/}
                                     <Route render={({history}) => <SearchBox history={history}
                                                                              searchSize={'sm'}
-                                                                             formClasses={'w-100 col-12'}
+                                                                             formClasses={'col-12 my-4'}
                                                                              searchClasses={'col-10'}
                                                                              btnSize={'sm'}
                                                                              btnClasses={'bisonWhiteBtn px-1 col-2 rounded-right'}
-                                                                             iconStyle={{fontSize: '1.55em'}}
+                                                                             iconStyle={{fontSize: '1.53em'}}
                                     />}/>
-                                </Nav.Link>
-                            </Nav>
+                            {/*    </Nav.Link>*/}
+                            {/*</Nav>*/}
 
                             <Nav className='px-3'>
                                 {/*<Nav className='px-3'>*/}
@@ -151,30 +161,30 @@ const MobileHeader = () => {
                                              title='Aircraft Services'
                                              id='aircraftservicesmenu'
                                 >
-                                        {/*   AVIONICS  */}
-                                        <LinkContainer to='/avionics'>
-                                            <NavDropdown.Item> Avionics </NavDropdown.Item>
-                                        </LinkContainer>
+                                    {/*   AVIONICS  */}
+                                    <LinkContainer to='/avionics'>
+                                        <NavDropdown.Item> Avionics </NavDropdown.Item>
+                                    </LinkContainer>
 
-                                        {/*   MAINTENANCE  */}
-                                        <LinkContainer to='/maintenance'>
-                                            <NavDropdown.Item> Maintenance </NavDropdown.Item>
-                                        </LinkContainer>
+                                    {/*   MAINTENANCE  */}
+                                    <LinkContainer to='/maintenance'>
+                                        <NavDropdown.Item> Maintenance </NavDropdown.Item>
+                                    </LinkContainer>
 
-                                        {/*   AOG RESPONSE  */}
-                                        <LinkContainer to='/aog'>
-                                            <NavDropdown.Item>AOG Response </NavDropdown.Item>
-                                        </LinkContainer>
+                                    {/*   AOG RESPONSE  */}
+                                    <LinkContainer to='/aog'>
+                                        <NavDropdown.Item>AOG Response </NavDropdown.Item>
+                                    </LinkContainer>
 
-                                        {/*   ACQUISITIONS  */}
-                                        <LinkContainer to='/acquisitions'>
-                                            <NavDropdown.Item> Acquisitions </NavDropdown.Item>
-                                        </LinkContainer>
+                                    {/*   ACQUISITIONS  */}
+                                    <LinkContainer to='/acquisitions'>
+                                        <NavDropdown.Item> Acquisitions </NavDropdown.Item>
+                                    </LinkContainer>
 
-                                        {/*   AIRCRAFT PARTS  */}
-                                        <LinkContainer to='/aircraftparts'>
-                                            <NavDropdown.Item>Aircraft Parts </NavDropdown.Item>
-                                        </LinkContainer>
+                                    {/*   AIRCRAFT PARTS  */}
+                                    <LinkContainer to='/aircraftparts'>
+                                        <NavDropdown.Item>Aircraft Parts </NavDropdown.Item>
+                                    </LinkContainer>
                                 </NavDropdown>
 
                                 {/*  EO/IR  */}

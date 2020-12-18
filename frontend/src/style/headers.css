@@ -45,6 +45,21 @@
 
 /*   NAV DROPDOWN STYLE    */
 
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler.show {
+    border: none;
+}
+
+button.navbar-toggler:hover {
+    background-color: rgba(90, 00, 09, 1);
+    color: white;
+    border-radius: 20%;
+
+}
+
 .dropdown-menu {
     border-left: 5px solid rgba(90, 00, 09,1);
     /*border-top: 5px solid rgba(90, 00, 09,1);*/
