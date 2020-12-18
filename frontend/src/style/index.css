@@ -20,7 +20,7 @@ main {
 
 /* SITE COLOR */
 .bisonRedBtmBorder{
-    border-bottom: 3px solid #900009;
+    border-bottom: 3px solid rgba(90, 00, 09, 1);
 }
 
 .bisonRedTxt{
@@ -50,10 +50,38 @@ main {
     color: white;
 }
 
+
 /*   FONT-AWESOME   */
 .socialIcons:hover{
     color: rgba(90, 00, 09, 1);
 }
+/* HIDE AND SHOW ICONS */
+.iconHidden .hideLogin {
+    display: none;
+}
+
+.iconHidden:hover .hideLogin{
+    display: inherit;
+}
+
+.iconHidden:hover .hideLoginWords{
+    display: none;
+}
+
+.iconHidden .hideRegister {
+    display: none;
+}
+
+.iconHidden:hover .hideRegister{
+    display: inherit;
+}
+
+.iconHidden:hover .hideRegisterWords{
+    display: none;
+}
+
+
+
 
 
 h3 {

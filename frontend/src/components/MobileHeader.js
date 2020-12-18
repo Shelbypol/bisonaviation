@@ -175,7 +175,7 @@ const MobileHeader = () => {
                                         <Button className='px-3 py-1 rounded-pill bisonRedBtn'>
                                             {/*Log in*/}
                                             <i style={{fontSize: '1.8em'}}
-                                               className="pr-2 fal fa-plane-arrival"> </i> Log in
+                                               className="pr-2 fal fa-plane-arrival"> </i> Login
                                         </Button>
                                     </Nav.Link>
                                 </LinkContainer>
