@@ -119,11 +119,11 @@ const DesktopStickyHeader = () => {
                                 ) : <LinkContainer to='/login'>
                                     <Nav.Link>
                                         <Button className='px-3 py-1 rounded-pill bisonRedBtn iconHidden'>
-                                     <span className='hideLogin'>
+                                     <span className='hideIcon'>
                                          <i style={{fontSize: '1.8em'}}
                                             className="pr-2 fal fa-plane-arrival "> </i>
                                      </span>
-                                            <span className='hideLoginWords'>Login</span>
+                                            <span className='hideWords'>Login</span>
                                         </Button>
                                     </Nav.Link>
                                 </LinkContainer>
@@ -134,40 +134,40 @@ const DesktopStickyHeader = () => {
                                         {/*<Nav.Link><i className='fas fa-user'> </i> Register*/}
                                         <Nav.Link>
                                             <Button className='px-3 py-1 rounded-pill bisonRedBtn iconHidden'>
-                                               <span className='hideRegister'>
+                                               <span className='hideIcon'>
                                                  <i style={{fontSize: '2em'}}
                                                     className="pr-2 fal fal fa-clipboard-user"> </i>
                                                </span>
-                                                <span className='hideRegisterWords'>Register</span>
+                                                <span className='hideWords'>Register</span>
                                             </Button>
                                         </Nav.Link>
-                                        < /LinkContainer>)
-                                            }
+                                    </LinkContainer>)
+                                }
 
-                                            {/*  ADMIN DROPDOWN  */}
-                                            {userInfo && userInfo.isAdmin && (
-                                                <NavDropdown style={{zIndex: '100'}} title='Admin' id='adminmenu'>
-                                                    <LinkContainer to='/admin/userlist'>
-                                                        <NavDropdown.Item>Users</NavDropdown.Item>
-                                                    </LinkContainer>
-                                                    <LinkContainer to='/admin/productlist'>
-                                                        <NavDropdown.Item>Products</NavDropdown.Item>
-                                                    </LinkContainer>
-                                                    <LinkContainer to='/admin/orderlist'>
-                                                        <NavDropdown.Item>Orders</NavDropdown.Item>
-                                                    </LinkContainer>
-                                                </NavDropdown>
-                                            )}
-                                        </Nav>
-                                    </Navbar.Collapse>
-                                    < /Container>
-                                    </Navbar>
-                                    <div className='blackFade col-sm-12 position-sticky'></div>
-                                    </header>
-                                    </>
+                                {/*  ADMIN DROPDOWN  */}
+                                {userInfo && userInfo.isAdmin && (
+                                    <NavDropdown style={{zIndex: '100'}} title='Admin' id='adminmenu'>
+                                        <LinkContainer to='/admin/userlist'>
+                                            <NavDropdown.Item>Users</NavDropdown.Item>
+                                        </LinkContainer>
+                                        <LinkContainer to='/admin/productlist'>
+                                            <NavDropdown.Item>Products</NavDropdown.Item>
+                                        </LinkContainer>
+                                        <LinkContainer to='/admin/orderlist'>
+                                            <NavDropdown.Item>Orders</NavDropdown.Item>
+                                        </LinkContainer>
+                                    </NavDropdown>
+                                )}
+                            </Nav>
+                        </Navbar.Collapse>
+                    </Container>
+                </Navbar>
+                <div className='blackFade col-sm-12 position-sticky'> </div>
+            </header>
+        </>
 
-                                    )
+    )
 
-                                    };
+};
 
-                                    export default DesktopStickyHeader
+export default DesktopStickyHeader

@@ -56,31 +56,17 @@ main {
     color: rgba(90, 00, 09, 1);
 }
 /* HIDE AND SHOW ICONS */
-.iconHidden .hideLogin {
+.iconHidden .hideIcon {
     display: none;
 }
 
-.iconHidden:hover .hideLogin{
+.iconHidden:hover .hideIcon{
     display: inherit;
 }
 
-.iconHidden:hover .hideLoginWords{
+.iconHidden:hover .hideWords{
     display: none;
 }
-
-.iconHidden .hideRegister {
-    display: none;
-}
-
-.iconHidden:hover .hideRegister{
-    display: inherit;
-}
-
-.iconHidden:hover .hideRegisterWords{
-    display: none;
-}
-
-
 
 
 
