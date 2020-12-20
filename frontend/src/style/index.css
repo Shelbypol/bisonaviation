@@ -42,11 +42,21 @@ main {
 }
 
 .bisonWhiteBtn{
-    background-color: #f6f5f8;
+    background-color: #fff;
     color: rgba(90, 00, 09, 1);
 }
 
 .bisonWhiteBtn:hover {
+    background-color: rgba(90, 00, 09, 1);
+    color: white;
+}
+
+.bisonWhiteBtnSearch{
+    background-color: #f6f5f8;
+    color: rgba(90, 00, 09, 1);
+}
+
+.bisonWhiteBtnSearch:hover {
     background-color: rgba(90, 00, 09, 1);
     color: white;
 }
