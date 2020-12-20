@@ -16,6 +16,8 @@ import tayseerAvionics from "../images/avionics/tayseer-1.jpg"
 import panelCard from '../images/avionics/panal-avionics.JPG'
 import garmin from '../images/avionics/garmin-dealership.png'
 import {CardBody} from "reactstrap";
+import heroImg from '../images/general/aircraft-double-decker-red-belt_1500.png'
+import fadeJumbo from  '../images/graphics/transparent-black-fade_1500.png'
 
 
 const HomeScreen = () => {
@@ -26,22 +28,45 @@ const HomeScreen = () => {
 
     return (
         <>
-            <Jumbotrons imgClass={'heroJumbo '}/>
-            <Jumbotrons imgClass={'fadeJumbo '}/>
+            <Jumbotrons jumboClass={'my-auto p-0'}
+                        jumboStyle={{backgroundColor: 'black'}}
+                        img={heroImg }
+                        imgClassName={'h-75 w-100 col-12 p-0 m-0'}
+                        title={'Bison Aviation'}
+                        text={'we work hard on the ground so you can fly with confidence'}
+                        />
 
-            <main className='mx-auto' style={{marginTop: '-40vh', marginBottom: '30vh'}}>
+            <Jumbotrons jumboClass={'my-auto p-0'}
+                        jumboStyle={{backgroundColor: 'black'}}
+                        img={fadeJumbo}
+                        imgClassName={'h-75 w-100 col-12 p-0 m-0'}
+                        title={''}
+                        text={''}
+            />
+
+
+            <Jumbotrons imgClass={'fadeJumbo'}/>
+
+            <main className='mx-auto' style={{marginTop: '1vh', marginBottom: '30vh'}}>
+            {/*<main className='mx-auto' style={{marginTop: '-40vh', marginBottom: '30vh'}}>*/}
                 <Container>
 
                     {/*  =============   ICONS ROW  =============== */}
-                    <Row className='justify-content-center' style={{marginBottom: '20vh', marginTop: '20vh'}} xs={12}>
+                    <Row className='justify-content-center'
+                         style={{marginBottom: '20vh', marginTop: '20vh'}}
+                         xs={12}>
                         <Col xs={6}>
                             <Button className='display-inline-block py-2 px-3 rounded-circle'
-                                    variant='danger'><i className="fal fa-tools"> </i></Button>
+                                    variant='danger'>
+                                <i className="fal fa-tools"> </i>
+                            </Button>
                             <h4> FAA Part 145 Repair Station</h4>
                         </Col>
                         <Col xs={6}>
                             <Button className='display-inline-block py-2 px-3 rounded-circle'
-                                    variant='danger'><i className="fal fa-award"> </i></Button>
+                                    variant='danger'>
+                                <i className="fal fa-award"> </i>
+                            </Button>
                             <h4> FAA Diamond Award Recipient</h4>
                         </Col>
                     </Row>

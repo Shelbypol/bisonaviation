@@ -1,11 +1,14 @@
 .heroJumbo{
-    background-image: url('../images/general/aircraft-double-decker-red-belt_1500.png');
-    background-repeat: no-repeat;
-    height: 72vh;
-    max-height: 100%;
-    background-color: black;
-    margin: auto;
-    padding: 0;
+    /*background-image: url('../images/general/aircraft-double-decker-red-belt_1500.png');*/
+    /*background-repeat: no-repeat;*/
+    /*height: 72vh;*/
+    /*height: 55vh;*/
+    /*max-height: 100%;*/
+    /*width: 100vw;*/
+    /*max-width: 100%;*/
+    /*background-color: black;*/
+    /*margin: auto;*/
+    /*padding: 0;*/
 }
 
 .fadeJumbo{
