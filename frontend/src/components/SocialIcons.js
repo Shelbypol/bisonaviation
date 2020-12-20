@@ -3,45 +3,54 @@ import {Nav, Navbar} from "react-bootstrap";
 import {LinkContainer} from "react-router-bootstrap";
 
 
-const SocialIcons = ({styleBootstrap}) => {
+const SocialIcons = ({socialClassName, socialStyle, cartClassName, contactClassName, facebookClassName, instaClassName, twitterClassName}) => {
 
     return (
         <>
-            <Nav className={styleBootstrap} style={{fontSize: '1.5em'}}>
+            <Nav className={socialClassName} style={socialStyle}>
 
                 {/*  WISH LIST  */}
-                <LinkContainer to='/cart'>
-                    <Nav.Link >
-                        {/*<i className="fas fa-plane"> </i>*/}
-                        <i style={{color: 'white'}} className="m-auto px-1 iconHover fas fa-shopping-cart"> </i>
+                <LinkContainer className={cartClassName} to='/cart'>
+                    <Nav.Link>
+                        <span className={'socialIcons'}>
+                            <i className="m-auto far fa-cart-arrow-down"> </i>
+                        </span>
                     </Nav.Link>
                 </LinkContainer>
 
                 {/*  CONTACT */}
-                <LinkContainer to='/'>
+                <LinkContainer className={contactClassName} to='/'>
                     <Nav.Link>
-                        <i style={{color: 'white'}} className="m-auto px-1 iconHover far fa-envelope"> </i>
+                        <span className={'socialIcons'}>
+                            <i className="m-auto far fa-envelope"> </i>
+                        </span>
                     </Nav.Link>
                 </LinkContainer>
 
                 {/*  FACEBOOK  */}
-                <LinkContainer  to='/'>
+                <LinkContainer className={facebookClassName} to='/'>
                     <Nav.Link>
-                        <i style={{color: 'white'}} className="m-auto px-1 iconHover fab fa-facebook"> </i>
+                        <span className={'socialIcons'}>
+                            <i className="m-auto fab fa-facebook"> </i>
+                        </span>
                     </Nav.Link>
                 </LinkContainer>
 
                 {/*  INSTAGRAM */}
-                <LinkContainer to='/'>
+                <LinkContainer className={instaClassName} to='/'>
                     <Nav.Link>
-                        <i style={{color: 'white'}} className="m-auto px-1 iconHover fab fa-instagram"> </i>
+                        <span className={'socialIcons'}>
+                            <i className="m-auto fab fa-instagram"> </i>
+                        </span>
                     </Nav.Link>
                 </LinkContainer>
 
                 {/*  TWITTER */}
-                <LinkContainer to='/'>
+                <LinkContainer className={twitterClassName} to='/'>
                     <Nav.Link>
-                        <i style={{color: 'white'}} className="m-auto pl-1 iconHover fab fa-twitter"> </i>
+                        <span className={'socialIcons'}>
+                            <i className="m-auto fab fa-twitter"> </i>
+                        </span>
                     </Nav.Link>
                 </LinkContainer>
 

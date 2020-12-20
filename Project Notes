@@ -1,5 +1,7 @@
 Notes for pulling and running project:
 
+#900009 : BISON SITE RED RGB COLOR CODE
+
 
 If you run into: ERESOLVE unable to resolve dependency tree, run this command:
 (Make sure you’re in the frontend)
@@ -29,3 +31,8 @@ kill -9 xxxx
 @media only screen and (min-width: 1200px) {}
 
 
+
+Article : How to change bootstrap nav:
+https://www.xspdf.com/resolution/58803765.html
+
+https://medium.com/wdstack/bootstrap-4-hidden-visible-dd969a4c5854

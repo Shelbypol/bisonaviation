@@ -18,6 +18,65 @@ main {
     min-height: 80vh;
 }
 
+/* SITE COLOR */
+.bisonRedBtmBorder{
+    border-bottom: 3px solid rgba(90, 00, 09, 1);
+}
+
+.bisonRedTxt{
+    color: rgba(90, 00, 09, 1);
+}
+
+.bisonRedBgColor{
+    background-color: rgba(90, 00, 09, 1);
+}
+
+.bisonRedBtn{
+    background-color: rgba(90, 00, 09, 1);
+}
+
+.bisonRedBtn:hover {
+    background-color: white;
+    color: rgba(90, 00, 09, 1);
+    border: 1px solid rgba(90, 00, 09, 1);
+}
+
+.bisonWhiteBtn{
+    background-color: #fff;
+    color: rgba(90, 00, 09, 1);
+}
+
+.bisonWhiteBtn:hover {
+    background-color: rgba(90, 00, 09, 1);
+    color: white;
+}
+
+.bisonWhiteBtnSearch{
+    background-color: #f6f5f8;
+    color: rgba(90, 00, 09, 1);
+}
+
+.bisonWhiteBtnSearch:hover {
+    background-color: rgba(90, 00, 09, 1);
+    color: white;
+}
+
+/*   FONT-AWESOME   */
+.socialIcons:hover{
+    color: rgba(90, 00, 09, 1);
+}
+/* HIDE AND SHOW ICONS */
+.iconHidden .hideIcon {
+    display: none;
+}
+
+.iconHidden:hover .hideIcon{
+    display: inherit;
+}
+
+.iconHidden:hover .hideWords{
+    display: none;
+}
 
 h3 {
     padding: 1rem 0;
@@ -42,8 +101,6 @@ h2 {
 }
 
 /*  CARDS   */
-
-
 .circleHover:hover {
     background-color: black;
 }
@@ -86,7 +143,7 @@ h2 {
 }
 
 .fadeCardLeft{
-    background-image: url('../images/graphics/divider1.png');
+    /*background-image: url("src/images/graphics/black-top-large-left.png");*/
     background-repeat: no-repeat;
     height: 48vh;
     background-color: white;
@@ -98,7 +155,7 @@ h2 {
 }
 
 .fadeCardRight{
-    background-image: url('../images/graphics/divider1.png');
+    /*background-image: url("src/images/graphics/black-top-large-left.png");*/
     background-repeat: no-repeat;
     height: 35vh;
     background-color: white;

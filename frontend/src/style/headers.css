@@ -4,11 +4,6 @@
     max-height: 100%;
 }
 
-.navigationBtns{
-    font-size: small;
-    /*padding-left: 15%;*/
-}
-
 .topNav {
     height: 20vh;
     max-height: 100%;
@@ -16,38 +11,46 @@
     z-index: 2;
 }
 
-.headerBtn {
-    background-color: darkred;
-}
-
-.headerBtn:hover {
-    background-color: black;
-}
-
-
-.iconHover:hover{
-    background-color: darkred;
-    border-radius: 20%;
-}
-
-.profileBtns {
-    font-size: larger;
-}
-
-.searchBtnColor{
-    background-color: #f7f7f9;
-}
-
-.searchBtnColor:hover{
-    background-color: darkred;
-    color: black;
-}
-
 .blackFade{
-    background-image: url("../images/graphics/black-fade.png");
+    background-image: url("../images/graphics/small-black-fade.png");
     position: relative;
     margin-top: -5vh;
     height: 12vh;
     top:0;
     z-index: -1;
+}
+
+/*   NAV DROPDOWN STYLE    */
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler.show {
+    border: none;
+}
+
+button.navbar-toggler:hover {
+    background-color: rgba(90, 00, 09, 1);
+    color: white;
+    border-radius: 20%;
+}
+
+.dropdown-menu {
+    border-left: 5px solid rgba(90, 00, 09,1);
+    /*border-top: 5px solid rgba(90, 00, 09,1);*/
+    /*border-bottom: 5px solid rgba(90, 00, 09,1);*/
+    background-color: black;
+    color: white;
+}
+
+.dropdown-item {
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.dropdown-item:hover {
+    background-color: rgba(90, 00, 09, 1);
+    color: white;
 }

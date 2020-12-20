@@ -1,6 +1,5 @@
 .heroJumbo{
-    background-image: url('../images/jumbotron/aircraft-double-decker-red-belt_1500.png');
-    /*background-image: url('../images/jumbotron/beachcraft-fin_crop.png');*/
+    background-image: url('../images/general/aircraft-double-decker-red-belt_1500.png');
     background-repeat: no-repeat;
     height: 72vh;
     max-height: 100%;
