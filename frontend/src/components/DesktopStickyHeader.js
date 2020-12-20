@@ -35,7 +35,7 @@ const DesktopStickyHeader = () => {
                                 {/*  BROWSE PRODUCTS  */}
                                 <LinkContainer className='mx-1' to='/products'>
                                     <Nav.Link>
-                                        Browse Products
+                                        Products
                                     </Nav.Link>
                                 </LinkContainer>
 
@@ -120,8 +120,8 @@ const DesktopStickyHeader = () => {
                                     <Nav.Link>
                                         <Button className='px-3 py-1 rounded-pill bisonRedBtn iconHidden'>
                                      <span className='hideIcon'>
-                                         <i style={{fontSize: '1.8em'}}
-                                            className="pr-2 fal fa-plane-arrival "> </i>
+                                         <i style={{fontSize: '1.5em'}}
+                                            className=" fal fa-plane-arrival "> </i>
                                      </span>
                                             <span className='hideWords'>Login</span>
                                         </Button>
@@ -133,12 +133,12 @@ const DesktopStickyHeader = () => {
                                     <LinkContainer to='/Register'>
                                         {/*<Nav.Link><i className='fas fa-user'> </i> Register*/}
                                         <Nav.Link>
-                                            <Button className='px-3 py-1 rounded-pill bisonRedBtn iconHidden'>
-                                               <span className='hideIcon'>
-                                                 <i style={{fontSize: '2em'}}
-                                                    className="pr-2 fal fal fa-clipboard-user"> </i>
-                                               </span>
-                                                <span className='hideWords'>Register</span>
+                                            <Button className='px-3 py-1 rounded-pill bisonRedBtn '>
+                                               {/*<span className=''>*/}
+                                                 {/*<i style={{fontSize: '2em'}}*/}
+                                                 {/*   className="pr-2 fal fal fa-clipboard-user"> </i>*/}
+                                               {/*</span>*/}
+                                                <span className=''>Register</span>
                                             </Button>
                                         </Nav.Link>
                                     </LinkContainer>)
