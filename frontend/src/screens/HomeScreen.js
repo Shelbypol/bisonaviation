@@ -32,7 +32,7 @@ const HomeScreen = () => {
                         img={ heroImg }
                         imgClassName={'col-12 p-0 mx-0 mb-0 '}
                         textContainerStyle={{ backgroundColor: 'rgba(01, 02, 03, 1)'}}
-                        textContainerClass={'col-12'}
+                        textContainerClass={'col-12 mt-n2'}
                         title={'Bison Aviation'}
                         titleClassName={'text-light m-0 p-0'}
                         text={'We work hard on the ground so you can fly with confidence'}

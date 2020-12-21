@@ -32,6 +32,7 @@ const DesktopHeader = () => {
                         </Nav>
 
                         <Nav className='col-sm-6 justify-content-center px-3'>
+
                             <Route render={({history}) => <SearchBox history={history}
                                                                      searchSize={'sm'}
                                                                      formClasses={'col-sm-12'}
@@ -40,10 +41,12 @@ const DesktopHeader = () => {
                                                                      btnClasses={'bisonWhiteBtnSearch px-1 col-2 rounded-right'}
                                                                      iconStyle={{fontSize: '1.53em'}}
                             />}/>
+
                         </Nav>
 
                         <SocialIcons socialClassName={'col-sm-3 justify-content-end'}
-                                     socialStyle={{fontSize: '1.5em'}}
+                                     socialStyle={{fontSize: '1.6em'}}
+                                     // socialStyle={{fontSize: '1.5em'}}
                                      contactClassName={'d-none'}
                         />
 
