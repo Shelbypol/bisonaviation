@@ -37,10 +37,13 @@ const DesktopHeader = () => {
                                                                      searchSize={'sm'}
                                                                      formClasses={'col-sm-12'}
                                                                      searchClasses={'col-10'}
-                                                                     btnSize={'sm'}
+                                                                     btnSize={'md'}
                                                                      btnClasses={'bisonWhiteBtnSearch px-1 col-2 rounded-right'}
-                                                                     iconStyle={{fontSize: '1.53em'}}
+                                                                     btnStyle={{paddingTop: '1.35em', paddingBottom: '1.40em'}}
+                                                                     // iconStyle={{fontSize: '1.53em'}}
+                                                                     // imgClasses={'w-25 h-50'}
                             />}/>
+
 
                         </Nav>
 

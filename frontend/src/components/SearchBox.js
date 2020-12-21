@@ -1,8 +1,9 @@
 import React, {useState} from 'react'
 import {Form, Button, Nav} from 'react-bootstrap'
 import SocialIcons from "./SocialIcons";
+import logoSearch from '../images/graphics/search-logo-small.png'
 
-const SearchBox = ({history, searchClasses, formClasses, btnClasses, btnSize, searchSize, iconStyle}) => {
+const SearchBox = ({history, searchClasses, formClasses, btnClasses, btnSize, searchSize, btnStyle, iconStyle, imgClasses}) => {
     const [keyword, setKeyword] = useState('');
 
     const submitHandler = (e) => {
@@ -28,9 +29,10 @@ const SearchBox = ({history, searchClasses, formClasses, btnClasses, btnSize, se
                     className={searchClasses}
                 >
                 </Form.Control>
-                <Button type='submit' size={btnSize} className={btnClasses}
+                <Button type='submit' id='searchImage' size={btnSize} className={btnClasses} style={btnStyle}
                 >
-                    <i className="fas fa-search" style={iconStyle}> </i>
+                    {/*<img src={logoSearch} className={imgClasses} alt=""/>*/}
+                    {/*<i className="fas fa-search" style={iconStyle}> </i>*/}
                 </Button>
             </Form>
         </>

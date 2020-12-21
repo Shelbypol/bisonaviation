@@ -32,6 +32,7 @@ const DesktopStickyHeader = () => {
             if (prevScrollY.current > currentScrollY && goingUp) {
                 setGoingUp(false);
             }
+
             if (prevScrollY.current < currentScrollY && !goingUp) {
                 setGoingUp(true);
             }
@@ -40,14 +41,14 @@ const DesktopStickyHeader = () => {
             console.log(goingUp, currentScrollY);
         };
 
-        window.addEventListener("scroll", handleScroll, {passive: true});
+        window.addEventListener("scroll", handleScroll, { passive: true });
 
         return () => window.removeEventListener("scroll", handleScroll);
     }, [goingUp]);
 
     return (
         <>
-            <header className='sticky-top m-0'>
+            <header className='sticky-top m-0' id='showSearch'>
 
                 <Navbar className='navbar navbar-expand-lg navbar-light bg-light m-0 p-0 border-0 '>
 
@@ -56,8 +57,26 @@ const DesktopStickyHeader = () => {
                         <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                         <Navbar.Collapse id="basic-navbar-nav">
 
+                            {/*===============  SEARCH BAR  ==================*/}
+
+                            {goingUp &&
+                            <Nav className={'col-lg-3 ml-2 d-sm-none d-md-none d-lg-block'}>
+                                <Route render={({history}) => <SearchBox history={history}
+                                                                         searchSize={'sm'}
+                                                                         searchClasses={'col-9'}
+                                                                         btnSize={'sm'}
+                                                                         btnClasses={'bisonWhiteBtnSearch px-1 col-2 rounded-right'}
+                                                                         btnStyle={{paddingTop: '2em', paddingBottom: '1.45em'}}
+                                                                         // iconStyle={{fontSize: '1.53em'}}
+                                                                         // imgClasses={'w-75 h-100'}
+                                />}/>
+                            </Nav>
+                            }
+
+                            {/*============= NAV SHOW ON SCROLL ==============*/}
+
                             {goingUp ?
-                                <Nav className='col-lg-6 col-md-6 justify-content-center'>
+                                <Nav className='col-lg-5 col-md-6 justify-content-center'>
 
                                     {/*  BROWSE PRODUCTS  */}
                                     <LinkContainer className='mx-1' to='/products'>
@@ -67,7 +86,7 @@ const DesktopStickyHeader = () => {
                                     </LinkContainer>
 
                                     {/*  AIR CRAFT SERVICES  */}
-                                    <NavDropdown style={{zIndex: '100'}} className='mx-1' title='Aircraft Services'
+                                    <NavDropdown style={{zIndex: '100'}} className='mx-1 whiteDropdown' title='Aircraft Services'
                                                  id='aircraftservicesmenu'>
                                         {/*   AVIONICS  */}
                                         <LinkContainer to='/avionics'>
@@ -96,7 +115,7 @@ const DesktopStickyHeader = () => {
                                     </NavDropdown>
 
                                     {/*  EO/IR  */}
-                                    <NavDropdown style={{zIndex: '100'}} className='mx-1' title='EO/IR' id='eoirmenu'>
+                                    <NavDropdown style={{zIndex: '100'}} className='mx-1 whiteDropdown' title='EO/IR' id='eoirmenu'>
                                         {/*   EO / IR MAINTENANCE */}
                                         <LinkContainer to='/eoir/maintenance'>
                                             <NavDropdown.Item>EO/IR Maintenance</NavDropdown.Item>
@@ -122,7 +141,7 @@ const DesktopStickyHeader = () => {
                                 </Nav>
 
                                 :
-
+                                // ============= NAV HIDDEN ON SCROLL ==============
                                 <Nav className='col-lg-8 col-md-6 justify-content-end'>
 
                                     {/*  BROWSE PRODUCTS  */}
@@ -133,7 +152,7 @@ const DesktopStickyHeader = () => {
                                     </LinkContainer>
 
                                     {/*  AIR CRAFT SERVICES  */}
-                                    <NavDropdown style={{zIndex: '100'}} className='mx-1' title='Aircraft Services'
+                                    <NavDropdown style={{zIndex: '100'}} className='mx-1 whiteDropdown' title='Aircraft Services'
                                                  id='aircraftservicesmenu'>
                                         {/*   AVIONICS  */}
                                         <LinkContainer to='/avionics'>
@@ -162,7 +181,7 @@ const DesktopStickyHeader = () => {
                                     </NavDropdown>
 
                                     {/*  EO/IR  */}
-                                    <NavDropdown style={{zIndex: '100'}} className='mx-1' title='EO/IR' id='eoirmenu'>
+                                    <NavDropdown style={{zIndex: '100'}} className='mx-1 whiteDropdown' title='EO/IR' id='eoirmenu'>
                                         {/*   EO / IR MAINTENANCE */}
                                         <LinkContainer to='/eoir/maintenance'>
                                             <NavDropdown.Item>EO/IR Maintenance</NavDropdown.Item>
@@ -188,31 +207,123 @@ const DesktopStickyHeader = () => {
                                 </Nav>
                             }
 
+                            {/*/!*===============  SEARCH BAR  ==================*!/*/}
 
-                            {goingUp &&
-                            <Nav className={'col-lg-3 d-sm-none d-md-none d-lg-block site-nav'}>
-                                <Route render={({history}) => <SearchBox history={history}
-                                                                         searchSize={'sm'}
-                                                                         searchClasses={'col-11'}
-                                                                         btnSize={'sm'}
-                                                                         btnClasses={'bisonWhiteBtnSearch px-1 col-1 rounded-right'}
-                                                                         iconStyle={{fontSize: '1.53em'}}
-                                />}/>
-                            </Nav>
-                            }
+                            {/*{goingUp &&*/}
+                            {/*<Nav className={'col-lg-3 d-sm-none d-md-none d-lg-block'}>*/}
+                            {/*    <Route render={({history}) => <SearchBox history={history}*/}
+                            {/*                                             searchSize={'sm'}*/}
+                            {/*                                             searchClasses={'col-9'}*/}
+                            {/*                                             btnSize={'sm'}*/}
+                            {/*                                             btnClasses={'bisonWhiteBtnSearch px-1 col-2 rounded-right'}*/}
+                            {/*                                             iconStyle={{fontSize: '1.53em'}}*/}
+                            {/*    />}/>*/}
+                            {/*</Nav>*/}
+                            {/*}*/}
 
-
+                            {/*============= PROFILE BTNS HIDDEN ON SCROLL ==============*/}
                             {/*   PROFILE BTNS  */}
                             {goingUp ?
-                                <Nav className='col-lg-3 col-md-6 justify-content-end'>
+                                <Nav className='col-lg-4 col-md-6 justify-content-end'>
+
+                                    {/*  PROFILE  /  SIGN IN  */}
+                                    {userInfo ? (
+                                            <>
+                                                <LinkContainer to='/profile'>
+                                                    <Nav.Link>
+                                                        <Button className='px-3 py-0 mt-2 rounded-pill bisonWhiteBtn iconHidden'>
+                                                            <span className='hideWords'>
+                                                                {userInfo.name}
+                                                            </span>
+                                                        <span className='hideIcon'>Profile</span>
+                                                    </Button>
+                                                    </Nav.Link>
+                                                </LinkContainer>
+
+                                                <LinkContainer to='/profile'>
+                                                    <Nav.Link onClick={logoutHandler}>
+                                                        <Button
+                                                            className='px-3 py-0 mt-2 rounded-pill bisonWhiteBtn iconHidden'>
+                                                   <span className='hideWords'>
+                                                     <i style={{fontSize: '1.5em'}}
+                                                        className=" fal fa-plane-departure "> </i>
+                                                    </span>
+                                                            <span className='hideIcon'>Logout</span>
+                                                        </Button>
+                                                    </Nav.Link>
+                                                </LinkContainer>
+                                            </>
+
+                                        ) :
+                                        <LinkContainer to='/login'>
+                                            <Nav.Link>
+                                                <Button className='px-3 py-0 mt-2 rounded-pill bisonWhiteBtn iconHidden'>
+                                                 <span className='hideWords'>
+                                                     <i style={{fontSize: '1.5em'}}
+                                                        className=" fal fa-plane-arrival "> </i>
+                                                 </span>
+                                                    <span className='hideIcon'>Login</span>
+                                                </Button>
+                                            </Nav.Link>
+                                        </LinkContainer>
+                                    }
+                                    {/*  REGISTER  */}
+                                    {!userInfo && (
+                                        <LinkContainer to='/Register'>
+                                            <Nav.Link>
+                                                <Button className='px-3 py-0 mt-2 rounded-pill bisonWhiteBtn iconHidden'>
+                                                <span className='hideWords'>
+                                                    <i style={{fontSize: '1.5em'}}
+                                                       className="fal fa-clipboard-user"> </i>
+                                                </span>
+                                                    <span className='hideIcon'>Register</span>
+                                                </Button>
+                                            </Nav.Link>
+                                        </LinkContainer>)
+                                    }
+
+                                    {/*  ADMIN DROPDOWN  */}
+                                    {userInfo && userInfo.isAdmin && (
+                                        <NavDropdown style={{zIndex: '1000'}} title='Admin' id='adminmenu'
+                                                     className='mr-n2 py-0 mt-2 whiteDropdown'>
+                                            <LinkContainer to='/admin/userlist'>
+                                                <NavDropdown.Item>Users</NavDropdown.Item>
+                                            </LinkContainer>
+                                            <LinkContainer to='/admin/productlist'>
+                                                <NavDropdown.Item>Products</NavDropdown.Item>
+                                            </LinkContainer>
+                                            <LinkContainer to='/admin/orderlist'>
+                                                <NavDropdown.Item>Orders</NavDropdown.Item>
+                                            </LinkContainer>
+                                        </NavDropdown>
+                                    )}
+
+
+                                    <LinkContainer to='/contact'>
+                                        <Nav.Link>
+                                            <Button className='px-3 py-0 mt-2 rounded-pill bisonWhiteBtn iconHidden '>
+                                                 <span className='hideWords'>
+                                                     <i style={{fontSize: '1.5em'}}
+                                                        className="fal fa-envelope"> </i>
+                                                 </span>
+                                                <span className='hideIcon'>Contact</span>
+                                            </Button>
+                                        </Nav.Link>
+                                    </LinkContainer>
+
+                                </Nav>
+
+                                :
+                                // ============= LOGIN/REG CONTACT BTNS SHOW ON SCROLL ==============
+                                <Nav className='col-lg-4 col-md-6 justify-content-end'>
 
 
                                     {/*  PROFILE  /  SIGN IN  */}
                                     {userInfo ? (
                                             <>
-                                                <LinkContainer to='/profile' className='mt-2'>
+                                                <LinkContainer to='/profile'>
                                                     <Nav.Link>
-                                                        <Button className='px-3 py-1 rounded-pill bisonWhiteBtn iconHidden'>
+                                                        <Button className='px-3 py-0 mt-2 rounded-pill bisonWhiteBtn iconHidden'>
                                                             <span className='hideWords'>
                                                                 {userInfo.name}
                                                             </span>
@@ -224,7 +335,7 @@ const DesktopStickyHeader = () => {
                                                 <LinkContainer to='/profile'>
                                                     <Nav.Link onClick={logoutHandler}>
                                                         <Button
-                                                            className='px-3 py-1 mt-2 rounded-pill bisonWhiteBtn iconHidden'>
+                                                            className='px-3 py-0 mt-2 rounded-pill bisonWhiteBtn iconHidden'>
                                                    <span className='hideWords'>
                                                      <i style={{fontSize: '1.5em'}}
                                                         className=" fal fa-plane-departure "> </i>
@@ -238,7 +349,7 @@ const DesktopStickyHeader = () => {
                                         ) :
                                         <LinkContainer to='/login'>
                                             <Nav.Link>
-                                                <Button className='px-3 py-1 rounded-pill bisonWhiteBtn iconHidden'>
+                                                <Button className='px-3 py-0 mt-2 rounded-pill bisonWhiteBtn iconHidden'>
                                                  <span className='hideWords'>
                                                      <i style={{fontSize: '1.5em'}}
                                                         className=" fal fa-plane-arrival "> </i>
@@ -252,7 +363,7 @@ const DesktopStickyHeader = () => {
                                     {!userInfo && (
                                         <LinkContainer to='/Register'>
                                             <Nav.Link>
-                                                <Button className='px-3 py-1 rounded-pill bisonWhiteBtn iconHidden'>
+                                                <Button className='px-3 py-0 mt-2 rounded-pill bisonWhiteBtn iconHidden'>
                                                 <span className='hideWords'>
                                                     <i style={{fontSize: '1.5em'}}
                                                        className="fal fa-clipboard-user"> </i>
@@ -265,8 +376,8 @@ const DesktopStickyHeader = () => {
 
                                     {/*  ADMIN DROPDOWN  */}
                                     {userInfo && userInfo.isAdmin && (
-                                        <NavDropdown style={{zIndex: '100'}} title='Admin' id='adminmenu'
-                                                     className='pt-3'>
+                                        <NavDropdown style={{zIndex: '1000'}} title='Admin' id='adminmenu'
+                                                     className='mr-n2 py-0 mt-2 whiteDropdown'>
                                             <LinkContainer to='/admin/userlist'>
                                                 <NavDropdown.Item>Users</NavDropdown.Item>
                                             </LinkContainer>
@@ -279,99 +390,10 @@ const DesktopStickyHeader = () => {
                                         </NavDropdown>
                                     )}
 
-
+                                    {/* CONTACT  */}
                                     <LinkContainer to='/contact'>
                                         <Nav.Link>
-                                            <Button className='px-3 py-1 rounded-pill bisonWhiteBtn iconHidden '>
-                                                 <span className='hideWords'>
-                                                     <i style={{fontSize: '1.5em'}}
-                                                        className="fal fa-envelope"> </i>
-                                                 </span>
-                                                <span className='hideIcon'>Contact</span>
-                                            </Button>
-                                        </Nav.Link>
-                                    </LinkContainer>
-
-                                </Nav>
-
-                                :
-
-                                <Nav className='col-lg-4 col-md-6 justify-content-end'>
-
-
-                                    {/*  PROFILE  /  SIGN IN  */}
-                                    {userInfo ? (
-                                            <>
-                                                <LinkContainer to='/profile' className='mt-2'>
-                                                    <Nav.Link>
-                                                        <Button className='px-3 py-1 rounded-pill bisonWhiteBtn iconHidden'>
-                                                            {userInfo.name}
-                                                        </Button>
-                                                    </Nav.Link>
-                                                </LinkContainer>
-
-                                                <LinkContainer to='/profile'>
-                                                    <Nav.Link onClick={logoutHandler}>
-                                                        <Button
-                                                            className='px-3 py-1 mt-2 rounded-pill bisonWhiteBtn iconHidden'>
-                                                   <span className='hideWords'>
-                                                     <i style={{fontSize: '1.5em'}}
-                                                        className=" fal fa-plane-departure "> </i>
-                                                    </span>
-                                                            <span className='hideIcon'>Logout</span>
-                                                        </Button>
-                                                    </Nav.Link>
-                                                </LinkContainer>
-                                            </>
-
-                                        ) :
-                                        <LinkContainer to='/login'>
-                                            <Nav.Link>
-                                                <Button className='px-3 py-1 rounded-pill bisonWhiteBtn iconHidden'>
-                                                 <span className='hideWords'>
-                                                     <i style={{fontSize: '1.5em'}}
-                                                        className=" fal fa-plane-arrival "> </i>
-                                                 </span>
-                                                    <span className='hideIcon'>Login</span>
-                                                </Button>
-                                            </Nav.Link>
-                                        </LinkContainer>
-                                    }
-                                    {/*  REGISTER  */}
-                                    {!userInfo && (
-                                        <LinkContainer to='/Register'>
-                                            <Nav.Link>
-                                                <Button className='px-3 py-1 rounded-pill bisonWhiteBtn iconHidden'>
-                                                <span className='hideWords'>
-                                                    <i style={{fontSize: '1.5em'}}
-                                                       className="fal fa-clipboard-user"> </i>
-                                                </span>
-                                                    <span className='hideIcon'>Register</span>
-                                                </Button>
-                                            </Nav.Link>
-                                        </LinkContainer>)
-                                    }
-
-                                    {/*  ADMIN DROPDOWN  */}
-                                    {userInfo && userInfo.isAdmin && (
-                                        <NavDropdown style={{zIndex: '100'}} title='Admin' id='adminmenu'
-                                                     className='pt-3'>
-                                            <LinkContainer to='/admin/userlist'>
-                                                <NavDropdown.Item>Users</NavDropdown.Item>
-                                            </LinkContainer>
-                                            <LinkContainer to='/admin/productlist'>
-                                                <NavDropdown.Item>Products</NavDropdown.Item>
-                                            </LinkContainer>
-                                            <LinkContainer to='/admin/orderlist'>
-                                                <NavDropdown.Item>Orders</NavDropdown.Item>
-                                            </LinkContainer>
-                                        </NavDropdown>
-                                    )}
-
-
-                                    <LinkContainer to='/contact'>
-                                        <Nav.Link>
-                                            <Button className='px-3 py-1 rounded-pill bisonWhiteBtn iconHidden '>
+                                            <Button className='px-3 py-0 mt-2 rounded-pill bisonWhiteBtn iconHidden '>
                                                  <span className='hideWords'>
                                                      <i style={{fontSize: '1.5em'}}
                                                         className="fal fa-envelope"> </i>
@@ -385,17 +407,6 @@ const DesktopStickyHeader = () => {
 
 
                             }
-                            {/*{goingUp &&*/}
-                            {/*<Nav className={'col-lg-3 d-sm-none d-md-none d-lg-block site-nav'}>*/}
-                            {/*    <Route render={({history}) => <SearchBox history={history}*/}
-                            {/*                                             searchSize={'sm'}*/}
-                            {/*                                             searchClasses={'col-11'}*/}
-                            {/*                                             btnSize={'sm'}*/}
-                            {/*                                             btnClasses={'bisonWhiteBtnSearch px-1 col-1 rounded-right'}*/}
-                            {/*                                             iconStyle={{fontSize: '1.53em'}}*/}
-                            {/*    />}/>*/}
-                            {/*</Nav>*/}
-                            {/*}*/}
 
                         </Navbar.Collapse>
                     </Container>
