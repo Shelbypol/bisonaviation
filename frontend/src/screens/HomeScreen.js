@@ -28,24 +28,25 @@ const HomeScreen = () => {
 
     return (
         <>
-            <Jumbotrons jumboClass={'my-auto p-0'}
-                        jumboStyle={{backgroundColor: 'black'}}
-                        img={heroImg }
-                        imgClassName={'h-75 w-100 col-12 p-0 m-0'}
+            <Jumbotrons jumboClass={'m-0 p-0'}
+                        img={ heroImg }
+                        imgClassName={'col-12 p-0 mx-0 mb-0 mt-n4'}
+                        // imgStyle={{height: '55vh'}}
+                        textContainerStyle={{ backgroundColor: 'rgba(01, 02, 03, 1)'}}
+                        textContainerClass={'col-12 mt-n1'}
                         title={'Bison Aviation'}
+                        titleClassName={'text-light m-0 p-0'}
                         text={'we work hard on the ground so you can fly with confidence'}
+                        textClassName={'text-light m-0 p-0'}
                         />
 
-            <Jumbotrons jumboClass={'my-auto p-0'}
-                        jumboStyle={{backgroundColor: 'black'}}
-                        img={fadeJumbo}
-                        imgClassName={'h-75 w-100 col-12 p-0 m-0'}
-                        title={''}
-                        text={''}
+            <Jumbotrons jumboClass={'p-0 horizontal-gradient'}
+                        jumboStyle={{ height: '100%'}}
+                        imgClassName={'w-100 col-12 p-0 m-0'}
             />
 
 
-            <Jumbotrons imgClass={'fadeJumbo'}/>
+            {/*<Jumbotrons imgClass={'fadeJumbo'}/>*/}
 
             <main className='mx-auto' style={{marginTop: '1vh', marginBottom: '30vh'}}>
             {/*<main className='mx-auto' style={{marginTop: '-40vh', marginBottom: '30vh'}}>*/}
