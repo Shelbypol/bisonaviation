@@ -21,27 +21,29 @@ const DesktopStickyHeader = () => {
         dispatch(logout());
     };
 
+
     return (
         <>
             <header className='sticky-top m-0'>
 
-                <Navbar className='navbar navbar-expand-lg navbar-light bg-light mx-auto my-0 p-0 border-0'>
+                <Navbar className='navbar navbar-expand-lg navbar-light bg-light m-0 p-0 border-0 '>
 
                     <Container className='col-sm-12'>
 
                         <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                         <Navbar.Collapse id="basic-navbar-nav">
 
-                            <Route render={({history}) => <SearchBox history={history}
-                                                                     searchSize={'sm'}
-                                                                     formClasses={'col-lg-4 d-sm-none d-md-none d-lg-block'}
-                                                                     searchClasses={'col-10'}
-                                                                     btnSize={'sm'}
-                                                                     btnClasses={'bisonWhiteBtnSearch px-1 col-2 rounded-right'}
-                                                                     iconStyle={{fontSize: '1.53em'}}
-                            />}/>
+                            {/*<Route render={({history}) => <SearchBox history={history}*/}
+                            {/*                                         searchSize={'sm'}*/}
+                            {/*                                         formClasses={'col-lg-4 d-sm-none d-md-none d-lg-block'}*/}
+                            {/*                                         searchClasses={'col-10'}*/}
+                            {/*                                         btnSize={'sm'}*/}
+                            {/*                                         btnClasses={'bisonWhiteBtnSearch px-1 col-2 rounded-right'}*/}
+                            {/*                                         iconStyle={{fontSize: '1.53em'}}*/}
+                            {/*/>}/>*/}
 
-                            <Nav className='col-lg-5 col-md-6 '>
+
+                            <Nav className='col-lg-6 col-md-6 justify-content-center'>
 
                                 {/*  BROWSE PRODUCTS  */}
                                 <LinkContainer className='mx-1' to='/products'>
@@ -105,8 +107,20 @@ const DesktopStickyHeader = () => {
                                 </LinkContainer>
                             </Nav>
 
+
+                            <Nav className={'col-lg-4 d-sm-none d-md-none d-lg-block'}>
+                                <Route render={({history}) => <SearchBox history={history}
+                                                                         searchSize={'sm'}
+                                                                         formClasses={''}
+                                                                         searchClasses={'col-11'}
+                                                                         btnSize={'sm'}
+                                                                         btnClasses={'bisonWhiteBtnSearch px-1 col-1 rounded-right'}
+                                                                         iconStyle={{fontSize: '1.53em'}}
+                                />}/>
+                            </Nav>
+
                             {/*   PROFILE BTNS  */}
-                            <Nav className='col-lg-3 col-md-6 justify-content-end'>
+                            <Nav className='col-lg-2 col-md-6 justify-content-end'>
 
                                 {/*  PROFILE  /  SIGN IN  */}
                                 {userInfo ? (
@@ -121,7 +135,8 @@ const DesktopStickyHeader = () => {
 
                                         <LinkContainer to='/profile'>
                                             <Nav.Link onClick={logoutHandler}>
-                                                <Button className='px-3 py-1 mt-2 rounded-pill bisonWhiteBtn iconHidden'>
+                                                <Button
+                                                    className='px-3 py-1 mt-2 rounded-pill bisonWhiteBtn iconHidden'>
                                                    <span className='hideWords'>
                                                      <i style={{fontSize: '1.5em'}}
                                                         className=" fal fa-plane-departure "> </i>
@@ -132,14 +147,15 @@ const DesktopStickyHeader = () => {
                                         </LinkContainer>
                                     </>
 
-                                ) : <LinkContainer to='/login'>
+                                ) :
+                                    <LinkContainer to='/login'>
                                     <Nav.Link>
-                                        <Button className='px-3 py-1 rounded-pill bisonRedBtn iconHidden'>
-                                                 <span className='hideIcon'>
+                                        <Button className='px-3 py-1 rounded-pill bisonWhiteBtn iconHidden'>
+                                                 <span className='hideWords'>
                                                      <i style={{fontSize: '1.5em'}}
                                                         className=" fal fa-plane-arrival "> </i>
                                                  </span>
-                                            <span className='hideWords'>Login</span>
+                                            <span className='hideIcon'>Login</span>
                                         </Button>
                                     </Nav.Link>
                                 </LinkContainer>
@@ -148,8 +164,12 @@ const DesktopStickyHeader = () => {
                                 {!userInfo && (
                                     <LinkContainer to='/Register'>
                                         <Nav.Link>
-                                            <Button className='px-3 py-1 rounded-pill bisonRedBtn '>
-                                                <span className=''>Register</span>
+                                            <Button className='px-3 py-1 rounded-pill bisonWhiteBtn iconHidden'>
+                                                <span className='hideWords'>
+                                                    <i style={{fontSize: '1.5em'}}
+                                                       className="fal fa-clipboard-user"> </i>
+                                                </span>
+                                                <span className='hideIcon'>Register</span>
                                             </Button>
                                         </Nav.Link>
                                     </LinkContainer>)
@@ -169,8 +189,31 @@ const DesktopStickyHeader = () => {
                                         </LinkContainer>
                                     </NavDropdown>
                                 )}
+
+                            <LinkContainer to='/contact'>
+                                <Nav.Link>
+                                    <Button className='px-3 py-1 rounded-pill bisonWhiteBtn iconHidden '>
+                                                 <span className='hideWords'>
+                                                     <i style={{fontSize: '1.5em'}}
+                                                        className="fal fa-envelope"> </i>
+                                                 </span>
+                                        <span className='hideIcon'>Contact</span>
+                                    </Button>
+                                </Nav.Link>
+                            </LinkContainer>
+
                             </Nav>
 
+                            {/*<Nav className={'col-lg-3 justify-content-end d-sm-none d-md-none d-lg-block'}>*/}
+                            {/*    <Route render={({history}) => <SearchBox history={history}*/}
+                            {/*                                             searchSize={'sm'}*/}
+                            {/*                                             formClasses={''}*/}
+                            {/*                                             searchClasses={'col-11'}*/}
+                            {/*                                             btnSize={'sm'}*/}
+                            {/*                                             btnClasses={'bisonWhiteBtnSearch px-1 col-1 rounded-right'}*/}
+                            {/*                                             iconStyle={{fontSize: '1.53em'}}*/}
+                            {/*    />}/>*/}
+                            {/*</Nav>*/}
 
                         </Navbar.Collapse>
                     </Container>

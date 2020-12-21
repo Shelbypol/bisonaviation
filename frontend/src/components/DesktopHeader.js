@@ -43,7 +43,9 @@ const DesktopHeader = () => {
                         </Nav>
 
                         <SocialIcons socialClassName={'col-sm-3 justify-content-end'}
-                                     socialStyle={{fontSize: '1.5em'}}/>
+                                     socialStyle={{fontSize: '1.5em'}}
+                                     contactClassName={'d-none'}
+                        />
 
                     </Navbar.Collapse>
                 </Container>

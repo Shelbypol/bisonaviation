@@ -8,7 +8,8 @@ body{
     width: 100vw;
     max-width: 100%;
     contain: content;
-    background-color: #f6f5f8;
+    background-color: #fff;
+    /*background-color: #f6f5f8;*/
 }
 
 main {
@@ -39,7 +40,7 @@ main {
 .bisonRedBtn:hover {
     background-color: white;
     color: rgba(90, 00, 09, 1);
-    border: 1px solid rgba(90, 00, 09, 1);
+    /*border: 1px solid rgba(90, 00, 09, 1);*/
 }
 
 .bisonWhiteBtn{
@@ -77,6 +78,11 @@ main {
 
 .iconHidden:hover .hideWords{
     display: none;
+}
+
+/*  HORIZONTAL GRADIENT    */
+.horizontal-gradient {
+    background: linear-gradient(rgba(04, 06, 07, 1), #fff);
 }
 
 h3 {
