@@ -257,7 +257,7 @@ const DesktopStickyHeader = () => {
                                         ) :
                                         <LinkContainer to='/login'>
                                             <Nav.Link>
-                                                <Button className='px-3 py-0 mt-2 rounded-pill bisonWhiteBtn iconHidden'>
+                                                <Button className='px-3 mr-n3 py-0 mt-2 rounded-pill bisonWhiteBtn iconHidden'>
                                                  <span className='hideWords'>
                                                      <i style={{fontSize: '1.5em'}}
                                                         className=" fal fa-plane-arrival "> </i>
@@ -285,7 +285,7 @@ const DesktopStickyHeader = () => {
                                     {/*  ADMIN DROPDOWN  */}
                                     {userInfo && userInfo.isAdmin && (
                                         <NavDropdown style={{zIndex: '1000'}} title='Admin' id='adminmenu'
-                                                     className='mr-n2 py-0 mt-2 whiteDropdown'>
+                                                     className='mr-0 py-0 mt-2 whiteDropdown'>
                                             <LinkContainer to='/admin/userlist'>
                                                 <NavDropdown.Item>Users</NavDropdown.Item>
                                             </LinkContainer>
@@ -301,12 +301,12 @@ const DesktopStickyHeader = () => {
 
                                     <LinkContainer to='/contact'>
                                         <Nav.Link>
-                                            <Button className='px-3 py-0 mt-2 rounded-pill bisonWhiteBtn iconHidden '>
-                                                 <span className='hideWords'>
+                                            <Button className='px-3 py-0 mt-2 rounded-pill bisonRedBtn iconHidden '>
+                                                 <span className='hideIcon'>
                                                      <i style={{fontSize: '1.5em'}}
                                                         className="fal fa-envelope"> </i>
                                                  </span>
-                                                <span className='hideIcon'>Contact</span>
+                                                <span className='hideWords'>Contact</span>
                                             </Button>
                                         </Nav.Link>
                                     </LinkContainer>
@@ -349,7 +349,7 @@ const DesktopStickyHeader = () => {
                                         ) :
                                         <LinkContainer to='/login'>
                                             <Nav.Link>
-                                                <Button className='px-3 py-0 mt-2 rounded-pill bisonWhiteBtn iconHidden'>
+                                                <Button className='px-3 mr-n3 py-0 mt-2 rounded-pill bisonWhiteBtn iconHidden'>
                                                  <span className='hideWords'>
                                                      <i style={{fontSize: '1.5em'}}
                                                         className=" fal fa-plane-arrival "> </i>
@@ -377,7 +377,7 @@ const DesktopStickyHeader = () => {
                                     {/*  ADMIN DROPDOWN  */}
                                     {userInfo && userInfo.isAdmin && (
                                         <NavDropdown style={{zIndex: '1000'}} title='Admin' id='adminmenu'
-                                                     className='mr-n2 py-0 mt-2 whiteDropdown'>
+                                                     className='mr-0 py-0 mt-2 whiteDropdown'>
                                             <LinkContainer to='/admin/userlist'>
                                                 <NavDropdown.Item>Users</NavDropdown.Item>
                                             </LinkContainer>
@@ -393,12 +393,12 @@ const DesktopStickyHeader = () => {
                                     {/* CONTACT  */}
                                     <LinkContainer to='/contact'>
                                         <Nav.Link>
-                                            <Button className='px-3 py-0 mt-2 rounded-pill bisonWhiteBtn iconHidden '>
-                                                 <span className='hideWords'>
+                                            <Button className='px-3 py-0 mt-2 rounded-pill bisonRedBtn iconHidden '>
+                                                 <span className='hideIcon'>
                                                      <i style={{fontSize: '1.5em'}}
                                                         className="fal fa-envelope"> </i>
                                                  </span>
-                                                <span className='hideIcon'>Contact</span>
+                                                <span className='hideWords'>Contact</span>
                                             </Button>
                                         </Nav.Link>
                                     </LinkContainer>

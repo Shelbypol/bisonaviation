@@ -65,3 +65,10 @@ button.navbar-toggler:hover {
     background-repeat: no-repeat;
     background-position: center;
 }
+
+#searchImage:hover {
+    background-image: url("../images/graphics/search-logo-very-small-white.png");
+    /*background-repeat: no-repeat;*/
+    /*background-position: center;*/
+}
+
