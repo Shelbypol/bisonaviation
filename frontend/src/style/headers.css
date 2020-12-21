@@ -38,11 +38,16 @@ button.navbar-toggler:hover {
 
 .dropdown-menu {
     border-left: 5px solid rgba(90, 00, 09,1);
-    /*border-top: 5px solid rgba(90, 00, 09,1);*/
-    /*border-bottom: 5px solid rgba(90, 00, 09,1);*/
     background-color: black;
     color: white;
 }
+
+/*.dropdown-menu > .whiteDropdown{*/
+/*    border-left: 5px solid rgba(90, 00, 09,1);*/
+/*    background-color: white;*/
+/*    color: black;*/
+/*}*/
+
 
 .dropdown-item {
     color: white;
@@ -54,3 +59,16 @@ button.navbar-toggler:hover {
     background-color: rgba(90, 00, 09, 1);
     color: white;
 }
+
+#searchImage {
+    background-image: url("../images/graphics/search-logo-very-small.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#searchImage:hover {
+    background-image: url("../images/graphics/search-logo-very-small-white.png");
+    /*background-repeat: no-repeat;*/
+    /*background-position: center;*/
+}
+

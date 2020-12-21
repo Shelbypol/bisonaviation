@@ -32,18 +32,26 @@ const DesktopHeader = () => {
                         </Nav>
 
                         <Nav className='col-sm-6 justify-content-center px-3'>
+
                             <Route render={({history}) => <SearchBox history={history}
                                                                      searchSize={'sm'}
                                                                      formClasses={'col-sm-12'}
                                                                      searchClasses={'col-10'}
-                                                                     btnSize={'sm'}
+                                                                     btnSize={'md'}
                                                                      btnClasses={'bisonWhiteBtnSearch px-1 col-2 rounded-right'}
-                                                                     iconStyle={{fontSize: '1.53em'}}
+                                                                     btnStyle={{paddingTop: '1.80em'}}
+                                                                     // iconStyle={{fontSize: '1.53em'}}
+                                                                     // imgClasses={'w-25 h-50'}
                             />}/>
+
+
                         </Nav>
 
                         <SocialIcons socialClassName={'col-sm-3 justify-content-end'}
-                                     socialStyle={{fontSize: '1.5em'}}/>
+                                     socialStyle={{fontSize: '1.6em'}}
+                                     // socialStyle={{fontSize: '1.5em'}}
+                                     contactClassName={'d-none'}
+                        />
 
                     </Navbar.Collapse>
                 </Container>

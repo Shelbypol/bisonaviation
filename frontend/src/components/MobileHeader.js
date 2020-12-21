@@ -58,18 +58,16 @@ const MobileHeader = () => {
                         <Navbar.Collapse id="basic-navbar-nav">
 
                             {/*/!*  SEARCH BOX  *!/*/}
-                            {/*<Nav className=''>*/}
-                            {/*    <Nav.Link>*/}
                             <Route render={({history}) => <SearchBox history={history}
                                                                      searchSize={'sm'}
                                                                      formClasses={'col-12 my-4'}
                                                                      searchClasses={'col-10'}
                                                                      btnSize={'sm'}
                                                                      btnClasses={'bisonWhiteBtnSearch px-1 col-2 rounded-right'}
-                                                                     iconStyle={{fontSize: '1.53em'}}
+                                                                     btnStyle={{paddingTop: '2em', paddingBottom: '1.45em'}}
+                                                                     // iconStyle={{fontSize: '1.53em'}}
                             />}/>
-                            {/*    </Nav.Link>*/}
-                            {/*</Nav>*/}
+
 
                             <Nav className='px-3'>
 
