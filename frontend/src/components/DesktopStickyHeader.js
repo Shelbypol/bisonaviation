@@ -207,20 +207,6 @@ const DesktopStickyHeader = () => {
                                 </Nav>
                             }
 
-                            {/*/!*===============  SEARCH BAR  ==================*!/*/}
-
-                            {/*{goingUp &&*/}
-                            {/*<Nav className={'col-lg-3 d-sm-none d-md-none d-lg-block'}>*/}
-                            {/*    <Route render={({history}) => <SearchBox history={history}*/}
-                            {/*                                             searchSize={'sm'}*/}
-                            {/*                                             searchClasses={'col-9'}*/}
-                            {/*                                             btnSize={'sm'}*/}
-                            {/*                                             btnClasses={'bisonWhiteBtnSearch px-1 col-2 rounded-right'}*/}
-                            {/*                                             iconStyle={{fontSize: '1.53em'}}*/}
-                            {/*    />}/>*/}
-                            {/*</Nav>*/}
-                            {/*}*/}
-
                             {/*============= PROFILE BTNS HIDDEN ON SCROLL ==============*/}
                             {/*   PROFILE BTNS  */}
                             {goingUp ?
