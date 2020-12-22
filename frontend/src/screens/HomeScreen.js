@@ -44,11 +44,11 @@ const HomeScreen = () => {
 
 
             <main className='mx-auto' style={{ marginBottom: '30vh'}}>
-                <Container style={{marginBottom: '20vh', marginTop: '20vh'}}>
 
-                    {/*  =============   ICONS ROW  =============== */}
+                    {/*  =============   ICONS ROW - DESKTOP  =============== */}
+                <Container style={{marginBottom: '15vh', marginTop: '10vh'}}>
                     <Row>
-                        <Col xs={12} md={6} >
+                        <Col xs={12} md={6} className='mb-5'>
                             <Row>
                                 <Col xs={12} className='d-flex justify-content-center'>
                                     <h4> FAA Part 145 Repair Station</h4>
@@ -82,9 +82,9 @@ const HomeScreen = () => {
                     </Row>
                 </Container>
 
-                    {/*  =============  CARD NAV  =============  */}
 
-                <Container  style={{marginBottom: '30vh', marginTop: '15vh'}} >
+                    {/*  =============  SUMMARY NAV  =============  */}
+                <Container  style={{marginBottom: '20vh', marginTop: '10vh'}} >
 
                     <Row>
                         <Col xs={12}>
