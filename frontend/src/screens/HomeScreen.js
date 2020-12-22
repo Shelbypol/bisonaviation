@@ -42,16 +42,14 @@ const HomeScreen = () => {
                         imgClassName={'col-12 p-0 m-0'}
             />
 
-
-            <main className='mx-auto' style={{ marginBottom: '30vh'}}>
-
+            {/*<main className='mx-auto'>*/}
                     {/*  =============   ICONS ROW - DESKTOP  =============== */}
-                <Container style={{marginBottom: '15vh', marginTop: '10vh'}}>
+                <Container className='mt-5' >
                     <Row>
                         <Col xs={12} md={6} className='mb-5'>
                             <Row>
                                 <Col xs={12} className='d-flex justify-content-center'>
-                                    <h4> FAA Part 145 Repair Station</h4>
+                                    <h4 className='accentFont'> FAA Part 145 Repair Station</h4>
                                 </Col>
                                 <Col xs={12} className='d-flex justify-content-center'>
                                     <Button className='rounded-circle px-4 bisonWhiteBtn my-2'>
@@ -67,7 +65,7 @@ const HomeScreen = () => {
                         <Col xs={12} md={6} >
                             <Row>
                                 <Col xs={12} className='d-flex justify-content-center'>
-                                    <h4>FAA Diamond Award Recipient</h4>
+                                    <h4 className='accentFont'>FAA Diamond Award Recipient</h4>
                                 </Col>
                                 <Col xs={12} className='d-flex justify-content-center'>
                                     <Button className='rounded-circle px-4 bisonWhiteBtn my-2'>
@@ -81,50 +79,49 @@ const HomeScreen = () => {
                         </Col>
                     </Row>
                 </Container>
-
+            {/*</main>*/}
 
                     {/*  =============  SUMMARY NAV  =============  */}
-                <Container  style={{marginBottom: '20vh', marginTop: '10vh'}} >
-
+                <Container>
                     <Row>
                         <Col xs={12}>
                             <h1>Services</h1>
                         </Col>
                         <Col xs={12} className='' >
                             <Row>
-                                <Col md={3} xs={6} className='d-flex justify-content-center mb-3 hoverTitle'>
-                                    <Button className='pt-0 pl-1 pb-0 pr-0 rounded-left '>
+                                <Col lg={3} xs={6} className='d-flex justify-content-center mb-3 hoverTitle'>
+                                    <Button className='p-0 rounded-left '>
                                         <img src={avionics} alt="" className='h-100 w-100'/>
                                     </Button>
                                     <Button className='overlay w-75 h-50 mx-auto'>
-                                        <p className='text'>AVIONICS</p>
+                                        <p className='text accentFont'>AVIONICS</p>
                                     </Button>
                                 </Col>
 
-                                <Col md={3} xs={6} className='d-flex justify-content-center mb-3 hoverTitle'>
-                                    <Button className='pt-0 pl-1 pb-0 pr-0 rounded-left '>
+                                <Col lg={3} xs={6} className='d-flex justify-content-center mb-3 hoverTitle'>
+                                    <Button className='p-0 rounded-left '>
                                         <img src={maintenance} alt="" className='h-100 w-100 hoverImage'/>
                                     </Button>
                                     <Button className='overlay w-75  h-50 mx-auto'>
-                                        <p className='text'>MECHANICS</p>
+                                        <p className='text accentFont'>MECHANICS</p>
                                     </Button>
                                 </Col>
 
-                                <Col md={3} xs={6} className='d-flex justify-content-center mb-3 hoverTitle'>
-                                    <Button className='pt-0 pl-1 pb-0 pr-0 rounded-left '>
+                                <Col lg={3} xs={6} className='d-flex justify-content-center mb-3 hoverTitle'>
+                                    <Button className='p-0 rounded-left '>
                                         <img src={flir} alt="" className='h-100 w-100'/>
                                     </Button>
                                     <Button className='overlay w-75 h-50 mx-auto'>
-                                        <p className='text'>EO/IR FLIR</p>
+                                        <p className='text accentFont'>EO/IR FLIR</p>
                                     </Button>
                                 </Col>
 
-                                <Col md={3} xs={6} className='d-flex justify-content-center mb-3 hoverTitle'>
-                                    <Button className='pt-0 pl-1 pb-0 pr-0 rounded-left '>
+                                <Col lg={3} xs={6} className='d-flex justify-content-center mb-3 hoverTitle'>
+                                    <Button className='p-0 rounded-left '>
                                         <img src={garmin} alt="" className='h-100 w-100'/>
                                     </Button>
                                     <Button className='overlay w-75 h-50 mx-auto'>
-                                        <p className='text'>GARMIN DEALER</p>
+                                        <p className='text accentFont'>GARMIN DEALER</p>
                                     </Button>
                                 </Col>
                             </Row>
@@ -133,24 +130,9 @@ const HomeScreen = () => {
                 </Container>
 
 
-
+            <main className='mx-auto' style={{marginTop: '15vh', marginBottom: '30vh'}}>
                     {/*  =============  WHY BISON  =============  */}
-                <Container>
-                    <CardFlippedLeft imgSrc={aboutImg}
-                                     imgClassName={'img-fluid float-left imgCardAbout'}
-                                     imgAlt={''}
-                                     btnIconStyle={{display: 'hidden'}}
-                                     btnIconVariant={'danger'}
-                                     textIcon={<i className="far fa-plane"> </i>}
-                                     title={'Why choose Bison Aviation?'}
-                                     titleStyle={{borderBottom: '3px solid darkred'}}
-                                     subTitle={'AVIONICS & AIRCRAFT MAINTENANCE & FLIR'}
-                                     text={'Bison Aviation is an FAA certificated Part 145 Repair Station serving the general aviation community. Founded by an avid general aviation pilot and fellow aircraft owner, we operate with the unique perspective of an organization which is intimately familiar not only with the world of professional aircraft maintenance, but also with the world of aircraft ownership and operation. We know that our customers rely on us to provide them with an honest and frank assessment of the condition of their aircraft, and we are honored to accept that charge.'}
-                                     btnTitle={''}
-                                     btnClassName={'none'}
-                    />
-
-                </Container>
+                    <CardFlippedLeft/>
             </main>
 
 
