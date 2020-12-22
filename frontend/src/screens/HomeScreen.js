@@ -54,11 +54,11 @@ const HomeScreen = () => {
                                     <h4> FAA Part 145 Repair Station</h4>
                                 </Col>
                                 <Col xs={12} className='d-flex justify-content-center'>
-                                    <Button className='rounded-circle bisonRedBtn my-2'>
+                                    <Button className='rounded-circle px-4 bisonWhiteBtn my-2'>
                                         <i className="fal fa-tools" style={{fontSize: '2em'}}> </i>
                                     </Button>
                                 </Col>
-                                <Col xs={12} className='d-flex justify-content-center'>
+                                <Col xs={12}>
                                     <p> Bison Aviation is a fully licensed FAA Part 145 Repair Station with Airframe, Instrument and Radio capabilities, an accreditation which is extremely difficult to attain and sets Bison Aviation apart from most other general aviation shops. Among other privileges, this licensure allows Bison Aviation to conduct testing and recertification of aircraft static systems and transponder equipment. Bison Aviation is the holder of FAA Air Agency Certificate Number 85NR497D.</p>
                                 </Col>
                             </Row>
@@ -70,11 +70,11 @@ const HomeScreen = () => {
                                     <h4>FAA Diamond Award Recipient</h4>
                                 </Col>
                                 <Col xs={12} className='d-flex justify-content-center'>
-                                    <Button className='rounded-circle bisonRedBtn my-2'>
+                                    <Button className='rounded-circle px-4 bisonWhiteBtn my-2'>
                                         <i className="fal fa-award" style={{fontSize: '2em'}}> </i>
                                     </Button>
                                 </Col>
-                                <Col xs={12} className='d-flex justify-content-center'>
+                                <Col xs={12}>
                                     <p> Bison Aviation is a proud recipient of the prestigious FAA Diamond Award for excellence in maintenance training & safety. This award is the highest conferred by the FAA for aircraft maintenance organizations in recognition of their dedication to employee training and safety. Our technicians regularly participate in online and face-to-face training programs put on by industry professionals, owner / type organizations (ABS, AOPA, TCF, COPA, etc.) and of course the FAA, resulting in a training curriculum which vastly exceeds the regulatory requirements.</p>
                                 </Col>
                             </Row>
@@ -85,34 +85,46 @@ const HomeScreen = () => {
                     {/*  =============  CARD NAV  =============  */}
 
                 <Container  style={{marginBottom: '30vh', marginTop: '15vh'}} >
+
                     <Row>
                         <Col xs={12}>
                             <h1>Services</h1>
                         </Col>
-                        <Col xs={12} >
+                        <Col xs={12} className='' >
                             <Row>
-                                <Col md={3} xs={6} className='d-flex justify-content-center'>
-                                    <Button className='bisonWhiteBtn py-1 px-1 '>
+                                <Col md={3} xs={6} className='d-flex justify-content-center mb-3 hoverTitle'>
+                                    <Button className='pt-0 pl-1 pb-0 pr-0 rounded-left '>
                                         <img src={avionics} alt="" className='h-100 w-100'/>
-                                        <h4 className='carousel-caption'>AVIONICS</h4>
+                                    </Button>
+                                    <Button className='overlay w-75 h-50 mx-auto'>
+                                        <p className='text'>AVIONICS</p>
                                     </Button>
                                 </Col>
-                                <Col md={3} xs={6} className='d-flex justify-content-center'>
-                                    <Button className='bisonWhiteBtn py-1 px-1 '>
-                                        <img src={maintenance} alt="" className='h-100 w-100'/>
-                                        <h4 className='carousel-caption'>MECHANICS</h4>
+
+                                <Col md={3} xs={6} className='d-flex justify-content-center mb-3 hoverTitle'>
+                                    <Button className='pt-0 pl-1 pb-0 pr-0 rounded-left '>
+                                        <img src={maintenance} alt="" className='h-100 w-100 hoverImage'/>
+                                    </Button>
+                                    <Button className='overlay w-75  h-50 mx-auto'>
+                                        <p className='text'>MECHANICS</p>
                                     </Button>
                                 </Col>
-                                <Col md={3} xs={6} className='d-flex justify-content-center'>
-                                    <Button className='bisonWhiteBtn py-1 px-1 '>
+
+                                <Col md={3} xs={6} className='d-flex justify-content-center mb-3 hoverTitle'>
+                                    <Button className='pt-0 pl-1 pb-0 pr-0 rounded-left '>
                                         <img src={flir} alt="" className='h-100 w-100'/>
-                                        <h4 className='carousel-caption'>EO/IR FLIR</h4>
+                                    </Button>
+                                    <Button className='overlay w-75 h-50 mx-auto'>
+                                        <p className='text'>EO/IR FLIR</p>
                                     </Button>
                                 </Col>
-                                <Col md={3} xs={6} className='d-flex justify-content-center'>
-                                    <Button className='bisonWhiteBtn py-1 px-1 '>
+
+                                <Col md={3} xs={6} className='d-flex justify-content-center mb-3 hoverTitle'>
+                                    <Button className='pt-0 pl-1 pb-0 pr-0 rounded-left '>
                                         <img src={garmin} alt="" className='h-100 w-100'/>
-                                        <h4 className='carousel-caption'>GARMIN PRODUCTS</h4>
+                                    </Button>
+                                    <Button className='overlay w-75 h-50 mx-auto'>
+                                        <p className='text'>GARMIN DEALER</p>
                                     </Button>
                                 </Col>
                             </Row>
