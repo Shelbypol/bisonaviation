@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom'
 import Jumbotrons from "../components/Jumbotrons";
 import CardFlippedLeft from "../components/CardFlippedLeft";
 import CardFlippedRight from "../components/CardFlippedRight"
+import '../style/flag.scss'
 import AlertDismissible from "../components/AlertDismissible";
 import CardOverlay from "../components/CardOverlay";
 import aboutImg from '../images/general/hangar.png'
@@ -121,6 +122,7 @@ const HomeScreen = () => {
                                         <img src={garmin} alt="" className='h-100 w-100'/>
                                     </Button>
                                     <Button className='overlay w-75 h-50 mx-auto'>
+                                        <p className='flag red accentFont mt-n1 mb-0 mx-0'>NEW!</p>
                                         <p className='text accentFont'>GARMIN DEALER</p>
                                     </Button>
                                 </Col>
@@ -138,20 +140,20 @@ const HomeScreen = () => {
 
             {/*   =============   AVIONICS SECTION   =============    */}
 
-            <CardFlippedLeft imgSrc={panel}
-                             imgClassName={'img-fluid float-left imgCardAvionics'}
-                             titleStyle={''}
-                             imgAlt={''}
-                             title={'Avionics'}
-                             subTitle={'full service avionics staff'}
-                             btnIconStyle={''}
-                             btnIconVariant={'danger'}
-                             textIcon={<i className="fal fa-tachometer-alt-slow "> </i>}
-                             text={'Bison Aviation is proud to have a full-time avionics team in-house. While many shops “sub out” their avionics work, Bison Aviation maintains a full service avionics staff as a part of our workforce. Our capabilities range from basic troubleshooting to complete panel installations and by having all services in-house (including CNC panel fabrication, laser engraving, and 3D printing) we are able to save time and reduce costs for our customers.'}
-                             btnTitle={'Avionics'}
-                             btnBottomStyle={{visibility: 'hidden'}}
-                             btnBottomVariant={'none'}
-            />
+            {/*<CardFlippedLeft imgSrc={panel}*/}
+            {/*                 imgClassName={'img-fluid float-left imgCardAvionics'}*/}
+            {/*                 titleStyle={''}*/}
+            {/*                 imgAlt={''}*/}
+            {/*                 title={'Avionics'}*/}
+            {/*                 subTitle={'full service avionics staff'}*/}
+            {/*                 btnIconStyle={''}*/}
+            {/*                 btnIconVariant={'danger'}*/}
+            {/*                 textIcon={<i className="fal fa-tachometer-alt-slow "> </i>}*/}
+            {/*                 text={'Bison Aviation is proud to have a full-time avionics team in-house. While many shops “sub out” their avionics work, Bison Aviation maintains a full service avionics staff as a part of our workforce. Our capabilities range from basic troubleshooting to complete panel installations and by having all services in-house (including CNC panel fabrication, laser engraving, and 3D printing) we are able to save time and reduce costs for our customers.'}*/}
+            {/*                 btnTitle={'Avionics'}*/}
+            {/*                 btnBottomStyle={{visibility: 'hidden'}}*/}
+            {/*                 btnBottomVariant={'none'}*/}
+            {/*/>*/}
 
             <CardFlippedRight imgSrc={tayseerAvionics}
                               imgClassName={'img-fluid float-right imgCardAvionics'}
