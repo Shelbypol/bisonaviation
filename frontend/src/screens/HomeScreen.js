@@ -13,6 +13,8 @@ import tayseerAvionics from "../images/avionics/tayseer-1.jpg"
 import garmin from '../images/avionics/garmin-dealership.png'
 import hangar from '../images/general/hangar.png'
 import heroImg from '../images/general/aircraft-double-decker-red-belt_1500.png'
+import MultiCarouselPage from "../components/MulitCarouselPage";
+
 
 const HomeScreen = () => {
 
@@ -89,13 +91,23 @@ const HomeScreen = () => {
             {/*</main>*/}
 
             {/*  =============  SUMMARY NAV  =============  */}
-            <Container>
+            <Container style={{marginTop: '15vh'}}>
                 <Row>
                     <Col xs={12}>
                         <h1>Services</h1>
                     </Col>
                     <Col xs={12} className=''>
                         <Row>
+                            <Col lg={3} xs={6} className='d-flex justify-content-center mb-3 hoverTitle'>
+                                <Button className='p-0 rounded-left '>
+                                    <img src={garmin} alt="" className='h-100 w-100'/>
+                                </Button>
+                                <Button className='overlay w-75 h-50 mx-auto'>
+                                    <p className='flag red accentFont mt-n1 mb-0 mx-0'>NEW!</p>
+                                    <p className='text accentFont'>GARMIN DEALER</p>
+                                </Button>
+                            </Col>
+
                             <Col lg={3} xs={6} className='d-flex justify-content-center mb-3 hoverTitle'>
                                 <Button className='p-0 rounded-left '>
                                     <img src={avionics} alt="" className='h-100 w-100'/>
@@ -122,23 +134,13 @@ const HomeScreen = () => {
                                     <p className='text accentFont'>EO/IR FLIR</p>
                                 </Button>
                             </Col>
-
-                            <Col lg={3} xs={6} className='d-flex justify-content-center mb-3 hoverTitle'>
-                                <Button className='p-0 rounded-left '>
-                                    <img src={garmin} alt="" className='h-100 w-100'/>
-                                </Button>
-                                <Button className='overlay w-75 h-50 mx-auto'>
-                                    <p className='flag red accentFont mt-n1 mb-0 mx-0'>NEW!</p>
-                                    <p className='text accentFont'>GARMIN DEALER</p>
-                                </Button>
-                            </Col>
                         </Row>
                     </Col>
                 </Row>
             </Container>
 
 
-            <main className='mx-auto' style={{ marginTop: '25vh'}}>
+            <main className='mx-auto' style={{marginTop: '35vh'}}>
                 {/*  =============  WHY BISON  =============  */}
                 <Container>
                     <JumboCard
@@ -280,81 +282,94 @@ const HomeScreen = () => {
 
                 </Container>
 
-                <Container>
-                {/*   =============   MECHANICS SECTION    =============   */}
-                <JumboCard
-                    rowStyle={{marginTop: '35vh'}}
-                    // lgRow={}
-                    // mdRow={}
-                    xsRow={12}
-                    lgImgCol={4}
-                    // mdImgCol={}
-                    xsImgCol={{order: 'last'}}
-                    imgSrc={cncMachine}
-                    imgClassName={'h-75 w-75 mt-5'}
-                    lgTextCol={8}
-                    // mdTextCol={}
-                    xsTextCol={12}
-                    lgTitleCol={12}
-                    // mdTitleCol={}
-                    // xsTitleCol={}
-                    // lgIconTextCol={}
-                    mdIconTextCol={12}
-                    // xsIconTextCol={}
-                    iconSymbol={'far fa-plane bisonRedTxt'}
-                    lgIconCol={1}
-                    // mdIconCol={}
-                    // xsIconCol={}
-                    lgSubtextCol={11}
-                    // mdSubtextCol={}
-                    // xsSubtextCol={}
-                    // lgBlockTextCol={}
-                    mdBlockTextCol={12}
-                    // xsBlockTextCol={}
-                    title={'Mechanics'}
-                    subText={'full service avionics staff'}
-                    paragraph={'Bison Aviation is proud to have a full-time avionics team in-house. While many shops “sub out” their avionics work, Bison Aviation maintains a full service avionics staff as a part of our workforce. Our capabilities range from basic troubleshooting to complete panel installations and by having all services in-house (including CNC panel fabrication, laser engraving, and 3D printing) we are able to save time and reduce costs for our customers.'}
-                />
-
-                    <JumboCard
-                        // lgRow={}
-                        // mdRow={}
-                        xsRow={12}
-                        lgImgCol={4}
-                        // mdImgCol={}
-                        xsImgCol={12}
-                        imgSrc={tayseerAvionics}
-                        imgClassName={'h-75 w-75 mt-5'}
-                        lgTextCol={8}
-                        // mdTextCol={}
-                        xsTextCol={12}
-                        lgTitleCol={12}
-                        // mdTitleCol={}
-                        // xsTitleCol={}
-                        // lgIconTextCol={}
-                        mdIconTextCol={12}
-                        // xsIconTextCol={}
-                        iconSymbol={'far fa-plane bisonRedTxt'}
-                        lgIconCol={1}
-                        // mdIconCol={}
-                        // xsIconCol={}
-                        lgSubtextCol={11}
-                        // mdSubtextCol={}
-                        // xsSubtextCol={}
-                        // lgBlockTextCol={}
-                        mdBlockTextCol={12}
-                        // xsBlockTextCol={}
-                        subText={'full service avionics staff'}
-                        paragraph={'Bison Aviation is proud to have a full-time avionics team in-house. While many shops “sub out” their avionics work, Bison Aviation maintains a full service avionics staff as a part of our workforce. Our capabilities range from basic troubleshooting to complete panel installations and by having all services in-house (including CNC panel fabrication, laser engraving, and 3D printing) we are able to save time and reduce costs for our customers.'}
-
-                    />
-
-
+                <Container style={{marginTop: '20vh'}}>
+                    <Row>
+                        <Col>
+                            <h1 className='flag red accentFont mt-n2 mb-0 mx-0'>NEW!</h1>
+                            <h1>Certified Garmin Dealer</h1>
+                        </Col>
+                    </Row>
+                    <Container/>
+                    <Container>
+                        <MultiCarouselPage/>
+                    </Container>
                 </Container>
+
+                    <Container>
+                        {/*   =============   MECHANICS SECTION    =============   */}
+                        <JumboCard
+                            rowStyle={{marginTop: '35vh'}}
+                            // lgRow={}
+                            // mdRow={}
+                            xsRow={12}
+                            lgImgCol={4}
+                            // mdImgCol={}
+                            xsImgCol={{order: 'last'}}
+                            imgSrc={cncMachine}
+                            imgClassName={'h-75 w-75 mt-5'}
+                            lgTextCol={8}
+                            // mdTextCol={}
+                            xsTextCol={12}
+                            lgTitleCol={12}
+                            // mdTitleCol={}
+                            // xsTitleCol={}
+                            // lgIconTextCol={}
+                            mdIconTextCol={12}
+                            // xsIconTextCol={}
+                            iconSymbol={'far fa-plane bisonRedTxt'}
+                            lgIconCol={1}
+                            // mdIconCol={}
+                            // xsIconCol={}
+                            lgSubtextCol={11}
+                            // mdSubtextCol={}
+                            // xsSubtextCol={}
+                            // lgBlockTextCol={}
+                            mdBlockTextCol={12}
+                            // xsBlockTextCol={}
+                            title={'Mechanics'}
+                            subText={'full service avionics staff'}
+                            paragraph={'Bison Aviation is proud to have a full-time avionics team in-house. While many shops “sub out” their avionics work, Bison Aviation maintains a full service avionics staff as a part of our workforce. Our capabilities range from basic troubleshooting to complete panel installations and by having all services in-house (including CNC panel fabrication, laser engraving, and 3D printing) we are able to save time and reduce costs for our customers.'}
+                        />
+
+                        <JumboCard
+                            // lgRow={}
+                            // mdRow={}
+                            xsRow={12}
+                            lgImgCol={4}
+                            // mdImgCol={}
+                            xsImgCol={12}
+                            imgSrc={tayseerAvionics}
+                            imgClassName={'h-75 w-75 mt-5'}
+                            lgTextCol={8}
+                            // mdTextCol={}
+                            xsTextCol={12}
+                            lgTitleCol={12}
+                            // mdTitleCol={}
+                            // xsTitleCol={}
+                            // lgIconTextCol={}
+                            mdIconTextCol={12}
+                            // xsIconTextCol={}
+                            iconSymbol={'far fa-plane bisonRedTxt'}
+                            lgIconCol={1}
+                            // mdIconCol={}
+                            // xsIconCol={}
+                            lgSubtextCol={11}
+                            // mdSubtextCol={}
+                            // xsSubtextCol={}
+                            // lgBlockTextCol={}
+                            mdBlockTextCol={12}
+                            // xsBlockTextCol={}
+                            subText={'full service avionics staff'}
+                            paragraph={'Bison Aviation is proud to have a full-time avionics team in-house. While many shops “sub out” their avionics work, Bison Aviation maintains a full service avionics staff as a part of our workforce. Our capabilities range from basic troubleshooting to complete panel installations and by having all services in-house (including CNC panel fabrication, laser engraving, and 3D printing) we are able to save time and reduce costs for our customers.'}
+
+                        />
+
+
+                    </Container>
             </main>
 
         </>
-    )
+)
 };
 
 export default HomeScreen
