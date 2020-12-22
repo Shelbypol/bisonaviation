@@ -76,7 +76,7 @@ const DesktopStickyHeader = () => {
                             {/*============= NAV SHOW ON SCROLL ==============*/}
 
                             {goingUp ?
-                                <Nav className='col-lg-5 col-md-6 justify-content-center'>
+                                <Nav className='col-lg-5 col-md-6 justify-content-center accentFont'>
 
                                     {/*  BROWSE PRODUCTS  */}
                                     <LinkContainer className='mx-1' to='/products'>
@@ -142,7 +142,7 @@ const DesktopStickyHeader = () => {
 
                                 :
                                 // ============= NAV HIDDEN ON SCROLL ==============
-                                <Nav className='col-lg-8 col-md-6 justify-content-end'>
+                                <Nav className='col-lg-8 col-md-6 justify-content-end accentFont'>
 
                                     {/*  BROWSE PRODUCTS  */}
                                     <LinkContainer className='mx-1' to='/products'>
