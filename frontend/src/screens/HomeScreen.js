@@ -282,7 +282,7 @@ const HomeScreen = () => {
 
                 </Container>
 
-                <Container style={{marginTop: '20vh'}}>
+                <Container style={{marginTop: '15vh'}}>
                     <Row>
                         <Col>
                             <h1 className='flag red accentFont mt-n2 mb-0 mx-0'>NEW!</h1>
@@ -299,66 +299,38 @@ const HomeScreen = () => {
                         {/*   =============   MECHANICS SECTION    =============   */}
                         <JumboCard
                             rowStyle={{marginTop: '35vh'}}
-                            // lgRow={}
-                            // mdRow={}
                             xsRow={12}
                             lgImgCol={4}
-                            // mdImgCol={}
                             xsImgCol={{order: 'last'}}
                             imgSrc={cncMachine}
                             imgClassName={'h-75 w-75 mt-5'}
                             lgTextCol={8}
-                            // mdTextCol={}
                             xsTextCol={12}
                             lgTitleCol={12}
-                            // mdTitleCol={}
-                            // xsTitleCol={}
-                            // lgIconTextCol={}
                             mdIconTextCol={12}
-                            // xsIconTextCol={}
                             iconSymbol={'far fa-plane bisonRedTxt'}
                             lgIconCol={1}
-                            // mdIconCol={}
-                            // xsIconCol={}
                             lgSubtextCol={11}
-                            // mdSubtextCol={}
-                            // xsSubtextCol={}
-                            // lgBlockTextCol={}
                             mdBlockTextCol={12}
-                            // xsBlockTextCol={}
                             title={'Mechanics'}
                             subText={'full service avionics staff'}
                             paragraph={'Bison Aviation is proud to have a full-time avionics team in-house. While many shops “sub out” their avionics work, Bison Aviation maintains a full service avionics staff as a part of our workforce. Our capabilities range from basic troubleshooting to complete panel installations and by having all services in-house (including CNC panel fabrication, laser engraving, and 3D printing) we are able to save time and reduce costs for our customers.'}
                         />
 
                         <JumboCard
-                            // lgRow={}
-                            // mdRow={}
                             xsRow={12}
                             lgImgCol={4}
-                            // mdImgCol={}
                             xsImgCol={12}
                             imgSrc={tayseerAvionics}
                             imgClassName={'h-75 w-75 mt-5'}
                             lgTextCol={8}
-                            // mdTextCol={}
                             xsTextCol={12}
                             lgTitleCol={12}
-                            // mdTitleCol={}
-                            // xsTitleCol={}
-                            // lgIconTextCol={}
                             mdIconTextCol={12}
-                            // xsIconTextCol={}
                             iconSymbol={'far fa-plane bisonRedTxt'}
                             lgIconCol={1}
-                            // mdIconCol={}
-                            // xsIconCol={}
                             lgSubtextCol={11}
-                            // mdSubtextCol={}
-                            // xsSubtextCol={}
-                            // lgBlockTextCol={}
                             mdBlockTextCol={12}
-                            // xsBlockTextCol={}
                             subText={'full service avionics staff'}
                             paragraph={'Bison Aviation is proud to have a full-time avionics team in-house. While many shops “sub out” their avionics work, Bison Aviation maintains a full service avionics staff as a part of our workforce. Our capabilities range from basic troubleshooting to complete panel installations and by having all services in-house (including CNC panel fabrication, laser engraving, and 3D printing) we are able to save time and reduce costs for our customers.'}
 
