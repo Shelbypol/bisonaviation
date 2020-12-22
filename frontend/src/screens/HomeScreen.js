@@ -17,8 +17,6 @@ import panelCard from '../images/avionics/panal-avionics.JPG'
 import garmin from '../images/avionics/garmin-dealership.png'
 import {CardBody} from "reactstrap";
 import heroImg from '../images/general/aircraft-double-decker-red-belt_1500.png'
-import fadeJumbo from  '../images/graphics/transparent-black-fade_1500.png'
-
 
 const HomeScreen = () => {
 
@@ -29,51 +27,66 @@ const HomeScreen = () => {
     return (
         <>
             <Jumbotrons jumboClass={'m-0 p-0'}
-                        img={ heroImg }
+                        img={heroImg}
                         imgClassName={'col-12 p-0 mx-0 mb-0 '}
-                        textContainerStyle={{ backgroundColor: 'rgba(01, 02, 03, 1)'}}
-                        textContainerClass={'col-12 mt-n2'}
+                        textContainerStyle={{backgroundColor: 'rgba(01, 02, 03, 1)'}}
+                        textContainerClass={'col-12 mt-n2 py-0 my-0'}
                         title={'Bison Aviation'}
-                        titleClassName={'text-light m-0 p-0'}
+                        titleClassName={'text-light py-0 my-0'}
                         text={'We work hard on the ground so you can fly with confidence'}
-                        textClassName={'text-light m-0 p-0 '}
-                        />
+                        textClassName={'text-light py-0 my-0'}
+            />
 
             <Jumbotrons jumboClass={'p-0 horizontal-gradient'}
-                        jumboStyle={{ height: '180%'}}
-                        imgClassName={'w-100 col-12 p-0 m-0'}
+                        jumboStyle={{height: '180%'}}
+                        imgClassName={'col-12 p-0 m-0'}
             />
 
 
             {/*<Jumbotrons imgClass={'fadeJumbo'}/>*/}
 
-            <main className='mx-auto' style={{marginTop: '1vh', marginBottom: '30vh'}}>
-            {/*<main className='mx-auto' style={{marginTop: '-40vh', marginBottom: '30vh'}}>*/}
-                <Container>
+            <main className='mx-auto' style={{ marginBottom: '30vh'}}>
+                <Container style={{marginBottom: '20vh', marginTop: '20vh'}}>
 
                     {/*  =============   ICONS ROW  =============== */}
-                    <Row className='justify-content-center'
-                         style={{marginBottom: '20vh', marginTop: '20vh'}}
-                         xs={12}>
-                        <Col xs={6}>
-                            <Button className='display-inline-block py-2 px-3 rounded-circle'
-                                    variant='danger'>
-                                <i className="fal fa-tools"> </i>
-                            </Button>
-                            <h4> FAA Part 145 Repair Station</h4>
+                    <Row>
+                        <Col xs={12} md={6} >
+                            <Row>
+                                <Col xs={12} className='d-flex justify-content-center'>
+                                    <h4> FAA Part 145 Repair Station</h4>
+                                </Col>
+                                <Col xs={12} className='d-flex justify-content-center'>
+                                    <Button className='rounded-circle bisonRedBtn my-2'>
+                                        <i className="fal fa-tools" style={{fontSize: '2em'}}> </i>
+                                    </Button>
+                                </Col>
+                                <Col xs={12} className='d-flex justify-content-center'>
+                                    <p> Bison Aviation is a fully licensed FAA Part 145 Repair Station with Airframe, Instrument and Radio capabilities, an accreditation which is extremely difficult to attain and sets Bison Aviation apart from most other general aviation shops. Among other privileges, this licensure allows Bison Aviation to conduct testing and recertification of aircraft static systems and transponder equipment. Bison Aviation is the holder of FAA Air Agency Certificate Number 85NR497D.</p>
+                                </Col>
+                            </Row>
                         </Col>
-                        <Col xs={6}>
-                            <Button className='display-inline-block py-2 px-3 rounded-circle'
-                                    variant='danger'>
-                                <i className="fal fa-award"> </i>
-                            </Button>
-                            <h4> FAA Diamond Award Recipient</h4>
+
+                        <Col xs={12} md={6} >
+                            <Row>
+                                <Col xs={12} className='d-flex justify-content-center'>
+                                    <h4>FAA Diamond Award Recipient</h4>
+                                </Col>
+                                <Col xs={12} className='d-flex justify-content-center'>
+                                    <Button className='rounded-circle bisonRedBtn my-2'>
+                                        <i className="fal fa-award" style={{fontSize: '2em'}}> </i>
+                                    </Button>
+                                </Col>
+                                <Col xs={12} className='d-flex justify-content-center'>
+                                    <p> Bison Aviation is a proud recipient of the prestigious FAA Diamond Award for excellence in maintenance training & safety. This award is the highest conferred by the FAA for aircraft maintenance organizations in recognition of their dedication to employee training and safety. Our technicians regularly participate in online and face-to-face training programs put on by industry professionals, owner / type organizations (ABS, AOPA, TCF, COPA, etc.) and of course the FAA, resulting in a training curriculum which vastly exceeds the regulatory requirements.</p>
+                                </Col>
+                            </Row>
                         </Col>
                     </Row>
 
 
+
                     {/*  =============  CARD NAV  =============  */}
-                    <Row className='mx-auto' style={{marginBottom: '30vh'}}>
+                    <Row className='mx-auto mt-5' style={{marginBottom: '30vh'}}>
                         <Link to='#'>
 
                         </Link>
@@ -175,7 +188,7 @@ const HomeScreen = () => {
                              btnBottomVariant={'none'}
             />
 
-            <div className='fadeCardLeft'> </div>
+            <div className='fadeCardLeft'></div>
 
 
             {/*   =============   MECHANICS SECTION    =============   */}
@@ -211,7 +224,7 @@ const HomeScreen = () => {
             />
 
 
-            <div className='fadeCardLeft'> </div>
+            <div className='fadeCardLeft'></div>
 
 
             {/*<Jumbotrons imgClass={'fadeCardJumbo '}/>*/}

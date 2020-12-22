@@ -1,10 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     width: 100vw;
     max-width: 100%;
     contain: content;
@@ -20,20 +20,26 @@ main {
     min-height: 80vh;
 }
 
+/* FONT JUMBO */
+h1 {
+    font-family: 'Sanchez', serif;
+}
+
+
 /* SITE COLOR */
-.bisonRedBtmBorder{
+.bisonRedBtmBorder {
     border-bottom: 3px solid rgba(90, 00, 09, 1);
 }
 
-.bisonRedTxt{
+.bisonRedTxt {
     color: rgba(90, 00, 09, 1);
 }
 
-.bisonRedBgColor{
+.bisonRedBgColor {
     background-color: rgba(90, 00, 09, 1);
 }
 
-.bisonRedBtn{
+.bisonRedBtn {
     background-color: rgba(90, 00, 09, 1);
 }
 
@@ -43,7 +49,7 @@ main {
     /*border: 1px solid rgba(90, 00, 09, 1);*/
 }
 
-.bisonWhiteBtn{
+.bisonWhiteBtn {
     background-color: #fff;
     color: rgba(90, 00, 09, 1);
 }
@@ -53,7 +59,7 @@ main {
     color: white;
 }
 
-.bisonWhiteBtnSearch{
+.bisonWhiteBtnSearch {
     background-color: #f6f5f8;
     color: rgba(90, 00, 09, 1);
 }
@@ -64,19 +70,20 @@ main {
 }
 
 /*   FONT-AWESOME   */
-.socialIcons:hover{
+.socialIcons:hover {
     color: rgba(90, 00, 09, 1);
 }
+
 /* HIDE AND SHOW ICONS */
 .iconHidden .hideIcon {
     display: none;
 }
 
-.iconHidden:hover .hideIcon{
+.iconHidden:hover .hideIcon {
     display: inherit;
 }
 
-.iconHidden:hover .hideWords{
+.iconHidden:hover .hideWords {
     display: none;
 }
 
@@ -93,7 +100,7 @@ h3 {
     margin: 0.1rem;
 }
 
-h1{
+h1 {
     font-size: 1.8rem;
     padding: 1rem 0;
 }
@@ -143,13 +150,13 @@ h2 {
     max-width: 100%;
     height: 25vw;
     max-height: 100%;
-    }
+}
 
-.cardStyle{
+.cardStyle {
     /*margin-top: 10vh;*/
 }
 
-.fadeCardLeft{
+.fadeCardLeft {
     /*background-image: url("src/images/graphics/black-top-large-left.png");*/
     background-repeat: no-repeat;
     height: 48vh;
@@ -161,7 +168,7 @@ h2 {
     transform: scale(-1, 1);
 }
 
-.fadeCardRight{
+.fadeCardRight {
     /*background-image: url("src/images/graphics/black-top-large-left.png");*/
     background-repeat: no-repeat;
     height: 35vh;
@@ -173,7 +180,7 @@ h2 {
     /*transform: scale(-1, -1);*/
 }
 
-.overlayImg{
+.overlayImg {
     width: 30vh;
     height: 25vh;
 }
