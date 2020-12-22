@@ -14,6 +14,7 @@ import garmin from '../images/avionics/garmin-dealership.png'
 import hangar from '../images/general/hangar.png'
 import heroImg from '../images/general/aircraft-double-decker-red-belt_1500.png'
 import MultiCarouselPage from "../components/MulitCarouselPage";
+import ProductCarousel from "../components/ProductCarousel";
 
 
 const HomeScreen = () => {
@@ -290,9 +291,11 @@ const HomeScreen = () => {
                         </Col>
                     </Row>
                     <Container/>
-                    <Container>
+
+                    <Container >
                         <MultiCarouselPage/>
                     </Container>
+
                 </Container>
 
                     <Container>

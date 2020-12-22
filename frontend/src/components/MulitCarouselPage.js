@@ -4,33 +4,20 @@ import ProductCarousel from "./ProductCarousel";
 
 const MultiCarouselPage = () => {
     return (
-        <>
-            <Row md={12} className='d-xs-none'>
-                <Row md={6}>
+            <Row md={12}>
                     <Col>
                         <ProductCarousel/>
                     </Col>
                     <Col>
                         <ProductCarousel/>
                     </Col>
-                </Row>
-                <Row md={6}>
                     <Col>
                         <ProductCarousel/>
                     </Col>
                     <Col>
                         <ProductCarousel/>
                     </Col>
-                </Row>
             </Row>
-
-            <Row xs={12} className='d-md-none'>
-                    <Col>
-                        <ProductCarousel/>
-                    </Col>
-
-            </Row>
-        </>
     )
 };
 
