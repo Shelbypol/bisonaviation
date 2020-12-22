@@ -22,7 +22,7 @@ const CardFlippedLeft = ({imgSrc, imgClassName, imgAlt, title, textIcon, btnIcon
                         <Col md={12}>
                             <Row>
                                 <Col xs={1}>
-                                    <i className="far fa-plane bisonWhiteBtnSearch" style={{fontSize: '1.8em'}}> </i>
+                                    <i className="far fa-plane bisonRedTxt" style={{fontSize: '1.8em'}}> </i>
                                 </Col>
                                 <Col xs={11}>
                                     <p className='text-muted mt-1 accentFont'>AVIONICS & AIRCRAFT MAINTENANCE & FLIR</p>
