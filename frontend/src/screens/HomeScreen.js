@@ -93,22 +93,26 @@ const HomeScreen = () => {
                             <Row>
                                 <Col md={3} xs={6} className='d-flex justify-content-center'>
                                     <Button className='bisonWhiteBtn py-1 px-1 '>
-                                        <img src={avionics} alt="" className='h-75 w-100'/>
+                                        <img src={avionics} alt="" className='h-100 w-100'/>
+                                        <h4 className='carousel-caption'>AVIONICS</h4>
                                     </Button>
                                 </Col>
                                 <Col md={3} xs={6} className='d-flex justify-content-center'>
                                     <Button className='bisonWhiteBtn py-1 px-1 '>
-                                        <img src={maintenance} alt="" className='h-75 w-100'/>
+                                        <img src={maintenance} alt="" className='h-100 w-100'/>
+                                        <h4 className='carousel-caption'>MECHANICS</h4>
                                     </Button>
                                 </Col>
                                 <Col md={3} xs={6} className='d-flex justify-content-center'>
                                     <Button className='bisonWhiteBtn py-1 px-1 '>
                                         <img src={flir} alt="" className='h-100 w-100'/>
+                                        <h4 className='carousel-caption'>EO/IR FLIR</h4>
                                     </Button>
                                 </Col>
                                 <Col md={3} xs={6} className='d-flex justify-content-center'>
                                     <Button className='bisonWhiteBtn py-1 px-1 '>
                                         <img src={garmin} alt="" className='h-100 w-100'/>
+                                        <h4 className='carousel-caption'>GARMIN PRODUCTS</h4>
                                     </Button>
                                 </Col>
                             </Row>
