@@ -43,8 +43,6 @@ const HomeScreen = () => {
             />
 
 
-            {/*<Jumbotrons imgClass={'fadeJumbo'}/>*/}
-
             <main className='mx-auto' style={{ marginBottom: '30vh'}}>
                 <Container style={{marginBottom: '20vh', marginTop: '20vh'}}>
 
@@ -82,47 +80,46 @@ const HomeScreen = () => {
                             </Row>
                         </Col>
                     </Row>
-
-
+                </Container>
 
                     {/*  =============  CARD NAV  =============  */}
-                    <Row className='mx-auto mt-5' style={{marginBottom: '30vh'}}>
-                        <Link to='#'>
 
-                        </Link>
-                        <Col>
-                            <CardOverlay
-                                imgSrc={avionics}
-                                cardTitle={'AVIONICS'}
-                            >
-                            </CardOverlay>
+                <Container  style={{marginBottom: '30vh', marginTop: '15vh'}} >
+                    <Row>
+                        <Col xs={12}>
+                            <h1>Services</h1>
                         </Col>
-                        <Col>
-                            <CardOverlay
-                                imgSrc={maintenance}
-                                cardTitle={'MAINTENANCE'}
-                            >
-                            </CardOverlay>
-                        </Col>
-                        <Col>
-                            <CardOverlay
-                                imgSrc={flir}
-                                cardTitle={'EO / IR FLIR'}
-                            >
-                            </CardOverlay>
-                        </Col>
-
-                        <Col>
-                            <CardOverlay
-                                imgSrc={garmin}
-                                cardTitle={'Certified Garmin Dealer!'}
-                            >
-                            </CardOverlay>
+                        <Col xs={12} >
+                            <Row>
+                                <Col md={3} xs={6} className='d-flex justify-content-center'>
+                                    <Button className='bisonWhiteBtn py-1 px-1 '>
+                                        <img src={avionics} alt="" className='h-75 w-100'/>
+                                    </Button>
+                                </Col>
+                                <Col md={3} xs={6} className='d-flex justify-content-center'>
+                                    <Button className='bisonWhiteBtn py-1 px-1 '>
+                                        <img src={maintenance} alt="" className='h-75 w-100'/>
+                                    </Button>
+                                </Col>
+                                <Col md={3} xs={6} className='d-flex justify-content-center'>
+                                    <Button className='bisonWhiteBtn py-1 px-1 '>
+                                        <img src={flir} alt="" className='h-100 w-100'/>
+                                    </Button>
+                                </Col>
+                                <Col md={3} xs={6} className='d-flex justify-content-center'>
+                                    <Button className='bisonWhiteBtn py-1 px-1 '>
+                                        <img src={garmin} alt="" className='h-100 w-100'/>
+                                    </Button>
+                                </Col>
+                            </Row>
                         </Col>
                     </Row>
+                </Container>
+
 
 
                     {/*  =============  WHY BISON  =============  */}
+                <Container>
                     <CardFlippedLeft imgSrc={aboutImg}
                                      imgClassName={'img-fluid float-left imgCardAbout'}
                                      imgAlt={''}
