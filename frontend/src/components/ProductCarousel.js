@@ -4,20 +4,30 @@ import { Carousel, Image } from "react-bootstrap";
 import Loader from "./Loader";
 import Message from "./Message";
 import {useDispatch, useSelector} from "react-redux";
-import { listTopProducts } from "../actions/productActions";
+import {listProducts, listTopProducts} from "../actions/productActions";
 // import '../style/productCarousel.css'
 
 
 const ProductCarousel =  () => {
 
+    // const dispatch = useDispatch();
+    //
+    // const productTopRated = useSelector(state => state.productTopRated);
+    // const { loading, error, products} = productTopRated;
+    //
+    // useEffect(() => {
+    //     dispatch(listTopProducts())
+    // }, [dispatch]);
+
     const dispatch = useDispatch();
 
-    const productTopRated = useSelector(state => state.productTopRated);
-    const { loading, error, products} = productTopRated;
+    const productList = useSelector(state => state.productList);
+    const { loading, error, products} = productList;
 
     useEffect(() => {
-        dispatch(listTopProducts())
-    }, [dispatch]);
+        dispatch(listProducts());
+
+    },[dispatch,]);
 
 
     return loading ? <Loader /> : error ? <Message variant='danger'>{error}</Message> : (
