@@ -42,3 +42,17 @@ https://medium.com/wdstack/bootstrap-4-hidden-visible-dd969a4c5854
 
 potential products page layout ex:
 https://www.redbubble.com/shop/frisky+sweatshirts
+
+
+*** Only displaying a Col when the screen is medium or larger ex: (order of d-* matters)
+<Row>
+   <Col className='d-md-block d-sm-none'>
+      ...
+   </Col
+   ...
+</Row>
+
+*** Hide a Col on small screen size but want to show on large screen:
+ <Col sm={12} lg={4} className="d-none d-lg-block">
+      {/* your content */}
+ </Col>

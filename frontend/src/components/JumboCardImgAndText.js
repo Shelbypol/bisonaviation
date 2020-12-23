@@ -2,7 +2,7 @@ import React from 'react';
 import {Row, Col, Container} from "react-bootstrap";
 
 
-const JumboCard = ({rowClassName, rowStyle, lgRow, mdRow, xsRow, lgImgCol, mdImgCol, xsImgCol, imgSrc, imgClassName,lgTextCol, mdTextCol, xsTextCol,lgTitleCol, mdTitleCol, xsTitleCol, lgIconTextCol, mdIconTextCol, xsIconTextCol, iconSymbol, lgIconCol, mdIconCol, xsIconCol, lgSubtextCol, mdSubtextCol, xsSubtextCol, lgBlockTextCol, mdBlockTextCol, xsBlockTextCol, title, subText, paragraph}) => {
+const JumboCardImgAndText = ({rowClassName, rowStyle, lgRow, mdRow, xsRow, lgImgCol, mdImgCol, xsImgCol, imgSrc, imgClassName,lgTextCol, mdTextCol, xsTextCol,lgTitleCol, mdTitleCol, xsTitleCol, lgIconTextCol, mdIconTextCol, xsIconTextCol, iconSymbol, lgIconCol, mdIconCol, xsIconCol, lgSubtextCol, mdSubtextCol, xsSubtextCol, lgBlockTextCol, mdBlockTextCol, xsBlockTextCol, title, subText, paragraph}) => {
     return (
 
             <Row className={rowClassName} style={rowStyle} lg={lgRow} md={mdRow} xs={xsRow}>
@@ -34,4 +34,4 @@ const JumboCard = ({rowClassName, rowStyle, lgRow, mdRow, xsRow, lgImgCol, mdImg
     );
 };
 
-export default JumboCard;
+export default JumboCardImgAndText;

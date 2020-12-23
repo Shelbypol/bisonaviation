@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import {Button, Col, Container, Row} from 'react-bootstrap'
 import {Link} from 'react-router-dom'
 import Jumbotrons from "../components/Jumbotrons";
-import JumboCard from "../components/JumboCard";
+import JumboCardImgAndText from "../components/JumboCardImgAndText";
 import '../style/flag.scss'
 import panel from '../images/avionics/panel-divider.jpeg'
 import avionics from '../images/avionics/panal-avionics.JPG'
@@ -15,6 +15,7 @@ import hangar from '../images/general/hangar.png'
 import heroImg from '../images/general/aircraft-double-decker-red-belt_1500.png'
 import MultiCarouselPage from "../components/MulitCarouselPage";
 import ProductCarousel from "../components/ProductCarousel";
+import JumboCardImgs from "../components/JumboCardImgs";
 
 
 const HomeScreen = () => {
@@ -144,7 +145,7 @@ const HomeScreen = () => {
             <main className='mx-auto' style={{marginTop: '35vh'}}>
                 {/*  =============  WHY BISON  =============  */}
                 <Container>
-                    <JumboCard
+                    <JumboCardImgAndText
                         // lgRow={}
                         // mdRow={}
                         xsRow={12}
@@ -179,11 +180,30 @@ const HomeScreen = () => {
                 </Container>
             </main>
 
-            <main className='mx-5' style={{marginTop: '-15vh'}}>
+            <main className='' >
 
                 {/*   =============   AVIONICS SECTION   =============    */}
+                <Container>
+                    <Row xs={12} >
+                        <Col className='d-flex justify-content-center'>
+                            <h1>Avionics</h1>
+                        </Col>
+                    </Row>
+                    <JumboCardImgs imgSrc1={panel}
+                                   imgSrc2={tayseerAvionics}
+                                   imgSrc3={cncMachine}
+                                   imgSrc4={hangar}>
+                    </JumboCardImgs>
+                    <Row>
+                        <Col className='d-flex justify-content-center mt-5 text-center'>
+                            <p>Bison Aviation is proud to have a full-time avionics team in-house.<br/> While many shops “sub out” their avionics work, Bison Aviation maintains a full service avionics staff as a part of our workforce.<br/> Our capabilities range from basic troubleshooting to complete panel installations and by having all services in-house (including CNC panel fabrication, laser engraving, and 3D printing) we are able to save time and reduce costs for our customers.
+                            </p>
+                        </Col>
+                    </Row>
+                </Container>
+
                 <Container style={{marginTop: '20vh'}}>
-                    <JumboCard
+                    <JumboCardImgAndText
                         // lgRow={}
                         // mdRow={}
                         xsRow={12}
@@ -211,12 +231,11 @@ const HomeScreen = () => {
                         // lgBlockTextCol={}
                         mdBlockTextCol={12}
                         // xsBlockTextCol={}
-                        title={'AVIONICS'}
                         subText={'full service avionics staff'}
                         paragraph={'Bison Aviation is proud to have a full-time avionics team in-house. While many shops “sub out” their avionics work, Bison Aviation maintains a full service avionics staff as a part of our workforce. Our capabilities range from basic troubleshooting to complete panel installations and by having all services in-house (including CNC panel fabrication, laser engraving, and 3D printing) we are able to save time and reduce costs for our customers.'}
 
                     />
-                    <JumboCard
+                    <JumboCardImgAndText
                         // lgRow={}
                         // mdRow={}
                         xsRow={12}
@@ -249,7 +268,7 @@ const HomeScreen = () => {
                     />
 
 
-                    <JumboCard
+                    <JumboCardImgAndText
                         // lgRow={}
                         // mdRow={}
                         xsRow={12}
@@ -300,7 +319,7 @@ const HomeScreen = () => {
 
                     <Container>
                         {/*   =============   MECHANICS SECTION    =============   */}
-                        <JumboCard
+                        <JumboCardImgAndText
                             rowStyle={{marginTop: '35vh'}}
                             xsRow={12}
                             lgImgCol={4}
@@ -320,7 +339,7 @@ const HomeScreen = () => {
                             paragraph={'Bison Aviation is proud to have a full-time avionics team in-house. While many shops “sub out” their avionics work, Bison Aviation maintains a full service avionics staff as a part of our workforce. Our capabilities range from basic troubleshooting to complete panel installations and by having all services in-house (including CNC panel fabrication, laser engraving, and 3D printing) we are able to save time and reduce costs for our customers.'}
                         />
 
-                        <JumboCard
+                        <JumboCardImgAndText
                             xsRow={12}
                             lgImgCol={4}
                             xsImgCol={12}
