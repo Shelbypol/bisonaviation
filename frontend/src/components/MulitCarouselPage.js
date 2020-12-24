@@ -1,10 +1,16 @@
 import React from 'react'
-import {Row, Col, Container} from 'react-bootstrap'
+import {useSelector, useDispatch} from "react-redux";
+import {Row, Col, Container, Image, Carousel} from 'react-bootstrap'
 import ProductCarousel from "./ProductCarousel";
+import {Link} from "react-router-dom";
 
 const MultiCarouselPage = () => {
+
+
+
     return (
-            <Row md={12}>
+
+            <Row md={12} className='mt-3'>
                     <Col>
                         <ProductCarousel/>
                     </Col>
