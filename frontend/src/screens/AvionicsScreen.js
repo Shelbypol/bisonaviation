@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
-import {Col} from 'react-bootstrap';
+import {Col, Container} from 'react-bootstrap';
 import AlertDismissible from '../components/AlertDismissible';
-
+import JumboCardImgAndText from "../components/JumboCardImgAndText";
 
 const AvionicsScreen = (props) => {
     const [show, setShow] = useState(false)

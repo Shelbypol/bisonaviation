@@ -24,7 +24,7 @@ const MobileHeader = () => {
 
     return (
         <>
-            <header className='m-auto bisonRedBtmBorder header d-block p-0 col-xs-12'>
+            <header className='m-auto  header d-block p-0 col-xs-12'>
 
                 <Navbar expand="md"
                         collapseOnSelect

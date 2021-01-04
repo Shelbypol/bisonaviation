@@ -15,7 +15,7 @@ const DesktopHeader = () => {
             <Navbar expand="sm"
                     collapseOnSelect
                     style={{backgroundColor: 'black'}}
-                    className='topNav navbar navbar-dark navbar-expand-lg p-0'
+                    className='topNav navbar navbar-dark navbar-expand-lg p-0 desktopNav'
             >
 
                 <Container className='col-sm-12'>
