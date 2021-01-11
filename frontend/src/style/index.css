@@ -278,7 +278,7 @@ h2 {
 /* The Transformation */
 .img-hover-zoom--slowmo:hover img {
     filter: brightness(150%);
-    transform: scale(3);
+    transform: scale(2);
 }
 
 
