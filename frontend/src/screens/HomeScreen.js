@@ -202,10 +202,17 @@ const HomeScreen = () => {
                     </Col>
                 </Row>
                 <Row>
-                    <Col className='d-flex justify-content-center mb-3 text-md-center text-left'>
-                        <p>Bison Aviation is proud to have a full-time avionics team in-house.<br/> While many shops
+                    <Col className='d-flex justify-content-center mb-3 text-center'>
+                        <p>
+                            {/*Bison Aviation is proud to have a full-time avionics team in-house.<br/> While many shops*/}
+                            {/*“sub out” their avionics work, Bison Aviation maintains a full service avionics staff as*/}
+                            {/*a part of our workforce.<br/> Our capabilities range from basic troubleshooting to*/}
+                            {/*complete panel installations and by having all services in-house (including CNC panel*/}
+                            {/*fabrication, laser engraving, and 3D printing) we are able to save time and reduce costs*/}
+                            {/*for our customers.*/}
+                            Bison Aviation is proud to have a full-time avionics team in-house. While many shops
                             “sub out” their avionics work, Bison Aviation maintains a full service avionics staff as
-                            a part of our workforce.<br/> Our capabilities range from basic troubleshooting to
+                            a part of our workforce. Our capabilities range from basic troubleshooting to
                             complete panel installations and by having all services in-house (including CNC panel
                             fabrication, laser engraving, and 3D printing) we are able to save time and reduce costs
                             for our customers.
