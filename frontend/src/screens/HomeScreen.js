@@ -4,11 +4,12 @@ import {Link} from 'react-router-dom'
 import Jumbotrons from "../components/Jumbotrons";
 import JumboCardImgAndText from "../components/JumboCardImgAndText";
 import '../style/flag.scss'
-import panel from '../images/avionics/panel-divider.jpeg'
+import panel from '../images/avionics/panal-avionics.JPG'
+import panel2 from '../images/avionics/20190218_155138 (1).jpg'
 import avionics from '../images/avionics/panal-avionics.JPG'
 import maintenance from '../images/mechanics/robin-cirrus-divider.png'
 import flir from '../images/flir/flir-1.jpg'
-import cncMachine from "../images/avionics/cnc-machine-divider.png"
+import cncMachine from "../images/avionics/cnc-machine.png"
 import tayseerAvionics from "../images/avionics/tayseer-1.jpg"
 import garmin from '../images/avionics/garmin-dealership.png'
 import hangar from '../images/general/hangar.png'
@@ -180,22 +181,28 @@ const HomeScreen = () => {
             </Container>
         </main>
 
+            {/*   =============   AVIONICS GARMIN SECTION   =============    */}
+            <Container className='mt-lg-0 pt-lg-0 mt-sm-5 pt-sm-5 pt-5 mb-5 pb-5'>
+                <Row xs={12}>
+                    <Col className='d-flex justify-content-center '>
+                        <h1 className='flag red accentFont shadow'>&nbsp; &nbsp; NEW! &nbsp; &nbsp;   </h1>
+                        <h1>Certified Avionics Garmin Dealer</h1>
+                    </Col>
+                </Row>
+                <MultiCarouselPage/>
+            </Container>
+
         {/*<main className=''>*/}
 
             {/*   =============   AVIONICS SECTION   =============    */}
-            <Container className='mt-n5'>
+            <Container className='mt-5 pt-5'>
                 <Row xs={12}>
                     <Col className='d-flex justify-content-center'>
                         <h1>Avionics</h1>
                     </Col>
                 </Row>
-                <JumboCardImgs imgSrc1={panel}
-                               imgSrc2={tayseerAvionics}
-                               imgSrc3={cncMachine}
-                               imgSrc4={hangar}>
-                </JumboCardImgs>
                 <Row>
-                    <Col className='d-flex justify-content-center mt-5 text-center'>
+                    <Col className='d-flex justify-content-center mb-3 text-md-center text-left'>
                         <p>Bison Aviation is proud to have a full-time avionics team in-house.<br/> While many shops
                             “sub out” their avionics work, Bison Aviation maintains a full service avionics staff as
                             a part of our workforce.<br/> Our capabilities range from basic troubleshooting to
@@ -206,14 +213,20 @@ const HomeScreen = () => {
                     </Col>
                 </Row>
 
+                <JumboCardImgs imgSrc1={panel}
+                               imgSrc2={tayseerAvionics}
+                               imgSrc3={cncMachine}
+                               imgSrc4={panel2}>
+                </JumboCardImgs>
+
                 {/*  AVIONICS ICONS   */}
                 {/*<Row className='mt-5'>*/}
                 {/*    <Col className='d-flex justify-content-center'>*/}
                 {/*        <h4 className='accentFont'>Avionics Services Offered</h4>*/}
                 {/*    </Col>*/}
                 {/*</Row>*/}
-                <Row xs={12} className='mt-5'>
-                    <Col className='d-flex justify-content-center'>
+                <Row xs={12} className='mt-5 '>
+                    <Col className='d-flex justify-content-center '>
                         <i className='fas fa-bolt bisonWhiteBtnIcon'> </i>
                     </Col>
                     <Col className='d-flex justify-content-center'>
@@ -257,17 +270,6 @@ const HomeScreen = () => {
                         <p className='text-muted'>RVSM READY</p>
                     </Col>
                 </Row>
-            </Container>
-
-            {/*   =============   AVIONICS GARMIN SECTION   =============    */}
-            <Container style={{marginTop: '15vh'}}>
-                <Row xs={12}>
-                    <Col className='d-flex justify-content-center'>
-                        <h1 className='flag red accentFont'>NEW!</h1>
-                        <h1>Certified Avionics Garmin Dealer</h1>
-                    </Col>
-                </Row>
-                <MultiCarouselPage/>
             </Container>
 
         <Container>

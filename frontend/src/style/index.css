@@ -89,6 +89,14 @@ p{
     color: white;
 }
 
+.right-gradient{
+    background-image: linear-gradient(to right, rgba(90, 00, 09, 1), #fff);
+}
+
+.left-gradient{
+    background-image: linear-gradient(to left, rgba(90, 00, 09, 1), #fff);
+}
+
 /*   FONT-AWESOME   */
 .socialIcons:hover {
     color: rgba(90, 00, 09, 1);
