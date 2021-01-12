@@ -28,7 +28,7 @@ const HomeScreen = () => {
     return (
         <>
         <Jumbotrons
-                    jumboClass={'m-0 p-0'}
+                    jumboClass={'m-0 p-0 img-hover-zoom--zoom-n-rotate'}
                     img={heroImg}
                     imgClassName={'col-12 p-0 mx-0 mb-0'}
                     textContainerStyle={{backgroundColor: 'rgba(01, 02, 03, 1)'}}
