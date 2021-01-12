@@ -28,7 +28,7 @@ const HomeScreen = () => {
     return (
         <>
         <Jumbotrons
-                    jumboClass={'m-0 p-0 img-hover-zoom--zoom-n-rotate'}
+                    jumboClass={'m-0 p-0 img-hover-zoom--zoom-n-out'}
                     img={heroImg}
                     imgClassName={'col-12 p-0 mx-0 mb-0'}
                     textContainerStyle={{backgroundColor: 'rgba(01, 02, 03, 1)'}}
@@ -148,6 +148,7 @@ const HomeScreen = () => {
             {/*  =============  WHY BISON  =============  */}
             <Container>
                 <JumboCardImgAndText
+                    imgWrap={'img-hover-zoom--zoom-n-out-slow pl-5'}
                     // lgRow={}
                     // mdRow={}
                     xsRow={12}
@@ -155,7 +156,7 @@ const HomeScreen = () => {
                     // mdImgCol={}
                     xsImgCol={12}
                     imgSrc={hangar}
-                    imgClassName={'h-100 w-100 '}
+                    imgClassName={'h-100 w-100 rounded'}
                     lgTextCol={8}
                     // mdTextCol={}
                     xsTextCol={12}

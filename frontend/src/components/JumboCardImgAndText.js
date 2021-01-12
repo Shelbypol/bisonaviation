@@ -5,11 +5,11 @@ import tayseerAvionics from "../images/avionics/tayseer-1.jpg";
 import cncMachine from "../images/avionics/cnc-machine-divider.png";
 
 
-const JumboCardImgAndText = ({rowClassName, rowStyle, lgRow, mdRow, xsRow, lgImgCol, mdImgCol, xsImgCol, imgSrc, imgClassName,lgTextCol, mdTextCol, xsTextCol,lgTitleCol, mdTitleCol, xsTitleCol, lgIconTextCol, mdIconTextCol, xsIconTextCol, iconSymbol, lgIconCol, mdIconCol, xsIconCol, lgSubtextCol, mdSubtextCol, xsSubtextCol, lgBlockTextCol, mdBlockTextCol, xsBlockTextCol, title, subText, paragraph}) => {
+const JumboCardImgAndText = ({rowClassName, imgWrap ,rowStyle, lgRow, mdRow, xsRow, lgImgCol, mdImgCol, xsImgCol, imgSrc, imgClassName,lgTextCol, mdTextCol, xsTextCol,lgTitleCol, mdTitleCol, xsTitleCol, lgIconTextCol, mdIconTextCol, xsIconTextCol, iconSymbol, lgIconCol, mdIconCol, xsIconCol, lgSubtextCol, mdSubtextCol, xsSubtextCol, lgBlockTextCol, mdBlockTextCol, xsBlockTextCol, title, subText, paragraph}) => {
     return (
 
             <Row className={rowClassName} style={rowStyle} lg={lgRow} md={mdRow} xs={xsRow}>
-                <Col lg={lgImgCol} md={mdImgCol} xs={xsImgCol} className='img-hover-zoom img-hover-zoom--slowmo'>
+                <Col lg={lgImgCol} md={mdImgCol} xs={xsImgCol} className={imgWrap}>
                     <img src={imgSrc} alt="" className={imgClassName} />
                 </Col>
                 <Col lg={lgTextCol} md={mdTextCol} xs={xsTextCol} >

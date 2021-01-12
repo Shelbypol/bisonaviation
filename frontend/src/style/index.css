@@ -292,7 +292,7 @@ h2 {
 
 
 /* Chrome, Safari, Opera */
-@-webkit-keyframes zoom {
+@-webkit-keyframes zoominout {
     0% {
         -webkit-transform: scale(1.15,1.15);
     }
@@ -304,7 +304,7 @@ h2 {
     }
 }
 /* Standard syntax */
-@keyframes zoom {
+@keyframes zoominout {
     0% {
         -webkit-transform: scale(1.15,1.15);
     }
@@ -316,9 +316,40 @@ h2 {
     }
 }
 
-.img-hover-zoom--zoom-n-rotate img {
-    -webkit-animation: zoom 25s; /* Chrome, Safari, Opera */
-    animation: zoom 25s;
+.img-hover-zoom--zoom-n-out img {
+    -webkit-animation: zoominout 25s; /* Chrome, Safari, Opera */
+    animation: zoominout 25s;
+}
+
+/*    ZOOM IN OUT SLOW    */
+@-webkit-keyframes zoominoutslow {
+    0% {
+        -webkit-transform: scale(1.15,1.15);
+    }
+    50% {
+        -webkit-transform: scale(1,1);
+    }
+    100% {
+        -webkit-transform: scale(1.15, 1.15);
+    }
+}
+/* Standard syntax */
+@keyframes zoominoutslow {
+    0% {
+        -webkit-transform: scale(1, 1);
+    }
+    50% {
+        -webkit-transform: scale(1.15,1.15);
+    }
+    100% {
+        -webkit-transform: scale(1, 1);
+    }
+}
+
+.img-hover-zoom--zoom-n-out-slow img {
+    -webkit-animation: zoominoutslow 25s; /* Chrome, Safari, Opera */
+    animation: zoominoutslow 25s;
+    overflow: hidden;
 }
 
 /* MOBILE RESPONSIVE */
