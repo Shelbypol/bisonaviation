@@ -236,13 +236,13 @@ const HomeScreen = () => {
                 {/*</Row>*/}
                 <Row xs={12} className='mt-5 '>
                     <Col className='d-flex justify-content-center '>
-                        <i className='fas fa-bolt bisonRedFontWhiteBg icon-spin'> </i>
+                        <i className='fas fa-bolt bisonRedFontWhiteBg icon-spin'  style={{fontSize: '1.8em'}} > </i>
                     </Col>
                     <Col className='d-flex justify-content-center'>
-                        <i className='fas fa-bug bisonRedFontWhiteBg icon-spin'> </i>
+                        <i className='fas fa-bug bisonRedFontWhiteBg icon-spin'  style={{fontSize: '1.8em'}}> </i>
                     </Col>
                     <Col className='d-flex justify-content-center'>
-                        <i className='far fa-check-square bisonRedFontWhiteBg icon-spin'> </i>
+                        <i className='far fa-check-square bisonRedFontWhiteBg icon-spin'  style={{fontSize: '1.8em'}}> </i>
                     </Col>
                 </Row>
                 <Row xs={12}>
@@ -259,13 +259,13 @@ const HomeScreen = () => {
                 {/*   ICON ROW TWO   */}
                 <Row xs={12} className='mt-4'>
                     <Col className='d-flex justify-content-center'>
-                        <i className='fas fa-bullseye bisonWhiteBtnIcon'> </i>
+                        <i className='fas fa-bullseye bisonRedFontWhiteBg icon-spin'  style={{fontSize: '1.8em'}}> </i>
                     </Col>
                     <Col className='d-flex justify-content-center'>
-                        <i className='fas fa-cogs bisonWhiteBtnIcon'> </i>
+                        <i className='fas fa-cogs bisonRedFontWhiteBg icon-spin'  style={{fontSize: '1.8em'}}> </i>
                     </Col>
                     <Col className='d-flex justify-content-center'>
-                        <i className='fas fa-tachometer-alt bisonWhiteBtnIcon'> </i>
+                        <i className='fas fa-tachometer-alt bisonRedFontWhiteBg icon-spin'  style={{fontSize: '1.8em'}}> </i>
                     </Col>
                 </Row>
                 <Row xs={12} >
