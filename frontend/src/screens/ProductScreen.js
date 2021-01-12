@@ -9,6 +9,7 @@ import Message from '../components/Message'
 import Loader from '../components/Loader'
 import { PRODUCT_CREATE_REVIEW_RESET } from "../constants/productConstants";
 import Meta from "../components/Meta";
+import ReactImageMagnify from "react-image-magnify";
 
 
 const ProductScreen =({ history, match }) => {
@@ -35,6 +36,8 @@ const ProductScreen =({ history, match }) => {
             dispatch({ type: PRODUCT_CREATE_REVIEW_RESET })
         }
         dispatch(listProductDetails(match.params.id))
+
+
     }, [dispatch, match, successProductReview ]);
 
     //HANDLERS
@@ -50,6 +53,7 @@ const ProductScreen =({ history, match }) => {
         }))
     };
 
+
     return (
         <>
             <Link className='btn btn-light my-3' to='/'>
@@ -61,10 +65,24 @@ const ProductScreen =({ history, match }) => {
                     <Meta title={product.name} />
 
                     <Row>
-                        <Col className='product-page-section' md={6}>
-                            {/* image component from react bootstrap */}
-                            {/* 'fluid' forces the image to stay in it's container */}
-                            <Image src={product.image} alt={product.name} fluid/>
+                        <Col className='product-page-section fluid' md={6}>
+                            <div className="fluid__image-container">
+                                <ReactImageMagnify {...{
+                                    smallImage: {
+                                        alt: product.name,
+                                        isFluidWidth: true,
+                                        src: product.image
+                                    },
+                                    largeImage: {
+                                        src: product.image,
+                                        width: 1200,
+                                        height: 1800
+                                    },
+                                    isHintEnabled: true,
+                                    shouldHideHintAfterFirstActivation: false
+                                }} />
+                            </div>
+                            {/*<Image src={product.image} alt={product.name} fluid/>*/}
                         </Col>
                         <Col className='product-page-section' md={3}>
                             {/* variant flush takes away the border */}
