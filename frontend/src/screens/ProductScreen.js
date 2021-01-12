@@ -11,7 +11,6 @@ import { PRODUCT_CREATE_REVIEW_RESET } from "../constants/productConstants";
 import Meta from "../components/Meta";
 import ReactImageMagnify from "react-image-magnify";
 
-
 const ProductScreen =({ history, match }) => {
     const [ qty, setQty] = useState(1);
     const [ rating, setRating] = useState(0);

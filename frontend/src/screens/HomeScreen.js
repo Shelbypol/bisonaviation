@@ -54,7 +54,7 @@ const HomeScreen = () => {
                             <h4 className='accentFont'> FAA Part 145 Repair Station</h4>
                         </Col>
                         <Col xs={12} className='d-flex justify-content-center'>
-                            <Button className='rounded-circle px-4 bisonWhiteBtn my-2'>
+                            <Button className='rounded-circle px-4 my-2 bisonRedFontWhiteBg icon-spin'>
                                 <i className="fal fa-tools" style={{fontSize: '2em'}}> </i>
                             </Button>
                         </Col>
@@ -75,7 +75,7 @@ const HomeScreen = () => {
                             <h4 className='accentFont'>FAA Diamond Award Recipient</h4>
                         </Col>
                         <Col xs={12} className='d-flex justify-content-center'>
-                            <Button className='rounded-circle px-4 bisonWhiteBtn my-2'>
+                            <Button className='rounded-circle px-4 my-2 bisonRedFontWhiteBg icon-spin'>
                                 <i className="fal fa-award" style={{fontSize: '2em'}}> </i>
                             </Button>
                         </Col>
@@ -166,7 +166,7 @@ const HomeScreen = () => {
                     // lgIconTextCol={}
                     mdIconTextCol={12}
                     // xsIconTextCol={}
-                    iconSymbol={'far fa-plane bisonRedTxt'}
+                    iconSymbol={'far fa-plane bisonRedFontWhiteBg icon-spin'}
                     lgIconCol={1}
                     // mdIconCol={}
                     // xsIconCol={}
@@ -236,13 +236,13 @@ const HomeScreen = () => {
                 {/*</Row>*/}
                 <Row xs={12} className='mt-5 '>
                     <Col className='d-flex justify-content-center '>
-                        <i className='fas fa-bolt bisonWhiteBtnIcon'> </i>
+                        <i className='fas fa-bolt bisonRedFontWhiteBg icon-spin'> </i>
                     </Col>
                     <Col className='d-flex justify-content-center'>
-                        <i className='fas fa-bug bisonWhiteBtnIcon'> </i>
+                        <i className='fas fa-bug bisonRedFontWhiteBg icon-spin'> </i>
                     </Col>
                     <Col className='d-flex justify-content-center'>
-                        <i className='far fa-check-square bisonWhiteBtnIcon'> </i>
+                        <i className='far fa-check-square bisonRedFontWhiteBg icon-spin'> </i>
                     </Col>
                 </Row>
                 <Row xs={12}>
@@ -294,7 +294,7 @@ const HomeScreen = () => {
                 xsTextCol={12}
                 lgTitleCol={12}
                 mdIconTextCol={12}
-                iconSymbol={'far fa-plane bisonRedTxt'}
+                iconSymbol={'far fa-plane bisonRedFontWhiteBg icon-spin'}
                 lgIconCol={1}
                 lgSubtextCol={11}
                 mdBlockTextCol={12}
@@ -313,7 +313,7 @@ const HomeScreen = () => {
                 xsTextCol={12}
                 lgTitleCol={12}
                 mdIconTextCol={12}
-                iconSymbol={'far fa-plane bisonRedTxt'}
+                iconSymbol={'far fa-plane bisonRedFontWhiteBg icon-spin'}
                 lgIconCol={1}
                 lgSubtextCol={11}
                 mdBlockTextCol={12}
