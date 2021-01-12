@@ -24,18 +24,20 @@ const ProductCarousel = () => {
     const productList = useSelector(state => state.productList);
     const {loading, error, products} = productList;
 
+
     useEffect(() => {
         dispatch(listProducts());
 
-    }, [dispatch,]);
+
+    }, [dispatch]);
 
 
     return loading ? <Loader/> : error ? <Message variant='danger'>{error}</Message> : (
         <Carousel pause='hover' className='bg-none border-0'>
-            {products.map(product => (
+            {products.map((product, index) => (
                     <Carousel.Item key={product._id}>
-                        <Link to={`/product/${product._id}`}>
-                            <h5 className='accentFont d-flex justify-content-center pb-4'>{product.name}</h5>
+                        <Link to={`/product/${product._id }`}>
+                            <h5 className='accentFont d-flex justify-content-center pb-4'>{product.name}{index}</h5>
                             {/*<h5 className='accentFont d-flex justify-content-center'>{product.name} (${product.price})</h5>*/}
                             <Image src={product.image} alt={product.name} className='h-100 w-100'/>
                                 {/*<Carousel.Caption className='carousel-caption'>*/}
@@ -44,7 +46,6 @@ const ProductCarousel = () => {
                     </Carousel.Item>
             ))}
         </Carousel>
-
     )
 };
 

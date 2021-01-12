@@ -269,6 +269,7 @@ h2 {
     /*height: 300px; !* [1.1] Set it as per your need *!*/
     overflow: hidden; /* [1.2] Hide the overflowing of child elements */
 }
+
 .img-hover-zoom--slowmo img {
     transform-origin: 50% 65%;
     transition: transform 5s, filter 3s ease-in-out;
@@ -281,6 +282,40 @@ h2 {
     transform: scale(2);
 }
 
+/*ZOOM IN AND OUT AUTO*/
+.img-hover--zoom-rotate img {
+    /*height: 300px; !* [1.1] Set it as per your need *!*/
+    /*overflow: hidden; !* [1.2] Hide the overflowing of child elements *!*/
+    animation:zoom 5s infinite;
+    -webkit-animation:zoom 5s infinite;
+}
+
+/*@-webkit-keyframes zoom{*/
+/*    0%,100%{*/
+/*        background-size:100%;*/
+/*    }*/
+/*    50%{*/
+/*        background-size:125%;*/
+/*    }*/
+/*}*/
+/*@keyframes zoom{*/
+/*    0%, 100%{*/
+/*        background-size:100%;*/
+/*    }*/
+/*    50%{*/
+/*        background-size:125%;*/
+/*    }*/
+/*}*/
+
+/* Zoom-n-rotate Container */
+/*.img-hover-zoom--zoom-n-rotate img {*/
+/*    transition: transform .5s ease-in-out;*/
+/*}*/
+
+/*!* The Transformation *!*/
+/*.img-hover-zoom--zoom-n-rotate:hover img {*/
+/*    transform: scale(2) rotate(25deg);*/
+/*}*/
 
 /* MOBILE RESPONSIVE */
 @media (max-width: 900px) {

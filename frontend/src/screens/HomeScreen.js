@@ -27,9 +27,10 @@ const HomeScreen = () => {
 
     return (
         <>
-        <Jumbotrons jumboClass={'m-0 p-0'}
+        <Jumbotrons
+                    jumboClass={'m-0 p-0'}
                     img={heroImg}
-                    imgClassName={'col-12 p-0 mx-0 mb-0 '}
+                    imgClassName={'col-12 p-0 mx-0 mb-0'}
                     textContainerStyle={{backgroundColor: 'rgba(01, 02, 03, 1)'}}
                     textContainerClass={'col-12 mt-n2 py-0 my-0'}
                     title={'Bison Aviation'}
@@ -154,7 +155,7 @@ const HomeScreen = () => {
                     // mdImgCol={}
                     xsImgCol={12}
                     imgSrc={hangar}
-                    imgClassName={'h-100 w-100'}
+                    imgClassName={'h-100 w-100 '}
                     lgTextCol={8}
                     // mdTextCol={}
                     xsTextCol={12}

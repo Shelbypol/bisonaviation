@@ -12,7 +12,7 @@ const JumboCardImgAndText = ({rowClassName, rowStyle, lgRow, mdRow, xsRow, lgImg
                 <Col lg={lgImgCol} md={mdImgCol} xs={xsImgCol} className='img-hover-zoom img-hover-zoom--slowmo'>
                     <img src={imgSrc} alt="" className={imgClassName} />
                 </Col>
-                <Col lg={lgTextCol} md={mdTextCol} xs={xsTextCol}>
+                <Col lg={lgTextCol} md={mdTextCol} xs={xsTextCol} >
                     <Row>
                         <Col lg={lgTitleCol} md={mdTitleCol} xs={xsTitleCol}>
                             <h1>{title}</h1>
