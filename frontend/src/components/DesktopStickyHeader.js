@@ -289,8 +289,7 @@ const DesktopStickyHeader = () => {
                                         <Nav.Link>
                                             <Button className='px-3 py-0 mt-2 rounded-pill bisonRedBtn iconHidden '>
                                                  <span className='hideIcon'>
-                                                     <i style={{fontSize: '1.5em'}}
-                                                        className="fal fa-envelope"> </i>
+                                                     Contact
                                                  </span>
                                                 <span className='hideWords'>Contact</span>
                                             </Button>
@@ -381,8 +380,7 @@ const DesktopStickyHeader = () => {
                                         <Nav.Link>
                                             <Button className='px-3 py-0 mt-2 rounded-pill bisonRedBtn iconHidden '>
                                                  <span className='hideIcon'>
-                                                     <i style={{fontSize: '1.5em'}}
-                                                        className="fal fa-envelope"> </i>
+                                                     Contact
                                                  </span>
                                                 <span className='hideWords'>Contact</span>
                                             </Button>

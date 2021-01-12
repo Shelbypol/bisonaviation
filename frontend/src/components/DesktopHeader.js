@@ -39,7 +39,7 @@ const DesktopHeader = () => {
                                                                      searchClasses={'col-10'}
                                                                      btnSize={'md'}
                                                                      btnClasses={'bisonWhiteBtnSearch px-1 col-2 rounded-right'}
-                                                                     btnStyle={{paddingTop: '1.80em'}}
+                                                                     btnStyle={{paddingTop: '1.82em'}}
                                                                      // iconStyle={{fontSize: '1.53em'}}
                                                                      // imgClasses={'w-25 h-50'}
                             />}/>

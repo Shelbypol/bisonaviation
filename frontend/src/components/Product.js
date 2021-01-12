@@ -3,7 +3,7 @@ import React from 'react';
 import { Link  } from 'react-router-dom'
 import {Button, Card, ListGroup} from 'react-bootstrap'
 import Rating from './Rating'
-import {useSelector} from "react-redux";
+// import {useSelector} from "react-redux";
 
 // access props (product._id and product.image) through the ({ product )} in the function param
 const Product = ({ product, history, productId }) => {
@@ -14,6 +14,43 @@ const Product = ({ product, history, productId }) => {
         history.push(`/cart/${productId}?qty=1`);
     };
 
+    // <div className="fluid react-slick">
+    //     <div className="fluid__image-container">
+    //         <ReactSlick {...{
+    //             rimProps: {
+    //                 enlargedImagePortalId: 'portal',
+    //                 enlargedImageContainerDimensions: {
+    //                     width: '200%',
+    //                     height: '100%'
+    //                 }
+    //             }
+    //         }}/>
+    //     </div>
+
+    // <div className="fluid__instructions" style={{position: 'relative'}}>
+    //     <div
+    //         id="portal"
+    //         className="portal"
+    //     />
+
+    // <ReactImageMagnify
+    //     {...{
+    //         smallImage: {
+    //             alt: {product.name},
+    //             isFluidWidth: true,
+    //             src: src.small,
+    //             srcSet: {product.image},
+    //             sizes: '(max-width: 480px) 100vw, (max-width: 1200px) 30vw, 360px'
+    //         },
+    //         largeImage: {
+    //             src: src.large,
+    //             width: 1426,
+    //             height: 2000
+    //         },
+    //         lensStyle: { backgroundColor: 'rgba(0,0,0,.6)' }
+    //     }}
+    //     {...rimProps}
+    // />
 
     return (
         <Card className='my-3 p-3 rounded'>
