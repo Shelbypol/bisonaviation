@@ -318,7 +318,7 @@ h2 {
 
 .img-hover-zoom--zoom-n-out img {
     -webkit-animation: zoominout 25s; /* Chrome, Safari, Opera */
-    animation: zoominout 25s;
+    animation: zoominout 15s;
 }
 
 /*    ZOOM IN OUT SLOW    */

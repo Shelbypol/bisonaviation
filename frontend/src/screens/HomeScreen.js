@@ -148,7 +148,7 @@ const HomeScreen = () => {
             {/*  =============  WHY BISON  =============  */}
             <Container>
                 <JumboCardImgAndText
-                    imgWrap={'img-hover-zoom--zoom-n-out-slow pl-5'}
+                    // imgWrap={'img-hover-zoom--zoom-n-out-slow pl-5'}
                     // lgRow={}
                     // mdRow={}
                     xsRow={12}
