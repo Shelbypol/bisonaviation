@@ -223,7 +223,7 @@ h2 {
     height: 25vh;
 }
 
-.overlay {
+.summary_nav_overlay {
     position: absolute;
     bottom: 25%;
     left: 0;
@@ -246,7 +246,7 @@ h2 {
     transform: scale(1.5)
 }
 
-.text {
+.summary_nav_text {
     color: white;
     font-size: 20px;
     position: absolute;
@@ -264,19 +264,19 @@ h2 {
 }
 
 /*IMG HOVER ZOOM IN*/
-.img-hover-zoom {
+.animations_img-hover-zoom {
     /*height: 300px; !* [1.1] Set it as per your need *!*/
     overflow: hidden; /* [1.2] Hide the overflowing of child elements */
 }
 
-.img-hover-zoom--slowmo img {
+.animations_img-hover-zoom--slowmo img {
     transform-origin: 50% 65%;
     transition: transform 5s, filter 3s ease-in-out;
     filter: brightness(120%);
 }
 
 /* The Transformation */
-.img-hover-zoom--slowmo:hover img {
+.animations_img-hover-zoom--slowmo:hover img {
     filter: brightness(150%);
     transform: scale(2);
 }
@@ -315,7 +315,7 @@ h2 {
     }
 }
 
-.img-hover-zoom--zoom-n-out img {
+.animations_img-hover-zoom--zoom-n-out img {
     -webkit-animation: zoominout 25s; /* Chrome, Safari, Opera */
     animation: zoominout 15s infinite;
 }
@@ -345,20 +345,20 @@ h2 {
     }
 }
 
-.img-hover-zoom--zoom-n-out-slow img {
+.animations_img-hover-zoom--zoom-n-out-slow img {
     -webkit-animation: zoominoutslow 25s; /* Chrome, Safari, Opera */
     animation: zoominoutslow 25s;
     overflow: hidden;
 }
 
 /*  ICON SPIN HOVER   */
-.global_icon-spin:hover {
+.animations_icon-spin:hover {
     margin-right: 7px;
     top: 2px;
     animation: spin .6s infinite linear;
 }
 
-.global_icon{
+.animations_icon-font-size{
     font-size: 2em;
 }
 

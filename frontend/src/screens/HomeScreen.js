@@ -28,7 +28,7 @@ const HomeScreen = () => {
     return (
         <>
         <Jumbotrons
-                    jumboClass={'m-0 p-0 img-hover-zoom--zoom-n-out'}
+                    jumboClass={'m-0 p-0 animations_img-hover-zoom--zoom-n-out'}
                     img={heroImg}
                     imgClassName={'col-12 p-0 mx-0 mb-0'}
                     textContainerStyle={{backgroundColor: 'rgba(01, 02, 03, 1)'}}
@@ -54,8 +54,8 @@ const HomeScreen = () => {
                             <h4 className='global_accentFont'> FAA Part 145 Repair Station</h4>
                         </Col>
                         <Col xs={12} className='d-flex justify-content-center'>
-                            <Button className='rounded-circle px-4 my-2 global_bisonRedFontWhiteBg global_icon-spin'>
-                                <i className='fal fa-tools global_icon'> </i>
+                            <Button className='rounded-circle px-4 my-2 global_bisonRedFontWhiteBg animations_icon-spin'>
+                                <i className='fal fa-tools animations_icon-font-size'> </i>
                             </Button>
                         </Col>
                         {/*<Col xs={12}>*/}
@@ -75,8 +75,8 @@ const HomeScreen = () => {
                             <h4 className='global_accentFont'>FAA Diamond Award Recipient</h4>
                         </Col>
                         <Col xs={12} className='d-flex justify-content-center'>
-                            <Button className='rounded-circle px-4 my-2 global_bisonRedFontWhiteBg global_icon-spin'>
-                                <i className='fal fa-award global_icon'> </i>
+                            <Button className='rounded-circle px-4 my-2 global_bisonRedFontWhiteBg animations_icon-spin'>
+                                <i className='fal fa-award animations_icon-font-size'> </i>
                             </Button>
                         </Col>
                         {/*<Col xs={12}>*/}
@@ -108,7 +108,7 @@ const HomeScreen = () => {
                             </Button>
                             <Button className='summary_nav_overlay w-75 h-50 mx-auto'>
                                 <p className='flag red global_accentFont mt-n1 mb-0 mx-0'>NEW!</p>
-                                <p className='text global_accentFont'>GARMIN DEALER</p>
+                                <p className='summary_nav_text global_accentFont'>GARMIN DEALER</p>
                             </Button>
                         </Col>
 
@@ -117,16 +117,16 @@ const HomeScreen = () => {
                                 <img src={avionics} alt="" className='h-100 w-100'/>
                             </Button>
                             <Button className='summary_nav_overlay w-75 h-50 mx-auto'>
-                                <p className='text global_accentFont'>AVIONICS</p>
+                                <p className='summary_nav_text global_accentFont'>AVIONICS</p>
                             </Button>
                         </Col>
 
                         <Col lg={3} xs={6} className='d-flex justify-content-center mb-3 summary_nav_hoverTitle'>
                             <Button className='p-0 rounded-left '>
-                                <img src={maintenance} alt="" className='h-100 w-100 hoverImage'/>
+                                <img src={maintenance} alt="" className='h-100 w-100'/>
                             </Button>
-                            <Button className='summary_nav_overlay w-75  h-50 mx-auto'>
-                                <p className='text global_accentFont'>MECHANICS</p>
+                            <Button className='summary_nav_overlay w-75 h-50 mx-auto'>
+                                <p className='summary_nav_text global_accentFont'>MECHANICS</p>
                             </Button>
                         </Col>
 
@@ -135,7 +135,7 @@ const HomeScreen = () => {
                                 <img src={flir} alt="" className='h-100 w-100'/>
                             </Button>
                             <Button className='summary_nav_overlay w-75 h-50 mx-auto'>
-                                <p className='text global_accentFont'>EO/IR FLIR</p>
+                                <p className='summary_nav_text global_accentFont'>EO/IR FLIR</p>
                             </Button>
                         </Col>
                     </Row>
@@ -148,7 +148,7 @@ const HomeScreen = () => {
             {/*  =============  WHY BISON  =============  */}
             <Container>
                 <JumboCardImgAndText
-                    // imgWrap={'img-hover-zoom--zoom-n-out-slow pl-5'}
+                    // imgWrap={'animations_img-hover-zoom--zoom-n-out-slow pl-5'}
                     // lgRow={}
                     // mdRow={}
                     xsRow={12}
@@ -166,7 +166,7 @@ const HomeScreen = () => {
                     // lgIconTextCol={}
                     mdIconTextCol={12}
                     // xsIconTextCol={}
-                    iconSymbol={'far fa-plane bisonRedFontWhiteBg icon-spin'}
+                    iconSymbol={'far fa-plane global_bisonRedFontWhiteBg animations_icon-spin'}
                     lgIconCol={1}
                     // mdIconCol={}
                     // xsIconCol={}
@@ -236,13 +236,13 @@ const HomeScreen = () => {
                 {/*</Row>*/}
                 <Row xs={12} className='mt-5 '>
                     <Col className='d-flex justify-content-center '>
-                        <i className='fas fa-bolt bisonRedFontWhiteBg icon-spin'  style={{fontSize: '1.8em'}} > </i>
+                        <i className='fas fa-bolt global_bisonRedFontWhiteBg animations_icon-spin animations_icon-font-size' > </i>
                     </Col>
                     <Col className='d-flex justify-content-center'>
-                        <i className='fas fa-bug bisonRedFontWhiteBg icon-spin'  style={{fontSize: '1.8em'}}> </i>
+                        <i className='fas fa-bug global_bisonRedFontWhiteBg animations_icon-spin animations_icon-font-size'> </i>
                     </Col>
                     <Col className='d-flex justify-content-center'>
-                        <i className='far fa-check-square bisonRedFontWhiteBg icon-spin'  style={{fontSize: '1.8em'}}> </i>
+                        <i className='far fa-check-square global_bisonRedFontWhiteBg animations_icon-spin_icon-spin animations_icon-font-size'> </i>
                     </Col>
                 </Row>
                 <Row xs={12}>
@@ -259,13 +259,13 @@ const HomeScreen = () => {
                 {/*   ICON ROW TWO   */}
                 <Row xs={12} className='mt-4'>
                     <Col className='d-flex justify-content-center'>
-                        <i className='fas fa-bullseye bisonRedFontWhiteBg icon-spin'  style={{fontSize: '1.8em'}}> </i>
+                        <i className='fas fa-bullseye global_bisonRedFontWhiteBg animations_icon-spin animations_icon-font-size'> </i>
                     </Col>
                     <Col className='d-flex justify-content-center'>
-                        <i className='fas fa-cogs bisonRedFontWhiteBg icon-spin'  style={{fontSize: '1.8em'}}> </i>
+                        <i className='fas fa-cogs global_bisonRedFontWhiteBg animations_icon-spin animations_icon-font-size'> </i>
                     </Col>
                     <Col className='d-flex justify-content-center'>
-                        <i className='fas fa-tachometer-alt bisonRedFontWhiteBg icon-spin'  style={{fontSize: '1.8em'}}> </i>
+                        <i className='fas fa-tachometer-alt global_bisonRedFontWhiteBg animations_icon-spin animations_icon-font-size'> </i>
                     </Col>
                 </Row>
                 <Row xs={12} >
@@ -294,7 +294,7 @@ const HomeScreen = () => {
                 xsTextCol={12}
                 lgTitleCol={12}
                 mdIconTextCol={12}
-                iconSymbol={'far fa-plane bisonRedFontWhiteBg icon-spin'}
+                iconSymbol={'far fa-plane global_bisonRedFontWhiteBg animations_icon-spin'}
                 lgIconCol={1}
                 lgSubtextCol={11}
                 mdBlockTextCol={12}
@@ -313,7 +313,7 @@ const HomeScreen = () => {
                 xsTextCol={12}
                 lgTitleCol={12}
                 mdIconTextCol={12}
-                iconSymbol={'far fa-plane bisonRedFontWhiteBg icon-spin'}
+                iconSymbol={'far fa-plane global_bisonRedFontWhiteBg animations_icon-spin'}
                 lgIconCol={1}
                 lgSubtextCol={11}
                 mdBlockTextCol={12}
