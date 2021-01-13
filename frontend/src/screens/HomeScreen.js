@@ -102,39 +102,39 @@ const HomeScreen = () => {
                 </Col>
                 <Col xs={12} >
                     <Row>
-                        <Col lg={3} xs={6} className='d-flex justify-content-center mb-3 hoverTitle'>
+                        <Col lg={3} xs={6} className='d-flex justify-content-center mb-3 summary_nav_hoverTitle'>
                             <Button className='p-0 rounded-left '>
                                 <img src={garmin} alt="" className='h-100 w-100'/>
                             </Button>
-                            <Button className='overlay w-75 h-50 mx-auto'>
+                            <Button className='summary_nav_overlay w-75 h-50 mx-auto'>
                                 <p className='flag red global_accentFont mt-n1 mb-0 mx-0'>NEW!</p>
                                 <p className='text global_accentFont'>GARMIN DEALER</p>
                             </Button>
                         </Col>
 
-                        <Col lg={3} xs={6} className='d-flex justify-content-center mb-3 hoverTitle'>
+                        <Col lg={3} xs={6} className='d-flex justify-content-center mb-3 summary_nav_hoverTitle'>
                             <Button className='p-0 rounded-left '>
                                 <img src={avionics} alt="" className='h-100 w-100'/>
                             </Button>
-                            <Button className='overlay w-75 h-50 mx-auto'>
+                            <Button className='summary_nav_overlay w-75 h-50 mx-auto'>
                                 <p className='text global_accentFont'>AVIONICS</p>
                             </Button>
                         </Col>
 
-                        <Col lg={3} xs={6} className='d-flex justify-content-center mb-3 hoverTitle'>
+                        <Col lg={3} xs={6} className='d-flex justify-content-center mb-3 summary_nav_hoverTitle'>
                             <Button className='p-0 rounded-left '>
                                 <img src={maintenance} alt="" className='h-100 w-100 hoverImage'/>
                             </Button>
-                            <Button className='overlay w-75  h-50 mx-auto'>
+                            <Button className='summary_nav_overlay w-75  h-50 mx-auto'>
                                 <p className='text global_accentFont'>MECHANICS</p>
                             </Button>
                         </Col>
 
-                        <Col lg={3} xs={6} className='d-flex justify-content-center mb-3 hoverTitle'>
+                        <Col lg={3} xs={6} className='d-flex justify-content-center mb-3 summary_nav_hoverTitle'>
                             <Button className='p-0 rounded-left '>
                                 <img src={flir} alt="" className='h-100 w-100'/>
                             </Button>
-                            <Button className='overlay w-75 h-50 mx-auto'>
+                            <Button className='summary_nav_overlay w-75 h-50 mx-auto'>
                                 <p className='text global_accentFont'>EO/IR FLIR</p>
                             </Button>
                         </Col>
