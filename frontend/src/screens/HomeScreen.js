@@ -17,6 +17,8 @@ import heroImg from '../images/general/aircraft-double-decker-red-belt_1500.png'
 import MultiCarouselPage from "../components/MulitCarouselPage";
 import ProductCarousel from "../components/ProductCarousel";
 import JumboCardImgs from "../components/JumboCardImgs";
+import '../style/animations.css'
+import SummaryNav from "../components/SummaryNav";
 
 
 const HomeScreen = () => {
@@ -28,7 +30,7 @@ const HomeScreen = () => {
     return (
         <>
         <Jumbotrons
-                    jumboClass={'m-0 p-0 img-hover-zoom--zoom-n-out'}
+                    jumboClass={'m-0 p-0 animations_img-hover-zoom--zoom-n-out'}
                     img={heroImg}
                     imgClassName={'col-12 p-0 mx-0 mb-0'}
                     textContainerStyle={{backgroundColor: 'rgba(01, 02, 03, 1)'}}
@@ -39,7 +41,7 @@ const HomeScreen = () => {
                     textClassName={'text-light py-0 my-0'}
         />
 
-        <Jumbotrons jumboClass={'p-0 horizontal-gradient'}
+        <Jumbotrons jumboClass={'p-0 global_black-horizontal-gradient'}
                     jumboStyle={{height: '180%'}}
                     imgClassName={'col-12 p-0 m-0'}
         />
@@ -51,12 +53,10 @@ const HomeScreen = () => {
                 <Col xs={12} md={6} className=''>
                     <Row>
                         <Col xs={12} className='d-flex justify-content-center'>
-                            <h4 className='accentFont'> FAA Part 145 Repair Station</h4>
+                            <h4 className='global_accentFont'> FAA Part 145 Repair Station</h4>
                         </Col>
                         <Col xs={12} className='d-flex justify-content-center'>
-                            <Button className='rounded-circle px-4 my-2 bisonRedFontWhiteBg icon-spin'>
-                                <i className="fal fa-tools" style={{fontSize: '2em'}}> </i>
-                            </Button>
+                                <i className='fal fa-tools global_bisonRedFontWhiteBg animations_icon-font-size animations_icon-spin'> </i>
                         </Col>
                         {/*<Col xs={12}>*/}
                         {/*    <p> Bison Aviation is a fully licensed FAA Part 145 Repair Station with Airframe,*/}
@@ -72,12 +72,10 @@ const HomeScreen = () => {
                 <Col xs={12} md={6}>
                     <Row>
                         <Col xs={12} className='d-flex justify-content-center'>
-                            <h4 className='accentFont'>FAA Diamond Award Recipient</h4>
+                            <h4 className='global_accentFont'>FAA Diamond Award Recipient</h4>
                         </Col>
                         <Col xs={12} className='d-flex justify-content-center'>
-                            <Button className='rounded-circle px-4 my-2 bisonRedFontWhiteBg icon-spin'>
-                                <i className="fal fa-award" style={{fontSize: '2em'}}> </i>
-                            </Button>
+                                <i className='fal fa-award global_bisonRedFontWhiteBg animations_icon-font-size animations_icon-spin'> </i>
                         </Col>
                         {/*<Col xs={12}>*/}
                         {/*    <p> Bison Aviation is a proud recipient of the prestigious FAA Diamond Award for*/}
@@ -96,86 +94,37 @@ const HomeScreen = () => {
 
         {/*  =============  SUMMARY NAV  =============  */}
         <Container style={{marginTop: '10vh'}}>
-            <Row>
-                <Col xs={12}>
-                    <h1>Services</h1>
-                </Col>
-                <Col xs={12} className=''>
-                    <Row>
-                        <Col lg={3} xs={6} className='d-flex justify-content-center mb-3 hoverTitle'>
-                            <Button className='p-0 rounded-left '>
-                                <img src={garmin} alt="" className='h-100 w-100'/>
-                            </Button>
-                            <Button className='overlay w-75 h-50 mx-auto'>
-                                <p className='flag red accentFont mt-n1 mb-0 mx-0'>NEW!</p>
-                                <p className='text accentFont'>GARMIN DEALER</p>
-                            </Button>
-                        </Col>
-
-                        <Col lg={3} xs={6} className='d-flex justify-content-center mb-3 hoverTitle'>
-                            <Button className='p-0 rounded-left '>
-                                <img src={avionics} alt="" className='h-100 w-100'/>
-                            </Button>
-                            <Button className='overlay w-75 h-50 mx-auto'>
-                                <p className='text accentFont'>AVIONICS</p>
-                            </Button>
-                        </Col>
-
-                        <Col lg={3} xs={6} className='d-flex justify-content-center mb-3 hoverTitle'>
-                            <Button className='p-0 rounded-left '>
-                                <img src={maintenance} alt="" className='h-100 w-100 hoverImage'/>
-                            </Button>
-                            <Button className='overlay w-75  h-50 mx-auto'>
-                                <p className='text accentFont'>MECHANICS</p>
-                            </Button>
-                        </Col>
-
-                        <Col lg={3} xs={6} className='d-flex justify-content-center mb-3 hoverTitle'>
-                            <Button className='p-0 rounded-left '>
-                                <img src={flir} alt="" className='h-100 w-100'/>
-                            </Button>
-                            <Button className='overlay w-75 h-50 mx-auto'>
-                                <p className='text accentFont'>EO/IR FLIR</p>
-                            </Button>
-                        </Col>
-                    </Row>
-                </Col>
-            </Row>
+           <SummaryNav
+                  showTag={true}
+                  title1={'GARMIN DEALER'}
+                  title2={'AVIONICS'}
+                  title3={'MECHANICS'}
+                  title4={'EO/IR FLIR'}
+                  img1={garmin}
+                  img2={avionics}
+                  img3={maintenance}
+                  img4={flir}
+           />
         </Container>
 
 
-        <main className='mx-auto' style={{marginTop: '25vh'}}>
             {/*  =============  WHY BISON  =============  */}
+        <main className='mx-auto' style={{marginTop: '25vh'}}>
             <Container>
                 <JumboCardImgAndText
-                    // imgWrap={'img-hover-zoom--zoom-n-out-slow pl-5'}
-                    // lgRow={}
-                    // mdRow={}
                     xsRow={12}
                     lgImgCol={4}
-                    // mdImgCol={}
                     xsImgCol={12}
                     imgSrc={hangar}
                     imgClassName={'h-100 w-100 rounded'}
                     lgTextCol={8}
-                    // mdTextCol={}
                     xsTextCol={12}
                     lgTitleCol={12}
-                    // mdTitleCol={}
-                    // xsTitleCol={}
-                    // lgIconTextCol={}
                     mdIconTextCol={12}
-                    // xsIconTextCol={}
-                    iconSymbol={'far fa-plane bisonRedFontWhiteBg icon-spin'}
+                    iconSymbol={'far fa-plane global_bisonRedFontWhiteBg animations_icon-spin'}
                     lgIconCol={1}
-                    // mdIconCol={}
-                    // xsIconCol={}
                     lgSubtextCol={11}
-                    // mdSubtextCol={}
-                    // xsSubtextCol={}
-                    // lgBlockTextCol={}
                     mdBlockTextCol={12}
-                    // xsBlockTextCol={}
                     title={'Why Choose Bison Aviation'}
                     subText={'AVIONICS & AIRCRAFT MAINTENANCE & FLIR'}
                     paragraph={'Bison Aviation is an FAA certificated Part 145 Repair Station serving the general aviation community. Founded by an avid general aviation pilot and fellow aircraft owner, we operate with the unique perspective of an organization which is intimately familiar not only with the world of professional aircraft maintenance, but also with the world of aircraft ownership and operation. We know that our customers rely on us to provide them with an honest and frank assessment of the condition of their aircraft, and we are honored to accept that charge.'}
@@ -183,11 +132,11 @@ const HomeScreen = () => {
             </Container>
         </main>
 
-            {/*   =============   AVIONICS GARMIN SECTION   =============    */}
+            {/*   =============   GARMIN SECTION   =============    */}
             <Container className='mt-lg-0 pt-lg-0 mt-sm-5 pt-sm-5 pt-5 mb-5 pb-5'>
                 <Row xs={12}>
                     <Col className='d-flex justify-content-center '>
-                        <h1 className='flag red accentFont shadow'>&nbsp; &nbsp; NEW! &nbsp; &nbsp;   </h1>
+                        <h1 className='flag red global_accentFont shadow'>&nbsp; &nbsp; NEW! &nbsp; &nbsp;   </h1>
                         <h1>Certified Avionics Garmin Dealer</h1>
                     </Col>
                 </Row>
@@ -228,21 +177,16 @@ const HomeScreen = () => {
                                imgSrc4={panel2}>
                 </JumboCardImgs>
 
-                {/*  AVIONICS ICONS   */}
-                {/*<Row className='mt-5'>*/}
-                {/*    <Col className='d-flex justify-content-center'>*/}
-                {/*        <h4 className='accentFont'>Avionics Services Offered</h4>*/}
-                {/*    </Col>*/}
-                {/*</Row>*/}
+                {/*   =============  AVIONICS ICONS  =============   */}
                 <Row xs={12} className='mt-5 '>
                     <Col className='d-flex justify-content-center '>
-                        <i className='fas fa-bolt bisonRedFontWhiteBg icon-spin'> </i>
+                        <i className='fas fa-bolt global_bisonRedFontWhiteBg animations_icon-spin animations_icon-font-size' > </i>
                     </Col>
                     <Col className='d-flex justify-content-center'>
-                        <i className='fas fa-bug bisonRedFontWhiteBg icon-spin'> </i>
+                        <i className='fas fa-bug global_bisonRedFontWhiteBg animations_icon-spin animations_icon-font-size'> </i>
                     </Col>
                     <Col className='d-flex justify-content-center'>
-                        <i className='far fa-check-square bisonRedFontWhiteBg icon-spin'> </i>
+                        <i className='far fa-check-square global_bisonRedFontWhiteBg animations_icon-spin animations_icon-font-size'> </i>
                     </Col>
                 </Row>
                 <Row xs={12}>
@@ -259,13 +203,13 @@ const HomeScreen = () => {
                 {/*   ICON ROW TWO   */}
                 <Row xs={12} className='mt-4'>
                     <Col className='d-flex justify-content-center'>
-                        <i className='fas fa-bullseye bisonWhiteBtnIcon'> </i>
+                        <i className='fas fa-bullseye global_bisonRedFontWhiteBg animations_icon-spin animations_icon-font-size'> </i>
                     </Col>
                     <Col className='d-flex justify-content-center'>
-                        <i className='fas fa-cogs bisonWhiteBtnIcon'> </i>
+                        <i className='fas fa-cogs global_bisonRedFontWhiteBg animations_icon-spin animations_icon-font-size'> </i>
                     </Col>
                     <Col className='d-flex justify-content-center'>
-                        <i className='fas fa-tachometer-alt bisonWhiteBtnIcon'> </i>
+                        <i className='fas fa-tachometer-alt global_bisonRedFontWhiteBg animations_icon-spin animations_icon-font-size'> </i>
                     </Col>
                 </Row>
                 <Row xs={12} >
@@ -282,7 +226,7 @@ const HomeScreen = () => {
             </Container>
 
         <Container>
-            {/*   =============   MECHANICS SECTION    =============   */}
+            {/*   =============   MECHANICS SECTION   =============   */}
             <JumboCardImgAndText
                 rowStyle={{marginTop: '35vh'}}
                 xsRow={12}
@@ -294,7 +238,7 @@ const HomeScreen = () => {
                 xsTextCol={12}
                 lgTitleCol={12}
                 mdIconTextCol={12}
-                iconSymbol={'far fa-plane bisonRedFontWhiteBg icon-spin'}
+                iconSymbol={'far fa-plane global_bisonRedFontWhiteBg animations_icon-spin'}
                 lgIconCol={1}
                 lgSubtextCol={11}
                 mdBlockTextCol={12}
@@ -313,7 +257,7 @@ const HomeScreen = () => {
                 xsTextCol={12}
                 lgTitleCol={12}
                 mdIconTextCol={12}
-                iconSymbol={'far fa-plane bisonRedFontWhiteBg icon-spin'}
+                iconSymbol={'far fa-plane global_bisonRedFontWhiteBg animations_icon-spin'}
                 lgIconCol={1}
                 lgSubtextCol={11}
                 mdBlockTextCol={12}
@@ -322,9 +266,7 @@ const HomeScreen = () => {
 
             />
 
-
         </Container>
-        {/*</main>*/}
 
         </>
     )

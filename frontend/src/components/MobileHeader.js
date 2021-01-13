@@ -30,7 +30,7 @@ const MobileHeader = () => {
                         collapseOnSelect
                         style={{backgroundColor: 'black'}}
                         className='
-                            topNav
+                            {/*topNav*/}
                             navbar
                             navbar-dark
                             navbar-expand-md
@@ -42,14 +42,13 @@ const MobileHeader = () => {
                             border-0'
                 >
                     <Container
-                        className=''
                         style={{backgroundColor: 'black'}}
                     >
 
                         {/*  LOGO  */}
                         <LinkContainer className='col-xs-2' to='/'>
                             <img src={logo}
-                                 className='logoNav pb-3'
+                                 className='MobileHeader_logo pb-3'
                                  alt="Bison Aviation"
                             />
                         </LinkContainer>
@@ -63,8 +62,8 @@ const MobileHeader = () => {
                                                                      formClasses={'col-12 my-4'}
                                                                      searchClasses={'col-10'}
                                                                      btnSize={'sm'}
-                                                                     btnClasses={'bisonWhiteBtnSearch px-1 col-2 rounded-right'}
-                                                                     btnStyle={{paddingTop: '2em', paddingBottom: '1.45em'}}
+                                                                     btnClasses={'global_bisonWhiteBgBtnSearch MobileHeader_search_btn_padding px-1 col-2 rounded-right'}
+                                                                     // btnStyle={{paddingTop: '2em', paddingBottom: '1.45em'}}
                                                                      // iconStyle={{fontSize: '1.53em'}}
                             />}/>
 
@@ -170,7 +169,7 @@ const MobileHeader = () => {
 
                                 ) : <LinkContainer to='/login'>
                                     <Nav.Link>
-                                        <Button className='px-3 py-1 rounded-pill bisonRedBtn'>
+                                        <Button className='px-3 py-1 rounded-pill global_bisonRedBgWhiteHoverBgBtn'>
                                             {/*Log in*/}
                                             <i style={{fontSize: '1.8em'}}
                                                className="pr-2 fal fa-plane-arrival"> </i> Login
@@ -203,7 +202,7 @@ const MobileHeader = () => {
                                 {/*  CONTACT US  */}
                                 <LinkContainer className='mx-1' to='/'>
                                     <Nav.Link>
-                                        <Button className='px-3 py-1 rounded-pill bisonRedBtn'>
+                                        <Button className='px-3 py-1 rounded-pill global_bisonRedBgWhiteHoverBgBtn'>
                                             Contact Us
                                         </Button>
                                     </Nav.Link>

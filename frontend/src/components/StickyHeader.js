@@ -7,7 +7,7 @@ import {logout} from "../actions/userActions";
 import {Route} from "react-router-dom";
 import SearchBox from "./SearchBox";
 
-const DesktopStickyHeader = () => {
+const StickyHeader = () => {
 
     const dispatch = useDispatch();
 
@@ -48,7 +48,8 @@ const DesktopStickyHeader = () => {
 
     return (
         <>
-            <header className='sticky-top m-0' id='showSearch'>
+            <header className='sticky-top m-0'>
+            {/*<header className='sticky-top m-0' id='showSearch'>*/}
 
                 <Navbar className='navbar navbar-expand-lg navbar-light bg-light m-0 p-0 border-0 '>
 
@@ -65,10 +66,7 @@ const DesktopStickyHeader = () => {
                                                                          searchSize={'sm'}
                                                                          searchClasses={'col-9'}
                                                                          btnSize={'sm'}
-                                                                         btnClasses={'bisonWhiteBtnSearch px-1 col-2 rounded-right'}
-                                                                         btnStyle={{paddingTop: '2em', paddingBottom: '1.45em'}}
-                                                                         // iconStyle={{fontSize: '1.53em'}}
-                                                                         // imgClasses={'w-75 h-100'}
+                                                                         btnClasses={'global_bisonWhiteBgBtnSearch StickyHeader_search_btn_padding px-1 col-2 rounded-right'}
                                 />}/>
                             </Nav>
                             }
@@ -76,7 +74,7 @@ const DesktopStickyHeader = () => {
                             {/*============= NAV SHOW ON SCROLL ==============*/}
 
                             {goingUp ?
-                                <Nav className='col-lg-5 col-md-6 justify-content-center accentFont'>
+                                <Nav className='col-lg-5 col-md-6 justify-content-center global_accentFont'>
 
                                     {/*  BROWSE PRODUCTS  */}
                                     <LinkContainer className='mx-1' to='/products'>
@@ -142,7 +140,7 @@ const DesktopStickyHeader = () => {
 
                                 :
                                 // ============= NAV HIDDEN ON SCROLL ==============
-                                <Nav className='col-lg-8 col-md-6 justify-content-end accentFont'>
+                                <Nav className='col-lg-8 col-md-6 justify-content-end global_accentFont'>
 
                                     {/*  BROWSE PRODUCTS  */}
                                     <LinkContainer className='mx-1' to='/products'>
@@ -217,11 +215,11 @@ const DesktopStickyHeader = () => {
                                             <>
                                                 <LinkContainer to='/profile'>
                                                     <Nav.Link>
-                                                        <Button className='px-3 py-0 mt-2 rounded-pill bisonWhiteBtn iconHidden'>
-                                                            <span className='hideWords'>
+                                                        <Button className='px-3 py-0 mt-2 rounded-pill global_RedFontWhiteBgBtn StickyHeader_iconHidden'>
+                                                            <span className='StickyHeader_hideWords'>
                                                                 {userInfo.name}
                                                             </span>
-                                                        <span className='hideIcon'>Profile</span>
+                                                        <span className='StickyHeader_hideIcon'>Profile</span>
                                                     </Button>
                                                     </Nav.Link>
                                                 </LinkContainer>
@@ -229,12 +227,11 @@ const DesktopStickyHeader = () => {
                                                 <LinkContainer to='/profile'>
                                                     <Nav.Link onClick={logoutHandler}>
                                                         <Button
-                                                            className='px-3 py-0 mt-2 rounded-pill bisonWhiteBtn iconHidden'>
-                                                   <span className='hideWords'>
-                                                     <i style={{fontSize: '1.5em'}}
-                                                        className=" fal fa-plane-departure "> </i>
+                                                            className='px-3 py-0 mt-2 rounded-pill global_RedFontWhiteBgBtn StickyHeader_iconHidden'>
+                                                   <span className='StickyHeader_hideWords'>
+                                                     <i className='fal fa-plane-departure StickyHeader_icon-size'> </i>
                                                     </span>
-                                                            <span className='hideIcon'>Logout</span>
+                                                            <span className='StickyHeader_hideIcon'>Logout</span>
                                                         </Button>
                                                     </Nav.Link>
                                                 </LinkContainer>
@@ -243,12 +240,11 @@ const DesktopStickyHeader = () => {
                                         ) :
                                         <LinkContainer to='/login'>
                                             <Nav.Link>
-                                                <Button className='px-3 mr-n3 py-0 mt-2 rounded-pill bisonWhiteBtn iconHidden'>
-                                                 <span className='hideWords'>
-                                                     <i style={{fontSize: '1.5em'}}
-                                                        className=" fal fa-plane-arrival "> </i>
+                                                <Button className='px-3 mr-n3 py-0 mt-2 rounded-pill global_RedFontWhiteBgBtn StickyHeader_iconHidden'>
+                                                 <span className='StickyHeader_hideWords'>
+                                                     <i className='fal fa-plane-arrival StickyHeader_icon-size'> </i>
                                                  </span>
-                                                    <span className='hideIcon'>Login</span>
+                                                    <span className='StickyHeader_hideIcon'>Login</span>
                                                 </Button>
                                             </Nav.Link>
                                         </LinkContainer>
@@ -257,12 +253,11 @@ const DesktopStickyHeader = () => {
                                     {!userInfo && (
                                         <LinkContainer to='/Register'>
                                             <Nav.Link>
-                                                <Button className='px-3 py-0 mt-2 rounded-pill bisonWhiteBtn iconHidden'>
-                                                <span className='hideWords'>
-                                                    <i style={{fontSize: '1.5em'}}
-                                                       className="fal fa-clipboard-user"> </i>
+                                                <Button className='px-3 py-0 mt-2 rounded-pill global_RedFontWhiteBgBtn StickyHeader_iconHidden'>
+                                                <span className='StickyHeader_hideWords'>
+                                                    <i className='fal fa-clipboard-user StickyHeader_icon-size'> </i>
                                                 </span>
-                                                    <span className='hideIcon'>Register</span>
+                                                    <span className='StickyHeader_hideIcon'>Register</span>
                                                 </Button>
                                             </Nav.Link>
                                         </LinkContainer>)
@@ -287,11 +282,15 @@ const DesktopStickyHeader = () => {
 
                                     <LinkContainer to='/contact'>
                                         <Nav.Link>
-                                            <Button className='px-3 py-0 mt-2 rounded-pill bisonRedBtn iconHidden '>
-                                                 <span className='hideIcon'>
+                                            <Button className='px-3 py-0 mt-2 rounded-pill global_bisonRedBgWhiteHoverBgBtn StickyHeader_iconHidden '>
+                                                {/* <span className='StickyHeader_hideIcon'>*/}
+                                                {/*     Contact*/}
+                                                {/* </span>*/}
+                                                {/*<span className='StickyHeader_hideWords'>Contact</span>*/}
+                                                <span className='StickyHeader_hideIcon'>
                                                      Contact
                                                  </span>
-                                                <span className='hideWords'>Contact</span>
+                                                <span className='StickyHeader_hideWords'>Contact</span>
                                             </Button>
                                         </Nav.Link>
                                     </LinkContainer>
@@ -308,11 +307,11 @@ const DesktopStickyHeader = () => {
                                             <>
                                                 <LinkContainer to='/profile'>
                                                     <Nav.Link>
-                                                        <Button className='px-3 py-0 mt-2 rounded-pill bisonWhiteBtn iconHidden'>
-                                                            <span className='hideWords'>
+                                                        <Button className='px-3 py-0 mt-2 rounded-pill global_RedFontWhiteBgBtn StickyHeader_iconHidden'>
+                                                            <span className='StickyHeader_hideWords'>
                                                                 {userInfo.name}
                                                             </span>
-                                                            <span className='hideIcon'>Profile</span>
+                                                            <span className='StickyHeader_hideIcon'>Profile</span>
                                                         </Button>
                                                     </Nav.Link>
                                                 </LinkContainer>
@@ -320,12 +319,12 @@ const DesktopStickyHeader = () => {
                                                 <LinkContainer to='/profile'>
                                                     <Nav.Link onClick={logoutHandler}>
                                                         <Button
-                                                            className='px-3 py-0 mt-2 rounded-pill bisonWhiteBtn iconHidden'>
-                                                   <span className='hideWords'>
+                                                            className='px-3 py-0 mt-2 rounded-pill global_RedFontWhiteBgBtn StickyHeader_iconHidden'>
+                                                   <span className='StickyHeader_hideWords'>
                                                      <i style={{fontSize: '1.5em'}}
                                                         className=" fal fa-plane-departure "> </i>
                                                     </span>
-                                                            <span className='hideIcon'>Logout</span>
+                                                            <span className='StickyHeader_hideIcon'>Logout</span>
                                                         </Button>
                                                     </Nav.Link>
                                                 </LinkContainer>
@@ -334,12 +333,12 @@ const DesktopStickyHeader = () => {
                                         ) :
                                         <LinkContainer to='/login'>
                                             <Nav.Link>
-                                                <Button className='px-3 mr-n3 py-0 mt-2 rounded-pill bisonWhiteBtn iconHidden'>
-                                                 <span className='hideWords'>
+                                                <Button className='px-3 mr-n3 py-0 mt-2 rounded-pill global_RedFontWhiteBgBtn StickyHeader_iconHidden'>
+                                                 <span className='StickyHeader_hideWords'>
                                                      <i style={{fontSize: '1.5em'}}
                                                         className=" fal fa-plane-arrival "> </i>
                                                  </span>
-                                                    <span className='hideIcon'>Login</span>
+                                                    <span className='StickyHeader_hideIcon'>Login</span>
                                                 </Button>
                                             </Nav.Link>
                                         </LinkContainer>
@@ -348,12 +347,12 @@ const DesktopStickyHeader = () => {
                                     {!userInfo && (
                                         <LinkContainer to='/Register'>
                                             <Nav.Link>
-                                                <Button className='px-3 py-0 mt-2 rounded-pill bisonWhiteBtn iconHidden'>
-                                                <span className='hideWords'>
+                                                <Button className='px-3 py-0 mt-2 rounded-pill global_RedFontWhiteBgBtn StickyHeader_iconHidden'>
+                                                <span className='StickyHeader_hideWords'>
                                                     <i style={{fontSize: '1.5em'}}
                                                        className="fal fa-clipboard-user"> </i>
                                                 </span>
-                                                    <span className='hideIcon'>Register</span>
+                                                    <span className='StickyHeader_hideIcon'>Register</span>
                                                 </Button>
                                             </Nav.Link>
                                         </LinkContainer>)
@@ -378,11 +377,11 @@ const DesktopStickyHeader = () => {
                                     {/* CONTACT  */}
                                     <LinkContainer to='/contact'>
                                         <Nav.Link>
-                                            <Button className='px-3 py-0 mt-2 rounded-pill bisonRedBtn iconHidden '>
-                                                 <span className='hideIcon'>
+                                            <Button className='px-3 py-0 mt-2 rounded-pill global_bisonRedBgWhiteHoverBgBtn StickyHeader_iconHidden'>
+                                                 <span className='StickyHeader_hideIcon'>
                                                      Contact
                                                  </span>
-                                                <span className='hideWords'>Contact</span>
+                                                <span className='StickyHeader_hideWords'>Contact</span>
                                             </Button>
                                         </Nav.Link>
                                     </LinkContainer>
@@ -395,7 +394,7 @@ const DesktopStickyHeader = () => {
                         </Navbar.Collapse>
                     </Container>
                 </Navbar>
-                <div className='blackFade col-sm-12 position-sticky'> </div>
+                <div className='StickyHeader_blackFade col-sm-12 position-sticky'> </div>
             </header>
         </>
 
@@ -403,4 +402,4 @@ const DesktopStickyHeader = () => {
 
 };
 
-export default DesktopStickyHeader
+export default StickyHeader

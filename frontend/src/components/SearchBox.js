@@ -29,10 +29,8 @@ const SearchBox = ({history, searchClasses, formClasses, btnClasses, btnSize, se
                     className={searchClasses}
                 >
                 </Form.Control>
-                <Button type='submit' id='searchImage' size={btnSize} className={btnClasses} style={btnStyle}
+                <Button type='submit' id='StickyHeader_SearchBox_searchImage' size={btnSize} className={btnClasses} style={btnStyle}
                 >
-                    {/*<img src={logoSearch} className={imgClasses} alt=""/>*/}
-                    {/*<i className="fas fa-search" style={iconStyle}> </i>*/}
                 </Button>
             </Form>
         </>

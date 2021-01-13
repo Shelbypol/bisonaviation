@@ -1,0 +1,106 @@
+
+.animations_img-hover-zoom {
+    overflow: hidden;
+}
+
+.animations_icon-font-size{
+    font-size: 2em;
+}
+
+/*  =======  SLOW MO ZOOM  =======  */
+.animations_img-hover-zoom--slowmo img {
+    transform-origin: 50% 65%;
+    transition: transform 5s, filter 3s ease-in-out;
+    filter: brightness(120%);
+}
+
+.animations_img-hover-zoom--slowmo:hover img {
+    filter: brightness(150%);
+    transform: scale(2);
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes zoominout {
+    0% {
+        -webkit-transform: scale(1.15,1.15);
+    }
+    50% {
+        -webkit-transform: scale(1,1);
+    }
+    100% {
+        -webkit-transform: scale(1.15, 1.15);
+    }
+}
+/* Standard syntax */
+@keyframes zoominout {
+    0% {
+        -webkit-transform: scale(1.15,1.15);
+    }
+    50% {
+        -webkit-transform: scale(1,1);
+    }
+    100% {
+        -webkit-transform: scale(1.15, 1.15);
+    }
+}
+
+/*  ======   ZOOM IN OUT  ======  */
+.animations_img-hover-zoom--zoom-n-out img {
+    -webkit-animation: zoominout 25s; /* Chrome, Safari, Opera */
+    animation: zoominout 15s infinite;
+}
+
+@-webkit-keyframes zoominoutslow {
+    0% {
+        -webkit-transform: scale(1.15,1.15);
+    }
+    50% {
+        -webkit-transform: scale(1,1);
+    }
+    100% {
+        -webkit-transform: scale(1.15, 1.15);
+    }
+}
+/* Standard syntax */
+@keyframes zoominoutslow {
+    0% {
+        -webkit-transform: scale(1, 1);
+    }
+    50% {
+        -webkit-transform: scale(1.15,1.15);
+    }
+    100% {
+        -webkit-transform: scale(1, 1);
+    }
+}
+
+.animations_img-hover-zoom--zoom-n-out-slow img {
+    -webkit-animation: zoominoutslow 25s; /* Chrome, Safari, Opera */
+    animation: zoominoutslow 25s;
+    overflow: hidden;
+}
+
+/*   ========  ICON SPIN HOVER ========  */
+.animations_icon-spin:hover {
+    margin-right: 7px;
+    top: 2px;
+    animation: spin .6s infinite linear;
+}
+
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform: scale(1) rotate(0deg);
+    }
+    to {
+        -webkit-transform: scale(1) rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: scale(1) rotate(0deg);
+    }
+    to {
+        transform: scale(1) rotate(360deg);
+    }
+}

@@ -1,19 +1,21 @@
 import React from "react";
 import {Nav, Navbar} from "react-bootstrap";
 import {LinkContainer} from "react-router-bootstrap";
+import '../style/SocialIcons.css'
 
 
-const SocialIcons = ({socialClassName, socialStyle, cartClassName, contactClassName, facebookClassName, instaClassName, twitterClassName}) => {
+
+const SocialIcons = ({socialClassName, cartClassName, contactClassName, facebookClassName, instaClassName, twitterClassName}) => {
 
     return (
         <>
-            <Nav className={socialClassName} style={socialStyle}>
+            <Nav className={socialClassName} >
 
                 {/*  WISH LIST  */}
                 <LinkContainer className={cartClassName} to='/cart'>
                     <Nav.Link>
-                        <span className={'socialIcons'}>
-                            <i className="m-auto far fa-cart-arrow-down"> </i>
+                        <span className={'SocialIcons_socialIcons'}>
+                            <i className="m-auto far fa-cart-arrow-down animations_icon-spin"> </i>
                         </span>
                     </Nav.Link>
                 </LinkContainer>
@@ -21,8 +23,8 @@ const SocialIcons = ({socialClassName, socialStyle, cartClassName, contactClassN
                 {/*  CONTACT */}
                 <LinkContainer className={contactClassName} to='/'>
                     <Nav.Link>
-                        <span className={'socialIcons'}>
-                            <i className="m-auto far fa-envelope"> </i>
+                        <span className={'SocialIcons_socialIcons'}>
+                            <i className="m-auto far fa-envelope animations_icon-spin"> </i>
                         </span>
                     </Nav.Link>
                 </LinkContainer>
@@ -30,8 +32,8 @@ const SocialIcons = ({socialClassName, socialStyle, cartClassName, contactClassN
                 {/*  FACEBOOK  */}
                 <LinkContainer className={facebookClassName} to='/'>
                     <Nav.Link>
-                        <span className={'socialIcons'}>
-                            <i className="m-auto fab fa-facebook"> </i>
+                        <span className={'SocialIcons_socialIcons'}>
+                            <i className="m-auto fab fa-facebook animations_icon-spin"> </i>
                         </span>
                     </Nav.Link>
                 </LinkContainer>
@@ -39,8 +41,8 @@ const SocialIcons = ({socialClassName, socialStyle, cartClassName, contactClassN
                 {/*  INSTAGRAM */}
                 <LinkContainer className={instaClassName} to='/'>
                     <Nav.Link>
-                        <span className={'socialIcons'}>
-                            <i className="m-auto fab fa-instagram"> </i>
+                        <span className={'SocialIcons_socialIcons'}>
+                            <i className="m-auto fab fa-instagram animations_icon-spin"> </i>
                         </span>
                     </Nav.Link>
                 </LinkContainer>
@@ -48,8 +50,8 @@ const SocialIcons = ({socialClassName, socialStyle, cartClassName, contactClassN
                 {/*  TWITTER */}
                 <LinkContainer className={twitterClassName} to='/'>
                     <Nav.Link>
-                        <span className={'socialIcons'}>
-                            <i className="m-auto fab fa-twitter"> </i>
+                        <span className={'SocialIcons_socialIcons'}>
+                            <i className="m-auto fab fa-twitter animations_icon-spin"> </i>
                         </span>
                     </Nav.Link>
                 </LinkContainer>

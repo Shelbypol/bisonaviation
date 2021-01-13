@@ -7,14 +7,12 @@ const AlertDismissible = (props) => {
 
     return (
         <>
-
-
                 <p className='d-inline'>
                     <Button
                         onMouseOver={() => setShow(true)}
                         onClick={() => setShow(false)}
                         variant='danger'
-                        dismissible className='mr-2 circleHover'
+                        dismissible className='mr-2 global_circleHover'
                         style={{borderRadius: "50%"}}>{props.icon}
                     </Button>
                     <h5 className='mt-2'>{props.title}</h5>
