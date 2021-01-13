@@ -41,7 +41,7 @@ const HomeScreen = () => {
                     textClassName={'text-light py-0 my-0'}
         />
 
-        <Jumbotrons jumboClass={'p-0 horizontal-gradient'}
+        <Jumbotrons jumboClass={'p-0 global_black-horizontal-gradient'}
                     jumboStyle={{height: '180%'}}
                     imgClassName={'col-12 p-0 m-0'}
         />
