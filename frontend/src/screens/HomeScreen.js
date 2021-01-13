@@ -108,38 +108,23 @@ const HomeScreen = () => {
         </Container>
 
 
-        <main className='mx-auto' style={{marginTop: '25vh'}}>
             {/*  =============  WHY BISON  =============  */}
+        <main className='mx-auto' style={{marginTop: '25vh'}}>
             <Container>
                 <JumboCardImgAndText
-                    // imgWrap={'animations_img-hover-zoom--zoom-n-out-slow pl-5'}
-                    // lgRow={}
-                    // mdRow={}
                     xsRow={12}
                     lgImgCol={4}
-                    // mdImgCol={}
                     xsImgCol={12}
                     imgSrc={hangar}
                     imgClassName={'h-100 w-100 rounded'}
                     lgTextCol={8}
-                    // mdTextCol={}
                     xsTextCol={12}
                     lgTitleCol={12}
-                    // mdTitleCol={}
-                    // xsTitleCol={}
-                    // lgIconTextCol={}
                     mdIconTextCol={12}
-                    // xsIconTextCol={}
                     iconSymbol={'far fa-plane global_bisonRedFontWhiteBg animations_icon-spin'}
                     lgIconCol={1}
-                    // mdIconCol={}
-                    // xsIconCol={}
                     lgSubtextCol={11}
-                    // mdSubtextCol={}
-                    // xsSubtextCol={}
-                    // lgBlockTextCol={}
                     mdBlockTextCol={12}
-                    // xsBlockTextCol={}
                     title={'Why Choose Bison Aviation'}
                     subText={'AVIONICS & AIRCRAFT MAINTENANCE & FLIR'}
                     paragraph={'Bison Aviation is an FAA certificated Part 145 Repair Station serving the general aviation community. Founded by an avid general aviation pilot and fellow aircraft owner, we operate with the unique perspective of an organization which is intimately familiar not only with the world of professional aircraft maintenance, but also with the world of aircraft ownership and operation. We know that our customers rely on us to provide them with an honest and frank assessment of the condition of their aircraft, and we are honored to accept that charge.'}
@@ -147,7 +132,7 @@ const HomeScreen = () => {
             </Container>
         </main>
 
-            {/*   =============   AVIONICS GARMIN SECTION   =============    */}
+            {/*   =============   GARMIN SECTION   =============    */}
             <Container className='mt-lg-0 pt-lg-0 mt-sm-5 pt-sm-5 pt-5 mb-5 pb-5'>
                 <Row xs={12}>
                     <Col className='d-flex justify-content-center '>
@@ -192,12 +177,7 @@ const HomeScreen = () => {
                                imgSrc4={panel2}>
                 </JumboCardImgs>
 
-                {/*  AVIONICS ICONS   */}
-                {/*<Row className='mt-5'>*/}
-                {/*    <Col className='d-flex justify-content-center'>*/}
-                {/*        <h4 className='global_accentFont'>Avionics Services Offered</h4>*/}
-                {/*    </Col>*/}
-                {/*</Row>*/}
+                {/*   =============  AVIONICS ICONS  =============   */}
                 <Row xs={12} className='mt-5 '>
                     <Col className='d-flex justify-content-center '>
                         <i className='fas fa-bolt global_bisonRedFontWhiteBg animations_icon-spin animations_icon-font-size' > </i>
@@ -246,7 +226,7 @@ const HomeScreen = () => {
             </Container>
 
         <Container>
-            {/*   =============   MECHANICS SECTION    =============   */}
+            {/*   =============   MECHANICS SECTION   =============   */}
             <JumboCardImgAndText
                 rowStyle={{marginTop: '35vh'}}
                 xsRow={12}
@@ -286,9 +266,7 @@ const HomeScreen = () => {
 
             />
 
-
         </Container>
-        {/*</main>*/}
 
         </>
     )
