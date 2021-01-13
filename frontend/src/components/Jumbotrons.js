@@ -2,7 +2,7 @@ import React from 'react';
 import {Jumbotron, Container} from 'reactstrap';
 import '../style/jumbotron.css'
 
-const Jumbotrons = ({zoom, jumboClass, jumboStyle ,img, imgAlt, imgClassName, imgStyle , textContainerClass, textContainerStyle ,title, titleClassName , textClassName, text}) => {
+const Jumbotrons = ({jumboClass, jumboStyle ,img, imgAlt, imgClassName, imgStyle , textContainerClass, textContainerStyle ,title, titleClassName , textClassName, text}) => {
     return (
         // <div>
             <Jumbotron className={jumboClass} style={jumboStyle} fluid>

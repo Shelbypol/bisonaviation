@@ -51,11 +51,11 @@ const HomeScreen = () => {
                 <Col xs={12} md={6} className=''>
                     <Row>
                         <Col xs={12} className='d-flex justify-content-center'>
-                            <h4 className='accentFont'> FAA Part 145 Repair Station</h4>
+                            <h4 className='global_accentFont'> FAA Part 145 Repair Station</h4>
                         </Col>
                         <Col xs={12} className='d-flex justify-content-center'>
-                            <Button className='rounded-circle px-4 my-2 bisonRedFontWhiteBg icon-spin'>
-                                <i className="fal fa-tools" style={{fontSize: '2em'}}> </i>
+                            <Button className='rounded-circle px-4 my-2 global_bisonRedFontWhiteBg global_icon-spin'>
+                                <i className='fal fa-tools global_icon'> </i>
                             </Button>
                         </Col>
                         {/*<Col xs={12}>*/}
@@ -72,11 +72,11 @@ const HomeScreen = () => {
                 <Col xs={12} md={6}>
                     <Row>
                         <Col xs={12} className='d-flex justify-content-center'>
-                            <h4 className='accentFont'>FAA Diamond Award Recipient</h4>
+                            <h4 className='global_accentFont'>FAA Diamond Award Recipient</h4>
                         </Col>
                         <Col xs={12} className='d-flex justify-content-center'>
-                            <Button className='rounded-circle px-4 my-2 bisonRedFontWhiteBg icon-spin'>
-                                <i className="fal fa-award" style={{fontSize: '2em'}}> </i>
+                            <Button className='rounded-circle px-4 my-2 global_bisonRedFontWhiteBg global_icon-spin'>
+                                <i className='fal fa-award global_icon'> </i>
                             </Button>
                         </Col>
                         {/*<Col xs={12}>*/}
@@ -100,15 +100,15 @@ const HomeScreen = () => {
                 <Col xs={12}>
                     <h1>Services</h1>
                 </Col>
-                <Col xs={12} className=''>
+                <Col xs={12} >
                     <Row>
                         <Col lg={3} xs={6} className='d-flex justify-content-center mb-3 hoverTitle'>
                             <Button className='p-0 rounded-left '>
                                 <img src={garmin} alt="" className='h-100 w-100'/>
                             </Button>
                             <Button className='overlay w-75 h-50 mx-auto'>
-                                <p className='flag red accentFont mt-n1 mb-0 mx-0'>NEW!</p>
-                                <p className='text accentFont'>GARMIN DEALER</p>
+                                <p className='flag red global_accentFont mt-n1 mb-0 mx-0'>NEW!</p>
+                                <p className='text global_accentFont'>GARMIN DEALER</p>
                             </Button>
                         </Col>
 
@@ -117,7 +117,7 @@ const HomeScreen = () => {
                                 <img src={avionics} alt="" className='h-100 w-100'/>
                             </Button>
                             <Button className='overlay w-75 h-50 mx-auto'>
-                                <p className='text accentFont'>AVIONICS</p>
+                                <p className='text global_accentFont'>AVIONICS</p>
                             </Button>
                         </Col>
 
@@ -126,7 +126,7 @@ const HomeScreen = () => {
                                 <img src={maintenance} alt="" className='h-100 w-100 hoverImage'/>
                             </Button>
                             <Button className='overlay w-75  h-50 mx-auto'>
-                                <p className='text accentFont'>MECHANICS</p>
+                                <p className='text global_accentFont'>MECHANICS</p>
                             </Button>
                         </Col>
 
@@ -135,7 +135,7 @@ const HomeScreen = () => {
                                 <img src={flir} alt="" className='h-100 w-100'/>
                             </Button>
                             <Button className='overlay w-75 h-50 mx-auto'>
-                                <p className='text accentFont'>EO/IR FLIR</p>
+                                <p className='text global_accentFont'>EO/IR FLIR</p>
                             </Button>
                         </Col>
                     </Row>
@@ -187,7 +187,7 @@ const HomeScreen = () => {
             <Container className='mt-lg-0 pt-lg-0 mt-sm-5 pt-sm-5 pt-5 mb-5 pb-5'>
                 <Row xs={12}>
                     <Col className='d-flex justify-content-center '>
-                        <h1 className='flag red accentFont shadow'>&nbsp; &nbsp; NEW! &nbsp; &nbsp;   </h1>
+                        <h1 className='flag red global_accentFont shadow'>&nbsp; &nbsp; NEW! &nbsp; &nbsp;   </h1>
                         <h1>Certified Avionics Garmin Dealer</h1>
                     </Col>
                 </Row>
@@ -231,7 +231,7 @@ const HomeScreen = () => {
                 {/*  AVIONICS ICONS   */}
                 {/*<Row className='mt-5'>*/}
                 {/*    <Col className='d-flex justify-content-center'>*/}
-                {/*        <h4 className='accentFont'>Avionics Services Offered</h4>*/}
+                {/*        <h4 className='global_accentFont'>Avionics Services Offered</h4>*/}
                 {/*    </Col>*/}
                 {/*</Row>*/}
                 <Row xs={12} className='mt-5 '>

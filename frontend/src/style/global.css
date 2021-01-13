@@ -25,7 +25,7 @@ main {
 }
 
 /* FONT JUMBO */
-h1, .accentFont {
+h1, .global_accentFont {
     font-family: 'Sanchez', serif;
 }
 
@@ -84,7 +84,7 @@ p{
     color: rgba(90, 00, 09, 1);
 }
 
-.bisonRedFontWhiteBg{
+.global_bisonRedFontWhiteBg{
     color: rgba(90, 00, 09, 1);
     background-color: #fff;
 }
@@ -363,10 +363,14 @@ h2 {
 }
 
 /*  ICON SPIN HOVER   */
-.icon-spin:hover {
+.global_icon-spin:hover {
     margin-right: 7px;
     top: 2px;
     animation: spin .6s infinite linear;
+}
+
+.global_icon{
+    font-size: 2em;
 }
 
 @-webkit-keyframes spin {
