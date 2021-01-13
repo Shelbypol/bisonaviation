@@ -1,6 +1,8 @@
 import React from "react";
 import {Nav, Navbar} from "react-bootstrap";
 import {LinkContainer} from "react-router-bootstrap";
+import '../style/SocialIcons.css'
+
 
 
 const SocialIcons = ({socialClassName, cartClassName, contactClassName, facebookClassName, instaClassName, twitterClassName}) => {

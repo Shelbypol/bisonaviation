@@ -17,6 +17,8 @@ import heroImg from '../images/general/aircraft-double-decker-red-belt_1500.png'
 import MultiCarouselPage from "../components/MulitCarouselPage";
 import ProductCarousel from "../components/ProductCarousel";
 import JumboCardImgs from "../components/JumboCardImgs";
+import '../style/animations.css'
+import SummaryNav from "../components/SummaryNav";
 
 
 const HomeScreen = () => {
@@ -92,51 +94,17 @@ const HomeScreen = () => {
 
         {/*  =============  SUMMARY NAV  =============  */}
         <Container style={{marginTop: '10vh'}}>
-            <Row>
-                <Col xs={12}>
-                    <h1>Services</h1>
-                </Col>
-                <Col xs={12} >
-                    <Row>
-                        <Col lg={3} xs={6} className='d-flex justify-content-center mb-3 summary_nav_hoverTitle'>
-                            <Button className='p-0 rounded-left '>
-                                <img src={garmin} alt="" className='h-100 w-100'/>
-                            </Button>
-                            <Button className='summary_nav_overlay w-75 h-50 mx-auto'>
-                                <p className='flag red global_accentFont mt-n1 mb-0 mx-0'>NEW!</p>
-                                <p className='summary_nav_text global_accentFont'>GARMIN DEALER</p>
-                            </Button>
-                        </Col>
-
-                        <Col lg={3} xs={6} className='d-flex justify-content-center mb-3 summary_nav_hoverTitle'>
-                            <Button className='p-0 rounded-left '>
-                                <img src={avionics} alt="" className='h-100 w-100'/>
-                            </Button>
-                            <Button className='summary_nav_overlay w-75 h-50 mx-auto'>
-                                <p className='summary_nav_text global_accentFont'>AVIONICS</p>
-                            </Button>
-                        </Col>
-
-                        <Col lg={3} xs={6} className='d-flex justify-content-center mb-3 summary_nav_hoverTitle'>
-                            <Button className='p-0 rounded-left '>
-                                <img src={maintenance} alt="" className='h-100 w-100'/>
-                            </Button>
-                            <Button className='summary_nav_overlay w-75 h-50 mx-auto'>
-                                <p className='summary_nav_text global_accentFont'>MECHANICS</p>
-                            </Button>
-                        </Col>
-
-                        <Col lg={3} xs={6} className='d-flex justify-content-center mb-3 summary_nav_hoverTitle'>
-                            <Button className='p-0 rounded-left '>
-                                <img src={flir} alt="" className='h-100 w-100'/>
-                            </Button>
-                            <Button className='summary_nav_overlay w-75 h-50 mx-auto'>
-                                <p className='summary_nav_text global_accentFont'>EO/IR FLIR</p>
-                            </Button>
-                        </Col>
-                    </Row>
-                </Col>
-            </Row>
+           <SummaryNav
+                  showTag={true}
+                  title1={'GARMIN DEALER'}
+                  title2={'AVIONICS'}
+                  title3={'MECHANICS'}
+                  title4={'EO/IR FLIR'}
+                  img1={garmin}
+                  img2={avionics}
+                  img3={maintenance}
+                  img4={flir}
+           />
         </Container>
 
 
