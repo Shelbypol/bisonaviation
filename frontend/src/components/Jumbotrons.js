@@ -1,6 +1,5 @@
 import React from 'react';
 import {Jumbotron, Container} from 'reactstrap';
-import '../style/jumbotron.css'
 
 const Jumbotrons = ({jumboClass, jumboStyle ,img, imgAlt, imgClassName, imgStyle , textContainerClass, textContainerStyle ,title, titleClassName , textClassName, text}) => {
     return (

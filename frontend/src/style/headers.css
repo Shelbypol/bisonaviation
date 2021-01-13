@@ -1,22 +1,46 @@
-
-.logoNav {
+/*      DESKTOP HEADER        */
+.DesktopHeader_logo {
     height: 15vh;
     max-height: 100%;
 }
 
-.topNav {
+.DesktopHeader_search_btn_padding{
+    padding-top: 1.82em;
+}
+
+.DesktopHeader_nav {
     height: 20vh;
     max-height: 100%;
     margin-top: -7vh;
     z-index: 2;
+    background-color: black;
 }
 
-.desktopNav{
-    /*background: linear-gradient(rgba(90, 00, 09, 1), #000);*/
-/*background: linear-gradient(30deg , rgba(90, 00, 09, 1), #000);*/
+/*       STICKY HEADER       */
+
+.StickyHeader_search_btn_padding{
+    padding-top: 2em;
+    padding-bottom: 1.45em;
 }
 
-.blackFade{
+.StickyHeader_icon-size{
+    font-size: 1.5em;
+}
+
+/* HIDE AND SHOW ICONS */
+.StickyHeader_iconHidden .StickyHeader_hideIcon {
+    display: none;
+}
+
+.StickyHeader_iconHidden:hover .StickyHeader_hideIcon {
+    display: inherit;
+}
+
+.StickyHeader_iconHidden:hover .StickyHeader_hideWords {
+    display: none;
+}
+
+.StickyHeader_blackFade{
     background-image: url("../images/graphics/small-black-fade.png");
     position: relative;
     margin-top: -5vh;
@@ -25,8 +49,17 @@
     z-index: -1;
 }
 
-/*   NAV DROPDOWN STYLE    */
+#StickyHeader_SearchBox_searchImage {
+    background-image: url("../images/graphics/search-logo-very-small.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
+#StickyHeader_SearchBox_searchImage:hover {
+    background-image: url("../images/graphics/search-logo-very-small-white.png");
+}
+
+/*   NAV BOOTSTRAP DROPDOWN STYLE    */
 .navbar-toggler {
     border: none;
 }
@@ -47,13 +80,6 @@ button.navbar-toggler:hover {
     color: white;
 }
 
-/*.dropdown-menu > .whiteDropdown{*/
-/*    border-left: 5px solid rgba(90, 00, 09,1);*/
-/*    background-color: white;*/
-/*    color: black;*/
-/*}*/
-
-
 .dropdown-item {
     color: white;
     padding-top: 8px;
@@ -65,15 +91,13 @@ button.navbar-toggler:hover {
     color: white;
 }
 
-#searchImage {
-    background-image: url("../images/graphics/search-logo-very-small.png");
-    background-repeat: no-repeat;
-    background-position: center;
+
+/*       MOBILE HEADER       */
+.MobileHeader_logo {
+    height: 12vh;
 }
 
-#searchImage:hover {
-    background-image: url("../images/graphics/search-logo-very-small-white.png");
-    /*background-repeat: no-repeat;*/
-    /*background-position: center;*/
+.MobileHeader_search_btn_padding{
+    padding-top: 2em;
+    padding-bottom: 1.45em;
 }
-

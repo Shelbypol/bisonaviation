@@ -54,9 +54,7 @@ const HomeScreen = () => {
                             <h4 className='global_accentFont'> FAA Part 145 Repair Station</h4>
                         </Col>
                         <Col xs={12} className='d-flex justify-content-center'>
-                            <Button className='rounded-circle px-4 my-2 global_bisonRedFontWhiteBg animations_icon-spin'>
-                                <i className='fal fa-tools animations_icon-font-size'> </i>
-                            </Button>
+                                <i className='fal fa-tools global_bisonRedFontWhiteBg animations_icon-font-size animations_icon-spin'> </i>
                         </Col>
                         {/*<Col xs={12}>*/}
                         {/*    <p> Bison Aviation is a fully licensed FAA Part 145 Repair Station with Airframe,*/}
@@ -75,9 +73,7 @@ const HomeScreen = () => {
                             <h4 className='global_accentFont'>FAA Diamond Award Recipient</h4>
                         </Col>
                         <Col xs={12} className='d-flex justify-content-center'>
-                            <Button className='rounded-circle px-4 my-2 global_bisonRedFontWhiteBg animations_icon-spin'>
-                                <i className='fal fa-award animations_icon-font-size'> </i>
-                            </Button>
+                                <i className='fal fa-award global_bisonRedFontWhiteBg animations_icon-font-size animations_icon-spin'> </i>
                         </Col>
                         {/*<Col xs={12}>*/}
                         {/*    <p> Bison Aviation is a proud recipient of the prestigious FAA Diamond Award for*/}
@@ -242,7 +238,7 @@ const HomeScreen = () => {
                         <i className='fas fa-bug global_bisonRedFontWhiteBg animations_icon-spin animations_icon-font-size'> </i>
                     </Col>
                     <Col className='d-flex justify-content-center'>
-                        <i className='far fa-check-square global_bisonRedFontWhiteBg animations_icon-spin_icon-spin animations_icon-font-size'> </i>
+                        <i className='far fa-check-square global_bisonRedFontWhiteBg animations_icon-spin animations_icon-font-size'> </i>
                     </Col>
                 </Row>
                 <Row xs={12}>

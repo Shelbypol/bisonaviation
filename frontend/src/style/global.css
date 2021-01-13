@@ -48,22 +48,21 @@ p{
     background-color: rgba(90, 00, 09, 1);
 }
 
-.bisonRedBtn {
+.global_bisonRedBgWhiteHoverBgBtn {
     background-color: rgba(90, 00, 09, 1);
 }
 
-.bisonRedBtn:hover {
+.global_bisonRedBgWhiteHoverBgBtn:hover {
     background-color: white;
     color: rgba(90, 00, 09, 1);
-    /*border: 1px solid rgba(90, 00, 09, 1);*/
 }
 
-.bisonWhiteBtn {
+.global_RedFontWhiteBgBtn {
     background-color: #fff;
     color: rgba(90, 00, 09, 1);
 }
 
-.bisonWhiteBtn:hover {
+.global_RedFontWhiteBgBtn:hover {
     background-color: rgba(90, 00, 09, 1);
     color: white;
 }
@@ -79,9 +78,14 @@ p{
     font-size: 1.8em;
 }
 
-.bisonWhiteBtnSearch {
+.global_bisonWhiteBgBtnSearch {
     background-color: #f6f5f8;
     color: rgba(90, 00, 09, 1);
+}
+
+.global_bisonWhiteBgBtnSearch:hover {
+    background-color: rgba(90, 00, 09, 1);
+    color: white;
 }
 
 .global_bisonRedFontWhiteBg{
@@ -94,11 +98,6 @@ p{
     color: rgba(90, 00, 09, 1);
 }
 
-.bisonWhiteBtnSearch:hover {
-    background-color: rgba(90, 00, 09, 1);
-    color: white;
-}
-
 .right-gradient{
     background-image: linear-gradient(to right, rgba(90, 00, 09, 1), #fff);
 }
@@ -108,21 +107,12 @@ p{
 }
 
 /*   FONT-AWESOME   */
-.socialIcons:hover {
+.SocialIcons_socialIcons:hover {
     color: rgba(90, 00, 09, 1);
 }
 
-/* HIDE AND SHOW ICONS */
-.iconHidden .hideIcon {
-    display: none;
-}
-
-.iconHidden:hover .hideIcon {
-    display: inherit;
-}
-
-.iconHidden:hover .hideWords {
-    display: none;
+.SocialIcons_socialIcons {
+    font-size: 1.6em;
 }
 
 /*  HORIZONTAL GRADIENT    */
@@ -157,11 +147,6 @@ h2 {
     background-color: black;
 }
 
-/* HEADER LOGO */
-.logoNav {
-    height: 12vh;
-}
-
 .imgCard {
     width: 80vh;
     max-width: 100%;
@@ -190,37 +175,23 @@ h2 {
     max-height: 100%;
 }
 
-.cardStyle {
-    /*margin-top: 10vh;*/
-}
-
 .fadeCardLeft {
-    /*background-image: url("src/images/graphics/black-top-large-left.png");*/
     background-repeat: no-repeat;
     height: 48vh;
     background-color: white;
     margin-top: -20vh;
     z-index: -1;
     padding: 0;
-    /*transform: rotate(240deg);*/
     transform: scale(-1, 1);
 }
 
 .fadeCardRight {
-    /*background-image: url("src/images/graphics/black-top-large-left.png");*/
     background-repeat: no-repeat;
     height: 35vh;
     background-color: white;
     margin-top: -20vh;
     z-index: -1;
     padding: 0;
-    /*transform: rotate(240deg);*/
-    /*transform: scale(-1, -1);*/
-}
-
-.overlayImg {
-    width: 30vh;
-    height: 25vh;
 }
 
 .summary_nav_overlay {
@@ -229,7 +200,6 @@ h2 {
     left: 0;
     right: 0;
     background-color:rgba(90, 00, 09, .9);
-    /*background-color:rgba(0, 0, 0, .7);*/
     overflow: hidden;
     width: 100%;
     height:0;
@@ -256,11 +226,6 @@ h2 {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
-}
-
-/*  CAROUSEL INDICATORS  */
-.carousel-control-prev, .carousel-control-next, .carousel-indicators {
-    display: none;
 }
 
 /*IMG HOVER ZOOM IN*/
