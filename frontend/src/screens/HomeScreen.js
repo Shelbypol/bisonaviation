@@ -30,7 +30,7 @@ const HomeScreen = () => {
     return (
         <>
         <Jumbotrons
-                    jumboClass={'m-0 p-0 animations_img-hover-zoom--zoom-n-out'}
+                    jumboClass={'m-0 p-0 animations_img-hover-zoom-out'}
                     img={heroImg}
                     imgClassName={'col-12 p-0 mx-0 mb-0'}
                     textContainerStyle={{backgroundColor: 'rgba(01, 02, 03, 1)'}}
@@ -142,8 +142,6 @@ const HomeScreen = () => {
                 </Row>
                 <MultiCarouselPage/>
             </Container>
-
-        {/*<main className=''>*/}
 
             {/*   =============   AVIONICS SECTION   =============    */}
             <Container className='mt-5 pt-5'>

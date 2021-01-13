@@ -19,58 +19,29 @@
     transform: scale(2);
 }
 
-/* Chrome, Safari, Opera */
-@-webkit-keyframes zoominout {
-    0% {
-        -webkit-transform: scale(1.15,1.15);
-    }
-    50% {
-        -webkit-transform: scale(1,1);
-    }
-    100% {
-        -webkit-transform: scale(1.15, 1.15);
-    }
-}
-/* Standard syntax */
-@keyframes zoominout {
-    0% {
-        -webkit-transform: scale(1.15,1.15);
-    }
-    50% {
-        -webkit-transform: scale(1,1);
-    }
-    100% {
-        -webkit-transform: scale(1.15, 1.15);
-    }
+
+/*  ======   ZOOM OUT  ======  */
+.animations_img-hover-zoom-out img {
+    -webkit-animation: zoomout 25s; /* Chrome, Safari, Opera */
+    animation: zoomout 25s;
 }
 
-/*  ======   ZOOM IN OUT  ======  */
-.animations_img-hover-zoom--zoom-n-out img {
-    -webkit-animation: zoominout 25s; /* Chrome, Safari, Opera */
-    animation: zoominout 15s infinite;
-}
-
-@-webkit-keyframes zoominoutslow {
+@-webkit-keyframes zoomout {
     0% {
-        -webkit-transform: scale(1.15,1.15);
-    }
-    50% {
-        -webkit-transform: scale(1,1);
-    }
-    100% {
         -webkit-transform: scale(1.15, 1.15);
-    }
-}
-/* Standard syntax */
-@keyframes zoominoutslow {
-    0% {
-        -webkit-transform: scale(1, 1);
-    }
-    50% {
-        -webkit-transform: scale(1.15,1.15);
     }
     100% {
         -webkit-transform: scale(1, 1);
+    }
+
+}
+/* Standard syntax */
+@keyframes zoomout {
+    0% {
+        transform: scale(1.15, 1.15);
+    }
+    100% {
+        transform: scale(1, 1);
     }
 }
 
@@ -78,6 +49,36 @@
     -webkit-animation: zoominoutslow 25s; /* Chrome, Safari, Opera */
     animation: zoominoutslow 25s;
     overflow: hidden;
+}
+
+/*  ======   ZOOM IN OUT  ======  */
+.animations_img-hover-zoom-n-out img {
+    -webkit-animation: zoominout 25s; /* Chrome, Safari, Opera */
+    animation: zoominout 25s;
+}
+
+@-webkit-keyframes zoominout {
+    0% {
+        -webkit-transform: scale(1, 1);
+    }
+    50% {
+        -webkit-transform: scale(1.15,1.15);
+    }
+    100% {
+        -webkit-transform: scale(1, 1);
+    }
+}
+/* Standard syntax */
+@keyframes zoominout {
+    0% {
+        -webkit-transform: scale(1, 1);
+    }
+    50% {
+        -webkit-transform: scale(1.15,1.15);
+    }
+    100% {
+        -webkit-transform: scale(1, 1);
+    }
 }
 
 /*   ========  ICON SPIN HOVER ========  */
