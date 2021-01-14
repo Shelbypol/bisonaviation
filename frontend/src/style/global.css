@@ -55,8 +55,8 @@ p{
     color: rgba(90, 00, 09, 1);
 }
 
-.bisonRedBgColor {
-    background-color: rgba(90, 00, 09, 1);
+.global_bisonRedFadedBgColor {
+    background-color: rgba(90, 00, 09, .1);
 }
 
 .global_bisonRedBgWhiteHoverBgBtn {

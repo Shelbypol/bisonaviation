@@ -15,40 +15,55 @@ const TestimonialCarousel = () => {
             >
                 <div>
                     {/*<img src="/images/shirley.png" />*/}
-                    <div className="myCarousel">
-                        <h3>Shirley Fultz</h3>
-                        <h4>Designer</h4>
+                    <div className="myCarousel global_bisonRedFadedBgColor">
+                        <h3>Richard F.</h3>
+                        <h2>
+                            <i style={{color: 'rgba(90, 00, 09, 1)'}} className='fas fa-star'> </i>
+                            <i style={{color: 'rgba(90, 00, 09, 1)'}} className='fas fa-star'> </i>
+                            <i style={{color: 'rgba(90, 00, 09, 1)'}} className='fas fa-star'> </i>
+                            <i style={{color: 'rgba(90, 00, 09, 1)'}} className='fas fa-star'> </i>
+                            <i style={{color: 'rgba(90, 00, 09, 1)'}} className='fas fa-star'> </i>
+                        </h2>
                         <p>
-                            It's freeing to be able to catch up on customized news and not be
-                            distracted by a social media element on the same site
+                            Had the chance to work with John from Bison on his V-tail recently and the guy's just a class act. It's rare to meet someone with equal parts humility, technical acumen, and seat time. Bison will be a go-to for me on trips south.
                         </p>
                     </div>
                 </div>
 
                 <div>
                     {/*<img src="/images/daniel.png" />*/}
-                    <div className="myCarousel">
-                        <h3>Daniel Keystone</h3>
-                        <h4>Designer</h4>
+                    <div className="myCarousel global_bisonRedFadedBgColor">
+                        <h3>Daniel K.</h3>
+                        <h3>
+                            <i style={{color: 'rgba(90, 00, 09, 1)'}} className='fas fa-star'> </i>
+                            <i style={{color: 'rgba(90, 00, 09, 1)'}} className='fas fa-star'> </i>
+                            <i style={{color: 'rgba(90, 00, 09, 1)'}} className='fas fa-star'> </i>
+                            <i style={{color: 'rgba(90, 00, 09, 1)'}} className='fas fa-star'> </i>
+                            <i style={{color: 'rgba(90, 00, 09, 1)'}} className='fas fa-star-half-alt'> </i>
+                        </h3>
                         <p>
-                            The simple and intuitive design makes it easy for me use. I highly
-                            recommend Fetch to my peers.
+                            First class maintenance shop. AOG response was fantastic and they quickly had me back in the sky.
                         </p>
                     </div>
                 </div>
 
                 <div>
                     {/*<img src="/images/theo.png" />*/}
-                    <div className="myCarousel">
-                        <h3>Theo Sorel</h3>
-                        <h4>Designer</h4>
+                    <div className="myCarousel global_bisonRedFadedBgColor">
+                        <h3>Allen H.</h3>
+                        <h3>
+                            <i style={{color: 'rgba(90, 00, 09, 1)'}} className='fas fa-star'> </i>
+                            <i style={{color: 'rgba(90, 00, 09, 1)'}} className='fas fa-star'> </i>
+                            <i style={{color: 'rgba(90, 00, 09, 1)'}} className='fas fa-star'> </i>
+                            <i style={{color: 'rgba(90, 00, 09, 1)'}} className='fas fa-star'> </i>
+                            <i style={{color: 'rgba(90, 00, 09, 1)'}} className='fas fa-star-half-alt'> </i>
+                        </h3>
                         <p>
-                            I enjoy catching up with Fetch on my laptop, or on my phone when
-                            I'm on the go!
+                            Avionics team worked with me for a full panel installation and even added custom cup-holders for my wife!
                         </p>
                     </div>
                 </div>
             </Carousel>
         );
-}
+};
 export default TestimonialCarousel

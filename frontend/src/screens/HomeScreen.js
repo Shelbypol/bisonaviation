@@ -237,25 +237,11 @@ const HomeScreen = () => {
                 </Row>
             </Container>
 
-            {/*   =============   REVIEW JUMBOTRON   =============   */}
-                <h1 className={'mt-5 d-flex justify-content-center'}>Testimonials</h1>
-            <Container className={'mt-5 d-flex justify-content-center'}>
+            {/*   =============   TESTIMONIAL CAROUSEL   =============   */}
+            <Container style={{marginTop: '20vh'}} className='global_bisonRedFadedBgColor'>
                 <TestimonialCarousel/>
-
             </Container>
 
-            {/*<Jumbotrons*/}
-            {/*    jumboStyle={{backgroundColor: 'white'}}*/}
-            {/*    // jumboClass={'my-5 py-5 animations_img-hover-zoom-out'}*/}
-            {/*    // img={heroImg}*/}
-            {/*    // imgClassName={'col-12 p-0 mx-0 mb-0'}*/}
-            {/*    textContainerStyle={{backgroundColor: 'white'}}*/}
-            {/*    textContainerClass={'col-12 d-flex justify-content-center'}*/}
-            {/*    // title={'Bison Aviation'}*/}
-            {/*    // titleClassName={'text-light py-0 my-0'}*/}
-            {/*    text={<h1 className={'bisonRedTxt global_lighter-font-weight'}>We work hard on the ground so you can fly with confidence</h1>}*/}
-            {/*    textClassName={' py-0 my-0 global_accentFont'}*/}
-            {/*/>*/}
 
             <Container>
                 {/*   =============   MECHANICS SECTION   =============   */}
