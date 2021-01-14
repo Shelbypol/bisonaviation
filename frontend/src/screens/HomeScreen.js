@@ -38,27 +38,27 @@ const HomeScreen = () => {
                 textContainerClass={'col-12 mt-n2 py-0 my-0'}
                 title={'Bison Aviation'}
                 titleClassName={'text-light py-0 my-0'}
-                text={'We work hard on the ground so you can fly with confidence'}
-                textClassName={'text-light py-0 my-0'}
+                // text={'We work hard on the ground so you can fly with confidence'}
+                // textClassName={'text-light py-0 my-0'}
             />
 
-            <Jumbotrons jumboClass={'p-0 global_black-horizontal-gradient'}
-                        jumboStyle={{height: '180%'}}
-                        imgClassName={'col-12 p-0 m-0'}
-            />
-
-            {/*<Jumbotrons*/}
-            {/*    jumboStyle={{backgroundColor:'white'}}*/}
-            {/*    jumboClass={' pt-0 mb-5 pb-5 '}*/}
-            {/*    // img={heroImg}*/}
-            {/*    // imgClassName={'col-12 p-0 mx-0 mb-0'}*/}
-            {/*    // textContainerStyle={{backgroundColor: 'white'}}*/}
-            {/*    textContainerClass={'col-12 d-flex justify-content-center '}*/}
-            {/*    // title={'Bison Aviation'}*/}
-            {/*    // titleClassName={'text-light py-0 my-0'}*/}
-            {/*    text={<h1 className={'bisonRedTxt global_lighter-font-weight'}>We work hard on the ground so you can fly with confidence</h1>}*/}
-            {/*    textClassName={' py-0 my-0 global_accentFont'}*/}
+            {/*<Jumbotrons jumboClass={'p-0 global_black-horizontal-gradient-top'}*/}
+            {/*            jumboStyle={{height: '180%'}}*/}
+            {/*            imgClassName={'col-12 p-0 m-0'}*/}
             {/*/>*/}
+
+            <Jumbotrons
+                // jumboStyle={{backgroundColor:'white'}}
+                jumboClass={'mt-n3 pt-0 mb-5 pb-5 global_black-horizontal-gradient'}
+                // img={heroImg}
+                // imgClassName={'col-12 p-0 mx-0 mb-0'}
+                // textContainerStyle={{backgroundColor: 'white'}}
+                textContainerClass={'col-12 pt-n5 mt-n2 d-flex justify-content-center '}
+                // title={'Bison Aviation'}
+                // titleClassName={'text-light py-0 my-0'}
+                text={<h4>We work hard on the ground so you can fly with confidence</h4>}
+                textClassName={'text-center py-0 '}
+            />
 
             {/*<main className='mx-auto'>*/}
             {/*  =============   ICONS ROW - DESKTOP  =============== */}
