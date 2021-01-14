@@ -2,6 +2,8 @@
     width: 64% !important;
     margin: auto !important;
     margin-top: 3% !important;
+    /*padding-bottom: 3%;*/
+    /*padding-top:3%;*/
 }
 
 .carousel .slide {
@@ -16,17 +18,18 @@
 /*}*/
 
 .myCarousel {
-    margin-top: -6%;
+    margin-top: -3%;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding: 6% 5% 8% 5%;
-    height: 286px;
+    /*height: 286px;*/
 }
 
 .carousel .control-dots {
     padding-left: 5px !important;
     outline: 0;
+    margin-top: 20px;
     bottom: 5% !important;
 }
 
@@ -40,11 +43,11 @@
 
 .myCarousel p {
     font-weight: 100 !important;
-    line-height: 29px !important;
+    line-height: 25px !important;
     color: #222;
     font-size: 15px;
     font-family: sans-serif;
-    max-height: 67px;
+    max-height: 100px;
 }
 
 .myCarousel p:before {
@@ -79,28 +82,42 @@
 }
 
 
-@media only screen and (max-width: 934px) {
+@media only screen and (max-width: 950px) {
     .carousel-root {
         outline: 0;
         width: 93% !important;
         margin: auto !important;
+        height: auto;
     }
 
     .carousel.carousel-slider .control-arrow {
         display: none !important;
     }
+
     .myCarousel {
-        background: #fff;
+        /*background: #fff;*/
         margin-top: -9%;
         width: 100%;
         margin-left: auto;
         margin-right: auto;
-        padding: 8% 5% 12.5% 5%;
-        height: 269px;
+        padding: 8% 5% 8% 5%;
+        height: auto;
+        /*height: 269px;*/
+    }
+
+    .carousel .control-dots {
+        display: none;
     }
 
     /*.carousel .slide img {*/
     /*    width: 24% !important;*/
     /*    border-radius: 50%;*/
     /*}*/
+}
+
+@media only screen and (max-width: 500px) {
+    .carousel-root {
+
+        padding-top: 10%;
+    }
 }
