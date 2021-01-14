@@ -28,8 +28,8 @@
 
 /*  ======   ZOOM OUT  ======  */
 .animations_img-hover-zoom-out img {
-    -webkit-animation: zoomout 25s; /* Chrome, Safari, Opera */
-    animation: zoomout 25s;
+    -webkit-animation: zoomout 17s; /* Chrome, Safari, Opera */
+    animation: zoomout 17s;
 }
 
 @-webkit-keyframes zoomout {
@@ -53,8 +53,8 @@
 
 /*  ======   ZOOM IN  ======  */
 .animations_img-hover-zoom-in img {
-    -webkit-animation: zoomin 25s; /* Chrome, Safari, Opera */
-    animation: zoomin 25s;
+    -webkit-animation: zoomin 17.5s; /* Chrome, Safari, Opera */
+    animation: zoomin 17.5s;
 }
 
 @-webkit-keyframes zoomin {

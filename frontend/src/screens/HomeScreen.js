@@ -49,20 +49,20 @@ const HomeScreen = () => {
 
             <Jumbotrons
                 // jumboStyle={{backgroundColor:'white'}}
-                jumboClass={'mt-n3 pt-0 mb-5 pb-5 global_black-horizontal-gradient'}
+                jumboClass={'mt-n3 pt-0 pb-5 global_black-horizontal-gradient'}
                 // img={heroImg}
                 // imgClassName={'col-12 p-0 mx-0 mb-0'}
                 // textContainerStyle={{backgroundColor: 'white'}}
-                textContainerClass={'col-12 d-flex justify-content-center'}
+                textContainerClass={'col-12 mt-n2 d-flex justify-content-center'}
                 // title={'Bison Aviation'}
                 // titleClassName={'text-light py-0 my-0'}
                 text={<h3 className='bisonRedTxt font-weight-lighter'>We work hard on the ground so you can fly with confidence</h3>}
-                textClassName={'text-center py-0 '}
+                textClassName={'text-center py-0'}
             />
 
             {/*<main className='mx-auto'>*/}
             {/*  =============   ICONS ROW - DESKTOP  =============== */}
-            <Container className='mt-5 pt-5'>
+            <Container className='mb-5 pt-3 pb-5'>
                 <Row>
                     <Col xs={12} md={6} className=''>
                         <Row>
@@ -130,6 +130,7 @@ const HomeScreen = () => {
                         lgImgCol={4}
                         xsImgCol={12}
                         imgSrc={about}
+                        imgWrap={'animations_img-hover-zoom animations_img-hover-zoom--slowmo'}
                         imgClassName={'h-100 w-100 rounded'}
                         lgTextCol={8}
                         xsTextCol={12}
@@ -149,7 +150,7 @@ const HomeScreen = () => {
             {/*   =============   GARMIN SECTION   =============    */}
             <Container className='mt-lg-0 pt-lg-0 mt-sm-5 pt-sm-5 pt-5 mb-5 pb-5'>
                 <Row xs={12}>
-                    <Col className='d-flex justify-content-center '>
+                    <Col className='d-flex justify-content-center'>
                         <h1 className='flag red global_accentFont shadow'>&nbsp; &nbsp; NEW! &nbsp; &nbsp;   </h1>
                         <h1>Certified Avionics Garmin Dealer</h1>
                     </Col>
@@ -158,7 +159,7 @@ const HomeScreen = () => {
             </Container>
 
             {/*   =============   AVIONICS SECTION   =============    */}
-            <Container className='mt-5 pt-5'>
+            <Container className='mt-5 '>
                 <Row xs={12}>
                     <Col className='d-flex justify-content-center'>
                         <h1>Avionics</h1>
@@ -167,12 +168,6 @@ const HomeScreen = () => {
                 <Row>
                     <Col className='d-flex justify-content-center mb-3 text-center'>
                         <p>
-                            {/*Bison Aviation is proud to have a full-time avionics team in-house.<br/> While many shops*/}
-                            {/*“sub out” their avionics work, Bison Aviation maintains a full service avionics staff as*/}
-                            {/*a part of our workforce.<br/> Our capabilities range from basic troubleshooting to*/}
-                            {/*complete panel installations and by having all services in-house (including CNC panel*/}
-                            {/*fabrication, laser engraving, and 3D printing) we are able to save time and reduce costs*/}
-                            {/*for our customers.*/}
                             Bison Aviation is proud to have a full-time avionics team in-house. While many shops
                             “sub out” their avionics work, Bison Aviation maintains a full service avionics staff as
                             a part of our workforce. Our capabilities range from basic troubleshooting to
@@ -190,7 +185,7 @@ const HomeScreen = () => {
                 </JumboCardImgs>
 
                 {/*   =============  AVIONICS ICONS  =============   */}
-                <Row xs={12} className='mt-5 '>
+                <Row xs={12} className='mt-5'>
                     <Col className='d-flex justify-content-center '>
                         <i className='fas fa-bolt global_bisonRedFontWhiteBg animations_icon-spin animations_icon-font-size'> </i>
                     </Col>
@@ -242,11 +237,10 @@ const HomeScreen = () => {
                 <TestimonialCarousel/>
             </Container>
 
-
             <Container>
                 {/*   =============   MAINTENANCE SECTION   =============   */}
                 <JumboCardImgAndText
-                    rowStyle={{marginTop: '35vh'}}
+                    rowStyle={{marginTop: '20vh'}}
                     xsRow={12}
                     lgImgCol={4}
                     xsImgCol={{order: 'last'}}
