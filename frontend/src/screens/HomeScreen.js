@@ -28,13 +28,12 @@ const HomeScreen = () => {
     window.onbeforeunload = () => {
         localStorage.clear()
     };
-
     return (
         <>
             <Jumbotrons
-                jumboClass={'m-0 p-0 animations_img-hover-zoom-out'}
+                jumboClass={'m-0 p-0 animations_img-hover-zoom-out Jumbotrons_img_responsive_size'}
                 img={heroImg}
-                imgClassName={'col-12 p-0 mx-0 mb-0'}
+                imgClassName={'col-12 p-0 mx-0 mb-0 Jumbotrons_img_responsive_size'}
                 textContainerStyle={{backgroundColor: 'rgba(01, 02, 03, 1)'}}
                 textContainerClass={'col-12 mt-n2 py-0 my-0'}
                 title={'Bison Aviation'}
@@ -50,14 +49,14 @@ const HomeScreen = () => {
 
             <Jumbotrons
                 // jumboStyle={{backgroundColor:'white'}}
-                jumboClass={'mt-n3 pt-0 mb-5 pb-5 global_black-horizontal-gradient'}
+                jumboClass={' pt-0 mb-5 pb-5 global_black-horizontal-gradient'}
                 // img={heroImg}
                 // imgClassName={'col-12 p-0 mx-0 mb-0'}
                 // textContainerStyle={{backgroundColor: 'white'}}
-                textContainerClass={'col-12 pt-n5 mt-n2 d-flex justify-content-center '}
+                textContainerClass={'col-12 pt-n5 mt-n2 d-flex justify-content-center'}
                 // title={'Bison Aviation'}
                 // titleClassName={'text-light py-0 my-0'}
-                text={<h4>We work hard on the ground so you can fly with confidence</h4>}
+                text={<h3 className='bisonRedTxt font-weight-lighter'>We work hard on the ground so you can fly with confidence</h3>}
                 textClassName={'text-center py-0 '}
             />
 
