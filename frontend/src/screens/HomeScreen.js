@@ -15,6 +15,8 @@ import garmin from '../images/avionics/garmin-dealership.png'
 import hangar from '../images/general/hangar.png'
 import heroImg from '../images/general/aircraft-double-decker-red-belt_1500.png'
 import about from '../images/general/about_home.png'
+import mechanics1 from '../images/mechanics/cirrusrobin2.jpg'
+import mechanics2 from '../images/mechanics/riveting.jpg'
 import MultiCarouselPage from "../components/MulitCarouselPage";
 import ProductCarousel from "../components/ProductCarousel";
 import JumboCardImgs from "../components/JumboCardImgs";
@@ -130,7 +132,6 @@ const HomeScreen = () => {
                         lgImgCol={4}
                         xsImgCol={12}
                         imgSrc={about}
-                        imgWrap={'animations_img-hover-zoom animations_img-hover-zoom--slowmo'}
                         imgClassName={'h-100 w-100 rounded'}
                         lgTextCol={8}
                         xsTextCol={12}
@@ -244,8 +245,8 @@ const HomeScreen = () => {
                     xsRow={12}
                     lgImgCol={4}
                     xsImgCol={{order: 'last'}}
-                    imgSrc={cncMachine}
-                    imgClassName={'h-75 w-75 mt-5'}
+                    imgSrc={mechanics1}
+                    imgClassName={'h-75 w-75 mt-5 rounded'}
                     lgTextCol={8}
                     xsTextCol={12}
                     lgTitleCol={12}
@@ -255,16 +256,16 @@ const HomeScreen = () => {
                     lgSubtextCol={11}
                     mdBlockTextCol={12}
                     title={'MAINTENANCE'}
-                    subText={'full service avionics staff'}
-                    paragraph={'Bison Aviation is proud to have a full-time avionics team in-house. While many shops “sub out” their avionics work, Bison Aviation maintains a full service avionics staff as a part of our workforce. Our capabilities range from basic troubleshooting to complete panel installations and by having all services in-house (including CNC panel fabrication, laser engraving, and 3D printing) we are able to save time and reduce costs for our customers.'}
+                    subText={'aircraft inspections'}
+                    paragraph={'You depend on your aircraft to carry you and your passengers safely. Whether it\'s time for a routine annual, a complete series of phase inspections or a pre-purchase inspection, Bison Aviation\'s team of FAA licensed technicians is ready to ensure that your aircraft is safe and airworthy for your next flight! Thorough aircraft inspections not only help locate and identify failing parts before they fail, but can also save the aircraft owner significant money in the long run. Replacing parts and servicing equipment before it reaches the point of total failure is almost always LESS expensive than waiting until after-the-fact.'}
                 />
 
                 <JumboCardImgAndText
                     xsRow={12}
                     lgImgCol={4}
                     xsImgCol={12}
-                    imgSrc={tayseerAvionics}
-                    imgClassName={'h-75 w-75 mt-5'}
+                    imgSrc={mechanics2}
+                    imgClassName={'h-75 w-75 mt-5 rounded'}
                     lgTextCol={8}
                     xsTextCol={12}
                     lgTitleCol={12}
@@ -273,8 +274,8 @@ const HomeScreen = () => {
                     lgIconCol={1}
                     lgSubtextCol={11}
                     mdBlockTextCol={12}
-                    subText={'full service avionics staff'}
-                    paragraph={'Bison Aviation is proud to have a full-time avionics team in-house. While many shops “sub out” their avionics work, Bison Aviation maintains a full service avionics staff as a part of our workforce. Our capabilities range from basic troubleshooting to complete panel installations and by having all services in-house (including CNC panel fabrication, laser engraving, and 3D printing) we are able to save time and reduce costs for our customers.'}
+                    subText={'AD compliance'}
+                    paragraph={'When your aircraft isn\'t operating the way it should, trust Bison Aviation to diagnose the issue correctly the first time. With years of experience and specialty training, our technicians have the skills needed to locate and correct faults quickly and effectively! When it\'s time to take your aircraft to the next level, call on Bison Aviation to guide the way. From engine monitors to turbo-normalizers and LED lighting to complete re-engining projects, we are ready to take your aircraft\'s performance to the next level.'}
 
                 />
 
