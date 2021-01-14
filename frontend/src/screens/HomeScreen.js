@@ -31,7 +31,7 @@ const HomeScreen = () => {
     return (
         <>
             <Jumbotrons
-                jumboClass={'m-0 p-0 animations_img-hover-zoom-out Jumbotrons_img_responsive_size'}
+                jumboClass={'m-0 p-0 animations_img-hover-zoom-out '}
                 img={heroImg}
                 imgClassName={'col-12 p-0 mx-0 mb-0 Jumbotrons_img_responsive_size'}
                 textContainerStyle={{backgroundColor: 'rgba(01, 02, 03, 1)'}}
@@ -49,11 +49,11 @@ const HomeScreen = () => {
 
             <Jumbotrons
                 // jumboStyle={{backgroundColor:'white'}}
-                jumboClass={' pt-0 mb-5 pb-5 global_black-horizontal-gradient'}
+                jumboClass={'mt-n3 pt-0 mb-5 pb-5 global_black-horizontal-gradient'}
                 // img={heroImg}
                 // imgClassName={'col-12 p-0 mx-0 mb-0'}
                 // textContainerStyle={{backgroundColor: 'white'}}
-                textContainerClass={'col-12 pt-n5 mt-n2 d-flex justify-content-center'}
+                textContainerClass={'col-12 d-flex justify-content-center'}
                 // title={'Bison Aviation'}
                 // titleClassName={'text-light py-0 my-0'}
                 text={<h3 className='bisonRedTxt font-weight-lighter'>We work hard on the ground so you can fly with confidence</h3>}

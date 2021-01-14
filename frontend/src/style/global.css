@@ -55,9 +55,10 @@ p{
     color: rgba(90, 00, 09, 1);
 }
 
-/*.global_bisonRedFadedBgColor {*/
-/*    background-color: rgba(90, 00, 09, .1);*/
-/*}*/
+.global_bisonRedFadedBgColor {
+     background-color: rgba(0, 00, 0, .1);
+     /*background-color: rgba(90, 00, 09, .1);*/
+ }
 
 /*.global_bisonRedDarkerFadedTextColor{*/
 /*    color: rgba(90, 00, 09, .8);*/
