@@ -48,12 +48,12 @@ const HomeScreen = () => {
             />
 
             {/*<Jumbotrons*/}
-            {/*    // jumboStyle={{backgroundColor:'white'}}*/}
-            {/*    jumboClass={'mt-n5 pt-0 mb-5 pb-5 global_black-horizontal-gradient'}*/}
+            {/*    jumboStyle={{backgroundColor:'white'}}*/}
+            {/*    jumboClass={' pt-0 mb-5 pb-5 '}*/}
             {/*    // img={heroImg}*/}
             {/*    // imgClassName={'col-12 p-0 mx-0 mb-0'}*/}
             {/*    // textContainerStyle={{backgroundColor: 'white'}}*/}
-            {/*    textContainerClass={'col-12 d-flex justify-content-center global_black-horizontal-gradient'}*/}
+            {/*    textContainerClass={'col-12 d-flex justify-content-center '}*/}
             {/*    // title={'Bison Aviation'}*/}
             {/*    // titleClassName={'text-light py-0 my-0'}*/}
             {/*    text={<h1 className={'bisonRedTxt global_lighter-font-weight'}>We work hard on the ground so you can fly with confidence</h1>}*/}
