@@ -14,6 +14,7 @@ import tayseerAvionics from "../images/avionics/tayseer-1.jpg"
 import garmin from '../images/avionics/garmin-dealership.png'
 import hangar from '../images/general/hangar.png'
 import heroImg from '../images/general/aircraft-double-decker-red-belt_1500.png'
+import about from '../images/general/about_home.png'
 import MultiCarouselPage from "../components/MulitCarouselPage";
 import ProductCarousel from "../components/ProductCarousel";
 import JumboCardImgs from "../components/JumboCardImgs";
@@ -112,7 +113,7 @@ const HomeScreen = () => {
                     showTag={true}
                     title1={'GARMIN DEALER'}
                     title2={'AVIONICS'}
-                    title3={'MECHANICS'}
+                    title3={'MAINTENANCE'}
                     title4={'EO/IR FLIR'}
                     img1={garmin}
                     img2={avionics}
@@ -129,7 +130,7 @@ const HomeScreen = () => {
                         xsRow={12}
                         lgImgCol={4}
                         xsImgCol={12}
-                        imgSrc={hangar}
+                        imgSrc={about}
                         imgClassName={'h-100 w-100 rounded'}
                         lgTextCol={8}
                         xsTextCol={12}
@@ -244,7 +245,7 @@ const HomeScreen = () => {
 
 
             <Container>
-                {/*   =============   MECHANICS SECTION   =============   */}
+                {/*   =============   MAINTENANCE SECTION   =============   */}
                 <JumboCardImgAndText
                     rowStyle={{marginTop: '35vh'}}
                     xsRow={12}
@@ -260,7 +261,7 @@ const HomeScreen = () => {
                     lgIconCol={1}
                     lgSubtextCol={11}
                     mdBlockTextCol={12}
-                    title={'Mechanics'}
+                    title={'MAINTENANCE'}
                     subText={'full service avionics staff'}
                     paragraph={'Bison Aviation is proud to have a full-time avionics team in-house. While many shops “sub out” their avionics work, Bison Aviation maintains a full service avionics staff as a part of our workforce. Our capabilities range from basic troubleshooting to complete panel installations and by having all services in-house (including CNC panel fabrication, laser engraving, and 3D printing) we are able to save time and reduce costs for our customers.'}
                 />
