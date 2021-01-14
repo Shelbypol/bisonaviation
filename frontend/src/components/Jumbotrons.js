@@ -3,7 +3,6 @@ import {Jumbotron, Container} from 'reactstrap';
 
 const Jumbotrons = ({jumboClass, jumboStyle ,img, imgAlt, imgClassName, imgStyle , textContainerClass, textContainerStyle ,title, titleClassName , textClassName, text}) => {
     return (
-        // <div>
             <Jumbotron className={jumboClass} style={jumboStyle} fluid>
                 <img src={img} alt={imgAlt} className={imgClassName} style={imgStyle} />
                 <Container fluid className={textContainerClass} style={textContainerStyle}>
@@ -11,7 +10,6 @@ const Jumbotrons = ({jumboClass, jumboStyle ,img, imgAlt, imgClassName, imgStyle
                     <p className={textClassName} >{text}</p>
                 </Container>
             </Jumbotron>
-        // </div>
     );
 };
 
