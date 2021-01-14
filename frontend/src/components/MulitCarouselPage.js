@@ -1,17 +1,10 @@
-import React, {useEffect} from 'react'
-import {useSelector, useDispatch} from "react-redux";
-import {Row, Col, Container, Image, Carousel} from 'react-bootstrap'
+import React from 'react'
+import {Row, Col} from 'react-bootstrap'
 import ProductCarousel from "./ProductCarousel";
-import {Link} from "react-router-dom";
-import {listProducts} from "../actions/productActions";
+
 
 const MultiCarouselPage = () => {
 
-    useEffect(() => {
-        <ProductCarousel/>
-
-
-    }, [ProductCarousel]);
 
     return (
 

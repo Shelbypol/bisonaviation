@@ -1,0 +1,11 @@
+.Jumbotrons_img_responsive_size{
+ height: 55vh;
+}
+
+@media only screen and (max-width: 950px) {
+
+    .Jumbotrons_img_responsive_size{
+        height: 35vh;
+    }
+
+}

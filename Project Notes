@@ -56,3 +56,6 @@ https://www.redbubble.com/shop/frisky+sweatshirts
  <Col sm={12} lg={4} className="d-none d-lg-block">
       {/* your content */}
  </Col>
+
+ *** TESTIMONIAL CAROUSEL ***
+ https://dev.to/aryaziai/modern-testimonials-in-react-tutorial-cn1

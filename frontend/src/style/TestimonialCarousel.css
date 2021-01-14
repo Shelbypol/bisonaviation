@@ -1,5 +1,5 @@
 .carousel-root {
-    width: 100% !important;
+    width: 64% !important;
     margin: auto !important;
     margin-top: 3% !important;
     /*padding-bottom: 3%;*/
@@ -85,7 +85,7 @@
 @media only screen and (max-width: 950px) {
     .carousel-root {
         outline: 0;
-        width: 100% !important;
+        width: 93% !important;
         margin: auto !important;
         height: auto;
     }

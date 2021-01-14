@@ -19,51 +19,84 @@
     transform: scale(2);
 }
 
-/* Chrome, Safari, Opera */
-@-webkit-keyframes zoominout {
+/*.animations_img-hover-zoom--zoom-n-out-slow img {*/
+/*    -webkit-animation: zoominoutslow 25s; !* Chrome, Safari, Opera *!*/
+/*    animation: zoominoutslow 25s;*/
+/*    overflow: hidden;*/
+/*}*/
+
+
+/*  ======   ZOOM OUT  ======  */
+.animations_img-hover-zoom-out img {
+    -webkit-animation: zoomout 17s; /* Chrome, Safari, Opera */
+    animation: zoomout 17s;
+}
+
+@-webkit-keyframes zoomout {
     0% {
-        -webkit-transform: scale(1.15,1.15);
-    }
-    50% {
-        -webkit-transform: scale(1,1);
+        -webkit-transform: scale(1.1, 1.1);
     }
     100% {
-        -webkit-transform: scale(1.15, 1.15);
+        -webkit-transform: scale(1, 1);
+    }
+
+}
+/* Standard syntax */
+@keyframes zoomout {
+    0% {
+        transform: scale(1.1, 1.1);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+/*  ======   ZOOM IN  ======  */
+.animations_img-hover-zoom-in img {
+    -webkit-animation: zoomin 17.5s; /* Chrome, Safari, Opera */
+    animation: zoomin 17.5s;
+}
+
+@-webkit-keyframes zoomin {
+    0% {
+        -webkit-transform: scale(1, 1);
+    }
+    100% {
+        -webkit-transform: scale(1.1, 1.1);
+    }
+
+}
+/* Standard syntax */
+@keyframes zoomin {
+    0% {
+        transform: scale(1, 1);
+    }
+    100% {
+        transform: scale(1.1, 1.1);
+    }
+}
+
+
+/*  ======   ZOOM IN OUT  ======  */
+.animations_img-hover-zoom-n-out img {
+    -webkit-animation: zoominout 25s; /* Chrome, Safari, Opera */
+    animation: zoominout 25s;
+}
+
+@-webkit-keyframes zoominout {
+    0% {
+        -webkit-transform: scale(1, 1);
+    }
+    50% {
+        -webkit-transform: scale(1.15,1.15);
+    }
+    100% {
+        -webkit-transform: scale(1, 1);
     }
 }
 /* Standard syntax */
 @keyframes zoominout {
     0% {
-        -webkit-transform: scale(1.15,1.15);
-    }
-    50% {
-        -webkit-transform: scale(1,1);
-    }
-    100% {
-        -webkit-transform: scale(1.15, 1.15);
-    }
-}
-
-/*  ======   ZOOM IN OUT  ======  */
-.animations_img-hover-zoom--zoom-n-out img {
-    -webkit-animation: zoominout 25s; /* Chrome, Safari, Opera */
-    animation: zoominout 15s infinite;
-}
-
-@-webkit-keyframes zoominoutslow {
-    0% {
-        -webkit-transform: scale(1.15,1.15);
-    }
-    50% {
-        -webkit-transform: scale(1,1);
-    }
-    100% {
-        -webkit-transform: scale(1.15, 1.15);
-    }
-}
-/* Standard syntax */
-@keyframes zoominoutslow {
-    0% {
         -webkit-transform: scale(1, 1);
     }
     50% {
@@ -72,12 +105,6 @@
     100% {
         -webkit-transform: scale(1, 1);
     }
-}
-
-.animations_img-hover-zoom--zoom-n-out-slow img {
-    -webkit-animation: zoominoutslow 25s; /* Chrome, Safari, Opera */
-    animation: zoominoutslow 25s;
-    overflow: hidden;
 }
 
 /*   ========  ICON SPIN HOVER ========  */
