@@ -23,6 +23,7 @@ import JumboCardImgs from "../components/JumboCardImgs";
 import '../style/animations.css'
 import SummaryNav from "../components/SummaryNav";
 import TestimonialCarousel from "../components/TestimonialCarousel";
+import ScrollToTop from "../components/ScrollToTop";
 
 
 const HomeScreen = () => {
@@ -58,7 +59,8 @@ const HomeScreen = () => {
                 textContainerClass={'col-12 mt-n2 d-flex justify-content-center'}
                 // title={'Bison Aviation'}
                 // titleClassName={'text-light py-0 my-0'}
-                text={<h3 className='bisonRedTxt font-weight-lighter'>We work hard on the ground so you can fly with confidence</h3>}
+                text={<h3 className='bisonRedTxt font-weight-lighter'>We work hard on the ground so you can fly with
+                    confidence</h3>}
                 textClassName={'text-center py-0'}
             />
 
@@ -238,47 +240,124 @@ const HomeScreen = () => {
                 <TestimonialCarousel/>
             </Container>
 
-            <Container>
-                {/*   =============   MAINTENANCE SECTION   =============   */}
+            {/*   =============   MAINTENANCE SECTION   =============   */}
+            <Container style={{marginTop: '20vh'}} >
+                <h1>Mechanics</h1>
+                <Row xs={12} className='d-flex justify-content-end ml-3'>
+                    <Col xs={6}>
+
+                        <Row xs={12} className='mt-4 px-auto'>
+                            <Row xs={12}>
+                                <Col xs={2} className='d-flex justify-content-start' >
+                                    <i className='far fa-plane global_bisonRedFontWhiteBg animations_icon-spin'
+                                       style={{fontSize: '2em'}}> </i>
+                                </Col>
+                                <Col xs={10} className='d-flex justify-content-end'>
+                                    <p className='text-muted mt-1 global_accentFont'>AOG Response</p>
+                                </Col>
+                            </Row>
+                        </Row>
+                        <Row xs={12} className='mt-4 px-auto'>
+                            <Row xs={12}>
+                                <Col xs={2} className='d-flex justify-content-start'>
+                                    <i className='fal fa-tools global_bisonRedFontWhiteBg animations_icon-spin'
+                                       style={{fontSize: '2em'}}> </i>
+                                </Col>
+                                <Col xs={10} className='d-flex justify-content-end'>
+                                    <p className='text-muted mt-1 global_accentFont'>Routine Annual</p>
+                                </Col>
+                            </Row>
+                        </Row>
+                        <Row xs={12} className='mt-4 px-auto'>
+                            <Row xs={12}>
+                                <Col xs={2} className='d-flex justify-content-start'>
+                                    <i className='fal fa-clipboard-list-check global_bisonRedFontWhiteBg animations_icon-spin'
+                                       style={{fontSize: '2.5em'}}> </i>
+                                </Col>
+                                <Col xs={10} className='d-flex justify-content-end'>
+                                    <p className='text-muted mt-1 global_accentFont'>Pre-purchase Inspections</p>
+                                </Col>
+                            </Row>
+                        </Row>
+                        <Row xs={12} className='mt-4 px-auto'>
+                            <Row xs={12}>
+                                <Col xs={2} className='d-flex justify-content-start'>
+                                    <i className='fal fa-file-certificate global_bisonRedFontWhiteBg animations_icon-spin'
+                                       style={{fontSize: '2em'}}> </i>
+                                </Col>
+                                <Col xs={10} className='d-flex justify-content-end'>
+                                    <p className='text-muted mt-1 global_accentFont'>FAA Licensed Technicians</p>
+                                </Col>
+                            </Row>
+                        </Row>
+                        <Row xs={12} className='mt-4 px-auto'>
+                            <Row xs={12}>
+                                <Col xs={2} className='d-flex justify-content-start' >
+                                    <i className='far fa-angle-right global_bisonRedFontWhiteBg animations_icon-spin'
+                                       style={{fontSize: '2em'}}> </i>
+                                </Col>
+                                <Col xs={10} className='d-flex justify-content-end'>
+                                    <p className='text-muted mt-1 global_accentFont'>...and much more</p>
+                                </Col>
+                            </Row>
+                        </Row>
+                    </Col>
+
+                    <Col xs={6} className='mt-lg-n5 mt-sm-5'>
+                        <Row xs={12} className='mb-3'>
+                            <Col xs={6} className='animations_img-hover-zoom animations_img-hover-zoom--slowmo'>
+                                <img src={mechanics1} className='h-100 w-100 rounded-left' alt=""/>
+                            </Col>
+                            <Col xs={6} className='animations_img-hover-zoom animations_img-hover-zoom--slowmo d-none d-sm-block'>
+                                <img src={mechanics2} className='h-100 w-100 rounded-right' alt=""/>
+                            </Col>
+                        </Row>
+                        <Row xs={12} className='mb-3'>
+                            <Col xs={6} className='animations_img-hover-zoom animations_img-hover-zoom--slowmo'>
+                                <img src={mechanics2} className='h-100 w-100 rounded-left' alt=""/>
+                            </Col>
+                            <Col xs={6} className='animations_img-hover-zoom animations_img-hover-zoom--slowmo d-none d-sm-block'>
+                                <img src={mechanics1} className='h-100 w-100 rounded-right' alt=""/>
+                            </Col>
+                        </Row>
+
+                        {/*==================*/}
+
+                        <Row xs={12} className='mb-3'>
+                            <Col xs={6} className='animations_img-hover-zoom animations_img-hover-zoom--slowmo d-block d-sm-none'>
+                                <img src={mechanics1} className='h-100 w-100 rounded-left' alt=""/>
+                            </Col>
+                        </Row>
+                        <Row xs={12}>
+                            <Col xs={6} className='animations_img-hover-zoom animations_img-hover-zoom--slowmo d-block d-sm-none'>
+                                <img src={mechanics1} className='h-100 w-100 rounded-right' alt=""/>
+                            </Col>
+                        </Row>
+
+                    </Col>
+                </Row>
+            </Container>
+
+            <Container style={{marginTop: '20vh'}}>
                 <JumboCardImgAndText
-                    rowStyle={{marginTop: '20vh'}}
+                    // rowStyle={{marginTop: '20vh'}}
                     xsRow={12}
                     lgImgCol={4}
                     xsImgCol={{order: 'last'}}
-                    imgSrc={mechanics1}
-                    imgClassName={'h-75 w-75 mt-5 rounded'}
+                    imgSrc={flir}
+                    imgClassName={'h-100 w-100 mt-5 rounded'}
                     lgTextCol={8}
                     xsTextCol={12}
                     lgTitleCol={12}
                     mdIconTextCol={12}
-                    iconSymbol={'far fa-plane global_bisonRedFontWhiteBg animations_icon-spin'}
+                    iconSymbol={'fal fa-video global_bisonRedFontWhiteBg animations_icon-spin'}
                     lgIconCol={1}
                     lgSubtextCol={11}
                     mdBlockTextCol={12}
-                    title={'MAINTENANCE'}
-                    subText={'aircraft inspections'}
-                    paragraph={'You depend on your aircraft to carry you and your passengers safely. Whether it\'s time for a routine annual, a complete series of phase inspections or a pre-purchase inspection, Bison Aviation\'s team of FAA licensed technicians is ready to ensure that your aircraft is safe and airworthy for your next flight! Thorough aircraft inspections not only help locate and identify failing parts before they fail, but can also save the aircraft owner significant money in the long run. Replacing parts and servicing equipment before it reaches the point of total failure is almost always LESS expensive than waiting until after-the-fact.'}
+                    title={'EO / IR FLIR'}
+                    subText={'World\'s largest in-house inventory of legacy airborne EO/IR FLIR equipment/parts'}
+                    paragraph={'Bison Aviation maintains the world\'s largest in-house inventory of legacy airborne EO/IR and FLIR equipment and parts. Our system inventory includes units from FLIR Systems, Inc., L3 Wescam, Gyrocam, Polytech, and SweSystems. Our overhauled systems are providing reliable service at agencies throughout the United States in addition to countries around the globe. From complete flight-ready systems, to major LRUs, mounting kits, and ISR mission support equipment, Bison Aviation is able to respond quickly to our customer\'s airborne ISR system needs.'}
                 />
-
-                <JumboCardImgAndText
-                    xsRow={12}
-                    lgImgCol={4}
-                    xsImgCol={12}
-                    imgSrc={mechanics2}
-                    imgClassName={'h-75 w-75 mt-5 rounded'}
-                    lgTextCol={8}
-                    xsTextCol={12}
-                    lgTitleCol={12}
-                    mdIconTextCol={12}
-                    iconSymbol={'far fa-plane global_bisonRedFontWhiteBg animations_icon-spin'}
-                    lgIconCol={1}
-                    lgSubtextCol={11}
-                    mdBlockTextCol={12}
-                    subText={'AD compliance'}
-                    paragraph={'When your aircraft isn\'t operating the way it should, trust Bison Aviation to diagnose the issue correctly the first time. With years of experience and specialty training, our technicians have the skills needed to locate and correct faults quickly and effectively! When it\'s time to take your aircraft to the next level, call on Bison Aviation to guide the way. From engine monitors to turbo-normalizers and LED lighting to complete re-engining projects, we are ready to take your aircraft\'s performance to the next level.'}
-
-                />
-
             </Container>
 
         </>

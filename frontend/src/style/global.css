@@ -59,6 +59,10 @@ p{
      background-color: rgba(0, 00, 0, .1);
 }
 
+/*.global_bisonRedBg{*/
+/*    background-color: rgba(90, 00, 09, 1);*/
+/*}*/
+
 /*.global_bisonRedDarkerFadedTextColor{*/
 /*    color: rgba(90, 00, 09, .8);*/
 /*}*/
@@ -116,6 +120,15 @@ p{
 
 .global_bisonWhiteFont{
     color: white;
+}
+
+.global_smallFont{
+    font-size: 12px;
+}
+
+.global_whiteFontHover:hover{
+    color: white;
+    cursor: pointer;
 }
 
 /*    ======   MOBILE RESPONSIVE    ======    */
