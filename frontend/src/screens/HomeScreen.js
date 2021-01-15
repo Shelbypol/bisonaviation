@@ -244,19 +244,8 @@ const HomeScreen = () => {
                 <h1>Mechanics</h1>
                 <Row xs={12} className='d-flex justify-content-end ml-3'>
                     <Col xs={6}>
-                        <Row xs={12} className='mt-4'>
-                            <Row xs={12}>
-                                <Col xs={2} className='d-flex justify-content-start'>
-                                    <i className='far fa-plane global_bisonRedFontWhiteBg animations_icon-spin'
-                                       style={{fontSize: '2em'}}> </i>
-                                </Col>
-                                <Col xs={10} className='d-flex justify-content-end'>
-                                    <p className='text-muted mt-1 global_accentFont'>routine annual</p>
-                                </Col>
-                            </Row>
-                        </Row>
 
-                        <Row xs={12} className='mt-4'>
+                        <Row xs={12} className='mt-4 px-auto'>
                             <Row xs={12}>
                                 <Col xs={2} className='d-flex justify-content-start' >
                                     <i className='far fa-plane global_bisonRedFontWhiteBg animations_icon-spin'
@@ -270,7 +259,18 @@ const HomeScreen = () => {
                         <Row xs={12} className='mt-4 px-auto'>
                             <Row xs={12}>
                                 <Col xs={2} className='d-flex justify-content-start'>
-                                    <i className='far fa-plane global_bisonRedFontWhiteBg animations_icon-spin'
+                                    <i className='fal fa-tools global_bisonRedFontWhiteBg animations_icon-spin'
+                                       style={{fontSize: '2em'}}> </i>
+                                </Col>
+                                <Col xs={10} className='d-flex justify-content-end'>
+                                    <p className='text-muted mt-1 global_accentFont'>routine annual</p>
+                                </Col>
+                            </Row>
+                        </Row>
+                        <Row xs={12} className='mt-4 px-auto'>
+                            <Row xs={12}>
+                                <Col xs={2} className='d-flex justify-content-start'>
+                                    <i className='fal fa-clipboard-list-check global_bisonRedFontWhiteBg animations_icon-spin'
                                        style={{fontSize: '2em'}}> </i>
                                 </Col>
                                 <Col xs={10} className='d-flex justify-content-end'>
@@ -281,7 +281,7 @@ const HomeScreen = () => {
                         <Row xs={12} className='mt-4 px-auto'>
                             <Row xs={12}>
                                 <Col xs={2} className='d-flex justify-content-start'>
-                                    <i className='far fa-plane global_bisonRedFontWhiteBg animations_icon-spin'
+                                    <i className='fal fa-file-certificate global_bisonRedFontWhiteBg animations_icon-spin'
                                        style={{fontSize: '2em'}}> </i>
                                 </Col>
                                 <Col xs={10} className='d-flex justify-content-end'>
@@ -289,10 +289,10 @@ const HomeScreen = () => {
                                 </Col>
                             </Row>
                         </Row>
-                        <Row xs={12} className='mt-4'>
+                        <Row xs={12} className='mt-4 px-auto'>
                             <Row xs={12}>
                                 <Col xs={2} className='d-flex justify-content-start' >
-                                    <i className='far fa-plane global_bisonRedFontWhiteBg animations_icon-spin'
+                                    <i className='far fa-angle-right global_bisonRedFontWhiteBg animations_icon-spin'
                                        style={{fontSize: '2em'}}> </i>
                                 </Col>
                                 <Col xs={10} className='d-flex justify-content-end'>
