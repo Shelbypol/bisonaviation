@@ -23,6 +23,7 @@ import JumboCardImgs from "../components/JumboCardImgs";
 import '../style/animations.css'
 import SummaryNav from "../components/SummaryNav";
 import TestimonialCarousel from "../components/TestimonialCarousel";
+import ScrollToTop from "../components/ScrollToTop";
 
 
 const HomeScreen = () => {
@@ -357,7 +358,6 @@ const HomeScreen = () => {
                     subText={'World\'s largest in-house inventory of legacy airborne EO/IR FLIR equipment/parts'}
                     paragraph={'Bison Aviation maintains the world\'s largest in-house inventory of legacy airborne EO/IR and FLIR equipment and parts. Our system inventory includes units from FLIR Systems, Inc., L3 Wescam, Gyrocam, Polytech, and SweSystems. Our overhauled systems are providing reliable service at agencies throughout the United States in addition to countries around the globe. From complete flight-ready systems, to major LRUs, mounting kits, and ISR mission support equipment, Bison Aviation is able to respond quickly to our customer\'s airborne ISR system needs.'}
                 />
-
             </Container>
 
         </>

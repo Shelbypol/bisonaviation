@@ -3,6 +3,7 @@ import React from 'react'
 import {Container, Row, Col} from "react-bootstrap";
 import {LinkContainer} from "react-router-bootstrap";
 import logo from "../images/general/Final-Logo-Horizontal.png";
+import ScrollToTop from "./ScrollToTop";
 
 const Footer = () => {
     return (
@@ -35,8 +36,7 @@ const Footer = () => {
                         <Col xs={12}>
                             <p className='global_accentFont global_smallFont global_whiteFontHover'>
                                 Bison Aviation, LLC
-                            </p>
-                            <p className='global_accentFont global_smallFont global_whiteFontHover'>
+                                <br/>
                                 400 Boerne Stage Airfield
                                 <br/>
                                 Boerne, TX 78006
@@ -66,7 +66,7 @@ const Footer = () => {
                     <Col className='text-center pt-3'>
                         <LinkContainer to='/'>
                             <img src={logo}
-                                 className='MobileHeader_logo pb-3'
+                                 className='DesktopHeader_logo pb-3'
                                  alt="Bison Aviation"
                             />
                         </LinkContainer>
@@ -74,7 +74,12 @@ const Footer = () => {
                 </Row>
                 <Row xs={12}>
                     <Col className='text-center pb-3'>
-                        Copyright &copy; Bison Aviation 2020
+                        Copyright &copy; Bison Aviation 2021
+                    </Col>
+                </Row>
+                <Row xs={12} className='mt-n5'>
+                    <Col xs={12} className='d-flex justify-content-end'>
+                        <ScrollToTop/>
                     </Col>
                 </Row>
 
