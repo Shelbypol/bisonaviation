@@ -344,12 +344,12 @@ const HomeScreen = () => {
                     lgImgCol={4}
                     xsImgCol={{order: 'last'}}
                     imgSrc={flir}
-                    imgClassName={'h-75 w-75 mt-5 rounded'}
+                    imgClassName={'h-100 w-100 mt-5 rounded'}
                     lgTextCol={8}
                     xsTextCol={12}
                     lgTitleCol={12}
                     mdIconTextCol={12}
-                    iconSymbol={'far fa-plane global_bisonRedFontWhiteBg animations_icon-spin'}
+                    iconSymbol={'fal fa-video global_bisonRedFontWhiteBg animations_icon-spin'}
                     lgIconCol={1}
                     lgSubtextCol={11}
                     mdBlockTextCol={12}
@@ -357,24 +357,6 @@ const HomeScreen = () => {
                     subText={'World\'s largest in-house inventory of legacy airborne EO/IR FLIR equipment/parts'}
                     paragraph={'Bison Aviation maintains the world\'s largest in-house inventory of legacy airborne EO/IR and FLIR equipment and parts. Our system inventory includes units from FLIR Systems, Inc., L3 Wescam, Gyrocam, Polytech, and SweSystems. Our overhauled systems are providing reliable service at agencies throughout the United States in addition to countries around the globe. From complete flight-ready systems, to major LRUs, mounting kits, and ISR mission support equipment, Bison Aviation is able to respond quickly to our customer\'s airborne ISR system needs.'}
                 />
-
-                {/*<JumboCardImgAndText*/}
-                {/*    xsRow={12}*/}
-                {/*    lgImgCol={4}*/}
-                {/*    xsImgCol={12}*/}
-                {/*    imgSrc={mechanics2}*/}
-                {/*    imgClassName={'h-75 w-75 mt-5 rounded'}*/}
-                {/*    lgTextCol={8}*/}
-                {/*    xsTextCol={12}*/}
-                {/*    lgTitleCol={12}*/}
-                {/*    mdIconTextCol={12}*/}
-                {/*    iconSymbol={'far fa-plane global_bisonRedFontWhiteBg animations_icon-spin'}*/}
-                {/*    lgIconCol={1}*/}
-                {/*    lgSubtextCol={11}*/}
-                {/*    mdBlockTextCol={12}*/}
-                {/*    subText={'AD compliance'}*/}
-                {/*    paragraph={'When your aircraft isn\'t operating the way it should, trust Bison Aviation to diagnose the issue correctly the first time. With years of experience and specialty training, our technicians have the skills needed to locate and correct faults quickly and effectively! When it\'s time to take your aircraft to the next level, call on Bison Aviation to guide the way. From engine monitors to turbo-normalizers and LED lighting to complete re-engining projects, we are ready to take your aircraft\'s performance to the next level.'}*/}
-                {/*/>*/}
 
             </Container>
 

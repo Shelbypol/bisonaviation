@@ -122,6 +122,15 @@ p{
     color: white;
 }
 
+.global_smallFont{
+    font-size: 12px;
+}
+
+.global_whiteFontHover:hover{
+    color: white;
+    cursor: pointer;
+}
+
 /*    ======   MOBILE RESPONSIVE    ======    */
 @media (max-width: 900px) {
     .carousel-caption h2 {
