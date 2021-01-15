@@ -240,69 +240,83 @@ const HomeScreen = () => {
             </Container>
 
             {/*   =============   MAINTENANCE SECTION   =============   */}
-            <Container style={{marginTop: '20vh'}}>
+            <Container style={{marginTop: '20vh'}} >
                 <h1>Mechanics</h1>
-                <Row xs={12} className='mt-4'>
-                    <Col xs={4}>
-                        <Row xs={12}>
-                            <Col xs={2}>
-                                <i className='far fa-plane global_bisonRedFontWhiteBg animations_icon-spin'
-                                   style={{fontSize: '2em'}}> </i>
-                            </Col>
-                            <Col xs={10}>
-                                <p className='text-muted mt-1 accentFont'>Lorem ipsum dolor</p>
-                            </Col>
+                <Row xs={12} className='d-flex justify-content-end'>
+                    <Col xs={6}>
+                        <Row xs={12} className='mt-4'>
+                            <Row xs={12}>
+                                <Col xs={2}>
+                                    <i className='far fa-plane global_bisonRedFontWhiteBg animations_icon-spin'
+                                       style={{fontSize: '2em'}}> </i>
+                                </Col>
+                                <Col xs={10}>
+                                    <p className='text-muted mt-1 accentFont'>diagnose the issue correctly</p>
+                                </Col>
+                            </Row>
+                        </Row>
+
+                        <Row xs={12} className='mt-4'>
+                            <Row xs={12}>
+                                <Col xs={2}>
+                                    <i className='far fa-plane global_bisonRedFontWhiteBg animations_icon-spin'
+                                       style={{fontSize: '2em'}}> </i>
+                                </Col>
+                                <Col xs={10}>
+                                    <p className='text-muted mt-1 accentFont'>diagnose the issue correctly</p>
+                                </Col>
+                            </Row>
+                        </Row>
+                        <Row xs={12} className='mt-4'>
+                            <Row xs={12}>
+                                <Col xs={2}>
+                                    <i className='far fa-plane global_bisonRedFontWhiteBg animations_icon-spin'
+                                       style={{fontSize: '2em'}}> </i>
+                                </Col>
+                                <Col xs={10}>
+                                    <p className='text-muted mt-1 accentFont'>diagnose the issue correctly</p>
+                                </Col>
+                            </Row>
+                        </Row>
+                        <Row xs={12} className='mt-4'>
+                            <Row xs={12}>
+                                <Col xs={2}>
+                                    <i className='far fa-plane global_bisonRedFontWhiteBg animations_icon-spin'
+                                       style={{fontSize: '2em'}}> </i>
+                                </Col>
+                                <Col xs={10}>
+                                    <p className='text-muted mt-1 accentFont'>diagnose the issue correctly</p>
+                                </Col>
+                            </Row>
+                        </Row>
+                        <Row xs={12} className='mt-4'>
+                            <Row xs={12}>
+                                <Col xs={2}>
+                                    <i className='far fa-plane global_bisonRedFontWhiteBg animations_icon-spin'
+                                       style={{fontSize: '2em'}}> </i>
+                                </Col>
+                                <Col xs={10}>
+                                    <p className='text-muted mt-1 accentFont'>diagnose the issue correctly</p>
+                                </Col>
+                            </Row>
                         </Row>
                     </Col>
-                </Row>
-                <Row xs={12} className='mt-4'>
-                    <Col xs={4}>
-                        <Row xs={12}>
-                            <Col xs={2}>
-                                <i className='far fa-plane global_bisonRedFontWhiteBg animations_icon-spin'
-                                   style={{fontSize: '2em'}}> </i>
+
+                    <Col xs={6} className='mt-lg-n5 mt-sm-5'>
+                        <Row xs={12} className='mb-3'>
+                            <Col xs={6} className='animations_img-hover-zoom animations_img-hover-zoom--slowmo'>
+                                <img src={mechanics1} className='h-100 w-100 rounded-left' alt=""/>
                             </Col>
-                            <Col xs={10}>
-                                <p className='text-muted mt-1 accentFont'>Lorem ipsum dolor</p>
+                            <Col xs={6} className='animations_img-hover-zoom animations_img-hover-zoom--slowmo d-none d-md-block'>
+                                <img src={mechanics2} className='h-100 w-100 rounded-right' alt=""/>
                             </Col>
                         </Row>
-                    </Col>
-                </Row>
-                <Row xs={12} className='mt-4'>
-                    <Col xs={4}>
                         <Row xs={12}>
-                            <Col xs={2}>
-                                <i className='far fa-plane global_bisonRedFontWhiteBg animations_icon-spin'
-                                   style={{fontSize: '2em'}}> </i>
+                            <Col xs={6} className='animations_img-hover-zoom animations_img-hover-zoom--slowmo'>
+                                <img src={mechanics2} className='h-100 w-100 rounded-left' alt=""/>
                             </Col>
-                            <Col xs={10}>
-                                <p className='text-muted mt-1 accentFont'>Lorem ipsum dolor</p>
-                            </Col>
-                        </Row>
-                    </Col>
-                </Row>
-                <Row xs={12} className='mt-4'>
-                    <Col xs={4}>
-                        <Row xs={12}>
-                            <Col xs={2}>
-                                <i className='far fa-plane global_bisonRedFontWhiteBg animations_icon-spin'
-                                   style={{fontSize: '2em'}}> </i>
-                            </Col>
-                            <Col xs={10}>
-                                <p className='text-muted mt-1 accentFont'>Lorem ipsum dolor</p>
-                            </Col>
-                        </Row>
-                    </Col>
-                </Row>
-                <Row xs={12} className='mt-4'>
-                    <Col xs={4}>
-                        <Row xs={12}>
-                            <Col xs={2}>
-                                <i className='far fa-plane global_bisonRedFontWhiteBg animations_icon-spin'
-                                   style={{fontSize: '2em'}}> </i>
-                            </Col>
-                            <Col xs={10}>
-                                <p className='text-muted mt-1 accentFont'>Lorem ipsum dolor</p>
+                            <Col xs={6} className='animations_img-hover-zoom animations_img-hover-zoom--slowmo d-none d-md-block'>
+                                <img src={mechanics1} className='h-100 w-100 rounded-right' alt=""/>
                             </Col>
                         </Row>
                     </Col>
