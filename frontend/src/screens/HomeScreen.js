@@ -252,7 +252,7 @@ const HomeScreen = () => {
                                        style={{fontSize: '2em'}}> </i>
                                 </Col>
                                 <Col xs={10} className='d-flex justify-content-end'>
-                                    <p className='text-muted mt-1 global_accentFont'>AOG response</p>
+                                    <p className='text-muted mt-1 global_accentFont'>AOG Response</p>
                                 </Col>
                             </Row>
                         </Row>
@@ -263,7 +263,7 @@ const HomeScreen = () => {
                                        style={{fontSize: '2em'}}> </i>
                                 </Col>
                                 <Col xs={10} className='d-flex justify-content-end'>
-                                    <p className='text-muted mt-1 global_accentFont'>routine annual</p>
+                                    <p className='text-muted mt-1 global_accentFont'>Routine Annual</p>
                                 </Col>
                             </Row>
                         </Row>
@@ -271,10 +271,10 @@ const HomeScreen = () => {
                             <Row xs={12}>
                                 <Col xs={2} className='d-flex justify-content-start'>
                                     <i className='fal fa-clipboard-list-check global_bisonRedFontWhiteBg animations_icon-spin'
-                                       style={{fontSize: '2em'}}> </i>
+                                       style={{fontSize: '2.5em'}}> </i>
                                 </Col>
                                 <Col xs={10} className='d-flex justify-content-end'>
-                                    <p className='text-muted mt-1 global_accentFont'>pre-purchase inspections</p>
+                                    <p className='text-muted mt-1 global_accentFont'>Pre-purchase Inspections</p>
                                 </Col>
                             </Row>
                         </Row>
@@ -285,7 +285,7 @@ const HomeScreen = () => {
                                        style={{fontSize: '2em'}}> </i>
                                 </Col>
                                 <Col xs={10} className='d-flex justify-content-end'>
-                                    <p className='text-muted mt-1 global_accentFont'>FAA licensed technicians</p>
+                                    <p className='text-muted mt-1 global_accentFont'>FAA Licensed Technicians</p>
                                 </Col>
                             </Row>
                         </Row>
@@ -354,7 +354,7 @@ const HomeScreen = () => {
                     lgSubtextCol={11}
                     mdBlockTextCol={12}
                     title={'EO / IR FLIR'}
-                    subText={'world\'s largest in-house inventory of legacy airborne EO/IR FLIR equipment/parts'}
+                    subText={'World\'s largest in-house inventory of legacy airborne EO/IR FLIR equipment/parts'}
                     paragraph={'Bison Aviation maintains the world\'s largest in-house inventory of legacy airborne EO/IR and FLIR equipment and parts. Our system inventory includes units from FLIR Systems, Inc., L3 Wescam, Gyrocam, Polytech, and SweSystems. Our overhauled systems are providing reliable service at agencies throughout the United States in addition to countries around the globe. From complete flight-ready systems, to major LRUs, mounting kits, and ISR mission support equipment, Bison Aviation is able to respond quickly to our customer\'s airborne ISR system needs.'}
                 />
 
