@@ -58,7 +58,8 @@ const HomeScreen = () => {
                 textContainerClass={'col-12 mt-n2 d-flex justify-content-center'}
                 // title={'Bison Aviation'}
                 // titleClassName={'text-light py-0 my-0'}
-                text={<h3 className='bisonRedTxt font-weight-lighter'>We work hard on the ground so you can fly with confidence</h3>}
+                text={<h3 className='bisonRedTxt font-weight-lighter'>We work hard on the ground so you can fly with
+                    confidence</h3>}
                 textClassName={'text-center py-0'}
             />
 
@@ -238,46 +239,112 @@ const HomeScreen = () => {
                 <TestimonialCarousel/>
             </Container>
 
-            <Container>
-                {/*   =============   MAINTENANCE SECTION   =============   */}
-                <JumboCardImgAndText
-                    rowStyle={{marginTop: '20vh'}}
-                    xsRow={12}
-                    lgImgCol={4}
-                    xsImgCol={{order: 'last'}}
-                    imgSrc={mechanics1}
-                    imgClassName={'h-75 w-75 mt-5 rounded'}
-                    lgTextCol={8}
-                    xsTextCol={12}
-                    lgTitleCol={12}
-                    mdIconTextCol={12}
-                    iconSymbol={'far fa-plane global_bisonRedFontWhiteBg animations_icon-spin'}
-                    lgIconCol={1}
-                    lgSubtextCol={11}
-                    mdBlockTextCol={12}
-                    title={'MAINTENANCE'}
-                    subText={'aircraft inspections'}
-                    paragraph={'You depend on your aircraft to carry you and your passengers safely. Whether it\'s time for a routine annual, a complete series of phase inspections or a pre-purchase inspection, Bison Aviation\'s team of FAA licensed technicians is ready to ensure that your aircraft is safe and airworthy for your next flight! Thorough aircraft inspections not only help locate and identify failing parts before they fail, but can also save the aircraft owner significant money in the long run. Replacing parts and servicing equipment before it reaches the point of total failure is almost always LESS expensive than waiting until after-the-fact.'}
-                />
+            {/*   =============   MAINTENANCE SECTION   =============   */}
+            <Container style={{marginTop: '20vh'}}>
+                <h1>Mechanics</h1>
+                <Row xs={12} className='mt-4'>
+                    <Col xs={4}>
+                        <Row xs={12}>
+                            <Col xs={2}>
+                                <i className='far fa-plane global_bisonRedFontWhiteBg animations_icon-spin'
+                                   style={{fontSize: '2em'}}> </i>
+                            </Col>
+                            <Col xs={10}>
+                                <p className='text-muted mt-1 accentFont'>Lorem ipsum dolor</p>
+                            </Col>
+                        </Row>
+                    </Col>
+                </Row>
+                <Row xs={12} className='mt-4'>
+                    <Col xs={4}>
+                        <Row xs={12}>
+                            <Col xs={2}>
+                                <i className='far fa-plane global_bisonRedFontWhiteBg animations_icon-spin'
+                                   style={{fontSize: '2em'}}> </i>
+                            </Col>
+                            <Col xs={10}>
+                                <p className='text-muted mt-1 accentFont'>Lorem ipsum dolor</p>
+                            </Col>
+                        </Row>
+                    </Col>
+                </Row>
+                <Row xs={12} className='mt-4'>
+                    <Col xs={4}>
+                        <Row xs={12}>
+                            <Col xs={2}>
+                                <i className='far fa-plane global_bisonRedFontWhiteBg animations_icon-spin'
+                                   style={{fontSize: '2em'}}> </i>
+                            </Col>
+                            <Col xs={10}>
+                                <p className='text-muted mt-1 accentFont'>Lorem ipsum dolor</p>
+                            </Col>
+                        </Row>
+                    </Col>
+                </Row>
+                <Row xs={12} className='mt-4'>
+                    <Col xs={4}>
+                        <Row xs={12}>
+                            <Col xs={2}>
+                                <i className='far fa-plane global_bisonRedFontWhiteBg animations_icon-spin'
+                                   style={{fontSize: '2em'}}> </i>
+                            </Col>
+                            <Col xs={10}>
+                                <p className='text-muted mt-1 accentFont'>Lorem ipsum dolor</p>
+                            </Col>
+                        </Row>
+                    </Col>
+                </Row>
+                <Row xs={12} className='mt-4'>
+                    <Col xs={4}>
+                        <Row xs={12}>
+                            <Col xs={2}>
+                                <i className='far fa-plane global_bisonRedFontWhiteBg animations_icon-spin'
+                                   style={{fontSize: '2em'}}> </i>
+                            </Col>
+                            <Col xs={10}>
+                                <p className='text-muted mt-1 accentFont'>Lorem ipsum dolor</p>
+                            </Col>
+                        </Row>
+                    </Col>
+                </Row>
 
-                <JumboCardImgAndText
-                    xsRow={12}
-                    lgImgCol={4}
-                    xsImgCol={12}
-                    imgSrc={mechanics2}
-                    imgClassName={'h-75 w-75 mt-5 rounded'}
-                    lgTextCol={8}
-                    xsTextCol={12}
-                    lgTitleCol={12}
-                    mdIconTextCol={12}
-                    iconSymbol={'far fa-plane global_bisonRedFontWhiteBg animations_icon-spin'}
-                    lgIconCol={1}
-                    lgSubtextCol={11}
-                    mdBlockTextCol={12}
-                    subText={'AD compliance'}
-                    paragraph={'When your aircraft isn\'t operating the way it should, trust Bison Aviation to diagnose the issue correctly the first time. With years of experience and specialty training, our technicians have the skills needed to locate and correct faults quickly and effectively! When it\'s time to take your aircraft to the next level, call on Bison Aviation to guide the way. From engine monitors to turbo-normalizers and LED lighting to complete re-engining projects, we are ready to take your aircraft\'s performance to the next level.'}
+                {/*<JumboCardImgAndText*/}
+                {/*    rowStyle={{marginTop: '20vh'}}*/}
+                {/*    xsRow={12}*/}
+                {/*    lgImgCol={4}*/}
+                {/*    xsImgCol={{order: 'last'}}*/}
+                {/*    imgSrc={mechanics1}*/}
+                {/*    imgClassName={'h-75 w-75 mt-5 rounded'}*/}
+                {/*    lgTextCol={8}*/}
+                {/*    xsTextCol={12}*/}
+                {/*    lgTitleCol={12}*/}
+                {/*    mdIconTextCol={12}*/}
+                {/*    iconSymbol={'far fa-plane global_bisonRedFontWhiteBg animations_icon-spin'}*/}
+                {/*    lgIconCol={1}*/}
+                {/*    lgSubtextCol={11}*/}
+                {/*    mdBlockTextCol={12}*/}
+                {/*    title={'MAINTENANCE'}*/}
+                {/*    subText={'aircraft inspections'}*/}
+                {/*    paragraph={'You depend on your aircraft to carry you and your passengers safely. Whether it\'s time for a routine annual, a complete series of phase inspections or a pre-purchase inspection, Bison Aviation\'s team of FAA licensed technicians is ready to ensure that your aircraft is safe and airworthy for your next flight! Thorough aircraft inspections not only help locate and identify failing parts before they fail, but can also save the aircraft owner significant money in the long run. Replacing parts and servicing equipment before it reaches the point of total failure is almost always LESS expensive than waiting until after-the-fact.'}*/}
+                {/*/>*/}
 
-                />
+                {/*<JumboCardImgAndText*/}
+                {/*    xsRow={12}*/}
+                {/*    lgImgCol={4}*/}
+                {/*    xsImgCol={12}*/}
+                {/*    imgSrc={mechanics2}*/}
+                {/*    imgClassName={'h-75 w-75 mt-5 rounded'}*/}
+                {/*    lgTextCol={8}*/}
+                {/*    xsTextCol={12}*/}
+                {/*    lgTitleCol={12}*/}
+                {/*    mdIconTextCol={12}*/}
+                {/*    iconSymbol={'far fa-plane global_bisonRedFontWhiteBg animations_icon-spin'}*/}
+                {/*    lgIconCol={1}*/}
+                {/*    lgSubtextCol={11}*/}
+                {/*    mdBlockTextCol={12}*/}
+                {/*    subText={'AD compliance'}*/}
+                {/*    paragraph={'When your aircraft isn\'t operating the way it should, trust Bison Aviation to diagnose the issue correctly the first time. With years of experience and specialty training, our technicians have the skills needed to locate and correct faults quickly and effectively! When it\'s time to take your aircraft to the next level, call on Bison Aviation to guide the way. From engine monitors to turbo-normalizers and LED lighting to complete re-engining projects, we are ready to take your aircraft\'s performance to the next level.'}*/}
+                {/*/>*/}
 
             </Container>
 
