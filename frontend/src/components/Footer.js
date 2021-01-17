@@ -8,7 +8,7 @@ import '../style/Headers.css'
 
 const Footer = () => {
     return (
-        <footer style={{backgroundColor: 'black'}}>
+        <footer style={{backgroundColor: 'black', marginTop: '20vh'}}>
             <Container>
                 <Row xs={12}>
                     <Row xs={6} className='mx-auto px-auto mt-4'>
@@ -57,7 +57,7 @@ const Footer = () => {
                                 &nbsp; 888-SOS-BISON (888-767-2476)
                             </p>
                             <p className='global_accentFont global_smallFont global_whiteFontHover'>
-                                email: info@BisonAviation.com
+                                info@BisonAviation.com
                             </p>
 
                         </Col>
