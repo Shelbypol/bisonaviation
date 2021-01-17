@@ -34,22 +34,21 @@ const ProductsDisplayScreen = ({match, history}) => {
 
             <Row xs={12}>
 
-                <Col xs={3}>
-                    <Row xs={12}>
-                        <h3>Categories</h3>
+                <Col xs={2} className='border-right'>
+                    <Row xs={12} className='global_accentFont text-center my-3'>
+                        <h4 className='global_bisonRedTxt'>Categories</h4>
                     </Row>
-                    <Row xs={12}>
+                    {/*<Row xs={12}>*/}
                         {products.map(product => (
-                            <Col xs={12} key={product._id} sm={12} md={6} lg={4}>
+                            <Row xs={12} key={product._id} sm={12} md={6} lg={4} className='global_cursor global_bisonFadedRedHover'>
                                 <h5>
                                     {product.category}
                                 </h5>
-                            </Col>
+                            </Row>
                         ))}
-                    </Row>
+                    {/*</Row>*/}
                 </Col>
-                <Col xs={9}>
-                    <h1>Latest Products</h1>
+                <Col xs={10}>
                     {loading ?
                         (<Loader/>)
                         : error ?
@@ -59,7 +58,7 @@ const ProductsDisplayScreen = ({match, history}) => {
                                     <Paginate pages={pages} page={page} keyword={keyword ? keyword : ''}/>
                                     <Row>
                                         {products.map(product => (
-                                            <Col key={product._id} sm={12} md={6} lg={4}>
+                                            <Col key={product._id} sm={12} md={6} lg={3}>
                                                 <Product product={product} history={history} productId={product._id}/>
                                             </Col>
                                         ))}
