@@ -23,6 +23,9 @@ import {
     PRODUCT_TOP_FAIL,
     PRODUCT_TOP_REQUEST,
     PRODUCT_TOP_SUCCESS,
+    PRODUCT_LIST_CAT_SUCCESS,
+    PRODUCT_LIST_CAT_REQUEST,
+    PRODUCT_LIST_CAT_FAIL
 } from '../constants/productConstants'
 
 // PRODUCTS PAGE REDUCER
@@ -120,6 +123,20 @@ export const productReviewCreateReducer = (state = { }, action) => {
 
 // PRODUCT TOP RATED CAROUSEL REDUCER
 export const productTopRatedReducer = (state = { products: [] }, action) => {
+    switch(action.type){
+        case PRODUCT_TOP_REQUEST:
+            return { loading: true, products: [] };
+        case PRODUCT_TOP_SUCCESS:
+            return { loading: false, products: action.payload };
+        case PRODUCT_TOP_FAIL:
+            return { loading: false, error: action.payload };
+        default:
+            return state
+    }
+};
+
+// PRODUCT TOP RATED CAROUSEL REDUCER
+export const productCateoriesReducer = (state = { products: [] }, action) => {
     switch(action.type){
         case PRODUCT_TOP_REQUEST:
             return { loading: true, products: [] };

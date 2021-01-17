@@ -22,6 +22,9 @@ import {
     PRODUCT_TOP_SUCCESS,
     PRODUCT_TOP_REQUEST,
     PRODUCT_TOP_FAIL,
+    PRODUCT_LIST_CAT_SUCCESS,
+    PRODUCT_LIST_CAT_REQUEST,
+    PRODUCT_LIST_CAT_FAIL
 } from '../constants/productConstants'
 // import {ORDER_LIST_MY_FAIL, ORDER_LIST_MY_REQUEST, ORDER_LIST_MY_SUCCESS} from "../constants/orderConstants";
 
@@ -223,3 +226,24 @@ export const listTopProducts = () => async (dispatch) => {
     }
 };
 
+
+// /ACTION FOR LIST PRODUCTS IN CATEGORY
+export const listProductsInCat = () => async (dispatch) => {
+    try {
+        dispatch({ type: PRODUCT_LIST_CAT_REQUEST });
+
+        const { data } = await axios.get(`/api/products/categories`);
+
+        dispatch ({
+            type: PRODUCT_LIST_CAT_SUCCESS,
+            payload: data
+        })
+    } catch(error){
+        dispatch({
+            type: PRODUCT_LIST_CAT_FAIL,
+            payload: error.response && error.response.data.message
+                ? error.response.data.message
+                : error.message,
+        })
+    }
+};
