@@ -36,17 +36,25 @@ const ProductsDisplayScreen = ({match, history}) => {
 
                 <Col xs={2} className='border-right'>
                     <Row xs={12} className='global_accentFont text-center my-3'>
-                        <h4 className='global_bisonRedTxt'>Categories</h4>
+                        <h4 className='global_bisonRedTxt'>Brands</h4>
                     </Row>
-                    {/*<Row xs={12}>*/}
                         {products.map(product => (
                             <Row xs={12} key={product._id} sm={12} md={6} lg={4} className='global_cursor global_bisonFadedRedHover'>
                                 <h5>
-                                    {product.category}
+                                    {product.brand}
                                 </h5>
                             </Row>
                         ))}
-                    {/*</Row>*/}
+                    <Row xs={12} className='global_accentFont text-center my-3'>
+                        <h4 className='global_bisonRedTxt'>Categories</h4>
+                    </Row>
+                    {products.map(product => (
+                        <Row xs={12} key={product._id} sm={12} md={6} lg={4} className='global_cursor global_bisonFadedRedHover'>
+                            <h5>
+                                {product.category}
+                            </h5>
+                        </Row>
+                    ))}
                 </Col>
                 <Col xs={10}>
                     {loading ?
@@ -56,9 +64,9 @@ const ProductsDisplayScreen = ({match, history}) => {
                             : (
                                 <>
                                     <Paginate pages={pages} page={page} keyword={keyword ? keyword : ''}/>
-                                    <Row>
+                                    <Row className='d-flex'>
                                         {products.map(product => (
-                                            <Col key={product._id} sm={12} md={6} lg={3}>
+                                            <Col key={product._id} sm={12} md={6} lg={3} className='d-flex flex-row align-items-stretch'>
                                                 <Product product={product} history={history} productId={product._id}/>
                                             </Col>
                                         ))}

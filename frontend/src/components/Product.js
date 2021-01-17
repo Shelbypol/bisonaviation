@@ -38,7 +38,7 @@ const Product = ({ product, history, productId }) => {
                 <Card.Text>
                     <Button
                         onClick={addToCartHandler}
-                        className='btn btn-block global_bisonRedBgWhiteHoverBgBtnRedBorder'
+                        className='btn btn-block global_bisonRedBgWhiteHoverBgBtnRedBorder p-1'
                         type='button'
                         // disabled={product.countInStock === 0 }
                     >
