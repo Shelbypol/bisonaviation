@@ -242,7 +242,7 @@ const HomeScreen = () => {
 
             {/*   =============   MAINTENANCE SECTION   =============   */}
             <Container style={{marginTop: '20vh'}} >
-                <h1>Mechanics</h1>
+                <h1>Maintenance</h1>
                 <Row xs={12} className='d-flex justify-content-end ml-3'>
                     <Col xs={6}>
 
