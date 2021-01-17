@@ -76,6 +76,17 @@ p{
 /*    color: rgba(90, 00, 09, .8);*/
 /*}*/
 
+.global_bisonRedBgWhiteHoverBgBtnRedBorder {
+    background-color: rgba(90, 00, 09, 1);
+    color: white;
+}
+
+.global_bisonRedBgWhiteHoverBgBtnRedBorder:hover {
+    background-color: white;
+    color: rgba(90, 00, 09, 1);
+    border: 1px solid rgba(90, 00, 09, 1);
+}
+
 .global_bisonRedBgWhiteHoverBgBtn {
     background-color: rgba(90, 00, 09, 1);
     color: white;
