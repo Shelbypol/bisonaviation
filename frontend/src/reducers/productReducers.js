@@ -22,7 +22,7 @@ import {
     PRODUCT_CREATE_REVIEW_SUCCESS,
     PRODUCT_TOP_FAIL,
     PRODUCT_TOP_REQUEST,
-    PRODUCT_TOP_SUCCESS
+    PRODUCT_TOP_SUCCESS,
 } from '../constants/productConstants'
 
 // PRODUCTS PAGE REDUCER
@@ -131,3 +131,4 @@ export const productTopRatedReducer = (state = { products: [] }, action) => {
             return state
     }
 };
+

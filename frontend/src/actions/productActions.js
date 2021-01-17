@@ -21,7 +21,7 @@ import {
     PRODUCT_CREATE_REVIEW_FAIL,
     PRODUCT_TOP_SUCCESS,
     PRODUCT_TOP_REQUEST,
-    PRODUCT_TOP_FAIL
+    PRODUCT_TOP_FAIL,
 } from '../constants/productConstants'
 // import {ORDER_LIST_MY_FAIL, ORDER_LIST_MY_REQUEST, ORDER_LIST_MY_SUCCESS} from "../constants/orderConstants";
 
@@ -222,3 +222,4 @@ export const listTopProducts = () => async (dispatch) => {
         })
     }
 };
+
