@@ -9,6 +9,7 @@ import {listProducts, listCategories, listProductsInCat} from '../actions/produc
 import Paginate from '../components/Paginate'
 import Meta from "../components/Meta";
 import ProductCarousel from "../components/ProductCarousel";
+import ProductCategories from "../components/ProductCategories";
 
 const ProductsDisplayScreen = ({match, history}) => {
 
@@ -37,30 +38,46 @@ const ProductsDisplayScreen = ({match, history}) => {
             <Meta title='Bison | Products'/>
 
             <Row xs={12}>
+                <Col xs={2}>
+                    {loading ?
+                        (<Loader/>)
+                        : error ?
+                            (<Message variant='danger'>{error}</Message>)
+                            : (
+                                <>
+                                    <Row xs={12} className='global_accentFont text-center my-3 '>
+                                        <h5 className='global_bisonRedTxt'>Categories</h5>
+                                    </Row>
+                                    {
+                                        products.map(product => (
+                                            <Row xs={12} key={product._id} sm={12} md={6} lg={4}
+                                                 className='global_cursor global_bisonFadedRedHover border-right'>
+                                                <ProductCategories category={product.category} history={history}
+                                                                   productId={product._id}/>
+                                            </Row>
+                                        ))
+                                    }
+                                </>
+                            )
+                    }
 
-                <Col xs={2} className='border-right'>
-                    <Row xs={12} className='global_accentFont text-center my-3'>
-                        <h4 className='global_bisonRedTxt'>Brands</h4>
-                    </Row>
-                    {products.map(product => (
-                        <Row xs={12} key={product._id} sm={12} md={6} lg={4}
-                             className='global_cursor global_bisonFadedRedHover'>
-                            <h5>
-                                {product.brand}
-                            </h5>
-                        </Row>
-                    ))}
-                    <Row xs={12} className='global_accentFont text-center my-3'>
-                        <h4 className='global_bisonRedTxt'>Categories</h4>
-                    </Row>
-                    {products.map(product => (
-                        <Row xs={12} key={product._id} sm={12} md={6} lg={4}
-                             className='global_cursor global_bisonFadedRedHover'>
-                                <h5>
-                                    {product.category}
-                                </h5>
-                        </Row>
-                    ))}
+
+                    {/*    MANUFACTURES     */
+                    }
+                    {/*<Row xs={12} className='global_accentFont text-center my-3 '>*/}
+                    {/*    <h5 className='global_bisonRedTxt'>Manufactures</h5>*/}
+                    {/*</Row>*/}
+                    {/*{*/}
+                    {/*    products.map(product => (*/}
+                    {/*        <Row xs={12} key={product._id} sm={12} md={6} lg={4}*/}
+                    {/*             className='global_cursor global_bisonFadedRedHover border-right'>*/}
+                    {/*            <h6>*/}
+                    {/*                {product.brand}*/}
+                    {/*            </h6>*/}
+                    {/*        </Row>*/}
+                    {/*    ))*/}
+                    {/*}*/}
+
                 </Col>
                 <Col xs={10}>
                     {loading ?
