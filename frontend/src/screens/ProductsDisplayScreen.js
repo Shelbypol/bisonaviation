@@ -8,7 +8,6 @@ import Loader from '../components/Loader'
 import {listProducts, listCategories, listProductsInCat} from '../actions/productActions'
 import Paginate from '../components/Paginate'
 import Meta from "../components/Meta";
-import ProductCategories from "../components/ProductCategories";
 
 const ProductsDisplayScreen = ({match, history}) => {
 
@@ -35,6 +34,10 @@ const ProductsDisplayScreen = ({match, history}) => {
         return setUpdateCat(a)
     };
 
+    const allCatsHandler = () => {
+        return setUpdateCat('')
+    };
+
     return (
         <>
             <Meta title='Bison | Products'/>
@@ -48,36 +51,38 @@ const ProductsDisplayScreen = ({match, history}) => {
                             <>
                                 <Col xs={2}>
                                     <Row xs={12} className='global_accentFont text-center my-3 '>
-                                        <h5 className='global_bisonRedTxt'>Categories</h5>
+                                        <h5 onClick={allCatsHandler}
+                                            className='global_bisonRedTxt global_cursor'>Categories</h5>
                                     </Row>
                                     {products.map(product => (
-                                        <Row key={product._id} xs={12} sm={12} md={6} lg={4}
-                                             className='global_cursor global_bisonFadedRedHover border-right'>
-                                            <Button
-                                                onClick={(ev) => sortByCategoryHandler(product.category, ev)}
-                                                className='btn btn-block global_bisonRedBgWhiteHoverBgBtnRedBorder p-1'
-                                                type='button'
+                                            <Row xs={12}
+                                                 onClick={(ev) => sortByCategoryHandler(product.category, ev)}
+                                                 className='btn btn-block global_cursor p-1 d-flex justify-content-start glo'
+                                                 type='button'
+                                                 key={product._id}
                                             >
                                                 <h6>
                                                     {product.category}
                                                 </h6>
-                                            </Button>
-                                        </Row>
+                                            </Row>
                                     ))}
-                                    {/*// <ProductCategories key={product._id} product_id={product._id} category={product.category} />*/}
                                 </Col>
 
                                 <Col xs={10}>
+                                    <Row xs={12}
+                                         className='global_accentFont my-3 d-flex justify-content-end position-sticky-top'>
+                                        <h5 className='global_bisonRedTxt global_cursor '>{updateCat}</h5>
+                                    </Row>
                                     <Paginate pages={pages} page={page} keyword={keyword ? keyword : ''}/>
 
-                                    <Row className='d-flex'>
+                                    <Row xs={12} className='d-flex'>
                                         {updateCat === '' ? (
                                             <>
                                                 {products.map(product => (
                                                     <Col key={product._id} sm={12} md={6} lg={3}
                                                          className='d-flex flex-row align-items-stretch'>
-                                                            <Product product={product} history={history}
-                                                                     product_id={product._id}/>
+                                                        <Product product={product} history={history}
+                                                                 product_id={product._id}/>
                                                     </Col>
                                                 ))}
                                             </>
