@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, {useEffect, useState} from 'react'
 import {Link} from "react-router-dom";
 import {useDispatch, useSelector} from 'react-redux'
 import {Row, Col, Button, Card} from 'react-bootstrap'
@@ -12,6 +12,9 @@ import ProductCategories from "../components/ProductCategories";
 
 const ProductsDisplayScreen = ({match, history}) => {
 
+    const [updateCat, setUpdateCat] = useState('');
+    // const [updateClick, setUpdateClick] = useState(false);
+
     const keyword = match.params.keyword;
 
     const pageNumber = match.params.pageNumber || 1;
@@ -24,11 +27,16 @@ const ProductsDisplayScreen = ({match, history}) => {
 
     useEffect(() => {
         dispatch(listProducts(keyword, pageNumber));
-    }, [dispatch, keyword, pageNumber]);
+        // sortByCategoryHandler();
+
+    }, [dispatch, keyword, pageNumber, updateCat]);
 
 
-    const sortByCategoryHandler = (a , b) => {
-        console.log(a)
+    // let clickedCategory = '';
+    const sortByCategoryHandler = (a) => {
+        console.log(a);
+        // setUpdateClick(!updateClick);
+       return setUpdateCat(a)
     };
 
     return (
@@ -54,30 +62,39 @@ const ProductsDisplayScreen = ({match, history}) => {
                                             className='btn btn-block global_bisonRedBgWhiteHoverBgBtnRedBorder p-1'
                                             type='button'
                                         >
-                                                <h6>
-                                                    {product.category}
-                                                </h6>
+                                            <h6>
+                                                {product.category}
+                                            </h6>
                                         </Button>
                                             </Row>
                                     ))}
                                     {/*// <ProductCategories key={product._id} product_id={product._id} category={product.category} />*/}
                                 </Col>
 
-
                                 <Col xs={10}>
                                     <Paginate pages={pages} page={page} keyword={keyword ? keyword : ''}/>
                                     <Row className='d-flex'>
-                                        {products.map(product => (
-                                            <Col key={product._id} sm={12} md={6} lg={3}
+                                        {/*{products.map(product => (*/}
+                                        {/*    <Col key={product._id} sm={12} md={6} lg={3}*/}
+                                        {/*         className='d-flex flex-row align-items-stretch'>*/}
+
+
+                                        {/*        /!*{people.filter(person => person.age < 60).map(filteredPerson => (*!/*/}
+
+                                        {/*        <Product product={product} history={history}*/}
+                                        {/*                 product_id={product._id}/>*/}
+                                        {/*    </Col>*/}
+                                        {/*))}*/}
+
+                                        {products.filter(product => product.category === updateCat).map(filteredProduct => (
+                                            <Col key={filteredProduct._id} sm={12} md={6} lg={3}
                                                  className='d-flex flex-row align-items-stretch'>
 
-
-                                                {/*{people.filter(person => person.age < 60).map(filteredPerson => (*/}
-
-                                                <Product product={product} history={history}
-                                                         product_id={product._id}/>
+                                                <Product product={filteredProduct} history={history}
+                                                         product_id={filteredProduct._id}/>
                                             </Col>
                                         ))}
+                                        <h1>{sortByCategoryHandler}</h1>
                                     </Row>
                                     <Paginate pages={pages} page={page} keyword={keyword ? keyword : ''}/>
                                 </Col>
