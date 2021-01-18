@@ -1,44 +1,21 @@
-import {Button, Card, Col, Row} from "react-bootstrap";
-import React, {useEffect} from "react";
-import {useDispatch, useSelector} from "react-redux";
-import {listProducts} from "../actions/productActions";
-import Loader from "./Loader";
-import Message from "./Message";
+import {Row} from "react-bootstrap";
+import React from "react";
 
-const ProductCategories = ({category, history, productId}) => {
-
-    // const dispatch = useDispatch();
-    //
-    // const productList = useSelector(state => state.productList);
-    // const {loading, error, products, pages, page} = productList;
-    //
-    //
-    // useEffect(() => {
-    //     dispatch(listProducts());
-    //     // dispatch(listProductsInCat);
-    //
-    // }, [dispatch]);
+const ProductCategories = ({category, product_id}) => {
 
     const sortByCategoryHandler = () => {
-        console.log(category);
-        // history.push(`/cart/${productId}?qty=1`);
+       console.log(category)
     };
 
     return (
         <>
-
-            <>
-                {/*<Button*/}
-                {/*    onClick={addToCartHandler}*/}
-                {/*    className='btn btn-block global_bisonRedBgWhiteHoverBgBtnRedBorder p-1'*/}
-                {/*    type='button'*/}
-                {/*    // disabled={product.countInStock === 0 }*/}
-                {/*>*/}
-                <h6 onClick={sortByCategoryHandler}>
+            <Row onClick={sortByCategoryHandler} xs={12} key={product_id} sm={12} md={6} lg={4}
+                 className='global_cursor global_bisonFadedRedHover border-right'>
+                <h6>
                     {category}
                 </h6>
-                {/*</Button>*/}
-            </>
+            </Row>
+
         </>
     )
 };
