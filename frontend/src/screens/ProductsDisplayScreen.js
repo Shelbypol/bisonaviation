@@ -35,8 +35,8 @@ const ProductsDisplayScreen = ({match, history}) => {
         return setUpdateCat(a)
     };
 
-    const allCatsHandler = () => {
-        return setUpdateCat('')
+    const allHandler = () => {
+        return setUpdateCat('') && setUpdateManufacturer('')
     };
 
     //  SORT BRAND HANDLER
@@ -45,9 +45,9 @@ const ProductsDisplayScreen = ({match, history}) => {
         return setUpdateManufacturer(a)
     };
 
-    const allManufacturerHandler = () => {
-        return setUpdateCat('')
-    };
+    // const allManufacturerHandler = () => {
+    //     return setUpdateCat('')
+    // };
 
     return (
         <Container className='mx-n5'>
@@ -65,7 +65,7 @@ const ProductsDisplayScreen = ({match, history}) => {
 
                                     {/*     CATEGORY     */}
                                     <Row xs={12} className='global_accentFont text-center my-3 '>
-                                        <h5 onClick={allCatsHandler}
+                                        <h5 onClick={allHandler}
                                             className='global_bisonRedTxt global_cursor'>Categories</h5>
                                     </Row>
                                     {products.map(product => (
@@ -83,7 +83,7 @@ const ProductsDisplayScreen = ({match, history}) => {
 
                                     {/*     MANUFACTURER    */}
                                     <Row xs={12} className='global_accentFont text-center my-3 '>
-                                        <h5 onClick={allManufacturerHandler}
+                                        <h5 onClick={allHandler}
                                             className='global_bisonRedTxt global_cursor'>Manufacturer</h5>
                                     </Row>
                                     {products.map(product => (
@@ -134,18 +134,17 @@ const ProductsDisplayScreen = ({match, history}) => {
                                             </>
                                         )}
 
-                                        {/*     MANUFACTURER    */}
-                                        {/*{((updateManufacturer === '' && updateCat === '') || (updateManufacturer !== '' ||  )) && (*/}
-                                        {/*    <>*/}
-                                        {/*        {products.map(product => (*/}
-                                        {/*            <Col key={product._id} sm={12} md={6} lg={3}*/}
-                                        {/*                 className='d-flex flex-row align-items-stretch'>*/}
-                                        {/*                <Product product={product} history={history}*/}
-                                        {/*                         product_id={product._id}/>*/}
-                                        {/*            </Col>*/}
-                                        {/*        ))}*/}
-                                        {/*    </>*/}
-                                        {/*)}*/}
+                                        {(updateManufacturer === '' && updateCat === '') && (
+                                            <>
+                                                {products.map(product => (
+                                                    <Col key={product._id} sm={12} md={6} lg={3}
+                                                         className='d-flex flex-row align-items-stretch'>
+                                                        <Product product={product} history={history}
+                                                                 product_id={product._id}/>
+                                                    </Col>
+                                                ))}
+                                            </>
+                                        )}
 
                                     </Row>
 
