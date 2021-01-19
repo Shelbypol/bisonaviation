@@ -1,28 +1,11 @@
+import React, {useEffect} from "react";
 import {Col, Row} from "react-bootstrap";
 import Paginate from "./Paginate";
 import Product from "./Product";
-import React, {useEffect, useState} from "react";
-import {useDispatch, useSelector} from "react-redux";
-import {listProducts} from "../actions/productActions";
 
-const ProductsDisplaySByCatMan = ({match, history, updateCatProp, updateManufacturerProp}) => {
-
-    // const [updateCat, setUpdateCat] = useState(updateCatProp);
-    // const [updateManufacturer, setUpdateManufacturer] = useState(updateManufacturerProp);
-
-    const keyword = match.params.keyword;
-
-    const pageNumber = match.params.pageNumber || 1;
-
-    const dispatch = useDispatch();
-
-    const productList = useSelector(state => state.productList);
-    const {products, pages, page} = productList;
+const ProductsDisplaySByCatMan = ({updateCatProp, updateManufacturerProp, keyword, pages, page, products}) => {
 
 
-    useEffect(() => {
-        dispatch(listProducts(keyword, pageNumber));
-    }, [dispatch, keyword, pageNumber]);
 
     return (
         <>
