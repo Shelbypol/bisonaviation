@@ -3,7 +3,7 @@ import {Col, Row} from "react-bootstrap";
 import Paginate from "./Paginate";
 import Product from "./Product";
 
-const ProductsDisplaySByCatMan = ({updateCatProp, updateManufacturerProp, keyword, pages, page, products}) => {
+const ProductsDisplaySByCatMan = ({history, updateCatProp, updateManufacturerProp, keyword, pages, page, products}) => {
 
 
 

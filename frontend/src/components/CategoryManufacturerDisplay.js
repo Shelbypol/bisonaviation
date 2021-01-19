@@ -96,7 +96,11 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                                 }
                             </Col>
                             <Col xs={9}>
-                                <ProductDisplayByCatMan products={products} keyword={keyword} pages={pages} page={page}
+                                <ProductDisplayByCatMan products={products}
+                                                        history={history}
+                                                        keyword={keyword}
+                                                        pages={pages}
+                                                        page={page}
                                                         updateCatProp={updateCat}
                                                         updateManufacturerProp={updateManufacturer}/>
                             </Col>
