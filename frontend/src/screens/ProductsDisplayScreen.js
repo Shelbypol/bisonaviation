@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import {Link} from "react-router-dom";
 import {useDispatch, useSelector} from 'react-redux'
-import {Row, Col, Button, Card, Container} from 'react-bootstrap'
+import {Row, Col, Button, Container, CardDeck, Card} from 'react-bootstrap'
 import Product from '../components/Product'
 import Message from '../components/Message'
 import Loader from '../components/Loader'
@@ -102,13 +102,12 @@ const ProductsDisplayScreen = ({match, history}) => {
 
                                 <Col xs={9}>
                                     <Row xs={12}
-                                         className='global_accentFont my-3 d-flex justify-content-end position-sticky-top'>
-                                        <h5 className='global_bisonRedTxt global_cursor '>{updateCat || updateManufacturer}</h5>
+                                         className='global_accentFont my-3 d-flex justify-content-start'>
+                                        <h3 className='global_bisonRedTxt global_cursor my-0 py-0'>{updateCat || updateManufacturer}</h3>
                                     </Row>
                                     <Paginate pages={pages} page={page} keyword={keyword ? keyword : ''}/>
 
-                                    <Row xs={12} className='d-flex'>
-
+                                    <Row xs={12}>
                                         {/*    CATEGORY     */}
                                         {(updateCat !== '' ) && (
                                             <>
@@ -145,7 +144,6 @@ const ProductsDisplayScreen = ({match, history}) => {
                                                 ))}
                                             </>
                                         )}
-
                                     </Row>
 
                                     <Paginate pages={pages} page={page} keyword={keyword ? keyword : ''}/>
