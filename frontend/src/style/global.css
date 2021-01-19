@@ -152,6 +152,13 @@ p{
     cursor: pointer;
 }
 
+.global_sticky_scroll{
+    position: sticky;
+    top: 20vh;
+    scroll-behavior: smooth;
+    overflow-y: auto;
+}
+
 /*    ======   MOBILE RESPONSIVE    ======    */
 @media (max-width: 900px) {
     .carousel-caption h2 {
