@@ -11,7 +11,6 @@ const CategoryManufacturerDisplay = ({match, history}) => {
     const [updateCat, setUpdateCat] = useState('');
     const [updateManufacturer, setUpdateManufacturer] = useState('');
 
-    const [updateManCats, setUpdateManCats] = useState([]);
 
     const keyword = match.params.keyword;
 
@@ -25,15 +24,8 @@ const CategoryManufacturerDisplay = ({match, history}) => {
 
     useEffect(() => {
         dispatch(listProducts(keyword, pageNumber));
-    }, [dispatch, updateCat, updateManufacturer, keyword, pageNumber, updateManCats]);
+    }, [dispatch, updateCat, updateManufacturer, keyword, pageNumber]);
 
-    // const sortByManufacturerAvailableCategories = () => {
-    //     //take updated manufac state and see what categories exist on the products with that manufac
-    //     products.filter(product => product.brand === updateManufacturer ).map(filteredCategories => (
-    //         setUpdateManCats.push(filteredCategories.category)
-    //     ));
-    //     return(updateManCats);
-    // };
 
     //  SORT CAT HANDLER
     const sortByCategoryHandler = (a) => {
@@ -64,75 +56,107 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                     : (
                         <>
                             <Col xs={3}>
-                                {/*     CATEGORY     */}
-                                {updateManufacturer !== '' &&
+
+                                {/*     MANUFACTURER SORT DISPLAY AVAILABLE CATS ON CLICK    */}
+                                {updateManufacturer !== '' && updateCat === '' &&
                                     (
                                         <>
-                                <Row xs={12} className='global_accentFont text-center my-3 '>
-                                    <h5 onClick={allHandler}
-                                        className='global_bisonRedTxt global_cursor'>{updateManufacturer}</h5>
-                                </Row>
-                                {products.filter(product => product.brand === updateManufacturer ).map(filteredCategories => (
-                                    //         setUpdateManCats.push(filteredCategories.category)
-                                    //         ));
-                                    // {updateManCats.map(product => (
+                                            <Row xs={12} className='global_accentFont text-center my-3 '>
+                                                <h5 onClick={allHandler}
+                                                    className='global_bisonRedTxt global_cursor'>{updateManufacturer}</h5>
+                                            </Row>
+
+                                            {products.filter(product => product.brand === updateManufacturer).map(filteredCategories => (
+                                                <Row xs={12}
+                                                     onClick={(ev) => sortByCategoryHandler(filteredCategories.category, ev)}
+                                                     className='btn btn-block global_cursor d-flex justify-content-start m-0 p-0 global_bisonFadedRedHover border-right'
+                                                     type='button'
+                                                     key={filteredCategories._id}
+                                                >
+                                                    <h6>
+                                                        {filteredCategories.category}
+                                                    </h6>
+                                                </Row>
+                                            ))}
+
+
+                                            <Row xs={12} className='global_accentFont text-center my-3 '>
+                                                <h5 onClick={allHandler}
+                                                    className='global_bisonRedTxt global_cursor'>Categories</h5>
+                                            </Row>
+
+                                            {products.map(product => (
+                                                <Row xs={12}
+                                                     onClick={(ev) => sortByCategoryHandler(product.category, ev)}
+                                                     className='btn btn-block global_cursor d-flex justify-content-start m-0 p-0 global_bisonFadedRedHover border-right'
+                                                     type='button'
+                                                     key={product._id}
+                                                >
+                                                    <h6>
+                                                        {product.category}
+                                                    </h6>
+                                                </Row>
+                                            ))}
+
+                                        </>
+
+                                    )}
+
+
+
+                                { updateCat === '' && updateManufacturer === ''  && (
+                                    <>
+                                        <Row xs={12} className='global_accentFont text-center my-3 '>
+                                            <h5 onClick={allHandler}
+                                                className='global_bisonRedTxt global_cursor'>Category</h5>
+                                        </Row>
+
+                                        {products.map(product => (
                                             <Row xs={12}
-                                                 onClick={(ev) => sortByCategoryHandler(filteredCategories.category, ev)}
+                                                 onClick={(ev) => sortByCategoryHandler(product.category, ev)}
                                                  className='btn btn-block global_cursor d-flex justify-content-start m-0 p-0 global_bisonFadedRedHover border-right'
                                                  type='button'
-                                                 key={filteredCategories._id}
+                                                 key={product._id}
                                             >
                                                 <h6>
-                                                    {filteredCategories.category}
+                                                    {product.category}
                                                 </h6>
                                             </Row>
-                                        ))
-                                    }
-                                    </>
-                                    )
+                                        ))}
 
-                                }
-                                {/*    {products.map(product => (*/}
-                                {/*        <Row xs={12}*/}
-                                {/*             onClick={(ev) => sortByCategoryHandler(product.category, ev)}*/}
-                                {/*             className='btn btn-block global_cursor d-flex justify-content-start m-0 p-0 global_bisonFadedRedHover border-right'*/}
-                                {/*             type='button'*/}
-                                {/*             key={product._id}*/}
-                                {/*        >*/}
-                                {/*            <h6>*/}
-                                {/*                {product.category}*/}
-                                {/*            </h6>*/}
-                                {/*        </Row>*/}
-                                {/*    ))*/}
-                                {/*}*/}
-
-                                {/*     MANUFACTURER    */}
-                                {/*<Row xs={12} className='global_accentFont text-center my-3 '>*/}
-                                {/*    <h5 onClick={allHandler}*/}
-                                {/*        className='global_bisonRedTxt global_cursor'>Manufacturer</h5>*/}
-                                {/*</Row>*/}
-                                {products.map(product => (
-                                        <Row xs={12}
-                                             onClick={(ev) => sortByManufacturerHandler(product.brand, ev)}
-                                             className='btn btn-block global_cursor d-flex justify-content-start m-0 p-0 global_bisonFadedRedHover border-right'
-                                             type='button'
-                                             key={product._id}
-                                        >
-                                            <h6>
-                                                {product.brand}
-                                            </h6>
+                                        <Row xs={12} className='global_accentFont text-center my-3 '>
+                                            <h5 onClick={allHandler}
+                                                className='global_bisonRedTxt global_cursor'>Manufacturer</h5>
                                         </Row>
-                                    ))
-                                }
+
+                                        {products.map(product => (
+                                            <Row xs={12}
+                                                 onClick={(ev) => sortByManufacturerHandler(product.brand, ev)}
+                                                 className='btn btn-block global_cursor d-flex justify-content-start m-0 p-0 global_bisonFadedRedHover border-right'
+                                                 type='button'
+                                                 key={product._id}
+                                            >
+                                                <h6>
+                                                    {product.brand}
+                                                </h6>
+                                            </Row>
+                                        ))}
+                                    </>
+                                )}
+
+
+
+
+
                             </Col>
-                            <Col xs={9}>
-                                <ProductDisplayByCatMan products={products}
-                                                        history={history}
-                                                        keyword={keyword}
-                                                        pages={pages}
-                                                        page={page}
-                                                        updateCatProp={updateCat}
-                                                        updateManufacturerProp={updateManufacturer}/>
+                            < Col xs={9}>
+                                < ProductDisplayByCatMan products={products}
+                                                         history={history}
+                                                         keyword={keyword}
+                                                         pages={pages}
+                                                         page={page}
+                                                         updateCatProp={updateCat}
+                                                         updateManufacturerProp={updateManufacturer}/>
                             </Col>
                         </>
                     )}
