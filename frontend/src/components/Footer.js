@@ -13,23 +13,23 @@ const Footer = () => {
                 <Row xs={12}>
                     <Row xs={6} className='mx-auto px-auto mt-4'>
                         <Col xs={12}>
-                            <LinkContainer to='/' className='global_whiteFontHover'>
-                                <p className='global_accentFont'>AOG Response</p>
+                            <LinkContainer to='/' className='global_whiteFontHover py-0'>
+                                <p className='global_accentFont global_smallFont '>AOG Response</p>
                             </LinkContainer>
-                            <LinkContainer to='/avionics' className='global_whiteFontHover'>
-                                <p className='global_accentFont'>Avionics</p>
+                            <LinkContainer to='/avionics' className='global_whiteFontHover py-0'>
+                                <p className='global_accentFont global_smallFont '>Avionics</p>
                             </LinkContainer>
-                            <LinkContainer to='/' className='global_whiteFontHover'>
-                                <p className='global_accentFont'>Browse Avionics Products</p>
+                            <LinkContainer to='/' className='global_whiteFontHover py-0'>
+                                <p className='global_accentFont global_smallFont '>Browse Avionics Products</p>
                             </LinkContainer>
-                            <LinkContainer to='/' className='global_whiteFontHover'>
-                                <p className='global_accentFont'>Maintenance</p>
+                            <LinkContainer to='/' className='global_whiteFontHover py-0'>
+                                <p className='global_accentFont global_smallFont'>Maintenance</p>
                             </LinkContainer>
-                            <LinkContainer to='/' className='global_whiteFontHover'>
-                                <p className='global_accentFont'>Team</p>
+                            <LinkContainer to='/' className='global_whiteFontHover py-0'>
+                                <p className='global_accentFont global_smallFont'>Team</p>
                             </LinkContainer>
-                            <LinkContainer to='/' className='global_whiteFontHover'>
-                                <p className='global_accentFont'>Contact</p>
+                            <LinkContainer to='/' className='global_whiteFontHover py-0'>
+                                <p className='global_accentFont global_smallFont'>Contact</p>
                             </LinkContainer>
                         </Col>
                     </Row>
@@ -44,11 +44,12 @@ const Footer = () => {
                             </p>
                             <p className='global_accentFont global_smallFont global_whiteFontHover'>
                                 P: 800-BISON-99 (800-247-6699)
-                            </p>
-                            <p className='global_accentFont global_smallFont global_whiteFontHover'>
+                            <br/>
+                            {/*<p className='global_accentFont global_smallFont global_whiteFontHover'>*/}
                                 P: 210-876-JETS (210-876-5387)
-                            </p>
-                            <p className='global_accentFont global_smallFont global_whiteFontHover'>
+                                <br/>
+                            {/*</p>*/}
+                            {/*<p className='global_accentFont global_smallFont global_whiteFontHover'>*/}
                                 F: 888-224-2127
                             </p>
                             <p className='global_accentFont global_smallFont global_whiteFontHover'>
@@ -77,15 +78,10 @@ const Footer = () => {
                     </Col>
                 </Row>
                 <Row xs={12}>
-                    <Col className='text-center pb-3'>
+                    <Col className='text-center pt-1 pb-3'>
                         Copyright &copy; Bison Aviation 2021
                     </Col>
                 </Row>
-                {/*<Row xs={12} className='mt-n5'>*/}
-                {/*    <Col xs={12} className='d-flex justify-content-end'>*/}
-                {/*        <ScrollToTop/>*/}
-                {/*    </Col>*/}
-                {/*</Row>*/}
 
             </Container>
         </footer>
