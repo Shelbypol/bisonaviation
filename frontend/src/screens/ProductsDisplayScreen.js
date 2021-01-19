@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import {Link} from "react-router-dom";
 import {useDispatch, useSelector} from 'react-redux'
-import {Row, Col, Button, Card} from 'react-bootstrap'
+import {Row, Col, Button, Card, Container} from 'react-bootstrap'
 import Product from '../components/Product'
 import Message from '../components/Message'
 import Loader from '../components/Loader'
@@ -12,6 +12,7 @@ import Meta from "../components/Meta";
 const ProductsDisplayScreen = ({match, history}) => {
 
     const [updateCat, setUpdateCat] = useState('');
+    const [updateManufacturer, setUpdateManufacturer] = useState('');
 
 
     const keyword = match.params.keyword;
@@ -26,11 +27,11 @@ const ProductsDisplayScreen = ({match, history}) => {
 
     useEffect(() => {
         dispatch(listProducts(keyword, pageNumber));
-    }, [dispatch, keyword, pageNumber, updateCat]);
+    }, [dispatch, keyword, pageNumber, updateCat, updateManufacturer]);
 
-
+    //  SORT CAT HANDLER
     const sortByCategoryHandler = (a) => {
-        // setUpdateClick(!updateClick);
+        setUpdateManufacturer('');
         return setUpdateCat(a)
     };
 
@@ -38,7 +39,18 @@ const ProductsDisplayScreen = ({match, history}) => {
         return setUpdateCat('')
     };
 
+    //  SORT BRAND HANDLER
+    const sortByManufacturerHandler = (a) => {
+        setUpdateCat('');
+        return setUpdateManufacturer(a)
+    };
+
+    const allManufacturerHandler = () => {
+        return setUpdateCat('')
+    };
+
     return (
+        <Container className='mx-n5'>
         <>
             <Meta title='Bison | Products'/>
 
@@ -49,7 +61,9 @@ const ProductsDisplayScreen = ({match, history}) => {
                         (<Message variant='danger'>{error}</Message>)
                         : (
                             <>
-                                <Col xs={2}>
+                                <Col xs={3}>
+
+                                    {/*     CATEGORY     */}
                                     <Row xs={12} className='global_accentFont text-center my-3 '>
                                         <h5 onClick={allCatsHandler}
                                             className='global_bisonRedTxt global_cursor'>Categories</h5>
@@ -57,7 +71,7 @@ const ProductsDisplayScreen = ({match, history}) => {
                                     {products.map(product => (
                                             <Row xs={12}
                                                  onClick={(ev) => sortByCategoryHandler(product.category, ev)}
-                                                 className='btn btn-block global_cursor p-1 d-flex justify-content-start glo'
+                                                 className='btn btn-block global_cursor d-flex justify-content-start m-0 p-0 global_bisonFadedRedHover border-right'
                                                  type='button'
                                                  key={product._id}
                                             >
@@ -66,9 +80,27 @@ const ProductsDisplayScreen = ({match, history}) => {
                                                 </h6>
                                             </Row>
                                     ))}
+
+                                    {/*     MANUFACTURER    */}
+                                    <Row xs={12} className='global_accentFont text-center my-3 '>
+                                        <h5 onClick={allManufacturerHandler}
+                                            className='global_bisonRedTxt global_cursor'>Manufacturer</h5>
+                                    </Row>
+                                    {products.map(product => (
+                                        <Row xs={12}
+                                             onClick={(ev) => sortByManufacturerHandler(product.brand, ev)}
+                                             className='btn btn-block global_cursor d-flex justify-content-start m-0 p-0 global_bisonFadedRedHover border-right'
+                                             type='button'
+                                             key={product._id}
+                                        >
+                                            <h6>
+                                                {product.brand}
+                                            </h6>
+                                        </Row>
+                                    ))}
                                 </Col>
 
-                                <Col xs={10}>
+                                <Col xs={9}>
                                     <Row xs={12}
                                          className='global_accentFont my-3 d-flex justify-content-end position-sticky-top'>
                                         <h5 className='global_bisonRedTxt global_cursor '>{updateCat}</h5>
@@ -76,17 +108,9 @@ const ProductsDisplayScreen = ({match, history}) => {
                                     <Paginate pages={pages} page={page} keyword={keyword ? keyword : ''}/>
 
                                     <Row xs={12} className='d-flex'>
-                                        {updateCat === '' ? (
-                                            <>
-                                                {products.map(product => (
-                                                    <Col key={product._id} sm={12} md={6} lg={3}
-                                                         className='d-flex flex-row align-items-stretch'>
-                                                        <Product product={product} history={history}
-                                                                 product_id={product._id}/>
-                                                    </Col>
-                                                ))}
-                                            </>
-                                        ) : (
+
+                                        {/*    CATEGORY     */}
+                                        {(updateCat !== '' ) && (
                                             <>
                                                 {products.filter(product => product.category === updateCat).map(filteredProduct => (
                                                     <Col key={filteredProduct._id} sm={12} md={6} lg={3}
@@ -97,6 +121,32 @@ const ProductsDisplayScreen = ({match, history}) => {
                                                 ))}
                                             </>
                                         )}
+
+                                        {(updateManufacturer !== '' ) && (
+                                            <>
+                                                {products.filter(product => product.brand === updateManufacturer).map(filteredProduct => (
+                                                    <Col key={filteredProduct._id} sm={12} md={6} lg={3}
+                                                         className='d-flex flex-row align-items-stretch'>
+                                                        <Product product={filteredProduct} history={history}
+                                                                 product_id={filteredProduct._id}/>
+                                                    </Col>
+                                                ))}
+                                            </>
+                                        )}
+
+                                        {/*     MANUFACTURER    */}
+                                        {/*{((updateManufacturer === '' && updateCat === '') || (updateManufacturer !== '' ||  )) && (*/}
+                                        {/*    <>*/}
+                                        {/*        {products.map(product => (*/}
+                                        {/*            <Col key={product._id} sm={12} md={6} lg={3}*/}
+                                        {/*                 className='d-flex flex-row align-items-stretch'>*/}
+                                        {/*                <Product product={product} history={history}*/}
+                                        {/*                         product_id={product._id}/>*/}
+                                        {/*            </Col>*/}
+                                        {/*        ))}*/}
+                                        {/*    </>*/}
+                                        {/*)}*/}
+
                                     </Row>
 
                                     <Paginate pages={pages} page={page} keyword={keyword ? keyword : ''}/>
@@ -105,6 +155,7 @@ const ProductsDisplayScreen = ({match, history}) => {
                         )}
             </Row>
         </>
+        </Container>
     )
 };
 
