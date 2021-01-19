@@ -51,12 +51,21 @@ p{
 }
 
 /*   ======   SITE COLOR   ======   */
-/*.bisonRedTxt {*/
-/*    color: rgba(90, 00, 09, 1);*/
-/*}*/
+.global_cursor:hover{
+    cursor: pointer;
+}
+
+.global_bisonRedTxt {
+    color: rgba(90, 00, 09, 1);
+}
 
 .global_bisonRedFadedBgColor {
      background-color: rgba(0, 00, 0, .1);
+}
+
+.global_bisonFadedRedHover:hover{
+    background-color: rgba(90, 00, 09, .1);
+
 }
 
 /*.global_bisonRedBg{*/
@@ -67,8 +76,20 @@ p{
 /*    color: rgba(90, 00, 09, .8);*/
 /*}*/
 
+.global_bisonRedBgWhiteHoverBgBtnRedBorder {
+    background-color: rgba(90, 00, 09, 1);
+    color: white;
+}
+
+.global_bisonRedBgWhiteHoverBgBtnRedBorder:hover {
+    background-color: white;
+    color: rgba(90, 00, 09, 1);
+    border: 1px solid rgba(90, 00, 09, 1);
+}
+
 .global_bisonRedBgWhiteHoverBgBtn {
     background-color: rgba(90, 00, 09, 1);
+    color: white;
 }
 
 .global_bisonRedBgWhiteHoverBgBtn:hover {
@@ -81,7 +102,7 @@ p{
     color: rgba(90, 00, 09, 1);
 }
 
-.global_RedFontWhiteBgBtn:hover {
+.global_RedFontWhiteBg:hover {
     background-color: rgba(90, 00, 09, 1);
     color: white;
 }

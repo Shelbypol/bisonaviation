@@ -7,7 +7,7 @@ import Product from '../models/productModel.js'
 // @access  Public
 const getProducts = asyncHandler(async (req, res) => {
 
-    const pageSize = 10;
+    const pageSize = 50;
     const page = Number(req.query.pageNumber) || 1;
 
     const keyword = req.query.keyword ? {
@@ -160,6 +160,17 @@ const getTopProducts = asyncHandler(async (req, res) => {
     res.json(products)
 });
 
+// @desc    Get products by categories
+// @route   GET /api/products/categories
+// @access  Public
+const listCategories = asyncHandler(async(req, res) => {
+   await Product.distinct('category',{},(err, products) => {
+        res.json(products)
+    })
+});
+
+
+
 
 export {
     getProducts,
@@ -168,5 +179,6 @@ export {
     createProduct,
     updateProduct,
     createProductReview,
-    getTopProducts
+    getTopProducts,
+    listCategories
 }
