@@ -103,7 +103,7 @@ const ProductsDisplayScreen = ({match, history}) => {
                                 <Col xs={9}>
                                     <Row xs={12}
                                          className='global_accentFont my-3 d-flex justify-content-end position-sticky-top'>
-                                        <h5 className='global_bisonRedTxt global_cursor '>{updateCat}</h5>
+                                        <h5 className='global_bisonRedTxt global_cursor '>{updateCat || updateManufacturer}</h5>
                                     </Row>
                                     <Paginate pages={pages} page={page} keyword={keyword ? keyword : ''}/>
 
