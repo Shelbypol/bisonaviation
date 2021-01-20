@@ -2,10 +2,10 @@ import React, {useEffect} from "react";
 import {Col, Row} from "react-bootstrap";
 import Paginate from "./Paginate";
 import Product from "./Product";
+import {listProductDetails} from "../actions/productActions";
+import {useDispatch, useSelector} from "react-redux";
 
 const ProductsDisplaySByCatMan = ({history, updateCatProp, updateManufacturerProp, keyword, pages, page, products}) => {
-
-
 
     return (
         <>
@@ -23,7 +23,7 @@ const ProductsDisplaySByCatMan = ({history, updateCatProp, updateManufacturerPro
                             <Col key={filteredProduct._id} sm={12} md={6} lg={3}
                                  className='d-flex flex-row align-items-stretch'>
                                 <Product product={filteredProduct} history={history}
-                                         product_id={filteredProduct._id}/>
+                                         />
                             </Col>
                         ))}
                     </>

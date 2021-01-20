@@ -122,7 +122,6 @@ export const payOrder = (orderId, paymentResult) => async (dispatch, getState) =
         // localStorage.removeItem('cartItems')
 
 
-
     } catch (error) {
         const message =
             error.response && error.response.data.message

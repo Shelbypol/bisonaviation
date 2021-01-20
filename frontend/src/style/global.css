@@ -122,6 +122,18 @@ p{
     background-color: #fff;
 }
 
+.global_heart-whiteBgRedHover{
+    color: rgba(90, 00, 09, 1);
+    /*background-color: white;*/
+}
+
+.global_heart-whiteBgRedHover:hover{
+    color: rgba(90, 00, 09, 1);
+    /*background-color: white;*/
+}
+
+
+
 /*   ======    HORIZONTAL GRADIENTS   ======  */
 .global_right-gradient{
     background-image: linear-gradient(to right, rgba(90, 00, 09, 1), #fff);
