@@ -15,8 +15,14 @@ const Product = ({product, history, match}) => {
     // const productDetails = useSelector(state => state.productDetails);
     // const{ product } = productDetails;
 
+        const cart = useSelector(state => state.cart);
+        const { cartItems } = cart;
+
+
     useEffect(() => {
-        // dispatch(listProductDetails())
+       if(cartItems._id === product._id){
+           setActiveHeart(true)
+       }
     }, [dispatch, activeHeart, match]);
 
 
@@ -48,6 +54,7 @@ const Product = ({product, history, match}) => {
             <Card.Body>
                     <Card.Text as='div'>
                         {activeHeart ? (
+                        // {cartItems.product === (product._id) ? (
                             <p onClick={unlike} className='global_cursor global_bisonRedTxt'>saved</p>
                             //     <i onClick={like} className='fal fa-heart' style={{backgroundColor: 'rbga(90, 00, 09, 1)'}}> </i>
                         ) : (

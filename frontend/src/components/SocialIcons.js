@@ -15,7 +15,7 @@ const SocialIcons = ({socialClassName, cartClassName, contactClassName, facebook
                 <LinkContainer className={cartClassName} to='/cart'>
                     <Nav.Link>
                         <span className={'SocialIcons_socialIcons'}>
-                            <i className="m-auto far fa-cart-arrow-down animations_icon-spin"> </i>
+                            <i className="m-auto fal fa-heart animations_icon-spin"> </i>
                         </span>
                     </Nav.Link>
                 </LinkContainer>
