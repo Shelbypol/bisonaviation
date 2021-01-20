@@ -4,6 +4,7 @@ import {Card, Button} from 'react-bootstrap'
 import {useDispatch, useSelector} from "react-redux";
 import {addToCart, removeFromCart} from "../actions/cartActions";
 import {listProductDetails} from "../actions/productActions";
+import {createOrder} from "../actions/orderActions";
 
 
 const Product = ({product, history, match}) => {
@@ -18,6 +19,8 @@ const Product = ({product, history, match}) => {
         const cart = useSelector(state => state.cart);
         const { cartItems } = cart;
 
+    const orderCreate = useSelector(state => state.orderCreate);
+    const { order, success, error } = orderCreate;
 
     useEffect(() => {
        if(cartItems._id === product._id){
@@ -28,7 +31,8 @@ const Product = ({product, history, match}) => {
 
     const like = () => {
         setActiveHeart(!activeHeart);
-        dispatch(addToCart(product._id, 1))
+        dispatch(addToCart(product._id, 1));
+        placeOrderHandler();
         // history.push(`/cart/${id}?qty=1`);
     };
 
@@ -36,6 +40,19 @@ const Product = ({product, history, match}) => {
         setActiveHeart(!activeHeart);
         dispatch(removeFromCart(product._id))
         // history.push(`/cart/${id}?qty=1`);
+    };
+
+    const placeOrderHandler = () => {
+
+        dispatch(createOrder({
+            orderItems: cart.cartItems,
+            shippingAddress: cart.shippingAddress,
+            paymentMethod: cart.paymentMethod,
+            itemsPrice: cart.itemsPrice,
+            shippingPrice: cart.shippingPrice,
+            taxPrice: cart.taxPrice,
+            totalPrice: cart.totalPrice
+        }))
     };
 
     // const sentenceCapitalization = (mySentence) => {
