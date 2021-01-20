@@ -5,7 +5,7 @@ import Product from "./Product";
 import {listProductDetails} from "../actions/productActions";
 import {useDispatch, useSelector} from "react-redux";
 
-const ProductsDisplaySByCatMan = ({history, updateCatProp, updateManufacturerProp, keyword, pages, page, products}) => {
+const ProductsDisplaySByCatMan = ({history, match, updateCatProp, updateManufacturerProp, keyword, pages, page, products}) => {
 
     return (
         <>
@@ -22,7 +22,7 @@ const ProductsDisplaySByCatMan = ({history, updateCatProp, updateManufacturerPro
                         {products.filter(product => product.category === updateCatProp).map(filteredProduct => (
                             <Col key={filteredProduct._id} sm={12} md={6} lg={3}
                                  className='d-flex flex-row align-items-stretch'>
-                                <Product product={filteredProduct} history={history}
+                                <Product product={filteredProduct} history={history} match={match}
                                          />
                             </Col>
                         ))}
@@ -34,7 +34,7 @@ const ProductsDisplaySByCatMan = ({history, updateCatProp, updateManufacturerPro
                         {products.filter(product => product.brand === updateManufacturerProp).map(filteredProduct => (
                             <Col key={filteredProduct._id} sm={12} md={6} lg={3}
                                  className='d-flex flex-row align-items-stretch'>
-                                <Product product={filteredProduct} history={history}
+                                <Product product={filteredProduct} history={history} match={match}
                                          product_id={filteredProduct._id}/>
                             </Col>
                         ))}
@@ -46,7 +46,7 @@ const ProductsDisplaySByCatMan = ({history, updateCatProp, updateManufacturerPro
                         {products.map(product => (
                             <Col key={product._id} sm={12} md={6} lg={3}
                                  className='d-flex flex-row align-items-stretch'>
-                                <Product product={product} history={history}
+                                <Product product={product} history={history} match={match}
                                          product_id={product._id}/>
                             </Col>
                         ))}
