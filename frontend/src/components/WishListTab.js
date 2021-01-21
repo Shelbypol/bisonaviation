@@ -1,8 +1,7 @@
 import React, {useState, useEffect, useRef} from 'react';
 import {CSSTransition} from 'react-transition-group';
-import {Dropdown} from "react-bootstrap";
+import WishListTabInfo from "./WishListTabInfo";
 import '../style/WishListTab.css'
-// import {Navbar} from "react-bootstrap";
 
 const WishList = () => {
     return (
@@ -31,7 +30,8 @@ const NavItem = (props) => {
 
     return (
         <li className="wishList-nav-item">
-            <a href="#" className="wishList-icon-button" onClick={() => setOpen(!open)}>
+            {/*<a href="#" className="wishList-icon-button" onClick={() => setOpen(!open)}>*/}
+            <a href="#" onClick={() => setOpen(!open)}>
                 {props.icon}
             </a>
 
@@ -75,23 +75,18 @@ const DropdownMenu = () => {
                 unmountOnExit
                 onEnter={calcHeight}>
                 <div className="wishList-menu">
-                    <DropdownItem>My Profile</DropdownItem>
-                    <DropdownItem
-                        leftIcon={<i className='fa fa-long-arrow-left'> </i>}
-                        rightIcon={<i className='fa fa-long-arrow-right'> </i>}
-                        goToMenu="settings">
-                        Settings
-                    </DropdownItem>
-                    <DropdownItem
-                        leftIcon="🦧"
-                        rightIcon={<i className='fa fa-plane-departure'> </i>}
-                        goToMenu="animals">
-                        Animals
+                    <DropdownItem>
+                        <WishListTabInfo />
                     </DropdownItem>
 
+                    {/*<DropdownItem*/}
+                    {/*    leftIcon={<i className='fa fa-long-arrow-left'> </i>}*/}
+                    {/*    rightIcon={<i className='fa fa-long-arrow-right'> </i>}*/}
+                    {/*    goToMenu="settings">*/}
+                    {/*    Settings*/}
+                    {/*</DropdownItem>*/}
                 </div>
             </CSSTransition>
-
         </div>
     );
 };
