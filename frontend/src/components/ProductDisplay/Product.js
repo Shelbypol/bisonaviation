@@ -2,9 +2,9 @@ import React, {useEffect, useState} from 'react';
 import {Link} from 'react-router-dom'
 import {Card, Button} from 'react-bootstrap'
 import {useDispatch, useSelector} from "react-redux";
-import {addToCart, removeFromCart} from "../actions/cartActions";
-import {listProductDetails} from "../actions/productActions";
-import {createOrder} from "../actions/orderActions";
+import {addToCart, removeFromCart} from "../../actions/cartActions";
+import {listProductDetails} from "../../actions/productActions";
+import {createOrder} from "../../actions/orderActions";
 
 
 const Product = ({product, history, match}) => {

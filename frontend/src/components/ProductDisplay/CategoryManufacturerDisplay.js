@@ -1,10 +1,10 @@
 import React, {useEffect, useState} from "react";
 import {Col, Row} from "react-bootstrap";
 import {useSelector, useDispatch} from "react-redux";
-import {listProductDetails, listProducts} from "../actions/productActions";
+import {listProductDetails, listProducts} from "../../actions/productActions";
 import ProductDisplayByCatMan from "./ProductDisplayByCatMan";
-import Loader from "./Loader";
-import Message from "./Message";
+import Loader from "../Loader";
+import Message from "../Message";
 
 const CategoryManufacturerDisplay = ({match, history}) => {
 

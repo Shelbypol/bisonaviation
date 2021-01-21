@@ -21,7 +21,7 @@ import MultiCarouselPage from "../components/MulitCarouselPage";
 import ProductCarousel from "../components/ProductCarousel";
 import JumboCardImgs from "../components/JumboCardImgs";
 import '../style/animations.css'
-import SummaryNav from "../components/SummaryNav";
+import SummaryNav from "../components/Headers-Nav-Footer/SummaryNav";
 import TestimonialCarousel from "../components/TestimonialCarousel";
 import ScrollToTop from "../components/ScrollToTop";
 

@@ -2,10 +2,10 @@ import React, {useState, useRef, useEffect} from "react";
 import {Button, Container, Nav, Navbar, NavDropdown} from "react-bootstrap";
 import {LinkContainer} from "react-router-bootstrap";
 import {useDispatch, useSelector} from "react-redux";
-import {CART_RESET} from "../constants/cartConstants";
-import {logout} from "../actions/userActions";
+import {CART_RESET} from "../../constants/cartConstants";
+import {logout} from "../../actions/userActions";
 import {Route} from "react-router-dom";
-import SearchBox from "./SearchBox";
+import SearchBox from "../SearchBox";
 
 const StickyHeader = () => {
 

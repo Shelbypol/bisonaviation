@@ -1,9 +1,9 @@
 import React, {useEffect} from 'react'
 import {Row, Container} from 'react-bootstrap'
-import Meta from "../components/Meta";
-import CategoryManufacturerDisplay from "../components/CategoryManufacturerDisplay";
+import Meta from "../../components/Meta";
+import CategoryManufacturerDisplay from "../../components/ProductDisplay/CategoryManufacturerDisplay";
 import {useDispatch, useSelector} from "react-redux";
-import {listMyOrders} from "../actions/orderActions";
+import {listMyOrders} from "../../actions/orderActions";
 
 const ProductsDisplayScreen = ({match, history}) => {
 

@@ -1,8 +1,8 @@
 import React, {useEffect} from "react";
 import {Col, Row} from "react-bootstrap";
-import Paginate from "./Paginate";
+import Paginate from "../Paginate";
 import Product from "./Product";
-import {listProductDetails} from "../actions/productActions";
+import {listProductDetails} from "../../actions/productActions";
 import {useDispatch, useSelector} from "react-redux";
 
 const ProductsDisplaySByCatMan = ({history, match, updateCatProp, updateManufacturerProp, keyword, pages, page, products}) => {
