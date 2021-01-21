@@ -10,7 +10,7 @@ const WishList = () => {
 
             <NavItem icon={
                 <span className='SocialIcons_socialIcons'>
-                   <i className="m-auto fal fa-heart"> </i>
+                   <i className="m-auto fal fa-heart global_whiteFontRedFontHover"> </i>
                  </span>
             }>
                 <DropdownMenu> </DropdownMenu>

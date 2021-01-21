@@ -57,7 +57,7 @@ const SocialIcons = ({socialClassName, cartClassName, contactClassName, facebook
                     </Nav.Link>
                 </LinkContainer>
 
-                <WishListTab />
+                <WishListTab/>
 
             </Nav>
         </>

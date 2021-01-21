@@ -6,6 +6,7 @@ import {CART_RESET} from "../../constants/cartConstants";
 import {logout} from "../../actions/userActions";
 import {Route} from "react-router-dom";
 import SearchBox from "../SearchBox";
+import WishListTab from "../WishListTab";
 
 const StickyHeader = () => {
 

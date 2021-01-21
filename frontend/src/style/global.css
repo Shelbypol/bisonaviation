@@ -132,6 +132,13 @@ p{
     /*background-color: white;*/
 }
 
+.global_whiteFontRedFontHover{
+    color: #fff;
+}
+
+.global_whiteFontRedFontHover:hover{
+    color: rgba(90, 00, 09, 1);
+}
 
 
 /*   ======    HORIZONTAL GRADIENTS   ======  */
