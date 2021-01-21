@@ -77,6 +77,8 @@ a {
     position: absolute;
     top: 58px;
     width: 150%;
+    height: 75vh;
+    max-height: 75vh;
     transform: translateX(-45%);
     background-color: #fff;
     border: var(--border);
@@ -87,12 +89,13 @@ a {
 }
 
 .wishList-menu {
+    height: 75vh;
+    max-height: 75vh;
     width: 100%;
-    height: auto;
 }
 
 .wishList-menu-item {
-    height: auto;
+    /*height: auto;*/
     /*display: flex;*/
     /*align-items: center;*/
     border-radius: var(--border-radius);
