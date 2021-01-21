@@ -26,81 +26,53 @@ const addWishListItems = asyncHandler(async (req, res) => {
     }
 });
 
-// @desc    Get order by ID
-// @route   GET /api/order/:id
+// @desc    Get wishList by ID
+// @route   GET /api/wishList/:id
 // @access  Private
-const getOrderById = asyncHandler(async (req, res) => {
-    const order = await Order.findById(req.params.id).populate('user', 'name email');
-    if(order){
-        res.json(order)
+const getWishListById = asyncHandler(async (req, res) => {
+    const wishList = await WishList.findById(req.params.id).populate('user', 'name email');
+    if(wishList){
+        res.json(wishList)
     } else {
         res.status(404);
-        throw new Error('Order not found')
+        throw new Error('WishList not found')
     }
 });
 
-// @desc    Update order to paid
-// @route   GET /api/orders/:id/pay
+// @desc    Update wishList to emailed
+// @route   GET /api/wishList/:id/email
 // @access  Private
-const updateOrderToPaid = asyncHandler(async (req, res) => {
-    const order = await Order.findById(req.params.id);
+const updateWishListToEmailed = asyncHandler(async (req, res) => {
+    const wishList = await WishList.findById(req.params.id);
 
-    if(order){
-        order.isPaid = true;
-        order.paidAt = Date.now();
-        order.paymentResult = {
-            id: req.body.id,
-            status: req.body.status,
-            update_time: req.body.update_time,
-            email_address: req.body.payer.email_address
-        };
+    if(wishList){
+        wishList.isEmailed = true;
+        wishList.EmailedAt = Date.now();
 
-        const updatedOrder = await order.save();
-        res.json(updatedOrder);
+        const updatedWishList = await wishList.save();
+        res.json(updatedWishList);
 
     }else{
         res.status(404);
-        throw new Error('Order not found')
+        throw new Error('WishList not found')
     }
-
 });
 
 
-// @desc    Update order to delivered
-// @route   GET /api/orders/:id/deliver
-// @access  Private/Admin
-const updateOrderToDelivered = asyncHandler(async (req, res) => {
-    const order = await Order.findById(req.params.id);
-
-    if(order){
-        order.isDelivered = true;
-        order.deliveredAt = Date.now();
-
-        const updatedOrder = await order.save();
-
-        res.json(updatedOrder);
-    }else{
-        res.status(404);
-        throw new Error('Order not found')
-    }
-
-});
-
-
-// @desc    GET logged in user order
-// @route   GET /api/orders/myorders
+// @desc    GET logged in user wishList
+// @route   GET /api/wishList/myList
 // @access  Private
-const getMyOrders = asyncHandler(async (req, res) => {
-    const orders = await Order.find({ user: req.user._id });
-    res.json(orders)
+const getMyWishLists = asyncHandler(async (req, res) => {
+    const wishLists = await WishList.find({ user: req.user._id });
+    res.json(wishLists)
 });
 
-// @desc    GET all orders
-// @route   GET /api/orders
+// @desc    GET all wishLists
+// @route   GET /api/wishLists
 // @access  Private/Admin
-const getOrders = asyncHandler(async (req, res) => {
-    const orders = await Order.find({ }).populate('user', 'id name');
-    res.json(orders)
+const getWishLists = asyncHandler(async (req, res) => {
+    const wishLists = await WishList.find({ }).populate('user', 'id name');
+    res.json(wishLists)
 });
 
-export { addOrderItems, getOrderById, updateOrderToPaid, getMyOrders, getOrders, updateOrderToDelivered }
+export { addWishListItems, getWishListById, updateWishListToEmailed, getMyWishLists, getWishLists }
