@@ -1,39 +1,28 @@
 import asyncHandler from 'express-async-handler'
-import Order from "../models/orderModel.js";
+import WishList from "../models/wishListModel";
 
 
-// @desc    Create new order
-// @route   POST /api/order
+// @desc    Create new wishList
+// @route   POST /api/wishList
 // @access  Private
-const addOrderItems = asyncHandler(async (req, res) => {
+const addWishListItems = asyncHandler(async (req, res) => {
     const {
-        orderItems,
-        shippingAddress,
-        paymentMethod,
-        itemsPrice,
-        taxPrice,
-        shippingPrice,
-        totalPrice
+        wishListItems,
+
     } = req.body;
 
-    if(orderItems && orderItems.length === 0 ){
+    if(wishListItems && wishListItems.length === 0 ){
         res.status(400);
-        throw new Error('No order items');
+        throw new Error('No items in wish list');
     }else {
-        const order = new Order ({
-            orderItems,
+        const wishList = new WishList ({
+            wishListItems,
             user: req.user._id,
-            shippingAddress,
-            paymentMethod,
-            itemsPrice,
-            taxPrice,
-            shippingPrice,
-            totalPrice
         });
 
-        const createdOrder = await order.save();
+        const createdWishList = await wishList.save();
 
-        res.status(201).json(createdOrder);
+        res.status(201).json(createdWishList);
     }
 });
 
@@ -96,6 +85,7 @@ const updateOrderToDelivered = asyncHandler(async (req, res) => {
     }
 
 });
+
 
 // @desc    GET logged in user order
 // @route   GET /api/orders/myorders

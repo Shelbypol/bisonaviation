@@ -32,7 +32,6 @@ const Product = ({product, history, match}) => {
     const like = () => {
         setActiveHeart(!activeHeart);
         dispatch(addToCart(product._id, 1));
-        placeOrderHandler();
         // history.push(`/cart/${id}?qty=1`);
     };
 
@@ -42,18 +41,6 @@ const Product = ({product, history, match}) => {
         // history.push(`/cart/${id}?qty=1`);
     };
 
-    const placeOrderHandler = () => {
-
-        dispatch(createOrder({
-            orderItems: cart.cartItems,
-            shippingAddress: cart.shippingAddress,
-            paymentMethod: cart.paymentMethod,
-            itemsPrice: cart.itemsPrice,
-            shippingPrice: cart.shippingPrice,
-            taxPrice: cart.taxPrice,
-            totalPrice: cart.totalPrice
-        }))
-    };
 
     // const sentenceCapitalization = (mySentence) => {
     //     const words = mySentence.split(" ");
