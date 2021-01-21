@@ -18,8 +18,6 @@ const SocialIcons = ({socialClassName, cartClassName, contactClassName, facebook
                 {/*        <span className={'SocialIcons_socialIcons'}>*/}
                 {/*            <i className="m-auto fal fa-heart animations_icon-spin"> </i>*/}
                 {/*        </span>*/}
-
-                       <WishListTab/>
                 {/*    </Nav.Link>*/}
                 {/*</LinkContainer>*/}
 
@@ -58,6 +56,8 @@ const SocialIcons = ({socialClassName, cartClassName, contactClassName, facebook
                         </span>
                     </Nav.Link>
                 </LinkContainer>
+
+                <WishListTab/>
 
             </Nav>
         </>
