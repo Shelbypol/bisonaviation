@@ -25,8 +25,8 @@ a {
 .wishList-navbar {
     /*height: var(--nav-size);*/
     background-color: #000;
-    padding: 0 1rem;
-    border-bottom: var(--border);
+    padding: 0;
+    /*border-bottom: var(--border);*/
 }
 
 /* <ul> */
