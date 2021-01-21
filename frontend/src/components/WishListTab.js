@@ -2,10 +2,12 @@ import React, {useState, useEffect, useRef} from 'react';
 import {CSSTransition} from 'react-transition-group';
 import WishListTabInfo from "./WishListTabInfo";
 import '../style/WishListTab.css'
+import {Button, Row} from "react-bootstrap";
 
 const WishList = () => {
     return (
         <Navbar className='m-0 wishList'>
+
             <NavItem icon={
                 <span className='SocialIcons_socialIcons'>
                    <i className="m-auto fal fa-heart"> </i>
@@ -75,6 +77,7 @@ const DropdownMenu = () => {
                 unmountOnExit
                 onEnter={calcHeight}>
                 <div className="wishList-menu">
+                    {/*<DropdownItem><Button onClick={}>X</Button> </DropdownItem>*/}
                     <DropdownItem>
                         <WishListTabInfo />
                     </DropdownItem>
