@@ -9,7 +9,7 @@ import products from './data/products.js'
 import productRoutes from './routes/productRoutes.js'
 import userRoutes from './routes/userRoutes.js'
 import orderRoutes from './routes/orderRoutes.js'
-import wishListRoutes from './routes/wishListRoutes'
+import wishListRoutes from './routes/wishListRoutes.js'
 import uploadRoutes from './routes/uploadRoutes.js'
 
 dotenv.config();

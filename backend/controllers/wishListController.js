@@ -1,5 +1,5 @@
 import asyncHandler from 'express-async-handler'
-import WishList from "../models/wishListModel";
+import WishList from "../models/wishListModel.js";
 
 
 // @desc    Create new wishList

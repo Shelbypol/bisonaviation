@@ -6,7 +6,7 @@ import {
     updateWishListToEmailed,
     getMyWishLists,
     getWishLists
-} from "../controllers/wishListController";
+} from "../controllers/wishListController.js";
 import { protect, admin } from '../middleware/authMiddleware.js'
 
 
