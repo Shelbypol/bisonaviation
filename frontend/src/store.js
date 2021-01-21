@@ -28,6 +28,13 @@ import {
     orderListReducer,
     orderDeliverReducer
 } from "./reducers/orderReducers";
+import {
+    wishListCreateReducers,
+    wishListDetailsReducers,
+    wishListEmailReducer,
+    wishListMyReducer,
+    wishListReducer
+} from "./reducers/wishListReducers";
 
 // product list part of the state
 const reducer = combineReducers({
@@ -52,7 +59,13 @@ const reducer = combineReducers({
     orderPay: orderPayReducers,
     orderDeliver: orderDeliverReducer,
     orderListMy: orderListMyReducer,
-    orderList: orderListReducer
+    orderList: orderListReducer,
+
+    wishListCreate: wishListCreateReducers,
+    wishListDetails: wishListDetailsReducers,
+    wishListEmail: wishListEmailReducer,
+    wishListMy: wishListMyReducer,
+    wishList: wishListReducer
 });
 
 // LOCAL STORAGE cart items & users
