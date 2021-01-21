@@ -1,6 +1,7 @@
 import React from "react";
 import {Nav, Navbar} from "react-bootstrap";
 import {LinkContainer} from "react-router-bootstrap";
+import WishListTab from "./WishListTab";
 import '../style/SocialIcons.css'
 
 
@@ -12,13 +13,15 @@ const SocialIcons = ({socialClassName, cartClassName, contactClassName, facebook
             <Nav className={socialClassName} >
 
                 {/*  WISH LIST  */}
-                <LinkContainer className={cartClassName} to='/cart'>
-                    <Nav.Link>
-                        <span className={'SocialIcons_socialIcons'}>
-                            <i className="m-auto fal fa-heart animations_icon-spin"> </i>
-                        </span>
-                    </Nav.Link>
-                </LinkContainer>
+                {/*<LinkContainer className={cartClassName} to='/cart'>*/}
+                {/*    <Nav.Link>*/}
+                {/*        <span className={'SocialIcons_socialIcons'}>*/}
+                {/*            <i className="m-auto fal fa-heart animations_icon-spin"> </i>*/}
+                {/*        </span>*/}
+
+                       <WishListTab/>
+                {/*    </Nav.Link>*/}
+                {/*</LinkContainer>*/}
 
                 {/*  CONTACT */}
                 <LinkContainer className={contactClassName} to='/'>
