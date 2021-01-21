@@ -7,8 +7,8 @@ const WishList = () => {
     return (
         <Navbar className='m-0'>
             <NavItem icon={
-                <span className={'SocialIcons_socialIcons'}>
-                   <i className="m-auto fal fa-heart global_bisonRedTxt"> </i>
+                <span className='SocialIcons_socialIcons'>
+                   <i className="m-auto fal fa-heart"> </i>
                  </span>
             }>
                 <DropdownMenu> </DropdownMenu>

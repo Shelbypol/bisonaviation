@@ -5,6 +5,7 @@ import {Row, Col, ListGroup, Image, Form, Button, Card} from 'react-bootstrap'
 import Message from '../components/Message'
 import {addToCart, removeFromCart} from '../actions/cartActions'
 import {createOrder} from "../actions/orderActions";
+import {CART_RESET} from "../constants/cartConstants";
 
 
 // match == id, location == get a query string '?qty', history == used to redirect
@@ -17,8 +18,8 @@ const WishListTabInfo = ({dropdownItemProp}) => {
     //dispatch because it's an action
     const dispatch = useDispatch();
 
-    // const userLogin = useSelector(state => state.userLogin);
-    // const { userInfo } = userLogin;
+    const userLogin = useSelector(state => state.userLogin);
+    const {userInfo} = userLogin;
 
     // use Selector hook to get items from state
     const cart = useSelector(state => state.cart);
@@ -46,9 +47,12 @@ const WishListTabInfo = ({dropdownItemProp}) => {
         }))
     };
 
-    // HANDLER
-    const removeFromCartHandler = (id) => {
+    const removeFromWishListHandler = (id) => {
         dispatch(removeFromCart(id))
+    };
+
+    const clearWishList = () => {
+        dispatch({ type: CART_RESET });
     };
 
     //history redirect to shipping if logged in in
@@ -64,17 +68,37 @@ const WishListTabInfo = ({dropdownItemProp}) => {
 
 
     return (
-        <Row xs={12}>
-            <Col md={12}>
-                {/*<h1>Shopping Cart</h1>*/}
-                {cartItems.length === 0
-                    ? (<Message>Your wishlist is empty <Link to={'/'}>Go Back</Link></Message>)
-                    : (<>
-                            {/*<LinkContainer to={`/`}>*/}
-                            {/*    <Button variant='dark' className='btn-sm'>*/}
-                            {/*        Continue Shopping*/}
-                            {/*    </Button>*/}
-                            {/*</LinkContainer>*/}
+        <>
+            <Row xs={12} className='border-bottom'>
+                <Col xs={4} className='border-right global_cursor global_bisonFadedRedHover rounded p-auto text-center d-flex align-items-center justify-content-center'>
+                    {userInfo ? (
+                        <h6>Save wishlist to profile</h6>
+                    ) : (
+                        <Link to='/login'>
+                            <h6><strong className='global_bisonRedTxt global_cursor'>sign in</strong> to save
+                            </h6>
+                        </Link>
+                    )}
+                </Col>
+                <Col xs={4} className='border-right global_cursor global_bisonFadedRedHover rounded p-auto d-flex align-items-center justify-content-center'>
+                    <h6>Inquire</h6>
+                </Col>
+                <Col xs={4} className='global_cursor global_bisonFadedRedHover p-auto text-center d-flex align-items-center justify-content-center'>
+                    <h6 onClick={clearWishList}>clear list</h6>
+                </Col>
+            </Row>
+
+            <Row xs={12} className='mt-2'>
+                <Col md={12}>
+                    {/*<h1>Shopping Cart</h1>*/}
+                    {cartItems.length === 0
+                        ? (<p className='mt-5 text-center'>Your wishlist is empty</p>)
+                        : (<>
+                                {/*<LinkContainer to={`/`}>*/}
+                                {/*    <Button variant='dark' className='btn-sm'>*/}
+                                {/*        Continue Shopping*/}
+                                {/*    </Button>*/}
+                                {/*</LinkContainer>*/}
 
                                 <ListGroup variant='flush'>
                                     {cartItems.map(item => (
@@ -101,7 +125,7 @@ const WishListTabInfo = ({dropdownItemProp}) => {
                                                 {/*</Col>*/}
                                                 <Col className='my-auto' md={2}>
                                                     <Button type='button' variant='light'
-                                                            onClick={() => removeFromCartHandler(item.product)}>
+                                                            onClick={() => removeFromWishListHandler(item.product)}>
                                                         <i className='fas fa-trash'> </i>
                                                     </Button>
                                                 </Col>
@@ -109,12 +133,13 @@ const WishListTabInfo = ({dropdownItemProp}) => {
                                         </ListGroup.Item>
                                     ))}
                                 </ListGroup>
-                        </>
-                    )
-                }
-            </Col>
+                            </>
+                        )
+                    }
+                </Col>
 
-        </Row>
+            </Row>
+        </>
     )
 };
 

@@ -95,9 +95,6 @@ a {
 }
 
 .wishList-menu-item {
-    /*height: auto;*/
-    /*display: flex;*/
-    /*align-items: center;*/
     border-radius: var(--border-radius);
     transition: background var(--speed);
     padding: 0.5rem;
