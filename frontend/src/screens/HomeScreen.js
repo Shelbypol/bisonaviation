@@ -21,7 +21,7 @@ import MultiCarouselPage from "../components/MulitCarouselPage";
 import ProductCarousel from "../components/ProductCarousel";
 import JumboCardImgs from "../components/JumboCardImgs";
 import '../style/animations.css'
-import SummaryNav from "../components/SummaryNav";
+import SummaryNav from "../components/Headers-Nav-Footer/SummaryNav";
 import TestimonialCarousel from "../components/TestimonialCarousel";
 import ScrollToTop from "../components/ScrollToTop";
 
@@ -66,7 +66,8 @@ const HomeScreen = () => {
 
             {/*<main className='mx-auto'>*/}
             {/*  =============   ICONS ROW - DESKTOP  =============== */}
-            <Container className='mb-5 pt-3 pb-5'>
+            {/*<Container className='mb-5 pt-3 pb-5'>*/}
+            <Container style={{marginTop: '15vh', marginBottom: '25vh'}}>
                 <Row>
                     <Col xs={12} md={6} className=''>
                         <Row>
@@ -111,7 +112,7 @@ const HomeScreen = () => {
             {/*</main>*/}
 
             {/*  =============  SUMMARY NAV  =============  */}
-            <Container style={{marginTop: '10vh'}}>
+            <Container style={{marginTop: '25vh', marginBottom: '25vh'}}>
                 <SummaryNav
                     showTag={true}
                     title1={'GARMIN DEALER'}
@@ -127,8 +128,8 @@ const HomeScreen = () => {
 
 
             {/*  =============  WHY BISON  =============  */}
-            <main className='mx-auto' style={{marginTop: '25vh'}}>
-                <Container>
+            {/*<main className='mx-auto' style={{marginTop: '25vh'}}>*/}
+                <Container  className='mx-auto' style={{marginTop: '25vh', marginBottom: '25vh'}}>
                     <JumboCardImgAndText
                         xsRow={12}
                         lgImgCol={4}
@@ -148,10 +149,10 @@ const HomeScreen = () => {
                         paragraph={'Bison Aviation is an FAA certificated Part 145 Repair Station serving the general aviation community. Founded by an avid general aviation pilot and fellow aircraft owner, we operate with the unique perspective of an organization which is intimately familiar not only with the world of professional aircraft maintenance, but also with the world of aircraft ownership and operation. We know that our customers rely on us to provide them with an honest and frank assessment of the condition of their aircraft, and we are honored to accept that charge.'}
                     />
                 </Container>
-            </main>
+            {/*</main>*/}
 
             {/*   =============   GARMIN SECTION   =============    */}
-            <Container className='mt-lg-0 pt-lg-0 mt-sm-5 pt-sm-5 pt-5 mb-5 pb-5'>
+            <Container style={{marginTop: '25vh', marginBottom: '25vh'}}>
                 <Row xs={12}>
                     <Col className='d-flex justify-content-center'>
                         <h1 className='flag red global_accentFont shadow'>&nbsp; &nbsp; NEW! &nbsp; &nbsp;   </h1>
@@ -162,7 +163,7 @@ const HomeScreen = () => {
             </Container>
 
             {/*   =============   AVIONICS SECTION   =============    */}
-            <Container className='mt-5 '>
+            <Container style={{marginTop: '25vh', marginBottom: '25vh'}}>
                 <Row xs={12}>
                     <Col className='d-flex justify-content-center'>
                         <h1>Avionics</h1>
@@ -236,12 +237,12 @@ const HomeScreen = () => {
             </Container>
 
             {/*   =============   TESTIMONIAL CAROUSEL   =============   */}
-            <Container style={{marginTop: '20vh'}} className='global_bisonRedFadedBgColor'>
+            <Container style={{marginTop: '25vh', marginBottom: '25vh'}} className='global_bisonRedFadedBgColor'>
                 <TestimonialCarousel/>
             </Container>
 
             {/*   =============   MAINTENANCE SECTION   =============   */}
-            <Container style={{marginTop: '20vh'}} >
+            <Container style={{marginTop: '25vh', marginBottom: '25vh'}} >
                 <h1>Maintenance</h1>
                 <Row xs={12} className='d-flex justify-content-end ml-3'>
                     <Col xs={6}>
@@ -338,7 +339,7 @@ const HomeScreen = () => {
                 </Row>
             </Container>
 
-            <Container style={{marginTop: '20vh'}}>
+            <Container style={{marginTop: '25vh', marginBottom: '25vh'}}>
                 <JumboCardImgAndText
                     // rowStyle={{marginTop: '20vh'}}
                     xsRow={12}

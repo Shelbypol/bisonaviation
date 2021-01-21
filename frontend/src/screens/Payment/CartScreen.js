@@ -2,9 +2,11 @@ import React, { useEffect } from 'react'
 import {Link} from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { Row, Col, ListGroup, Image, Form, Button, Card } from 'react-bootstrap'
-import Message from '../components/Message'
-import { addToCart, removeFromCart } from '../actions/cartActions'
+import Message from '../../components/Message'
+import { addToCart, removeFromCart } from '../../actions/cartActions'
 import {LinkContainer} from "react-router-bootstrap";
+import {createOrder} from "../../actions/orderActions";
+import {CART_RESET} from "../../constants/cartConstants";
 
 // match == id, location == get a query string '?qty', history == used to redirect
 const CartScreen = ({ match, location, history }) => {
@@ -16,15 +18,34 @@ const CartScreen = ({ match, location, history }) => {
     //dispatch because it's an action
     const dispatch = useDispatch();
 
+    const userLogin = useSelector(state => state.userLogin);
+    const { userInfo } = userLogin;
+
     // use Selector hook to get items from state
     const cart = useSelector(state => state.cart);
     const { cartItems } = cart;
 
     useEffect(() => {
+        // if(userInfo){
+        //     placeOrderHandler()
+        // }
         if(productId){
             dispatch(addToCart(productId, qty))
         }
     }, [dispatch, productId, qty]);
+
+    const placeOrderHandler = () => {
+
+        dispatch(createOrder({
+            orderItems: cart.cartItems,
+            // shippingAddress: cart.shippingAddress,
+            // paymentMethod: cart.paymentMethod,
+            // itemsPrice: cart.itemsPrice,
+            // shippingPrice: cart.shippingPrice,
+            // taxPrice: cart.taxPrice,
+            // totalPrice: cart.totalPrice
+        }))
+    };
 
     // HANDLER
     const removeFromCartHandler = (id) => {
@@ -32,8 +53,14 @@ const CartScreen = ({ match, location, history }) => {
     };
 
     //history redirect to shipping if logged in in
-    const checkoutHandler = () => {
-        history.push('/login?redirect=shipping')
+    const wishlistHandler = () => {
+        if(!userInfo){
+            history.push('/login')
+        // history.push('/login?redirect=shipping')
+        } else {
+            placeOrderHandler();
+
+        }
     };
 
 
@@ -73,7 +100,7 @@ const CartScreen = ({ match, location, history }) => {
                                             </Col>
                                             <Col md={2}>
                                                 <Button type='button' variant='light' onClick={() => removeFromCartHandler(item.product)}>
-                                                    <i className='fas fa-trash'></i>
+                                                    <i className='fas fa-trash'> </i>
                                                 </Button>
                                             </Col>
                                         </Row>
@@ -95,8 +122,8 @@ const CartScreen = ({ match, location, history }) => {
                         </ListGroup.Item>
                     </ListGroup>
                     <ListGroup.Item>
-                        <Button type='button' className='btn-block' disabled={cartItems.length === 0} onClick={checkoutHandler}>
-                            Proceed to Checkout
+                        <Button type='button' className='btn-block' disabled={cartItems.length === 0} onClick={wishlistHandler}>
+                            Save wishlist
                         </Button>
                     </ListGroup.Item>
                 </Card>

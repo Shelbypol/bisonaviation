@@ -2,10 +2,10 @@ import React from 'react'
 import {Route} from 'react-router-dom'
 import {Navbar, Container, Nav} from 'react-bootstrap'
 import {LinkContainer} from 'react-router-bootstrap'
-import SearchBox from "./SearchBox";
-import logo from '../images/general/Final-Logo-Horizontal.png'
+import SearchBox from "../SearchBox";
+import logo from '../../images/general/Final-Logo-Horizontal.png'
 import StickyHeader from "./StickyHeader";
-import SocialIcons from "./SocialIcons";
+import SocialIcons from "../SocialIcons";
 
 const DesktopHeader = () => {
     return (

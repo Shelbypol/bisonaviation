@@ -11,7 +11,7 @@ const TestimonialCarousel = () => {
                 showThumbs={false}
                 showStatus={false}
                 autoPlay={true}
-                interval={4000}
+                interval={3000}
             >
                 <div>
                     {/*<img src="/images/shirley.png" />*/}

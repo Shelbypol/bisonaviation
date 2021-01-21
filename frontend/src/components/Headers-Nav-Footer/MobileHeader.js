@@ -3,11 +3,11 @@ import {Route} from 'react-router-dom'
 import {Navbar, Nav, Container, NavDropdown, Image, Button} from 'react-bootstrap'
 import {useDispatch, useSelector} from 'react-redux'
 import {LinkContainer} from 'react-router-bootstrap'
-import {logout} from '../actions/userActions'
-import SearchBox from "./SearchBox";
-import {CART_RESET} from "../constants/cartConstants";
-import logo from '../images/general/Final-Logo-Horizontal.png'
-import SocialIcons from "./SocialIcons";
+import {logout} from '../../actions/userActions'
+import SearchBox from "../SearchBox";
+import {CART_RESET} from "../../constants/cartConstants";
+import logo from '../../images/general/Final-Logo-Horizontal.png'
+import SocialIcons from "../SocialIcons";
 
 const MobileHeader = () => {
 

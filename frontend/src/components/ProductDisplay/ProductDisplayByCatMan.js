@@ -1,28 +1,11 @@
+import React, {useEffect} from "react";
 import {Col, Row} from "react-bootstrap";
-import Paginate from "./Paginate";
+import Paginate from "../Paginate";
 import Product from "./Product";
-import React, {useEffect, useState} from "react";
+import {listProductDetails} from "../../actions/productActions";
 import {useDispatch, useSelector} from "react-redux";
-import {listProducts} from "../actions/productActions";
 
-const ProductsDisplaySByCatMan = ({match, history, updateCatProp, updateManufacturerProp}) => {
-
-    // const [updateCat, setUpdateCat] = useState(updateCatProp);
-    // const [updateManufacturer, setUpdateManufacturer] = useState(updateManufacturerProp);
-
-    const keyword = match.params.keyword;
-
-    const pageNumber = match.params.pageNumber || 1;
-
-    const dispatch = useDispatch();
-
-    const productList = useSelector(state => state.productList);
-    const {products, pages, page} = productList;
-
-
-    useEffect(() => {
-        dispatch(listProducts(keyword, pageNumber));
-    }, [dispatch, keyword, pageNumber]);
+const ProductsDisplaySByCatMan = ({history, match, updateCatProp, updateManufacturerProp, keyword, pages, page, products}) => {
 
     return (
         <>
@@ -39,8 +22,8 @@ const ProductsDisplaySByCatMan = ({match, history, updateCatProp, updateManufact
                         {products.filter(product => product.category === updateCatProp).map(filteredProduct => (
                             <Col key={filteredProduct._id} sm={12} md={6} lg={3}
                                  className='d-flex flex-row align-items-stretch'>
-                                <Product product={filteredProduct} history={history}
-                                         product_id={filteredProduct._id}/>
+                                <Product product={filteredProduct} history={history} match={match}
+                                         />
                             </Col>
                         ))}
                     </>
@@ -51,7 +34,7 @@ const ProductsDisplaySByCatMan = ({match, history, updateCatProp, updateManufact
                         {products.filter(product => product.brand === updateManufacturerProp).map(filteredProduct => (
                             <Col key={filteredProduct._id} sm={12} md={6} lg={3}
                                  className='d-flex flex-row align-items-stretch'>
-                                <Product product={filteredProduct} history={history}
+                                <Product product={filteredProduct} history={history} match={match}
                                          product_id={filteredProduct._id}/>
                             </Col>
                         ))}
@@ -63,7 +46,7 @@ const ProductsDisplaySByCatMan = ({match, history, updateCatProp, updateManufact
                         {products.map(product => (
                             <Col key={product._id} sm={12} md={6} lg={3}
                                  className='d-flex flex-row align-items-stretch'>
-                                <Product product={product} history={history}
+                                <Product product={product} history={history} match={match}
                                          product_id={product._id}/>
                             </Col>
                         ))}

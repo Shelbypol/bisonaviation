@@ -97,7 +97,6 @@ const updateOrderToDelivered = asyncHandler(async (req, res) => {
 
 });
 
-
 // @desc    GET logged in user order
 // @route   GET /api/orders/myorders
 // @access  Private

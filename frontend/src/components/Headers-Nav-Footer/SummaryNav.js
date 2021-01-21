@@ -1,5 +1,5 @@
 import React from "react";
-import '../style/SummaryNav.css'
+import '../../style/SummaryNav.css'
 import {Button, Col, Row} from "react-bootstrap";
 
 const SummaryNav = ({title1, title2, title3, title4, img1, img2, img3, img4, showTag}) => {
