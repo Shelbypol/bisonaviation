@@ -5,7 +5,7 @@ import '../style/WishListTab.css'
 
 const WishList = () => {
     return (
-        <Navbar className='m-0'>
+        <Navbar className='m-0 wishList'>
             <NavItem icon={
                 <span className='SocialIcons_socialIcons'>
                    <i className="m-auto fal fa-heart"> </i>

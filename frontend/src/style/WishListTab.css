@@ -16,8 +16,10 @@ ul {
 
 a {
     color: var(--text-color);
-    text-decoration: none;;
+    text-decoration: none;
 }
+
+
 
 /* Top Navigation Bar */
 
@@ -37,12 +39,17 @@ a {
     justify-content: flex-end;
 }
 
+
 /* <li> */
 .wishList-nav-item {
     width: calc(var(--nav-size) * 0.8);
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.wishList-nav-item a:hover{
+    text-decoration: none;
 }
 
 /* Icon Button */
@@ -105,9 +112,9 @@ a {
 }
 
 
-.wishList-menu-item .wishList-icon-button:hover {
-    filter: none;
-}
+/*.wishList-menu-item .wishList-icon-button:hover {*/
+/*    filter: none;*/
+/*}*/
 
 .icon-right {
     margin-left: auto;
@@ -129,7 +136,6 @@ a {
     transform: translateX(-110%);
     transition: all var(--speed) ease;
 }
-
 
 .menu-secondary-enter {
     transform: translateX(110%);
