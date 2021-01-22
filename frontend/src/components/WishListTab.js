@@ -81,7 +81,7 @@ const DropdownMenu = () => {
 
     const DropdownItem = (props) => {
         return (
-            <a href="#" className="wishList-menu-item" onClick={() => props.goToMenu && setActiveMenu(props.goToMenu)}>
+            <a className="wishList-menu-item" onClick={() => props.goToMenu && setActiveMenu(props.goToMenu)}>
                 <span className="wishList-icon-button">{props.leftIcon}</span>
                 {props.children}
                 <span className="wishList-icon-right">{props.rightIcon}</span>

@@ -33,7 +33,7 @@ const WishListTabInfo = ({dropdownItemProp}) => {
 
     const placeOrderHandler = () => {
         dispatch(createWishList({
-            wishListItems: cart.cartItems,
+            wishListItems: cart.cartItems
         }));
         dispatch({type: CART_RESET});
 
