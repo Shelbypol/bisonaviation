@@ -6,7 +6,7 @@ import {Button, Row} from "react-bootstrap";
 
 const WishList = () => {
     return (
-        <Navbar className='m-0 p-0 wishList'>
+        <Navbar className='wishList'>
 
             <NavItem icon={
                 <span className='SocialIcons_socialIcons'>
@@ -33,7 +33,7 @@ const NavItem = (props) => {
     return (
         <li className="wishList-nav-item">
             {/*<a href="#" className="wishList-icon-button" onClick={() => setOpen(!open)}>*/}
-            <a href="#" onClick={() => setOpen(!open)}>
+            <a onClick={() => setOpen(!open)}>
                 {props.icon}
             </a>
 
@@ -49,6 +49,7 @@ const DropdownMenu = () => {
 
     useEffect(() => {
         setMenuHeight(dropdownRef.current?.firstChild.offsetHeight)
+        setMenuHeight(dropdownRef.current)
     }, []);
 
     const calcHeight = (el) => {
@@ -68,6 +69,7 @@ const DropdownMenu = () => {
 
 
     return (
+        // <div className="wishList-Dropdown" >
         <div className="wishList-Dropdown" style={{height: menuHeight}} ref={dropdownRef}>
 
             <CSSTransition
@@ -75,7 +77,8 @@ const DropdownMenu = () => {
                 timeout={500}
                 classNames="wishList-menu-primary"
                 unmountOnExit
-                onEnter={calcHeight}>
+                onEnter={calcHeight}
+            >
                 <div className="wishList-menu">
                     {/*<DropdownItem><Button onClick={}>X</Button> </DropdownItem>*/}
                     <DropdownItem>

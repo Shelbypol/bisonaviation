@@ -19,8 +19,6 @@ a {
     text-decoration: none;
 }
 
-
-
 /* Top Navigation Bar */
 
 /* <nav> */
@@ -86,13 +84,15 @@ a {
     width: 150%;
     height: 75vh;
     max-height: 75vh;
-    transform: translateX(-45%);
+    /*transform: translateX(-45%);*/
+    transform: translateX(-10%);
     background-color: #fff;
     border: var(--border);
     border-radius: var(--border-radius);
     padding: 1rem;
     overflow-y: scroll;
-    transition: height var(--speed) ease;
+    transition: none;
+    /*transition: height var(--speed) ease;*/
 }
 
 .wishList-menu {
@@ -103,7 +103,7 @@ a {
 
 .wishList-menu-item {
     border-radius: var(--border-radius);
-    transition: background var(--speed);
+    /*transition: background var(--speed);*/
     padding: 0.5rem;
 }
 
@@ -120,36 +120,39 @@ a {
     margin-left: auto;
 }
 
-/* CSSTransition classes  */
+ /*CSSTransition classes  */
 .wishList-menu-primary-enter {
-    position: absolute;
-    transform: translateX(-110%);
+    /*position: absolute;*/
+    /*transform: translateX(-110%);*/
+    transform: translateX(0%);
+    transition: none;
 }
 .wishList-menu-primary-enter-active {
-    transform: translateX(0%);
-    transition: all var(--speed) ease;
+    transform: translateX(-110%);
+    /*transition: all var(--speed) ease;*/
+    transition: none ;
 }
 .wishList-menu-primary-exit {
     position: absolute;
 }
 .wishList-menu-primary-exit-active {
-    transform: translateX(-110%);
-    transition: all var(--speed) ease;
+    /*transform: translateX(-110%);*/
+    /*transition: all var(--speed) ease;*/
 }
 
 .menu-secondary-enter {
-    transform: translateX(110%);
+    /*transform: translateX(110%);*/
 }
 .menu-secondary-enter-active {
-    transform: translateX(0%);
-    transition: all var(--speed) ease;
+    /*transform: translateX(0%);*/
+    /*transition: all var(--speed) ease;*/
 }
 .menu-secondary-exit {
 
 }
 .menu-secondary-exit-active {
-    transform: translateX(110%);
-    transition: all var(--speed) ease;
+    /*transform: translateX(110%);*/
+    /*transition: all var(--speed) ease;*/
 }
 
 
