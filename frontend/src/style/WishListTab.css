@@ -8,6 +8,23 @@
     --speed: 500ms;
 }
 
+.stick{
+    /*position: sticky;*/
+    /*top: 5%;*/
+    /*z-index: 100;*/
+    background-color: #fff;
+    padding-top: 10%;
+    margin-top: -10%;
+}
+
+.stick-margins{
+    position: sticky;
+    height: auto;
+    top: 5%;
+    z-index: 100;
+    background-color: #fff;
+ }
+
 ul {
     list-style: none;
     margin: 0;
@@ -103,7 +120,7 @@ a {
 
 .wishList-menu-item {
     border-radius: var(--border-radius);
-    /*transition: background var(--speed);*/
+    transition: background var(--speed);
     padding: 0.5rem;
 }
 
@@ -122,37 +139,35 @@ a {
 
  /*CSSTransition classes  */
 .wishList-menu-primary-enter {
-    /*position: absolute;*/
-    /*transform: translateX(-110%);*/
-    transform: translateX(0%);
-    transition: none;
+    position: absolute;
+    transform: translateX(-110%);
+
 }
 .wishList-menu-primary-enter-active {
     transform: translateX(-110%);
-    /*transition: all var(--speed) ease;*/
-    transition: none ;
+    transition: all var(--speed) ease;
 }
 .wishList-menu-primary-exit {
     position: absolute;
 }
 .wishList-menu-primary-exit-active {
-    /*transform: translateX(-110%);*/
-    /*transition: all var(--speed) ease;*/
+    transform: translateX(-110%);
+    transition: all var(--speed) ease;
 }
 
 .menu-secondary-enter {
-    /*transform: translateX(110%);*/
+    transform: translateX(110%);
 }
 .menu-secondary-enter-active {
-    /*transform: translateX(0%);*/
-    /*transition: all var(--speed) ease;*/
+    transform: translateX(0%);
+    transition: all var(--speed) ease;
 }
 .menu-secondary-exit {
 
 }
 .menu-secondary-exit-active {
-    /*transform: translateX(110%);*/
-    /*transition: all var(--speed) ease;*/
+    transform: translateX(110%);
+    transition: all var(--speed) ease;
 }
 
 

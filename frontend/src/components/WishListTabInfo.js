@@ -52,7 +52,7 @@ const WishListTabInfo = ({dropdownItemProp}) => {
     };
 
     const clearWishList = () => {
-        dispatch({ type: CART_RESET });
+        dispatch({type: CART_RESET});
     };
 
     //history redirect to shipping if logged in in
@@ -69,22 +69,28 @@ const WishListTabInfo = ({dropdownItemProp}) => {
 
     return (
         <>
-            <Row xs={12} className='border-bottom'>
-                <Col xs={4} className='border-right global_cursor global_bisonFadedRedHover rounded p-auto text-center d-flex align-items-center justify-content-center'>
+            <Row xs={12} className='border-bottom stick-margins'>
+                    <Col xs={4} className='border-right stick global_cursor global_bisonFadedRedHover p-auto
+                    text-center d-flex align-items-center justify-content-center'>
+
                     {userInfo ? (
                         <h6>Save wishlist to profile</h6>
-                    ) : (
+                        ) : (
+
                         <Link to='/login'>
-                            <h6><strong className='global_bisonRedTxt global_cursor'>sign in</strong> to save
+                            <h6>
+                                <strong className='global_bisonRedTxt global_cursor'>sign in</strong> to save
                             </h6>
                         </Link>
-                    )}
-                </Col>
-                <Col xs={4} className='border-right global_cursor global_bisonFadedRedHover rounded p-auto d-flex align-items-center justify-content-center'>
+                )}
+                    </Col>
+                <Col xs={4}
+                     className='border-right stick global_cursor global_bisonFadedRedHover p-auto d-flex align-items-center justify-content-center'>
                     <h6>Inquire</h6>
                 </Col>
-                <Col xs={4} className='global_cursor global_bisonFadedRedHover p-auto text-center d-flex align-items-center justify-content-center'>
-                    <h6 onClick={clearWishList}>clear list</h6>
+                <Col xs={4} onClick={clearWishList}
+                     className='global_cursor stick global_bisonFadedRedHover p-auto text-center d-flex align-items-center justify-content-center'>
+                    <h6>clear list</h6>
                 </Col>
             </Row>
 
