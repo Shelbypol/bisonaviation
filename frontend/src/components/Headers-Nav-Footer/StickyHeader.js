@@ -41,7 +41,7 @@ const StickyHeader = () => {
             prevScrollY.current = currentScrollY;
         };
 
-        window.addEventListener("scroll", handleScroll, { passive: true });
+        window.addEventListener("scroll", handleScroll, {passive: true});
 
         return () => window.removeEventListener("scroll", handleScroll);
     }, [goingUp]);
@@ -49,7 +49,7 @@ const StickyHeader = () => {
     return (
         <>
             <header className='sticky-top m-0'>
-            {/*<header className='sticky-top m-0' id='showSearch'>*/}
+                {/*<header className='sticky-top m-0' id='showSearch'>*/}
 
                 <Navbar className='navbar navbar-expand-lg navbar-light bg-light m-0 p-0 border-0 '>
 
@@ -139,6 +139,7 @@ const StickyHeader = () => {
                                 </Nav>
 
                                 :
+
                                 // ============= NAV HIDDEN ON SCROLL ==============
                                 <Nav className='col-lg-8 col-md-6 justify-content-end global_accentFont'>
 
@@ -210,17 +211,19 @@ const StickyHeader = () => {
                             {goingUp ?
                                 <Nav className='col-lg-4 col-md-6 justify-content-end'>
 
+                                            <WishListTab />
                                     {/*  PROFILE  /  SIGN IN  */}
                                     {userInfo ? (
                                             <>
+
                                                 <LinkContainer to='/profile'>
                                                     <Nav.Link>
                                                         <Button className='px-3 py-0 mt-2 rounded-pill global_RedFontWhiteBgBtn StickyHeader_iconHidden'>
                                                             <span className='StickyHeader_hideWords'>
                                                                 {userInfo.name}
                                                             </span>
-                                                        <span className='StickyHeader_hideIcon'>Profile</span>
-                                                    </Button>
+                                                            <span className='StickyHeader_hideIcon'>Profile</span>
+                                                        </Button>
                                                     </Nav.Link>
                                                 </LinkContainer>
 
@@ -238,6 +241,10 @@ const StickyHeader = () => {
                                             </>
 
                                         ) :
+                                        <>
+
+                                        {/*<WishListTab />*/}
+
                                         <LinkContainer to='/login'>
                                             <Nav.Link>
                                                 <Button className='px-3 mr-n3 py-0 mt-2 rounded-pill global_RedFontWhiteBgBtn StickyHeader_iconHidden'>
@@ -248,6 +255,7 @@ const StickyHeader = () => {
                                                 </Button>
                                             </Nav.Link>
                                         </LinkContainer>
+                                        </>
                                     }
                                     {/*  REGISTER  */}
                                     {!userInfo && (
@@ -301,10 +309,12 @@ const StickyHeader = () => {
                                 // ============= LOGIN/REG CONTACT BTNS SHOW ON SCROLL ==============
                                 <Nav className='col-lg-4 col-md-6 justify-content-end'>
 
+                                                <WishListTab />
 
                                     {/*  PROFILE  /  SIGN IN  */}
                                     {userInfo ? (
                                             <>
+
                                                 <LinkContainer to='/profile'>
                                                     <Nav.Link>
                                                         <Button className='px-3 py-0 mt-2 rounded-pill global_RedFontWhiteBgBtn StickyHeader_iconHidden'>

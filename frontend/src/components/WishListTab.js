@@ -6,12 +6,12 @@ import {Button, Row} from "react-bootstrap";
 
 const WishList = () => {
     return (
-        <Navbar className='m-0 wishList'>
+        <Navbar className='m-0 p-0 wishList'>
 
             <NavItem icon={
                 <span className='SocialIcons_socialIcons'>
-                   <i className="m-auto fal fa-heart global_whiteFontRedFontHover"> </i>
-                 </span>
+                   <i className="m-auto fal fa-heart global_heart-whiteBgRedHover"> </i>
+                </span>
             }>
                 <DropdownMenu> </DropdownMenu>
             </NavItem>

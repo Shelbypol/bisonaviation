@@ -26,7 +26,7 @@ a {
 /* <nav> */
 .wishList-navbar {
     /*height: var(--nav-size);*/
-    background-color: #000;
+    /*background-color: #;*/
     padding: 0;
     /*border-bottom: var(--border);*/
 }
@@ -42,7 +42,7 @@ a {
 
 /* <li> */
 .wishList-nav-item {
-    width: calc(var(--nav-size) * 0.8);
+    /*width: calc(var(--nav-size) * 0.8);*/
     display: flex;
     align-items: center;
     justify-content: center;
