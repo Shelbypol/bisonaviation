@@ -1,14 +1,15 @@
 import React, {useState, useEffect} from 'react'
-import {Form, Button, Row, Col, Table} from 'react-bootstrap'
+import {Form, Button, Row, Col, Table, ListGroup, Image} from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap'
 // deals with our redux state
 import {useDispatch, useSelector} from 'react-redux'
 import Message from '../components/Message'
 import Loader from '../components/Loader'
 import { getUserDetails, updateUserProfile } from '../actions/userActions'
-import { listMyOrders } from "../actions/orderActions";
+// import { listMyOrders } from "../actions/orderActions";
 import {listMyWishLists} from "../actions/wishListActions";
 import { USER_UPDATE_PROFILE_RESET } from "../constants/userConstants";
+import {Link} from "react-router-dom";
 
 // whenever you bring something in from the state it's useSelector
 // if you want to call an action it's useDispatch
@@ -34,6 +35,10 @@ const ProfileScreen = ({location, history}) => {
     // const orderListMy = useSelector(state => state.orderListMy);
     // const {loading: loadingOrders, error: errorOrders, orders} = orderListMy;
 
+
+    const wishListDetails = useSelector((state) => state.wishListDetails);
+    const {wishDetails, loading: loadingWishListDetails, error: errorWishListDetails} = wishListDetails;
+
     const wishListMy = useSelector(state => state.wishListMy);
     const {loading: loadingWishList, error: errorWishList, wishLists} = wishListMy;
 
@@ -45,7 +50,8 @@ const ProfileScreen = ({location, history}) => {
                 dispatch({ type: USER_UPDATE_PROFILE_RESET });
                 dispatch(getUserDetails('profile'));
                 // dispatch(listMyOrders())
-                dispatch(listMyWishLists())
+                // dispatch(listMyWishLists())
+                // dispatch(listMyWishLists())
             } else {
                 setName(user.name);
                 setEmail(user.email);
@@ -119,10 +125,10 @@ const ProfileScreen = ({location, history}) => {
             </Col>
             <Col md={9}>
                 <h2>My WishLists</h2>
-                { loadingWishList
+                { loadingWishListDetails
                     ? <Loader />
-                    : errorWishList
-                        ? <Message variant='danger'>{errorWishList}</Message>
+                    : errorWishListDetails
+                        ? <Message variant='danger'>{errorWishListDetails}</Message>
                         : (
                             <Table striped bordered hover responsive className='table-sm' >
                                 <thead>
@@ -132,19 +138,37 @@ const ProfileScreen = ({location, history}) => {
                                     {/*<th>TOTAL</th>*/}
                                     {/*<th>PAID</th>*/}
                                     <th>Item</th>
-                                    <th> name</th>
+                                    {/*<th> name</th>*/}
                                 </tr>
                                 </thead>
                                 <tbody>
-                                {wishLists.map(wishList => (
-                                    <tr key={wishList._id}>
-                                         <td><img src={wishList.wishListItems.map(wish => (
-                                             wish.name
-                                         ))} alt=""/>
-                                         </td>
-                                        <td>{wishList.wishListItems.map(wish => (
-                                            wish.product.name
-                                        ))}</td>
+                                {/*{wishLists.map(wishList => (*/}
+                                {/*    // <tr key={wishList._id}>*/}
+                                {/*    //      <td><img src={wishList.wishListItems.map(wish => (*/}
+                                {/*    //          wish.name*/}
+                                    {/*//      ))} alt=""/>*/}
+                                    {/*//      </td>*/}
+                                    {/*//     <td>{wishList.wishListItems.map(wish => (*/}
+                                    {/*//         wish.product.name*/}
+                                    {/*//     ))}</td>*/}
+
+                                        {wishDetails.wishListItems.map((item, index) => (
+                                            <tr key={index}>
+                                                <td>
+                                                    <Image src={item.image} alt={item.name} fluid rounded/>
+                                                </td>
+                                                <td>
+                                                    <Link to={`/product/${item.product}`}>
+                                                        {item.name}
+                                                    </Link>
+                                                </td>
+
+                                                    {/*<Col md={4}>*/}
+                                                    {/*    {item.qty} x $ {item.price} = $ {item.qty * item.price}*/}
+                                                    {/*</Col>*/}
+                                                {/*</Row>*/}
+                                            {/*</tr>*/}
+                                        ))}
                                         {/*<td>{order.isPaid ? order.paidAt.substring(0, 10) : (*/}
                                         {/*    <i className='fas fa-times' style={{color: 'red'}}> </i>*/}
                                         {/*)}</td>*/}
