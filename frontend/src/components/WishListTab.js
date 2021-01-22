@@ -6,6 +6,7 @@ import {Button, Row} from "react-bootstrap";
 
 const WishList = () => {
 
+
     return (
 
         <Navbar id='app' className='wishList'>
@@ -21,6 +22,8 @@ const WishList = () => {
 };
 
 const Navbar = (props) => {
+
+
     return (
         <nav className="wishList-navbar">
             <ul className="wishList-navbar-nav">{props.children}</ul>
@@ -31,8 +34,26 @@ const Navbar = (props) => {
 const NavItem = (props) => {
     const [open, setOpen] = useState(false);
 
+
+    const node = useRef();
+
+    useEffect(() => {
+        // add when mounted
+        document.addEventListener("mousedown", handleClick);
+        // return function to be called when unmounted
+        return () => {
+            document.removeEventListener("mousedown", handleClick);
+        };
+    }, []);
+
+    const handleClick = e => {
+        if (node.current.contains(e.target) === false){
+            setOpen(false)
+        }
+    };
+
     return (
-        <li className="wishList-nav-item">
+        <li ref={node} onClick={(e) => (handleClick(e))} className="wishList-nav-item">
             {/*<a href="#" className="wishList-icon-button" onClick={() => setOpen(!open)}>*/}
             <a onClick={() => setOpen(!open)}>
                 {props.icon}
@@ -49,7 +70,7 @@ const DropdownMenu = () => {
     const dropdownRef = useRef(null);
 
     useEffect(() => {
-        setMenuHeight(dropdownRef.current?.firstChild.offsetHeight)
+        setMenuHeight(dropdownRef.current?.firstChild.offsetHeight);
         setMenuHeight(dropdownRef.current)
     }, []);
 
@@ -83,7 +104,7 @@ const DropdownMenu = () => {
                 <div className="wishList-menu">
                     {/*<DropdownItem><Button onClick={}>X</Button> </DropdownItem>*/}
                     <DropdownItem>
-                        <WishListTabInfo />
+                        <WishListTabInfo/>
                     </DropdownItem>
 
                     {/*<DropdownItem*/}
