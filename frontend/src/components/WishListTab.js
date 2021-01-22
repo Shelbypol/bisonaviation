@@ -5,9 +5,10 @@ import '../style/WishListTab.css'
 import {Button, Row} from "react-bootstrap";
 
 const WishList = () => {
-    return (
-        <Navbar className='wishList'>
 
+    return (
+
+        <Navbar id='app' className='wishList'>
             <NavItem icon={
                 <span className='SocialIcons_socialIcons global_cursor'>
                    <i className="m-auto fal fa-heart global_heart-whiteBgRedHover pt-1"> </i>

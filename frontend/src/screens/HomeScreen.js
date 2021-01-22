@@ -31,6 +31,7 @@ const HomeScreen = () => {
     window.onbeforeunload = () => {
         localStorage.clear()
     };
+
     return (
         <>
             <Jumbotrons
