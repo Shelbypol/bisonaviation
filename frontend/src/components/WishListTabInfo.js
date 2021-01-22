@@ -6,45 +6,37 @@ import Message from '../components/Message'
 import {addToCart, removeFromCart} from '../actions/cartActions'
 import {createOrder} from "../actions/orderActions";
 import {CART_RESET} from "../constants/cartConstants";
+import {createWishList} from "../actions/wishListActions";
 
 
 // match == id, location == get a query string '?qty', history == used to redirect
 const WishListTabInfo = ({dropdownItemProp}) => {
-    // const productId = match.params.id;
 
-    // location.search is the query params will log ' ?qty=1 '
-    // const qty = location.search ? Number(location.search.split('=')[1]) : 1;
-
-    //dispatch because it's an action
     const dispatch = useDispatch();
 
     const userLogin = useSelector(state => state.userLogin);
     const {userInfo} = userLogin;
 
-    // use Selector hook to get items from state
     const cart = useSelector(state => state.cart);
     const {cartItems} = cart;
 
+    const wishListCreate = useSelector(state => state.wishListCreate);
+    const { wishlist, success, error } = wishListCreate;
+
     useEffect(() => {
-        // if(userInfo){
-        //     placeOrderHandler()
-        // }
-        // if(productId){
-        //     dispatch(addToCart(productId))
-        // }
-    }, [dispatch]);
+        if(success) {
+            // history.push(`/order/${order._id}`)
+        }
+        //     eslint-disable-next-line
+    }, [ dispatch, success]);
+
 
     const placeOrderHandler = () => {
+        dispatch(createWishList({
+            wishListItems: cart.cartItems,
+        }));
+        dispatch({type: CART_RESET});
 
-        dispatch(createOrder({
-            orderItems: cart.cartItems,
-            // shippingAddress: cart.shippingAddress,
-            // paymentMethod: cart.paymentMethod,
-            // itemsPrice: cart.itemsPrice,
-            // shippingPrice: cart.shippingPrice,
-            // taxPrice: cart.taxPrice,
-            // totalPrice: cart.totalPrice
-        }))
     };
 
     const removeFromWishListHandler = (id) => {
@@ -74,7 +66,17 @@ const WishListTabInfo = ({dropdownItemProp}) => {
                     text-center d-flex align-items-center justify-content-center'>
 
                     {userInfo ? (
-                        <h6>Save wishlist to profile</h6>
+
+                        <h6 onClick={placeOrderHandler}>
+
+                            {success ? (
+                                <h6>Saved</h6>
+                                ):(
+                                <h6>Save wishlist to profile</h6>
+                            )}
+
+                        </h6>
+
                         ) : (
 
                         <Link to='/login'>
@@ -108,11 +110,12 @@ const WishListTabInfo = ({dropdownItemProp}) => {
 
                                 <ListGroup variant='flush'>
                                     {cartItems.map(item => (
+                                        // <ListGroup.Item key={item.product} className='global_bisonDarkFadedBgColorHover'>
                                         <ListGroup.Item key={item.product}>
                                             <Row xs={12}>
                                                 <Col className='my-auto' md={6}>
                                                     <Image src={item.image} alt={item.name} fluid
-                                                           className='rounded-circle h-75 w-75'/>
+                                                           className='rounded-circle h-50 w-50'/>
                                                 </Col>
                                                 <Col className='my-auto' md={4}>
                                                     <Link to={`product/${item.product}`}>{item.name}</Link>
