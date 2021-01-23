@@ -63,8 +63,8 @@ const updateWishListToEmailed = asyncHandler(async (req, res) => {
 // @route   GET /api/wishList/mywishlists
 // @access  Private
 const getMyWishLists = asyncHandler(async (req, res) => {
-    const wishLists = await WishList.find({ user: req.user._id });
-    res.json(wishLists)
+    const wishlists = await WishList.find({ user: req.user._id });
+    res.json(wishlists)
 });
 
 // @desc    GET all wishLists

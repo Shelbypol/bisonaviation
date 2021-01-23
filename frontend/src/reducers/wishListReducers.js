@@ -63,21 +63,21 @@ export const wishListDetailsReducers = (state = { loading: true, wishListItems: 
     }
 };
 
-export const wishListMyReducer = (state = { wishListItems: []}, action ) => {
+export const wishListMyReducer = (state = { wishlists: []}, action ) => {
     switch(action.type) {
         case WISHLIST_LIST_MY_REQUEST:
             return {
                 loading: true,
             };
         case WISHLIST_LIST_MY_SUCCESS:
-            return {loading: false, wishListItems: action.payload,
+            return {loading: false, wishlists: action.payload,
             };
         case WISHLIST_LIST_MY_FAIL:
             return {loading: false, error: action.payload,
             };
         case WISHLIST_LIST_MY_RESET:
             return {
-                wishListItems: []
+                wishlists: []
             };
 
         default:

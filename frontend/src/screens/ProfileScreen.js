@@ -34,15 +34,11 @@ const ProfileScreen = ({location, history}) => {
     const userUpdateProfile = useSelector(state => state.userUpdateProfile);
     const {success} = userUpdateProfile;
 
-    // const orderListMy = useSelector(state => state.orderListMy);
-    // const {loading: loadingOrders, error: errorOrders, orders} = orderListMy;
-
-
-    // const wishListDetails = useSelector((state) => state.wishListDetails);
-    // const {wishDetails, loading: loadingWishListDetails, error: errorWishListDetails} = wishListDetails;
+    const wishListDetails = useSelector((state) => state.wishListDetails);
+    const {wishDetails, loading: loadingWishListDetails, error: errorWishListDetails} = wishListDetails;
 
     const wishListMy = useSelector(state => state.wishListMy);
-    const {loading: loadingWishList, error: errorWishList, wishListItems} = wishListMy;
+    const {loading: loadingWishList, error: errorWishList, wishlists} = wishListMy;
 
     useEffect(() => {
         if (!userInfo) {
@@ -58,8 +54,7 @@ const ProfileScreen = ({location, history}) => {
                 setEmail(user.email);
             }
         }
-
-    }, [dispatch, history, userInfo, user, success, wishListItems]);
+    }, [dispatch, history, userInfo, user, success, wishlists, wishDetails]);
 
 
     const submitHandler = (e) => {
@@ -138,31 +133,31 @@ const ProfileScreen = ({location, history}) => {
             </Col>
             <Col md={9}>
                 <h2>My WishLists</h2>
-                { loadingWishList
-                    ? <Loader />
+                {loadingWishList
+                    ? <Loader/>
                     : errorWishList
                         ? <Message variant='danger'>{errorWishList}</Message>
                         : (
-                <Table striped bordered hover responsive className='table-sm'>
-                    <thead>
-                    <tr>
-                        <th>IMAGE</th>
-                        <th>NAME</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    {wishListItems.map((item, index) => (
-                        <tr key={index}>
-                            {console.log(item)}
-                            <td>
-                                <Image src={item.image} alt={item.name} fluid rounded/>
-                            </td>
-                            <td>{item.name}</td>
-                        </tr>
-                    ))}
-                    </tbody>
-                </Table>
-                ) }
+                            // <Table striped bordered hover responsive className='table-sm'>
+                            //     <thead>
+                            //     <tr>
+                            //         <th>IMAGE</th>
+                            //         <th>NAME</th>
+                            //     </tr>
+                            //     </thead>
+                            //     <tbody>
+                            wishlists.map((item, index) => (
+                                <Row key={index}>
+                                    <Col xs={12}>
+                                        {/*<Image src={item.image} alt={item.name} fluid rounded/>*/}
+                                        {console.log(item.name)}
+                                        {item.map}
+                                    </Col>
+                                </Row>
+                    )))}
+                {/*//     </tbody>*/}c=
+                {/*// </Table>*/}
+                {/*    )}*/}
             </Col>
         </Row>
 
