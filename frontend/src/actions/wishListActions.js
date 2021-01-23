@@ -181,7 +181,7 @@ export const listWishLists = () => async (dispatch, getState) => {
             }
         };
 
-        const { data } = await axios.get('/api/orders', config);
+        const { data } = await axios.get('/api/wishlist', config);
 
         dispatch({
             type: WISHLIST_LIST_SUCCESS,

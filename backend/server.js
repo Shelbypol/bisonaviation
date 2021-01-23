@@ -31,7 +31,7 @@ app.get('/', (req,res) => {
 app.use('/api/products', productRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/orders', orderRoutes);
-app.use('/api/wishList', wishListRoutes);
+app.use('/api/wishlist', wishListRoutes);
 app.use('/api/upload', uploadRoutes);
 
 app.get('/api/config/paypal', (req, res) =>

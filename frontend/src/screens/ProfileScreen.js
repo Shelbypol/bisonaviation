@@ -1,15 +1,17 @@
 import React, {useState, useEffect} from 'react'
 import {Form, Button, Row, Col, Table, ListGroup, Image} from 'react-bootstrap'
-import { LinkContainer } from 'react-router-bootstrap'
+import {LinkContainer} from 'react-router-bootstrap'
 // deals with our redux state
 import {useDispatch, useSelector} from 'react-redux'
 import Message from '../components/Message'
 import Loader from '../components/Loader'
-import { getUserDetails, updateUserProfile } from '../actions/userActions'
+import {getUserDetails, updateUserProfile} from '../actions/userActions'
 // import { listMyOrders } from "../actions/orderActions";
 import {listMyWishLists, getWishListDetails} from "../actions/wishListActions";
-import { USER_UPDATE_PROFILE_RESET } from "../constants/userConstants";
+import {USER_UPDATE_PROFILE_RESET} from "../constants/userConstants";
 import {Link} from "react-router-dom";
+import {getOrderDetails} from "../actions/orderActions";
+// import {addWishListItems} from "../../../backend/controllers/wishListController";
 
 // whenever you bring something in from the state it's useSelector
 // if you want to call an action it's useDispatch
@@ -27,29 +29,29 @@ const ProfileScreen = ({location, history}) => {
     const {loading, error, user} = userDetails;
 
     const userLogin = useSelector(state => state.userLogin);
-    const { userInfo } = userLogin;
+    const {userInfo} = userLogin;
 
     const userUpdateProfile = useSelector(state => state.userUpdateProfile);
-    const { success } = userUpdateProfile;
+    const {success} = userUpdateProfile;
 
     // const orderListMy = useSelector(state => state.orderListMy);
     // const {loading: loadingOrders, error: errorOrders, orders} = orderListMy;
 
 
-    const wishListDetails = useSelector((state) => state.wishListDetails);
-    const {wishDetails, loading: loadingWishListDetails, error: errorWishListDetails} = wishListDetails;
+    // const wishListDetails = useSelector((state) => state.wishListDetails);
+    // const {wishDetails, loading: loadingWishListDetails, error: errorWishListDetails} = wishListDetails;
 
     const wishListMy = useSelector(state => state.wishListMy);
-    const {loading: loadingWishList, error: errorWishList, wishLists} = wishListMy;
+    const {loading: loadingWishList, error: errorWishList, wishListItems} = wishListMy;
 
     useEffect(() => {
         if (!userInfo) {
             history.push('/login')
         } else {
             if (!user.name || !user || success) {
-                dispatch({ type: USER_UPDATE_PROFILE_RESET });
+                dispatch({type: USER_UPDATE_PROFILE_RESET});
                 dispatch(getUserDetails('profile'));
-                dispatch(listMyWishLists)
+                dispatch(listMyWishLists())
                 // dispatch(getWishListDetails(wishDetails._id))
             } else {
                 setName(user.name);
@@ -57,7 +59,7 @@ const ProfileScreen = ({location, history}) => {
             }
         }
 
-    }, [dispatch, history, userInfo, user, success, wishListDetails, wishListMy]);
+    }, [dispatch, history, userInfo, user, success, wishListItems]);
 
 
     const submitHandler = (e) => {
@@ -68,10 +70,21 @@ const ProfileScreen = ({location, history}) => {
             setMessage('Passwords do not match')
         } else {
             //   DISPATCH UPDATE PROFILE
-            dispatch(updateUserProfile({ id: user._id, name, email, password }))
+            dispatch(updateUserProfile({id: user._id, name, email, password}))
         }
     };
 
+    // const getItems = () => {
+    //     //    wishDetails.wishListItems.map((item, index) => (
+    //     //          console.log(item.isEmailed)
+    //     //     ))
+    //     // };
+    //     //
+    //     // getItems();
+
+    // const wishItems = (id) => {
+    //     dispatch(getWishListDetails(id))
+    // };
 
 
     return (
@@ -130,59 +143,26 @@ const ProfileScreen = ({location, history}) => {
                     : errorWishList
                         ? <Message variant='danger'>{errorWishList}</Message>
                         : (
-                            <Table striped bordered hover responsive className='table-sm' >
-                                <thead>
-                                <tr>
-                                    {/*<th>ID</th>*/}
-                                    {/*<th>DATE</th>*/}
-                                    {/*<th>TOTAL</th>*/}
-                                    {/*<th>PAID</th>*/}
-                                    <th>Item</th>
-                                    {/*<th> name</th>*/}
-                                </tr>
-                                </thead>
-                                <tbody>
-                                {wishLists.map(wishList => (
-                                    <tr key={wishList.wishListItems.product._id}>
-                                         <td><img src={wishList.wishListItems.image} alt=""/>
-                                         </td>
-                                        <td>{wishList.wishListItems.name}
-                                        ))}</td>
-
-                                        {/*// {wishDetails.wishListItems.map((item, index) => (*/}
-                                        {/*//     <tr key={index}>*/}
-                                        {/*//         <td>*/}
-                                        {/*//             <Image src={item.image} alt={item.name} fluid rounded/>*/}
-                                        {/*//         </td>*/}
-                                        {/*//         <td>*/}
-                                        {/*//             <Link to={`/product/${item.product}`}>*/}
-                                        {/*//                 {item.name}*/}
-                                        {/*//             </Link>*/}
-                                        {/*//         </td>*/}
-
-                                                    {/*<Col md={4}>*/}
-                                                    {/*    {item.qty} x $ {item.price} = $ {item.qty * item.price}*/}
-                                                    {/*</Col>*/}
-                                                {/*</Row>*/}
-                                            {/*</tr>*/}
-                                        ))}
-                                        {/*<td>{order.isPaid ? order.paidAt.substring(0, 10) : (*/}
-                                        {/*    <i className='fas fa-times' style={{color: 'red'}}> </i>*/}
-                                        {/*)}</td>*/}
-                                        {/*<td>{order.isDelivered ? order.deliveredAt.substring(0, 10) : (*/}
-                                        {/*    <i className='fas fa-times' style={{color: 'red'}}> </i>*/}
-                                        {/*)}</td>*/}
-                                        {/*<td>*/}
-                                        {/*    <LinkContainer to={`/order/${order._id}`} >*/}
-                                        {/*        <Button className='btn-sm' variant='light'>Details</Button>*/}
-                                        {/*    </LinkContainer>*/}
-                                        {/*</td>*/}
-                                    </tr>
-                                ))}
-                                </tbody>
-                            </Table>
-
-                        ) }
+                <Table striped bordered hover responsive className='table-sm'>
+                    <thead>
+                    <tr>
+                        <th>IMAGE</th>
+                        <th>NAME</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {wishListItems.map((item, index) => (
+                        <tr key={index}>
+                            {console.log(item)}
+                            <td>
+                                <Image src={item.image} alt={item.name} fluid rounded/>
+                            </td>
+                            <td>{item.name}</td>
+                        </tr>
+                    ))}
+                    </tbody>
+                </Table>
+                ) }
             </Col>
         </Row>
 
