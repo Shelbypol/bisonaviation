@@ -8,6 +8,23 @@
     --speed: 500ms;
 }
 
+.stick{
+    /*position: sticky;*/
+    /*top: 5%;*/
+    /*z-index: 100;*/
+    background-color: #fff;
+    padding-top: 10%;
+    margin-top: -10%;
+}
+
+.stick-margins{
+    position: sticky;
+    height: auto;
+    top: 5%;
+    z-index: 100;
+    background-color: #fff;
+ }
+
 ul {
     list-style: none;
     margin: 0;
@@ -19,14 +36,12 @@ a {
     text-decoration: none;
 }
 
-
-
 /* Top Navigation Bar */
 
 /* <nav> */
 .wishList-navbar {
     /*height: var(--nav-size);*/
-    background-color: #000;
+    /*background-color: #;*/
     padding: 0;
     /*border-bottom: var(--border);*/
 }
@@ -42,7 +57,7 @@ a {
 
 /* <li> */
 .wishList-nav-item {
-    width: calc(var(--nav-size) * 0.8);
+    /*width: calc(var(--nav-size) * 0.8);*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -86,13 +101,15 @@ a {
     width: 150%;
     height: 75vh;
     max-height: 75vh;
-    transform: translateX(-45%);
+    /*transform: translateX(-45%);*/
+    transform: translateX(-10%);
     background-color: #fff;
     border: var(--border);
     border-radius: var(--border-radius);
     padding: 1rem;
     overflow-y: scroll;
-    transition: height var(--speed) ease;
+    transition: none;
+    /*transition: height var(--speed) ease;*/
 }
 
 .wishList-menu {
@@ -120,13 +137,14 @@ a {
     margin-left: auto;
 }
 
-/* CSSTransition classes  */
+ /*CSSTransition classes  */
 .wishList-menu-primary-enter {
     position: absolute;
     transform: translateX(-110%);
+
 }
 .wishList-menu-primary-enter-active {
-    transform: translateX(0%);
+    transform: translateX(-110%);
     transition: all var(--speed) ease;
 }
 .wishList-menu-primary-exit {
