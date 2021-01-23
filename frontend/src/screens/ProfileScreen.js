@@ -49,8 +49,6 @@ const ProfileScreen = ({location, history}) => {
             if (!user.name || !user || success) {
                 dispatch({ type: USER_UPDATE_PROFILE_RESET });
                 dispatch(getUserDetails('profile'));
-                // dispatch(listMyOrders())
-                // dispatch(listMyWishLists())
                 // dispatch(listMyWishLists())
             } else {
                 setName(user.name);
@@ -58,7 +56,7 @@ const ProfileScreen = ({location, history}) => {
             }
         }
 
-    }, [dispatch, history, userInfo, user, success]);
+    }, [dispatch, history, userInfo, user, success, wishListDetails]);
 
 
     const submitHandler = (e) => {
@@ -125,10 +123,10 @@ const ProfileScreen = ({location, history}) => {
             </Col>
             <Col md={9}>
                 <h2>My WishLists</h2>
-                { loadingWishListDetails
+                { loadingWishList
                     ? <Loader />
-                    : errorWishListDetails
-                        ? <Message variant='danger'>{errorWishListDetails}</Message>
+                    : errorWishList
+                        ? <Message variant='danger'>{errorWishList}</Message>
                         : (
                             <Table striped bordered hover responsive className='table-sm' >
                                 <thead>
@@ -142,26 +140,23 @@ const ProfileScreen = ({location, history}) => {
                                 </tr>
                                 </thead>
                                 <tbody>
-                                {/*{wishLists.map(wishList => (*/}
-                                {/*    // <tr key={wishList._id}>*/}
-                                {/*    //      <td><img src={wishList.wishListItems.map(wish => (*/}
-                                {/*    //          wish.name*/}
-                                    {/*//      ))} alt=""/>*/}
-                                    {/*//      </td>*/}
-                                    {/*//     <td>{wishList.wishListItems.map(wish => (*/}
-                                    {/*//         wish.product.name*/}
-                                    {/*//     ))}</td>*/}
+                                {wishLists.map(wishList => (
+                                    <tr key={wishList._id}>
+                                         <td><img src={wishList.wishListItems.image} alt=""/>
+                                         </td>
+                                        <td>{wishList.wishListItems.name}
+                                        ))}</td>
 
-                                        {wishDetails.wishListItems.map((item, index) => (
-                                            <tr key={index}>
-                                                <td>
-                                                    <Image src={item.image} alt={item.name} fluid rounded/>
-                                                </td>
-                                                <td>
-                                                    <Link to={`/product/${item.product}`}>
-                                                        {item.name}
-                                                    </Link>
-                                                </td>
+                                        {/*// {wishDetails.wishListItems.map((item, index) => (*/}
+                                        {/*//     <tr key={index}>*/}
+                                        {/*//         <td>*/}
+                                        {/*//             <Image src={item.image} alt={item.name} fluid rounded/>*/}
+                                        {/*//         </td>*/}
+                                        {/*//         <td>*/}
+                                        {/*//             <Link to={`/product/${item.product}`}>*/}
+                                        {/*//                 {item.name}*/}
+                                        {/*//             </Link>*/}
+                                        {/*//         </td>*/}
 
                                                     {/*<Col md={4}>*/}
                                                     {/*    {item.qty} x $ {item.price} = $ {item.qty * item.price}*/}
