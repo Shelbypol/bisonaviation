@@ -7,7 +7,7 @@ import Message from '../components/Message'
 import Loader from '../components/Loader'
 import { getUserDetails, updateUserProfile } from '../actions/userActions'
 // import { listMyOrders } from "../actions/orderActions";
-import {listMyWishLists} from "../actions/wishListActions";
+import {listMyWishLists, getWishListDetails} from "../actions/wishListActions";
 import { USER_UPDATE_PROFILE_RESET } from "../constants/userConstants";
 import {Link} from "react-router-dom";
 
@@ -49,14 +49,15 @@ const ProfileScreen = ({location, history}) => {
             if (!user.name || !user || success) {
                 dispatch({ type: USER_UPDATE_PROFILE_RESET });
                 dispatch(getUserDetails('profile'));
-                // dispatch(listMyWishLists())
+                dispatch(listMyWishLists)
+                // dispatch(getWishListDetails(wishDetails._id))
             } else {
                 setName(user.name);
                 setEmail(user.email);
             }
         }
 
-    }, [dispatch, history, userInfo, user, success, wishListDetails]);
+    }, [dispatch, history, userInfo, user, success, wishListDetails, wishListMy]);
 
 
     const submitHandler = (e) => {
@@ -70,6 +71,7 @@ const ProfileScreen = ({location, history}) => {
             dispatch(updateUserProfile({ id: user._id, name, email, password }))
         }
     };
+
 
 
     return (
@@ -141,7 +143,7 @@ const ProfileScreen = ({location, history}) => {
                                 </thead>
                                 <tbody>
                                 {wishLists.map(wishList => (
-                                    <tr key={wishList._id}>
+                                    <tr key={wishList.wishListItems.product._id}>
                                          <td><img src={wishList.wishListItems.image} alt=""/>
                                          </td>
                                         <td>{wishList.wishListItems.name}
