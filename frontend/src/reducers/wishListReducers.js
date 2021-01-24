@@ -29,7 +29,7 @@ export const wishListCreateReducers = (state = {}, action ) => {
             return {
                 loading: false,
                 success: true,
-                order: action.payload,
+                wishList: action.payload,
             };
         case WISHLIST_CREATE_FAIL:
             return {
@@ -51,7 +51,8 @@ export const wishListDetailsReducers = (state = { loading: true, wishListItems: 
         case WISHLIST_DETAILS_SUCCESS:
             return {
                 loading: false,
-                order: action.payload,
+                success: true,
+                wishListItems : action.payload,
             };
         case WISHLIST_DETAILS_FAIL:
             return {
@@ -63,25 +64,21 @@ export const wishListDetailsReducers = (state = { loading: true, wishListItems: 
     }
 };
 
-export const wishListMyReducer = (state = { wishLists: []}, action ) => {
+export const wishListMyReducer = (state = { wishList: []}, action ) => {
     switch(action.type) {
         case WISHLIST_LIST_MY_REQUEST:
             return {
                 loading: true,
             };
         case WISHLIST_LIST_MY_SUCCESS:
-            return {
-                loading: false,
-                wishLists: action.payload,
+            return {loading: false, wishList: action.payload,
             };
         case WISHLIST_LIST_MY_FAIL:
-            return {
-                loading: false,
-                error: action.payload,
+            return {loading: false, error: action.payload,
             };
         case WISHLIST_LIST_MY_RESET:
             return {
-                wishLists: []
+                wishList: []
             };
 
         default:
@@ -89,7 +86,7 @@ export const wishListMyReducer = (state = { wishLists: []}, action ) => {
     }
 };
 
-// ORDER UPDATE REDUCER
+// WISHLIST UPDATE REDUCER
 export const wishListReducer = (state = { wishLists: [] }, action) => {
     switch(action.type){
         case WISHLIST_LIST_REQUEST:

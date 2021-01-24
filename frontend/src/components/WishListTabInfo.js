@@ -21,7 +21,7 @@ const WishListTabInfo = ({dropdownItemProp}) => {
     const {cartItems} = cart;
 
     const wishListCreate = useSelector(state => state.wishListCreate);
-    const { wishlist, success, error } = wishListCreate;
+    const { wishList, success, error } = wishListCreate;
 
     useEffect(() => {
         if(success) {

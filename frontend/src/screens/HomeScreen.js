@@ -24,6 +24,7 @@ import '../style/animations.css'
 import SummaryNav from "../components/Headers-Nav-Footer/SummaryNav";
 import TestimonialCarousel from "../components/TestimonialCarousel";
 import ScrollToTop from "../components/ScrollToTop";
+import jeffmicheal from '../images/Jeff -Michael.jpeg'
 
 
 const HomeScreen = () => {
