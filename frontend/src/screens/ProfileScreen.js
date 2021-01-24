@@ -6,8 +6,8 @@ import {useDispatch, useSelector} from 'react-redux'
 import Message from '../components/Message'
 import Loader from '../components/Loader'
 import { getUserDetails, updateUserProfile } from '../actions/userActions'
-import { listMyOrders } from "../actions/orderActions";
-import { listMyWishLists } from "../actions/wishListActions";
+import {getOrderDetails, listMyOrders} from "../actions/orderActions";
+import { listMyWishLists, getWishListDetails } from "../actions/wishListActions";
 import { USER_UPDATE_PROFILE_RESET } from "../constants/userConstants";
 
 // whenever you bring something in from the state it's useSelector
@@ -34,8 +34,11 @@ const ProfileScreen = ({location, history}) => {
     // const orderListMy = useSelector(state => state.orderListMy);
     // const {loading: loadingOrders, error: errorOrders, orders} = orderListMy;
 
+    const wishListDetails = useSelector((state) => state.wishListDetails);
+    const {wishDetails, success: wishDetailsSuccess} = wishListDetails;
+
     const wishListMy = useSelector(state => state.wishListMy);
-    const {loading: loadingOrders, error: errorOrders, wishLists} = wishListMy;
+    const {loading: loadingOrders, error: errorOrders, wishList} = wishListMy;
 
     useEffect(() => {
         if (!userInfo) {
@@ -51,7 +54,7 @@ const ProfileScreen = ({location, history}) => {
                 setEmail(user.email);
             }
         }
-    }, [dispatch, history, userInfo, user, success]);
+    }, [dispatch, history, userInfo, user, success, wishList]);
 
 
     const submitHandler = (e) => {
@@ -66,6 +69,7 @@ const ProfileScreen = ({location, history}) => {
         }
 
     };
+
 
     return (
 
@@ -131,50 +135,55 @@ const ProfileScreen = ({location, history}) => {
                                     {/*<th>TOTAL</th>*/}
                                     {/*<th>PAID</th>*/}
                                     <th>EMAILED</th>
-                                    <th> </th>
+                                    <th>NAME </th>
+                                    <th>QTY</th>
+                                    <th>PRICE</th>
+                                    <th>IMAGE</th>
                                 </tr>
                                 </thead>
                                 <tbody>
-                                {wishLists.map(wish => (
+                                {wishList.map(wishes => (
+                                    wishes.wishListItems.map(wish => (
                                     <tr key={wish._id}>
                                         <td>{wish._id}</td>
-                                        {/*<td>{wishLists.createdAt.substring(0, 10)}</td>*/}
-                                        {/*<td>{wishLists.totalPrice}</td>*/}
-                                        {/*<td>{wishLists.isPaid ? order.paidAt.substring(0, 10) : (*/}
-                                        {/*    <i className='fas fa-times' style={{color: 'red'}}> </i>*/}
-                                        {/*)}</td>*/}
                                         <td>{wish.isEmailed ? (
                                             <i className='fas fa-check' style={{color: 'green'}}> </i>
                                         ):(
                                             <i className='fas fa-times' style={{color: 'red'}}> </i>
-
                                         )}</td>
-                                        <td>
-                                            {/*<LinkContainer to={`/order/${wish._id}`} >*/}
-                                                <Button className='btn-sm' variant='light'>Details</Button>
-                                            {/*</LinkContainer>*/}
-                                        </td>
+                                        <td>{wish.name !== '' ? (
+                                            <h6>{wish.name}</h6>
+                                        ):(
+                                            <h6>who dis</h6>
+                                        )
+
+                                        }</td>
+                                        <td>{wish.qty}</td>
+                                        <td>{wish.price}</td>
+                                        <td><img src={wish.image} alt={wish.name} className='h-25 w-25 rounded'/></td>
+
                                     </tr>
-
-
-                                    // <tr key={order._id}>
-                                    // <td>{order._id}</td>
-                                    // <td>{order.createdAt.substring(0, 10)}</td>
-                                    // <td>{order.totalPrice}</td>
-                                    // <td>{order.isPaid ? order.paidAt.substring(0, 10) : (
-                                    // <i className='fas fa-times' style={{color: 'red'}}> </i>
-                                    // )}</td>
-                                    // <td>{order.isDelivered ? order.deliveredAt.substring(0, 10) : (
-                                    // <i className='fas fa-times' style={{color: 'red'}}> </i>
-                                    // )}</td>
-                                    // <td>
-                                    // <LinkContainer to={`/order/${order._id}`} >
-                                    // <Button className='btn-sm' variant='light'>Details</Button>
-                                    // </LinkContainer>
-                                    // </td>
-                                    // </tr>
-
+                                    ))
                                 ))}
+
+                                    {/*// <tr key={order._id}>*/}
+                                    {/*// <td>{order._id}</td>*/}
+                                    {/*// <td>{order.createdAt.substring(0, 10)}</td>*/}
+                                    {/*// <td>{order.totalPrice}</td>*/}
+                                    {/*// <td>{order.isPaid ? order.paidAt.substring(0, 10) : (*/}
+                                    {/*// <i className='fas fa-times' style={{color: 'red'}}> </i>*/}
+                                    {/*// )}</td>*/}
+                                    {/*// <td>{order.isDelivered ? order.deliveredAt.substring(0, 10) : (*/}
+                                    {/*// <i className='fas fa-times' style={{color: 'red'}}> </i>*/}
+                                    {/*// )}</td>*/}
+                                    {/*// <td>*/}
+                                    {/*// <LinkContainer to={`/order/${order._id}`} >*/}
+                                    {/*// <Button className='btn-sm' variant='light'>Details</Button>*/}
+                                    {/*// </LinkContainer>*/}
+                                    {/*// </td>*/}
+                                    {/*// </tr>*/}
+
+
                                 </tbody>
                             </Table>
 

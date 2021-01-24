@@ -33,8 +33,10 @@ const WishListTabInfo = ({dropdownItemProp}) => {
 
     const placeOrderHandler = () => {
         dispatch(createWishList({
-            wishListItems: cart.cartItems
+            wishlist: cart.cartItems
+
         }));
+        console.log(cart.cartItems)
         dispatch({type: CART_RESET});
 
     };
@@ -67,7 +69,7 @@ const WishListTabInfo = ({dropdownItemProp}) => {
 
                     {userInfo ? (
 
-                        <h6 onClick={placeOrderHandler}>
+                        <Col onClick={placeOrderHandler}>
 
                             {success ? (
                                 <h6>Saved</h6>
@@ -75,7 +77,7 @@ const WishListTabInfo = ({dropdownItemProp}) => {
                                 <h6>Save wishlist to profile</h6>
                             )}
 
-                        </h6>
+                        </Col>
 
                         ) : (
 
