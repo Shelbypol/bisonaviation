@@ -29,7 +29,7 @@ export const wishListCreateReducers = (state = {}, action ) => {
             return {
                 loading: false,
                 success: true,
-                wishList: action.payload,
+                wishlist: action.payload,
             };
         case WISHLIST_CREATE_FAIL:
             return {

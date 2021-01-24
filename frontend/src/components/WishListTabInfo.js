@@ -10,7 +10,7 @@ import {createWishList} from "../actions/wishListActions";
 
 
 // match == id, location == get a query string '?qty', history == used to redirect
-const WishListTabInfo = ({dropdownItemProp}) => {
+const WishListTabInfo = () => {
 
     const dispatch = useDispatch();
 
@@ -21,7 +21,7 @@ const WishListTabInfo = ({dropdownItemProp}) => {
     const {cartItems} = cart;
 
     const wishListCreate = useSelector(state => state.wishListCreate);
-    const { wishList, success, error } = wishListCreate;
+    const { wishlist, success, error } = wishListCreate;
 
     useEffect(() => {
         if(success) {
@@ -32,9 +32,11 @@ const WishListTabInfo = ({dropdownItemProp}) => {
 
 
     const placeOrderHandler = () => {
+        console.log(cart.cartItems);
         dispatch(createWishList({
             wishListItems: cart.cartItems
         }));
+
         dispatch({type: CART_RESET});
 
     };
