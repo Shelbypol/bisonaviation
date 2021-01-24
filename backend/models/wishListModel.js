@@ -8,19 +8,17 @@ const wishListSchema = mongoose.Schema({
         ref: 'User'
     },
     wishListItems: [
-
-            {name: {type: String, required: true}},
-            {qty: {type: Number, required: true}},
-            {image: {type: String, required: true}},
-            {price: {type: Number, required: true}},
         {
+            name: {type: String},
+            qty: {type: Number},
+            image: {type: String},
+            price: {type: Number},
             product: {
                 type: mongoose.Schema.Types.ObjectId,
                 required: true,
                 ref: 'Product',
             }
         }
-
     ],
     isEmailed: {
         type: Boolean,

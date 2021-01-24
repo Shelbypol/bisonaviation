@@ -147,7 +147,7 @@ export const listMyWishLists = () => async (dispatch, getState) => {
             }
         };
 
-        const {data} = await axios.get('/api/wishlist/mywishlists', config);
+        const {data} = await axios.get(`/api/wishlist/mywishlists`, config);
 
         dispatch({
             type: WISHLIST_LIST_MY_SUCCESS,
