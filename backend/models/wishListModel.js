@@ -18,16 +18,24 @@ const wishListSchema = mongoose.Schema({
                 required: true,
                 ref: 'Product',
             },
-            isEmailed: {
-                type: Boolean,
-                required: true,
-                default: false
-            },
-            emailedAt: {
-                type: Date
-            },
+            // isEmailed: {
+            //     type: Boolean,
+            //     required: true,
+            //     default: false
+            // },
+            // emailedAt: {
+            //     type: Date
+            // },
         }
     ],
+    isEmailed: {
+        type: Boolean,
+        required: true,
+        default: false
+    },
+    emailedAt: {
+        type: Date
+    },
 }, {
     //add this second argument and it will add date and time automatically
     timestamps: true

@@ -21,7 +21,7 @@ const WishListTabInfo = ({dropdownItemProp}) => {
     const {cartItems} = cart;
 
     const wishListCreate = useSelector(state => state.wishListCreate);
-    const { wishlist, success, error } = wishListCreate;
+    const { wishList, success, error } = wishListCreate;
 
     useEffect(() => {
         if(success) {
@@ -33,10 +33,8 @@ const WishListTabInfo = ({dropdownItemProp}) => {
 
     const placeOrderHandler = () => {
         dispatch(createWishList({
-            wishlist: cart.cartItems
-
+            wishListItems: cart.cartItems
         }));
-        console.log(cart.cartItems)
         dispatch({type: CART_RESET});
 
     };
@@ -69,7 +67,7 @@ const WishListTabInfo = ({dropdownItemProp}) => {
 
                     {userInfo ? (
 
-                        <Col onClick={placeOrderHandler}>
+                        <h6 onClick={placeOrderHandler}>
 
                             {success ? (
                                 <h6>Saved</h6>
@@ -77,7 +75,7 @@ const WishListTabInfo = ({dropdownItemProp}) => {
                                 <h6>Save wishlist to profile</h6>
                             )}
 
-                        </Col>
+                        </h6>
 
                         ) : (
 

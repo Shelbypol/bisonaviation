@@ -26,6 +26,7 @@ const addWishListItems = asyncHandler(async (req, res) => {
     }
 });
 
+
 // @desc    Get wishList by ID
 // @route   GET /api/wishList/:id
 // @access  Private
