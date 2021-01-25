@@ -72,7 +72,7 @@ const getMyWishLists = asyncHandler(async (req, res) => {
 // @route   DELETE /api/wishlist/delete/:id
 // @access  Private/Admin
 const deleteWishListItem = asyncHandler(async (req, res) => {
-    const wishListItem = await WishList.wishListItems.findById(req.params.id);
+    const wishListItem = await WishList.findById(req.params.id);
 
     if(wishListItem){
         // await wishListItem.remove();

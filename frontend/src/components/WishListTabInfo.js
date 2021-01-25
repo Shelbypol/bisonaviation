@@ -33,10 +33,24 @@ const WishListTabInfo = () => {
     }, [ dispatch, success]);
 
 
+    // const placeOrderHandler = () => {
+    //     console.log(cart.items);
+    //     dispatch(createWishList({
+    //         wishListItems: cart.cartItems
+    //     }));
+    //     dispatch({type: CART_RESET});
+    //
+    // };
+
+
     const placeOrderHandler = () => {
-        dispatch(createWishList({
-            wishListItems: cart.cartItems
-        }));
+
+        for(let i = 0; i >= cart.items.length; i ++){
+            dispatch(createWishList({
+                wishListItems: cart.cartItems[i]
+            }));
+            i++
+        }
         dispatch({type: CART_RESET});
 
     };

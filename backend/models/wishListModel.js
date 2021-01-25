@@ -7,27 +7,52 @@ const wishListSchema = mongoose.Schema({
         required: true,
         ref: 'User'
     },
+    // wishListItems: [
+    //     {
+    //         name: {type: String, required: true},
+    //         qty: {type: Number, required: false},
+    //         image: {type: String, required: true},
+    //         price: {type: Number, required: true},
+    //         product: {
+    //             type: mongoose.Schema.Types.ObjectId,
+    //             required: true,
+    //             ref: 'Product',
+    //         },
+    //         isEmailed: {
+    //             type: Boolean,
+    //             required: false,
+    //             default: false
+    //         },
+    //         emailedAt: {
+    //             type: Date
+    //         },
+    //     }
+    // ],
+
+
     wishListItems: [
         {
-            name: {type: String, required: true},
-            qty: {type: Number, required: false},
-            image: {type: String, required: true},
-            price: {type: Number, required: true},
             product: {
                 type: mongoose.Schema.Types.ObjectId,
                 required: true,
                 ref: 'Product',
-            },
-            isEmailed: {
-                type: Boolean,
-                required: false,
-                default: false
-            },
-            emailedAt: {
-                type: Date
+                name: {type: String, required: true},
+                qty: {type: Number, required: false},
+                image: {type: String, required: true},
+                price: {type: Number, required: true},
+                isEmailed: {
+                    type: Boolean,
+                    required: false,
+                    default: false
+                },
+                emailedAt: {
+                    type: Date
+                },
             },
         }
+
     ],
+
     // isEmailed: {
     //     type: Boolean,
     //     required: true,
