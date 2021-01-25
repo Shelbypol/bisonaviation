@@ -6,13 +6,14 @@ import Message from '../components/Message'
 import {addToCart, removeFromCart} from '../actions/cartActions'
 import {createOrder} from "../actions/orderActions";
 import {CART_RESET} from "../constants/cartConstants";
-import {createWishList} from "../actions/wishListActions";
+import {createWishList, listMyWishLists} from "../actions/wishListActions";
 
 
 // match == id, location == get a query string '?qty', history == used to redirect
 const WishListTabInfo = () => {
 
     const [ qty, setQty] = useState(1);
+    const [ title, setTitle ] = useState('');
 
     const dispatch = useDispatch();
 
@@ -26,10 +27,9 @@ const WishListTabInfo = () => {
     const { wishList, success, error } = wishListCreate;
 
     useEffect(() => {
-        if(success) {
-            // history.push(`/order/${order._id}`)
-        }
-        //     eslint-disable-next-line
+
+        dispatch(listMyWishLists())
+
     }, [ dispatch, success]);
 
 
@@ -42,6 +42,7 @@ const WishListTabInfo = () => {
         dispatch({type: CART_RESET});
 
     };
+
     // const addToWishListHandler = () => {
     //     dispatch(createWishList({
     //         wishListItems: cart.cartItems
@@ -80,24 +81,14 @@ const WishListTabInfo = () => {
 
                     {userInfo ? (
 
-                        <h6 onClick={addToWishListHandler}>
-
-                            {success ? (
-                                <h6>Saved</h6>
-                                ):(
-                                <h6>Save wishlist to profile</h6>
-                            )}
-
-                        </h6>
-
+                        <h6 onClick={addToWishListHandler}>Save wishlist to profile</h6>
                         ) : (
-
                         <Link to='/login'>
                             <h6>
                                 <strong className='global_bisonRedTxt global_cursor'>sign in</strong> to save
                             </h6>
                         </Link>
-                )}
+                    )}
                     </Col>
                 <Col xs={4}
                      className='border-right stick global_cursor global_bisonFadedRedHover p-auto d-flex align-items-center justify-content-center'>
