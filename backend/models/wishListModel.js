@@ -7,66 +7,33 @@ const wishListSchema = mongoose.Schema({
         required: true,
         ref: 'User'
     },
-    // wishListItems: [
-    //     {
-    //         name: {type: String, required: true},
-    //         qty: {type: Number, required: false},
-    //         image: {type: String, required: true},
-    //         price: {type: Number, required: true},
-    //         product: {
-    //             type: mongoose.Schema.Types.ObjectId,
-    //             required: true,
-    //             ref: 'Product',
-    //         },
-    //         isEmailed: {
-    //             type: Boolean,
-    //             required: false,
-    //             default: false
-    //         },
-    //         emailedAt: {
-    //             type: Date
-    //         },
-    //     }
-    // ],
-
 
     wishListItems: [
-        {
+        { name: {type: String, required: true},
+            qty: {type: Number, required: false},
+            image: {type: String, required: true},
+            price: {type: Number, required: true},
             product: {
                 type: mongoose.Schema.Types.ObjectId,
                 required: true,
                 ref: 'Product',
-                name: {type: String, required: true},
-                qty: {type: Number, required: false},
-                image: {type: String, required: true},
-                price: {type: Number, required: true},
-                isEmailed: {
-                    type: Boolean,
-                    required: false,
-                    default: false
-                },
-                emailedAt: {
-                    type: Date
-                },
+            },
+            isEmailed: {
+                type: Boolean,
+                required: false,
+                default: false
+            },
+            emailedAt: {
+                type: Date
             },
         }
 
     ],
 
-    // isEmailed: {
-    //     type: Boolean,
-    //     required: true,
-    //     default: false
-    // },
-    // emailedAt: {
-    //     type: Date
-    // },
 }, {
-    //add this second argument and it will add date and time automatically
     timestamps: true
 });
 
-// set to mongoose.Model b/c we want to create a model from this schema
 const WishList = mongoose.model('WishList', wishListSchema);
 
 export default WishList

@@ -33,27 +33,15 @@ const WishListTabInfo = () => {
     }, [ dispatch, success]);
 
 
-    // const placeOrderHandler = () => {
-    //     console.log(cart.items);
-    //     dispatch(createWishList({
-    //         wishListItems: cart.cartItems
-    //     }));
-    //     dispatch({type: CART_RESET});
-    //
-    // };
-
-
-    const placeOrderHandler = () => {
-
-        for(let i = 0; i >= cart.items.length; i ++){
-            dispatch(createWishList({
-                wishListItems: cart.cartItems[i]
-            }));
-            i++
-        }
+    const addToWishListHandler = () => {
+        dispatch(createWishList({
+            wishListItems: cart.cartItems
+        }));
         dispatch({type: CART_RESET});
 
     };
+
+
 
     const removeFromWishListHandler = (id) => {
         dispatch(removeFromCart(id))
@@ -83,7 +71,7 @@ const WishListTabInfo = () => {
 
                     {userInfo ? (
 
-                        <h6 onClick={placeOrderHandler}>
+                        <h6 onClick={addToWishListHandler}>
 
                             {success ? (
                                 <h6>Saved</h6>
