@@ -147,7 +147,7 @@ const ProfileScreen = ({location, history}) => {
                                                     <ListGroup.Item key={item._id}
                                                                     className='border-0 global_bisonDarkFadedBgColorHover global_cursor'>
                                                         <Row xs={12}>
-                                                            <Col xs={4}>
+                                                            <Col xs={2}>
                                                                 <Link to={`/product/${item.product}`}>
                                                                     <Image src={item.image} alt={item.name} fluid
                                                                            rounded/>
@@ -163,12 +163,12 @@ const ProfileScreen = ({location, history}) => {
                                                                     <strong>${item.price}</strong>
                                                                 </Link>
                                                             </Col>
-                                                            {/*<Col md={2}>*/}
-                                                            {/*    <Button type='button' variant='light'*/}
-                                                            {/*            onClick={() => deleteHandler(item._id)}>*/}
-                                                            {/*        <i className='fas fa-trash'> </i>*/}
-                                                            {/*    </Button>*/}
-                                                            {/*</Col>*/}
+                                                            <Col md={2}>
+                                                                <Button type='button' variant='light'
+                                                                        onClick={() => deleteHandler(wishes._id)}>
+                                                                    <i className='fas fa-trash'> </i>
+                                                                </Button>
+                                                            </Col>
 
                                                         </Row>
                                                     </ListGroup.Item>
@@ -178,30 +178,36 @@ const ProfileScreen = ({location, history}) => {
                                 </ListGroup>
                                 </Col>
 
-                                <Col xs={2}>
-                                    <ListGroup variant='flush'>
-                                        <ListGroup.Item>
-                                            {wishList.map(wishes => (
-                                                // wishes.wishListItems.map(item => (
-                                                //     item.length === 0 ? <Message>Wishlist is empty</Message> :
-                                                        <ListGroup.Item key={wishes._id}
-                                                                        className='border-0 global_bisonDarkFadedBgColorHover global_cursor'>
-                                                            <Row xs={12}>
-                                                                <Col xs={12}>
-                                                                    <Button type='button' variant='light'
-                                                                            onClick={() => deleteHandler(wishes._id)}>
-                                                                        <i className='fas fa-trash'> </i>
-                                                                    </Button>
-                                                                </Col>
+                                {/*<Col xs={2}>*/}
+                                {/*    <ListGroup variant='flush'>*/}
+                                {/*        <ListGroup.Item>*/}
+                                {/*            {wishList.map(wishes => (*/}
+                                {/*                // wishes.wishListItems.map(item => (*/}
+                                {/*                //     item.length === 0 ? <Message>Wishlist is empty</Message> :*/}
+                                {/*                        <ListGroup.Item key={wishes._id}*/}
+                                {/*                                        className='border-0 global_bisonDarkFadedBgColorHover global_cursor'>*/}
+                                {/*                            <Row xs={12}>*/}
+                                {/*                                <Col xs={12}>*/}
+                                {/*                                    <Button type='button' variant='light'*/}
+                                {/*                                            onClick={() => deleteHandler(wishes._id)}>*/}
+                                {/*                                        <i className='fas fa-trash'> </i>*/}
+                                {/*                                    </Button>*/}
+                                {/*                                </Col>*/}
 
-                                                            </Row>
-                                                        </ListGroup.Item>
-                                            ))}
-                                        </ListGroup.Item>
-                                    </ListGroup>
-                                </Col>
+                                {/*                            </Row>*/}
+                                {/*                        </ListGroup.Item>*/}
+                                {/*            ))}*/}
+                                {/*        </ListGroup.Item>*/}
+                                {/*    </ListGroup>*/}
+                                {/*</Col>*/}
 
                             </Row>
+
+
+
+
+
+
                         )}
             </Col>
         </Row>
