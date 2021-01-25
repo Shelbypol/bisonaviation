@@ -5,8 +5,6 @@ import ProfileSavedWishList from "../components/ProfileSavedWishList";
 
 const ProfileScreen = ({location, history}) => {
 
-
-
     return (
         <>
         <Tab.Container id="left-tabs-example" defaultActiveKey="first">
