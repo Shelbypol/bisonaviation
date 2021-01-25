@@ -33,7 +33,8 @@ import {
     wishListDetailsReducers,
     wishListEmailReducer,
     wishListMyReducer,
-    wishListReducer
+    wishListReducer,
+    wishListDeleteReducer
 } from "./reducers/wishListReducers";
 
 // product list part of the state
@@ -65,7 +66,8 @@ const reducer = combineReducers({
     wishListDetails: wishListDetailsReducers,
     wishListEmail: wishListEmailReducer,
     wishListMy: wishListMyReducer,
-    wishList: wishListReducer
+    wishList: wishListReducer,
+    wishListDelete: wishListDeleteReducer,
 });
 
 // LOCAL STORAGE cart items & users

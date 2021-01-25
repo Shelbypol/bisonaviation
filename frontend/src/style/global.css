@@ -67,7 +67,6 @@ p{
     background-color: rgba(0, 0, 0, .1);
 }
 
-
 .global_bisonFadedRedHover:hover{
     background-color: rgba(90, 00, 09, .1);
 
@@ -159,6 +158,10 @@ p{
     background: linear-gradient(rgba(04, 06, 07, 1), #fff, #fff);
 }
 
+.global_red-horizontal-gradient {
+    background: linear-gradient(#87CEEB, #fff, #fff);
+}
+
 .global_circleHover:hover {
     background-color: black;
 }
@@ -177,9 +180,9 @@ p{
 }
 
 .global_sticky_scroll{
-    position: sticky;
+    position: absolute;
     top: 20vh;
-    scroll-behavior: smooth;
+    /*scroll-behavior: smooth;*/
     overflow-y: auto;
 }
 

@@ -129,7 +129,7 @@ const getUsers = asyncHandler(async (req, res) => {
 
 
 // @desc    DELETE delete user
-// @route   DELETE pi/users/:di
+// @route   DELETE /api/users/:id
 // @access  Private/Admin
 const deleteUser = asyncHandler(async (req, res) => {
     const user = await User.findById(req.params.id);
@@ -141,9 +141,7 @@ const deleteUser = asyncHandler(async (req, res) => {
         res.status(404);
         throw new Error('User not found')
     }
-
-
-    res.json(users)
+    // res.json(users)
 });
 
 // @desc    GET user by id

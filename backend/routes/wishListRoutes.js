@@ -5,7 +5,8 @@ import {
     getWishListById,
     updateWishListToEmailed,
     getMyWishLists,
-    getWishLists
+    getWishLists,
+    deleteWishListItem
 } from "../controllers/wishListController.js";
 import { protect, admin } from '../middleware/authMiddleware.js'
 
@@ -14,7 +15,12 @@ router.route('/').post(protect, addWishListItems).get(protect, admin, getWishLis
 
 router.route('/mywishlists').get(protect, getMyWishLists);
 
-router.route('/:id').get(protect, getWishListById);
+router.route('/:id')
+    .get(protect, getWishListById);
+    // .delete(protect, deleteWishListItem);
+
+router.route('/delete/:id')
+    .delete(protect, deleteWishListItem);
 
 router.route('/:id/emailed').put(protect, updateWishListToEmailed);
 

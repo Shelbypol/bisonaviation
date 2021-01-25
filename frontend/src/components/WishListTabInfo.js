@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, {useEffect, useState} from 'react'
 import {Link} from 'react-router-dom'
 import {useDispatch, useSelector} from 'react-redux'
 import {Row, Col, ListGroup, Image, Form, Button, Card} from 'react-bootstrap'
@@ -6,11 +6,14 @@ import Message from '../components/Message'
 import {addToCart, removeFromCart} from '../actions/cartActions'
 import {createOrder} from "../actions/orderActions";
 import {CART_RESET} from "../constants/cartConstants";
-import {createWishList} from "../actions/wishListActions";
+import {createWishList, listMyWishLists} from "../actions/wishListActions";
 
 
 // match == id, location == get a query string '?qty', history == used to redirect
-const WishListTabInfo = ({dropdownItemProp}) => {
+const WishListTabInfo = () => {
+
+    const [ qty, setQty] = useState(1);
+    const [ title, setTitle ] = useState('');
 
     const dispatch = useDispatch();
 
@@ -24,20 +27,31 @@ const WishListTabInfo = ({dropdownItemProp}) => {
     const { wishList, success, error } = wishListCreate;
 
     useEffect(() => {
-        if(success) {
-            // history.push(`/order/${order._id}`)
-        }
-        //     eslint-disable-next-line
+
+        dispatch(listMyWishLists())
+
     }, [ dispatch, success]);
 
 
-    const placeOrderHandler = () => {
-        dispatch(createWishList({
-            wishListItems: cart.cartItems
-        }));
+    const addToWishListHandler = () => {
+        cart.cartItems.map(item => {
+            dispatch(createWishList({
+                wishListItems: item
+            }));
+        });
         dispatch({type: CART_RESET});
 
     };
+
+    // const addToWishListHandler = () => {
+    //     dispatch(createWishList({
+    //         wishListItems: cart.cartItems
+    //     }));
+    //     dispatch({type: CART_RESET});
+    //
+    // };
+
+
 
     const removeFromWishListHandler = (id) => {
         dispatch(removeFromCart(id))
@@ -67,24 +81,14 @@ const WishListTabInfo = ({dropdownItemProp}) => {
 
                     {userInfo ? (
 
-                        <h6 onClick={placeOrderHandler}>
-
-                            {success ? (
-                                <h6>Saved</h6>
-                                ):(
-                                <h6>Save wishlist to profile</h6>
-                            )}
-
-                        </h6>
-
+                        <h6 onClick={addToWishListHandler}>Save wishlist to profile</h6>
                         ) : (
-
                         <Link to='/login'>
                             <h6>
                                 <strong className='global_bisonRedTxt global_cursor'>sign in</strong> to save
                             </h6>
                         </Link>
-                )}
+                    )}
                     </Col>
                 <Col xs={4}
                      className='border-right stick global_cursor global_bisonFadedRedHover p-auto d-flex align-items-center justify-content-center'>

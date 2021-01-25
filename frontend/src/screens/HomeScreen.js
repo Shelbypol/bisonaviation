@@ -36,7 +36,7 @@ const HomeScreen = () => {
     return (
         <>
             <Jumbotrons
-                jumboClass={'m-0 p-0 animations_img-hover-zoom-out '}
+                jumboClass={'m-0 p-0 animations_img-hover-zoom-out'}
                 img={heroImg}
                 imgClassName={'col-12 p-0 mx-0 mb-0 Jumbotrons_img_responsive_size'}
                 textContainerStyle={{backgroundColor: 'rgba(01, 02, 03, 1)'}}
@@ -55,6 +55,7 @@ const HomeScreen = () => {
             <Jumbotrons
                 // jumboStyle={{backgroundColor:'white'}}
                 jumboClass={'mt-n3 pt-0 pb-5 global_black-horizontal-gradient'}
+                // jumboClass={'mt-n3 pt-0 pb-5 global_red-horizontal-gradient'}
                 // img={heroImg}
                 // imgClassName={'col-12 p-0 mx-0 mb-0'}
                 // textContainerStyle={{backgroundColor: 'white'}}

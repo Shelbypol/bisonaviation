@@ -15,7 +15,10 @@ import {
     WISHLIST_EMAIL_FAIL,
     WISHLIST_EMAIL_REQUEST,
     WISHLIST_EMAIL_SUCCESS,
-    WISHLIST_EMAIL_RESET
+    WISHLIST_EMAIL_RESET,
+    WISHLIST_DELETE_SUCCESS,
+    WISHLIST_DELETE_REQUEST,
+    WISHLIST_DELETE_FAIL
 } from "../constants/wishListConstants";
 
 
@@ -83,6 +86,19 @@ export const wishListMyReducer = (state = { wishList: []}, action ) => {
 
         default:
             return state
+    }
+};
+
+export const wishListDeleteReducer = (state = { }, action) => {
+    switch(action.type){
+        case WISHLIST_DELETE_REQUEST:
+            return {loading: true};
+        case WISHLIST_DELETE_SUCCESS:
+            return { loading: false, success: true };
+        case WISHLIST_DELETE_FAIL:
+            return { loading: false, error: action.payload };
+        default:
+            return state;
     }
 };
 
