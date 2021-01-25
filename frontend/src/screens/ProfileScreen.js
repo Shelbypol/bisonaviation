@@ -5,7 +5,7 @@ import {LinkContainer} from 'react-router-bootstrap'
 import {useDispatch, useSelector} from 'react-redux'
 import Message from '../components/Message'
 import Loader from '../components/Loader'
-import {deleteUser, getUserDetails, updateUserProfile} from '../actions/userActions'
+import {getUserDetails, updateUserProfile} from '../actions/userActions'
 import {listMyWishLists, deleteWishListItem} from "../actions/wishListActions";
 import {USER_UPDATE_PROFILE_RESET} from "../constants/userConstants";
 import {Link} from "react-router-dom";

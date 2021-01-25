@@ -16,7 +16,10 @@ router.route('/').post(protect, addWishListItems).get(protect, admin, getWishLis
 router.route('/mywishlists').get(protect, getMyWishLists);
 
 router.route('/:id')
-    .get(protect, getWishListById)
+    .get(protect, getWishListById);
+    // .delete(protect, deleteWishListItem);
+
+router.route('/delete/:id')
     .delete(protect, deleteWishListItem);
 
 router.route('/:id/emailed').put(protect, updateWishListToEmailed);

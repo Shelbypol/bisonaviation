@@ -218,7 +218,7 @@ export const deleteWishListItem = (id) => async (dispatch, getState) => {
             }
         };
 
-        await axios.delete(`/api/wishlist/${id}` ,config);
+        await axios.delete(`/api/wishlist/delete/${id}` ,config);
 
         dispatch({
             type: WISHLIST_DELETE_SUCCESS,
