@@ -8,7 +8,6 @@ import {deleteWishListItem, listMyWishLists} from "../actions/wishListActions";
 
 const ProfileSavedWishList = ({match, history}) => {
 
-
     const dispatch = useDispatch();
 
     const productDetails = useSelector(state => state.productDetails);
@@ -55,21 +54,21 @@ const ProfileSavedWishList = ({match, history}) => {
                                                                            rounded/>
                                                                 </Link>
                                                             </Col>
-                                                            <Col xs={4}>
+                                                            <Col xs={4} className='d-flex align-items-center'>
                                                                 <Link to={`/product/${item.product}`}>
                                                                     {item.name}
                                                                 </Link>
                                                             </Col>
-                                                            <Col xs={4}>
+                                                            <Col xs={4} className='d-flex justify-content-center align-items-center'>
                                                                 <Link to={`/product/${item.product}`}>
                                                                     <strong>${item.price}</strong>
                                                                 </Link>
                                                             </Col>
-                                                            <Col md={2}>
-                                                                <Button type='button' variant='light'
-                                                                        onClick={() => deleteHandler(wishes._id)}>
+                                                            <Col md={2} onClick={() => deleteHandler(wishes._id)} className='global_bisonDarkFadedBgColorHover d-flex justify-content-center align-items-center'>
+                                                                {/*<Button type='button' variant='light'*/}
+                                                                {/*        onClick={() => deleteHandler(wishes._id)}>*/}
                                                                     <i className='fas fa-trash'> </i>
-                                                                </Button>
+                                                                {/*</Button>*/}
                                                             </Col>
 
                                                         </Row>

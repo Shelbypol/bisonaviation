@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import {Form, Button, Row, Col, Table, ListGroup, Image, Tab, Nav} from 'react-bootstrap'
 import EditProfile from "../components/EditProfile";
 import ProfileSavedWishList from "../components/ProfileSavedWishList";
+import '../style/ProfileScreen.css'
 
 const ProfileScreen = ({location, history}) => {
 

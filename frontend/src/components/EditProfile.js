@@ -14,7 +14,6 @@ const EditProfile = ({match, history}) => {
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
     const [message, setMessage] = useState(null);
-    // const [deleteWish, setDeleteWish] = useState(false);
 
     const dispatch = useDispatch();
 
@@ -27,20 +26,14 @@ const EditProfile = ({match, history}) => {
     const userUpdateProfile = useSelector(state => state.userUpdateProfile);
     const {success} = userUpdateProfile;
 
-    const productDetails = useSelector(state => state.productDetails);
-    const {product} = productDetails;
+    // const productDetails = useSelector(state => state.productDetails);
+    // const {product} = productDetails;
 
-    // const orderListMy = useSelector(state => state.orderListMy);
-    // const {loading: loadingOrders, error: errorOrders, orders} = orderListMy;
-
-    // const wishListDetails = useSelector((state) => state.wishListDetails);
-    // const {wishDetails, success: wishDetailsSuccess} = wishListDetails;
-
-    const wishListMy = useSelector(state => state.wishListMy);
-    const {loading: loadingOrders, error: errorOrders, wishList} = wishListMy;
-
-    const wishListDelete = useSelector(state => state.wishListDelete);
-    const {loading: loadingDelete, error: errorDelete, success: successDelete} = wishListDelete;
+    // const wishListMy = useSelector(state => state.wishListMy);
+    // const {loading: loadingOrders, error: errorOrders, wishList} = wishListMy;
+    //
+    // const wishListDelete = useSelector(state => state.wishListDelete);
+    // const {loading: loadingDelete, error: errorDelete, success: successDelete} = wishListDelete;
 
     useEffect(() => {
         if (!userInfo) {
@@ -57,7 +50,7 @@ const EditProfile = ({match, history}) => {
         }
         dispatch(listMyWishLists())
 
-    }, [dispatch, history, userInfo, user, success, successDelete]);
+    }, [dispatch, history, userInfo, user, success]);
 
 
     const submitHandler = (e) => {
