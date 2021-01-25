@@ -34,12 +34,21 @@ const WishListTabInfo = () => {
 
 
     const addToWishListHandler = () => {
-        dispatch(createWishList({
-            wishListItems: cart.cartItems
-        }));
+        cart.cartItems.map(item => {
+            dispatch(createWishList({
+                wishListItems: item
+            }));
+        });
         dispatch({type: CART_RESET});
 
     };
+    // const addToWishListHandler = () => {
+    //     dispatch(createWishList({
+    //         wishListItems: cart.cartItems
+    //     }));
+    //     dispatch({type: CART_RESET});
+    //
+    // };
 
 
 
