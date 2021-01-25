@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, {useEffect, useState} from 'react'
 import {Link} from 'react-router-dom'
 import {useDispatch, useSelector} from 'react-redux'
 import {Row, Col, ListGroup, Image, Form, Button, Card} from 'react-bootstrap'
@@ -10,7 +10,9 @@ import {createWishList} from "../actions/wishListActions";
 
 
 // match == id, location == get a query string '?qty', history == used to redirect
-const WishListTabInfo = ({dropdownItemProp}) => {
+const WishListTabInfo = () => {
+
+    const [ qty, setQty] = useState(1);
 
     const dispatch = useDispatch();
 

@@ -5,11 +5,11 @@ import {LinkContainer} from 'react-router-bootstrap'
 import {useDispatch, useSelector} from 'react-redux'
 import Message from '../components/Message'
 import Loader from '../components/Loader'
-import {getUserDetails, updateUserProfile} from '../actions/userActions'
-import {getOrderDetails, listMyOrders} from "../actions/orderActions";
-import {listMyWishLists, getWishListDetails} from "../actions/wishListActions";
+import {deleteUser, getUserDetails, updateUserProfile} from '../actions/userActions'
+import {listMyWishLists, deleteWishListItem} from "../actions/wishListActions";
 import {USER_UPDATE_PROFILE_RESET} from "../constants/userConstants";
 import {Link} from "react-router-dom";
+
 
 // whenever you bring something in from the state it's useSelector
 // if you want to call an action it's useDispatch
@@ -32,14 +32,20 @@ const ProfileScreen = ({location, history}) => {
     const userUpdateProfile = useSelector(state => state.userUpdateProfile);
     const {success} = userUpdateProfile;
 
+    const productDetails = useSelector(state => state.productDetails);
+    const {product} = productDetails;
+
     // const orderListMy = useSelector(state => state.orderListMy);
     // const {loading: loadingOrders, error: errorOrders, orders} = orderListMy;
 
-    const wishListDetails = useSelector((state) => state.wishListDetails);
-    const {wishDetails, success: wishDetailsSuccess} = wishListDetails;
+    // const wishListDetails = useSelector((state) => state.wishListDetails);
+    // const {wishDetails, success: wishDetailsSuccess} = wishListDetails;
 
     const wishListMy = useSelector(state => state.wishListMy);
     const {loading: loadingOrders, error: errorOrders, wishList} = wishListMy;
+
+    const wishListDelete = useSelector(state => state.wishListDelete);
+    const {success: successDelete} = wishListDelete;
 
     useEffect(() => {
         if (!userInfo) {
@@ -55,7 +61,7 @@ const ProfileScreen = ({location, history}) => {
                 setEmail(user.email);
             }
         }
-    }, [dispatch, history, userInfo, user, success, wishList]);
+    }, [dispatch, history, userInfo, user, success, wishList, wishListMy, successDelete]);
 
 
     const submitHandler = (e) => {
@@ -68,7 +74,10 @@ const ProfileScreen = ({location, history}) => {
             //   DISPATCH UPDATE PROFILE
             dispatch(updateUserProfile({id: user._id, name, email, password}))
         }
+    };
 
+    const deleteHandler = (id) => {
+        dispatch(deleteWishListItem(id))
     };
 
 
@@ -122,72 +131,49 @@ const ProfileScreen = ({location, history}) => {
                 </Form>
             </Col>
             <Col md={9}>
-                <h2>My Orders</h2>
+                <h2>Wishlist</h2>
                 {loadingOrders
                     ? <Loader/>
                     : errorOrders
                         ? <Message variant='danger'>{errorOrders}</Message>
                         : (
-                            // <Table striped bordered hover responsive className='table-sm' >
-                            //     <thead>
-                            //     <tr>
-                            //         {/*<th>ID</th>*/}
-                            //         <th>IMAGE</th>
-                            //         <th>NAME </th>
-                            //         <th>PRICE</th>
-                            //         <th>QTY</th>
-                            //         <th>EMAILED</th>
-                            //     </tr>
-                            //     </thead>
-                            //     <tbody>
-                            //     {wishList.map(wishes => (
-                            //         wishes.wishListItems.map(wish => (
-                            //         <tr key={wish._id}>
-                            //             {/*<td>{wish._id}</td>*/}
-                            //             <td><img src={wish.image} alt={wish.name} className='h-25 w-25 rounded'/></td>
-                            //             <td>{wish.name}</td>
-                            //             <td>{wish.price}</td>
-                            //             <td>{wish.qty}</td>
-                            //             <td>{wish.isEmailed ? (
-                            //                 <i className='fas fa-check' style={{color: 'green'}}> </i>
-                            //             ):(
-                            //                 <i className='fas fa-times' style={{color: 'red'}}> </i>
-                            //             )}</td>
-                            //
-                            //         </tr>
-                            //         ))
-                            //     ))}
-                            //
-                            //     </tbody>
-                            // </Table>
 
-                            <ListGroup>
+                            // <ListGroup>
+                            <ListGroup variant='flush'>
                                 <ListGroup.Item>
-                                    <h2>Wishlist</h2>
-                                    {/*{wishList.wishListItems.length === 0*/}
-                                    {/*    ? <Message>Wishlist is empty</Message>*/}
-                                    {/*    : (*/}
-                                            <ListGroup variant='flush'>
-                                                {wishList.map(wishes => (
-                                                    wishes.wishListItems.map(item => (
-                                                        item.length === 0 ? <Message>Wishlist is empty</Message> :
-                                                    <ListGroup.Item key={item._id}>
-                                                        <Row>
-                                                            <Col md={1}>
-                                                                <Image src={item.image} alt={item.name} fluid rounded/>
-                                                            </Col>
-                                                            <Col>
-                                                                <Link to={`/product/${item.product}`}>
-                                                                    {item.name}
-                                                                </Link>
-                                                            </Col>
-                                                            <Col md={4}>
-                                                                {item.qty}
-                                                            </Col>
-                                                        </Row>
-                                                    </ListGroup.Item>
-                                                ))))}
-                                            </ListGroup>
+                                    {wishList.map(wishes => (
+                                        wishes.wishListItems.map(item => (
+                                            item.length === 0 ? <Message>Wishlist is empty</Message> :
+                                                <ListGroup.Item key={item._id}
+                                                                className='border-0 global_bisonDarkFadedBgColorHover global_cursor'>
+                                                    <Row>
+                                                        <Col md={2}>
+                                                            <Link to={`/product/${item.product}`}>
+                                                                <Image src={item.image} alt={item.name} fluid
+                                                                       rounded/>
+                                                            </Link>
+                                                        </Col>
+                                                        <Col xs={3}>
+                                                            <Link to={`/product/${item.product}`}>
+                                                                {item.name}
+                                                            </Link>
+                                                        </Col>
+                                                        <Col xs={2}>
+                                                            <Link to={`/product/${item.product}`}>
+                                                                <strong>${item.price}</strong>
+                                                            </Link>
+                                                        </Col>
+                                                        <Col md={2}>
+                                                            <Button type='button' variant='light'
+                                                                    onClick={() => deleteHandler(item._id)}>
+                                                                <i className='fas fa-trash'> </i>
+                                                            </Button>
+                                                        </Col>
+
+                                                    </Row>
+                                                </ListGroup.Item>
+                                        ))
+                                    ))}
                                 </ListGroup.Item>
                             </ListGroup>
                         )}

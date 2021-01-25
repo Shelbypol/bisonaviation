@@ -68,6 +68,22 @@ const getMyWishLists = asyncHandler(async (req, res) => {
     res.json(wishLists)
 });
 
+// @desc    DELETE wishList item
+// @route   DELETE /api/wishlist/:id
+// @access  Private/Admin
+const deleteWishListItem = asyncHandler(async (req, res) => {
+    const wishListItem = await WishList.wishListItems.findById(req.params.id);
+
+    if(wishListItem){
+        await wishListItem.remove();
+        res.json({ message: 'Item removed' })
+    }else{
+        res.status(404);
+        throw new Error('Item not found')
+    }
+});
+
+
 // @desc    GET all wishLists
 // @route   GET /api/wishLists
 // @access  Private/Admin
@@ -76,4 +92,4 @@ const getWishLists = asyncHandler(async (req, res) => {
     res.json(wishLists)
 });
 
-export { addWishListItems, getWishListById, updateWishListToEmailed, getMyWishLists, getWishLists }
+export { addWishListItems, getWishListById, updateWishListToEmailed, getMyWishLists, getWishLists, deleteWishListItem }

@@ -13,8 +13,10 @@ import {
     WISHLIST_LIST_FAIL,
     WISHLIST_EMAIL_SUCCESS,
     WISHLIST_EMAIL_REQUEST,
-    WISHLIST_EMAIL_FAIL
-
+    WISHLIST_EMAIL_FAIL,
+    WISHLIST_DELETE_SUCCESS,
+    WISHLIST_DELETE_REQUEST,
+    WISHLIST_DELETE_FAIL
 } from "../constants/wishListConstants";
 import axios from "axios";
 import { logout } from "./userActions";
@@ -197,6 +199,37 @@ export const listWishLists = () => async (dispatch, getState) => {
         dispatch({
             type: WISHLIST_LIST_FAIL,
             payload: message,
+        })
+    }
+};
+
+// ============ DELETE WIHSLIST ITEM
+export const deleteWishListItem = (id) => async (dispatch, getState) => {
+    try {
+        dispatch({
+            type: WISHLIST_DELETE_REQUEST
+        });
+
+        const { userLogin: { userInfo } } = getState();
+
+        const config = {
+            headers: {
+                Authorization: `Bearer ${ userInfo.token }`
+            }
+        };
+
+        await axios.delete(`/api/wishlist/${id}` ,config);
+
+        dispatch({
+            type: WISHLIST_DELETE_SUCCESS,
+        });
+
+    } catch (error) {
+        dispatch({
+            type: WISHLIST_DELETE_FAIL,
+            payload: error.response && error.response.data.message
+                ? error.response.data.message
+                : error.message,
         })
     }
 };
