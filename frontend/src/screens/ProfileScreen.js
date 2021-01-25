@@ -9,6 +9,7 @@ import {getUserDetails, updateUserProfile} from '../actions/userActions'
 import {listMyWishLists, deleteWishListItem} from "../actions/wishListActions";
 import {USER_UPDATE_PROFILE_RESET} from "../constants/userConstants";
 import {Link} from "react-router-dom";
+import {WISHLIST_LIST_REQUEST} from "../constants/wishListConstants";
 
 
 // whenever you bring something in from the state it's useSelector
@@ -20,6 +21,7 @@ const ProfileScreen = ({location, history}) => {
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
     const [message, setMessage] = useState(null);
+    // const [deleteWish, setDeleteWish] = useState(false);
 
     const dispatch = useDispatch();
 
@@ -45,7 +47,7 @@ const ProfileScreen = ({location, history}) => {
     const {loading: loadingOrders, error: errorOrders, wishList} = wishListMy;
 
     const wishListDelete = useSelector(state => state.wishListDelete);
-    const {success: successDelete} = wishListDelete;
+    const {loading: loadingDelete, error: errorDelete, success: successDelete} = wishListDelete;
 
     useEffect(() => {
         if (!userInfo) {
@@ -54,14 +56,15 @@ const ProfileScreen = ({location, history}) => {
             if (!user.name || !user || success) {
                 dispatch({type: USER_UPDATE_PROFILE_RESET});
                 dispatch(getUserDetails('profile'));
-                // dispatch(listMyOrders())
-                dispatch(listMyWishLists())
+
             } else {
                 setName(user.name);
                 setEmail(user.email);
             }
         }
-    }, [dispatch, history, userInfo, user, success, wishList, successDelete]);
+        dispatch(listMyWishLists())
+
+    }, [dispatch, history, userInfo, user, success, successDelete]);
 
 
     const submitHandler = (e) => {
@@ -77,7 +80,7 @@ const ProfileScreen = ({location, history}) => {
     };
 
     const deleteHandler = (id) => {
-        dispatch(deleteWishListItem(id))
+        dispatch(deleteWishListItem(id));
     };
 
 
@@ -139,43 +142,43 @@ const ProfileScreen = ({location, history}) => {
                         : (
                             <Row xs={12}>
                                 <Col xs={10}>
-                                <ListGroup variant='flush'>
-                                    <ListGroup.Item>
-                                        {wishList.map(wishes => (
-                                            wishes.wishListItems.map(item => (
-                                                item.length === 0 ? <Message>Wishlist is empty</Message> :
-                                                    <ListGroup.Item key={item._id}
-                                                                    className='border-0 global_bisonDarkFadedBgColorHover global_cursor'>
-                                                        <Row xs={12}>
-                                                            <Col xs={2}>
-                                                                <Link to={`/product/${item.product}`}>
-                                                                    <Image src={item.image} alt={item.name} fluid
-                                                                           rounded/>
-                                                                </Link>
-                                                            </Col>
-                                                            <Col xs={4}>
-                                                                <Link to={`/product/${item.product}`}>
-                                                                    {item.name}
-                                                                </Link>
-                                                            </Col>
-                                                            <Col xs={4}>
-                                                                <Link to={`/product/${item.product}`}>
-                                                                    <strong>${item.price}</strong>
-                                                                </Link>
-                                                            </Col>
-                                                            <Col md={2}>
-                                                                <Button type='button' variant='light'
-                                                                        onClick={() => deleteHandler(wishes._id)}>
-                                                                    <i className='fas fa-trash'> </i>
-                                                                </Button>
-                                                            </Col>
+                                    <ListGroup variant='flush'>
+                                        <ListGroup.Item>
+                                            {wishList.map(wishes => (
+                                                wishes.wishListItems.map(item => (
+                                                    item.length === 0 ? <Message>Wishlist is empty</Message> :
+                                                        <ListGroup.Item key={item._id}
+                                                                        className='border-0 global_bisonDarkFadedBgColorHover global_cursor'>
+                                                            <Row xs={12}>
+                                                                <Col xs={2}>
+                                                                    <Link to={`/product/${item.product}`}>
+                                                                        <Image src={item.image} alt={item.name} fluid
+                                                                               rounded/>
+                                                                    </Link>
+                                                                </Col>
+                                                                <Col xs={4}>
+                                                                    <Link to={`/product/${item.product}`}>
+                                                                        {item.name}
+                                                                    </Link>
+                                                                </Col>
+                                                                <Col xs={4}>
+                                                                    <Link to={`/product/${item.product}`}>
+                                                                        <strong>${item.price}</strong>
+                                                                    </Link>
+                                                                </Col>
+                                                                <Col md={2}>
+                                                                    <Button type='button' variant='light'
+                                                                            onClick={() => deleteHandler(wishes._id)}>
+                                                                        <i className='fas fa-trash'> </i>
+                                                                    </Button>
+                                                                </Col>
 
-                                                        </Row>
-                                                    </ListGroup.Item>
-                                            ))
-                                        ))}
-                                    </ListGroup.Item>
-                                </ListGroup>
+                                                            </Row>
+                                                        </ListGroup.Item>
+                                                ))
+                                            ))}
+                                        </ListGroup.Item>
+                                    </ListGroup>
                                 </Col>
 
                                 {/*<Col xs={2}>*/}
@@ -202,10 +205,6 @@ const ProfileScreen = ({location, history}) => {
                                 {/*</Col>*/}
 
                             </Row>
-
-
-
-
 
 
                         )}

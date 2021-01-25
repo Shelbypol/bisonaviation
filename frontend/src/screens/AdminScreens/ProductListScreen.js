@@ -48,7 +48,7 @@ const ProductListScreen = ({ history, match }) => {
             dispatch(listProducts('', pageNumber))
         }
 
-    }, [dispatch, history, userInfo, successDelete, successDelete, successCreate, createdProduct, pageNumber]);
+    }, [dispatch, history, userInfo, successDelete, successCreate, createdProduct, pageNumber]);
 
     const deleteHandler = (id) => {
         if(window.confirm('Are you sure you want to delete this product?')){
