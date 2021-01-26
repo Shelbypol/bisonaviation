@@ -227,7 +227,7 @@ const StickyHeader = () => {
                                                     </Nav.Link>
                                                 </LinkContainer>
 
-                                                <LinkContainer to='/profile'>
+                                                <LinkContainer to='/'>
                                                     <Nav.Link onClick={logoutHandler}>
                                                         <Button
                                                             className='px-3 py-0 mt-2 rounded-pill global_RedFontWhiteBgBtn StickyHeader_iconHidden'>
@@ -326,7 +326,7 @@ const StickyHeader = () => {
                                                     </Nav.Link>
                                                 </LinkContainer>
 
-                                                <LinkContainer to='/profile'>
+                                                <LinkContainer to='/'>
                                                     <Nav.Link onClick={logoutHandler}>
                                                         <Button
                                                             className='px-3 py-0 mt-2 rounded-pill global_RedFontWhiteBgBtn StickyHeader_iconHidden'>
@@ -404,7 +404,8 @@ const StickyHeader = () => {
                         </Navbar.Collapse>
                     </Container>
                 </Navbar>
-                <div className='StickyHeader_blackFade col-sm-12 position-sticky'> </div>
+                <div className='StickyHeader_whiteFade col-sm-12 position-sticky'> </div>
+                {/*<div className='StickyHeader_blackFade col-sm-12 position-sticky'> </div>*/}
             </header>
         </>
 

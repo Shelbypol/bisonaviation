@@ -10,9 +10,12 @@ import avionics from '../images/avionics/panal-avionics.JPG'
 import maintenance from '../images/mechanics/robin-cirrus-divider.png'
 import flir from '../images/flir/flir-1.jpg'
 import cncMachine from "../images/avionics/cnc-machine.png"
-import tayseerAvionics from "../images/avionics/tayseer-1.jpg"
+import tayseerAvionics from "../images/avionics/tayseer-avionics-1500.png"
 import garmin from '../images/avionics/garmin-dealership.png'
+import abouthero from '../images/about_home-1500.png'
 import hangar from '../images/general/hangar.png'
+import jeffmichael from '../images/Jeff -Michael-1500.png'
+import codyrobin from '../images/cody-robin.jpeg'
 import heroImg from '../images/general/aircraft-double-decker-red-belt_1500.png'
 import about from '../images/general/about_home.png'
 import mechanics1 from '../images/mechanics/cirrusrobin2.jpg'
@@ -37,39 +40,35 @@ const HomeScreen = () => {
         <>
             <Jumbotrons
                 jumboClass={'m-0 p-0 animations_img-hover-zoom-out'}
+                // jumboStyle={{marginTop: '-15vh'}}
                 img={heroImg}
+                // img={abouthero}
                 imgClassName={'col-12 p-0 mx-0 mb-0 Jumbotrons_img_responsive_size'}
-                textContainerStyle={{backgroundColor: 'rgba(01, 02, 03, 1)'}}
-                textContainerClass={'col-12 mt-n2 py-0 my-0'}
-                title={'Bison Aviation'}
-                titleClassName={'text-light py-0 my-0'}
+                // textContainerStyle={{backgroundColor: 'rgba(01, 02, 03, 1)'}}
+                // textContainerClass={'col-12 mt-n2 py-0 my-0'}
+                // title={'Bison Aviation'}
+                // titleClassName={'text-light py-0 my-0'}
                 // text={'We work hard on the ground so you can fly with confidence'}
                 // textClassName={'text-light py-0 my-0'}
             />
 
-            {/*<Jumbotrons jumboClass={'p-0 global_black-horizontal-gradient-top'}*/}
-            {/*            jumboStyle={{height: '180%'}}*/}
-            {/*            imgClassName={'col-12 p-0 m-0'}*/}
-            {/*/>*/}
-
             <Jumbotrons
                 // jumboStyle={{backgroundColor:'white'}}
-                jumboClass={'mt-n3 pt-0 pb-5 global_black-horizontal-gradient'}
-                // jumboClass={'mt-n3 pt-0 pb-5 global_red-horizontal-gradient'}
+                jumboClass={'mt-n5 pt-0 pb-5 global_black-horizontal-gradient'}
                 // img={heroImg}
                 // imgClassName={'col-12 p-0 mx-0 mb-0'}
                 // textContainerStyle={{backgroundColor: 'white'}}
                 textContainerClass={'col-12 mt-n2 d-flex justify-content-center'}
                 // title={'Bison Aviation'}
                 // titleClassName={'text-light py-0 my-0'}
-                text={<h3 className='bisonRedTxt font-weight-lighter'>We work hard on the ground so you can fly with
-                    confidence</h3>}
+                // text={<h1 className='bisonRedTxt font-weight-lighter'>BISON AVIATION</h1>}
+                text={<h2 className='bisonRedTxt font-weight-lighter'>We work hard on the ground so you can fly with
+                    confidence</h2>}
                 textClassName={'text-center py-0'}
             />
 
-            {/*<main className='mx-auto'>*/}
+
             {/*  =============   ICONS ROW - DESKTOP  =============== */}
-            {/*<Container className='mb-5 pt-3 pb-5'>*/}
             <Container style={{marginTop: '15vh', marginBottom: '25vh'}}>
                 <Row>
                     <Col xs={12} md={6} className=''>
