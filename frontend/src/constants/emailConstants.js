@@ -1,0 +1,3 @@
+export const EMAIL_ADD_ITEM = 'EMAIL_ADD_ITEM';
+export const EMAIL_REMOVE_ITEM = 'EMAIL_REMOVE_ITEM';
+export const EMAIL_RESET = "EMAIL_RESET";
