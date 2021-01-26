@@ -1,37 +1,19 @@
-import React, {useEffect, useState} from 'react'
-import {Link} from 'react-router-dom'
-import {useDispatch, useSelector} from 'react-redux'
-import {Row, Col, ListGroup, Image, Form, Button, Card} from 'react-bootstrap'
-import Message from '../components/Message'
-import {addToCart, removeFromCart} from '../actions/cartActions'
-import {createOrder} from "../actions/orderActions";
-import {CART_RESET} from "../constants/cartConstants";
-import {createWishList, listMyWishLists} from "../actions/wishListActions";
+import {Button, Col, Image, ListGroup, Row} from "react-bootstrap";
+import {Link} from "react-router-dom";
+import React, {useEffect} from "react";
+import {createWishList, listMyWishLists} from "../../actions/wishListActions";
+import {CART_RESET} from "../../constants/cartConstants";
+import {removeFromCart} from "../../actions/cartActions";
+import {useDispatch} from "react-redux";
 
-
-// match == id, location == get a query string '?qty', history == used to redirect
-const WishListTabInfo = () => {
-
-    const [ qty, setQty] = useState(1);
-    const [ title, setTitle ] = useState('');
-
+const WishListSave = ({success, cartItems, cart, userInfo}) => {
     const dispatch = useDispatch();
-
-    const userLogin = useSelector(state => state.userLogin);
-    const {userInfo} = userLogin;
-
-    const cart = useSelector(state => state.cart);
-    const {cartItems} = cart;
-
-    const wishListCreate = useSelector(state => state.wishListCreate);
-    const { wishList, success, error } = wishListCreate;
 
     useEffect(() => {
 
         dispatch(listMyWishLists())
 
     }, [ dispatch, success]);
-
 
     const addToWishListHandler = () => {
         cart.cartItems.map(item => {
@@ -40,18 +22,7 @@ const WishListTabInfo = () => {
             }));
         });
         dispatch({type: CART_RESET});
-
     };
-
-    // const addToWishListHandler = () => {
-    //     dispatch(createWishList({
-    //         wishListItems: cart.cartItems
-    //     }));
-    //     dispatch({type: CART_RESET});
-    //
-    // };
-
-
 
     const removeFromWishListHandler = (id) => {
         dispatch(removeFromCart(id))
@@ -61,35 +32,24 @@ const WishListTabInfo = () => {
         dispatch({type: CART_RESET});
     };
 
-    //history redirect to shipping if logged in in
-    // const wishlistHandler = () => {
-    //     if(!userInfo){
-    //         history.push('/login')
-    //         // history.push('/login?redirect=shipping')
-    //     } else {
-    //         placeOrderHandler();
-    //
-    //     }
-    // };
-
-
     return (
+
         <>
             <Row xs={12} className='border-bottom stick-margins'>
-                    <Col xs={4} className='border-right stick global_cursor global_bisonFadedRedHover p-auto
+                <Col xs={4} className='border-right stick global_cursor global_bisonFadedRedHover p-auto
                     text-center d-flex align-items-center justify-content-center'>
 
                     {userInfo ? (
 
                         <h6 onClick={addToWishListHandler}>Save wishlist to profile</h6>
-                        ) : (
+                    ) : (
                         <Link to='/login'>
                             <h6>
                                 <strong className='global_bisonRedTxt global_cursor'>sign in</strong> to save
                             </h6>
                         </Link>
                     )}
-                    </Col>
+                </Col>
                 <Col xs={4}
                      className='border-right stick global_cursor global_bisonFadedRedHover p-auto d-flex align-items-center justify-content-center'>
                     <h6>Inquire</h6>
@@ -153,7 +113,8 @@ const WishListTabInfo = () => {
 
             </Row>
         </>
+
     )
 };
 
-export default WishListTabInfo
+export default WishListSave

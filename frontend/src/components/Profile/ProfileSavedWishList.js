@@ -7,10 +7,11 @@ import {Link} from "react-router-dom";
 import {addToEmail, removeFromEmail} from "../../actions/emailActions";
 import {deleteWishListItem, listMyWishLists} from "../../actions/wishListActions";
 import {addToCart, removeFromCart} from "../../actions/cartActions";
+import ProfileSavedProduct from "./ProfileSavedProduct";
 
 const ProfileSavedWishList = ({match, history}) => {
 
-    const [activeEmail, setActiveEmail] = useState(false);
+    // const [activeEmail, setActiveEmail] = useState(false);
 
     const dispatch = useDispatch();
 
@@ -29,21 +30,21 @@ const ProfileSavedWishList = ({match, history}) => {
 
     }, [dispatch, history, successDelete]);
 
-    const addToEmailList = () => {
-        setActiveEmail(!activeEmail);
-        dispatch(addToCart(product._id, 1));
-        // history.push(`/cart/${id}?qty=1`);
-    };
-
-    const removeFromEmailList = () => {
-        setActiveEmail(!activeEmail);
-        dispatch(removeFromCart(product._id))
-        // history.push(`/cart/${id}?qty=1`);
-    };
-
-    const deleteHandler = (id) => {
-        dispatch(deleteWishListItem(id));
-    };
+    // const addToEmailList = () => {
+    //     setActiveEmail(!activeEmail);
+    //     dispatch(addToCart(product._id, 1));
+    //     // history.push(`/cart/${id}?qty=1`);
+    // };
+    //
+    // const removeFromEmailList = () => {
+    //     setActiveEmail(!activeEmail);
+    //     dispatch(removeFromCart(product._id))
+    //     // history.push(`/cart/${id}?qty=1`);
+    // };
+    //
+    // const deleteHandler = (id) => {
+    //     dispatch(deleteWishListItem(id));
+    // };
 
     return (
         <>
@@ -60,6 +61,8 @@ const ProfileSavedWishList = ({match, history}) => {
                                         {wishList.map(wishes => (
                                             wishes.wishListItems.map(item => (
                                                 item.length === 0 ? <Message>Wishlist is empty</Message> :
+
+                                                    <ProfileSavedProduct item={item} wishes={wishes}/>
                                                     // <ListGroup.Item key={item._id}
                                                     //                 className='border-0 global_bisonDarkFadedBgColorHover global_cursor'>
                                                     //     <Row xs={12}>

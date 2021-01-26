@@ -1,11 +1,32 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import {Col, Image, ListGroup, Row} from "react-bootstrap";
 import {Link} from "react-router-dom";
 import {addToEmail, removeFromEmail} from "../../actions/emailActions";
+import {addToCart, removeFromCart} from "../../actions/cartActions";
+import {deleteWishListItem, listMyWishLists} from "../../actions/wishListActions";
+import {useDispatch} from "react-redux";
 
 
-const ProfileSavedWishList = () => {
+const ProfileSavedWishList = ({item, wishes}) => {
+    const [activeEmail, setActiveEmail] = useState(false);
 
+    const dispatch = useDispatch();
+
+    const addToEmailList = () => {
+        setActiveEmail(!activeEmail);
+        dispatch(addToCart(wishes._id, 1));
+        // history.push(`/cart/${id}?qty=1`);
+    };
+
+    const removeFromEmailList = () => {
+        setActiveEmail(!activeEmail);
+        // dispatch(removeFromEmail(product._id))
+        // history.push(`/cart/${id}?qty=1`);
+    };
+
+    const deleteHandler = (id) => {
+        dispatch(deleteWishListItem(id));
+    };
 
     return (
 
@@ -37,9 +58,9 @@ const ProfileSavedWishList = () => {
                 </Col>
                 <Col>
                     {activeEmail ? (
-                        <p onClick={removeFromEmail} className='global_cursor global_bisonRedTxt'>added</p>
+                        <p onClick={removeFromEmailList} className='global_cursor global_bisonRedTxt'>added</p>
                     ) : (
-                        <p onClick={addToEmail} className='global_cursor global_bisonRedTxt'>inquire</p>
+                        <p onClick={addToEmailList} className='global_cursor global_bisonRedTxt'>inquire</p>
                     )}
                 </Col>
 

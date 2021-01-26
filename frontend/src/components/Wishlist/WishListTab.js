@@ -1,7 +1,7 @@
 import React, {useState, useEffect, useRef} from 'react';
 import {CSSTransition} from 'react-transition-group';
 import WishListTabInfo from "./WishListTabInfo";
-import '../style/WishListTab.css'
+import '../../style/WishListTab.css'
 import {Button, Row} from "react-bootstrap";
 
 const WishList = () => {
@@ -108,13 +108,39 @@ const DropdownMenu = () => {
                     </DropdownItem>
 
                     {/*<DropdownItem*/}
-                    {/*    leftIcon={<i className='fa fa-long-arrow-left'> </i>}*/}
+                    {/*    // leftIcon={<i className='fa fa-long-arrow-left'> </i>}*/}
                     {/*    rightIcon={<i className='fa fa-long-arrow-right'> </i>}*/}
                     {/*    goToMenu="settings">*/}
                     {/*    Settings*/}
                     {/*</DropdownItem>*/}
+
+
                 </div>
             </CSSTransition>
+
+            <CSSTransition
+                in={activeMenu === 'main'}
+                timeout={500}
+                classNames="wishList-menu-primary"
+                unmountOnExit
+                onEnter={calcHeight}
+            >
+                <div className="wishList-menu">
+                    {/*<DropdownItem><Button onClick={}>X</Button> </DropdownItem>*/}
+                    {/*<DropdownItem>*/}
+                    {/*    <WishListTabInfo/>*/}
+                    {/*</DropdownItem>*/}
+
+                    <DropdownItem
+                        // leftIcon={<i className='fa fa-long-arrow-left'> </i>}
+                        rightIcon={<i className='fa fa-long-arrow-right'> </i>}
+                        goToMenu="settings">
+                        Settings
+                    </DropdownItem>
+
+                </div>
+            </CSSTransition>
+
         </div>
     );
 };
