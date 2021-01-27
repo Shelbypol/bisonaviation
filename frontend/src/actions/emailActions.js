@@ -5,7 +5,7 @@ import {
 } from '../constants/emailConstants'
 
 // use thunk so pass in async
-export const addToEmail = (id, qty) => async(dispatch, getState) => {
+export const addToEmail = (id) => async(dispatch, getState) => {
     // const { data } = await axios.get(`/api/products/${id}`);
     const { data } = await axios.get(`/api/wishlist/${id}`);
 

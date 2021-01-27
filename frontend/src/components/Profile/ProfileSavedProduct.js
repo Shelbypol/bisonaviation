@@ -2,26 +2,33 @@ import React, {useEffect, useState} from "react";
 import {Col, Image, ListGroup, Row} from "react-bootstrap";
 import {Link} from "react-router-dom";
 import {addToEmail, removeFromEmail} from "../../actions/emailActions";
-import {addToCart, removeFromCart} from "../../actions/cartActions";
-import {deleteWishListItem, listMyWishLists} from "../../actions/wishListActions";
-import {useDispatch} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
+import Message from "../Message";
+import {createWishList, deleteWishListItem, emailWishList, listMyWishLists} from "../../actions/wishListActions";
+import ProfileEmailState from "./ProfileEmailState";
 
 
-const ProfileSavedWishList = ({item, wishes}) => {
+const ProfileSavedProduct = ({wishList, wishes, item, product}) => {
     const [activeEmail, setActiveEmail] = useState(false);
+
+    const email = useSelector(state => state.email);
+    const {emailItems} = email;
 
     const dispatch = useDispatch();
 
-    const addToEmailList = () => {
+    // useEffect(() => {
+
+    // dispatch(emailItems)
+
+    // }, [dispatch, email]);
+
+    const addToEmailListHandler = (id) => {
         setActiveEmail(!activeEmail);
-        dispatch(addToCart(wishes._id, 1));
-        // history.push(`/cart/${id}?qty=1`);
     };
 
-    const removeFromEmailList = () => {
+    const removeFromEmailListHandler = (id) => {
         setActiveEmail(!activeEmail);
-        // dispatch(removeFromEmail(product._id))
-        // history.push(`/cart/${id}?qty=1`);
+        dispatch(removeFromEmail(id))
     };
 
     const deleteHandler = (id) => {
@@ -29,43 +36,58 @@ const ProfileSavedWishList = ({item, wishes}) => {
     };
 
     return (
+        <>
+            <Row xs={10}>
 
-        <ListGroup.Item key={item._id}
-                        className='border-0 global_bisonDarkFadedBgColorHover global_cursor'>
-            <Row xs={12}>
-                <Col xs={2}>
-                    <Link to={`/product/${item.product}`}>
-                        <Image src={item.image} alt={item.name} fluid
-                               rounded/>
-                    </Link>
-                </Col>
-                <Col xs={4} className='d-flex align-items-center'>
-                    <Link to={`/product/${item.product}`}>
-                        {item.name}
-                    </Link>
-                </Col>
-                <Col xs={4} className='d-flex justify-content-center align-items-center'>
-                    <Link to={`/product/${item.product}`}>
-                        <strong>${item.price}</strong>
-                    </Link>
-                </Col>
-                <Col md={2} onClick={() => deleteHandler(wishes._id)}
-                     className='global_bisonDarkFadedBgColorHover d-flex justify-content-center align-items-center'>
-                    {/*<Button type='button' variant='light'*/}
-                    {/*        onClick={() => deleteHandler(wishes._id)}>*/}
-                    <i className='fas fa-trash'> </i>
-                    {/*</Button>*/}
-                </Col>
-                <Col>
-                    {activeEmail ? (
-                        <p onClick={removeFromEmailList} className='global_cursor global_bisonRedTxt'>added</p>
-                    ) : (
-                        <p onClick={addToEmailList} className='global_cursor global_bisonRedTxt'>inquire</p>
-                    )}
-                </Col>
 
+
+                                    {/*<Row  xs={12}>*/}
+                                        <Col xs={2}>
+                                            {/*<Link to={`/product/${item.product}`}>*/}
+                                                <Image src={item.image} alt={item.name} fluid
+                                                       rounded/>
+                                            {/*</Link>*/}
+                                        </Col>
+                                        <Col xs={2} className='d-flex align-items-center'>
+                                            <Link to={`/product/${item.product}`}>
+                                                {item.name}
+                                            </Link>
+                                        </Col>
+                                        <Col xs={2} className='d-flex justify-content-center align-items-center'>
+                                            <Link to={`/product/${item.product}`}>
+                                                <strong>${item.price}</strong>
+                                            </Link>
+                                        </Col>
+                                        <Col xs={2} onClick={() => deleteHandler(wishes._id)}
+                                             className='global_bisonDarkFadedBgColorHover d-flex justify-content-center align-items-center'>
+                                            <i className='fas fa-trash'> </i>
+                                        </Col>
+                                        {activeEmail ? (
+                                            <Col xs={2} onClick={() => removeFromEmailListHandler(item._id)}
+                                                 className='global_cursor d-flex justify-content-center align-items-center'
+                                                 style={{backgroundColor: 'green'}}>
+                                                <i className='fas fa-envelope'> </i>
+                                            </Col>
+                                        ) : (
+                                            <Col xs={2} onClick={() => addToEmailListHandler(item._id)}
+                                                 className='global_cursor d-flex justify-content-center align-items-center'>
+                                                <i className='fas fa-envelope'> </i>
+                                            </Col>
+
+                                        )
+                                        }
+
+
+                                    </Row>
+
+            {/*        )))}*/}
+            {/*    /!*))}*!/*/}
+            {/*</Row>*/}
+            <Row xs={2}>
+                <ProfileEmailState/>
             </Row>
-        </ListGroup.Item>
+
+        </>
     )
 };
-export default ProfileSavedWishList
+export default ProfileSavedProduct

@@ -7,6 +7,8 @@ import {useSelector} from "react-redux";
 
 const ProfileScreen = ({location, history}) => {
 
+
+
     const userLogin = useSelector(state => state.userLogin);
     const {userInfo} = userLogin;
 
@@ -29,7 +31,7 @@ const ProfileScreen = ({location, history}) => {
                 <Col sm={9}>
                     <Tab.Content>
                         <Tab.Pane eventKey="first">
-                            <ProfileSavedWishList />
+                            <ProfileSavedWishList userInfo={userInfo} />
                         </Tab.Pane>
                         <Tab.Pane eventKey="second">
                             <ProfileEdit />
