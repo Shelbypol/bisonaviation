@@ -132,12 +132,12 @@ const DropdownMenu = () => {
                     {/*    <WishListTabInfo/>*/}
                     {/*</DropdownItem>*/}
 
-                    <DropdownItem
-                        // leftIcon={<i className='fa fa-long-arrow-left'> </i>}
-                        rightIcon={<i className='fa fa-long-arrow-right'> </i>}
-                        goToMenu="settings">
-                        Settings
-                    </DropdownItem>
+                    {/*<DropdownItem*/}
+                    {/*    // leftIcon={<i className='fa fa-long-arrow-left'> </i>}*/}
+                    {/*    rightIcon={<i className='fa fa-long-arrow-right'> </i>}*/}
+                    {/*    goToMenu="settings">*/}
+                    {/*    Settings*/}
+                    {/*</DropdownItem>*/}
 
                 </div>
             </CSSTransition>

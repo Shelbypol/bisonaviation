@@ -44,8 +44,15 @@ const WishListTabInfo = () => {
 
     return (
         <>
-            <Row xs={12}>
-                <Col xs={10}>
+            <Row className='mt-n4 p-0 d-flex justify-content-end' style={{zIndex: 100}}>
+                <Col xs={2}>
+                    <h6 onClick={clearWishList}
+                        className='global_cursor stick global_bisonFadedRedHover p-3 m-auto d-flex justify-content-center'>
+                        clear</h6>
+                </Col>
+            </Row>
+            <Row xs={12} className='mt-n3'>
+                <Col xs={12}>
                     <Tabs defaultActiveKey="wishlist" id="uncontrolled-tab-example"
                           ClassName='d-flex justify-content-center'>
                         <Tab tabClassName=' global_cursor global_bisonFadedRedHover p-auto
@@ -64,14 +71,10 @@ const WishListTabInfo = () => {
                         </Tab>
                         <Tab eventKey="profile" title="Inquire"
                              tabClassName='global_cursor global_bisonFadedRedHover p-auto d-flex align-items-center justify-content-center'>
-                            <WishListEmail/>
+                            <WishListEmail userInfo={userInfo} cartItems={cartItems} cart={cart}/>
                         </Tab>
 
                     </Tabs>
-                </Col>
-                <Col xs={2}>
-                    <h6 onClick={clearWishList}
-                        className='global_cursor stick global_bisonFadedRedHover p-3 m-auto d-flex justify-content-start'>clear</h6>
                 </Col>
             </Row>
 
