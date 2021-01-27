@@ -5,37 +5,30 @@ import Loader from "../Loader";
 import {Button, Col, Form, Image, ListGroup, Row} from "react-bootstrap";
 import {Link} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
+import '../../style/WishListTab.css'
 import {register} from "../../actions/userActions";
+import {removeFromCart} from "../../actions/cartActions";
+import {listMyWishLists} from "../../actions/wishListActions";
 
 
-const WishListEmail = ({userInfo, cart, cartItems}) => {
+const WishListEmail = ({userInfo, cart, cartItems, success}) => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
-    const [prouctTitle, setProductTitle] = useState();
-    const [confirmPassword, setConfirmPassword] = useState('');
-    const [message, setMessage] = useState(null);
 
     const dispatch = useDispatch();
 
 
     useEffect(() => {
-        if (userInfo) {
-            // history.push(redirect)
-        }
-    }, [userInfo]);
-
-    const title = () => {
-        cartItems.map(item =>
-            item.name
-        )
-    };
+        dispatch(listMyWishLists())
+    }, [userInfo, success]);
 
     const submitHandler = (e) => {
         e.preventDefault();
-
-
     };
 
+    const removeFromWishListHandler = (id) => {
+        dispatch(removeFromCart(id))
+    };
 
     return (
         <Row xs={12} className='mt-2'>
@@ -71,24 +64,27 @@ const WishListEmail = ({userInfo, cart, cartItems}) => {
                             <ListGroup variant='flush'>
                                 {cartItems.map(item => (
                                     // <ListGroup.Item key={item.product} className='global_bisonDarkFadedBgColorHover'>
-                                    <ListGroup.Item key={item.product}>
-                                        <Row xs={12}>
-                                            <Col className='my-auto' md={4}>
-                                                <Image src={item.image} alt={item.name} fluid
-                                                       className='rounded h-100 w-100'/>
-                                            </Col>
-                                            <Col className='my-auto' md={6}>
-                                                {item.name}
-                                            </Col>
-                                            <Col className='my-auto' md={2}>
-                                                {/*<Button type='button' variant='light'*/}
-                                                {/*        // onClick={() => removeFromWishListHandler(item.product)}*/}
-                                                {/*>*/}
-                                                {/*    <i className='fas fa-trash'> </i>*/}
-                                                {/*</Button>*/}
-                                            </Col>
-                                        </Row>
-                                    </ListGroup.Item>
+                                    // <Link to={`products/${item.product}`}>
+                                        <ListGroup.Item key={item._id}
+                                                        className='global_bisonDarkFadedBgColorHover stick-margins'>
+                                            <Row xs={12}>
+                                                <Col className='my-auto' md={4}>
+                                                    <Image src={item.image} alt={item.name} fluid
+                                                           className='rounded h-100 w-100'/>
+                                                </Col>
+                                                <Col className='my-auto' md={8}>
+                                                    {item.name}
+                                                </Col>
+                                                {/*<Col className='my-auto' md={2}>*/}
+                                                {/*    /!*<Button type='button' variant='light'*!/*/}
+                                                {/*    /!*        // onClick={() => removeFromWishListHandler(item.product)}*!/*/}
+                                                {/*    /!*>*!/*/}
+                                                {/*    /!*    <i onClick={() => removeFromWishListHandler(item.product)} className='fas fa-trash global_cursor'> </i>*!/*/}
+                                                {/*    /!*</Button>*!/*/}
+                                                {/*</Col>*/}
+                                            </Row>
+                                        </ListGroup.Item>
+                                    // </Link>
                                 ))}
                             </ListGroup>
 
