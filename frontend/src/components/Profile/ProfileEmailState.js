@@ -3,15 +3,11 @@ import {Col, Row} from "react-bootstrap";
 import {useDispatch, useSelector} from "react-redux";
 import WishListEmail from "../Wishlist/WishListEmail";
 
-const ProfileEmailState = () => {
-
-    const email = useSelector(state => state.email);
-    const {emailItems} = email;
-
-    console.log(emailItems);
+const ProfileEmailState = ({emailItems}) => {
 
     const dispatch = useDispatch();
 
+    console.log(emailItems);
     useEffect(() => {
 
     }, [dispatch, emailItems]);
@@ -19,7 +15,7 @@ const ProfileEmailState = () => {
     return (
         <>
             {emailItems.map(item => (
-                <Col key={item._id} xs={12}>{item.name}</Col>
+                <p key={item._id} >{item.name}</p>
             ))}
         </>
     )

@@ -5,11 +5,11 @@ export const emailReducer = (state = { emailItems: [] }, action) => {
         case EMAIL_ADD_ITEM:
             const item = action.payload;
 
-            const existItem = state.emailItems.find(x => x.product === item.product);
+            const existItem = state.emailItems.find(x => x.wishList === item.wishList);
             if(existItem){
                 return {
                     ...state,
-                    emailItems: state.emailItems.map(x => x.product === existItem.product ? item : x)
+                    emailItems: state.emailItems.map(x => x.wishList === existItem.wishList ? item : x)
                 }
             }else{
                 return {
@@ -20,7 +20,7 @@ export const emailReducer = (state = { emailItems: [] }, action) => {
         case EMAIL_REMOVE_ITEM:
             return {
                 ...state,
-                emailItems: state.emailItems.filter(x => x.product !== action.payload)
+                emailItems: state.emailItems.filter(x => x.wishList !== action.payload)
             };
 
         case EMAIL_RESET:

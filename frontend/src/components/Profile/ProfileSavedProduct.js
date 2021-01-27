@@ -11,25 +11,20 @@ import ProfileEmailState from "./ProfileEmailState";
 const ProfileSavedProduct = ({wishList, wishes, item, product}) => {
     const [activeEmail, setActiveEmail] = useState(false);
 
-    const email = useSelector(state => state.email);
-    const {emailItems} = email;
+    // const email = useSelector(state => state.email);
+    // const {emailItems} = email;
 
     const dispatch = useDispatch();
 
-    // useEffect(() => {
-
-    // dispatch(emailItems)
-
-    // }, [dispatch, email]);
 
     const addToEmailListHandler = () => {
         setActiveEmail(!activeEmail);
-        dispatch(addToEmail(item._id))
+        dispatch(addToEmail(item.product));
     };
 
     const removeFromEmailListHandler = () => {
         setActiveEmail(!activeEmail);
-        dispatch(removeFromEmail(item._id))
+        dispatch(removeFromEmail(item.product))
     };
 
     const deleteHandler = (id) => {
@@ -38,10 +33,9 @@ const ProfileSavedProduct = ({wishList, wishes, item, product}) => {
 
     return (
         <>
-            <Row xs={10}>
 
 
-                {/*<Row  xs={12}>*/}
+            <Row xs={12}>
                 <Col xs={2}>
                     {/*<Link to={`/product/${item.product}`}>*/}
                     <Image src={item.image} alt={item.name} fluid
@@ -63,6 +57,7 @@ const ProfileSavedProduct = ({wishList, wishes, item, product}) => {
                     <i className='fas fa-trash'> </i>
                 </Col>
                 {activeEmail ? (
+                    // <Col xs={2} onClick={() => removeFromEmailListHandler}
                     <Col xs={2} onClick={removeFromEmailListHandler}
                          className='global_cursor d-flex justify-content-center align-items-center'
                          style={{backgroundColor: 'green'}}>
@@ -74,6 +69,7 @@ const ProfileSavedProduct = ({wishList, wishes, item, product}) => {
                         <i className='fas fa-envelope'> </i>
                     </Col>
 
+
                 )
                 }
 
@@ -83,9 +79,9 @@ const ProfileSavedProduct = ({wishList, wishes, item, product}) => {
             {/*        )))}*/}
             {/*    /!*))}*!/*/}
             {/*</Row>*/}
-            <Row xs={2}>
-                <ProfileEmailState/>
-            </Row>
+            {/*<Row xs={2}>*/}
+            {/*    <ProfileEmailState emailItems={emailItems} />*/}
+            {/*</Row>*/}
 
         </>
     )

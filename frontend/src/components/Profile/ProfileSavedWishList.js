@@ -7,6 +7,7 @@ import {Link} from "react-router-dom";
 import {addToEmail, removeFromEmail} from "../../actions/emailActions";
 import {deleteWishListItem, listMyWishLists} from "../../actions/wishListActions";
 import ProfileSavedProduct from "./ProfileSavedProduct";
+import ProfileEmailState from "./ProfileEmailState";
 
 const ProfileSavedWishList = ({match, history, userInfo}) => {
 
@@ -23,6 +24,9 @@ const ProfileSavedWishList = ({match, history, userInfo}) => {
     const wishListDelete = useSelector(state => state.wishListDelete);
     const {loading: loadingDelete, error: errorDelete, success: successDelete} = wishListDelete;
 
+    const email = useSelector(state => state.email);
+    const {emailItems} = email;
+
     useEffect(() => {
 
         dispatch(listMyWishLists())
@@ -32,31 +36,37 @@ const ProfileSavedWishList = ({match, history, userInfo}) => {
     return (
         <>
             <h2>Wishlist</h2>
-            {loadingOrders
-                ? <Loader/>
-                : errorOrders
-                    ? <Message variant='danger'>{errorOrders}</Message>
-                    : (
-                        <Row xs={12}>
-                            <Col xs={10}>
+            <Row xs={12}>
+                <Col xs={9}>
+                    {loadingOrders
+                        ? <Loader/>
+                        : errorOrders
+                            ? <Message variant='danger'>{errorOrders}</Message>
+                            : (
                                 <ListGroup variant='flush'>
                                     {wishList.map(wishes => (
                                         wishes.wishListItems.map(item => (
                                             item.length === 0 ? <Message>Wishlist is empty</Message> :
-                                                <ListGroup.Item key={wishes._id}
-                                                                className='border-0 global_bisonDarkFadedBgColorHover global_cursor'>
-                                                    <ProfileSavedProduct
-                                                        wishList={wishList} product={product} item={item}/>
-                                                </ListGroup.Item>
-
+                                                <>
+                                                    <ListGroup.Item key={wishes._id}
+                                                                    className='border-0 global_bisonDarkFadedBgColorHover global_cursor'>
+                                                        <ProfileSavedProduct
+                                                            wishList={wishList} wishes={wishes} product={product}
+                                                            item={item}/>
+                                                    </ListGroup.Item>
+                                                </>
                                         ))
                                     ))}
                                 </ListGroup>
-                            </Col>
 
-                        </Row>
+                            )}
 
-                    )}
+                </Col>
+
+                <Col xs={3}>
+                    <ProfileEmailState emailItems={emailItems}/>
+                </Col>
+            </Row>
         </>
     )
 };
