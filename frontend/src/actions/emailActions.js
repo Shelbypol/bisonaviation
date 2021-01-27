@@ -7,7 +7,7 @@ import {
 // use thunk so pass in async
 export const addToEmail = (id) => async(dispatch, getState) => {
     // const { data } = await axios.get(`/api/products/${id}`);
-    const { data } = await axios.get(`/api/wishlist/${id}`);
+    const { data } = await axios.get(`/api/products/${id}`);
 
     dispatch({
         type: EMAIL_ADD_ITEM,
