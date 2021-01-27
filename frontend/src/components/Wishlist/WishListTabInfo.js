@@ -1,18 +1,19 @@
 import React, {useEffect, useState} from 'react'
 import {Link} from 'react-router-dom'
 import {useDispatch, useSelector} from 'react-redux'
-import {Row, Col, ListGroup, Image, Form, Button, Card} from 'react-bootstrap'
+import {Row, Col, ListGroup, Image, Form, Button, Card, Tab, Tabs} from 'react-bootstrap'
 import Message from '../Message'
 import {addToCart, removeFromCart} from '../../actions/cartActions'
 import {createOrder} from "../../actions/orderActions";
 import {CART_RESET} from "../../constants/cartConstants";
 import {createWishList, listMyWishLists} from "../../actions/wishListActions";
 import WishListSave from "./WishListSave";
+import WishListEmail from "./WishListEmail";
 
 
 // match == id, location == get a query string '?qty', history == used to redirect
 const WishListTabInfo = () => {
-
+    const dispatch = useDispatch();
     // const [ wishlist, setWishlist ] = useState(false);
     // const [ email, setEmail ] = useState(false);
 
@@ -24,15 +25,58 @@ const WishListTabInfo = () => {
     const {cartItems} = cart;
 
     const wishListCreate = useSelector(state => state.wishListCreate);
-    const { wishList, success, error } = wishListCreate;
+    const {wishList, success, error} = wishListCreate;
 
+    const addToWishListHandler = () => {
+
+        cart.cartItems.map(item => {
+            dispatch(createWishList({
+                wishListItems: item
+            }));
+        });
+        dispatch({type: CART_RESET});
+    };
+
+
+    const clearWishList = () => {
+        dispatch({type: CART_RESET});
+    };
 
     return (
+        <>
+            <Row xs={12}>
+                <Col xs={10}>
+                    <Tabs defaultActiveKey="wishlist" id="uncontrolled-tab-example"
+                          ClassName='d-flex justify-content-center'>
+                        <Tab tabClassName=' global_cursor global_bisonFadedRedHover p-auto
+                        text-center d-flex align-items-center justify-content-center' eventKey="wishlist"
+                             title={userInfo ? (
+
+                                 <h6 onClick={addToWishListHandler}>Save wishlist to profile</h6>
+                             ) : (
+                                 <Link to='/login'>
+                                     <h6>
+                                         <strong className='global_bisonRedTxt global_cursor'>sign in</strong> to save
+                                     </h6>
+                                 </Link>
+                             )}>
+                            <WishListSave userinfo={userInfo} cartItems={cartItems} cart={cart} success={success}/>
+                        </Tab>
+                        <Tab eventKey="profile" title="Inquire"
+                             tabClassName='global_cursor global_bisonFadedRedHover p-auto d-flex align-items-center justify-content-center'>
+                            <WishListEmail/>
+                        </Tab>
+
+                    </Tabs>
+                </Col>
+                <Col xs={2}>
+                    <h6 onClick={clearWishList}
+                        className='global_cursor stick global_bisonFadedRedHover p-3 m-auto d-flex justify-content-start'>clear</h6>
+                </Col>
+            </Row>
 
 
-
-        <WishListSave userinfo={userInfo} cartItems={cartItems} cart={cart} success={success}  />
-
+        </>
     )
 };
 

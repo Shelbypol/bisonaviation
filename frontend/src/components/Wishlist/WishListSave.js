@@ -15,51 +15,14 @@ const WishListSave = ({success, cartItems, cart, userInfo}) => {
 
     }, [ dispatch, success]);
 
-    const addToWishListHandler = () => {
-        cart.cartItems.map(item => {
-            dispatch(createWishList({
-                wishListItems: item
-            }));
-        });
-        dispatch({type: CART_RESET});
-    };
-
     const removeFromWishListHandler = (id) => {
         dispatch(removeFromCart(id))
     };
 
-    const clearWishList = () => {
-        dispatch({type: CART_RESET});
-    };
 
     return (
 
         <>
-            <Row xs={12} className='border-bottom stick-margins'>
-                <Col xs={4} className='border-right stick global_cursor global_bisonFadedRedHover p-auto
-                    text-center d-flex align-items-center justify-content-center'>
-
-                    {userInfo ? (
-
-                        <h6 onClick={addToWishListHandler}>Save wishlist to profile</h6>
-                    ) : (
-                        <Link to='/login'>
-                            <h6>
-                                <strong className='global_bisonRedTxt global_cursor'>sign in</strong> to save
-                            </h6>
-                        </Link>
-                    )}
-                </Col>
-                <Col xs={4}
-                     className='border-right stick global_cursor global_bisonFadedRedHover p-auto d-flex align-items-center justify-content-center'>
-                    <h6>Inquire</h6>
-                </Col>
-                <Col xs={4} onClick={clearWishList}
-                     className='global_cursor stick global_bisonFadedRedHover p-auto text-center d-flex align-items-center justify-content-center'>
-                    <h6>clear list</h6>
-                </Col>
-            </Row>
-
             <Row xs={12} className='mt-2'>
                 <Col md={12}>
                     {/*<h1>Shopping Cart</h1>*/}
