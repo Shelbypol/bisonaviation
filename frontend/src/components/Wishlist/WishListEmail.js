@@ -27,17 +27,9 @@ const WishListEmail = ({userInfo, cart, cartItems, success}) => {
     const email = useSelector(state => state.email);
     const {emailItems} = email;
 
-    // const addToEmailListHandler = () => {
-    //     // setActiveEmail(!activeEmail);
-    //     dispatch(addToEmail(item.product));
-    // };
-    //
-    // const removeFromEmailListHandler = () => {
-    //     setActiveEmail(!activeEmail);
-    //     dispatch(removeFromEmail(item.product))
-    // };
-
-// console.log(cartItems);
+    const Email = () => {
+        setIsEmailed(!isEmailed)
+    };
 
 
     const submitHandler = (e) => {
@@ -51,7 +43,7 @@ const WishListEmail = ({userInfo, cart, cartItems, success}) => {
         ));
         e.preventDefault();
         setUserEmail('');
-        setIsEmailed(!isEmailed);
+        setTimeout(Email, 5000);
         setUserName('');
         setUserText('')
     };
@@ -62,7 +54,7 @@ const WishListEmail = ({userInfo, cart, cartItems, success}) => {
         dispatch(listMyWishLists());
         console.log(emailItems)
 
-    }, [userInfo, success, emailItems, isEmailed, userText, userEmail, userName]);
+    }, [userInfo, success, emailItems, userText, userEmail, userName, isEmailed]);
 
 
     const removeFromWishListHandler = (id) => {
@@ -72,6 +64,10 @@ const WishListEmail = ({userInfo, cart, cartItems, success}) => {
     return (
         <Row xs={12} className='mt-2'>
             <Col xs={12}>
+                {isEmailed && (
+                    <p style={{color: 'green'}}>Email sent!</p>
+
+                )}
                 <Form onSubmit={submitHandler}>
                     <Row xs={12}>
                         <Col xs={8}>
