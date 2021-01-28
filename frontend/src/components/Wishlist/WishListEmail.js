@@ -84,7 +84,11 @@ const WishListEmail = ({userInfo, cart, cartItems, success}) => {
                                 <Form.Label>Name</Form.Label>
                                 <Form.Control type='name'
                                               placeholder='Enter name'
-                                              value={userName}
+                                              value={userInfo ? (
+                                                  userInfo.name
+                                              ) : (
+                                                  userName
+                                              )}
                                               onChange={(e) => setUserName(e.target.value)}>
                                 </Form.Control>
                             </Form.Group>
@@ -93,7 +97,11 @@ const WishListEmail = ({userInfo, cart, cartItems, success}) => {
                                 <Form.Label>Email Address</Form.Label>
                                 <Form.Control type='email'
                                               placeholder='Enter email'
-                                              value={userEmail}
+                                              value={userInfo ? (
+                                                  userInfo.email
+                                              ) : (
+                                                  userEmail
+                                              )}
                                               onChange={(e) => setUserEmail(e.target.value)}>
                                 </Form.Control>
                             </Form.Group>
