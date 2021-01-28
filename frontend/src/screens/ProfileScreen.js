@@ -1,13 +1,21 @@
 import React, {useState, useEffect} from 'react'
 import {Form, Button, Row, Col, Table, ListGroup, Image, Tab, Nav} from 'react-bootstrap'
-import EditProfile from "../components/EditProfile";
-import ProfileSavedWishList from "../components/ProfileSavedWishList";
+import ProfileEdit from "../components/Profile/ProfileEdit";
+import ProfileSavedWishList from "../components/Profile/ProfileSavedWishList";
 import '../style/ProfileScreen.css'
+import {useSelector} from "react-redux";
 
 const ProfileScreen = ({location, history}) => {
 
+
+
+    const userLogin = useSelector(state => state.userLogin);
+    const {userInfo} = userLogin;
+
     return (
         <>
+            <h1>{userInfo.name}</h1>
+
         <Tab.Container id="left-tabs-example" defaultActiveKey="first">
             <Row>
                 <Col sm={3}>
@@ -23,10 +31,10 @@ const ProfileScreen = ({location, history}) => {
                 <Col sm={9}>
                     <Tab.Content>
                         <Tab.Pane eventKey="first">
-                            <ProfileSavedWishList />
+                            <ProfileSavedWishList userInfo={userInfo} />
                         </Tab.Pane>
                         <Tab.Pane eventKey="second">
-                            <EditProfile />
+                            <ProfileEdit />
                         </Tab.Pane>
                     </Tab.Content>
                 </Col>

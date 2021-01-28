@@ -4,6 +4,7 @@ import {Navbar, Container, Nav} from 'react-bootstrap'
 import {LinkContainer} from 'react-router-bootstrap'
 import SearchBox from "../SearchBox";
 import logo from '../../images/general/Final-Logo-Horizontal.png'
+import logooutline from '../../images/general/final-logo-outline.png'
 import StickyHeader from "./StickyHeader";
 import SocialIcons from "../SocialIcons";
 
@@ -14,9 +15,8 @@ const DesktopHeader = () => {
 
             <Navbar expand="sm"
                     collapseOnSelect
-                    // style={{backgroundColor: 'black'}}
-                    className='DesktopHeader_nav navbar navbar-dark navbar-expand-lg p-0'
-            >
+                    style={{backgroundColor: 'black'}}
+                    className='DesktopHeader_nav navbar navbar-dark navbar-expand-lg p-0'>
 
                 <Container className='col-sm-12'>
 
@@ -25,7 +25,9 @@ const DesktopHeader = () => {
 
                         <Nav className='col-sm-3 px-1'>
                             <LinkContainer to='/'>
-                                <img src={logo}
+                                <img
+                                    src={logo}
+                                    // src={logooutline}
                                      className='DesktopHeader_logo pb-1 px-1 pt-0'
                                      alt="Bison Aviation"/>
                             </LinkContainer>

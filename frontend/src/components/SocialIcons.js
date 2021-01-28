@@ -1,7 +1,7 @@
 import React from "react";
 import {Nav, Navbar} from "react-bootstrap";
 import {LinkContainer} from "react-router-bootstrap";
-import WishListTab from "./WishListTab";
+import WishListTab from "./Wishlist/WishListTab";
 import '../style/SocialIcons.css'
 
 
