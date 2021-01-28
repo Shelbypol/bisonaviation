@@ -45,7 +45,7 @@ const WishListEmail = ({userInfo, cart, cartItems, success}) => {
         setUserEmail('');
         setTimeout(Email, 5000);
         setUserName('');
-        setUserText('')
+        setUserText('');
     };
 
 
@@ -64,9 +64,11 @@ const WishListEmail = ({userInfo, cart, cartItems, success}) => {
     return (
         <Row xs={12} className='mt-2'>
             <Col xs={12}>
-                {isEmailed && (
+                {isEmailed ? (
                     <p style={{color: 'green'}}>Email sent!</p>
 
+                ):(
+                    <p>Ask the experts!</p>
                 )}
                 <Form onSubmit={submitHandler}>
                     <Row xs={12}>
@@ -91,6 +93,7 @@ const WishListEmail = ({userInfo, cart, cartItems, success}) => {
                             <Form.Group controlId="exampleForm.ControlTextarea1">
                                 <Form.Label>Inquire</Form.Label>
                                 <Form.Control as="textarea"
+                                              value={userText}
                                               placeholder='Items on the right will be included in the email '
                                               onChange={(e) => setUserText(e.target.value)}
                                               rows={3}
