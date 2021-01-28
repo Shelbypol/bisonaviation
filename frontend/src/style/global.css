@@ -55,6 +55,11 @@ p{
     cursor: pointer;
 }
 
+.global_cursor-underline:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 .global_bisonRedTxt {
     color: rgba(90, 00, 09, 1);
 }

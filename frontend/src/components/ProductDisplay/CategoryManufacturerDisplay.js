@@ -11,7 +11,6 @@ const CategoryManufacturerDisplay = ({match, history}) => {
     const [updateCat, setUpdateCat] = useState('');
     const [updateManufacturer, setUpdateManufacturer] = useState('');
 
-
     const keyword = match.params.keyword;
 
     const pageNumber = match.params.pageNumber || 1;
@@ -29,23 +28,20 @@ const CategoryManufacturerDisplay = ({match, history}) => {
 
     //  SORT CAT HANDLER
     const sortByCategoryHandler = (a) => {
-        // setUpdateManufacturer('');
-        return setUpdateCat(a)
+        setUpdateManufacturer('');
+        setUpdateCat(a)
     };
 
-    const allHandler = () => {
-        return setUpdateManufacturer('')
+    const displayAllHandler = () => {
+        setUpdateManufacturer('');
+        setUpdateCat('')
     };
 
     //  SORT BRAND HANDLER
     const sortByManufacturerHandler = (a) => {
-        // setUpdateCat('');
-        return setUpdateManufacturer(a)
+        setUpdateCat('');
+        setUpdateManufacturer(a)
     };
-
-    // const allManufacturerHandler = () => {
-    //     return setUpdateCat('')
-    // };
 
     return (
         <>
@@ -55,22 +51,23 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                     (<Message variant='danger'>{error}</Message>)
                     : (
                         <>
-                            <Col xs={3} className=''>
+                            <Col xs={3} className='position-sticky'>
 
                                 {/*     MANUFACTURER SORT DISPLAY AVAILABLE CATS ON CLICK    */}
-                                {(updateManufacturer !== '') &&
+
+
+                                {(updateManufacturer !== '' || updateCat !== '') &&
                                 (
                                     <>
                                         <Row xs={12}
-                                             className='global_accentFont text-center my-3'
-                                             onClick={allHandler}>
-                                            <h5 className='global_bisonRedTxt global_cursor'>{updateManufacturer}</h5>
+                                             className='global_accentFont my-0'>
+                                            <h3 className=' global_cursor-underline my-0'>{updateManufacturer || updateCat}</h3>
                                         </Row>
 
                                         {products.filter(product => product.brand === updateManufacturer).map(filteredCategories => (
                                             <Row xs={12}
                                                  onClick={(ev) => sortByCategoryHandler(filteredCategories.category, ev)}
-                                                 className='btn btn-block global_cursor d-flex justify-content-start m-0 p-0 global_bisonFadedRedHover'
+                                                 className='btn btn-block global_cursor d-flex justify-content-start m-0 p-0 global_bisonDarkFadedBgColorHover'
                                                  type='button'
                                                  key={filteredCategories._id}
                                             >
@@ -80,17 +77,24 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                                             </Row>
                                         ))}
 
+                                        {/* ALL PRODUCTS*/}
+                                        <Row xs={12}
+                                             className='global_accentFont text-center mt-3'
+                                             onClick={displayAllHandler}>
+                                            <p className='global_bisonRedTxt global_cursor-underline'>All Products</p>
+                                        </Row>
+
                                         {/*   ALL CATEGORIES  */}
                                         <Row xs={12}
-                                             className='global_accentFont text-center mt-5'
-                                             onClick={allHandler}>
-                                            <p className='global_bisonRedTxt global_cursor'>all categories</p>
+                                             className='global_accentFont text-center'>
+                                            <p className='global_bisonRedTxt global_cursor'>Categories</p>
                                         </Row>
 
                                         {products.map(product => (
                                             <Row xs={12}
-                                                 onClick={(ev) => sortByManufacturerHandler(product.category, ev)}
-                                                 className='btn btn-block global_cursor d-flex justify-content-start m-0 p-0 global_bisonFadedRedHover'
+                                                 onClick={(ev) => sortByCategoryHandler(product.category, ev)}
+                                                 // onClick={(ev) => sortByManufacturerHandler(product.category, ev)}
+                                                 className='btn btn-block global_cursor d-flex justify-content-start m-0 p-0 global_bisonDarkFadedBgColorHover'
                                                  type='button'
                                                  key={product._id}
                                             >
@@ -102,15 +106,15 @@ const CategoryManufacturerDisplay = ({match, history}) => {
 
                                         {/*   ALL MANUFACTURES  */}
                                         <Row xs={12}
-                                             className='global_accentFont text-center mt-1'
-                                             onClick={allHandler}>
-                                            <p className='global_bisonRedTxt global_cursor'>all manufactures</p>
+                                             className='global_accentFont text-center'
+                                             >
+                                            <p className='global_bisonRedTxt global_cursor'>Manufactures</p>
                                         </Row>
 
                                         {products.map(product => (
                                             <Row xs={12}
-                                                 onClick={(ev) => sortByCategoryHandler(product.brand, ev)}
-                                                 className='btn btn-block global_cursor d-flex justify-content-start m-0 p-0 global_bisonFadedRedHover'
+                                                 onClick={(ev) => sortByManufacturerHandler(product.brand, ev)}
+                                                 className='btn btn-block global_cursor d-flex justify-content-start m-0 p-0 global_bisonDarkFadedBgColorHover'
                                                  type='button'
                                                  key={product._id}
                                             >
@@ -124,18 +128,19 @@ const CategoryManufacturerDisplay = ({match, history}) => {
 
                                 )}
 
+            {/*==============================================================================*/}
                                 {/*    ALL CAT & ALL MAN INITIAL DISPLAY    */}
-                                {(updateCat === '' || updateManufacturer === '') && (
+                                {(updateCat === '' && updateManufacturer === '') && (
                                     <>
                                         <Row xs={12} className='global_accentFont text-center my-3 '>
-                                            <h5 onClick={allHandler}
-                                                className='global_bisonRedTxt global_cursor'>Category</h5>
+                                            <h5 onClick={displayAllHandler}
+                                                className='global_bisonRedTxt global_cursor'>Categories</h5>
                                         </Row>
 
                                         {products.map(product => (
                                             <Row xs={12}
                                                  onClick={(ev) => sortByCategoryHandler(product.category, ev)}
-                                                 className='btn btn-block global_cursor d-flex justify-content-start m-0 p-0 global_bisonFadedRedHover'
+                                                 className='btn btn-block global_cursor d-flex justify-content-start m-0 p-0 global_bisonDarkFadedBgColorHover'
                                                  type='button'
                                                  key={product._id}
                                             >
@@ -146,15 +151,15 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                                         ))}
 
                                         <Row xs={12} className='global_accentFont text-center my-3 '>
-                                            <h5 onClick={allHandler}
-                                                className='global_bisonRedTxt global_cursor'>Manufacturer</h5>
+                                            <h5 onClick={displayAllHandler}
+                                                className='global_bisonRedTxt global_cursor'>Manufacturers</h5>
                                         </Row>
 
                                         {products.map(product => (
                                             <Row xs={12}
                                                  onClick={(ev) => sortByManufacturerHandler(product.brand, ev)}
                                                 // onClick={(ev) => sortByManufacturerHandler(product.brand, ev)}
-                                                 className='btn btn-block global_cursor d-flex justify-content-start m-0 p-0 global_bisonFadedRedHover'
+                                                 className='btn btn-block global_cursor d-flex justify-content-start m-0 p-0 global_bisonDarkFadedBgColorHover'
                                                  type='button'
                                                  key={product._id}
                                             >
@@ -168,7 +173,7 @@ const CategoryManufacturerDisplay = ({match, history}) => {
 
 
                             </Col>
-                            < Col xs={9} className='border-right'>
+                            < Col xs={9} >
                                 < ProductDisplayByCatMan products={products}
                                                          history={history}
                                                          match={match}

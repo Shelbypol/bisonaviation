@@ -9,22 +9,69 @@ import '../../style/WishListTab.css'
 import {register} from "../../actions/userActions";
 import {removeFromCart} from "../../actions/cartActions";
 import {listMyWishLists} from "../../actions/wishListActions";
+import {addToEmail, removeFromEmail} from "../../actions/emailActions";
+import {EMAIL_RESET} from "../../constants/emailConstants";
 
 
 const WishListEmail = ({userInfo, cart, cartItems, success}) => {
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
+    const [userName, setUserName] = useState('');
+    const [loggedUserName, setLoggedUserName] = useState('');
+    const [loggedUserEmail, setLoggedUserEmail] = useState('');
+    const [userEmail, setUserEmail] = useState('');
+    const [userText, setUserText] = useState('');
+    const [userProducts, setUserProducts] = useState(cartItems.map(item => {
+        return item
+    }));
+    const [isEmailed, setIsEmailed] = useState(false);
 
     const dispatch = useDispatch();
 
+    const email = useSelector(state => state.email);
+    const {emailItems} = email;
 
     useEffect(() => {
-        dispatch(listMyWishLists())
-    }, [userInfo, success]);
+        dispatch(listMyWishLists());
+
+        // if(userInfo){
+        //     setUserName(userInfo.name);
+        //     setUserEmail(userInfo.email);
+        // }
+        console.log(emailItems)
+
+    }, [userInfo, success, emailItems, userText, userEmail, userName, isEmailed]);
+
+
+    const Email = () => {
+        setIsEmailed(!isEmailed)
+    };
+
 
     const submitHandler = (e) => {
+        setIsEmailed(true);
+
+        // if(userInfo) {
+        //     dispatch(addToEmail(
+        //         loggedUserName,
+        //         loggedUserEmail,
+        //         userText,
+        //         isEmailed,
+        //         userProducts,
+        //     ))
+        // } else {
+            dispatch(addToEmail(
+                userName,
+                userEmail,
+                userText,
+                isEmailed,
+                userProducts,
+            ));
         e.preventDefault();
+        setUserEmail('');
+        setTimeout(Email, 5000);
+        setUserName('');
+        setUserText('');
     };
+
 
     const removeFromWishListHandler = (id) => {
         dispatch(removeFromCart(id))
@@ -33,6 +80,21 @@ const WishListEmail = ({userInfo, cart, cartItems, success}) => {
     return (
         <Row xs={12} className='mt-2'>
             <Col xs={12}>
+                {isEmailed ? (
+                    <p style={{color: 'green'}}>Email sent!</p>
+
+                ) : (
+                    cartItems.length === 0 ? (
+                        <>
+                            <p>Ask the experts!</p>
+                            <p style={{fontSize: '12px'}}><Link to={'/products'} className='global_bisonRedTxt'>Browse
+                                items</Link></p>
+                        </>
+                    ) : (
+                        <p>Ask the experts!</p>
+                    )
+
+                )}
                 <Form onSubmit={submitHandler}>
                     <Row xs={12}>
                         <Col xs={8}>
@@ -40,8 +102,9 @@ const WishListEmail = ({userInfo, cart, cartItems, success}) => {
                                 <Form.Label>Name</Form.Label>
                                 <Form.Control type='name'
                                               placeholder='Enter name'
-                                              value={name}
-                                              onChange={(e) => setName(e.target.value)}>
+                                              value={userName}
+                                              onChange={
+                                                      (e) => setUserName(e.target.value)}>
                                 </Form.Control>
                             </Form.Group>
 
@@ -49,15 +112,40 @@ const WishListEmail = ({userInfo, cart, cartItems, success}) => {
                                 <Form.Label>Email Address</Form.Label>
                                 <Form.Control type='email'
                                               placeholder='Enter email'
-                                              value={email}
-                                              onChange={(e) => setEmail(e.target.value)}>
+                                              value={userEmail}
+                                              onChange={
+                                                      (e) => setUserEmail(e.target.value)}>
                                 </Form.Control>
                             </Form.Group>
                             <Form.Group controlId="exampleForm.ControlTextarea1">
                                 <Form.Label>Inquire</Form.Label>
-                                <Form.Control as="textarea" rows={3}/>
+                                <Form.Control as="textarea"
+                                              value={userText}
+                                              placeholder='Items on the right will be included in the email '
+                                              onChange={(e) => setUserText(e.target.value)}
+                                              rows={3}
+                                />
                             </Form.Group>
-                            <Button type='submit' variant='primary'>Email Inquiry</Button>
+
+                            {userName === '' || userEmail === '' ?
+                                (<Button type='submit'
+                                         disabled
+                                         variant='primary'
+                                         onClick={() => {
+                                             setIsEmailed(true)
+                                         }}
+                                    >Email Inquiry</Button>
+                                ) : (
+                                    <Button type='submit'
+                                            variant='primary'
+                                            onClick={() => {
+                                                setIsEmailed(true)
+                                            }}
+                                    >Email Inquiry</Button>
+                                )
+                            }
+
+
                         </Col>
                         <Col xs={4} className='m-0 p-0'>
 
@@ -65,31 +153,31 @@ const WishListEmail = ({userInfo, cart, cartItems, success}) => {
                                 {cartItems.map(item => (
                                     // <ListGroup.Item key={item.product} className='global_bisonDarkFadedBgColorHover'>
                                     // <Link to={`products/${item.product}`}>
-                                        <ListGroup.Item key={item._id}
-                                                        className='global_bisonDarkFadedBgColorHover stick-margins'>
-                                            <Row xs={12}>
-                                                <Col className='my-auto' md={4}>
-                                                    <Image src={item.image} alt={item.name} fluid
-                                                           className='rounded h-100 w-100'/>
-                                                </Col>
-                                                <Col className='my-auto' md={8}>
-                                                    {item.name}
-                                                </Col>
-                                                {/*<Col className='my-auto' md={2}>*/}
-                                                {/*    /!*<Button type='button' variant='light'*!/*/}
-                                                {/*    /!*        // onClick={() => removeFromWishListHandler(item.product)}*!/*/}
-                                                {/*    /!*>*!/*/}
-                                                {/*    /!*    <i onClick={() => removeFromWishListHandler(item.product)} className='fas fa-trash global_cursor'> </i>*!/*/}
-                                                {/*    /!*</Button>*!/*/}
-                                                {/*</Col>*/}
-                                            </Row>
-                                        </ListGroup.Item>
+                                    <ListGroup.Item key={item._id}
+                                                    className='global_bisonDarkFadedBgColorHover stick-margins'>
+                                        <Row xs={12}>
+                                            <Col className='my-auto' md={4}>
+                                                <Image src={item.image} alt={item.name} fluid
+                                                       className='rounded h-100 w-100'/>
+                                            </Col>
+                                            <Col className='my-auto' md={8}>
+                                                {item.name}
+                                            </Col>
+                                            {/*<Col className='my-auto' md={2}>*/}
+                                            {/*    /!*<Button type='button' variant='light'*!/*/}
+                                            {/*    /!*        // onClick={() => removeFromWishListHandler(item.product)}*!/*/}
+                                            {/*    /!*>*!/*/}
+                                            {/*    /!*    <i onClick={() => removeFromWishListHandler(item.product)} className='fas fa-trash global_cursor'> </i>*!/*/}
+                                            {/*    /!*</Button>*!/*/}
+                                            {/*</Col>*/}
+                                        </Row>
+                                    </ListGroup.Item>
                                     // </Link>
                                 ))}
                             </ListGroup>
 
                         </Col>
-                        {/*<Button type='submit' variant='primary'>Email Inquiry</Button>*/}
+                        {/*<Button onClick={() => {submitHandler()}} type='submit' variant='primary'>Email Inquiry</Button>*/}
                     </Row>
                 </Form>
             </Col>

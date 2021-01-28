@@ -27,7 +27,7 @@ const WishListSave = ({success, cartItems, cart, userInfo}) => {
                 <Col md={12}>
                     {/*<h1>Shopping Cart</h1>*/}
                     {cartItems.length === 0
-                        ? (<p className='mt-5 text-center'>Your wishlist is empty</p>)
+                        ? (<p className='mt-5 text-center'>Your wishlist is empty <p style={{fontSize: '12px'}}><Link to={'/products'} className='global_bisonRedTxt'>Browse items</Link></p></p>)
                         : (<>
                                 {/*<LinkContainer to={`/`}>*/}
                                 {/*    <Button variant='dark' className='btn-sm'>*/}
