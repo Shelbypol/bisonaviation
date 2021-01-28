@@ -7,6 +7,7 @@ import {Link} from "react-router-dom";
 import {addToEmail, removeFromEmail} from "../../actions/emailActions";
 import {deleteWishListItem, listMyWishLists} from "../../actions/wishListActions";
 import ProfileSavedProduct from "./ProfileSavedProduct";
+import WishListEmail from "../Wishlist/WishListEmail";
 import ProfileEmailState from "./ProfileEmailState";
 
 const ProfileSavedWishList = ({match, history, userInfo}) => {
@@ -52,7 +53,7 @@ const ProfileSavedWishList = ({match, history, userInfo}) => {
                                                                     className='border-0 global_bisonDarkFadedBgColorHover global_cursor'>
                                                         <ProfileSavedProduct
                                                             wishList={wishList} wishes={wishes} product={product}
-                                                            item={item}/>
+                                                            item={item} userInfor={userInfo}/>
                                                     </ListGroup.Item>
                                                 </>
                                         ))
@@ -64,7 +65,8 @@ const ProfileSavedWishList = ({match, history, userInfo}) => {
                 </Col>
 
                 <Col xs={3}>
-                    <ProfileEmailState emailItems={emailItems}/>
+                    <ProfileEmailState userInfo={userInfo} emailItems={emailItems}/>
+                    {/*<WishListEmail/>*/}
                 </Col>
             </Row>
         </>

@@ -8,23 +8,38 @@ import {createWishList, deleteWishListItem, emailWishList, listMyWishLists} from
 import ProfileEmailState from "./ProfileEmailState";
 
 
-const ProfileSavedProduct = ({wishList, wishes, item, product}) => {
+const ProfileSavedProduct = ({wishList, wishes, item, product, userInfo}) => {
     const [activeEmail, setActiveEmail] = useState(false);
+    const [userProducts, setUserProducts] = useState(
+        wishList.map(wishes => (
+            wishes.wishListItems.map(item => (
+                item
+            )))));
+
 
     // const email = useSelector(state => state.email);
     // const {emailItems} = email;
 
     const dispatch = useDispatch();
 
-
     const addToEmailListHandler = () => {
         setActiveEmail(!activeEmail);
-        dispatch(addToEmail(item.product));
+        if (userInfo) {
+            dispatch(addToEmail(
+                // userName,
+                // userEmail,
+                // userText,
+                // isEmailed,
+                userProducts,
+            ));
+        }
+
+        // dispatch(addToEmail(item.product));
     };
 
     const removeFromEmailListHandler = () => {
         setActiveEmail(!activeEmail);
-        dispatch(removeFromEmail(item.product))
+        // dispatch(removeFromEmail(item.product))
     };
 
     const deleteHandler = (id) => {
@@ -33,8 +48,6 @@ const ProfileSavedProduct = ({wishList, wishes, item, product}) => {
 
     return (
         <>
-
-
             <Row xs={12}>
                 <Col xs={2}>
                     {/*<Link to={`/product/${item.product}`}>*/}

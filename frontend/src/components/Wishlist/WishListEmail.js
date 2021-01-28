@@ -15,6 +15,8 @@ import {EMAIL_RESET} from "../../constants/emailConstants";
 
 const WishListEmail = ({userInfo, cart, cartItems, success}) => {
     const [userName, setUserName] = useState('');
+    const [loggedUserName, setLoggedUserName] = useState('');
+    const [loggedUserEmail, setLoggedUserEmail] = useState('');
     const [userEmail, setUserEmail] = useState('');
     const [userText, setUserText] = useState('');
     const [userProducts, setUserProducts] = useState(cartItems.map(item => {
@@ -27,6 +29,18 @@ const WishListEmail = ({userInfo, cart, cartItems, success}) => {
     const email = useSelector(state => state.email);
     const {emailItems} = email;
 
+    useEffect(() => {
+        dispatch(listMyWishLists());
+
+        // if(userInfo){
+        //     setUserName(userInfo.name);
+        //     setUserEmail(userInfo.email);
+        // }
+        console.log(emailItems)
+
+    }, [userInfo, success, emailItems, userText, userEmail, userName, isEmailed]);
+
+
     const Email = () => {
         setIsEmailed(!isEmailed)
     };
@@ -34,26 +48,29 @@ const WishListEmail = ({userInfo, cart, cartItems, success}) => {
 
     const submitHandler = (e) => {
         setIsEmailed(true);
-        dispatch(addToEmail(
-            userName,
-            userEmail,
-            userText,
-            isEmailed,
-            userProducts,
-        ));
+
+        // if(userInfo) {
+        //     dispatch(addToEmail(
+        //         loggedUserName,
+        //         loggedUserEmail,
+        //         userText,
+        //         isEmailed,
+        //         userProducts,
+        //     ))
+        // } else {
+            dispatch(addToEmail(
+                userName,
+                userEmail,
+                userText,
+                isEmailed,
+                userProducts,
+            ));
         e.preventDefault();
         setUserEmail('');
         setTimeout(Email, 5000);
         setUserName('');
         setUserText('');
     };
-
-
-    useEffect(() => {
-        dispatch(listMyWishLists());
-        console.log(emailItems)
-
-    }, [userInfo, success, emailItems, userText, userEmail, userName, isEmailed]);
 
 
     const removeFromWishListHandler = (id) => {
@@ -70,7 +87,8 @@ const WishListEmail = ({userInfo, cart, cartItems, success}) => {
                     cartItems.length === 0 ? (
                         <>
                             <p>Ask the experts!</p>
-                            <p style={{fontSize: '12px'}}><Link to={'/products'} className='global_bisonRedTxt'>Browse items</Link></p>
+                            <p style={{fontSize: '12px'}}><Link to={'/products'} className='global_bisonRedTxt'>Browse
+                                items</Link></p>
                         </>
                     ) : (
                         <p>Ask the experts!</p>
@@ -84,12 +102,9 @@ const WishListEmail = ({userInfo, cart, cartItems, success}) => {
                                 <Form.Label>Name</Form.Label>
                                 <Form.Control type='name'
                                               placeholder='Enter name'
-                                              value={userInfo ? (
-                                                  userInfo.name
-                                              ) : (
-                                                  userName
-                                              )}
-                                              onChange={(e) => setUserName(e.target.value)}>
+                                              value={userName}
+                                              onChange={
+                                                      (e) => setUserName(e.target.value)}>
                                 </Form.Control>
                             </Form.Group>
 
@@ -97,12 +112,9 @@ const WishListEmail = ({userInfo, cart, cartItems, success}) => {
                                 <Form.Label>Email Address</Form.Label>
                                 <Form.Control type='email'
                                               placeholder='Enter email'
-                                              value={userInfo ? (
-                                                  userInfo.email
-                                              ) : (
-                                                  userEmail
-                                              )}
-                                              onChange={(e) => setUserEmail(e.target.value)}>
+                                              value={userEmail}
+                                              onChange={
+                                                      (e) => setUserEmail(e.target.value)}>
                                 </Form.Control>
                             </Form.Group>
                             <Form.Group controlId="exampleForm.ControlTextarea1">
