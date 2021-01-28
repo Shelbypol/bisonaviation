@@ -49,7 +49,6 @@ const WishListEmail = ({userInfo, cart, cartItems, success}) => {
     };
 
 
-
     useEffect(() => {
         dispatch(listMyWishLists());
         console.log(emailItems)
@@ -67,8 +66,16 @@ const WishListEmail = ({userInfo, cart, cartItems, success}) => {
                 {isEmailed ? (
                     <p style={{color: 'green'}}>Email sent!</p>
 
-                ):(
-                    <p>Ask the experts!</p>
+                ) : (
+                    cartItems.length === 0 ? (
+                        <>
+                            <p>Ask the experts!</p>
+                            <p style={{fontSize: '12px'}}><Link to={'/products'} className='global_bisonRedTxt'>Browse items</Link></p>
+                        </>
+                    ) : (
+                        <p>Ask the experts!</p>
+                    )
+
                 )}
                 <Form onSubmit={submitHandler}>
                     <Row xs={12}>
@@ -101,15 +108,19 @@ const WishListEmail = ({userInfo, cart, cartItems, success}) => {
                             </Form.Group>
 
                             {userName === '' || userEmail === '' ?
-                                (   <Button type='submit'
-                                            disabled
-                                            variant='primary'
-                                            onClick={() => {setIsEmailed(true)}}
-                                >Email Inquiry</Button>
-                                ):(
+                                (<Button type='submit'
+                                         disabled
+                                         variant='primary'
+                                         onClick={() => {
+                                             setIsEmailed(true)
+                                         }}
+                                    >Email Inquiry</Button>
+                                ) : (
                                     <Button type='submit'
                                             variant='primary'
-                                            onClick={() => {setIsEmailed(true)}}
+                                            onClick={() => {
+                                                setIsEmailed(true)
+                                            }}
                                     >Email Inquiry</Button>
                                 )
                             }
@@ -122,25 +133,25 @@ const WishListEmail = ({userInfo, cart, cartItems, success}) => {
                                 {cartItems.map(item => (
                                     // <ListGroup.Item key={item.product} className='global_bisonDarkFadedBgColorHover'>
                                     // <Link to={`products/${item.product}`}>
-                                        <ListGroup.Item key={item._id}
-                                                        className='global_bisonDarkFadedBgColorHover stick-margins'>
-                                            <Row xs={12}>
-                                                <Col className='my-auto' md={4}>
-                                                    <Image src={item.image} alt={item.name} fluid
-                                                           className='rounded h-100 w-100'/>
-                                                </Col>
-                                                <Col className='my-auto' md={8}>
-                                                    {item.name}
-                                                </Col>
-                                                {/*<Col className='my-auto' md={2}>*/}
-                                                {/*    /!*<Button type='button' variant='light'*!/*/}
-                                                {/*    /!*        // onClick={() => removeFromWishListHandler(item.product)}*!/*/}
-                                                {/*    /!*>*!/*/}
-                                                {/*    /!*    <i onClick={() => removeFromWishListHandler(item.product)} className='fas fa-trash global_cursor'> </i>*!/*/}
-                                                {/*    /!*</Button>*!/*/}
-                                                {/*</Col>*/}
-                                            </Row>
-                                        </ListGroup.Item>
+                                    <ListGroup.Item key={item._id}
+                                                    className='global_bisonDarkFadedBgColorHover stick-margins'>
+                                        <Row xs={12}>
+                                            <Col className='my-auto' md={4}>
+                                                <Image src={item.image} alt={item.name} fluid
+                                                       className='rounded h-100 w-100'/>
+                                            </Col>
+                                            <Col className='my-auto' md={8}>
+                                                {item.name}
+                                            </Col>
+                                            {/*<Col className='my-auto' md={2}>*/}
+                                            {/*    /!*<Button type='button' variant='light'*!/*/}
+                                            {/*    /!*        // onClick={() => removeFromWishListHandler(item.product)}*!/*/}
+                                            {/*    /!*>*!/*/}
+                                            {/*    /!*    <i onClick={() => removeFromWishListHandler(item.product)} className='fas fa-trash global_cursor'> </i>*!/*/}
+                                            {/*    /!*</Button>*!/*/}
+                                            {/*</Col>*/}
+                                        </Row>
+                                    </ListGroup.Item>
                                     // </Link>
                                 ))}
                             </ListGroup>
