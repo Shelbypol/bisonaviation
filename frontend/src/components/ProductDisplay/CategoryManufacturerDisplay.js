@@ -28,8 +28,8 @@ const CategoryManufacturerDisplay = ({match, history}) => {
 
     //  SORT CAT HANDLER
     const sortByCategoryHandler = (a) => {
-        // setUpdateManufacturer('');
-        return setUpdateCat(a)
+        setUpdateManufacturer('');
+        setUpdateCat(a)
     };
 
     const displayAllHandler = () => {
@@ -39,13 +39,9 @@ const CategoryManufacturerDisplay = ({match, history}) => {
 
     //  SORT BRAND HANDLER
     const sortByManufacturerHandler = (a) => {
-        // setUpdateCat('');
-        return setUpdateManufacturer(a)
+        setUpdateCat('');
+        setUpdateManufacturer(a)
     };
-
-    // const allManufacturerHandler = () => {
-    //     return setUpdateCat('')
-    // };
 
     return (
         <>
@@ -64,9 +60,8 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                                 (
                                     <>
                                         <Row xs={12}
-                                             className='global_accentFont text-center my-3'
-                                             onClick={displayAllHandler}>
-                                            <h5 className='global_bisonRedTxt global_cursor-underline'>{updateManufacturer || updateCat}</h5>
+                                             className='global_accentFont text-center my-0'>
+                                            <h3 className=' global_cursor-underline my-0'>{updateManufacturer || updateCat}</h3>
                                         </Row>
 
                                         {products.filter(product => product.brand === updateManufacturer).map(filteredCategories => (
@@ -84,7 +79,7 @@ const CategoryManufacturerDisplay = ({match, history}) => {
 
                                         {/*   ALL CATEGORIES  */}
                                         <Row xs={12}
-                                             className='global_accentFont text-center mt-5'
+                                             className='global_accentFont text-center mt-4'
                                              onClick={displayAllHandler}>
                                             <p className='global_bisonRedTxt global_cursor-underline'>all categories</p>
                                         </Row>
