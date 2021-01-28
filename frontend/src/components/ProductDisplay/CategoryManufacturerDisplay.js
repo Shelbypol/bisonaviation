@@ -77,11 +77,17 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                                             </Row>
                                         ))}
 
+                                        {/* ALL PRODUCTS*/}
+                                        <Row xs={12}
+                                             className='global_accentFont text-center mt-3'
+                                             onClick={displayAllHandler}>
+                                            <p className='global_bisonRedTxt global_cursor-underline'>All Products</p>
+                                        </Row>
+
                                         {/*   ALL CATEGORIES  */}
                                         <Row xs={12}
-                                             className='global_accentFont text-center mt-4'
-                                             onClick={displayAllHandler}>
-                                            <p className='global_bisonRedTxt global_cursor-underline'>all categories</p>
+                                             className='global_accentFont text-center'>
+                                            <p className='global_bisonRedTxt global_cursor'>Categories</p>
                                         </Row>
 
                                         {products.map(product => (
@@ -100,9 +106,9 @@ const CategoryManufacturerDisplay = ({match, history}) => {
 
                                         {/*   ALL MANUFACTURES  */}
                                         <Row xs={12}
-                                             className='global_accentFont text-center mt-1'
-                                             onClick={displayAllHandler}>
-                                            <p className='global_bisonRedTxt global_cursor-underline'>all manufactures</p>
+                                             className='global_accentFont text-center m-0 p-0'
+                                             >
+                                            <p className='global_bisonRedTxt global_cursor'>Manufactures</p>
                                         </Row>
 
                                         {products.map(product => (
