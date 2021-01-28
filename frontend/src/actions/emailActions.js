@@ -6,23 +6,19 @@ import {
 import mongoose from "mongoose";
 
 // use thunk so pass in async
-export const addToEmail = (id) => async (dispatch, getState) => {
-    // const { data } = await axios.get(`/api/products/${id}`);
-    const {data} = await axios.get(`/api/products/${id}`);
-
+export const addToEmail = (userName, userEmail, userText, isEmailed, products) => async (dispatch, getState) => {
     dispatch({
         type: EMAIL_ADD_ITEM,
         payload: {
-                product: data.product,
-                isEmailed: data.isEmailed,
-                name: data.name,
-                price: data.price,
-                image: data.image,
-                qty: 1
-
-            }
+            userName: userName,
+            userEmail: userEmail,
+            userText: userText,
+            isEmailed: isEmailed,
+            items: [{
+                products
+            }]
+        }
     });
-
     localStorage.setItem('emailItems', JSON.stringify(getState().email.emailItems))
 };
 

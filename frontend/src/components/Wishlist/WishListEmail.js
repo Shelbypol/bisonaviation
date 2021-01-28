@@ -9,22 +9,61 @@ import '../../style/WishListTab.css'
 import {register} from "../../actions/userActions";
 import {removeFromCart} from "../../actions/cartActions";
 import {listMyWishLists} from "../../actions/wishListActions";
+import {addToEmail, removeFromEmail} from "../../actions/emailActions";
+import {EMAIL_RESET} from "../../constants/emailConstants";
 
 
 const WishListEmail = ({userInfo, cart, cartItems, success}) => {
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
+    const [userName, setUserName] = useState('');
+    const [userEmail, setUserEmail] = useState('');
+    const [userText, setUserText] = useState('');
+    const [userProducts, setUserProducts] = useState(cartItems.map(item => {
+        return item
+    }));
+    const [isEmailed, setIsEmailed] = useState(false);
 
     const dispatch = useDispatch();
 
+    const email = useSelector(state => state.email);
+    const {emailItems} = email;
 
-    useEffect(() => {
-        dispatch(listMyWishLists())
-    }, [userInfo, success]);
+    // const addToEmailListHandler = () => {
+    //     // setActiveEmail(!activeEmail);
+    //     dispatch(addToEmail(item.product));
+    // };
+    //
+    // const removeFromEmailListHandler = () => {
+    //     setActiveEmail(!activeEmail);
+    //     dispatch(removeFromEmail(item.product))
+    // };
+
+// console.log(cartItems);
+
 
     const submitHandler = (e) => {
+        setIsEmailed(true);
+        dispatch(addToEmail(
+            userName,
+            userEmail,
+            userText,
+            isEmailed,
+            userProducts,
+        ));
         e.preventDefault();
+        setUserEmail('');
+        setIsEmailed(!isEmailed);
+        setUserName('');
+        setUserText('')
     };
+
+
+
+    useEffect(() => {
+        dispatch(listMyWishLists());
+        console.log(emailItems)
+
+    }, [userInfo, success, emailItems, isEmailed, userText, userEmail, userName]);
+
 
     const removeFromWishListHandler = (id) => {
         dispatch(removeFromCart(id))
@@ -40,8 +79,8 @@ const WishListEmail = ({userInfo, cart, cartItems, success}) => {
                                 <Form.Label>Name</Form.Label>
                                 <Form.Control type='name'
                                               placeholder='Enter name'
-                                              value={name}
-                                              onChange={(e) => setName(e.target.value)}>
+                                              value={userName}
+                                              onChange={(e) => setUserName(e.target.value)}>
                                 </Form.Control>
                             </Form.Group>
 
@@ -49,15 +88,34 @@ const WishListEmail = ({userInfo, cart, cartItems, success}) => {
                                 <Form.Label>Email Address</Form.Label>
                                 <Form.Control type='email'
                                               placeholder='Enter email'
-                                              value={email}
-                                              onChange={(e) => setEmail(e.target.value)}>
+                                              value={userEmail}
+                                              onChange={(e) => setUserEmail(e.target.value)}>
                                 </Form.Control>
                             </Form.Group>
                             <Form.Group controlId="exampleForm.ControlTextarea1">
                                 <Form.Label>Inquire</Form.Label>
-                                <Form.Control as="textarea" rows={3}/>
+                                <Form.Control as="textarea"
+                                              placeholder='Items on the right will be included in the email '
+                                              onChange={(e) => setUserText(e.target.value)}
+                                              rows={3}
+                                />
                             </Form.Group>
-                            <Button type='submit' variant='primary'>Email Inquiry</Button>
+
+                            {userName === '' || userEmail === '' ?
+                                (   <Button type='submit'
+                                            disabled
+                                            variant='primary'
+                                            onClick={() => {setIsEmailed(true)}}
+                                >Email Inquiry</Button>
+                                ):(
+                                    <Button type='submit'
+                                            variant='primary'
+                                            onClick={() => {setIsEmailed(true)}}
+                                    >Email Inquiry</Button>
+                                )
+                            }
+
+
                         </Col>
                         <Col xs={4} className='m-0 p-0'>
 
@@ -89,7 +147,7 @@ const WishListEmail = ({userInfo, cart, cartItems, success}) => {
                             </ListGroup>
 
                         </Col>
-                        {/*<Button type='submit' variant='primary'>Email Inquiry</Button>*/}
+                        {/*<Button onClick={() => {submitHandler()}} type='submit' variant='primary'>Email Inquiry</Button>*/}
                     </Row>
                 </Form>
             </Col>

@@ -3,6 +3,8 @@ import {CSSTransition} from 'react-transition-group';
 import WishListTabInfo from "./WishListTabInfo";
 import '../../style/WishListTab.css'
 import {Button, Row} from "react-bootstrap";
+import {EMAIL_RESET} from "../../constants/emailConstants";
+import {useDispatch} from "react-redux";
 
 const WishList = () => {
 
@@ -34,7 +36,7 @@ const Navbar = (props) => {
 const NavItem = (props) => {
     const [open, setOpen] = useState(false);
 
-
+    const dispatch = useDispatch();
     const node = useRef();
 
     useEffect(() => {

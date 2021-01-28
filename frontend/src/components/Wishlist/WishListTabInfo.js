@@ -9,13 +9,12 @@ import {CART_RESET} from "../../constants/cartConstants";
 import {createWishList, listMyWishLists} from "../../actions/wishListActions";
 import WishListSave from "./WishListSave";
 import WishListEmail from "./WishListEmail";
+import {EMAIL_RESET} from "../../constants/emailConstants";
 
 
 // match == id, location == get a query string '?qty', history == used to redirect
 const WishListTabInfo = () => {
     const dispatch = useDispatch();
-    // const [ wishlist, setWishlist ] = useState(false);
-    // const [ email, setEmail ] = useState(false);
 
 
     const userLogin = useSelector(state => state.userLogin);
@@ -40,6 +39,7 @@ const WishListTabInfo = () => {
 
     const clearWishList = () => {
         dispatch({type: CART_RESET});
+        dispatch({type: EMAIL_RESET})
     };
 
     return (
