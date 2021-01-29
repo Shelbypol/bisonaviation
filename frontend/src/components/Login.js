@@ -1,17 +1,17 @@
-import React, { useState ,useEffect } from 'react'
-import { Link} from 'react-router-dom'
-import { Form, Button, Row, Col } from 'react-bootstrap'
+import React, {useState, useEffect} from 'react'
+import {Link} from 'react-router-dom'
+import {Form, Button, Row, Col} from 'react-bootstrap'
 // deals with our redux state
-import { useDispatch, useSelector } from 'react-redux'
+import {useDispatch, useSelector} from 'react-redux'
 import Message from "./Message";
 import Loader from '../components/Loader'
-import { login } from '../actions/userActions'
+import {login} from '../actions/userActions'
 import FormContainer from "../components/FormContainer";
 
 // whenever you bring something in from the state it's useSelector
 // if you want to call an action it's useDispatch
 
-const Login = ({ history,  showSidebar}) => {
+const Login = ({history, showSidebar}) => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
@@ -37,26 +37,27 @@ const Login = ({ history,  showSidebar}) => {
 
     return (
 
-
             <Form onSubmit={submitHandler} className='mx-2'>
+                <p>Login</p>
                 <Form.Group controlId='email'>
-                    <Form.Label>Email Address</Form.Label>
+                    {/*<Form.Label>Email Address</Form.Label>*/}
                     <Form.Control type='email'
-                                  placeholder='Enter email'
+                                  placeholder='Email'
                                   value={email}
                                   onChange={(e) => setEmail(e.target.value)}>
                     </Form.Control>
                 </Form.Group>
 
                 <Form.Group controlId='Password'>
-                    <Form.Label>Password</Form.Label>
+                    {/*<Form.Label>Password</Form.Label>*/}
                     <Form.Control type='Password'
-                                  placeholder='Enter Password'
+                                  placeholder='Password'
                                   value={password}
                                   onChange={(e) => setPassword(e.target.value)}>
                     </Form.Control>
                 </Form.Group>
-                <Button className='py-0 px-1 global_whiteFontRedHoverWhiteBg' type='submit' variant='primary' onClick={showSidebar}>Sign In</Button>
+                <Button className='py-0 px-1 global_whiteFontRedHoverWhiteBg' type='submit' variant='primary'
+                        onClick={showSidebar}>Sign In</Button>
             </Form>
 
     )

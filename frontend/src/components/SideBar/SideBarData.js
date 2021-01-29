@@ -68,15 +68,17 @@ const SideBarData = ({showSidebar}) => {
                         </Link>
                     </li>
 
-                    <li className='SideBar-nav-text' onClick={loginForm}>
-                        <span>Login</span>
-                    </li>
+                    <li className='my-3'>
+                        {/*    <Link to='/'>*/}
+                        {/*        <span>Login</span>*/}
+                        {/*    </Link>*/}
+                        {/*</li>*/}
 
-                    {loginShow && (
-                        <li className='SideBar-nav-text'>
-                            <Login showSideBar={showSidebar}/>
-                        </li>
-                    )}
+                        {/*{loginShow && (*/}
+                        {/*    <li className='SideBar-nav-text'>*/}
+                        <Login showSideBar={showSidebar}/>
+                    </li>
+                    {/*)}*/}
 
                 </>
             }
