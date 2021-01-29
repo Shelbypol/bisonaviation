@@ -1,8 +1,9 @@
 import React from 'react'
+import SideBar from "../components/SideBar";
 
 const AogResponseScreen = () => {
     return (
-        <h1>Aog Response</h1>
+        <SideBar/>
     )
 };
 

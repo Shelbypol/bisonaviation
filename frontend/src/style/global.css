@@ -191,6 +191,7 @@ p{
     overflow-y: auto;
 }
 
+
 /*    ======   MOBILE RESPONSIVE    ======    */
 @media (max-width: 900px) {
     .carousel-caption h2 {

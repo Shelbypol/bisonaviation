@@ -36,7 +36,6 @@ const WishListTabInfo = () => {
         dispatch({type: CART_RESET});
     };
 
-
     const clearWishList = () => {
         dispatch({type: CART_RESET});
         dispatch({type: EMAIL_RESET})
