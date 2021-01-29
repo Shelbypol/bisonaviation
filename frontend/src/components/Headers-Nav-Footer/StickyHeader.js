@@ -7,7 +7,7 @@ import {logout} from "../../actions/userActions";
 import {Route} from "react-router-dom";
 import SearchBox from "../SearchBox";
 import WishListTab from "../Wishlist/WishListTab";
-import SideBar from "../SideBar";
+import SideBar from "../SideBar/SideBar";
 
 const StickyHeader = () => {
 

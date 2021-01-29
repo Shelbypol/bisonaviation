@@ -41,10 +41,10 @@ const NavItem = (props) => {
 
     useEffect(() => {
         // add when mounted
-        document.addEventListener("mousedown", handleClick);
+        document.addEventListener("scroll", handleClick);
         // return function to be called when unmounted
         return () => {
-            document.removeEventListener("mousedown", handleClick);
+            document.removeEventListener("scroll", handleClick);
         };
     }, []);
 
