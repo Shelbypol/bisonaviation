@@ -53,113 +53,12 @@ const SideBar = () => {
                     <ul className='SideBar-nav-menu-items' >
 
                         <SideBarData showSidebar={ showSidebar}/>
-                        {/*<li className='SideBar-navbar-toggle'>*/}
-                        {/*    <Link to='#' className='SideBar-menu-bars'>*/}
-                        {/*        <AiIcons.AiOutlineClose style={{color: '#000'}}/>*/}
-                        {/*    </Link>*/}
-                        {/*</li>*/}
-                        {/*{SideBarData.map((item, index) => {*/}
-                        {/*    return (*/}
-                        {/*        <li key={index} className={item.cName} >*/}
-                        {/*            <Link to={item.path}>*/}
-                        {/*                {item.icon}*/}
-                        {/*                <span>{item.title}</span>*/}
-                        {/*            </Link>*/}
-                        {/*        </li>*/}
-                        {/*    );*/}
-                        {/*})}*/}
-
-
-
-
-                        {/*PROFILE  /  SIGN IN*/}
-                        {/*{userInfo ? (*/}
-                        {/*        <>*/}
-
-                        {/*            <LinkContainer to='/profile'>*/}
-                        {/*                <Nav.Link>*/}
-                        {/*                    <Button className='px-3 py-0 mt-2 rounded-pill global_RedFontWhiteBgBtn StickyHeader_iconHidden'>*/}
-                        {/*                                        <span className='StickyHeader_hideWords'>*/}
-                        {/*                                            {userInfo.name}*/}
-                        {/*                                        </span>*/}
-                        {/*                        <span className='StickyHeader_hideIcon'>Profile</span>*/}
-                        {/*                    </Button>*/}
-                        {/*                </Nav.Link>*/}
-                        {/*            </LinkContainer>*/}
-
-                        {/*            <LinkContainer to='/'>*/}
-                        {/*                <Nav.Link onClick={logoutHandler}>*/}
-                        {/*                    <Button*/}
-                        {/*                        className='px-3 py-0 mt-2 rounded-pill global_RedFontWhiteBgBtn StickyHeader_iconHidden'>*/}
-                        {/*                               <span className='StickyHeader_hideWords'>*/}
-                        {/*                                 <i className='fal fa-plane-departure StickyHeader_icon-size'> </i>*/}
-                        {/*                                </span>*/}
-                        {/*                        <span className='StickyHeader_hideIcon'>Logout</span>*/}
-                        {/*                    </Button>*/}
-                        {/*                </Nav.Link>*/}
-                        {/*            </LinkContainer>*/}
-                        {/*        </>*/}
-
-                        {/*    ) :*/}
-                        {/*    <>*/}
-
-                        {/*        /!*<WishListTab />*!/*/}
-
-                        {/*        <LinkContainer to='/login'>*/}
-                        {/*            <Nav.Link>*/}
-                        {/*                <Button className='px-3 mr-n3 py-0 mt-2 rounded-pill global_RedFontWhiteBgBtn StickyHeader_iconHidden'>*/}
-                        {/*                             <span className='StickyHeader_hideWords'>*/}
-                        {/*                                 <i className='fal fa-plane-arrival StickyHeader_icon-size'> </i>*/}
-                        {/*                             </span>*/}
-                        {/*                    <span className='StickyHeader_hideIcon'>Login</span>*/}
-                        {/*                </Button>*/}
-                        {/*            </Nav.Link>*/}
-                        {/*        </LinkContainer>*/}
-                        {/*    </>*/}
-                        {/*}*/}
-                        {/*/!*  REGISTER  *!/*/}
-                        {/*{!userInfo && (*/}
-                        {/*    <LinkContainer to='/Register'>*/}
-                        {/*        <Nav.Link>*/}
-                        {/*            <Button className='px-3 py-0 mt-2 rounded-pill global_RedFontWhiteBgBtn StickyHeader_iconHidden'>*/}
-                        {/*                            <span className='StickyHeader_hideWords'>*/}
-                        {/*                                <i className='fal fa-clipboard-user StickyHeader_icon-size'> </i>*/}
-                        {/*                            </span>*/}
-                        {/*                <span className='StickyHeader_hideIcon'>Register</span>*/}
-                        {/*            </Button>*/}
-                        {/*        </Nav.Link>*/}
-                        {/*    </LinkContainer>)*/}
-                        {/*}*/}
-
-                        {/*/!*  ADMIN DROPDOWN  *!/*/}
-                        {/*{userInfo && userInfo.isAdmin && (*/}
-                        {/*    <NavDropdown style={{zIndex: '1000'}} title='Admin' id='adminmenu'*/}
-                        {/*                 className='mr-0 py-0 mt-2 whiteDropdown'>*/}
-                        {/*        <LinkContainer to='/admin/userlist'>*/}
-                        {/*            <NavDropdown.Item>Users</NavDropdown.Item>*/}
-                        {/*        </LinkContainer>*/}
-                        {/*        <LinkContainer to='/admin/productlist'>*/}
-                        {/*            <NavDropdown.Item>Products</NavDropdown.Item>*/}
-                        {/*        </LinkContainer>*/}
-                        {/*        <LinkContainer to='/admin/orderlist'>*/}
-                        {/*            <NavDropdown.Item>Orders</NavDropdown.Item>*/}
-                        {/*        </LinkContainer>*/}
-                        {/*    </NavDropdown>*/}
-                        {/*)}*/}
-
-
-
-
-
-
-
-
 
                     </ul>
                 </nav>
             </IconContext.Provider>
         </>
     );
-}
+};
 
 export default SideBar;

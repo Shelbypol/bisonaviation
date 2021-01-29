@@ -9,6 +9,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {CART_RESET} from "../../constants/cartConstants";
 import {logout} from "../../actions/userActions";
 import Login from "../Login";
+import '../../style/SideBar.css'
 
 const SideBarData = ({showSidebar}) => {
     const [loginShow, setLoginShow] = useState(false);
@@ -31,11 +32,6 @@ const SideBarData = ({showSidebar}) => {
         setLoginShow(!loginShow)
     };
 
-    //          title: 'Support',
-    //          path: '/support',
-    //          icon: <IoIcons.IoMdHelpCircle />,
-    //          cName: 'nav-text'
-
     return (
         <>
             {userInfo ? (
@@ -43,42 +39,55 @@ const SideBarData = ({showSidebar}) => {
 
                         <span><h4 className='mx-3'>{userInfo.name}</h4></span>
 
-                        <Link to='/' onClick={showSidebar}>
-                            <span className='SideBar-nav-text'>Home</span>
-                        </Link>
+                        <li className='SideBar-nav-text'>
+                            <Link to='/' onClick={showSidebar}>
+                                <span>Home</span>
+                            </Link>
+                        </li>
 
-                        <Link to='/profile'  onClick={showSidebar}>
-                            <span className='SideBar-nav-text'>Profile</span>
-                        </Link>
+                        <li className='SideBar-nav-text'>
+                            <Link to='/profile' onClick={showSidebar}>
+                                <span>Profile</span>
+                            </Link>
+                        </li>
 
-                        <Link onClick={logoutHandler && showSidebar} to='/'>
-                            {/*<i className='fal fa-plane-departure StickyHeader_icon-size'> </i>*/}
-                            <span className='SideBar-nav-text'>Logout</span>
-                        </Link>
+                        <li className='SideBar-nav-text'>
+                            <Link onClick={logoutHandler} to='/'>
+                                {/*<i className='fal fa-plane-departure StickyHeader_icon-size'> </i>*/}
+                                <span>Logout</span>
+                            </Link>
+                        </li>
 
                     </>
 
                 ) :
                 <>
-                    <Link to='/'>
-                        <span className='SideBar-nav-text'  onClick={showSidebar}>Home</span>
-                    </Link>
-                    {/*<Link to='/login'>*/}
-                        {/*<i className='fal fa-plane-arrival StickyHeader_icon-size'> </i>*/}
-                        <span className='SideBar-nav-text global_cursor' onClick={loginForm}>Login</span>
-                    {/*</Link>*/}
+                    <li className='SideBar-nav-text'>
+                        <Link to='/'>
+                            <span onClick={showSidebar}>Home</span>
+                        </Link>
+                    </li>
+
+                    <li className='SideBar-nav-text' onClick={loginForm}>
+                        <span>Login</span>
+                    </li>
+
                     {loginShow && (
-                        <Login showSideBar={showSidebar}/>
+                        <li className='SideBar-nav-text'>
+                            <Login showSideBar={showSidebar}/>
+                        </li>
                     )}
 
                 </>
             }
             {/*  REGISTER  */}
             {!userInfo && (
-                <Link to='/Register' onClick={showSidebar}>
-                    {/*<i className='fal fa-clipboard-user StickyHeader_icon-size'> </i>*/}
-                    <span className='SideBar-nav-text'>Register</span>
-                </Link>
+                <li className='SideBar-nav-text'>
+                    <Link to='/Register' onClick={showSidebar}>
+                        {/*<i className='fal fa-clipboard-user StickyHeader_icon-size'> </i>*/}
+                        <span>Register</span>
+                    </Link>
+                </li>
             )}
 
             {/*  ADMIN DROPDOWN  */}

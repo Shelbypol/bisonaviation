@@ -72,6 +72,11 @@ p{
     background-color: rgba(0, 0, 0, .1);
 }
 
+.global_whiteFontRedHoverWhiteBg:hover {
+    background-color: #fff;
+    color: rgba(90, 00, 09, 1)
+}
+
 .global_bisonFadedRedHover:hover{
     background-color: rgba(90, 00, 09, .1);
 
