@@ -47,6 +47,7 @@ const SideBar = () => {
                 <div className='SideBar-navbar' >
                     <Link to='#' className='SideBar-menu-bars'>
                         <FaIcons.FaBars onClick={showSidebar} />
+                        {/*<p onClick={showSidebar}>Login</p>*/}
                     </Link>
                 </div>
                 <nav className={sidebar ? 'SideBar-nav-menu active' : 'SideBar-nav-menu'} ref={node} onClick={(e) => (handleClick(e))}>

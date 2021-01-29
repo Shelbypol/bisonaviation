@@ -56,7 +56,7 @@ const Login = ({history, showSidebar}) => {
                                   onChange={(e) => setPassword(e.target.value)}>
                     </Form.Control>
                 </Form.Group>
-                <Button className='py-0 px-1 global_whiteFontRedHoverWhiteBg' type='submit' variant='primary'
+                <Button className='py-0 px-1 global_whiteFontRedHoverWhiteBg rounded' type='submit' variant='primary'
                         onClick={showSidebar}>Sign In</Button>
             </Form>
 

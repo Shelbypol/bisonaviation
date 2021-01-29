@@ -79,7 +79,10 @@ p{
 
 .global_bisonFadedRedHover:hover{
     background-color: rgba(90, 00, 09, .1);
+}
 
+.global_redFontHover:hover{
+    color: rgba(90, 00, 09, 1)
 }
 
 /*.global_bisonRedBg{*/

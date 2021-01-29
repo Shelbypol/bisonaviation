@@ -84,10 +84,10 @@ const SideBarData = ({showSidebar}) => {
             }
             {/*  REGISTER  */}
             {!userInfo && (
-                <li className='SideBar-nav-text'>
+                <li className='mx-2'>
                     <Link to='/Register' onClick={showSidebar}>
                         {/*<i className='fal fa-clipboard-user StickyHeader_icon-size'> </i>*/}
-                        <span>Register</span>
+                        <span className='global_redFontHover'>Register</span>
                     </Link>
                 </li>
             )}
