@@ -14,7 +14,7 @@ const WishList = () => {
         <Navbar id='app' className='wishList'>
             <NavItem icon={
                 <span className='SocialIcons_socialIcons global_cursor'>
-                   <i className="m-auto fal fa-heart global_heart-whiteBgRedHover pt-1"> </i>
+                   <i className="m-auto fal fa-heart global_heart-whiteBgRedHover pt-2 pr-2" style={{fontSize: '1.5em'}}> </i>
                 </span>
             }>
                 <DropdownMenu> </DropdownMenu>

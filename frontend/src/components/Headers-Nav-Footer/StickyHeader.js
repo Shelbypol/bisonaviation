@@ -217,80 +217,6 @@ const StickyHeader = () => {
                                     <Nav className='col-lg-4 col-md-6 justify-content-end'>
 
                                         <WishListTab/>
-                                        {/*  PROFILE  /  SIGN IN  */}
-                                        {/*{userInfo ? (*/}
-                                        {/*        <>*/}
-
-                                        {/*            <LinkContainer to='/profile'>*/}
-                                        {/*                <Nav.Link>*/}
-                                        {/*                    <Button className='px-3 py-0 mt-2 rounded-pill global_RedFontWhiteBgBtn StickyHeader_iconHidden'>*/}
-                                        {/*                        <span className='StickyHeader_hideWords'>*/}
-                                        {/*                            {userInfo.name}*/}
-                                        {/*                        </span>*/}
-                                        {/*                        <span className='StickyHeader_hideIcon'>Profile</span>*/}
-                                        {/*                    </Button>*/}
-                                        {/*                </Nav.Link>*/}
-                                        {/*            </LinkContainer>*/}
-
-                                        {/*            <LinkContainer to='/'>*/}
-                                        {/*                <Nav.Link onClick={logoutHandler}>*/}
-                                        {/*                    <Button*/}
-                                        {/*                        className='px-3 py-0 mt-2 rounded-pill global_RedFontWhiteBgBtn StickyHeader_iconHidden'>*/}
-                                        {/*               <span className='StickyHeader_hideWords'>*/}
-                                        {/*                 <i className='fal fa-plane-departure StickyHeader_icon-size'> </i>*/}
-                                        {/*                </span>*/}
-                                        {/*                        <span className='StickyHeader_hideIcon'>Logout</span>*/}
-                                        {/*                    </Button>*/}
-                                        {/*                </Nav.Link>*/}
-                                        {/*            </LinkContainer>*/}
-                                        {/*        </>*/}
-
-                                        {/*    ) :*/}
-                                        {/*    <>*/}
-
-                                        {/*    /!*<WishListTab />*!/*/}
-
-                                        {/*    <LinkContainer to='/login'>*/}
-                                        {/*        <Nav.Link>*/}
-                                        {/*            <Button className='px-3 mr-n3 py-0 mt-2 rounded-pill global_RedFontWhiteBgBtn StickyHeader_iconHidden'>*/}
-                                        {/*             <span className='StickyHeader_hideWords'>*/}
-                                        {/*                 <i className='fal fa-plane-arrival StickyHeader_icon-size'> </i>*/}
-                                        {/*             </span>*/}
-                                        {/*                <span className='StickyHeader_hideIcon'>Login</span>*/}
-                                        {/*            </Button>*/}
-                                        {/*        </Nav.Link>*/}
-                                        {/*    </LinkContainer>*/}
-                                        {/*    </>*/}
-                                        {/*}*/}
-                                        {/*/!*  REGISTER  *!/*/}
-                                        {/*{!userInfo && (*/}
-                                        {/*    <LinkContainer to='/Register'>*/}
-                                        {/*        <Nav.Link>*/}
-                                        {/*            <Button className='px-3 py-0 mt-2 rounded-pill global_RedFontWhiteBgBtn StickyHeader_iconHidden'>*/}
-                                        {/*            <span className='StickyHeader_hideWords'>*/}
-                                        {/*                <i className='fal fa-clipboard-user StickyHeader_icon-size'> </i>*/}
-                                        {/*            </span>*/}
-                                        {/*                <span className='StickyHeader_hideIcon'>Register</span>*/}
-                                        {/*            </Button>*/}
-                                        {/*        </Nav.Link>*/}
-                                        {/*    </LinkContainer>)*/}
-                                        {/*}*/}
-
-                                        {/*/!*  ADMIN DROPDOWN  *!/*/}
-                                        {/*{userInfo && userInfo.isAdmin && (*/}
-                                        {/*    <NavDropdown style={{zIndex: '1000'}} title='Admin' id='adminmenu'*/}
-                                        {/*                 className='mr-0 py-0 mt-2 whiteDropdown'>*/}
-                                        {/*        <LinkContainer to='/admin/userlist'>*/}
-                                        {/*            <NavDropdown.Item>Users</NavDropdown.Item>*/}
-                                        {/*        </LinkContainer>*/}
-                                        {/*        <LinkContainer to='/admin/productlist'>*/}
-                                        {/*            <NavDropdown.Item>Products</NavDropdown.Item>*/}
-                                        {/*        </LinkContainer>*/}
-                                        {/*        <LinkContainer to='/admin/orderlist'>*/}
-                                        {/*            <NavDropdown.Item>Orders</NavDropdown.Item>*/}
-                                        {/*        </LinkContainer>*/}
-                                        {/*    </NavDropdown>*/}
-                                        {/*)}*/}
 
 
                                         <LinkContainer to='/contact'>
@@ -316,78 +242,7 @@ const StickyHeader = () => {
                                     <Nav className='col-lg-4 col-md-6 justify-content-end'>
 
                                         <WishListTab/>
-                                        {/*  PROFILE  /  SIGN IN  */}
-                                        {/*{userInfo ? (*/}
-                                        {/*        <>*/}
 
-                                        {/*            <LinkContainer to='/profile'>*/}
-                                        {/*                <Nav.Link>*/}
-                                        {/*                    <Button className='px-3 py-0 mt-2 rounded-pill global_RedFontWhiteBgBtn StickyHeader_iconHidden'>*/}
-                                        {/*                        <span className='StickyHeader_hideWords'>*/}
-                                        {/*                            {userInfo.name}*/}
-                                        {/*                        </span>*/}
-                                        {/*                        <span className='StickyHeader_hideIcon'>Profile</span>*/}
-                                        {/*                    </Button>*/}
-                                        {/*                </Nav.Link>*/}
-                                        {/*            </LinkContainer>*/}
-
-                                        {/*            <LinkContainer to='/'>*/}
-                                        {/*                <Nav.Link onClick={logoutHandler}>*/}
-                                        {/*                    <Button*/}
-                                        {/*                        className='px-3 py-0 mt-2 rounded-pill global_RedFontWhiteBgBtn StickyHeader_iconHidden'>*/}
-                                        {/*               <span className='StickyHeader_hideWords'>*/}
-                                        {/*                 <i style={{fontSize: '1.5em'}}*/}
-                                        {/*                    className=" fal fa-plane-departure "> </i>*/}
-                                        {/*                </span>*/}
-                                        {/*                        <span className='StickyHeader_hideIcon'>Logout</span>*/}
-                                        {/*                    </Button>*/}
-                                        {/*                </Nav.Link>*/}
-                                        {/*            </LinkContainer>*/}
-                                        {/*        </>*/}
-
-                                        {/*    ) :*/}
-                                        {/*    <LinkContainer to='/login'>*/}
-                                        {/*        <Nav.Link>*/}
-                                        {/*            <Button className='px-3 mr-n3 py-0 mt-2 rounded-pill global_RedFontWhiteBgBtn StickyHeader_iconHidden'>*/}
-                                        {/*             <span className='StickyHeader_hideWords'>*/}
-                                        {/*                 <i style={{fontSize: '1.5em'}}*/}
-                                        {/*                    className=" fal fa-plane-arrival "> </i>*/}
-                                        {/*             </span>*/}
-                                        {/*                <span className='StickyHeader_hideIcon'>Login</span>*/}
-                                        {/*            </Button>*/}
-                                        {/*        </Nav.Link>*/}
-                                        {/*    </LinkContainer>*/}
-                                        {/*}*/}
-                                        {/*/!*  REGISTER  *!/*/}
-                                        {/*{!userInfo && (*/}
-                                        {/*    <LinkContainer to='/Register'>*/}
-                                        {/*        <Nav.Link>*/}
-                                        {/*            <Button className='px-3 py-0 mt-2 rounded-pill global_RedFontWhiteBgBtn StickyHeader_iconHidden'>*/}
-                                        {/*            <span className='StickyHeader_hideWords'>*/}
-                                        {/*                <i style={{fontSize: '1.5em'}}*/}
-                                        {/*                   className="fal fa-clipboard-user"> </i>*/}
-                                        {/*            </span>*/}
-                                        {/*                <span className='StickyHeader_hideIcon'>Register</span>*/}
-                                        {/*            </Button>*/}
-                                        {/*        </Nav.Link>*/}
-                                        {/*    </LinkContainer>)*/}
-                                        {/*}*/}
-
-                                        {/*/!*  ADMIN DROPDOWN  *!/*/}
-                                        {/*{userInfo && userInfo.isAdmin && (*/}
-                                        {/*    <NavDropdown style={{zIndex: '1000'}} title='Admin' id='adminmenu'*/}
-                                        {/*                 className='mr-0 py-0 mt-2 whiteDropdown'>*/}
-                                        {/*        <LinkContainer to='/admin/userlist'>*/}
-                                        {/*            <NavDropdown.Item>Users</NavDropdown.Item>*/}
-                                        {/*        </LinkContainer>*/}
-                                        {/*        <LinkContainer to='/admin/productlist'>*/}
-                                        {/*            <NavDropdown.Item>Products</NavDropdown.Item>*/}
-                                        {/*        </LinkContainer>*/}
-                                        {/*        <LinkContainer to='/admin/orderlist'>*/}
-                                        {/*            <NavDropdown.Item>Orders</NavDropdown.Item>*/}
-                                        {/*        </LinkContainer>*/}
-                                        {/*    </NavDropdown>*/}
-                                        {/*)}*/}
 
                                         {/* CONTACT  */}
                                         <LinkContainer to='/contact'>
@@ -407,11 +262,14 @@ const StickyHeader = () => {
                             }
 
                         </Navbar.Collapse>
+
+
                 <SideBar/>
+
+
                     </Container>
                 </Navbar>
                 <div className='StickyHeader_whiteFade col-sm-12 position-sticky'> </div>
-                {/*<div className='StickyHeader_blackFade col-sm-12 position-sticky'> </div>*/}
             </header>
         </>
 
