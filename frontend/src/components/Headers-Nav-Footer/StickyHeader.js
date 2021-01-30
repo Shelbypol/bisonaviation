@@ -313,7 +313,6 @@ const StickyHeader = () => {
 
                                 :
                                 // ============= LOGIN/REG CONTACT BTNS SHOW ON SCROLL ==============
-
                                     <Nav className='col-lg-4 col-md-6 justify-content-end'>
 
                                         <WishListTab/>

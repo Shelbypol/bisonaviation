@@ -44,12 +44,14 @@ const SideBar = () => {
     return (
         <>
             <IconContext.Provider value={{ color: '#fff' }}>
-                <div className='SideBar-navbar' >
-                    <Link to='#' className='SideBar-menu-bars'>
-                        <FaIcons.FaBars onClick={showSidebar} />
-                        {/*<p onClick={showSidebar}>Login</p>*/}
+                {/*<div>*/}
+                {/*<div className='SideBar-navbar' >*/}
+                    {/*<Link to='#' className='SideBar-menu-bars'>*/}
+                    <Link to='#'>
+                        {/*<FaIcons.FaBars onClick={showSidebar} />*/}
+                        <p onClick={showSidebar} className='pt-4 pr-2'>Login</p>
                     </Link>
-                </div>
+                {/*</div>*/}
                 <nav className={sidebar ? 'SideBar-nav-menu active' : 'SideBar-nav-menu'} ref={node} onClick={(e) => (handleClick(e))}>
                     <ul className='SideBar-nav-menu-items' >
 

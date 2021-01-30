@@ -39,11 +39,11 @@ const SideBarData = ({showSidebar}) => {
 
                         <span><h4 className='mx-3'>{userInfo.name}</h4></span>
 
-                        <li className='SideBar-nav-text'>
-                            <Link to='/' onClick={showSidebar}>
-                                <span>Home</span>
-                            </Link>
-                        </li>
+                        {/*<li className='SideBar-nav-text'>*/}
+                        {/*    <Link to='/' onClick={showSidebar}>*/}
+                        {/*        <span>Home</span>*/}
+                        {/*    </Link>*/}
+                        {/*</li>*/}
 
                         <li className='SideBar-nav-text'>
                             <Link to='/profile' onClick={showSidebar}>
@@ -62,23 +62,15 @@ const SideBarData = ({showSidebar}) => {
 
                 ) :
                 <>
-                    <li className='SideBar-nav-text'>
-                        <Link to='/'>
-                            <span onClick={showSidebar}>Home</span>
-                        </Link>
-                    </li>
+                    {/*<li className='SideBar-nav-text'>*/}
+                    {/*    <Link to='/'>*/}
+                    {/*        <span onClick={showSidebar}>Home</span>*/}
+                    {/*    </Link>*/}
+                    {/*</li>*/}
 
                     <li className='my-3'>
-                        {/*    <Link to='/'>*/}
-                        {/*        <span>Login</span>*/}
-                        {/*    </Link>*/}
-                        {/*</li>*/}
-
-                        {/*{loginShow && (*/}
-                        {/*    <li className='SideBar-nav-text'>*/}
                         <Login showSideBar={showSidebar}/>
                     </li>
-                    {/*)}*/}
 
                 </>
             }
@@ -94,18 +86,23 @@ const SideBarData = ({showSidebar}) => {
 
             {/*  ADMIN DROPDOWN  */}
             {userInfo && userInfo.isAdmin && (
-                <NavDropdown style={{zIndex: '1000'}} title='Admin' id='adminmenu'
-                             className='mr-0 py-0 mt-2 whiteDropdown'>
-                    <LinkContainer to='/admin/userlist'>
-                        <NavDropdown.Item>Users</NavDropdown.Item>
-                    </LinkContainer>
-                    <LinkContainer to='/admin/productlist'>
-                        <NavDropdown.Item>Products</NavDropdown.Item>
-                    </LinkContainer>
-                    <LinkContainer to='/admin/orderlist'>
-                        <NavDropdown.Item>Orders</NavDropdown.Item>
-                    </LinkContainer>
-                </NavDropdown>
+                <>
+                    <li className='SideBar-nav-text'>
+                        <Link to='/admin/userlist'>
+                            <span className='global_redFontHover'>Users</span>
+                        </Link>
+                    </li>
+                    <li className='SideBar-nav-text'>
+                        <Link to='/admin/productlist'>
+                            <span className='global_redFontHover'>Products</span>
+                        </Link>
+                    </li>
+                    <li className='SideBar-nav-text'>
+                        <Link to='/admin/orderlist'>
+                            <span className='global_redFontHover'>Orders</span>
+                        </Link>
+                    </li>
+                </>
             )}
         </>
     )

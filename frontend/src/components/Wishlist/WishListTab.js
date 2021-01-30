@@ -121,28 +121,28 @@ const DropdownMenu = () => {
                 </div>
             </CSSTransition>
 
-            <CSSTransition
-                in={activeMenu === 'main'}
-                timeout={500}
-                classNames="wishList-menu-primary"
-                unmountOnExit
-                onEnter={calcHeight}
-            >
-                <div className="wishList-menu">
-                    {/*<DropdownItem><Button onClick={}>X</Button> </DropdownItem>*/}
-                    {/*<DropdownItem>*/}
-                    {/*    <WishListTabInfo/>*/}
-                    {/*</DropdownItem>*/}
+            {/*<CSSTransition*/}
+            {/*    in={activeMenu === 'main'}*/}
+            {/*    timeout={500}*/}
+            {/*    classNames="wishList-menu-primary"*/}
+            {/*    unmountOnExit*/}
+            {/*    onEnter={calcHeight}*/}
+            {/*>*/}
+            {/*    <div className="wishList-menu">*/}
+            {/*        /!*<DropdownItem><Button onClick={}>X</Button> </DropdownItem>*!/*/}
+            {/*        /!*<DropdownItem>*!/*/}
+            {/*        /!*    <WishListTabInfo/>*!/*/}
+            {/*        /!*</DropdownItem>*!/*/}
 
-                    {/*<DropdownItem*/}
-                    {/*    // leftIcon={<i className='fa fa-long-arrow-left'> </i>}*/}
-                    {/*    rightIcon={<i className='fa fa-long-arrow-right'> </i>}*/}
-                    {/*    goToMenu="settings">*/}
-                    {/*    Settings*/}
-                    {/*</DropdownItem>*/}
+            {/*        /!*<DropdownItem*!/*/}
+            {/*        /!*    // leftIcon={<i className='fa fa-long-arrow-left'> </i>}*!/*/}
+            {/*        /!*    rightIcon={<i className='fa fa-long-arrow-right'> </i>}*!/*/}
+            {/*        /!*    goToMenu="settings">*!/*/}
+            {/*        /!*    Settings*!/*/}
+            {/*        /!*</DropdownItem>*!/*/}
 
-                </div>
-            </CSSTransition>
+            {/*    </div>*/}
+            {/*</CSSTransition>*/}
 
         </div>
     );
