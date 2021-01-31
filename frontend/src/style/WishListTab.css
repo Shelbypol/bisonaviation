@@ -102,7 +102,7 @@ a {
     height: 90vh;
     max-height: 90vh;
     /*transform: translateX(-45%);*/
-    transform: translateX(-18%);
+    transform: translateX(-10%);
     background-color: #fff;
     border: var(--border);
     border-radius: var(--border-radius);
