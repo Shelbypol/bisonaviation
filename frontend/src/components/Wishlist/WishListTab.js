@@ -4,17 +4,16 @@ import WishListTabInfo from "./WishListTabInfo";
 import '../../style/WishListTab.css'
 import {Button, Row} from "react-bootstrap";
 import {EMAIL_RESET} from "../../constants/emailConstants";
-import {useDispatch} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 
 const WishList = () => {
-
 
     return (
 
         <Navbar id='app' className='wishList'>
             <NavItem icon={
                 <span className='SocialIcons_socialIcons global_cursor'>
-                   <i className="m-auto fal fa-heart global_heart-whiteBgRedHover pt-2 pr-2" style={{fontSize: '1.5em'}}> </i>
+                    <i className="m-auto fal fa-cart-arrow-down global_heart-whiteBgRedHover pt-3 pr-2" style={{fontSize: '1.5em'}}> </i>
                 </span>
             }>
                 <DropdownMenu> </DropdownMenu>
@@ -36,6 +35,9 @@ const Navbar = (props) => {
 const NavItem = (props) => {
     const [open, setOpen] = useState(false);
 
+    const cart = useSelector(state => state.cart);
+    const {cartItems} = cart;
+
     const dispatch = useDispatch();
     const node = useRef();
 
@@ -46,7 +48,7 @@ const NavItem = (props) => {
         return () => {
             document.removeEventListener("scroll", handleScroll);
         };
-    }, []);
+    }, [cartItems]);
 
     const handleScroll = e => {
         if (node.current.contains(e.target) === false){
@@ -58,7 +60,7 @@ const NavItem = (props) => {
         <li ref={node} onClick={(e) => (handleScroll(e))} className="wishList-nav-item">
             {/*<a href="#" className="wishList-icon-button" onClick={() => setOpen(!open)}>*/}
             <a onClick={() => setOpen(!open)}>
-                {props.icon}
+                <p className='global_bisonRedTxt pt-1'>{cartItems.length}&nbsp;{props.icon}</p>
             </a>
 
             {open && props.children}
