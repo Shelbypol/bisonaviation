@@ -26,15 +26,15 @@ const WishListTabInfo = () => {
     const wishListCreate = useSelector(state => state.wishListCreate);
     const {wishList, success, error} = wishListCreate;
 
-    const addToWishListHandler = () => {
-
-        cart.cartItems.map(item => {
-            dispatch(createWishList({
-                wishListItems: item
-            }));
-        });
-        dispatch({type: CART_RESET});
-    };
+    // const addToWishListHandler = () => {
+    //
+    //     cart.cartItems.map(item => {
+    //         dispatch(createWishList({
+    //             wishListItems: item
+    //         }));
+    //     });
+    //     dispatch({type: CART_RESET});
+    // };
 
     const clearWishList = () => {
         dispatch({type: CART_RESET});
@@ -56,16 +56,18 @@ const WishListTabInfo = () => {
                           ClassName='d-flex justify-content-center'>
                         <Tab tabClassName=' global_cursor global_bisonFadedRedHover p-auto
                         text-center d-flex align-items-center justify-content-center' eventKey="wishlist"
-                             title={userInfo ? (
-
-                                 <h6 onClick={addToWishListHandler}>Save wishlist to profile</h6>
-                             ) : (
-                                 <Link to='/login'>
-                                     <h6>
-                                         <strong className='global_bisonRedTxt global_cursor'>sign in</strong> to save
-                                     </h6>
-                                 </Link>
-                             )}>
+                             title='Wishlist'>
+                             {/*//     userInfo ? (*/}
+                             {/*//*/}
+                             {/*//     <h6 onClick={addToWishListHandler}>Save wishlist to profile</h6>*/}
+                             {/*// ) : (*/}
+                             {/*//     <Link to='/login'>*/}
+                             {/*//         <h6>*/}
+                             {/*//             <strong className='global_bisonRedTxt global_cursor'>sign in</strong> to save*/}
+                             {/*//         </h6>*/}
+                             {/*//     </Link>*/}
+                             {/*// )}*/}
+                        {/*// >*/}
                             <WishListSave userinfo={userInfo} cartItems={cartItems} cart={cart} success={success}/>
                         </Tab>
                         <Tab eventKey="profile" title="Purchase Inquiry"

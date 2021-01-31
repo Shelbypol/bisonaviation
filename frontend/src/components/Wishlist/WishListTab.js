@@ -12,8 +12,8 @@ const WishList = () => {
 
         <Navbar id='app' className='wishList'>
             <NavItem icon={
-                <span className='SocialIcons_socialIcons global_cursor'>
-                    <i className="m-auto fal fa-cart-arrow-down global_heart-whiteBgRedHover pt-3 pr-2" style={{fontSize: '1.5em'}}> </i>
+                <span className='global_cursor pr-3' style={{fontSize: '1.6em'}}>
+                    <i className="m-auto fal fa-cart-arrow-down global_heart-whiteBgRedHover "> </i>
                 </span>
             }>
                 <DropdownMenu> </DropdownMenu>
@@ -64,7 +64,7 @@ const NavItem = (props) => {
     };
 
     return (
-        <li ref={node} onClick={(e) =>{ handleScroll(e); handleClick(e);}} className="wishList-nav-item">
+        <li ref={node} onClick={(e) =>{ handleScroll(e); handleClick(e);}} className="wishList-nav-item pt-2">
         {/*<li ref={node} onClick={(e) => (handleScroll(e))} className="wishList-nav-item">*/}
             {/*<a href="#" className="wishList-icon-button" onClick={() => setOpen(!open)}>*/}
             <a onClick={() => setOpen(!open)}>
