@@ -44,9 +44,11 @@ const NavItem = (props) => {
     useEffect(() => {
         // add when mounted
         document.addEventListener("scroll", handleScroll);
+        document.addEventListener("click", handleClick);
         // return function to be called when unmounted
         return () => {
             document.removeEventListener("scroll", handleScroll);
+            document.removeEventListener("click", handleClick);
         };
     }, [cartItems]);
 
@@ -55,12 +57,18 @@ const NavItem = (props) => {
             setOpen(false)
         }
     };
+    const handleClick = e => {
+        if (node.current.contains(e.target) === false){
+            setOpen(false)
+        }
+    };
 
     return (
-        <li ref={node} onClick={(e) => (handleScroll(e))} className="wishList-nav-item">
+        <li ref={node} onClick={(e) =>{ handleScroll(e); handleClick(e);}} className="wishList-nav-item">
+        {/*<li ref={node} onClick={(e) => (handleScroll(e))} className="wishList-nav-item">*/}
             {/*<a href="#" className="wishList-icon-button" onClick={() => setOpen(!open)}>*/}
             <a onClick={() => setOpen(!open)}>
-                <p className='global_bisonRedTxt pt-1'>{cartItems.length}&nbsp;{props.icon}</p>
+                <p className='global_bisonRedTxt global_cursor pt-1'>{cartItems.length}&nbsp;{props.icon}</p>
             </a>
 
             {open && props.children}

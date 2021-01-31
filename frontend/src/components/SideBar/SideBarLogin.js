@@ -21,18 +21,28 @@ const SideBarLogin = () => {
     const node = useRef();
     useEffect(() => {
         document.addEventListener("scroll", handleScroll);
+        document.addEventListener("click", handleClick);
         return () => {
             document.removeEventListener("scroll", handleScroll);
+            document.removeEventListener("click", handleClick);
         };
     }, []);
 
     const showSidebar = () => setSidebar(!sidebar);
+
+    const handleClick = e => {
+        if (node.current.contains(e.target) === false) {
+            setSidebar(false)
+        }
+    };
+
 
     const handleScroll = e => {
         if (node.current.contains(e.target) === false) {
             setSidebar(false)
         }
     };
+
     return (
         <>
             <IconContext.Provider value={{color: '#fff'}}>
@@ -51,7 +61,8 @@ const SideBarLogin = () => {
                 )}
                 {/*</div>*/}
                 <nav className={sidebar ? 'SideBarLogin-nav-menu active' : 'SideBarLogin-nav-menu'} ref={node}
-                     onClick={(e) => (handleScroll(e))}>
+                     // onClick={(e) => (handleScroll(e))}>
+                     onClick={(e) => { handleScroll(e); handleClick(e);}}>
                     <ul className='SideBar-nav-menu-items'>
 
                         <SideBarDataLogin showSidebar={showSidebar}/>
