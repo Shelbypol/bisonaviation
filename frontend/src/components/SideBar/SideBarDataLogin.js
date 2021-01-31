@@ -11,7 +11,7 @@ import {logout} from "../../actions/userActions";
 import Login from "../Login";
 import '../../style/SideBar.css'
 
-const SideBarData = ({showSidebar}) => {
+const SideBarDataLogin = ({showSidebar}) => {
     const [loginShow, setLoginShow] = useState(false);
 
     const dispatch = useDispatch();
@@ -39,7 +39,7 @@ const SideBarData = ({showSidebar}) => {
 
                         <span><h4 className='mx-3'>{userInfo.name}</h4></span>
 
-                        {/*<li className='SideBar-nav-text'>*/}
+                        {/*<li className='SideBarLogin-nav-text'>*/}
                         {/*    <Link to='/' onClick={showSidebar}>*/}
                         {/*        <span>Home</span>*/}
                         {/*    </Link>*/}
@@ -62,7 +62,7 @@ const SideBarData = ({showSidebar}) => {
 
                 ) :
                 <>
-                    {/*<li className='SideBar-nav-text'>*/}
+                    {/*<li className='SideBarLogin-nav-text'>*/}
                     {/*    <Link to='/'>*/}
                     {/*        <span onClick={showSidebar}>Home</span>*/}
                     {/*    </Link>*/}
@@ -107,5 +107,5 @@ const SideBarData = ({showSidebar}) => {
         </>
     )
 };
-export default SideBarData
+export default SideBarDataLogin
 

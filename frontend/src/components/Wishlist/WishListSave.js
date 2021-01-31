@@ -13,7 +13,18 @@ const WishListSave = ({success, cartItems, cart, userInfo}) => {
 
         dispatch(listMyWishLists())
 
-    }, [ dispatch, success]);
+    }, [ dispatch, success, userInfo]);
+
+    const addToWishListHandler = () => {
+
+        cart.cartItems.map(item => {
+            dispatch(createWishList({
+                wishListItems: item
+            }));
+        });
+        dispatch({type: CART_RESET});
+    };
+
 
     const removeFromWishListHandler = (id) => {
         dispatch(removeFromCart(id))
@@ -25,7 +36,15 @@ const WishListSave = ({success, cartItems, cart, userInfo}) => {
         <>
             <Row xs={12} className='mt-2'>
                 <Col md={12}>
-                    {/*<h1>Shopping Cart</h1>*/}
+                    {userInfo ? (
+                        <h6 onClick={addToWishListHandler}>Save wishlist to profile</h6>
+                    ) : (
+                        <Link to='/login'>
+                            <h6>
+                                <strong className='global_bisonRedTxt global_cursor'>sign in</strong> to save
+                            </h6>
+                        </Link>
+                    )}
                     {cartItems.length === 0
                         ? (<p className='mt-5 text-center'>Your wishlist is empty <p style={{fontSize: '12px'}}><Link to={'/products'} className='global_bisonRedTxt'>Browse items</Link></p></p>)
                         : (<>

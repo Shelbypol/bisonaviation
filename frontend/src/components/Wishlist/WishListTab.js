@@ -4,17 +4,16 @@ import WishListTabInfo from "./WishListTabInfo";
 import '../../style/WishListTab.css'
 import {Button, Row} from "react-bootstrap";
 import {EMAIL_RESET} from "../../constants/emailConstants";
-import {useDispatch} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 
 const WishList = () => {
-
 
     return (
 
         <Navbar id='app' className='wishList'>
             <NavItem icon={
-                <span className='SocialIcons_socialIcons global_cursor'>
-                   <i className="m-auto fal fa-heart global_heart-whiteBgRedHover pt-1"> </i>
+                <span className='global_cursor pr-3' style={{fontSize: '1.6em'}}>
+                    <i className="m-auto fal fa-cart-arrow-down global_heart-whiteBgRedHover "> </i>
                 </span>
             }>
                 <DropdownMenu> </DropdownMenu>
@@ -36,29 +35,40 @@ const Navbar = (props) => {
 const NavItem = (props) => {
     const [open, setOpen] = useState(false);
 
+    const cart = useSelector(state => state.cart);
+    const {cartItems} = cart;
+
     const dispatch = useDispatch();
     const node = useRef();
 
     useEffect(() => {
         // add when mounted
         document.addEventListener("scroll", handleScroll);
+        document.addEventListener("click", handleClick);
         // return function to be called when unmounted
         return () => {
             document.removeEventListener("scroll", handleScroll);
+            document.removeEventListener("click", handleClick);
         };
-    }, []);
+    }, [cartItems]);
 
     const handleScroll = e => {
         if (node.current.contains(e.target) === false){
             setOpen(false)
         }
     };
+    const handleClick = e => {
+        if (node.current.contains(e.target) === false){
+            setOpen(false)
+        }
+    };
 
     return (
-        <li ref={node} onClick={(e) => (handleScroll(e))} className="wishList-nav-item">
+        <li ref={node} onClick={(e) =>{ handleScroll(e); handleClick(e);}} className="wishList-nav-item pt-2">
+        {/*<li ref={node} onClick={(e) => (handleScroll(e))} className="wishList-nav-item">*/}
             {/*<a href="#" className="wishList-icon-button" onClick={() => setOpen(!open)}>*/}
             <a onClick={() => setOpen(!open)}>
-                {props.icon}
+                <p className='global_bisonRedTxt global_cursor pt-1'>{cartItems.length}&nbsp;{props.icon}</p>
             </a>
 
             {open && props.children}
@@ -121,28 +131,28 @@ const DropdownMenu = () => {
                 </div>
             </CSSTransition>
 
-            <CSSTransition
-                in={activeMenu === 'main'}
-                timeout={500}
-                classNames="wishList-menu-primary"
-                unmountOnExit
-                onEnter={calcHeight}
-            >
-                <div className="wishList-menu">
-                    {/*<DropdownItem><Button onClick={}>X</Button> </DropdownItem>*/}
-                    {/*<DropdownItem>*/}
-                    {/*    <WishListTabInfo/>*/}
-                    {/*</DropdownItem>*/}
+            {/*<CSSTransition*/}
+            {/*    in={activeMenu === 'main'}*/}
+            {/*    timeout={500}*/}
+            {/*    classNames="wishList-menu-primary"*/}
+            {/*    unmountOnExit*/}
+            {/*    onEnter={calcHeight}*/}
+            {/*>*/}
+            {/*    <div className="wishList-menu">*/}
+            {/*        /!*<DropdownItem><Button onClick={}>X</Button> </DropdownItem>*!/*/}
+            {/*        /!*<DropdownItem>*!/*/}
+            {/*        /!*    <WishListTabInfo/>*!/*/}
+            {/*        /!*</DropdownItem>*!/*/}
 
-                    {/*<DropdownItem*/}
-                    {/*    // leftIcon={<i className='fa fa-long-arrow-left'> </i>}*/}
-                    {/*    rightIcon={<i className='fa fa-long-arrow-right'> </i>}*/}
-                    {/*    goToMenu="settings">*/}
-                    {/*    Settings*/}
-                    {/*</DropdownItem>*/}
+            {/*        /!*<DropdownItem*!/*/}
+            {/*        /!*    // leftIcon={<i className='fa fa-long-arrow-left'> </i>}*!/*/}
+            {/*        /!*    rightIcon={<i className='fa fa-long-arrow-right'> </i>}*!/*/}
+            {/*        /!*    goToMenu="settings">*!/*/}
+            {/*        /!*    Settings*!/*/}
+            {/*        /!*</DropdownItem>*!/*/}
 
-                </div>
-            </CSSTransition>
+            {/*    </div>*/}
+            {/*</CSSTransition>*/}
 
         </div>
     );
