@@ -49,7 +49,7 @@ const HomeScreen = () => {
                 jumboClass={'mt-n5 pt-n5 px-0 pb-5'}
                 // img={heroImg}
                 // imgClassName={'col-12 p-0 mx-0 mb-0'}
-                textContainerStyle={{marginTop: '-5%'}}
+                textContainerStyle={{marginTop: '-7%'}}
                 textContainerClass={'col-12'}
                 title={'Bison Aviation'}
                 titleClassName={'text-light mt-n4 d-flex justify-content-start'}

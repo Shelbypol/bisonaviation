@@ -77,32 +77,39 @@
 
 
 /*  ======   ZOOM IN OUT  ======  */
-.animations_img-hover-zoom-n-out img {
+.animations_img-hover-zoom-n-out {
     -webkit-animation: zoominout 25s; /* Chrome, Safari, Opera */
-    animation: zoominout 25s;
+    animation: zoominout infinite 8s;
 }
 
 @-webkit-keyframes zoominout {
     0% {
         -webkit-transform: scale(1, 1);
+        color: rgba(90, 00, 09, 1);
     }
     50% {
-        -webkit-transform: scale(1.15,1.15);
+        -webkit-transform: scale(1.1,1.1);
+        color: rgba(90, 00, 09, 1);
     }
     100% {
         -webkit-transform: scale(1, 1);
+        color: rgba(90, 00, 09, 1);
+
     }
 }
 /* Standard syntax */
 @keyframes zoominout {
     0% {
         -webkit-transform: scale(1, 1);
+        color: rgba(90, 00, 09, 1);
     }
     50% {
-        -webkit-transform: scale(1.15,1.15);
+        -webkit-transform: scale(1.1,1.1);
+        color: rgba(90, 00, 09, 1);
     }
     100% {
         -webkit-transform: scale(1, 1);
+        color: rgba(90, 00, 09, 1);
     }
 }
 
@@ -110,8 +117,7 @@
 .animations_icon-spin:hover {
     margin-right: 7px;
     top: 2px;
-    /*animation: spin .6s infinite linear;*/
-    animation:  .6s infinite linear;
+    animation: spin .6s infinite linear;
 }
 
 @-webkit-keyframes spin {
@@ -132,6 +138,7 @@
     }
 }
 
+/* SOCIAL ICONS FLIP */
 
 /* entire container, keeps perspective */
 .flip-container {

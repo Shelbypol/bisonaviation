@@ -1,11 +1,9 @@
 import React, {useEffect, useState} from 'react';
 import {Link} from 'react-router-dom'
-import {Card, Button, ListGroup} from 'react-bootstrap'
+import {Card, Button, ListGroup, Nav} from 'react-bootstrap'
 import {useDispatch, useSelector} from "react-redux";
 import {addToCart, removeFromCart} from "../../actions/cartActions";
-import {listProductDetails} from "../../actions/productActions";
-import {createOrder} from "../../actions/orderActions";
-import {listMyWishLists} from "../../actions/wishListActions";
+import {LinkContainer} from "react-router-bootstrap";
 
 
 const Product = ({product, history, match}) => {
@@ -49,16 +47,11 @@ const Product = ({product, history, match}) => {
     return (
         <Card className='my-3 mx-0 rounded border-0'>
             <Link to={`/product/${product._id}`}>
-                <Card.Img src={product.image} variant='top' className='img-fluid d-flex justify-content-center'/>
+                <Card.Img src={product.image} variant='top'
+                          className='img-fluid d-flex justify-content-center mt-auto'/>
             </Link>
-            <Card.Body>
+            <Card.Body className='d-flex flex-column'>
                 <Card.Text as='div' className='m-0 p-0'>
-
-                    {activeHeart ? (
-                        <p onClick={unlike} className='global_cursor global_bisonRedTxt'>saved</p>
-                    ) : (
-                        <p onClick={like} className='global_cursor global_bisonRedTxt'>&#60;3</p>
-                    )}
 
                     {/*<Card.Text as='div'>*/}
                     {/*<Rating value={product.rating} text={`${product.numReviews} reviews`}>*/}
@@ -76,9 +69,37 @@ const Product = ({product, history, match}) => {
                         {product.name}
                     </Card.Text>
                 </Link>
+                <Card.Text as='h5' className='d-flex mt-auto'>
+                    {/*<Card.Text as='h5' className='justify-content-start'>*/}
+                    {/*    {activeHeart ? (*/}
+                    {/*        <p onClick={unlike}*/}
+                    {/*           className='global_cursor global_bisonRedTxt'>saved</p>*/}
+                    {/*    ) : (*/}
+                    {/*        <p onClick={like}*/}
+                    {/*           className='global_cursor global_bisonRedTxt'>&#60;3</p>*/}
+                    {/*    )}*/}
 
-                <Card.Text as='h5' className='d-flex justify-content-center'>
-                    ${product.price}
+                    <Card.Text as='h5' className='d-flex justify-content-start'>
+                        {activeHeart ? (
+                            <>
+                            <span onClick={unlike} style={{color: 'rgba(90, 00, 09, 1', fontSize: '1.3em'}}>
+                                <i className="m-auto fas fa-heart "> </i>
+                            </span>
+                            </>
+                        ) : (
+                            <>
+                            <span onClick={like} style={{fontSize: '1.3em'}}>
+                                <i className="m-auto fas fa-heart"> </i>
+                            </span>
+                            </>
+                        )}
+
+
+
+                    </Card.Text>
+                    <Card.Text as='h5' className='d-flex justify-content-end'>
+                        <p>${product.price}</p>
+                    </Card.Text>
                 </Card.Text>
                 {/*<Card.Text>*/}
                 {/*    */}

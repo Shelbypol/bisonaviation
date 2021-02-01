@@ -72,11 +72,16 @@ const productSchema = mongoose.Schema({
         required: true,
         default: 0
     },
-    isWishList: {
-        type: Boolean,
+    partNumber: {
+        type: String,
         required: true,
-        default: false
     },
+    included: {
+        type: String,
+        required: true,
+    }
+
+
 }, {
     //add this second argument and it will add date and time automatically
     timestamps: true
