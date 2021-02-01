@@ -12,7 +12,7 @@ const WishList = () => {
 
         <Navbar id='app' className='wishList'>
             <NavItem icon={
-                <span className='global_cursor pr-3' style={{fontSize: '1.6em'}}>
+                <span className='global_cursor pr-3' style={{fontSize: '1.5em'}}>
                     <i className="m-auto fal fa-cart-arrow-down global_heart-whiteBgRedHover "> </i>
                 </span>
             }>
