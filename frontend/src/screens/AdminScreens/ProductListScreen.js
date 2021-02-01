@@ -90,7 +90,6 @@ const ProductListScreen = ({ history, match }) => {
                             <th>NAME</th>
                             <th>PRICE</th>
                             <th>PROMO</th>
-                            <th>TYPE OF PROMO</th>
                             <th> </th>
                         </tr>
                         </thead>
@@ -101,11 +100,14 @@ const ProductListScreen = ({ history, match }) => {
                                 <td>{product.name}</td>
                                 <td>${product.price}</td>
                                 {product.isPromo ? (
-                                    <td>Promo Offered</td>
+                                    <>
+                                    <td><i className='fal fa-check' style={{color: 'green'}}> </i>&nbsp; {product.isPromoType}</td>
+                                    </>
                                 ):(
-                                    <td>No promo</td>
+                                    <>
+                                    <td style={{color: 'red'}}>X</td>
+                                    </>
                                 )}
-                                <td>{product.isPromoType}</td>
                                 <td>
                                     <LinkContainer to={`/admin/product/${product._id}/edit`}>
                                         <Button variant='light' className='btn-sm'>
