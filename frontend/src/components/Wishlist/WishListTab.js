@@ -68,7 +68,12 @@ const NavItem = (props) => {
         {/*<li ref={node} onClick={(e) => (handleScroll(e))} className="wishList-nav-item">*/}
             {/*<a href="#" className="wishList-icon-button" onClick={() => setOpen(!open)}>*/}
             <a onClick={() => setOpen(!open)}>
-                <p className='global_bisonRedTxt global_cursor pt-2'>{cartItems.length}&nbsp;{props.icon}</p>
+                {cartItems.length === 0 ? (
+                    <p className='global_bisonRedTxt global_cursor pt-2'>{props.icon}</p>
+                ):(
+                     <p className='global_bisonRedTxt global_cursor pt-2'>{cartItems.length}&nbsp;{props.icon}</p>
+
+                )}
             </a>
 
             {open && props.children}
