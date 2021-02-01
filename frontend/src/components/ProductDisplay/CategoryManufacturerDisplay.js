@@ -53,7 +53,7 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                         <>
                             {/*<StickyContainer>*/}
                             {/*    <Sticky topOffset={100}>*/}
-                                <Col xs={3}>
+                                <Col xs={3} className={'ml-n5'}>
 
                                     {/*     MANUFACTURER SORT DISPLAY AVAILABLE CATS ON CLICK    */}
 

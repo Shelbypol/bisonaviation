@@ -15,9 +15,8 @@ const ProductsDisplaySByCatMan = ({history, match, updateCatProp, updateManufact
             {/*     className='global_accentFont my-3 d-flex justify-content-start'>*/}
             {/*    <h3 className='global_bisonRedTxt global_cursor my-0 py-0'>{updateCatProp || updateManufacturerProp}</h3>*/}
             {/*</Row>*/}
+            <Row xs={9}>
             <Paginate pages={pages} page={page} keyword={keyword ? keyword : ''}/>
-
-            <Row xs={12}>
 
                 {/*{(updateManufacturerProp !== '' || updateCatProp !== '') && (*/}
                 {/*        [].map(empty => (<Product product={empty}/>)))*/}
@@ -27,8 +26,7 @@ const ProductsDisplaySByCatMan = ({history, match, updateCatProp, updateManufact
                 {(updateCatProp !== '') && (
                     <>
                         {products.filter(product => product.category === updateCatProp).map(filteredProduct => (
-                            <Col key={filteredProduct._id} sm={12} md={6} lg={3}
-                                 className='d-flex flex-row align-items-stretch'>
+                            <Col key={filteredProduct._id} sm={12}>
                                 <Product product={filteredProduct} history={history} match={match}/>
                             </Col>
                         ))}
@@ -38,8 +36,7 @@ const ProductsDisplaySByCatMan = ({history, match, updateCatProp, updateManufact
                 {(updateManufacturerProp !== '') && (
                     <>
                         {products.filter(product => product.brand === updateManufacturerProp).map(filteredProduct => (
-                            <Col key={filteredProduct._id} sm={12} md={6} lg={3}
-                                 className='d-flex flex-row align-items-stretch'>
+                            <Col key={filteredProduct._id} sm={12}>
                                 <Product product={filteredProduct} history={history} match={match}/>
                                 {/*product_id={filteredProduct._id}/>*/}
                             </Col>
@@ -50,17 +47,16 @@ const ProductsDisplaySByCatMan = ({history, match, updateCatProp, updateManufact
                 {(updateManufacturerProp === '' && updateCatProp === '') && (
                     <>
                         {products.map(product => (
-                            <Col key={product._id} sm={12} md={6} lg={3}
-                                 className='d-flex flex-row align-items-stretch'>
+                            <Col key={product._id} sm={12}>
                                 <Product product={product} history={history} match={match}
                                          product_id={product._id}/>
                             </Col>
                         ))}
                     </>
                 )}
-            </Row>
 
             <Paginate pages={pages} page={page} keyword={keyword ? keyword : ''}/>
+            </Row>
         </>
     )
 };

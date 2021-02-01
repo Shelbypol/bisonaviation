@@ -26,7 +26,7 @@ const ProductsDisplayScreen = ({match, history}) => {
 
 
     return (
-        <Container className='mx-n5'>
+        <Container className='m-auto p-0'>
             <>
                 <Meta title='Bison | Products'/>
 
