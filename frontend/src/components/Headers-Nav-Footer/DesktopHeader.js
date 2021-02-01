@@ -46,7 +46,7 @@ const DesktopHeader = () => {
 
                         </Nav>
 
-                        <SocialIcons socialClassName={'col-sm-3 justify-content-end'}
+                        <SocialIcons socialClassName={'col-sm-3 mt-n4 justify-content-end'}
                                      contactClassName={'d-none'}
                         />
 
