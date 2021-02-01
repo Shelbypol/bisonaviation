@@ -87,17 +87,17 @@ const SideBarData = ({showSidebar}) => {
             {/*  ADMIN DROPDOWN  */}
             {userInfo && userInfo.isAdmin && (
                 <>
-                    <li className='SideBar-nav-text'>
+                    <li className='SideBar-nav-text border' style={{backgroundColor: '#fff'}}>
                         <Link to='/admin/userlist'>
                             <span className='global_redFontHover'>Users</span>
                         </Link>
                     </li>
-                    <li className='SideBar-nav-text'>
+                    <li className='SideBar-nav-text border' style={{backgroundColor: '#fff'}}>
                         <Link to='/admin/productlist'>
                             <span className='global_redFontHover'>Products</span>
                         </Link>
                     </li>
-                    <li className='SideBar-nav-text'>
+                    <li className='SideBar-nav-text border' style={{backgroundColor: '#fff'}}>
                         <Link to='/admin/orderlist'>
                             <span className='global_redFontHover'>Orders</span>
                         </Link>

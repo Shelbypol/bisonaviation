@@ -52,7 +52,7 @@ const SideBar = () => {
                 {/*</div>*/}
 
                 {userInfo ? (
-                    <nav className={sidebar ? 'SideBar-nav-menu-logged active' : 'SideBar-nav-menu'} ref={node}
+                    <nav className={sidebar ? 'SideBar-nav-menu-user-logged active' : 'SideBar-nav-menu'} ref={node}
                          onClick={(e) => (handleScroll(e))}>
                         <ul className='SideBar-nav-menu-items'>
                             <SideBarData showSidebar={showSidebar}/>
@@ -66,6 +66,24 @@ const SideBar = () => {
                     </ul>
                 </nav>
                     )}
+
+                {/*{userInfo.isAdmin === false ? (*/}
+                {/*    <nav className={sidebar ? 'SideBar-nav-menu-user-logged active' : 'SideBar-nav-menu'} ref={node}*/}
+                {/*         onClick={(e) => (handleScroll(e))}>*/}
+                {/*        <ul className='SideBar-nav-menu-items'>*/}
+                {/*            <SideBarData showSidebar={showSidebar}/>*/}
+                {/*        </ul>*/}
+                {/*    </nav>*/}
+                {/*):(*/}
+                {/*    <nav className={sidebar ? 'SideBar-nav-menu active' : 'SideBar-nav-menu'} ref={node}*/}
+                {/*         onClick={(e) => (handleScroll(e))}>*/}
+                {/*        <ul className='SideBar-nav-menu-items'>*/}
+                {/*            <SideBarData showSidebar={showSidebar}/>*/}
+                {/*        </ul>*/}
+                {/*    </nav>*/}
+                {/*)}*/}
+
+
             </IconContext.Provider>
         </>
     );

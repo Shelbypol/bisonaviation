@@ -18,17 +18,19 @@
 .SideBar-nav-menu {
     background-color: #fff;
     /*background-color: #060b26;*/
-    width: 250px;
+    width: 260px;
     height: 45vh;
     display: flex;
     justify-content: center;
     position: absolute;
     /*position: fixed;*/
     z-index: 2000;
-    top: 9vh;
+    top: 10vh;
     /*left: -100%;*/
     right: -100%;
     transition: 850ms;
+    border-left: .5px solid grey;
+    /*border-bottom: 1px solid grey;*/
 }
 
 .SideBar-nav-menu.active {
@@ -37,23 +39,23 @@
     transition: 350ms;
 }
 
-.SideBar-nav-menu-logged {
+.SideBar-nav-menu-user-logged {
     background-color: #fff;
     /*background-color: #060b26;*/
-    width: 150px;
-    height: 45vh;
+    width: 140px;
+    height: 12vh;
     display: flex;
     justify-content: center;
     position: absolute;
     /*position: fixed;*/
     z-index: 2000;
-    top: 9vh;
+    top: 8vh;
     /*left: -100%;*/
     right: -100%;
     transition: 850ms;
 }
 
-.SideBar-nav-menu-logged.active {
+.SideBar-nav-menu-user-logged.active {
     /*left: 0;*/
     right: 0;
     transition: 350ms;
@@ -64,7 +66,7 @@
     display: flex;
     justify-content: start;
     align-items: center;
-    padding: 8px 0px 8px 16px;
+    padding: 4px 0 4px 0;
     list-style: none;
     /*height: 60px;*/
     /*margin: .1em 0 .1em 0;*/
@@ -73,7 +75,7 @@
 .SideBar-nav-text a {
     text-decoration: none;
     color: #000;
-    font-size: 16px;
+    font-size: 14px;
     width: 95%;
     height: 100%;
     display: flex;
@@ -91,7 +93,7 @@
 }
 
 .SideBar-nav-menu-items {
-    margin-top: 20px;
+    margin-top: 10px;
     width: 100%;
 }
 
