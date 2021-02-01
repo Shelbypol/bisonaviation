@@ -12,28 +12,7 @@ const SocialIcons = ({socialClassName, cartClassName, contactClassName, facebook
         <>
             <Nav className={socialClassName}>
 
-                {/*  WISH LIST  */}
-                {/*<LinkContainer className={cartClassName} to='/cart'>*/}
-                {/*    <Nav.Link>*/}
-                {/*        <span className={'SocialIcons_socialIcons'}>*/}
-                {/*            <i className="m-auto fal fa-heart animations_icon-spin"> </i>*/}
-                {/*        </span>*/}
-                {/*    </Nav.Link>*/}
-                {/*</LinkContainer>*/}
 
-                {/*  CONTACT */}
-                {/*<LinkContainer className={contactClassName} to='/'>*/}
-                {/*    <Nav.Link className='flip-container vertical'>*/}
-                {/*        <div className='flipper'>*/}
-                {/*            <span className='SocialIcons_socialIcons-size front'>*/}
-                {/*                <i className="m-auto fab fa-facebook "> </i>*/}
-                {/*            </span>*/}
-                {/*            <span className='SocialIcons_socialIcons-size back'>*/}
-                {/*                <i className="m-auto fab fa-facebook "> </i>*/}
-                {/*            </span>*/}
-                {/*        </div>*/}
-                {/*    </Nav.Link>*/}
-                {/*</LinkContainer>*/}
                 <Row xs={12}>
                     <Col xs={4}>
                         {/*  FACEBOOK  */}
@@ -43,7 +22,7 @@ const SocialIcons = ({socialClassName, cartClassName, contactClassName, facebook
                             <span className='SocialIcons_socialIcons front'>
                                 <i className="m-auto fab fa-facebook "> </i>
                             </span>
-                                    <span className='SocialIcons_socialIcons back'>
+                                    <span className='SocialIcons_socialIcons-size back'>
                                 <i className="m-auto fab fa-facebook "> </i>
                             </span>
                                 </div>
@@ -58,7 +37,7 @@ const SocialIcons = ({socialClassName, cartClassName, contactClassName, facebook
                             <span className='SocialIcons_socialIcons front'>
                                 <i className="m-auto fab fa-instagram "> </i>
                             </span>
-                                    <span className='SocialIcons_socialIcons back'>
+                                    <span className='SocialIcons_socialIcons-size back'>
                                 <i className="m-auto fab fa-instagram "> </i>
                             </span>
                                 </div>
@@ -73,7 +52,7 @@ const SocialIcons = ({socialClassName, cartClassName, contactClassName, facebook
                             <span className='SocialIcons_socialIcons front'>
                                 <i className="m-auto fab fa-twitter "> </i>
                             </span>
-                                    <span className='SocialIcons_socialIcons back'>
+                                    <span className='SocialIcons_socialIcons-size back'>
                                 <i className="m-auto fab fa-twitter "> </i>
                             </span>
                                 </div>
