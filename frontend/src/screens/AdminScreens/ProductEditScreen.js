@@ -17,9 +17,14 @@ const ProductEditScreen = ({ match, history }) => {
     const [price, setPrice] = useState(0);
     const [image, setImage] = useState('');
     const [brand, setBrand] = useState('');
+    const [partNumber, setPartNumber] = useState('');
+    const [includedParts, setIncludedParts] = useState('');
     const [category, setCategory] = useState('');
     const [countInStock, setCountInStock] = useState(0);
     const [description, setDescription] = useState('');
+    const [isPromo, setIsPromo] = useState(false);
+    const [isPromoType, setIsPromoType] = useState('');
+
     const [uploading, setUploading] = useState(false);
 
     const dispatch = useDispatch();
@@ -44,6 +49,10 @@ const ProductEditScreen = ({ match, history }) => {
                 setPrice(product.price);
                 setImage(product.image);
                 setBrand(product.brand);
+                setIsPromoType(product.isPromoType);
+                setIsPromo(product.isPromo);
+                setPartNumber(product.partNumber);
+                setIncludedParts(product.includedParts);
                 setCategory(product.category);
                 setCountInStock(product.countInStock);
                 setDescription(product.description);
@@ -83,6 +92,10 @@ const ProductEditScreen = ({ match, history }) => {
                 price,
                 image,
                 brand,
+                includedParts,
+                isPromoType,
+                isPromo,
+                partNumber,
                 category,
                 description,
                 countInStock
@@ -112,6 +125,17 @@ const ProductEditScreen = ({ match, history }) => {
                                           onChange={(e) => setName(e.target.value)}>
                             </Form.Control>
                         </Form.Group>
+
+                        {/* PART NUMBER */}
+                        <Form.Group controlId='partNumber'>
+                            <Form.Label>Part Number</Form.Label>
+                            <Form.Control type='partNumber'
+                                          placeholder='Part number'
+                                          value={partNumber}
+                                          onChange={(e) => setPartNumber(e.target.value)}>
+                            </Form.Control>
+                        </Form.Group>
+
                         {/* PRICE */}
                         <Form.Group controlId='price'>
                             <Form.Label>Price</Form.Label>
@@ -166,11 +190,39 @@ const ProductEditScreen = ({ match, history }) => {
                         </Form.Group>
                         {/* DESCRIPTION */}
                         <Form.Group controlId='description'>
-                            <Form.Label>Description</Form.Label>
+                            <Form.Label>Overview / Description</Form.Label>
                             <Form.Control type='text'
                                           placeholder='Enter description'
                                           value={description}
                                           onChange={(e) => setDescription(e.target.value)}>
+                            </Form.Control>
+                        </Form.Group>
+
+                        {/* PARTS INCLUDED */}
+                        <Form.Group controlId='includedParts'>
+                            <Form.Label>Parts included</Form.Label>
+                            <Form.Control type='text'
+                                          placeholder='Parts included'
+                                          value={includedParts}
+                                          onChange={(e) => setIncludedParts(e.target.value)}>
+                            </Form.Control>
+                        </Form.Group>
+
+                        {/* PROMO*/}
+                        <Form.Group controlId='isPromo'>
+                            <Form.Check type='checkbox'
+                                        label='Show Promo'
+                                        checked={isPromo}
+                                        onChange={(e) => setIsPromo(e.target.checked)}>
+                            </Form.Check>
+                        </Form.Group>
+
+                        <Form.Group controlId='isPromoType'>
+                            <Form.Label>Promo Type</Form.Label>
+                            <Form.Control type='text'
+                                          placeholder='discount %, new price, on sale etc.'
+                                          value={isPromoType}
+                                          onChange={(e) => setIsPromoType(e.target.value)}>
                             </Form.Control>
                         </Form.Group>
 

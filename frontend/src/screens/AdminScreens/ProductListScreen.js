@@ -86,22 +86,26 @@ const ProductListScreen = ({ history, match }) => {
                     <Table striped bordered hover responsive className='table-sm'>
                         <thead>
                         <tr>
-                            <th>ID</th>
+                            <th>GARMIN PART #</th>
                             <th>NAME</th>
                             <th>PRICE</th>
-                            <th>CATEGORY</th>
-                            <th>BRAND</th>
+                            <th>PROMO</th>
+                            <th>TYPE OF PROMO</th>
                             <th> </th>
                         </tr>
                         </thead>
                         <tbody>
                         {products.map((product => (
                             <tr key={product._id}>
-                                <td>{product._id}</td>
+                                <td>{product.partNumber}</td>
                                 <td>{product.name}</td>
                                 <td>${product.price}</td>
-                                <td>{product.category}</td>
-                                <td>{product.brand}</td>
+                                {product.isPromo ? (
+                                    <td>Promo Offered</td>
+                                ):(
+                                    <td>No promo</td>
+                                )}
+                                <td>{product.isPromoType}</td>
                                 <td>
                                     <LinkContainer to={`/admin/product/${product._id}/edit`}>
                                         <Button variant='light' className='btn-sm'>

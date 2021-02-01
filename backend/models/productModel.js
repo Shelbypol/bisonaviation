@@ -51,6 +51,14 @@ const productSchema = mongoose.Schema({
         type: String,
         required: true,
     },
+    partNumber: {
+        type: String,
+        required: true,
+    },
+    includedParts: {
+        type: String,
+        required: true,
+    },
     reviews: [reviewSchema],
     rating: {
         type: Number,
@@ -72,13 +80,13 @@ const productSchema = mongoose.Schema({
         required: true,
         default: 0
     },
-    partNumber: {
+    isPromoType: {
         type: String,
-        required: true,
+        required: false,
     },
-    included: {
-        type: String,
-        required: true,
+    isPromo: {
+        type: Boolean,
+        required: false,
     }
 
 
