@@ -110,7 +110,8 @@
 .animations_icon-spin:hover {
     margin-right: 7px;
     top: 2px;
-    animation: spin .6s infinite linear;
+    /*animation: spin .6s infinite linear;*/
+    animation:  .6s infinite linear;
 }
 
 @-webkit-keyframes spin {
