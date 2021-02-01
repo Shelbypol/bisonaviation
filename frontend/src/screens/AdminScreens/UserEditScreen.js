@@ -1,12 +1,14 @@
 import React, {useState, useEffect} from 'react'
 import {Link} from 'react-router-dom'
-import {Form, Button} from 'react-bootstrap'
+import {Form, Button, Container} from 'react-bootstrap'
 import {useDispatch, useSelector} from 'react-redux'
 import Message from '../../components/Message'
 import Loader from '../../components/Loader'
 import FormContainer from "../../components/FormContainer";
 import { getUserDetails, updateUser } from '../../actions/userActions'
 import { USER_UPDATE_RESET} from "../../constants/userConstants";
+import StickyHeader from "../../components/Headers-Nav-Footer/StickyHeader";
+
 
 // whenever you bring something in from the state it's useSelector
 // if you want to call an action it's useDispatch
@@ -48,6 +50,8 @@ const UserEditScreen = ({ match, history}) => {
 
     return (
         <>
+            <StickyHeader/>
+            <Container>
             <Link to='/admin/userlist' className='btn btn-light my-3'>
                 Go Back
             </Link>
@@ -87,6 +91,7 @@ const UserEditScreen = ({ match, history}) => {
                     </Form>
                 ) }
             </FormContainer>
+            </Container>
         </>
 
     )

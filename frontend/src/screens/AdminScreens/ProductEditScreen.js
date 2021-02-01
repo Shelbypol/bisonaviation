@@ -1,13 +1,14 @@
 import axios from 'axios'
 import React, {useState, useEffect} from 'react'
 import {Link} from 'react-router-dom'
-import {Form, Button, Row, Col} from 'react-bootstrap'
+import {Form, Button, Row, Col, Container} from 'react-bootstrap'
 import {useDispatch, useSelector} from 'react-redux'
 import Message from '../../components/Message'
 import Loader from '../../components/Loader'
 import FormContainer from "../../components/FormContainer";
 import {listProductDetails, updateProduct} from "../../actions/productActions";
 import {PRODUCT_UPDATE_RESET} from "../../constants/productConstants";
+import StickyHeader from "../../components/Headers-Nav-Footer/StickyHeader";
 
 
 const ProductEditScreen = ({match, history}) => {
@@ -107,7 +108,9 @@ const ProductEditScreen = ({match, history}) => {
 
     return (
         <>
-            <Row xs={12} className='mb-3'>
+        <StickyHeader/>
+        <Container>
+            <Row xs={12} className='mb-5 mt-n3 border-bottom'>
                 <Col xs={10} className='d-flex justify-content-start'>
                     <h4>Edit Product</h4>
                 </Col>
@@ -116,7 +119,6 @@ const ProductEditScreen = ({match, history}) => {
                         Go Back
                     </Link>
                 </Col>
-
             </Row>
             {/*<FormContainer>*/}
             {loadingUpdate && <Loader/>}
@@ -126,8 +128,13 @@ const ProductEditScreen = ({match, history}) => {
             {loading ? <Loader/> : error ? <Message variant='danger'>{error}</Message> : (
 
                 <Form onSubmit={submitHandler}>
+                    <Row className='p-0 mb-0 mt-n3'>
+                        <Col className='p-0 m-0 d-flex justify-content-end'>
+                            <Button type='submit' variant='primary' className='px-3 py-1 global_RedFontWhiteBg'>Update</Button>
+                        </Col>
+                    </Row>
                     <Row>
-                        <Col xs={4}>
+                        <Col xs={2}>
                             {/* PROMO*/}
                             <Form.Group controlId='isAvailable'>
                                 <Form.Check type='checkbox'
@@ -173,7 +180,7 @@ const ProductEditScreen = ({match, history}) => {
                             </Form.Group>
 
                         </Col>
-                        <Col xs={4}>
+                        <Col xs={5}>
                             {/* NAME */}
                             <Form.Group controlId='name'>
                                 <Form.Label>Name</Form.Label>
@@ -216,7 +223,7 @@ const ProductEditScreen = ({match, history}) => {
 
 
                         </Col>
-                        <Col xs={4}>
+                        <Col xs={5}>
                             {/* COUNT IN STOCK*/}
                             <Form.Group controlId='countInStock'>
                                 <Form.Label>Count In Stock</Form.Label>
@@ -254,8 +261,6 @@ const ProductEditScreen = ({match, history}) => {
                                               onChange={(e) => setIncludedParts(e.target.value)}>
                                 </Form.Control>
                             </Form.Group>
-
-                            <Button type='submit' variant='primary'>Update</Button>
                         </Col>
 
 
@@ -263,6 +268,7 @@ const ProductEditScreen = ({match, history}) => {
                 </Form>
             )}
             {/*</FormContainer>*/}
+        </Container>
         </>
 
     )

@@ -1,10 +1,11 @@
 import React, { useEffect} from 'react'
 import {LinkContainer} from 'react-router-bootstrap'
-import {Table, Button} from 'react-bootstrap'
+import {Table, Button, Container} from 'react-bootstrap'
 import {useDispatch, useSelector} from 'react-redux'
 import Message from '../../components/Message'
 import Loader from '../../components/Loader'
 import { listUsers, deleteUser } from "../../actions/userActions"
+import StickyHeader from "../../components/Headers-Nav-Footer/StickyHeader";
 
 const UserListScreen = ({ history }) => {
     const dispatch = useDispatch();
@@ -36,6 +37,8 @@ const UserListScreen = ({ history }) => {
 
     return (
         <>
+            <StickyHeader/>
+            <Container>
             <h1>Users</h1>
             {loading ? <Loader /> : error ? <Message variant='danger'>{error}</Message>
                 : (
@@ -78,6 +81,7 @@ const UserListScreen = ({ history }) => {
                         </tbody>
                     </Table>
                 )}
+            </Container>
         </>
     )
 };
