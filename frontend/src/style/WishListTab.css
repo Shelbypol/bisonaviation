@@ -98,7 +98,8 @@ a {
 .wishList-Dropdown {
     position: absolute;
     top: 58px;
-    width: 150%;
+    width: 200%;
+    /*width: 150%;*/
     height: 90vh;
     max-height: 90vh;
     /*transform: translateX(-45%);*/
