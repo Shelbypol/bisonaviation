@@ -7,6 +7,7 @@ import '../../style/headers.css'
 const Headers = () => {
     const [width, setWidth] = useState(window.innerWidth);
 
+
     const handleWindowResize = () => {
         setWidth(window.innerWidth);
 
@@ -15,6 +16,7 @@ const Headers = () => {
     useEffect(() => {
         window.addEventListener("resize", handleWindowResize);
         return () => window.removeEventListener("resize", handleWindowResize);
+
     }, [width]);
 
 

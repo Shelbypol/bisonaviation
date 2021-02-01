@@ -94,6 +94,7 @@ const updateProduct = asyncHandler(async (req, res) => {
         countInStock,
         isPromoType,
         isPromo,
+        isAvailable,
     } = req.body;
 
     const product = await Product.findById(req.params.id);
@@ -110,6 +111,7 @@ const updateProduct = asyncHandler(async (req, res) => {
         product.countInStock = countInStock;
         product.isPromoType = isPromoType;
         product.isPromo = isPromo;
+        product.isAvailable = isAvailable;
 
         const updatedProduct = await product.save();
         res.json(updatedProduct)

@@ -90,6 +90,7 @@ const ProductListScreen = ({ history, match }) => {
                             <th>NAME</th>
                             <th>PRICE</th>
                             <th>PROMO</th>
+                            <th>AVAILABLE</th>
                             <th> </th>
                         </tr>
                         </thead>
@@ -108,6 +109,18 @@ const ProductListScreen = ({ history, match }) => {
                                     <td style={{color: 'red'}}>X</td>
                                     </>
                                 )}
+
+                                {product.isAvailable ? (
+                                    <>
+                                        <td><i className='fal fa-check' style={{color: 'green'}}> </i></td>
+                                    </>
+                                    ):(
+                                    <>
+                                        <td style={{color: 'red'}}>X</td>
+                                    </>
+                                    )}
+
+
                                 <td>
                                     <LinkContainer to={`/admin/product/${product._id}/edit`}>
                                         <Button variant='light' className='btn-sm'>

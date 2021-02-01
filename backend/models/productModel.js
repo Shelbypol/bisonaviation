@@ -87,6 +87,10 @@ const productSchema = mongoose.Schema({
     isPromo: {
         type: Boolean,
         required: false,
+    },
+    isAvailable: {
+        type: Boolean,
+        required: false,
     }
 
 
