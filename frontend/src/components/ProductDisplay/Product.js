@@ -46,10 +46,17 @@ const Product = ({product, history, match}) => {
 
     return (
         <Card className='my-3 mx-0 rounded border-0'>
+            {product.isPromo && (
+                <p className='flag red global_accentFont mt-n1 mb-0 mx-0'>{product.isPromoType}</p>
+            )}
             <Link to={`/product/${product._id}`}>
                 <Card.Img src={product.image} variant='top'
                           className='img-fluid d-flex justify-content-center mt-auto'/>
             </Link>
+            {!product.isAvailable && (
+                <i>not available </i>
+            )}
+
             <Card.Body className='d-flex flex-column'>
                 <Card.Text as='div' className='m-0 p-0'>
 
