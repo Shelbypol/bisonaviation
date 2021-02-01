@@ -99,7 +99,7 @@ const SideBarData = ({showSidebar}) => {
                     </li>
                     <li className='SideBar-nav-text border' style={{backgroundColor: '#fff'}}>
                         <Link to='/admin/orderlist'>
-                            <span className='global_redFontHover'>Orders</span>
+                            <span className='global_redFontHover'>Data - Info</span>
                         </Link>
                     </li>
                 </>
