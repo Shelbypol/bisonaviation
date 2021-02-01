@@ -44,54 +44,79 @@ const Product = ({product, history, match}) => {
         // history.push(`/cart/${id}?qty=1`);
     };
 
+    const MAX_LENGTH = 250;
+
     return (
         <>
-            <Row xs={12} className='my-2 border-bottom'>
-                    <Col xs={4}>
+            <Row xs={12} className='mt-5 border-bottom'>
 
-                        {/*PROMO*/}
+
+                <Col xs={4} className='py-3 d-flex align-items-start justify-content-center'>
+
                         {product.isPromo && (
                             <p className='flag red global_accentFont mt-n1 mb-0 mx-0'>{product.isPromoType}</p>
                         )}
+                    {/* IMAGE */}
+                    <Link to={`/product/${product._id}`}>
+                        {/*PROMO*/}
+                        <img src={product.image} alt={product.name}
+                             className='img-fluid'/>
+                    </Link>
 
-                        {/* IMAGE */}
+                </Col>
+
+                <Col xs={8} className='my-auto'>
+                    <h5 className=' mb-2'>
                         <Link to={`/product/${product._id}`}>
-                            <img src={product.image} alt={product.name}
-                                      className='img-fluid d-flex justify-content-center'/>
+                            {product.name}
                         </Link>
+                    </h5>
 
-                        <h5 className='d-flex justify-content-start'>
-                            {activeHeart ? (
-                                <>
+                    {/*AVAILABLE*/}
+                    {!product.isAvailable && (
+                        <i>not available </i>
+                    )}
+
+                    <div className='mt-2'>
+                        {product.description.length > MAX_LENGTH ?
+                            (
+                                <div>
+                                    {`${product.description.substring(0, MAX_LENGTH)}...`}<Link
+                                    to={`/product/${product._id}`} className='global_bisonRedTxt'>Read more</Link>
+                                </div>
+                            ) :
+                            <p>{product.description}</p>
+                        }
+                    </div>
+
+                    <Row>
+                        <Col xs={1}>
+                            {/* LIKE BTN */}
+                            <div className='mt-2 d-flex justify-content-start'>
+                                {activeHeart ? (
+                                    <>
                                             <span onClick={unlike}
                                                   style={{color: 'rgba(200, 0, 0, 1)', fontSize: '1.3em'}}>
                                                 <i className="mt-auto fas fa-heart "> </i>
                                             </span>
-                                </>
-                            ) : (
-                                <>
+                                    </>
+                                ) : (
+                                    <>
                                             <span onClick={like} style={{fontSize: '1.3em'}}>
                                                 <i className="mt-auto fas fa-heart"> </i>
                                             </span>
-                                </>
-                            )}
-                        </h5>
-                    </Col>
-
-                    <Col xs={8}>
-                            <Link to={`/product/${product._id}`}>
-                                    {product.name}
-                            </Link>
-
-                        {/*AVAILABLE*/}
-                        {!product.isAvailable && (
-                            <i>not available </i>
-                        )}
-
-                            <h5 className='d-flex justify-content-end'>
+                                    </>
+                                )}
+                            </div>
+                        </Col>
+                        <Col xs={11}>
+                            {/* PRICE */}
+                            <h5 className='mt-3 d-flex justify-content-start'>
                                 <p>${product.price}</p>
                             </h5>
-                    </Col>
+                        </Col>
+                    </Row>
+                </Col>
             </Row>
         </>
     )
