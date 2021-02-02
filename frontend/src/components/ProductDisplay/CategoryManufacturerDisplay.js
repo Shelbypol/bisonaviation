@@ -70,11 +70,7 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                                         </Row>
 
 
-                                        {/*uniq = [...new Set(array)];*/}
-
-
-                                        {/*{[...new Set([products])].filter(product => product.brand === updateManufacturer).map(filteredCategories => (*/}
-                                        {products.filter(p => p === updateManufacturer).map(filteredCategories => (
+                                        {products.filter(product => product.brand === updateManufacturer).map(filteredCategories => (
                                             <Row xs={12}
                                                  onClick={(ev) => sortByCategoryHandler(filteredCategories.category, ev)}
                                                  className='CatMan-nav-text btn btn-block global_cursor d-flex justify-content-start m-0 p-0 global_bisonDarkFadedBgColorHover'
@@ -104,7 +100,6 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                                         {products.map(product => (
                                             <Row xs={12}
                                                  onClick={(ev) => sortByCategoryHandler(product.category, ev)}
-                                                // onClick={(ev) => sortByManufacturerHandler(product.category, ev)}
                                                  className='CatMan-nav-text btn btn-block global_cursor d-flex justify-content-start m-0 p-0 global_bisonDarkFadedBgColorHover'
                                                  type='button'
                                                  key={product._id}
@@ -122,7 +117,7 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                                             <p className='global_bisonRedTxt global_cursor'>Manufactures</p>
                                         </Row>
 
-                                        {products.map(product => product (
+                                        {products.map(product => (
                                             <Row xs={12}
                                                  onClick={(ev) => sortByManufacturerHandler(product.brand, ev)}
                                                  className='CatMan-nav-text btn btn-block global_cursor d-flex justify-content-start m-0 p-0 global_bisonDarkFadedBgColorHover'
