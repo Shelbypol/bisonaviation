@@ -26,11 +26,11 @@ const ProductsDisplayScreen = ({match, history}) => {
 
 
     return (
-        <Container className='mx-n5'>
+        <Container className='mx-auto mt-3 p-0'>
             <>
                 <Meta title='Bison | Products'/>
 
-                <Row xs={12}>
+                <Row xs={12} className='CatMan-nav-menu'>
 
                         <CategoryManufacturerDisplay match={match} history={history} />
 

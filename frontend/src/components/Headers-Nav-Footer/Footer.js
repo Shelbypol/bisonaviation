@@ -4,7 +4,7 @@ import {Container, Row, Col} from "react-bootstrap";
 import {LinkContainer} from "react-router-bootstrap";
 import logo from "../../images/general/Final-Logo-Horizontal.png";
 import ScrollToTop from "../ScrollToTop";
-import '../../style/Headers.css'
+import '../../style/headers.css'
 
 const Footer = () => {
     return (

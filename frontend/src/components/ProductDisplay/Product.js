@@ -1,11 +1,9 @@
 import React, {useEffect, useState} from 'react';
 import {Link} from 'react-router-dom'
-import {Card, Button, ListGroup} from 'react-bootstrap'
+import {Card, Button, ListGroup, Nav, Row, Col} from 'react-bootstrap'
 import {useDispatch, useSelector} from "react-redux";
 import {addToCart, removeFromCart} from "../../actions/cartActions";
-import {listProductDetails} from "../../actions/productActions";
-import {createOrder} from "../../actions/orderActions";
-import {listMyWishLists} from "../../actions/wishListActions";
+import {LinkContainer} from "react-router-bootstrap";
 
 
 const Product = ({product, history, match}) => {
@@ -20,8 +18,6 @@ const Product = ({product, history, match}) => {
 
 
     useEffect(() => {
-
-
     }, [dispatch, activeHeart, match, wishList]);
 
     // const alreadySaved = (id) => {
@@ -46,55 +42,81 @@ const Product = ({product, history, match}) => {
         // history.push(`/cart/${id}?qty=1`);
     };
 
-    return (
-        <Card className='my-3 mx-0 rounded border-0'>
-            <Link to={`/product/${product._id}`}>
-                <Card.Img src={product.image} variant='top' className='img-fluid d-flex justify-content-center'/>
-            </Link>
-            <Card.Body>
-                <Card.Text as='div' className='m-0 p-0'>
+    const MAX_LENGTH = 250;
 
-                    {activeHeart ? (
-                        <p onClick={unlike} className='global_cursor global_bisonRedTxt'>saved</p>
-                    ) : (
-                        <p onClick={like} className='global_cursor global_bisonRedTxt'>&#60;3</p>
+    return (
+        <>
+            <Row xs={12} className='mt-5 border-bottom'>
+
+
+                <Col xs={4} className='py-3 d-flex align-items-start justify-content-center'>
+
+                        {product.isPromo && (
+                            <p className='flag red global_accentFont mt-n1 mb-0 mx-0'>{product.isPromoType}</p>
+                        )}
+                    {/* IMAGE */}
+                    <Link to={`/product/${product._id}`}>
+                        {/*PROMO*/}
+                        <img src={product.image} alt={product.name}
+                             className='img-fluid'/>
+                    </Link>
+
+                </Col>
+
+                <Col xs={8} className='my-auto'>
+                    <h5 className=' mb-2'>
+                        <Link to={`/product/${product._id}`}>
+                            {product.name}
+                        </Link>
+                    </h5>
+
+                    {/*AVAILABLE*/}
+                    {!product.isAvailable && (
+                        <i>not available </i>
                     )}
 
-                    {/*<Card.Text as='div'>*/}
-                    {/*<Rating value={product.rating} text={`${product.numReviews} reviews`}>*/}
-                    {/*    {product.rating} from {product.numReviews} reviews}*/}
-                    {/*</Rating>*/}
-                    {/*<strong>*/}
-                    {/*    /!*{sentenceCapitalization(product.brand)}*!/*/}
-                    {/*    {product.brand}*/}
-                    {/*</strong>*/}
+                    <div className='mt-2'>
+                        {product.description.length > MAX_LENGTH ?
+                            (
+                                <div>
+                                    {`${product.description.substring(0, MAX_LENGTH)}...`}<Link
+                                    to={`/product/${product._id}`} className='global_bisonRedTxt'>Read more</Link>
+                                </div>
+                            ) :
+                            <p>{product.description}</p>
+                        }
+                    </div>
 
-                </Card.Text>
-
-                <Link to={`/product/${product._id}`}>
-                    <Card.Text as='div' className='p-0 m-0'>
-                        {product.name}
-                    </Card.Text>
-                </Link>
-
-                <Card.Text as='h5' className='d-flex justify-content-center'>
-                    ${product.price}
-                </Card.Text>
-                {/*<Card.Text>*/}
-                {/*    */}
-                {/*    <Button*/}
-                {/*        onClick={addToCartHandler}*/}
-                {/*        className='btn btn-block p-1 global_RedFontWhiteBgBtn'*/}
-                {/*        type='button'*/}
-                {/*        // disabled={product.countInStock === 0 }*/}
-                {/*    >*/}
-                {/*        <i className='fal fa-heart global_bisonRedFontWhiteBg animations_icon-font-size animations_icon-spin'> </i>*/}
-                {/*        /!*ADD TO WISHLIST*!/*/}
-                {/*        /!*<i className="fal fa-star global_RedFontWhiteBg"> </i>*!/*/}
-                {/*    </Button>*/}
-                {/*</Card.Text>*/}
-            </Card.Body>
-        </Card>
+                    <Row>
+                        <Col xs={1}>
+                            {/* LIKE BTN */}
+                            <div className='mt-2 d-flex justify-content-start'>
+                                {activeHeart ? (
+                                    <>
+                                            <span onClick={unlike}
+                                                  className='global_cursor' style={{color: 'rgba(200, 0, 0, 1)', fontSize: '1.3em'}}>
+                                                <i className="mt-auto fas fa-heart "> </i>
+                                            </span>
+                                    </>
+                                ) : (
+                                    <>
+                                            <span className='global_cursor' onClick={like} style={{fontSize: '1.3em'}}>
+                                                <i className="mt-auto fas fa-heart"> </i>
+                                            </span>
+                                    </>
+                                )}
+                            </div>
+                        </Col>
+                        <Col xs={11}>
+                            {/* PRICE */}
+                            <h5 className='mt-3 d-flex justify-content-start'>
+                                <p>${product.price}</p>
+                            </h5>
+                        </Col>
+                    </Row>
+                </Col>
+            </Row>
+        </>
     )
 };
 

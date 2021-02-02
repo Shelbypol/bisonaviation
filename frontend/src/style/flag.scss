@@ -25,7 +25,8 @@
   &.red{
     background: gold;
     &:after{
-      border-color: orange transparent orange transparent;
+      border-color: gold transparent gold transparent;
+      //border-color: orange transparent orange transparent;
     }
   }
 

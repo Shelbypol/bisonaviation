@@ -1,0 +1,11 @@
+
+.CatMan-nav-menu {
+    display: flex;
+    align-items: flex-start
+}
+
+.CatMan-nav-menu-items {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 5em;
+}

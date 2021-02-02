@@ -1,12 +1,13 @@
-import React, { useEffect} from 'react'
+import React, {Fragment, useEffect} from 'react'
 import {LinkContainer} from 'react-router-bootstrap'
-import {Table, Button, Row, Col} from 'react-bootstrap'
+import {Table, Button, Row, Col, Container} from 'react-bootstrap'
 import {useDispatch, useSelector} from 'react-redux'
 import Message from '../../components/Message'
 import Loader from '../../components/Loader'
 import Paginate from "../../components/Paginate";
 import { listProducts, deleteProduct, createProduct } from "../../actions/productActions"
 import { PRODUCT_CREATE_RESET } from "../../constants/productConstants";
+import StickyHeader from "../../components/Headers-Nav-Footer/StickyHeader";
 
 const ProductListScreen = ({ history, match }) => {
     const pageNumber = match.params.pageNumber || 1;
@@ -62,6 +63,8 @@ const ProductListScreen = ({ history, match }) => {
 
     return (
         <>
+            <StickyHeader/>
+            <Container>
             <Row className='align-items-center'>
                 <Col>
                     <h1>Products</h1>
@@ -86,22 +89,41 @@ const ProductListScreen = ({ history, match }) => {
                     <Table striped bordered hover responsive className='table-sm'>
                         <thead>
                         <tr>
-                            <th>ID</th>
+                            <th>GARMIN PART #</th>
                             <th>NAME</th>
                             <th>PRICE</th>
-                            <th>CATEGORY</th>
-                            <th>BRAND</th>
+                            <th>PROMO</th>
+                            <th>AVAILABLE</th>
                             <th> </th>
                         </tr>
                         </thead>
                         <tbody>
                         {products.map((product => (
                             <tr key={product._id}>
-                                <td>{product._id}</td>
+                                <td>{product.partNumber}</td>
                                 <td>{product.name}</td>
                                 <td>${product.price}</td>
-                                <td>{product.category}</td>
-                                <td>{product.brand}</td>
+                                {product.isPromo ? (
+                                    <>
+                                    <td><i className='fal fa-check' style={{color: 'green'}}> </i>&nbsp; {product.isPromoType}</td>
+                                    </>
+                                ):(
+                                    <>
+                                    <td style={{color: 'red'}}>X</td>
+                                    </>
+                                )}
+
+                                {product.isAvailable ? (
+                                    <>
+                                        <td><i className='fal fa-check' style={{color: 'green'}}> </i></td>
+                                    </>
+                                    ):(
+                                    <>
+                                        <td style={{color: 'red'}}>X</td>
+                                    </>
+                                    )}
+
+
                                 <td>
                                     <LinkContainer to={`/admin/product/${product._id}/edit`}>
                                         <Button variant='light' className='btn-sm'>
@@ -123,6 +145,7 @@ const ProductListScreen = ({ history, match }) => {
 
                 </>
             )}
+            </Container>
         </>
     )
 };

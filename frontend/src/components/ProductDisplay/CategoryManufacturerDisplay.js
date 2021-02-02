@@ -5,7 +5,10 @@ import {listProductDetails, listProducts} from "../../actions/productActions";
 import ProductDisplayByCatMan from "./ProductDisplayByCatMan";
 import Loader from "../Loader";
 import Message from "../Message";
-import { StickyContainer, Sticky } from 'react-sticky';
+import '../../style/CategoryManufacturerSideBar.css'
+import {StickyContainer, Sticky} from 'react-sticky';
+import {Link} from "react-router-dom";
+import Login from "../Login";
 
 const CategoryManufacturerDisplay = ({match, history}) => {
 
@@ -42,138 +45,140 @@ const CategoryManufacturerDisplay = ({match, history}) => {
         setUpdateManufacturer(a)
     };
 
+
     return (
         <>
-
             {loading ?
                 (<Loader/>)
                 : error ?
                     (<Message variant='danger'>{error}</Message>)
                     : (
                         <>
-                            {/*<StickyContainer>*/}
-                            {/*    <Sticky topOffset={100}>*/}
-                                <Col xs={3}>
+                            <Col xs={3} className='CatMan-nav-menu-items'>
+                                {/*<StickyContainer>*/}
+                                {/*    <Sticky topOffset={100}>*/}
+                                {/*<Col xs={3} className='ml-n5'>*/}
 
-                                    {/*     MANUFACTURER SORT DISPLAY AVAILABLE CATS ON CLICK    */}
+                                {/*     MANUFACTURER SORT DISPLAY AVAILABLE CATS ON CLICK    */}
+
+                                {(updateManufacturer !== '' || updateCat !== '') &&
+                                (
+                                    <>
+                                        <Row xs={12}
+                                             className='global_accentFont my-0 CatMan-nav-text'>
+                                            <h3 className=' global_cursor-underline my-0'>{updateManufacturer || updateCat}</h3>
+                                        </Row>
 
 
-                                    {(updateManufacturer !== '' || updateCat !== '') &&
-                                    (
-                                        <>
+                                        {products.filter(product => product.brand === updateManufacturer).map(filteredCategories => (
                                             <Row xs={12}
-                                                 className='global_accentFont my-0'>
-                                                <h3 className=' global_cursor-underline my-0'>{updateManufacturer || updateCat}</h3>
-                                            </Row>
-
-                                            {products.filter(product => product.brand === updateManufacturer).map(filteredCategories => (
-                                                <Row xs={12}
-                                                     onClick={(ev) => sortByCategoryHandler(filteredCategories.category, ev)}
-                                                     className='btn btn-block global_cursor d-flex justify-content-start m-0 p-0 global_bisonDarkFadedBgColorHover'
-                                                     type='button'
-                                                     key={filteredCategories._id}
-                                                >
-                                                    <h6>
-                                                        {filteredCategories.category}
-                                                    </h6>
-                                                </Row>
-                                            ))}
-
-                                            {/* ALL PRODUCTS*/}
-                                            <Row xs={12}
-                                                 className='global_accentFont text-center mt-3'
-                                                 onClick={displayAllHandler}>
-                                                <p className='global_bisonRedTxt global_cursor-underline'>All
-                                                    Products</p>
-                                            </Row>
-
-                                            {/*   ALL CATEGORIES  */}
-                                            <Row xs={12}
-                                                 className='global_accentFont text-center'>
-                                                <p className='global_bisonRedTxt global_cursor'>Categories</p>
-                                            </Row>
-
-                                            {products.map(product => (
-                                                <Row xs={12}
-                                                     onClick={(ev) => sortByCategoryHandler(product.category, ev)}
-                                                    // onClick={(ev) => sortByManufacturerHandler(product.category, ev)}
-                                                     className='btn btn-block global_cursor d-flex justify-content-start m-0 p-0 global_bisonDarkFadedBgColorHover'
-                                                     type='button'
-                                                     key={product._id}
-                                                >
-                                                    <h6>
-                                                        {product.category}
-                                                    </h6>
-                                                </Row>
-                                            ))}
-
-                                            {/*   ALL MANUFACTURES  */}
-                                            <Row xs={12}
-                                                 className='global_accentFont text-center'
+                                                 onClick={(ev) => sortByCategoryHandler(filteredCategories.category, ev)}
+                                                 className='CatMan-nav-text btn btn-block global_cursor d-flex justify-content-start m-0 p-0 global_bisonDarkFadedBgColorHover'
+                                                 type='button'
+                                                 key={filteredCategories._id}
                                             >
-                                                <p className='global_bisonRedTxt global_cursor'>Manufactures</p>
+                                                <h6>
+                                                    {filteredCategories.category}
+                                                </h6>
                                             </Row>
+                                        ))}
 
-                                            {products.map(product => (
-                                                <Row xs={12}
-                                                     onClick={(ev) => sortByManufacturerHandler(product.brand, ev)}
-                                                     className='btn btn-block global_cursor d-flex justify-content-start m-0 p-0 global_bisonDarkFadedBgColorHover'
-                                                     type='button'
-                                                     key={product._id}
-                                                >
-                                                    <h6>
-                                                        {product.brand}
-                                                    </h6>
-                                                </Row>
-                                            ))}
+                                        {/* ALL PRODUCTS*/}
+                                        <Row xs={12}
+                                             className='CatMan-nav-text global_accentFont text-center mt-3'
+                                             onClick={displayAllHandler}>
+                                            <p className='global_bisonRedTxt global_cursor-underline'>All
+                                                Products</p>
+                                        </Row>
 
-                                        </>
+                                        {/*   ALL CATEGORIES  */}
+                                        <Row xs={12}
+                                             className='CatMan-nav-text global_accentFont text-center'>
+                                            <p className='global_bisonRedTxt global_cursor'>Categories</p>
+                                        </Row>
 
-                                    )}
-
-                                    {/*==============================================================================*/}
-                                    {/*    ALL CAT & ALL MAN INITIAL DISPLAY    */}
-                                    {(updateCat === '' && updateManufacturer === '') && (
-                                        <>
-                                            <Row xs={12} className='global_accentFont text-center my-3 '>
-                                                <h5 onClick={displayAllHandler}
-                                                    className='global_bisonRedTxt global_cursor'>Categories</h5>
+                                        {products.map(product => (
+                                            <Row xs={12}
+                                                 onClick={(ev) => sortByCategoryHandler(product.category, ev)}
+                                                 className='CatMan-nav-text btn btn-block global_cursor d-flex justify-content-start m-0 p-0 global_bisonDarkFadedBgColorHover'
+                                                 type='button'
+                                                 key={product._id}
+                                            >
+                                                <h6>
+                                                    {product.category}
+                                                </h6>
                                             </Row>
+                                        ))}
 
-                                            {products.map(product => (
-                                                <Row xs={12}
-                                                     onClick={(ev) => sortByCategoryHandler(product.category, ev)}
-                                                     className='btn btn-block global_cursor d-flex justify-content-start m-0 p-0 global_bisonDarkFadedBgColorHover'
-                                                     type='button'
-                                                     key={product._id}
-                                                >
-                                                    <h6>
-                                                        {product.category}
-                                                    </h6>
-                                                </Row>
-                                            ))}
+                                        {/*   ALL MANUFACTURES  */}
+                                        <Row xs={12}
+                                             className='CatMan-nav-text global_accentFont text-center'
+                                        >
+                                            <p className='global_bisonRedTxt global_cursor'>Manufactures</p>
+                                        </Row>
 
-                                            <Row xs={12} className='global_accentFont text-center my-3 '>
-                                                <h5 onClick={displayAllHandler}
-                                                    className='global_bisonRedTxt global_cursor'>Manufacturers</h5>
+                                        {products.map(product => (
+                                            <Row xs={12}
+                                                 onClick={(ev) => sortByManufacturerHandler(product.brand, ev)}
+                                                 className='CatMan-nav-text btn btn-block global_cursor d-flex justify-content-start m-0 p-0 global_bisonDarkFadedBgColorHover'
+                                                 type='button'
+                                                 key={product._id}
+                                            >
+                                                <h6>
+                                                    {product.brand}
+                                                </h6>
                                             </Row>
+                                        ))}
 
-                                            {products.map(product => (
-                                                <Row xs={12}
-                                                     onClick={(ev) => sortByManufacturerHandler(product.brand, ev)}
-                                                    // onClick={(ev) => sortByManufacturerHandler(product.brand, ev)}
-                                                     className='btn btn-block global_cursor d-flex justify-content-start m-0 p-0 global_bisonDarkFadedBgColorHover'
-                                                     type='button'
-                                                     key={product._id}
-                                                >
-                                                    <h6>
-                                                        {product.brand}
-                                                    </h6>
-                                                </Row>
-                                            ))}
-                                        </>
-                                    )}
-                                </Col>
+                                    </>
+
+                                )}
+
+                                {/*==============================================================================*/}
+                                {/*    ALL CAT & ALL MAN INITIAL DISPLAY    */}
+                                {(updateCat === '' && updateManufacturer === '') && (
+                                    <>
+                                        <Row xs={12}
+                                             className='CatMan-nav-text global_accentFont text-center my-3 '>
+                                            <h5 onClick={displayAllHandler}
+                                                className='global_bisonRedTxt global_cursor'>Categories</h5>
+                                        </Row>
+
+                                        {products.map(product => (
+                                            <Row xs={12}
+                                                 onClick={(ev) => sortByCategoryHandler(product.category, ev)}
+                                                 className='CatMan-nav-text btn btn-block global_cursor d-flex justify-content-start m-0 p-0 global_bisonDarkFadedBgColorHover'
+                                                 type='button'
+                                                 key={product._id}
+                                            >
+                                                <h6>
+                                                    {product.category}
+                                                </h6>
+                                            </Row>
+                                        ))}
+
+                                        <Row xs={12}
+                                             className='CatMan-nav-text global_accentFont text-center my-3 '>
+                                            <h5 onClick={displayAllHandler}
+                                                className='global_bisonRedTxt global_cursor'>Manufacturers</h5>
+                                        </Row>
+
+                                        {products.map(product => (
+                                            <Row xs={12}
+                                                 onClick={(ev) => sortByManufacturerHandler(product.brand, ev)}
+                                                // onClick={(ev) => sortByManufacturerHandler(product.brand, ev)}
+                                                 className='CatMan-nav-text btn btn-block global_cursor d-flex justify-content-start m-0 p-0 global_bisonDarkFadedBgColorHover'
+                                                 type='button'
+                                                 key={product._id}
+                                            >
+                                                <h6>
+                                                    {product.brand}
+                                                </h6>
+                                            </Row>
+                                        ))}
+                                    </>
+                                )}
+                            </Col>
                             {/*    </Sticky>*/}
                             {/*</StickyContainer>*/}
 
@@ -187,7 +192,10 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                                                          updateCatProp={updateCat}
                                                          updateManufacturerProp={updateManufacturer}/>
                             </Col>
+
+
                         </>
+
                     )}
         </>
     )

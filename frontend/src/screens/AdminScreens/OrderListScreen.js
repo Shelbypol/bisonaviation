@@ -1,10 +1,11 @@
 import React, { useEffect} from 'react'
 import {LinkContainer} from 'react-router-bootstrap'
-import {Table, Button} from 'react-bootstrap'
+import {Table, Button, Container} from 'react-bootstrap'
 import {useDispatch, useSelector} from 'react-redux'
 import Message from '../../components/Message'
 import Loader from '../../components/Loader'
 import { listOrders } from "../../actions/orderActions"
+import StickyHeader from "../../components/Headers-Nav-Footer/StickyHeader";
 
 const OrderListScreen = ({ history }) => {
     const dispatch = useDispatch();
@@ -26,7 +27,9 @@ const OrderListScreen = ({ history }) => {
 
     return (
         <>
-            <h1>Orders</h1>
+            <StickyHeader/>
+            <Container>
+            <h1>Data - Products</h1>
             {loading ? <Loader /> : error ? <Message variant='danger'>{error}</Message>
                 : (
                     <Table striped bordered hover responsive className='table-sm'>
@@ -79,7 +82,9 @@ const OrderListScreen = ({ history }) => {
                         </tbody>
                     </Table>
                 )}
+            </Container>
         </>
+
     )
 };
 

@@ -71,7 +71,7 @@ const WishListTabInfo = () => {
                             <WishListSave userinfo={userInfo} cartItems={cartItems} cart={cart} success={success}/>
                         </Tab>
                         <Tab eventKey="profile" title="Purchase Inquiry"
-                             tabClassName='global_cursor global_bisonFadedRedHover p-auto d-flex align-items-center justify-content-center'>
+                             tabClassName='animations_img-hover-zoom-n-out global_cursor global_bisonFadedRedHover p-auto d-flex align-items-center justify-content-center'>
                             <WishListEmail userInfo={userInfo} cartItems={cartItems} cart={cart} success={success}/>
                         </Tab>
 

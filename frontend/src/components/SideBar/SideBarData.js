@@ -1,10 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import * as FaIcons from 'react-icons/fa';
-import * as AiIcons from 'react-icons/ai';
-import * as IoIcons from 'react-icons/io';
-import {LinkContainer} from "react-router-bootstrap";
 import {Link} from 'react-router-dom';
-import {Button, Nav, NavDropdown} from "react-bootstrap";
 import {useDispatch, useSelector} from "react-redux";
 import {CART_RESET} from "../../constants/cartConstants";
 import {logout} from "../../actions/userActions";
@@ -37,7 +32,7 @@ const SideBarData = ({showSidebar}) => {
             {userInfo ? (
                     <>
 
-                        <span><h4 className='mx-3'>{userInfo.name}</h4></span>
+                        {/*<span><h4 className='mx-3'>{userInfo.name}</h4></span>*/}
 
                         {/*<li className='SideBar-nav-text'>*/}
                         {/*    <Link to='/' onClick={showSidebar}>*/}
@@ -87,19 +82,19 @@ const SideBarData = ({showSidebar}) => {
             {/*  ADMIN DROPDOWN  */}
             {userInfo && userInfo.isAdmin && (
                 <>
-                    <li className='SideBar-nav-text'>
+                    <li className='SideBar-nav-text border' style={{backgroundColor: '#fff'}}>
                         <Link to='/admin/userlist'>
                             <span className='global_redFontHover'>Users</span>
                         </Link>
                     </li>
-                    <li className='SideBar-nav-text'>
+                    <li className='SideBar-nav-text border' style={{backgroundColor: '#fff'}}>
                         <Link to='/admin/productlist'>
                             <span className='global_redFontHover'>Products</span>
                         </Link>
                     </li>
-                    <li className='SideBar-nav-text'>
+                    <li className='SideBar-nav-text border' style={{backgroundColor: '#fff'}}>
                         <Link to='/admin/orderlist'>
-                            <span className='global_redFontHover'>Orders</span>
+                            <span className='global_redFontHover'>Data - Info</span>
                         </Link>
                     </li>
                 </>

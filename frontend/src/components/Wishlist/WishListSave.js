@@ -61,7 +61,7 @@ const WishListSave = ({success, cartItems, cart, userInfo}) => {
                                             <Row xs={12}>
                                                 <Col className='my-auto' md={6}>
                                                     <Image src={item.image} alt={item.name} fluid
-                                                           className='rounded-circle h-50 w-50'/>
+                                                           className='rounded h-50 w-50'/>
                                                 </Col>
                                                 <Col className='my-auto' md={4}>
                                                     <Link to={`product/${item.product}`}>{item.name}</Link>

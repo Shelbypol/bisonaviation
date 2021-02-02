@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import {BrowserRouter as Router, Route} from 'react-router-dom'
+import React, {Fragment} from 'react';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import {Container} from 'react-bootstrap'
 import Headers from "./components/Headers-Nav-Footer/Headers";
 import Footer from "./components/Headers-Nav-Footer/Footer";
@@ -31,49 +31,51 @@ import EoIrPartsScreen from "./screens/EoIrPartsScreen";
 import TeamScreen from "./screens/TeamScreen";
 import ScrollToTop from "./components/ScrollToTop";
 
-const App = () => {
+const App = ({location}) => {
 
     return (
         <Router>
 
-             <Headers />
-            <Route path='/' component={HomeScreen} exact/>
+            <Switch>
+                        <Route path='/admin/userlist' component={UserListScreen}/>
+                        <Route path='/admin/user/:id/edit' component={UserEditScreen}/>
+                        <Route path='/admin/productlist' component={ProductListScreen} exact/>
+                        <Route path='/admin/productlist/:pageNumber' component={ProductListScreen} exact/>
+                        <Route path='/admin/product/:id/edit' component={ProductEditScreen}/>
+                        <Route path='/admin/orderlist' component={OrderListScreen}/>
 
-            <main className='py-3'>
-                <Container>
-                    <Route path='/login' component={LoginScreen}/>
-                    <Route path='/register' component={RegisterScreen}/>
-                    <Route path='/profile' component={ProfileScreen}/>
-                    <Route path='/product/:id' component={ProductScreen}/>
-                    <Route path='/cart/:id?' component={CartScreen}/>
-                    <Route path='/shipping' component={ShippingScreen}/>
-                    <Route path='/payment' component={PaymentScreen}/>
-                    <Route path='/placeorder' component={PlaceOrderScreen}/>
-                    <Route path='/order/:id' component={OrderScreen}/>
-                    <Route path='/thankyou/:id' component={ThankYouScreen}/>
-                    <Route path='/admin/userlist' component={UserListScreen}/>
-                    <Route path='/admin/user/:id/edit' component={UserEditScreen}/>
-                    <Route path='/admin/productlist' component={ProductListScreen} exact/>
-                    <Route path='/admin/productlist/:pageNumber' component={ProductListScreen} exact/>
-                    <Route path='/admin/product/:id/edit' component={ProductEditScreen}/>
-                    <Route path='/admin/orderlist' component={OrderListScreen}/>
-                    <Route path='/search/:keyword' component={ProductsDisplayScreen} exact/>
-                    <Route path='/page/:pageNumber' component={ProductsDisplayScreen} exact/>
-                    <Route path='/search/:keyword/page/:pageNumber' component={ProductsDisplayScreen}/>
+                <Fragment>
+                    <Headers/>
+                    <Route path='/' component={HomeScreen} exact/>
                     <Route path='/products' component={ProductsDisplayScreen} exact/>
-                    <Route path='/avionics' component={AvionicsScreen}/>
-                    <Route path='/maintenance' component={MaintenanceScreen}/>
-                    <Route path='/aog' component={AogResponseScreen}/>
-                    <Route path='/acquisitions' component={AcquisitionScreen}/>
-                    <Route path='/aircraftparts' component={AircraftPartsScreen}/>
-                    <Route path='/eoir/maintenance' component={EoIrMaintenanceScreen}/>
-                    <Route path='/systemsales' component={SystemSalesScreen}/>
-                    <Route path='/eoir/parts' component={EoIrPartsScreen}/>
-                    <Route path='/team' component={TeamScreen}/>
-
-                    {/*<Route path='/' component={HomeScreen} exact />*/}
-                </Container>
-            </main>
+                    <main className='py-3'>
+                        <Container>
+                            <Route path='/login' component={LoginScreen}/>
+                            <Route path='/register' component={RegisterScreen}/>
+                            <Route path='/profile' component={ProfileScreen}/>
+                            <Route path='/product/:id' component={ProductScreen}/>
+                            <Route path='/cart/:id?' component={CartScreen}/>
+                            <Route path='/shipping' component={ShippingScreen}/>
+                            <Route path='/payment' component={PaymentScreen}/>
+                            <Route path='/placeorder' component={PlaceOrderScreen}/>
+                            <Route path='/order/:id' component={OrderScreen}/>
+                            <Route path='/thankyou/:id' component={ThankYouScreen}/>
+                            <Route path='/search/:keyword' component={ProductsDisplayScreen} exact/>
+                            <Route path='/page/:pageNumber' component={ProductsDisplayScreen} exact/>
+                            <Route path='/search/:keyword/page/:pageNumber' component={ProductsDisplayScreen}/>
+                            <Route path='/avionics' component={AvionicsScreen}/>
+                            <Route path='/maintenance' component={MaintenanceScreen}/>
+                            <Route path='/aog' component={AogResponseScreen}/>
+                            <Route path='/acquisitions' component={AcquisitionScreen}/>
+                            <Route path='/aircraftparts' component={AircraftPartsScreen}/>
+                            <Route path='/eoir/maintenance' component={EoIrMaintenanceScreen}/>
+                            <Route path='/systemsales' component={SystemSalesScreen}/>
+                            <Route path='/eoir/parts' component={EoIrPartsScreen}/>
+                            <Route path='/team' component={TeamScreen}/>
+                        </Container>
+                    </main>
+                </Fragment>
+            </Switch>
             <Footer/>
         </Router>
     );

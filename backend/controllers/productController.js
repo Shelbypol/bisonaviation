@@ -65,10 +65,13 @@ const createProduct = asyncHandler(async (req, res) => {
         user: req.user._id,
         image: '/image/sample/jpg',
         brand: 'Sample brand',
+        includedParts: 'Included Parts',
+        partNumber: 'Part Number',
         category: 'Sample Category',
         countInStock: 0,
         numReviews: 0,
-        description: 'Sample description'
+        description: 'Sample description',
+        isPromoType: '',
     });
 
     const createdProduct = await product.save();
@@ -83,10 +86,15 @@ const updateProduct = asyncHandler(async (req, res) => {
         name,
         price,
         description,
+        includedParts,
+        partNumber,
         image,
         brand,
         category,
-        countInStock
+        countInStock,
+        isPromoType,
+        isPromo,
+        isAvailable,
     } = req.body;
 
     const product = await Product.findById(req.params.id);
@@ -95,10 +103,15 @@ const updateProduct = asyncHandler(async (req, res) => {
         product.name = name;
         product.price = price;
         product.description = description;
+        product.partNumber = partNumber;
+        product.includedParts = includedParts;
         product.image = image;
         product.brand = brand;
         product.category = category;
         product.countInStock = countInStock;
+        product.isPromoType = isPromoType;
+        product.isPromo = isPromo;
+        product.isAvailable = isAvailable;
 
         const updatedProduct = await product.save();
         res.json(updatedProduct)

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import {Route} from 'react-router-dom'
 import {Navbar, Container, Nav} from 'react-bootstrap'
 import {LinkContainer} from 'react-router-bootstrap'
@@ -9,8 +9,10 @@ import StickyHeader from "./StickyHeader";
 import SocialIcons from "../SocialIcons";
 
 const DesktopHeader = () => {
+
     return (
         <>
+
             <StickyHeader/>
 
             <Navbar expand="sm"
@@ -28,8 +30,8 @@ const DesktopHeader = () => {
                                 <img
                                     src={logo}
                                     // src={logooutline}
-                                     className='DesktopHeader_logo pb-1 px-1 pt-0'
-                                     alt="Bison Aviation"/>
+                                    className='DesktopHeader_logo pb-1 px-1 pt-0'
+                                    alt="Bison Aviation"/>
                             </LinkContainer>
                         </Nav>
 
@@ -46,7 +48,7 @@ const DesktopHeader = () => {
 
                         </Nav>
 
-                        <SocialIcons socialClassName={'col-sm-3 justify-content-end'}
+                        <SocialIcons socialClassName={'col-sm-3 mt-n4 justify-content-end'}
                                      contactClassName={'d-none'}
                         />
 

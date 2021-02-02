@@ -12,7 +12,7 @@ const WishList = () => {
 
         <Navbar id='app' className='wishList'>
             <NavItem icon={
-                <span className='global_cursor pr-3' style={{fontSize: '1.6em'}}>
+                <span className='global_cursor pr-3' style={{fontSize: '1.3em'}}>
                     <i className="m-auto fal fa-cart-arrow-down global_heart-whiteBgRedHover "> </i>
                 </span>
             }>
@@ -68,7 +68,12 @@ const NavItem = (props) => {
         {/*<li ref={node} onClick={(e) => (handleScroll(e))} className="wishList-nav-item">*/}
             {/*<a href="#" className="wishList-icon-button" onClick={() => setOpen(!open)}>*/}
             <a onClick={() => setOpen(!open)}>
-                <p className='global_bisonRedTxt global_cursor pt-1'>{cartItems.length}&nbsp;{props.icon}</p>
+                {cartItems.length === 0 ? (
+                    <p className='global_bisonRedTxt global_cursor pt-2'>{props.icon}</p>
+                ):(
+                     <p className='global_bisonRedTxt global_cursor pt-2'>{cartItems.length}&nbsp;{props.icon}</p>
+
+                )}
             </a>
 
             {open && props.children}
