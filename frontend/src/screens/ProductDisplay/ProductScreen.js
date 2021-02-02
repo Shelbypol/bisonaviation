@@ -64,10 +64,10 @@ const ProductScreen = ({history, match}) => {
                 id="controlled-tab-example"
                 activeKey={key}
                 onSelect={(k) => setKey(k)}
-                className='mt-4 mb-3'
+                className='mt-3 mb-3'
             >
                 <Tab eventKey="Description" title="Description">
-                   <p>{product.description}</p>
+                    <p>{product.description}</p>
                 </Tab>
                 <Tab eventKey="In the Box" title="In the Box">
                     <p>{product.includedParts}</p>
@@ -79,7 +79,7 @@ const ProductScreen = ({history, match}) => {
 
     return (
         <>
-            <Link className='btn btn-light my-3' to='/'>
+            <Link className='btn btn-light mt-1 mb-3 pt-0 pb-1 px-1' to='/'>
                 Go back
             </Link>
             {loading ? <Loader/> : error ? <Message variant='danger'>{error}</Message> : (
@@ -113,40 +113,48 @@ const ProductScreen = ({history, match}) => {
                             {/*AVAILABLE*/}
                             <ListGroup variant='flush'>
                                 <ListGroup.Item className='border-0 py-0'>
-                                {!product.isAvailable && (
-                                    <i>not available </i>
-                                )}
+                                    {!product.isAvailable && (
+                                        <i>not available </i>
+                                    )}
                                 </ListGroup.Item>
 
                                 {/* NAME */}
                                 <ListGroup.Item className='border-0'>
+                                    {product.isPromo && (
+                                        <p className='flag red global_accentFont mt-n1 mb-0 mx-0'>{product.isPromoType}</p>
+                                    )}
                                     <h3>{product.name}</h3>
                                 </ListGroup.Item>
 
-                                <ListGroup.Item className='mt-n4 border-0 d-flex justify-content-start'>
-                                    {/* LIKE BTN */}
-                                        {activeHeart ? (
-                                            <>
+                                <Row xs={12} className='mt-n4 '>
+                                    <Col xs={2}>
+                                        <ListGroup.Item className='border-0 d-flex justify-content-start'>
+                                            {/* LIKE BTN */}
+                                            {activeHeart ? (
+                                                <>
                                             <span onClick={unlike}
-                                                  style={{color: 'rgba(200, 0, 0, 1)', fontSize: '1.3em'}}>
+                                                 className='global_cursor'  style={{color: 'rgba(200, 0, 0, 1)', fontSize: '1.3em'}}>
                                                 <i className="mt-auto fas fa-heart "> </i>
                                             </span>
-                                            </>
-                                        ) : (
-                                            <>
-                                            <span onClick={like} style={{fontSize: '1.3em'}}>
+                                                </>
+                                            ) : (
+                                                <>
+                                            <span className='global_cursor' onClick={like} style={{fontSize: '1.3em'}}>
                                                 <i className="mt-auto fas fa-heart"> </i>
                                             </span>
-                                            </>
-                                        )}
-                                </ListGroup.Item>
+                                                </>
+                                            )}
+                                        </ListGroup.Item>
+                                    </Col>
+                                    <Col xs={10}>
+                                        {/* PRICE */}
+                                        <ListGroup.Item className='mt-1 border-0'>
+                                            <h5>${product.price}</h5>
+                                        </ListGroup.Item>
+                                    </Col>
+                                </Row>
 
-                                {/* PRICE */}
-                                <ListGroup.Item className='py-0'>
-                                    Price: ${product.price}
-                                </ListGroup.Item>
-
-                                <ControlledTabs />
+                                <ControlledTabs/>
 
                             </ListGroup>
                         </Col>

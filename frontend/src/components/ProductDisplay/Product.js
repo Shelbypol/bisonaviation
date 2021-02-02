@@ -94,13 +94,13 @@ const Product = ({product, history, match}) => {
                                 {activeHeart ? (
                                     <>
                                             <span onClick={unlike}
-                                                  style={{color: 'rgba(200, 0, 0, 1)', fontSize: '1.3em'}}>
+                                                  className='global_cursor' style={{color: 'rgba(200, 0, 0, 1)', fontSize: '1.3em'}}>
                                                 <i className="mt-auto fas fa-heart "> </i>
                                             </span>
                                     </>
                                 ) : (
                                     <>
-                                            <span onClick={like} style={{fontSize: '1.3em'}}>
+                                            <span className='global_cursor' onClick={like} style={{fontSize: '1.3em'}}>
                                                 <i className="mt-auto fas fa-heart"> </i>
                                             </span>
                                     </>
