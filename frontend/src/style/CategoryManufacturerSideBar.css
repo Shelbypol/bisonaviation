@@ -1,33 +1,8 @@
 
 .CatMan-nav-menu {
-    /*background-color: #fff;*/
-    /*!*background-color: #060b26;*!*/
-    /*!*width: 260px;*!*/
-    /*!*height: 45vh;*!*/
     display: flex;
     align-items: flex-start
-    /*justify-content: center;*/
-    /*position: absolute;*/
-    /*position: relative;*/
-    /*position: fixed;*/
-    /*z-index: 2000;*/
-    /*top: 10vh;*/
-    /*left: -100%;*/
-    /*right: -100%;*/
-    /*transition: 850ms;*/
-    /*border-left: .5px solid grey;*/
-    /*border-bottom: 1px solid grey;*/
 }
-
-/*.CatMan-nav-text {*/
-/*    display: flex;*/
-/*    justify-content: start;*/
-/*    align-items: center;*/
-/*    padding: 4px 0 4px 0;*/
-/*    list-style: none;*/
-/*    !*height: 60px;*!*/
-/*    !*margin: .1em 0 .1em 0;*!*/
-/*}*/
 
 .CatMan-nav-menu-items {
     position: -webkit-sticky;

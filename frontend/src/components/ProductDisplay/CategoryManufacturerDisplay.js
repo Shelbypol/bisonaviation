@@ -45,6 +45,7 @@ const CategoryManufacturerDisplay = ({match, history}) => {
         setUpdateManufacturer(a)
     };
 
+
     return (
         <>
             {loading ?
@@ -53,13 +54,12 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                     (<Message variant='danger'>{error}</Message>)
                     : (
                         <>
-                        <Col xs={3} className='CatMan-nav-menu-items border'>
+                            <Col xs={3} className='CatMan-nav-menu-items'>
                                 {/*<StickyContainer>*/}
                                 {/*    <Sticky topOffset={100}>*/}
                                 {/*<Col xs={3} className='ml-n5'>*/}
 
                                 {/*     MANUFACTURER SORT DISPLAY AVAILABLE CATS ON CLICK    */}
-
 
                                 {(updateManufacturer !== '' || updateCat !== '') &&
                                 (
@@ -69,7 +69,12 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                                             <h3 className=' global_cursor-underline my-0'>{updateManufacturer || updateCat}</h3>
                                         </Row>
 
-                                        {products.filter(product => product.brand === updateManufacturer).map(filteredCategories => (
+
+                                        {/*uniq = [...new Set(array)];*/}
+
+
+                                        {/*{[...new Set([products])].filter(product => product.brand === updateManufacturer).map(filteredCategories => (*/}
+                                        {products.filter(p => p === updateManufacturer).map(filteredCategories => (
                                             <Row xs={12}
                                                  onClick={(ev) => sortByCategoryHandler(filteredCategories.category, ev)}
                                                  className='CatMan-nav-text btn btn-block global_cursor d-flex justify-content-start m-0 p-0 global_bisonDarkFadedBgColorHover'
@@ -117,7 +122,7 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                                             <p className='global_bisonRedTxt global_cursor'>Manufactures</p>
                                         </Row>
 
-                                        {products.map(product => (
+                                        {products.map(product => product (
                                             <Row xs={12}
                                                  onClick={(ev) => sortByManufacturerHandler(product.brand, ev)}
                                                  className='CatMan-nav-text btn btn-block global_cursor d-flex justify-content-start m-0 p-0 global_bisonDarkFadedBgColorHover'
@@ -178,20 +183,20 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                                         ))}
                                     </>
                                 )}
-                        </Col>
-                        {/*    </Sticky>*/}
-                        {/*</StickyContainer>*/}
+                            </Col>
+                            {/*    </Sticky>*/}
+                            {/*</StickyContainer>*/}
 
-                        < Col xs={9}>
-                            < ProductDisplayByCatMan products={products}
-                                                     history={history}
-                                                     match={match}
-                                                     keyword={keyword}
-                                                     pages={pages}
-                                                     page={page}
-                                                     updateCatProp={updateCat}
-                                                     updateManufacturerProp={updateManufacturer}/>
-                        </Col>
+                            < Col xs={9}>
+                                < ProductDisplayByCatMan products={products}
+                                                         history={history}
+                                                         match={match}
+                                                         keyword={keyword}
+                                                         pages={pages}
+                                                         page={page}
+                                                         updateCatProp={updateCat}
+                                                         updateManufacturerProp={updateManufacturer}/>
+                            </Col>
 
 
                         </>
