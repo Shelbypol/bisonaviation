@@ -29,6 +29,8 @@ import EoIrMaintenanceScreen from "./screens/EoIrMaintenanceScreen";
 import SystemSalesScreen from "./screens/SystemSalesScreen";
 import EoIrPartsScreen from "./screens/EoIrPartsScreen";
 import TeamScreen from "./screens/TeamScreen";
+import ContactScreen from './screens/ContactScreen';
+import ContactForm from './components/ContactForm';
 
 const App = () => {
     return (
@@ -68,6 +70,9 @@ const App = () => {
                     <Route path='/systemsales' component={SystemSalesScreen}/>
                     <Route path='/eoir/parts' component={EoIrPartsScreen}/>
                     <Route path='/team' component={TeamScreen}/>
+                    <Route path='/contact' component={ContactForm}/>
+                    {/*<Route path='/contact' component={ContactScreen}/>*/}
+
 
                     {/*<Route path='/' component={HomeScreen} exact />*/}
                 </Container>

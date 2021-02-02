@@ -12,7 +12,6 @@
     "data:import": "node backend/seeder",
     "data:destroy": "node backend/seeder -d"
   },
-
   "keywords": [],
   "author": "Shelby Polasek Andrew Brought",
   "license": "MIT",
@@ -28,6 +27,7 @@
     "bcryptjs": "^2.4.3",
     "colors": "^1.4.0",
     "dotenv": "^8.2.0",
+    "emailjs-com": "^2.6.4",
     "express": "^4.17.1",
     "express-async-handler": "^1.1.4",
     "jsonwebtoken": "^8.5.1",
