@@ -98,10 +98,8 @@ const ProductScreen = ({history, match}) => {
                                     },
                                     largeImage: {
                                         src: product.image,
-                                        // width: 1200,
-                                        width: 800,
-                                        // height: 1800
-                                        height: 1400
+                                        width: 1200,
+                                        height: 1800
                                     },
                                     isHintEnabled: true,
                                     shouldHideHintAfterFirstActivation: false
@@ -126,7 +124,13 @@ const ProductScreen = ({history, match}) => {
                                     <h3>{product.name}</h3>
                                 </ListGroup.Item>
 
-                                <Row xs={12} className='mt-n4 '>
+                                {/* PART # */}
+                                <ListGroup.Item className='border-0 mt-n4 mb-3'>
+                                   Part #:&nbsp; {product.partNumber}
+                                </ListGroup.Item>
+
+
+                                <Row xs={12} className='mt-n3 '>
                                     <Col xs={2}>
                                         <ListGroup.Item className='border-0 d-flex justify-content-start'>
                                             {/* LIKE BTN */}
