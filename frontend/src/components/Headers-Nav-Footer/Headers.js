@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from "react";
 import MobileHeader from "./MobileHeader";
 import DesktopHeader from "./DesktopHeader";
-// import '../../style/Headers.css'
 import '../../style/headers.css'
 
 const Headers = () => {
