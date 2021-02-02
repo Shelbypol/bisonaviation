@@ -101,11 +101,10 @@ const ProductScreen = ({history, match}) => {
                                         width: 1200,
                                         height: 1800,
                                         enlargedImageContainerClassName: 'border-0',
-                                        // enlargedImageStyle: 'ProductScreen_img-magnify'
                                     },
+                                        enlargedImagePosition: 'over',
                                     isHintEnabled: true,
                                     shouldHideHintAfterFirstActivation: false,
-                                    className: 'ProductScreen_img-magnify'
                                 }} />
                             </div>
                         </Col>
