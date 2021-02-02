@@ -18,8 +18,6 @@ const Product = ({product, history, match}) => {
 
 
     useEffect(() => {
-
-
     }, [dispatch, activeHeart, match, wishList]);
 
     // const alreadySaved = (id) => {
