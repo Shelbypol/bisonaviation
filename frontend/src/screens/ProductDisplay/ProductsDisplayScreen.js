@@ -30,7 +30,7 @@ const ProductsDisplayScreen = ({match, history}) => {
             <>
                 <Meta title='Bison | Products'/>
 
-                <Row xs={12}>
+                <Row xs={12} className='CatMan-nav-menu'>
 
                         <CategoryManufacturerDisplay match={match} history={history} />
 
