@@ -4,16 +4,18 @@ import React, {useEffect} from "react";
 import {createWishList, listMyWishLists} from "../../actions/wishListActions";
 import {CART_RESET} from "../../constants/cartConstants";
 import {removeFromCart} from "../../actions/cartActions";
-import {useDispatch} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 
-const WishListSave = ({success, cartItems, cart, userInfo}) => {
+const WishListSave = ({success, cartItems, cart}) => {
     const dispatch = useDispatch();
+    const userLogin = useSelector(state => state.userLogin);
+    const {userInfo} = userLogin;
 
     useEffect(() => {
 
         dispatch(listMyWishLists())
 
-    }, [ dispatch, success, userInfo]);
+    }, [ dispatch, userInfo]);
 
     const addToWishListHandler = () => {
 
@@ -35,9 +37,9 @@ const WishListSave = ({success, cartItems, cart, userInfo}) => {
 
         <>
             <Row xs={12} className='mt-2'>
-                <Col md={12}>
+                <Col className='mt-3' md={12}>
                     {userInfo ? (
-                        <h6 onClick={addToWishListHandler}>Save wishlist to profile</h6>
+                        <h6 className='global_cursor-underline global_bisonRedTxt mb-3 py-0 px-2' onClick={addToWishListHandler}>Save wishlist to profile</h6>
                     ) : (
                         <Link to='/login'>
                             <h6>
