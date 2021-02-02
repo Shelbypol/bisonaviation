@@ -1,9 +1,10 @@
-/*.ProductScreen_img-magnify{*/
-/*    z-index: 3000;*/
-/*    position: absolute;*/
-/*}*/
+.ProductScreen_img-magnify{
+    z-index: 3000;
+    position: relative;
+}
 
-/*.ProductScreen_img-magAb{*/
-/*    position: relative;*/
-/*    z-index: 1;*/
-/*}*/
+.ProductScreen_img-magAb{
+    position: absolute;
+    z-index: 1;
+    border: none;
+}

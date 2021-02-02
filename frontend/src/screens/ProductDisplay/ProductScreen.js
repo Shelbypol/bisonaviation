@@ -89,7 +89,7 @@ const ProductScreen = ({history, match}) => {
 
                     <Row className='mt-n4'>
                         <Col className='product-page-section fluid' md={6}>
-                            <div className="fluid__image-container">
+                            <div className="fluid__image-container ProductScreen_img-magAb">
                                 <ReactImageMagnify {...{
                                     smallImage: {
                                         alt: product.name,
@@ -99,7 +99,9 @@ const ProductScreen = ({history, match}) => {
                                     largeImage: {
                                         src: product.image,
                                         width: 1200,
-                                        height: 1800
+                                        height: 1800,
+                                        enlargedImageContainerClassName: 'border-0',
+                                        enlargedImageStyle: 'ProductScreen_img-magnify'
                                     },
                                     isHintEnabled: true,
                                     shouldHideHintAfterFirstActivation: false
