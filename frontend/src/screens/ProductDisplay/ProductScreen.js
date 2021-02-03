@@ -103,8 +103,8 @@ const ProductScreen = ({history, match}) => {
                                         enlargedImageContainerClassName: 'border-0',
                                     },
                                         enlargedImagePosition: 'over',
-                                    isHintEnabled: true,
-                                    shouldHideHintAfterFirstActivation: false,
+                                        isHintEnabled: true,
+                                        shouldHideHintAfterFirstActivation: false,
                                 }} />
                             </div>
                         </Col>
