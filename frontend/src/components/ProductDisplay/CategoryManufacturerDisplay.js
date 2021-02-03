@@ -45,6 +45,9 @@ const CategoryManufacturerDisplay = ({match, history}) => {
         setUpdateManufacturer(a)
     };
 
+    const maufacturerArr =  [...new Set(products.map(product => product.brand))];
+    const catArr =  [...new Set(products.map(product => product.category))];
+
 
     return (
         <>
@@ -55,10 +58,6 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                     : (
                         <>
                             <Col xs={3} className='CatMan-nav-menu-items'>
-                                {/*<StickyContainer>*/}
-                                {/*    <Sticky topOffset={100}>*/}
-                                {/*<Col xs={3} className='ml-n5'>*/}
-
                                 {/*     MANUFACTURER SORT DISPLAY AVAILABLE CATS ON CLICK    */}
 
                                 {(updateManufacturer !== '' || updateCat !== '') &&
@@ -144,15 +143,15 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                                                 className='global_bisonRedTxt global_cursor'>Categories</h5>
                                         </Row>
 
-                                        {products.map(product => (
+                                        {catArr.map((product, index) => (
                                             <Row xs={12}
-                                                 onClick={(ev) => sortByCategoryHandler(product.category, ev)}
+                                                 onClick={(ev) => sortByCategoryHandler(product, ev)}
                                                  className='CatMan-nav-text btn btn-block global_cursor d-flex justify-content-start m-0 p-0 global_bisonDarkFadedBgColorHover'
                                                  type='button'
-                                                 key={product._id}
+                                                 key={index}
                                             >
                                                 <h6>
-                                                    {product.category}
+                                                    {product}
                                                 </h6>
                                             </Row>
                                         ))}
@@ -163,25 +162,25 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                                                 className='global_bisonRedTxt global_cursor'>Manufacturers</h5>
                                         </Row>
 
-                                        {products.map(product => (
+                                        {maufacturerArr.map((product, index) => (
                                             <Row xs={12}
-                                                 onClick={(ev) => sortByManufacturerHandler(product.brand, ev)}
-                                                // onClick={(ev) => sortByManufacturerHandler(product.brand, ev)}
+                                                 onClick={(ev) => sortByManufacturerHandler(product, ev)}
                                                  className='CatMan-nav-text btn btn-block global_cursor d-flex justify-content-start m-0 p-0 global_bisonDarkFadedBgColorHover'
                                                  type='button'
-                                                 key={product._id}
+                                                 key={index}
                                             >
                                                 <h6>
-                                                    {product.brand}
+                                                    {product}
                                                 </h6>
                                             </Row>
+
                                         ))}
+
+
+
                                     </>
                                 )}
                             </Col>
-                            {/*    </Sticky>*/}
-                            {/*</StickyContainer>*/}
-
                             < Col xs={9}>
                                 < ProductDisplayByCatMan products={products}
                                                          history={history}

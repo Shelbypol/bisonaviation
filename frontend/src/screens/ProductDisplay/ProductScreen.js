@@ -79,7 +79,7 @@ const ProductScreen = ({history, match}) => {
 
     return (
         <>
-            <Link className='btn btn-light mt-1 mb-3 pt-0 pb-1 px-1' to='/'>
+            <Link className='btn btn-light mt-1 mb-3 pt-0 pb-1 px-1' to='/products'>
                 Go back
             </Link>
             {loading ? <Loader/> : error ? <Message variant='danger'>{error}</Message> : (
@@ -88,7 +88,7 @@ const ProductScreen = ({history, match}) => {
                     <Meta title={product.name}/>
 
                     <Row className='mt-n4'>
-                        <Col className='product-page-section fluid' md={6}>
+                        <Col className='product-page-section fluid d-flex justify-content-center' md={6}>
                             <div className="fluid__image-container ProductScreen_img-magAb">
                                 <ReactImageMagnify {...{
                                     smallImage: {
@@ -101,10 +101,10 @@ const ProductScreen = ({history, match}) => {
                                         width: 1200,
                                         height: 1800,
                                         enlargedImageContainerClassName: 'border-0',
-                                        enlargedImageStyle: 'ProductScreen_img-magnify'
                                     },
-                                    isHintEnabled: true,
-                                    shouldHideHintAfterFirstActivation: false
+                                        enlargedImagePosition: 'over',
+                                        isHintEnabled: true,
+                                        shouldHideHintAfterFirstActivation: false,
                                 }} />
                             </div>
                         </Col>

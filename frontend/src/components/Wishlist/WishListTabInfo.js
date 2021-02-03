@@ -16,7 +16,6 @@ import {EMAIL_RESET} from "../../constants/emailConstants";
 const WishListTabInfo = () => {
     const dispatch = useDispatch();
 
-
     const userLogin = useSelector(state => state.userLogin);
     const {userInfo} = userLogin;
 
@@ -25,6 +24,12 @@ const WishListTabInfo = () => {
 
     const wishListCreate = useSelector(state => state.wishListCreate);
     const {wishList, success, error} = wishListCreate;
+
+
+    useEffect(() => {
+
+
+    }, [ dispatch, success, userInfo]);
 
     // const addToWishListHandler = () => {
     //
@@ -68,7 +73,7 @@ const WishListTabInfo = () => {
                              {/*//     </Link>*/}
                              {/*// )}*/}
                         {/*// >*/}
-                            <WishListSave userinfo={userInfo} cartItems={cartItems} cart={cart} success={success}/>
+                            <WishListSave cartItems={cartItems} cart={cart} success={success}/>
                         </Tab>
                         <Tab eventKey="profile" title="Purchase Inquiry"
                              tabClassName='animations_img-hover-zoom-n-out global_cursor global_bisonFadedRedHover p-auto d-flex align-items-center justify-content-center'>
