@@ -23,9 +23,8 @@ import mechanics2 from '../images/mechanics/riveting.jpg'
 import MultiCarouselPage from "../components/MulitCarouselPage";
 import ProductCarousel from "../components/ProductCarousel";
 import JumboCardImgs from "../components/JumboCardImgs";
-import h from '../images/try-site.png';
-// import h1 from '../images/sharpen-hero1-red-tint.png'
-import h1 from '../images/hero-legs.png'
+import hero from '../images/hero/hero-legs.png'
+import repair_award from '../images/repair-award/r-1.png'
 import '../style/animations.css'
 import SummaryNav from "../components/Headers-Nav-Footer/SummaryNav";
 import TestimonialCarousel from "../components/TestimonialCarousel";
@@ -42,62 +41,63 @@ const HomeScreen = () => {
     return (
         <>
             <Jumbotrons
-                jumboClass={'mt-n3 mx-0 p-0 border-0 mb-0'}
-                img={h1}
+                jumboClass={'mx-0 p-0 border-0 mb-0'}
+                img={hero}
                 imgClassName={'m-0 h-150 w-100 '}
-                // imgClassName={'col-12 p-0 m-0 h-50 w-100 Jumbotrons_img_responsive_size'}
-                // textContainerStyle={{marginTop: '15%'}}
-                // textContainerClass={'col-12 position-relative'}
-                // title={<h3 className='font-weight-lighter' style={{color: 'lightgrey', lineHeight: '1.5em'}}>We Work Hard On The Ground <br/>&nbsp; So You Can Fly With
-                //     Confidence</h3>}
-                // titleClassName={'text-light mt-n4 d-flex justify-content-start'}
             />
 
 
             {/*  =============   ICONS ROW - DESKTOP  =============== */}
-            <Container style={{marginTop: '10vh', marginBottom: '25vh'}}>
-            {/*<Container style={{ marginBottom: '25vh'}}>*/}
-                <Row>
-                    <Col xs={12} md={6} className=''>
-                        <Row>
-                            <Col xs={12} className='d-flex justify-content-center'>
-                                <h4 className='global_accentFont'> FAA Part 145 Repair Station</h4>
-                            </Col>
-                            <Col xs={12} className='d-flex justify-content-center'>
-                                <i className='fal fa-tools global_bisonRedFontWhiteBg animations_icon-font-size animations_icon-spin'> </i>
-                            </Col>
-                            {/*<Col xs={12}>*/}
-                            {/*    <p> Bison Aviation is a fully licensed FAA Part 145 Repair Station with Airframe,*/}
-                            {/*        Instrument and Radio capabilities, an accreditation which is extremely difficult to*/}
-                            {/*        attain and sets Bison Aviation apart from most other general aviation shops. Among*/}
-                            {/*        other privileges, this licensure allows Bison Aviation to conduct testing and*/}
-                            {/*        recertification of aircraft static systems and transponder equipment. Bison Aviation*/}
-                            {/*        is the holder of FAA Air Agency Certificate Number 85NR497D.</p>*/}
-                            {/*</Col>*/}
-                        </Row>
-                    </Col>
 
-                    <Col xs={12} md={6}>
-                        <Row>
-                            <Col xs={12} className='d-flex justify-content-center'>
-                                <h4 className='global_accentFont'>FAA Diamond Award Recipient</h4>
-                            </Col>
-                            <Col xs={12} className='d-flex justify-content-center'>
-                                <i className='fal fa-award global_bisonRedFontWhiteBg animations_icon-font-size animations_icon-spin'> </i>
-                            </Col>
-                            {/*<Col xs={12}>*/}
-                            {/*    <p> Bison Aviation is a proud recipient of the prestigious FAA Diamond Award for*/}
-                            {/*        excellence in maintenance training & safety. This award is the highest conferred by*/}
-                            {/*        the FAA for aircraft maintenance organizations in recognition of their dedication to*/}
-                            {/*        employee training and safety. Our technicians regularly participate in online and*/}
-                            {/*        face-to-face training programs put on by industry professionals, owner / type*/}
-                            {/*        organizations (ABS, AOPA, TCF, COPA, etc.) and of course the FAA, resulting in a*/}
-                            {/*        training curriculum which vastly exceeds the regulatory requirements.</p>*/}
-                            {/*</Col>*/}
-                        </Row>
-                    </Col>
-                </Row>
-            </Container>
+            <Jumbotrons
+                jumboClass={'mx-0 p-0 border-0 mb-0'}
+                jumboStyle={{backgroundColor: 'transparent'}}
+                img={repair_award}
+                imgClassName={'m-0 h-150 w-100 '}
+            />
+            {/*<Container style={{marginTop: '10vh', marginBottom: '25vh'}}>*/}
+            {/*/!*<Container style={{ marginBottom: '25vh'}}>*!/*/}
+            {/*    <Row>*/}
+            {/*        <Col xs={12} md={6} className=''>*/}
+            {/*            <Row>*/}
+            {/*                <Col xs={12} className='d-flex justify-content-center'>*/}
+            {/*                    <h4 className='global_accentFont'> FAA Part 145 Repair Station</h4>*/}
+            {/*                </Col>*/}
+            {/*                <Col xs={12} className='d-flex justify-content-center'>*/}
+            {/*                    <i className='fal fa-tools global_bisonRedFontWhiteBg animations_icon-font-size animations_icon-spin'> </i>*/}
+            {/*                </Col>*/}
+            {/*                /!*<Col xs={12}>*!/*/}
+            {/*                /!*    <p> Bison Aviation is a fully licensed FAA Part 145 Repair Station with Airframe,*!/*/}
+            {/*                /!*        Instrument and Radio capabilities, an accreditation which is extremely difficult to*!/*/}
+            {/*                /!*        attain and sets Bison Aviation apart from most other general aviation shops. Among*!/*/}
+            {/*                /!*        other privileges, this licensure allows Bison Aviation to conduct testing and*!/*/}
+            {/*                /!*        recertification of aircraft static systems and transponder equipment. Bison Aviation*!/*/}
+            {/*                /!*        is the holder of FAA Air Agency Certificate Number 85NR497D.</p>*!/*/}
+            {/*                /!*</Col>*!/*/}
+            {/*            </Row>*/}
+            {/*        </Col>*/}
+
+            {/*        <Col xs={12} md={6}>*/}
+            {/*            <Row>*/}
+            {/*                <Col xs={12} className='d-flex justify-content-center'>*/}
+            {/*                    <h4 className='global_accentFont'>FAA Diamond Award Recipient</h4>*/}
+            {/*                </Col>*/}
+            {/*                <Col xs={12} className='d-flex justify-content-center'>*/}
+            {/*                    <i className='fal fa-award global_bisonRedFontWhiteBg animations_icon-font-size animations_icon-spin'> </i>*/}
+            {/*                </Col>*/}
+            {/*                /!*<Col xs={12}>*!/*/}
+            {/*                /!*    <p> Bison Aviation is a proud recipient of the prestigious FAA Diamond Award for*!/*/}
+            {/*                /!*        excellence in maintenance training & safety. This award is the highest conferred by*!/*/}
+            {/*                /!*        the FAA for aircraft maintenance organizations in recognition of their dedication to*!/*/}
+            {/*                /!*        employee training and safety. Our technicians regularly participate in online and*!/*/}
+            {/*                /!*        face-to-face training programs put on by industry professionals, owner / type*!/*/}
+            {/*                /!*        organizations (ABS, AOPA, TCF, COPA, etc.) and of course the FAA, resulting in a*!/*/}
+            {/*                /!*        training curriculum which vastly exceeds the regulatory requirements.</p>*!/*/}
+            {/*                /!*</Col>*!/*/}
+            {/*            </Row>*/}
+            {/*        </Col>*/}
+            {/*    </Row>*/}
+            {/*</Container>*/}
             {/*</main>*/}
 
             {/*  =============  SUMMARY NAV  =============  */}
