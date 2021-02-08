@@ -55,6 +55,7 @@ const HomeScreen = () => {
                 img={repair_award}
                 imgClassName={'m-0 h-150 w-100 '}
             />
+
             {/*<Container style={{marginTop: '10vh', marginBottom: '25vh'}}>*/}
             {/*/!*<Container style={{ marginBottom: '25vh'}}>*!/*/}
             {/*    <Row>*/}

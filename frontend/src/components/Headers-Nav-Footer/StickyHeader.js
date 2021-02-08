@@ -65,9 +65,11 @@ const StickyHeader = () => {
                             <Nav className={'col-lg-3 ml-4 d-sm-none d-md-none d-lg-block'}>
                                 <Route render={({history}) => <SearchBox history={history}
                                                                          searchSize={'sm'}
-                                                                         searchClasses={'col-9 py-0 global_gradient text-white'}
+                                                                         searchClasses={'col-9 py-0'}
+                                                                         // searchClasses={'col-9 py-0 global_gradient text-white'}
                                                                          btnSize={'sm'}
-                                                                         btnClasses={'global_bisonDarkFadedBgColorHover StickyHeader_search_btn_padding px-1 col-2 rounded-right'}
+                                                                         btnClasses={' StickyHeader_search_btn_padding px-1 col-2 rounded-right'}
+                                                                         // btnClasses={'global_bisonDarkFadedBgColorHover StickyHeader_search_btn_padding px-1 col-2 rounded-right'}
                                                                          iconClass={'fal fa-search p-0'}
                                 />}/>
                             </Nav>
