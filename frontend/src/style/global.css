@@ -8,7 +8,11 @@ body {
     width: 100vw;
     max-width: 100%;
     contain: content;
-    background-color: #fff;
+    /*background-color: #fff;*/
+    /*background-color: #3f3f3f;*/
+    background: linear-gradient(to right, #161616, #3f3f3f);
+    /*background:*/
+    /*background: linear-gradient(#161616, #3f3f3f);*/
 }
 
 html {
@@ -58,6 +62,13 @@ p{
 .global_cursor-underline:hover{
     cursor: pointer;
     text-decoration: underline;
+}
+
+.bgphoto {
+    /*background-image: url("../images/try-site-centered-cropped.png");*/
+    /*height: 750px;*/
+    /*background-repeat: no-repeat;*/
+    /*overflow: hidden;*/
 }
 
 .global_bisonRedTxt {

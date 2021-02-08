@@ -49,12 +49,12 @@ const StickyHeader = () => {
 
     return (
         <>
-            <header className='sticky-top m-0'>
+            <header className='sticky-top m-0 p-0'>
                 {/*<header className='sticky-top m-0' id='showSearch'>*/}
 
-                <Navbar className='navbar navbar-expand-lg navbar-light bg-light m-0 p-0 border-0 '>
+                <Navbar className='navbar navbar-expand-lg navbar-dark bg-dark m-0 p-0 border-0 stickyheader'>
 
-                    <Container className='col-sm-12'>
+                    {/*<Container className='col-sm-12'>*/}
 
                         <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                         <Navbar.Collapse id="basic-navbar-nav">
@@ -75,7 +75,7 @@ const StickyHeader = () => {
                             {/*============= NAV SHOW ON SCROLL ==============*/}
 
                             {goingUp ?
-                                <Nav className='col-lg-5 col-md-6 justify-content-center global_accentFont'>
+                                <Nav className='col-lg-5 col-md-6 justify-content-end global_accentFont'>
 
                                     {/*  BROWSE PRODUCTS  */}
                                     <LinkContainer className='mx-1' to='/products'>
@@ -267,7 +267,7 @@ const StickyHeader = () => {
                 <SideBar/>
 
 
-                    </Container>
+                    {/*</Container>*/}
                 </Navbar>
                 <div className='StickyHeader_whiteFade col-sm-12 position-sticky'> </div>
             </header>

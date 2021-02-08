@@ -1,6 +1,7 @@
 /*      DESKTOP HEADER        */
 .DesktopHeader_logo {
-    height: 15vh;
+    /*height: 15vh;*/
+    height: 12vh;
     max-height: 100%;
     cursor: pointer;
 }
@@ -10,7 +11,8 @@
 }
 
 .DesktopHeader_nav {
-    height: 20vh;
+    height: 15vh;
+    /*height: 20vh;*/
     max-height: 100%;
     margin-top: -7vh;
     z-index: 2;
@@ -20,6 +22,10 @@
 }
 
 /*       STICKY HEADER       */
+
+.stickyheader {
+    height: 6vh;
+}
 
 .StickyHeader_search_btn_padding{
     padding-top: 2em;
@@ -43,17 +49,19 @@
     display: none;
 }
 
-.StickyHeader_blackFade{
-    background-image: url("../images/graphics/small-black-fade.png");
-    position: relative;
-    margin-top: -5vh;
-    height: 12vh;
-    top:0;
-    z-index: -1;
-}
+/*.StickyHeader_blackFade{*/
+/*    background-image: url("../images/graphics/small-black-fade.png");*/
+/*    position: relative;*/
+/*    margin-top: -5vh;*/
+/*    height: 2vh;*/
+/*    top:0;*/
+/*    z-index: -1;*/
+/*}*/
+
 .StickyHeader_whiteFade{
     position: relative;
     margin-top: -6vh;
+    /*height: 10vh;*/
     height: 12vh;
     top:0;
     z-index: -1;
