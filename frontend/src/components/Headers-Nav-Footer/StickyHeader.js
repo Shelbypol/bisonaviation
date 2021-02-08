@@ -52,7 +52,7 @@ const StickyHeader = () => {
             <header className='sticky-top m-0 p-0'>
                 {/*<header className='sticky-top m-0' id='showSearch'>*/}
 
-                <Navbar className='navbar navbar-expand-lg navbar-dark bg-dark m-0 p-0 border-0 stickyheader'>
+                <Navbar className='navbar navbar-expand-lg navbar-light bg-light m-0 p-0 border-0'>
 
                     {/*<Container className='col-sm-12'>*/}
 
@@ -62,12 +62,13 @@ const StickyHeader = () => {
                             {/*===============  SEARCH BAR  ==================*/}
 
                             {goingUp &&
-                            <Nav className={'col-lg-3 ml-2 d-sm-none d-md-none d-lg-block'}>
+                            <Nav className={'col-lg-3 ml-4 d-sm-none d-md-none d-lg-block'}>
                                 <Route render={({history}) => <SearchBox history={history}
                                                                          searchSize={'sm'}
-                                                                         searchClasses={'col-9'}
+                                                                         searchClasses={'col-9 py-0 global_gradient text-white'}
                                                                          btnSize={'sm'}
-                                                                         btnClasses={'global_bisonWhiteBgBtnSearch StickyHeader_search_btn_padding px-1 col-2 rounded-right'}
+                                                                         btnClasses={'global_bisonDarkFadedBgColorHover StickyHeader_search_btn_padding px-1 col-2 rounded-right'}
+                                                                         iconClass={'fal fa-search p-0'}
                                 />}/>
                             </Nav>
                             }
@@ -144,7 +145,7 @@ const StickyHeader = () => {
                                 :
 
                                 // ============= NAV HIDDEN ON SCROLL ==============
-                                <Nav className='col-lg-8 col-md-6 justify-content-end global_accentFont'>
+                                <Nav className='col-lg-8 ml-4 col-md-6 justify-content-end global_accentFont'>
 
                                     {/*  BROWSE PRODUCTS  */}
                                     <LinkContainer className='mx-1' to='/products'>
@@ -222,15 +223,15 @@ const StickyHeader = () => {
                                         <LinkContainer to='/contact'>
                                             <Nav.Link>
                                                 <Button
-                                                    className='px-3 py-0 mt-2 rounded-pill global_bisonRedBgWhiteHoverBgBtn StickyHeader_iconHidden '>
+                                                    className='px-3 py-0 mt-2 mr-4 rounded-pill global_bisonRedBgWhiteHoverBgBtn StickyHeader_iconHidden '>
                                                     {/* <span className='StickyHeader_hideIcon'>*/}
                                                     {/*     Contact*/}
                                                     {/* </span>*/}
                                                     {/*<span className='StickyHeader_hideWords'>Contact</span>*/}
                                                     <span className='StickyHeader_hideIcon'>
-                                                     AOG / Contact
+                                                     Contact
                                                  </span>
-                                                    <span className='StickyHeader_hideWords'>AOG / Contact</span>
+                                                    <span className='StickyHeader_hideWords'>Contact</span>
                                                 </Button>
                                             </Nav.Link>
                                         </LinkContainer>
@@ -248,11 +249,11 @@ const StickyHeader = () => {
                                         <LinkContainer to='/contact'>
                                             <Nav.Link>
                                                 <Button
-                                                    className='px-3 py-0 mt-2 rounded-pill global_bisonRedBgWhiteHoverBgBtn StickyHeader_iconHidden'>
+                                                    className='px-3 py-0 mt-2 mr-4 rounded-pill global_bisonRedBgWhiteHoverBgBtn StickyHeader_iconHidden'>
                                                  <span className='StickyHeader_hideIcon'>
-                                                    AOG / Contact
+                                                    Contact
                                                  </span>
-                                                    <span className='StickyHeader_hideWords'>AOG / Contact</span>
+                                                    <span className='StickyHeader_hideWords'>Contact</span>
                                                 </Button>
                                             </Nav.Link>
                                         </LinkContainer>

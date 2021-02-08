@@ -7,7 +7,10 @@
 }
 
 .DesktopHeader_search_btn_padding{
-    padding-top: 1.82em;
+    /*padding-top: 1.82em;*/
+    /*padding: -1em -1em;*/
+    padding: 1em 1em;
+    background-color:  #4A433D;
 }
 
 .DesktopHeader_nav {
@@ -25,11 +28,15 @@
 
 .stickyheader {
     height: 6vh;
+    background: linear-gradient(to right, #161616, #3f3f3f);
 }
 
 .StickyHeader_search_btn_padding{
-    padding-top: 2em;
-    padding-bottom: 1.45em;
+    /*padding-top: 2em;*/
+    /*padding-bottom: 1.45em;*/
+    padding: 1em 1em;
+    background-color:  #4A433D;
+
 }
 
 .StickyHeader_icon-size{
@@ -67,15 +74,16 @@
     z-index: -1;
 }
 
-#StickyHeader_SearchBox_searchImage {
-    background-image: url("../images/graphics/search-logo-very-small.png");
-    background-repeat: no-repeat;
-    background-position: center;
-}
+/*#StickyHeader_SearchBox_searchImage {*/
+/*    !*background-image: url("../images/graphics/search-logo-very-small-white.png");*!*/
+/*    !*background-repeat: no-repeat;*!*/
+/*    !*background-position: center;*!*/
+/*}*/
 
-#StickyHeader_SearchBox_searchImage:hover {
-    background-image: url("../images/graphics/search-logo-very-small-white.png");
-}
+/*#StickyHeader_SearchBox_searchImage:hover {*/
+/*    !*background-image: url("../images/graphics/search-logo-very-small.png");*!*/
+/*    !*background-image: url("../images/graphics/search-logo-very-small-white.png");*!*/
+/*}*/
 
 /*   NAV BOOTSTRAP DROPDOWN STYLE    */
 .navbar-toggler {

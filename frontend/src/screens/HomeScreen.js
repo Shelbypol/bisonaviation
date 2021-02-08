@@ -24,7 +24,8 @@ import MultiCarouselPage from "../components/MulitCarouselPage";
 import ProductCarousel from "../components/ProductCarousel";
 import JumboCardImgs from "../components/JumboCardImgs";
 import h from '../images/try-site.png';
-import h1 from '../images/try-site-centered-w-1400-h-600.png'
+// import h1 from '../images/sharpen-hero1-red-tint.png'
+import h1 from '../images/hero-legs.png'
 import '../style/animations.css'
 import SummaryNav from "../components/Headers-Nav-Footer/SummaryNav";
 import TestimonialCarousel from "../components/TestimonialCarousel";
@@ -41,34 +42,20 @@ const HomeScreen = () => {
     return (
         <>
             <Jumbotrons
-                jumboClass={'mt-n3 mx-0 mb-0 p-0 bgphoto'}
-                // jumboClass={'m-0 p-0 animations_img-hover-zoom-out'}
-                // img={heroImg}
+                jumboClass={'mt-n3 mx-0 p-0 border-0 mb-0'}
                 img={h1}
-                imgClassName={'m-auto h-75 w-100 '}
+                imgClassName={'m-0 h-150 w-100 '}
                 // imgClassName={'col-12 p-0 m-0 h-50 w-100 Jumbotrons_img_responsive_size'}
+                // textContainerStyle={{marginTop: '15%'}}
+                // textContainerClass={'col-12 position-relative'}
+                // title={<h3 className='font-weight-lighter' style={{color: 'lightgrey', lineHeight: '1.5em'}}>We Work Hard On The Ground <br/>&nbsp; So You Can Fly With
+                //     Confidence</h3>}
+                // titleClassName={'text-light mt-n4 d-flex justify-content-start'}
             />
-
-            {/*<Jumbotrons jumboClass={'mt-n5 pt-0 pb-5 global_black-horizontal-gradient'}/>*/}
-            {/*<Jumbotrons*/}
-            {/*    jumboStyle={{backgroundColor:'black'}}*/}
-            {/*    jumboClass={'mt-n5 pt-n5 px-0 pb-5'}*/}
-            {/*    // img={heroImg}*/}
-            {/*    // imgClassName={'col-12 p-0 mx-0 mb-0'}*/}
-            {/*    textContainerStyle={{marginTop: '-7%'}}*/}
-            {/*    textContainerClass={'col-12'}*/}
-            {/*    title={'Bison Aviation'}*/}
-            {/*    titleClassName={'text-light mt-n4 d-flex justify-content-start'}*/}
-            {/*    // // text={<h1 className='bisonRedTxt font-weight-lighter'>BISON AVIATION</h1>}*/}
-            {/*    text={<p className='font-weight-lighter' style={{color: 'lightgrey'}}>We Work Hard On The Ground So You Can Fly With*/}
-            {/*        Confidence</p>}*/}
-            {/*    textClassName={' d-flex justify-content-start mt-n4 pl-4 pb-0'}*/}
-            {/*/>*/}
-
 
 
             {/*  =============   ICONS ROW - DESKTOP  =============== */}
-            <Container style={{marginTop: '15vh', marginBottom: '25vh'}}>
+            <Container style={{marginTop: '10vh', marginBottom: '25vh'}}>
             {/*<Container style={{ marginBottom: '25vh'}}>*/}
                 <Row>
                     <Col xs={12} md={6} className=''>

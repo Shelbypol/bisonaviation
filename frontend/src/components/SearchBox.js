@@ -3,7 +3,7 @@ import {Form, Button, Nav} from 'react-bootstrap'
 import SocialIcons from "./SocialIcons";
 import logoSearch from '../images/graphics/search-logo-small.png'
 
-const SearchBox = ({history, searchClasses, formClasses, btnClasses, btnSize, searchSize, btnStyle, iconStyle, imgClasses}) => {
+const SearchBox = ({history, searchClasses, formClasses, btnClasses, btnSize, searchSize, btnStyle, iconClass, imgClasses}) => {
     const [keyword, setKeyword] = useState('');
 
     const submitHandler = (e) => {
@@ -23,7 +23,7 @@ const SearchBox = ({history, searchClasses, formClasses, btnClasses, btnSize, se
                     type='text'
                     name='searchBar'
                     value={keyword}
-                    placeholder='Search for Garmin Products...'
+                    placeholder='search...'
                     onChange={(e) => setKeyword(e.target.value)}
                     size={searchSize}
                     className={searchClasses}
@@ -31,6 +31,7 @@ const SearchBox = ({history, searchClasses, formClasses, btnClasses, btnSize, se
                 </Form.Control>
                 <Button type='submit' id='StickyHeader_SearchBox_searchImage' size={btnSize} className={btnClasses} style={btnStyle}
                 >
+                    <i className={iconClass}> </i>
                 </Button>
             </Form>
         </>
