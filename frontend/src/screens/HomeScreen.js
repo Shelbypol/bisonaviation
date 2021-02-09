@@ -27,7 +27,9 @@ import JumboCardImgs from "../components/JumboCardImgs";
 import hero from '../images/bg-graphics/hero/hero-legs.png'
 import repair_award from '../images/bg-graphics/repair-award/r-dark-contrast.png'
 // import repair_award from '../images/bg-graphics/repair-award/r-1.png'
-import services from '../images/bg-graphics/services/s-1-rbg.png'
+// import services from '../images/bg-graphics/services/hangar.png'
+import services from '../images/bg-graphics/services/white-service.png'
+import textured from '../images/bg-graphics/services/textured-1.png'
 import '../style/animations.css'
 import SummaryNav from "../components/Headers-Nav-Footer/SummaryNav";
 import TestimonialCarousel from "../components/TestimonialCarousel";
@@ -73,17 +75,25 @@ const HomeScreen = () => {
 
             {/*<Container style={{marginTop: '-15vh', marginBottom: '25vh'}}>*/}
                 <SummaryNav
-                    summaryClass={'my-5 mx-2'}
-                    summaryStyle={{marginTop: '55vh'}}
+                    img={services}
+                    jumboStyle={{height: '80vh'}}
+                    jumboClass={'d-flex align-items-center justify-content-center SummaryNavBg'}
+                    summaryClass={'mx-2'}
+                    // summaryStyle={{marginTop: '150vh'}}
+                    // summaryStyle={'marginTop'}
                     showTag={true}
                     title1={'GARMIN DEALER'}
                     title2={'AVIONICS'}
                     title3={'MAINTENANCE'}
                     title4={'EO/IR FLIR'}
-                    img1={garmin}
-                    img2={avionics}
-                    img3={maintenance}
-                    img4={flir}
+                    // img1={garmin}
+                    // img2={avionics}
+                    // img3={maintenance}
+                    // img4={flir}
+                    img1={textured}
+                    img2={textured}
+                    img3={textured}
+                    img4={textured}
                 />
 
             {/*</Container>*/}

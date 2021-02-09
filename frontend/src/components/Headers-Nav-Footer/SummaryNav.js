@@ -3,9 +3,10 @@ import '../../style/SummaryNav.css'
 import {Button, Col, Row} from "react-bootstrap";
 import {Jumbotron} from "reactstrap";
 
-const SummaryNav = ({summaryClass ,summaryStyle, title1, title2, title3, title4, img1, img2, img3, img4, showTag, jumboClass, jumboStyle}) => {
+const SummaryNav = ({summaryClass, img, imgClassName, summaryStyle, title1, title2, title3, title4, img1, img2, img3, img4, showTag, jumboClass, jumboStyle}) => {
     return (
         <Jumbotron className={jumboClass} style={jumboStyle} fluid>
+            {/*<img src={img} alt='' className={imgClassName} />*/}
             {/*<Col xs={12}>*/}
             {/*    <h1>Services</h1>*/}
             {/*</Col>*/}
