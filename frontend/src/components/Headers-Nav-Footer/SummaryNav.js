@@ -1,15 +1,16 @@
 import React from "react";
 import '../../style/SummaryNav.css'
 import {Button, Col, Row} from "react-bootstrap";
+import {Jumbotron} from "reactstrap";
 
-const SummaryNav = ({title1, title2, title3, title4, img1, img2, img3, img4, showTag}) => {
+const SummaryNav = ({summaryClass ,summaryStyle, title1, title2, title3, title4, img1, img2, img3, img4, showTag, jumboClass, jumboStyle}) => {
     return (
-        <Row>
-            <Col xs={12}>
-                <h1>Services</h1>
-            </Col>
-            <Col xs={12} >
-                <Row>
+        <Jumbotron className={jumboClass} style={jumboStyle} fluid>
+            {/*<Col xs={12}>*/}
+            {/*    <h1>Services</h1>*/}
+            {/*</Col>*/}
+            {/*<Col xs={12} className='mt-5' >*/}
+                <Row className={summaryClass} stylel={summaryStyle}>
                     <Col lg={3} xs={6} className='d-flex justify-content-center mb-3 summary_nav_hoverTitle'>
                         <Button className='p-0 rounded-left '>
                             <img src={img1} alt="" className='h-100 w-100'/>
@@ -54,8 +55,8 @@ const SummaryNav = ({title1, title2, title3, title4, img1, img2, img3, img4, sho
                         </Button>
                     </Col>
                 </Row>
-            </Col>
-        </Row>
+            {/*</Col>*/}
+        </Jumbotron>
     )
 };
 

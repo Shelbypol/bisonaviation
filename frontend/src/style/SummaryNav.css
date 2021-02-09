@@ -1,3 +1,8 @@
+.SummaryNavBg{
+    background-image: url("../images/bg-graphics/services/s1-overlay.png");
+    background-repeat: no-repeat;
+}
+
 .summary_nav_overlay {
     position: absolute;
     bottom: 25%;

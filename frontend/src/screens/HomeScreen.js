@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom'
 import Jumbotrons from "../components/Jumbotrons";
 import JumboCardImgAndText from "../components/JumboCardImgAndText";
 import '../style/flag.scss'
+import '../style/SummaryNav.css'
 import panel from '../images/avionics/panal-avionics.JPG'
 import panel2 from '../images/avionics/20190218_155138 (1).jpg'
 import avionics from '../images/avionics/panal-avionics.JPG'
@@ -23,8 +24,10 @@ import mechanics2 from '../images/mechanics/riveting.jpg'
 import MultiCarouselPage from "../components/MulitCarouselPage";
 import ProductCarousel from "../components/ProductCarousel";
 import JumboCardImgs from "../components/JumboCardImgs";
-import hero from '../images/hero/hero-legs.png'
-import repair_award from '../images/repair-award/r-1.png'
+import hero from '../images/bg-graphics/hero/hero-legs.png'
+import repair_award from '../images/bg-graphics/repair-award/r-dark-contrast.png'
+// import repair_award from '../images/bg-graphics/repair-award/r-1.png'
+import services from '../images/bg-graphics/services/s-1-rbg.png'
 import '../style/animations.css'
 import SummaryNav from "../components/Headers-Nav-Footer/SummaryNav";
 import TestimonialCarousel from "../components/TestimonialCarousel";
@@ -56,54 +59,22 @@ const HomeScreen = () => {
                 imgClassName={'m-0 h-150 w-100 '}
             />
 
-            {/*<Container style={{marginTop: '10vh', marginBottom: '25vh'}}>*/}
-            {/*/!*<Container style={{ marginBottom: '25vh'}}>*!/*/}
-            {/*    <Row>*/}
-            {/*        <Col xs={12} md={6} className=''>*/}
-            {/*            <Row>*/}
-            {/*                <Col xs={12} className='d-flex justify-content-center'>*/}
-            {/*                    <h4 className='global_accentFont'> FAA Part 145 Repair Station</h4>*/}
-            {/*                </Col>*/}
-            {/*                <Col xs={12} className='d-flex justify-content-center'>*/}
-            {/*                    <i className='fal fa-tools global_bisonRedFontWhiteBg animations_icon-font-size animations_icon-spin'> </i>*/}
-            {/*                </Col>*/}
-            {/*                /!*<Col xs={12}>*!/*/}
-            {/*                /!*    <p> Bison Aviation is a fully licensed FAA Part 145 Repair Station with Airframe,*!/*/}
-            {/*                /!*        Instrument and Radio capabilities, an accreditation which is extremely difficult to*!/*/}
-            {/*                /!*        attain and sets Bison Aviation apart from most other general aviation shops. Among*!/*/}
-            {/*                /!*        other privileges, this licensure allows Bison Aviation to conduct testing and*!/*/}
-            {/*                /!*        recertification of aircraft static systems and transponder equipment. Bison Aviation*!/*/}
-            {/*                /!*        is the holder of FAA Air Agency Certificate Number 85NR497D.</p>*!/*/}
-            {/*                /!*</Col>*!/*/}
-            {/*            </Row>*/}
-            {/*        </Col>*/}
 
-            {/*        <Col xs={12} md={6}>*/}
-            {/*            <Row>*/}
-            {/*                <Col xs={12} className='d-flex justify-content-center'>*/}
-            {/*                    <h4 className='global_accentFont'>FAA Diamond Award Recipient</h4>*/}
-            {/*                </Col>*/}
-            {/*                <Col xs={12} className='d-flex justify-content-center'>*/}
-            {/*                    <i className='fal fa-award global_bisonRedFontWhiteBg animations_icon-font-size animations_icon-spin'> </i>*/}
-            {/*                </Col>*/}
-            {/*                /!*<Col xs={12}>*!/*/}
-            {/*                /!*    <p> Bison Aviation is a proud recipient of the prestigious FAA Diamond Award for*!/*/}
-            {/*                /!*        excellence in maintenance training & safety. This award is the highest conferred by*!/*/}
-            {/*                /!*        the FAA for aircraft maintenance organizations in recognition of their dedication to*!/*/}
-            {/*                /!*        employee training and safety. Our technicians regularly participate in online and*!/*/}
-            {/*                /!*        face-to-face training programs put on by industry professionals, owner / type*!/*/}
-            {/*                /!*        organizations (ABS, AOPA, TCF, COPA, etc.) and of course the FAA, resulting in a*!/*/}
-            {/*                /!*        training curriculum which vastly exceeds the regulatory requirements.</p>*!/*/}
-            {/*                /!*</Col>*!/*/}
-            {/*            </Row>*/}
-            {/*        </Col>*/}
-            {/*    </Row>*/}
-            {/*</Container>*/}
-            {/*</main>*/}
 
             {/*  =============  SUMMARY NAV  =============  */}
-            <Container style={{marginTop: '25vh', marginBottom: '25vh'}}>
+
+
+
+            {/*<Jumbotrons*/}
+            {/*    jumboClass={'mx-0 p-0 border-0 mb-0 global_gradient'}*/}
+            {/*    img={services}*/}
+            {/*    imgClassName={'m-0 h-150 w-100 '}*/}
+            {/*/>*/}
+
+            {/*<Container style={{marginTop: '-15vh', marginBottom: '25vh'}}>*/}
                 <SummaryNav
+                    summaryClass={'my-5 mx-2'}
+                    summaryStyle={{marginTop: '55vh'}}
                     showTag={true}
                     title1={'GARMIN DEALER'}
                     title2={'AVIONICS'}
@@ -114,7 +85,8 @@ const HomeScreen = () => {
                     img3={maintenance}
                     img4={flir}
                 />
-            </Container>
+
+            {/*</Container>*/}
 
 
             {/*  =============  WHY BISON  =============  */}
