@@ -1,21 +1,25 @@
 .SummaryNavBg{
-    background-image: url("../images/bg-graphics/services/white-service.png");
+    /*background-image: url("../images/bg-graphics/services/service.png");*/
+    background-image: url("../images/bg-graphics/services/double-service.png");
+
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .summary_nav_overlay {
     position: absolute;
-    bottom: 25%;
+    top: 25%;
+    bottom: 0;
     left: 0;
     right: 0;
+    padding: 3em 0 10em 0;
     background-color:rgba(90, 00, 09, .8);
     overflow: hidden;
     width: 100%;
     height:0;
     transition: .5s ease;
     border-left: 10px solid white;
-    border-right: 10px solid white;
+    /*border-right: 10px solid white;*/
 }
 
 .summary_nav_hoverTitle:hover .summary_nav_overlay {

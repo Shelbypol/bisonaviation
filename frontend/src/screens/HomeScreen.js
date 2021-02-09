@@ -25,11 +25,12 @@ import MultiCarouselPage from "../components/MulitCarouselPage";
 import ProductCarousel from "../components/ProductCarousel";
 import JumboCardImgs from "../components/JumboCardImgs";
 import hero from '../images/bg-graphics/hero/hero-legs.png'
-import repair_award from '../images/bg-graphics/repair-award/r-dark-contrast.png'
-// import repair_award from '../images/bg-graphics/repair-award/r-1.png'
-// import services from '../images/bg-graphics/services/hangar.png'
-import services from '../images/bg-graphics/services/white-service.png'
-import textured from '../images/bg-graphics/services/textured-1.png'
+import repair_award from '../images/bg-graphics/repair-award/repair-award-small-cropped.png'
+// import repair_award from '../images/bg-graphics/repair-award/r-dark-contrast.png'
+import services from '../images/bg-graphics/services/double-service.png'
+import left_rivet from '../images/bg-graphics/services/left-rivet.png'
+import right_rivet from '../images/bg-graphics/services/right-rivet.png'
+import textured from '../images/bg-graphics/services/textured-line.png'
 import '../style/animations.css'
 import SummaryNav from "../components/Headers-Nav-Footer/SummaryNav";
 import TestimonialCarousel from "../components/TestimonialCarousel";
@@ -61,24 +62,11 @@ const HomeScreen = () => {
                 imgClassName={'m-0 h-150 w-100 '}
             />
 
-
-
             {/*  =============  SUMMARY NAV  =============  */}
-
-
-
-            {/*<Jumbotrons*/}
-            {/*    jumboClass={'mx-0 p-0 border-0 mb-0 global_gradient'}*/}
-            {/*    img={services}*/}
-            {/*    imgClassName={'m-0 h-150 w-100 '}*/}
-            {/*/>*/}
-
-            {/*<Container style={{marginTop: '-15vh', marginBottom: '25vh'}}>*/}
                 <SummaryNav
-                    img={services}
                     jumboStyle={{height: '80vh'}}
-                    jumboClass={'d-flex align-items-center justify-content-center SummaryNavBg'}
-                    summaryClass={'mx-2'}
+                    jumboClass={'d-flex align-items-center justify-content-center bg-white SummaryNavBg'}
+                    summaryClass={'mt-n5 pt-n5 mx-2'}
                     // summaryStyle={{marginTop: '150vh'}}
                     // summaryStyle={'marginTop'}
                     showTag={true}
