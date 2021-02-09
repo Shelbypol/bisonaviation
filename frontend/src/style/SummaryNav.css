@@ -1,24 +1,26 @@
 .SummaryNavBg{
-    /*background-image: url("../images/bg-graphics/services/service.png");*/
-    background-image: url("../images/bg-graphics/services/double-service.png");
+    background-image: url("../images/bg-graphics/services/single-service.png");
+
+    /*background-image: url("../images/bg-graphics/services/double-service.png");*/
 
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .summary_nav_overlay {
-    position: absolute;
-    top: 25%;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 3em 0 10em 0;
+    /*position: absolute;*/
+    /*top: 25%;*/
+    /*bottom: 0;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    padding: 5em 10em 5em 10em;
     background-color:rgba(90, 00, 09, .8);
-    overflow: hidden;
+    /*overflow: hidden;*/
+    /*text-align: center;*/
     width: 100%;
     height:0;
     transition: .5s ease;
-    border-left: 10px solid white;
+    /*border-left: 10px solid white;*/
     /*border-right: 10px solid white;*/
 }
 

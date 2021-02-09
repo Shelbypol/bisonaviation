@@ -220,6 +220,12 @@ p{
     overflow-y: auto;
 }
 
+/*.global_why-bg{*/
+/*    background-image: url("../images/bg-graphics/whyBison/why.png");*/
+/*    background-repeat: no-repeat;*/
+/*    background-position: center;*/
+/*}*/
+
 
 /*    ======   MOBILE RESPONSIVE    ======    */
 @media (max-width: 900px) {
