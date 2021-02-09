@@ -22,21 +22,16 @@ import about from '../images/general/about_home.png'
 import mechanics1 from '../images/mechanics/cirrusrobin2.jpg'
 import mechanics2 from '../images/mechanics/riveting.jpg'
 import MultiCarouselPage from "../components/MulitCarouselPage";
-import ProductCarousel from "../components/ProductCarousel";
 import JumboCardImgs from "../components/JumboCardImgs";
 import hero from '../images/bg-graphics/hero/hero-legs.png'
-import repair_award from '../images/bg-graphics/repair-award/repair-award-small-cropped.png'
-// import repair_award from '../images/bg-graphics/repair-award/r-dark-contrast.png'
-import services from '../images/bg-graphics/services/double-service.png'
-import left_rivet from '../images/bg-graphics/services/left-rivet.png'
-import right_rivet from '../images/bg-graphics/services/right-rivet.png'
-import why from '../images/bg-graphics/whyBison/why-img.png'
+import repair_award from '../images/bg-graphics/repair-award/repair-dark.png'
+// import repair_award from '../images/bg-graphics/repair-award/repair-award-small-cropped.png'
+import why from '../images/bg-graphics/whyBison/why.png'
 import textured from '../images/bg-graphics/services/textured-line.png'
 import '../style/animations.css'
 import SummaryNav from "../components/Headers-Nav-Footer/SummaryNav";
 import TestimonialCarousel from "../components/TestimonialCarousel";
-import ScrollToTop from "../components/ScrollToTop";
-import jeffmicheal from '../images/Jeff -Michael.jpeg';
+
 
 
 const HomeScreen = () => {
@@ -53,7 +48,6 @@ const HomeScreen = () => {
                 imgClassName={'m-0 h-150 w-100 '}
             />
 
-
             {/*  =============   ICONS ROW - DESKTOP  =============== */}
 
             <Jumbotrons
@@ -63,29 +57,21 @@ const HomeScreen = () => {
                 imgClassName={'m-0 h-150 w-100 '}
             />
 
-            {/*  =============  SUMMARY NAV  =============  */}
+            {/*/!*  =============  SUMMARY NAV  =============  *!/*/}
                 <SummaryNav
                     jumboStyle={{height: '50vh'}}
                     jumboClass={'d-flex align-items-center justify-content-center  SummaryNavBg'}
-                    summaryClass={' mx-2'}
-                    // summaryStyle={{marginBottom: '40vh'}}
-                    // summaryStyle={'marginTop'}
                     showTag={true}
                     title1={'GARMIN DEALER'}
                     title2={'AVIONICS'}
                     title3={'MAINTENANCE'}
                     title4={'EO/IR FLIR'}
-                    // img1={garmin}
-                    // img2={avionics}
-                    // img3={maintenance}
-                    // img4={flir}
                     img1={textured}
                     img2={textured}
                     img3={textured}
                     img4={textured}
                 />
 
-            {/*</Container>*/}
 
 
             {/*  =============  WHY BISON  =============  */}
@@ -93,33 +79,33 @@ const HomeScreen = () => {
             {/*    <Container  className='mx-auto' style={{marginTop: '25vh', marginBottom: '25vh'}}>*/}
 
 
-            {/*<Jumbotrons*/}
-            {/*    jumboClass={'mx-0 p-0 border-0 mb-0'}*/}
-            {/*    jumboStyle={{backgroundColor: 'transparent'}}*/}
-            {/*    img={why}*/}
-            {/*    imgClassName={'m-0 h-150 w-100 '}*/}
-            {/*/>*/}
+            <Jumbotrons
+                jumboClass={'mx-0 p-0 border-0 mb-0 bg-white'}
+                // jumboStyle={{backgroundColor: 'transparent'}}
+                img={why}
+                imgClassName={'m-0 h-100 w-100 '}
+            />
 
-                    <JumboCardImgAndText
-                        // jumboStyle={{height: '100vh'}}
-                        // jumboClass={'d-flex align-items-center justify-content-center bg-white'}
-                        xsRow={12}
-                        lgImgCol={4}
-                        xsImgCol={12}
-                        imgSrc={why}
-                        imgClassName={'h-100 w-100 rounded'}
-                        lgTextCol={8}
-                        xsTextCol={12}
-                        lgTitleCol={12}
-                        mdIconTextCol={12}
-                        // iconSymbol={'far fa-plane global_bisonRedFontWhiteBg animations_icon-spin'}
-                        lgIconCol={1}
-                        lgSubtextCol={11}
-                        mdBlockTextCol={12}
-                        // // title={'Why Choose Bison Aviation'}
-                        subText={'AVIONICS & AIRCRAFT MAINTENANCE & FLIR'}
-                        paragraph={'Founded by an avid general aviation pilot and fellow aircraft owner, we operate with the unique perspective of an organization which is intimately familiar not only with the world of professional aircraft maintenance, but also with the world of aircraft ownership and operation. We know that our customers rely on us to provide them with an honest and frank assessment of the condition of their aircraft, and we are honored to accept that charge.'}
-                    />
+                    {/*<JumboCardImgAndText*/}
+                    {/*    // jumboStyle={{height: '100vh'}}*/}
+                    {/*    // jumboClass={'d-flex align-items-center justify-content-center bg-white'}*/}
+                    {/*    xsRow={12}*/}
+                    {/*    lgImgCol={4}*/}
+                    {/*    xsImgCol={12}*/}
+                    {/*    imgSrc={why}*/}
+                    {/*    imgClassName={'h-100 w-100 rounded'}*/}
+                    {/*    lgTextCol={8}*/}
+                    {/*    xsTextCol={12}*/}
+                    {/*    lgTitleCol={12}*/}
+                    {/*    mdIconTextCol={12}*/}
+                    {/*    // iconSymbol={'far fa-plane global_bisonRedFontWhiteBg animations_icon-spin'}*/}
+                    {/*    lgIconCol={1}*/}
+                    {/*    lgSubtextCol={11}*/}
+                    {/*    mdBlockTextCol={12}*/}
+                    {/*    // // title={'Why Choose Bison Aviation'}*/}
+                    {/*    subText={'AVIONICS & AIRCRAFT MAINTENANCE & FLIR'}*/}
+                    {/*    paragraph={'Founded by an avid general aviation pilot and fellow aircraft owner, we operate with the unique perspective of an organization which is intimately familiar not only with the world of professional aircraft maintenance, but also with the world of aircraft ownership and operation. We know that our customers rely on us to provide them with an honest and frank assessment of the condition of their aircraft, and we are honored to accept that charge.'}*/}
+                    {/*/>*/}
                 {/*</Container>*/}
             {/*</main>*/}
 
