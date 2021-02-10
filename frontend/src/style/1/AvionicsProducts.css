@@ -1,5 +1,35 @@
+.AvionicsProducts_jumbo{
+    height: 250px;
+    /*height: 450px;*/
+}
 
+.AvionicsProducts_jumbo-left{
+    margin-top: 5em;
+}
 
-.AvionicsProducts_jumbo-1{
-    height: 450px;
+.AvionicsProducts_img-left{
+    background-image: url("../../images/bg-graphics/avionics/garmin-dealer.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.AvionicsProducts_img-right{
+    background-image: url("../../images/bg-graphics/avionics/jd-roel.png");
+    background-repeat: no-repeat;
+    background-position: 5% 20%;
+}
+
+.AvionicsProducts_searchBtn{
+    background-color: #F5F3F4;
+    border: 3px solid #660708;
+    color: #660708;
+    font-size: 25px;
+    font-weight: lighter;
+    padding: 20px 20px 20px 20px;
+}
+
+.AvionicsProducts_searchBtn:hover{
+    background-color: #660708;
+    color: #F5F3F4;
+    font-weight: lighter;
+    border: none;
 }
