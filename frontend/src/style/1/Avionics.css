@@ -9,5 +9,9 @@
 }
 
 .Avionics_icon{
-    font-size: 40px;
+    font-size: 30px;
+}
+
+.Avionics_circles{
+    height: 30px;
 }

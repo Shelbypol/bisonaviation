@@ -5,12 +5,14 @@
 }
 
 .Team_jumbo{
-    height: 375px;
-    /*height: 650px;*/
+    /*height: 375px;*/
+    /*height: 375px;*/
+    height: 650px;
 }
 
 .Team_text{
-    margin-top: 8%;
+    margin-top: 15%;
+    /*margin-top: 8%;*/
     background-color: rgba(1, 1, 1, .1);
     height: 150px;
 }

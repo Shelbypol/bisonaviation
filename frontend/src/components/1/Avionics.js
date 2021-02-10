@@ -14,11 +14,32 @@ const Avionics = () => {
 
     return (
         <Jumbotron className='global_eerie-black-bg global_light-grey m-0 px-0 pt-0 pb-5' fluid>
-            <Row xs={12}>
+            <Row>
                 <Col xs={12} className='d-flex justify-content-center Avionics_title'>
                     <h1 className='global_light-grey'><strong style={{fontSize:'30px'}} className='global_blood-red-bg px-2 mr-n4'>A</strong> vionics</h1>
                 </Col>
             </Row>
+
+            <Row>
+                <Col xs={3} className='d-flex justify-content-center'>
+                    <h4 className='rounded-circle global_blood-red-bg global_cultured p-5'>30+ years</h4>
+
+                </Col>
+                <Col xs={3} className='d-flex justify-content-center'>
+                    <h4 className='rounded-circle global_blood-red-bg global_cultured p-5'>hey</h4>
+
+                </Col>
+                 <Col xs={3} className='d-flex justify-content-center'>
+                     <h4 className='rounded-circle global_blood-red-bg global_cultured p-5'>hey</h4>
+
+                 </Col>
+                <Col xs={3} className='d-flex justify-content-center'>
+                        <h4 className='rounded-circle global_blood-red-bg global_cultured p-5'>hey</h4>
+                </Col>
+
+
+            </Row>
+
             <Row>
                 <Col className='d-flex justify-content-center mb-3 text-center mx-5'>
                     <p className='global_light-grey Avionics_text'>
@@ -56,7 +77,7 @@ const Avionics = () => {
                 </Col>
             </Row>
             <Row xs={12}>
-                <Col className='d-flex justify-content-center text-center ml-5'>
+                <Col className='d-flex justify-content-center text-center'>
                     <p className='text-muted'>AVIONICS INSTALLATIONS</p>
                     {/*<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, in rem. Asperiores commodi dicta, fugit iusto magnam mollitia pariatur quibusdam quidem quo recusandae sed vitae?</p>*/}
                 </Col>
@@ -65,7 +86,7 @@ const Avionics = () => {
                     {/*<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, in rem. Asperiores commodi dicta, fugit iusto magnam mollitia pariatur quibusdam quidem quo recusandae sed vitae?</p>*/}
 
                 </Col>
-                <Col className='d-flex justify-content-center text-center mr-5'>
+                <Col className='d-flex justify-content-center text-center'>
                     <p className='text-muted'>RE-CERTIFICATION</p>
                     {/*<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, in rem. Asperiores commodi dicta, fugit iusto magnam mollitia pariatur quibusdam quidem quo recusandae sed vitae?</p>*/}
 
