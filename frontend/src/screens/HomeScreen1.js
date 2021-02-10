@@ -5,6 +5,7 @@ import Services from "../components/1/Services";
 import Team from "../components/1/Team";
 import '../style/global-1.css'
 import Avionics from "../components/1/Avionics";
+import AvionicsProducts from "../components/1/AvionicsProducts";
 import textured from "../images/bg-graphics/services/textured-line.png";
 
 const HomeScreen1 = () => {
@@ -37,6 +38,8 @@ const HomeScreen1 = () => {
             <Team />
 
             <Avionics />
+
+            <AvionicsProducts />
 
         </>
 
