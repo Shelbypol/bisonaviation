@@ -4,6 +4,7 @@ import RepairAward from '../components/1/RepairAward'
 import Services from "../components/1/Services";
 import Team from "../components/1/Team";
 import '../style/global-1.css'
+import Avionics from "../components/1/Avionics";
 import textured from "../images/bg-graphics/services/textured-line.png";
 
 const HomeScreen1 = () => {
@@ -21,10 +22,6 @@ const HomeScreen1 = () => {
 
             <RepairAward />
 
-
-
-            {/*/!*  =============  SERVICES =============  *!/*/}
-
             <Services
                 showTag={true}
                 title1={'GARMIN DEALER'}
@@ -38,6 +35,8 @@ const HomeScreen1 = () => {
             />
 
             <Team />
+
+            <Avionics />
 
         </>
 
