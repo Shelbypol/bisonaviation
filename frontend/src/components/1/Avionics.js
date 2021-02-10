@@ -15,7 +15,7 @@ const Avionics = () => {
         <Jumbotron className='global_eerie-black-bg global_light-grey m-0 p-0' fluid>
             <Row xs={12}>
                 <Col xs={12} className='d-flex justify-content-center Avionics_title'>
-                    <h1 className='global_light-grey'>Avionics</h1>
+                    <h1 className='global_light-grey'><strong style={{fontSize:'30px'}} className='global_blood-red-bg px-2 mr-n4'>A</strong> vionics</h1>
                 </Col>
             </Row>
             <Row>
@@ -52,14 +52,19 @@ const Avionics = () => {
                 </Col>
             </Row>
             <Row xs={12}>
-                <Col className='d-flex justify-content-center'>
+                <Col className='d-flex justify-content-center text-center ml-5'>
                     <p className='text-muted'>AVIONICS INSTALLATIONS</p>
+                    {/*<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, in rem. Asperiores commodi dicta, fugit iusto magnam mollitia pariatur quibusdam quidem quo recusandae sed vitae?</p>*/}
                 </Col>
-                <Col className='d-flex justify-content-center'>
+                <Col className='d-flex justify-content-center text-center'>
                     <p className='text-muted'>AVIONICS REPAIR</p>
+                    {/*<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, in rem. Asperiores commodi dicta, fugit iusto magnam mollitia pariatur quibusdam quidem quo recusandae sed vitae?</p>*/}
+
                 </Col>
-                <Col className='d-flex justify-content-center'>
+                <Col className='d-flex justify-content-center text-center mr-5'>
                     <p className='text-muted'>RE-CERTIFICATION</p>
+                    {/*<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, in rem. Asperiores commodi dicta, fugit iusto magnam mollitia pariatur quibusdam quidem quo recusandae sed vitae?</p>*/}
+
                 </Col>
             </Row>
         </Jumbotron>
