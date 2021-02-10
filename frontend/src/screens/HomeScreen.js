@@ -59,9 +59,10 @@ const HomeScreen = () => {
 
             {/*/!*  =============  SUMMARY NAV  =============  *!/*/}
                 <SummaryNav
-                    jumboStyle={{height: '50vh'}}
-                    jumboClass={'d-flex align-items-center justify-content-center  SummaryNavBg'}
+                    jumboStyle={{height: '80vh'}}
+                    jumboClass={'d-flex align-items-center bg-white justify-content-center SummaryNavBg'}
                     showTag={true}
+                    summaryClass={'mt-5'}
                     title1={'GARMIN DEALER'}
                     title2={'AVIONICS'}
                     title3={'MAINTENANCE'}
