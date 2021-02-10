@@ -4,10 +4,10 @@ import '../../style/flag.scss'
 import {Button, Col, Row} from "react-bootstrap";
 import {Jumbotron} from "reactstrap";
 
-const Services = ({summaryClass, summaryStyle, title1, title2, title3, title4, showTag}) => {
+const Services = ({title1, title2, title3, title4, showTag}) => {
     return (
         <Jumbotron
-            className='d-flex align-items-center bg-white justify-content-center SummaryNavBg global_silver-chalice-bg'
+            className='m-0 p-0 d-flex align-items-center bg-white justify-content-center SummaryNavBg global_silver-chalice-bg'
             fluid>
             <Row className='text-center'>
                 <Col xs={12} className='mb-5'>
