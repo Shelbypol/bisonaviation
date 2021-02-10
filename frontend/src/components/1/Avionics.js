@@ -20,25 +20,25 @@ const Avionics = () => {
                 </Col>
             </Row>
 
-            <Row>
-                <Col xs={3} className='d-flex justify-content-center'>
-                    <h4 className='rounded-circle global_blood-red-bg global_cultured p-5'>30+ years</h4>
+            {/*<Row>*/}
+            {/*    <Col xs={3} className='d-flex justify-content-center'>*/}
+            {/*        <h4 className='rounded-circle global_blood-red-bg global_cultured p-5'>30+ years</h4>*/}
 
-                </Col>
-                <Col xs={3} className='d-flex justify-content-center'>
-                    <h4 className='rounded-circle global_blood-red-bg global_cultured p-5'>hey</h4>
+            {/*    </Col>*/}
+            {/*    <Col xs={3} className='d-flex justify-content-center'>*/}
+            {/*        <h4 className='rounded-circle global_blood-red-bg global_cultured p-5'>hey</h4>*/}
 
-                </Col>
-                 <Col xs={3} className='d-flex justify-content-center'>
-                     <h4 className='rounded-circle global_blood-red-bg global_cultured p-5'>hey</h4>
+            {/*    </Col>*/}
+            {/*     <Col xs={3} className='d-flex justify-content-center'>*/}
+            {/*         <h4 className='rounded-circle global_blood-red-bg global_cultured p-5'>hey</h4>*/}
 
-                 </Col>
-                <Col xs={3} className='d-flex justify-content-center'>
-                        <h4 className='rounded-circle global_blood-red-bg global_cultured p-5'>hey</h4>
-                </Col>
+            {/*     </Col>*/}
+            {/*    <Col xs={3} className='d-flex justify-content-center'>*/}
+            {/*            <h4 className='rounded-circle global_blood-red-bg global_cultured p-5'>hey</h4>*/}
+            {/*    </Col>*/}
 
 
-            </Row>
+            {/*</Row>*/}
 
             <Row>
                 <Col className='d-flex justify-content-center mb-3 text-center mx-5'>
