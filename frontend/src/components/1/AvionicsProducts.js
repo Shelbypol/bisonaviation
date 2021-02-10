@@ -1,27 +1,37 @@
 import React, {useState} from 'react';
+import {Col, Container, Row} from "react-bootstrap";
 import {Jumbotron} from 'reactstrap';
 import '../../style/1/AvionicsProducts.css'
-import Zoom from 'react-reveal/Zoom';
+import Fade from 'react-reveal/Zoom';
 
 const AvionicsProducts = () => {
 
 
-
-
         return (
-            <Jumbotron className='global_silver-chalice-bg m-0 p-0 AvionicsProducts_jumbo' fluid>
+            <Jumbotron className='global_cultured mt-4 mx-0 mb-0 p-0 AvionicsProducts_jumbo' fluid>
 
-                <Zoom>
-                    <div>First Child</div>
-                    <div>Second Child</div>
-                </Zoom>
+                <Row>
+                    <Col xs={6}>
+                        <Fade duration={3000} left>
+                            <div className='AvionicsProducts_jumbo-1 global_eerie-black-bg'>
+                                <h1>from left</h1>
+                            </div>
+                        </Fade>
+                    </Col>
+                    <Col xs={6}>
+                        <Fade duration={3000} right>
+                            <div className='AvionicsProducts_jumbo-1 global_blood-red-bg'>
+                                <h1>from left</h1>
+                            </div>
+                        </Fade>
+                    </Col>
 
-
+                </Row>
 
 
             </Jumbotron>
         );
     }
-    ;
+;
 
-    export default AvionicsProducts;
+export default AvionicsProducts;

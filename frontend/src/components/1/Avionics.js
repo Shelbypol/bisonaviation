@@ -7,6 +7,7 @@ import cncMachine from "../../images/avionics/cnc-machine.png";
 import panel2 from "../../images/avionics/20190218_155138 (1).jpg";
 import React from "react";
 import {Jumbotron} from "reactstrap";
+import Zoom from 'react-reveal/Zoom';
 
 const Avionics = () => {
 
@@ -32,11 +33,14 @@ const Avionics = () => {
             </Row>
 
             <div className='mx-5'>
+                <Zoom>
+
                 <JumboCardImgs imgSrc1={panel}
                                imgSrc2={tayseerAvionics}
                                imgSrc3={cncMachine}
                                imgSrc4={panel2}>
                 </JumboCardImgs>
+                </Zoom>
             </div>
 
             {/*   =============  AVIONICS ICONS  =============   */}

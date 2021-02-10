@@ -8,6 +8,7 @@ body {
     width: 100vw;
     max-width: 100%;
     contain: content;
+    background-color: #F5F3F4;
 }
 
 html {
