@@ -16,10 +16,7 @@ const HomeScreen1 = () => {
 
     return (
         <>
-            <HomeHero title={'Bison Aviation'}
-                      text1={'We work hard on the ground'}
-                      text2={'so you can fly with confidence'}
-            />
+            <HomeHero />
 
             <RepairAward />
 

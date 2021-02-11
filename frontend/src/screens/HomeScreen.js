@@ -128,7 +128,7 @@ const HomeScreen = () => {
                         <h1>Avionics</h1>
                     </Col>
                 </Row>
-                <Row>
+                 <Row>
                     <Col className='d-flex justify-content-center mb-3 text-center'>
                         <p>
                             Bison Aviation is proud to have a full-time avionics team in-house. While many shops
