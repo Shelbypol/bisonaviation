@@ -40,9 +40,10 @@ const DesktopHeader = () => {
                             <Route render={({history}) => <SearchBox history={history}
                                                                      searchSize={'sm'}
                                                                      formClasses={'col-sm-12'}
-                                                                     searchClasses={'col-10'}
-                                                                     btnSize={'md'}
-                                                                     btnClasses={'global_bisonWhiteBgBtnSearch DesktopHeader_search_btn_padding px-1 col-2 rounded-right'}
+                                                                     searchClasses={'col-10 global_gradient text-white'}
+                                                                     btnSize={'sm'}
+                                                                     btnClasses={'global_bisonDarkFadedBgColorHover DesktopHeader_search_btn_padding col-2 rounded-right'}
+                                                                     iconClass={'fal fa-search'}
                             />}/>
 
 

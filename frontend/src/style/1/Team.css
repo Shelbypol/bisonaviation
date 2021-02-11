@@ -1,0 +1,18 @@
+.Team_bg-img{
+    background-image: url("../../images/bg-graphics/whyBison/team.png");
+    background-repeat: no-repeat;
+    background-position: 0 12% ;
+}
+
+.Team_jumbo{
+    /*height: 375px;*/
+    /*height: 375px;*/
+    height: 650px;
+}
+
+.Team_text{
+    margin-top: 15%;
+    /*margin-top: 8%;*/
+    background-color: rgba(1, 1, 1, .1);
+    height: 150px;
+}

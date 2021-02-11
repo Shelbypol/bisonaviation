@@ -8,7 +8,14 @@ body {
     width: 100vw;
     max-width: 100%;
     contain: content;
-    background-color: #fff;
+    /*background-color: #fff;*/
+    /*background: linear-gradient(to right, #1A1715, #4A433D);*/
+    /*background: linear-gradient(to right, #161616, #3f3f3f);*/
+    background-color: #F5F3F4;
+}
+
+.global_gradient{
+    background: linear-gradient(to right, #1A1715, #4A433D);
 }
 
 html {
@@ -26,6 +33,10 @@ main {
 /*   ======    FONTS    ======    */
 h1, .global_accentFont {
     font-family: 'Sanchez', serif;
+}
+
+.global_white {
+    color: #fff;
 }
 
 h1 {
@@ -60,6 +71,14 @@ p{
     text-decoration: underline;
 }
 
+.bgphoto {
+    /*background-image: url("../images/sharpen-hero1-red-tint.png");*/
+    /*height: 1000px;*/
+    /*width: 100%;*/
+    /*background-repeat: no-repeat;*/
+    /*overflow: hidden;*/
+}
+
 .global_bisonRedTxt {
     color: rgba(90, 00, 09, 1);
 }
@@ -69,7 +88,10 @@ p{
 }
 
 .global_bisonDarkFadedBgColorHover:hover{
-    background-color: rgba(0, 0, 0, .1);
+    background: linear-gradient(to right, #4A433D, #1A1715);
+    /*background-color: rgba(0, 0, 0, .1);*/
+    /*border: 1px solid #3f3f3f;*/
+    /*border-left:none;*/
 }
 
 .global_whiteFontRedHoverWhiteBg:hover {
@@ -198,6 +220,12 @@ p{
     /*scroll-behavior: smooth;*/
     overflow-y: auto;
 }
+
+/*.global_why-bg{*/
+/*    background-image: url("../images/bg-graphics/whyBison/why.png");*/
+/*    background-repeat: no-repeat;*/
+/*    background-position: center;*/
+/*}*/
 
 
 /*    ======   MOBILE RESPONSIVE    ======    */

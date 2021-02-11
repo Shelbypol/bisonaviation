@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom'
 import Jumbotrons from "../components/Jumbotrons";
 import JumboCardImgAndText from "../components/JumboCardImgAndText";
 import '../style/flag.scss'
+import '../style/SummaryNav.css'
 import panel from '../images/avionics/panal-avionics.JPG'
 import panel2 from '../images/avionics/20190218_155138 (1).jpg'
 import avionics from '../images/avionics/panal-avionics.JPG'
@@ -21,13 +22,16 @@ import about from '../images/general/about_home.png'
 import mechanics1 from '../images/mechanics/cirrusrobin2.jpg'
 import mechanics2 from '../images/mechanics/riveting.jpg'
 import MultiCarouselPage from "../components/MulitCarouselPage";
-import ProductCarousel from "../components/ProductCarousel";
 import JumboCardImgs from "../components/JumboCardImgs";
+import hero from '../images/bg-graphics/hero/hero-legs.png'
+import repair_award from '../images/bg-graphics/repair-award/repair-dark.png'
+// import repair_award from '../images/bg-graphics/repair-award/repair-award-small-cropped.png'
+import why from '../images/bg-graphics/whyBison/why.png'
+import textured from '../images/bg-graphics/services/textured-line.png'
 import '../style/animations.css'
 import SummaryNav from "../components/Headers-Nav-Footer/SummaryNav";
 import TestimonialCarousel from "../components/TestimonialCarousel";
-import ScrollToTop from "../components/ScrollToTop";
-import jeffmicheal from '../images/Jeff -Michael.jpeg'
+
 
 
 const HomeScreen = () => {
@@ -39,112 +43,71 @@ const HomeScreen = () => {
     return (
         <>
             <Jumbotrons
-                jumboClass={'m-0 p-0 animations_img-hover-zoom-out'}
-                img={heroImg}
-                imgClassName={'col-12 p-0 m-0 Jumbotrons_img_responsive_size'}
+                jumboClass={'mx-0 p-0 border-0 mb-0'}
+                img={hero}
+                imgClassName={'m-0 h-150 w-100 '}
             />
-
-            <Jumbotrons
-                jumboStyle={{backgroundColor:'black'}}
-                jumboClass={'mt-n5 pt-n5 px-0 pb-5'}
-                // img={heroImg}
-                // imgClassName={'col-12 p-0 mx-0 mb-0'}
-                textContainerStyle={{marginTop: '-7%'}}
-                textContainerClass={'col-12'}
-                title={'Bison Aviation'}
-                titleClassName={'text-light mt-n4 d-flex justify-content-start'}
-                // // text={<h1 className='bisonRedTxt font-weight-lighter'>BISON AVIATION</h1>}
-                text={<p className='font-weight-lighter' style={{color: 'lightgrey'}}>We Work Hard On The Ground So You Can Fly With
-                    Confidence</p>}
-                textClassName={' d-flex justify-content-start mt-n4 pl-4 pb-0'}
-            />
-
-            <Jumbotrons jumboClass={'mt-n5 pt-0 pb-5 global_black-horizontal-gradient'}/>
-
 
             {/*  =============   ICONS ROW - DESKTOP  =============== */}
-            <Container style={{marginTop: '15vh', marginBottom: '25vh'}}>
-                <Row>
-                    <Col xs={12} md={6} className=''>
-                        <Row>
-                            <Col xs={12} className='d-flex justify-content-center'>
-                                <h4 className='global_accentFont'> FAA Part 145 Repair Station</h4>
-                            </Col>
-                            <Col xs={12} className='d-flex justify-content-center'>
-                                <i className='fal fa-tools global_bisonRedFontWhiteBg animations_icon-font-size animations_icon-spin'> </i>
-                            </Col>
-                            {/*<Col xs={12}>*/}
-                            {/*    <p> Bison Aviation is a fully licensed FAA Part 145 Repair Station with Airframe,*/}
-                            {/*        Instrument and Radio capabilities, an accreditation which is extremely difficult to*/}
-                            {/*        attain and sets Bison Aviation apart from most other general aviation shops. Among*/}
-                            {/*        other privileges, this licensure allows Bison Aviation to conduct testing and*/}
-                            {/*        recertification of aircraft static systems and transponder equipment. Bison Aviation*/}
-                            {/*        is the holder of FAA Air Agency Certificate Number 85NR497D.</p>*/}
-                            {/*</Col>*/}
-                        </Row>
-                    </Col>
 
-                    <Col xs={12} md={6}>
-                        <Row>
-                            <Col xs={12} className='d-flex justify-content-center'>
-                                <h4 className='global_accentFont'>FAA Diamond Award Recipient</h4>
-                            </Col>
-                            <Col xs={12} className='d-flex justify-content-center'>
-                                <i className='fal fa-award global_bisonRedFontWhiteBg animations_icon-font-size animations_icon-spin'> </i>
-                            </Col>
-                            {/*<Col xs={12}>*/}
-                            {/*    <p> Bison Aviation is a proud recipient of the prestigious FAA Diamond Award for*/}
-                            {/*        excellence in maintenance training & safety. This award is the highest conferred by*/}
-                            {/*        the FAA for aircraft maintenance organizations in recognition of their dedication to*/}
-                            {/*        employee training and safety. Our technicians regularly participate in online and*/}
-                            {/*        face-to-face training programs put on by industry professionals, owner / type*/}
-                            {/*        organizations (ABS, AOPA, TCF, COPA, etc.) and of course the FAA, resulting in a*/}
-                            {/*        training curriculum which vastly exceeds the regulatory requirements.</p>*/}
-                            {/*</Col>*/}
-                        </Row>
-                    </Col>
-                </Row>
-            </Container>
-            {/*</main>*/}
+            <Jumbotrons
+                jumboClass={'mx-0 p-0 border-0 mb-0'}
+                jumboStyle={{backgroundColor: 'transparent'}}
+                img={repair_award}
+                imgClassName={'m-0 h-150 w-100 '}
+            />
 
-            {/*  =============  SUMMARY NAV  =============  */}
-            <Container style={{marginTop: '25vh', marginBottom: '25vh'}}>
+            {/*/!*  =============  SUMMARY NAV  =============  *!/*/}
                 <SummaryNav
+                    jumboStyle={{height: '80vh'}}
+                    jumboClass={'d-flex align-items-center bg-white justify-content-center SummaryNavBg'}
                     showTag={true}
+                    summaryClass={'mt-5'}
                     title1={'GARMIN DEALER'}
                     title2={'AVIONICS'}
                     title3={'MAINTENANCE'}
                     title4={'EO/IR FLIR'}
-                    img1={garmin}
-                    img2={avionics}
-                    img3={maintenance}
-                    img4={flir}
+                    img1={textured}
+                    img2={textured}
+                    img3={textured}
+                    img4={textured}
                 />
-            </Container>
+
 
 
             {/*  =============  WHY BISON  =============  */}
             {/*<main className='mx-auto' style={{marginTop: '25vh'}}>*/}
-                <Container  className='mx-auto' style={{marginTop: '25vh', marginBottom: '25vh'}}>
-                    <JumboCardImgAndText
-                        xsRow={12}
-                        lgImgCol={4}
-                        xsImgCol={12}
-                        imgSrc={about}
-                        imgClassName={'h-100 w-100 rounded'}
-                        lgTextCol={8}
-                        xsTextCol={12}
-                        lgTitleCol={12}
-                        mdIconTextCol={12}
-                        iconSymbol={'far fa-plane global_bisonRedFontWhiteBg animations_icon-spin'}
-                        lgIconCol={1}
-                        lgSubtextCol={11}
-                        mdBlockTextCol={12}
-                        title={'Why Choose Bison Aviation'}
-                        subText={'AVIONICS & AIRCRAFT MAINTENANCE & FLIR'}
-                        paragraph={'Bison Aviation is an FAA certificated Part 145 Repair Station serving the general aviation community. Founded by an avid general aviation pilot and fellow aircraft owner, we operate with the unique perspective of an organization which is intimately familiar not only with the world of professional aircraft maintenance, but also with the world of aircraft ownership and operation. We know that our customers rely on us to provide them with an honest and frank assessment of the condition of their aircraft, and we are honored to accept that charge.'}
-                    />
-                </Container>
+            {/*    <Container  className='mx-auto' style={{marginTop: '25vh', marginBottom: '25vh'}}>*/}
+
+
+            <Jumbotrons
+                jumboClass={'mx-0 p-0 border-0 mb-0 bg-white'}
+                // jumboStyle={{backgroundColor: 'transparent'}}
+                img={why}
+                imgClassName={'m-0 h-100 w-100 '}
+            />
+
+                    {/*<JumboCardImgAndText*/}
+                    {/*    // jumboStyle={{height: '100vh'}}*/}
+                    {/*    // jumboClass={'d-flex align-items-center justify-content-center bg-white'}*/}
+                    {/*    xsRow={12}*/}
+                    {/*    lgImgCol={4}*/}
+                    {/*    xsImgCol={12}*/}
+                    {/*    imgSrc={why}*/}
+                    {/*    imgClassName={'h-100 w-100 rounded'}*/}
+                    {/*    lgTextCol={8}*/}
+                    {/*    xsTextCol={12}*/}
+                    {/*    lgTitleCol={12}*/}
+                    {/*    mdIconTextCol={12}*/}
+                    {/*    // iconSymbol={'far fa-plane global_bisonRedFontWhiteBg animations_icon-spin'}*/}
+                    {/*    lgIconCol={1}*/}
+                    {/*    lgSubtextCol={11}*/}
+                    {/*    mdBlockTextCol={12}*/}
+                    {/*    // // title={'Why Choose Bison Aviation'}*/}
+                    {/*    subText={'AVIONICS & AIRCRAFT MAINTENANCE & FLIR'}*/}
+                    {/*    paragraph={'Founded by an avid general aviation pilot and fellow aircraft owner, we operate with the unique perspective of an organization which is intimately familiar not only with the world of professional aircraft maintenance, but also with the world of aircraft ownership and operation. We know that our customers rely on us to provide them with an honest and frank assessment of the condition of their aircraft, and we are honored to accept that charge.'}*/}
+                    {/*/>*/}
+                {/*</Container>*/}
             {/*</main>*/}
 
             {/*   =============   GARMIN SECTION   =============    */}
@@ -165,7 +128,7 @@ const HomeScreen = () => {
                         <h1>Avionics</h1>
                     </Col>
                 </Row>
-                <Row>
+                 <Row>
                     <Col className='d-flex justify-content-center mb-3 text-center'>
                         <p>
                             Bison Aviation is proud to have a full-time avionics team in-house. While many shops

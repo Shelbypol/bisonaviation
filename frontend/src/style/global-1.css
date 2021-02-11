@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    max-width: 100%;
+    contain: content;
+    background-color: #F5F3F4;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    width: 100vw;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    min-height: 80vh;
+}
+/*================= SITE THEME ===================*/
+/* COLORS-BG */
+.global_rich-black-bg{
+    background-color: #0B090A;
+}
+.global_eerie-black-bg{
+    background-color: #161A1D;
+}
+.global_blood-red-bg{
+    background-color: #660708;
+}
+.global_silver-chalice-bg{
+    background-color:  #B1A7A6;
+}
+.global_light-grey-bg{
+    background-color: #D3D3D3;
+}
+.global_cultured-bg{
+    background-color: #F5F3F4;
+}
+/* COLORS-FONT */
+.global_rich-black{
+    color: #0B090A;
+}
+.global_eerie-black{
+    color: #161A1D;
+}
+.global_blood-red{
+    color: #660708;
+}
+.global_silver-chalice{
+    color:  #B1A7A6;
+}
+.global_light-grey{
+    color: #D3D3D3;
+}
+.global_cultured{
+    color: #F5F3F4;
+}

@@ -55,7 +55,7 @@ const WishListTabInfo = () => {
                         clear</h6>
                 </Col>
             </Row>
-            <Row xs={12} className='mt-n3'>
+            <Row xs={12} className='mt-n3 global_bisonRedTxt'>
                 <Col xs={12}>
                     <Tabs defaultActiveKey="wishlist" id="uncontrolled-tab-example"
                           ClassName='d-flex justify-content-center'>

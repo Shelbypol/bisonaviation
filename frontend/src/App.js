@@ -19,7 +19,8 @@ import ProductListScreen from "./screens/AdminScreens/ProductListScreen";
 import ProductEditScreen from "./screens/AdminScreens/ProductEditScreen";
 import OrderListScreen from "./screens/AdminScreens/OrderListScreen";
 import ThankYouScreen from "./screens/Payment/ThankYouScreen";
-import HomeScreen from "./screens/HomeScreen";
+// import HomeScreen from "./screens/HomeScreen";
+import HomeScreen1 from "./screens/HomeScreen1";
 import AvionicsScreen from "./screens/AvionicsScreen";
 import MaintenanceScreen from "./screens/MaintenanceScreen";
 import AogResponseScreen from "./screens/AogResponseScreen";
@@ -29,7 +30,7 @@ import EoIrMaintenanceScreen from "./screens/EoIrMaintenanceScreen";
 import SystemSalesScreen from "./screens/SystemSalesScreen";
 import EoIrPartsScreen from "./screens/EoIrPartsScreen";
 import TeamScreen from "./screens/TeamScreen";
-import ScrollToTop from "./components/ScrollToTop";
+// import ScrollToTop from "./components/ScrollToTop";
 
 const App = ({location}) => {
 
@@ -46,7 +47,8 @@ const App = ({location}) => {
 
                 <Fragment>
                     <Headers/>
-                    <Route path='/' component={HomeScreen} exact/>
+                    <Route path='/' component={HomeScreen1} exact/>
+                    {/*<Route path='/' component={HomeScreen} exact/>*/}
                     <Route path='/products' component={ProductsDisplayScreen} exact/>
                     <main className='py-3'>
                         <Container>
