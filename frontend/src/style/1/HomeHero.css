@@ -1,7 +1,8 @@
 .HomeHero_bg-img{
     background-image: url("../../images/bg-graphics/hero/hero-img/this one.png");
     background-repeat: no-repeat;
-    background-position: top right;
+    /*background-position: top right;*/
+    background-position: 100% 55%;
     /*height: 365px;*/
     /*height: 463px;*/
     height: 510px;
@@ -16,8 +17,8 @@
 }
 
 .HomeHero_text-box{
-    margin-left: 15%;
-    margin-top: -5%;
+    margin-left: 10%;
+    margin-top: -7%;
 }
 
 .HomeHero_letter{
