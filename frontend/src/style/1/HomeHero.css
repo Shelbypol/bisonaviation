@@ -1,8 +1,10 @@
 .HomeHero_bg-img{
-    background-image: url("../../images/bg-graphics/hero/hero-img/this one.png");
+    background-image: url("../../images/bg-graphics/hero/this-one-line-reflect-color.png");
+    /*background-image: url("../../images/bg-graphics/hero/this-one-color-light.png");*/
+    /*background-image: url("../../images/bg-graphics/hero/hero-img/this one.png");*/
     background-repeat: no-repeat;
     /*background-position: top right;*/
-    background-position: 100% 55%;
+    background-position: 100% -2%;
     /*height: 365px;*/
     /*height: 463px;*/
     height: 510px;

@@ -7,7 +7,7 @@ const HomeHero = ({title, text1, text2}) => {
         <Jumbotron className='HomeHero_bg-img m-0 p-0 d-flex align-items-center' fluid>
             <Row className='HomeHero_text-box'>
                 <Col xs={12} className=' d-flex justify-content-start align-content-center'>
-                    <h1 className='HomeHero_title text-center'>
+                    <h1 className='HomeHero_title text-center ml-n2'>
                         <span className='HomeHero_letter global_blood-red'>B</span>ison
                         &nbsp;
                         <span className='HomeHero_letter global_blood-red mr-n2'>A</span>viation
