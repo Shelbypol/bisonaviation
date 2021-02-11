@@ -67,3 +67,8 @@ main {
 .global_title{
     font-size: 60px;
 }
+
+.global_title-letter{
+    color: #660708;
+    font-size: 75px;
+}

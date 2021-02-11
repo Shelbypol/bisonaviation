@@ -1,17 +1,39 @@
+.Avionics_bg{
+    /*background-image: url("../../images/bg-graphics/avionics/panal-avionics.png");*/
+    background-image: url("../../images/bg-graphics/avionics/avionics-light.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    /*height: ;*/
+    /*height: 1000px;*/
+}
+
 .Avionics_title{
     margin-top: 7%;
     margin-bottom: 3%;
 }
 
 .Avionics_text{
-    font-size: 20px;
+    font-size: 22px;
     margin-bottom: 5%;
 }
 
 .Avionics_icon{
-    font-size: 30px;
+    font-size: 50px;
 }
 
-.Avionics_circles{
-    height: 30px;
+/*.Avionics_circles{*/
+/*    height: 200px;*/
+/*    width: 200px;*/
+/*}*/
+
+.Avionics_img{
+    margin-top: 10vh;
+}
+
+.Avionics_icon-box{
+    height: 200px;
+}
+
+.Avionics_icon-text{
+    font-size: 25px;
 }
