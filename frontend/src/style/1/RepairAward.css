@@ -1,10 +1,8 @@
 .RepairAward_bg-img{
-    background-image: url("../../images/bg-graphics/repair-award/repair-award-1-award.png");
-    /*background-image: url("../../images/bg-graphics/repair-award/repair-award-1-line.png");*/
-    /*background-image: url("../../images/bg-graphics/repair-award/repair-award-1.png");*/
+    background-image: url("../../images/bg-graphics/repair-award/award-1.png");
+    /*background-image: url("../../images/bg-graphics/repair-award/repair-award-1-award.png");*/
     background-position: center;
     background-repeat: no-repeat;
-    /*height: 216px;*/
-    /*height: 200px;*/
-    height: 167px;
+    /*height: 167px;*/
+    height: 127px;
 }
