@@ -13,7 +13,7 @@
     /*width: 100%;*/
     height:0;
     transition: .5s ease;
-    border-left: 5px solid #660708;
+    border-left: 5px solid #F5F3F4;
 }
 
 .Services_nav_hoverTitle:hover .Services_nav_overlay {

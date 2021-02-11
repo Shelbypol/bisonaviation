@@ -1,8 +1,10 @@
 import React from 'react';
 import {Jumbotron, Row, Col} from 'reactstrap';
 import '../../style/1/HomeHero.css'
+import Fade from 'react-reveal/Fade';
+// import Zoom from 'react-reveal/Zoom';
 
-const HomeHero = ({title, text1, text2}) => {
+const HomeHero = () => {
     return (
         <Jumbotron className='HomeHero_bg-img m-0 p-0 d-flex align-items-center' fluid>
             <Row className='HomeHero_text-box'>
@@ -18,7 +20,15 @@ const HomeHero = ({title, text1, text2}) => {
                     <h3 className='text-center m-0 p-0'>we work hard on the ground</h3>
                 </Col>
                 <Col xs={12} className='d-flex justify-content-start'>
-                    <h3 className='text-center m-0 p-0'>so you can<span className='global_blood-red font-weight-bolder HomeHero_span'><i> fly with confidence</i> </span></h3>
+                    <h3 className='text-center m-0 p-0'>so you can
+                        <Fade duration={5000}>
+                            <div className='d-inline'>
+                                <span
+                                    className='global_blood-red font-weight-bolder HomeHero_span'><i> fly with confidence</i>
+                                </span>
+                            </div>
+                        </Fade>
+                    </h3>
                 </Col>
             </Row>
         </Jumbotron>
