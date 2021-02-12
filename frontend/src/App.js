@@ -30,7 +30,7 @@ import EoIrMaintenanceScreen from "./screens/EoIrMaintenanceScreen";
 import SystemSalesScreen from "./screens/SystemSalesScreen";
 import EoIrPartsScreen from "./screens/EoIrPartsScreen";
 import TeamScreen from "./screens/TeamScreen";
-// import ScrollToTop from "./components/ScrollToTop";
+import Fade from 'react-reveal/Fade';
 
 const App = ({location}) => {
 
@@ -38,15 +38,18 @@ const App = ({location}) => {
         <Router>
 
             <Switch>
-                        <Route path='/admin/userlist' component={UserListScreen}/>
-                        <Route path='/admin/user/:id/edit' component={UserEditScreen}/>
-                        <Route path='/admin/productlist' component={ProductListScreen} exact/>
-                        <Route path='/admin/productlist/:pageNumber' component={ProductListScreen} exact/>
-                        <Route path='/admin/product/:id/edit' component={ProductEditScreen}/>
-                        <Route path='/admin/orderlist' component={OrderListScreen}/>
+                <Route path='/admin/userlist' component={UserListScreen}/>
+                <Route path='/admin/user/:id/edit' component={UserEditScreen}/>
+                <Route path='/admin/productlist' component={ProductListScreen} exact/>
+                <Route path='/admin/productlist/:pageNumber' component={ProductListScreen} exact/>
+                <Route path='/admin/product/:id/edit' component={ProductEditScreen}/>
+                <Route path='/admin/orderlist' component={OrderListScreen}/>
 
                 <Fragment>
-                    <Headers/>
+                    <Fade top duration={3000}>
+                        <Headers/>
+                    </Fade>
+
                     <Route path='/' component={HomeScreen1} exact/>
                     {/*<Route path='/' component={HomeScreen} exact/>*/}
                     <Route path='/products' component={ProductsDisplayScreen} exact/>
