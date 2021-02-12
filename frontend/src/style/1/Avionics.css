@@ -31,11 +31,11 @@
 }
 
 .Avionics_icon {
-    font-size: 35px;
+    font-size: 25px;
 }
 
 .Avionics_square {
-    height: 100px;
+    height: 80px;
 }
 
 .Avionics_img {
@@ -43,7 +43,7 @@
 }
 
 .Avionics_icon-box {
-    height: 75px;
+    height: 65px;
 }
 
 .Avionics_icon-text {
@@ -71,4 +71,8 @@
     font-size: 20px;
     font-weight: lighter;
     padding: 15px;
+}
+
+.Avionics_products-icon-row{
+    width: 1000px;
 }

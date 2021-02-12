@@ -40,15 +40,15 @@ const Avionics = () => {
 
 
                         {/*    /!*begin icon products row*!/*/}
-                        <Row className='d-flex justify-content-center ml-5'>
+                        <Row className='d-flex justify-content-center ml-5 Avionics_products-icon-row'>
 
                             {/*PROUDCTS COL*/}
-                            <Col xs={6}>
+                            <Col xs={5} className=''>
                                 <ProductCarousel />
                             </Col>
 
                             {/*ICONS COL*/}
-                            <Col xs={6}>
+                            <Col xs={7} className='mb-5'>
                                 <Zoom>
                                     <Col className='d-flex Avionics_icon-box ml-5 mb-3 '>
                                         <Col xs={2}
