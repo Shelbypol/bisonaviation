@@ -19,14 +19,19 @@ const Avionics = () => {
 
     return (
         <>
-            <Jumbotron id='home-avionics' className='Avionics_bg global_light-grey-bg global_eerie-black m-0'
+            <Jumbotron id='home-avionics' className='Avionics_bg global_light-grey-bg global_eerie-black p-0 m-0'
                        fluid>
 
-                <Col className='d-flex justify-content-center Avionics_title mt-n1 pt-5'>
-                    <h1 className='global_title'><span className='global_title-letter mr-n2'>A</span>vionics</h1>
-                </Col>
+                    {/*<Col className='d-flex justify-content-center Avionics_title mt-n1 pt-5'>*/}
+                    {/*    <h1 className='global_title'><span className='global_title-letter mr-n2'>A</span>vionics</h1>*/}
+                    {/*</Col>*/}
                 <Row className='d-flex align-items-center'>
+
+
                     <Col xs={6}>
+                        <Col className='d-flex justify-content-center Avionics_title mt-n1 pt-5'>
+                            <h1 className='global_title'><span className='global_title-letter mr-n2'>A</span>vionics</h1>
+                        </Col>
                         <Col className=' d-flex mb-4 mt-n3 ml-5 text-center'>
                             <p className='Avionics_text'>
                                 Bison Aviation is proud to have a <span
@@ -42,7 +47,6 @@ const Avionics = () => {
                         </Col>
 
                         <Col xs={12}>
-
                             <Zoom>
                                 <Col className='d-flex Avionics_icon-box ml-5 mb-3'>
                                     <Col xs={2}
@@ -105,15 +109,15 @@ const Avionics = () => {
                         </Col>
                     </Col>
 
-                    <Col xs={6} className='Avionics_img'>
+                    <Col xs={6} className='Avionics_cut-img mt-n3'>
 
-                        <JumboCardImgs
-                            imgSrc1={tayseerAvionics}
-                            imgSrc4={jeff}
-                            imgSrc3={roel}
-                            imgSrc2={cncMachine}
-                        >
-                        </JumboCardImgs>
+                        {/*<JumboCardImgs*/}
+                        {/*    imgSrc1={tayseerAvionics}*/}
+                        {/*    imgSrc4={jeff}*/}
+                        {/*    imgSrc3={roel}*/}
+                        {/*    imgSrc2={cncMachine}*/}
+                        {/*>*/}
+                        {/*</JumboCardImgs>*/}
                     </Col>
 
                 </Row>
