@@ -20,7 +20,7 @@ const AvionicsProducts = () => {
                         </div>
                     </Fade>
                 </Col>
-                <Col xs={5}>
+                <Col xs={5} className='AvionicsProducts_searchBtn-col'>
                     <Fade duration={1500} right>
                         <LinkContainer to={`/products`}>
                             <div

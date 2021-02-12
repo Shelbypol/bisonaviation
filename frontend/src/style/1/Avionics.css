@@ -15,7 +15,10 @@
     background-position: left;
     background-repeat: no-repeat;
     /*margin-top: -8.3vh;*/
+}
 
+.AvionicsProducts_searchBtn-col{
+    z-index: 200;
 }
 
 .Avionics_title {
