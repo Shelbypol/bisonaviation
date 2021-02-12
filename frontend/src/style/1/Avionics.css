@@ -28,7 +28,7 @@
 }
 
 .Avionics_img{
-    margin-top: 18vh;
+    /*margin-top: 5vh;*/
 }
 
 .Avionics_icon-box{
@@ -37,6 +37,7 @@
 
 .Avionics_icon-text{
     font-size: 25px;
+    margin-left: 15%;
 }
 
 .Avionics_blood-red-opacity{

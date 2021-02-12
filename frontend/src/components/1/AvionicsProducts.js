@@ -9,10 +9,10 @@ import {LinkContainer} from "react-router-bootstrap";
 const AvionicsProducts = () => {
 
         return (
-            <Jumbotron className='global_cultured mx-0 mb-0 p-0 AvionicsProducts_jumbo' fluid>
+            // <Jumbotron className='global_cultured mx-0 mb-0 p-0 AvionicsProducts_jumbo' fluid>
 
                 <Row>
-                    <Col xs={8}>
+                    <Col xs={7}>
                         <Fade duration={1500} left>
                             <div className='AvionicsProducts_jumbo AvionicsProducts_img-left global_blood-red-bg'>
                                 <p className='Avionics_flag red global_accentFont mt-n1 mb-0 mx-0'>NEW!</p>
@@ -20,7 +20,7 @@ const AvionicsProducts = () => {
                             </div>
                         </Fade>
                     </Col>
-                    <Col xs={4}>
+                    <Col xs={5}>
                         <Fade duration={1500} right>
                             <div
                                 className='AvionicsProducts_jumbo global_cultured d-flex justify-content-center align-items-center'>
@@ -40,7 +40,7 @@ const AvionicsProducts = () => {
                 </Row>
 
 
-            </Jumbotron>
+            // </Jumbotron>
         );
     }
 ;
