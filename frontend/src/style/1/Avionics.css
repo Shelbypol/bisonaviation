@@ -13,27 +13,38 @@
 }
 
 .Avionics_text{
-    font-size: 22px;
-    margin-bottom: 5%;
+    font-size: 20px;
+    /*margin-bottom: 5%;*/
 }
 
 .Avionics_icon{
-    font-size: 50px;
+    font-size: 40px;
 }
 
-/*.Avionics_circles{*/
-/*    height: 200px;*/
-/*    width: 200px;*/
-/*}*/
+.Avionics_square{
+   /*border: 2px solid #161A1D;*/
+    height: 100px;
+    width: 80px;
+}
 
 .Avionics_img{
-    margin-top: 10vh;
+    margin-top: 18vh;
 }
 
 .Avionics_icon-box{
-    height: 200px;
+    height: 100px;
 }
 
 .Avionics_icon-text{
     font-size: 25px;
+}
+
+.Avionics_blood-red-opacity{
+    background-color: rgba(0, 0, 0, .8) ;
+    /*background-color: rgba(66, 07, 08, .8) ;*/
+}
+
+.Avionics_img-border{
+    /*border-left: 5px solid #660708;*/
+    border-left: 15px solid #B1A7A6;
 }

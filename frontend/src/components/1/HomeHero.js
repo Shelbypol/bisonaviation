@@ -21,7 +21,7 @@ const HomeHero = () => {
                 </Col>
                 <Col xs={12} className='d-flex justify-content-start'>
                     <h3 className='text-center m-0 p-0'>so you can
-                        <Fade duration={5000}>
+                        <Fade>
                             <div className='d-inline'>
                                 <span
                                     className='global_blood-red font-weight-bolder HomeHero_span'>
