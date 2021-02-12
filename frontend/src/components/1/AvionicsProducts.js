@@ -2,14 +2,14 @@ import React, {useState} from 'react';
 import {Col, Button, Row} from "react-bootstrap";
 import {Jumbotron} from 'reactstrap';
 import Fade from 'react-reveal/Fade';
-import '../../style/1/AvionicsProducts.css'
-import '../../style/1/AvionicsProductsFlag.scss'
+import '../../style/1/AvionicsProducts.css';
+import '../../style/1/AvionicsProductsFlag.scss';
+import {LinkContainer} from "react-router-bootstrap";
 
 const AvionicsProducts = () => {
 
-
         return (
-            <Jumbotron className='global_cultured mt-3 mx-0 mb-0 p-0 AvionicsProducts_jumbo' fluid>
+            <Jumbotron className='global_cultured mx-0 mb-0 p-0 AvionicsProducts_jumbo' fluid>
 
                 <Row>
                     <Col xs={8}>
@@ -22,8 +22,11 @@ const AvionicsProducts = () => {
                     </Col>
                     <Col xs={4}>
                         <Fade duration={1500} right>
-                            <div className='AvionicsProducts_jumbo global_cultured d-flex justify-content-center align-items-center'>
-                                <Button className='AvionicsProducts_searchBtn'>Browse Products</Button>
+                            <div
+                                className='AvionicsProducts_jumbo global_cultured d-flex justify-content-center align-items-center'>
+                                <LinkContainer to={`/products`}>
+                                    <Button className='AvionicsProducts_searchBtn'>Browse Products</Button>
+                                </LinkContainer>
                             </div>
                         </Fade>
                     </Col>
