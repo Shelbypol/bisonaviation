@@ -18,13 +18,11 @@
 }
 
 .Avionics_icon {
-    font-size: 40px;
+    font-size: 35px;
 }
 
 .Avionics_square {
-    /*border: 2px solid #161A1D;*/
     height: 100px;
-    width: 80px;
 }
 
 .Avionics_img {
@@ -32,7 +30,7 @@
 }
 
 .Avionics_icon-box {
-    height: 100px;
+    height: 75px;
 }
 
 .Avionics_icon-text {
@@ -55,7 +53,7 @@
 }
 
 .Avionics_contact-btn {
-    margin-right: 15vw;
+    margin-right: 10vw;
     background-color: #F5F3F4;
     border: 2px solid #660708;
     color: #660708;
