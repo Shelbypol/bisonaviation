@@ -7,7 +7,7 @@ import {Jumbotron} from "reactstrap";
 const TestimonialCarousel = () => {
     return (
         <>
-            <Jumbotron className=' global_eerie-black m-0'
+            <Jumbotron className=' global_eerie-black-bg m-0'
                        fluid>
 
                 <Carousel
@@ -20,17 +20,16 @@ const TestimonialCarousel = () => {
                 >
                     <div>
                         {/*<img src="/images/shirley.png" />*/}
-                        <div className="myCarousel global_cultured">
-                            <h3>Richard F.</h3>
+                        <div className="myCarousel global_eerie-black-bg">
+                            <h3 className='global_cultured'>Richard F.</h3>
                             <h1>
-
-                                <i style={{color: 'rgba(90, 00, 09, 1)'}} className='fas fa-star'> </i>
-                                <i style={{color: 'rgba(90, 00, 09, 1)'}} className='fas fa-star'> </i>
-                                <i style={{color: 'rgba(90, 00, 09, 1)'}} className='fas fa-star'> </i>
-                                <i style={{color: 'rgba(90, 00, 09, 1)'}} className='fas fa-star'> </i>
-                                <i style={{color: 'rgba(90, 00, 09, 1)'}} className='fas fa-star'> </i>
+                                <i className='fas fa-star global_blood-red'> </i>
+                                <i className='fas fa-star global_blood-red'> </i>
+                                <i className='fas fa-star global_blood-red'> </i>
+                                <i className='fas fa-star  global_blood-red'> </i>
+                                <i className='fas fa-star global_blood-red'> </i>
                             </h1>
-                            <p>
+                            <p className='global_cultured'>
                                 Had the chance to work with John from Bison on his V-tail recently and the guy's just a
                                 class act. It's rare to meet someone with equal parts humility, technical acumen, and
                                 seat time. Bison will be a go-to for me on trips south.
@@ -40,22 +39,16 @@ const TestimonialCarousel = () => {
 
                     <div>
                         {/*<img src="/images/daniel.png" />*/}
-                        <div className="myCarousel global_cultured">
-                            <h3>Daniel K.</h3>
+                        <div className="myCarousel global_eerie-black-bg">
+                            <h3 className='global_cultured'>Daniel K.</h3>
                             <h1>
-                                {/*<i style={{color: 'yellow'}} className='TestimonialCarousel_star-space fas fa-star'> </i>*/}
-                                {/*<i style={{color: 'yellow'}} className='TestimonialCarousel_star-space fas fa-star'> </i>*/}
-                                {/*<i style={{color: 'yellow'}} className='TestimonialCarousel_star-space fas fa-star'> </i>*/}
-                                {/*<i style={{color: 'yellow'}} className='TestimonialCarousel_star-space fas fa-star'> </i>*/}
-                                {/*<i style={{color: 'yellow'}} className='TestimonialCarousel_star-space fas fa-star-half-alt'> </i>*/}
-
-                                <i style={{color: 'rgba(90, 00, 09, 1)'}} className='fas fa-star'> </i>
-                                <i style={{color: 'rgba(90, 00, 09, 1)'}} className='fas fa-star'> </i>
-                                <i style={{color: 'rgba(90, 00, 09, 1)'}} className='fas fa-star'> </i>
-                                <i style={{color: 'rgba(90, 00, 09, 1)'}} className='fas fa-star'> </i>
-                                <i style={{color: 'rgba(90, 00, 09, 1)'}} className='fas fa-star-half-alt'> </i>
+                                <i className='fas fa-star global_blood-red'> </i>
+                                <i className='fas fa-star global_blood-red'> </i>
+                                <i className='fas fa-star global_blood-red'> </i>
+                                <i className='fas fa-star  global_blood-red'> </i>
+                                <i className='fas fa-star-half-alt global_blood-red'> </i>
                             </h1>
-                            <p>
+                            <p className='global_cultured'>
                                 First class maintenance shop. AOG response was fantastic and they quickly had me back in
                                 the sky.
                             </p>
@@ -64,21 +57,16 @@ const TestimonialCarousel = () => {
 
                     <div>
                         {/*<img src="/images/theo.png" />*/}
-                        <div className="myCarousel global_cultured">
-                            <h3>Allen H.</h3>
+                        <div className="myCarousel global_eerie-black-bg">
+                            <h3 className='global_cultured'>Allen H.</h3>
                             <h1>
-                                {/*<i style={{color: 'yellow'}} className='TestimonialCarousel_star-space fas fa-star'> </i>*/}
-                                {/*<i style={{color: 'yellow'}} className='TestimonialCarousel_star-space fas fa-star'> </i>*/}
-                                {/*<i style={{color: 'yellow'}} className='TestimonialCarousel_star-space fas fa-star'> </i>*/}
-                                {/*<i style={{color: 'yellow'}} className='TestimonialCarousel_star-space fas fa-star'> </i>*/}
-                                {/*<i style={{color: 'yellow'}} className='TestimonialCarousel_star-space fas fa-star-half-alt'> </i>*/}
-                                <i style={{color: 'rgba(90, 00, 09, 1)'}} className='fas fa-star'> </i>
-                                <i style={{color: 'rgba(90, 00, 09, 1)'}} className='fas fa-star'> </i>
-                                <i style={{color: 'rgba(90, 00, 09, 1)'}} className='fas fa-star'> </i>
-                                <i style={{color: 'rgba(90, 00, 09, 1)'}} className='fas fa-star'> </i>
-                                <i style={{color: 'rgba(90, 00, 09, 1)'}} className='fas fa-star-half-alt'> </i>
+                                <i className='fas fa-star global_blood-red'> </i>
+                                <i className='fas fa-star global_blood-red'> </i>
+                                <i className='fas fa-star global_blood-red'> </i>
+                                <i className='fas fa-star  global_blood-red'> </i>
+                                <i className='fas fa-star-half-alt global_blood-red'> </i>
                             </h1>
-                            <p>
+                            <p className='global_cultured'>
                                 Avionics team worked with me for a full panel installation and even added custom
                                 cup-holders for my wife!
                             </p>
