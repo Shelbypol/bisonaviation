@@ -36,9 +36,9 @@ const ProductCarousel = () => {
             {products.map((product, index) => (
                     <Carousel.Item key={product._id}>
                         <Link to={`/product/${product._id }`}>
-                            <h5 className='global_accentFont d-flex justify-content-center pb-4'>{product.name}{index}</h5>
                             {/*<h5 className='accentFont d-flex justify-content-center'>{product.name} (${product.price})</h5>*/}
                             <Image src={product.image} alt={product.name} className='h-100 w-100'/>
+                            <h5 className='global_accentFont d-flex justify-content-center pb-4'>{product.name}{index}</h5>
                                 {/*<Carousel.Caption className='carousel-caption'>*/}
                             {/*</Carousel.Caption>*/}
                         </Link>

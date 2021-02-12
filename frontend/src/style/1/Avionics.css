@@ -8,11 +8,8 @@
 }
 
 .Avionics_cut-img{
-    /*background-image: url("../../images/bg-graphics/avionics/shadow.png");*/
-    /*background-image: url("../../images/bg-graphics/avionics/trap-shadow-no-bg.png");*/
-    /*background-image: url("../../images/bg-graphics/avionics/trap-angled.png");/*/
-    background-image: url("../../images/bg-graphics/avionics/drop-shadow.png");
-    /*height: 1262px;*/
+    background-image: url("../../images/bg-graphics/avionics/drop-shadow-sharp.png");
+    /*background-image: url("../../images/bg-graphics/avionics/drop-shadow.png");*/
     height: 1126px;
     background-position: left;
     background-repeat: no-repeat;
