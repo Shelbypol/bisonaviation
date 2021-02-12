@@ -25,7 +25,7 @@ const AvionicsProducts = () => {
                             <div
                                 className='AvionicsProducts_jumbo global_cultured d-flex justify-content-center align-items-center'>
                                 <LinkContainer to={`/products`}>
-                                    <Button className='AvionicsProducts_searchBtn'>Browse Products</Button>
+                                    <Button className='AvionicsProducts_searchBtn'>Browse</Button>
                                 </LinkContainer>
                             </div>
                         </Fade>

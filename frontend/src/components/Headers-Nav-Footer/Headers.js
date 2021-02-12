@@ -22,7 +22,10 @@ const Headers = () => {
     const breakpoint = 620;
 
     return(
-        width < breakpoint ? <MobileHeader /> : <DesktopHeader />
+        width < breakpoint ?
+            <MobileHeader />
+            :
+            <DesktopHeader />
 
     )
 };

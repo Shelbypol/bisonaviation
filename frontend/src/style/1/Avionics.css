@@ -1,4 +1,4 @@
-.Avionics_bg{
+.Avionics_bg {
     /*background-image: url("../../images/bg-graphics/avionics/panal-avionics.png");*/
     background-image: url("../../images/bg-graphics/avionics/avionics-light.png");
     background-repeat: no-repeat;
@@ -7,47 +7,59 @@
     /*height: 1000px;*/
 }
 
-.Avionics_title{
+.Avionics_title {
     margin-top: 7%;
     margin-bottom: 3%;
 }
 
-.Avionics_text{
+.Avionics_text {
     font-size: 20px;
     /*margin-left: 25%;*/
 }
 
-.Avionics_icon{
+.Avionics_icon {
     font-size: 40px;
 }
 
-.Avionics_square{
-   /*border: 2px solid #161A1D;*/
+.Avionics_square {
+    /*border: 2px solid #161A1D;*/
     height: 100px;
     width: 80px;
 }
 
-.Avionics_img{
+.Avionics_img {
     /*margin-top: 5vh;*/
 }
 
-.Avionics_icon-box{
+.Avionics_icon-box {
     height: 100px;
 }
 
-.Avionics_icon-text{
+.Avionics_icon-text {
     font-size: 25px;
     margin-left: 15%;
 }
 
-.Avionics_blood-red-opacity{
+.Avionics_blood-red-opacity {
     /*background-color: rgba(0, 0, 0, .8) ;*/
     background-color: rgba(100, 0, 0, .8)
     /*background-color: rgba(66, 07, 08, .8) ;*/
 }
 
-.Avionics_img-border{
-    /*border-left: 5px solid #660708;*/
-    /*border-left: 15px solid #D3D3D3;*/
-    /*border-left: 15px solid #B1A7A6;*/
+.Avionics_contact_img {
+    background-image: url("../../images/bg-graphics/avionics/jd-roel.png");
+    background-repeat: no-repeat;
+    background-position: center 35%;
+    height: 350px;
+    background-color: #EEEEEE;
+}
+
+.Avionics_contact-btn {
+    margin-right: 15vw;
+    background-color: #F5F3F4;
+    border: 2px solid #660708;
+    color: #660708;
+    font-size: 20px;
+    font-weight: lighter;
+    padding: 15px;
 }

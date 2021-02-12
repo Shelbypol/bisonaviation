@@ -30,7 +30,7 @@ import EoIrMaintenanceScreen from "./screens/EoIrMaintenanceScreen";
 import SystemSalesScreen from "./screens/SystemSalesScreen";
 import EoIrPartsScreen from "./screens/EoIrPartsScreen";
 import TeamScreen from "./screens/TeamScreen";
-import Fade from 'react-reveal/Fade';
+
 
 const App = ({location}) => {
 
@@ -46,10 +46,7 @@ const App = ({location}) => {
                 <Route path='/admin/orderlist' component={OrderListScreen}/>
 
                 <Fragment>
-                    <Fade top duration={3000}>
                         <Headers/>
-                    </Fade>
-
                     <Route path='/' component={HomeScreen1} exact/>
                     {/*<Route path='/' component={HomeScreen} exact/>*/}
                     <Route path='/products' component={ProductsDisplayScreen} exact/>
