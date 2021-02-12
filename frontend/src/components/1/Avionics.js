@@ -23,7 +23,7 @@ const Avionics = () => {
             </Col>
             <Row className='d-flex align-items-center'>
                 <Col xs={6}>
-                    <Col className=' d-flex justify-content-center mb-3 text-center mx-5 '>
+                    <Col className=' d-flex mb-4 mt-n3 ml-5 text-center'>
                         <p className='Avionics_text'>
                             Bison Aviation is proud to have a <span
                             className='global_blood-red bold' style={{fontSize: '25px'}}>full-time avionics team in-house.</span> While
