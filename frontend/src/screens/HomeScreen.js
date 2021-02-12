@@ -5,9 +5,9 @@ import Jumbotrons from "../components/Jumbotrons";
 import JumboCardImgAndText from "../components/JumboCardImgAndText";
 import '../style/flag.scss'
 import '../style/SummaryNav.css'
-import panel from '../images/avionics/panal-avionics.JPG'
-import panel2 from '../images/avionics/20190218_155138 (1).jpg'
-import avionics from '../images/avionics/panal-avionics.JPG'
+import panel from '../images/bg-graphics/avionics/panal-avionics.png'
+import panel2 from '../images/avionics/john-panel.jpg'
+// import avionics from '../images/avionics/panal-avionics.JPG'
 import maintenance from '../images/mechanics/robin-cirrus-divider.png'
 import flir from '../images/flir/flir-1.jpg'
 import cncMachine from "../images/avionics/cnc-machine.png"
@@ -144,7 +144,8 @@ const HomeScreen = () => {
                 <JumboCardImgs imgSrc1={panel}
                                imgSrc2={tayseerAvionics}
                                imgSrc3={cncMachine}
-                               imgSrc4={panel2}>
+                               imgSrc4={panel2}
+                               imgSrc5={panel}>
                 </JumboCardImgs>
 
                 {/*   =============  AVIONICS ICONS  =============   */}

@@ -1,97 +1,119 @@
 import {Col, Container, Row} from "react-bootstrap";
 import '../../style/1/Avionics.css';
 import JumboCardImgs from "../JumboCardImgs";
-import panel from "../../images/avionics/panal-avionics.JPG";
+import panel from "../../images/bg-graphics/avionics/avionics-bg.png";
 import tayseerAvionics from "../../images/avionics/tayseer-avionics-1500.png";
 import cncMachine from "../../images/avionics/cnc-machine.png";
-import panel2 from "../../images/avionics/20190218_155138 (1).jpg";
 import React from "react";
 import {Jumbotron} from "reactstrap";
+import jeff from '../../images/Jeff -Michael-1500.png'
+import roel from '../../images/avionics/roelavionics.jpg'
+import john from '../../images/avionics/john-panel.jpg'
 import Zoom from 'react-reveal/Zoom';
+import AvionicsProducts from "./AvionicsProducts";
 
 const Avionics = () => {
 
-
     return (
-        <Jumbotron id='home-avionics' className='global_eerie-black-bg global_light-grey m-0 px-0 pt-0 pb-5' fluid>
-            <Row>
-                <Col xs={12} className='d-flex justify-content-center Avionics_title'>
-                    <h1 className='global_light-grey'><strong style={{fontSize:'30px'}} className='global_blood-red-bg px-2 mr-n4'>A</strong> vionics</h1>
+        <Jumbotron id='home-avionics' className='Avionics_bg global_light-grey-bg global_eerie-black m-0'
+                   fluid>
+
+            <Col className='d-flex justify-content-center Avionics_title mt-n1 pt-5'>
+                <h1 className='global_title'><span className='global_title-letter mr-n2'>A</span>vionics</h1>
+            </Col>
+            <Row className='d-flex align-items-center'>
+                <Col xs={6}>
+                    <Col className=' d-flex mb-4 mt-n3 ml-5 text-center'>
+                        <p className='Avionics_text'>
+                            Bison Aviation is proud to have a <span
+                            className='global_blood-red bold' style={{fontSize: '25px'}}>full-time avionics team in-house.</span> While
+                            many shops
+                            “sub out” their avionics work, Bison Aviation maintains a full service avionics staff as
+                            a part of our workforce.
+                        </p>
+                    </Col>
+
+                    <Col className='mb-5 mt-3 ml-5'>
+                        <AvionicsProducts/>
+                    </Col>
+
+                    <Col xs={12}>
+
+                        <Zoom>
+                            <Col className='d-flex Avionics_icon-box ml-5 mb-3'>
+                                <Col xs={2}
+                                     className='Avionics_blood-red-opacity justify-content-center align-items-center d-flex global_blood-red rounded-circle Avionics_square'>
+                                    <i className='fas fa-exchange global_cultured Avionics_icon'> </i>
+                                </Col>
+                                <Col xs={10} className='d-flex align-items-center'>
+                                    <p className='mt-3 Avionics_icon-text'>30+ years of experience</p>
+                                </Col>
+                            </Col>
+                        </Zoom>
+
+                        <Zoom>
+                            <Col className='d-flex Avionics_icon-box ml-5 my-3'>
+                                <Col xs={2}
+                                     className='Avionics_blood-red-opacity justify-content-center align-items-center d-flex global_blood-red rounded-circle Avionics_square'>
+                                    <i className='far fa-window-restore global_cultured Avionics_icon text-center'> </i>
+                                </Col>
+                                <Col xs={10} className='d-flex align-items-center'>
+                                    <p className='Avionics_icon-text'>Complete panel installations</p>
+                                </Col>
+                            </Col>
+                        </Zoom>
+
+                        <Zoom>
+                            <Col className='d-flex Avionics_icon-box ml-5 my-3'>
+                                <Col xs={2}
+                                     className='Avionics_blood-red-opacity justify-content-center align-items-center d-flex global_blood-red rounded-circle Avionics_square'>
+                                    <i className='fas fa-arrow-alt-circle-down global_cultured Avionics_icon'> </i>
+                                </Col>
+                                <Col xs={10} className='d-flex align-items-center'>
+                                    <p className='Avionics_icon-text'>CNC panel fabrication</p>
+                                </Col>
+                            </Col>
+                        </Zoom>
+
+                        <Zoom>
+                            <Col className='d-flex Avionics_icon-box ml-5 my-3'>
+                                <Col xs={2}
+                                     className='Avionics_blood-red-opacity justify-content-center align-items-center d-flex global_blood-red rounded-circle Avionics_square'>
+                                    <i className='far fa-sword-laser global_cultured Avionics_icon text-center'> </i>
+                                </Col>
+                                <Col xs={10} className='d-flex align-items-center'>
+                                    <p className='Avionics_icon-text'>Laser engraving </p>
+                                </Col>
+                            </Col>
+                        </Zoom>
+
+                        <Zoom>
+                            <Col className='d-flex Avionics_icon-box ml-5 my-3'>
+                                <Col xs={2}
+                                     className='Avionics_blood-red-opacity justify-content-center align-items-center d-flex global_blood-red rounded-circle Avionics_square'>
+                                    <i className='far fa-print global_cultured Avionics_icon text-center'> </i>
+                                </Col>
+                                <Col xs={10} className='d-flex align-items-center'>
+                                    <p className='Avionics_icon-text'>3D printing </p>
+                                </Col>
+                            </Col>
+                        </Zoom>
+                    </Col>
+                    </Col>
+
+                <Col xs={6} className='Avionics_img'>
+
+                    <JumboCardImgs
+                        imgSrc1={tayseerAvionics}
+                        imgSrc4={jeff}
+                        imgSrc3={roel}
+                        imgSrc2={cncMachine}
+                        // imgSrc5={john}
+                    >
+                    </JumboCardImgs>
                 </Col>
             </Row>
 
-            {/*<Row>*/}
-            {/*    <Col xs={3} className='d-flex justify-content-center'>*/}
-            {/*        <h4 className='rounded-circle global_blood-red-bg global_cultured p-5'>30+ years</h4>*/}
-
-            {/*    </Col>*/}
-            {/*    <Col xs={3} className='d-flex justify-content-center'>*/}
-            {/*        <h4 className='rounded-circle global_blood-red-bg global_cultured p-5'>hey</h4>*/}
-
-            {/*    </Col>*/}
-            {/*     <Col xs={3} className='d-flex justify-content-center'>*/}
-            {/*         <h4 className='rounded-circle global_blood-red-bg global_cultured p-5'>hey</h4>*/}
-
-            {/*     </Col>*/}
-            {/*    <Col xs={3} className='d-flex justify-content-center'>*/}
-            {/*            <h4 className='rounded-circle global_blood-red-bg global_cultured p-5'>hey</h4>*/}
-            {/*    </Col>*/}
-
-
-            {/*</Row>*/}
-
-            <Row>
-                <Col className='d-flex justify-content-center mb-3 text-center mx-5'>
-                    <p className='global_light-grey Avionics_text'>
-                        Bison Aviation is proud to have a full-time avionics team in-house. While many shops
-                        “sub out” their avionics work, Bison Aviation maintains a full service avionics staff as
-                        a part of our workforce. Our capabilities range from basic troubleshooting to
-                        complete panel installations and by having all services in-house (including CNC panel
-                        fabrication, laser engraving, and 3D printing) we are able to save time and reduce costs
-                        for our customers.
-                    </p>
-                </Col>
-            </Row>
-
-            <div className='mx-5'>
-                <Zoom>
-
-                <JumboCardImgs imgSrc1={panel}
-                               imgSrc2={tayseerAvionics}
-                               imgSrc3={cncMachine}
-                               imgSrc4={panel2}>
-                </JumboCardImgs>
-                </Zoom>
-            </div>
-
-            {/*   =============  AVIONICS ICONS  =============   */}
-            <Row xs={12} className='mt-5 mb-3'>
-                <Col className='d-flex justify-content-center '>
-                    <i className='fas fa-bolt global_cultured Avionics_icon'> </i>
-                </Col>
-                <Col className='d-flex justify-content-center'>
-                    <i className='fas fa-bug global_cultured Avionics_icon'> </i>
-                </Col>
-                <Col className='d-flex justify-content-center'>
-                    <i className='far fa-check-square global_cultured Avionics_icon'> </i>
-                </Col>
-            </Row>
-            <Row xs={12}>
-                <Col className='d-flex justify-content-center text-center'>
-                    <p className='text-muted'>AVIONICS INSTALLATIONS</p>
-                    {/*<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, in rem. Asperiores commodi dicta, fugit iusto magnam mollitia pariatur quibusdam quidem quo recusandae sed vitae?</p>*/}
-                </Col>
-                <Col className='d-flex justify-content-center text-center'>
-                    <p className='text-muted'>AVIONICS REPAIR</p>
-                    {/*<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, in rem. Asperiores commodi dicta, fugit iusto magnam mollitia pariatur quibusdam quidem quo recusandae sed vitae?</p>*/}
-
-                </Col>
-                <Col className='d-flex justify-content-center text-center'>
-                    <p className='text-muted'>RE-CERTIFICATION</p>
-                    {/*<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, in rem. Asperiores commodi dicta, fugit iusto magnam mollitia pariatur quibusdam quidem quo recusandae sed vitae?</p>*/}
-
-                </Col>
-            </Row>
         </Jumbotron>
 
     )

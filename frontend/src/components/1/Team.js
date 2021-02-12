@@ -8,12 +8,14 @@ const Team = () => {
 
                 <Row >
                     <Col xs={6}  className='mr-4'> </Col>
-                    <Col xs={5} className='text-center Team_text ml-5'>
-                        <h2>We know that our customers rely on us
+                    <Col xs={5} className='text-center Team_text my-auto ml-5'>
+                        <p className='Team_text'>
+                            <span className='global_blood-red'>We</span>
+                            &nbsp;know that our customers rely on us
                             to provide them with an honest and frank assessment of the condition of
                             their aircraft, and we are honored to accept
                             that charge.
-                        </h2>
+                        </p>
                     </Col>
                 </Row>
 

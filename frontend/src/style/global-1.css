@@ -61,3 +61,18 @@ main {
 .global_cultured{
     color: #F5F3F4;
 }
+
+/*================= SITE TITLES ===================*/
+
+.global_title{
+    font-size: 60px;
+}
+
+.global_title-letter{
+    color: #660708;
+    font-size: 75px;
+}
+
+.global_font-30px{
+    font-size: 30px;
+}
