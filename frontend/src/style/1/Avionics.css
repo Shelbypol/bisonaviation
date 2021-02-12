@@ -8,13 +8,15 @@
 }
 
 .Avionics_cut-img{
+    /*background-image: url("../../images/bg-graphics/avionics/shadow.png");*/
+    /*background-image: url("../../images/bg-graphics/avionics/trap-shadow-no-bg.png");*/
+    /*background-image: url("../../images/bg-graphics/avionics/trap-angled.png");/*/
     background-image: url("../../images/bg-graphics/avionics/drop-shadow.png");
-    /*background-image: url("../../images/bg-graphics/avionics/avionics-trap-flare.png");*/
     /*height: 1262px;*/
     height: 1126px;
     background-position: left;
     background-repeat: no-repeat;
-    /*margin-top: -8.3vh;*/
+    /*margin-top: -20vh;*/
 }
 
 .AvionicsProducts_searchBtn-col{
