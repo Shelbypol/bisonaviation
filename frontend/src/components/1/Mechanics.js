@@ -101,8 +101,7 @@ const Mechanics = () => {
 
                 <Col xs={3} className='mt-n5 text-center global_cursor'>
                     <Zoom>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur expedita placeat
-                            repellat!</p>
+                        <Button className='global_blood-red global_cultured-bg Mechanics_btn'>Schedule your plane today!</Button>
                     </Zoom>
                 </Col>
             </Row>
