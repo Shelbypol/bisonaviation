@@ -18,10 +18,9 @@ const Avionics = () => {
 
                 <Row className='d-flex align-items-center'>
 
-
                     <Col xs={6}>
                         <Col className='d-flex justify-content-center Avionics_title mt-n1 pt-5'>
-                            <h1 className='global_title'><span className='global_title-letter mr-n2'>A</span>vionics
+                            <h1 className='global_title ml-5'><span className='global_title-letter  mr-n2'>A</span>vionics
                             </h1>
                         </Col>
                         <Col className=' d-flex mb-4 mt-n3 ml-5 text-center'>
