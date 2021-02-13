@@ -10,8 +10,9 @@
 .Avionics_cut-img{
     background-image: url("../../images/bg-graphics/avionics/drop-shadow-sharp.png");
     /*background-image: url("../../images/bg-graphics/avionics/drop-shadow.png");*/
+    /*height: 426px;*/
     height: 1126px;
-    background-position: left;
+    /*background-position: left -20%;*/
     background-repeat: no-repeat;
     /*margin-top: -20vh;*/
 }
@@ -32,10 +33,12 @@
 
 .Avionics_icon {
     font-size: 25px;
+    color: #660708;
 }
 
 .Avionics_square {
     height: 80px;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 12px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .Avionics_img {
@@ -52,7 +55,7 @@
 }
 
 .Avionics_blood-red-opacity {
-    background-color: rgba(100, 0, 0, .8)
+    /*background-color: rgba(100, 0, 0, .8)*/
 }
 
 .Avionics_contact_img {
@@ -66,11 +69,13 @@
 .Avionics_contact-btn {
     margin-right: 10vw;
     background-color: #F5F3F4;
-    border: 2px solid #660708;
+    border: 1px solid #660708;
     color: #660708;
     font-size: 20px;
     font-weight: lighter;
     padding: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 .Avionics_products-icon-row{

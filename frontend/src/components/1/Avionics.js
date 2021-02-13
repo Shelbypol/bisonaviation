@@ -42,8 +42,8 @@ const Avionics = () => {
                         {/*    /!*begin icon products row*!/*/}
                         <Row className='d-flex justify-content-center ml-5 Avionics_products-icon-row'>
 
-                            {/*PROUDCTS COL*/}
-                            <Col xs={5} className=''>
+                            {/*PRODUCTS COL*/}
+                            <Col xs={5} >
                                 <ProductCarousel />
                             </Col>
 
@@ -117,7 +117,7 @@ const Avionics = () => {
 
                     </Col>
 
-                    <Col xs={6} className='Avionics_cut-img mt-n4'>
+                    <Col xs={6} className='Avionics_cut-img'>
                     </Col>
 
                 </Row>

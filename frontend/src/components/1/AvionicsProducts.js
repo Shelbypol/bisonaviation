@@ -11,8 +11,8 @@ const AvionicsProducts = () => {
         return (
             // <Jumbotron className='global_cultured mx-0 mb-0 p-0 AvionicsProducts_jumbo' fluid>
 
-            <Row>
-                <Col xs={7}>
+            <Row className='AvionicsProducts_row bg-white'>
+                <Col xs={9}>
                     <Fade duration={1500} left>
                         <div className='AvionicsProducts_jumbo AvionicsProducts_img-left'>
                             <p className='Avionics_flag red global_accentFont mt-n1 mb-0 mx-0'>NEW!</p>
@@ -20,7 +20,7 @@ const AvionicsProducts = () => {
                         </div>
                     </Fade>
                 </Col>
-                <Col xs={5} className='AvionicsProducts_searchBtn-col'>
+                <Col xs={3} className='AvionicsProducts_searchBtn-col'>
                     <Fade duration={1500} right>
                         <LinkContainer to={`/products`}>
                             <div
