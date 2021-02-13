@@ -14,6 +14,17 @@ const Mechanics = () => {
             <Jumbotron className='Mechanics_bg_img global_light-grey-bg global_eerie-black p-0 m-0'
                        fluid>
             </Jumbotron>
+
+            {/*<Row className='Mechanics_title'>*/}
+            {/*    <Col className=''>*/}
+            {/*        <Zoom>*/}
+            {/*            <h1 className='global_title ml-5 mt-n3'>*/}
+            {/*                <span className='global_title-letter mr-n1'>M</span>aintenance*/}
+            {/*            </h1>*/}
+            {/*        </Zoom>*/}
+            {/*    </Col>*/}
+            {/*</Row>*/}
+
             <Row className='global_blood-red-bg Mechanics_row d-flex align-content-center'>
                 <LinkContainer to={`/mechanics`}>
                     <Col xs={4} className='global_cursor border-right Mechanics_col d-flex align-items-center '>
@@ -39,7 +50,18 @@ const Mechanics = () => {
                     </Col>
                 </LinkContainer>
             </Row>
-            <Row className='d-flex align-content-center ml-5 mt-5'>
+
+            <Row className='Mechanics_title m-0 p-0'>
+                <Col className=''>
+                    <Zoom>
+                        <h1 className='global_title ml-5 mt-n1'>
+                            <span className='global_title-letter mr-n1'>M</span>aintenance
+                        </h1>
+                    </Zoom>
+                </Col>
+            </Row>
+
+            <Row className='d-flex align-content-center ml-5 mt-3'>
                 <Col xs={3} className='Mechanics_circle1 Mechanics_circles'>
                 </Col>
                 <Col xs={3} className='Mechanics_circle2 Mechanics_circles mt-2'>
@@ -54,7 +76,7 @@ const Mechanics = () => {
             </Row>
 
             <Row className='d-flex align-content-center Mechanics_circle-text mx-1'>
-                <Col xs={3} className='mt-n5 pt-n5 text-center'>
+                <Col xs={3} className='mt-n5 pt-n5 text-center global_cursor'>
                     <Zoom>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto debitis eos magni, porro
                             sed
@@ -62,7 +84,7 @@ const Mechanics = () => {
                     </Zoom>
                 </Col>
 
-                <Col xs={3} className='mt-n5 text-center'>
+                <Col xs={3} className='mt-n5 text-center global_cursor'>
                     <Zoom>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor et hic ipsam molestias odio
                             quasi
@@ -70,20 +92,22 @@ const Mechanics = () => {
                     </Zoom>
                 </Col>
 
-                <Col xs={3} className='mt-n5 text-center'>
+                <Col xs={3} className='mt-n5 text-center global_cursor'>
                     <Zoom>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias dicta dolorum neque nihil
                             tempore.</p>
                     </Zoom>
                 </Col>
 
-                <Col xs={3} className='mt-n5 text-center'>
+                <Col xs={3} className='mt-n5 text-center global_cursor'>
                     <Zoom>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur expedita placeat
                             repellat!</p>
                     </Zoom>
                 </Col>
             </Row>
+
+
 
         </>
 
