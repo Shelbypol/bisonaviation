@@ -20,8 +20,11 @@ const Avionics = () => {
 
                     <Col xs={6}>
                         <Col className='d-flex justify-content-center Avionics_title mt-n1 pt-5'>
-                            <h1 className='global_title ml-5'><span className='global_title-letter  mr-n2'>A</span>vionics
-                            </h1>
+                            <Zoom>
+                                <h1 className='global_title ml-5'>
+                                    <span className='global_title-letter  mr-n2'>A</span>vionics
+                                </h1>
+                            </Zoom>
                         </Col>
                         <Col className=' d-flex mb-4 mt-n3 ml-5 text-center'>
                             <p className='Avionics_text'>
@@ -42,8 +45,8 @@ const Avionics = () => {
                         <Row className='d-flex justify-content-center ml-5 Avionics_products-icon-row'>
 
                             {/*PRODUCTS COL*/}
-                            <Col xs={5} >
-                                <ProductCarousel />
+                            <Col xs={5}>
+                                <ProductCarousel/>
                             </Col>
 
                             {/*ICONS COL*/}
@@ -112,7 +115,7 @@ const Avionics = () => {
 
 
                         </Row>
-                    {/*/!*end of icon and product img* row/}*/}
+                        {/*/!*end of icon and product img* row/}*/}
 
                     </Col>
 
