@@ -30,7 +30,7 @@ import EoIrMaintenanceScreen from "./screens/EoIrMaintenanceScreen";
 import SystemSalesScreen from "./screens/SystemSalesScreen";
 import EoIrPartsScreen from "./screens/EoIrPartsScreen";
 import TeamScreen from "./screens/TeamScreen";
-// import ScrollToTop from "./components/ScrollToTop";
+
 
 const App = ({location}) => {
 
@@ -38,20 +38,20 @@ const App = ({location}) => {
         <Router>
 
             <Switch>
-                        <Route path='/admin/userlist' component={UserListScreen}/>
-                        <Route path='/admin/user/:id/edit' component={UserEditScreen}/>
-                        <Route path='/admin/productlist' component={ProductListScreen} exact/>
-                        <Route path='/admin/productlist/:pageNumber' component={ProductListScreen} exact/>
-                        <Route path='/admin/product/:id/edit' component={ProductEditScreen}/>
-                        <Route path='/admin/orderlist' component={OrderListScreen}/>
+                <Route path='/admin/userlist' component={UserListScreen}/>
+                <Route path='/admin/user/:id/edit' component={UserEditScreen}/>
+                <Route path='/admin/productlist' component={ProductListScreen} exact/>
+                <Route path='/admin/productlist/:pageNumber' component={ProductListScreen} exact/>
+                <Route path='/admin/product/:id/edit' component={ProductEditScreen}/>
+                <Route path='/admin/orderlist' component={OrderListScreen}/>
 
                 <Fragment>
-                    <Headers/>
+                        <Headers/>
                     <Route path='/' component={HomeScreen1} exact/>
                     {/*<Route path='/' component={HomeScreen} exact/>*/}
                     <Route path='/products' component={ProductsDisplayScreen} exact/>
-                    <main className='py-3'>
-                        <Container>
+                    {/*<main className='py-0'>*/}
+                        <Container className='mb-0 pb-0'>
                             <Route path='/login' component={LoginScreen}/>
                             <Route path='/register' component={RegisterScreen}/>
                             <Route path='/profile' component={ProfileScreen}/>
@@ -75,7 +75,7 @@ const App = ({location}) => {
                             <Route path='/eoir/parts' component={EoIrPartsScreen}/>
                             <Route path='/team' component={TeamScreen}/>
                         </Container>
-                    </main>
+                    {/*</main>*/}
                 </Fragment>
             </Switch>
             <Footer/>
