@@ -9,6 +9,7 @@ import AvionicsProducts from "../components/1/AvionicsProducts";
 import textured from "../images/bg-graphics/services/textured-line.png";
 import TestimonialCarousel from "../components/TestimonialCarousel";
 import Mechanics from "../components/1/Mechanics";
+import Flir from "../components/1/Flir";
 
 const HomeScreen1 = () => {
 
@@ -37,10 +38,11 @@ const HomeScreen1 = () => {
             <Team />
 
             <Avionics />
-
             <TestimonialCarousel/>
 
             <Mechanics />
+
+            <Flir/>
 
         </>
 
