@@ -227,9 +227,9 @@ const StickyHeader = () => {
                                                 <Button
                                                     className='px-3 py-0 mt-2 mr-4 rounded-pill global_bisonRedBgWhiteHoverBgBtn StickyHeader_iconHidden '>
                                                     {/* <span className='StickyHeader_hideIcon'>*/}
-                                                    {/*     Contact*/}
+                                                    {/*     ImgRow*/}
                                                     {/* </span>*/}
-                                                    {/*<span className='StickyHeader_hideWords'>Contact</span>*/}
+                                                    {/*<span className='StickyHeader_hideWords'>ImgRow</span>*/}
                                                     <span className='StickyHeader_hideIcon'>
                                                      Contact
                                                  </span>

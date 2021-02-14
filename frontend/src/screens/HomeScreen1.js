@@ -1,15 +1,14 @@
 import React, {useState} from 'react'
+import '../style/global-1.css'
 import HomeHero from '../components/1/HomeHero'
 import RepairAward from '../components/1/RepairAward'
 import Services from "../components/1/Services";
 import Team from "../components/1/Team";
-import '../style/global-1.css'
 import Avionics from "../components/1/Avionics";
-import AvionicsProducts from "../components/1/AvionicsProducts";
-import textured from "../images/bg-graphics/services/textured-line.png";
 import TestimonialCarousel from "../components/TestimonialCarousel";
 import Mechanics from "../components/1/Mechanics";
 import Flir from "../components/1/Flir";
+import ImgRow from "../components/1/ImgRow";
 
 const HomeScreen1 = () => {
 
@@ -29,21 +28,14 @@ const HomeScreen1 = () => {
                 title2={'AVIONICS'}
                 title3={'MAINTENANCE'}
                 title4={'EO/IR FLIR'}
-                img1={textured}
-                img2={textured}
-                img3={textured}
-                img4={textured}
             />
 
             <Team />
-
             <Avionics />
-            <TestimonialCarousel/>
-
+            <TestimonialCarousel />
             <Mechanics />
-
-            <Flir/>
-
+            <ImgRow />
+            <Flir />
         </>
 
     )

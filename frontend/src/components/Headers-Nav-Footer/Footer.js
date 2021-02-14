@@ -1,15 +1,27 @@
 import React from 'react'
 //row and column to use bootstrap grid
-import {Container, Row, Col} from "react-bootstrap";
+import {Container, Row, Col, Button} from "react-bootstrap";
 import {LinkContainer} from "react-router-bootstrap";
 import logo from "../../images/general/Final-Logo-Horizontal.png";
 import ScrollToTop from "../ScrollToTop";
-import '../../style/headers.css'
+import '../../style/Footer.css'
 import {Jumbotron} from "reactstrap";
+import SocialIcons from "../SocialIcons";
+import Fade from 'react-reveal';
 
 const Footer = () => {
     return (
-        <footer style={{backgroundColor: 'black', marginTop: '20vh'}}>
+        <footer className='Footer_margin'>
+
+            <Jumbotron className='m-0 p-0 global_blood-red-bg global_cultured Footer_social-icons' fluid>
+                <Row>
+                    <Col xs={12} className='d-flex justify-content-center px-5'>
+                        <Fade duration={1500} right>
+                        <SocialIcons contactClassName={'d-none'}/>
+                        </Fade>
+                    </Col>
+                </Row>
+            </Jumbotron>
             {/*<Container>*/}
             <Jumbotron  className=' global_eerie-black-bg p-0 m-0'
                        fluid>

@@ -1,0 +1,37 @@
+.ImgRow_row-bg-1{
+    background-image: url("../../images/bg-graphics/flir/about_home-1500.png");
+    background-repeat: no-repeat;
+    background-position: 25% 90%;
+    height: 194px;
+}
+
+.ImgRow_row-bg-2{
+    background-image: url("../../images/bg-graphics/flir/roelavionics.jpg");
+    background-repeat: no-repeat;
+    height: 194px;
+}
+
+.ImgRow_row-bg-3{
+    background-image: url("../../images/bg-graphics/flir/beachcraft.jpg");
+    background-repeat: no-repeat;
+    background-position: 70% 60%;
+    height: 194px;
+}
+
+.ImgRow_row-bg-4{
+    background-image: url("../../images/bg-graphics/flir/cody-robin.jpeg");
+    background-repeat: no-repeat;
+    height: 194px;
+}
+
+.ImgRow_row-bg-5{
+    background-image: url("../../images/bg-graphics/flir/tayseerinspects.jpg");
+    background-repeat: no-repeat;
+    height: 194px;
+}
+
+.ImgRow_row-bg-6{
+    background-image: url("../../images/bg-graphics/flir/flir-multiple.jpg");
+    background-repeat: no-repeat;
+    height: 194px;
+}
