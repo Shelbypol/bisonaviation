@@ -5,11 +5,14 @@ import {LinkContainer} from "react-router-bootstrap";
 import logo from "../../images/general/Final-Logo-Horizontal.png";
 import ScrollToTop from "../ScrollToTop";
 import '../../style/headers.css'
+import {Jumbotron} from "reactstrap";
 
 const Footer = () => {
     return (
         <footer style={{backgroundColor: 'black', marginTop: '20vh'}}>
-            <Container>
+            {/*<Container>*/}
+            <Jumbotron  className=' global_eerie-black-bg p-0 m-0'
+                       fluid>
                 <Row xs={12}>
                     <Row xs={6} className='mx-auto px-auto mt-4'>
                         <Col xs={12}>
@@ -82,8 +85,8 @@ const Footer = () => {
                         Copyright &copy; Bison Aviation 2021
                     </Col>
                 </Row>
-
-            </Container>
+            </Jumbotron>
+            {/*</Container>*/}
         </footer>
     )
 };
