@@ -24,6 +24,8 @@
 .Avionics_title {
     /*margin-top: 7%;*/
     margin-bottom: 3%;
+    text-shadow: 2px 2px 4px #111111;
+
 }
 
 .Avionics_text {

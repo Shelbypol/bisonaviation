@@ -11,19 +11,23 @@ const Mechanics = () => {
 
     return (
         <>
-            <Jumbotron className='Mechanics_bg_img global_light-grey-bg global_eerie-black p-0 m-0'
+
+            <Jumbotron className='h-25 global_cultured-bg p-0 m-0'
                        fluid>
+                <Row className='Mechanics_title m-0 p-0'>
+                    <Col className=''>
+                        <Zoom>
+                            <h1 className='global_title ml-5 mt-n1'>
+                                <span className='global_title-letter mr-n1'>M</span>aintenance
+                            </h1>
+                        </Zoom>
+                    </Col>
+                </Row>
             </Jumbotron>
 
-            {/*<Row className='Mechanics_title'>*/}
-            {/*    <Col className=''>*/}
-            {/*        <Zoom>*/}
-            {/*            <h1 className='global_title ml-5 mt-n3'>*/}
-            {/*                <span className='global_title-letter mr-n1'>M</span>aintenance*/}
-            {/*            </h1>*/}
-            {/*        </Zoom>*/}
-            {/*    </Col>*/}
-            {/*</Row>*/}
+            <Jumbotron className='Mechanics_bg_img p-0 m-0'
+                       fluid>
+            </Jumbotron>
 
             <Row className='global_blood-red-bg Mechanics_row d-flex align-content-center'>
                 <LinkContainer to={`/mechanics`}>
@@ -51,17 +55,17 @@ const Mechanics = () => {
                 </LinkContainer>
             </Row>
 
-            <Row className='Mechanics_title m-0 p-0'>
-                <Col className=''>
-                    <Zoom>
-                        <h1 className='global_title ml-5 mt-n1'>
-                            <span className='global_title-letter mr-n1'>M</span>aintenance
-                        </h1>
-                    </Zoom>
-                </Col>
-            </Row>
+            {/*<Row className='Mechanics_title m-0 p-0'>*/}
+            {/*    <Col className=''>*/}
+            {/*        <Zoom>*/}
+            {/*            <h1 className='global_title ml-5 mt-n1'>*/}
+            {/*                <span className='global_title-letter mr-n1'>M</span>aintenance*/}
+            {/*            </h1>*/}
+            {/*        </Zoom>*/}
+            {/*    </Col>*/}
+            {/*</Row>*/}
 
-            <Row className='d-flex align-content-center ml-5 mt-3'>
+            <Row className='d-flex align-content-center ml-5 mt-5'>
                 <Col xs={3} className='Mechanics_circle1 Mechanics_circles'>
                 </Col>
                 <Col xs={3} className='Mechanics_circle2 Mechanics_circles mt-2'>
@@ -75,7 +79,7 @@ const Mechanics = () => {
                 </Col>
             </Row>
 
-            <Row className='d-flex align-content-center Mechanics_circle-text mx-1'>
+            <Row className='d-flex align-content-center Mechanics_circle-text mx-1 mb-5'>
                 <Col xs={3} className='mt-n5 pt-n5 text-center global_cursor'>
                     <Zoom>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto debitis eos magni, porro

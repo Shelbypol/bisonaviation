@@ -12,7 +12,7 @@ const Services = ({title1, title2, title3, title4, showTag}) => {
                    fluid>
 
             <Col xs={6} className='d-flex align-items-center justify-content-center'>
-                <h1 className='global_title'><span className='global_title-letter'>S</span>ervices</h1>
+                <h1 className='global_title Services_title'><span className='global_title-letter'>S</span>ervices</h1>
             </Col>
 
             <Row xs={6} className='d-flex align-items-end align-content-center'>

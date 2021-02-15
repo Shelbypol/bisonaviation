@@ -1,13 +1,18 @@
 .Mechanics_bg_img{
     background-image: url("../../images/bg-graphics/mechanics/riveting-large.jpg");
     background-repeat: no-repeat;
-    background-position: center 45%;
+    /*background-position: center 45%;*/
     /*height: 350px;*/
-    height: 400px;
+
+    background-position: center 35%;
+    height: 300px;
 }
 
 .Mechanics_title{
     height: 100px;
+    text-shadow: 2px 2px 4px #111111;
+    /*box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.6), 0 12px 20px 0 rgba(0, 0, 0, 0.19);*/
+
 }
 
 .Mechanics_row{
@@ -29,13 +34,6 @@
     margin: auto;
 }
 
-.Mechanics_circles{
-    /*box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.6), 0 12px 20px 0 rgba(0, 0, 0, 0.19);*/
-}
-
-.Mechanics_circle-text{
-
-}
 
 .Mechanics_circle1{
     background-image: url("../../images/bg-graphics/mechanics/mechanics-circle1.png");
