@@ -65,7 +65,7 @@ const Mechanics = () => {
             {/*    </Col>*/}
             {/*</Row>*/}
 
-            <Row className='d-flex align-content-center ml-5 mt-3'>
+            <Row className='d-flex align-content-center ml-5 mt-5'>
                 <Col xs={3} className='Mechanics_circle1 Mechanics_circles'>
                 </Col>
                 <Col xs={3} className='Mechanics_circle2 Mechanics_circles mt-2'>

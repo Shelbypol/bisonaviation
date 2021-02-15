@@ -24,7 +24,6 @@ const Footer = () => {
             </Jumbotron>
             {/*<Container>*/}
             <Jumbotron className=' global_eerie-black-bg' fluid>
-
                 <Row className='mt-4'>
                         <Col>
                             <LinkContainer to='/avionics' className='d-flex justify-content-center global_whiteFontHover py-0'>
