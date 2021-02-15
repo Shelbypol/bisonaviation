@@ -10,18 +10,18 @@ import flir3 from "../../images/bg-graphics/flir/flir-multiple.jpg"
 const Flir = () => {
     return (
 
-        <Jumbotron className='m-0 py-5 global_eerie-black-bg Flir_shadow' fluid>
+        <Jumbotron className='m-0 py-5 global_light-grey-bg Flir_shadow' fluid>
 
             <Row>
                 <Col xs={3}>
                     <Zoom>
-                        <h1 className='Flir_title global_title global_cultured ml-5'>
+                        <h1 className='Flir_title global_title ml-5'>
                             <span className='global_title-letter mr-n1'>E</span>O /IR <br/> Flir
                         </h1>
                     </Zoom>
                 </Col>
 
-                <Col xs={9} className='global_cultured px-5'>
+                <Col xs={9} className=' px-5'>
                     <Zoom>
                         <p className='py-1 text-center Flir_highlight-font global_light-grey-bg global_blood-red'>Flight-ready
                             systems &nbsp; &nbsp;&nbsp;  LRUs &nbsp;&nbsp;  &nbsp; Mounting kits &nbsp;&nbsp; &nbsp; ISR mission support</p>
@@ -43,17 +43,17 @@ const Flir = () => {
             <Row className='mt-4'>
                 <Col xs={4} className='d-flex justify-content-center'>
                     <Zoom>
-                        <img src={flir1} alt="" className='h-75 w-75 rounded-left'/>
+                        <img src={flir1} alt="" className='Flir_img-shadow h-75 w-50 rounded-left'/>
                     </Zoom>
                 </Col>
                 <Col xs={4} className='d-flex justify-content-center'>
                     <Zoom>
-                        <img src={flir2} alt="" className='h-75 w-75'/>
+                        <img src={flir2} alt="" className='Flir_img-shadow h-75 w-50'/>
                     </Zoom>
                 </Col>
                 <Col xs={4} className='d-flex justify-content-center'>
                     <Zoom>
-                        <img src={flir3} alt="" className='h-75 w-75 rounded-right'/>
+                        <img src={flir3} alt="" className='Flir_img-shadow h-75 w-50 rounded-right'/>
                     </Zoom>
                 </Col>
             </Row>
