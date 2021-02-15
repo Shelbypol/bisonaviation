@@ -91,10 +91,6 @@ const Footer = () => {
                     </Col>
                 </Row>
 
-
-                {/*    <Col xs={5} className='d-flex justify-content-end'>*/}
-                {/*        <ScrollToTop/>*/}
-
             </Jumbotron>
 
         </footer>

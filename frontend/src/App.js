@@ -30,6 +30,7 @@ import EoIrMaintenanceScreen from "./screens/EoIrMaintenanceScreen";
 import SystemSalesScreen from "./screens/SystemSalesScreen";
 import EoIrPartsScreen from "./screens/EoIrPartsScreen";
 import TeamScreen from "./screens/TeamScreen";
+import ScrollToTop from "./components/ScrollToTop";
 
 
 const App = ({location}) => {
@@ -78,6 +79,7 @@ const App = ({location}) => {
                     {/*</main>*/}
                 </Fragment>
             </Switch>
+            {/*<ScrollToTop/>*/}
             <Footer/>
         </Router>
     );

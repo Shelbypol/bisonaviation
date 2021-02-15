@@ -26,7 +26,7 @@ const Flir = () => {
                         <p className='py-1 text-center Flir_highlight-font global_light-grey-bg global_blood-red'>Flight-ready
                             systems &nbsp; &nbsp;&nbsp;  LRUs &nbsp;&nbsp;  &nbsp; Mounting kits &nbsp;&nbsp; &nbsp; ISR mission support</p>
                     </Zoom>
-                    <p className='Flir_font'>Bison Aviation maintains the <span className='Flir_span-font '>world's largest in-house inventory of legacy airborne EO/IR
+                    <p className='Flir_font'>Bison Aviation maintains the <span className='Flir_span-font global_blood-red'>world's largest in-house inventory of legacy airborne EO/IR
                                 and FLIR equipment and parts.</span> Our system inventory includes units from FLIR
                         Systems,
                         Inc., L3 Wescam, Gyrocam, Polytech, and SweSystems. Our overhauled systems are
