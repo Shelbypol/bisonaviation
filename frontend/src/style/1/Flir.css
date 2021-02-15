@@ -13,3 +13,7 @@
 .Flir_title{
     text-shadow: 2px 2px 4px #111111;
 }
+
+.Flir_img-shadow{
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 12px 20px 0 rgba(0, 0, 0, 0.19);
+}
