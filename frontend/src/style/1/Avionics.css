@@ -14,11 +14,10 @@
 
 .Avionics_cut-img{
     background-image: url("../../images/bg-graphics/avionics/avionics-cropped-img.png");
-    /*background-image: url("../../images/bg-graphics/avionics/avionics-cropped-hero.png");*/
+    /*background-image: url("../../images/bg-graphics/avionics/avionics-right-corner.png");*/
     /*height: 1099px;*/
     /*background-position: center;*/
 height: 963px;
-/*height: 991px;*/
     background-repeat: no-repeat;
 }
 

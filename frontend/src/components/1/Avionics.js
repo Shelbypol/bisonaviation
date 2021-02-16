@@ -24,7 +24,7 @@ const Avionics = () => {
                         <Col className=' Avionics_title pb-4'>
                             <Zoom>
                                 <h1 className='global_title global_blood-red ml-5'>
-                                    <span className='global_title-letter  mr-n2'>A</span>vionics
+                                    <span style={{fontSize: '75px'}} className='global_eerie-black  mr-n2'>A</span>vionics
                                 </h1>
                             </Zoom>
                         </Col>
@@ -128,7 +128,7 @@ const Avionics = () => {
                             {/*    end icon col*/}
 
                             {/*PRODUCTS COL*/}
-                            <Col xs={5} className='mt-3'>
+                            <Col xs={5} className='pt-5'>
                                         <ProductCarousel/>
                             </Col>
                             <Col className='mb-5 ml-5'>
