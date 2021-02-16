@@ -1,20 +1,15 @@
 .Avionics_bg {
-    /*background-image: url("../../images/bg-graphics/avionics/panal-avionics.png");*/
     background-image: url("../../images/bg-graphics/avionics/avionics-light.png");
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    /*height: ;*/
-    /*height: 1000px;*/
 }
 
 .Avionics_cut-img{
-    background-image: url("../../images/bg-graphics/avionics/drop-shadow-sharp.png");
-    /*background-image: url("../../images/bg-graphics/avionics/drop-shadow.png");*/
-    /*height: 426px;*/
-    height: 1126px;
-    /*background-position: left -20%;*/
+    background-image: url("../../images/bg-graphics/avionics/avionics-lines-transparent.png");
+    /*background-image: url("../../images/bg-graphics/avionics/drop-shadow-sharp.png");*/
+    /*height: 1126px;*/
+    height: 1099px;
     background-repeat: no-repeat;
-    /*margin-top: -20vh;*/
 }
 
 .AvionicsProducts_searchBtn-col{
