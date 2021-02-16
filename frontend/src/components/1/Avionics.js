@@ -15,7 +15,7 @@ const Avionics = () => {
         <>
             <Jumbotron id='home-avionics' className='Avionics_bg global_light-grey-bg global_eerie-black p-0 m-0'
                        fluid>
-
+                <Container className='p-0 fluid'>
                 <Row className='d-flex align-items-center'>
 
                     <Col xs={6}>
@@ -119,12 +119,13 @@ const Avionics = () => {
 
                     </Col>
 
-                    <Col xs={6} className='Avionics_cut-img'>
+                    <Col xs={6} className=' Avionics_cut-img'>
                     </Col>
 
                 </Row>
-
+                </Container>
             </Jumbotron>
+            <Container className='p-0 fluid'>
             <Row className='Avionics_contact_img'>
                 <Col xs={12} className='d-flex justify-content-end align-items-center'>
                     <LinkContainer to={`/contact`}>
@@ -136,6 +137,7 @@ const Avionics = () => {
                     </LinkContainer>
                 </Col>
             </Row>
+            </Container>
         </>
 
     )

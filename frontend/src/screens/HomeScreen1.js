@@ -8,6 +8,7 @@ import Avionics from "../components/1/Avionics";
 import TestimonialCarousel from "../components/TestimonialCarousel";
 import Mechanics from "../components/1/Mechanics";
 import Flir from "../components/1/Flir";
+import {Container} from 'react-bootstrap';
 import ImgRow from "../components/1/ImgRow";
 
 const HomeScreen1 = () => {
@@ -21,6 +22,7 @@ const HomeScreen1 = () => {
             <HomeHero />
 
             <RepairAward />
+{/*<Container className='p-0 fluid'>*/}
 
             <Services
                 showTag={true}
@@ -36,6 +38,7 @@ const HomeScreen1 = () => {
             <Mechanics />
             <ImgRow />
             <Flir />
+{/*</Container>*/}
         </>
 
     )
