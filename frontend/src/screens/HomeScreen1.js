@@ -19,28 +19,36 @@ const HomeScreen1 = () => {
 
     return (
         <>
-            <HomeHero />
+            <HomeHero/>
 
-            <RepairAward />
-{/*<Container className='p-0 fluid'>*/}
 
-            <Services
-                showTag={true}
-                title1={'GARMIN DEALER'}
-                title2={'AVIONICS'}
-                title3={'MAINTENANCE'}
-                title4={'EO/IR FLIR'}
-            />
+            <RepairAward/>
+            {/*<Container className='p-0 fluid'>*/}
 
-            <Team />
-            <Avionics />
-            <TestimonialCarousel />
-            <Mechanics />
-            <ImgRow />
-            <Flir />
-{/*</Container>*/}
+                <Services
+                    showTag={true}
+                    title1={'GARMIN DEALER'}
+                    title2={'AVIONICS'}
+                    title3={'MAINTENANCE'}
+                    title4={'EO/IR FLIR'}
+                />
+
+                <Team/>
+
+
+
+                    <Avionics/>
+
+                <TestimonialCarousel/>
+
+                <Mechanics/>
+
+                <ImgRow/>
+
+                <Flir/>
+            {/*</Container>*/}
         </>
 
     )
 };
-    export default HomeScreen1
+export default HomeScreen1

@@ -1,14 +1,14 @@
 .Avionics_bg {
-    background-image: url("../../images/bg-graphics/avionics/avionics-light.png");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+    /*background-image: url("../../images/bg-graphics/avionics/avionics-light.png");*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: 50% 50%;*/
 }
 
 .Avionics_cut-img{
-    background-image: url("../../images/bg-graphics/avionics/avionics-lines-transparent.png");
-    /*background-image: url("../../images/bg-graphics/avionics/drop-shadow-sharp.png");*/
+    background-image: url("../../images/bg-graphics/avionics/avionics-hero-img.png");
     /*height: 1126px;*/
     height: 1099px;
+    /*height: 977px;*/
     background-repeat: no-repeat;
 }
 
@@ -19,8 +19,8 @@
 .Avionics_title {
     /*margin-top: 7%;*/
     margin-bottom: 3%;
-    text-shadow: 2px 2px 4px #111111;
-
+    text-shadow: 1px 1px 2px #c1c1c1;
+    /*text-shadow: 2px 2px 4px #c1c1c1;*/
 }
 
 .Avionics_text {
@@ -29,13 +29,18 @@
 }
 
 .Avionics_icon {
+    text-shadow: 1px 1px 2px #c1c1c1;
     font-size: 25px;
-    color: #660708;
+    /*color: #F5F3F4;*/
+    color: #161A1D;
+    /*color: #660708; */
 }
 
 .Avionics_square {
+    background-color: #F5F3F4;
     height: 80px;
-    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 12px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 0 18px 0 rgba(100, 0, 0, 0.6), 0 8px 8px 0 rgba(100, 0, 0, 0.3) ;
+    /*box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 12px 20px 0 rgba(0, 0, 0, 0.19);*/
 }
 
 .Avionics_img {
