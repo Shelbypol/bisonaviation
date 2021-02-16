@@ -12,7 +12,7 @@ const Flir = () => {
     return (
 
         <Jumbotron className='m-0 py-5 global_light-grey-bg Flir_shadow' fluid>
-            <Container className='p-0 fluid'>
+            {/*<Container className='p-0 fluid'>*/}
                 <Row className='pt-4'>
                     <Col xs={3}>
                         <Zoom>
@@ -84,7 +84,7 @@ const Flir = () => {
                         {/*</Col>*/}
                     </Col>
                 </Row>
-            </Container>
+            {/*</Container>*/}
 
         </Jumbotron>
 

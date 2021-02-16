@@ -2,10 +2,12 @@
     /*height: 250px;*/
     height: 155px;
     width:450px;
+    /*width:450px;*/
 }
 
 .AvionicsProducts_row{
-    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 12px 20px 0 rgba(0, 0, 0, 0.19);
+    /*box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 12px 20px 0 rgba(0, 0, 0, 0.19);*/
+    box-shadow: 0 8px 18px 0 rgba(00, 0, 0, 0.9), 0 8px 8px 0 rgba(0, 0, 0, 0.8) ;
 }
 
 .AvionicsProducts_jumbo-left{
@@ -28,21 +30,25 @@
 }
 
 .AvionicsProducts_searchBtn{
-    background-color: #F5F3F4;
+    /*background-color: #F5F3F4;*/
     /*border: 1px solid #660708;*/
-    color: #660708;
+    /*color: #660708;*/
+    color: #F5F3F4;
     font-size: 20px;
     font-weight: lighter;
     padding: 15px;
     z-index: 200;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+    background-color: #660708;
 
     /*margin-right: 6vw;*/
 }
 
 .AvionicsProducts_searchBtn:hover{
-    background-color: #660708;
-    color: #F5F3F4;
+    background-color: #F5F3F4;
+    /*background-color: #660708;*/
+    color: #660708;
+    /*color: #F5F3F4;*/
     font-weight: lighter;
     border: none;
 }

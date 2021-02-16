@@ -4,11 +4,21 @@
     /*background-position: 50% 50%;*/
 }
 
+.Avionics_products-height{
+    height: 400px;
+}
+
+.Avionics_browse{
+    height: 410px;
+}
+
 .Avionics_cut-img{
-    background-image: url("../../images/bg-graphics/avionics/avionics-hero-img.png");
-    /*height: 1126px;*/
-    height: 1099px;
-    /*height: 977px;*/
+    background-image: url("../../images/bg-graphics/avionics/avionics-cropped-img.png");
+    /*background-image: url("../../images/bg-graphics/avionics/avionics-cropped-hero.png");*/
+    /*height: 1099px;*/
+    /*background-position: center;*/
+height: 963px;
+/*height: 991px;*/
     background-repeat: no-repeat;
 }
 
@@ -31,15 +41,14 @@
 .Avionics_icon {
     text-shadow: 1px 1px 2px #c1c1c1;
     font-size: 25px;
-    /*color: #F5F3F4;*/
-    color: #161A1D;
-    /*color: #660708; */
+    /*color: #161A1D;*/
+    color: #660708;
 }
 
 .Avionics_square {
     background-color: #F5F3F4;
     height: 80px;
-    box-shadow: 0 0 18px 0 rgba(100, 0, 0, 0.6), 0 8px 8px 0 rgba(100, 0, 0, 0.3) ;
+    box-shadow: 0 8px 18px 0 rgba(00, 0, 0, 0.9), 0 8px 8px 0 rgba(0, 0, 0, 0.8) ;
     /*box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 12px 20px 0 rgba(0, 0, 0, 0.19);*/
 }
 

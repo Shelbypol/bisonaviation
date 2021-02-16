@@ -5,14 +5,16 @@ import Fade from 'react-reveal/Fade';
 import '../../style/1/AvionicsProducts.css';
 import '../../style/1/AvionicsProductsFlag.scss';
 import {LinkContainer} from "react-router-bootstrap";
+import ProductCarousel from "../ProductCarousel";
 
 const AvionicsProducts = () => {
 
         return (
             // <Jumbotron className='global_cultured mx-0 mb-0 p-0 AvionicsProducts_jumbo' fluid>
+            <>
 
             <Row className='AvionicsProducts_row bg-white'>
-                <Col xs={9}>
+            <Col xs={6}>
                     <Fade duration={1500} left>
                         <div className='AvionicsProducts_jumbo AvionicsProducts_img-left'>
                             <p className='Avionics_flag red global_accentFont mt-n1 mb-0 mx-0'>NEW!</p>
@@ -20,7 +22,7 @@ const AvionicsProducts = () => {
                         </div>
                     </Fade>
                 </Col>
-                <Col xs={3} className='AvionicsProducts_searchBtn-col'>
+                <Col xs={6} className='AvionicsProducts_searchBtn-col'>
                     <Fade duration={1500} right>
                         <LinkContainer to={`/products`}>
                             <div
@@ -40,6 +42,7 @@ const AvionicsProducts = () => {
             </Row>
 
 
+            </>
             // </Jumbotron>
         );
     }
