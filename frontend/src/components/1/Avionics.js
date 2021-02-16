@@ -21,20 +21,20 @@ const Avionics = () => {
 
                     <Col xs={7}>
 
-                        <Col className=' Avionics_title pb-4'>
-                            <Zoom>
-                                <h1 className='global_title global_blood-red ml-5'>
-                                    <span style={{fontSize: '75px'}} className='global_eerie-black  mr-n2'>A</span>vionics
-                                </h1>
-                            </Zoom>
-                        </Col>
+                        {/*<Col className=' Avionics_title pb-4'>*/}
+                        {/*    <Zoom>*/}
+                        {/*        <h1 className='global_title global_blood-red ml-5'>*/}
+                        {/*            <span style={{fontSize: '75px'}} className='global_eerie-black  mr-n2'>A</span>vionics*/}
+                        {/*        </h1>*/}
+                        {/*    </Zoom>*/}
+                        {/*</Col>*/}
 
-                        <Col className=' d-flex mb-5 ml-5 mt-n5'>
+                        <Col className=' d-flex mb-5 ml-5'>
                             <p className='Avionics_text'>
                                 Bison Aviation
                                 is proud to have a&nbsp;
                                 <span className='global_blood-red rounded px-1'>
-                                <em>
+                                <em style={{fontSize: '1.2em'}}>
                                     full-time avionics team in-house.
                                 </em>
                                 </span>
@@ -141,7 +141,7 @@ const Avionics = () => {
 
                     </Col>
 
-                    <Col xs={5} className='mt-n3 Avionics_cut-img'>
+                    <Col xs={5} className='Avionics_cut-img'>
                     </Col>
 
                 </Row>
