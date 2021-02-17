@@ -22,7 +22,7 @@ const Avionics = () => {
                 </Col>
 
                 <Col xs={3} className='p-0'>
-                    <Col xs={12} className='pr-1'>
+                    <Col xs={12} className='pr-2'>
                         <Col xs={12} className='Avionics_img-1 global_light-grey-bg' > </Col>
                         <Col xs={12} className='Avionics_img-2 global_blood-red-bg mt-2' > </Col>
                     </Col>
@@ -30,7 +30,7 @@ const Avionics = () => {
 
                 <Col xs={3} className='pl-0 pr-2'>
                     <Col xs={12} className='p-0'>
-                        <Col xs={12} className=' global_cultured-bg' > </Col>
+                        <Col xs={12} className=' global_cultured-bg' style={{height: '50px'}} > </Col>
                         <Col xs={12} className='Avionics_img-3 global_blood-red-bg my-2' > </Col>
                         <Col xs={12} className='Avionics_img-4 global_light-grey-bg' > </Col>
                     </Col>
