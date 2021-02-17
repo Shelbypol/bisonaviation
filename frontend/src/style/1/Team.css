@@ -2,11 +2,11 @@
     background-image: url("../../images/bg-graphics/whyBison/team.png");
     background-repeat: no-repeat;
     background-position: 0 20% ;
-    /*background-position: 0 12% ;*/
+    /*background-position: 0 25% ;*/
 }
 
 .Team_jumbo{
-    height: 450px;
+    height: 400px;
     /*height: 650px;*/
 }
 

@@ -8,7 +8,7 @@ const Team = () => {
     return (
         <Jumbotron className=' m-0 p-0 global_cultured-bg d-flex justify-content-center' fluid>
             <Container className='p-0 fluid'>
-                <Row className=''>
+                <Row >
                     <Col xs={8} className='Team_jumbo Team_bg-img ml-n5'> </Col>
 
                     <Col xs={4} className='ml-5'>
@@ -21,6 +21,7 @@ const Team = () => {
                             </p>
                         </Zoom>
                     </Col>
+
                 </Row>
             </Container>
         </Jumbotron>
