@@ -8,23 +8,21 @@ import Zoom from 'react-reveal/Zoom';
 const Services = ({title1, title2, title3, title4, showTag}) => {
     return (
 
-        // <Jumbotron className='m-0 p-0 Services_NavBg bg-white d-flex align-content-stretch'
-        //            fluid>
-        <Jumbotron className='m-0 p-0 d-flex align-content-stretch '
+        <Jumbotron className='m-0 p-0 d-flex align-content-stretch global_light-grey-bg'
                    fluid>
 
             <Container className='p-0 fluid'>
 
-                <Row className='p-0 mt-5'>
-                    <Col className='p-0 m-0'>
-                        <h4 className='Services_title'>
-                            Services Offered
-                        </h4>
-                    </Col>
-                </Row>
+                {/*<Row className='p-0 mt-5'>*/}
+                {/*    <Col className='p-0 m-0'>*/}
+                {/*        <h4 className='Services_title'>*/}
+                {/*            Services Offered*/}
+                {/*        </h4>*/}
+                {/*    </Col>*/}
+                {/*</Row>*/}
 
 
-                <Row className=' Services_row d-flex align-content-center mx-auto'>
+                <Row className=' Services_row d-flex align-content-center mx-auto mt-5'>
 
                     <Col xs={10} className='d-flex justify-content-end'>
                         <Col xs={6} className=''>
@@ -39,7 +37,7 @@ const Services = ({title1, title2, title3, title4, showTag}) => {
                                     </Col>
                                     <Row xs={12}>
                                         <Col xs={2} className='d-flex justify-content-center mt-3'>
-                                            <i className='fas fa-arrow-alt-circle-down' style={{fontSize: '3em'}}> </i>
+                                            <i className='far fa-tablet-rugged global_blood-red' style={{fontSize: '3em'}}> </i>
                                         </Col>
                                         <Col xs={8}>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis,
@@ -60,7 +58,7 @@ const Services = ({title1, title2, title3, title4, showTag}) => {
                                     </Col>
                                     <Row xs={12}>
                                         <Col xs={2} className='d-flex justify-content-center mt-3'>
-                                            <i className='fas fa-arrow-alt-circle-down' style={{fontSize: '3em'}}> </i>
+                                            <i className='far fa-headset global_blood-red' style={{fontSize: '3em'}}> </i>
                                         </Col>
                                         <Col xs={8}>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis,
@@ -85,7 +83,7 @@ const Services = ({title1, title2, title3, title4, showTag}) => {
                                     </Col>
                                     <Row xs={12}>
                                         <Col xs={2} className='d-flex justify-content-center mt-3'>
-                                            <i className='fas fa-arrow-alt-circle-down' style={{fontSize: '3em'}}> </i>
+                                            <i className='fas fas fa-cogs global_blood-red' style={{fontSize: '3em'}}> </i>
                                         </Col>
                                         <Col xs={8}>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis,
@@ -106,7 +104,7 @@ const Services = ({title1, title2, title3, title4, showTag}) => {
                                     </Col>
                                     <Row xs={12}>
                                         <Col xs={2} className='d-flex justify-content-center mt-3'>
-                                            <i className='fas fa-arrow-alt-circle-down' style={{fontSize: '3em'}}> </i>
+                                            <i className='far fa-camera-home global_blood-red' style={{fontSize: '3em'}}> </i>
                                         </Col>
                                         <Col xs={8}>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis,

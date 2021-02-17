@@ -9,9 +9,9 @@ const Team = () => {
         <Jumbotron className=' m-0 p-0 global_cultured-bg d-flex justify-content-center' fluid>
             <Container className='p-0 fluid'>
                 <Row className=''>
-                    <Col xs={8} className='Team_jumbo Team_bg-img'> </Col>
+                    <Col xs={8} className='Team_jumbo Team_bg-img ml-n5'> </Col>
 
-                    <Col xs={4} className=''>
+                    <Col xs={4} className='ml-5'>
                         <Zoom>
                             <p className='Team_text text-center py-5'>
                                 We know that our customers rely on us
