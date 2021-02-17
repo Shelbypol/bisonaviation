@@ -14,22 +14,27 @@ const Avionics = () => {
     return (
         <>
 
+            {/*<Jumbotron id='home-avionics' className='Avionics_3images p-0 m-0'*/}
+            {/*           fluid>*/}
+
+            {/*</Jumbotron>*/}
+
             {/*<Container className='fluid p-0 '>*/}
-            <Jumbotron id='home-avionics' className='global_light-grey-bg global_eerie-black p-0 m-0'
+            <Jumbotron id='home-avionics' className='global_cultured-bg global_eerie-black p-0 m-0'
                        fluid>
                 <Row className='d-flex align-items-center pb-5'>
 
                     <Col xs={7}>
 
-                        {/*<Col className=' Avionics_title pb-4'>*/}
-                        {/*    <Zoom>*/}
-                        {/*        <h1 className='global_title global_blood-red ml-5'>*/}
-                        {/*            <span style={{fontSize: '75px'}} className='global_eerie-black  mr-n2'>A</span>vionics*/}
-                        {/*        </h1>*/}
-                        {/*    </Zoom>*/}
-                        {/*</Col>*/}
+                        <Col className=' Avionics_title'>
+                            <Zoom>
+                                <h3 className='global_title global_blood-red ml-5'>
+                                    <span style={{fontSize: '75px'}} className='global_eerie-black  mr-n2'>A</span>vionics
+                                </h3>
+                            </Zoom>
+                        </Col>
 
-                        <Col className=' d-flex mb-5 ml-5'>
+                        <Col className=' d-flex mt-n5 mb-5 ml-5'>
                             <p className='Avionics_text'>
                                 Bison Aviation
                                 is proud to have a&nbsp;
@@ -46,6 +51,7 @@ const Avionics = () => {
                                 a part of our workforce.
                             </p>
                         </Col>
+
 
                         {/*<Col className='mb-5 mt-3 ml-5'>*/}
                         {/*    <AvionicsProducts/>*/}
@@ -131,7 +137,7 @@ const Avionics = () => {
                             <Col xs={5} className='pt-5'>
                                         <ProductCarousel/>
                             </Col>
-                            <Col className='mb-5 ml-5'>
+                            <Col x={12} className='mb-5 ml-5'>
                                 <AvionicsProducts/>
                             </Col>
 
@@ -144,7 +150,12 @@ const Avionics = () => {
                     <Col xs={5} className='Avionics_cut-img'>
                     </Col>
 
+
                 </Row>
+            </Jumbotron>
+            <Jumbotron id='home-avionics' className='global_cultured-bg Avionics_3images m-0 p-0'
+                       fluid>
+
             </Jumbotron>
 
             <Row className='Avionics_contact_img'>

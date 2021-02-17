@@ -12,11 +12,17 @@
     height: 410px;
 }
 
+.Avionics_3images{
+    background-image: url("../../images/bg-graphics/avionics/small-avionics.png");
+    height: 250px;
+    z-index: 50;
+}
+
 .Avionics_cut-img{
-    background-image: url("../../images/bg-graphics/avionics/avionics-cropped-img.png");
-    /*background-image: url("../../images/bg-graphics/avionics/avionics-right-corner.png");*/
+    /*background-image: url("../../images/bg-graphics/avionics/avionics-cropped-img.png");*/
+    background-image: url("../../images/bg-graphics/avionics/avionics-cropped.png");
+
     /*height: 1099px;*/
-    /*background-position: center;*/
 height: 963px;
     background-repeat: no-repeat;
 }
@@ -71,8 +77,10 @@ height: 963px;
 .Avionics_contact_img {
     background-image: url("../../images/bg-graphics/avionics/jd-roel.png");
     background-repeat: no-repeat;
-    background-position: center 35%;
-    height: 350px;
+    background-position: center 15%;
+    /*background-position: center 35%;*/
+    height: 400px;
+    /*height: 350px;*/
     background-color: #EEEEEE;
 }
 
