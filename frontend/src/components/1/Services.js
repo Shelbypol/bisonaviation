@@ -14,7 +14,17 @@ const Services = ({title1, title2, title3, title4, showTag}) => {
                    fluid>
 
             <Container className='p-0 fluid'>
-                <Row className='mt-5 Services_row d-flex align-content-center mx-auto'>
+
+                <Row className='p-0 mt-5'>
+                    <Col className='p-0 m-0'>
+                        <h4 className='Services_title'>
+                            Services Offered
+                        </h4>
+                    </Col>
+                </Row>
+
+
+                <Row className=' Services_row d-flex align-content-center mx-auto'>
 
                     <Col xs={10} className='d-flex justify-content-end'>
                         <Col xs={6} className=''>
@@ -111,16 +121,16 @@ const Services = ({title1, title2, title3, title4, showTag}) => {
 
 
                     <Col xs={2} className='mt-n5'>
-                       <Row>
-                           <Col xs={12} className='Services_form'>
+                        <Row>
+                            <Col xs={12} className='Services_form'>
 
-                           </Col>
-                           <Col xs={12}>
-                               <Button className='mt-3 global_blood-red-bg global_cultured'>
-                                   Request Service
-                               </Button>
-                           </Col>
-                       </Row>
+                            </Col>
+                            <Col xs={12}>
+                                <Button className='mt-3 global_blood-red-bg global_cultured Services_btn'>
+                                    Request Service
+                                </Button>
+                            </Col>
+                        </Row>
                     </Col>
 
 
