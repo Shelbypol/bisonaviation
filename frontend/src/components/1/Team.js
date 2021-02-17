@@ -13,7 +13,7 @@ const Team = () => {
 
                     <Col xs={4} className='ml-5'>
                         <Zoom>
-                            <p className='Team_text text-center py-5'>
+                            <p className='Team_text text-center pt-5'>
                                 We know that our customers rely on us
                                 to provide them with an honest and frank assessment of the condition of
                                 their aircraft, and we are honored to accept

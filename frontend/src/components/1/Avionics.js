@@ -15,24 +15,185 @@ const Avionics = () => {
 
         <Jumbotron id='home-avionics' className='global_cultured-bg global_eerie-black p-0 m-0'
                    fluid>
+
+                {/*<Col xs={12} className=''>*/}
+                {/*    <Col className='p-0 m-0'>*/}
+                {/*        <h4>Avionics</h4>*/}
+                {/*    </Col>*/}
+                {/*</Col>*/}
+
+
             <Row className='d-flex align-items-center pb-5'>
 
                 <Col xs={6} className=''>
 
+                    <Row className='mb-3'>
+                        <Col xs={12}>
+                            <Col xs={12}>
+                                <Zoom>
+                                    <Col className=''>
+                                        <h4 className=' global_accentFont'>Panel Upgrades</h4>
+                                    </Col>
+                                </Zoom>
+                            </Col>
+                            <Row xs={12}>
+                                <Col xs={2} className='d-flex justify-content-center mt-3'>
+                                    <i className='far fa-tablet-rugged global_blood-red' style={{fontSize: '3em'}}> </i>
+                                </Col>
+                                <Col xs={8}>
+
+                                    {/*NESTED LIST*/}
+                                    <Row className=''>
+                                        <Col xs={6}>
+                                            <Col xs={12} className=' mb-3'>
+                                                <Zoom>
+                                                    <Col className=' '>
+                                                        <p className='global_accentFont'>CNC machining</p>
+                                                    </Col>
+                                                </Zoom>
+                                            </Col>
+                                        </Col>
+
+                                        <Col xs={6}>
+                                            <Col xs={12} className=''>
+                                                <Zoom>
+                                                    <Col className=' '>
+                                                        <p className='global_accentFont'>Laser engraving</p>
+                                                    </Col>
+                                                </Zoom>
+                                            </Col>
+                                        </Col>
+                                    </Row>
+
+
+
+                                    <Row className=''>
+                                        <Col xs={6}>
+                                            <Col xs={12} className=''>
+                                                <Zoom>
+                                                    <Col className=' '>
+                                                        <p className='global_accentFont'>3D Printing</p>
+                                                    </Col>
+                                                </Zoom>
+                                            </Col>
+                                        </Col>
+                                        <Col xs={6}>
+                                            <Col xs={12} className=''>
+                                                <Zoom>
+                                                    <Col className=' '>
+                                                        <p className='global_accentFont'>glass panel retrofits</p>
+                                                    </Col>
+                                                </Zoom>
+                                            </Col>
+                                        </Col>
+                                    </Row>
+
+                                </Col>
+
+                            </Row>
+                        </Col>
+                    </Row>
+
+
+                    <Row className='mb-3'>
+                        <Col xs={12}>
+                            <Col xs={12}>
+                                <Zoom>
+                                    <Col className=''>
+                                        <h4 className='global_accentFont'>Tests, Checks & Repairs</h4>
+                                    </Col>
+                                </Zoom>
+                            </Col>
+                            <Row xs={12}>
+                                <Col xs={2} className='d-flex justify-content-center mt-3'>
+                                    <i className='far fa-headset global_blood-red' style={{fontSize: '3em'}}> </i>
+                                </Col>
+                                <Col xs={8}>
+
+                                    {/*NESTED LIST*/}
+                                    <Row >
+                                        <Col xs={12}>
+                                            <Col xs={12} className=' mb-3'>
+                                                <Zoom>
+                                                    <Col className=' '>
+                                                        <p className='global_accentFont'>Biennial 91.411 & 91.413 Recertification</p>
+                                                    </Col>
+                                                </Zoom>
+                                            </Col>
+                                        </Col>
+
+                                        <Col xs={12}>
+                                            <Col xs={12} className=' mb-3'>
+                                                <Zoom>
+                                                    <Col className=' '>
+                                                        <p className='global_accentFont'>routine static system</p>
+                                                    </Col>
+                                                </Zoom>
+                                            </Col>
+                                        </Col>
+
+                                        <Col xs={12}>
+                                            <Col xs={12} className=' mb-3'>
+                                                <Zoom>
+                                                    <Col className=' '>
+                                                        <p className='global_accentFont'>routine static system</p>
+                                                    </Col>
+                                                </Zoom>
+                                            </Col>
+                                        </Col>
+
+                                        <Col xs={12}>
+                                            <Col xs={12}>
+                                                <Zoom>
+                                                    <Col className=' '>
+                                                        <p className='global_accentFont'>routine static system</p>
+                                                    </Col>
+                                                </Zoom>
+                                            </Col>
+                                        </Col>
+                                    </Row>
+                                </Col>
+                            </Row>
+                        </Col>
+                    </Row>
+
+                    <Row className='mb-3'>
+                        <Col xs={12}>
+                            <Col xs={12}>
+                                <Zoom>
+                                    <Col className=''>
+                                        <h4 className=' global_accentFont'>Software Updates</h4>
+                                    </Col>
+                                </Zoom>
+                            </Col>
+                            <Row xs={12}>
+                                <Col xs={2} className='d-flex justify-content-center mt-3'>
+                                    <i className='far fa-tablet-rugged global_blood-red' style={{fontSize: '3em'}}> </i>
+                                </Col>
+                                <Col xs={8}>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis,
+                                        repellat.</p>
+                                </Col>
+                            </Row>
+                        </Col>
+                    </Row>
+
+
                 </Col>
+
 
                 <Col xs={3} className='p-0'>
                     <Col xs={12} className='pr-2'>
-                        <Col xs={12} className='Avionics_img-1 global_light-grey-bg' > </Col>
-                        <Col xs={12} className='Avionics_img-2 global_blood-red-bg mt-2' > </Col>
+                        <Col xs={12} className='Avionics_img-1 global_light-grey-bg'> </Col>
+                        <Col xs={12} className='Avionics_img-2 global_blood-red-bg mt-2'> </Col>
                     </Col>
                 </Col>
 
                 <Col xs={3} className='pl-0 pr-2'>
                     <Col xs={12} className='p-0'>
-                        <Col xs={12} className=' global_cultured-bg' style={{height: '50px'}} > </Col>
-                        <Col xs={12} className='Avionics_img-3 global_blood-red-bg my-2' > </Col>
-                        <Col xs={12} className='Avionics_img-4 global_light-grey-bg' > </Col>
+                        <Col xs={12} className=' global_cultured-bg' style={{height: '150px'}}> </Col>
+                        <Col xs={12} className='Avionics_img-3 global_blood-red-bg my-2'> </Col>
+                        <Col xs={12} className='Avionics_img-4 global_light-grey-bg'> </Col>
                     </Col>
                 </Col>
             </Row>
