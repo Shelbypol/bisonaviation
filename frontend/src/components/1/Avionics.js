@@ -44,7 +44,6 @@ const Avionics = () => {
                         </Row>
 
 
-
                         <Row className='mb-3'>
                             <Col xs={12}>
                                 <Col xs={12}>
@@ -91,7 +90,6 @@ const Avionics = () => {
                         </Row>
 
 
-
                         <Row className='mb-3'>
                             <Col xs={12}>
                                 <Col xs={12}>
@@ -114,8 +112,6 @@ const Avionics = () => {
                             </Col>
                         </Row>
 
-
-
                     </Col>
 
                     <Col xs={6} className='global_cultured-bg p-0 '>
@@ -123,6 +119,7 @@ const Avionics = () => {
                             <Col xs={6} className='p-0'>
                                 <Col xs={12} className='pr-2'>
                                     <Col xs={12} className='Avionics_img-1 '> </Col>
+
                                     <Col xs={12} className='Avionics_img-2 mt-2'> </Col>
                                 </Col>
                             </Col>
@@ -131,6 +128,7 @@ const Avionics = () => {
                                 <Col xs={12} className='p-0'>
                                     <Col xs={12} className='bg-transparent' style={{height: '150px'}}> </Col>
                                     <Col xs={12} className='Avionics_img-3 global_blood-red-bg my-2'> </Col>
+
                                     <Col xs={12} className='Avionics_img-4 global_light-grey-bg'> </Col>
                                 </Col>
                             </Col>

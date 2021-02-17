@@ -98,7 +98,9 @@
 
 .Avionics_img-3{
     background-image: url("../../images/bg-graphics/avionics/avionics-3.png");
-    height: 175px;
+    height: 225px;
+    background-repeat: no-repeat;
+    /*height: 175px;*/
     width: 350px;
 }
 
