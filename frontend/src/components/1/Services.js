@@ -8,64 +8,123 @@ import Zoom from 'react-reveal/Zoom';
 const Services = ({title1, title2, title3, title4, showTag}) => {
     return (
 
-        <Jumbotron className='m-0 p-0 Services_NavBg bg-white d-flex align-content-stretch'
+        // <Jumbotron className='m-0 p-0 Services_NavBg bg-white d-flex align-content-stretch'
+        //            fluid>
+        <Jumbotron className='m-0 p-0 d-flex align-content-stretch'
                    fluid>
+
             <Container className='p-0 fluid'>
-                <Col xs={6} className='d-flex align-items-center justify-content-center'>
-                    <h1 className='global_title Services_title'><span className='global_title-letter'>S</span>ervices
-                    </h1>
-                </Col>
+                <Row className='mt-5'>
 
-                <Row xs={6} className='d-flex align-items-end align-content-center'>
-                    <Col xs={12}
-                         className='mb-3 Services_nav_hoverTitle d-flex justify-content-center Services_text-box'>
-                        <Zoom>
-                            <Button className='Services_nav_overlay'>
-                                {showTag ?
-                                    <>
-                                        <p className='flag red global_accentFont mt-n1 mb-0 mx-0'>NEW!</p>
-                                        <p className='Services_nav_text global_accentFont'>{title1}</p>
-                                    </>
-                                    : (
-                                        <p className='Services_nav_text global_accentFont'>{title1}</p>
-                                    )
-                                }
-                            </Button>
-                        </Zoom>
+                    <Col xs={8} className='d-flex justify-content-start'>
+                        <Col xs={6}>
+                            <Row className='mb-5'>
+                                <Col xs={2} className='d-flex justify-content-center align-items-center mt-3'>
+                                    <i className='fas fa-arrow-alt-circle-down' style={{fontSize: '3em'}}> </i>
+                                </Col>
+                                <Col xs={10}>
+                                    <Col className='Services_nav_hoverTitle mb-3'>
+                                        <Zoom>
+                                            <Col className='Services_nav_overlay'>
+                                                {showTag ?
+                                                    <>
+                                                        {/*<p className='flag red mt-n1 mb-0 mx-0'>NEW!</p>*/}
+                                                        <p className='Services_nav_text'>{title1}</p>
+                                                    </>
+                                                    : (
+                                                        <p className='Services_nav_text global_accentFont'>{title1}</p>
+                                                    )
+                                                }
+                                            </Col>
+                                        </Zoom>
+                                    </Col>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis,
+                                        repellat.</p>
+                                </Col>
+                            </Row>
+
+                            <Row className='mb-5'>
+                                <Col xs={2} className='d-flex justify-content-center align-items-center mt-3'>
+                                    <i className='fas fa-arrow-alt-circle-down' style={{fontSize: '3em'}}> </i>
+                                </Col>
+                                <Col xs={10}>
+                                    <Col className='Services_nav_hoverTitle mb-3'>
+                                        <Zoom>
+                                            <Col className='Services_nav_overlay'>
+
+                                                <p className='Services_nav_text global_accentFont'>{title2}</p>
+
+                                            </Col>
+                                        </Zoom>
+                                    </Col>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis,
+                                        repellat.</p>
+                                </Col>
+                            </Row>
+
+
+                        </Col>
+
+                        <Col xs={6}>
+                            <Row className='mb-5'>
+                                <Col xs={2} className='d-flex justify-content-center align-items-center mt-3'>
+                                    <i className='fas fa-arrow-alt-circle-down' style={{fontSize: '3em'}}> </i>
+                                </Col>
+                                <Col xs={10}>
+                                    <Col className='Services_nav_hoverTitle mb-3'>
+                                        <Zoom>
+                                            <Col className='Services_nav_overlay'>
+
+                                                <p className='Services_nav_text global_accentFont'>{title3}</p>
+
+                                            </Col>
+                                        </Zoom>
+                                    </Col>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis,
+                                        repellat.</p>
+                                </Col>
+                            </Row>
+
+                            <Row className='mb-5'>
+                                <Col xs={2} className='d-flex justify-content-center align-items-center mt-3'>
+                                    <i className='fas fa-arrow-alt-circle-down' style={{fontSize: '3em'}}> </i>
+                                </Col>
+                                <Col xs={10}>
+                                    <Col className='Services_nav_hoverTitle mb-3'>
+                                        <Zoom>
+                                            <Col className='Services_nav_overlay'>
+
+                                                <p className='Services_nav_text global_accentFont'>{title4}</p>
+
+                                            </Col>
+                                        </Zoom>
+                                    </Col>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis,
+                                        repellat.</p>
+                                </Col>
+                            </Row>
+
+                        </Col>
                     </Col>
 
-                    <Col xs={12}
-                         className='Services_nav_hoverTitle mb-3 d-flex justify-content-center Services_text-box'>
-                        <Zoom>
-                            <Button className='Services_nav_overlay'>
-                                <p className='Services_nav_text global_accentFont'>{title2}</p>
-                            </Button>
-                        </Zoom>
+
+                    <Col xs={4}>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium dolores dolorum earum
+                            eveniet ex hic itaque laboriosam magni minus nihil pariatur perspiciatis, porro quaerat
+                            quasi
+                            quo repudiandae rerum sint veritatis?</p>
                     </Col>
 
-                    <Col xs={12}
-                         className='Services_nav_hoverTitle mb-3 d-flex justify-content-center Services_text-box'>
-                        <Zoom>
-                            <Button className='Services_nav_overlay '>
-                                <p className='Services_nav_text global_accentFont'>{title3}</p>
-                            </Button>
-                        </Zoom>
-                    </Col>
-
-                    <Col xs={12}
-                         className='Services_nav_hoverTitle mb-3 d-flex justify-content-center Services_text-box'>
-                        <Zoom>
-                            <Button className='Services_nav_overlay'>
-                                <p className='Services_nav_text global_accentFont'>{title4}</p>
-                            </Button>
-                        </Zoom>
-                    </Col>
 
                 </Row>
             </Container>
+
         </Jumbotron>
 
     )
 };
 
 export default Services
+
+
+
