@@ -8,7 +8,7 @@ import Zoom from 'react-reveal/Zoom';
 const Services = ({title1, title2, title3, title4, showTag}) => {
     return (
 
-        <Jumbotron className='m-0 p-0 d-flex align-content-stretch global_light-grey-bg'
+        <Jumbotron className='m-0 p-0 d-flex align-content-stretch global_cultured-bg'
                    fluid>
 
             <Container className='p-0 fluid'>

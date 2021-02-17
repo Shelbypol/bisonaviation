@@ -9,7 +9,7 @@ const Team = () => {
         <Jumbotron className=' m-0 p-0  d-flex justify-content-center global_eerie-black-bg' fluid>
             {/*<Container className='p-0 fluid'>*/}
                 <Row className='global_eerie-black-bg d-flex align-items-center' >
-                    <Col xs={7} className='Team_jumbo Team_bg-img ml-n2 '> </Col>
+                    <Col xs={7} className='Team_jumbo Team_bg-img ml-n2 my-3 '> </Col>
 
                     <Col xs={5} className='global_cultured'>
                         <Zoom>
