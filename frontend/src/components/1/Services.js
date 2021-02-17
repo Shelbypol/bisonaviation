@@ -10,55 +10,53 @@ const Services = ({title1, title2, title3, title4, showTag}) => {
 
         // <Jumbotron className='m-0 p-0 Services_NavBg bg-white d-flex align-content-stretch'
         //            fluid>
-        <Jumbotron className='m-0 p-0 d-flex align-content-stretch'
+        <Jumbotron className='m-0 p-0 d-flex align-content-stretch '
                    fluid>
 
             <Container className='p-0 fluid'>
-                <Row className='mt-5'>
+                <Row className='mt-5 Services_row d-flex align-content-center mx-auto'>
 
-                    <Col xs={8} className='d-flex justify-content-start'>
-                        <Col xs={6}>
+                    <Col xs={10} className='d-flex justify-content-end'>
+                        <Col xs={6} className=''>
                             <Row className='mb-5'>
-                                <Col xs={2} className='d-flex justify-content-center align-items-center mt-3'>
-                                    <i className='fas fa-arrow-alt-circle-down' style={{fontSize: '3em'}}> </i>
-                                </Col>
-                                <Col xs={10}>
-                                    <Col className='Services_nav_hoverTitle mb-3'>
+                                <Col xs={12}>
+                                    <Col xs={12} className='Services_nav_hoverTitle mb-3'>
                                         <Zoom>
                                             <Col className='Services_nav_overlay'>
-                                                {showTag ?
-                                                    <>
-                                                        {/*<p className='flag red mt-n1 mb-0 mx-0'>NEW!</p>*/}
-                                                        <p className='Services_nav_text'>{title1}</p>
-                                                    </>
-                                                    : (
-                                                        <p className='Services_nav_text global_accentFont'>{title1}</p>
-                                                    )
-                                                }
+                                                <p className='Services_nav_text global_accentFont'>{title1}</p>
                                             </Col>
                                         </Zoom>
                                     </Col>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis,
-                                        repellat.</p>
+                                    <Row xs={12}>
+                                        <Col xs={2} className='d-flex justify-content-center mt-3'>
+                                            <i className='fas fa-arrow-alt-circle-down' style={{fontSize: '3em'}}> </i>
+                                        </Col>
+                                        <Col xs={8}>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis,
+                                                repellat.</p>
+                                        </Col>
+                                    </Row>
                                 </Col>
                             </Row>
 
                             <Row className='mb-5'>
-                                <Col xs={2} className='d-flex justify-content-center align-items-center mt-3'>
-                                    <i className='fas fa-arrow-alt-circle-down' style={{fontSize: '3em'}}> </i>
-                                </Col>
-                                <Col xs={10}>
-                                    <Col className='Services_nav_hoverTitle mb-3'>
+                                <Col xs={12}>
+                                    <Col xs={12} className='Services_nav_hoverTitle mb-3'>
                                         <Zoom>
-                                            <Col className='Services_nav_overlay'>
-
+                                            <Col className='Services_nav_overlay '>
                                                 <p className='Services_nav_text global_accentFont'>{title2}</p>
-
                                             </Col>
                                         </Zoom>
                                     </Col>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis,
-                                        repellat.</p>
+                                    <Row xs={12}>
+                                        <Col xs={2} className='d-flex justify-content-center mt-3'>
+                                            <i className='fas fa-arrow-alt-circle-down' style={{fontSize: '3em'}}> </i>
+                                        </Col>
+                                        <Col xs={8}>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis,
+                                                repellat.</p>
+                                        </Col>
+                                    </Row>
                                 </Col>
                             </Row>
 
@@ -67,40 +65,44 @@ const Services = ({title1, title2, title3, title4, showTag}) => {
 
                         <Col xs={6}>
                             <Row className='mb-5'>
-                                <Col xs={2} className='d-flex justify-content-center align-items-center mt-3'>
-                                    <i className='fas fa-arrow-alt-circle-down' style={{fontSize: '3em'}}> </i>
-                                </Col>
-                                <Col xs={10}>
-                                    <Col className='Services_nav_hoverTitle mb-3'>
+                                <Col xs={12}>
+                                    <Col xs={12} className='Services_nav_hoverTitle mb-3'>
                                         <Zoom>
                                             <Col className='Services_nav_overlay'>
-
                                                 <p className='Services_nav_text global_accentFont'>{title3}</p>
-
                                             </Col>
                                         </Zoom>
                                     </Col>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis,
-                                        repellat.</p>
+                                    <Row xs={12}>
+                                        <Col xs={2} className='d-flex justify-content-center mt-3'>
+                                            <i className='fas fa-arrow-alt-circle-down' style={{fontSize: '3em'}}> </i>
+                                        </Col>
+                                        <Col xs={8}>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis,
+                                                repellat.</p>
+                                        </Col>
+                                    </Row>
                                 </Col>
                             </Row>
 
                             <Row className='mb-5'>
-                                <Col xs={2} className='d-flex justify-content-center align-items-center mt-3'>
-                                    <i className='fas fa-arrow-alt-circle-down' style={{fontSize: '3em'}}> </i>
-                                </Col>
-                                <Col xs={10}>
-                                    <Col className='Services_nav_hoverTitle mb-3'>
+                                <Col xs={12}>
+                                    <Col xs={12} className='Services_nav_hoverTitle mb-3'>
                                         <Zoom>
                                             <Col className='Services_nav_overlay'>
-
                                                 <p className='Services_nav_text global_accentFont'>{title4}</p>
-
                                             </Col>
                                         </Zoom>
                                     </Col>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis,
-                                        repellat.</p>
+                                    <Row xs={12}>
+                                        <Col xs={2} className='d-flex justify-content-center mt-3'>
+                                            <i className='fas fa-arrow-alt-circle-down' style={{fontSize: '3em'}}> </i>
+                                        </Col>
+                                        <Col xs={8}>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis,
+                                                repellat.</p>
+                                        </Col>
+                                    </Row>
                                 </Col>
                             </Row>
 
@@ -108,11 +110,17 @@ const Services = ({title1, title2, title3, title4, showTag}) => {
                     </Col>
 
 
-                    <Col xs={4}>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium dolores dolorum earum
-                            eveniet ex hic itaque laboriosam magni minus nihil pariatur perspiciatis, porro quaerat
-                            quasi
-                            quo repudiandae rerum sint veritatis?</p>
+                    <Col xs={2} className='mt-n5'>
+                       <Row>
+                           <Col xs={12} className='Services_form'>
+
+                           </Col>
+                           <Col xs={12}>
+                               <Button className='mt-3 global_blood-red-bg global_cultured'>
+                                   Request Service
+                               </Button>
+                           </Col>
+                       </Row>
                     </Col>
 
 

@@ -1,3 +1,6 @@
+.Services_row{
+    height: 400px ;
+}
 .Services_NavBg{
     /*background-image: url("../../images/bg-graphics/services/services-light.png");*/
     background-image: url("../../images/bg-graphics/services/services.png");
@@ -13,7 +16,7 @@
     /*padding: 3em 10em 3em 10em;*/
     /*padding: 3em 22em 3em 22em;*/
     /*background-color: #161A1D;*/
-    background-color: #F5F3F4;
+    /*background-color: #F5F3F4;*/
     color: #161A1D;
     transition: .5s ease;
     /*border-left: 20px solid #B1A7A6;*/
@@ -27,15 +30,23 @@
     /*height: 100%;*/
     /*background-color: #161A1D;*/
     cursor: pointer;
-    background-color: #F5F3F4;
+    /*background-color: #F5F3F4;*/
     color: #660708;
-    border-radius: 0;
+    /*border-radius: 0;*/
     transform: scale(1.1);
     /*transform: scale(1.2);*/
-    box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.6), 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+    /*box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.6), 0 20px 20px 0 rgba(0, 0, 0, 0.4);*/
 
     /*border-top: 5px solid #B1A7A6;*/
     /*border-left: 20px solid #B1A7A6;*/
+}
+
+
+.Services_form{
+    background-image: url("../../images/bg-graphics/services/services-form-small.png");
+    background-repeat: no-repeat;
+    height: 238px;
+    width: 194px;
 }
 
 .Services_nav_text {
