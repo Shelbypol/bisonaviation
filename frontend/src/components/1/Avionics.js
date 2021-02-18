@@ -14,10 +14,23 @@ const Avionics = () => {
 
     return (
         <>
-            <Jumbotron id='home-avionics' className='global_cultured-bg global_rich-black p-0 m-0'
+            <Jumbotron id='home-avionics' className='Avionics_jumbo global_cultured-bg global_rich-black p-0 m-0'
                        fluid>
 
                 <Row className='d-flex align-items-center pb-5 pl-5'>
+
+
+                    <Col xs={6} className='global_cultured-bg p-0 '>
+                        <Row className='d-flex justify-content-center p-5'>
+
+<Col className='Avionics_jumbo-img ml-n5'> </Col>
+
+
+
+
+                        </Row>
+                    </Col>
+
 
                     <Col xs={6}>
 
@@ -114,26 +127,26 @@ const Avionics = () => {
 
                     </Col>
 
-                    <Col xs={6} className='global_cultured-bg p-0 '>
-                        <Row className='d-flex justify-content-center p-5'>
-                            <Col xs={6} className='p-0'>
-                                <Col xs={12} className='pr-2'>
-                                    <Col xs={12} className='Avionics_img-1 '> </Col>
+                    {/*<Col xs={6} className='global_cultured-bg p-0 '>*/}
+                    {/*    <Row className='d-flex justify-content-center p-5'>*/}
+                    {/*        <Col xs={6} className='p-0 '>*/}
+                    {/*            <Col xs={12} className='p-0'>*/}
+                    {/*                <Col xs={12} className='Avionics_img-1'> </Col>*/}
+                    {/*                /!*<Col xs={12} className='global_blood-red-bg my-2' style={{height: '25px', width: '350px'}}> </Col>*!/*/}
+                    {/*                <Col xs={12} className='Avionics_img-2 mt-2'> </Col>*/}
+                    {/*            </Col>*/}
+                    {/*        </Col>*/}
 
-                                    <Col xs={12} className='Avionics_img-2 mt-2'> </Col>
-                                </Col>
-                            </Col>
-
-                            <Col xs={6} className='pl-0 pr-2'>
-                                <Col xs={12} className='p-0'>
-                                    <Col xs={12} className='bg-transparent' style={{height: '150px'}}> </Col>
-                                    <Col xs={12} className='Avionics_img-3 global_blood-red-bg my-2'> </Col>
-
-                                    <Col xs={12} className='Avionics_img-4 global_light-grey-bg'> </Col>
-                                </Col>
-                            </Col>
-                        </Row>
-                    </Col>
+                    {/*        <Col xs={6} className='p-0'>*/}
+                    {/*            <Col xs={12} className='p-0'>*/}
+                    {/*                /!*<Col xs={12} className='global_blood-red-bg my-2' style={{height: '25px', width: '350px'}}> </Col>*!/*/}
+                    {/*                <Col xs={12} className='Avionics_img-2 '> </Col>*/}
+                    {/*                /!*<Col xs={12} className='global_blood-red-bg mt-n3 ' style={{height: '25px', width: '350px'}}> </Col>*!/*/}
+                    {/*                <Col xs={12} className='Avionics_img-4 mt-2'> </Col>*/}
+                    {/*            </Col>*/}
+                    {/*        </Col>*/}
+                    {/*    </Row>*/}
+                    {/*</Col>*/}
 
                     <AvionicsProducts/>
 
