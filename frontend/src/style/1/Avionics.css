@@ -7,6 +7,11 @@
     margin-top: -1vw;
 }
 
+.Avionics_learn-more-btn:hover{
+    color: #660708;
+    text-decoration: underline;
+}
+
 .Avionics_img{
     background-image: url("../../images/bg-graphics/avionics/avionics-2.png");
 }

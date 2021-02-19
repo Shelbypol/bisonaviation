@@ -18,14 +18,8 @@ const Avionics = () => {
     return (
         <>
 
-            <Jumbotron id='home-avionics' className='py-3 global_eerie-black-bg m-0'
+            <Jumbotron id='home-avionics' className='py-4 global_eerie-black-bg m-0'
                        fluid>
-                {/*<Row>*/}
-                {/*    <Col xs={5}> </Col>*/}
-                {/*    <Col xs={7}>*/}
-                {/*        <AvionicsProducts/>*/}
-                {/*    </Col>*/}
-                {/*</Row>*/}
 
             </Jumbotron>
 
@@ -102,7 +96,7 @@ const Avionics = () => {
                                 <Col xs={12} className='py-1 global_cursor'>
                                     <Fade right duration='1000'>
                                         <LinkContainer to={`/avionics`}>
-                                            <h4 className='global_blood-red'>Learn More</h4>
+                                            <h4 className='Avionics_learn-more-btn'>Learn More</h4>
                                         </LinkContainer>
                                     </Fade>
                                 </Col>

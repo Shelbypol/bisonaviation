@@ -21,7 +21,7 @@ const AvionicsProducts = () => {
                             <Fade duration={1500} right>
                                 <LinkContainer to={`/products`}>
                                     <div className='AvionicsProducts_jumbo global_cultured d-flex justify-content-center align-items-center'>
-                                        <Button className='AvionicsProducts_searchBtn global_blood-red-bg py-2 px-5'>Browse Products</Button>
+                                        <Button className='AvionicsProducts_searchBtn global_eerie-black-bg py-2 px-5'>Browse Products</Button>
                                     </div>
                                 </LinkContainer>
                             </Fade>

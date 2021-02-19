@@ -52,10 +52,10 @@
 }
 
 .AvionicsProducts_searchBtn:hover{
-    /*background-color: #660708;*/
+    background-color: #660708;
     /*color: #F5F3F4;*/
-    color: #660708;
-    background-color: #F5F3F4;
+    /*color: #660708;*/
+    /*background-color: #F5F3F4;*/
     font-weight: lighter;
     border: none;
 }
