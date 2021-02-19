@@ -39,14 +39,12 @@ const Avionics = () => {
 
                     <Col xs={6} className=''>
 
-                        <Row className=' mx-3 text-center'>
-                            <h4 className='global_eerie-black'>
-                                {/*FROM MINOR REPAIRS TO COMPLETE PANEL UPGRADES. ALL PERFORMED IN-HOUSE AT BISON AVIATION.*/}
-                                From minor Repairs to complete panel updgrades. ALL SERVICES PERFROMED IN-HOUSE AT BISON
-                                AVIATION.
-                            </h4>
+                        <Row className=' mx-3'>
+                            <p className='ml-5 global_eerie-black text-center'>
+                                FROM MINOR REPAIRS TO COMPLETE PANEL UPGRADES.
+                                ALL SERVICES PERFORMED IN-HOUSE AT BISON AVIATION.
+                            </p>
                         </Row>
-
                         <Row className='mb-3'>
                             <Col xs={12}>
                                 <hr/>
