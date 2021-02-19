@@ -2,12 +2,15 @@
     /*height: 250px;*/
     height: 155px;
     width:450px;
+    z-index: 200;
     /*width:450px;*/
 }
 
 .AvionicsProducts_row{
-    /*box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 12px 20px 0 rgba(0, 0, 0, 0.19);*/
-    box-shadow: 0 8px 18px 0 rgba(00, 0, 0, 0.9), 0 8px 8px 0 rgba(0, 0, 0, 0.8) ;
+    /*margin-left: 10vw;*/
+    width: 600px;
+    /*box-shadow: 0 8px 18px 0 rgba(00, 0, 0, 0.9), 0 8px 8px 0 rgba(0, 0, 0, 0.8) ;*/
+    box-shadow: 0 8px 8px 0 rgba(00, 0, 0, 0.5), 0 8px 5px 0 rgba(0, 0, 0, 0.2) ;
 }
 
 .AvionicsProducts_jumbo-left{
@@ -16,10 +19,12 @@
 
 .AvionicsProducts_img-left{
     background-image: url("../../images/bg-graphics/avionics/garmin-dealer.png");
+    /*background-image: url("../../images/bg-graphics/avionics/garmin-dealer-s.png");*/
     background-repeat: no-repeat;
     background-position: center 45%;
-    margin-left: 3vw;
-    width: 580px;
+    /*margin-left: 3vw;*/
+    /*width: 450px;*/
+    /*width: 580px;*/
     /*background-position: center 23%;*/
     /*width: 580px;*/
 }
@@ -34,21 +39,23 @@
     /*border: 1px solid #660708;*/
     /*color: #660708;*/
     color: #F5F3F4;
-    font-size: 20px;
+    font-size: 16px;
+    /*font-size: 20px;*/
     font-weight: lighter;
-    padding: 15px;
+    /*padding: 15px;*/
     z-index: 200;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
-    background-color: #660708;
-
+    /*background-color: #660708;*/
+    margin-top: 6vh;
+    margin-left: 7vw;
     /*margin-right: 6vw;*/
 }
 
 .AvionicsProducts_searchBtn:hover{
-    background-color: #F5F3F4;
     /*background-color: #660708;*/
-    color: #660708;
     /*color: #F5F3F4;*/
+    color: #660708;
+    background-color: #F5F3F4;
     font-weight: lighter;
     border: none;
 }

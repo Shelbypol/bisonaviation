@@ -2,8 +2,17 @@
     height: 600px;
 }
 
+.Avionics_img{
+    background-image: url("../../images/bg-graphics/avionics/avionics-2.png");
+}
+
 .Avionics_garmin-jumbo{
-    height: 400px;
+    height: 175px;
+    margin-left: -10vw;
+}
+
+.Avionics_card-jumbo{
+    height: 300px;
 }
 
 .Avionics_products-height{
@@ -128,4 +137,7 @@
     height: 400px;
     width: 350px;
 }
+
+
+
 

@@ -1,8 +1,11 @@
 import {Jumbotron} from "reactstrap";
-import {Col, Row} from "react-bootstrap";
+import {Button, Card, Col, Row} from "react-bootstrap";
 import AvionicsProducts from "../1/AvionicsProducts";
 import React from "react";
 
+
+
+<>
 <Jumbotron id='home-avionics' className='global_cultured-bg global_rich-black p-0 m-0'
            fluid>
 
@@ -182,4 +185,64 @@ import React from "react";
         <AvionicsProducts/>
 
     </Row>
+</Jumbotron>
+
+
+
+
+
+
+
+<Jumbotron id='home-avionics' className='Avionics_card-jumbo global_blood-red-bg m-0 py-0 px-2'
+fluid>
+<Row>
+<Col xs={3}>
+    <Card style={{width: '18rem'}} className='Avionics_img'>
+    <Card.Body>
+    <Card.Title>Card Title</Card.Title>
+<Card.Text className='global_cultured global_eerie-black-bg'>
+    Some quick example text to build on the card title and make up the bulk of
+    the card's content.
+</Card.Text>
+<Button variant="primary">Go somewhere</Button>
+</Card.Body>
+</Card>
+</Col>
+<Col xs={3}>
+<Card style={{width: '18rem'}}>
+<Card.Body>
+<Card.Title>Card Title</Card.Title>
+<Card.Text>
+Some quick example text to build on the card title and make up the bulk of
+the card's content.
+</Card.Text>
+<Button variant="primary">Go somewhere</Button>
+</Card.Body>
+</Card>
+</Col>
+<Col xs={3}>
+<Card style={{width: '18rem'}}>
+<Card.Body>
+<Card.Title>Card Title</Card.Title>
+<Card.Text>
+Some quick example text to build on the card title and make up the bulk of
+the card's content.
+</Card.Text>
+<Button variant="primary">Go somewhere</Button>
+</Card.Body>
+</Card>
+</Col>
+<Col xs={3}>
+<Card style={{width: '18rem'}}>
+<Card.Body>
+<Card.Title>Card Title</Card.Title>
+<Card.Text>
+Some quick example text to build on the card title and make up the bulk of
+the card's content.
+</Card.Text>
+<Button variant="primary">Go somewhere</Button>
+</Card.Body>
+</Card>
+</Col>
+</Row>
 </Jumbotron>
