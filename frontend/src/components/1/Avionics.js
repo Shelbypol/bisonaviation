@@ -5,36 +5,37 @@ import {Jumbotron} from "reactstrap";
 import Zoom from 'react-reveal/Zoom';
 import Fade from 'react-reveal/Fade';
 import AvionicsProducts from "./AvionicsProducts";
+import Product from "../ProductDisplay/Product"
 import ProductCarousel from "../ProductCarousel";
 import {LinkContainer} from "react-router-bootstrap";
 import ImgRow from "./ImgRow";
+import AvionicsAd from "../avionics/AvionicsAd";
+import ProductsDisplaySByCatMan from "../ProductDisplay/ProductDisplayByCatMan";
 
 
 const Avionics = () => {
 
     return (
         <>
+
+            <Jumbotron id='home-avionics' className='pt-5 global_eerie-black-bg p-0 m-0'
+                       fluid>
+
+            </Jumbotron>
+
             <Jumbotron id='home-avionics' className='Avionics_jumbo bg-white global_rich-black p-0 m-0'
                        fluid>
 
-                <Row className='Avionics_jumbo-img d-flex align-items-center m-0 p-0'>
+                <Row className='Avionics_jumbo-img pt-5'>
 
 
-                    <Col xs={9} className=' global_cultured-bg p-0 m-0 '>
-                        {/*<Row className='d-flex justify-content-center p-5'>*/}
-
-{/*<Col className='Avionics_jumbo-img ml-n5 border'>  </Col>*/}
-
-
-
-
-                        {/*</Row>*/}
+                    <Col xs={6} className=' p-0 m-0'>
                     </Col>
 
 
-                    <Col xs={3}>
+                    <Col xs={6} className=''>
 
-                        <Row className='mb-3'>
+                        <Row className='mb-3 '>
                             <Col xs={12}>
                                 <Col xs={12}>
                                     <Zoom>
@@ -127,33 +128,29 @@ const Avionics = () => {
 
                     </Col>
 
-                    {/*<Col xs={6} className='global_cultured-bg p-0 '>*/}
-                    {/*    <Row className='d-flex justify-content-center p-5'>*/}
-                    {/*        <Col xs={6} className='p-0 '>*/}
-                    {/*            <Col xs={12} className='p-0'>*/}
-                    {/*                <Col xs={12} className='Avionics_img-1'> </Col>*/}
-                    {/*                /!*<Col xs={12} className='global_blood-red-bg my-2' style={{height: '25px', width: '350px'}}> </Col>*!/*/}
-                    {/*                <Col xs={12} className='Avionics_img-2 mt-2'> </Col>*/}
-                    {/*            </Col>*/}
-                    {/*        </Col>*/}
-
-                    {/*        <Col xs={6} className='p-0'>*/}
-                    {/*            <Col xs={12} className='p-0'>*/}
-                    {/*                /!*<Col xs={12} className='global_blood-red-bg my-2' style={{height: '25px', width: '350px'}}> </Col>*!/*/}
-                    {/*                <Col xs={12} className='Avionics_img-2 '> </Col>*/}
-                    {/*                /!*<Col xs={12} className='global_blood-red-bg mt-n3 ' style={{height: '25px', width: '350px'}}> </Col>*!/*/}
-                    {/*                <Col xs={12} className='Avionics_img-4 mt-2'> </Col>*/}
-                    {/*            </Col>*/}
-                    {/*        </Col>*/}
-                    {/*    </Row>*/}
-                    {/*</Col>*/}
-
-                    <AvionicsProducts/>
 
                 </Row>
             </Jumbotron>
 
-            {/*<AvionicsProducts/>*/}
+            <Jumbotron id='home-avionics' className='Avionics_garmin-jumbo global_eerie-black-bg py-0 px-2 m-0'
+                       fluid>
+
+                <AvionicsProducts/>
+            </Jumbotron>
+
+
+            <Row className='Avionics_contact_img'>
+                <Col xs={12} className='d-flex justify-content-end align-items-center'>
+                    <LinkContainer to={`/contact`}>
+                        <Fade right duration='1000'>
+                            <Button className=' Avionics_contact-btn'>Book an appointment
+                                today
+                            </Button>
+                        </Fade>
+                    </LinkContainer>
+                </Col>
+            </Row>
+
         </>
 
     )

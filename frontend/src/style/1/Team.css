@@ -6,8 +6,9 @@
 }
 
 .Team_jumbo{
-    height: 400px;
+    /*height: 400px;*/
     /*height: 650px;*/
+    height: 350px;
 }
 
 .Team_text-box{

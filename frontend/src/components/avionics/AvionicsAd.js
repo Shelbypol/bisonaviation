@@ -13,13 +13,13 @@ const AvionicsAd = () => {
             <Row className='AvionicsAd_jumbo'>
                 <Col xs={6} className='global_cultured-bg'>
                     <Fade duration={1500} left>
-                      <Row clasName='d-flex justi'>
-                          <Col>
-                              <h1>AD HERE</h1>
-                          </Col>
-                          <Col>
-                              <p>Lorem ipsum dolor</p>
-                          </Col>
+                      <Row clasName='AvionicsProducts_img-left'>
+                          {/*<Col>*/}
+                          {/*    <h1>AD HERE</h1>*/}
+                          {/*</Col>*/}
+                          {/*<Col>*/}
+                          {/*    <p>Lorem ipsum dolor</p>*/}
+                          {/*</Col>*/}
                       </Row>
                     </Fade>
                 </Col>

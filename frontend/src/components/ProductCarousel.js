@@ -37,7 +37,7 @@ const ProductCarousel = () => {
                     <Carousel.Item key={product._id}>
                         <Link to={`/product/${product._id }`}>
                             {/*<h3 className='text-center d-flex global_eerie-black justify-content-center pb-4'>{product.name}{index}</h3>*/}
-                            <Image src={product.image} alt={product.name} className='h-75 w-75 ml-5 mt-4'/>
+                            <Image src={product.image} alt={product.name} className='h-25 w-25 ml-5 mt-4'/>
                         </Link>
                     </Carousel.Item>
             ))}
