@@ -1,5 +1,6 @@
 .Avionics_jumbo{
-    height: 700px;
+    height: 600px;
+
 }
 
 .Avionics_products-height{
@@ -9,8 +10,12 @@
 .Avionics_jumbo-img{
     background-image: url("../../images/bg-graphics/avionics/avionics_jumbo.png");
     background-repeat: no-repeat;
-    width: 875px;
-    height: 400px;
+    /*height: 600px;*/
+    /*width: 800px;*/
+    height: 600px;
+    /*width: 875px;*/
+    /*width: 350px;*/
+    /*height: 400px;*/
 }
 
 /* w: 875 h:400*/

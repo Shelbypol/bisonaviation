@@ -14,25 +14,25 @@ const Avionics = () => {
 
     return (
         <>
-            <Jumbotron id='home-avionics' className='Avionics_jumbo global_cultured-bg global_rich-black p-0 m-0'
+            <Jumbotron id='home-avionics' className='Avionics_jumbo bg-white global_rich-black p-0 m-0'
                        fluid>
 
-                <Row className='d-flex align-items-center pb-5 pl-5'>
+                <Row className='Avionics_jumbo-img d-flex align-items-center m-0 p-0'>
 
 
-                    <Col xs={6} className='global_cultured-bg p-0 '>
-                        <Row className='d-flex justify-content-center p-5'>
+                    <Col xs={9} className=' global_cultured-bg p-0 m-0 '>
+                        {/*<Row className='d-flex justify-content-center p-5'>*/}
 
-<Col className='Avionics_jumbo-img ml-n5'> </Col>
-
-
+{/*<Col className='Avionics_jumbo-img ml-n5 border'>  </Col>*/}
 
 
-                        </Row>
+
+
+                        {/*</Row>*/}
                     </Col>
 
 
-                    <Col xs={6}>
+                    <Col xs={3}>
 
                         <Row className='mb-3'>
                             <Col xs={12}>
