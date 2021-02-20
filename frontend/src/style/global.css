@@ -31,9 +31,9 @@ main {
 }
 
 /*   ======    FONTS    ======    */
-h1, .global_accentFont {
-    font-family: 'Sanchez', serif;
-}
+/*h1, .global_accentFont {*/
+/*    font-family: 'Sanchez', serif;*/
+/*}*/
 
 .global_white {
     color: #fff;

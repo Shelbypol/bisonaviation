@@ -27,10 +27,11 @@
 }
 
 .carousel .control-dots {
-    padding-left: 5px !important;
-    outline: 0;
-    margin-top: 20px;
-    bottom: 5% !important;
+    /*padding-left: 5px !important;*/
+    /*outline: 0;*/
+    /*margin-top: 20px;*/
+    /*bottom: 5% !important;*/
+    display: none;
 }
 
 .myCarousel h3 {
@@ -51,34 +52,38 @@
 }
 
 .myCarousel p:before {
-    content: "“";
-    color: #aaa;
-    font-size: 26px;
-    font-family: monospace;
-    font-weight: 100;
+    /*content: "“";*/
+    /*color: #aaa;*/
+    /*font-size: 26px;*/
+    /*font-family: monospace;*/
+    /*font-weight: 100;*/
+    display: none;
 }
 
 .myCarousel p:after {
-    content: "”";
-    color: #aaa;
-    font-size: 26px;
-    font-family: monospace;
-    font-weight: 100;
-    line-height: 0;
+    /*content: "”";*/
+    /*color: #aaa;*/
+    /*font-size: 26px;*/
+    /*font-family: monospace;*/
+    /*font-weight: 100;*/
+    /*line-height: 0;*/
+    display: none;
 }
 
 .carousel .control-dots .dot {
-    box-shadow: none !important;
-    background: rgba(90, 00, 09, 1) !important;
-    /*background: #454545 !important;*/
-    outline: 0;
+    /*box-shadow: none !important;*/
+    /*background: rgba(90, 00, 09, 1) !important;*/
+    /*!*background: #454545 !important;*!*/
+    /*outline: 0;*/
+    display: none;
 }
 
 .carousel.carousel-slider .control-arrow {
-    color: rgba(90, 00, 09, 1);
-    height: 50px !important;
-    position: absolute;
-    top: 35% !important;
+    /*color: rgba(90, 00, 09, 1);*/
+    /*height: 50px !important;*/
+    /*position: absolute;*/
+    /*top: 35% !important;*/
+    display: none;
 }
 
 

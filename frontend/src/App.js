@@ -52,6 +52,8 @@ const App = ({location}) => {
                     {/*<Route path='/' component={HomeScreen} exact/>*/}
                     <Route path='/products' component={ProductsDisplayScreen} exact/>
                     {/*<main className='py-0'>*/}
+                    <Route path='/avionics' component={AvionicsScreen}/>
+
                         <Container className='mb-0 pb-0'>
                             <Route path='/login' component={LoginScreen}/>
                             <Route path='/register' component={RegisterScreen}/>
@@ -66,7 +68,7 @@ const App = ({location}) => {
                             <Route path='/search/:keyword' component={ProductsDisplayScreen} exact/>
                             <Route path='/page/:pageNumber' component={ProductsDisplayScreen} exact/>
                             <Route path='/search/:keyword/page/:pageNumber' component={ProductsDisplayScreen}/>
-                            <Route path='/avionics' component={AvionicsScreen}/>
+
                             <Route path='/maintenance' component={MaintenanceScreen}/>
                             <Route path='/aog' component={AogResponseScreen}/>
                             <Route path='/acquisitions' component={AcquisitionScreen}/>

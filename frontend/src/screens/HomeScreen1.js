@@ -8,6 +8,7 @@ import Avionics from "../components/1/Avionics";
 import TestimonialCarousel from "../components/TestimonialCarousel";
 import Mechanics from "../components/1/Mechanics";
 import Flir from "../components/1/Flir";
+import {Container} from 'react-bootstrap';
 import ImgRow from "../components/1/ImgRow";
 
 const HomeScreen1 = () => {
@@ -18,26 +19,36 @@ const HomeScreen1 = () => {
 
     return (
         <>
-            <HomeHero />
+            <HomeHero/>
 
-            <RepairAward />
 
-            <Services
-                showTag={true}
-                title1={'GARMIN DEALER'}
-                title2={'AVIONICS'}
-                title3={'MAINTENANCE'}
-                title4={'EO/IR FLIR'}
-            />
+            <RepairAward/>
+            {/*<Container className='p-0 fluid'>*/}
 
-            <Team />
-            <Avionics />
-            <TestimonialCarousel />
-            <Mechanics />
-            <ImgRow />
-            <Flir />
+                <Services
+                    showTag={true}
+                    title1={'GARMIN DEALER'}
+                    title2={'AVIONICS'}
+                    title3={'MAINTENANCE'}
+                    title4={'EO/IR FLIR'}
+                />
+
+                <Team/>
+
+
+
+                    <Avionics/>
+
+                <TestimonialCarousel/>
+
+                <Mechanics/>
+
+                <ImgRow/>
+
+                <Flir/>
+            {/*</Container>*/}
         </>
 
     )
 };
-    export default HomeScreen1
+export default HomeScreen1

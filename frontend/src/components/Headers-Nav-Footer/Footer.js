@@ -8,10 +8,24 @@ import '../../style/Footer.css'
 import {Jumbotron} from "reactstrap";
 import SocialIcons from "../SocialIcons";
 import Fade from 'react-reveal';
+import Zoom from 'react-reveal';
 
 const Footer = () => {
     return (
         <footer className='Footer_margin mb-0 '>
+
+            {/*<Jumbotron className='m-0 p-0' fluid>*/}
+            {/*    <Fade duration={5000} left delay={1000}>*/}
+            {/*    <Row>*/}
+            {/*        <Col xs={12} className='d-flex justify-content-end px-5'>*/}
+            {/*            /!*<Zoom duration={15000} left>*!/*/}
+            {/*                <i className='global_blood-red far fa-plane' style={{fontSize: '5em'}}> </i>*/}
+            {/*            /!*</Zoom>*!/*/}
+            {/*        </Col>*/}
+            {/*    </Row>*/}
+            {/*    </Fade>*/}
+            {/*</Jumbotron>*/}
+
 
             <Jumbotron className='m-0 p-0 global_blood-red-bg global_cultured Footer_social-icons' fluid>
                 <Row>
