@@ -7,7 +7,7 @@ import {Jumbotron} from "reactstrap";
 const TestimonialCarousel = () => {
     return (
         <>
-            <Jumbotron className=' global_blood-red-bg m-0 p-0'
+            <Jumbotron className=' global_blood-red-bg mb-0 mt-n5 p-0'
                        fluid>
 
                 <Carousel

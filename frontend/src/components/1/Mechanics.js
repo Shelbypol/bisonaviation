@@ -88,10 +88,6 @@ const Mechanics = () => {
                             </Zoom>
                         </Row>
 
-
-
-
-
                     </Col>
 
 
@@ -128,7 +124,7 @@ const Mechanics = () => {
                 </LinkContainer>
             </Row>
 
-            <Row className='d-flex align-content-center justify-content-center ml-5 mt-5'>
+            <Row className='d-flex align-content-center justify-content-center mb-0 p-0 ml-5 mt-5'>
                 <Col xs={3} className='Mechanics_circle1 Mechanics_circles'>
                 </Col>
                 <Col xs={3} className='Mechanics_circle2 Mechanics_circles mt-2'>
@@ -142,7 +138,7 @@ const Mechanics = () => {
                 </Col>
             </Row>
 
-            <Row className='d-flex align-content-center Mechanics_circle-text mx-1 mb-5'>
+            <Row className='d-flex align-content-center Mechanics_circle-text mx-1 mt-n5 p-0 mb-5'>
                 <Col xs={3} className='mt-n5 pt-n5 text-center global_cursor'>
                     <Zoom>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto debitis eos magni,
