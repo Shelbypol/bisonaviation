@@ -107,37 +107,37 @@ const Avionics = () => {
                 </Row>
             </Jumbotron>
 
-            <Jumbotron id='home-avionics' className='py-4 global_rich-black-bg m-0 p-0'
+            <Jumbotron id='home-avionics' className='pb-4 pt-0 global_rich-black-bg m-0 p-0'
                        fluid>
-                <Row className='global_silver-chalice-bg Mechanics_row d-flex align-content-center p-0 m-0'>
+                <Row className='bg-none Mechanics_row d-flex align-content-center p-0 m-0'>
                     <LinkContainer to={`/mechanics`}>
-                        <Col xs={4} className='global_cursor border-right Mechanics_col d-flex align-items-center '>
+                        <Col xs={4} className='global_cursor border-right global_silver-chalice-bg border-dark Mechanics_col d-flex align-items-center '>
                             <Zoom>
-                                <p className='Mechanics_text'>Custom Panels</p>
+                                <p className='Avionics_text-titles'>Custom Panels</p>
                             </Zoom>
                         </Col>
                     </LinkContainer>
 
                     <LinkContainer to={`/mechanics`}>
-                        <Col xs={4} className='global_cursor border-right Mechanics_col d-flex align-items-center '>
+                        <Col xs={4} className='global_cursor global_silver-chalice-bg border-right border-dark Mechanics_col d-flex align-items-center '>
                             <Zoom>
-                                <p className='Mechanics_text'>In-Depth Tests & Checks</p>
+                                <p className='Avionics_text-titles'>In-Depth Tests & Checks</p>
                             </Zoom>
                         </Col>
                     </LinkContainer>
 
                     <LinkContainer to={`/mechanics`}>
-                        <Col xs={4} className='global_cursor Mechanics_col d-flex align-items-center '>
+                        <Col xs={4} className='global_cursor global_silver-chalice-bg Mechanics_col d-flex align-items-center '>
                             <Zoom>
-                                <p className='Mechanics_text'> Software Updates</p>
+                                <p className='Avionics_text-titles'> Software Updates</p>
                             </Zoom>
                         </Col>
                     </LinkContainer>
                 </Row>
 
-                <Row className='d-flex justify-content-center mb-0 pt-3 pb-5 mt-5'>
+                <Row className='d-flex justify-content-center mb-0 mt-4 pt-3 Avionics_card-row'>
                     <Col xs={3} className='d-flex justify-content-center'>
-                        <Card style={{width: '18rem'}} className='border-0 global_silver-chalice-bg rounded'>
+                        <Card style={{width: '18rem'}} className='border-0 global_light-grey-bg rounded'>
                             <Card.Img variant="top" src={cnc} className='Avionics_card-img'/>
                             <Card.Body>
                                 <Zoom>
@@ -152,7 +152,7 @@ const Avionics = () => {
                     </Col>
 
                     <Col xs={3} className='d-flex justify-content-center'>
-                        <Card style={{width: '18rem'}} className='border-0 global_silver-chalice-bg rounded'>
+                        <Card style={{width: '18rem'}} className='border-0 global_light-grey-bg rounded'>
                             <Card.Img variant="top" src={test} className='Avionics_card-img'/>
                             <Card.Body>
                                 <Zoom>
@@ -167,7 +167,7 @@ const Avionics = () => {
                     </Col>
 
                     <Col xs={3} className='d-flex justify-content-center'>
-                        <Card style={{width: '18rem'}} className='border-0 global_silver-chalice-bg rounded'>
+                        <Card style={{width: '18rem'}} className='border-0 global_light-grey-bg rounded'>
                             <Card.Img variant="top" src={software} className='Avionics_card-img'/>
                             <Card.Body>
                                 <Zoom>
@@ -182,7 +182,7 @@ const Avionics = () => {
                     </Col>
 
                     <Col xs={3} className='d-flex justify-content-center'>
-                        <Card style={{width: '18rem'}} className='border-0 global_silver-chalice-bg rounded'>
+                        <Card style={{width: '18rem'}} className='border-0 global_light-grey-bg rounded'>
                             <Card.Img variant="top" src={tayseer} className='Avionics_card-img'/>
                             <Card.Body>
                                 <Zoom>

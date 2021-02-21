@@ -7,6 +7,19 @@
     margin-top: -1vw;
 }
 
+.Avionics_text-titles{
+    font-size: 30px;
+    /*font-weight: lighter;*/
+    text-shadow: 1px 1px #000000;
+    margin: auto;
+    color: #F5F3F4;
+    /*color: #161A1D;*/
+}
+
+.Avionics_card-row{
+    padding-bottom: 10vh;
+}
+
 .Avionics_card-img{
     height: 13em;
 }
