@@ -26,11 +26,74 @@ const Mechanics = () => {
             <Jumbotron id='home-avionics' className='Mechanics_jumbo bg-white global_rich-black p-0 m-0'
                        fluid>
 
-                <Row className=''>
-                    <Col xs={5}> </Col>
+                <Row className='m-0 p-0 Mechanics-top-row'>
+                    <Col className=''>
+
+                    {/*==========================================*/}
+
+                        <Row className='d-flex align-content-center Mechanics_circle-text mt-5 mb-0 p-0'>
+                            <Col xs={5} className='Mechanics_circle2 ml-5'>
+                            </Col>
+                            <Col xs={6} className=' text-center global_cursor mt-4'>
+                                <Zoom>
+                                    <p>
+
+                                        You depend on your aircraft to carry you and your passengers safely. Whether it's time for a routine annual, a complete series of phase inspections or a pre-purchase inspection, Bison Aviation's team of FAA licensed technicians is ready to ensure that your aircraft is safe and airworthy for your next flight!
+
+                                    </p>
+                                </Zoom>
+                            </Col>
+                        </Row>
+
+                        <Row className='Mechanics_info ml-5'>
+                            <Zoom>
+                                <Col xs={1} className='d-flex justify-content-center mt-3'>
+                                    <i className='far fa-tablet-alt global_blood-red'
+                                       style={{fontSize: '2em'}}> </i>
+                                </Col>
+                                <Col xs={12} className=''>
+                                    <h3 className='global_eerie-black'>Full / Partial Panel Upgrades</h3>
+                                </Col>
+                            </Zoom>
+                        </Row>
+
+                        <Row className='ml-5'>
+                            <Zoom>
+                                <Col xs={1} className='d-flex justify-content-center mt-3'>
+                                    <i className='far fa-tablet-alt global_blood-red'
+                                       style={{fontSize: '2em'}}> </i>
+                                </Col>
+                                <Col xs={12} className=''>
+                                    <h3 className='global_eerie-black'>Full / Partial Panel Upgrades</h3>
+                                </Col>
+                            </Zoom>
+                        </Row>
+
+
+
+                        <Row className='mt-3 ml-5 Mechanics_info'>
+                            <Zoom>
+                                <Col xs={12} className='py-1 global_cursor'>
+                                    <Fade right duration='1000'>
+                                        <LinkContainer to={`/avionics`}>
+                                            <h4 className='Avionics_learn-more-btn'>Learn More</h4>
+                                        </LinkContainer>
+                                    </Fade>
+                                </Col>
+                            </Zoom>
+                        </Row>
+
+
+
+
+
+                    </Col>
+
+
                     <Col className='Mechanics_hero-img global_rich-black-bg'>
                     </Col>
                 </Row>
+
             </Jumbotron>
 
 
@@ -66,22 +129,22 @@ const Mechanics = () => {
                 </LinkContainer>
             </Row>
 
-            <Row className='d-flex align-content-center ml-5 mt-5'>
-                <Col xs={3} className='Mechanics_circle1 Mechanics_circles'>
+            <Row className='d-flex align-content-center justify-content-center ml-5 mt-5'>
+                <Col xs={4} className='Mechanics_circle1 Mechanics_circles'>
                 </Col>
-                <Col xs={3} className='Mechanics_circle2 Mechanics_circles mt-2'>
+                {/*<Col xs={3} className='Mechanics_circle2 Mechanics_circles mt-2'>*/}
+
+                {/*</Col>*/}
+                <Col xs={4} className='Mechanics_circle3 Mechanics_circles mt-2'>
 
                 </Col>
-                <Col xs={3} className='Mechanics_circle3 Mechanics_circles mt-2'>
-
-                </Col>
-                <Col xs={3} className='Mechanics_circle4 Mechanics_circles'>
+                <Col xs={4} className='Mechanics_circle4 Mechanics_circles'>
 
                 </Col>
             </Row>
 
             <Row className='d-flex align-content-center Mechanics_circle-text mx-1 mb-5'>
-                <Col xs={3} className='mt-n5 pt-n5 text-center global_cursor'>
+                <Col xs={4} className='mt-n5 pt-n5 text-center global_cursor'>
                     <Zoom>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto debitis eos magni,
                             porro
@@ -90,23 +153,23 @@ const Mechanics = () => {
                     </Zoom>
                 </Col>
 
-                <Col xs={3} className='mt-n5 text-center global_cursor'>
-                    <Zoom>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor et hic ipsam molestias
-                            odio
-                            quasi
-                            quibusdam quidem sequi tempora, tenetur.</p>
-                    </Zoom>
-                </Col>
+                {/*<Col xs={3} className='mt-n5 text-center global_cursor'>*/}
+                {/*    <Zoom>*/}
+                {/*        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor et hic ipsam molestias*/}
+                {/*            odio*/}
+                {/*            quasi*/}
+                {/*            quibusdam quidem sequi tempora, tenetur.</p>*/}
+                {/*    </Zoom>*/}
+                {/*</Col>*/}
 
-                <Col xs={3} className='mt-n5 text-center global_cursor'>
+                <Col xs={4} className='mt-n5 text-center global_cursor'>
                     <Zoom>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias dicta dolorum neque nihil
                             tempore.</p>
                     </Zoom>
                 </Col>
 
-                <Col xs={3} className='mt-n5 text-center global_cursor'>
+                <Col xs={4} className='mt-n5 text-center global_cursor'>
                     <Zoom>
                         <Button className='global_blood-red global_cultured-bg Mechanics_btn'>Schedule your plane
                             today!</Button>

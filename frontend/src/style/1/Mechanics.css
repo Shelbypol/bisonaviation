@@ -1,11 +1,9 @@
 .Mechanics_bg_img{
-    background-image: url("../../images/bg-graphics/mechanics/riveting-large.jpg");
+    /*background-image: url("../../images/bg-graphics/mechanics/riveting-large.jpg");*/
+    background-image: url("../../images/mechanics/cirrusrobin2.jpg");
     background-repeat: no-repeat;
-    /*background-position: center 45%;*/
-    /*height: 350px;*/
-
     background-position: center 35%;
-    height: 300px;
+    height: 150px;
 }
 
 .Mechanics_hero-img{
@@ -13,6 +11,17 @@
     background-image: url("../../images/bg-graphics/mechanics/maintenance-hero.png");
     background-repeat: no-repeat;
     height: 600px;
+    width: 800px;
+}
+
+.Mechanics_info{
+    /*margin-left: 5vw;*/
+    margin-top: -8vw;
+}
+
+.Mechanics-top-row{
+    /*width: 1500px;*/
+    /*z-index: 201;*/
 }
 
 .Mechanics_jumbo{
@@ -43,6 +52,13 @@
     font-weight: lighter;
     text-shadow: 2px 2px 4px #000000;
     margin: auto;
+}
+
+.Mechanics_circle1-small{
+    background-image: url("../../images/bg-graphics/mechanics/mechanics-circle2.png");
+    background-repeat: no-repeat;
+    height: 382px;
+    /*height: 150px;*/
 }
 
 
