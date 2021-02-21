@@ -7,7 +7,7 @@ import {Jumbotron} from "reactstrap";
 const TestimonialCarousel = () => {
     return (
         <>
-            <Jumbotron className=' global_eerie-black-bg m-0'
+            <Jumbotron className=' global_blood-red-bg m-0 p-0'
                        fluid>
 
                 <Carousel
@@ -20,14 +20,19 @@ const TestimonialCarousel = () => {
                 >
                     <div>
                         {/*<img src="/images/shirley.png" />*/}
-                        <div className="myCarousel global_eerie-black-bg">
+                        <div className="myCarousel global_blood-red-bg">
                             <h3 className='global_cultured'>Richard F.</h3>
                             <h1>
-                                <i className='fas fa-star global_blood-red'> </i>
-                                <i className='fas fa-star global_blood-red'> </i>
-                                <i className='fas fa-star global_blood-red'> </i>
-                                <i className='fas fa-star  global_blood-red'> </i>
-                                <i className='fas fa-star global_blood-red'> </i>
+                                {/*<i className='fas fa-star global_blood-red'> </i>*/}
+                                {/*<i className='fas fa-star global_blood-red'> </i>*/}
+                                {/*<i className='fas fa-star global_blood-red'> </i>*/}
+                                {/*<i className='fas fa-star  global_blood-red'> </i>*/}
+                                {/*<i className='fas fa-star global_blood-red'> </i>*/}
+                                <i className='fas fa-star global_cultured'> </i>
+                                <i className='fas fa-star global_cultured'> </i>
+                                <i className='fas fa-star global_cultured'> </i>
+                                <i className='fas fa-star  global_cultured'> </i>
+                                <i className='fas fa-star global_cultured'> </i>
                             </h1>
                             <p className='global_cultured'>
                                 Had the chance to work with John from Bison on his V-tail recently and the guy's just a
@@ -39,14 +44,20 @@ const TestimonialCarousel = () => {
 
                     <div>
                         {/*<img src="/images/daniel.png" />*/}
-                        <div className="myCarousel global_eerie-black-bg">
+                        <div className="myCarousel global_blood-red-bg">
                             <h3 className='global_cultured'>Daniel K.</h3>
                             <h1>
-                                <i className='fas fa-star global_blood-red'> </i>
-                                <i className='fas fa-star global_blood-red'> </i>
-                                <i className='fas fa-star global_blood-red'> </i>
-                                <i className='fas fa-star  global_blood-red'> </i>
-                                <i className='fas fa-star-half-alt global_blood-red'> </i>
+                                {/*<i className='fas fa-star global_blood-red'> </i>*/}
+                                {/*<i className='fas fa-star global_blood-red'> </i>*/}
+                                {/*<i className='fas fa-star global_blood-red'> </i>*/}
+                                {/*<i className='fas fa-star  global_blood-red'> </i>*/}
+                                {/*<i className='fas fa-star-half-alt global_blood-red'> </i>*/}
+                                <i className='fas fa-star global_cultured'> </i>
+                                <i className='fas fa-star global_cultured'> </i>
+                                <i className='fas fa-star global_cultured'> </i>
+                                <i className='fas fa-star  global_cultured'> </i>
+                                <i className='fas fa-star-half-alt global_cultured'> </i>
+
                             </h1>
                             <p className='global_cultured'>
                                 First class maintenance shop. AOG response was fantastic and they quickly had me back in
@@ -57,14 +68,19 @@ const TestimonialCarousel = () => {
 
                     <div>
                         {/*<img src="/images/theo.png" />*/}
-                        <div className="myCarousel global_eerie-black-bg">
+                        <div className="myCarousel global_blood-red-bg">
                             <h3 className='global_cultured'>Allen H.</h3>
                             <h1>
-                                <i className='fas fa-star global_blood-red'> </i>
-                                <i className='fas fa-star global_blood-red'> </i>
-                                <i className='fas fa-star global_blood-red'> </i>
-                                <i className='fas fa-star  global_blood-red'> </i>
-                                <i className='fas fa-star-half-alt global_blood-red'> </i>
+                                {/*<i className='fas fa-star global_blood-red'> </i>*/}
+                                {/*<i className='fas fa-star global_blood-red'> </i>*/}
+                                {/*<i className='fas fa-star global_blood-red'> </i>*/}
+                                {/*<i className='fas fa-star  global_blood-red'> </i>*/}
+                                {/*<i className='fas fa-star-half-alt global_blood-red'> </i>*/}
+                                <i className='fas fa-star global_cultured'> </i>
+                                <i className='fas fa-star global_cultured'> </i>
+                                <i className='fas fa-star global_cultured'> </i>
+                                <i className='fas fa-star  global_cultured'> </i>
+                                <i className='fas fa-star-half-alt global_cultured'> </i>
                             </h1>
                             <p className='global_cultured'>
                                 Avionics team worked with me for a full panel installation and even added custom
