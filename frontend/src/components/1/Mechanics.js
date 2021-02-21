@@ -47,12 +47,9 @@ const Mechanics = () => {
 
                         <Row className='Mechanics_margin-pos-top ml-5'>
                             <Zoom>
-                                {/*<Col xs={1} className='d-flex justify-content-center mt-3'>*/}
-                                {/*    <i className='far fa-tablet-alt global_blood-red'*/}
-                                {/*       style={{fontSize: '2em'}}> </i>*/}
-                                {/*</Col>*/}
-                                <Col xs={12} className=''>
-                                    <h3 className='global_eerie-black '>You depend on your aircraft to carry you and your passengers safely.</h3>
+
+                                <Col xs={12} className='mb-2'>
+                                    <h1 className='global_eerie-black '>You depend on your aircraft to carry you and your passengers safely.</h1>
                                 </Col>
                             </Zoom>
                         </Row>
@@ -77,18 +74,6 @@ const Mechanics = () => {
                             </Col>
                         </Row>
 
-                        {/*<Row className='ml-5'>*/}
-                        {/*    <Zoom>*/}
-                        {/*        <Col xs={1} className='d-flex justify-content-center mt-3'>*/}
-                        {/*            <i className='far fa-tablet-alt global_blood-red'*/}
-                        {/*               style={{fontSize: '2em'}}> </i>*/}
-                        {/*        </Col>*/}
-                        {/*        <Col xs={12} className=''>*/}
-                        {/*            <h3 className='global_eerie-black'>Full / Partial Panel Upgrades</h3>*/}
-                        {/*        </Col>*/}
-                        {/*    </Zoom>*/}
-                        {/*</Row>*/}
-
 
 
                         <Row className='mt-3 ml-5 Mechanics_info'>
@@ -96,7 +81,7 @@ const Mechanics = () => {
                                 <Col xs={12} className='py-1 global_cursor'>
                                     <Fade right duration='1000'>
                                         <LinkContainer to={`/maintenance`}>
-                                            <h4 className='Avionics_learn-more-btn'>Learn More</h4>
+                                            <h4 className='Mechanics_learn-more-btn'>Learn More</h4>
                                         </LinkContainer>
                                     </Fade>
                                 </Col>
@@ -116,12 +101,6 @@ const Mechanics = () => {
 
             </Jumbotron>
 
-
-            {/*=================================================================*/}
-
-            {/*<Jumbotron className='Mechanics_bg_img p-0 m-0'*/}
-            {/*           fluid>*/}
-            {/*</Jumbotron>*/}
 
             <Row className='global_blood-red-bg Mechanics_row d-flex align-content-center'>
                 <LinkContainer to={`/mechanics`}>
@@ -196,7 +175,6 @@ const Mechanics = () => {
                     </Zoom>
                 </Col>
             </Row>
-            {/*=================================================================*/}
 
 
         </>

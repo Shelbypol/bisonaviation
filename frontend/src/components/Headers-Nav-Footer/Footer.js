@@ -14,19 +14,7 @@ const Footer = () => {
     return (
         <footer className='Footer_margin mb-0 '>
 
-            {/*<Jumbotron className='m-0 p-0' fluid>*/}
-            {/*    <Fade duration={5000} left delay={1000}>*/}
-            {/*    <Row>*/}
-            {/*        <Col xs={12} className='d-flex justify-content-end px-5'>*/}
-            {/*            /!*<Zoom duration={15000} left>*!/*/}
-            {/*                <i className='global_blood-red far fa-plane' style={{fontSize: '5em'}}> </i>*/}
-            {/*            /!*</Zoom>*!/*/}
-            {/*        </Col>*/}
-            {/*    </Row>*/}
-            {/*    </Fade>*/}
-            {/*</Jumbotron>*/}
-
-
+<Zoom bottom duration={10000}>
             <Jumbotron className='m-0 p-0 global_blood-red-bg global_cultured Footer_social-icons' fluid>
                 <Row>
                     <Col xs={12} className='d-flex justify-content-center px-5'>
@@ -36,8 +24,8 @@ const Footer = () => {
                     </Col>
                 </Row>
             </Jumbotron>
-            {/*<Container>*/}
-            <Jumbotron className=' global_eerie-black-bg' fluid>
+
+            <Jumbotron className=' global_rich-black-bg' fluid>
                 <Row className='mt-4'>
                         <Col>
                             <LinkContainer to='/avionics' className='d-flex justify-content-center global_whiteFontHover py-0'>
@@ -105,7 +93,7 @@ const Footer = () => {
                 </Row>
 
             </Jumbotron>
-
+</Zoom>
         </footer>
     )
 };
