@@ -1,13 +1,14 @@
 .Team_bg-img{
-    background-image: url("../../images/bg-graphics/whyBison/team.png");
+    /*background-image: url("../../images/bg-graphics/whyBison/team.png");*/
+    background-image: url("../../images/bg-graphics/whyBison/why-bison-team-no-bg.png");
     background-repeat: no-repeat;
-    background-position: -15.5% 25%;
-
+    background-position: center 25%;
     /*background-position: 0 25% ;*/
 }
 
 .Team_jumbo{
-    height: 350px;
+    height: 400px;
+    /*height: 350px;*/
 
 }
 
@@ -17,5 +18,7 @@
 }
 
 .Team_text{
+    font-weight: bolder;
     font-size: 30px;
+    text-shadow: 1px 1px 3px #000000;
 }

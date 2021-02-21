@@ -7,6 +7,10 @@
     margin-top: -1vw;
 }
 
+.Avionics_card-img{
+    height: 13em;
+}
+
 .Avionics_learn-more-btn:hover{
     color: #660708;
     text-decoration: underline;
