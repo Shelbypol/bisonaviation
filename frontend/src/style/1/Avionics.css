@@ -30,15 +30,10 @@
 }
 
 .Avionics_jumbo-img{
-    background-image: url("../../images/bg-graphics/avionics/avionics-cessna-hero.png");
-    /*background-image: url("../../images/bg-graphics/avionics/avionics-hero-title.png");*/
+    /*background-image: url("../../images/bg-graphics/avionics/avionics-cessna-hero.png");*/
+    background-image: url("../../images/bg-graphics/avionics/avionics-cessna-hero-black.png");
     background-repeat: no-repeat;
-    /*height: 600px;*/
-    /*width: 800px;*/
     height: 600px;
-    /*width: 875px;*/
-    /*width: 350px;*/
-    /*height: 400px;*/
 }
 
 /* w: 875 h:400*/

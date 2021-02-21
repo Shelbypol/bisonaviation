@@ -8,6 +8,17 @@
     height: 300px;
 }
 
+.Mechanics_hero-img{
+    /*background-image: url("../../images/bg-graphics/avionics/avionics-cessna-hero.png");*/
+    background-image: url("../../images/bg-graphics/mechanics/maintenance-hero.png");
+    background-repeat: no-repeat;
+    height: 600px;
+}
+
+.Mechanics_jumbo{
+    height: 600px;
+}
+
 .Mechanics_title{
     height: 100px;
     text-shadow: 2px 2px 4px #111111;
