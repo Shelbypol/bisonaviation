@@ -8,10 +8,13 @@ const Team = () => {
     return (
         <Jumbotron className='mt-n5 mb-0 mx-0 p-0  d-flex justify-content-center global_cultured-bg' fluid>
             {/*<Container className='p-0 fluid'>*/}
-                <Row className=' d-flex align-items-center' >
-                    <Col xs={7} className='Team_jumbo Team_bg-img'> </Col>
+                <Row className=' d-flex align-items-center global_rich-black-bg' >
+                    <Col xs={7} className='Team_jumbo Team_bg-img global_cultured-bg'> </Col>
 
-                    <Col xs={5} className='global_eerie-black'>
+                    {/*<Col xs={1} className='global_cultured-bg Team_jumbo'> </Col>*/}
+                    {/*<Col xs={1} className='global_rich-black-bg Team_jumbo'> </Col>*/}
+
+                    <Col xs={5} className='global_cultured Team_text-col'>
                         <Zoom>
                             <p className='Team_text text-center pt-5 pr-5'>
                                 We know that our customers rely on us

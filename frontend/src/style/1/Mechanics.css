@@ -14,9 +14,12 @@
     width: 800px;
 }
 
-.Mechanics_info{
-    /*margin-left: 5vw;*/
-    margin-top: -8vw;
+.Mechanics_margin-pos-top{
+    margin-top: 10vw;
+}
+
+.Mechanics_margin-neg-top{
+    margin-top: -5vw;
 }
 
 .Mechanics-top-row{
