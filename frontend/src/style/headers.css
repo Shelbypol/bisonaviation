@@ -32,8 +32,8 @@
 }
 
 .StickyHeader_nav{
-    /*color: rgba(0,0,0,.7);*/
     background-color: #F5F3F4;
+    /*border-bottom: #660708 1px solid;*/
 }
 
 .StickyHeader_search_btn_padding{

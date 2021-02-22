@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import {Col, Container} from 'react-bootstrap';
-import AlertDismissible from '../../components/AlertDismissible';
+import AlertDismissible from '../../AlertDismissible';
 const AvionicsIcons = (props) => {
     const [show, setShow] = useState(false)
     return (

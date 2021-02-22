@@ -66,29 +66,18 @@ const StickyHeader = () => {
                                 <Route render={({history}) => <SearchBox history={history}
                                                                          searchSize={'sm'}
                                                                          searchClasses={'col-9 py-0 bg-white border-top border-bottom border-left'}
-                                                                         // searchClasses={'col-9 py-0 global_gradient text-white'}
                                                                          btnSize={'sm'}
                                                                          btnClasses={'bg-white StickyHeader_search_btn_padding px-1 col-2 rounded-right border-top border-bottom border-right'}
-                                                                         // btnClasses={'global_bisonDarkFadedBgColorHover StickyHeader_search_btn_padding px-1 col-2 rounded-right'}
                                                                          iconClass={'fal fa-search p-0'}
                                 />}/>
                             </Nav>
-
-                            //           <Route render={({history}) => <SearchBox history={history}
-                                //                                                                          searchSize={'sm'}
-                                //                                                                          formClasses={'col-sm-12'}
-                                //                                                                          searchClasses={'col-10 global_gradient text-white'}
-                                //                                                                          btnSize={'sm'}
-                                //                                                                          btnClasses={'global_bisonDarkFadedBgColorHover DesktopHeader_search_btn_padding col-2 rounded-right'}
-                                //                                                                          iconClass={'fal fa-search'}
-                                //                                 />}/>
 
                             }
 
                             {/*============= NAV SHOW ON SCROLL ==============*/}
 
                             {goingUp ?
-                                <Nav className='col-lg-5 col-md-6 justify-content-end StickyHeader_links'>
+                                <Nav className='col-lg-5 col-md-6 justify-content-end global_blood-red'>
 
                                     {/*  HOME  */}
                                     <LinkContainer className='mx-1' to='/'>
@@ -124,6 +113,14 @@ const StickyHeader = () => {
                                             EO/IR Flir
                                         </Nav.Link>
                                     </LinkContainer>
+
+                                    {/*  TEAM  */}
+                                    <LinkContainer className='mx-1' to='/team'>
+                                        <Nav.Link>
+                                            Team
+                                        </Nav.Link>
+                                    </LinkContainer>
+
                                 </Nav>
 
                                 :
@@ -165,6 +162,14 @@ const StickyHeader = () => {
                                             EO/IR Flir
                                         </Nav.Link>
                                     </LinkContainer>
+
+                                    {/*  TEAM  */}
+                                    <LinkContainer className='mx-1' to='/team'>
+                                        <Nav.Link>
+                                            Team
+                                        </Nav.Link>
+                                    </LinkContainer>
+
                                 </Nav>
                             }
 
