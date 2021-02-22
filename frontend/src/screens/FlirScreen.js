@@ -1,16 +1,15 @@
 import React from 'react'
 import {Container} from "react-bootstrap";
-import MechanicsHero from "../components/1/mechanics-screen/MechanicsHero";
+import FlirHero from "../components/1/flir-screen/FlirHero";
 
-
-const MaintenanceScreen = () => {
+const FlirScreen = () => {
     return (
         <>
             <Container className='m-0 p-0 fluid'>
-                <MechanicsHero/>
+                <FlirHero/>
             </Container>
         </>
     )
 };
 
-export default MaintenanceScreen
+export default FlirScreen

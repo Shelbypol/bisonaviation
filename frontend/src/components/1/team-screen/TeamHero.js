@@ -1,23 +1,22 @@
 import React, {useState} from 'react'
-import '../../../style/mechanicsScreen/MechanicsHero.css'
+import '../../../style/1/teamScreen/TeamHero.css'
 import {Button, Col, Row, Card, Container} from "react-bootstrap";
 import {Jumbotron} from "reactstrap";
 import Zoom from 'react-reveal/Zoom';
 import Fade from 'react-reveal/Fade';
 import {LinkContainer} from "react-router-bootstrap";
 
-const MechanicsHero = () => {
+const TeamHero = () => {
 
     return (
-        // <Container className='p-0 fluid'>
+        <Container className='p-0 fluid'>
 
-            <Jumbotron className='MechanicsHero_hero-img global_rich-black-bg '
+            <Jumbotron className='TeamHero_hero-img global_rich-black-bg '
                        fluid>
-
-
             </Jumbotron>
-        // </Container>
+
+        </Container>
     )
 };
 
-export default MechanicsHero
+export default TeamHero

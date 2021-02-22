@@ -28,7 +28,7 @@ import AcquisitionScreen from "./screens/AcquisitionScreen";
 import AircraftPartsScreen from "./screens/AircraftPartsScreen";
 import EoIrMaintenanceScreen from "./screens/EoIrMaintenanceScreen";
 import SystemSalesScreen from "./screens/SystemSalesScreen";
-import EoIrPartsScreen from "./screens/EoIrPartsScreen";
+import FlirScreen from "./screens/FlirScreen";
 import TeamScreen from "./screens/TeamScreen";
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -50,7 +50,7 @@ const App = ({location}) => {
                     <Headers/>
                     <Route path='/' component={HomeScreen1} exact/>
                     <Route path='/avionics' component={AvionicsScreen}/>
-                    <Route path='/flir' component={EoIrMaintenanceScreen}/>
+                    <Route path='/flir' component={FlirScreen}/>
                     <Route path='/maintenance' component={MaintenanceScreen}/>
                     <Route path='/team' component={TeamScreen}/>
 
@@ -75,7 +75,7 @@ const App = ({location}) => {
                             {/*<Route path='/acquisitions' component={AcquisitionScreen}/>*/}
                             {/*<Route path='/aircraftparts' component={AircraftPartsScreen}/>*/}
                             {/*<Route path='/systemsales' component={SystemSalesScreen}/>*/}
-                            {/*<Route path='/eoir/parts' component={EoIrPartsScreen}/>*/}
+                            {/*<Route path='/eoir/parts' component={FlirScreen}/>*/}
                         </Container>
                     {/*</main>*/}
                 </Fragment>
