@@ -1,5 +1,7 @@
 .AvionicsHero_hero-img{
-    background-image: url("../../images/bg-graphics/screen-avionics/avionics-screen-hero.png");
+    background-image: url("../../images/bg-graphics/screen-avionics/avionics-hero-images.png");
+    /*background-image: url("../../images/bg-graphics/screen-avionics/avionics-hero-bg-img.png");*/
+    /*background-image: url("../../images/bg-graphics/screen-avionics/avionics-screen-hero.png");*/
     background-repeat: no-repeat;
     height: 650px;
     width: 1440px;
