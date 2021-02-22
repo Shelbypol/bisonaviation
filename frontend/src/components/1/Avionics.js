@@ -178,8 +178,10 @@ const Avionics = () => {
                                 <Zoom>
                                     {/*<Card.Title>Card Title</Card.Title>*/}
                                     <Card.Text className='Avionics_card-text' >
-                                        Some quick example text to build on the card title and make up the bulk of
-                                        the card's content.
+                                        <Zoom>
+                                            <Button className='global_blood-red global_cultured-bg Mechanics_btn'>Schedule your plane
+                                                today!</Button>
+                                        </Zoom>
                                     </Card.Text>
                                 </Zoom>
                             </Card.Body>

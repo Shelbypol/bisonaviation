@@ -33,19 +33,17 @@ const HomeScreen1 = () => {
                     title4={'EO/IR FLIR'}
                 />
 
+                <Avionics/>
+
                 <Team/>
-
-
-
-                    <Avionics/>
-
-                <TestimonialCarousel/>
 
                 <Mechanics/>
 
-                <ImgRow/>
+                <TestimonialCarousel/>
 
                 <Flir/>
+
+                <ImgRow/>
             {/*</Container>*/}
         </>
 
