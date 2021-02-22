@@ -17,7 +17,7 @@ const Avionics = () => {
     return (
         <>
 
-            <Jumbotron id='home-avionics' className='py-4 global_rich-black-bg m-0'
+            <Jumbotron id='home-avionics' className='pb-4 pt-2 global_rich-black-bg m-0'
                        fluid>
 
             </Jumbotron>
@@ -26,76 +26,124 @@ const Avionics = () => {
                        fluid>
 
                 <Row className='Avionics_jumbo-img pt-5'>
+                    {/*<Col xs={6} className=' p-0 m-0'>*/}
+                    {/*</Col>*/}
+
+
+                    {/*<Col xs={6} className=''>*/}
+
+                    {/*    <Row className=' mx-3'>*/}
+                    {/*        <p className='ml-5 global_eerie-black text-center'>*/}
+                    {/*            FROM MINOR REPAIRS TO COMPLETE PANEL UPGRADES.*/}
+                    {/*            ALL SERVICES PERFORMED IN-HOUSE AT BISON AVIATION.*/}
+                    {/*        </p>*/}
+                    {/*    </Row>*/}
+                    {/*    <Row className='mb-3'>*/}
+                    {/*        <Col xs={12}>*/}
+                    {/*            <hr/>*/}
+                    {/*            <AvionicsProducts/>*/}
+                    {/*            <hr/>*/}
+                    {/*        </Col>*/}
+                    {/*    </Row>*/}
+
+                    {/*    <Row className=' Avionics_info'>*/}
+                    {/*        <Zoom>*/}
+                    {/*            <Col xs={1} className='d-flex justify-content-center mt-3'>*/}
+                    {/*                <i className='far fa-tablet-alt global_blood-red'*/}
+                    {/*                   style={{fontSize: '2em'}}> </i>*/}
+                    {/*            </Col>*/}
+                    {/*            <Col xs={12} className=''>*/}
+                    {/*                <h3 className='global_eerie-black'>Full / Partial Panel Upgrades</h3>*/}
+                    {/*            </Col>*/}
+                    {/*        </Zoom>*/}
+
+                    {/*    </Row>*/}
+
+
+                    {/*    <Row className='Avionics_info'>*/}
+                    {/*        <Zoom>*/}
+                    {/*            <Col xs={1} className='d-flex justify-content-center mt-3'>*/}
+                    {/*                <i className='fal fa-tachometer-alt-fastest global_blood-red'*/}
+                    {/*                   style={{fontSize: '2em'}}> </i>*/}
+                    {/*            </Col>*/}
+                    {/*            <Col xs={12} className=''>*/}
+                    {/*                <h3 className='global_eerie-black'>In-depth Tests & Checks</h3>*/}
+                    {/*            </Col>*/}
+                    {/*        </Zoom>*/}
+
+                    {/*    </Row>*/}
+
+
+                    {/*    <Row className='Avionics_info'>*/}
+                    {/*        <Zoom>*/}
+                    {/*            <Col xs={1} className='d-flex justify-content-center mt-3'>*/}
+                    {/*                <i className='fal fa-database global_blood-red'*/}
+                    {/*                   style={{fontSize: '2em'}}> </i>*/}
+                    {/*            </Col>*/}
+                    {/*            <Col xs={12} className=''>*/}
+                    {/*                <h3 className='global_eerie-black'>Software Updates</h3>*/}
+                    {/*            </Col>*/}
+                    {/*        </Zoom>*/}
+                    {/*    </Row>*/}
+
+                    {/*    <Row className='mt-3 ml-5 Avionics_info'>*/}
+                    {/*        <Zoom>*/}
+                    {/*            /!*<Col xs={1} className='d-flex justify-content-center mt-2'>*!/*/}
+                    {/*            /!*    <i className='far fa-tablet-rugged global_blood-red'*!/*/}
+                    {/*            /!*       style={{fontSize: '2em'}}> </i>*!/*/}
+                    {/*            /!*</Col>*!/*/}
+                    {/*            <Col xs={12} className='py-1 global_cursor'>*/}
+                    {/*                <Fade right duration='1000'>*/}
+                    {/*                    <LinkContainer to={`/avionics`}>*/}
+                    {/*                        <h4 className='Avionics_learn-more-btn'>Learn More</h4>*/}
+                    {/*                    </LinkContainer>*/}
+                    {/*                </Fade>*/}
+                    {/*            </Col>*/}
+                    {/*        </Zoom>*/}
+                    {/*    </Row>*/}
                     <Col xs={6} className=' p-0 m-0'>
                     </Col>
 
 
                     <Col xs={6} className=''>
 
-                        <Row className=' mx-3'>
-                            <p className='ml-5 global_eerie-black text-center'>
-                                FROM MINOR REPAIRS TO COMPLETE PANEL UPGRADES.
-                                ALL SERVICES PERFORMED IN-HOUSE AT BISON AVIATION.
-                            </p>
+                        <Row className='Flir_margin-pos-top'>
+                            <Zoom>
+
+                                <Col xs={12} className='mb-2 mr-2 pr-4'>
+                                    <h1 className='global_eerie-black '>
+                                        FROM MINOR REPAIRS TO COMPLETE PANEL UPGRADES.
+                                        ALL SERVICES PERFORMED IN-HOUSE AT BISON AVIATION.                                    </h1>
+                                </Col>
+                            </Zoom>
                         </Row>
-                        <Row className='mb-3'>
-                            <Col xs={12}>
-                                <hr/>
-                                <AvionicsProducts/>
-                                <hr/>
+
+                        <Row className=' d-flex align-content-center Mechanics_margin-neg-top Mechanics_circle-text mb-0 p-0'>
+                            {/*<Col xs={5} className='Mechanics_circle2 ml-5'>*/}
+                            {/*</Col>*/}
+                            <Col>
+                                <h3> </h3>
+                            </Col>
+                            <Col xs={12} className='global_cursor mr-5 pr-4 mt-4'>
+                                <Zoom>
+                                    <p className='pr-3'>
+                                        Whether you need to add ADS-B OUT capabilities in order to meet the December 31, 2019 deadline, a routine pitot-static / transponder certification, or it's time for a completely new panel, Bison Aviation's Avionics Team is ready to bring your avionics systems into the 21st century!</p>
+                                </Zoom>
+                            </Col>
+
+                            <Col>
+
                             </Col>
                         </Row>
 
-                        <Row className=' Avionics_info'>
+
+
+                        <Row className='mt-3 ml-n5 Mechanics_info'>
                             <Zoom>
-                                <Col xs={1} className='d-flex justify-content-center mt-3'>
-                                    <i className='far fa-tablet-alt global_blood-red'
-                                       style={{fontSize: '2em'}}> </i>
-                                </Col>
-                                <Col xs={12} className=''>
-                                    <h3 className='global_eerie-black'>Full / Partial Panel Upgrades</h3>
-                                </Col>
-                            </Zoom>
-
-                        </Row>
-
-
-                        <Row className='Avionics_info'>
-                            <Zoom>
-                                <Col xs={1} className='d-flex justify-content-center mt-3'>
-                                    <i className='fal fa-tachometer-alt-fastest global_blood-red'
-                                       style={{fontSize: '2em'}}> </i>
-                                </Col>
-                                <Col xs={12} className=''>
-                                    <h3 className='global_eerie-black'>In-depth Tests & Checks</h3>
-                                </Col>
-                            </Zoom>
-
-                        </Row>
-
-
-                        <Row className='Avionics_info'>
-                            <Zoom>
-                                <Col xs={1} className='d-flex justify-content-center mt-3'>
-                                    <i className='fal fa-database global_blood-red'
-                                       style={{fontSize: '2em'}}> </i>
-                                </Col>
-                                <Col xs={12} className=''>
-                                    <h3 className='global_eerie-black'>Software Updates</h3>
-                                </Col>
-                            </Zoom>
-                        </Row>
-
-                        <Row className='mt-3 ml-5 Avionics_info'>
-                            <Zoom>
-                                {/*<Col xs={1} className='d-flex justify-content-center mt-2'>*/}
-                                {/*    <i className='far fa-tablet-rugged global_blood-red'*/}
-                                {/*       style={{fontSize: '2em'}}> </i>*/}
-                                {/*</Col>*/}
-                                <Col xs={12} className='py-1 global_cursor'>
+                                <Col xs={12} className='py-1 global_cursor ml-4'>
                                     <Fade right duration='1000'>
-                                        <LinkContainer to={`/avionics`}>
-                                            <h4 className='Avionics_learn-more-btn'>Learn More</h4>
+                                        <LinkContainer to={`/maintenance`}>
+                                            <h4 className='Mechanics_learn-more-btn'>Learn More</h4>
                                         </LinkContainer>
                                     </Fade>
                                 </Col>

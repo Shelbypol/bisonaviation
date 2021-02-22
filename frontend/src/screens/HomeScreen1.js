@@ -10,6 +10,7 @@ import Mechanics from "../components/1/Mechanics";
 import Flir from "../components/1/Flir";
 import {Container} from 'react-bootstrap';
 import ImgRow from "../components/1/ImgRow";
+import Garmin from "../components/1/Garmin";
 
 const HomeScreen1 = () => {
 
@@ -32,6 +33,8 @@ const HomeScreen1 = () => {
                     title3={'MAINTENANCE'}
                     title4={'EO/IR FLIR'}
                 />
+
+                <Garmin/>
 
                 <Avionics/>
 
