@@ -52,7 +52,7 @@ const StickyHeader = () => {
             <header className='sticky-top m-0 p-0'>
                 {/*<header className='sticky-top m-0' id='showSearch'>*/}
 
-                <Navbar className='navbar navbar-expand-lg navbar-light bg-light m-0 p-0 border-0'>
+                <Navbar className='navbar navbar-expand-lg navbar-light StickyHeader_nav m-0 p-0 border-0'>
 
                     {/*<Container className='col-sm-12'>*/}
 
@@ -65,24 +65,41 @@ const StickyHeader = () => {
                             <Nav className={'col-lg-3 ml-4 d-sm-none d-md-none d-lg-block'}>
                                 <Route render={({history}) => <SearchBox history={history}
                                                                          searchSize={'sm'}
-                                                                         searchClasses={'col-9 py-0'}
+                                                                         searchClasses={'col-9 py-0 bg-white border-top border-bottom border-left'}
                                                                          // searchClasses={'col-9 py-0 global_gradient text-white'}
                                                                          btnSize={'sm'}
-                                                                         btnClasses={' StickyHeader_search_btn_padding px-1 col-2 rounded-right'}
+                                                                         btnClasses={'bg-white StickyHeader_search_btn_padding px-1 col-2 rounded-right border-top border-bottom border-right'}
                                                                          // btnClasses={'global_bisonDarkFadedBgColorHover StickyHeader_search_btn_padding px-1 col-2 rounded-right'}
                                                                          iconClass={'fal fa-search p-0'}
                                 />}/>
                             </Nav>
+
+                            //           <Route render={({history}) => <SearchBox history={history}
+                                //                                                                          searchSize={'sm'}
+                                //                                                                          formClasses={'col-sm-12'}
+                                //                                                                          searchClasses={'col-10 global_gradient text-white'}
+                                //                                                                          btnSize={'sm'}
+                                //                                                                          btnClasses={'global_bisonDarkFadedBgColorHover DesktopHeader_search_btn_padding col-2 rounded-right'}
+                                //                                                                          iconClass={'fal fa-search'}
+                                //                                 />}/>
+
                             }
 
                             {/*============= NAV SHOW ON SCROLL ==============*/}
 
                             {goingUp ?
-                                <Nav className='col-lg-5 col-md-6 justify-content-end global_accentFont'>
+                                <Nav className='col-lg-5 col-md-6 justify-content-end StickyHeader_links'>
+
+                                    {/*  HOME  */}
+                                    <LinkContainer className='mx-1' to='/'>
+                                        <Nav.Link>
+                                            <i className='far fa-home StickyHeader_links' style={{fontSize: '1.5em'}}> </i>
+                                        </Nav.Link>
+                                    </LinkContainer>
 
                                     {/*  BROWSE PRODUCTS  */}
-                                    <LinkContainer className='mx-1' to='/products'>
-                                        <Nav.Link>
+                                    <LinkContainer className='mx-1 StickyHeader_links' to='/products'>
+                                        <Nav.Link className=''>
                                             Products
                                         </Nav.Link>
                                     </LinkContainer>
@@ -114,9 +131,16 @@ const StickyHeader = () => {
                                 // ============= NAV HIDDEN ON SCROLL ==============
                                 <Nav className='col-lg-8 ml-4 col-md-6 justify-content-end global_accentFont'>
 
+                                    {/*  HOME  */}
+                                    <LinkContainer className='mx-1' to='/'>
+                                        <Nav.Link>
+                                            <i className='far fa-home StickyHeader_links' style={{fontSize: '1.5em'}}> </i>
+                                        </Nav.Link>
+                                    </LinkContainer>
+
                                     {/*  BROWSE PRODUCTS  */}
                                     <LinkContainer className='mx-1' to='/products'>
-                                        <Nav.Link>
+                                        <Nav.Link className='StickyHeader_links'>
                                             Products
                                         </Nav.Link>
                                     </LinkContainer>
