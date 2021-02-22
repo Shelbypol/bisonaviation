@@ -107,11 +107,11 @@ const Avionics = () => {
                 </Row>
             </Jumbotron>
 
-            <Jumbotron id='home-avionics' className='pb-4 pt-0 global_rich-black-bg m-0 p-0'
-                       fluid>
-                <Row className='bg-none Mechanics_row d-flex align-content-center p-0 m-0'>
+            <Jumbotron id='home-avionics' className='bg-white m-0 p-0' fluid>
+
+                <Row className='Avionics_row-titles global_rich-black-bg d-flex align-content-center p-0 m-0'>
                     <LinkContainer to={`/mechanics`}>
-                        <Col xs={4} className='global_cursor border-right global_silver-chalice-bg border-dark Mechanics_col d-flex align-items-center '>
+                        <Col xs={4} className=' global_cursor border-right Mechanics_col d-flex align-items-center '>
                             <Zoom>
                                 <p className='Avionics_text-titles'>Custom Panels</p>
                             </Zoom>
@@ -119,7 +119,7 @@ const Avionics = () => {
                     </LinkContainer>
 
                     <LinkContainer to={`/mechanics`}>
-                        <Col xs={4} className='global_cursor global_silver-chalice-bg border-right border-dark Mechanics_col d-flex align-items-center '>
+                        <Col xs={4} className=' global_cursor border-right Mechanics_col d-flex align-items-center '>
                             <Zoom>
                                 <p className='Avionics_text-titles'>In-Depth Tests & Checks</p>
                             </Zoom>
@@ -127,7 +127,7 @@ const Avionics = () => {
                     </LinkContainer>
 
                     <LinkContainer to={`/mechanics`}>
-                        <Col xs={4} className='global_cursor global_silver-chalice-bg Mechanics_col d-flex align-items-center '>
+                        <Col xs={4} className=' global_cursor Mechanics_col d-flex align-items-center '>
                             <Zoom>
                                 <p className='Avionics_text-titles'> Software Updates</p>
                             </Zoom>
@@ -135,14 +135,18 @@ const Avionics = () => {
                     </LinkContainer>
                 </Row>
 
-                <Row className='d-flex justify-content-center mb-0 mt-4 pt-3 Avionics_card-row'>
-                    <Col xs={3} className='d-flex justify-content-center'>
-                        <Card style={{width: '18rem'}} className='border-0 global_light-grey-bg rounded'>
-                            <Card.Img variant="top" src={cnc} className='Avionics_card-img'/>
-                            <Card.Body>
+            </Jumbotron>
+
+            <Jumbotron className='global_cultured-bg m-0 p-0' fluid>
+
+                <Row className='d-flex justify-content-center mb-0 Avionics_card-row'>
+                    <Col xs={4} className='d-flex justify-content-center'>
+                        <Card className='Avionics_card border-0 global_cultured-bg rounded ml-5'>
+                            <Card.Img variant="top" src={cnc} className=' Avionics_card-img '/>
+                            <Card.Body className='global_eerie-black'>
                                 <Zoom>
-                                    <Card.Title>Card Title</Card.Title>
-                                    <Card.Text>
+                                    {/*<Card.Title>Card Title</Card.Title>*/}
+                                    <Card.Text className='Avionics_card-text'>
                                         Some quick example text to build on the card title and make up the bulk of
                                         the card's content.
                                     </Card.Text>
@@ -151,13 +155,13 @@ const Avionics = () => {
                         </Card>
                     </Col>
 
-                    <Col xs={3} className='d-flex justify-content-center'>
-                        <Card style={{width: '18rem'}} className='border-0 global_light-grey-bg rounded'>
-                            <Card.Img variant="top" src={test} className='Avionics_card-img'/>
-                            <Card.Body>
+                    <Col xs={4} className='d-flex justify-content-center'>
+                        <Card className='Avionics_card border-0 global_cultured-bg rounded'>
+                            <Card.Img variant="top" src={test} className='Avionics_card-img '/>
+                            <Card.Body className='global_eerie-black'>
                                 <Zoom>
-                                    <Card.Title>Card Title</Card.Title>
-                                    <Card.Text>
+                                    {/*<Card.Title>Card Title</Card.Title>*/}
+                                    <Card.Text className='Avionics_card-text'>
                                         Some quick example text to build on the card title and make up the bulk of
                                         the card's content.
                                     </Card.Text>
@@ -166,28 +170,14 @@ const Avionics = () => {
                         </Card>
                     </Col>
 
-                    <Col xs={3} className='d-flex justify-content-center'>
-                        <Card style={{width: '18rem'}} className='border-0 global_light-grey-bg rounded'>
-                            <Card.Img variant="top" src={software} className='Avionics_card-img'/>
-                            <Card.Body>
-                                <Zoom>
-                                    <Card.Title>Card Title</Card.Title>
-                                    <Card.Text>
-                                        Some quick example text to build on the card title and make up the bulk of
-                                        the card's content.
-                                    </Card.Text>
-                                </Zoom>
-                            </Card.Body>
-                        </Card>
-                    </Col>
 
-                    <Col xs={3} className='d-flex justify-content-center'>
-                        <Card style={{width: '18rem'}} className='border-0 global_light-grey-bg rounded'>
+                    <Col xs={4} className='d-flex justify-content-center'>
+                        <Card className='Avionics_card border-0 global_cultured-bg global_cultured-bg rounded mr-5'>
                             <Card.Img variant="top" src={tayseer} className='Avionics_card-img'/>
-                            <Card.Body>
+                            <Card.Body className='global_eerie-black'>
                                 <Zoom>
-                                    <Card.Title>Card Title</Card.Title>
-                                    <Card.Text>
+                                    {/*<Card.Title>Card Title</Card.Title>*/}
+                                    <Card.Text className='Avionics_card-text' >
                                         Some quick example text to build on the card title and make up the bulk of
                                         the card's content.
                                     </Card.Text>
@@ -201,17 +191,17 @@ const Avionics = () => {
 
             </Jumbotron>
 
-            <Row className='Avionics_contact_img'>
-                <Col xs={12} className='d-flex justify-content-end align-items-center'>
-                    <LinkContainer to={`/contact`}>
-                        <Fade right duration='1000'>
-                            <Button className=' Avionics_contact-btn'>Book your appointment
-                                today
-                            </Button>
-                        </Fade>
-                    </LinkContainer>
-                </Col>
-            </Row>
+            {/*<Row className='Avionics_contact_img'>*/}
+            {/*    <Col xs={12} className='d-flex justify-content-end align-items-center'>*/}
+            {/*        <LinkContainer to={`/contact`}>*/}
+            {/*            <Fade right duration='1000'>*/}
+            {/*                <Button className=' Avionics_contact-btn'>Book your appointment*/}
+            {/*                    today*/}
+            {/*                </Button>*/}
+            {/*            </Fade>*/}
+            {/*        </LinkContainer>*/}
+            {/*    </Col>*/}
+            {/*</Row>*/}
 
         </>
 

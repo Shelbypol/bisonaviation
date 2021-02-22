@@ -49,7 +49,6 @@ const App = ({location}) => {
                 <Fragment>
                         <Headers/>
                     <Route path='/' component={HomeScreen1} exact/>
-                    {/*<Route path='/' component={HomeScreen} exact/>*/}
                     <Route path='/products' component={ProductsDisplayScreen} exact/>
                     {/*<main className='py-0'>*/}
                     <Route path='/avionics' component={AvionicsScreen}/>

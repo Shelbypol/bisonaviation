@@ -5,11 +5,14 @@ import '../../style/1/Flir.css'
 import flir1 from "../../images/bg-graphics/flir/flir-1.jpg"
 import flir2 from "../../images/bg-graphics/flir/large-flir.jpg"
 import flir3 from "../../images/bg-graphics/flir/flir-multiple.jpg"
-import {Container} from "react-bootstrap";
+import {Button, Container} from "react-bootstrap";
+import {LinkContainer} from "react-router-bootstrap";
+import Fade from "react-reveal/Fade";
 
 
 const Flir = () => {
     return (
+        <>
 
         <Jumbotron className='m-0 py-5 global_light-grey-bg Flir_shadow' fluid>
             {/*<Container className='p-0 fluid'>*/}
@@ -87,6 +90,20 @@ const Flir = () => {
             {/*</Container>*/}
 
         </Jumbotron>
+
+            <Row className='Avionics_contact_img m-0 p-0'>
+                <Col xs={12} className='d-flex justify-content-end align-items-center'>
+                    <LinkContainer to={`/contact`}>
+                        <Fade right duration='1000'>
+                            <Button className=' Avionics_contact-btn'>Book your appointment
+                                today
+                            </Button>
+                        </Fade>
+                    </LinkContainer>
+                </Col>
+            </Row>
+
+        </>
 
     )
 };

@@ -16,12 +16,30 @@
     /*color: #161A1D;*/
 }
 
+.Avionics_row-titles{
+    height: 150px;
+    /*height: 200px;*/
+    box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.6), 0 12px 20px 0 rgba(0, 0, 0, 0.19);
+    font-size: 25px;
+    color: #fff;
+}
+
 .Avionics_card-row{
     padding-bottom: 10vh;
+    padding-top: 8vh;
+}
+
+.Avionics_card{
+    width: 22rem;
 }
 
 .Avionics_card-img{
-    height: 13em;
+    /*height: 18em;*/
+    height: 15em;
+}
+
+.Avionics_card-text{
+
 }
 
 .Avionics_learn-more-btn:hover{
@@ -118,9 +136,11 @@
 
 .Avionics_contact-btn {
     margin-right: 10vw;
-    background-color: #F5F3F4;
+    background-color: #660708;
+    /*background-color: #F5F3F4;*/
     border: 1px solid #660708;
-    color: #660708;
+    color: #F5F3F4;
+    /*color: #660708;*/
     font-size: 20px;
     font-weight: lighter;
     padding: 15px;

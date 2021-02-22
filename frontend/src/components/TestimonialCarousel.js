@@ -8,7 +8,7 @@ import Zoom from 'react-reveal/Zoom';
 const TestimonialCarousel = () => {
     return (
         <>
-            <Jumbotron className=' global_blood-red-bg mb-0 mt-n5 p-2'
+            <Jumbotron className=' global_blood-red-bg mb-0 mt-n5 p-0'
                        fluid>
                 <Zoom>
                     <Carousel

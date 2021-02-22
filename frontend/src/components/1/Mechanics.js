@@ -98,7 +98,7 @@ const Mechanics = () => {
             </Jumbotron>
 
 
-            <Row className='global_blood-red-bg Mechanics_row d-flex align-content-center'>
+            <Row className='global_rich-black-bg Mechanics_row d-flex align-content-center'>
                 <LinkContainer to={`/mechanics`}>
                     <Col xs={4} className='global_cursor border-right Mechanics_col d-flex align-items-center '>
                         <Zoom>
