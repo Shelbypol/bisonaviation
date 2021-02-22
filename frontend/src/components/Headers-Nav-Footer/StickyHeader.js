@@ -87,59 +87,24 @@ const StickyHeader = () => {
                                         </Nav.Link>
                                     </LinkContainer>
 
-                                    {/*  AIR CRAFT SERVICES  */}
-                                    <NavDropdown style={{zIndex: '100'}} className='mx-1 whiteDropdown'
-                                                 title='Aircraft Services'
-                                                 id='aircraftservicesmenu'>
-                                        {/*   AVIONICS  */}
-                                        <LinkContainer to='/avionics'>
-                                            <NavDropdown.Item>Avionics</NavDropdown.Item>
-                                        </LinkContainer>
-
-                                        {/*   MAINTENANCE  */}
-                                        <LinkContainer to='/maintenance'>
-                                            <NavDropdown.Item>Maintenance</NavDropdown.Item>
-                                        </LinkContainer>
-
-                                        {/*   AOG RESPONSE  */}
-                                        <LinkContainer to='/aog'>
-                                            <NavDropdown.Item>AOG Response</NavDropdown.Item>
-                                        </LinkContainer>
-
-                                        {/*   ACQUISITIONS  */}
-                                        <LinkContainer to='/acquisitions'>
-                                            <NavDropdown.Item>Acquisitions</NavDropdown.Item>
-                                        </LinkContainer>
-
-                                        {/*   AIRCRAFT PARTS  */}
-                                        <LinkContainer to='/aircraftparts'>
-                                            <NavDropdown.Item>Aircraft Parts</NavDropdown.Item>
-                                        </LinkContainer>
-                                    </NavDropdown>
-
-                                    {/*  EO/IR  */}
-                                    <NavDropdown style={{zIndex: '100'}} className='mx-1 whiteDropdown' title='EO/IR'
-                                                 id='eoirmenu'>
-                                        {/*   EO / IR MAINTENANCE */}
-                                        <LinkContainer to='/eoir/maintenance'>
-                                            <NavDropdown.Item>EO/IR Maintenance</NavDropdown.Item>
-                                        </LinkContainer>
-
-                                        {/*   SYSTEM SALES  */}
-                                        <LinkContainer to='/systemsales'>
-                                            <NavDropdown.Item>System Sales</NavDropdown.Item>
-                                        </LinkContainer>
-
-                                        {/*   EO / IR PARTS  */}
-                                        <LinkContainer to='/eoir/parts'>
-                                            <NavDropdown.Item>EO/IR Parts</NavDropdown.Item>
-                                        </LinkContainer>
-                                    </NavDropdown>
-
-                                    {/*  TEAM  */}
-                                    <LinkContainer to='/team'>
+                                    {/*  AVIONICS  */}
+                                    <LinkContainer className='mx-1' to='/avionics'>
                                         <Nav.Link>
-                                            Team
+                                            Avionics
+                                        </Nav.Link>
+                                    </LinkContainer>
+
+                                    {/*  MAINTENANCE  */}
+                                    <LinkContainer className='mx-1' to='/maintenance'>
+                                        <Nav.Link>
+                                            Maintenance
+                                        </Nav.Link>
+                                    </LinkContainer>
+
+                                    {/*  EO/IR FLIR  */}
+                                    <LinkContainer className='mx-1' to='/flir'>
+                                        <Nav.Link>
+                                            EO/IR Flir
                                         </Nav.Link>
                                     </LinkContainer>
                                 </Nav>
@@ -156,59 +121,24 @@ const StickyHeader = () => {
                                         </Nav.Link>
                                     </LinkContainer>
 
-                                    {/*  AIR CRAFT SERVICES  */}
-                                    <NavDropdown style={{zIndex: '100'}} className='mx-1 whiteDropdown'
-                                                 title='Aircraft Services'
-                                                 id='aircraftservicesmenu'>
-                                        {/*   AVIONICS  */}
-                                        <LinkContainer to='/avionics'>
-                                            <NavDropdown.Item>Avionics</NavDropdown.Item>
-                                        </LinkContainer>
-
-                                        {/*   MAINTENANCE  */}
-                                        <LinkContainer to='/maintenance'>
-                                            <NavDropdown.Item>Maintenance</NavDropdown.Item>
-                                        </LinkContainer>
-
-                                        {/*   AOG RESPONSE  */}
-                                        <LinkContainer to='/aog'>
-                                            <NavDropdown.Item>AOG Response</NavDropdown.Item>
-                                        </LinkContainer>
-
-                                        {/*   ACQUISITIONS  */}
-                                        <LinkContainer to='/acquisitions'>
-                                            <NavDropdown.Item>Acquisitions</NavDropdown.Item>
-                                        </LinkContainer>
-
-                                        {/*   AIRCRAFT PARTS  */}
-                                        <LinkContainer to='/aircraftparts'>
-                                            <NavDropdown.Item>Aircraft Parts</NavDropdown.Item>
-                                        </LinkContainer>
-                                    </NavDropdown>
-
-                                    {/*  EO/IR  */}
-                                    <NavDropdown style={{zIndex: '100'}} className='mx-1 whiteDropdown' title='EO/IR'
-                                                 id='eoirmenu'>
-                                        {/*   EO / IR MAINTENANCE */}
-                                        <LinkContainer to='/eoir/maintenance'>
-                                            <NavDropdown.Item>EO/IR Maintenance</NavDropdown.Item>
-                                        </LinkContainer>
-
-                                        {/*   SYSTEM SALES  */}
-                                        <LinkContainer to='/systemsales'>
-                                            <NavDropdown.Item>System Sales</NavDropdown.Item>
-                                        </LinkContainer>
-
-                                        {/*   EO / IR PARTS  */}
-                                        <LinkContainer to='/eoir/parts'>
-                                            <NavDropdown.Item>EO/IR Parts</NavDropdown.Item>
-                                        </LinkContainer>
-                                    </NavDropdown>
-
-                                    {/*  TEAM  */}
-                                    <LinkContainer to='/team'>
+                                    {/*  AVIONICS  */}
+                                    <LinkContainer className='mx-1' to='/avionics'>
                                         <Nav.Link>
-                                            Team
+                                            Avionics
+                                        </Nav.Link>
+                                    </LinkContainer>
+
+                                    {/*  MAINTENANCE  */}
+                                    <LinkContainer className='mx-1' to='/maintenance'>
+                                        <Nav.Link>
+                                            Maintenance
+                                        </Nav.Link>
+                                    </LinkContainer>
+
+                                    {/*  EO/IR FLIR  */}
+                                    <LinkContainer className='mx-1' to='/flir'>
+                                        <Nav.Link>
+                                            EO/IR Flir
                                         </Nav.Link>
                                     </LinkContainer>
                                 </Nav>
@@ -225,11 +155,7 @@ const StickyHeader = () => {
                                         <LinkContainer to='/contact'>
                                             <Nav.Link>
                                                 <Button
-                                                    className='px-3 py-0 mt-2 mr-4 rounded-pill global_bisonRedBgWhiteHoverBgBtn StickyHeader_iconHidden '>
-                                                    {/* <span className='StickyHeader_hideIcon'>*/}
-                                                    {/*     ImgRow*/}
-                                                    {/* </span>*/}
-                                                    {/*<span className='StickyHeader_hideWords'>ImgRow</span>*/}
+                                                    className='px-3 py-0 mt-2 mr-4 rounded-pill global_blood-red-bg StickyHeader_iconHidden '>
                                                     <span className='StickyHeader_hideIcon'>
                                                      Contact
                                                  </span>
@@ -246,12 +172,11 @@ const StickyHeader = () => {
 
                                         <WishListTab/>
 
-
                                         {/* CONTACT  */}
                                         <LinkContainer to='/contact'>
                                             <Nav.Link>
                                                 <Button
-                                                    className='px-3 py-0 mt-2 mr-4 rounded-pill global_bisonRedBgWhiteHoverBgBtn StickyHeader_iconHidden'>
+                                                    className='px-3 py-0 mt-2 mr-4 rounded-pill global_blood-red-bg StickyHeader_iconHidden'>
                                                  <span className='StickyHeader_hideIcon'>
                                                     Contact
                                                  </span>
@@ -263,8 +188,8 @@ const StickyHeader = () => {
                                     </Nav>
 
                             }
-
                         </Navbar.Collapse>
+
 
 
                 <SideBar/>
