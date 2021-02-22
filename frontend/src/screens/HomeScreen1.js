@@ -43,7 +43,7 @@ const HomeScreen1 = () => {
 
                 <Flir/>
 
-                <ImgRow/>
+                {/*<ImgRow/>*/}
             {/*</Container>*/}
         </>
 

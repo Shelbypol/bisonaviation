@@ -138,7 +138,7 @@ const Mechanics = () => {
                 </Col>
             </Row>
 
-            <Row className='d-flex align-content-center Mechanics_circle-text mx-1 mt-n5 p-0 mb-5'>
+            <Row className='d-flex align-content-center Mechanics_circle-text mx-1 mt-n5 p-0 pb-5 mb-5'>
                 <Col xs={3} className='mt-n5 pt-n5 text-center global_cursor'>
                     <Zoom>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto debitis eos magni,

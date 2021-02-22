@@ -12,6 +12,10 @@
     height: 600px;
 }
 
+.Flir_margin-pos-top{
+    margin-top: 8vw;
+}
+
 .Flir_font{
     font-size: 18px;
 }

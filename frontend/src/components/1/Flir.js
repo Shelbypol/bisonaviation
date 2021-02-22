@@ -30,26 +30,27 @@ const Flir = () => {
 
                     <Col xs={6} className=''>
 
-                        <Row className='Mechanics_margin-pos-top ml-5'>
+                        <Row className='Flir_margin-pos-top'>
                             <Zoom>
 
-                                <Col xs={12} className='mb-2'>
-                                    <h1 className='global_eerie-black '>You depend on your aircraft to carry you and your passengers safely.</h1>
+                                <Col xs={12} className='mb-2 ml-n4'>
+                                    <h1 className='global_eerie-black '>
+                                        Bison Aviation’s maintains the world’s largest inventory of legacy airborne EO/IR equipment
+                                    </h1>
                                 </Col>
                             </Zoom>
                         </Row>
 
-                        <Row className='ml-5 d-flex align-content-center Mechanics_margin-neg-top Mechanics_circle-text mb-0 p-0'>
+                        <Row className=' d-flex align-content-center Mechanics_margin-neg-top Mechanics_circle-text mb-0 p-0'>
                             {/*<Col xs={5} className='Mechanics_circle2 ml-5'>*/}
                             {/*</Col>*/}
                             <Col>
                                 <h3> </h3>
                             </Col>
-                            <Col xs={12} className='  global_cursor mt-4'>
+                            <Col xs={12} className='  global_cursor ml-n4 mt-4'>
                                 <Zoom>
                                     <p>
-                                        Whether it's time for a routine annual, a complete series of phase inspections or a pre-purchase inspection, Bison Aviation's team of FAA licensed technicians is ready to ensure that your aircraft is safe and airworthy for your next flight!
-
+                                        Bison Aviation’s Sensor Service team maintains an average of more than sixty flight-ready systems from manufacturers such as Wescam, FLIR Systems, Inc., GyroCam, PolyTech, SweSystems, and more. Through significant investments in research and engineering, Bison Aviation has developed the tools and procedures necessary to repair & service nearly all makes and models of airborne equipment at the component level.
                                     </p>
                                 </Zoom>
                             </Col>
@@ -61,7 +62,7 @@ const Flir = () => {
 
 
 
-                        <Row className='mt-3 ml-5 Mechanics_info'>
+                        <Row className='mt-3 ml-n5 Mechanics_info'>
                             <Zoom>
                                 <Col xs={12} className='py-1 global_cursor'>
                                     <Fade right duration='1000'>
@@ -84,7 +85,7 @@ const Flir = () => {
                 <LinkContainer to={`/mechanics`}>
                     <Col xs={4} className='global_cursor border-right Mechanics_col d-flex align-items-center '>
                         <Zoom>
-                            <p className='Mechanics_text'>Annual Inspections</p>
+                            <p className='Mechanics_text text-center'>Systems from major manufacturers</p>
                         </Zoom>
                     </Col>
                 </LinkContainer>
@@ -92,7 +93,7 @@ const Flir = () => {
                 <LinkContainer to={`/mechanics`}>
                     <Col xs={4} className='global_cursor border-right Mechanics_col d-flex align-items-center '>
                         <Zoom>
-                            <p className='Mechanics_text'>Propeller Balance</p>
+                            <p className='Mechanics_text text-center'>World's largest in-house inventory</p>
                         </Zoom>
                     </Col>
                 </LinkContainer>
@@ -100,7 +101,7 @@ const Flir = () => {
                 <LinkContainer to={`/mechanics`}>
                     <Col xs={4} className='global_cursor Mechanics_col d-flex align-items-center '>
                         <Zoom>
-                            <p className='Mechanics_text'> Pre-Buy Inspections</p>
+                            <p className='Mechanics_text text-center'> Independent ISR sensor labs</p>
                         </Zoom>
                     </Col>
                 </LinkContainer>
