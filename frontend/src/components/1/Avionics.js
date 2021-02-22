@@ -143,7 +143,7 @@ const Avionics = () => {
                                 <Col xs={12} className='py-1 global_cursor ml-4'>
                                     <Fade right duration='1000'>
                                         <LinkContainer to={`/maintenance`}>
-                                            <h4 className='Mechanics_learn-more-btn'>Learn More</h4>
+                                            <h4 className='Mechanics_learn-more-btn pl-2'>Learn More</h4>
                                         </LinkContainer>
                                     </Fade>
                                 </Col>

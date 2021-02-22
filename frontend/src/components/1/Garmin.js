@@ -26,11 +26,11 @@ const Garmin = () => {
                                 <Card style={{width: '18rem'}} className='border-0'>
                                     <Card.Body>
                                         <Card.Title className='global_blood-red'>5% OFF Red Tagged Products</Card.Title>
-                                        {/*<Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>*/}
                                         <Card.Text>
                                             Any products marked with a red flag receive a 5% discount!
-                                            PROMO ENDS March 1st, 2021
+                                            {/*PROMO ENDS March 1st, 2021*/}
                                         </Card.Text>
+                                        <Card.Subtitle className="mb-2 text-muted"> PROMO ENDS March 1st, 2021</Card.Subtitle>
                                         <Card.Link href="#">Browse Products</Card.Link>
                                         {/*<Card.Link href="#">Another Link</Card.Link>*/}
                                     </Card.Body>
