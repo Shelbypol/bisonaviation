@@ -1,0 +1,7 @@
+.MechanicsHero_hero-img{
+    background-image: url("../../images/bg-graphics/screen-maintenance/maintenance-hero-image.png");
+    /*background-image: url("../../images/bg-graphics/screen-maintenance/mechanics-screen-hero.png");*/
+    background-repeat: no-repeat;
+    height: 650px;
+    width: 1440px;
+}

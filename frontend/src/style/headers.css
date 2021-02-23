@@ -31,16 +31,26 @@
     background: linear-gradient(to right, #161616, #3f3f3f);
 }
 
+.StickyHeader_nav{
+    background-color: #F5F3F4;
+    /*border-bottom: #660708 1px solid;*/
+}
+
 .StickyHeader_search_btn_padding{
     /*padding-top: 2em;*/
     /*padding-bottom: 1.45em;*/
-    padding: 1em 1em;
+    padding: .9em 1em;
     background-color:  #4A433D;
+    color: #000;
 
 }
 
 .StickyHeader_icon-size{
     font-size: 1.5em;
+}
+
+.StickyHeader_search-gradient{
+    /*background: linear-gradient(to right, #161A1D, #B1A7A6);*/
 }
 
 /* HIDE AND SHOW ICONS */
@@ -56,14 +66,13 @@
     display: none;
 }
 
-/*.StickyHeader_blackFade{*/
-/*    background-image: url("../images/graphics/small-black-fade.png");*/
-/*    position: relative;*/
-/*    margin-top: -5vh;*/
-/*    height: 2vh;*/
-/*    top:0;*/
-/*    z-index: -1;*/
-/*}*/
+.StickyHeader_links{
+    color: rgba(0,0,0,.4);
+}
+
+.StickyHeader_links:hover{
+    color: #000;
+}
 
 .StickyHeader_whiteFade{
     position: relative;
@@ -74,16 +83,6 @@
     z-index: -1;
 }
 
-/*#StickyHeader_SearchBox_searchImage {*/
-/*    !*background-image: url("../images/graphics/search-logo-very-small-white.png");*!*/
-/*    !*background-repeat: no-repeat;*!*/
-/*    !*background-position: center;*!*/
-/*}*/
-
-/*#StickyHeader_SearchBox_searchImage:hover {*/
-/*    !*background-image: url("../images/graphics/search-logo-very-small.png");*!*/
-/*    !*background-image: url("../images/graphics/search-logo-very-small-white.png");*!*/
-/*}*/
 
 /*   NAV BOOTSTRAP DROPDOWN STYLE    */
 .navbar-toggler {

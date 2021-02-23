@@ -1,11 +1,44 @@
 .Mechanics_bg_img{
-    background-image: url("../../images/bg-graphics/mechanics/riveting-large.jpg");
+    /*background-image: url("../../images/bg-graphics/mechanics/riveting-large.jpg");*/
+    background-image: url("../../images/mechanics/cirrusrobin2.jpg");
     background-repeat: no-repeat;
-    /*background-position: center 45%;*/
-    /*height: 350px;*/
-
     background-position: center 35%;
-    height: 300px;
+    height: 150px;
+}
+
+.Mechanics_hero-img{
+    /*background-image: url("../../images/bg-graphics/avionics/avionics-cessna-hero.png");*/
+    background-image: url("../../images/bg-graphics/mechanics/maintenance-hero.png");
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 800px;
+}
+
+.Mechanics_learn-more-btn{
+    color: #660708;
+    text-decoration: underline;
+}
+
+.Mechanics_learn-more-btn:hover{
+    color: #161A1D;
+    /*text-decoration: underline;*/
+}
+
+.Mechanics_margin-pos-top{
+    margin-top: 10vw;
+}
+
+.Mechanics_margin-neg-top{
+    margin-top: -5vw;
+}
+
+.Mechanics-top-row{
+    /*width: 1500px;*/
+    /*z-index: 201;*/
+}
+
+.Mechanics_jumbo{
+    height: 600px;
 }
 
 .Mechanics_title{

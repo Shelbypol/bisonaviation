@@ -1,8 +1,14 @@
 import React from 'react'
+import {Container} from "react-bootstrap";
+import TeamHero from "../components/1/team-screen/TeamHero";
 
 const TeamScreen = () => {
     return (
-        <h1>Meet the Team</h1>
+        <>
+            <Container className='m-0 p-0 fluid'>
+                <TeamHero/>
+            </Container>
+        </>
     )
 };
 

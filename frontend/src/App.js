@@ -28,7 +28,7 @@ import AcquisitionScreen from "./screens/AcquisitionScreen";
 import AircraftPartsScreen from "./screens/AircraftPartsScreen";
 import EoIrMaintenanceScreen from "./screens/EoIrMaintenanceScreen";
 import SystemSalesScreen from "./screens/SystemSalesScreen";
-import EoIrPartsScreen from "./screens/EoIrPartsScreen";
+import FlirScreen from "./screens/FlirScreen";
 import TeamScreen from "./screens/TeamScreen";
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -47,12 +47,14 @@ const App = ({location}) => {
                 <Route path='/admin/orderlist' component={OrderListScreen}/>
 
                 <Fragment>
-                        <Headers/>
+                    <Headers/>
                     <Route path='/' component={HomeScreen1} exact/>
-                    {/*<Route path='/' component={HomeScreen} exact/>*/}
-                    <Route path='/products' component={ProductsDisplayScreen} exact/>
-                    {/*<main className='py-0'>*/}
                     <Route path='/avionics' component={AvionicsScreen}/>
+                    <Route path='/flir' component={FlirScreen}/>
+                    <Route path='/maintenance' component={MaintenanceScreen}/>
+                    <Route path='/team' component={TeamScreen}/>
+
+                    <Route path='/products' component={ProductsDisplayScreen} exact/>
 
                         <Container className='mb-0 pb-0'>
                             <Route path='/login' component={LoginScreen}/>
@@ -69,14 +71,11 @@ const App = ({location}) => {
                             <Route path='/page/:pageNumber' component={ProductsDisplayScreen} exact/>
                             <Route path='/search/:keyword/page/:pageNumber' component={ProductsDisplayScreen}/>
 
-                            <Route path='/maintenance' component={MaintenanceScreen}/>
-                            <Route path='/aog' component={AogResponseScreen}/>
-                            <Route path='/acquisitions' component={AcquisitionScreen}/>
-                            <Route path='/aircraftparts' component={AircraftPartsScreen}/>
-                            <Route path='/eoir/maintenance' component={EoIrMaintenanceScreen}/>
-                            <Route path='/systemsales' component={SystemSalesScreen}/>
-                            <Route path='/eoir/parts' component={EoIrPartsScreen}/>
-                            <Route path='/team' component={TeamScreen}/>
+                            {/*<Route path='/aog' component={AogResponseScreen}/>*/}
+                            {/*<Route path='/acquisitions' component={AcquisitionScreen}/>*/}
+                            {/*<Route path='/aircraftparts' component={AircraftPartsScreen}/>*/}
+                            {/*<Route path='/systemsales' component={SystemSalesScreen}/>*/}
+                            {/*<Route path='/eoir/parts' component={FlirScreen}/>*/}
                         </Container>
                     {/*</main>*/}
                 </Fragment>

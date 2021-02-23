@@ -2,9 +2,9 @@ import React, {useState} from 'react';
 import {Col, Button, Row} from "react-bootstrap";
 import {Jumbotron} from 'reactstrap';
 import Fade from 'react-reveal/Fade';
-import '../../style/avionicsScreen/AvionicsAd.css';
+import '../../../style/avionicsScreen/AvionicsAd.css';
 import {LinkContainer} from "react-router-bootstrap";
-import AvionicsProducts from "../1/AvionicsProducts";
+import AvionicsProducts from "../../1/AvionicsProducts";
 
 const AvionicsAd = () => {
 

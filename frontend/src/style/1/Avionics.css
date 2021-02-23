@@ -7,6 +7,41 @@
     margin-top: -1vw;
 }
 
+.Avionics_text-titles{
+    font-size: 30px;
+    /*font-weight: lighter;*/
+    text-shadow: 1px 1px #000000;
+    margin: auto;
+    color: #F5F3F4;
+    /*color: #161A1D;*/
+}
+
+.Avionics_row-titles{
+    height: 150px;
+    /*height: 200px;*/
+    box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.6), 0 12px 20px 0 rgba(0, 0, 0, 0.19);
+    font-size: 25px;
+    color: #fff;
+}
+
+.Avionics_card-row{
+    padding-bottom: 10vh;
+    padding-top: 8vh;
+}
+
+.Avionics_card{
+    width: 22rem;
+}
+
+.Avionics_card-img{
+    /*height: 18em;*/
+    height: 15em;
+}
+
+.Avionics_card-text{
+
+}
+
 .Avionics_learn-more-btn:hover{
     color: #660708;
     text-decoration: underline;
@@ -30,15 +65,10 @@
 }
 
 .Avionics_jumbo-img{
-    background-image: url("../../images/bg-graphics/avionics/avionics-cessna-hero.png");
-    /*background-image: url("../../images/bg-graphics/avionics/avionics-hero-title.png");*/
+    /*background-image: url("../../images/bg-graphics/avionics/avionics-cessna-hero.png");*/
+    background-image: url("../../images/bg-graphics/avionics/avionics-cessna-hero-black.png");
     background-repeat: no-repeat;
-    /*height: 600px;*/
-    /*width: 800px;*/
     height: 600px;
-    /*width: 875px;*/
-    /*width: 350px;*/
-    /*height: 400px;*/
 }
 
 /* w: 875 h:400*/
@@ -95,20 +125,25 @@
 }
 
 .Avionics_contact_img {
-    background-image: url("../../images/bg-graphics/avionics/jd-roel.png");
+    /*background-image: url("../../images/bg-graphics/avionics/jd-roel.png");*/
+    background-image: url("../../images/bg-graphics/flir/jd-roel-flir-end.png");
     background-repeat: no-repeat;
     background-position: center 15%;
-    /*background-position: center 35%;*/
-    height: 400px;
-    /*height: 350px;*/
+    /*background-position: center 10%;*/
+
+    height: 500px;
+    /*height: 400px;*/
+
     background-color: #EEEEEE;
 }
 
 .Avionics_contact-btn {
     margin-right: 10vw;
-    background-color: #F5F3F4;
+    background-color: #660708;
+    /*background-color: #F5F3F4;*/
     border: 1px solid #660708;
-    color: #660708;
+    color: #F5F3F4;
+    /*color: #660708;*/
     font-size: 20px;
     font-weight: lighter;
     padding: 15px;
