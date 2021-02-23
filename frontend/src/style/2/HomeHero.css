@@ -1,0 +1,23 @@
+.HomeHero_bg-img{
+    background-image: url("../../images/bg-graphics/hero/this-one-line-reflect-color.png");
+    background-repeat: no-repeat;
+    background-position: 100% 5%;
+    height: 510px;
+}
+
+.HomeHero_title{
+    font-size: 45px;
+}
+
+.HomeHero_span{
+    font-size: 22px;
+}
+
+.HomeHero_text-box{
+    margin-left: 10%;
+    margin-top: -7%;
+}
+
+.HomeHero_letter{
+    font-size: 75px;
+}

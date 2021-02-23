@@ -1,0 +1,33 @@
+.Flir_highlight-font{
+    font-size: 20px;
+}
+
+.Flir_jumbo{
+    height: 600px;
+}
+
+.Flir_jumbo-img{
+    background-image: url("../../images/bg-graphics/flir/flir-hero.png");
+    background-repeat: no-repeat;
+    height: 600px;
+}
+
+.Flir_margin-pos-top{
+    margin-top: 8vw;
+}
+
+.Flir_font{
+    font-size: 18px;
+}
+
+.Flir_shadow{
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 12px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.Flir_title{
+    text-shadow: 2px 2px 4px #111111;
+}
+
+.Flir_img-shadow{
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 12px 20px 0 rgba(0, 0, 0, 0.19);
+}
