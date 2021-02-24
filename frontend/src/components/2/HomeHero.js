@@ -138,37 +138,7 @@ const HomeHero = () => {
                 </Carousel.Item>
             </Carousel>
 
-
-            {/*<Row className='HomeHero_text-box'>*/}
-            {/*    <Zoom>*/}
-
-            {/*        <Col xs={12} className=' d-flex justify-content-start align-content-center'>*/}
-            {/*            <h1 className='HomeHero_title text-center ml-n2'>*/}
-            {/*                <span className='HomeHero_letter global_blood-red'>B</span>ison*/}
-            {/*                &nbsp;*/}
-            {/*                <span className='HomeHero_letter global_blood-red mr-n2'>A</span>viation*/}
-
-            {/*            </h1>*/}
-            {/*        </Col>*/}
-            {/*    </Zoom>*/}
-            {/*    <Col xs={12} className='d-flex justify-content-start'>*/}
-            {/*        <h3 className='text-center m-0 p-0'>we work hard on the ground</h3>*/}
-            {/*    </Col>*/}
-            {/*    <Col xs={12} className='d-flex justify-content-start'>*/}
-            {/*        <h3 className='text-center m-0 p-0'>so you can*/}
-            {/*            <Fade duration={5000}>*/}
-            {/*                <div className='d-inline'>*/}
-            {/*                    <span*/}
-            {/*                        className='global_blood-red font-weight-bolder HomeHero_span'>*/}
-            {/*                        <i> fly with confidence</i>*/}
-            {/*                    </span>*/}
-            {/*                </div>*/}
-            {/*            </Fade>*/}
-            {/*        </h3>*/}
-            {/*    </Col>*/}
-            {/*</Row>*/}
-
-
+            {/*<Jumbotron className='Global_graphic bg-transparent' fluid> </Jumbotron>*/}
         </>
     );
 };

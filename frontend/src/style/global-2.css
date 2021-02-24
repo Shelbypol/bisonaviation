@@ -88,8 +88,8 @@ main {
 }
 
 .Global_graphic{
-    background-image: url("../images/graphics/divider-red-top-large-left.png");
+    background-image: url("../images/graphics/black-top-large-left.png");
     height: 300px;
-    margin-top: -20vw;
+    margin-top: -15vh;
     /*background-position: center 5%;*/
 }
