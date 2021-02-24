@@ -2,7 +2,7 @@
     background-image: url("../../images/bg-graphics/hero/this-one-line-reflect-color.png");
     background-repeat: no-repeat;
     background-position: 100% 5%;
-    height: 510px;
+    /*height: 510px;*/
 }
 
 .HeroImg1{
@@ -26,8 +26,8 @@
 }
 
 .HomeHero_text-box{
-    margin-left: 10%;
-    margin-top: -7%;
+    /*margin-left: 10%;*/
+    /*margin-top: -25%;*/
 }
 
 .HomeHero_letter{

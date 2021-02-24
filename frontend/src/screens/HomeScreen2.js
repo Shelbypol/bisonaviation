@@ -26,6 +26,7 @@ const HomeScreen2 = () => {
 
             <HomeHero/>
 
+
             <RepairAward/>
 
             <Container className='p-0 fluid'>
@@ -35,15 +36,15 @@ const HomeScreen2 = () => {
                 <hr className='global_blood-red-bg'/>
             </Container>
 
-            <Jumbotron className='Global_Avionics_bg-img mt-n3 p-0 d-flex align-content-stretch bg-transparent'
+            <Jumbotron className='Global_Avionics_bg-img p-0 d-flex align-content-stretch bg-transparent'
                        fluid>
                 <Container className='p-0 fluid'>
                     <Avionics/>
                 </Container>
             </Jumbotron>
 
-            <Container className='p-0 fluid'>
-                <hr className='global_blood-red-bg mt-n4'/>
+            <Container className='p-0 mt-n3 fluid'>
+                <hr className='global_blood-red-bg '/>
                 <Mechanics/>
             </Container>
 
