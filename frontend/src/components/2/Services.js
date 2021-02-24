@@ -6,7 +6,7 @@ import {Jumbotron} from "reactstrap";
 import Zoom from 'react-reveal/Zoom';
 import Link from "react-router-bootstrap";
 
-const Services = ({title1, title2, title3, title4, showTag}) => {
+const Services = () => {
     return (
 
         <>
@@ -138,7 +138,7 @@ const Services = ({title1, title2, title3, title4, showTag}) => {
                                 </Col>
                                 <Col xs={12}>
                                     <Zoom>
-                                        <Button className='mt-3 global_blood-red-bg global_cultured Services_btn'>
+                                        <Button className='mt-3 ml-n4 global_blood-red-bg global_cultured Services_btn'>
                                             Request Service
                                         </Button>
                                     </Zoom>

@@ -18,8 +18,8 @@
 /*}*/
 
 .Services_btn{
-    width: 20vw;
-    margin-left: -5vw;
+    /*width: 20vw;*/
+    /*margin-left: -5vw;*/
     color: #F5F3F4;
     font-size: 15px;
     font-weight: lighter;
@@ -60,7 +60,6 @@
     background-image: url("../../images/bg-graphics/services/services-form.png");
     background-repeat: no-repeat;
     height: 238px;
-    width: 194px;
 }
 
 .Services_nav_text {

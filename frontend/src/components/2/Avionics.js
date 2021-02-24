@@ -17,17 +17,18 @@ const Avionics = () => {
     return (
         <>
 
-            <Jumbotron id='home-avionics' className='pb-4 pt-2 bg-transparent m-0'
-                       fluid>
-
-            </Jumbotron>
 
             <Jumbotron id='home-avionics' className='Avionics_jumbo bg-transparent global_cultured p-0 m-0'
                        fluid>
+                <Row>
+                    <Col>
+                        <h1 className='mt-5 global_cultured'>Avionics</h1>
+                    </Col>
+                </Row>
 
-                <Row className='pt-5'>
+                <Row className='pt-5 mb-5'>
 
-                    <Col xs={6} className=''>
+                    <Col xs={7} className=''>
                         <Zoom>
 
                             <Col xs={12} className='mb-2 mr-2 pr-4'>
@@ -49,21 +50,23 @@ const Avionics = () => {
                             </Zoom>
                         </Col>
 
-                        <Zoom>
-                            <Col xs={12} className='py-1 global_cursor ml-4'>
-                                <Fade right duration='1000'>
+
+                            <Col xs={12} className='py-1 global_cursor'>
                                     <LinkContainer to={`/maintenance`}>
-                                        <h4 className='Mechanics_learn-more-btn pl-2'>Learn More</h4>
+                                        <Zoom>
+                                            <Button className='global_cultured global_blood-red-bg '>
+                                                Learn More
+                                            </Button>
+                                        </Zoom>
                                     </LinkContainer>
-                                </Fade>
                             </Col>
-                        </Zoom>
+
 
                     </Col>
 
 
                     {/*</Row>*/}
-                    <Col xs={6} className=' p-0 m-0'>
+                    <Col xs={5} className=' p-0 m-0'>
                         <LinkContainer to={`/mechanics`}>
                             <Col xs={12}
                                  className=' global_cursor border-left Mechanics_col d-flex align-items-center '>
@@ -97,7 +100,7 @@ const Avionics = () => {
             </Jumbotron>
 
 
-            <Jumbotron className='bg-transparent mt-n5' fluid>
+            <Jumbotron className='bg-transparent mt-5 ' fluid>
 
                 <Row className='d-flex justify-content-center Avionics_card-top-row'>
 
@@ -136,19 +139,6 @@ const Avionics = () => {
                     <Col xs={4} className='d-flex justify-content-center'>
                         <Card className='Avionics_card border-0 bg-transparent rounded'>
                             <Card.Img variant="top" src={tayseer} className='Avionics_card-img'/>
-                            <Card.Body className='global_cultured'>
-                                <Zoom>
-                                    {/*<Card.Title>Card Title</Card.Title>*/}
-                                    <Card.Text className='Avionics_card-text'>
-                                        <Zoom>
-                                            <Button className='global_cultured global_blood-red-bg ml-5 '>Schedule
-                                                your
-                                                plane
-                                                today!</Button>
-                                        </Zoom>
-                                    </Card.Text>
-                                </Zoom>
-                            </Card.Body>
                         </Card>
                     </Col>
                 </Row>
