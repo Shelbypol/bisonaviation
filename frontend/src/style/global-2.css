@@ -86,3 +86,10 @@ main {
     background-image: url("../images/bg-graphics/flir/flir-jumbo-img.png");
     background-position: center 5%;
 }
+
+.Global_graphic{
+    background-image: url("../images/graphics/divider-red-top-large-left.png");
+    height: 300px;
+    margin-top: -20vw;
+    /*background-position: center 5%;*/
+}
