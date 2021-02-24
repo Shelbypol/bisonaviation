@@ -82,3 +82,7 @@ main {
     background-image: url("../images/bg-graphics/avionics/avionics-hero-img-overlay.png");
     background-position: center 5%;
 }
+.Global_Flir_bg-img{
+    background-image: url("../images/bg-graphics/flir/flir-jumbo-img.png");
+    background-position: center 5%;
+}

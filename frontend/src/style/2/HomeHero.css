@@ -5,6 +5,18 @@
     height: 510px;
 }
 
+.HeroImg1{
+    background-image: url("../../images/general/beachcraft-fin.png");
+}
+
+.HomeHero-img{
+    background-image: url("../../images/bg-graphics/hero/home-hash-overlay.png");
+    background-repeat: no-repeat;
+    /*background-position: 100% 5%;*/
+    height: 510px;
+    /*height: 600px;*/
+}
+
 .HomeHero_title{
     font-size: 45px;
 }

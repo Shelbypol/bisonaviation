@@ -8,10 +8,12 @@ import Avionics from "../components/2/Avionics";
 import TestimonialCarousel from "../components/TestimonialCarousel";
 import Mechanics from "../components/2/Mechanics";
 import Flir from "../components/2/Flir";
-import {Container} from 'react-bootstrap';
+import {Button, Container} from 'react-bootstrap';
 import ImgRow from "../components/2/ImgRow";
 import Garmin from "../components/2/Garmin";
-import {Jumbotron} from "reactstrap";
+import {Col, Jumbotron, Row} from "reactstrap";
+import {LinkContainer} from "react-router-bootstrap";
+import Fade from "react-reveal/Fade";
 
 const HomeScreen2 = () => {
 
@@ -21,8 +23,8 @@ const HomeScreen2 = () => {
 
     return (
         <>
-            <HomeHero/>
 
+            <HomeHero/>
 
             <RepairAward/>
 
@@ -41,13 +43,18 @@ const HomeScreen2 = () => {
             </Jumbotron>
 
             <Container className='p-0 fluid'>
-            <hr className='global_blood-red-bg mt-n4'/>
+                <hr className='global_blood-red-bg mt-n4'/>
                 <Mechanics/>
             </Container>
 
-                <TestimonialCarousel/>
 
-                <Flir/>
+            <Jumbotron className='Global_Flir_bg-img mt-n3 mb-0 p-0 pb-5 d-flex align-content-stretch bg-transparent'
+                       fluid>
+                <Container className='p-0 fluid'>
+                <hr className='global_blood-red-bg mt-n1'/>
+                    <Flir/>
+                </Container>
+            </Jumbotron>
 
         </>
 

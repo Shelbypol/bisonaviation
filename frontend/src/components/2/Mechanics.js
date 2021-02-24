@@ -93,8 +93,6 @@ const Mechanics = () => {
                     </Col>
                 </Row>
 
-
-
             </Jumbotron>
 
 
