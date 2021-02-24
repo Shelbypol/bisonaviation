@@ -30,29 +30,34 @@ const HomeScreen2 = () => {
             <RepairAward/>
 
             <Container className='p-0 fluid'>
+                <hr className='global_cultured-bg'/>
+            </Container>
+
+
+            <Container className='p-o py-5 fluid'>
                 <Services
                     showTag={true}
                 />
-                <hr className='global_blood-red-bg'/>
             </Container>
+            <hr className='global_blood-red-bg'/>
 
-            <Jumbotron className='Global_Avionics_bg-img p-0 d-flex align-content-stretch bg-transparent'
+            <Jumbotron className='Global_Avionics_bg-img p-0 mb-1 mt-n3 d-flex align-content-stretch bg-transparent'
                        fluid>
                 <Container className='p-0 fluid'>
                     <Avionics/>
                 </Container>
             </Jumbotron>
 
-            <Container className='p-0 mt-n3 fluid'>
-                <hr className='global_blood-red-bg '/>
+            <hr className='global_blood-red-bg mt-n1'/>
+            <Container className='p-0 fluid'>
                 <Mechanics/>
             </Container>
 
 
+            <hr className='global_blood-red-bg mt-n1'/>
             <Jumbotron className='Global_Flir_bg-img mt-n3 mb-0 p-0 pb-5 d-flex align-content-stretch bg-transparent'
                        fluid>
                 <Container className='p-0 fluid'>
-                <hr className='global_blood-red-bg mt-n1'/>
                     <Flir/>
                 </Container>
             </Jumbotron>
