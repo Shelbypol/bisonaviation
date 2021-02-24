@@ -25,8 +25,8 @@ const HomeScreen2 = () => {
         <>
 
             <HomeHero/>
-            <Jumbotron className='Global_graphic bg-transparent' fluid> </Jumbotron>
 
+            <Jumbotron className='Global_graphic bg-transparent mb-0 pb-0' fluid> </Jumbotron>
 
             <RepairAward/>
 

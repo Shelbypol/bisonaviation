@@ -65,7 +65,6 @@ const HomeHero = () => {
                         <Jumbotron className=' m-0 p-0 d-flex align-items-center' fluid>
                             <Row className='HomeHero_text-box'>
                                 <Zoom>
-
                                     <Col xs={6} className=' d-flex justify-content-start align-content-center'>
                                         <h1 className='HomeHero_title text-center ml-n2'>
                                             <span className='HomeHero_letter global_blood-red'>B</span>ison
@@ -138,7 +137,6 @@ const HomeHero = () => {
                 </Carousel.Item>
             </Carousel>
 
-            {/*<Jumbotron className='Global_graphic bg-transparent' fluid> </Jumbotron>*/}
         </>
     );
 };

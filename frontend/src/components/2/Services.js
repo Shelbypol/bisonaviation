@@ -10,8 +10,7 @@ const Services = () => {
     return (
 
         <>
-            <Jumbotron className='m-0 p-0 d-flex align-content-stretch bg-transparent'
-                       fluid>
+            <Jumbotron className='m-0 p-0 d-flex align-content-stretch bg-transparent global_rich-black-bg' fluid>
                 {/*<Container className='p-0 fluid'>*/}
 
                     {/*<Row className='p-0 mt-5 mb-0'>*/}
@@ -23,7 +22,7 @@ const Services = () => {
                     {/*</Row>*/}
 
 
-                    <Row className=' Services_row d-flex align-content-center mx-auto mt-5 mb-3 global_cultured'>
+                    <Row className=' Services_row d-flex align-content-center mx-auto mt-5 pt-5 mb-3 global_cultured'>
 
                         <Col xs={10} className='d-flex justify-content-end'>
                             <Col xs={6}>
