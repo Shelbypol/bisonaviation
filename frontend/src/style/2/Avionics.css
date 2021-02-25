@@ -1,0 +1,161 @@
+.Avionics_jumbo{
+    height: 600px;
+}
+
+.Avionics_info{
+    margin-left: 5vw;
+    margin-top: -1vw;
+}
+
+.Avionics_text-titles{
+    font-size: 30px;
+    /*font-weight: lighter;*/
+    text-shadow: 1px 1px #000000;
+    margin: auto;
+    color: #F5F3F4;
+    /*color: #161A1D;*/
+}
+
+.Avionics_row-titles{
+    height: 150px;
+    /*height: 200px;*/
+    font-size: 25px;
+    color: #fff;
+}
+
+.Avionics_card-top-row{
+  margin-top: -12vh;
+    margin-bottom: 2vh;
+}
+
+.Avionics_card{
+    width: 22rem;
+}
+
+.Avionics_card-img{
+    /*height: 18em;*/
+    height: 15em;
+}
+
+.Avionics_card-text{
+
+}
+
+.Avionics_learn-more-btn:hover{
+    color: #660708;
+    text-decoration: underline;
+}
+
+.Avionics_img{
+    /*background-image: url("../../images/bg-graphics/avionics/avionics-2.png");*/
+}
+
+.Avionics_garmin-jumbo{
+    height: 175px;
+    margin-left: -10vw;
+}
+
+.Avionics_card-jumbo{
+    height: 300px;
+}
+
+.Avionics_products-height{
+    height: 400px;
+}
+
+/*.Avionics_jumbo-img{*/
+    /*background-image: url("../../images/bg-graphics/avionics/avionics-cessna-hero.png");*/
+    /*background-image: url("../../images/bg-graphics/avionics/avionics-cessna-hero-black.png");*/
+    /*background-repeat: no-repeat;*/
+    /*height: 600px;*/
+/*}*/
+
+/* w: 875 h:400*/
+
+.Avionics_browse{
+    height: 410px;
+}
+
+.AvionicsProducts_searchBtn-col{
+    z-index: 200;
+}
+
+.Avionics_title {
+    /*margin-top: 7%;*/
+    margin-bottom: 3%;
+    text-shadow: 1px 1px 2px #c1c1c1;
+    /*text-shadow: 2px 2px 4px #c1c1c1;*/
+}
+
+.Avionics_text {
+    font-size: 20px;
+    /*margin-left: 25%;*/
+}
+
+.Avionics_icon {
+    text-shadow: 1px 1px 2px #c1c1c1;
+    font-size: 25px;
+    /*color: #161A1D;*/
+    color: #660708;
+}
+
+.Avionics_square {
+    background-color: #F5F3F4;
+    height: 80px;
+    box-shadow: 0 8px 18px 0 rgba(00, 0, 0, 0.9), 0 8px 8px 0 rgba(0, 0, 0, 0.8) ;
+    /*box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 12px 20px 0 rgba(0, 0, 0, 0.19);*/
+}
+
+.Avionics_img {
+    /*margin-top: 5vh;*/
+}
+
+.Avionics_icon-box {
+    height: 65px;
+}
+
+.Avionics_icon-text {
+    font-size: 25px;
+    margin-left: 15%;
+}
+
+.Avionics_blood-red-opacity {
+    /*background-color: rgba(100, 0, 0, .8)*/
+}
+
+.Avionics_contact_img {
+    /*background-image: url("../../images/bg-graphics/avionics/jd-roel.png");*/
+    background-image: url("../../images/bg-graphics/flir/jd-roel-flir-end.png");
+    background-repeat: no-repeat;
+    background-position: center 15%;
+    /*background-position: center 10%;*/
+
+    height: 500px;
+    /*height: 400px;*/
+
+    background-color: #EEEEEE;
+}
+
+.Avionics_contact-btn {
+    margin-right: 10vw;
+    background-color: #660708;
+    /*background-color: #F5F3F4;*/
+    border: 1px solid #660708;
+    color: #F5F3F4;
+    /*color: #660708;*/
+    font-size: 20px;
+    font-weight: lighter;
+    padding: 15px;
+    box-shadow: 0 8px 10px 0 rgba(00, 0, 0, 0.4), 0 8px 8px 0 rgba(0, 0, 0, 0.4) ;
+
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+}
+
+.Avionics_products-icon-row{
+    width: 1000px;
+}
+
+
+
+
+

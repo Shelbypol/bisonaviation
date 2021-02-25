@@ -1,0 +1,97 @@
+
+
+.Mechanics_hero-img{
+    /*background-image: url("../../images/bg-graphics/avionics/avionics-cessna-hero.png");*/
+    background-image: url("../../images/bg-graphics/mechanics/maintenance-hero.png");
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 800px;
+}
+
+.Mechanics_learn-more-btn{
+    color: #660708;
+    text-decoration: underline;
+}
+
+.Mechanics_learn-more-btn:hover{
+    color: #161A1D;
+    /*text-decoration: underline;*/
+}
+
+.Mechanics_margin-pos-top{
+    margin-top: 10vw;
+}
+
+.Mechanics_margin-neg-top{
+    margin-top: -5vw;
+}
+
+.Mechanics-top-row{
+    /*width: 1500px;*/
+    /*z-index: 201;*/
+}
+
+.Mechanics_jumbo{
+    height: 600px;
+}
+
+.Mechanics_title{
+    height: 100px;
+    text-shadow: 2px 2px 4px #111111;
+    /*box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.6), 0 12px 20px 0 rgba(0, 0, 0, 0.19);*/
+
+}
+
+.Mechanics_row{
+    height: 150px;
+    /*height: 200px;*/
+    box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.6), 0 12px 20px 0 rgba(0, 0, 0, 0.19);
+    font-size: 25px;
+    color: #fff;
+}
+
+.Mechanics_col{
+    height: 100px;
+}
+
+.Mechanics_text{
+    font-size: 30px;
+    font-weight: lighter;
+    text-shadow: 2px 2px 4px #000000;
+    margin: auto;
+}
+
+
+.Mechanics_circle1{
+    background-image: url("../../images/bg-graphics/mechanics/mechanics-circle1.png");
+    background-repeat: no-repeat;
+    height: 382px;
+}
+
+.Mechanics_circle2{
+    background-image: url("../../images/bg-graphics/mechanics/mechanics-circle2.png");
+    background-repeat: no-repeat;
+    height: 382px;
+}
+
+.Mechanics_circle3{
+    background-image: url("../../images/bg-graphics/mechanics/mechanics-circle3.png");
+    background-repeat: no-repeat;
+    height: 382px;
+}
+
+.Mechanics_circle4{
+    background-image: url("../../images/bg-graphics/mechanics/mechanics-circle4.png");
+    background-repeat: no-repeat;
+    height: 382px;
+}
+
+.Mechanics_btn{
+    background-color: #F5F3F4;
+    border: 1px solid #660708;
+    color: #660708;
+    font-size: 16px;
+    font-weight: lighter;
+    /*padding: 15px;*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

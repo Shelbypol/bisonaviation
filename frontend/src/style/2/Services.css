@@ -1,0 +1,76 @@
+.Services_row{
+    height: 400px ;
+}
+
+.Services_NavBg{
+    /*background-image: url("../../images/bg-graphics/services/services-light.png");*/
+    background-image: url("../../images/bg-graphics/services/services.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    /*width: 1450px;*/
+    /*height: 450px;*/
+    height: 600px;
+}
+
+/*.Services_title{*/
+/*    !*margin-left: -5vw;*!*/
+/*    font-size: 30px;*/
+/*}*/
+
+.Services_btn{
+    /*width: 20vw;*/
+    /*margin-left: -5vw;*/
+    color: #F5F3F4;
+    font-size: 15px;
+    font-weight: lighter;
+    padding: 15px;
+    z-index: 200;
+    letter-spacing: .1em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+    background-color: #660708;
+}
+
+.Services_btn:hover{
+    background-color: #F5F3F4;
+    /*background-color: #660708;*/
+    color: #660708;
+    /*color: #F5F3F4;*/
+    font-weight: lighter;
+    border: none;
+}
+
+/*.react-reveal div{*/
+/*    color: white;*/
+/*}*/
+
+.Services_nav_overlay {
+    /*!*color: #161A1D;*!*/
+    /*color: white;*/
+    background-color: rgba(0,0,0, .5);
+}
+
+.Services_nav_hoverTitle:hover  {
+    transition: .5s ease;
+    cursor: pointer;
+    color: #F3F4F5;
+    transform: scale(1.1);
+}
+
+.Services_form{
+    background-image: url("../../images/bg-graphics/services/services-form.png");
+    background-repeat: no-repeat;
+    height: 238px;
+}
+
+.Services_nav_text {
+    font-size: 28px;
+    letter-spacing: .1em;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
+
+

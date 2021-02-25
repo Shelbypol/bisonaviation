@@ -20,7 +20,7 @@ import ProductEditScreen from "./screens/AdminScreens/ProductEditScreen";
 import OrderListScreen from "./screens/AdminScreens/OrderListScreen";
 import ThankYouScreen from "./screens/Payment/ThankYouScreen";
 // import HomeScreen from "./screens/HomeScreen";
-import HomeScreen1 from "./screens/HomeScreen1";
+import HomeScreen from "./screens/HomeScreen2";
 import AvionicsScreen from "./screens/AvionicsScreen";
 import MaintenanceScreen from "./screens/MaintenanceScreen";
 import AogResponseScreen from "./screens/AogResponseScreen";
@@ -48,7 +48,7 @@ const App = ({location}) => {
 
                 <Fragment>
                     <Headers/>
-                    <Route path='/' component={HomeScreen1} exact/>
+                    <Route path='/' component={HomeScreen} exact/>
                     <Route path='/avionics' component={AvionicsScreen}/>
                     <Route path='/flir' component={FlirScreen}/>
                     <Route path='/maintenance' component={MaintenanceScreen}/>
