@@ -12,12 +12,12 @@ const HomeHero = () => {
     return (
         <>
             <Carousel style={{height: '500px'}}>
-                <Carousel.Item>
-                    <Carousel.Caption className='HomeHero-text '>
+                <Carousel.Item className='bg-transparent'>
+                    <Carousel.Caption className='HomeHero-text bg-transparent'>
                         <Jumbotron className=' m-0 p-0 d-flex align-items-center' fluid>
-                            <Row className='HomeHero_text-box'>
+                            <Row className='HomeHero_text-box bg-transparent'>
                                 <Zoom>
-                                    <Col xs={6} className=' d-flex justify-content-start align-content-center'>
+                                    <Col xs={6} className=' d-flex justify-content-start align-content-center bg-transparent'>
                                         <h1 className='HomeHero_title text-center ml-n2'>
                                             <span className='HomeHero_letter global_blood-red'>B</span>ison
                                             &nbsp;
@@ -32,9 +32,8 @@ const HomeHero = () => {
                                     <h3 className='text-center m-0 p-0'>so you can
                                         <Fade duration={5000}>
                                             <div className='d-inline'>
-                                <span
-                                    className='global_blood-red font-weight-bolder HomeHero_span'>
-                                    <i> fly with confidence</i>
+                                <span className='global_blood-red font-weight-bolder HomeHero_span'>
+                                    <i>fly with confidence</i>
                                 </span>
                                             </div>
                                         </Fade>
