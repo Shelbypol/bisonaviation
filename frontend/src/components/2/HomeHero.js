@@ -13,26 +13,26 @@ const HomeHero = () => {
         <>
             <Carousel style={{height: '500px'}}>
                 <Carousel.Item className='bg-transparent'>
-                    <Carousel.Caption className='HomeHero-text bg-transparent'>
+                    <Carousel.Caption className='HomeHero_text-box bg-transparent'>
                         {/*<Jumbotron className=' m-0 p-0 d-flex align-items-center' fluid>*/}
-                            <Row className='HomeHero_text-box'>
+                            <Row className=''>
                                 <Zoom>
                                     <Col xs={6} className=' d-flex justify-content-start align-content-center bg-transparent'>
-                                        <h1 className='HomeHero_title text-center ml-n2'>
-                                            <span className='HomeHero_letter global_blood-red'>B</span>ison
+                                        <h1 className='HomeHero_title text-center ml-n2 global_cultured'>
+                                            <span className='HomeHero_letter global_cultured'>B</span>ison
                                             &nbsp;
-                                            <span className='HomeHero_letter global_blood-red mr-n2'>A</span>viation
+                                            <span className='HomeHero_letter mr-n2 global_cultured'>A</span>viation
                                         </h1>
                                     </Col>
                                 </Zoom>
                                 <Col xs={12} className='d-flex justify-content-start'>
-                                    <h3 className='text-center m-0 p-0'>we work hard on the ground</h3>
+                                    <h3 className='text-center m-0 p-0 global_cultured'>we work hard on the ground</h3>
                                 </Col>
                                 <Col xs={12} className='d-flex justify-content-start'>
-                                    <h3 className='text-center m-0 p-0'>so you can
+                                    <h3 className='text-center m-0 p-0 global_cultured'>so you can
                                         <Fade duration={5000}>
                                             <div className='d-inline'>
-                                <span className='global_blood-red font-weight-bolder HomeHero_span'>
+                                <span className='global_silver-chalice font-weight-bolder HomeHero_span'>&nbsp;
                                     <i>fly with confidence</i>
                                 </span>
                                             </div>
@@ -53,6 +53,8 @@ const HomeHero = () => {
                 </Carousel.Item>
 
 
+
+
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
@@ -65,23 +67,23 @@ const HomeHero = () => {
                             <Row className='HomeHero_text-box'>
                                 <Zoom>
                                     <Col xs={6} className=' d-flex justify-content-start align-content-center'>
-                                        <h1 className='HomeHero_title text-center ml-n2'>
-                                            <span className='HomeHero_letter global_blood-red'>B</span>ison
+                                        <h1 className='HomeHero_title text-center ml-n2 global_cultured'>
+                                            <span className='HomeHero_letter global_blood-red global_cultured'>B</span>ison
                                             &nbsp;
-                                            <span className='HomeHero_letter global_blood-red mr-n2'>A</span>viation
+                                            <span className='HomeHero_letter global_blood-red mr-n2 global_cultured'>A</span>viation
 
                                         </h1>
                                     </Col>
                                 </Zoom>
                                 <Col xs={12} className='d-flex justify-content-start'>
-                                    <h3 className='text-center m-0 p-0'>we work hard on the ground</h3>
+                                    <h3 className='text-center m-0 p-0 global_cultured'>we work hard on the ground</h3>
                                 </Col>
                                 <Col xs={12} className='d-flex justify-content-start'>
-                                    <h3 className='text-center m-0 p-0'>so you can
+                                    <h3 className='text-center m-0 p-0 global_cultured'>so you can
                                         <Fade duration={5000}>
                                             <div className='d-inline'>
                                 <span
-                                    className='global_blood-red font-weight-bolder HomeHero_span'>
+                                    className='global_silver-chalice font-weight-bolder HomeHero_span'>
                                     <i> fly with confidence</i>
                                 </span>
                                             </div>
@@ -106,7 +108,7 @@ const HomeHero = () => {
                             <Row className='HomeHero_text-box'>
                                 <Zoom>
                                     <Col xs={6} className=' d-flex justify-content-start align-content-center'>
-                                        <h1 className='HomeHero_title text-center ml-n2'>
+                                        <h1 className='HomeHero_title text-center ml-n 2 global_cultured'>
                                             <span className='HomeHero_letter global_cultured'>B</span>ison
                                             &nbsp;
                                             <span className='HomeHero_letter global_cultured mr-n2'>A</span>viation
@@ -122,7 +124,7 @@ const HomeHero = () => {
                                         <Fade duration={5000}>
                                             <div className='d-inline'>
                                 <span
-                                    className='global_blood-red font-weight-bolder HomeHero_span'>
+                                    className='global_silver-chalice font-weight-bolder HomeHero_span'>
                                     <i> fly with confidence</i>
                                 </span>
                                             </div>
