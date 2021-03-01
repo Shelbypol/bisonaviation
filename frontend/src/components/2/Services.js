@@ -22,7 +22,7 @@ const Services = () => {
                     {/*</Row>*/}
 
 
-                    <Row className=' Services_row d-flex align-content-center mx-auto mt-5 pt-5 mb-3 global_cultured'>
+                    <Row className=' Services_row d-flex align-content-center mx-auto pt-5 mb-3 global_cultured'>
 
                         <Col xs={10} className='d-flex justify-content-end'>
                             <Col xs={6}>

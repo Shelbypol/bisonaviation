@@ -17,6 +17,7 @@ const HomeHero = () => {
                         {/*<Jumbotron className=' m-0 p-0 d-flex align-items-center' fluid>*/}
                             <Row className='HomeHero_text-box'>
                                 <Zoom>
+                                    {/*<Col xs={12} className='global_blood-red-bg'> </Col>*/}
                                     <Col xs={6} className=' d-flex justify-content-start align-content-center bg-transparent'>
                                         <h1 className='HomeHero_title text-center ml-n2 global_cultured'>
                                             <span className='HomeHero_letter global_cultured'>B</span>ison

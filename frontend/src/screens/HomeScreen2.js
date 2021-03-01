@@ -31,7 +31,7 @@ const HomeScreen2 = () => {
             <RepairAward/>
 
             <Container className='p-0 fluid'>
-                <hr className='global_cultured-bg'/>
+                <hr className='global_blood-red-bg'/>
             </Container>
 
 
