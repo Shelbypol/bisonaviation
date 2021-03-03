@@ -1,7 +1,8 @@
 
+
 .CatMan-nav-menu {
     display: flex;
-    align-items: flex-start
+    align-items: flex-start;
 }
 
 .CatMan-nav-menu-items {

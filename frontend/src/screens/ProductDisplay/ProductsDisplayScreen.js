@@ -4,6 +4,7 @@ import Meta from "../../components/Meta";
 import CategoryManufacturerDisplay from "../../components/ProductDisplay/CategoryManufacturerDisplay";
 import {useDispatch, useSelector} from "react-redux";
 import {listMyOrders} from "../../actions/orderActions";
+import {Jumbotron} from "reactstrap";
 
 const ProductsDisplayScreen = ({match, history}) => {
 
@@ -26,18 +27,24 @@ const ProductsDisplayScreen = ({match, history}) => {
 
 
     return (
-        <Container className='mx-auto mt-3 p-0'>
-            <>
-                <Meta title='Bison | Products'/>
+        <>
+            <Jumbotron className='global_cultured-bg m-0 p-0' fluid>
 
-                <Row xs={12} className='CatMan-nav-menu'>
+            <Container className='mx-auto p-0'>
+                <>
+                    <Meta title='Bison | Products'/>
 
-                        <CategoryManufacturerDisplay match={match} history={history} />
+                    <Row xs={12} className='CatMan-nav-menu'>
 
-                </Row>
-            </>
-        </Container>
-)
+                        <CategoryManufacturerDisplay match={match} history={history}/>
+
+                    </Row>
+                </>
+            </Container>
+            </Jumbotron>
+
+        </>
+    )
 };
 
 export default ProductsDisplayScreen;

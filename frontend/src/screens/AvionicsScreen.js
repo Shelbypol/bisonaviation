@@ -10,8 +10,8 @@ const AvionicsScreen = () => {
         <>
             <Container className='m-0 p-0 fluid'>
                 <AvionicsHero/>
-                <AvionicsImg/>
-                <AvionicsAd/>
+                {/*<AvionicsImg/>*/}
+                {/*<AvionicsAd/>*/}
             </Container>
         </>
     )
