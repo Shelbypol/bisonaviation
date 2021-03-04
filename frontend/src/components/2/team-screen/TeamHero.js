@@ -7,13 +7,12 @@ import {Jumbotron} from "reactstrap";
 const TeamHero = () => {
 
     return (
-        <Container className='p-0 fluid'>
+
 
             <Jumbotron className='TeamHero_hero-img global_rich-black-bg '
                        fluid>
             </Jumbotron>
 
-        </Container>
     )
 };
 

@@ -9,10 +9,10 @@ const TeamCard = (props) => {
     return (
 
         <>
-            <Jumbotron className='TeamHero_hero-img global_rich-black-bg '
+            <Jumbotron className='mx-auto bg-transparent border'
                        fluid>
 
-            <Row className='border'>
+            <Row className='px-auto'>
                 <Col xs={3} >
                     {/*//ACCORDIAN CARD START*/}
                     <Accordion>
@@ -79,139 +79,7 @@ const TeamCard = (props) => {
                 </Col>
             </Row>
 
-            <Row className='border'>
-                <Col xs={3} >
-                    {/*//ACCORDIAN CARD START*/}
-                    <Accordion>
-                        <Card>
-                            <Card.Header>
-                                <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                                    Click me!
-                                </Accordion.Toggle>
-                            </Card.Header>
-                            <Accordion.Collapse eventKey="0">
-                                <Card.Body>Hello! I'm the body</Card.Body>
-                            </Accordion.Collapse>
-                        </Card>
-                    </Accordion>
-                    {/*//    ACCORDIAN CARD END*/}
-                </Col>
-                <Col xs={3}>
-                    {/*//ACCORDIAN CARD START*/}
-                    <Accordion>
-                        <Card>
-                            <Card.Header>
-                                <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                                    Click me!
-                                </Accordion.Toggle>
-                            </Card.Header>
-                            <Accordion.Collapse eventKey="0">
-                                <Card.Body>Hello! I'm the body</Card.Body>
-                            </Accordion.Collapse>
-                        </Card>
-                    </Accordion>
-                    {/*//    ACCORDIAN CARD END*/}
-                </Col>
-                <Col xs={3}>
-                    {/*//ACCORDIAN CARD START*/}
-                    <Accordion>
-                        <Card>
-                            <Card.Header>
-                                <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                                    Click me!
-                                </Accordion.Toggle>
-                            </Card.Header>
-                            <Accordion.Collapse eventKey="0">
-                                <Card.Body>Hello! I'm the body</Card.Body>
-                            </Accordion.Collapse>
-                        </Card>
-                    </Accordion>
-                    {/*//    ACCORDIAN CARD END*/}
-                </Col>
-                <Col xs={3}>
-                    {/*//ACCORDIAN CARD START*/}
-                    <Accordion>
-                        <Card>
-                            <Card.Header>
-                                <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                                    Click me!
-                                </Accordion.Toggle>
-                            </Card.Header>
-                            <Accordion.Collapse eventKey="0">
-                                <Card.Body>Hello! I'm the body</Card.Body>
-                            </Accordion.Collapse>
-                        </Card>
-                    </Accordion>
-                    {/*//    ACCORDIAN CARD END*/}
-                </Col>
-            </Row>
 
-            <Row className='border'>
-                <Col xs={3} >
-                    {/*//ACCORDIAN CARD START*/}
-                    <Accordion>
-                        <Card>
-                            <Card.Header>
-                                <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                                    Click me!
-                                </Accordion.Toggle>
-                            </Card.Header>
-                            <Accordion.Collapse eventKey="0">
-                                <Card.Body>Hello! I'm the body</Card.Body>
-                            </Accordion.Collapse>
-                        </Card>
-                    </Accordion>
-                    {/*//    ACCORDIAN CARD END*/}
-                </Col>
-                <Col xs={3}>
-                    {/*//ACCORDIAN CARD START*/}
-                    <Accordion>
-                        <Card>
-                            <Card.Header>
-                                <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                                    Click me!
-                                </Accordion.Toggle>
-                            </Card.Header>
-                            <Accordion.Collapse eventKey="0">
-                                <Card.Body>Hello! I'm the body</Card.Body>
-                            </Accordion.Collapse>
-                        </Card>
-                    </Accordion>
-                    {/*//    ACCORDIAN CARD END*/}
-                </Col>
-                <Col xs={3}>
-                    {/*//ACCORDIAN CARD START*/}
-                    <Accordion>
-                        <Card>
-                            <Card.Header>
-                                <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                                    Click me!
-                                </Accordion.Toggle>
-                            </Card.Header>
-                            <Accordion.Collapse eventKey="0">
-                                <Card.Body>Hello! I'm the body</Card.Body>
-                            </Accordion.Collapse>
-                        </Card>
-                    </Accordion>
-                    {/*//    ACCORDIAN CARD END*/}
-                </Col>
-                <Col xs={3}>
-                    {/*//ACCORDIAN CARD START*/}
-                    <Accordion>
-                        <Card>
-                            <Card.Header>
-                                <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                                    Click me!
-                                </Accordion.Toggle>
-                            </Card.Header>
-                            <Accordion.Collapse eventKey="0">
-                                <Card.Body>Hello! I'm the body</Card.Body>
-                            </Accordion.Collapse>
-                        </Card>
-                    </Accordion>
-                    {/*//    ACCORDIAN CARD END*/}
-                </Col>
-            </Row>
             </Jumbotron>
 
         </>
