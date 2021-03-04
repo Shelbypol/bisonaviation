@@ -1,10 +1,8 @@
 import React, {useState} from 'react'
-import '../../../style/1/teamScreen/TeamHero.css'
-import {Button, Col, Row, Card, Container} from "react-bootstrap";
+import '../../../style/2/teamScreen/TeamHero.css'
+import {Container} from "react-bootstrap";
 import {Jumbotron} from "reactstrap";
-import Zoom from 'react-reveal/Zoom';
-import Fade from 'react-reveal/Fade';
-import {LinkContainer} from "react-router-bootstrap";
+
 
 const TeamHero = () => {
 
