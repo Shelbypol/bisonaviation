@@ -32,6 +32,7 @@ const TeamScreen = () => {
                     <Col className='col-lg-3 col-md-2 col-sm-1'>
                         {/*   JOHN ATKIN   */}
                         <TeamCard
+                            eventKey={'0'}
                             img={johnAtkin}
                             headerName={'John D. Atkin IV'}
                             headerPosition={'ATP / MEII'}
@@ -62,6 +63,7 @@ const TeamScreen = () => {
                     <Col className='col-lg-3 col-sm-1'>
                         {/*   LESLIE   */}
                         <TeamCard
+                            eventKey={'1'}
                             img={leslieBanner}
                             headerName={'Leslie D. Banner'}
                             headerPosition={'Operations Manager'}
@@ -78,6 +80,7 @@ const TeamScreen = () => {
                     <Col className='col-lg-3 col-sm-1'>
                         {/*   DEENA SMITH   */}
                         <TeamCard
+                            eventKey={'2'}
                             img={deenaSmith}
                             headerName={'Deena Smith'}
                             headerPosition={'Shop Manager, A&P'}

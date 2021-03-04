@@ -3,17 +3,17 @@ import React, {useState} from 'react';
 import {Accordion, Card, Button, Row, Col, Container} from "react-bootstrap";
 import {Jumbotron} from "reactstrap";
 
-const TeamCard = ({img, headerName, headerPosition, name, position, certifications, locations, specialTraining, bio, favAircraft}) => {
+const TeamCard = ({img, headerName, headerPosition, name, position, certifications, locations, specialTraining, bio, favAircraft, eventKey}) => {
 
 
     return (
 
         <>
             <Accordion>
-                <Card>
-                    <Accordion.Toggle as={Button} variant="link" eventKey="0">
+                <Card className='bg-transparent'>
+                    <Accordion.Toggle as={Button} variant="link" eventKey={eventKey}>
                         <Card.Img variant="top" src={img}/>
-                        <Card.Header>
+                        <Card.Header className='global_cultured'>
                             {headerName}
                             <br/>
                             {headerPosition}
@@ -21,14 +21,14 @@ const TeamCard = ({img, headerName, headerPosition, name, position, certificatio
                     </Accordion.Toggle>
                 </Card>
 
+                    <Accordion.Collapse eventKey={eventKey} className='bg-transparent py-2'
+                                        style={{width: '90vw', marginLeft: 'auto'}}>
                 <Card.Body>
-                    <Accordion.Collapse eventKey="0" className='border global_cultured-bg py-2'
-                                        style={{width: '90vw'}}>
                         <Row>
                             <Col xs={6}>
                                 <Card.Img variant="top" src={img}/>
                             </Col>
-                            <Col xs={6}>
+                            <Col xs={6} className='global_cultured-bg'>
                                 <Col xs={12}>
                                     {/*MEMBER NAME*/}
                                     <strong className='global_blood-red Team_underline '> TEAM MEMBER:</strong>
@@ -76,8 +76,8 @@ const TeamCard = ({img, headerName, headerPosition, name, position, certificatio
 
                         </Row>
 
-                    </Accordion.Collapse>
                 </Card.Body>
+                    </Accordion.Collapse>
 
             </Accordion>
 
