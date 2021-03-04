@@ -3,121 +3,75 @@ import React, {useState} from 'react';
 import {Accordion, Card, Button, Row, Col, Container} from "react-bootstrap";
 import {Jumbotron} from "reactstrap";
 
-const TeamCard = (props) => {
+const TeamCard = ({img, name, position, certifications, locations, specialTraining, bio}) => {
 
 
     return (
 
         <>
-            <Jumbotron className='mx-auto bg-transparent border'
-                       fluid>
+            <Accordion>
+                <Card>
+                    <Accordion.Toggle as={Button} variant="link" eventKey="0">
+                        <Card.Img variant="top" src={img}/>
+                        <Card.Header>
+                            John D. Atkin IV, ATP / MEII
+                        </Card.Header>
+                    </Accordion.Toggle>
+                </Card>
 
-            <Row className='px-auto'>
-                <Col xs={3} >
-                    {/*//ACCORDIAN CARD START*/}
-                    <Accordion>
-                        <Card>
-                            <Card.Header>
-                                <Card.Img variant="top" src="holder.js/100px180" />
-                                <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                                    John D. Atkin IV, ATP / MEII
-                                </Accordion.Toggle>
-                            </Card.Header>
-                            <Accordion.Collapse eventKey="0">
+                <Card.Body>
+                    <Accordion.Collapse eventKey="0" className='border global_cultured-bg py-2'
+                                        style={{width: '90vw'}}>
+                        <Row>
+                            <Col xs={6}>
+                                <Card.Img variant="top" src={img}/>
+                            </Col>
+                            <Col xs={6}>
+                                <Col xs={12}>
+                                    {/*MEMBER NAME*/}
+                                    <strong className='global_blood-red Team_underline '> TEAM MEMBER:</strong>
+                                    &nbsp;
+                                    {name}
+                                </Col>
+                                <Col xs={12}>
+                                    {/*POSITION*/}
+                                    <strong className='global_blood-red Team_underline '>POSITION:</strong>
+                                    &nbsp;
+                                    {position}
+                                </Col>
+                                <Col xs={12}>
+                                    {/*CERTIFICATIONS*/}
+                                    <strong className='global_blood-red Team_underline '>CERTIFICATION/s:</strong>
+                                    <br/>
+                                    {certifications}
+                                </Col>
+                                <Col xs={12}>
+                                    {/*LOCATION*/}
+                                    <strong className='global_blood-red Team_underline '>LOCATION:</strong>
+                                    &nbsp;
+                                    {locations}
+                                </Col>
+                                <Col xs={12}>
+                                    {/*SPECIAL TRAINING*/}
+                                    <strong className='global_blood-red Team_underline '> SPECIAL TRAINING:</strong>
+                                    <br/>
+                                    {specialTraining}
+                                </Col>
+                                <Col xs={12}>
+                                    {/*BIO*/}
+                                    <strong className='underline global_blood-red Team_underline '>BIO:</strong>
+                                    <br/>
+                                   {bio}
+                                </Col>
+                            </Col>
 
-                                <Card.Body>
-                                    <Jumbotron className='mx-auto bg-transparent border'
-                                               fluid>
-                                        <Row>
-                                            <Col xs={6}>
-                                                <Card.Img variant="top" src="holder.js/100px180" />
-                                            </Col>
-                                            <Col xs={12}>
-                                                {/*MEMBER NAME*/}
-                                                John D. Atkin IV, ATP / MEII
-                                            </Col>
-                                            <Col xs={12}>
-                                                {/*POSITION*/}
-                                                President
-                                            </Col>
-                                            <Col xs={12}>
-                                                {/*CERTIFICATIONS*/}
-                                                President
-                                            </Col>
-                                                <Col xs={12}>
-                                                {/*CERTIFICATIONS*/}
-                                                President
-                                            </Col>
+                        </Row>
 
-                                        </Row>
+                    </Accordion.Collapse>
+                </Card.Body>
 
-                                    </Jumbotron>
+            </Accordion>
 
-
-
-
-                                </Card.Body>
-
-
-
-
-                            </Accordion.Collapse>
-                        </Card>
-                    </Accordion>
-                    {/*//    ACCORDIAN CARD END*/}
-                </Col>
-                <Col xs={3}>
-                    {/*//ACCORDIAN CARD START*/}
-                    <Accordion>
-                        <Card>
-                            <Card.Header>
-                                <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                                    Click me!
-                                </Accordion.Toggle>
-                            </Card.Header>
-                            <Accordion.Collapse eventKey="0">
-                                <Card.Body>Hello! I'm the body</Card.Body>
-                            </Accordion.Collapse>
-                        </Card>
-                    </Accordion>
-                    {/*//    ACCORDIAN CARD END*/}
-                </Col>
-                <Col xs={3}>
-                    {/*//ACCORDIAN CARD START*/}
-                    <Accordion>
-                        <Card>
-                            <Card.Header>
-                                <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                                    Click me!
-                                </Accordion.Toggle>
-                            </Card.Header>
-                            <Accordion.Collapse eventKey="0">
-                                <Card.Body>Hello! I'm the body</Card.Body>
-                            </Accordion.Collapse>
-                        </Card>
-                    </Accordion>
-                    {/*//    ACCORDIAN CARD END*/}
-                </Col>
-                <Col xs={3}>
-                    {/*//ACCORDIAN CARD START*/}
-                    <Accordion>
-                        <Card>
-                            <Card.Header>
-                                <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                                    Click me!
-                                </Accordion.Toggle>
-                            </Card.Header>
-                            <Accordion.Collapse eventKey="0">
-                                <Card.Body>Hello! I'm the body</Card.Body>
-                            </Accordion.Collapse>
-                        </Card>
-                    </Accordion>
-                    {/*//    ACCORDIAN CARD END*/}
-                </Col>
-            </Row>
-
-
-            </Jumbotron>
 
         </>
     );

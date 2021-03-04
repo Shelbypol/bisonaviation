@@ -4,3 +4,7 @@
     height: 300px;
     /*width: 1440px;*/
 }
+
+.Team_underline{
+    text-decoration: underline;
+}
