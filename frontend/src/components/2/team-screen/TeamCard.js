@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 import {Accordion, Card, Button, Row, Col, Container} from "react-bootstrap";
 import {Jumbotron} from "reactstrap";
 
-const TeamCard = ({img, name, position, certifications, locations, specialTraining, bio}) => {
+const TeamCard = ({img, headerName, headerPosition, name, position, certifications, locations, specialTraining, bio}) => {
 
 
     return (
@@ -14,7 +14,9 @@ const TeamCard = ({img, name, position, certifications, locations, specialTraini
                     <Accordion.Toggle as={Button} variant="link" eventKey="0">
                         <Card.Img variant="top" src={img}/>
                         <Card.Header>
-                            John D. Atkin IV, ATP / MEII
+                            {headerName}
+                            <br/>
+                            {headerPosition}
                         </Card.Header>
                     </Accordion.Toggle>
                 </Card>
@@ -32,6 +34,7 @@ const TeamCard = ({img, name, position, certifications, locations, specialTraini
                                     <strong className='global_blood-red Team_underline '> TEAM MEMBER:</strong>
                                     &nbsp;
                                     {name}
+                                    {}
                                 </Col>
                                 <Col xs={12}>
                                     {/*POSITION*/}

@@ -32,7 +32,9 @@ const TeamScreen = () => {
                     <Col className='col-lg-3 col-md-2 col-sm-1'>
                         {/*   JOHN ATKIN   */}
                         <TeamCard
-                            img={}
+                            img={johnAtkin}
+                            headerName={'John D. Atkin IV'}
+                            headerPosition={'ATP / MEII'}
                             name={'John D. Atkin IV, ATP / MEII'}
                             position={'President'}
                             certifications={' FAA: Airline Transport Pilot - ASEL, ASES, AMEL, CE500; Flight\n' +
@@ -57,30 +59,21 @@ const TeamScreen = () => {
 
                     </Col>
 
-                    <Col className='col-lg-3 col-md-2 col-sm-1'>
+                    <Col className='col-lg-3 col-sm-1'>
                         {/*   LESLIE   */}
                         <TeamCard
-                            name={'John D. Atkin IV, ATP / MEII'}
-                            position={'President'}
-                            certifications={' FAA: Airline Transport Pilot - ASEL, ASES, AMEL, CE500; Flight\n' +
-                            '                                    Instructor - CFI, CFII, MEI; EPA Refrigerant'}
+                            img={leslieBanner}
+                            headerName={'Leslie D. Banner'}
+                            headerPosition={'Operations Manager'}
+                            name={'Leslie D. Banner'}
+                            position={'Operations Manager'}
+                            certifications={''}
                             locations={'All'}
-                            specialTraining={' CE500/550/560 Single Pilot Waiver; SW2, SW3, Advanced Pilot Seminar,\n' +
-                            '                                    BPPP.'}
-                            bio={' John earned his pilot\'s license in Kansas at the age of\n' +
-                            '                                    seventeen. Since then, he has been obsessed with general\n' +
-                            '                                    aviation. After working as a corporate pilot in San Antonio,\n' +
-                            '                                    John started Bison Aviation with the goal of providing aircraft\n' +
-                            '                                    operators an advocate in the aircraft maintenance industry. As\n' +
-                            '                                    an avid general aviation pilot with over 9,000 flight hours (all\n' +
-                            '                                    in GA aircraft) and as a fellow aircraft owner, John has spent\n' +
-                            '                                    significant time on both sides of the aircraft maintenance\n' +
-                            '                                    equation, providing him with the unique viewpoint of someone who\n' +
-                            '                                    understands aircraft maintenance both as a pilot / owner, as\n' +
-                            '                                    well as a repair station operator.'}
-
+                            specialTraining={''}
+                            bio={'Lesli\'s father, a pilot and aircraft owner, introduced her to general aviation at a very young age. As an avid traveler, Lesli has spent a great deal of time in general aviation aircraft exploring the United States. After spending many years in sales and operations management for major corporations, Lesli was hired as Bison Aviation\'s first employee. Today she oversees the "behind-the-scenes" functions which keep Bison Aviation running smoothly and efficiently.'}
 
                         />
+
 
                     </Col>
 
