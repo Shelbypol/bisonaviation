@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 import {Accordion, Card, Button, Row, Col, Container} from "react-bootstrap";
 import {Jumbotron} from "reactstrap";
 
-const TeamCard = ({img, headerName, headerPosition, name, position, certifications, locations, specialTraining, bio}) => {
+const TeamCard = ({img, headerName, headerPosition, name, position, certifications, locations, specialTraining, bio, favAircraft}) => {
 
 
     return (
@@ -65,6 +65,12 @@ const TeamCard = ({img, headerName, headerPosition, name, position, certificatio
                                     <strong className='underline global_blood-red Team_underline '>BIO:</strong>
                                     <br/>
                                    {bio}
+                                </Col>
+                                <Col xs={12}>
+                                    {/*BIO*/}
+                                    <strong className='underline global_blood-red Team_underline '>BIO:</strong>
+                                    <br/>
+                                    {favAircraft}
                                 </Col>
                             </Col>
 

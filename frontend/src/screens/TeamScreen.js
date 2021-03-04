@@ -73,8 +73,22 @@ const TeamScreen = () => {
                             bio={'Lesli\'s father, a pilot and aircraft owner, introduced her to general aviation at a very young age. As an avid traveler, Lesli has spent a great deal of time in general aviation aircraft exploring the United States. After spending many years in sales and operations management for major corporations, Lesli was hired as Bison Aviation\'s first employee. Today she oversees the "behind-the-scenes" functions which keep Bison Aviation running smoothly and efficiently.'}
 
                         />
+                    </Col>
 
-
+                    <Col className='col-lg-3 col-sm-1'>
+                        {/*   DEENA SMITH   */}
+                        <TeamCard
+                            img={deenaSmith}
+                            headerName={'Deena Smith'}
+                            headerPosition={'Shop Manager, A&P'}
+                            name={'Deena Smith'}
+                            position={'Shop Manager, A&P'}
+                            certifications={' FAA: Mechanic - Airframe & Powerplant'}
+                            locations={'Boerne Stage Airfield - 5C1'}
+                            specialTraining={''}
+                            bio={'After earning her Bachelor\'s and Master\'s degrees in English Literature, Deena taught at the collegiate level for three years, including an aviation university which kindled her interest in aircraft. She pursued and earned her FAA airframe and powerplant mechanic\'s license, planning to travel the world as a contract mechanic. Deena subsequently joined Bison Aviation where she began working as an aircraft mechanic, prior to taking a leave of absence in order to hike the Appalachian Trail in its entirety. After completing her 2,200 mile trek, Deena returned to Bison Aviation where she currently serves as Shop Manager Lead Expeditor, facilitating parts procurement and scheduling operations for the company.'}
+                            favAircraft={'Cessna 206'}
+                        />
                     </Col>
 
                 </Row>
