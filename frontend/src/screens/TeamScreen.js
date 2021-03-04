@@ -23,9 +23,9 @@ import mackerel from '../images/bg-graphics/screen-team/mackeral.png'
 const TeamScreen = () => {
     return (
         <>
-            <TeamHero/>
+            {/*<TeamHero/>*/}
 
-            <Jumbotron className='mx-auto bg-transparent border'
+            <Jumbotron className='mx-auto bg-transparent'
                        fluid>
 
                 <Row className='px-auto'>

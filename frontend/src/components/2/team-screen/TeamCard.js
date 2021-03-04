@@ -21,63 +21,64 @@ const TeamCard = ({img, headerName, headerPosition, name, position, certificatio
                     </Accordion.Toggle>
                 </Card>
 
-                    <Accordion.Collapse eventKey={eventKey} className='bg-transparent py-2'
-                                        style={{width: '90vw', marginLeft: 'auto'}}>
-                <Card.Body>
-                        <Row>
-                            <Col xs={6}>
-                                <Card.Img variant="top" src={img}/>
-                            </Col>
-                            <Col xs={6} className='global_cultured-bg'>
-                                <Col xs={12}>
-                                    {/*MEMBER NAME*/}
-                                    <strong className='global_blood-red Team_underline '> TEAM MEMBER:</strong>
-                                    &nbsp;
-                                    {name}
-                                    {}
-                                </Col>
-                                <Col xs={12}>
-                                    {/*POSITION*/}
-                                    <strong className='global_blood-red Team_underline '>POSITION:</strong>
-                                    &nbsp;
-                                    {position}
-                                </Col>
-                                <Col xs={12}>
-                                    {/*CERTIFICATIONS*/}
-                                    <strong className='global_blood-red Team_underline '>CERTIFICATION/s:</strong>
-                                    <br/>
-                                    {certifications}
-                                </Col>
-                                <Col xs={12}>
-                                    {/*LOCATION*/}
-                                    <strong className='global_blood-red Team_underline '>LOCATION:</strong>
-                                    &nbsp;
-                                    {locations}
-                                </Col>
-                                <Col xs={12}>
-                                    {/*SPECIAL TRAINING*/}
-                                    <strong className='global_blood-red Team_underline '> SPECIAL TRAINING:</strong>
-                                    <br/>
-                                    {specialTraining}
-                                </Col>
-                                <Col xs={12}>
-                                    {/*BIO*/}
-                                    <strong className='underline global_blood-red Team_underline '>BIO:</strong>
-                                    <br/>
-                                   {bio}
-                                </Col>
-                                <Col xs={12}>
-                                    {/*BIO*/}
-                                    <strong className='underline global_blood-red Team_underline '>BIO:</strong>
-                                    <br/>
-                                    {favAircraft}
-                                </Col>
-                            </Col>
 
-                        </Row>
+                {/*<Card.Body>*/}
+                <Accordion.Collapse eventKey={eventKey} className='bg-transparent py-2 border'
+                                    style={{width: '90vw'}}>
+                <Row>
+                        <Col xs={6}>
+                            <Card.Img variant="top" src={img}/>
+                        </Col>
+                        <Col xs={6} className='global_cultured-bg'>
+                            <Col xs={12}>
+                                {/*MEMBER NAME*/}
+                                <strong className='global_blood-red Team_underline '> TEAM MEMBER:</strong>
+                                &nbsp;
+                                {name}
+                                {}
+                            </Col>
+                            <Col xs={12}>
+                                {/*POSITION*/}
+                                <strong className='global_blood-red Team_underline '>POSITION:</strong>
+                                &nbsp;
+                                {position}
+                            </Col>
+                            <Col xs={12}>
+                                {/*CERTIFICATIONS*/}
+                                <strong className='global_blood-red Team_underline '>CERTIFICATION/s:</strong>
+                                <br/>
+                                {certifications}
+                            </Col>
+                            <Col xs={12}>
+                                {/*LOCATION*/}
+                                <strong className='global_blood-red Team_underline '>LOCATION:</strong>
+                                &nbsp;
+                                {locations}
+                            </Col>
+                            <Col xs={12}>
+                                {/*SPECIAL TRAINING*/}
+                                <strong className='global_blood-red Team_underline '> SPECIAL TRAINING:</strong>
+                                <br/>
+                                {specialTraining}
+                            </Col>
+                            <Col xs={12}>
+                                {/*BIO*/}
+                                <strong className='underline global_blood-red Team_underline '>BIO:</strong>
+                                <br/>
+                                {bio}
+                            </Col>
+                            <Col xs={12}>
+                                {/*BIO*/}
+                                <strong className='underline global_blood-red Team_underline '>BIO:</strong>
+                                <br/>
+                                {favAircraft}
+                            </Col>
+                        </Col>
 
-                </Card.Body>
+                </Row>
                     </Accordion.Collapse>
+
+                {/*</Card.Body>*/}
 
             </Accordion>
 
