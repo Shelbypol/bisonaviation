@@ -25,11 +25,16 @@ const TeamScreen = () => {
     return (
         <>
 
+            <Jumbotron className='TeamScreen_hero-img mx-auto bg-transparent m-0 p-0 '
+                       fluid>
+
+            </Jumbotron>
+
             <Container className='p-0 fluid'>
 
                 <Jumbotron className='mx-auto bg-transparent m-0 p-0 global_cultured'
                            fluid>
-                    <h1 className='p-0 mb-0 mx-0 mt-5'>Meet the Bison Team</h1>
+                    <h1 className='p-0 mb-0 mx-0 mt-5' style={{color: 'red'}}>Meet the Bison Team</h1>
                     <br/>
                     <p>The Bison Aviation team is made up of professionally trained, highly skilled individuals, selected specifically for their particular expertise in the fields of general aviation maintenance and avionics. All of our primary technicians are fully FAA licensed (something which isn't true in most maintenance shops). The experience and skills of our team members is what makes Bison Aviation a leader in the aircraft service industry and we are proud to have each of these individuals as a part of the Bison Aviation Team!
 
@@ -39,8 +44,8 @@ const TeamScreen = () => {
                 <Jumbotron className='mx-auto bg-transparent'
                            fluid>
 
-                    <Row className='px-auto'>
-                        <Col className='col-lg-3 col-md-2 col-sm-1'>
+                    <Row className='px-auto mt-n5'>
+                        <Col className='col-lg-3 col-md-2 col-sm-1 p-0 m-0'>
                             {/*   JOHN ATKIN   */}
                             <TeamCard
                                 eventKey={'0'}
@@ -71,7 +76,7 @@ const TeamScreen = () => {
 
                         </Col>
 
-                        <Col className='col-lg-3 col-sm-1'>
+                        <Col className='col-lg-3 col-sm-1 p-0 m-0'>
                             {/*   LESLIE   */}
                             <TeamCard
                                 eventKey={'1'}
@@ -88,7 +93,7 @@ const TeamScreen = () => {
                             />
                         </Col>
 
-                        <Col className='col-lg-3 col-sm-1'>
+                        <Col className='col-lg-3 col-sm-1 p-0 m-0'>
                             {/*   DEENA SMITH   */}
                             <TeamCard
                                 eventKey={'2'}
@@ -105,7 +110,7 @@ const TeamScreen = () => {
                             />
                         </Col>
 
-                        <Col className='col-lg-3 col-sm-1'>
+                        <Col className='col-lg-3 col-sm-1 p-0 m-0'>
                             {/*   JD PHILIPS   */}
                             <TeamCard
                                 eventKey={'2'}
@@ -127,7 +132,7 @@ const TeamScreen = () => {
 
                     {/*============   ROW TWO  ==========*/}
                     <Row className='px-auto'>
-                        <Col className='col-lg-3 col-sm-1'>
+                        <Col className='col-lg-3 col-sm-1 p-0 m-0'>
                             {/*   ROEL ROGERIO   */}
                             <TeamCard
                                 eventKey={'2'}
@@ -146,7 +151,7 @@ const TeamScreen = () => {
                             />
                         </Col>
 
-                        <Col className='col-lg-3 col-sm-1'>
+                        <Col className='col-lg-3 col-sm-1 p-0 m-0'>
                             {/*   Jeffrey Rossell   */}
                             <TeamCard
                                 eventKey={'2'}
@@ -167,7 +172,7 @@ const TeamScreen = () => {
                         </Col>
 
 
-                        <Col className='col-lg-3 col-sm-1'>
+                        <Col className='col-lg-3 col-sm-1 p-0 m-0'>
                             {/*   CHAD BROOKS   */}
                             <TeamCard
                                 eventKey={'2'}
@@ -186,7 +191,7 @@ const TeamScreen = () => {
                             />
                         </Col>
 
-                        <Col className='col-lg-3 col-sm-1'>
+                        <Col className='col-lg-3 col-sm-1 p-0 m-0'>
                             {/*   Robin Rodriguez */}
                             <TeamCard
                                 eventKey={'2'}
@@ -210,7 +215,7 @@ const TeamScreen = () => {
 
                     {/*============   ROW THREE  ==========*/}
                     <Row className='px-auto'>
-                        <Col className='col-lg-3 col-sm-1'>
+                        <Col className='col-lg-3 col-sm-1 p-0 m-0'>
                             {/*  Cody Strack  */}
                             <TeamCard
                                 eventKey={'2'}
@@ -230,7 +235,7 @@ const TeamScreen = () => {
                         </Col>
 
 
-                        <Col className='col-lg-3 col-sm-1'>
+                        <Col className='col-lg-3 col-sm-1 p-0 m-0'>
                             {/*  Jerry Fitzgerald */}
                             <TeamCard
                                 eventKey={'2'}
@@ -249,7 +254,7 @@ const TeamScreen = () => {
                             />
                         </Col>
 
-                        <Col className='col-lg-3 col-sm-1'>
+                        <Col className='col-lg-3 col-sm-1 p-0 m-0'>
                             {/*  John Senecal */}
                             <TeamCard
                                 eventKey={'2'}
@@ -269,7 +274,7 @@ const TeamScreen = () => {
                         </Col>
 
 
-                        <Col className='col-lg-3 col-sm-1'>
+                        <Col className='col-lg-3 col-sm-1 p-0 m-0'>
                             {/*  Matthew Gurniak */}
                             <TeamCard
                                 eventKey={'2'}
@@ -292,7 +297,7 @@ const TeamScreen = () => {
 
                     {/*============   ROW FOUR  ==========*/}
                     <Row className='px-auto'>
-                        <Col className='col-lg-3 col-sm-1'>
+                        <Col className='col-lg-3 col-sm-1 p-0 m-0'>
                             {/*  Halibut */}
                             <TeamCard
                                 eventKey={'2'}
@@ -311,7 +316,7 @@ const TeamScreen = () => {
                             />
                         </Col>
 
-                        <Col className='col-lg-3 col-sm-1'>
+                        <Col className='col-lg-3 col-sm-1 p-0 m-0'>
                             {/*  Tuna */}
                             <TeamCard
                                 eventKey={'2'}
@@ -330,7 +335,7 @@ const TeamScreen = () => {
                             />
                         </Col>
 
-                        <Col className='col-lg-3 col-sm-1'>
+                        <Col className='col-lg-3 col-sm-1 p-0 m-0'>
                             {/*  MACKERERL */}
                             <TeamCard
                                 eventKey={'2'}
