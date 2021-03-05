@@ -136,7 +136,7 @@ const TeamScreen = () => {
                     </Col>
 
                     <Col className='col-lg-3 col-sm-1'>
-                        {/*   ROEL ROGERIO   */}
+                        {/*   Jeffrey Rossell   */}
                         <TeamCard
                             eventKey={'2'}
                             img={jeffRossell}
@@ -155,8 +155,47 @@ const TeamScreen = () => {
                         />
                     </Col>
 
-                </Row>
 
+                    <Col className='col-lg-3 col-sm-1'>
+                        {/*   CHAD BROOKS   */}
+                        <TeamCard
+                            eventKey={'2'}
+                            img={chadBrooks}
+                            headerName={'Chad Brooks'}
+                            headerPosition={'AET'}
+                            name={'Chad Brooks'}
+                            position={''}
+                            certifications={''}
+                            locations={'Boerne Stage Airfield - 5C1'}
+                            specialTraining={'Mooney M20 Series, Aircraft Wiring, Garmin G1000, GFC Series.'}
+                            bio={
+                                'Chad began his avionics career with Mooney Aircraft in Kerrville, TX where he earned his certification as an aircraft assembler. He has more than twenty years of experience designing and fabricating wiring harnesses and structural components for avionics installations. In 2006 Chad went to work for Boeing performing electrical and avionics installations on the 737 and 787 series aircraft. He returned to Mooney four years later where he continued to work as the Lead Electrical and Avionics installer until the factory closed in late 2019.'
+                            }
+                            favAircraft={'Boeing 787 Dreamliner'}
+                        />
+                    </Col>
+
+                    <Col className='col-lg-3 col-sm-1'>
+                        {/*   Robin Rodriguez */}
+                        <TeamCard
+                            eventKey={'2'}
+                            img={robinRodriguez}
+                            headerName={'Robin Rodriguez'}
+                            headerPosition={'A&P'}
+                            name={'Robin Rodriguez'}
+                            position={''}
+                            certifications={'FAA: Mechanic - Airframe & Powerplant'}
+                            locations={'Boerne Stage Airfield - 5C1'}
+                            specialTraining={'Cirrus SR20 & SR22 Factory Certified; American Bonanza Society Bonanza & Baron series.'}
+                            bio={
+                                'After spending most of his life in the culinary industry, Robin decided that it was time to take his career to a new level. Robin enrolled in college and subsequently graduated with honors (Phi Theta Kappa National Honor Society) earning two associate\'s degrees along with his FAA Airframe & Powerplant mechanic\'s license. Robin found his landing spot at Bison Aviation and continues to pursue his career in aviation near his home and family.'
+                            }
+                            favAircraft={'Cirrus SR20 & SR22'}
+                        />
+                    </Col>
+
+
+                </Row>
 
 
             </Jumbotron>
