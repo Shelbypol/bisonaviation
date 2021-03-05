@@ -12,7 +12,7 @@ const TeamCard = ({img, headerName, headerPosition, name, position, certificatio
             <Accordion>
                 <Card className='bg-transparent'>
                     <Accordion.Toggle as={Button} variant="link" eventKey={eventKey}>
-                        <Card.Img variant="top" src={img}/>
+                        <Card.Img variant="top" src={img} className='rounded'/>
                         <Card.Header className='global_cultured'>
                             {headerName}
                             <br/>
