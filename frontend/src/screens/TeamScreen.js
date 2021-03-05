@@ -94,6 +94,25 @@ const TeamScreen = () => {
                         />
                     </Col>
 
+                    <Col className='col-lg-3 col-sm-1'>
+                        {/*   JD PHILIPS   */}
+                        <TeamCard
+                            eventKey={'2'}
+                            img={jdPhillips}
+                            headerName={'JD Phillips'}
+                            headerPosition={'Director of Maintenance (5C1)'}
+                            name={'JD Phillips'}
+                            position={'Director of Maintenance, A&P / IA'}
+                            certifications={' FAA: Mechanic - Airframe & Powerplant'}
+                            locations={'Boerne Stage Airfield - 5C1'}
+                            specialTraining={'NDT Level 2, EPA Refrigeration, Learjet 31A, 35, 36 40, 45, 45XR Maintenance, TFE731 Maintenance, Challenger 601 Maintenance & Ground Ops, Philips 66 Fuel Quality Management, JET Autopilot Maintenance, Honeywell / Garrett Fuel Control Maintenance, Cessna 208 Maintenance, Cessna 300 & 400 Series Maintenance, DEEC Setup & Adjustment, JT15D Maintenance & Troubleshooting, Flight Safety Avionics for AMTs.'}
+                            bio={'' +
+                            'Growing up in the flight path of Ellington Air Force Base during the space race instilled JD with a great interest in technology and aviation. After working as a commercial photographer for fifteen years, JD decided to become an A&P mechanic in order to earn additional money so that he could purchase his own plane and tour the world by air. After earning his A&P certificate in 1992, JD discovered that he enjoyed working on aircraft so much that he wanted to make that his primary career. He has been diligently serving the general aviation community ever since. His extensive background includes experience with virtually every make and model of GA aircraft in the Part 91 and Part 135 environment, as well as significant work history in major Part 145 MROs and aircraft manufacturers.'
+                            }
+                            favAircraft={'Cessna 310'}
+                        />
+                    </Col>
+
                 </Row>
             </Jumbotron>
 
