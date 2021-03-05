@@ -15,6 +15,7 @@ import robinRodriguez from '../images/bg-graphics/screen-team/robin_rodriguez.pn
 import shelbyPolasek from '../images/bg-graphics/screen-team/shelby_polasek.png'
 import jerryFitzgerald from '../images/bg-graphics/screen-team/jerry_fitzgerald.png'
 import johnSenecal from '../images/bg-graphics/screen-team/john_senecal.png'
+import matthewGurniak from '../images/bg-graphics/screen-team/matthew_gurniak.png'
 import halibut from '../images/bg-graphics/screen-team/halibut.png'
 import tuna from '../images/bg-graphics/screen-team/tuna.png'
 import mackerel from '../images/bg-graphics/screen-team/mackeral.png'
@@ -258,6 +259,85 @@ const TeamScreen = () => {
                     </Col>
 
 
+                    <Col className='col-lg-3 col-sm-1'>
+                        {/*  Matthew Gurniak */}
+                        <TeamCard
+                            eventKey={'2'}
+                            img={matthewGurniak}
+                            headerName={'Matthew Gurniak'}
+                            headerPosition={''}
+                            name={'Matthew Gurniak'}
+                            position={''}
+                            certifications={'FAA: Mechanic - Airframe & Powerplant; Private Pilot - ASEL'}
+                            locations={'Boerne Stage Airfield - 5C1'}
+                            specialTraining={'Bell 206'}
+                            bio={
+                                ' Matthew\'s interest in aviation began when he was in the third-grade when his class went on a field trip to a local FBO that provided rides to the students. That trip around the pattern sparked a passion for aviation and Matthew earned his Private Pilot\'s License at age 17. After high school, Matthew joined the United States Air Force where he served as an aircraft mechanic, maintaining aircraft such as the F-15, F-16, A-10, F-117, C-130, C-141, C-17 and C-5. After twenty six years of service, Matthew retired in the top 1% of the enlisted corps as a Chief Master Sergeant. Matthew continues to enjoy flying and is working on his instrument rating. He joined the Bison Aviation team so that he could enjoy the camaraderie of the general aviation community.  Matt is also the first candidate to matriculate through the Bison Aviation A&P Apprentice Program and earn his FAA A&P license!'
+                            }
+                            favAircraft={'Cessna 100 & 200 series'}
+                        />
+                    </Col>
+
+                </Row>
+
+                {/*============   ROW FOUR  ==========*/}
+                <Row className='px-auto'>
+                    <Col className='col-lg-3 col-sm-1'>
+                        {/*  Halibut */}
+                        <TeamCard
+                            eventKey={'2'}
+                            img={halibut}
+                            headerName={'Halibut'}
+                            headerPosition={'Hangar Security Consultant'}
+                            name={'Halibut'}
+                            position={'Hangar Security Consultant'}
+                            certifications={'Feline'}
+                            locations={'Boerne Stage Airfield - 5C1'}
+                            specialTraining={'Wing Walking, Bird Chasing, Cat Napping.'}
+                            bio={
+                                'Halibut adopted Bison Aviation in early 2018; since then she has "grown" into her position, maintaining a pest free environment for the rest of her Bison teammates.'
+                            }
+                            favAircraft={'The one she happens to be sleeping under.'}
+                        />
+                    </Col>
+
+                    <Col className='col-lg-3 col-sm-1'>
+                        {/*  Tuna */}
+                        <TeamCard
+                            eventKey={'2'}
+                            img={tuna}
+                            headerName={'Tuna'}
+                            headerPosition={'Hangar Security Consultant'}
+                            name={'Tuna'}
+                            position={'Hangar Security Consultant'}
+                            certifications={'Feline'}
+                            locations={'Boerne Stage Airfield - 5C1'}
+                            specialTraining={'Caterwauling, Cat Napping, Glaring From High Vantage Points.'}
+                            bio={
+                                ' Tuna has been a fixture at the 5C1 service center for as long as any of us can remember; she enjoys singing loudly in her native tongue and stealing Halibut\'s bed.'
+                            }
+                            favAircraft={'The one that isn\'t making noise.'}
+                        />
+                    </Col>
+
+                    <Col className='col-lg-3 col-sm-1'>
+                        {/*  MACKERERL */}
+                        <TeamCard
+                            eventKey={'2'}
+                            img={mackerel}
+                            headerName={'Mackerel'}
+                            headerPosition={'Hangar Security Consultant'}
+                            name={'Mackerel'}
+                            position={'Hangar Security Consultant'}
+                            certifications={'Feline'}
+                            locations={'Boerne Stage Airfield - 5C1'}
+                            specialTraining={'Caterwauling, Cat Napping, Gluttony.'}
+                            bio={
+                                'Mackerel is the latest addition to the Bison Hangar Security Team. While quite adept at dispatching prey found lingering about the hangar, Mackerel strongly prefers to have his food delivered to him by one of his human subordinates and is not shy about asking.'
+                            }
+                            favAircraft={'Mackerel is far too busy napping to worry about airplanes.'}
+                        />
+                    </Col>
 
 
                 </Row>
