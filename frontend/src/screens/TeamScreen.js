@@ -44,7 +44,7 @@ const TeamScreen = () => {
                 <Jumbotron className='mx-auto bg-transparent'
                            fluid>
 
-                    <Row className='px-auto mt-n5'>
+                    <Row className='px-auto mt-n5 d-flex justify-content-center'>
                         <Col className='col-lg-3 col-md-2 col-sm-1 p-0 m-0'>
                             {/*   JOHN ATKIN   */}
                             <TeamCard
@@ -111,6 +111,29 @@ const TeamScreen = () => {
                         </Col>
 
                         <Col className='col-lg-3 col-sm-1 p-0 m-0'>
+                            {/*   Robin Rodriguez */}
+                            <TeamCard
+                                eventKey={'2'}
+                                img={robinRodriguez}
+                                headerName={'Robin Rodriguez'}
+                                headerPosition={'A&P'}
+                                name={'Robin Rodriguez'}
+                                position={''}
+                                certifications={'FAA: Mechanic - Airframe & Powerplant'}
+                                locations={'Boerne Stage Airfield - 5C1'}
+                                specialTraining={'Cirrus SR20 & SR22 Factory Certified; American Bonanza Society Bonanza & Baron series.'}
+                                bio={
+                                    'After spending most of his life in the culinary industry, Robin decided that it was time to take his career to a new level. Robin enrolled in college and subsequently graduated with honors (Phi Theta Kappa National Honor Society) earning two associate\'s degrees along with his FAA Airframe & Powerplant mechanic\'s license. Robin found his landing spot at Bison Aviation and continues to pursue his career in aviation near his home and family.'
+                                }
+                                favAircraft={'Cirrus SR20 & SR22'}
+                            />
+                        </Col>
+
+                    </Row>
+
+                    {/*============   ROW TWO  ==========*/}
+                    <Row className='px-auto d-flex justify-content-center'>
+                        <Col className='col-lg-3 col-sm-1 p-0 m-0'>
                             {/*   JD PHILIPS   */}
                             <TeamCard
                                 eventKey={'2'}
@@ -128,10 +151,7 @@ const TeamScreen = () => {
                                 favAircraft={'Cessna 310'}
                             />
                         </Col>
-                    </Row>
 
-                    {/*============   ROW TWO  ==========*/}
-                    <Row className='px-auto'>
                         <Col className='col-lg-3 col-sm-1 p-0 m-0'>
                             {/*   ROEL ROGERIO   */}
                             <TeamCard
@@ -191,30 +211,9 @@ const TeamScreen = () => {
                             />
                         </Col>
 
-                        <Col className='col-lg-3 col-sm-1 p-0 m-0'>
-                            {/*   Robin Rodriguez */}
-                            <TeamCard
-                                eventKey={'2'}
-                                img={robinRodriguez}
-                                headerName={'Robin Rodriguez'}
-                                headerPosition={'A&P'}
-                                name={'Robin Rodriguez'}
-                                position={''}
-                                certifications={'FAA: Mechanic - Airframe & Powerplant'}
-                                locations={'Boerne Stage Airfield - 5C1'}
-                                specialTraining={'Cirrus SR20 & SR22 Factory Certified; American Bonanza Society Bonanza & Baron series.'}
-                                bio={
-                                    'After spending most of his life in the culinary industry, Robin decided that it was time to take his career to a new level. Robin enrolled in college and subsequently graduated with honors (Phi Theta Kappa National Honor Society) earning two associate\'s degrees along with his FAA Airframe & Powerplant mechanic\'s license. Robin found his landing spot at Bison Aviation and continues to pursue his career in aviation near his home and family.'
-                                }
-                                favAircraft={'Cirrus SR20 & SR22'}
-                            />
-                        </Col>
-
-
                     </Row>
 
-                    {/*============   ROW THREE  ==========*/}
-                    <Row className='px-auto'>
+                    <Row className='px-auto d-flex justify-content-center'>
                         <Col className='col-lg-3 col-sm-1 p-0 m-0'>
                             {/*  Cody Strack  */}
                             <TeamCard
@@ -296,7 +295,7 @@ const TeamScreen = () => {
                     </Row>
 
                     {/*============   ROW FOUR  ==========*/}
-                    <Row className='px-auto'>
+                    <Row className='px-auto d-flex justify-content-center'>
                         <Col className='col-lg-3 col-sm-1 p-0 m-0'>
                             {/*  Halibut */}
                             <TeamCard

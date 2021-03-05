@@ -6,13 +6,16 @@
 }
 
 .Team_underline{
-    text-decoration: underline;
+    /*text-decoration: underline;*/
 }
 
 .TeamScreen_hero-img{
     background-image: url("../../../images/bg-graphics/screen-team/team-meeting.jpg");
     background-repeat: no-repeat;
     height: 300px;
-    background-position: 25% 40%;
+    background-position: 30% 40%;
+}
 
+.Team_blue{
+    color: #2576e5
 }
