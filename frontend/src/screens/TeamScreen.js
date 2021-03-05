@@ -114,7 +114,7 @@ const TeamScreen = () => {
                     </Col>
                 </Row>
 
-
+                {/*============   ROW TWO  ==========*/}
                 <Row className='px-auto'>
                     <Col className='col-lg-3 col-sm-1'>
                         {/*   ROEL ROGERIO   */}
@@ -132,6 +132,26 @@ const TeamScreen = () => {
                                 'After earning his degree as an Electronics Technician at Texas A&M Extension Service in San Antonio, Roel joined the United States Army in 1988 where he served as an aircraft electronics technician maintaining avionics systems on aircraft such as the OV-1D and RC-12. Upon transitioning into the civilian world, Roel worked as Lead Avionics Technician for Raytheon (later called Hawker-Beechcraft) Services servicing Beechcraft, Hawker, Mitsubishi, Falcon, and various other aircraft for fourteen years. After Hawker-Beechcraft closed their San Antonio location, Roel worked at Sierra Industries, again serving as Avionics Crew Chief performing avionics repairs and installations on everything from Cessna 172s through Citations. When Sierra Industries was bought-out and subsequently closed, Roel found a new home at Bison Aviation where he serves as Lead Avionics Technician and Chief Installer.'
                             }
                             favAircraft={'Beechcraft King Air series'}
+                        />
+                    </Col>
+
+                    <Col className='col-lg-3 col-sm-1'>
+                        {/*   ROEL ROGERIO   */}
+                        <TeamCard
+                            eventKey={'2'}
+                            img={jeffRossell}
+                            headerName={'Jeffrey Rossell'}
+                            headerPosition={'AET'}
+                            name={'Jeffery Rossell'}
+                            position={'Avionics Technician / CNC Operator'}
+                            certifications={'FAA: Repairman; FCC: GROL w/ Radar'}
+                            locations={'Boerne Stage Airfield - 5C1'}
+                            specialTraining={'Garmin G500, G600, G1000 Line Maintenance, Raytheon Aircraft Maintenance Professionalism & Resource Management, Rockwell Collins Proline Maintenance'}
+                            bio={
+                                'Jeffrey began his avionics career in the United States Army as an AH-64 Armament / Electrical Systems Repairman and FARP Pad Chief.  After serving three tours of duty in Iraq and one in Korea, Jeffrey returned to civilian life and began his extensive career installing, repairing and troubleshooting avionics systems in general aviation and corporate aircraft.  Jeffrey also has significant experience maintaining and installing airborne EO/IR, FLIR, electronic countermeasure, sighting and tracking systems on military aircraft.  During his career, Jeffrey has gained a tremendous amount of experience working with avionics systems from almost every major manufacturer and continues to enjoy the challenges of integrating complex avionics equipment.\n' +
+                                '\n'
+                            }
+                            favAircraft={'King Air 350 & AH-64D Apache'}
                         />
                     </Col>
 
