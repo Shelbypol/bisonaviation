@@ -203,7 +203,7 @@ const TeamScreen = () => {
                         {/*  Cody Strack  */}
                         <TeamCard
                             eventKey={'2'}
-                            img={robinRodriguez}
+                            img={codyStrack}
                             headerName={'Cody Strack'}
                             headerPosition={'A&P / IA'}
                             name={'Cody Strack'}
@@ -217,6 +217,49 @@ const TeamScreen = () => {
                             favAircraft={'Cessna Twins'}
                         />
                     </Col>
+
+
+                    <Col className='col-lg-3 col-sm-1'>
+                    {/*  Jerry Fitzgerald */}
+                    <TeamCard
+                        eventKey={'2'}
+                        img={jerryFitzgerald}
+                        headerName={'Jerry Fitzgerald'}
+                        headerPosition={''}
+                        name={'Jerry Fitzgerald'}
+                        position={''}
+                        certifications={'FAA: Private Pilot - ASEL, Instrument Airplane'}
+                        locations={'Boerne Stage Airfield - 5C1'}
+                        specialTraining={''}
+                        bio={
+                            'An avid pilot and aircraft owner for many years; Jerry joined the Bison Aviation Apprentice Program after retiring from a successful career as a petroleum engineer. His extensive knowledge of mechanical systems and airmanship allow him to bring a new perspective on aircraft maintenance to the Bison Aviation Team.'
+                        }
+                        favAircraft={'PA-24 Comanche'}
+                    />
+                </Col>
+
+                    <Col className='col-lg-3 col-sm-1'>
+                        {/*  John Senecal */}
+                        <TeamCard
+                            eventKey={'2'}
+                            img={johnSenecal}
+                            headerName={'John Senecal'}
+                            headerPosition={'A&P / IA'}
+                            name={'John Senecal'}
+                            position={''}
+                            certifications={'FAA: Mechanic - Airframe & Powerplant / Inspection Authorization; Airline Transport Pilot - AMEL, EMB-145, BE40, BE300; Commercial Pilot - ASEL, ASES, Glider, Helicopter; Certified Flight Instructor - CFI, CFII, MEI, CFIG; Flight Engineer - Turbojets'}
+                            locations={'Boerne Stage Airfield - 5C1'}
+                            specialTraining={'Bell 206'}
+                            bio={
+                                ' John\'s aviation career began during his senior year of high school when he took a job working for a local charter company, assisting with maintenance on their fleet of Cessna 310s and Piper Aztecs. After high school, John enlisted in the United States Army where he served as an OH-58 helicopter mechanic and later as an Aviation Maintenance Warrant Officer. After leaving the Army, John began his career as an airline pilot. John holds a Bachelor\'s degree in Aviation Maintenance Management from Embry-Riddle University.'
+                            }
+                            favAircraft={'Beechcraft Bonanza'}
+                        />
+                    </Col>
+
+
+
+
                 </Row>
 
 
