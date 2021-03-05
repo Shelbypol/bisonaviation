@@ -197,6 +197,28 @@ const TeamScreen = () => {
 
                 </Row>
 
+                {/*============   ROW THREE  ==========*/}
+                <Row className='px-auto'>
+                    <Col className='col-lg-3 col-sm-1'>
+                        {/*  Cody Strack  */}
+                        <TeamCard
+                            eventKey={'2'}
+                            img={robinRodriguez}
+                            headerName={'Cody Strack'}
+                            headerPosition={'A&P / IA'}
+                            name={'Cody Strack'}
+                            position={''}
+                            certifications={'FAA: Mechanic - Airframe & Powerplant, Inspection Authorization'}
+                            locations={'Boerne Stage Airfield - 5C1'}
+                            specialTraining={'Cirrus SR20 & SR22 Factory Certified, American Bonanza Society Bonanza & Baron Series, Cessna 300 & 400 Series Maintenance, Advanced Pilot Seminar'}
+                            bio={
+                                'Cody left a career in the oil and gas industry to pursue his goal of becoming an aircraft mechanic. Cody\'s hard work and dedication lead him to successful completion of his A&P training at the Aviation School of Maintenance in Houston, and later his FAA Inspection Authorization. In addition to his A&P license, Cody has undertaken extensive type-specific training, including the full Cirrus Factory Maintenance certification course at the Cirrus Factory in Duluth, MN. Cody is an avid UAV pilot and enjoys building and flying his own creative designs.'
+                            }
+                            favAircraft={'Cessna Twins'}
+                        />
+                    </Col>
+                </Row>
+
 
             </Jumbotron>
 
