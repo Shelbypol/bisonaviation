@@ -103,7 +103,7 @@ const TeamScreen = () => {
                             headerPosition={'Director of Maintenance (5C1)'}
                             name={'JD Phillips'}
                             position={'Director of Maintenance, A&P / IA'}
-                            certifications={' FAA: Mechanic - Airframe & Powerplant'}
+                            certifications={' FAA: Mechanic - Airframe & Powerplant / Inspection Authorization'}
                             locations={'Boerne Stage Airfield - 5C1'}
                             specialTraining={'NDT Level 2, EPA Refrigeration, Learjet 31A, 35, 36 40, 45, 45XR Maintenance, TFE731 Maintenance, Challenger 601 Maintenance & Ground Ops, Philips 66 Fuel Quality Management, JET Autopilot Maintenance, Honeywell / Garrett Fuel Control Maintenance, Cessna 208 Maintenance, Cessna 300 & 400 Series Maintenance, DEEC Setup & Adjustment, JT15D Maintenance & Troubleshooting, Flight Safety Avionics for AMTs.'}
                             bio={'' +
@@ -112,8 +112,33 @@ const TeamScreen = () => {
                             favAircraft={'Cessna 310'}
                         />
                     </Col>
+                </Row>
+
+
+                <Row className='px-auto'>
+                    <Col className='col-lg-3 col-sm-1'>
+                        {/*   ROEL ROGERIO   */}
+                        <TeamCard
+                            eventKey={'2'}
+                            img={roelRogerio}
+                            headerName={'Roel Rogerio'}
+                            headerPosition={'Avionics Manager'}
+                            name={'Roel Rogerio'}
+                            position={'Avionics Manager, AET'}
+                            certifications={'FAA: Repairman'}
+                            locations={'Boerne Stage Airfield - 5C1'}
+                            specialTraining={'Garmin G500, G600, G1000 Line Maintenance, Raytheon Aircraft Maintenance Professionalism & Resource Management, Rockwell Collins Proline Maintenance'}
+                            bio={
+                                'After earning his degree as an Electronics Technician at Texas A&M Extension Service in San Antonio, Roel joined the United States Army in 1988 where he served as an aircraft electronics technician maintaining avionics systems on aircraft such as the OV-1D and RC-12. Upon transitioning into the civilian world, Roel worked as Lead Avionics Technician for Raytheon (later called Hawker-Beechcraft) Services servicing Beechcraft, Hawker, Mitsubishi, Falcon, and various other aircraft for fourteen years. After Hawker-Beechcraft closed their San Antonio location, Roel worked at Sierra Industries, again serving as Avionics Crew Chief performing avionics repairs and installations on everything from Cessna 172s through Citations. When Sierra Industries was bought-out and subsequently closed, Roel found a new home at Bison Aviation where he serves as Lead Avionics Technician and Chief Installer.'
+                            }
+                            favAircraft={'Beechcraft King Air series'}
+                        />
+                    </Col>
 
                 </Row>
+
+
+
             </Jumbotron>
 
         </>
