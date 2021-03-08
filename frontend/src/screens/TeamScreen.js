@@ -24,11 +24,12 @@ import mackerel from '../images/bg-graphics/screen-team/mackeral.png'
 const TeamScreen = () => {
     return (
         <>
+            <TeamHero/>
 
-            <Jumbotron className='TeamScreen_hero-img mx-auto bg-transparent m-0 p-0 '
-                       fluid>
+            {/*<Jumbotron className='TeamScreen_hero-img mx-auto bg-transparent m-0 p-0 '*/}
+            {/*           fluid>*/}
 
-            </Jumbotron>
+            {/*</Jumbotron>*/}
 
             <Container className='p-0 fluid'>
 
