@@ -30,7 +30,7 @@ const TeamScreen = () => {
 
             <Container className='p-0 fluid'>
 
-                <Jumbotron className='mx-auto bg-transparent m-0 p-0 global_cultured'
+                <Jumbotron className='mx-5 px-5 bg-transparent m-0 p-0 global_cultured'
                            fluid>
                     <h1 className='p-0 mb-0 mx-0 mt-5' style={{color: 'red'}}>Meet the Bison Team</h1>
                     <br/>
@@ -39,7 +39,7 @@ const TeamScreen = () => {
                     </p>
                 </Jumbotron>
 
-                <Jumbotron className='mx-auto bg-transparent'
+                <Jumbotron className='mx-5 px-5 bg-transparent'
                            fluid>
 
                     <Row className='px-auto mt-n5 d-flex justify-content-center'>
@@ -122,7 +122,7 @@ const TeamScreen = () => {
                     </Row>
 
                     {/*============   ROW TWO  ==========*/}
-                    <Row className='px-auto d-flex justify-content-center'>
+                    <Row className='px-auto mt-5 d-flex justify-content-center'>
 
                             {/*   JD PHILIPS   */}
                             <TeamCard
@@ -195,7 +195,7 @@ const TeamScreen = () => {
 
                     </Row>
 
-                    <Row className='px-auto d-flex justify-content-center'>
+                    <Row className='px-auto mt-5 d-flex justify-content-center'>
                             {/*  Cody Strack  */}
                             <TeamCard
                                 eventKey={'8'}
@@ -267,7 +267,7 @@ const TeamScreen = () => {
                     </Row>
 
                     {/*============   ROW FOUR  ==========*/}
-                    <Row className='px-auto d-flex justify-content-center'>
+                    <Row className='px-auto mt-5 d-flex justify-content-center'>
 
                             {/*  Halibut */}
                             <TeamCard
