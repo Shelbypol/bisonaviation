@@ -40,7 +40,6 @@ const TeamScreen = () => {
                 <Jumbotron className='mx-5 px-5 bg-transparent'
                            fluid>
 
-                    {/*<Row className='mt-n5 d-flex justify-content-center'>*/}
                     <Row className='mt-n5'>
 
                             {/*   JOHN ATKIN   */}
@@ -67,6 +66,7 @@ const TeamScreen = () => {
                                 '                                    equation, providing him with the unique viewpoint of someone who\n' +
                                 '                                    understands aircraft maintenance both as a pilot / owner, as\n' +
                                 '                                    well as a repair station operator.'}
+                                favAircraft={false}
 
 
                             />

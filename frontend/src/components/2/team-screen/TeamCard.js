@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import Fade from 'react-reveal/Fade';
 import {Card, Row, Col, Accordion, Button} from "react-bootstrap";
+import {Jumbotron} from "reactstrap";
 
 const TeamCard = ({img, headerName, headerPosition, name, position, certifications, locations, specialTraining, bio, favAircraft, eventKey}) => {
 
@@ -22,7 +23,7 @@ const TeamCard = ({img, headerName, headerPosition, name, position, certificatio
                     <Card.Img src={img} className='rounded'/>
                     <Card.Header
                         className='global_cultured global_rich-black-bg text-center d-flex justify-content-center align-items-center'
-                        style={{height: '15vh'}}>
+                        style={{height: '12vh'}}>
                         {headerName}
                         <br/>
                         {headerPosition}
@@ -36,7 +37,7 @@ const TeamCard = ({img, headerName, headerPosition, name, position, certificatio
                         <Col className='col-sm-12 my-3'>
                             <Row xs={12}>
                                 <Col xs={6}>
-                                    <Card.Img variant="top" src={img} className='w-75 h-100'/>
+                                    <Card.Img variant="top" src={img} className='w-100 h-100'/>
                                 </Col>
                                 <Col xs={6} className='bg-transparent global_cultured'>
                                     <Col xs={12}>
@@ -47,37 +48,53 @@ const TeamCard = ({img, headerName, headerPosition, name, position, certificatio
                                         {name}
                                         {}
                                     </Col>
-                                    <Col xs={12}>
+
+                                    {position ? (
+                                        <Col xs={12}>
                                         {/*POSITION*/}
                                         <strong className='Team_blue Team_underline '>POSITION:</strong>
                                         &nbsp;
                                         {position}
                                     </Col>
+                                    ):('')}
+
+                                    {certifications ? (
                                     <Col xs={12}>
                                         {/*CERTIFICATIONS*/}
                                         <strong className='Team_blue Team_underline '>CERTIFICATION/s:</strong>
                                         <br/>
                                         {certifications}
                                     </Col>
+                                        ):('')}
+
+
+                                    {locations ? (
                                     <Col xs={12}>
                                         {/*LOCATION*/}
                                         <strong className='Team_blue Team_underline '>LOCATION:</strong>
                                         &nbsp;
                                         {locations}
                                     </Col>
+                                        ):('')}
+
+                                    {specialTraining ? (
                                     <Col xs={12}>
                                         {/*SPECIAL TRAINING*/}
+
                                         <strong className='Team_blue Team_underline '> SPECIAL
                                             TRAINING:</strong>
                                         <br/>
                                         {specialTraining}
                                     </Col>
+                                    ):('')}
+
                                     <Col xs={12}>
                                         {/*BIO*/}
                                         <strong className='Team_blue Team_underline '>BIO:</strong>
                                         <br/>
                                         {bio}
                                     </Col>
+                                        {favAircraft ? (
                                     <Col xs={12}>
                                         {/*BIO*/}
                                         <strong className='Team_blue Team_underline '>Favorite Aircraft to
@@ -85,12 +102,15 @@ const TeamCard = ({img, headerName, headerPosition, name, position, certificatio
                                         <br/>
                                         {favAircraft}
                                     </Col>
+                                        ):('')}
                                 </Col>
                             </Row>
                         </Col>
                     </Fade>
                 </>
+
             )}
+
 
             {/*<Col sm={1} md={3}>*/}
             {/*    <Card className='bg-transparent border-0' onClick={cardShow}>*/}
