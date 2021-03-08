@@ -17,7 +17,7 @@ const TeamCard = ({img, headerName, headerPosition, name, position, certificatio
         <>
 
             {/*<Row xs={12} className='px-auto'>*/}
-                <Col xs={3} className='p-0 m-0'>
+                <Col xs={3} className=''>
 
                     <Card className='bg-transparent no-border' onClick={cardShow}>
                         <Card.Img variant="top" src={img} className='rounded'/>
