@@ -34,15 +34,14 @@ const TeamScreen = () => {
                            fluid>
                     <h1 className='p-0 mb-0 mx-0 mt-5' style={{color: 'red'}}>Meet the Bison Team</h1>
                     <br/>
-                    <p>The Bison Aviation team is made up of professionally trained, highly skilled individuals, selected specifically for their particular expertise in the fields of general aviation maintenance and avionics. All of our primary technicians are fully FAA licensed (something which isn't true in most maintenance shops). The experience and skills of our team members is what makes Bison Aviation a leader in the aircraft service industry and we are proud to have each of these individuals as a part of the Bison Aviation Team!
-
-                    </p>
+                    <p>The Bison Aviation team is made up of professionally trained, highly skilled individuals, selected specifically for their particular expertise in the fields of general aviation maintenance and avionics. All of our primary technicians are fully FAA licensed (something which isn't true in most maintenance shops). The experience and skills of our team members is what makes Bison Aviation a leader in the aircraft service industry and we are proud to have each of these individuals as a part of the Bison Aviation Team!</p>
                 </Jumbotron>
 
                 <Jumbotron className='mx-5 px-5 bg-transparent'
                            fluid>
 
-                    <Row className='px-auto mt-n5 d-flex justify-content-center'>
+                    {/*<Row className='mt-n5 d-flex justify-content-center'>*/}
+                    <Row className='mt-n5'>
 
                             {/*   JOHN ATKIN   */}
                             <TeamCard
