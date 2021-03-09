@@ -2,14 +2,16 @@ import React from 'react'
 import {Container} from "react-bootstrap";
 import MechanicsHero from "../components/2/mechanics-screen/MechanicsHero";
 import {Jumbotron} from "reactstrap";
+import AvionicsIcons from "../components/2/avionics-Screen/AvionicsIcons";
 
 
 const MaintenanceScreen = () => {
     return (
         <>
-            <Jumbotron className='MechanicsScreen_dots bg-transparent mb-0 pb-0' fluid>
+            <Jumbotron className='MechanicsScreen_dots bg-transparentv p-0 m-0' fluid>
                 <MechanicsHero/>
             </Jumbotron>
+                <AvionicsIcons/>
         </>
     )
 };

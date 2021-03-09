@@ -1,24 +1,9 @@
-.HomeHero_bg-img{
-    background-image: url("../../images/bg-graphics/hero/this-one-line-reflect-color.png");
-    background-repeat: no-repeat;
-    background-position: 100% 5%;
-    /*height: 510px;*/
-}
+.MechanicsHero_img{
 
-.HeroImg1{
-    background-image: url("../../images/general/beachcraft-fin.png");
-}
-
-.MechanicsHero-img{
-    background-image: url("../../images/bg-graphics/hero/home-hash-overlay.png");
-    background-repeat: no-repeat;
-    /*background-position: 100% 5%;*/
-    height: 510px;
-    /*height: 600px;*/
 }
 
 .MechanicsHero_title{
-    font-size: 45px;
+    font-size: 30px;
 }
 
 .MechanicsHero_span{
@@ -27,12 +12,13 @@
 
 .MechanicsHero_text-box{
     /*margin-left: 10%;*/
-    /*padding-top: -20%;*/
+    margin-top: -95%;
 }
 
 .MechanicsHero_letter{
     font-size: 75px;
 }
+
 .MechanicsScreen_dots{
-    background-image: url("../");
+    background-image: url("../../images/bg-graphics/fs-slider-dots3.png");
 }
