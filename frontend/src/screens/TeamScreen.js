@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {Col, Container, Row} from "react-bootstrap";
 import TeamHero from "../components/2/team-screen/TeamHero";
 import TeamCard from "../components/2/team-screen/TeamCard";
@@ -22,30 +22,26 @@ import mackerel from '../images/bg-graphics/screen-team/mackeral.png'
 
 
 const TeamScreen = () => {
+
+
     return (
         <>
-
-            <Jumbotron className='TeamScreen_hero-img mx-auto bg-transparent m-0 p-0 '
-                       fluid>
-
-            </Jumbotron>
+            <TeamHero/>
 
             <Container className='p-0 fluid'>
 
-                <Jumbotron className='mx-auto bg-transparent m-0 p-0 global_cultured'
+                <Jumbotron className='mx-5 px-5 bg-transparent m-0 p-0 global_cultured'
                            fluid>
                     <h1 className='p-0 mb-0 mx-0 mt-5' style={{color: 'red'}}>Meet the Bison Team</h1>
                     <br/>
-                    <p>The Bison Aviation team is made up of professionally trained, highly skilled individuals, selected specifically for their particular expertise in the fields of general aviation maintenance and avionics. All of our primary technicians are fully FAA licensed (something which isn't true in most maintenance shops). The experience and skills of our team members is what makes Bison Aviation a leader in the aircraft service industry and we are proud to have each of these individuals as a part of the Bison Aviation Team!
-
-                    </p>
+                    <p>The Bison Aviation team is made up of professionally trained, highly skilled individuals, selected specifically for their particular expertise in the fields of general aviation maintenance and avionics. All of our primary technicians are fully FAA licensed (something which isn't true in most maintenance shops). The experience and skills of our team members is what makes Bison Aviation a leader in the aircraft service industry and we are proud to have each of these individuals as a part of the Bison Aviation Team!</p>
                 </Jumbotron>
 
-                <Jumbotron className='mx-auto bg-transparent'
+                <Jumbotron className='mx-5 px-5 bg-transparent'
                            fluid>
 
-                    <Row className='px-auto mt-n5 d-flex justify-content-center'>
-                        <Col className='col-lg-3 col-md-2 col-sm-1 p-0 m-0'>
+                    <Row className='mt-n5'>
+
                             {/*   JOHN ATKIN   */}
                             <TeamCard
                                 eventKey={'0'}
@@ -70,13 +66,11 @@ const TeamScreen = () => {
                                 '                                    equation, providing him with the unique viewpoint of someone who\n' +
                                 '                                    understands aircraft maintenance both as a pilot / owner, as\n' +
                                 '                                    well as a repair station operator.'}
+                                favAircraft={false}
 
 
                             />
 
-                        </Col>
-
-                        <Col className='col-lg-3 col-sm-1 p-0 m-0'>
                             {/*   LESLIE   */}
                             <TeamCard
                                 eventKey={'1'}
@@ -91,12 +85,10 @@ const TeamScreen = () => {
                                 bio={'Lesli\'s father, a pilot and aircraft owner, introduced her to general aviation at a very young age. As an avid traveler, Lesli has spent a great deal of time in general aviation aircraft exploring the United States. After spending many years in sales and operations management for major corporations, Lesli was hired as Bison Aviation\'s first employee. Today she oversees the "behind-the-scenes" functions which keep Bison Aviation running smoothly and efficiently.'}
 
                             />
-                        </Col>
 
-                        <Col className='col-lg-3 col-sm-1 p-0 m-0'>
                             {/*   DEENA SMITH   */}
                             <TeamCard
-                                eventKey={'2'}
+                                eventKey={'0'}
                                 img={deenaSmith}
                                 headerName={'Deena Smith'}
                                 headerPosition={'Shop Manager, A&P'}
@@ -108,12 +100,10 @@ const TeamScreen = () => {
                                 bio={'After earning her Bachelor\'s and Master\'s degrees in English Literature, Deena taught at the collegiate level for three years, including an aviation university which kindled her interest in aircraft. She pursued and earned her FAA airframe and powerplant mechanic\'s license, planning to travel the world as a contract mechanic. Deena subsequently joined Bison Aviation where she began working as an aircraft mechanic, prior to taking a leave of absence in order to hike the Appalachian Trail in its entirety. After completing her 2,200 mile trek, Deena returned to Bison Aviation where she currently serves as Shop Manager Lead Expeditor, facilitating parts procurement and scheduling operations for the company.'}
                                 favAircraft={'Cessna 206'}
                             />
-                        </Col>
 
-                        <Col className='col-lg-3 col-sm-1 p-0 m-0'>
                             {/*   Robin Rodriguez */}
                             <TeamCard
-                                eventKey={'2'}
+                                eventKey={'3'}
                                 img={robinRodriguez}
                                 headerName={'Robin Rodriguez'}
                                 headerPosition={'A&P'}
@@ -127,16 +117,15 @@ const TeamScreen = () => {
                                 }
                                 favAircraft={'Cirrus SR20 & SR22'}
                             />
-                        </Col>
 
                     </Row>
 
                     {/*============   ROW TWO  ==========*/}
-                    <Row className='px-auto d-flex justify-content-center'>
-                        <Col className='col-lg-3 col-sm-1 p-0 m-0'>
+                    <Row className='px-auto mt-5 d-flex justify-content-center'>
+
                             {/*   JD PHILIPS   */}
                             <TeamCard
-                                eventKey={'2'}
+                                eventKey={'4'}
                                 img={jdPhillips}
                                 headerName={'JD Phillips'}
                                 headerPosition={'Director of Maintenance (5C1)'}
@@ -150,12 +139,10 @@ const TeamScreen = () => {
                                 }
                                 favAircraft={'Cessna 310'}
                             />
-                        </Col>
 
-                        <Col className='col-lg-3 col-sm-1 p-0 m-0'>
                             {/*   ROEL ROGERIO   */}
                             <TeamCard
-                                eventKey={'2'}
+                                eventKey={'5'}
                                 img={roelRogerio}
                                 headerName={'Roel Rogerio'}
                                 headerPosition={'Avionics Manager'}
@@ -169,12 +156,10 @@ const TeamScreen = () => {
                                 }
                                 favAircraft={'Beechcraft King Air series'}
                             />
-                        </Col>
 
-                        <Col className='col-lg-3 col-sm-1 p-0 m-0'>
                             {/*   Jeffrey Rossell   */}
                             <TeamCard
-                                eventKey={'2'}
+                                eventKey={'6'}
                                 img={jeffRossell}
                                 headerName={'Jeffrey Rossell'}
                                 headerPosition={'AET'}
@@ -189,13 +174,10 @@ const TeamScreen = () => {
                                 }
                                 favAircraft={'King Air 350 & AH-64D Apache'}
                             />
-                        </Col>
 
-
-                        <Col className='col-lg-3 col-sm-1 p-0 m-0'>
                             {/*   CHAD BROOKS   */}
                             <TeamCard
-                                eventKey={'2'}
+                                eventKey={'7'}
                                 img={chadBrooks}
                                 headerName={'Chad Brooks'}
                                 headerPosition={'AET'}
@@ -209,15 +191,13 @@ const TeamScreen = () => {
                                 }
                                 favAircraft={'Boeing 787 Dreamliner'}
                             />
-                        </Col>
 
                     </Row>
 
-                    <Row className='px-auto d-flex justify-content-center'>
-                        <Col className='col-lg-3 col-sm-1 p-0 m-0'>
+                    <Row className='px-auto mt-5 d-flex justify-content-center'>
                             {/*  Cody Strack  */}
                             <TeamCard
-                                eventKey={'2'}
+                                eventKey={'8'}
                                 img={codyStrack}
                                 headerName={'Cody Strack'}
                                 headerPosition={'A&P / IA'}
@@ -231,13 +211,10 @@ const TeamScreen = () => {
                                 }
                                 favAircraft={'Cessna Twins'}
                             />
-                        </Col>
 
-
-                        <Col className='col-lg-3 col-sm-1 p-0 m-0'>
                             {/*  Jerry Fitzgerald */}
                             <TeamCard
-                                eventKey={'2'}
+                                eventKey={'9'}
                                 img={jerryFitzgerald}
                                 headerName={'Jerry Fitzgerald'}
                                 headerPosition={''}
@@ -251,12 +228,10 @@ const TeamScreen = () => {
                                 }
                                 favAircraft={'PA-24 Comanche'}
                             />
-                        </Col>
 
-                        <Col className='col-lg-3 col-sm-1 p-0 m-0'>
                             {/*  John Senecal */}
                             <TeamCard
-                                eventKey={'2'}
+                                eventKey={'10'}
                                 img={johnSenecal}
                                 headerName={'John Senecal'}
                                 headerPosition={'A&P / IA'}
@@ -270,13 +245,10 @@ const TeamScreen = () => {
                                 }
                                 favAircraft={'Beechcraft Bonanza'}
                             />
-                        </Col>
 
-
-                        <Col className='col-lg-3 col-sm-1 p-0 m-0'>
                             {/*  Matthew Gurniak */}
                             <TeamCard
-                                eventKey={'2'}
+                                eventKey={'11'}
                                 img={matthewGurniak}
                                 headerName={'Matthew Gurniak'}
                                 headerPosition={''}
@@ -290,16 +262,15 @@ const TeamScreen = () => {
                                 }
                                 favAircraft={'Cessna 100 & 200 series'}
                             />
-                        </Col>
 
                     </Row>
 
                     {/*============   ROW FOUR  ==========*/}
-                    <Row className='px-auto d-flex justify-content-center'>
-                        <Col className='col-lg-3 col-sm-1 p-0 m-0'>
+                    <Row className='px-auto mt-5 d-flex justify-content-center'>
+
                             {/*  Halibut */}
                             <TeamCard
-                                eventKey={'2'}
+                                eventKey={'12'}
                                 img={halibut}
                                 headerName={'Halibut'}
                                 headerPosition={'Hangar Security Consultant'}
@@ -313,12 +284,10 @@ const TeamScreen = () => {
                                 }
                                 favAircraft={'The one she happens to be sleeping under.'}
                             />
-                        </Col>
 
-                        <Col className='col-lg-3 col-sm-1 p-0 m-0'>
                             {/*  Tuna */}
                             <TeamCard
-                                eventKey={'2'}
+                                eventKey={'13'}
                                 img={tuna}
                                 headerName={'Tuna'}
                                 headerPosition={'Hangar Security Consultant'}
@@ -332,12 +301,10 @@ const TeamScreen = () => {
                                 }
                                 favAircraft={'The one that isn\'t making noise.'}
                             />
-                        </Col>
 
-                        <Col className='col-lg-3 col-sm-1 p-0 m-0'>
                             {/*  MACKERERL */}
                             <TeamCard
-                                eventKey={'2'}
+                                eventKey={'14'}
                                 img={mackerel}
                                 headerName={'Mackerel'}
                                 headerPosition={'Hangar Security Consultant'}
@@ -351,7 +318,7 @@ const TeamScreen = () => {
                                 }
                                 favAircraft={'Mackerel is far too busy napping to worry about airplanes.'}
                             />
-                        </Col>
+
 
 
                     </Row>

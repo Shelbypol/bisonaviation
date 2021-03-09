@@ -1,7 +1,24 @@
-.MechanicsHero_hero-img{
-    background-image: url("../../images/bg-graphics/screen-maintenance/maintenance-hero-image.png");
-    /*background-image: url("../../images/bg-graphics/screen-maintenance/mechanics-screen-hero.png");*/
-    background-repeat: no-repeat;
-    height: 650px;
-    width: 1440px;
+.MechanicsHero_img{
+
+}
+
+.MechanicsHero_title{
+    font-size: 30px;
+}
+
+.MechanicsHero_span{
+    font-size: 22px;
+}
+
+.MechanicsHero_text-box{
+    /*margin-left: 10%;*/
+    margin-top: -95%;
+}
+
+.MechanicsHero_letter{
+    font-size: 75px;
+}
+
+.MechanicsScreen_dots{
+    background-image: url("../../images/bg-graphics/fs-slider-dots3.png");
 }

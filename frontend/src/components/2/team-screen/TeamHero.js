@@ -9,7 +9,7 @@ const TeamHero = () => {
     return (
 
 
-            <Jumbotron className='TeamHero_hero-img global_rich-black-bg '
+            <Jumbotron className='TeamScreen_hero-img '
                        fluid>
             </Jumbotron>
 
