@@ -1,7 +1,6 @@
 import React, {useEffect} from "react";
-import {Col, Row} from "react-bootstrap";
-import {useDispatch, useSelector} from "react-redux";
-import WishListEmail from "../Wishlist/WishListEmail";
+import {useDispatch} from "react-redux";
+
 
 const ProfileEmailState = ({emailItems}) => {
 

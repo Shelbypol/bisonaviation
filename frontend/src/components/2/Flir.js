@@ -1,14 +1,9 @@
 import React from 'react';
 import {Jumbotron, Row, Col} from 'reactstrap';
 import Zoom from 'react-reveal/Zoom'
-import '../../style/1/Flir.css'
-import flir1 from "../../images/bg-graphics/flir/flir-1.jpg"
-import flir2 from "../../images/bg-graphics/flir/large-flir.jpg"
-import flir3 from "../../images/bg-graphics/flir/flir-multiple.jpg"
+import '../../style/2/Flir.css'
 import {Button, Card, Container} from "react-bootstrap";
 import {LinkContainer} from "react-router-bootstrap";
-import Fade from "react-reveal/Fade";
-import AvionicsProducts from "./AvionicsProducts";
 import cnc from "../../images/bg-graphics/avionics/cnc-machine copy.png";
 import test from "../../images/bg-graphics/avionics/avionics-test.jpg";
 import tayseer from "../../images/bg-graphics/avionics/tayseer-avionics.png";
@@ -17,8 +12,6 @@ import tayseer from "../../images/bg-graphics/avionics/tayseer-avionics.png";
 const Flir = () => {
     return (
         <>
-
-
             <Jumbotron id='home-avionics' className='Avionics_jumbo bg-transparent global_cultured p-0 mb-5'
                        fluid>
 

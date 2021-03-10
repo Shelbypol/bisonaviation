@@ -1,14 +1,11 @@
 import React, {useEffect, useState} from "react";
 import {Col, Row} from "react-bootstrap";
 import {useSelector, useDispatch} from "react-redux";
-import {listProductDetails, listProducts} from "../../actions/productActions";
+import {listProducts} from "../../actions/productActions";
 import ProductDisplayByCatMan from "./ProductDisplayByCatMan";
 import Loader from "../Loader";
 import Message from "../Message";
 import '../../style/CategoryManufacturerSideBar.css'
-import {StickyContainer, Sticky} from 'react-sticky';
-import {Link} from "react-router-dom";
-import Login from "../Login";
 
 const CategoryManufacturerDisplay = ({match, history}) => {
 

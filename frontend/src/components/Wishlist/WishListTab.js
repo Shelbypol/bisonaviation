@@ -2,8 +2,6 @@ import React, {useState, useEffect, useRef} from 'react';
 import {CSSTransition} from 'react-transition-group';
 import WishListTabInfo from "./WishListTabInfo";
 import '../../style/WishListTab.css'
-import {Button, Row} from "react-bootstrap";
-import {EMAIL_RESET} from "../../constants/emailConstants";
 import {useDispatch, useSelector} from "react-redux";
 
 const WishList = () => {

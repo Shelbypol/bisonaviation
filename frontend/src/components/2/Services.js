@@ -1,10 +1,9 @@
 import React from "react";
 import '../../style/2/Services.css'
 import '../../style/flag.scss'
-import {Button, Col, Container, Row} from "react-bootstrap";
+import {Button, Col, Row} from "react-bootstrap";
 import {Jumbotron} from "reactstrap";
 import Zoom from 'react-reveal/Zoom';
-import Link from "react-router-bootstrap";
 
 const Services = () => {
     return (

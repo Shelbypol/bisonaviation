@@ -1,9 +1,8 @@
 import React from 'react';
-import {Jumbotron, Row, Col} from 'reactstrap';
+import { Row, Col} from 'reactstrap';
 import '../../style/2/HomeHero.css'
 import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
-import img1 from '../../images/bg-graphics/avionics/avionics-hero-img.png'
 import img2 from '../../images/bg-graphics/avionics/avionics-hero-img-overlay.png'
 import img3 from '../../images/bg-graphics/flir/flir-jumbo-img.png'
 import {Carousel} from "react-bootstrap"

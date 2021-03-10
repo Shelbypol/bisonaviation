@@ -1,11 +1,7 @@
 import React, {useState} from 'react';
 import {Col, Button, Row} from "react-bootstrap";
-import {Jumbotron} from 'reactstrap';
 import Fade from 'react-reveal/Fade';
-import '../../style/1/AvionicsProducts.css';
-import '../../style/1/AvionicsProductsFlag.scss';
 import {LinkContainer} from "react-router-bootstrap";
-import ProductCarousel from "../ProductCarousel";
 
 const AvionicsProducts = () => {
 

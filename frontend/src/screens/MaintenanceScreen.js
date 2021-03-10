@@ -1,5 +1,4 @@
 import React from 'react'
-import {Container} from "react-bootstrap";
 import MechanicsHero from "../components/2/mechanics-screen/MechanicsHero";
 import {Jumbotron} from "reactstrap";
 import AvionicsIcons from "../components/2/avionics-Screen/AvionicsIcons";

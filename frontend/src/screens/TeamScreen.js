@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import {Col, Container, Row} from "react-bootstrap";
+import {Container, Row} from "react-bootstrap";
 import TeamHero from "../components/2/team-screen/TeamHero";
 import TeamCard from "../components/2/team-screen/TeamCard";
 import {Jumbotron} from "reactstrap";
@@ -12,7 +12,6 @@ import jeffRossell from '../images/bg-graphics/screen-team/jeffrey_rossell.png'
 import chadBrooks from '../images/bg-graphics/screen-team/chad_brooks.png'
 import codyStrack from '../images/bg-graphics/screen-team/cody_strack.png'
 import robinRodriguez from '../images/bg-graphics/screen-team/robin_rodriguez.png'
-import shelbyPolasek from '../images/bg-graphics/screen-team/shelby_polasek.png'
 import jerryFitzgerald from '../images/bg-graphics/screen-team/jerry_fitzgerald.png'
 import johnSenecal from '../images/bg-graphics/screen-team/john_senecal.png'
 import matthewGurniak from '../images/bg-graphics/screen-team/matthew_gurniak.png'

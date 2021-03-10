@@ -1,13 +1,10 @@
-import React, {useEffect, useState} from "react";
-import {Form, Button, Row, Col, Table, ListGroup, Image, Tab, Nav, Card} from 'react-bootstrap'
+import React, {useEffect} from "react";
+import {Row, Col, ListGroup} from 'react-bootstrap'
 import {useSelector, useDispatch} from "react-redux";
 import Loader from "../Loader";
 import Message from "../Message";
-import {Link} from "react-router-dom";
-import {addToEmail, removeFromEmail} from "../../actions/emailActions";
-import {deleteWishListItem, listMyWishLists} from "../../actions/wishListActions";
+import { listMyWishLists} from "../../actions/wishListActions";
 import ProfileSavedProduct from "./ProfileSavedProduct";
-import WishListEmail from "../Wishlist/WishListEmail";
 import ProfileEmailState from "./ProfileEmailState";
 
 const ProfileSavedWishList = ({match, history, userInfo}) => {

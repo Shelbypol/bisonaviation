@@ -1,9 +1,7 @@
 import React from 'react'
-//row and column to use bootstrap grid
-import {Container, Row, Col, Button} from "react-bootstrap";
+import { Row, Col, } from "react-bootstrap";
 import {LinkContainer} from "react-router-bootstrap";
 import logo from "../../images/general/Final-Logo-Horizontal.png";
-import ScrollToTop from "../ScrollToTop";
 import '../../style/Footer.css'
 import {Jumbotron} from "reactstrap";
 import SocialIcons from "../SocialIcons";

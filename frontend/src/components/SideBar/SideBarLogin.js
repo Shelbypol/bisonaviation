@@ -1,16 +1,10 @@
 import React, {useEffect, useRef, useState} from 'react';
-import * as FaIcons from 'react-icons/fa';
-import * as AiIcons from 'react-icons/ai';
 import {Link} from 'react-router-dom';
 import SideBarDataLogin from "./SideBarDataLogin";
-// import SideBarData from "./SideBarDataLogin";
 import '../../style/SideBar.css'
 import {IconContext} from 'react-icons';
-import {LinkContainer} from "react-router-bootstrap";
-import {Button, Nav, NavDropdown} from "react-bootstrap";
-import {useDispatch, useSelector} from "react-redux";
-import {CART_RESET} from "../../constants/cartConstants";
-import {logout} from "../../actions/userActions";
+import {useSelector} from "react-redux";
+
 
 const SideBarLogin = () => {
     const [sidebar, setSidebar] = useState(false);

@@ -9,10 +9,6 @@ import { getUserDetails, updateUser } from '../../actions/userActions'
 import { USER_UPDATE_RESET} from "../../constants/userConstants";
 import StickyHeader from "../../components/Headers-Nav-Footer/StickyHeader";
 
-
-// whenever you bring something in from the state it's useSelector
-// if you want to call an action it's useDispatch
-
 const UserEditScreen = ({ match, history}) => {
     const userId = match.params.id;
 

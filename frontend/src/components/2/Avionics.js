@@ -3,11 +3,8 @@ import '../../style/2/Avionics.css';
 import React from "react";
 import {Jumbotron} from "reactstrap";
 import Zoom from 'react-reveal/Zoom';
-import Fade from 'react-reveal/Fade';
-import AvionicsProducts from "./AvionicsProducts";
 import {LinkContainer} from "react-router-bootstrap";
 import cnc from '../../images/bg-graphics/avionics/cnc-machine copy.png'
-import software from '../../images/bg-graphics/avionics/avionics-4.png'
 import test from '../../images/bg-graphics/avionics/avionics-test.jpg'
 import tayseer from '../../images/bg-graphics/avionics/tayseer-avionics.png'
 

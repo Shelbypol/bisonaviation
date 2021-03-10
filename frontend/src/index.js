@@ -5,6 +5,7 @@ import store from './store'
 import './bootstrap.min.css'
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import './style/global.css'
+import './style/global-2.css'
 import App from './App'
 import reportWebVitals from './reportWebVitals';
 
