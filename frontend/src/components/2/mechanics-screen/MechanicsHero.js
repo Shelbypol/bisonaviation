@@ -1,5 +1,6 @@
 import React from 'react'
 import '../../../style/mechanicsScreen/MechanicsHero.css'
+import '../../../style/animations.css'
 import { Row, Col} from 'reactstrap';
 import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
@@ -14,13 +15,11 @@ import {Carousel} from "react-bootstrap"
 const MechanicsHero = () => {
     return (
         <>
-            <Carousel style={{height: '300px', overflow: 'hidden'}}>
+            <Carousel style={{height: '350px', overflow: 'hidden'}}>
                 <Carousel.Item className='bg-transparent border-bottom border-5 border-dark'>
                     <Carousel.Caption className='bg-transparent'>
-                        {/*<Jumbotron className=' m-0 p-0 d-flex align-items-center' fluid>*/}
                         <Row className='MechanicsHero_text-box'>
                             <Zoom>
-                                {/*<Col xs={12} className='global_blood-red-bg'> </Col>*/}
                                 <Col xs={6}
                                      className=' d-flex justify-content-start align-content-center bg-transparent'>
                                     <h1 className='MechanicsHero_title text-center ml-n2 global_cultured'>
@@ -43,17 +42,16 @@ const MechanicsHero = () => {
                                 </h3>
                             </Col>
                         </Row>
-                        {/*</Jumbotron>*/}
 
                     </Carousel.Caption>
-                    <Spin duration={1000000}>
+                    <div className='animations_img-hover-zoom-in'>
                             <img
-                                className=" MechanicsHero_img"
+                                className=" MechanicsHero_img "
                                 src={img1}
                                 alt="First slide"
                                 height={'100%'}
                             />
-                    </Spin>
+                    </div>
                 </Carousel.Item>
 
 
