@@ -1,12 +1,7 @@
-import React, {useEffect, useState} from 'react'
-import {Link} from 'react-router-dom'
+import React, {useEffect} from 'react'
 import {useDispatch, useSelector} from 'react-redux'
-import {Row, Col, ListGroup, Image, Form, Button, Card, Tab, Tabs} from 'react-bootstrap'
-import Message from '../Message'
-import {addToCart, removeFromCart} from '../../actions/cartActions'
-import {createOrder} from "../../actions/orderActions";
+import {Row, Col, Tab, Tabs} from 'react-bootstrap'
 import {CART_RESET} from "../../constants/cartConstants";
-import {createWishList, listMyWishLists} from "../../actions/wishListActions";
 import WishListSave from "./WishListSave";
 import WishListEmail from "./WishListEmail";
 import {EMAIL_RESET} from "../../constants/emailConstants";

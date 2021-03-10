@@ -1,10 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import * as FaIcons from 'react-icons/fa';
-import * as AiIcons from 'react-icons/ai';
-import * as IoIcons from 'react-icons/io';
-import {LinkContainer} from "react-router-bootstrap";
 import {Link} from 'react-router-dom';
-import {Button, Nav, NavDropdown} from "react-bootstrap";
 import {useDispatch, useSelector} from "react-redux";
 import {CART_RESET} from "../../constants/cartConstants";
 import {logout} from "../../actions/userActions";

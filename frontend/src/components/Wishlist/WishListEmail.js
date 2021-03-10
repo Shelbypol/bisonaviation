@@ -1,16 +1,11 @@
 import React, {useEffect, useState} from 'react'
-import FormContainer from "../FormContainer";
-import Message from "../Message";
-import Loader from "../Loader";
 import {Button, Col, Form, Image, ListGroup, Row} from "react-bootstrap";
 import {Link} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
 import '../../style/WishListTab.css'
-import {register} from "../../actions/userActions";
 import {removeFromCart} from "../../actions/cartActions";
 import {listMyWishLists} from "../../actions/wishListActions";
-import {addToEmail, removeFromEmail} from "../../actions/emailActions";
-import {EMAIL_RESET} from "../../constants/emailConstants";
+import {addToEmail} from "../../actions/emailActions";
 
 
 const WishListEmail = ({userInfo, cart, cartItems, success}) => {

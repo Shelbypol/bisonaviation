@@ -1,9 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import {Link} from 'react-router-dom'
-import {Card, Button, ListGroup, Nav, Row, Col} from 'react-bootstrap'
+import { Row, Col} from 'react-bootstrap'
 import {useDispatch, useSelector} from "react-redux";
 import {addToCart, removeFromCart} from "../../actions/cartActions";
-import {LinkContainer} from "react-router-bootstrap";
 
 
 const Product = ({product, history, match}) => {

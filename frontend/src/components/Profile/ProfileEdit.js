@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import {Button, Col, Form, Row} from "react-bootstrap";
+import {Button, Form} from "react-bootstrap";
 import {useSelector, useDispatch} from "react-redux";
 import Loader from "../Loader";
 import Message from "../Message";

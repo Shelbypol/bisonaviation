@@ -1,11 +1,11 @@
-import React, {useEffect, useState} from "react";
-import {Col, Image, ListGroup, Row} from "react-bootstrap";
+import React, {useState} from "react";
+import {Col, Image,  Row} from "react-bootstrap";
 import {Link} from "react-router-dom";
-import {addToEmail, removeFromEmail} from "../../actions/emailActions";
-import {useDispatch, useSelector} from "react-redux";
-import Message from "../Message";
-import {createWishList, deleteWishListItem, emailWishList, listMyWishLists} from "../../actions/wishListActions";
-import ProfileEmailState from "./ProfileEmailState";
+import {addToEmail} from "../../actions/emailActions";
+import {useDispatch} from "react-redux";
+
+import { deleteWishListItem} from "../../actions/wishListActions";
+
 
 
 const ProfileSavedProduct = ({wishList, wishes, item, product, userInfo}) => {
