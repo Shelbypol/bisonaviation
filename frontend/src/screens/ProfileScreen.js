@@ -1,13 +1,11 @@
-import React, {useState, useEffect} from 'react'
-import {Form, Button, Row, Col, Table, ListGroup, Image, Tab, Nav} from 'react-bootstrap'
+import React from 'react'
+import {Row, Col, Tab, Nav} from 'react-bootstrap'
 import ProfileEdit from "../components/Profile/ProfileEdit";
 import ProfileSavedWishList from "../components/Profile/ProfileSavedWishList";
 import '../style/ProfileScreen.css'
 import {useSelector} from "react-redux";
 
 const ProfileScreen = ({location, history}) => {
-
-
 
     const userLogin = useSelector(state => state.userLogin);
     const {userInfo} = userLogin;
