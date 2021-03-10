@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import Fade from 'react-reveal/Fade';
-import {Card, Row, Col, Accordion, Button} from "react-bootstrap";
-import {Jumbotron} from "reactstrap";
+import {Card, Row, Col} from "react-bootstrap";
 
 const TeamCard = ({img, headerName, headerPosition, name, position, certifications, locations, specialTraining, bio, favAircraft, eventKey}) => {
 

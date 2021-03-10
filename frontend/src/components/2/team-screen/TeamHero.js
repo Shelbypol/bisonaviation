@@ -1,6 +1,5 @@
-import React, {useState} from 'react'
+import React from 'react'
 import '../../../style/2/teamScreen/TeamHero.css'
-import {Container} from "react-bootstrap";
 import {Jumbotron} from "reactstrap";
 
 

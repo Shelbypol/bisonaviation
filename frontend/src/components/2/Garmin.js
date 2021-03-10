@@ -1,10 +1,10 @@
 import React from "react";
 import {Jumbotron} from "reactstrap";
 import Fade from 'react-reveal/Fade';
-import {Button, Card, Col, Row} from "react-bootstrap";
+import {Card, Col, Row} from "react-bootstrap";
 import product from '../../images/bg-graphics/avionics/GTN625_HR_820.jpg'
 import AvionicsProducts from "./AvionicsProducts";
-import '../../style/1/GarminHomeFlag.scss'
+import '../../style/2/GarminHomeFlag.scss'
 
 
 const Garmin = () => {

@@ -1,10 +1,7 @@
-import React, {useState} from 'react'
+import React from 'react'
 import '../../../style/avionicsScreen/AvionicsHero.css'
-import {Button, Col, Row, Card, Container} from "react-bootstrap";
+import {Container} from "react-bootstrap";
 import {Jumbotron} from "reactstrap";
-import Zoom from 'react-reveal/Zoom';
-import Fade from 'react-reveal/Fade';
-import {LinkContainer} from "react-router-bootstrap";
 
 const AvionicsHero = () => {
 

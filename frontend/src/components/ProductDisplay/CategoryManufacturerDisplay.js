@@ -6,9 +6,6 @@ import ProductDisplayByCatMan from "./ProductDisplayByCatMan";
 import Loader from "../Loader";
 import Message from "../Message";
 import '../../style/CategoryManufacturerSideBar.css'
-import {StickyContainer, Sticky} from 'react-sticky';
-import {Link} from "react-router-dom";
-import Login from "../Login";
 
 const CategoryManufacturerDisplay = ({match, history}) => {
 

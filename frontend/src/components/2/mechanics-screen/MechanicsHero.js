@@ -1,6 +1,6 @@
-import React, {useState} from 'react'
+import React from 'react'
 import '../../../style/mechanicsScreen/MechanicsHero.css'
-import {Jumbotron, Row, Col} from 'reactstrap';
+import { Row, Col} from 'reactstrap';
 import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
 import Spin from 'react-reveal/Spin';

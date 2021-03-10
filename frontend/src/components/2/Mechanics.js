@@ -1,11 +1,9 @@
 import React from "react";
-import {Button, Card, Col, Container, Row} from "react-bootstrap";
-import '../../style/1/Mechanics.css';
+import {Button, Card, Col, Row} from "react-bootstrap";
+import '../../style/2/Mechanics.css';
 import {Jumbotron} from "reactstrap";
-import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
 import {LinkContainer} from "react-router-bootstrap";
-import AvionicsProducts from "./AvionicsProducts";
 import tayseer from "../../images/bg-graphics/avionics/tayseer-avionics.png";
 import cnc from "../../images/bg-graphics/avionics/cnc-machine copy.png";
 import test from "../../images/bg-graphics/avionics/avionics-test.jpg";
