@@ -1,7 +1,7 @@
 import React from 'react'
 import '../../../style/mechanicsScreen/MechanicsHero.css'
 import '../../../style/animations.css'
-import { Row, Col} from 'reactstrap';
+import {Row, Col, Jumbotron} from 'reactstrap';
 import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
 import Spin from 'react-reveal/Spin';
@@ -16,8 +16,9 @@ const MechanicsHero = () => {
     return (
         <>
             <Carousel style={{height: '350px', overflow: 'hidden'}}>
-                <Carousel.Item className='bg-transparent border-bottom border-5 border-dark'>
-                    <Carousel.Caption className='bg-transparent'>
+                <Carousel.Item className=' border-bottom border-5 border-dark'>
+
+                    <Carousel.Caption>
                         <Row className='MechanicsHero_text-box'>
                             <Zoom>
                                 <Col xs={6}
@@ -42,8 +43,9 @@ const MechanicsHero = () => {
                                 </h3>
                             </Col>
                         </Row>
-
                     </Carousel.Caption>
+                    {/*</Jumbotron>*/}
+
                     <div className='animations_img-hover-zoom-in'>
                             <img
                                 className=" MechanicsHero_img "
@@ -52,11 +54,10 @@ const MechanicsHero = () => {
                                 height={'100%'}
                             />
                     </div>
-                </Carousel.Item>
+            </Carousel.Item>
 
 
             </Carousel>
-
         </>
     );
 };

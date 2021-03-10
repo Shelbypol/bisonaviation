@@ -1,5 +1,4 @@
 .MechanicsHero_img{
-
 }
 
 .MechanicsHero_title{
@@ -11,8 +10,9 @@
 }
 
 .MechanicsHero_text-box{
-    /*margin-left: 10%;*/
-    margin-top: -95%;
+    /*margin-left: -10%;*/
+    margin-top: -90%;
+    background-image: url("../../images/bg-graphics/fs-slider-dots3.png");
 }
 
 .MechanicsHero_letter{
@@ -21,4 +21,5 @@
 
 .MechanicsScreen_dots{
     background-image: url("../../images/bg-graphics/fs-slider-dots3.png");
+
 }
