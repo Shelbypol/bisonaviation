@@ -72,10 +72,10 @@ main {
 
 .global_carousel-bg{
     background-image: url("../images/bg-graphics/fs-slider-dots3.png");
-    background-color: rgba(0,0,0,.7);
+    background-color: rgba(0,0,0,.5);
 }
 .global_carousel-text-bg{
-    background-color: rgba(0,0,0, .2);
+    /*background-color: rgba(0,0,0, .2);*/
 }
 
 .global_title{
@@ -102,7 +102,7 @@ main {
     mask-image: url("../images/bg-graphics/fs-slider-caption-bg.png");
     transform: rotateY(180deg) scaleY(-1);
     mask-repeat: no-repeat;
-    mask-size: 115vw;
+    mask-size: cover;
     margin-top: -40vh;
     border: 2px solid red;
 }
