@@ -70,6 +70,11 @@ main {
     mask-position: center;
 }
 
+.global_carousel-bg{
+    background-image: url("../images/bg-graphics/fs-slider-dots3.png");
+    background-color: rgba(0,0,0,.5);
+}
+
 .global_title{
     font-size: 45px;
 }
@@ -79,7 +84,7 @@ main {
 }
 
 .global_text-box{
-    margin-top: -62%;
+    margin-top: -55%;
 }
 
 .global_letter{
@@ -94,8 +99,9 @@ main {
     mask-image: url("../images/bg-graphics/fs-slider-caption-bg.png");
     transform: rotateY(180deg) scaleY(-1);
     mask-repeat: no-repeat;
-    /*mask-position: 0 50%;*/
+    mask-size: 115vw;
     margin-top: -40vh;
+    border: 2px solid red;
 }
 
 /*================= SITE TITLES ===================*/

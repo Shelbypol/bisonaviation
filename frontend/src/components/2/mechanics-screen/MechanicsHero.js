@@ -14,7 +14,7 @@ import {Carousel} from "react-bootstrap"
 const MechanicsHero = () => {
     return (
         <>
-            <Carousel style={{height: '350px', overflow: 'hidden'}} className=''>
+            <Carousel style={{height: '500px', overflow: 'hidden'}} className='global_carousel-bg'>
                 <Carousel.Item className=' border-bottom border-5 border-dark'>
                     <Carousel.Caption>
                         <Row className='global_text-box'>
