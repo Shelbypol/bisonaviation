@@ -15,7 +15,7 @@ const MechanicsHero = () => {
     return (
         <>
             <Carousel style={{height: '350px', overflow: 'hidden'}} className=''>
-                <Carousel.Item className='bg-transparent border-bottom border-5 border-dark '>
+                <Carousel.Item className=' border-bottom border-5 border-dark'>
                     <Carousel.Caption>
                         <Row className='global_text-box'>
                             <Zoom>
@@ -31,18 +31,14 @@ const MechanicsHero = () => {
                             </Col>
                             <Col xs={12} className='d-flex justify-content-start'>
                                 <h3 className='text-center m-0 p-0 global_cultured'>so you can fly with confidence
-                                    <Fade duration={5000}>
-                                        <div className='d-inline'>
-                                        </div>
-                                    </Fade>
                                 </h3>
                             </Col>
                         </Row>
                     </Carousel.Caption>
 
-                    <div className='animations_img-hover-zoom-in global_dots'>
+                    <div className='animations_img-hover-zoom-in global_caption-bg'>
                         <img
-                            className=' '
+                            className=''
                             src={img1}
                             alt="First slide"
                             height={'100%'}

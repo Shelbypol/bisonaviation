@@ -79,11 +79,23 @@ main {
 }
 
 .global_text-box{
-    margin-top: -90%;
+    margin-top: -62%;
 }
 
 .global_letter{
     font-size: 75px;
+}
+
+.global_carousel-decoration{
+    color: red;
+}
+
+.global_caption-bg{
+    mask-image: url("../images/bg-graphics/fs-slider-caption-bg.png");
+    transform: rotateY(180deg) scaleY(-1);
+    mask-repeat: no-repeat;
+    /*mask-position: 0 50%;*/
+    margin-top: -40vh;
 }
 
 /*================= SITE TITLES ===================*/
