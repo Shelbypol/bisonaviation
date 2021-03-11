@@ -10,9 +10,7 @@
 }
 
 .MechanicsHero_text-box{
-    /*margin-left: -10%;*/
     margin-top: -90%;
-    background-image: url("../../images/bg-graphics/fs-slider-dots3.png");
 }
 
 .MechanicsHero_letter{
@@ -20,6 +18,8 @@
 }
 
 .MechanicsScreen_dots{
-    background-image: url("../../images/bg-graphics/fs-slider-dots3.png");
-
+    mask-image: url("../../images/bg-graphics/fs-slider-dots3.png");
+    /*mask-size: 100%;*/
+    /*mask-repeat: no-repeat;*/
+    mask-position: center;
 }
