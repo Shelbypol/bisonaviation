@@ -18,21 +18,25 @@ const MechanicsHero = () => {
                 <Carousel.Item className=' border-bottom border-5 border-dark'>
                     <Carousel.Caption>
                         <Row className='global_text-box'>
-                            <Zoom>
-                                <Col xs={6}
-                                     className=' d-flex justify-content-start align-content-center '>
+                            <Col xs={6} style={{height:'3vh', marginTop: '-3vh'}} className='global_blood-red-bg'> </Col>
+
+                                <Col xs={12}
+                                     className='global_carousel-text-bg d-flex justify-content-start align-content-center '>
                                     <h1 className='global_title text-center ml-n2 global_cultured'>
                                         <span className='global_letter global_cultured'>M</span>aintenance
                                     </h1>
                                 </Col>
-                            </Zoom>
-                            <Col xs={12} className='d-flex justify-content-start'>
+
+                            <Col xs={12} className='global_carousel-text-bg d-flex justify-content-start'>
                                 <h3 className='text-center m-0 p-0 global_cultured'>we work hard on the ground</h3>
                             </Col>
-                            <Col xs={12} className='d-flex justify-content-start'>
+
+                            <Col xs={12} className='global_carousel-text-bg d-flex justify-content-start'>
                                 <h3 className='text-center m-0 p-0 global_cultured'>so you can fly with confidence
                                 </h3>
                             </Col>
+
+                            <Col xs={7} style={{height:'3vh', marginTop: '3vh'}} className='global_blood-red-bg'> </Col>
                         </Row>
                     </Carousel.Caption>
 

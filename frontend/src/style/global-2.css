@@ -72,7 +72,10 @@ main {
 
 .global_carousel-bg{
     background-image: url("../images/bg-graphics/fs-slider-dots3.png");
-    background-color: rgba(0,0,0,.5);
+    background-color: rgba(0,0,0,.7);
+}
+.global_carousel-text-bg{
+    background-color: rgba(0,0,0, .2);
 }
 
 .global_title{
@@ -84,7 +87,7 @@ main {
 }
 
 .global_text-box{
-    margin-top: -55%;
+    margin-top: -58%;
 }
 
 .global_letter{
