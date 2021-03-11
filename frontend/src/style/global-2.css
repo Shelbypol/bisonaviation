@@ -62,6 +62,30 @@ main {
     color: #F5F3F4;
 }
 
+/*================= CAROUSEL ======================*/
+.global_dots{
+    mask-image: url("../images/bg-graphics/fs-slider-dots3.png");
+    /*mask-size: 100%;*/
+    /*mask-repeat: unset;*/
+    mask-position: center;
+}
+
+.global_title{
+    font-size: 45px;
+}
+
+.global_span{
+    font-size: 22px;
+}
+
+.global_text-box{
+    margin-top: -90%;
+}
+
+.global_letter{
+    font-size: 75px;
+}
+
 /*================= SITE TITLES ===================*/
 
 .global_title{

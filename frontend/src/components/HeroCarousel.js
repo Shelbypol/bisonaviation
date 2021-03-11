@@ -1,20 +1,18 @@
-import React from 'react'
-import '../../../style/mechanicsScreen/MechanicsHero.css'
-import '../../../style/animations.css'
-import {Row, Col, Jumbotron} from 'reactstrap';
+import React from 'react';
+import {Row, Col} from 'reactstrap';
+import '../../style/animations.css';
 import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
-import img1 from '../../../images/bg-graphics/screen-maintenance/maintenance1.jpg'
-import img2 from '../../../images/bg-graphics/screen-maintenance/maintenance2.png'
-import img4 from '../../../images/bg-graphics/screen-maintenance/maintenance4.png'
-import img5 from '../../../images/bg-graphics/screen-maintenance/maintenance5.png'
-import dots from '../../../images/bg-graphics/fs-slider-dots3.png'
-import {Carousel} from "react-bootstrap"
+import {Carousel} from "react-bootstrap";
 
-const MechanicsHero = () => {
+
+const HeroCarousel = () => {
+
+
     return (
         <>
-            <Carousel style={{height: '350px', overflow: 'hidden'}} className=''>
+
+            <Carousel style={{height: '500px', overflow: 'hidden'}} className=''>
                 <Carousel.Item className='bg-transparent border-bottom border-5 border-dark '>
                     <Carousel.Caption>
                         <Row className='global_text-box'>
@@ -43,7 +41,7 @@ const MechanicsHero = () => {
                     <div className='animations_img-hover-zoom-in global_dots'>
                         <img
                             className=' '
-                            src={img1}
+                            src={}
                             alt="First slide"
                             height={'100%'}
                         />
@@ -53,7 +51,7 @@ const MechanicsHero = () => {
 
             </Carousel>
         </>
-    );
-};
 
-export default MechanicsHero;
+    )
+};
+export default HeroCarousel
