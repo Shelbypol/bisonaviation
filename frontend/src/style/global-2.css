@@ -113,6 +113,8 @@ main {
 
 .global_carousel-text-box{
     margin-top: -40vh;
+    margin-left: -5vw;
+    width: 75%
 }
 
 .global_carousel-title{
@@ -185,6 +187,11 @@ main {
 
     .global_carousel-text{
         font-size: 3vw !important;
+    }
+
+    .global_carousel-text-box{
+        text-align: center;
+        width: 90vw;
     }
 
 }
