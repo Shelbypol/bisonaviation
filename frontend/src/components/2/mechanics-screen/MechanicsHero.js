@@ -16,16 +16,16 @@ const MechanicsHero = () => {
                 carouselImg2True={true}
                 slide2firstTitleLetter={'F'}
                 slide2firstTitleWord={'rom gliders...'}
-                slide2firstSentence={'...to gulfstreams, THE BISON AVIATION '}
+                slide2firstSentence={'...to gulfstreams, THE BISON Team'}
                 slide2secondSentenceTrue={true}
-                slide2secondSentence={'TEAM KNOWS YOUR AIRCRAFT INSIDE AND OUT!'}
+                slide2secondSentence={'KNOWS YOUR AIRCRAFT INSIDE AND OUT!'}
 
-                carouselImg3True={false}
-                // slide3firstTitleLetter={}
-                // slide3firstTitleWord={}
-                // slide3firstSentence={}
-                // slide3secondSentenceTrue={}
-                // slide3secondSentence={}
+                carouselImg3True={true}
+                slide3firstTitleLetter={'I'}
+                slide3firstTitleWord={'t isn\'t over until...'}
+                slide3firstSentence={'...the paperwork is finished. Let Bison '}
+                slide3secondSentenceTrue={true}
+                slide3secondSentence={'cure your logbook log jams!'}
 
                 carouselImg4True={false}
                 // slide4firstTitleLetter={}

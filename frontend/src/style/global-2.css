@@ -118,15 +118,15 @@ main {
 }
 
 .global_carousel-title{
-    font-size: 4vw !important;
+    font-size: 3.5vw !important;
 }
 
 .global_carousel-letter{
-    font-size: 6vw !important;
+    font-size: 5vw !important;
 }
 
 .global_carousel-text{
-    font-size: 2vw !important;
+    font-size: 1.5vw !important;
 }
 
 .global_carousel-text-top-bar{
@@ -191,7 +191,7 @@ main {
 
     .global_carousel-text-box{
         text-align: center;
-        width: 90vw;
+        width: 80vw;
     }
 
 }

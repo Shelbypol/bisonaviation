@@ -249,7 +249,7 @@ const HeroCarousel = (
                         </Carousel.Caption>
 
                         <div className='carouselImg5'>
-                            <Slide left duration={2500}>
+                            <Slide left >
                                 <img
                                     className='global_carousel-divider-img '
                                     src={img1}
