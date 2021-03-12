@@ -1,0 +1,196 @@
+/*IMG ONE*/
+
+.carouselImg1{
+    background-image: url("../../images/bg-graphics/screen-maintenance/maintenance1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 75vh;
+
+    -webkit-animation: zoomin 25s; /* Chrome, Safari, Opera */
+    animation: zoomin infinite 25s;
+}
+
+@-webkit-keyframes zoomin {
+    0% {
+        -webkit-transform: scale(1, 1);
+    }
+    50% {
+        -webkit-transform: scale(1.1, 1.1);
+    }
+    100% {
+        -webkit-transform: scale(1, 1);
+    }
+
+}
+/* Standard syntax */
+@keyframes zoomin {
+    0% {
+        transform: scale(1, 1);
+    }
+    50%{
+        transform: scale(1.1, 1.1);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+
+}
+
+/*IMG 2*/
+
+.carouselImg1{
+    background-image: url("../../images/bg-graphics/screen-maintenance/maintenance2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 75vh;
+
+    -webkit-animation: zoomin 25s; /* Chrome, Safari, Opera */
+    animation: zoomin infinite 25s;
+}
+
+@-webkit-keyframes zoomin {
+    0% {
+        -webkit-transform: scale(1, 1);
+    }
+    50% {
+        -webkit-transform: scale(1.1, 1.1);
+    }
+    100% {
+        -webkit-transform: scale(1, 1);
+    }
+
+}
+/* Standard syntax */
+@keyframes zoomin {
+    0% {
+        transform: scale(1, 1);
+    }
+    50%{
+        transform: scale(1.1, 1.1);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+
+}
+
+/*IMG 3*/
+
+.carouselImg1{
+    background-image: url("../../images/bg-graphics/screen-maintenance/maintenance4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 75vh;
+
+    -webkit-animation: zoomin 25s; /* Chrome, Safari, Opera */
+    animation: zoomin infinite 25s;
+}
+
+@-webkit-keyframes zoomin {
+    0% {
+        -webkit-transform: scale(1, 1);
+    }
+    50% {
+        -webkit-transform: scale(1.1, 1.1);
+    }
+    100% {
+        -webkit-transform: scale(1, 1);
+    }
+
+}
+/* Standard syntax */
+@keyframes zoomin {
+    0% {
+        transform: scale(1, 1);
+    }
+    50%{
+        transform: scale(1.1, 1.1);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+
+}
+
+
+/*IMG 4*/
+
+.carouselImg1{
+    background-image: url("../../images/bg-graphics/screen-maintenance/maintenance5.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 75vh;
+
+    -webkit-animation: zoomin 25s; /* Chrome, Safari, Opera */
+    animation: zoomin infinite 25s;
+}
+
+@-webkit-keyframes zoomin {
+    0% {
+        -webkit-transform: scale(1, 1);
+    }
+    50% {
+        -webkit-transform: scale(1.1, 1.1);
+    }
+    100% {
+        -webkit-transform: scale(1, 1);
+    }
+
+}
+/* Standard syntax */
+@keyframes zoomin {
+    0% {
+        transform: scale(1, 1);
+    }
+    50%{
+        transform: scale(1.1, 1.1);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+
+}
+
+
+/*IMG 5*/
+
+.carouselImg1{
+    background-image: url("../../images/bg-graphics/screen-maintenance/maintenance2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 75vh;
+
+    -webkit-animation: zoomin 25s; /* Chrome, Safari, Opera */
+    animation: zoomin infinite 25s;
+}
+
+@-webkit-keyframes zoomin {
+    0% {
+        -webkit-transform: scale(1, 1);
+    }
+    50% {
+        -webkit-transform: scale(1.1, 1.1);
+    }
+    100% {
+        -webkit-transform: scale(1, 1);
+    }
+
+}
+/* Standard syntax */
+@keyframes zoomin {
+    0% {
+        transform: scale(1, 1);
+    }
+    50%{
+        transform: scale(1.1, 1.1);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+
+}

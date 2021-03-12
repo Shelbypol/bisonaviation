@@ -1,9 +1,8 @@
 import React from 'react'
 import '../../../style/mechanicsScreen/MechanicsHero.css'
 import '../../../style/animations.css'
-import {Row, Col, Jumbotron} from 'reactstrap';
-import Fade from 'react-reveal/Fade';
-import Zoom from 'react-reveal/Zoom';
+import {Row, Col} from 'reactstrap';
+import Slide from 'react-reveal/Slide';
 import img1 from '../../../images/bg-graphics/fs-slider-caption-bg.png'
 // import img1 from '../../../images/bg-graphics/screen-maintenance/maintenance1.jpg'
 import img2 from '../../../images/bg-graphics/screen-maintenance/maintenance2.png'
@@ -23,19 +22,21 @@ const MechanicsHero = () => {
                         <Row className='global_carousel-text-box'>
                             <Col md={5} xs={7} className='global_carousel-text-top-bar global_blood-red-bg'> </Col>
 
-                                <Col xs={12}
-                                     className='d-flex justify-content-start align-content-center '>
-                                    <h1 className='global_carousel-title ml-n2 global_cultured'>
-                                        <span className='global_carousel-letter global_cultured'>M</span>aintenance
-                                    </h1>
-                                </Col>
+                            <Col xs={12}
+                                 className='d-flex justify-content-start align-content-center '>
+                                <h1 className='global_carousel-title ml-n2 global_cultured'>
+                                    <span className='global_carousel-letter global_cultured'>M</span>aintenance
+                                </h1>
+                            </Col>
 
                             <Col xs={12} className=' d-flex justify-content-start'>
-                                <h3 className='global_carousel-text m-0 p-0 global_cultured'>we work hard on the ground</h3>
+                                <h3 className='global_carousel-text m-0 p-0 global_cultured'>we work hard on the
+                                    ground</h3>
                             </Col>
 
                             <Col xs={12} className='d-flex justify-content-start'>
-                                <h3 className='global_carousel-text m-0 p-0 global_cultured'>so you can fly with confidence
+                                <h3 className='global_carousel-text m-0 p-0 global_cultured'>so you can fly with
+                                    confidence
                                 </h3>
                             </Col>
 
@@ -43,14 +44,17 @@ const MechanicsHero = () => {
                         </Row>
                     </Carousel.Caption>
 
-                    <div className=' global_carousel-bg'>
-                        <img
-                            className='global_carousel-divider-img '
-                            src={img1}
-                            alt="First slide"
-                            height={'100%'}
-                        />
-                    </div>
+                        <div className=' global_carousel-bg'>
+                    <Slide left duration={2500}>
+                            <img
+                                className='global_carousel-divider-img '
+                                src={img1}
+                                alt="First slide"
+                                height={'100%'}
+                            />
+                    </Slide>
+                        </div>
+
                 </Carousel.Item>
 
 

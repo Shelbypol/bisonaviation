@@ -1,92 +1,234 @@
-import React from 'react';
+import React from 'react'
 import {Row, Col} from 'reactstrap';
-import '../style/animations.css'
-import Fade from 'react-reveal/Fade';
-import Zoom from 'react-reveal/Zoom';
-import {Carousel} from "react-bootstrap";
+import img1 from '../images/bg-graphics/fs-slider-caption-bg.png'
+// import img1 from '../../../images/bg-graphics/screen-maintenance/maintenance1.jpg'
+import img2 from '../images/bg-graphics/screen-maintenance/maintenance2.png'
+import img4 from '../images/bg-graphics/screen-maintenance/maintenance4.png'
+import img5 from '../images/bg-graphics/screen-maintenance/maintenance5.png'
+import dots from '../images/bg-graphics/fs-slider-dots3.png'
+import {Carousel} from "react-bootstrap"
+import Slide from "react-reveal/Slide";
 
 
 const HeroCarousel = (
-                      height,
-                      firstTitleLetter,
-                      firstTitleWord,
-                      secondTitleLetter,
-                      secondTitleWord,
-                      secondTitleTrue,
-                      firstLine,
-                      secondLine,
-                      secondLineTrue,
-                      highlightWords,
-                      highlightWordsTrue,
-                      img,
-                      imgHeight,
-                      imgAlt
+    {
+        firstTitleLetter,
+        firstTitleWord,
+        firstSentence,
+        secondSentence,
+        carouselImg1,
+        carouselImg2,
+        carouselImg3,
+        carouselImg4,
+        carouselImg5
+
+    }
 ) => {
     return (
         <>
+            <Carousel>
 
-            <Carousel style={{height: {height}, overflow: 'hidden'}}>
-                <Carousel.Item className='bg-transparent border-bottom border-5 border-dark '>
+                {/*    ================= Img 1 */}
+
+                <Carousel.Item className='border-bottom border-5 border-dark'>
                     <Carousel.Caption>
-                        <Row className='global_text-box'>
-                            <Zoom>
-                                <Col xs={6}
-                                     className=' d-flex justify-content-start align-content-center '>
+                        <Row className='global_carousel-text-box'>
+                            <Col md={5} xs={7} className='global_carousel-text-top-bar global_blood-red-bg'> </Col>
 
-                                    {secondTitleTrue ? (
-                                        <h1 className='global_title text-center ml-n2 global_cultured'>
-                                            <span
-                                                className='global_letter global_cultured'>{firstTitleLetter}</span>{firstTitleWord}
-                                            <span
-                                                className='global_letter mr-n2 global_cultured'>&nbsp; {secondTitleLetter}</span>{secondTitleWord}
-                                        </h1>
-                                    ) : (
-                                        <h1 className='global_title text-center ml-n2 global_cultured'>
-                                            <span
-                                                className='global_letter global_cultured'>{firstTitleLetter}</span>{firstTitleWord}
-                                        </h1>
-                                    )}
-                                </Col>
-                            </Zoom>
-
-                            <Col xs={12} className='d-flex justify-content-start'>
-                                <h3 className='text-center m-0 p-0 global_cultured'>{firstLine}</h3>
+                            <Col xs={12}
+                                 className='d-flex justify-content-start align-content-center '>
+                                <h1 className='global_carousel-title ml-n2 global_cultured'>
+                                    <span
+                                        className='global_carousel-letter global_cultured'>{firstTitleLetter}</span>{firstTitleWord}
+                                </h1>
                             </Col>
 
-                            {secondLineTrue && (
-                                <Col xs={12} className='d-flex justify-content-start'>
-                                    <h3 className='text-center m-0 p-0 global_cultured'>{secondLine}
-                                        <Fade duration={5000}>
-                                            <div className='d-inline'>
-                                                {highlightWordsTrue && (
-                                                    <span
-                                                        className='global_carousel-decoration font-weight-bolder global_span'>&nbsp;
-                                                        <i>{highlightWords}</i>
-                                                    </span>
-                                                )}
-                                            </div>
-                                        </Fade>
-                                    </h3>
-                                </Col>
-                            )}
+                            <Col xs={12} className=' d-flex justify-content-start'>
+                                <h3 className='global_carousel-text m-0 p-0 global_cultured'>{firstSentence}</h3>
+                            </Col>
 
+                            <Col xs={12} className='d-flex justify-content-start'>
+                                <h3 className='global_carousel-text m-0 p-0 global_cultured'>{secondSentence}</h3>
+                            </Col>
+
+                            <Col md={7} xs={10} className='global_carousel-text-btm-bar global_blood-red-bg'> </Col>
                         </Row>
                     </Carousel.Caption>
 
-                    <div className='animations_img-hover-zoom-in '>
-                        <img
-                            className='global_dots '
-                            src={img}
-                            alt={imgAlt}
-                            height={imgHeight}
-                        />
+                    <div className='carouselImg1'>
+                        <Slide left duration={2500}>
+                            <img
+                                className='global_carousel-divider-img'
+                                src={img1}
+                                alt=" "
+                                height={'100%'}
+                            />
+                        </Slide>
                     </div>
                 </Carousel.Item>
 
 
+            {/*    ================= Img 2 */}
+                <Carousel.Item className='border-bottom border-5 border-dark'>
+                    <Carousel.Caption>
+                        <Row className='global_carousel-text-box'>
+                            <Col md={5} xs={7} className='global_carousel-text-top-bar global_blood-red-bg'> </Col>
+
+                            <Col xs={12}
+                                 className='d-flex justify-content-start align-content-center '>
+                                <h1 className='global_carousel-title ml-n2 global_cultured'>
+                                    <span
+                                        className='global_carousel-letter global_cultured'>{firstTitleLetter}</span>{firstTitleWord}
+                                </h1>
+                            </Col>
+
+                            <Col xs={12} className=' d-flex justify-content-start'>
+                                <h3 className='global_carousel-text m-0 p-0 global_cultured'>{firstSentence}</h3>
+                            </Col>
+
+                            <Col xs={12} className='d-flex justify-content-start'>
+                                <h3 className='global_carousel-text m-0 p-0 global_cultured'>{secondSentence}</h3>
+                            </Col>
+
+                            <Col md={7} xs={10} className='global_carousel-text-btm-bar global_blood-red-bg'> </Col>
+                        </Row>
+                    </Carousel.Caption>
+
+                    <div className='carouselImg2'>
+                        <Slide left duration={2500}>
+                            <img
+                                className='global_carousel-divider-img '
+                                src={img1}
+                                alt=" "
+                                height={'100%'}
+                            />
+                        </Slide>
+                    </div>
+                </Carousel.Item>
+
+
+                {/*    ================= Img 3 */}
+                <Carousel.Item className='border-bottom border-5 border-dark'>
+                    <Carousel.Caption>
+                        <Row className='global_carousel-text-box'>
+                            <Col md={5} xs={7} className='global_carousel-text-top-bar global_blood-red-bg'> </Col>
+
+                            <Col xs={12}
+                                 className='d-flex justify-content-start align-content-center '>
+                                <h1 className='global_carousel-title ml-n2 global_cultured'>
+                                    <span
+                                        className='global_carousel-letter global_cultured'>{firstTitleLetter}</span>{firstTitleWord}
+                                </h1>
+                            </Col>
+
+                            <Col xs={12} className=' d-flex justify-content-start'>
+                                <h3 className='global_carousel-text m-0 p-0 global_cultured'>{firstSentence}</h3>
+                            </Col>
+
+                            <Col xs={12} className='d-flex justify-content-start'>
+                                <h3 className='global_carousel-text m-0 p-0 global_cultured'>{secondSentence}</h3>
+                            </Col>
+
+                            <Col md={7} xs={10} className='global_carousel-text-btm-bar global_blood-red-bg'> </Col>
+                        </Row>
+                    </Carousel.Caption>
+
+                    <div className='carouselImg3'>
+                        <Slide left duration={2500}>
+                            <img
+                                className='global_carousel-divider-img '
+                                src={img1}
+                                alt=" "
+                                height={'100%'}
+                            />
+                        </Slide>
+                    </div>
+                </Carousel.Item>
+
+
+                {/*    ================= Img 4 */}
+                <Carousel.Item className='border-bottom border-5 border-dark'>
+                    <Carousel.Caption>
+                        <Row className='global_carousel-text-box'>
+                            <Col md={5} xs={7} className='global_carousel-text-top-bar global_blood-red-bg'> </Col>
+
+                            <Col xs={12}
+                                 className='d-flex justify-content-start align-content-center '>
+                                <h1 className='global_carousel-title ml-n2 global_cultured'>
+                                    <span
+                                        className='global_carousel-letter global_cultured'>{firstTitleLetter}</span>{firstTitleWord}
+                                </h1>
+                            </Col>
+
+                            <Col xs={12} className=' d-flex justify-content-start'>
+                                <h3 className='global_carousel-text m-0 p-0 global_cultured'>{firstSentence}</h3>
+                            </Col>
+
+                            <Col xs={12} className='d-flex justify-content-start'>
+                                <h3 className='global_carousel-text m-0 p-0 global_cultured'>{secondSentence}</h3>
+                            </Col>
+
+                            <Col md={7} xs={10} className='global_carousel-text-btm-bar global_blood-red-bg'> </Col>
+                        </Row>
+                    </Carousel.Caption>
+
+                    <div className='carouselImg4'>
+                        <Slide left duration={2500}>
+                            <img
+                                className='global_carousel-divider-img '
+                                src={img1}
+                                alt=" "
+                                height={'100%'}
+                            />
+                        </Slide>
+                    </div>
+                </Carousel.Item>
+
+
+                {/*    ================= Img 5 */}
+                <Carousel.Item className='border-bottom border-5 border-dark'>
+                    <Carousel.Caption>
+                        <Row className='global_carousel-text-box'>
+                            <Col md={5} xs={7} className='global_carousel-text-top-bar global_blood-red-bg'> </Col>
+
+                            <Col xs={12}
+                                 className='d-flex justify-content-start align-content-center '>
+                                <h1 className='global_carousel-title ml-n2 global_cultured'>
+                                    <span
+                                        className='global_carousel-letter global_cultured'>{firstTitleLetter}</span>{firstTitleWord}
+                                </h1>
+                            </Col>
+
+                            <Col xs={12} className=' d-flex justify-content-start'>
+                                <h3 className='global_carousel-text m-0 p-0 global_cultured'>{firstSentence}</h3>
+                            </Col>
+
+                            <Col xs={12} className='d-flex justify-content-start'>
+                                <h3 className='global_carousel-text m-0 p-0 global_cultured'>{secondSentence}</h3>
+                            </Col>
+
+                            <Col md={7} xs={10} className='global_carousel-text-btm-bar global_blood-red-bg'> </Col>
+                        </Row>
+                    </Carousel.Caption>
+
+                    <div className='carouselImg5'>
+                        <Slide left duration={2500}>
+                            <img
+                                className='global_carousel-divider-img '
+                                src={img1}
+                                alt=" "
+                                height={'100%'}
+                            />
+                        </Slide>
+                    </div>
+                </Carousel.Item>
+
+
+
+
             </Carousel>
         </>
-
-    )
+    );
 };
-export default HeroCarousel
+
+export default HeroCarousel;
