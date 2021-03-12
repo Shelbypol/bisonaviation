@@ -7,9 +7,7 @@ import AvionicsIcons from "../components/2/avionics-Screen/AvionicsIcons";
 const MaintenanceScreen = () => {
     return (
         <>
-            <Jumbotron className='MechanicsScreen_dots bg-transparentv p-0 m-0' fluid>
                 <MechanicsHero/>
-            </Jumbotron>
                 <AvionicsIcons/>
         </>
     )
