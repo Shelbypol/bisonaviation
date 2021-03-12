@@ -4,20 +4,23 @@ import '../../../style/animations.css'
 import {Row, Col, Jumbotron} from 'reactstrap';
 import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
-import img1 from '../../../images/bg-graphics/screen-maintenance/maintenance1.jpg'
+import img1 from '../../../images/bg-graphics/fs-slider-caption-bg.png'
+// import img1 from '../../../images/bg-graphics/screen-maintenance/maintenance1.jpg'
 import img2 from '../../../images/bg-graphics/screen-maintenance/maintenance2.png'
 import img4 from '../../../images/bg-graphics/screen-maintenance/maintenance4.png'
 import img5 from '../../../images/bg-graphics/screen-maintenance/maintenance5.png'
 import dots from '../../../images/bg-graphics/fs-slider-dots3.png'
 import {Carousel} from "react-bootstrap"
 
+
 const MechanicsHero = () => {
     return (
         <>
-            <Carousel style={{height: '500px', overflow: 'hidden'}} className='global_carousel-bg'>
-                <Carousel.Item className=' border-bottom border-5 border-dark'>
+            {/*<Carousel style={{height: '1500px', overflow: 'hidden'}} className=''>*/}
+            <Carousel>
+                <Carousel.Item className='border-bottom border-5 border-dark'>
                     <Carousel.Caption>
-                        <Row className='global_text-box'>
+                        <Row>
                             <Col xs={6} style={{height:'3vh', marginTop: '-3vh'}} className='global_blood-red-bg'> </Col>
 
                                 <Col xs={12}
@@ -40,9 +43,9 @@ const MechanicsHero = () => {
                         </Row>
                     </Carousel.Caption>
 
-                    <div className='animations_img-hover-zoom-in global_caption-bg'>
+                    <div className='animations_img-hover-zoom-in global_carousel-img-wrap'>
                         <img
-                            className=''
+                            className='global_carousel-bg'
                             src={img1}
                             alt="First slide"
                             height={'100%'}
