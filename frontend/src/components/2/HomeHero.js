@@ -45,7 +45,7 @@ const HomeHero = () => {
 
                     </Carousel.Caption>
 
-                    <div className='animations_img-hover-zoom-in global_dots'>
+                    <div className='animations_img-hover-zoom-in'>
                         <img
                             className=''
                             src={img2}

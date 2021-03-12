@@ -86,7 +86,7 @@ const HeroCarousel = (
                         </Slide>
                     </div>
                 </Carousel.Item>
-                slide2
+
                 {/*    ================= Img 2 */}
 
                 {carouselImg2True && (

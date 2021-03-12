@@ -27,12 +27,12 @@ const MechanicsHero = () => {
                 slide3secondSentenceTrue={true}
                 slide3secondSentence={'cure your logbook log jams!'}
 
-                carouselImg4True={false}
-                // slide4firstTitleLetter={}
-                // slide4firstTitleWord={}
-                // slide4firstSentence={}
-                // slide4secondSentenceTrue={}
-                // slide4secondSentence={}
+                carouselImg4True={true}
+                slide4firstTitleLetter={'F'}
+                slide4firstTitleWord={'rom minor repairs...'}
+                slide4firstSentence={'...TO COMPLETE RADOME TO TAIL CONE REFURBISHMENT.'}
+                slide4secondSentenceTrue={true}
+                slide4secondSentence={'BISON IS READY FOR YOUR MAINTENANCE PROJECT!'}
 
                 carouselImg5True={false}
                 // // slide5firstTitleLetter={}
