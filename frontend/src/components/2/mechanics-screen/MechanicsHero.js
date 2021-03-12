@@ -20,32 +20,32 @@ const MechanicsHero = () => {
             <Carousel>
                 <Carousel.Item className='border-bottom border-5 border-dark'>
                     <Carousel.Caption>
-                        <Row>
-                            <Col xs={6} style={{height:'3vh', marginTop: '-3vh'}} className='global_blood-red-bg'> </Col>
+                        <Row className='global_carousel-text-box'>
+                            <Col md={5} xs={7} className='global_carousel-text-top-bar global_blood-red-bg'> </Col>
 
                                 <Col xs={12}
-                                     className='global_carousel-text-bg d-flex justify-content-start align-content-center '>
-                                    <h1 className='global_title text-center ml-n2 global_cultured'>
-                                        <span className='global_letter global_cultured'>M</span>aintenance
+                                     className='d-flex justify-content-start align-content-center '>
+                                    <h1 className='global_carousel-title ml-n2 global_cultured'>
+                                        <span className='global_carousel-letter global_cultured'>M</span>aintenance
                                     </h1>
                                 </Col>
 
-                            <Col xs={12} className='global_carousel-text-bg d-flex justify-content-start'>
-                                <h3 className='text-center m-0 p-0 global_cultured'>we work hard on the ground</h3>
+                            <Col xs={12} className=' d-flex justify-content-start'>
+                                <h3 className='global_carousel-text m-0 p-0 global_cultured'>we work hard on the ground</h3>
                             </Col>
 
-                            <Col xs={12} className='global_carousel-text-bg d-flex justify-content-start'>
-                                <h3 className='text-center m-0 p-0 global_cultured'>so you can fly with confidence
+                            <Col xs={12} className='d-flex justify-content-start'>
+                                <h3 className='global_carousel-text m-0 p-0 global_cultured'>so you can fly with confidence
                                 </h3>
                             </Col>
 
-                            <Col xs={7} style={{height:'3vh', marginTop: '3vh'}} className='global_blood-red-bg'> </Col>
+                            <Col md={7} xs={10} className='global_carousel-text-btm-bar global_blood-red-bg'> </Col>
                         </Row>
                     </Carousel.Caption>
 
-                    <div className='animations_img-hover-zoom-in global_carousel-img-wrap'>
+                    <div className=' global_carousel-bg'>
                         <img
-                            className='global_carousel-bg'
+                            className='global_carousel-divider-img '
                             src={img1}
                             alt="First slide"
                             height={'100%'}

@@ -70,52 +70,76 @@ main {
     z-index: 1000;
 }
 
-.global_carousel-img-wrap img{
-    /*width: */
-}
 
 .global_carousel-bg{
-    /*background-image: url("../images/bg-graphics/fs-slider-dots3.png");*/
-    /*mask-image: url("../images/bg-graphics/fs-slider-caption-bg.png");*/
-    /*position: relative;*/
-/*}*/
-
-/*.global_caption-bg{*/
-/*    mask-image: url("../images/bg-graphics/fs-slider-caption-bg.png");*/
-    /*transform: rotateY(180deg) scaleY(-1);*/
-    /*mask-repeat: no-repeat;*/
-    /*mask-size: 100vw;*/
-    /*margin-top: -40vh;*/
-    /*position: absolute;*/
-
     background-image: url("../images/bg-graphics/screen-maintenance/maintenance1.jpg");
-    /*background-image: url("../images/bg-graphics/fs-slider-caption-bg.png");*/
     z-index: 1000;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
     height: 75vh;
+
+    -webkit-animation: zoomin 25s; /* Chrome, Safari, Opera */
+    animation: zoomin infinite 25s;
 }
 
-.global_carousel-text-bg{
-    /*background-color: rgba(0,0,0, .2);*/
+@-webkit-keyframes zoomin {
+    0% {
+        -webkit-transform: scale(1, 1);
+    }
+    50% {
+        -webkit-transform: scale(1.1, 1.1);
+    }
+    100% {
+        -webkit-transform: scale(1, 1);
+    }
+
+}
+/* Standard syntax */
+@keyframes zoomin {
+    0% {
+        transform: scale(1, 1);
+    }
+    50%{
+        transform: scale(1.1, 1.1);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+
 }
 
-.global_title{
-    font-size: 45px;
+.global_carousel-divider-img{
+    width: 75vw;
+}
+
+.global_carousel-text-box{
+    margin-top: -40vh;
+}
+
+.global_carousel-title{
+    font-size: 4vw !important;
+}
+
+.global_carousel-letter{
+    font-size: 6vw !important;
+}
+
+.global_carousel-text{
+    font-size: 2vw !important;
+}
+
+.global_carousel-text-top-bar{
+    height: 1.5vh !important;
+    margin-top: -3vh;
+}
+.global_carousel-text-btm-bar{
+    height: 1.5vh !important;
+    margin-top: 3vh;
 }
 
 .global_span{
     font-size: 22px;
-}
-
-.global_text-box{
-    /*z-index: 1000;*/
-    /*margin-top: 58%;*/
-}
-
-.global_letter{
-    font-size: 75px;
 }
 
 .global_carousel-decoration{
@@ -153,3 +177,34 @@ main {
     margin-top: -15vh;
     /*background-position: center 5%;*/
 }
+
+/*    ======   MOBILE RESPONSIVE    ======    */
+@media (max-width: 900px) {
+    .global_carousel-divider-img{
+        width: 250vw;
+    }
+
+    .global_carousel-title{
+        font-size: 6vw !important;
+    }
+
+    .global_carousel-letter{
+        font-size: 8vw !important;
+    }
+
+    .global_carousel-text{
+        font-size: 3vw !important;
+    }
+
+}
+
+/*@media only screen and (min-width: 768px) and (max-width: 1200px) {*/
+
+/*    .product-page-section {*/
+/*        min-width: 350px;*/
+/*    }*/
+
+/*    .product-page-section:nth-child(3) {*/
+/*        margin: 20px 0 0 50%;*/
+/*    }*/
+/*}*/
