@@ -6,7 +6,7 @@ import {LinkContainer} from 'react-router-bootstrap'
 import {logout} from '../../actions/userActions'
 import SearchBox from "../SearchBox";
 import {CART_RESET} from "../../constants/cartConstants";
-import logo from '../../images/general/Final-Logo-Horizontal.png'
+import logo from '../../images/bg-graphics/graphics/Final-Logo-Horizontal.png'
 import SocialIcons from "../SocialIcons";
 
 const MobileHeader = () => {

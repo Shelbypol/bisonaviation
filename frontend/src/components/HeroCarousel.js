@@ -1,6 +1,6 @@
 import React from 'react'
 import {Row, Col} from 'reactstrap';
-import img1 from '../images/bg-graphics/fs-slider-caption-bg.png'
+import img1 from '../images/bg-graphics/graphics/fs-slider-caption-bg.png'
 import {Carousel} from "react-bootstrap"
 import Slide from "react-reveal/Slide";
 

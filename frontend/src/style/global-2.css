@@ -8,7 +8,7 @@ body {
     width: 100vw;
     max-width: 100%;
     contain: content;
-    background-image: url("../images/bg-graphics/body-bg.png");
+    background-image: url("../images/bg-graphics/graphics/body-bg.png");
 }
 
 html {
@@ -63,13 +63,6 @@ main {
 }
 
 /*================= CAROUSEL ======================*/
-.global_dots{
-    background-image: url("../images/bg-graphics/fs-slider-dots3.png");
-    mask-position: center;
-    background-color: transparent;
-    z-index: 1000;
-}
-
 .global_carousel-divider-img{
     width: 75vw;
 }
@@ -119,20 +112,19 @@ main {
 
 /* ============= AVIONICS JUMBO ===========*/
 .Global_Avionics_bg-img{
-    background-image: url("../images/bg-graphics/home-screen/avionics-hero-img-overlay.png");
+    background-image: url("../images/bg-graphics/home-screen/home-section-body-bg/avionics-hero-img-overlay.png");
     background-position: center 5%;
 }
 
 .Global_Flir_bg-img{
-    background-image: url("../images/bg-graphics/home-screen/flir-jumbo-img.png");
+    background-image: url("../images/bg-graphics/home-screen/home-section-body-bg/flir-jumbo-img.png");
     background-position: center 5%;
 }
 
 .Global_graphic{
-    background-image: url("../images/graphics/black-top-large-left.png");
+    background-image: url("../images/bg-graphics/graphics/black-top-large-left.png");
     height: 300px;
     margin-top: -15vh;
-    /*background-position: center 5%;*/
 }
 
 /*    ======   MOBILE RESPONSIVE    ======    */

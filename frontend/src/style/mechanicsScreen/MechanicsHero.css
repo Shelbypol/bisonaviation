@@ -1,7 +1,7 @@
 /*IMG ONE*/
 
 .carouselImg1{
-    background-image: url("../../images/bg-graphics/screen-maintenance/maintenance1.jpg");
+    background-image: url("../../images/bg-graphics/screen-maintenance/maintenance-slider/maintenance1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
@@ -40,7 +40,7 @@
 /*IMG 2*/
 
 .carouselImg2{
-    background-image: url("../../images/bg-graphics/screen-maintenance/maintenance2.png");
+    background-image: url("../../images/bg-graphics/screen-maintenance/maintenance-slider/maintenance2.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
@@ -79,7 +79,7 @@
 /*IMG 3*/
 
 .carouselImg3{
-    background-image: url("../../images/bg-graphics/screen-maintenance/maintenance4.png");
+    background-image: url("../../images/bg-graphics/screen-maintenance/maintenance-slider/maintenance4.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
@@ -119,7 +119,7 @@
 /*IMG 4*/
 
 .carouselImg4{
-    background-image: url("../../images/bg-graphics/screen-maintenance/maintenance5.png");
+    background-image: url("../../images/bg-graphics/screen-maintenance/maintenance-slider/maintenance5.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Row, Col, } from "react-bootstrap";
 import {LinkContainer} from "react-router-bootstrap";
-import logo from "../../images/general/Final-Logo-Horizontal.png";
+import logo from "../../images/bg-graphics/graphics/Final-Logo-Horizontal.png";
 import '../../style/Footer.css'
 import {Jumbotron} from "reactstrap";
 import SocialIcons from "../SocialIcons";
