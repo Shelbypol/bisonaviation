@@ -4,7 +4,6 @@ import React from "react";
 import {Jumbotron} from "reactstrap";
 import Zoom from 'react-reveal/Zoom';
 import {LinkContainer} from "react-router-bootstrap";
-import cnc from '../../images/bg-graphics/avionics/cnc-machine copy.png'
 import test from '../../images/bg-graphics/avionics/avionics-test.jpg'
 import tayseer from '../../images/bg-graphics/avionics/tayseer-avionics.png'
 
@@ -109,7 +108,7 @@ const Avionics = () => {
 
                     <Col xs={4} className='d-flex justify-content-center'>
                         <Card className='Avionics_card border-0 bg-transparent rounded'>
-                            <Card.Img variant="top" src={cnc} className=' Avionics_card-img '/>
+                            <Card.Img variant="top" src={test} className=' Avionics_card-img '/>
                         </Card>
                     </Col>
 
@@ -123,7 +122,7 @@ const Avionics = () => {
                 <Row className='d-flex justify-content-center'>
                     <Col xs={4} className='d-flex justify-content-center'>
                         <Card className='Avionics_card border-0 bg-transparent rounded'>
-                            <Card.Img variant="top" src={cnc} className=' Avionics_card-img '/>
+                            <Card.Img variant="top" src={test} className=' Avionics_card-img '/>
                         </Card>
                     </Col>
 

@@ -119,11 +119,12 @@ main {
 
 /* ============= AVIONICS JUMBO ===========*/
 .Global_Avionics_bg-img{
-    background-image: url("../images/bg-graphics/avionics/avionics-hero-img-overlay.png");
+    background-image: url("../images/bg-graphics/home-screen/avionics-hero-img-overlay.png");
     background-position: center 5%;
 }
+
 .Global_Flir_bg-img{
-    background-image: url("../images/bg-graphics/flir/flir-jumbo-img.png");
+    background-image: url("../images/bg-graphics/home-screen/flir-jumbo-img.png");
     background-position: center 5%;
 }
 
@@ -158,14 +159,3 @@ main {
     }
 
 }
-
-/*@media only screen and (min-width: 768px) and (max-width: 1200px) {*/
-
-/*    .product-page-section {*/
-/*        min-width: 350px;*/
-/*    }*/
-
-/*    .product-page-section:nth-child(3) {*/
-/*        margin: 20px 0 0 50%;*/
-/*    }*/
-/*}*/

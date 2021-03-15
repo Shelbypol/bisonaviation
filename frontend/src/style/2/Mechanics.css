@@ -1,13 +1,5 @@
 
 
-.Mechanics_hero-img{
-    /*background-image: url("../../images/bg-graphics/avionics/avionics-cessna-hero.png");*/
-    background-image: url("../../images/bg-graphics/mechanics/maintenance-hero.png");
-    background-repeat: no-repeat;
-    height: 600px;
-    width: 800px;
-}
-
 .Mechanics_learn-more-btn{
     color: #660708;
     text-decoration: underline;

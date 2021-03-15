@@ -2,24 +2,8 @@
     height: 400px ;
 }
 
-.Services_NavBg{
-    /*background-image: url("../../images/bg-graphics/services/services-light.png");*/
-    background-image: url("../../images/bg-graphics/services/services.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    /*width: 1450px;*/
-    /*height: 450px;*/
-    height: 600px;
-}
-
-/*.Services_title{*/
-/*    !*margin-left: -5vw;*!*/
-/*    font-size: 30px;*/
-/*}*/
 
 .Services_btn{
-    /*width: 20vw;*/
-    /*margin-left: -5vw;*/
     color: #F5F3F4;
     font-size: 15px;
     font-weight: lighter;
@@ -39,13 +23,8 @@
     border: none;
 }
 
-/*.react-reveal div{*/
-/*    color: white;*/
-/*}*/
-
 .Services_nav_overlay {
-    /*!*color: #161A1D;*!*/
-    /*color: white;*/
+
     background-color: rgba(0,0,0, .5);
 }
 
