@@ -1,7 +1,5 @@
 import React from 'react';
-import { Row, Col} from 'reactstrap';
 import '../../style/2/HomeHero.css';
-import '../../style/animations.css';
 import HeroCarousel from "../HeroCarousel";
 
 

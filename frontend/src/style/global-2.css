@@ -63,6 +63,42 @@ main {
 }
 
 /*================= CAROUSEL ======================*/
+.global_HeroCarousel-animation {
+    -webkit-animation: zoomin 25s; /* Chrome, Safari, Opera */
+    animation: zoomin infinite 25s;
+    width: 100vw;
+    height: 75vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@-webkit-keyframes zoomin {
+    0% {
+        -webkit-transform: scale(1, 1);
+    }
+    50% {
+        -webkit-transform: scale(1.1, 1.1);
+    }
+    100% {
+        -webkit-transform: scale(1, 1);
+    }
+
+}
+/* Standard syntax */
+@keyframes zoomin {
+    0% {
+        transform: scale(1, 1);
+    }
+    50%{
+        transform: scale(1.1, 1.1);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+
+}
+
+
 .global_carousel-divider-img{
     width: 75vw;
 }

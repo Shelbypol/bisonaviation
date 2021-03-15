@@ -75,7 +75,7 @@ const HeroCarousel = (
                         </Row>
                     </Carousel.Caption>
 
-                    <div className='carouselImg1'>
+                    <div className='carouselImg1 global_HeroCarousel-animation'>
                         <Slide left duration={2500}>
                             <img
                                 className='global_carousel-divider-img'
@@ -117,7 +117,7 @@ const HeroCarousel = (
                             </Row>
                         </Carousel.Caption>
 
-                        <div className='carouselImg2'>
+                        <div className='carouselImg2 global_HeroCarousel-animation'>
                             <Slide left duration={2500}>
                                 <img
                                     className='global_carousel-divider-img '
@@ -160,7 +160,7 @@ const HeroCarousel = (
                             </Row>
                         </Carousel.Caption>
 
-                        <div className='carouselImg3'>
+                        <div className='carouselImg3 global_HeroCarousel-animation'>
                             <Slide left duration={2500}>
                                 <img
                                     className='global_carousel-divider-img '
@@ -205,7 +205,7 @@ const HeroCarousel = (
                             </Row>
                         </Carousel.Caption>
 
-                        <div className='carouselImg4'>
+                        <div className='carouselImg4 global_HeroCarousel-animation'>
                             <Slide left duration={2500}>
                                 <img
                                     className='global_carousel-divider-img '
@@ -248,7 +248,7 @@ const HeroCarousel = (
                             </Row>
                         </Carousel.Caption>
 
-                        <div className='carouselImg5'>
+                        <div className='carouselImg5 global_HeroCarousel-animation'>
                             <Slide left >
                                 <img
                                     className='global_carousel-divider-img '

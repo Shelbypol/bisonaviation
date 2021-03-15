@@ -7,6 +7,9 @@
     width: 100vw;
     height: 75vh;
 
+}
+
+.global_HeroCarousel-animation {
     -webkit-animation: zoomin 25s; /* Chrome, Safari, Opera */
     animation: zoomin infinite 25s;
 }
@@ -46,35 +49,35 @@
     width: 100vw;
     height: 75vh;
 
-    -webkit-animation: zoomin 25s; /* Chrome, Safari, Opera */
-    animation: zoomin infinite 25s;
+    /*-webkit-animation: zoomin 25s; !* Chrome, Safari, Opera *!*/
+    /*animation: zoomin infinite 25s;*/
 }
 
-@-webkit-keyframes zoomin {
-    0% {
-        -webkit-transform: scale(1, 1);
-    }
-    50% {
-        -webkit-transform: scale(1.1, 1.1);
-    }
-    100% {
-        -webkit-transform: scale(1, 1);
-    }
+/*@-webkit-keyframes zoomin {*/
+/*    0% {*/
+/*        -webkit-transform: scale(1, 1);*/
+/*    }*/
+/*    50% {*/
+/*        -webkit-transform: scale(1.1, 1.1);*/
+/*    }*/
+/*    100% {*/
+/*        -webkit-transform: scale(1, 1);*/
+/*    }*/
 
-}
-/* Standard syntax */
-@keyframes zoomin {
-    0% {
-        transform: scale(1, 1);
-    }
-    50%{
-        transform: scale(1.1, 1.1);
-    }
-    100% {
-        transform: scale(1, 1);
-    }
+/*}*/
+/*!* Standard syntax *!*/
+/*@keyframes zoomin {*/
+/*    0% {*/
+/*        transform: scale(1, 1);*/
+/*    }*/
+/*    50%{*/
+/*        transform: scale(1.1, 1.1);*/
+/*    }*/
+/*    100% {*/
+/*        transform: scale(1, 1);*/
+/*    }*/
 
-}
+/*}*/
 
 /*IMG 3*/
 
@@ -85,36 +88,7 @@
     width: 100vw;
     height: 75vh;
 
-    -webkit-animation: zoomin 25s; /* Chrome, Safari, Opera */
-    animation: zoomin infinite 25s;
 }
-
-@-webkit-keyframes zoomin {
-    0% {
-        -webkit-transform: scale(1, 1);
-    }
-    50% {
-        -webkit-transform: scale(1.1, 1.1);
-    }
-    100% {
-        -webkit-transform: scale(1, 1);
-    }
-
-}
-/* Standard syntax */
-@keyframes zoomin {
-    0% {
-        transform: scale(1, 1);
-    }
-    50%{
-        transform: scale(1.1, 1.1);
-    }
-    100% {
-        transform: scale(1, 1);
-    }
-
-}
-
 
 /*IMG 4*/
 
@@ -124,36 +98,8 @@
     background-size: cover;
     width: 100vw;
     height: 75vh;
-
-    -webkit-animation: zoomin 25s; /* Chrome, Safari, Opera */
-    animation: zoomin infinite 25s;
 }
 
-@-webkit-keyframes zoomin {
-    0% {
-        -webkit-transform: scale(1, 1);
-    }
-    50% {
-        -webkit-transform: scale(1.1, 1.1);
-    }
-    100% {
-        -webkit-transform: scale(1, 1);
-    }
-
-}
-/* Standard syntax */
-@keyframes zoomin {
-    0% {
-        transform: scale(1, 1);
-    }
-    50%{
-        transform: scale(1.1, 1.1);
-    }
-    100% {
-        transform: scale(1, 1);
-    }
-
-}
 
 /*IMG 5*/
 
@@ -163,33 +109,7 @@
     background-size: cover;
     width: 100vw;
     height: 75vh;
-
-    -webkit-animation: zoomin 25s; /* Chrome, Safari, Opera */
-    animation: zoomin infinite 25s;
 }
 
-@-webkit-keyframes zoomin {
-    0% {
-        -webkit-transform: scale(1, 1);
-    }
-    50% {
-        -webkit-transform: scale(1.1, 1.1);
-    }
-    100% {
-        -webkit-transform: scale(1, 1);
-    }
 
-}
-/* Standard syntax */
-@keyframes zoomin {
-    0% {
-        transform: scale(1, 1);
-    }
-    50%{
-        transform: scale(1.1, 1.1);
-    }
-    100% {
-        transform: scale(1, 1);
-    }
 
-}
