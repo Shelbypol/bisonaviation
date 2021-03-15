@@ -4,11 +4,8 @@ import FlirHero from "../components/2/flir-screen/FlirHero";
 
 const FlirScreen = () => {
     return (
-        <>
-            <Container className='m-0 p-0 fluid'>
+
                 <FlirHero/>
-            </Container>
-        </>
     )
 };
 

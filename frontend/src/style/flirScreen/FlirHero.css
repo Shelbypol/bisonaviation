@@ -1,0 +1,8 @@
+.FlirHero_hero-img{
+    background-image: url("../../images/bg-graphics/screen-flir/large-flir.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 250px;
+    background-position: 50% 30%;
+    background-color: black;
+}
