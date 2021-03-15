@@ -8,7 +8,7 @@ const FlirScreen = () => {
         <>
             <FlirHero/>
 
-            <Container className='p-0 m-0 fluid'>
+            <Container className='m-auto' >
                 <FlirTable/>
             </Container>
         </>
