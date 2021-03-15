@@ -5,9 +5,7 @@ import {Container} from "react-bootstrap";
 const AvionicsScreen = () => {
     return (
         <>
-            <Container className='m-0 p-0 fluid'>
-                <AvionicsHero/>
-            </Container>
+            <AvionicsHero/>
         </>
     )
 };
