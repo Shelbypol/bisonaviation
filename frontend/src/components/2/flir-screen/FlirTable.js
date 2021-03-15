@@ -2433,82 +2433,108 @@ const FlirTable = () => {
             </tr>
             <tr>
                 <td>
+                    FLIR Systems, Inc.
                 </td>
                 <td>
+                    ECB Assembly, Gimbal Pot Interface Azimuth
                 </td>
                 <td>
+                    20003800 / 73001360
                 </td>
                 <td>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                </td>
-                <td>
-                </td>
-                <td>
-                </td>
-                <td>
+                    62001520
                 </td>
             </tr>
             <tr>
                 <td>
+                    FLIR Systems, Inc.
                 </td>
                 <td>
+                    ECB Assembly, Gimbal Pot Interface Elevation
                 </td>
                 <td>
+                    20003810 / 73001370
                 </td>
                 <td>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                </td>
-                <td>
-                </td>
-                <td>
-                </td>
-                <td>
+                    62001530
                 </td>
             </tr>
             <tr>
                 <td>
+                    FLIR Systems, Inc.
+                </td>
+                <td>
+                    Casting Assembly, Gimbal
                 </td>
                 <td>
                 </td>
                 <td>
-                </td>
-                <td>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                </td>
-                <td>
-                </td>
-                <td>
-                </td>
-                <td>
+                    62001540
                 </td>
             </tr>
             <tr>
                 <td>
+                    FLIR Systems, Inc.
+                </td>
+                <td>
+                    Idler Ring Assembly, PPS
                 </td>
                 <td>
                 </td>
                 <td>
-                </td>
-                <td>
+                    62001562
                 </td>
             </tr>
             <tr>
                 <td>
+                    FLIR Systems, Inc.
+                </td>
+                <td>
+                    Idler Shaft Assembly
                 </td>
                 <td>
                 </td>
                 <td>
+                    62001564
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    FLIR Systems, Inc.
                 </td>
                 <td>
+                    Idler Shaft Assembly
+                </td>
+                <td>
+                </td>
+                <td>
+                    62001564
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    FLIR Systems, Inc.
+                </td>
+                <td>
+                    Clamp Block Assembly
+                </td>
+                <td>
+                </td>
+                <td>
+                    62001700
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    FLIR Systems, Inc.
+                </td>
+                <td>
+                    Rear Cover / Heat Sink Assembly
+                </td>
+                <td>
+                </td>
+                <td>
+                    62001720
                 </td>
             </tr>
             <tr>
