@@ -6,7 +6,7 @@ const FlirTable = () => {
 
     return (
 
-        <Table striped bordered hover variant="dark">
+        <Table hover bordered variant="dark" style={{fontSize: '12px'}}>
             <thead>
             <tr>
                 <th>Manufacturer</th>
@@ -1097,8 +1097,8 @@ const FlirTable = () => {
                 <td>
                     FLIR Systems, Inc.
                 </td>
-                Washer, Flat
                 <td>
+                Washer, Flat
                 </td>
                 <td>
                 </td>
@@ -1855,6 +1855,181 @@ const FlirTable = () => {
             </tr>
             <tr>
                 <td>
+                    FLIR Systems, Inc.
+                </td>
+                <td>
+                    Mirror, Fold, NFOV
+                </td>
+                <td>
+                </td>
+                <td>
+                    50001700
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    FLIR Systems, Inc.
+                </td>
+                <td>
+                    Mirror, Fold, WFOV
+                </td>
+                <td>
+                </td>
+                <td>
+                    50001800
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    FLIR Systems, Inc.
+                </td>
+                <td>
+                    Window, WFOV
+                </td>
+                <td>
+                </td>
+                <td>
+                    50002600
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    FLIR Systems, Inc.
+                </td>
+                <td>
+                    Pre Focused Detector / Clamp Ring Assembly
+                </td>
+                <td>
+                </td>
+                <td>
+                    60005310
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    FLIR Systems, Inc.
+                </td>
+                <td>
+                    Mirror Assembly, Roof
+                </td>
+                <td>
+                </td>
+                <td>
+                    62000010
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    FLIR Systems, Inc.
+                </td>
+                <td>
+                    Latching Assembly, FOV Change Mirror
+                </td>
+                <td>
+                    62000031
+                </td>
+                <td>
+                    62000030
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    FLIR Systems, Inc.
+                </td>
+                <td>
+                    Latching Assembly, FOV Change Mirror
+                </td>
+                <td>
+                </td>
+                <td>
+                    62000031
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    FLIR Systems, Inc.
+                </td>
+                <td>
+                    Lens Assembly, NFOV Focus
+                </td>
+                <td>
+                </td>
+                <td>
+                    62000070
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td>
                 </td>
                 <td>
                 </td>
@@ -1943,6 +2118,77 @@ const FlirTable = () => {
                 <td>
                 </td>
             </tr>
+            <tr>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+            </tr>
+
 
 
             </tbody>
