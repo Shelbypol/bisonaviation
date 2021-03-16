@@ -29,33 +29,39 @@ const Tabs = ({
     return (
         <Tab.Container id="list-group-tabs-example" defaultActiveKey="#link1">
             <Row>
-                <Col sm={4} className='mb-0 pb-0'>
-                    <ListGroup>
-                        <ListGroup.Item className='Tabs_itemStyle' action href="#link1">
-                            {tabOne}
-                        </ListGroup.Item>
-                        {twoTrue && (
-                            <ListGroup.Item className='Tabs_itemStyle' action href="#link2">
-                                {tabTwo}
+                <Col sm={4}>
+                    <Col sm={12} className='mb-0 pb-0'>
+                        <ListGroup>
+                            <ListGroup.Item className='Tabs_itemStyle' action href="#link1">
+                                {tabOne}
                             </ListGroup.Item>
-                        )}
-                        {threeTrue && (
-                            <ListGroup.Item className='Tabs_itemStyle' action href="#link3">
-                                {tabThree}
-                            </ListGroup.Item>
-                        )}
-                        {fourTrue && (
-                            <ListGroup.Item className='Tabs_itemStyle' action href="#link4">
-                                {tabFour}
-                            </ListGroup.Item>
-                        )}
-                        {fiveTrue && (
-                            <ListGroup.Item className='Tabs_itemStyle' action href="#link5">
-                                {tabFive}
-                            </ListGroup.Item>
-                        )}
+                            {twoTrue && (
+                                <ListGroup.Item className='Tabs_itemStyle' action href="#link2">
+                                    {tabTwo}
+                                </ListGroup.Item>
+                            )}
+                            {threeTrue && (
+                                <ListGroup.Item className='Tabs_itemStyle' action href="#link3">
+                                    {tabThree}
+                                </ListGroup.Item>
+                            )}
+                            {fourTrue && (
+                                <ListGroup.Item className='Tabs_itemStyle' action href="#link4">
+                                    {tabFour}
+                                </ListGroup.Item>
+                            )}
+                            {fiveTrue && (
+                                <ListGroup.Item className='Tabs_itemStyle' action href="#link5">
+                                    {tabFive}
+                                </ListGroup.Item>
+                            )}
 
-                        {/*    TAB ONE IMAGE     */}
+                        </ListGroup>
+                    </Col>
+
+                    {/*    TAB ONE IMAGE     */}
+                    <Col xs={12}>
+
                         <Tab.Content className='bg-transparent text-center mt-3'>
                             <Tab.Pane eventKey="#link1">
                                 <Image src={tabOneImg} fluid rounded/>
@@ -97,9 +103,10 @@ const Tabs = ({
                                 </Tab.Pane>
                             </Tab.Content>
                         )}
-
-                    </ListGroup>
+                    </Col>
                 </Col>
+
+
                 <Col sm={8} className='Tabs_contentStyle'>
                     <Tab.Content>
                         <Tab.Pane eventKey="#link1">
