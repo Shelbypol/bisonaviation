@@ -4,8 +4,8 @@ import '../../style/2/Mechanics.css';
 import {Jumbotron} from "reactstrap";
 import Zoom from 'react-reveal/Zoom';
 import {LinkContainer} from "react-router-bootstrap";
-import tayseer from "../../images/bg-graphics/avionics/tayseer-avionics.png";
-import test from "../../images/bg-graphics/avionics/avionics-test.jpg";
+import tayseer from "../../images/bg-graphics/screen-avionics/avionics/tayseer-avionics.png";
+import test from "../../images/bg-graphics/screen-avionics/avionics/avionics-test.jpg";
 
 
 const Mechanics = () => {

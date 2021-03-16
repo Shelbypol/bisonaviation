@@ -4,9 +4,9 @@ import Zoom from 'react-reveal/Zoom'
 import '../../style/2/Flir.css'
 import {Button, Card, Container} from "react-bootstrap";
 import {LinkContainer} from "react-router-bootstrap";
-import cnc from "../../images/bg-graphics/avionics/cnc-machine copy.png";
-import test from "../../images/bg-graphics/avionics/avionics-test.jpg";
-import tayseer from "../../images/bg-graphics/avionics/tayseer-avionics.png";
+import cnc from "../../images/bg-graphics/screen-avionics/avionics/cnc-machine copy.png";
+import test from "../../images/bg-graphics/screen-avionics/avionics/avionics-test.jpg";
+import tayseer from "../../images/bg-graphics/screen-avionics/avionics/tayseer-avionics.png";
 
 
 const Flir = () => {
