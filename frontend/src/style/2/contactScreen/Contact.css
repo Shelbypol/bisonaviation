@@ -8,13 +8,26 @@
     background-color: black;
 }
 
+.Contact_border{
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+}
+
 .Contact_icons{
     font-size: 2.5vw;
     color: red;
 }
 
+.Contact_icons-title{
+    color: red;
+}
+
+.Contact_title{
+    color: white;
+}
+
 /*.Contact_icons-text{*/
-/*    font-size: 2vw;*/
+/*    color: red;*/
 /*}*/
 
 @media (max-width: 900px) {

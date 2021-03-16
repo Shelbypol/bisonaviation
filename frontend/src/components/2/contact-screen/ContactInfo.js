@@ -6,7 +6,7 @@ const ContactInfo = () => {
     return (
         <>
             <Container>
-
+                <h1 className='Contact_title'>Boerne Stage Airfield - 5C1</h1>
                 <Row className='text-center text-white my-5'>
 
                     {/*   PHONE ICON/TEXT   */}
@@ -16,7 +16,7 @@ const ContactInfo = () => {
                                 <i className="Contact_icons fal fa-mobile-android"> </i>
                             </Col>
                             <Col xs={12} className='my-3'>
-                                <p>PHONE</p>
+                                <p className='Contact_icons-title'>PHONE</p>
                             </Col>
                             <Col xs={12}>
                                 <p className='Contact_icons-text p-0 m-0'>
@@ -28,6 +28,9 @@ const ContactInfo = () => {
                                 <p className='Contact_icons-text p-0 m-0'>
                                     F: 888-224-2127
                                 </p>
+                                <p>
+                                   <span className='Contact_icons-title'>AOG:</span> 888-SOS-BISON (888-767-2476)
+                                </p>
 
 
                             </Col>
@@ -35,12 +38,12 @@ const ContactInfo = () => {
                     </Col>
 
                     {/*   ADDRESS ICON/TEXT   */}
-                    <Col xs={4}>
+                    <Col xs={4} className='Contact_border'>
                         <Row>
                             <Col xs={12}>
                                 <i className="Contact_icons fal fa-map-marker-alt"> </i>
                             </Col>
-                            <Col xs={12} className='my-3'>
+                            <Col xs={12} className='my-3 Contact_icons-title'>
                                 <p>ADDRESS</p>
                             </Col>
                             <Col xs={12}>
@@ -63,11 +66,13 @@ const ContactInfo = () => {
                             <Col xs={12}>
                                 <i className="Contact_icons fal fa-envelope"> </i>
                             </Col>
-                            <Col xs={12} className='my-3'>
+                            <Col xs={12} className='my-3 Contact_icons-title'>
                                 <p>EMAIL</p>
                             </Col>
                             <Col xs={12}>
-
+                                <p className='Contact_icons-text p-0 m-0'>
+                                    info@BisonAviation.com
+                                </p>
                             </Col>
                         </Row>
                     </Col>
