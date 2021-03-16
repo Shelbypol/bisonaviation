@@ -36,6 +36,10 @@
     margin-left: 10vw ;
 }
 
+.FlirScreen_Title{
+    color: red;
+}
+
 /*    ======   MOBILE RESPONSIVE    ======    */
 @media (max-width: 900px) {
     .FlirTable_style{
