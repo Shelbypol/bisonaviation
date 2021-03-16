@@ -56,17 +56,15 @@ const Tabs = ({
                         )}
 
                         {/*    TAB ONE IMAGE     */}
-                        <ListGroup.Item className='bg-transparent'>
-                            <Tab.Content className='text-center mt-3'>
-                                <Tab.Pane eventKey="#link1">
-                                    <Image src={tabOneImg} fluid rounded/>
-                                </Tab.Pane>
-                            </Tab.Content>
-                        </ListGroup.Item>
+                        <Tab.Content className='bg-transparent text-center mt-3'>
+                            <Tab.Pane eventKey="#link1">
+                                <Image src={tabOneImg} fluid rounded/>
+                            </Tab.Pane>
+                        </Tab.Content>
 
                         {/*    TAB TWO IMAGE     */}
                         {twoTrue && (
-                            <Tab.Content className='mx-auto my-3'>
+                            <Tab.Content className='bg-transparent text-center mt-3'>
                                 <Tab.Pane eventKey="#link2">
                                     <Image src={tabTwoImg} rounded/>
                                 </Tab.Pane>
@@ -75,7 +73,7 @@ const Tabs = ({
 
                         {/*    TAB THREE IMAGE     */}
                         {tabThree && (
-                            <Tab.Content className='mx-auto my-3'>
+                            <Tab.Content className='bg-transparent text-center mt-3'>
                                 <Tab.Pane eventKey="#link3">
                                     <Image src={tabThreeImg} rounded/>
                                 </Tab.Pane>
@@ -84,7 +82,7 @@ const Tabs = ({
 
                         {/*    TAB FOUR IMAGE     */}
                         {tabFour && (
-                            <Tab.Content className='mx-auto my-3'>
+                            <Tab.Content className='bg-transparent text-center mt-3'>
                                 <Tab.Pane eventKey="#link4">
                                     <Image src={tabFourImg} rounded/>
                                 </Tab.Pane>
@@ -93,7 +91,7 @@ const Tabs = ({
 
                         {/*    TAB FIVE IMAGE     */}
                         {tabFive && (
-                            <Tab.Content className='mx-auto my-3'>
+                            <Tab.Content className='bg-transparent text-center mt-3'>
                                 <Tab.Pane eventKey="#link5">
                                     <Image src={tabFiveImg} rounded/>
                                 </Tab.Pane>

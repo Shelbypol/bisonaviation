@@ -1,7 +1,7 @@
 import React from 'react';
 import Tabs from '../Tabs';
 import {Row, Col} from 'react-bootstrap';
-import img1 from '../../../images/bg-graphics/screen-flir/flir-multiple.jpg'
+import img1 from '../../../images/bg-graphics/screen-flir/flir-sharp.png'
 
 const FlirText = () => {
     return (
