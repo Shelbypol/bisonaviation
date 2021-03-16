@@ -24,6 +24,7 @@ import AvionicsScreen from "./screens/AvionicsScreen";
 import MaintenanceScreen from "./screens/MaintenanceScreen";
 import FlirScreen from "./screens/FlirScreen";
 import TeamScreen from "./screens/TeamScreen";
+import ContactScreen from "./screens/ContactScreen";
 
 
 const App = () => {
@@ -46,6 +47,7 @@ const App = () => {
                     <Route path='/flir' component={FlirScreen}/>
                     <Route path='/maintenance' component={MaintenanceScreen}/>
                     <Route path='/team' component={TeamScreen}/>
+                    <Route path='/contact' component={ContactScreen}/>
 
                     <Route path='/products' component={ProductsDisplayScreen} exact/>
 
