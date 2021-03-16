@@ -9,9 +9,9 @@ const FlirScreen = () => {
         <>
             <FlirHero/>
 
-            <Jumbotron className='mx-5 bg-transparent' fluid>
-                <FlirTable/>
-            </Jumbotron>
+                <Jumbotron className='FlirScreen_style bg-transparent' fluid>
+                    <FlirTable/>
+                </Jumbotron>
 
         </>
     )

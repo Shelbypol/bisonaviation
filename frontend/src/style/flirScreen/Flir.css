@@ -27,10 +27,15 @@
     border: 1px solid gray;
 }
 
+.FlirScreen_style{
+    /*margin-right: 15vw ;*/
+    /*margin-left: 15vw ;*/
+}
+
 /*    ======   MOBILE RESPONSIVE    ======    */
 @media (max-width: 900px) {
     .FlirTable_style{
-        font-size: 2vw;
+        font-size: 1vw;
         background-color: black;
         color: white;
     }

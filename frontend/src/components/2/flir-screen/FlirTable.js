@@ -6,7 +6,7 @@ const FlirTable = () => {
 
     return (
 
-        <Table responsive='xs'className='FlirTable_style'>
+        <Table responsive='md' className='FlirTable_style'>
             <thead>
             <tr>
                 <th>Manufacturer</th>
