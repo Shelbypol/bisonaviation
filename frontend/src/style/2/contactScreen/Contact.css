@@ -1,0 +1,9 @@
+.ContactScreen_hero-img{
+    background-image: url("../../../images/bg-graphics/screen-contact/contact-section-bg.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 200px;
+    background-position: 50% 0;
+    width: 100vw;
+    background-color: black;
+}
