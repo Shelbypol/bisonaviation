@@ -1,1 +1,29 @@
+/*IMG ONE*/
 
+#HomeHero_carouselImg1{
+    background-image: url("../../images/bg-graphics/home-screen/home-slider/large-wing.png");
+}
+
+/*IMG 2*/
+
+#HomeHero_carouselImg2{
+    background-image: url("../../images/bg-graphics/home-screen/home-slider/fullscreen-slider2.png");
+}
+
+/*IMG 3*/
+
+#HomeHero_carouselImg3{
+    background-image: url("../../images/bg-graphics/home-screen/home-slider/cnc-machine copy.png");
+}
+
+/*IMG 4*/
+
+#HomeHero_carouselImg4{
+    background-image: url("../../images/bg-graphics/home-screen/home-slider/riveting-large.png");
+}
+
+/*IMG 5*/
+
+#HomeHero_carouselImg5{
+    background-image: url("../../images/bg-graphics/home-screen/home-slider/large-flir.png");
+}

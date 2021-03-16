@@ -1,12 +1,15 @@
 import React from 'react'
 import {Container} from "react-bootstrap";
 import FlirHero from "../components/2/flir-screen/FlirHero";
+import FlirTable from "../components/2/flir-screen/FlirTable";
 
 const FlirScreen = () => {
     return (
         <>
-            <Container className='m-0 p-0 fluid'>
-                <FlirHero/>
+            <FlirHero/>
+
+            <Container className='m-auto' >
+                <FlirTable/>
             </Container>
         </>
     )

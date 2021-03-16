@@ -8,7 +8,7 @@ body {
     width: 100vw;
     max-width: 100%;
     contain: content;
-    background-image: url("../images/bg-graphics/body-bg.png");
+    background-image: url("../images/bg-graphics/graphics/body-bg.png");
 }
 
 html {
@@ -63,12 +63,41 @@ main {
 }
 
 /*================= CAROUSEL ======================*/
-.global_dots{
-    background-image: url("../images/bg-graphics/fs-slider-dots3.png");
-    mask-position: center;
-    background-color: transparent;
-    z-index: 1000;
+.global_HeroCarousel-animation {
+    -webkit-animation: zoomin 25s; /* Chrome, Safari, Opera */
+    animation: zoomin infinite 25s;
+    width: 100vw;
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+@-webkit-keyframes zoomin {
+    0% {
+        -webkit-transform: scale(1, 1);
+    }
+    50% {
+        -webkit-transform: scale(1.1, 1.1);
+    }
+    100% {
+        -webkit-transform: scale(1, 1);
+    }
+
+}
+/* Standard syntax */
+@keyframes zoomin {
+    0% {
+        transform: scale(1, 1);
+    }
+    50%{
+        transform: scale(1.1, 1.1);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+
+}
+
 
 .global_carousel-divider-img{
     width: 75vw;
@@ -119,19 +148,19 @@ main {
 
 /* ============= AVIONICS JUMBO ===========*/
 .Global_Avionics_bg-img{
-    background-image: url("../images/bg-graphics/avionics/avionics-hero-img-overlay.png");
+    background-image: url("../images/bg-graphics/home-screen/home-section-body-bg/avionics-hero-img-overlay.png");
     background-position: center 5%;
 }
+
 .Global_Flir_bg-img{
-    background-image: url("../images/bg-graphics/flir/flir-jumbo-img.png");
+    background-image: url("../images/bg-graphics/home-screen/home-section-body-bg/flir-jumbo-img.png");
     background-position: center 5%;
 }
 
 .Global_graphic{
-    background-image: url("../images/graphics/black-top-large-left.png");
+    background-image: url("../images/bg-graphics/graphics/black-top-large-left.png");
     height: 300px;
     margin-top: -15vh;
-    /*background-position: center 5%;*/
 }
 
 /*    ======   MOBILE RESPONSIVE    ======    */
@@ -158,14 +187,3 @@ main {
     }
 
 }
-
-/*@media only screen and (min-width: 768px) and (max-width: 1200px) {*/
-
-/*    .product-page-section {*/
-/*        min-width: 350px;*/
-/*    }*/
-
-/*    .product-page-section:nth-child(3) {*/
-/*        margin: 20px 0 0 50%;*/
-/*    }*/
-/*}*/

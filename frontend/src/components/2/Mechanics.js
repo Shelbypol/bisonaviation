@@ -5,7 +5,6 @@ import {Jumbotron} from "reactstrap";
 import Zoom from 'react-reveal/Zoom';
 import {LinkContainer} from "react-router-bootstrap";
 import tayseer from "../../images/bg-graphics/avionics/tayseer-avionics.png";
-import cnc from "../../images/bg-graphics/avionics/cnc-machine copy.png";
 import test from "../../images/bg-graphics/avionics/avionics-test.jpg";
 
 
@@ -99,7 +98,7 @@ const Mechanics = () => {
                 <Row className='d-flex justify-content-center mb-5'>
                     <Col xs={4} className='d-flex justify-content-center'>
                         <Card className='Avionics_card border-0 bg-transparent rounded'>
-                            <Card.Img variant="top" src={cnc} className=' Avionics_card-img '/>
+                            <Card.Img variant="top" src={test} className=' Avionics_card-img '/>
                             <Card.Body>
                                 <Card.Text>
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dolor ea est eveniet exercitationem illum incidunt maiores odio quam veritatis.

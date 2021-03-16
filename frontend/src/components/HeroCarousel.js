@@ -1,18 +1,20 @@
 import React from 'react'
 import {Row, Col} from 'reactstrap';
-import img1 from '../images/bg-graphics/fs-slider-caption-bg.png'
+import img1 from '../images/bg-graphics/graphics/fs-slider-caption-bg.png'
 import {Carousel} from "react-bootstrap"
 import Slide from "react-reveal/Slide";
 
 
 const HeroCarousel = (
     {
+        IDslide1,
         slide1firstTitleLetter,
         slide1firstTitleWord,
         slide1firstSentence,
         slide1secondSentenceTrue,
         slide1secondSentence,
 
+        IDslide2,
         carouselImg2True,
         slide2firstTitleLetter,
         slide2firstTitleWord,
@@ -20,6 +22,7 @@ const HeroCarousel = (
         slide2secondSentenceTrue,
         slide2secondSentence,
 
+        IDslide3,
         carouselImg3True,
         slide3firstTitleLetter,
         slide3firstTitleWord,
@@ -27,6 +30,7 @@ const HeroCarousel = (
         slide3secondSentenceTrue,
         slide3secondSentence,
 
+        IDslide4,
         carouselImg4True,
         slide4firstTitleLetter,
         slide4firstTitleWord,
@@ -34,6 +38,7 @@ const HeroCarousel = (
         slide4secondSentenceTrue,
         slide4secondSentence,
 
+        IDslide5,
         carouselImg5True,
         slide5firstTitleLetter,
         slide5firstTitleWord,
@@ -75,7 +80,7 @@ const HeroCarousel = (
                         </Row>
                     </Carousel.Caption>
 
-                    <div className='carouselImg1'>
+                    <div id={IDslide1} className=' global_HeroCarousel-animation'>
                         <Slide left duration={2500}>
                             <img
                                 className='global_carousel-divider-img'
@@ -117,7 +122,7 @@ const HeroCarousel = (
                             </Row>
                         </Carousel.Caption>
 
-                        <div className='carouselImg2'>
+                        <div id={IDslide2} className=' global_HeroCarousel-animation'>
                             <Slide left duration={2500}>
                                 <img
                                     className='global_carousel-divider-img '
@@ -160,7 +165,7 @@ const HeroCarousel = (
                             </Row>
                         </Carousel.Caption>
 
-                        <div className='carouselImg3'>
+                        <div id={IDslide3} className=' global_HeroCarousel-animation'>
                             <Slide left duration={2500}>
                                 <img
                                     className='global_carousel-divider-img '
@@ -205,7 +210,7 @@ const HeroCarousel = (
                             </Row>
                         </Carousel.Caption>
 
-                        <div className='carouselImg4'>
+                        <div id={IDslide4} className='global_HeroCarousel-animation'>
                             <Slide left duration={2500}>
                                 <img
                                     className='global_carousel-divider-img '
@@ -248,7 +253,7 @@ const HeroCarousel = (
                             </Row>
                         </Carousel.Caption>
 
-                        <div className='carouselImg5'>
+                        <div id={IDslide5} className=' global_HeroCarousel-animation'>
                             <Slide left >
                                 <img
                                     className='global_carousel-divider-img '

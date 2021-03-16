@@ -1,13 +1,5 @@
 
 
-.Mechanics_hero-img{
-    /*background-image: url("../../images/bg-graphics/avionics/avionics-cessna-hero.png");*/
-    background-image: url("../../images/bg-graphics/mechanics/maintenance-hero.png");
-    background-repeat: no-repeat;
-    height: 600px;
-    width: 800px;
-}
-
 .Mechanics_learn-more-btn{
     color: #660708;
     text-decoration: underline;
@@ -63,25 +55,25 @@
 
 
 .Mechanics_circle1{
-    background-image: url("../../images/bg-graphics/mechanics/mechanics-circle1.png");
+    background-image: url("../../images/bg-graphics/screen-maintenance/mechanics/mechanics-circle1.png");
     background-repeat: no-repeat;
     height: 382px;
 }
 
 .Mechanics_circle2{
-    background-image: url("../../images/bg-graphics/mechanics/mechanics-circle2.png");
+    background-image: url("../../images/bg-graphics/screen-maintenance/mechanics/mechanics-circle2.png");
     background-repeat: no-repeat;
     height: 382px;
 }
 
 .Mechanics_circle3{
-    background-image: url("../../images/bg-graphics/mechanics/mechanics-circle3.png");
+    background-image: url("../../images/bg-graphics/screen-maintenance/mechanics/mechanics-circle3.png");
     background-repeat: no-repeat;
     height: 382px;
 }
 
 .Mechanics_circle4{
-    background-image: url("../../images/bg-graphics/mechanics/mechanics-circle4.png");
+    background-image: url("../../images/bg-graphics/screen-maintenance/mechanics/mechanics-circle4.png");
     background-repeat: no-repeat;
     height: 382px;
 }
