@@ -35,4 +35,12 @@
     .Contact_icons{
         font-size: 3.5vw;
     }
+
+    #Contact_responsive-padding{
+        padding-top: 2vh;
+    }
+
+    .Contact_border{
+        border:none;
+    }
 }

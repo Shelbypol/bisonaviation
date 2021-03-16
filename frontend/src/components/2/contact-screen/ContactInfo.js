@@ -10,7 +10,7 @@ const ContactInfo = () => {
                 <Row className='text-center text-white my-5'>
 
                     {/*   PHONE ICON/TEXT   */}
-                    <Col xs={4}>
+                    <Col md={4} sm={12}>
                         <Row>
                             <Col xs={12}>
                                 <i className="Contact_icons fal fa-mobile-android"> </i>
@@ -29,7 +29,7 @@ const ContactInfo = () => {
                                     F: 888-224-2127
                                 </p>
                                 <p>
-                                   <span className='Contact_icons-title'>AOG:</span> 888-SOS-BISON (888-767-2476)
+                                    <span className='Contact_icons-title'>AOG:</span> 888-SOS-BISON (888-767-2476)
                                 </p>
 
 
@@ -38,7 +38,7 @@ const ContactInfo = () => {
                     </Col>
 
                     {/*   ADDRESS ICON/TEXT   */}
-                    <Col xs={4} className='Contact_border'>
+                    <Col md={4} sm={12} className='Contact_border'>
                         <Row>
                             <Col xs={12}>
                                 <i className="Contact_icons fal fa-map-marker-alt"> </i>
@@ -61,7 +61,7 @@ const ContactInfo = () => {
                     </Col>
 
                     {/*   EMAIL ICON/TEXT   */}
-                    <Col xs={4}>
+                    <Col md={4} sm={12} id='Contact_responsive-padding'>
                         <Row>
                             <Col xs={12}>
                                 <i className="Contact_icons fal fa-envelope"> </i>
@@ -77,13 +77,13 @@ const ContactInfo = () => {
                         </Row>
                     </Col>
                 </Row>
-                <Row>
+
+                <Row className='my-5'>
                     <Col className='text-center text-white' xs={12}>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, sequi!
+                        IF YOU HAVE ANY QUESTIONS
                     </Col>
                     <Col className='text-center text-white' xs={12}>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur atque fuga illo, maxime
-                        modi officiis.
+                        PLEASE DO NOT HESITATE TO SEND US A MESSAGE
                     </Col>
                 </Row>
 
