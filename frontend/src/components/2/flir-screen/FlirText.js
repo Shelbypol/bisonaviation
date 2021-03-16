@@ -1,6 +1,7 @@
 import React from 'react';
 import Tabs from '../Tabs';
 import {Row, Col} from 'react-bootstrap';
+import img1 from '../../../images/bg-graphics/screen-flir/flir-multiple.jpg'
 
 const FlirText = () => {
     return (
@@ -14,6 +15,7 @@ const FlirText = () => {
                 'Bison Aviation is the ONLY repair center capable of repairing and servicing the mechanical coolers found in may FLIR systems. Our cryocooler overhaul capabilities include models manufactured by Hughes Aircraft Company (including the model 7024H), Carleton Life Support, Cobham, Kaltar, Ricor and many others!\n' +
                 '\n' +
                 'Whether your system is in need of a simple "tune-up" or you require a complete IDDCA overhaul, Bison Aviation has the inventory and expertise to meet your needs and keep your mission on course.'}
+                tabOneImg={img1}
                 twoTrue={true}
                 tabTwo={'System Sales:'}
                 tabTwoInfo={'Bison Aviation maintains the world\'s largest inventory of legacy airborne FLIR & EO/IR camera equipment and thermography systems. On average, Bison Aviation maintains between sixty and one hundred flight-ready systems in our inventory. All of our flight-ready systems are thoroughly tested and overhauled in-house in our FLIR lab prior to being offered for sale. Complete turn-key systems are available for lease or purchase, as well as major LRUs, components, and subassemblies. Overhauled systems come backed by our one-year parts & labor warranty.\n' +
@@ -30,12 +32,20 @@ const FlirText = () => {
                 fiveTrue={false}
             />
 
-        <Row>
-            <Col xs={12}>
-                <h3>If you're looking for FLIR parts, you've come to the right place!</h3>
+        <Row className='mt-5'>
+            <Col xs={12} >
+                <h3 className='FlirScreen_Title'>If you're looking for FLIR parts, you've come to the right place!</h3>
             </Col>
-            <Col>
-
+            <Col xs={12} className='text-white'>
+                <p>Bison Aviation is proud to stock the largest in-house inventory of legacy FLIR and EO/IR system parts in the world. Below is a small sample of our airborne EO/IR equipment inventory. If you don't see the part you need, please contact us; chances are we have it in stock.</p>
+            </Col>
+            <Col xs={12}>
+                <h6  className='FlirScreen_Title'>Surplus Equipment Purchasing</h6>
+            </Col>
+            <Col xs={12} className='text-white'>
+                <p>
+                    Bison Aviation is always in the market for used airborne FLIR & EO/IR systems, along with related mission support equipment. If you have equipment taking up space in the back of your hangar, or if your agency is ready to upgrade and doesn't know what to do with its old equipment, contact Bison Aviation. We will provide you with a firm offer to purchase your equipment and will even work directly with manufacturers to help offset the cost of your new system, rather than allowing the value of the surplus equipment to simply be dropped back into the general fund.
+                </p>
             </Col>
         </Row>
 
