@@ -1,17 +1,13 @@
 import React from 'react'
 import {Jumbotron} from "reactstrap";
 
-const FlirScreen = () => {
+const FlirText = () => {
     return (
         <>
-            <FlirHero/>
 
-            <Jumbotron className='mx-5 bg-transparent' fluid>
-                <FlirTable/>
-            </Jumbotron>
 
         </>
     )
 };
 
-export default FlirScreen
+export default FlirText

@@ -67,7 +67,7 @@ main {
     -webkit-animation: zoomin 25s; /* Chrome, Safari, Opera */
     animation: zoomin infinite 25s;
     width: 100vw;
-    height: 70vh;
+    height: 65vh;
     background-repeat: no-repeat;
     background-size: cover;
 }

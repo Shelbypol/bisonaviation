@@ -1,7 +1,6 @@
 import React from 'react';
 import {Jumbotron, Row, Col} from 'reactstrap';
 import Zoom from 'react-reveal/Zoom'
-import '../../style/2/Flir.css'
 import {Button, Card, Container} from "react-bootstrap";
 import {LinkContainer} from "react-router-bootstrap";
 import cnc from "../../images/bg-graphics/screen-avionics/avionics/cnc-machine copy.png";

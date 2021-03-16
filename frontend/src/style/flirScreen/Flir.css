@@ -22,14 +22,18 @@
     background-color: #660708;
 }
 
+.FlirTable_style tr th{
+    padding:  1vh;
+}
 
 .FlirTable_style tr td{
     border: 1px solid gray;
+    padding: 1vh;
 }
 
 .FlirScreen_style{
-    /*margin-right: 15vw ;*/
-    /*margin-left: 15vw ;*/
+    margin-right: 10vw ;
+    margin-left: 10vw ;
 }
 
 /*    ======   MOBILE RESPONSIVE    ======    */

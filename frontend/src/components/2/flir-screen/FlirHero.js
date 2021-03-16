@@ -1,5 +1,4 @@
 import React from 'react'
-import '../../../style/flirScreen/Flir.css'
 import {Jumbotron} from "reactstrap";
 
 const FlirHero = () => {
