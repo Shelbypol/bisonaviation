@@ -2,15 +2,17 @@ import React from 'react'
 import {Container} from "react-bootstrap";
 import FlirHero from "../components/2/flir-screen/FlirHero";
 import FlirTable from "../components/2/flir-screen/FlirTable";
+import {Jumbotron} from "reactstrap";
 
 const FlirScreen = () => {
     return (
         <>
             <FlirHero/>
 
-            <Container className='m-auto' >
+            <Jumbotron className='mx-5 bg-transparent' fluid>
                 <FlirTable/>
-            </Container>
+            </Jumbotron>
+
         </>
     )
 };

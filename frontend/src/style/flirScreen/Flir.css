@@ -1,0 +1,38 @@
+.FlirHero_hero-img{
+    background-image: url("../../images/bg-graphics/screen-flir/large-flir.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 250px;
+    background-position: 50% 30%;
+    background-color: black;
+}
+
+.FlirTable_style{
+    font-size: 1vw;
+    background-color: black;
+    color: white;
+}
+
+.FlirTable_style tr:hover{
+    background-color: grey;
+    color: white;
+}
+
+.FlirTable_style tr th{
+    background-color: #660708;
+}
+
+
+.FlirTable_style tr td{
+    border: 1px solid gray;
+}
+
+/*    ======   MOBILE RESPONSIVE    ======    */
+@media (max-width: 900px) {
+    .FlirTable_style{
+        font-size: 2vw;
+        background-color: black;
+        color: white;
+    }
+
+}
