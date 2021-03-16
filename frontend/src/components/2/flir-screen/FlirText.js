@@ -58,7 +58,7 @@ const FlirText = () => {
                 <p>Bison Aviation is proud to stock the largest in-house inventory of legacy FLIR and EO/IR system parts in the world. Below is a small sample of our airborne EO/IR equipment inventory. If you don't see the part you need, please contact us; chances are we have it in stock.</p>
             </Col>
             <Col xs={12}>
-                <h6  className='FlirScreen_Title'>Surplus Equipment Purchasing</h6>
+                <h5 className='FlirScreen_Title'>Surplus Equipment Purchasing</h5>
             </Col>
             <Col xs={12} className='text-white'>
                 <p>
