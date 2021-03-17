@@ -1,6 +1,7 @@
 import React from 'react'
 import {Container, Row, Col, Form, Button} from "react-bootstrap";
 import SocialIcons from "../../SocialIcons";
+import {LinkContainer} from "react-router-bootstrap";
 
 const ContactInfo = () => {
 
@@ -103,13 +104,13 @@ const ContactInfo = () => {
                             {/*FIRST NAME*/}
                             <Form.Group controlId="exampleForm.ControlInput1">
                                 <Form.Label>First Name</Form.Label>
-                                <Form.Control type="firstName" placeholder="name@example.com"/>
+                                <Form.Control type="firstName" placeholder="first name"/>
                             </Form.Group>
 
                             {/*LAST NAME*/}
                             <Form.Group controlId="exampleForm.ControlInput1">
                                 <Form.Label>Last Name</Form.Label>
-                                <Form.Control type="lastName" placeholder="name@example.com"/>
+                                <Form.Control type="lastName" placeholder="last name"/>
                             </Form.Group>
 
                             <Form.Group controlId="exampleForm.ControlSelect1">
@@ -137,7 +138,15 @@ const ContactInfo = () => {
                         <iframe width="100%" height="560"
                                 src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=400%20sw%20boerne%20stage%airfield%20boerne%20tx%2078006+(Bison%20Aviation)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
                                 frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"><a
-                            href="https://www.maps.ie/map-my-route/">Draw map route</a></iframe>
+                            href="https://www.maps.ie/map-my-route/">Draw map route</a>
+                        </iframe>
+                    </Col>
+                    <Col xs={12} className='text-center my-5'>
+                        <LinkContainer to='/terms'>
+                            <span className='global_red global_cursor Contact_hover-terms'>
+                              &nbsp;  TERMS AND CONDITIONS
+                            </span>
+                        </LinkContainer>
                     </Col>
                 </Row>
 
