@@ -52,25 +52,25 @@ const App = () => {
                     <Route path='/contact' component={ContactScreen}/>
                     <Route path='/terms' component={TermsScreen}/>
                     <Route path='/flir-terms' component={TermsFlirScreen}/>
+                    <Route path='/register' component={RegisterScreen}/>
 
                     <Route path='/products' component={ProductsDisplayScreen} exact/>
 
-                        <Container className='mb-0 pb-0'>
-                            <Route path='/login' component={LoginScreen}/>
-                            <Route path='/register' component={RegisterScreen}/>
-                            <Route path='/profile' component={ProfileScreen}/>
-                            <Route path='/product/:id' component={ProductScreen}/>
-                            <Route path='/cart/:id?' component={CartScreen}/>
-                            <Route path='/shipping' component={ShippingScreen}/>
-                            <Route path='/payment' component={PaymentScreen}/>
-                            <Route path='/placeorder' component={PlaceOrderScreen}/>
-                            <Route path='/order/:id' component={OrderScreen}/>
-                            <Route path='/thankyou/:id' component={ThankYouScreen}/>
-                            <Route path='/search/:keyword' component={ProductsDisplayScreen} exact/>
-                            <Route path='/page/:pageNumber' component={ProductsDisplayScreen} exact/>
-                            <Route path='/search/:keyword/page/:pageNumber' component={ProductsDisplayScreen}/>
+                    <Container className='mb-0 pb-0'>
+                        <Route path='/login' component={LoginScreen}/>
+                        <Route path='/profile' component={ProfileScreen}/>
+                        <Route path='/product/:id' component={ProductScreen}/>
+                        <Route path='/cart/:id?' component={CartScreen}/>
+                        <Route path='/shipping' component={ShippingScreen}/>
+                        <Route path='/payment' component={PaymentScreen}/>
+                        <Route path='/placeorder' component={PlaceOrderScreen}/>
+                        <Route path='/order/:id' component={OrderScreen}/>
+                        <Route path='/thankyou/:id' component={ThankYouScreen}/>
+                        <Route path='/search/:keyword' component={ProductsDisplayScreen} exact/>
+                        <Route path='/page/:pageNumber' component={ProductsDisplayScreen} exact/>
+                        <Route path='/search/:keyword/page/:pageNumber' component={ProductsDisplayScreen}/>
 
-                        </Container>
+                    </Container>
 
                 </Fragment>
             </Switch>
