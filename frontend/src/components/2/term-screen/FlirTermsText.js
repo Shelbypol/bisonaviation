@@ -19,10 +19,10 @@ const FlirTermsText = () => {
                     <p>
                         The terms and conditions on this page apply to airborne EO/IR equipment (sales, maintenance,
                         repair, etc). This page DOES NOT apply to aircraft or avionics services or sales. Terms and
-                        conditions for genera aircraft or avionics services can be found at the following link:
-                        <LinkContainer to='/flir-terms'>
-                            <span className='global_red global_cursor'>
-                              &nbsp;  General Terms
+                        conditions for genera aircraft or avionics services can be found at the following link: &nbsp;
+                        <LinkContainer to='/terms'>
+                            <span className='global_blue global_cursor Terms_hover'>
+                              GENERAL TERMS
                             </span>
 
                         </LinkContainer>

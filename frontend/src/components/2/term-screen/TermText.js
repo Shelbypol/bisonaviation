@@ -21,10 +21,10 @@ const TermText = () => {
                         aircraft parts, and avionics services and parts provided by Bison Aviation, as well as general
                         website information. This page DOES NOT apply to airborne EO/IR, FLIR and mission support
                         equipment services or sales. Terms and conditions for airborne EO/IR, FLIR and mission support
-                        equipment services or sales can be found at the following link:
+                        equipment services or sales can be found at the following link:&nbsp;
                         <LinkContainer to='/flir-terms'>
-                            <span className='global_red global_cursor'>
-                              &nbsp;  FLIR Terms
+                            <span className='global_blue global_cursor Terms_hover'>
+                               FLIR TERMS
                             </span>
 
                         </LinkContainer>
