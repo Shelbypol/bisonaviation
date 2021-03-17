@@ -62,12 +62,28 @@ main {
     color: #F5F3F4;
 }
 
+.global_blue{
+    color: #2576e5
+}
+
+.global_blue-bg{
+    background-color: #2576e5
+}
+
+.global_red{
+    color: red;
+}
+
+.global_red-bg{
+    background-color: red;
+}
+
 /*================= CAROUSEL ======================*/
 .global_HeroCarousel-animation {
     -webkit-animation: zoomin 25s; /* Chrome, Safari, Opera */
     animation: zoomin infinite 25s;
     width: 100vw;
-    height: 70vh;
+    height: 65vh;
     background-repeat: no-repeat;
     background-size: cover;
 }

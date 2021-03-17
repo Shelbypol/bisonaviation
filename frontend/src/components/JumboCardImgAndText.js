@@ -1,12 +1,43 @@
 import React from 'react';
 import {Row, Col, Container} from "react-bootstrap";
-import panel from "../images/avionics/panel-divider.jpeg";
-import tayseerAvionics from "../images/avionics/tayseer-1.jpg";
-import cncMachine from "../images/avionics/cnc-machine-divider.png";
-import {Jumbotron} from "reactstrap";
 
 
-const JumboCardImgAndText = ({jumboClass, jumboStyle,rowClassName, rowStyle, lgRow, mdRow, xsRow, lgImgCol, mdImgCol, xsImgCol, imgSrc, imgClassName,lgTextCol, mdTextCol, xsTextCol,lgTitleCol, mdTitleCol, xsTitleCol, lgIconTextCol, mdIconTextCol, xsIconTextCol, iconSymbol, lgIconCol, mdIconCol, xsIconCol, lgSubtextCol, mdSubtextCol, xsSubtextCol, lgBlockTextCol, mdBlockTextCol, xsBlockTextCol, title, subText, paragraph}) => {
+
+const JumboCardImgAndText = ({
+                                 jumboClass,
+                                 jumboStyle,
+                                 rowClassName,
+                                 rowStyle,
+                                 lgRow,
+                                 mdRow,
+                                 xsRow,
+                                 lgImgCol,
+                                 mdImgCol,
+                                 xsImgCol,
+                                 imgSrc,
+                                 imgClassName,
+                                 lgTextCol,
+                                 mdTextCol,
+                                 xsTextCol,
+                                 lgTitleCol,
+                                 mdTitleCol,
+                                 xsTitleCol,
+                                 lgIconTextCol,
+                                 mdIconTextCol,
+                                 xsIconTextCol,
+                                 iconSymbol,
+                                 lgIconCol,
+                                 mdIconCol,
+                                 xsIconCol,
+                                 lgSubtextCol,
+                                 mdSubtextCol,
+                                 xsSubtextCol,
+                                 lgBlockTextCol,
+                                 mdBlockTextCol,
+                                 xsBlockTextCol,
+                                 title,
+                                 subText,
+                                 paragraph}) => {
     return (
         // <Jumbotron className={jumboClass} style={jumboStyle} fluid>
             <Row className={rowClassName} style={rowStyle} lg={lgRow} md={mdRow} xs={xsRow}>

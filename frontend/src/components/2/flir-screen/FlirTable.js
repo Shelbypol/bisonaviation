@@ -6,7 +6,7 @@ const FlirTable = () => {
 
     return (
 
-        <Table hover bordered variant="dark" style={{fontSize: '12px'}}>
+        <Table responsive='md' className='FlirTable_style'>
             <thead>
             <tr>
                 <th>Manufacturer</th>

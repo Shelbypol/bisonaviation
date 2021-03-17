@@ -25,9 +25,9 @@ const HomeScreen2 = () => {
 
             <RepairAward/>
 
-            <Container className='p-0 fluid'>
-                <hr className='global_blood-red-bg'/>
-            </Container>
+            {/*<Container className='p-0 fluid'>*/}
+            {/*    <hr className='global_cultured-bg'/>*/}
+            {/*</Container>*/}
 
             <Container className='p-o py-5 fluid'>
                 <Services

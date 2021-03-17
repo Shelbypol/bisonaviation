@@ -1,5 +1,4 @@
-import React, {useState} from 'react'
-import '../../../style/flirScreen/FlirHero.css'
+import React from 'react'
 import {Jumbotron} from "reactstrap";
 
 const FlirHero = () => {

@@ -51,7 +51,7 @@ const TeamCard = ({img, headerName, headerPosition, name, position, certificatio
                                     {position ? (
                                         <Col xs={12}>
                                         {/*POSITION*/}
-                                        <strong className='Team_blue Team_underline '>POSITION:</strong>
+                                        <strong className='global_blue Team_underline '>POSITION:</strong>
                                         &nbsp;
                                         {position}
                                     </Col>
@@ -60,7 +60,7 @@ const TeamCard = ({img, headerName, headerPosition, name, position, certificatio
                                     {certifications ? (
                                     <Col xs={12}>
                                         {/*CERTIFICATIONS*/}
-                                        <strong className='Team_blue Team_underline '>CERTIFICATION/s:</strong>
+                                        <strong className='global_blue Team_underline '>CERTIFICATION/s:</strong>
                                         <br/>
                                         {certifications}
                                     </Col>
@@ -70,7 +70,7 @@ const TeamCard = ({img, headerName, headerPosition, name, position, certificatio
                                     {locations ? (
                                     <Col xs={12}>
                                         {/*LOCATION*/}
-                                        <strong className='Team_blue Team_underline '>LOCATION:</strong>
+                                        <strong className='global_blue Team_underline '>LOCATION:</strong>
                                         &nbsp;
                                         {locations}
                                     </Col>
@@ -80,7 +80,7 @@ const TeamCard = ({img, headerName, headerPosition, name, position, certificatio
                                     <Col xs={12}>
                                         {/*SPECIAL TRAINING*/}
 
-                                        <strong className='Team_blue Team_underline '> SPECIAL
+                                        <strong className='global_blue Team_underline '> SPECIAL
                                             TRAINING:</strong>
                                         <br/>
                                         {specialTraining}
@@ -89,14 +89,14 @@ const TeamCard = ({img, headerName, headerPosition, name, position, certificatio
 
                                     <Col xs={12}>
                                         {/*BIO*/}
-                                        <strong className='Team_blue Team_underline '>BIO:</strong>
+                                        <strong className='global_blue Team_underline '>BIO:</strong>
                                         <br/>
                                         {bio}
                                     </Col>
                                         {favAircraft ? (
                                     <Col xs={12}>
                                         {/*BIO*/}
-                                        <strong className='Team_blue Team_underline '>Favorite Aircraft to
+                                        <strong className='global_blue Team_underline '>Favorite Aircraft to
                                             Maintain:</strong>
                                         <br/>
                                         {favAircraft}

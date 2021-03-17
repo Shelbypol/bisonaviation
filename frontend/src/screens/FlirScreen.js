@@ -1,16 +1,24 @@
-import React from 'react'
-import {Container} from "react-bootstrap";
+import React from 'react';
+import '../style/flirScreen/Flir.css';
 import FlirHero from "../components/2/flir-screen/FlirHero";
 import FlirTable from "../components/2/flir-screen/FlirTable";
+import {Jumbotron, Container} from "reactstrap";
+import FlirText from "../components/2/flir-screen/FlirText";
 
 const FlirScreen = () => {
     return (
         <>
             <FlirHero/>
 
-            <Container className='m-auto' >
-                <FlirTable/>
+            <Container>
+                <h1 className='FlirScreen_Title'>Airborne FLIR, EO/IR, & Thermography Systems</h1>
+            <FlirText/>
             </Container>
+
+                <Jumbotron className='FlirScreen_style bg-transparent' fluid>
+                    <FlirTable/>
+                </Jumbotron>
+
         </>
     )
 };
