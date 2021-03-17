@@ -1,6 +1,5 @@
 import React from 'react'
 import {Container, Row, Col, Form, Button} from "react-bootstrap";
-import SocialIcons from "../../SocialIcons";
 import {LinkContainer} from "react-router-bootstrap";
 
 const ContactInfo = () => {

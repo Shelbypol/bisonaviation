@@ -5,6 +5,7 @@ import sales from '../../../images/bg-graphics/screen-flir/flir-sharp.png'
 import maintanence from '../../../images/bg-graphics/screen-flir/sales1.png'
 import accessories from '../../../images/bg-graphics/screen-flir/acessories.png'
 import purchase from '../../../images/bg-graphics/screen-flir/flirinventory.png'
+import {LinkContainer} from "react-router-bootstrap";
 
 
 
@@ -64,6 +65,13 @@ const FlirText = () => {
                 <p>
                     Bison Aviation is always in the market for used airborne FLIR & EO/IR systems, along with related mission support equipment. If you have equipment taking up space in the back of your hangar, or if your agency is ready to upgrade and doesn't know what to do with its old equipment, contact Bison Aviation. We will provide you with a firm offer to purchase your equipment and will even work directly with manufacturers to help offset the cost of your new system, rather than allowing the value of the surplus equipment to simply be dropped back into the general fund.
                 </p>
+            </Col>
+            <Col xs={12}>
+                <LinkContainer to='/flir-terms'>
+                            <span className='global_blue global_cursor Flir_hover-terms'>
+                              FLIR TERMS AND CONDITIONS
+                            </span>
+                </LinkContainer>
             </Col>
         </Row>
 

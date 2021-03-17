@@ -40,6 +40,15 @@
     color: red;
 }
 
+.Flir_hover-terms{
+    text-decoration: underline;
+}
+
+.Flir_hover-terms:hover{
+    color: white;
+    cursor: pointer;
+}
+
 /*    ======   MOBILE RESPONSIVE    ======    */
 @media (max-width: 900px) {
     .FlirTable_style{
