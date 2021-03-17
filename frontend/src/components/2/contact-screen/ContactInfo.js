@@ -6,7 +6,6 @@ import {LinkContainer} from "react-router-bootstrap";
 const ContactInfo = () => {
 
 
-
     return (
         <>
             <Container>
@@ -144,7 +143,13 @@ const ContactInfo = () => {
                     <Col xs={12} className='text-center my-5'>
                         <LinkContainer to='/terms'>
                             <span className='global_red global_cursor Contact_hover-terms'>
-                              &nbsp;  TERMS AND CONDITIONS
+                              GENERAL TERMS AND CONDITIONS
+                            </span>
+                        </LinkContainer>
+                    <br/>
+                        <LinkContainer to='/flir-terms'>
+                            <span className='global_red global_cursor Contact_hover-terms'>
+                              FLIR TERMS AND CONDITIONS
                             </span>
                         </LinkContainer>
                     </Col>
