@@ -26,6 +26,7 @@ import FlirScreen from "./screens/FlirScreen";
 import TeamScreen from "./screens/TeamScreen";
 import ContactScreen from "./screens/ContactScreen";
 import TermsScreen from "./screens/TermsScreen";
+import TermsFlirScreen from "./screens/TermsFlirScreen";
 
 
 const App = () => {
@@ -50,6 +51,7 @@ const App = () => {
                     <Route path='/team' component={TeamScreen}/>
                     <Route path='/contact' component={ContactScreen}/>
                     <Route path='/terms' component={TermsScreen}/>
+                    <Route path='/flir-terms' component={TermsFlirScreen}/>
 
                     <Route path='/products' component={ProductsDisplayScreen} exact/>
 

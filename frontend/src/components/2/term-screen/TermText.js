@@ -23,7 +23,7 @@ const TermText = () => {
                         equipment services or sales. Terms and conditions for airborne EO/IR, FLIR and mission support
                         equipment services or sales can be found at the following link:
                         <LinkContainer to='/flir-terms'>
-                            <span className='global_red'>
+                            <span className='global_red global_cursor'>
                               &nbsp;  FLIR Terms
                             </span>
 
