@@ -9,31 +9,46 @@
 }
 
 .Contact_border{
-    border-left: 1px solid red;
-    border-right: 1px solid red;
+    border-left: 1px solid #2576e5;
+    border-right: 1px solid #2576e5;
 }
+
 
 .Contact_icons{
     font-size: 2.5vw;
-    color: red;
+    color: white;
+    /*color: #2576e5;*/
 }
 
 .Contact_icons-title{
-    color: red;
+    color: #2576e5;
+    font-size: 1.5vw;
 }
 
 .Contact_title{
-    color: white;
+    color: red;
+    font-size: 3vh;
+    text-align: center;
 }
 
-/*.Contact_icons-text{*/
-/*    color: red;*/
-/*}*/
+.ContactHero_title-box{
+    width: 30vw;
+}
 
-@media (max-width: 900px) {
+.ContactHero_title{
+    font-size: 4vw;
+    color: #660708;
+}
+
+/*@media (max-width: 900px) {*/
+@media (max-width: 700px) {
 
     .Contact_icons{
-        font-size: 3.5vw;
+        font-size: 4.5vw;
+    }
+
+    .Contact_icons-title{
+        font-size: 3vw;
     }
 
     #Contact_responsive-padding{
@@ -43,4 +58,22 @@
     .Contact_border{
         border:none;
     }
+
+    .Contact_responsive-padding{
+        padding-top: 5vh;
+    }
+
+    .Contact_responsive-map{
+        margin-top: 10vh;
+    }
+
+    .ContactHero_title{
+        font-size: 10vw;
+    }
+
+    .ContactHero_title-box{
+        width: 100vw;
+        margin-top: 5vh;
+    }
+
 }

@@ -9,9 +9,9 @@ const ContactHero = () => {
 
         <Jumbotron className='ContactScreen_hero-img '
                    fluid>
-            {/*<Container className='text-center border-5'>*/}
-            {/*    <h1>Contact</h1>*/}
-            {/*</Container>*/}
+            <Container className='text-center border-5 ContactHero_title-box'>
+                <p className='ContactHero_title'>Get In Touch!</p>
+            </Container>
         </Jumbotron>
 
     )

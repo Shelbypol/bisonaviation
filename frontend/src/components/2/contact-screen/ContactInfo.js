@@ -3,6 +3,9 @@ import {Container, Row, Col, Form} from "react-bootstrap";
 import SocialIcons from "../../SocialIcons";
 
 const ContactInfo = () => {
+
+
+
     return (
         <>
             <Container>
@@ -29,7 +32,7 @@ const ContactInfo = () => {
                                     F: 888-224-2127
                                 </p>
                                 <p>
-                                    <span className='Contact_icons-title'>AOG:</span> 888-SOS-BISON (888-767-2476)
+                                    <span style={{color: 'red'}}>AOG:</span> 888-SOS-BISON (888-767-2476)
                                 </p>
 
 
@@ -38,13 +41,13 @@ const ContactInfo = () => {
                     </Col>
 
                     {/*   ADDRESS ICON/TEXT   */}
-                    <Col md={4} sm={12} className='Contact_border'>
+                    <Col md={4} sm={12} className='Contact_border Contact_responsive-padding'>
                         <Row>
                             <Col xs={12}>
                                 <i className="Contact_icons fal fa-map-marker-alt"> </i>
                             </Col>
-                            <Col xs={12} className='my-3 Contact_icons-title'>
-                                <p>ADDRESS</p>
+                            <Col xs={12} className='my-3'>
+                                <p className='Contact_icons-title'>ADDRESS</p>
                             </Col>
                             <Col xs={12}>
                                 <p className='Contact_icons-text p-0 m-0'>
@@ -61,13 +64,13 @@ const ContactInfo = () => {
                     </Col>
 
                     {/*   EMAIL ICON/TEXT   */}
-                    <Col md={4} sm={12} id='Contact_responsive-padding'>
+                    <Col md={4} sm={12} className='Contact_responsive-padding '>
                         <Row>
                             <Col xs={12}>
                                 <i className="Contact_icons fal fa-envelope"> </i>
                             </Col>
-                            <Col xs={12} className='my-3 Contact_icons-title'>
-                                <p>EMAIL</p>
+                            <Col xs={12} className='my-3'>
+                                <p className='Contact_icons-title'>EMAIL</p>
                             </Col>
                             <Col xs={12}>
                                 <p className='Contact_icons-text p-0 m-0'>
@@ -78,42 +81,56 @@ const ContactInfo = () => {
                     </Col>
                 </Row>
 
-                <Row className='my-5'>
-                    <Col className='text-center text-white' xs={12}>
+                <Row className='my-5 pt-5' style={{color: 'red'}}>
+                    <Col className='text-center' xs={12}>
                         IF YOU HAVE ANY QUESTIONS
                     </Col>
-                    <Col className='text-center text-white' xs={12}>
+                    <Col className='text-center' xs={12}>
                         PLEASE DO NOT HESITATE TO SEND US A MESSAGE
                     </Col>
                 </Row>
 
-                <Row>
+                <Row className='mb-5'>
                     {/*    EMAIL FORM     */}
                     <Col md={6} xs={12}>
-                        <Form>
+                        <Form className='global_blue'>
+                            {/*EMAIL*/}
                             <Form.Group controlId="exampleForm.ControlInput1">
                                 <Form.Label>Email address</Form.Label>
                                 <Form.Control type="email" placeholder="name@example.com"/>
                             </Form.Group>
+
+                            {/*FIRST NAME*/}
+                            <Form.Group controlId="exampleForm.ControlInput1">
+                                <Form.Label>First Name</Form.Label>
+                                <Form.Control type="firstName" placeholder="name@example.com"/>
+                            </Form.Group>
+
+                            {/*LAST NAME*/}
+                            <Form.Group controlId="exampleForm.ControlInput1">
+                                <Form.Label>Last Name</Form.Label>
+                                <Form.Control type="lastName" placeholder="name@example.com"/>
+                            </Form.Group>
+
                             <Form.Group controlId="exampleForm.ControlSelect1">
-                                <Form.Label>Example select</Form.Label>
+                                <Form.Label>Subject</Form.Label>
                                 <Form.Control as="select">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
+                                    <option>Customer Support</option>
+                                    <option>Sales Marketing</option>
+                                    <option>Job Opportunities</option>
+                                    <option>Product Support</option>
+                                    <option>Suggestions</option>
                                 </Form.Control>
                             </Form.Group>
                             <Form.Group controlId="exampleForm.ControlTextarea1">
-                                <Form.Label>Example textarea</Form.Label>
-                                <Form.Control as="textarea" rows={5}/>
+                                <Form.Label>Message</Form.Label>
+                                <Form.Control as="textarea" rows={6}/>
                             </Form.Group>
                         </Form>
                     </Col>
 
                     {/*      MAP     */}
-                    <Col md={6} xs={12}>
+                    <Col md={6} xs={12} className='Contact_responsive-map'>
                         <iframe width="100%" height="550"
                                 src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=400%20sw%20boerne%20stage%airfield%20boerne%20tx%2078006+(Bison%20Aviation)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
                                 frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"><a

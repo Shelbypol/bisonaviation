@@ -62,6 +62,10 @@ main {
     color: #F5F3F4;
 }
 
+.global_blue{
+    color: #2576e5
+}
+
 /*================= CAROUSEL ======================*/
 .global_HeroCarousel-animation {
     -webkit-animation: zoomin 25s; /* Chrome, Safari, Opera */
