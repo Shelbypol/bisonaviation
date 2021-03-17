@@ -106,78 +106,168 @@ const TermText = () => {
 
                 <Col xs={12}>
                     <p>
-
+                        <span className='global_red'>
+                           No Waiver:   &nbsp;
+                        </span>
+                        The failure of Bison Aviation to immediately enforce any provision, right, or remedy of this contract does not waive the right of Bison Aviation to enforce the provision, right, or remedy at some later time, nor does it preclude the right of Bison Aviation to enforce any other provision, right, or remedy of this contract. The failure of Bison Aviation to immediately collect payments when due is not a waiver of any amounts due and owing, and the acceptance of partial payments does not mean that Bison Aviation has waived the right to collect the full amounts due and owing.
                     </p>
                 </Col>
 
                 <Col xs={12}>
                     <p>
-
+                        <span className='global_red'>
+                           Consent to Photography:   &nbsp;
+                        </span>
+                        Customer consents that Bison Aviation may photograph, video, or otherwise record images of Customer's aircraft and may use said recordings for any purpose which Bison Aviation deems fit, including commercial applications such as advertising.
                     </p>
                 </Col>
 
                 <Col xs={12}>
                     <p>
-
+                        <span className='global_red'>
+                           Contract Construction:   &nbsp;
+                        </span>
+                        In interpreting this contract, the parties agree that it should be interpreted as if neither party had drafted it for its own benefit, such that there is no presumed bias in favor of, or against, either party.
                     </p>
                 </Col>
                 <Col xs={12}>
                     <p>
-
+                        <span className='global_red'>
+                           Severability:   &nbsp;
+                        </span>
+                        If a court of competent jurisdiction determines that any section of this agreement is not enforceable, or otherwise void or illegal, the remainder of the agreement shall remain in full force and effect, and the parties remain bound by its provisions.
                     </p>
                 </Col>
                 <Col xs={12}>
                     <p>
-
+                        <span className='global_red'>
+                           Applicable Law:  &nbsp;
+                        </span>
+                        This agreement is to be construed in accordance with the laws of the State of Texas, United States.
                     </p>
                 </Col>
                 <Col xs={12}>
                     <p>
-
+                        <span className='global_red'>
+                           Dispute Resolution:  &nbsp;
+                        </span>
+                        Any disputes arising under this agreement, including claims regarding actions leading to the execution of this contract, or for any repair services performed hereunder, shall be resolved by adjudication in the civil courts of Bexar County, Texas, United States. The parties agree to waive a jury trial in any such litigation.
                     </p>
                 </Col>
 
                 <Col xs={12}>
                     <p>
-
+                        <span className='global_red'>
+                           Attorney’s Fees:  &nbsp;
+                        </span>
+                        If Bison Aviation is required to take any action to enforce the provisions of this agreement, Customer agrees to compensate Bison Aviation for the incursion of any court costs and attorney’s fees. Attorney’s fees include appellate fees.
+                    </p>
+                </Col>
+                <Col xs={12}>
+                    <h3 className='global_red'>
+                        PARTS EXTENDED LIMITED WARRANTY
+                    </h3>
+                </Col>
+                <Col xs={12}>
+                    <p>
+                        <span className='global_red'>
+                          1. REPAIRED / OVERHAULED EQUIPMENT:   &nbsp;
+                        </span>
+                        Bison Aviation, LLC (Bison Aviation.) warrants all equipment and spare parts which it repairs or overhauls to be free of defects in workmanship and material for a period specified. Repaired units for 30 days and overhauled units for 90 days from date of invoice. The material found defective must be returned within the warranty period. This warranty is limited to repair, replacement or refund of purchase price at Bison Aviation’s discretion. All freight, labor, resulting damage or related costs caused by the defective part will not be covered unless specifically agreed to in writing by an authorized Bison Aviation Representative. The cost of removal and installations must be paid by the customer. Purchaser is required to provide Bison Aviation such information as the date of installation, hours in service as reflected in aircraft log book, nature of defect and any other information to allow Bison Aviation. the opportunity to meet vendor’s warranty requirements. The warranty is void if the unit shows signs abuse, alteration(s), broken seal(s), improper installation(s) or packaging inadequate for the protection of the item returned by shipment. The warranties set forth herein are expressly in lieu of any and all other warranties and obligations either expressed or implied, including warranty of merchantability, fitness or suitability for any purpose. If a component is returned for warranty and it is determined that the warranty is denied, customer will be billed for all incurred costs.
                     </p>
                 </Col>
                 <Col xs={12}>
                     <p>
-
+                        <span className='global_red'>
+                          2. EXCHANGE POLICY:   &nbsp;
+                        </span>
+                        All exchange core units must be same identical part number and modification status unless otherwise agreed upon by Bison Aviation. If exchange core units are not same identical part number and modification status, customer will be billed an addition for, or forfeit the core deposit for all upgrade and/or replacement costs. Exchange prices are based on the return of identical item with routine overhaul or repair costs. Cost of repair or overhaul above routine charges will be billed in addition to the exchange charges. The exchange price will not be applicable in the case of abnormal or excessive damage due to fire, use, accident, abnormal wear or unauthorized repair. All cores must be returned within ten (10) days from the date of removal or the cost of the core plus non cash fees will be billed in addition as appropriate by Bison Aviation.
                     </p>
                 </Col>
                 <Col xs={12}>
                     <p>
-
+                        <span className='global_red'>
+                          3. CORE RETURN CERTIFICATION REQUIREMENTS   &nbsp;
+                        </span>
+                        Due to the requirement of traceability of parts, Bison Aviation will provide a Repairable Core Return tag. This provided tag serves as a component history record for all exchange units. Bison Aviation will not accept a core unit without its provided tag completed. The customer will forfeit the core deposit if any, if the core return tag is not attached to returned core part. Units found to be uneconomical to repair will be returned to the customer and the core deposit will be forfeited to Bison Aviation or a core deposit will be billed for replacement cost of the component or part.
                     </p>
                 </Col>
                 <Col xs={12}>
                     <p>
-
+                        <span className='global_red'>
+                          4. MATERIAL RETURN POLICY:    &nbsp;
+                        </span>
+                        All returns for credit or refund must be accompanied by a return authorization number provided by Bison Aviation. Items returned for credit or refund will be billed a restocking fee. This fee will be determined by component due to re-certification fees. Due to FAA requirements, all components returned will have to be re-certified to be placed back into stock.
                     </p>
                 </Col>
                 <Col xs={12}>
                     <p>
-
+                        <span className='global_red'>
+                          5. GENERAL CONDITIONS AS TO COMPONENTS AND PARTS:     &nbsp;
+                        </span>
+                        All units are to be shipped prepaid to Bison Aviation in an appropriate shipping container to avoid damage during transit. Shipments requiring counter to counter service will be billed all shipping cost in addition to a special handling charge of One Hundred United States Dollars (US$100.00). Any assessed HAZMAT fees will be added to and included in the final invoice. Bison Aviation reserves the right to make changes in or additions to in its policies without prior notice to its customers. All first orders will be billed C.O.D. unless credit terms are pre-arranged. After thirty (30) days, all unpaid balances are subject to one and a half percent (1.5%) per month / eighteen percent (18%) annual percentage rate and the account will be placed on a C.O.D. basis.
                     </p>
                 </Col>
                 <Col xs={12}>
                     <p>
-
+                        <span className='global_red'>
+                          6. CUSTOMER SUPPLIED PARTS:     &nbsp;
+                        </span>
+                        Parts supplied by customers will be subject to a handling fee of 20% (Twenty Percent) of Original Equipment Manufacture (OEM) suggested retail pricing, not to exceed $5000.00 (Five thousand). Bison Aviation will not be liable for any labor or part warranty on customer supplied parts if the part(s) fails to operate correctly. Customer supplied parts must be accompanied with all approved documentation prior to installation. Cores for customer supplied parts are the sole responsibility of the customer once returned to the customer. Bison Aviation is not liable for any charges assessed for customer supplied parts.
+                    </p>
+                </Col>
+                <Col xs={12}>
+                    <h3 className='global_red'>
+                        BISON AVIATION LABOR WARRANTY
+                    </h3>
+                </Col>
+                <Col xs={12}>
+                    <p className='global_red'>
+                        <span className='global_red'>
+                            1. LABOR FOR PARTS INSTALLED: &nbsp;
+                        </span>
+                        Bison Aviation, LLC (Bison Aviation) warrants all labor to be free of defects in workmanship for thirty (30) days from the date the aircraft was approved for return to service for the work performed. Parts purchased by Bison Aviation are subject to the vendor's warranty, if any such warranty exists. All labor rework will be completed at the Bison Aviation facility will be covered in full by Bison Aviation; all expenses incurred for rework completed at a different facility will be covered by the customer. Customer will be required to provide Bison Aviation such information as date of installation, hours in service as reflected in aircraft log book, nature of defect and any other information to allow Bison Aviation the opportunity to meet vendor’s warranty requirements. The warranty is void if the unit shows signs of abuse, alterations, broken seals, improper installations or improper packaging for shipment. The warranties set forth herein are expressly in lieu of any and all other warranties and obligations expressed or implied, including warranty of merchantability, fitness or suitability for any purpose. In no event shall Bison Aviation be liable for resultant damage, consequential damages or loss of use of components or overall equipment. If a component is returned for warranty and it is determined that the warranty is denied, customer will be billed for all incurred costs.
+                    </p>
+                </Col>
+                <Col xs={12}>
+                    <h3 className='global_red'>
+                        LIMITATION OF LIABILITY
+                    </h3>
+                </Col>
+                <Col xs={12}>
+                   <p>
+                       BISON AVIATION'S LIABILTY ON ANY CLAIM OF ANY KIND, INCLUDING BREACH OF CONTRACT OR WARRANTY OR FOR NEGLIGENCE OR OTHER CONDUCT, FOR ANY LOSS OR DAMAGE ARISING OUT OF, CONNECTED WITH, OR RESULTING FROM THIS AGREEMENT, OR FROM THE PERFORMANCE OR BREACH THEROF, OR FROM THE SALE, DELIVERY, RESALE, OR REPAIR OF ANY GOODS COVERED BY OR FURNISHED UNDER THIS AGREEMENT SHALL IN NO CASE EXCEED THE PRICE ALLOCABLE TO THE WORK PERFORMED BY BISON AVIATION, GOOD(S) SOLD BY BISON AVIATION, OR THE PART THEREOF WHICH GIVES RISE TO THE CLAIM. IN NO EVENT SHALL BISON AVIATION BE LIABLE FOR ANY FOR INDIRECT, SPECIAL, CONSEQUENTIAL OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO LOST PROFITS. THE LAWS OF SOME STATES DO NOT PERMIT CERTAIN LIMITATIONS ON WARRANTIES OR REMEDIES. IN THE EVENT SUCH A LAW APPLIES, THE FOREGOING EXCLUSION AND LIMITATIONS ARE AMENDED INSOFAR, AND ONLY INSOFAR, AS REQUIRED BY SAID LAWS.
+                   </p>
+                </Col>
+                <Col xs={12}>
+                    <p>
+                        These Terms and Conditions are accepted and approved by customer upon acceptance of work order or issuance of purchase order.
+                    </p>
+                </Col>
+                <Col xs={12}>
+                    <h3 className='global_red'>
+                        Web Site Privacy Policies
+                    </h3>
+                </Col>
+                <Col xs={12}>
+                    <p>
+                        Bison Aviation Aviation recognizes that respecting user privacy over the Internet is of utmost importance. This privacy statement is designed to provide information about the privacy and data collection practices for the site: http://www.BisonAviation.com. The Site is operated by Bison Aviation Aviation.
                     </p>
                 </Col>
                 <Col xs={12}>
                     <p>
-
+                        If you have questions or concerns regarding this statement, you should first contact our site coordinator at info@BisonAviation.com or by postal mail to:
                     </p>
                 </Col>
                 <Col xs={12}>
-                    <p>
-
+                    <p className='pl-5'>
+                       <ul style={{listStyleType: 'circle'}}>
+                           <li>Bison Aviation Aviation, LLC</li>
+                           <li>400 Boerne Stage Airfield</li>
+                           <li>Boerne, TX 78006</li>
+                       </ul>
                     </p>
                 </Col>
-
 
             </Row>
         </Container>
