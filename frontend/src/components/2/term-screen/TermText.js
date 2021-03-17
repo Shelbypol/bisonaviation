@@ -7,7 +7,7 @@ const TermText = () => {
 
     return (
 
-        <Container className='text-white'>
+        <Container className='text-white mb-5'>
             <Row>
                 <Col xs={12}>
                     <h2 className='Terms_title mb-5'>
