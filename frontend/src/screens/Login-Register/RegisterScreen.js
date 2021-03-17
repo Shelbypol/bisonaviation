@@ -69,7 +69,6 @@ const RegisterScreen = ({location, history}) => {
 
                     </Col>
                     <Col className='m-5 p-5 text-dark border rounded global_light-grey-bg'>
-                        {/*<FormContainer>*/}
 
                         {message && <Message variant='danger'>{message}</Message>}
 
