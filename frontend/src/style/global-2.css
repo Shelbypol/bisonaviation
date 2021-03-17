@@ -66,6 +66,18 @@ main {
     color: #2576e5
 }
 
+.global_blue-bg{
+    background-color: #2576e5
+}
+
+.global_red{
+    color: red;
+}
+
+.global_red-bg{
+    background-color: red;
+}
+
 /*================= CAROUSEL ======================*/
 .global_HeroCarousel-animation {
     -webkit-animation: zoomin 25s; /* Chrome, Safari, Opera */

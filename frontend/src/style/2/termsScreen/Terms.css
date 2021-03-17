@@ -1,0 +1,36 @@
+.TermsScreen_hero-img{
+    background-image: url("../../../images/bg-graphics/screen-terms/panel.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 200px;
+    background-position: 50% 85%;
+    width: 100vw;
+    background-color: black;
+}
+
+.TermsHero_title-box{
+    width: 30vw;
+}
+
+.TermsHero_title{
+    font-size: 4vw;
+    color: white;
+}
+
+.Terms_title{
+    color: red;
+    font-size: 3vh;
+    text-align: center;
+}
+
+/*@media (max-width: 900px) {*/
+@media (max-width: 700px) {
+    .TermsHero_title {
+        font-size: 10vw;
+    }
+
+    .TermsHero_title-box {
+        width: 100vw;
+        margin-top: 10vh;
+    }
+}

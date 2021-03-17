@@ -25,6 +25,7 @@ import MaintenanceScreen from "./screens/MaintenanceScreen";
 import FlirScreen from "./screens/FlirScreen";
 import TeamScreen from "./screens/TeamScreen";
 import ContactScreen from "./screens/ContactScreen";
+import TermsScreen from "./screens/TermsScreen";
 
 
 const App = () => {
@@ -48,6 +49,7 @@ const App = () => {
                     <Route path='/maintenance' component={MaintenanceScreen}/>
                     <Route path='/team' component={TeamScreen}/>
                     <Route path='/contact' component={ContactScreen}/>
+                    <Route path='/terms' component={TermsScreen}/>
 
                     <Route path='/products' component={ProductsDisplayScreen} exact/>
 
