@@ -1,0 +1,9 @@
+
+.Register_hover-terms{
+    font-size: 1.5vh;
+}
+
+.Register_hover-terms:hover{
+    text-decoration: underline;
+    color: red;
+}

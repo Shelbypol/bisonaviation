@@ -7,6 +7,7 @@ import Loader from '../../components/Loader'
 import FormContainer from "../../components/FormContainer";
 import {register} from '../../actions/userActions'
 import '../../style/registerScreen/registerScreen.css'
+
 import {Jumbotron} from "reactstrap";
 import {LinkContainer} from "react-router-bootstrap";
 
@@ -115,20 +116,22 @@ const RegisterScreen = ({location, history}) => {
 
                             <Button className='global_blue-bg' type='submit' variant='primary'>Register</Button>
                         </Form>
-                        <Row className='py-3'>
+                        <Row className='my-3'>
                             <Col xs={12}>
                                 Have an account? <Link
                                 to={redirect ? `/login?redirect=${redirect}` : '/login'}>Login</Link>
                             </Col>
+                        </Row>
+                        <Row>
                             <Col xs={12}>
                                 <LinkContainer to='/terms'>
-                            <span className='global_red global_cursor Contact_hover-terms'>
+                            <span className='global_blue global_cursor Register_hover-terms'>
                               GENERAL TERMS AND CONDITIONS
                             </span>
                                 </LinkContainer>
                                 <br/>
                                 <LinkContainer to='/flir-terms'>
-                            <span className='global_red global_cursor Contact_hover-terms'>
+                            <span className='global_blue global_cursor Register_hover-terms'>
                               FLIR TERMS AND CONDITIONS
                             </span>
                                 </LinkContainer>
