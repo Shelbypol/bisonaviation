@@ -56,7 +56,7 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                         (<Message variant='danger'>{error}</Message>)
                         : (
                             <>
-                                <Col xs={3} className='CatMan-nav-menu-items border'>
+                                <Col xs={3} className='CatMan-nav-menu-items'>
                                     {/*     MANUFACTURER SORT DISPLAY AVAILABLE CATS ON CLICK    */}
 
 
