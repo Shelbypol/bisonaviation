@@ -3,6 +3,7 @@ import {Row, Container} from 'react-bootstrap'
 import Meta from "../../components/Meta";
 import CategoryManufacturerDisplay from "../../components/ProductDisplay/CategoryManufacturerDisplay";
 import {Jumbotron} from "reactstrap";
+import StickyHeader from "../../components/Headers-Nav-Footer/StickyHeader";
 
 const ProductsDisplayScreen = ({match, history}) => {
 
@@ -26,7 +27,8 @@ const ProductsDisplayScreen = ({match, history}) => {
 
     return (
         <>
-            <Jumbotron className='global_cultured-bg m-0 p-0' fluid>
+            <StickyHeader/>
+            <Jumbotron className='global_cultured-bg mt-n5 p-0' fluid>
 
             <Container className='mx-auto p-0'>
                 <>

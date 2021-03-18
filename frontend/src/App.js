@@ -41,6 +41,10 @@ const App = () => {
                 <Route path='/admin/productlist/:pageNumber' component={ProductListScreen} exact/>
                 <Route path='/admin/product/:id/edit' component={ProductEditScreen}/>
                 <Route path='/admin/orderlist' component={OrderListScreen}/>
+                <Route path='/products' component={ProductsDisplayScreen} exact/>
+                <Route path='/search/:keyword' component={ProductsDisplayScreen} exact/>
+                <Route path='/page/:pageNumber' component={ProductsDisplayScreen} exact/>
+                <Route path='/search/:keyword/page/:pageNumber' component={ProductsDisplayScreen}/>
 
                 <Fragment>
                     <Headers/>
@@ -54,7 +58,6 @@ const App = () => {
                     <Route path='/flir-terms' component={TermsFlirScreen}/>
                     <Route path='/register' component={RegisterScreen}/>
 
-                    <Route path='/products' component={ProductsDisplayScreen} exact/>
 
                     <Container className='mb-0 pb-0'>
                         <Route path='/login' component={LoginScreen}/>
@@ -66,9 +69,7 @@ const App = () => {
                         <Route path='/placeorder' component={PlaceOrderScreen}/>
                         <Route path='/order/:id' component={OrderScreen}/>
                         <Route path='/thankyou/:id' component={ThankYouScreen}/>
-                        <Route path='/search/:keyword' component={ProductsDisplayScreen} exact/>
-                        <Route path='/page/:pageNumber' component={ProductsDisplayScreen} exact/>
-                        <Route path='/search/:keyword/page/:pageNumber' component={ProductsDisplayScreen}/>
+
 
                     </Container>
 
