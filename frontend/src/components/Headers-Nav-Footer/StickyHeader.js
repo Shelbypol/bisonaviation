@@ -110,7 +110,7 @@ const StickyHeader = () => {
                                     {/*  EO/IR FLIR  */}
                                     <LinkContainer className='mx-1' to='/flir'>
                                         <Nav.Link>
-                                            EO/IR Flir
+                                            Flir
                                         </Nav.Link>
                                     </LinkContainer>
 
@@ -159,7 +159,7 @@ const StickyHeader = () => {
                                     {/*  EO/IR FLIR  */}
                                     <LinkContainer className='mx-1' to='/flir'>
                                         <Nav.Link>
-                                            EO/IR Flir
+                                            Flir
                                         </Nav.Link>
                                     </LinkContainer>
 
