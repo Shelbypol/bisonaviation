@@ -77,7 +77,7 @@ const StickyHeader = () => {
                             {/*============= NAV SHOW ON SCROLL ==============*/}
 
                             {goingUp ?
-                                <Nav className='col-lg-5 col-md-6 justify-content-end global_blood-red'>
+                                <Nav className='col-lg-5 col-md-6 justify-content-end'>
 
                                     {/*  HOME  */}
                                     <LinkContainer className='mx-1' to='/'>

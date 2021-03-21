@@ -28,10 +28,8 @@
 
 .StickyHeader_nav{
     background-image: url("../images/bg-graphics/graphics/dots.png");
-    background-color: rgba(0,0,0, .5);
+    background-color: rgba(0,0,0, .9);
     height: 6vh;
-    padding: 0;
-    /*background-color: #F5F3F4;*/
 }
 
 .StickyHeader_search_btn_padding{

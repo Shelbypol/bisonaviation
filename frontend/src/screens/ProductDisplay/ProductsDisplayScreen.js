@@ -28,7 +28,7 @@ const ProductsDisplayScreen = ({match, history}) => {
     return (
         <>
             <StickyHeader/>
-            <Jumbotron className='global_cultured-bg mt-n5 p-0' fluid>
+            <Jumbotron className='global_cultured-bg mt-n5 mb-0 p-0' fluid>
 
             {/*<Container className='mx-auto p-0'>*/}
                 <>
