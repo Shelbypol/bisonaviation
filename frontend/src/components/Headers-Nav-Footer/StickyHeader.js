@@ -52,7 +52,7 @@ const StickyHeader = () => {
             <header className='sticky-top m-0 p-0'>
                 {/*<header className='sticky-top m-0' id='showSearch'>*/}
 
-                <Navbar className='navbar navbar-expand-lg navbar-light StickyHeader_nav m-0 p-0 border-0'>
+                <Navbar className='navbar navbar-dark navbar-expand-lg StickyHeader_nav m-0 p-0 border-0'>
 
                     {/*<Container className='col-sm-12'>*/}
 
@@ -87,7 +87,7 @@ const StickyHeader = () => {
                                     </LinkContainer>
 
                                     {/*  BROWSE PRODUCTS  */}
-                                    <LinkContainer className='mx-1 StickyHeader_links' to='/products'>
+                                    <LinkContainer className='mx-1' to='/products'>
                                         <Nav.Link className=''>
                                             Products
                                         </Nav.Link>

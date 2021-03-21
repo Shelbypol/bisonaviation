@@ -8,6 +8,7 @@ import Message from "../Message";
 import '../../style/CategoryManufacturerSideBar.css'
 import {Route} from "react-router-dom";
 import SearchBox from "../SearchBox";
+import {Container} from "react-bootstrap/cjs";
 
 const CategoryManufacturerDisplay = ({match, history}) => {
 
@@ -50,16 +51,24 @@ const CategoryManufacturerDisplay = ({match, history}) => {
 
     return (
         <>
-                {loading ?
-                    (<Loader/>)
-                    : error ?
-                        (<Message variant='danger'>{error}</Message>)
-                        : (
-                            <>
-                                <Col xs={3} className='CatMan-nav-menu-items'>
+            {loading ?
+                (<Loader/>)
+                : error ?
+                    (<Message variant='danger'>{error}</Message>)
+                    : (
+                        <>
+
+                                <Col xs={3} className='CatMan-nav-menu-items min-vh-100 border'>
                                     {/*     MANUFACTURER SORT DISPLAY AVAILABLE CATS ON CLICK    */}
-
-
+                                    <Col xs={12} className='ml-n4'>
+                                        <Route render={({history}) => <SearchBox history={history}
+                                                                                 searchSize={'sm'}
+                                                                                 searchClasses={'col-9 py-0 bg-white border-top border-bottom border-left'}
+                                                                                 btnSize={'sm'}
+                                                                                 btnClasses={'bg-white StickyHeader_search_btn_padding px-1 col-2 rounded-right border-top border-bottom border-right'}
+                                                                                 iconClass={'fal fa-search p-0'}
+                                        />}/>
+                                    </Col>
                                     {(updateManufacturer !== '' || updateCat !== '') &&
                                     (
                                         <>
@@ -179,6 +188,7 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                                         </>
                                     )}
                                 </Col>
+
                                 < Col xs={9}>
                                     < ProductDisplayByCatMan products={products}
                                                              history={history}
@@ -190,10 +200,9 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                                                              updateManufacturerProp={updateManufacturer}/>
                                 </Col>
 
+                        </>
 
-                            </>
-
-                        )}
+                    )}
         </>
     )
 };

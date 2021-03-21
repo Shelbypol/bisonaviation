@@ -26,14 +26,12 @@
 
 /*       STICKY HEADER       */
 
-.stickyheader {
-    height: 6vh;
-    background: linear-gradient(to right, #161616, #3f3f3f);
-}
-
 .StickyHeader_nav{
-    background-color: #F5F3F4;
-    /*border-bottom: #660708 1px solid;*/
+    background-image: url("../images/bg-graphics/graphics/dots.png");
+    background-color: rgba(0,0,0, .5);
+    height: 6vh;
+    padding: 0;
+    /*background-color: #F5F3F4;*/
 }
 
 .StickyHeader_search_btn_padding{
@@ -67,7 +65,8 @@
 }
 
 .StickyHeader_links{
-    color: rgba(0,0,0,.4);
+    color: white;
+    /*opacity: .5%;*/
 }
 
 .StickyHeader_links:hover{

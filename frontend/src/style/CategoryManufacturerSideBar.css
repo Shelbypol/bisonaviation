@@ -8,5 +8,11 @@
 .CatMan-nav-menu-items {
     position: -webkit-sticky;
     position: sticky;
-    top: 5em;
+    top: 5.5em;
+    width: 25vw;
+    background-image: url("../images/bg-graphics/graphics/dots.png");
+    background-color: rgba(0,0,0, .7);
+    /*background-image: url("../images/bg-graphics/graphics/body-bg.png");*/
+    padding-left: 5vw;
+    padding-top: 5vh;
 }

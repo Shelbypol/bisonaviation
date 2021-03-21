@@ -30,7 +30,7 @@ const ProductsDisplayScreen = ({match, history}) => {
             <StickyHeader/>
             <Jumbotron className='global_cultured-bg mt-n5 p-0' fluid>
 
-            <Container className='mx-auto p-0'>
+            {/*<Container className='mx-auto p-0'>*/}
                 <>
                     <Meta title='Bison | Products'/>
 
@@ -40,7 +40,7 @@ const ProductsDisplayScreen = ({match, history}) => {
 
                     </Row>
                 </>
-            </Container>
+            {/*</Container>*/}
             </Jumbotron>
 
         </>
