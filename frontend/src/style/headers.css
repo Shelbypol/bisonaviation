@@ -9,19 +9,20 @@
 .DesktopHeader_search_btn_padding{
     /*padding-top: 1.82em;*/
     /*padding: -1em -1em;*/
-    padding: 1em 1em;
+    padding: .95em 1em;
     background-color:  #4A433D;
 }
 
 .DesktopHeader_nav {
     height: 15vh;
     /*height: 20vh;*/
-    max-height: 100%;
-    margin-top: -7vh;
+    /*max-height: 100%;*/
+    /*margin-top: -7vh;*/
+    top: -6vh;
+    bottom: 0;
     z-index: 2;
-    background-color: black;
-    /*background-color: rgba(00, 00, 00, .95);*/
-    /*background-color: transparent;*/
+    background-image: url("../images/bg-graphics/graphics/dots.png");
+    background-color: rgba(0,0,0, .9);
 }
 
 /*       STICKY HEADER       */

@@ -114,7 +114,6 @@ main {
 
 }
 
-
 .global_carousel-divider-img{
     width: 75vw;
 }
@@ -141,6 +140,7 @@ main {
     height: 1.5vh !important;
     margin-top: -3vh;
 }
+
 .global_carousel-text-btm-bar{
     height: 1.5vh !important;
     margin-top: 3vh;
