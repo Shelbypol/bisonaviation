@@ -6,7 +6,7 @@ import '../style/SocialIcons.css'
 import '../style/animations.css'
 
 
-const SocialIcons = ({socialClassName, cartClassName, contactClassName, facebookClassName, instaClassName, twitterClassName}) => {
+const SocialIcons = ({socialClassName, socialClass, cartClassName, contactClassName, facebookClassName, instaClassName, twitterClassName}) => {
 
     return (
         <>

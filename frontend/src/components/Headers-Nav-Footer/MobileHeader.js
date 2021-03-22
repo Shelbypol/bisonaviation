@@ -41,9 +41,7 @@ const MobileHeader = () => {
                             col-xs-12
                             border-0'
                 >
-                    <Container
-                        style={{backgroundColor: 'black'}}
-                    >
+                    <Container style={{backgroundColor: 'black'}}>
 
                         {/*  LOGO  */}
                         <LinkContainer className='col-xs-2' to='/'>
@@ -67,83 +65,44 @@ const MobileHeader = () => {
                                                                      // iconStyle={{fontSize: '1.53em'}}
                             />}/>
 
-
-                            <Nav className='px-3'>
+                            {/*   SOCIAL ICONS   */}
+                            <SocialIcons socialClassName={'mr-5 mb-5'}
+                                         facebookClassName={' d-flex justify-content-center'}
+                                         instaClassName={' d-flex justify-content-center'}
+                                         twitterClassName={' d-flex justify-content-center'}
+                                         contactClassName={'d-none'}
+                            />
 
                                 {/*  BROWSE PRODUCTS  */}
-                                <LinkContainer className='mx-1' to='/products'>
+                                <LinkContainer className='mx-1 MobileHeader_text d-flex justify-content-center' to='/products'>
                                     <Nav.Link>
                                         Browse Products
                                     </Nav.Link>
                                 </LinkContainer>
 
-                                {/*  AIR CRAFT SERVICES  */}
-                                <NavDropdown style={{zIndex: '100'}}
-                                             className='mx-1 navDropdown'
-                                             title='Aircraft Services'
-                                             id='aircraftservicesmenu'
-                                >
                                     {/*   AVIONICS  */}
-                                    <LinkContainer to='/avionics'>
-                                        <NavDropdown.Item> Avionics </NavDropdown.Item>
+                                    <LinkContainer to='/avionics' className='MobileHeader_text d-flex justify-content-center'>
+                                        <Nav.Link> Avionics </Nav.Link>
                                     </LinkContainer>
 
                                     {/*   MAINTENANCE  */}
-                                    <LinkContainer to='/maintenance'>
-                                        <NavDropdown.Item> Maintenance </NavDropdown.Item>
+                                    <LinkContainer to='/maintenance' className='MobileHeader_text d-flex justify-content-center'>
+                                        <Nav.Link> Maintenance </Nav.Link>
                                     </LinkContainer>
 
-                                    {/*   AOG RESPONSE  */}
-                                    <LinkContainer to='/aog'>
-                                        <NavDropdown.Item>AOG Response </NavDropdown.Item>
-                                    </LinkContainer>
-
-                                    {/*   ACQUISITIONS  */}
-                                    <LinkContainer to='/acquisitions'>
-                                        <NavDropdown.Item> Acquisitions </NavDropdown.Item>
-                                    </LinkContainer>
-
-                                    {/*   AIRCRAFT PARTS  */}
-                                    <LinkContainer to='/aircraftparts'>
-                                        <NavDropdown.Item>Aircraft Parts </NavDropdown.Item>
-                                    </LinkContainer>
-                                </NavDropdown>
 
                                 {/*  EO/IR  */}
-                                <NavDropdown style={{zIndex: '100'}}
-                                             className='mx-1'
-                                             title='EO/IR  Flir'
-                                             id='eoirmenu'
-                                >
-                                    {/*   EO / IR MAINTENANCE */}
-                                    <LinkContainer to='/eoir/maintenance'>
-                                        <NavDropdown.Item>EO/IR Maintenance </NavDropdown.Item>
+                                    <LinkContainer to='/eoir/maintenance' className='MobileHeader_text d-flex justify-content-center'>
+                                        <Nav.Link>EO/IR Flir </Nav.Link>
                                     </LinkContainer>
-
-                                    {/*   SYSTEM SALES  */}
-                                    <LinkContainer to='/systemsales'>
-                                        <NavDropdown.Item>System Sales </NavDropdown.Item>
-                                    </LinkContainer>
-
-                                    {/*   EO / IR PARTS  */}
-                                    <LinkContainer to='/eoir/parts'>
-                                        <NavDropdown.Item>EO/IR</NavDropdown.Item>
-                                    </LinkContainer>
-                                </NavDropdown>
 
                                 {/*  TEAM  */}
-                                <LinkContainer to='/team'>
+                                <LinkContainer to='/team' className='MobileHeader_text d-flex justify-content-center'>
                                     <Nav.Link>
-                                        Meet the Team
+                                        Team
                                     </Nav.Link>
                                 </LinkContainer>
-                            </Nav>
 
-                            {/*   SOCIAL ICONS   */}
-                            <SocialIcons socialClassName={'col-md-2 col-sm-4 px-3 d-inline-block justify-content-end'}
-                                         socialStyle={{fontSize: '1.8em'}}
-                                         contactClassName={'d-none'}
-                            />
 
                             <Nav className='px-3'>
                                 {/*  PROFILE  /  SIGN IN  */}
@@ -151,26 +110,22 @@ const MobileHeader = () => {
                                     <NavDropdown style={{zIndex: '100'}}
                                                  title={userInfo.name}
                                                  id={'username'}
+                                                 className='MobileHeader_text'
                                     >
-                                        <LinkContainer to='/profile'>
+                                        <LinkContainer to='/profile' className='MobileHeader_text'>
                                             <NavDropdown.Item>
                                                 <i style={{fontSize: '1.8em'}} className="pr-2 fas fa-user-cog"> </i> Profile
                                             </NavDropdown.Item>
                                         </LinkContainer>
 
-                                        <NavDropdown.Item onClick={logoutHandler}>
-                                            {/*<span className='socialIcons'>*/}
-                                            {/*<i style={{fontSize: '1.8em'}} className="fas fa-sign-out-alt"> </i>*/}
-                                            <i style={{fontSize: '1.8em'}}
-                                               className="pr-2 fal fa-plane-departure"> </i> Log out
-                                            {/*</span>*/}
+                                        <NavDropdown.Item onClick={logoutHandler} className='MobileHeader_text'>
+                                            <i style={{fontSize: '1.8em'}} className="pr-2 fal fa-plane-departure"> </i> Log out
                                         </NavDropdown.Item>
                                     </NavDropdown>
 
                                 ) : <LinkContainer to='/login'>
                                     <Nav.Link>
-                                        <Button className='px-3 py-1 rounded-pill global_bisonRedBgWhiteHoverBgBtn'>
-                                            {/*Log in*/}
+                                        <Button className='px-3 py-1 rounded global_bisonRedBgWhiteHoverBgBtn'>
                                             <i style={{fontSize: '1.8em'}}
                                                className="pr-2 fal fa-plane-arrival"> </i> Login
                                         </Button>
@@ -183,26 +138,28 @@ const MobileHeader = () => {
                                     <NavDropdown style={{zIndex: '100'}}
                                                  title='Admin'
                                                  id='adminmenu'
+                                                 className='MobileHeader_text'
                                     >
-                                        <LinkContainer to='/admin/userlist'>
+                                        <LinkContainer to='/admin/userlist' className='MobileHeader_text'>
                                             <NavDropdown.Item>Users</NavDropdown.Item>
                                         </LinkContainer>
 
-                                        <LinkContainer to='/admin/productlist'>
+                                        <LinkContainer to='/admin/productlist' className='MobileHeader_text'>
                                             <NavDropdown.Item> Products </NavDropdown.Item>
                                         </LinkContainer>
 
-                                        <LinkContainer to='/admin/orderlist'>
+                                        <LinkContainer to='/admin/orderlist' className='MobileHeader_text'>
                                             <NavDropdown.Item>Orders</NavDropdown.Item>
                                         </LinkContainer>
                                     </NavDropdown>
                                 )}
 
 
+
                                 {/*  CONTACT US  */}
-                                <LinkContainer className='mx-1' to='/'>
+                                <LinkContainer className='' to='/'>
                                     <Nav.Link>
-                                        <Button className='px-3 py-1 rounded-pill global_bisonRedBgWhiteHoverBgBtn'>
+                                        <Button className='px-3 py-1 rounded global_bisonRedBgWhiteHoverBgBtn'>
                                             Contact Us
                                         </Button>
                                     </Nav.Link>

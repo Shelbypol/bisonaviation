@@ -113,3 +113,23 @@ button.navbar-toggler:hover {
     padding-top: 2em;
     padding-bottom: 1.45em;
 }
+
+.MobileHeader_text{
+    font-size: 2.5vw;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+    border-bottom: .01vh solid rgba(255,255,255, .1);
+}
+
+.MobileHeader_text:hover{
+    background-color: #2576e5;
+    color: white;
+}
+
+/*    ======   MOBILE RESPONSIVE    ======    */
+@media (max-width: 500px) {
+    .MobileHeader_text{
+        font-size: 4vw;
+    }
+
+}

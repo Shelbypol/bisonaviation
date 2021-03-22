@@ -86,6 +86,7 @@
 }
 
 .SideBar-nav-text a:hover {
+    /*background-color: #2576e5;*/
     background-color: #660708;
     color: #fff;
     border-left: 1px solid rgba(255,255,255,.8);
