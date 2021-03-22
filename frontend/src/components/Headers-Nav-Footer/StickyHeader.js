@@ -67,7 +67,7 @@ const StickyHeader = () => {
 
 
                         {/*============= NAV SHOW ON SCROLL ==============*/}
-                        <Nav className='col-lg-5 col-md-6 justify-content-end'>
+                        <Nav className='col-md-6 justify-content-center'>
 
                             {/*  HOME  */}
                             <LinkContainer className='mx-1' to='/'>
@@ -115,14 +115,14 @@ const StickyHeader = () => {
 
 
                         {/*============= PROFILE BTNS ==============*/}
-                        <Nav className='col-lg-4 col-md-3 justify-content-end'>
+                        <Nav className='col-md-3 justify-content-end'>
 
                             <WishListTab/>
 
                             <LinkContainer to='/contact'>
                                 <Nav.Link>
                                     <Button
-                                        className='px-3 py-0 mt-2 mr-4 rounded-pill global_blood-red-bg StickyHeader_iconHidden '>
+                                        className='px-3 py-0 mt-2 rounded-pill global_blood-red-bg StickyHeader_iconHidden '>
                                                     <span className='StickyHeader_hideIcon'>
                                                      Contact
                                                  </span>
@@ -131,13 +131,15 @@ const StickyHeader = () => {
                                 </Nav.Link>
                             </LinkContainer>
 
+                            <div className='px-3 py-0 mt-1'>
+                                {!userInfo && (
+                                    <SideBar/>
+                                )}
+                            </div>
+
                         </Nav>
 
                     </Navbar.Collapse>
-
-                    {!userInfo && (
-                        <SideBar/>
-                    )}
 
                 </Navbar>
             </header>

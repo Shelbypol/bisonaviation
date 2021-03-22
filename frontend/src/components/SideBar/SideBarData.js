@@ -73,17 +73,17 @@ const SideBarData = ({showSidebar}) => {
             {/*  ADMIN DROPDOWN  */}
             {userInfo && userInfo.isAdmin && (
                 <>
-                    <li className='SideBar-nav-text'>
+                    <li className='SideBar-nav-text SideBar_admin mt-4'>
                         <Link to='/admin/userlist'>
                             <span>Users</span>
                         </Link>
                     </li>
-                    <li className='SideBar-nav-text'>
+                    <li className='SideBar-nav-text SideBar_admin'>
                         <Link to='/admin/productlist'>
                             <span>Products</span>
                         </Link>
                     </li>
-                    <li className='SideBar-nav-text'>
+                    <li className='SideBar-nav-text SideBar_admin'>
                         <Link to='/admin/orderlist'>
                             <span>Data - Info</span>
                         </Link>
