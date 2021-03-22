@@ -18,7 +18,7 @@
     /*height: 20vh;*/
     /*max-height: 100%;*/
     /*margin-top: -7vh;*/
-    top: -6vh;
+    /*top: -6vh;*/
     bottom: 0;
     z-index: 2;
     background-image: url("../images/bg-graphics/graphics/dots.png");
@@ -64,23 +64,12 @@
 }
 
 .StickyHeader_links{
-    color: white;
-    /*opacity: .5%;*/
+    color: rgba(255,255,255, 0.5);
 }
 
 .StickyHeader_links:hover{
-    color: #000;
+    color: white;
 }
-
-.StickyHeader_whiteFade{
-    position: relative;
-    margin-top: -6vh;
-    /*height: 10vh;*/
-    height: 12vh;
-    top:0;
-    z-index: -1;
-}
-
 
 /*   NAV BOOTSTRAP DROPDOWN STYLE    */
 .navbar-toggler {

@@ -18,7 +18,7 @@ const DesktopHeader = () => {
             <Fade top duration={3000} >
                 <Navbar expand="sm"
                         collapseOnSelect
-                        className='DesktopHeader_nav navbar navbar-dark navbar-expand-lg mb-n5'>
+                        className='DesktopHeader_nav navbar navbar-dark navbar-expand-lg'>
 
                     <Container className='col-sm-12'>
 

@@ -29,21 +29,17 @@ const SideBar = () => {
     return (
         <>
             <IconContext.Provider value={{color: '#fff'}}>
-                {/*<div>*/}
-                {/*<div className='SideBar-navbar' >*/}
-                {/*<Link to='#' className='SideBar-menu-bars'>*/}
-                {/*<FaIcons.FaBars onClick={showSidebar} />*/}
+
                 {userInfo ? (
                     <Link to='#'>
-                        <p onClick={showSidebar} className='mt-3 pr-4' style={{fontSize:'14px'}}>{userInfo.name}</p>
+                        <p onClick={showSidebar} className='StickyHeader_links mt-3 pr-4' style={{fontSize:'14px'}}>Welcome, {userInfo.name}</p>
                     </Link>
                 ) : (
                     <Link to='#'>
-                        <p onClick={showSidebar} className='mt-3 pr-4' style={{fontSize:'14px'}}>Login</p>
+                        <p onClick={showSidebar} className='StickyHeader_links mt-3 pr-4' style={{fontSize:'14px'}}>Login</p>
                     </Link>
                 )}
 
-                {/*</div>*/}
 
                 {userInfo ? (
                     <nav className={sidebar ? 'SideBar-nav-menu-user-logged active' : 'SideBar-nav-menu'} ref={node}
