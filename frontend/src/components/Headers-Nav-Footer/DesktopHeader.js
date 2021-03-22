@@ -4,7 +4,6 @@ import {Navbar, Container, Nav} from 'react-bootstrap'
 import {LinkContainer} from 'react-router-bootstrap'
 import SearchBox from "../SearchBox";
 import logo from '../../images/bg-graphics/graphics/Final-Logo-Horizontal.png'
-// import logo from '../../images/bg-graphics/graphics/search-logo-small.png'
 import StickyHeader from "./StickyHeader";
 import SocialIcons from "../SocialIcons";
 import Fade from 'react-reveal/Fade';
@@ -16,11 +15,10 @@ const DesktopHeader = () => {
 
             <StickyHeader/>
 
-            <Fade top duration={3000}>
+            <Fade top duration={3000} >
                 <Navbar expand="sm"
                         collapseOnSelect
-                        style={{backgroundColor: 'black'}}
-                        className='DesktopHeader_nav navbar navbar-dark navbar-expand-lg p-0'>
+                        className='DesktopHeader_nav navbar navbar-dark navbar-expand-lg'>
 
                     <Container className='col-sm-12'>
 

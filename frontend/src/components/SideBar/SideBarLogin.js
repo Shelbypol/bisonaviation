@@ -2,6 +2,7 @@ import React, {useEffect, useRef, useState} from 'react';
 import {Link} from 'react-router-dom';
 import SideBarDataLogin from "./SideBarDataLogin";
 import '../../style/SideBar.css'
+import '../../style/headers.css'
 import {IconContext} from 'react-icons';
 import {useSelector} from "react-redux";
 
@@ -46,11 +47,11 @@ const SideBarLogin = () => {
                 {/*<FaIcons.FaBars onClick={showSidebar} />*/}
                 {userInfo ? (
                     <Link to='#'>
-                        <p onClick={showSidebar} className='pr-4'>{userInfo.name}</p>
+                        <p onClick={showSidebar} className='.StickyHeader_links pr-4'>{userInfo.name}</p>
                     </Link>
                 ) : (
                     <Link to='#'>
-                        <p onClick={showSidebar} className=' pr-4'>Login</p>
+                        <p onClick={showSidebar} className='.StickyHeader_links pr-4'>Login</p>
                     </Link>
                 )}
                 {/*</div>*/}

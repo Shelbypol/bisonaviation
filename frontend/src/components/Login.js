@@ -38,7 +38,7 @@ const Login = ({history, showSidebar}) => {
     return (
 
             <Form onSubmit={submitHandler} className='mx-2'>
-                <p>Login</p>
+                <h4 className='global_blue'>Login</h4>
                 <Form.Group controlId='email'>
                     {/*<Form.Label>Email Address</Form.Label>*/}
                     <Form.Control type='email'
@@ -56,7 +56,7 @@ const Login = ({history, showSidebar}) => {
                                   onChange={(e) => setPassword(e.target.value)}>
                     </Form.Control>
                 </Form.Group>
-                <Button className='py-0 px-1 global_whiteFontRedHoverWhiteBg rounded' type='submit' variant='primary'
+                <Button className=' py-2 px-3 global_whiteFontRedHoverWhiteBg global_blue-bg rounded' type='submit' variant='primary'
                         onClick={showSidebar}>Sign In</Button>
             </Form>
 

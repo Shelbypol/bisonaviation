@@ -50,183 +50,98 @@ const StickyHeader = () => {
     return (
         <>
             <header className='sticky-top m-0 p-0'>
-                {/*<header className='sticky-top m-0' id='showSearch'>*/}
-
-                <Navbar className='navbar navbar-expand-lg navbar-light StickyHeader_nav m-0 p-0 border-0'>
-
-                    {/*<Container className='col-sm-12'>*/}
-
-                        <Navbar.Toggle aria-controls="basic-navbar-nav"/>
-                        <Navbar.Collapse id="basic-navbar-nav">
-
-                            {/*===============  SEARCH BAR  ==================*/}
-
-                            {goingUp &&
-                            <Nav className={'col-lg-3 ml-4 d-sm-none d-md-none d-lg-block'}>
-                                <Route render={({history}) => <SearchBox history={history}
-                                                                         searchSize={'sm'}
-                                                                         searchClasses={'col-9 py-0 bg-white border-top border-bottom border-left'}
-                                                                         btnSize={'sm'}
-                                                                         btnClasses={'bg-white StickyHeader_search_btn_padding px-1 col-2 rounded-right border-top border-bottom border-right'}
-                                                                         iconClass={'fal fa-search p-0'}
-                                />}/>
-                            </Nav>
-
-                            }
-
-                            {/*============= NAV SHOW ON SCROLL ==============*/}
-
-                            {goingUp ?
-                                <Nav className='col-lg-5 col-md-6 justify-content-end global_blood-red'>
-
-                                    {/*  HOME  */}
-                                    <LinkContainer className='mx-1' to='/'>
-                                        <Nav.Link>
-                                            <i className='far fa-home StickyHeader_links' style={{fontSize: '1.5em'}}> </i>
-                                        </Nav.Link>
-                                    </LinkContainer>
-
-                                    {/*  BROWSE PRODUCTS  */}
-                                    <LinkContainer className='mx-1 StickyHeader_links' to='/products'>
-                                        <Nav.Link className=''>
-                                            Products
-                                        </Nav.Link>
-                                    </LinkContainer>
-
-                                    {/*  AVIONICS  */}
-                                    <LinkContainer className='mx-1' to='/avionics'>
-                                        <Nav.Link>
-                                            Avionics
-                                        </Nav.Link>
-                                    </LinkContainer>
-
-                                    {/*  MAINTENANCE  */}
-                                    <LinkContainer className='mx-1' to='/maintenance'>
-                                        <Nav.Link>
-                                            Maintenance
-                                        </Nav.Link>
-                                    </LinkContainer>
-
-                                    {/*  EO/IR FLIR  */}
-                                    <LinkContainer className='mx-1' to='/flir'>
-                                        <Nav.Link>
-                                            EO/IR Flir
-                                        </Nav.Link>
-                                    </LinkContainer>
-
-                                    {/*  TEAM  */}
-                                    <LinkContainer className='mx-1' to='/team'>
-                                        <Nav.Link>
-                                            Team
-                                        </Nav.Link>
-                                    </LinkContainer>
-
-                                </Nav>
-
-                                :
-
-                                // ============= NAV HIDDEN ON SCROLL ==============
-                                <Nav className='col-lg-8 ml-4 col-md-6 justify-content-end global_accentFont'>
-
-                                    {/*  HOME  */}
-                                    <LinkContainer className='mx-1' to='/'>
-                                        <Nav.Link>
-                                            <i className='far fa-home StickyHeader_links' style={{fontSize: '1.5em'}}> </i>
-                                        </Nav.Link>
-                                    </LinkContainer>
-
-                                    {/*  BROWSE PRODUCTS  */}
-                                    <LinkContainer className='mx-1' to='/products'>
-                                        <Nav.Link className='StickyHeader_links'>
-                                            Products
-                                        </Nav.Link>
-                                    </LinkContainer>
-
-                                    {/*  AVIONICS  */}
-                                    <LinkContainer className='mx-1' to='/avionics'>
-                                        <Nav.Link>
-                                            Avionics
-                                        </Nav.Link>
-                                    </LinkContainer>
-
-                                    {/*  MAINTENANCE  */}
-                                    <LinkContainer className='mx-1' to='/maintenance'>
-                                        <Nav.Link>
-                                            Maintenance
-                                        </Nav.Link>
-                                    </LinkContainer>
-
-                                    {/*  EO/IR FLIR  */}
-                                    <LinkContainer className='mx-1' to='/flir'>
-                                        <Nav.Link>
-                                            EO/IR Flir
-                                        </Nav.Link>
-                                    </LinkContainer>
-
-                                    {/*  TEAM  */}
-                                    <LinkContainer className='mx-1' to='/team'>
-                                        <Nav.Link>
-                                            Team
-                                        </Nav.Link>
-                                    </LinkContainer>
-
-                                </Nav>
-                            }
-
-                            {/*============= PROFILE BTNS HIDDEN ON SCROLL ==============*/}
-                            {/*   PROFILE BTNS  */}
-                            {goingUp ?
-                                    <Nav className='col-lg-4 col-md-6 justify-content-end'>
-
-                                        <WishListTab/>
 
 
-                                        <LinkContainer to='/contact'>
-                                            <Nav.Link>
-                                                <Button
-                                                    className='px-3 py-0 mt-2 mr-4 rounded-pill global_blood-red-bg StickyHeader_iconHidden '>
+                <Navbar className='navbar navbar-dark navbar-expand-lg StickyHeader_nav m-0 p-0 border-0'>
+
+
+                    <Navbar.Toggle aria-controls="basic-navbar-nav"/>
+                    <Navbar.Collapse id="basic-navbar-nav">
+
+                        {/*===============  SEARCH BAR  ==================*/}
+                        <Nav className={'col-md-3 ml-4 d-sm-none d-md-block'}>
+                            {userInfo && (
+                                <SideBar/>
+                            )}
+                        </Nav>
+
+
+                        {/*============= NAV SHOW ON SCROLL ==============*/}
+                        <Nav className='col-md-6 justify-content-center'>
+
+                            {/*  HOME  */}
+                            <LinkContainer className='mx-1' to='/'>
+                                <Nav.Link>
+                                    <i className='far fa-home StickyHeader_links' style={{fontSize: '1.5em'}}> </i>
+                                </Nav.Link>
+                            </LinkContainer>
+
+                            {/*  BROWSE PRODUCTS  */}
+                            <LinkContainer className='mx-1' to='/products'>
+                                <Nav.Link className=''>
+                                    Products
+                                </Nav.Link>
+                            </LinkContainer>
+
+                            {/*  AVIONICS  */}
+                            <LinkContainer className='mx-1' to='/avionics'>
+                                <Nav.Link>
+                                    Avionics
+                                </Nav.Link>
+                            </LinkContainer>
+
+                            {/*  MAINTENANCE  */}
+                            <LinkContainer className='mx-1' to='/maintenance'>
+                                <Nav.Link>
+                                    Maintenance
+                                </Nav.Link>
+                            </LinkContainer>
+
+                            {/*  EO/IR FLIR  */}
+                            <LinkContainer className='mx-1' to='/flir'>
+                                <Nav.Link>
+                                    Flir
+                                </Nav.Link>
+                            </LinkContainer>
+
+                            {/*  TEAM  */}
+                            <LinkContainer className='mx-1' to='/team'>
+                                <Nav.Link>
+                                    Team
+                                </Nav.Link>
+                            </LinkContainer>
+
+                        </Nav>
+
+
+                        {/*============= PROFILE BTNS ==============*/}
+                        <Nav className='col-md-3 justify-content-end'>
+
+                            <WishListTab/>
+
+                            <LinkContainer to='/contact'>
+                                <Nav.Link>
+                                    <Button
+                                        className='px-3 py-0 mt-2 rounded-pill global_blood-red-bg StickyHeader_iconHidden '>
                                                     <span className='StickyHeader_hideIcon'>
                                                      Contact
                                                  </span>
-                                                    <span className='StickyHeader_hideWords'>Contact</span>
-                                                </Button>
-                                            </Nav.Link>
-                                        </LinkContainer>
+                                        <span className='StickyHeader_hideWords'>Contact</span>
+                                    </Button>
+                                </Nav.Link>
+                            </LinkContainer>
 
-                                    </Nav>
+                            <div className='px-3 py-0 mt-1'>
+                                {!userInfo && (
+                                    <SideBar/>
+                                )}
+                            </div>
 
-                                :
-                                // ============= LOGIN/REG CONTACT BTNS SHOW ON SCROLL ==============
-                                    <Nav className='col-lg-4 col-md-6 justify-content-end'>
+                        </Nav>
 
-                                        <WishListTab/>
+                    </Navbar.Collapse>
 
-                                        {/* CONTACT  */}
-                                        <LinkContainer to='/contact'>
-                                            <Nav.Link>
-                                                <Button
-                                                    className='px-3 py-0 mt-2 mr-4 rounded-pill global_blood-red-bg StickyHeader_iconHidden'>
-                                                 <span className='StickyHeader_hideIcon'>
-                                                    Contact
-                                                 </span>
-                                                    <span className='StickyHeader_hideWords'>Contact</span>
-                                                </Button>
-                                            </Nav.Link>
-                                        </LinkContainer>
-
-                                    </Nav>
-
-                            }
-                        </Navbar.Collapse>
-
-
-
-                <SideBar/>
-
-
-                    {/*</Container>*/}
                 </Navbar>
-                <div className='StickyHeader_whiteFade col-sm-12 position-sticky'> </div>
             </header>
         </>
 

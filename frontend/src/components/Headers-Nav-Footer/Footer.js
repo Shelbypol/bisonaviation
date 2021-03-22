@@ -10,7 +10,7 @@ import Zoom from 'react-reveal';
 
 const Footer = () => {
     return (
-        <footer className='Footer_margin m-0 p-0'>
+        <footer className='Footer_margin mb-n5 mt-0 mx-0 p-0'>
 
 <Zoom bottom duration={10000}>
             <Jumbotron className='m-0 p-0 global_blood-red-bg global_cultured Footer_social-icons' fluid>

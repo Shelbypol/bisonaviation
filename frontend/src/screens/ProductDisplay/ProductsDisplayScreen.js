@@ -3,6 +3,7 @@ import {Row, Container} from 'react-bootstrap'
 import Meta from "../../components/Meta";
 import CategoryManufacturerDisplay from "../../components/ProductDisplay/CategoryManufacturerDisplay";
 import {Jumbotron} from "reactstrap";
+import StickyHeader from "../../components/Headers-Nav-Footer/StickyHeader";
 
 const ProductsDisplayScreen = ({match, history}) => {
 
@@ -26,9 +27,10 @@ const ProductsDisplayScreen = ({match, history}) => {
 
     return (
         <>
-            <Jumbotron className='global_cultured-bg m-0 p-0' fluid>
+            <StickyHeader/>
+            <Jumbotron className='global_cultured-bg mt-n5 mb-0 p-0' fluid>
 
-            <Container className='mx-auto p-0'>
+            {/*<Container className='mx-auto p-0'>*/}
                 <>
                     <Meta title='Bison | Products'/>
 
@@ -38,7 +40,7 @@ const ProductsDisplayScreen = ({match, history}) => {
 
                     </Row>
                 </>
-            </Container>
+            {/*</Container>*/}
             </Jumbotron>
 
         </>

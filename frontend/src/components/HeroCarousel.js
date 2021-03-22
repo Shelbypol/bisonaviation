@@ -50,10 +50,10 @@ const HeroCarousel = (
 ) => {
     return (
         <>
-            <Carousel>
+            <Carousel className=''>
 
                 {/*    ================= Img 1 */}
-                <Carousel.Item className='border-bottom border-5 border-dark'>
+                <Carousel.Item>
                     <Carousel.Caption>
                         <Row className='global_carousel-text-box'>
                             <Col md={5} xs={7} className='global_carousel-text-top-bar global_blood-red-bg'> </Col>
@@ -95,7 +95,7 @@ const HeroCarousel = (
                 {/*    ================= Img 2 */}
 
                 {carouselImg2True && (
-                    <Carousel.Item className='border-bottom border-5 border-dark'>
+                    <Carousel.Item>
                         <Carousel.Caption>
                             <Row className='global_carousel-text-box'>
                                 <Col md={5} xs={7} className='global_carousel-text-top-bar global_blood-red-bg'> </Col>
@@ -138,7 +138,7 @@ const HeroCarousel = (
                 {/*    ================= Img 3 */}
 
                 {carouselImg3True && (
-                    <Carousel.Item className='border-bottom border-5 border-dark'>
+                    <Carousel.Item>
                         <Carousel.Caption>
                             <Row className='global_carousel-text-box'>
                                 <Col md={5} xs={7} className='global_carousel-text-top-bar global_blood-red-bg'> </Col>
@@ -183,7 +183,7 @@ const HeroCarousel = (
 
 
                 {carouselImg4True && (
-                    <Carousel.Item className='border-bottom border-5 border-dark'>
+                    <Carousel.Item>
                         <Carousel.Caption>
                             <Row className='global_carousel-text-box'>
                                 <Col md={5} xs={7} className='global_carousel-text-top-bar global_blood-red-bg'> </Col>
@@ -226,7 +226,7 @@ const HeroCarousel = (
                 {/*    ================= Img 5 */}
 
                 {carouselImg5True && (
-                    <Carousel.Item className='border-bottom border-5 border-dark'>
+                    <Carousel.Item>
                         <Carousel.Caption>
                             <Row className='global_carousel-text-box'>
                                 <Col md={5} xs={7} className='global_carousel-text-top-bar global_blood-red-bg'> </Col>

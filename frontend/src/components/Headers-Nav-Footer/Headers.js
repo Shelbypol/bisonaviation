@@ -3,6 +3,7 @@ import MobileHeader from "./MobileHeader";
 import DesktopHeader from "./DesktopHeader";
 import '../../style/headers.css'
 import '../../style/global-1.css'
+import Fade from "react-reveal/Fade";
 
 const Headers = () => {
     const [width, setWidth] = useState(window.innerWidth);
@@ -20,7 +21,8 @@ const Headers = () => {
     }, [width]);
 
 
-    const breakpoint = 620;
+    const breakpoint = 900;
+    // const breakpoint = 620;
 
     return(
         width < breakpoint ?

@@ -29,53 +29,33 @@ const SideBar = () => {
     return (
         <>
             <IconContext.Provider value={{color: '#fff'}}>
-                {/*<div>*/}
-                {/*<div className='SideBar-navbar' >*/}
-                {/*<Link to='#' className='SideBar-menu-bars'>*/}
-                {/*<FaIcons.FaBars onClick={showSidebar} />*/}
+
                 {userInfo ? (
                     <Link to='#'>
-                        <p onClick={showSidebar} className='mt-3 pr-4' style={{fontSize:'14px'}}>{userInfo.name}</p>
+                        <p onClick={showSidebar} className='SideBar_Name mt-3 pr-4'>{userInfo.name}</p>
                     </Link>
                 ) : (
                     <Link to='#'>
-                        <p onClick={showSidebar} className='mt-3 pr-4' style={{fontSize:'14px'}}>Login</p>
+                        <p onClick={showSidebar} className='StickyHeader_links mt-3 pr-4' style={{fontSize:'14px'}}>Login</p>
                     </Link>
                 )}
 
-                {/*</div>*/}
 
                 {userInfo ? (
-                    <nav className={sidebar ? 'SideBar-nav-menu-user-logged active' : 'SideBar-nav-menu'} ref={node}
+                    <nav className={sidebar ? 'SideBar-nav-menu-user-logged active' : 'SideBar-nav-menu-user-logged'} ref={node}
                          onClick={(e) => (handleScroll(e))}>
                         <ul className='SideBar-nav-menu-items'>
                             <SideBarData showSidebar={showSidebar}/>
                         </ul>
                     </nav>
-                ):(
-                <nav className={sidebar ? 'SideBar-nav-menu active' : 'SideBar-nav-menu'} ref={node}
+                ) :(
+                <nav className={sidebar ? 'SideBar-nav-menu-user-not-logged active' : 'SideBar-nav-menu-user-not-logged'} ref={node}
                      onClick={(e) => (handleScroll(e))}>
                     <ul className='SideBar-nav-menu-items'>
                         <SideBarData showSidebar={showSidebar}/>
                     </ul>
                 </nav>
                     )}
-
-                {/*{userInfo.isAdmin === false ? (*/}
-                {/*    <nav className={sidebar ? 'SideBar-nav-menu-user-logged active' : 'SideBar-nav-menu'} ref={node}*/}
-                {/*         onClick={(e) => (handleScroll(e))}>*/}
-                {/*        <ul className='SideBar-nav-menu-items'>*/}
-                {/*            <SideBarData showSidebar={showSidebar}/>*/}
-                {/*        </ul>*/}
-                {/*    </nav>*/}
-                {/*):(*/}
-                {/*    <nav className={sidebar ? 'SideBar-nav-menu active' : 'SideBar-nav-menu'} ref={node}*/}
-                {/*         onClick={(e) => (handleScroll(e))}>*/}
-                {/*        <ul className='SideBar-nav-menu-items'>*/}
-                {/*            <SideBarData showSidebar={showSidebar}/>*/}
-                {/*        </ul>*/}
-                {/*    </nav>*/}
-                {/*)}*/}
 
 
             </IconContext.Provider>
