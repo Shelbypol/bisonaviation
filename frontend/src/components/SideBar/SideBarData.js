@@ -32,11 +32,11 @@ const SideBarData = ({showSidebar}) => {
             {userInfo ? (
                     <>
 
-                        {/*<li className='SideBar-nav-text'>*/}
-                        {/*    <Link to='/' onClick={showSidebar}>*/}
-                        {/*        <span>Home</span>*/}
-                        {/*    </Link>*/}
-                        {/*</li>*/}
+                        <li className='SideBar-nav-text'>
+                            <Link to='/' onClick={showSidebar}>
+                                <span>Home</span>
+                            </Link>
+                        </li>
 
                         <li className='SideBar-nav-text'>
                             <Link to='/profile' onClick={showSidebar}>
@@ -46,7 +46,6 @@ const SideBarData = ({showSidebar}) => {
 
                         <li className='SideBar-nav-text'>
                             <Link onClick={logoutHandler} to='/'>
-                                {/*<i className='fal fa-plane-departure StickyHeader_icon-size'> </i>*/}
                                 <span>Logout</span>
                             </Link>
                         </li>
@@ -55,12 +54,6 @@ const SideBarData = ({showSidebar}) => {
 
                 ) :
                 <>
-                    {/*<li className='SideBar-nav-text'>*/}
-                    {/*    <Link to='/'>*/}
-                    {/*        <span onClick={showSidebar}>Home</span>*/}
-                    {/*    </Link>*/}
-                    {/*</li>*/}
-
                     <li className='my-3'>
                         <Login showSideBar={showSidebar}/>
                     </li>
@@ -80,19 +73,19 @@ const SideBarData = ({showSidebar}) => {
             {/*  ADMIN DROPDOWN  */}
             {userInfo && userInfo.isAdmin && (
                 <>
-                    <li className='SideBar-nav-text border' style={{backgroundColor: '#fff'}}>
+                    <li className='SideBar-nav-text'>
                         <Link to='/admin/userlist'>
-                            <span className='global_redFontHover'>Users</span>
+                            <span>Users</span>
                         </Link>
                     </li>
-                    <li className='SideBar-nav-text border' style={{backgroundColor: '#fff'}}>
+                    <li className='SideBar-nav-text'>
                         <Link to='/admin/productlist'>
-                            <span className='global_redFontHover'>Products</span>
+                            <span>Products</span>
                         </Link>
                     </li>
-                    <li className='SideBar-nav-text border' style={{backgroundColor: '#fff'}}>
+                    <li className='SideBar-nav-text'>
                         <Link to='/admin/orderlist'>
-                            <span className='global_redFontHover'>Data - Info</span>
+                            <span>Data - Info</span>
                         </Link>
                     </li>
                 </>

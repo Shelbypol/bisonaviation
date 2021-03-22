@@ -24,16 +24,16 @@ const MobileHeader = () => {
 
     return (
         <>
-            <header className='m-auto  header d-block p-0 col-xs-12'>
+            <header className='m-auto header d-block p-0 col-xs-12'>
 
-                <Navbar expand="md"
+                <Navbar expand="xl"
                         collapseOnSelect
                         style={{backgroundColor: 'black'}}
                         className='
                             {/*topNav*/}
                             navbar
                             navbar-dark
-                            navbar-expand-md
+                            navbar-expand-xl
                             ml-auto
                             my-auto
                             px-0

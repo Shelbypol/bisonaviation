@@ -59,7 +59,7 @@ const StickyHeader = () => {
                     <Navbar.Collapse id="basic-navbar-nav">
 
                         {/*===============  SEARCH BAR  ==================*/}
-                        <Nav className={'col-lg-3 ml-4 d-sm-none d-md-none d-lg-block'}>
+                        <Nav className={'col-md-3 ml-4 d-sm-none d-md-block'}>
                             {userInfo && (
                                 <SideBar/>
                             )}
@@ -115,7 +115,7 @@ const StickyHeader = () => {
 
 
                         {/*============= PROFILE BTNS ==============*/}
-                        <Nav className='col-lg-4 col-md-6 justify-content-end'>
+                        <Nav className='col-lg-4 col-md-3 justify-content-end'>
 
                             <WishListTab/>
 
