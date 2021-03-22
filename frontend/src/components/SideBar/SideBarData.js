@@ -32,8 +32,6 @@ const SideBarData = ({showSidebar}) => {
             {userInfo ? (
                     <>
 
-                        {/*<span><h4 className='mx-3'>{userInfo.name}</h4></span>*/}
-
                         {/*<li className='SideBar-nav-text'>*/}
                         {/*    <Link to='/' onClick={showSidebar}>*/}
                         {/*        <span>Home</span>*/}

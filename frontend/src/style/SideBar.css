@@ -15,53 +15,51 @@
     /*background: none;*/
 }
 
-.SideBar-nav-menu {
-    background-color: #fff;
-    /*background-color: #060b26;*/
-    width: 260px;
-    height: 45vh;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    /*position: fixed;*/
-    z-index: 2000;
-    top: 10vh;
-    /*left: -100%;*/
-    right: -100%;
-    transition: 850ms;
-    border-left: .5px solid grey;
-    /*border-bottom: 1px solid grey;*/
-}
+/*SIDE NAV LOGGED IN*/
 
-.SideBar-nav-menu.active {
-    /*left: 0;*/
-    height: 100vh;
-    right: 0;
-    transition: 350ms;
-}
 
 .SideBar-nav-menu-user-logged {
-    background-color: #fff;
-    /*background-color: #060b26;*/
-    width: 140px;
-    height: 12vh;
+    background-image: url("../images/bg-graphics/graphics/dots.png");
+    background-color: rgba(0,0,0, 1);
+    width: 15vw;
+    height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     position: absolute;
-    /*position: fixed;*/
     z-index: 2000;
-    top: 8vh;
-    /*left: -100%;*/
-    right: -100%;
+    top: 6.5vh;
+    left: -100vw;
     transition: 850ms;
 }
 
 .SideBar-nav-menu-user-logged.active {
+    left: -2vw;
+    transition: 350ms;
+}
+
+/* SIDE NAV NOT LOGGED IN*/
+
+.SideBar-nav-menu-user-not-logged {
+    background-image: url("../images/bg-graphics/graphics/dots.png");
+    background-color: rgba(0,0,0, 1);
+    width: 25vw;
+    height: 50vh;
+    display: flex;
+    justify-content: start;
+    position: absolute;
+    padding: 1%;
+    /*position: fixed;*/
+    z-index: 2000;
+    top: 6vh;
+    right: -100%;
+    transition: 850ms;
+}
+
+.SideBar-nav-menu-user-not-logged.active {
     /*left: 0;*/
     right: 0;
     transition: 350ms;
 }
-
 
 .SideBar-nav-text {
     display: flex;
@@ -75,8 +73,8 @@
 
 .SideBar-nav-text a {
     text-decoration: none;
-    color: #000;
-    font-size: 14px;
+    color: #fff;
+    font-size: 1.2vw;
     width: 95%;
     height: 100%;
     display: flex;

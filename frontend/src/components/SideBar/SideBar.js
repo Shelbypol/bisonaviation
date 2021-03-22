@@ -42,36 +42,20 @@ const SideBar = () => {
 
 
                 {userInfo ? (
-                    <nav className={sidebar ? 'SideBar-nav-menu-user-logged active' : 'SideBar-nav-menu'} ref={node}
+                    <nav className={sidebar ? 'SideBar-nav-menu-user-logged active' : 'SideBar-nav-menu-user-logged'} ref={node}
                          onClick={(e) => (handleScroll(e))}>
                         <ul className='SideBar-nav-menu-items'>
                             <SideBarData showSidebar={showSidebar}/>
                         </ul>
                     </nav>
-                ):(
-                <nav className={sidebar ? 'SideBar-nav-menu active' : 'SideBar-nav-menu'} ref={node}
+                ) :(
+                <nav className={sidebar ? 'SideBar-nav-menu-user-not-logged active' : 'SideBar-nav-menu-user-not-logged'} ref={node}
                      onClick={(e) => (handleScroll(e))}>
                     <ul className='SideBar-nav-menu-items'>
                         <SideBarData showSidebar={showSidebar}/>
                     </ul>
                 </nav>
                     )}
-
-                {/*{userInfo.isAdmin === false ? (*/}
-                {/*    <nav className={sidebar ? 'SideBar-nav-menu-user-logged active' : 'SideBar-nav-menu'} ref={node}*/}
-                {/*         onClick={(e) => (handleScroll(e))}>*/}
-                {/*        <ul className='SideBar-nav-menu-items'>*/}
-                {/*            <SideBarData showSidebar={showSidebar}/>*/}
-                {/*        </ul>*/}
-                {/*    </nav>*/}
-                {/*):(*/}
-                {/*    <nav className={sidebar ? 'SideBar-nav-menu active' : 'SideBar-nav-menu'} ref={node}*/}
-                {/*         onClick={(e) => (handleScroll(e))}>*/}
-                {/*        <ul className='SideBar-nav-menu-items'>*/}
-                {/*            <SideBarData showSidebar={showSidebar}/>*/}
-                {/*        </ul>*/}
-                {/*    </nav>*/}
-                {/*)}*/}
 
 
             </IconContext.Provider>
