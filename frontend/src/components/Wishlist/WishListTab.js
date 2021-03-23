@@ -10,6 +10,7 @@ const WishList = () => {
 
         <Navbar id='app' className='wishList'>
             <NavItem icon={
+                // <span className='global_cursor pr-3 global_white-text-red-hover' style={{fontSize: '1.3em'}}>
                 <span className='global_cursor pr-3 global_red-text-white-hover' style={{fontSize: '1.3em'}}>
                     <i className="fal fa-envelope-open-text"> </i>
                     {/*<i className="m-auto fal fa-cart-arrow-down"> </i>*/}
@@ -22,7 +23,6 @@ const WishList = () => {
 };
 
 const Navbar = (props) => {
-
 
     return (
         <nav className="wishList-navbar">
