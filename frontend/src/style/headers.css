@@ -126,6 +126,31 @@ button.navbar-toggler:hover {
     color: white;
 }
 
+.MobileHeader_login-text{
+    font-size: 2.5vw;
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+    background-color: #660708;
+    color: white;
+}
+
+.MobileHeader_login-text:hover{
+    background-color: white;
+    color: #660708;
+}
+
+.MobileHeaderAdmin_text{
+    font-size: 2.5vw;
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+    background-color:lightgrey;
+    color: black;
+    border-bottom: 1px solid black;
+}
+.MobileHeaderAdmin_text:hover{
+    background-color: gray;
+}
+
 /*    ======   MOBILE RESPONSIVE    ======    */
 @media (max-width: 500px) {
     .MobileHeader_text{
