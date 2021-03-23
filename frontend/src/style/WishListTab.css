@@ -38,6 +38,14 @@ a {
 
 /* Top Navigation Bar */
 
+.WishListTab_icon{
+    color: white;
+}
+
+.WishListTab_icon:hover{
+    color: red;
+}
+
 /* <nav> */
 .wishList-navbar {
     /*height: var(--nav-size);*/

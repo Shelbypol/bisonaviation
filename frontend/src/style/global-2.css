@@ -78,6 +78,22 @@ main {
     background-color: red;
 }
 
+.global_white-text-red-hover{
+    color: white;
+}
+
+.global_white-text-red-hover:hover{
+    color:red;
+}
+
+.global_red-text-white-hover{
+    color: white;
+}
+
+.global_red-text-white-hover:hover{
+    color:red;
+}
+
 /*================= CAROUSEL ======================*/
 .global_HeroCarousel-animation {
     -webkit-animation: zoomin 25s; /* Chrome, Safari, Opera */

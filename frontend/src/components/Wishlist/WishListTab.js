@@ -10,8 +10,9 @@ const WishList = () => {
 
         <Navbar id='app' className='wishList'>
             <NavItem icon={
-                <span className='global_cursor pr-3' style={{fontSize: '1.3em'}}>
-                    <i className="m-auto fal fa-cart-arrow-down global_heart-whiteBgRedHover "> </i>
+                <span className='global_cursor pr-3 global_red-text-white-hover' style={{fontSize: '1.3em'}}>
+                    <i className="fal fa-envelope-open-text"> </i>
+                    {/*<i className="m-auto fal fa-cart-arrow-down"> </i>*/}
                 </span>
             }>
                 <DropdownMenu> </DropdownMenu>
@@ -40,10 +41,8 @@ const NavItem = (props) => {
     const node = useRef();
 
     useEffect(() => {
-        // add when mounted
         document.addEventListener("scroll", handleScroll);
         document.addEventListener("click", handleClick);
-        // return function to be called when unmounted
         return () => {
             document.removeEventListener("scroll", handleScroll);
             document.removeEventListener("click", handleClick);
@@ -67,9 +66,9 @@ const NavItem = (props) => {
             {/*<a href="#" className="wishList-icon-button" onClick={() => setOpen(!open)}>*/}
             <a onClick={() => setOpen(!open)}>
                 {cartItems.length === 0 ? (
-                    <p className='global_bisonRedTxt global_cursor pt-2'>{props.icon}</p>
+                    <p className='global_cursor global_white-text-red-hover pt-2'>{props.icon}</p>
                 ):(
-                     <p className='global_bisonRedTxt global_cursor pt-2'>{cartItems.length}&nbsp;{props.icon}</p>
+                     <p className='global_cursor global_white-text-red-hover pt-2'>{cartItems.length}&nbsp;{props.icon}</p>
 
                 )}
             </a>

@@ -8,6 +8,7 @@ import SearchBox from "../SearchBox";
 import {CART_RESET} from "../../constants/cartConstants";
 import logo from '../../images/bg-graphics/graphics/Final-Logo-Horizontal.png'
 import SocialIcons from "../SocialIcons";
+import WishListTab from "../Wishlist/WishListTab";
 
 const MobileHeader = () => {
 
@@ -24,13 +25,12 @@ const MobileHeader = () => {
 
     return (
         <>
-            <header className='m-auto header d-block p-0 col-xs-12 sticky-top MobileHeader'>
+            <header className='m-auto header d-block p-0 col-xs-12'>
 
                 <Navbar expand="xl"
                         collapseOnSelect
                         style={{backgroundColor: 'black'}}
                         className='
-
                             navbar
                             navbar-dark
                             navbar-expand-xl
@@ -38,7 +38,6 @@ const MobileHeader = () => {
                             mb-n4
                             px-0
                             pt-3
-
                             mb-0
                             col-xs-12
                             border-0'
@@ -52,8 +51,11 @@ const MobileHeader = () => {
                             />
                         </LinkContainer>
 
+
                         <Navbar.Toggle aria-controls="basic-navbar-nav"/>
+                    {/*<WishListTab/>*/}
                         <Navbar.Collapse id="basic-navbar-nav">
+
 
                             {/*/!*  SEARCH BOX  *!/*/}
                             <Route render={({history}) => <SearchBox history={history}
@@ -65,6 +67,7 @@ const MobileHeader = () => {
 
                             />}/>
 
+
                             {/*   SOCIAL ICONS   */}
                             <SocialIcons socialClassName={'mr-5 mb-5'}
                                          facebookClassName={' d-flex justify-content-center'}
@@ -72,6 +75,9 @@ const MobileHeader = () => {
                                          twitterClassName={' d-flex justify-content-center'}
                                          contactClassName={'d-none'}
                             />
+                            {/*<Nav.Link  className='MobileHeader_text d-flex justify-content-center'>*/}
+                            {/*    <WishListTab/>*/}
+                            {/*</Nav.Link>*/}
 
                             {/*  PROFILE  /  SIGN IN  */}
                             {userInfo && (
@@ -127,7 +133,7 @@ const MobileHeader = () => {
                             {/*  ADMIN DROPDOWN  */}
                             {userInfo && userInfo.isAdmin && (
                                 <>
-                                    <LinkContainer to='/admin/userlist' className='mt-5 MobileHeaderAdmin_text d-flex justify-content-center'>
+                                    <LinkContainer to='/admin/userlist' className='MobileHeaderAdmin_text d-flex justify-content-center'>
                                         <Nav.Link>Users</Nav.Link>
                                     </LinkContainer>
 
@@ -157,8 +163,6 @@ const MobileHeader = () => {
                                     </Nav.Link>
                                 </LinkContainer>
                             )}
-
-
 
 
                         </Navbar.Collapse>

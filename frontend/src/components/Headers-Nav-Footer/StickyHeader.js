@@ -119,10 +119,16 @@ const StickyHeader = () => {
 
                             <WishListTab/>
 
+                                {!userInfo && (
+                            <div className='px-3 py-0 mt-2'>
+                                    <SideBar/>
+                            </div>
+                                )}
+
                             <LinkContainer to='/contact'>
                                 <Nav.Link>
                                     <Button
-                                        className='px-3 py-0 mt-2 rounded-pill global_blood-red-bg StickyHeader_iconHidden '>
+                                        className='px-3 py-0 mt-2 mr-4  rounded-pill StickyHeader_contact-btn StickyHeader_iconHidden '>
                                                     <span className='StickyHeader_hideIcon'>
                                                      Contact
                                                  </span>
@@ -131,11 +137,6 @@ const StickyHeader = () => {
                                 </Nav.Link>
                             </LinkContainer>
 
-                            <div className='px-3 py-0 mt-1'>
-                                {!userInfo && (
-                                    <SideBar/>
-                                )}
-                            </div>
 
                         </Nav>
 

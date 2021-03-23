@@ -71,6 +71,18 @@
     color: white;
 }
 
+.StickyHeader_contact-btn{
+    border: 1px solid #660708;
+    color: red;
+    background-color: black;
+}
+
+.StickyHeader_contact-btn:hover{
+    border: 1px solid #660708;
+    color: red;
+
+}
+
 /*   NAV BOOTSTRAP DROPDOWN STYLE    */
 .navbar-toggler {
     border: none;
@@ -106,11 +118,6 @@ button.navbar-toggler:hover {
 
 /*       MOBILE HEADER       */
 
-.MobileHeader{
-    height: 13vh;
-    padding: 0;
-    margin: 0;
-}
 
 .MobileHeader_logo {
     height: 12vh;
