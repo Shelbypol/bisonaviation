@@ -24,25 +24,25 @@ const MobileHeader = () => {
 
     return (
         <>
-            <header className='m-auto header d-block p-0 col-xs-12'>
+            <header className='m-auto header d-block p-0 col-xs-12 sticky-top MobileHeader'>
 
                 <Navbar expand="xl"
                         collapseOnSelect
                         style={{backgroundColor: 'black'}}
                         className='
-                            {/*topNav*/}
+
                             navbar
                             navbar-dark
                             navbar-expand-xl
                             ml-auto
-                            my-auto
+                            mb-n4
                             px-0
                             pt-3
-                            pb-5
+
+                            mb-0
                             col-xs-12
                             border-0'
                 >
-                    <Container style={{backgroundColor: 'black'}}>
 
                         {/*  LOGO  */}
                         <LinkContainer className='col-xs-2' to='/'>
@@ -162,7 +162,6 @@ const MobileHeader = () => {
 
 
                         </Navbar.Collapse>
-                    </Container>
                 </Navbar>
             </header>
 

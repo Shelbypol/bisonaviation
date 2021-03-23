@@ -105,6 +105,13 @@ button.navbar-toggler:hover {
 
 
 /*       MOBILE HEADER       */
+
+.MobileHeader{
+    height: 13vh;
+    padding: 0;
+    margin: 0;
+}
+
 .MobileHeader_logo {
     height: 12vh;
 }
@@ -132,6 +139,7 @@ button.navbar-toggler:hover {
     padding-bottom: 4vw;
     background-color: #660708;
     color: white;
+    margin-top: auto;
 }
 
 .MobileHeader_login-text:hover{
