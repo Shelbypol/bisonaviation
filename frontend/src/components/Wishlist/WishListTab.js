@@ -10,7 +10,7 @@ const WishList = () => {
 
         <Navbar id='app' className='wishList'>
             <NavItem icon={
-                <span className='global_cursor pr-3 StickyHeader_links' style={{fontSize: '1.3em'}}>
+                <span className='global_cursor pr-3 ' style={{fontSize: '1.3em'}}>
                     <i className="fal fa-envelope-open-text"> </i>
                 </span>
             }>
@@ -48,26 +48,30 @@ const NavItem = (props) => {
     }, [cartItems]);
 
     const handleScroll = e => {
-        if (node.current.contains(e.target) === false){
+        if (node.current.contains(e.target) === false) {
             setOpen(false)
         }
     };
     const handleClick = e => {
-        if (node.current.contains(e.target) === false){
+        if (node.current.contains(e.target) === false) {
             setOpen(false)
         }
     };
 
     return (
-        <li ref={node} onClick={(e) =>{ handleScroll(e); handleClick(e);}} className="wishList-nav-item pt-2">
-        {/*<li ref={node} onClick={(e) => (handleScroll(e))} className="wishList-nav-item">*/}
+        <li ref={node} onClick={(e) => {
+            handleScroll(e);
+            handleClick(e);
+        }} className="wishList-nav-item pt-2">
+            {/*<li ref={node} onClick={(e) => (handleScroll(e))} className="wishList-nav-item">*/}
             {/*<a href="#" className="wishList-icon-button" onClick={() => setOpen(!open)}>*/}
             <a onClick={() => setOpen(!open)}>
                 {cartItems.length === 0 ? (
                     <p className='global_cursor global_white-text-red-hover pt-2'>{props.icon}</p>
-                ):(
-                     <p className='global_cursor global_white-text-red-hover pt-2'>{cartItems.length}&nbsp;{props.icon}</p>
-
+                ) : (
+                    <>
+                        <p className=' global_cursor global_white-text-red-hover pt-2'>{cartItems.length}&nbsp;{props.icon}</p>
+                    </>
                 )}
             </a>
 
