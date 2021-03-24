@@ -11,7 +11,7 @@
     top: 0;
     /*width: 10vw;*/
     background-image: url("../images/bg-graphics/graphics/dots.png");
-    background-color: rgba(0,0,0, .8);
+    background-color: rgba(0,0,0, .7);
     /*background-image: url("../images/bg-graphics/graphics/body-bg.png");*/
     padding-left: 2vw;
     /*padding-top: 5vh;*/
@@ -32,13 +32,16 @@
 }
 
 .CatMan-title{
-    background-color: lightgray;
+    top: 6vh;
+    background-color: #660708;
+    color:white;
+    /*background-color: lightgrey;*/
     padding-left: 2vw;
 }
 
 .CatMan-sub-titles{
-    width: 100%;
-    background-color: gray;
-    color: white;
-    padding-left: 1vw;
-}
+     width: 100%;
+     background-color: lightgray;
+     color: black;
+     padding-left: 1vw;
+ }

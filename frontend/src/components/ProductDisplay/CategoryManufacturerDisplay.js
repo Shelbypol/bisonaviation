@@ -72,8 +72,8 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                                     (
                                         <>
                                             <Row xs={12}
-                                                 className='global_accentFont CatMan-nav-text CatMan-title d-flex justify-content-start mt-1 mb-2 p-0'>
-                                                <h3 className='pl-3 global_cursor'>{updateManufacturer || updateCat}</h3>
+                                                 className='global_accentFont CatMan-title d-flex justify-content-start p-0'>
+                                                <h3 className='pl-3 global_cursor text-white'>{updateManufacturer || updateCat}</h3>
                                             </Row>
 
                                             {products.filter(product => product.brand === updateManufacturer).map(filteredCategories => (
@@ -91,7 +91,7 @@ const CategoryManufacturerDisplay = ({match, history}) => {
 
                                             {/* ALL PRODUCTS*/}
                                             <Row xs={12}
-                                                 className='global_accentFont mt-3 d-flex justify-content-start '
+                                                 className='global_accentFont d-flex justify-content-start '
                                                  onClick={displayAllHandler}>
                                                 <p className='global_cursor CatMan-sub-titles py-2'>All
                                                     Products</p>
@@ -99,8 +99,8 @@ const CategoryManufacturerDisplay = ({match, history}) => {
 
                                             {/*   ALL CATEGORIES  */}
                                             <Row xs={12}
-                                                 className='global_accentFont text-center d-flex justify-content-start m-0 p-0'>
-                                                <p className='global_red global_cursor'>Categories</p>
+                                                 className='global_accentFont d-flex justify-content-start'>
+                                                <p className='global_cursor CatMan-sub-titles py-2'>Categories</p>
                                             </Row>
 
                                             {products.map(product => (
@@ -118,9 +118,9 @@ const CategoryManufacturerDisplay = ({match, history}) => {
 
                                             {/*   ALL MANUFACTURES  */}
                                             <Row xs={12}
-                                                 className='global_accentFont text-center d-flex justify-content-start m-0 p-0'
+                                                 className='global_accentFont d-flex justify-content-start'
                                             >
-                                                <p className='global_red global_cursor'>Manufactures</p>
+                                                <p className='global_cursor CatMan-sub-titles py-2'>Manufactures</p>
                                             </Row>
 
                                             {products.map(product => (
@@ -141,13 +141,21 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                                     )}
 
                                     {/*==============================================================================*/}
+
+                                    {/* ALL PRODUCTS*/}
+                                    <Row xs={12}
+                                         className='global_accentFont d-flex justify-content-start CatMan-title mt-n1 py-3'>
+                                        <h5 className='global_cursor text-white text-center'>All
+                                            Products</h5>
+                                    </Row>
+
                                     {/*    ALL CAT & ALL MAN INITIAL DISPLAY    */}
                                     {(updateCat === '' && updateManufacturer === '') && (
                                         <>
                                             <Row xs={12}
-                                                 className='global_accentFont text-center my-3 d-flex justify-content-start m-0 p-0'>
+                                                 className='global_accentFont mb-3 mt-0 d-flex justify-content-start global_cursor'>
                                                 <h5 onClick={displayAllHandler}
-                                                    className='global_red global_cursor'>Categories</h5>
+                                                    className='CatMan-sub-titles py-3'>Categories</h5>
                                             </Row>
 
                                             {catArr.map((product, index) => (
@@ -164,9 +172,9 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                                             ))}
 
                                             <Row xs={12}
-                                                 className='global_accentFont text-center my-3 d-flex justify-content-start m-0 p-0'>
+                                                 className='global_accentFont my-3 d-flex justify-content-start global_cursor'>
                                                 <h5 onClick={displayAllHandler}
-                                                    className='global_red global_cursor'>Manufacturers</h5>
+                                                    className='CatMan-sub-titles py-3'>Manufacturers</h5>
                                             </Row>
 
                                             {maufacturerArr.map((product, index) => (
