@@ -1,5 +1,4 @@
 
-
 .CatMan-nav-menu {
     display: flex;
     align-items: flex-start;
@@ -10,35 +9,43 @@
     position: sticky;
     top: 0;
     background-image: url("../images/bg-graphics/graphics/dots.png");
-    background-color: rgba(0,0,0, .7);
+    background-color: rgba(0, 0, 0, .7);
     padding-left: 2vw;
     padding-top: 6vh;
     margin: 0;
 }
 
-.CatMan_items{
+.CatMan_items {
     color: white;
+
+    padding: 0 .1vw 0 .1vw;
+    margin: 0;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
 }
 
-.CatMan_items:hover{
-    /*text-decoration: underline;*/
-    /*color: #2576e5*/
-    /*font-size: 2vh;*/
+.CatMan_items:hover {
     background-color: lightgrey;
     color: black;
 }
 
-.CatMan-title{
+.CatMan-title {
     top: 6vh;
     background-color: #660708;
-    color:white;
+    color: white;
     /*background-color: lightgrey;*/
-    padding-left: 2vw;
+    padding-left: .5vw;
 }
 
-.CatMan-sub-titles{
-     width: 100%;
-     background-color: lightgray;
-     color: black;
-     padding-left: 1vw;
- }
+.CatMan-sub-titles {
+    border-top: 1px solid rgba(0,0,0, .5);
+    width: 100%;
+    background-color: lightgray;
+    color: black;
+    padding-left: 1vw;
+}
+
+.CatMan-sub-titles:hover{
+
+}
+
