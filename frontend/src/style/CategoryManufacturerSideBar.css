@@ -9,13 +9,10 @@
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    /*width: 10vw;*/
     background-image: url("../images/bg-graphics/graphics/dots.png");
     background-color: rgba(0,0,0, .7);
-    /*background-image: url("../images/bg-graphics/graphics/body-bg.png");*/
     padding-left: 2vw;
-    /*padding-top: 5vh;*/
-    z-index: 2000;
+    padding-top: 6vh;
     margin: 0;
 }
 

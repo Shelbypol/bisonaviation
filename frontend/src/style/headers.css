@@ -27,6 +27,13 @@
 
 /*       STICKY HEADER       */
 
+.StickyHeader_searchBox{
+    width: 16vw;
+    /*margin-top: 6vh;*/
+    padding-top: .8vh;
+    margin: 0;
+}
+
 .StickyHeader_nav{
     background-image: url("../images/bg-graphics/graphics/dots.png");
     background-color: rgba(0,0,0, .9);
@@ -36,10 +43,14 @@
 .StickyHeader_search_btn_padding{
     /*padding-top: 2em;*/
     /*padding-bottom: 1.45em;*/
-    padding: .9em .8em;
+    padding: .87em .8em;
     background-color:  #4A433D;
     color: #000;
+}
 
+.StickyHeader_search_btn_padding:hover{
+    background-color: #660708;
+    color: white;
 }
 
 .StickyHeader_icon-size{

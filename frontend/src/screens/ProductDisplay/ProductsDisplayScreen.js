@@ -1,9 +1,11 @@
 import React, {useLayoutEffect} from 'react'
-import {Row} from 'react-bootstrap'
+import {Col, Row} from 'react-bootstrap'
 import Meta from "../../components/Meta";
 import CategoryManufacturerDisplay from "../../components/ProductDisplay/CategoryManufacturerDisplay";
 import {Jumbotron} from "reactstrap";
 import StickyHeader from "../../components/Headers-Nav-Footer/StickyHeader";
+import {Route} from "react-router-dom";
+import SearchBox from "../../components/SearchBox";
 
 const ProductsDisplayScreen = ({match, history}) => {
 
@@ -32,19 +34,20 @@ const ProductsDisplayScreen = ({match, history}) => {
     return (
         <>
             <StickyHeader/>
+
             <Jumbotron className='global_cultured-bg mt-n5 mb-0 p-0' fluid>
 
-            {/*<Container className='mx-auto p-0'>*/}
                 <>
                     <Meta title='Bison | Products'/>
 
                     <Row xs={12} className='CatMan-nav-menu'>
+                        {/*     MANUFACTURER SORT DISPLAY AVAILABLE CATS ON CLICK    */}
 
                         <CategoryManufacturerDisplay match={match} history={history}/>
 
                     </Row>
                 </>
-            {/*</Container>*/}
+
             </Jumbotron>
 
         </>

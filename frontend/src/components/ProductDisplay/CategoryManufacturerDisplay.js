@@ -57,17 +57,21 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                     (<Message variant='danger'>{error}</Message>)
                     : (
                         <>
+
                                 <Col xs={2} className='CatMan-nav-menu-items min-vh-100 '>
+
                                     {/*     MANUFACTURER SORT DISPLAY AVAILABLE CATS ON CLICK    */}
-                                    <Col xs={12} className='pb-2 mx-0 mb-0 mt-1'>
+
                                         <Route render={({history}) => <SearchBox history={history}
+                                                                                 formClasses={'pb-2 ml-n2 StickyHeader_searchBox'}
                                                                                  searchSize={'sm'}
                                                                                  searchClasses={'col-9 py-0 bg-white border-top border-bottom border-left'}
                                                                                  btnSize={'sm'}
                                                                                  btnClasses={'bg-white StickyHeader_search_btn_padding px-1 col-2 rounded-right border-top border-bottom border-right'}
                                                                                  iconClass={'fal fa-search p-0'}
                                         />}/>
-                                    </Col>
+
+
                                     {(updateManufacturer !== '' || updateCat !== '') &&
                                     (
                                         <>
@@ -144,7 +148,7 @@ const CategoryManufacturerDisplay = ({match, history}) => {
 
                                     {/* ALL PRODUCTS*/}
                                     <Row xs={12}
-                                         className='global_accentFont d-flex justify-content-start CatMan-title mt-n1 py-3'>
+                                         className='global_accentFont d-flex justify-content-start CatMan-title py-3' onClick={displayAllHandler}>
                                         <h5 className='global_cursor text-white text-center'>All
                                             Products</h5>
                                     </Row>
