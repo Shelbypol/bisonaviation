@@ -17,8 +17,7 @@
 
 .CatMan_items {
     color: white;
-
-    padding: 0 .1vw 0 .1vw;
+    padding: 0 1vw 0 1vw;
     margin: 0;
     width: 100%;
     border-bottom: 1px solid rgba(255, 255, 255, .5);
@@ -46,6 +45,6 @@
 }
 
 .CatMan-sub-titles:hover{
-
+    color: #660708;
 }
 

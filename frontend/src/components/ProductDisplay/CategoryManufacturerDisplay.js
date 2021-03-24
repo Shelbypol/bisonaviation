@@ -122,7 +122,7 @@ const CategoryManufacturerDisplay = ({match, history}) => {
 
                                             {/*   ALL MANUFACTURES  */}
                                             <Row xs={12}
-                                                 className='global_accentFont d-flex justify-content-start'
+                                                 className='global_accentFont mt-4 d-flex justify-content-start'
                                             >
                                                 <p className='global_cursor CatMan-sub-titles py-2'>Manufactures</p>
                                             </Row>
