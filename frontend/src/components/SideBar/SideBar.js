@@ -36,8 +36,7 @@ const SideBar = () => {
                     </Link>
                 ) : (
                     <Link to='#'>
-                        {/*<p onClick={showSidebar} className='global_white-text-red-hover mt-3 ' style={{fontSize:'14px'}}>Login</p>*/}
-                        <p onClick={showSidebar} className='global_red-text-white-hover mt-3 ' style={{fontSize:'14px'}}>Login</p>
+                        <p onClick={showSidebar} className='StickyHeader_links mt-3 ' style={{fontSize:'14px'}}>Login</p>
                     </Link>
                 )}
 
