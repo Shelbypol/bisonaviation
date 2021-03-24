@@ -1,4 +1,4 @@
-import React, { useEffect} from 'react'
+import React, {useEffect, useLayoutEffect} from 'react'
 import {LinkContainer} from 'react-router-bootstrap'
 import {Table, Button, Container} from 'react-bootstrap'
 import {useDispatch, useSelector} from 'react-redux'
@@ -8,6 +8,11 @@ import { listOrders } from "../../actions/orderActions"
 import StickyHeader from "../../components/Headers-Nav-Footer/StickyHeader";
 
 const OrderListScreen = ({ history }) => {
+
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0)
+    });
+
     const dispatch = useDispatch();
 
     // BRINGING IN DIFF PARTS OF STATE

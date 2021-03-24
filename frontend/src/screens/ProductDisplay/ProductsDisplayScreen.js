@@ -1,11 +1,15 @@
-import React from 'react'
-import {Row, Container} from 'react-bootstrap'
+import React, {useLayoutEffect} from 'react'
+import {Row} from 'react-bootstrap'
 import Meta from "../../components/Meta";
 import CategoryManufacturerDisplay from "../../components/ProductDisplay/CategoryManufacturerDisplay";
 import {Jumbotron} from "reactstrap";
 import StickyHeader from "../../components/Headers-Nav-Footer/StickyHeader";
 
 const ProductsDisplayScreen = ({match, history}) => {
+
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0)
+    });
 
     // const dispatch = useDispatch();
     //

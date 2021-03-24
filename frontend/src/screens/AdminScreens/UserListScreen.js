@@ -1,4 +1,4 @@
-import React, { useEffect} from 'react'
+import React, {useEffect, useLayoutEffect} from 'react'
 import {LinkContainer} from 'react-router-bootstrap'
 import {Table, Button, Container} from 'react-bootstrap'
 import {useDispatch, useSelector} from 'react-redux'
@@ -34,6 +34,10 @@ const UserListScreen = ({ history }) => {
             dispatch(deleteUser(id))
         }
     };
+
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0)
+    });
 
     return (
         <>

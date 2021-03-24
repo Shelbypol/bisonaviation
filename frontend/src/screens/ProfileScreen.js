@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useLayoutEffect} from 'react'
 import {Row, Col, Tab, Nav} from 'react-bootstrap'
 import ProfileEdit from "../components/Profile/ProfileEdit";
 import ProfileSavedWishList from "../components/Profile/ProfileSavedWishList";
@@ -9,6 +9,10 @@ const ProfileScreen = ({location, history}) => {
 
     const userLogin = useSelector(state => state.userLogin);
     const {userInfo} = userLogin;
+
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0)
+    });
 
     return (
         <>

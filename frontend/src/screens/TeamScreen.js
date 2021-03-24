@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useLayoutEffect} from 'react'
 import {Container, Row} from "react-bootstrap";
 import TeamHero from "../components/2/team-screen/TeamHero";
 import TeamCard from "../components/2/team-screen/TeamCard";
@@ -22,6 +22,9 @@ import mackerel from '../images/bg-graphics/screen-team/mackeral.png'
 
 const TeamScreen = () => {
 
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0)
+    });
 
     return (
         <>
