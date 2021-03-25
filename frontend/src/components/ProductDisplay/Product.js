@@ -46,8 +46,8 @@ const Product = ({product, history, match}) => {
 
     return (
         <>
-            <Row xs={12} className='mt-5'>
-            <Col xs={4}  className='border'>
+            {/*<Row xs={12} className='mt-5'>*/}
+            {/*<Col xs={4}  className='border'>*/}
 
 
                 <Col xs={12} className='py-3 d-flex align-items-start justify-content-center'>
@@ -119,8 +119,8 @@ const Product = ({product, history, match}) => {
                     </Row>
                 </Col>
 
-            </Col>
-            </Row>
+            {/*</Col>*/}
+            {/*</Row>*/}
         </>
     )
 };
