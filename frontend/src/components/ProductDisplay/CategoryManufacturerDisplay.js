@@ -6,7 +6,6 @@ import ProductDisplayByCatMan from "./ProductDisplayByCatMan";
 import Loader from "../Loader";
 import Message from "../Message";
 import '../../style/CategoryManufacturerSideBar.css'
-import SideBarProduct from "../SideBarProduct/SideBarProduct";
 import {Route} from "react-router-dom";
 import SearchBox from "../SearchBox";
 import {Container} from "react-bootstrap/cjs";
@@ -67,23 +66,26 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                         <>
                             {sideBar ? (
                                 <>
-                                <Col xs={2} className='global_cursor CatMan_sidebar-icon '>
-                                    <h5 onClick={showSideBar} className='pl-4 pt-3 global_white-text-red-hover'>X</h5>
-                                </Col>
+                                    <Col xs={2} className='global_cursor CatMan_sidebar-icon '>
+                                        <h5 onClick={showSideBar}
+                                            className='pl-4 pt-3 global_white-text-red-hover'>X</h5>
+                                    </Col>
                                     <Col xs={10}> </Col>
-                                    </>
+                                </>
                             ) : (
                                 <>
-                                <Col xs={2} className='global_cursor CatMan_sidebar-icon pl-4'>
-                                    <h6 className='global_blood-red' onClick={showSideBar}><span><h3 className='d-inline global'>|||</h3></span>&nbsp;categories</h6>
-                                </Col>
+                                    <Col xs={2} className='global_cursor CatMan_sidebar-icon pl-4 pt-2'>
+                                        <h6 className='global_blood-red' onClick={showSideBar}><span><h3
+                                            className='d-inline global'>|||</h3></span>&nbsp;categories
+                                        </h6>
+                                    </Col>
                                     <Col xs={10}> </Col>
-                                    </>
+                                </>
                             )}
 
                             {sideBar ? (
                                 <>
-                                    <Col xs={2} className='CatMan-nav-menu-items min-vh-100'>
+                                    <Col lg={2} xs={12} className='CatMan-nav-menu-items min-vh-100'>
                                         {/*     MANUFACTURER SORT DISPLAY AVAILABLE CATS ON CLICK    */}
 
                                         <Route render={({history}) => <SearchBox history={history}
