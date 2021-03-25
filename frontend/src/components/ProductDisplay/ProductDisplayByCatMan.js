@@ -3,8 +3,7 @@ import {Col, Row} from "react-bootstrap";
 import Paginate from "../Paginate";
 import Product from "./Product";
 
-const ProductsDisplaySByCatMan = ({history, match, updateCatProp, updateManufacturerProp, keyword, pages, page, products}) => {
-
+const ProductsDisplaySByCatMan = ({sideBar, history, match, updateCatProp, updateManufacturerProp, keyword, pages, page, products}) => {
 
 
     return (
@@ -14,29 +13,30 @@ const ProductsDisplaySByCatMan = ({history, match, updateCatProp, updateManufact
             {/*    <h3 className='global_bisonRedTxt global_cursor my-0 py-0'>{updateCatProp || updateManufacturerProp}</h3>*/}
             {/*</Row>*/}
             <Row xs={9} className=' pl-5 d-flex justify-content-center align-items-center bg-white'>
-            <Paginate pages={pages} page={page} keyword={keyword ? keyword : ''}/>
+                <Paginate pages={pages} page={page} keyword={keyword ? keyword : ''}/>
 
                 {/*{(updateManufacturerProp !== '' || updateCatProp !== '') && (*/}
                 {/*        [].map(empty => (<Product product={empty}/>)))*/}
                 {/*}*/}
 
                 {/*CATEGORY*/}
-                {(updateCatProp !== '') && (
-                    <>
-                        {products.filter(product => product.category === updateCatProp).map(filteredProduct => (
-                            <Col key={filteredProduct._id} md={4} sm={12}>
-                                <Product product={filteredProduct} history={history} match={match}/>
-                            </Col>
-                        ))}
-                    </>
-                )}
+                    {(updateCatProp !== '') && (
+                        <>
+                            {products.filter(product => product.category === updateCatProp).map(filteredProduct => (
+                                <Col key={filteredProduct._id}  md={sideBar ? 4 : 3} sm={12}>
+                                    <Product product={filteredProduct} history={history} match={match}/>
+                                </Col>
+
+                            ))}
+                        </>
+                    )}
+
 
                 {(updateManufacturerProp !== '') && (
                     <>
                         {products.filter(product => product.brand === updateManufacturerProp).map(filteredProduct => (
-                            <Col key={filteredProduct._id} md={4} sm={12}>
+                            <Col key={filteredProduct._id} md={sideBar ? 4 : 3} sm={12}>
                                 <Product product={filteredProduct} history={history} match={match}/>
-                                {/*product_id={filteredProduct._id}/>*/}
                             </Col>
                         ))}
                     </>
@@ -45,7 +45,7 @@ const ProductsDisplaySByCatMan = ({history, match, updateCatProp, updateManufact
                 {(updateManufacturerProp === '' && updateCatProp === '') && (
                     <>
                         {products.map(product => (
-                            <Col key={product._id} md={4} sm={12}>
+                            <Col key={product._id} md={sideBar ? 4 : 3} sm={12}>
                                 <Product product={product} history={history} match={match}
                                          product_id={product._id}/>
                             </Col>
@@ -53,7 +53,7 @@ const ProductsDisplaySByCatMan = ({history, match, updateCatProp, updateManufact
                     </>
                 )}
 
-            <Paginate pages={pages} page={page} keyword={keyword ? keyword : ''}/>
+                <Paginate pages={pages} page={page} keyword={keyword ? keyword : ''}/>
             </Row>
         </>
     )
