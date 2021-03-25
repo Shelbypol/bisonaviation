@@ -9,15 +9,10 @@
 }
 
 .SideBar-menu-bars {
-    /*background-color: rgba(0, 0, 0, .5);*/
-    /*margin-left: 2rem;*/
     font-size: 1rem;
-    /*background: none;*/
 }
 
 /*SIDE NAV LOGGED IN*/
-
-
 .SideBar-nav-menu-user-logged {
     background-image: url("../images/bg-graphics/graphics/dots.png");
     background-color: rgba(0,0,0, 1);

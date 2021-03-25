@@ -1,20 +1,16 @@
 
 .CatMan_sidebar-icon{
-    z-index: 1500;
+    z-index: 1;
     padding:0;
     position: -webkit-sticky;
     position: sticky;
     top: 6vh;
-
-    /*background-color: white;*/
-
 }
 
 .CatMan_sidebar-icon:hover{
     text-underline: none;
     color: black;
 }
-
 
 .CatMan-nav-menu {
     display: flex;
@@ -66,10 +62,6 @@
 }
 
 /*PRODUCT CARD*/
-
-.CatMan_card{
-
-}
 
 .CatMan_card-text{
     width: 18vw;
