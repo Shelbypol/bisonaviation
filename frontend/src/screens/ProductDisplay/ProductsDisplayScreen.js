@@ -35,7 +35,7 @@ const ProductsDisplayScreen = ({match, history}) => {
         <>
             <StickyHeader/>
 
-            <Jumbotron className='global_cultured-bg mt-n5 mb-0 p-0' fluid>
+            <Jumbotron className='bg-white mt-n5 mb-0 p-0' fluid>
 
                 <>
                     <Meta title='Bison | Products'/>

@@ -48,3 +48,19 @@
     color: #660708;
 }
 
+/*PRODUCT CARD*/
+
+.CatMan_card{
+
+}
+
+.CatMan_card-text{
+    width: 18vw;
+}
+
+.CatMan_card-img{
+    height: 15vh;
+    width: 50%;
+    background-color: white;
+}
+
