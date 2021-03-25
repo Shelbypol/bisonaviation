@@ -103,8 +103,8 @@ const Product = ({product, history, match}) => {
                     {product.description.length > MAX_LENGTH ?
                         (
                             <Card.Text className='pt-3 CatMan_card-text'>
-                                {`${product.description.substring(0, MAX_LENGTH)}...`}<Link
-                                to={`/product/${product._id}`} className='global_bisonRedTxt'>Read
+                                {`${product.description.substring(0, MAX_LENGTH)}`}<Link
+                                to={`/product/${product._id}`} className='global_bisonRedTxt'><br/>...Read
                                 more</Link>
                             </Card.Text>
                         ) :

@@ -13,7 +13,7 @@ import {Container} from "react-bootstrap/cjs";
 
 const CategoryManufacturerDisplay = ({match, history}) => {
 
-    const [sideBar, setSideBar] = useState(false);
+    const [sideBar, setSideBar] = useState(true);
 
     const [updateCat, setUpdateCat] = useState('');
     const [updateManufacturer, setUpdateManufacturer] = useState('');
@@ -65,15 +65,25 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                     (<Message variant='danger'>{error}</Message>)
                     : (
                         <>
-
-                            <Col xs={12} onClick={showSideBar} className='global_cursor'
-                                 style={{top: '7vh', zIndex: '3000'}}>
-                                <h3 className='pl-2 global_blue'>|||</h3>
-                            </Col>
+                            {sideBar ? (
+                                <>
+                                <Col xs={2} className='global_cursor CatMan_sidebar-icon '>
+                                    <h5 onClick={showSideBar} className='pl-4 pt-3 global_white-text-red-hover'>X</h5>
+                                </Col>
+                                    <Col xs={10}> </Col>
+                                    </>
+                            ) : (
+                                <>
+                                <Col xs={2} className='global_cursor CatMan_sidebar-icon pl-4'>
+                                    <h6 className='global_blood-red' onClick={showSideBar}><span><h3 className='d-inline global'>|||</h3></span>&nbsp;categories</h6>
+                                </Col>
+                                    <Col xs={10}> </Col>
+                                    </>
+                            )}
 
                             {sideBar ? (
                                 <>
-                                    <Col xs={2} className='CatMan-nav-menu-items min-vh-100 '>
+                                    <Col xs={2} className='CatMan-nav-menu-items min-vh-100'>
                                         {/*     MANUFACTURER SORT DISPLAY AVAILABLE CATS ON CLICK    */}
 
                                         <Route render={({history}) => <SearchBox history={history}

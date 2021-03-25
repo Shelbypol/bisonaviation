@@ -1,4 +1,21 @@
 
+.CatMan_sidebar-icon{
+    z-index: 1500;
+    padding:0;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 6vh;
+
+    /*background-color: white;*/
+
+}
+
+.CatMan_sidebar-icon:hover{
+    text-underline: none;
+    color: black;
+}
+
+
 .CatMan-nav-menu {
     display: flex;
     align-items: flex-start;
@@ -11,8 +28,8 @@
     background-image: url("../images/bg-graphics/graphics/dots.png");
     background-color: rgba(0, 0, 0, .7);
     padding-left: 2vw;
-    padding-top: 6vh;
-    margin: 0;
+    padding-top: 11vh;
+    margin-top: -5.5vh;
 }
 
 .CatMan_items {
@@ -63,4 +80,3 @@
     width: 50%;
     background-color: white;
 }
-
