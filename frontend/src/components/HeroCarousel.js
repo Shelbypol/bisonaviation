@@ -51,12 +51,11 @@ const HeroCarousel = (
     return (
         <>
             <Carousel className=''>
-
                 {/*    ================= Img 1 */}
                 <Carousel.Item>
                     <Carousel.Caption>
                         <Row className='global_carousel-text-box'>
-                            <Col md={5} xs={7} className='global_carousel-text-top-bar global_blood-red-bg'> </Col>
+                            <Col md={5} xs={7} className='global_carousel-text-top-bar global_red-bg'> </Col>
 
                             <Col xs={12}
                                  className='d-flex justify-content-start align-content-center '>
@@ -76,7 +75,7 @@ const HeroCarousel = (
                                 </Col>
                             )}
 
-                            <Col md={7} xs={10} className='global_carousel-text-btm-bar global_blood-red-bg'> </Col>
+                            <Col md={7} xs={10} className='global_carousel-text-btm-bar global_red-bg'> </Col>
                         </Row>
                     </Carousel.Caption>
 
@@ -98,7 +97,7 @@ const HeroCarousel = (
                     <Carousel.Item>
                         <Carousel.Caption>
                             <Row className='global_carousel-text-box'>
-                                <Col md={5} xs={7} className='global_carousel-text-top-bar global_blood-red-bg'> </Col>
+                                <Col md={5} xs={7} className='global_carousel-text-top-bar global_red-bg'> </Col>
 
                                 <Col xs={12}
                                      className='d-flex justify-content-start align-content-center '>
@@ -118,7 +117,7 @@ const HeroCarousel = (
                                     </Col>
                                 )}
 
-                                <Col md={7} xs={10} className='global_carousel-text-btm-bar global_blood-red-bg'> </Col>
+                                <Col md={7} xs={10} className='global_carousel-text-btm-bar global_red-bg'> </Col>
                             </Row>
                         </Carousel.Caption>
 
@@ -141,7 +140,7 @@ const HeroCarousel = (
                     <Carousel.Item>
                         <Carousel.Caption>
                             <Row className='global_carousel-text-box'>
-                                <Col md={5} xs={7} className='global_carousel-text-top-bar global_blood-red-bg'> </Col>
+                                <Col md={5} xs={7} className='global_carousel-text-top-bar global_red-bg'> </Col>
 
                                 <Col xs={12}
                                      className='d-flex justify-content-start align-content-center '>
@@ -161,7 +160,7 @@ const HeroCarousel = (
                                     </Col>
                                 )}
 
-                                <Col md={7} xs={10} className='global_carousel-text-btm-bar global_blood-red-bg'> </Col>
+                                <Col md={7} xs={10} className='global_carousel-text-btm-bar global_red-bg'> </Col>
                             </Row>
                         </Carousel.Caption>
 
@@ -186,7 +185,7 @@ const HeroCarousel = (
                     <Carousel.Item>
                         <Carousel.Caption>
                             <Row className='global_carousel-text-box'>
-                                <Col md={5} xs={7} className='global_carousel-text-top-bar global_blood-red-bg'> </Col>
+                                <Col md={5} xs={7} className='global_carousel-text-top-bar global_red-bg'> </Col>
 
                                 <Col xs={12}
                                      className='d-flex justify-content-start align-content-center '>
@@ -206,7 +205,7 @@ const HeroCarousel = (
                                     </Col>
                                 )}
 
-                                <Col md={7} xs={10} className='global_carousel-text-btm-bar global_blood-red-bg'> </Col>
+                                <Col md={7} xs={10} className='global_carousel-text-btm-bar global_red-bg'> </Col>
                             </Row>
                         </Carousel.Caption>
 
@@ -229,7 +228,7 @@ const HeroCarousel = (
                     <Carousel.Item>
                         <Carousel.Caption>
                             <Row className='global_carousel-text-box'>
-                                <Col md={5} xs={7} className='global_carousel-text-top-bar global_blood-red-bg'> </Col>
+                                <Col md={5} xs={7} className='global_carousel-text-top-bar global_red-bg'> </Col>
 
                                 <Col xs={12}
                                      className='d-flex justify-content-start align-content-center '>
@@ -249,7 +248,7 @@ const HeroCarousel = (
                                     </Col>
                                 )}
 
-                                <Col md={7} xs={10} className='global_carousel-text-btm-bar global_blood-red-bg'> </Col>
+                                <Col md={7} xs={10} className='global_carousel-text-btm-bar global_red-bg'> </Col>
                             </Row>
                         </Carousel.Caption>
 

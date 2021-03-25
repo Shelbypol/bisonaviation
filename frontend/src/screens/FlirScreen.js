@@ -7,9 +7,9 @@ import FlirText from "../components/2/flir-screen/FlirText";
 
 const FlirScreen = () => {
 
-    useLayoutEffect(() => {
-        window.scrollTo(0, 0)
-    });
+    // useLayoutEffect(() => {
+    //     window.scrollTo(0, 250)
+    // });
 
     return (
         <>

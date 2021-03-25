@@ -6,11 +6,14 @@ import ProductDisplayByCatMan from "./ProductDisplayByCatMan";
 import Loader from "../Loader";
 import Message from "../Message";
 import '../../style/CategoryManufacturerSideBar.css'
+import SideBarProduct from "../SideBarProduct/SideBarProduct";
 import {Route} from "react-router-dom";
 import SearchBox from "../SearchBox";
 import {Container} from "react-bootstrap/cjs";
 
 const CategoryManufacturerDisplay = ({match, history}) => {
+
+    const [sideBar, setSideBar] = useState(false);
 
     const [updateCat, setUpdateCat] = useState('');
     const [updateManufacturer, setUpdateManufacturer] = useState('');
@@ -24,11 +27,16 @@ const CategoryManufacturerDisplay = ({match, history}) => {
     const productList = useSelector(state => state.productList);
     const {products, pages, page, loading, error} = productList;
 
+
     useEffect(() => {
         dispatch(listProducts(keyword, pageNumber));
     }, [dispatch, updateCat, updateManufacturer, keyword, pageNumber, setUpdateManufacturer, setUpdateCat]);
 
-    //  SORT CAT HANDLER
+
+    //SIDE BAR
+    const showSideBar = () => setSideBar(!sideBar);
+
+    // SORT CAT HANDLER
     const sortByCategoryHandler = (a) => {
         setUpdateManufacturer('');
         setUpdateCat(a)
@@ -58,18 +66,23 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                     : (
                         <>
 
-                                <Col xs={2} className='CatMan-nav-menu-items min-vh-100 '>
+                            <Col xs={12} onClick={showSideBar} className='global_cursor' style={{top: '7vh', zIndex: '3000'}}>
+                                <h3 className='pl-2 global_blue'>|||</h3>
+                            </Col>
 
+                            {sideBar ? (
+
+                                <Col xs={2} className='CatMan-nav-menu-items min-vh-100 '>
                                     {/*     MANUFACTURER SORT DISPLAY AVAILABLE CATS ON CLICK    */}
 
-                                        <Route render={({history}) => <SearchBox history={history}
-                                                                                 formClasses={'pb-2 ml-n2 StickyHeader_searchBox'}
-                                                                                 searchSize={'sm'}
-                                                                                 searchClasses={'col-9 py-0 bg-white border-top border-bottom border-left'}
-                                                                                 btnSize={'sm'}
-                                                                                 btnClasses={'bg-white StickyHeader_search_btn_padding px-1 col-2 rounded-right border-top border-bottom border-right'}
-                                                                                 iconClass={'fal fa-search p-0'}
-                                        />}/>
+                                    <Route render={({history}) => <SearchBox history={history}
+                                                                             formClasses={'pb-2 ml-n2 StickyHeader_searchBox'}
+                                                                             searchSize={'sm'}
+                                                                             searchClasses={'col-9 py-0 bg-white border-top border-bottom border-left'}
+                                                                             btnSize={'sm'}
+                                                                             btnClasses={'bg-white StickyHeader_search_btn_padding px-1 col-2 rounded-right border-top border-bottom border-right'}
+                                                                             iconClass={'fal fa-search p-0'}
+                                    />}/>
 
 
                                     {(updateManufacturer !== '' || updateCat !== '') &&
@@ -79,19 +92,6 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                                                  className='global_accentFont CatMan-title d-flex justify-content-start p-0'>
                                                 <h3 className='pl-3 global_cursor text-white'>{updateManufacturer || updateCat}</h3>
                                             </Row>
-
-                                            {/*{products.filter(product => product.brand === updateManufacturer).map(filteredCategories => (*/}
-                                            {/*    <Row xs={12}*/}
-                                            {/*         onClick={(ev) => sortByCategoryHandler(filteredCategories.category, ev)}*/}
-                                            {/*         className='btn btn-block global_cursor d-flex justify-content-start CatMan_items'*/}
-                                            {/*         type='button'*/}
-                                            {/*         key={filteredCategories._id}*/}
-                                            {/*    >*/}
-                                            {/*        /!*<h6 className='CatMan_items'>*!/*/}
-                                            {/*            {filteredCategories.category}*/}
-                                            {/*        /!*</h6>*!/*/}
-                                            {/*    </Row>*/}
-                                            {/*))}*/}
 
                                             {/* ALL PRODUCTS*/}
                                             <Row xs={12}
@@ -115,7 +115,7 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                                                      key={product._id}
                                                 >
                                                     {/*<h6 className=''>*/}
-                                                        {product.category}
+                                                    {product.category}
                                                     {/*</h6>*/}
                                                 </Row>
                                             ))}
@@ -135,7 +135,7 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                                                      key={product._id}
                                                 >
                                                     {/*<h6 className='CatMan_items'>*/}
-                                                        {product.brand}
+                                                    {product.brand}
                                                     {/*</h6>*/}
                                                 </Row>
                                             ))}
@@ -145,13 +145,6 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                                     )}
 
                                     {/*==============================================================================*/}
-
-                                    {/* ALL PRODUCTS*/}
-                                    {/*<Row xs={12}*/}
-                                    {/*     className='global_accentFont d-flex justify-content-start CatMan-title py-3' onClick={displayAllHandler}>*/}
-                                    {/*    <h5 className='global_cursor text-white text-center'>All*/}
-                                    {/*        Products</h5>*/}
-                                    {/*</Row>*/}
 
                                     {/*    ALL CAT & ALL MAN INITIAL DISPLAY    */}
                                     {(updateCat === '' && updateManufacturer === '') && (
@@ -170,7 +163,7 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                                                      key={index}
                                                 >
                                                     {/*<h6 className='CatMan-ind-item'>*/}
-                                                        {product}
+                                                    {product}
                                                     {/*</h6>*/}
                                                 </Row>
                                             ))}
@@ -189,7 +182,7 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                                                      key={index}
                                                 >
                                                     {/*<h6 className='CatMan-ind-item'>*/}
-                                                        {product}
+                                                    {product}
                                                     {/*</h6>*/}
                                                 </Row>
 
@@ -199,17 +192,21 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                                         </>
                                     )}
                                 </Col>
-
-                                < Col xs={10} className='mt-5'>
-                                    < ProductDisplayByCatMan products={products}
-                                                             history={history}
-                                                             match={match}
-                                                             keyword={keyword}
-                                                             pages={pages}
-                                                             page={page}
-                                                             updateCatProp={updateCat}
-                                                             updateManufacturerProp={updateManufacturer}/>
+                            ):(
+                                <Col xs={2} className='bg-transparent min-vh-100 '>
                                 </Col>
+                            )}
+
+                            <Col xs={10} className='mt-5'>
+                                <ProductDisplayByCatMan products={products}
+                                                        history={history}
+                                                        match={match}
+                                                        keyword={keyword}
+                                                        pages={pages}
+                                                        page={page}
+                                                        updateCatProp={updateCat}
+                                                        updateManufacturerProp={updateManufacturer}/>
+                            </Col>
 
                         </>
 
