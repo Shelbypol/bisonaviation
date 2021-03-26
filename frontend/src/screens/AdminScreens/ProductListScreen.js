@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, {useEffect, useLayoutEffect} from 'react'
 import {LinkContainer} from 'react-router-bootstrap'
 import {Table, Button, Row, Col, Container} from 'react-bootstrap'
 import {useDispatch, useSelector} from 'react-redux'
@@ -13,6 +13,10 @@ const ProductListScreen = ({ history, match }) => {
     const pageNumber = match.params.pageNumber || 1;
 
     const dispatch = useDispatch();
+
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0)
+    });
 
     // BRINGING IN DIFF PARTS OF STATE
     const productList = useSelector(state => state.productList);

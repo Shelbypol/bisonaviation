@@ -1,4 +1,4 @@
-import React, { useState ,useEffect } from 'react'
+import React, {useState, useEffect, useLayoutEffect} from 'react'
 import { Link} from 'react-router-dom'
 import { Form, Button, Row, Col } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
@@ -18,6 +18,10 @@ const LoginScreen = ({ location, history }) => {
     const {loading, error, userInfo} = userLogin;
 
     const redirect = location.search ? location.search.split('=')[1] : '/';
+
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0)
+    });
 
     useEffect(() => {
         if(userInfo){

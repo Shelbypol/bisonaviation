@@ -32,11 +32,11 @@ const SideBar = () => {
 
                 {userInfo ? (
                     <Link to='#'>
-                        <p onClick={showSidebar} className='SideBar_Name mt-3 pr-4'>{userInfo.name}</p>
+                        <p onClick={showSidebar} className='SideBar_Name mt-3'>{userInfo.name}</p>
                     </Link>
                 ) : (
                     <Link to='#'>
-                        <p onClick={showSidebar} className='StickyHeader_links mt-3 pr-4' style={{fontSize:'14px'}}>Login</p>
+                        <p onClick={showSidebar} className='global_white-text-red-hover mt-3 ' style={{fontSize:'14px'}}>Login</p>
                     </Link>
                 )}
 

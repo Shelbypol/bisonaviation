@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useLayoutEffect} from 'react'
 import '../style/global-2.css'
 import HomeHero from '../components/2/HomeHero'
 import RepairAward from '../components/2/RepairAward'
@@ -15,6 +15,10 @@ const HomeScreen2 = () => {
     window.onbeforeunload = () => {
         localStorage.clear()
     };
+
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0)
+    });
 
     return (
         <>

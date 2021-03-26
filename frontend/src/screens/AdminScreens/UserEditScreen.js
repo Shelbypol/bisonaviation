@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect, useLayoutEffect} from 'react'
 import {Link} from 'react-router-dom'
 import {Form, Button, Container} from 'react-bootstrap'
 import {useDispatch, useSelector} from 'react-redux'
@@ -23,6 +23,11 @@ const UserEditScreen = ({ match, history}) => {
 
     const userUpdate = useSelector(state => state.userUpdate);
     const { loading: loadingUpdate, error: errorUpdate, success: successUpdate } = userUpdate;
+
+
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0)
+    });
 
     useEffect(() => {
         if(successUpdate){

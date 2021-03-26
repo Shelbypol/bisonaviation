@@ -27,6 +27,13 @@
 
 /*       STICKY HEADER       */
 
+.StickyHeader_searchBox{
+    width: 16vw;
+    /*margin-top: 6vh;*/
+    padding-top: 1.5vh;
+    margin: 0;
+}
+
 .StickyHeader_nav{
     background-image: url("../images/bg-graphics/graphics/dots.png");
     background-color: rgba(0,0,0, .9);
@@ -36,10 +43,14 @@
 .StickyHeader_search_btn_padding{
     /*padding-top: 2em;*/
     /*padding-bottom: 1.45em;*/
-    padding: .9em .8em;
+    padding: .87em .8em;
     background-color:  #4A433D;
     color: #000;
+}
 
+.StickyHeader_search_btn_padding:hover{
+    background-color: #660708;
+    color: white;
 }
 
 .StickyHeader_icon-size{
@@ -69,6 +80,18 @@
 
 .StickyHeader_links:hover{
     color: white;
+}
+
+.StickyHeader_contact-btn{
+    border: 1px solid #660708;
+    color: red;
+    background-color: black;
+}
+
+.StickyHeader_contact-btn:hover{
+    border: 1px solid white;
+    color: red;
+
 }
 
 /*   NAV BOOTSTRAP DROPDOWN STYLE    */
@@ -105,6 +128,8 @@ button.navbar-toggler:hover {
 
 
 /*       MOBILE HEADER       */
+
+
 .MobileHeader_logo {
     height: 12vh;
 }
@@ -126,10 +151,47 @@ button.navbar-toggler:hover {
     color: white;
 }
 
+.MobileHeader_login-text{
+    font-size: 2.5vw;
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+    background-color: #660708;
+    color: white;
+    margin-top: auto;
+}
+
+.MobileHeader_login-text:hover{
+    background-color: white;
+    color: #660708;
+}
+
+.MobileHeaderAdmin_text{
+    font-size: 2.5vw;
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+    background-color:lightgrey;
+    color: black;
+    border-bottom: 1px solid black;
+}
+.MobileHeaderAdmin_text:hover{
+    background-color: gray;
+}
+
 /*    ======   MOBILE RESPONSIVE    ======    */
 @media (max-width: 500px) {
     .MobileHeader_text{
         font-size: 4vw;
     }
 
+}
+
+@media (max-width: 1000px) {
+    .StickyHeader_searchBox {
+        width: 100vw;
+        padding: 1.5vh 2vh;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        scroll-behavior: auto;
+    }
 }

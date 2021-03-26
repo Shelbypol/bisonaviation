@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react';
+import React, {Fragment, useEffect, useState} from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import {Container} from 'react-bootstrap'
 import Headers from "./components/Headers-Nav-Footer/Headers";
@@ -27,6 +27,9 @@ import TeamScreen from "./screens/TeamScreen";
 import ContactScreen from "./screens/ContactScreen";
 import TermsScreen from "./screens/TermsScreen";
 import TermsFlirScreen from "./screens/TermsFlirScreen";
+import StickyHeader from "./components/Headers-Nav-Footer/StickyHeader";
+import MobileHeader from "./components/Headers-Nav-Footer/MobileHeader";
+import {listProducts} from "./actions/productActions";
 
 
 const App = () => {
@@ -41,10 +44,12 @@ const App = () => {
                 <Route path='/admin/productlist/:pageNumber' component={ProductListScreen} exact/>
                 <Route path='/admin/product/:id/edit' component={ProductEditScreen}/>
                 <Route path='/admin/orderlist' component={OrderListScreen}/>
+
                 <Route path='/products' component={ProductsDisplayScreen} exact/>
                 <Route path='/search/:keyword' component={ProductsDisplayScreen} exact/>
                 <Route path='/page/:pageNumber' component={ProductsDisplayScreen} exact/>
                 <Route path='/search/:keyword/page/:pageNumber' component={ProductsDisplayScreen}/>
+
 
                 <Fragment>
                     <Headers/>
@@ -69,14 +74,12 @@ const App = () => {
                         <Route path='/placeorder' component={PlaceOrderScreen}/>
                         <Route path='/order/:id' component={OrderScreen}/>
                         <Route path='/thankyou/:id' component={ThankYouScreen}/>
-
-
                     </Container>
 
+                    <Footer/>
                 </Fragment>
             </Switch>
-            {/*<ScrollToTop/>*/}
-            <Footer/>
+
         </Router>
     );
 };

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useLayoutEffect} from 'react';
 import '../style/flirScreen/Flir.css';
 import FlirHero from "../components/2/flir-screen/FlirHero";
 import FlirTable from "../components/2/flir-screen/FlirTable";
@@ -6,6 +6,11 @@ import {Jumbotron, Container} from "reactstrap";
 import FlirText from "../components/2/flir-screen/FlirText";
 
 const FlirScreen = () => {
+
+    // useLayoutEffect(() => {
+    //     window.scrollTo(0, 250)
+    // });
+
     return (
         <>
             <FlirHero/>

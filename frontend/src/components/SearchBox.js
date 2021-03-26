@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
-import {Form, Button, Nav} from 'react-bootstrap'
-import SocialIcons from "./SocialIcons";
-import logoSearch from '../images/graphics/search-logo-small.png'
+import {Form, Button} from 'react-bootstrap'
+
 
 const SearchBox = ({history, searchClasses, formClasses, btnClasses, btnSize, searchSize, btnStyle, iconClass, imgClasses}) => {
     const [keyword, setKeyword] = useState('');

@@ -1,4 +1,16 @@
 
+.CatMan_sidebar-icon{
+    z-index: 2;
+    padding:0;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 6vh;
+}
+
+.CatMan_sidebar-icon:hover{
+    text-underline: none;
+    color: black;
+}
 
 .CatMan-nav-menu {
     display: flex;
@@ -8,21 +20,107 @@
 .CatMan-nav-menu-items {
     position: -webkit-sticky;
     position: sticky;
-    top: 5.4em;
-    width: 25vw;
+    top: 0;
     background-image: url("../images/bg-graphics/graphics/dots.png");
-    background-color: rgba(0,0,0, .8);
-    /*background-image: url("../images/bg-graphics/graphics/body-bg.png");*/
-    padding-left: 5vw;
-    padding-top: 5vh;
+    background-color: rgba(0, 0, 0, .8);
+    padding-left: 2vw;
+    padding-top: 11vh;
+    margin-top: -5.5vh;
+    min-height: 100vh;
+
 }
 
-.CatMan_items{
+.CatMan_items {
     color: white;
+    padding: 0 1vw 0 1vw;
+    margin: 0;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
 }
 
-.CatMan_items:hover{
-    text-decoration: underline;
-    /*color: #2576e5*/
-    font-size: 2vh;
+.CatMan_items:hover {
+    background-color: lightgrey;
+    color: black;
+}
+
+.CatMan-title {
+    top: 6vh;
+    background-color: #660708;
+    color: white;
+    /*background-color: lightgrey;*/
+    padding-left: .5vw;
+}
+
+.CatMan-sub-titles {
+    border-top: 1px solid rgba(0,0,0, .5);
+    width: 100%;
+    background-color: lightgray;
+    color: black;
+    padding-left: 1vw;
+}
+
+.CatMan-sub-titles:hover{
+    color: #660708;
+}
+
+/*PRODUCT CARD*/
+
+.CatMan_card-text{
+    width: 18vw;
+}
+
+.CatMan_card-img{
+    height: 20vh;
+    /*height: 15vh;*/
+    width: 50%;
+    margin-left: 20%;
+    background-color: white;
+}
+
+.CatMan-text{
+    display: flex;
+    justify-content: start;
+}
+
+/*    ======   MOBILE RESPONSIVE    ======    */
+@media (max-width: 1000px) {
+    .CatMan-nav-menu-items {
+        z-index: 1;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        background-image: url("../images/bg-graphics/graphics/dots.png");
+        background-color: rgba(0, 0, 0, .9);
+        padding-left: 2vw;
+        padding-top: 8vh;
+        margin-top: -8vh;
+    }
+
+    .CatMan_card-text{
+        width: auto;
+    }
+
+    .CatMan_card-img{
+        height: 20vh;
+        margin-left: 20%;
+    }
+
+    .CatMan-text{
+        display: flex;
+        justify-content: center;
+    }
+
+    .CatMan_sidebar-icon{
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        padding-left: 2vh;
+        margin-top: 3vh;
+        padding-top:  5vh;
+    }
+
+    .CatMan_products{
+        display: block;
+    }
+
 }
