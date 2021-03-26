@@ -112,7 +112,7 @@ const CategoryManufacturerDisplay = ({match, history}) => {
 
                             {sideBar ? (
                                 <>
-                                    <Col lg={2} xs={12} className='CatMan-nav-menu-items'>
+                                    <Col lg={2} xs={12} className=' CatMan-nav-menu-items'>
                                         {/*     MANUFACTURER SORT DISPLAY AVAILABLE CATS ON CLICK    */}
 
                                         <Route render={({history}) => <SearchBox history={history}
@@ -135,16 +135,16 @@ const CategoryManufacturerDisplay = ({match, history}) => {
 
                                                 {/* ALL PRODUCTS*/}
                                                 <Row xs={12}
-                                                     className='global_accentFont mb-0 CatMan-text'
+                                                     className='global_accentFont mb-0'
                                                      onClick={displayAllHandler}>
-                                                    <p className='global_cursor CatMan-sub-titles py-2'>All
+                                                    <p className='global_cursor CatMan-text CatMan-sub-titles py-2'>All
                                                         Products</p>
                                                 </Row>
 
                                                 {/*   ALL CATEGORIES  */}
                                                 <Row xs={12}
-                                                     className='global_accentFont CatMan-text mt-n3'>
-                                                    <p className='global_cursor CatMan-sub-titles py-2'>Categories</p>
+                                                     className='global_accentFont mt-n3'>
+                                                    <p className='global_cursor CatMan-text CatMan-sub-titles py-2'>Categories</p>
                                                 </Row>
 
                                                 {products.map(product => (
@@ -162,9 +162,9 @@ const CategoryManufacturerDisplay = ({match, history}) => {
 
                                                 {/*   ALL MANUFACTURES  */}
                                                 <Row xs={12}
-                                                     className='global_accentFont mt-4 CatMan-text'
+                                                     className='global_accentFont mt-4'
                                                 >
-                                                    <p className='global_cursor CatMan-sub-titles py-2'>Manufactures</p>
+                                                    <p className='global_cursor CatMan-text CatMan-sub-titles py-2'>Manufactures</p>
                                                 </Row>
 
                                                 {products.map(product => (
@@ -246,7 +246,7 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                                     </Col>
                                 </>
                             ) : (
-                                <Col xs={12} className='mt-5'>
+                                <Col xs={12} className='mt-5 CatMan_products'>
                                     <ProductDisplayByCatMan products={products}
                                                             history={history}
                                                             match={match}

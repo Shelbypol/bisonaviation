@@ -54,7 +54,7 @@ const Product = ({product, history, match}) => {
 
                     <Card.Text>
                         <Row>
-                            <Col xs={2} className='pt-3 d-flex justify-content-start'>
+                            <Col xs={6} lg={6} className='pt-3 d-flex justify-content-start'>
                                 {/* LIKE BTN */}
                                 <>
                                     {activeHeart ? (
@@ -74,7 +74,7 @@ const Product = ({product, history, match}) => {
                                     )}
                                 </>
                             </Col>
-                            <Col xs={10} className='font-weight-bold pt-3 d-flex justify-content-end'>
+                            <Col xs={6} lg={6} className='font-weight-bold pt-3 d-flex justify-content-center'>
                                 {/*<Card.Text>*/}
                                 ${product.price}
                                 {/*</Card.Text>*/}

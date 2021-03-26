@@ -184,3 +184,14 @@ button.navbar-toggler:hover {
     }
 
 }
+
+@media (max-width: 1000px) {
+    .StickyHeader_searchBox {
+        width: 100vw;
+        padding: 1.5vh 5vh;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        scroll-behavior: auto;
+    }
+}
