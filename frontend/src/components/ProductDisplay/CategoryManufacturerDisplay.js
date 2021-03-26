@@ -14,8 +14,12 @@ const CategoryManufacturerDisplay = ({match, history}) => {
 
     const [sideBar, setSideBar] = useState(true);
 
+    const [width, setWidth] = useState(window.innerWidth);
+
     const [updateCat, setUpdateCat] = useState('');
     const [updateManufacturer, setUpdateManufacturer] = useState('');
+
+    const breakpoint = 1000;
 
     const keyword = match.params.keyword;
 
@@ -29,8 +33,22 @@ const CategoryManufacturerDisplay = ({match, history}) => {
 
     useEffect(() => {
         dispatch(listProducts(keyword, pageNumber));
-    }, [dispatch, updateCat, updateManufacturer, keyword, pageNumber, setUpdateManufacturer, setUpdateCat]);
+        if (width < breakpoint) {
+                setSideBar(!sideBar);
+            }
+        window.addEventListener("resize", handleWindowResize);
+        return () => window.removeEventListener("resize", handleWindowResize);
 
+
+    }, [dispatch, updateCat, updateManufacturer, keyword, pageNumber, setUpdateManufacturer, setUpdateCat, width]);
+
+
+    // const sidebarBreak = () => {
+    // };
+
+    const handleWindowResize = () => {
+        setWidth(window.innerWidth);
+    };
 
     //SIDE BAR
     const showSideBar = () => setSideBar(!sideBar);
@@ -38,18 +56,27 @@ const CategoryManufacturerDisplay = ({match, history}) => {
     // SORT CAT HANDLER
     const sortByCategoryHandler = (a) => {
         setUpdateManufacturer('');
-        setUpdateCat(a)
+        setUpdateCat(a);
+        if(width < breakpoint){
+            setSideBar(!sideBar);
+        }
     };
 
     const displayAllHandler = () => {
         setUpdateManufacturer('');
-        setUpdateCat('')
+        setUpdateCat('');
+        if(width < breakpoint){
+            setSideBar(!sideBar);
+        }
     };
 
     //  SORT BRAND HANDLER
     const sortByManufacturerHandler = (a) => {
         setUpdateCat('');
-        setUpdateManufacturer(a)
+        setUpdateManufacturer(a);
+        if(width < breakpoint){
+            setSideBar(!sideBar);
+        }
     };
 
     const maufacturerArr = [...new Set(products.map(product => product.brand))];
@@ -66,26 +93,26 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                         <>
                             {sideBar ? (
                                 <>
-                                    <Col xs={2} className='global_cursor CatMan_sidebar-icon '>
+                                    <Col lg={2} xs={12} className='global_cursor CatMan_sidebar-icon '>
                                         <h5 onClick={showSideBar}
                                             className='pl-4 pt-3 global_white-text-red-hover'>X</h5>
                                     </Col>
-                                    <Col xs={10}> </Col>
+                                    <Col lg={10} xs={0}> </Col>
                                 </>
                             ) : (
                                 <>
-                                    <Col xs={2} className='global_cursor CatMan_sidebar-icon pl-4 pt-2'>
+                                    <Col lg={2} xs={12} className='global_cursor CatMan_sidebar-icon pl-4 pt-2'>
                                         <h6 className='global_blood-red' onClick={showSideBar}><span><h3
                                             className='d-inline global'>|||</h3></span>&nbsp;categories
                                         </h6>
                                     </Col>
-                                    <Col xs={10}> </Col>
+                                    <Col lg={10} xs={0}> </Col>
                                 </>
                             )}
 
                             {sideBar ? (
                                 <>
-                                    <Col lg={2} xs={12} className='CatMan-nav-menu-items min-vh-100'>
+                                    <Col lg={2} xs={12} className='CatMan-nav-menu-items'>
                                         {/*     MANUFACTURER SORT DISPLAY AVAILABLE CATS ON CLICK    */}
 
                                         <Route render={({history}) => <SearchBox history={history}

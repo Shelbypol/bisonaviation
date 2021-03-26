@@ -26,6 +26,8 @@
     padding-left: 2vw;
     padding-top: 11vh;
     margin-top: -5.5vh;
+    min-height: 100vh;
+
 }
 
 .CatMan_items {
@@ -71,4 +73,19 @@
     height: 15vh;
     width: 50%;
     background-color: white;
+}
+
+/*    ======   MOBILE RESPONSIVE    ======    */
+@media (max-width: 1000px) {
+    .CatMan-nav-menu-items {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        background-image: url("../images/bg-graphics/graphics/dots.png");
+        background-color: rgba(0, 0, 0, .7);
+        padding-left: 2vw;
+        padding-top: 11vh;
+        margin-top: -5.5vh;
+    }
+
 }
