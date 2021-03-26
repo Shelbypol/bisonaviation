@@ -86,17 +86,14 @@
 @media (max-width: 1000px) {
     .CatMan-nav-menu-items {
         z-index: 1;
-        /*position: -webkit-sticky;*/
-        /*position: sticky;*/
+        position: -webkit-sticky;
+        position: sticky;
         top: 0;
         background-image: url("../images/bg-graphics/graphics/dots.png");
         background-color: rgba(0, 0, 0, .9);
         padding-left: 2vw;
-        padding-top: 11vh;
-        margin-top: -5.5vh;
-        /*min-height:vh;*/
-        display: block;
-        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        padding-top: 8vh;
+        margin-top: -8vh;
     }
 
     .CatMan_card-text{
@@ -114,7 +111,12 @@
     }
 
     .CatMan_sidebar-icon{
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
         padding-left: 2vh;
+        margin-top: 3vh;
+        padding-top:  5vh;
     }
 
     .CatMan_products{

@@ -218,4 +218,13 @@ main {
         width: 80vw;
     }
 
+
+
+}
+
+@media (max-width: 900px) {
+    .App_mobile-sticky-header{
+
+    }
+
 }

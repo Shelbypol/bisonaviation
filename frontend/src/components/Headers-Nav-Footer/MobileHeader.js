@@ -60,7 +60,7 @@ const MobileHeader = () => {
                             {/*/!*  SEARCH BOX  *!/*/}
                             <Route render={({history}) => <SearchBox history={history}
                                                                      searchSize={'sm'}
-                                                                     formClasses={'col-12 my-4'}
+                                                                     formClasses={'col-sm-12 col-md-none my-4'}
                                                                      searchClasses={'col-10'}
                                                                      btnSize={'sm'}
                                                                      btnClasses={'global_bisonWhiteBgBtnSearch MobileHeader_search_btn_padding px-1 col-2 rounded-right'}

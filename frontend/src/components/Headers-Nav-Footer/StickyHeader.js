@@ -59,14 +59,14 @@ const StickyHeader = () => {
                     <Navbar.Collapse id="basic-navbar-nav">
 
                         {/*===============  SEARCH BAR  ==================*/}
-                        <Nav className={'col-md-3 ml-4 d-sm-none d-md-block'}>
+                        <Nav className={'col-sm-3 ml-4 d-sm-none d-md-block'}>
                             {userInfo && (
                                 <SideBar/>
                             )}
                         </Nav>
 
                         {/*============= NAV SHOW ON SCROLL ==============*/}
-                        <Nav className='col-md-6 justify-content-center'>
+                        <Nav className='col-sm-6 justify-content-sm-center'>
 
                             {/*  HOME  */}
                             <LinkContainer className='mx-1' to='/'>
@@ -114,7 +114,7 @@ const StickyHeader = () => {
 
 
                         {/*============= PROFILE BTNS ==============*/}
-                        <Nav className='col-md-3 justify-content-end'>
+                        <Nav className='col-sm-3 justify-content-end'>
 
                             <WishListTab/>
 

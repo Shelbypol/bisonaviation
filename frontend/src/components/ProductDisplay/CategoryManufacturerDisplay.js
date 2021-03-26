@@ -43,9 +43,6 @@ const CategoryManufacturerDisplay = ({match, history}) => {
     }, [dispatch, updateCat, updateManufacturer, keyword, pageNumber, setUpdateManufacturer, setUpdateCat, width]);
 
 
-    // const sidebarBreak = () => {
-    // };
-
     const handleWindowResize = () => {
         setWidth(window.innerWidth);
     };

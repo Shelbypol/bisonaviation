@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react';
+import React, {Fragment, useEffect, useState} from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import {Container} from 'react-bootstrap'
 import Headers from "./components/Headers-Nav-Footer/Headers";
@@ -27,6 +27,9 @@ import TeamScreen from "./screens/TeamScreen";
 import ContactScreen from "./screens/ContactScreen";
 import TermsScreen from "./screens/TermsScreen";
 import TermsFlirScreen from "./screens/TermsFlirScreen";
+import StickyHeader from "./components/Headers-Nav-Footer/StickyHeader";
+import MobileHeader from "./components/Headers-Nav-Footer/MobileHeader";
+import {listProducts} from "./actions/productActions";
 
 
 const App = () => {
@@ -34,46 +37,48 @@ const App = () => {
     return (
         <Router>
 
-                <Switch>
-                    <Route path='/admin/userlist' component={UserListScreen}/>
-                    <Route path='/admin/user/:id/edit' component={UserEditScreen}/>
-                    <Route path='/admin/productlist' component={ProductListScreen} exact/>
-                    <Route path='/admin/productlist/:pageNumber' component={ProductListScreen} exact/>
-                    <Route path='/admin/product/:id/edit' component={ProductEditScreen}/>
-                    <Route path='/admin/orderlist' component={OrderListScreen}/>
-                    <Route path='/products' component={ProductsDisplayScreen} exact/>
-                    <Route path='/search/:keyword' component={ProductsDisplayScreen} exact/>
-                    <Route path='/page/:pageNumber' component={ProductsDisplayScreen} exact/>
-                    <Route path='/search/:keyword/page/:pageNumber' component={ProductsDisplayScreen}/>
+            <Switch>
+                <Route path='/admin/userlist' component={UserListScreen}/>
+                <Route path='/admin/user/:id/edit' component={UserEditScreen}/>
+                <Route path='/admin/productlist' component={ProductListScreen} exact/>
+                <Route path='/admin/productlist/:pageNumber' component={ProductListScreen} exact/>
+                <Route path='/admin/product/:id/edit' component={ProductEditScreen}/>
+                <Route path='/admin/orderlist' component={OrderListScreen}/>
 
-                    <Fragment>
-                        <Headers/>
-                        <Route path='/' component={HomeScreen} exact/>
-                        <Route path='/avionics' component={AvionicsScreen}/>
-                        <Route path='/flir' component={FlirScreen}/>
-                        <Route path='/maintenance' component={MaintenanceScreen}/>
-                        <Route path='/team' component={TeamScreen}/>
-                        <Route path='/contact' component={ContactScreen}/>
-                        <Route path='/terms' component={TermsScreen}/>
-                        <Route path='/flir-terms' component={TermsFlirScreen}/>
-                        <Route path='/register' component={RegisterScreen}/>
+                <Route path='/products' component={ProductsDisplayScreen} exact/>
+                <Route path='/search/:keyword' component={ProductsDisplayScreen} exact/>
+                <Route path='/page/:pageNumber' component={ProductsDisplayScreen} exact/>
+                <Route path='/search/:keyword/page/:pageNumber' component={ProductsDisplayScreen}/>
 
 
-                        <Container className='mb-0 pb-0'>
-                            <Route path='/login' component={LoginScreen}/>
-                            <Route path='/profile' component={ProfileScreen}/>
-                            <Route path='/product/:id' component={ProductScreen}/>
-                            <Route path='/cart/:id?' component={CartScreen}/>
-                            <Route path='/shipping' component={ShippingScreen}/>
-                            <Route path='/payment' component={PaymentScreen}/>
-                            <Route path='/placeorder' component={PlaceOrderScreen}/>
-                            <Route path='/order/:id' component={OrderScreen}/>
-                            <Route path='/thankyou/:id' component={ThankYouScreen}/>
-                        </Container>
+                <Fragment>
+                    <Headers/>
+                    <Route path='/' component={HomeScreen} exact/>
+                    <Route path='/avionics' component={AvionicsScreen}/>
+                    <Route path='/flir' component={FlirScreen}/>
+                    <Route path='/maintenance' component={MaintenanceScreen}/>
+                    <Route path='/team' component={TeamScreen}/>
+                    <Route path='/contact' component={ContactScreen}/>
+                    <Route path='/terms' component={TermsScreen}/>
+                    <Route path='/flir-terms' component={TermsFlirScreen}/>
+                    <Route path='/register' component={RegisterScreen}/>
 
-                <Footer/>
-                    </Fragment>
-                </Switch>
+
+                    <Container className='mb-0 pb-0'>
+                        <Route path='/login' component={LoginScreen}/>
+                        <Route path='/profile' component={ProfileScreen}/>
+                        <Route path='/product/:id' component={ProductScreen}/>
+                        <Route path='/cart/:id?' component={CartScreen}/>
+                        <Route path='/shipping' component={ShippingScreen}/>
+                        <Route path='/payment' component={PaymentScreen}/>
+                        <Route path='/placeorder' component={PlaceOrderScreen}/>
+                        <Route path='/order/:id' component={OrderScreen}/>
+                        <Route path='/thankyou/:id' component={ThankYouScreen}/>
+                    </Container>
+
+                    <Footer/>
+                </Fragment>
+            </Switch>
 
         </Router>
     );
