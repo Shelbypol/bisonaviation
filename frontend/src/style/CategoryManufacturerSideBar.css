@@ -86,6 +86,11 @@
         padding-left: 2vw;
         padding-top: 11vh;
         margin-top: -5.5vh;
+        min-height: 0;
+    }
+
+    .CatMan_card-text{
+        width: auto;
     }
 
 }

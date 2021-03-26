@@ -46,7 +46,7 @@ const Product = ({product, history, match}) => {
 
     return (
         <>
-            <Col sm={12} className='my-5'>
+            <Col sm={12} className='my-5 d-flex justify-content-center align-content-center'>
                 <Card className='border-0 CatMan_card'>
 
                     <Link to={`/product/${product._id}`}>

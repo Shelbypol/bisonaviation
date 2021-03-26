@@ -101,9 +101,9 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                                 </>
                             ) : (
                                 <>
-                                    <Col lg={2} xs={12} className='global_cursor CatMan_sidebar-icon pl-4 pt-2'>
+                                    <Col lg={2} xs={12} className='bg-white global_cursor CatMan_sidebar-icon pl-4 pt-2'>
                                         <h6 className='global_blood-red' onClick={showSideBar}><span><h3
-                                            className='d-inline global'>|||</h3></span>&nbsp;categories
+                                            className='d-inline'>|||</h3></span>&nbsp;categories
                                         </h6>
                                     </Col>
                                     <Col lg={10} xs={0}> </Col>
@@ -232,7 +232,7 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                                             </>
                                         )}
                                     </Col>
-                                    <Col xs={10} className='mt-5'>
+                                    <Col lg={10} xs={12} className='mt-5'>
                                         <ProductDisplayByCatMan products={products}
                                                                 history={history}
                                                                 match={match}
@@ -246,7 +246,7 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                                     </Col>
                                 </>
                             ) : (
-                                <Col xs={12} className='mt-5 '>
+                                <Col xs={12} className='mt-5'>
                                     <ProductDisplayByCatMan products={products}
                                                             history={history}
                                                             match={match}

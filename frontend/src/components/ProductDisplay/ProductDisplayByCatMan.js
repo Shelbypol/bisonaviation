@@ -12,7 +12,7 @@ const ProductsDisplaySByCatMan = ({sideBar, history, match, updateCatProp, updat
             {/*     className='global_accentFont my-3 d-flex justify-content-start'>*/}
             {/*    <h3 className='global_bisonRedTxt global_cursor my-0 py-0'>{updateCatProp || updateManufacturerProp}</h3>*/}
             {/*</Row>*/}
-            <Row xs={9} className=' pl-5 d-flex justify-content-center align-items-center bg-white'>
+            <Row xs={12} className=' pl-5 d-flex justify-content-center align-items-center bg-white'>
                 <Paginate pages={pages} page={page} keyword={keyword ? keyword : ''}/>
 
                 {/*{(updateManufacturerProp !== '' || updateCatProp !== '') && (*/}
@@ -23,7 +23,7 @@ const ProductsDisplaySByCatMan = ({sideBar, history, match, updateCatProp, updat
                     {(updateCatProp !== '') && (
                         <>
                             {products.filter(product => product.category === updateCatProp).map(filteredProduct => (
-                                <Col key={filteredProduct._id}  md={sideBar ? 4 : 3} sm={12}>
+                                <Col key={filteredProduct._id}  lg={sideBar ? 4 : 3} md={4} sm={12}>
                                     <Product product={filteredProduct} history={history} match={match}/>
                                 </Col>
 
@@ -35,7 +35,7 @@ const ProductsDisplaySByCatMan = ({sideBar, history, match, updateCatProp, updat
                 {(updateManufacturerProp !== '') && (
                     <>
                         {products.filter(product => product.brand === updateManufacturerProp).map(filteredProduct => (
-                            <Col key={filteredProduct._id} md={sideBar ? 4 : 3} sm={12}>
+                            <Col key={filteredProduct._id} lg={sideBar ? 4 : 3} md={4} sm={12}>
                                 <Product product={filteredProduct} history={history} match={match}/>
                             </Col>
                         ))}
@@ -45,7 +45,7 @@ const ProductsDisplaySByCatMan = ({sideBar, history, match, updateCatProp, updat
                 {(updateManufacturerProp === '' && updateCatProp === '') && (
                     <>
                         {products.map(product => (
-                            <Col key={product._id} md={sideBar ? 4 : 3} sm={12}>
+                            <Col key={product._id} lg={sideBar ? 4 : 3} md={4} sm={12}>
                                 <Product product={product} history={history} match={match}
                                          product_id={product._id}/>
                             </Col>
