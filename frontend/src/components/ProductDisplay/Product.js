@@ -42,17 +42,15 @@ const Product = ({product, history, match}) => {
     };
 
     const MAX_LENGTH = 75;
-    // const MAX_LENGTH = 250;
 
     return (
         <>
             <Col sm={12} className='my-5 d-flex justify-content-center align-content-center'>
                 <Card className='border-0 CatMan_card'>
 
-                    <Link to={`/product/${product._id}`}>
-                        <Card.Img src={product.image} alt={product.name} className='px-auto CatMan_card-img'/>
-                    </Link>
-
+                        <Link to={`/product/${product._id}`}>
+                            <Card.Img src={product.image} alt={product.name} className='CatMan_card-img'/>
+                        </Link>
 
                     <Card.Text>
                         <Row>
@@ -76,16 +74,17 @@ const Product = ({product, history, match}) => {
                                     )}
                                 </>
                             </Col>
-                            <Col xs={10} className='pt-3 d-flex justify-content-center font-weight-bold'>
+                            <Col xs={10} className='font-weight-bold pt-3 d-flex justify-content-end'>
                                 {/*<Card.Text>*/}
-                                    ${product.price}
+                                ${product.price}
                                 {/*</Card.Text>*/}
                             </Col>
                         </Row>
                     </Card.Text>
 
                     <Link to={`/product/${product._id}`}>
-                        <Card.Title className='CatMan_card-text font-weight-bolder global_blood-red'>{product.name}</Card.Title>
+                        <Card.Title
+                            className='CatMan_card-text font-weight-bolder global_blood-red'>{product.name}</Card.Title>
                     </Link>
 
                     {/*<Row className='pt-1'>*/}
@@ -95,9 +94,9 @@ const Product = ({product, history, match}) => {
                     {/*            </Card.Text>*/}
                     {/*    </Col>*/}
                     {/*    <Col xs={6}>*/}
-                                <Card.Subtitle>
-                                    {product.brand}
-                                </Card.Subtitle>
+                    <Card.Subtitle>
+                        {product.brand}
+                    </Card.Subtitle>
                     {/*    </Col>*/}
                     {/*</Row>*/}
                     {product.description.length > MAX_LENGTH ?

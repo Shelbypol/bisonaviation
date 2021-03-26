@@ -129,13 +129,13 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                                         (
                                             <>
                                                 <Row xs={12}
-                                                     className='global_accentFont CatMan-title d-flex justify-content-start p-0'>
+                                                     className='global_accentFont CatMan-title CatMan-text p-0'>
                                                     <h3 className='pl-3 global_cursor text-white'>{updateManufacturer || updateCat}</h3>
                                                 </Row>
 
                                                 {/* ALL PRODUCTS*/}
                                                 <Row xs={12}
-                                                     className='global_accentFont mb-0 d-flex justify-content-start '
+                                                     className='global_accentFont mb-0 CatMan-text'
                                                      onClick={displayAllHandler}>
                                                     <p className='global_cursor CatMan-sub-titles py-2'>All
                                                         Products</p>
@@ -143,14 +143,14 @@ const CategoryManufacturerDisplay = ({match, history}) => {
 
                                                 {/*   ALL CATEGORIES  */}
                                                 <Row xs={12}
-                                                     className='global_accentFont d-flex justify-content-start mt-n3'>
+                                                     className='global_accentFont CatMan-text mt-n3'>
                                                     <p className='global_cursor CatMan-sub-titles py-2'>Categories</p>
                                                 </Row>
 
                                                 {products.map(product => (
                                                     <Row xs={12}
                                                          onClick={(ev) => sortByCategoryHandler(product.category, ev)}
-                                                         className='btn btn-block global_cursor d-flex justify-content-start CatMan_items'
+                                                         className='btn btn-block global_cursor CatMan-text CatMan_items'
                                                          type='button'
                                                          key={product._id}
                                                     >
@@ -162,7 +162,7 @@ const CategoryManufacturerDisplay = ({match, history}) => {
 
                                                 {/*   ALL MANUFACTURES  */}
                                                 <Row xs={12}
-                                                     className='global_accentFont mt-4 d-flex justify-content-start'
+                                                     className='global_accentFont mt-4 CatMan-text'
                                                 >
                                                     <p className='global_cursor CatMan-sub-titles py-2'>Manufactures</p>
                                                 </Row>
@@ -170,7 +170,7 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                                                 {products.map(product => (
                                                     <Row xs={12}
                                                          onClick={(ev) => sortByManufacturerHandler(product.brand, ev)}
-                                                         className='btn btn-block global_cursor d-flex justify-content-start CatMan_items'
+                                                         className='btn btn-block global_cursor CatMan-text CatMan_items'
                                                          type='button'
                                                          key={product._id}
                                                     >
@@ -190,7 +190,7 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                                         {(updateCat === '' && updateManufacturer === '') && (
                                             <>
                                                 <Row xs={12}
-                                                     className='global_accentFont mb-3 mt-0 d-flex justify-content-start global_cursor CatMan-title'>
+                                                     className='global_accentFont mb-3 mt-0 CatMan-text global_cursor CatMan-title'>
                                                     <h5 onClick={displayAllHandler}
                                                         className='py-3 CatMan-title'>Categories</h5>
                                                 </Row>
@@ -198,7 +198,7 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                                                 {catArr.map((product, index) => (
                                                     <Row xs={12}
                                                          onClick={(ev) => sortByCategoryHandler(product, ev)}
-                                                         className='btn btn-block global_cursor d-flex justify-content-start CatMan_items'
+                                                         className='btn btn-block global_cursor CatMan-text CatMan_items'
                                                          type='button'
                                                          key={index}
                                                     >
@@ -209,7 +209,7 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                                                 ))}
 
                                                 <Row xs={12}
-                                                     className='global_accentFont mb-3 mt-3 d-flex justify-content-start global_cursor CatMan-title'>
+                                                     className='global_accentFont mb-3 mt-3 CatMan-text global_cursor CatMan-title'>
                                                     <h5 onClick={displayAllHandler}
                                                         className='py-3 CatMan-title'>Manufacturers</h5>
                                                 </Row>
@@ -217,7 +217,7 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                                                 {maufacturerArr.map((product, index) => (
                                                     <Row xs={12}
                                                          onClick={(ev) => sortByManufacturerHandler(product, ev)}
-                                                         className='btn btn-block global_cursor d-flex justify-content-start CatMan_items'
+                                                         className='btn btn-block global_cursor CatMan-text CatMan_items'
                                                          type='button'
                                                          key={index}
                                                     >
@@ -232,7 +232,7 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                                             </>
                                         )}
                                     </Col>
-                                    <Col lg={10} xs={12} className='mt-5'>
+                                    <Col lg={10} xs={12} className='mt-lg-5'>
                                         <ProductDisplayByCatMan products={products}
                                                                 history={history}
                                                                 match={match}

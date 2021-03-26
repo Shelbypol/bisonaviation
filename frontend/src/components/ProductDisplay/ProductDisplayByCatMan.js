@@ -12,7 +12,7 @@ const ProductsDisplaySByCatMan = ({sideBar, history, match, updateCatProp, updat
             {/*     className='global_accentFont my-3 d-flex justify-content-start'>*/}
             {/*    <h3 className='global_bisonRedTxt global_cursor my-0 py-0'>{updateCatProp || updateManufacturerProp}</h3>*/}
             {/*</Row>*/}
-            <Row xs={12} className=' pl-5 d-flex justify-content-center align-items-center bg-white'>
+            <Row xs={12} className='pl-5 pr-5 bg-white'>
                 <Paginate pages={pages} page={page} keyword={keyword ? keyword : ''}/>
 
                 {/*{(updateManufacturerProp !== '' || updateCatProp !== '') && (*/}
