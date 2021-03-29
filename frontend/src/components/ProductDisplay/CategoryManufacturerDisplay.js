@@ -33,18 +33,19 @@ const CategoryManufacturerDisplay = ({match, history}) => {
 
     useEffect(() => {
         dispatch(listProducts(keyword, pageNumber));
-        if (width < breakpoint) {
-                setSideBar(!sideBar);
-            }
         window.addEventListener("resize", handleWindowResize);
         return () => window.removeEventListener("resize", handleWindowResize);
-
 
     }, [dispatch, updateCat, updateManufacturer, keyword, pageNumber, setUpdateManufacturer, setUpdateCat, width]);
 
 
     const handleWindowResize = () => {
         setWidth(window.innerWidth);
+        if (width < breakpoint) {
+            if(sideBar){
+                setSideBar(!sideBar);
+            }
+        }
     };
 
     //SIDE BAR
@@ -90,7 +91,7 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                         <>
                             {sideBar ? (
                                 <>
-                                    <Col lg={2} xs={12} className='global_cursor CatMan_sidebar-icon '>
+                                    <Col lg={2} xs={12} className='global_cursor CatMan_sidebar-icon-x '>
                                         <h5 onClick={showSideBar}
                                             className='pl-4 pt-3 global_white-text-red-hover'>X</h5>
                                     </Col>

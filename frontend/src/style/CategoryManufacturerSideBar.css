@@ -4,6 +4,14 @@
     padding:0;
     position: -webkit-sticky;
     position: sticky;
+    top: 8vh;
+}
+
+.CatMan_sidebar-icon-x{
+    z-index: 2;
+    padding:0;
+    position: -webkit-sticky;
+    position: sticky;
     top: 6vh;
 }
 
@@ -90,10 +98,15 @@
         position: sticky;
         top: 0;
         background-image: url("../images/bg-graphics/graphics/dots.png");
-        background-color: rgba(0, 0, 0, .9);
-        padding-left: 2vw;
+        background-color: rgba(0, 0, 0, 1);
+        padding-left: 1vw;
         padding-top: 8vh;
         margin-top: -8vh;
+    }
+
+    .CatMan_sidebar-icon-x{
+        top: 5vh;
+        padding-top: 3vh;
     }
 
     .CatMan_card-text{
