@@ -8,3 +8,15 @@
     z-index: 1;
     border: none;
 }
+
+.ProductScreen_img p{
+    margin-left: -10vw;
+}
+
+#productTab ul > li.active > a{
+    background-color: #660708;
+}
+
+@media (max-width: 900px) {
+
+}
