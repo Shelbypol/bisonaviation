@@ -103,6 +103,11 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                                         <h6 className='global_blood-red' onClick={showSideBar}><span><h3
                                             className='d-inline'>|||</h3></span>&nbsp;categories
                                         </h6>
+                                        {width < breakpoint && (
+                                            <h5 className='pt-2'>
+                                                {updateCat || updateManufacturer}
+                                            </h5>
+                                        )}
                                     </Col>
                                     <Col lg={10} xs={0}> </Col>
                                 </>
