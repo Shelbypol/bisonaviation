@@ -57,13 +57,8 @@ const MobileHeader = () => {
                         />
                     </LinkContainer>
 
-                    {cartItems.length !== 0 && (
-                        <h5 className='global_blue p-0 m-0 MobileHeader_cart-length'>
-                            {cartItems.length}
-                        </h5>
-                    )}
-
-                    <Navbar.Toggle aria-controls="basic-navbar-nav"  style={cartItems.length !== 0 ? ({border: '1px solid #2576e5'}) : ({backgroundColor: 'black'})}/>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav"
+                                   className={cartItems.length !== 0 && ('borderBlink')}/>
                     <Navbar.Collapse id="basic-navbar-nav border">
 
                         {/*/!*  SEARCH BOX  *!/*/}
@@ -72,8 +67,8 @@ const MobileHeader = () => {
                                                                  formClasses={'col-sm-12 col-md-none my-4'}
                                                                  searchClasses={'col-10'}
                                                                  btnSize={'sm'}
-                                                                 iconClass={'text-white'}
-                                                                 btnClasses={'global_blood-red-bg MobileHeader_search_btn_padding px-1 col-2'}
+                                                                 iconClass={'fal fa-search p-0 m-0'}
+                                                                 btnClasses={'global_blood-red-bg text-white MobileHeader_search_btn_padding px-1 col-2'}
 
                         />}/>
 
@@ -111,8 +106,14 @@ const MobileHeader = () => {
                             <Nav.Link>
 
                                 {cartItems.length !== 0 ? (
-                                    <span className='global_red'>
-                                {cartItems.length}&nbsp;<i className=" fal fa-envelope-open-text"> </i>
+                                    <span className={cartItems.length !== 0 && ('borderBlink')}>
+                                        <span className='text-white'>&nbsp;
+                                {cartItems.length}&nbsp;
+                                        </span>
+                                        <span className='global_red'>
+                                             <i className=" fal fa-envelope-open-text"> </i>
+                                        </span>
+
                                     </span>
                                 ) : (
                                     <span className=''>
@@ -138,7 +139,7 @@ const MobileHeader = () => {
 
 
                         {/*  EO/IR  */}
-                        <LinkContainer to='/eoir/maintenance'
+                        <LinkContainer to='/flir'
                                        className='MobileHeader_text d-flex justify-content-center'>
                             <Nav.Link>EO/IR Flir </Nav.Link>
                         </LinkContainer>
