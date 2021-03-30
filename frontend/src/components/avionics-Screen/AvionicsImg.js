@@ -1,6 +1,6 @@
 import {Jumbotron} from "reactstrap";
 import {Button, Card, Col, Row} from "react-bootstrap";
-import AvionicsProducts from "../AvionicsProducts";
+import AvionicsProducts from "../2/AvionicsProducts";
 import React from "react";
 import Zoom from 'react-reveal/Zoom'
 

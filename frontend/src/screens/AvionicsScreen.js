@@ -1,5 +1,5 @@
 import React, {useLayoutEffect} from 'react'
-import AvionicsHero from "../components/2/avionics-Screen/AvionicsHero";
+import AvionicsHero from "../components/avionics-Screen/AvionicsHero";
 
 const AvionicsScreen = () => {
 

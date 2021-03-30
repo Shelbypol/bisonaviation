@@ -2,7 +2,7 @@ import React from 'react';
 import {Col, Row} from "react-bootstrap";
 import {Jumbotron} from 'reactstrap';
 import Fade from 'react-reveal/Fade';
-import '../../../style/avionicsScreen/AvionicsAd.css';
+import '../../style/avionicsScreen/AvionicsAd.css';
 
 const AvionicsAd = () => {
 
