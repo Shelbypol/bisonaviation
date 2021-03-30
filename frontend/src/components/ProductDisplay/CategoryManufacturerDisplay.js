@@ -177,25 +177,10 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                                                          type='button'
                                                          key={index}
                                                     >
-                                                        <span className='global_red'>
-
                                                         {product}
-                                                        </span>
                                                     </Row>
                                                 ))}
 
-                                                {/*{products.map(product => (*/}
-                                                {/*    <Row xs={12}*/}
-                                                {/*         onClick={(ev) => sortByManufacturerHandler(product.brand, ev)}*/}
-                                                {/*         className='btn btn-block global_cursor CatMan-text CatMan_items'*/}
-                                                {/*         type='button'*/}
-                                                {/*         key={product._id}*/}
-                                                {/*    >*/}
-
-                                                {/*        {product.brand}*/}
-
-                                                {/*    </Row>*/}
-                                                {/*))}*/}
 
                                             </>
 
@@ -237,10 +222,7 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                                                          type='button'
                                                          key={index}
                                                     >
-                                                        <span className='global_blue'>
-
                                                         {product}
-                                                        </span>
                                                     </Row>
                                                 ))}
 

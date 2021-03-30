@@ -177,6 +177,11 @@ button.navbar-toggler:hover {
     background-color: gray;
 }
 
+.MobileHeader_cart-length{
+    padding-left: 80vw;
+    border: 1px solid white;
+}
+
 /*    ======   MOBILE RESPONSIVE    ======    */
 @media (max-width: 500px) {
     .MobileHeader_text{
