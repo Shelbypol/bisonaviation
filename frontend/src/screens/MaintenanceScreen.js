@@ -1,5 +1,5 @@
 import React, {useLayoutEffect} from 'react'
-import MechanicsHero from "../components/2/mechanics-screen/MechanicsHero";
+import MechanicsHero from "../components/mechanics-screen/MechanicsHero";
 import AvionicsIcons from "../components/avionics-Screen/AvionicsIcons";
 
 

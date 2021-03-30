@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../../style/2/contactScreen/Contact.css'
+import '../../style/2/contactScreen/Contact.css'
 import {Jumbotron, Container} from "reactstrap";
 
 

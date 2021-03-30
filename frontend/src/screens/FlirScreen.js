@@ -1,9 +1,9 @@
 import React, {useLayoutEffect} from 'react';
 import '../style/flirScreen/Flir.css';
-import FlirHero from "../components/2/flir-screen/FlirHero";
-import FlirTable from "../components/2/flir-screen/FlirTable";
+import FlirHero from "../components/flir-screen/FlirHero";
+import FlirTable from "../components/flir-screen/FlirTable";
 import {Jumbotron, Container} from "reactstrap";
-import FlirText from "../components/2/flir-screen/FlirText";
+import FlirText from "../components/flir-screen/FlirText";
 
 const FlirScreen = () => {
 

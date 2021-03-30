@@ -1,7 +1,7 @@
 import React, {useLayoutEffect} from 'react'
 import {Container, Row} from "react-bootstrap";
-import TeamHero from "../components/2/team-screen/TeamHero";
-import TeamCard from "../components/2/team-screen/TeamCard";
+import TeamHero from "../components/team-screen/TeamHero";
+import TeamCard from "../components/team-screen/TeamCard";
 import {Jumbotron} from "reactstrap";
 import johnAtkin from '../images/bg-graphics/screen-team/john_atkin.png'
 import leslieBanner from '../images/bg-graphics/screen-team/leslie_banner.png'

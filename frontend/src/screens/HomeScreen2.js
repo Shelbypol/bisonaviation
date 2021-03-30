@@ -1,6 +1,6 @@
 import React, {useLayoutEffect} from 'react'
 import '../style/global-2.css'
-import HomeHero from '../components/2/HomeHero'
+import HomeHero from '../components/HomeHero'
 import RepairAward from '../components/home-screen/RepairAward'
 import Services from "../components/home-screen/Services";
 import Avionics from "../components/home-screen/Avionics";

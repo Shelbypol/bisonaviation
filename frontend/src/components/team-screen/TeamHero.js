@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../../style/2/teamScreen/TeamHero.css'
+import '../../style/2/teamScreen/TeamHero.css'
 import {Jumbotron} from "reactstrap";
 
 
