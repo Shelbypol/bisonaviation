@@ -77,6 +77,7 @@ const CategoryManufacturerDisplay = ({match, history}) => {
         }
     };
 
+
     const maufacturerArr = [...new Set(products.map(product => product.brand))];
     const catArr = [...new Set(products.map(product => product.category))];
 
@@ -150,16 +151,15 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                                                     <p className='global_cursor CatMan-text CatMan-sub-titles py-2'>Categories</p>
                                                 </Row>
 
-                                                {products.map(product => (
+
+                                                {catArr.map((product, index) => (
                                                     <Row xs={12}
-                                                         onClick={(ev) => sortByCategoryHandler(product.category, ev)}
+                                                         onClick={(ev) => sortByCategoryHandler(product, ev)}
                                                          className='btn btn-block global_cursor CatMan-text CatMan_items'
                                                          type='button'
-                                                         key={product._id}
+                                                         key={index}
                                                     >
-                                                        {/*<h6 className=''>*/}
-                                                        {product.category}
-                                                        {/*</h6>*/}
+                                                        {product}
                                                     </Row>
                                                 ))}
 
@@ -170,18 +170,32 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                                                     <p className='global_cursor CatMan-text CatMan-sub-titles py-2'>Manufactures</p>
                                                 </Row>
 
-                                                {products.map(product => (
+                                                {maufacturerArr.map((product, index) => (
                                                     <Row xs={12}
-                                                         onClick={(ev) => sortByManufacturerHandler(product.brand, ev)}
+                                                         onClick={(ev) => sortByManufacturerHandler(product, ev)}
                                                          className='btn btn-block global_cursor CatMan-text CatMan_items'
                                                          type='button'
-                                                         key={product._id}
+                                                         key={index}
                                                     >
-                                                        {/*<h6 className='CatMan_items'>*/}
-                                                        {product.brand}
-                                                        {/*</h6>*/}
+                                                        <span className='global_red'>
+
+                                                        {product}
+                                                        </span>
                                                     </Row>
                                                 ))}
+
+                                                {/*{products.map(product => (*/}
+                                                {/*    <Row xs={12}*/}
+                                                {/*         onClick={(ev) => sortByManufacturerHandler(product.brand, ev)}*/}
+                                                {/*         className='btn btn-block global_cursor CatMan-text CatMan_items'*/}
+                                                {/*         type='button'*/}
+                                                {/*         key={product._id}*/}
+                                                {/*    >*/}
+
+                                                {/*        {product.brand}*/}
+
+                                                {/*    </Row>*/}
+                                                {/*))}*/}
 
                                             </>
 
@@ -205,9 +219,7 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                                                          type='button'
                                                          key={index}
                                                     >
-                                                        {/*<h6 className='CatMan-ind-item'>*/}
                                                         {product}
-                                                        {/*</h6>*/}
                                                     </Row>
                                                 ))}
 
@@ -217,6 +229,7 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                                                         className='py-3 CatMan-title'>Manufacturers</h5>
                                                 </Row>
 
+
                                                 {maufacturerArr.map((product, index) => (
                                                     <Row xs={12}
                                                          onClick={(ev) => sortByManufacturerHandler(product, ev)}
@@ -224,11 +237,11 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                                                          type='button'
                                                          key={index}
                                                     >
-                                                        {/*<h6 className='CatMan-ind-item'>*/}
-                                                        {product}
-                                                        {/*</h6>*/}
-                                                    </Row>
+                                                        <span className='global_blue'>
 
+                                                        {product}
+                                                        </span>
+                                                    </Row>
                                                 ))}
 
 

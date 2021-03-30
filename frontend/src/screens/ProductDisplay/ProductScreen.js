@@ -69,7 +69,7 @@ const ProductScreen = ({history, match}) => {
                 onSelect={(k) => setKey(k)}
                 className='mt-3 mb-3'
             >
-                <Tab eventKey="Description" title="DESCRIPTION" tabClassName='text-white'>
+                <Tab eventKey="Description" title="DESCRIPTION" tabClassName='bg-dark text-white'>
                     <p className='text-white'>{product.description}</p>
                 </Tab>
             </Tabs>
@@ -146,7 +146,7 @@ const ProductScreen = ({history, match}) => {
                                 <Row xs={12} className='ml-1'>
                                     <Col xs={2}>
                                         <ListGroup.Item
-                                            className='border-0 d-flex justify-content-center global_blood-red-bg'>
+                                            className='border-0 d-flex justify-content-center bg-transparent'>
                                             {/* LIKE BTN */}
                                             {activeHeart ? (
                                                 <>
