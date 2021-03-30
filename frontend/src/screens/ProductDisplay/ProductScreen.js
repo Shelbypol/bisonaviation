@@ -153,7 +153,7 @@ const ProductScreen = ({history, match}) => {
                                             <span onClick={unlike}
                                                   className='global_cursor'
                                                   style={{color: 'rgba(200, 0, 0, 1)', fontSize: '1.5em'}}>
-                                                <i className="mt-auto fas fa-heart  bg-transparent"> </i>
+                                                <i className="mt-auto fas fa-heart bg-transparent"> </i>
                                             </span>
                                                 </>
                                             ) : (

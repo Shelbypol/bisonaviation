@@ -74,21 +74,12 @@ const MobileHeader = () => {
 
 
                         {/*   SOCIAL ICONS   */}
-
-                        {/*<Row className='pl-4'>*/}
-                        {/*    <Col xs={3} className=''>*/}
-                        {/*        <WishListTab/>*/}
-                        {/*    </Col>*/}
-                        {/*    <Col xs={9}>*/}
                         <SocialIcons socialClassName={'mr-5 mb-5'}
                                      facebookClassName={' d-flex justify-content-center'}
                                      instaClassName={' d-flex justify-content-center'}
                                      twitterClassName={' d-flex justify-content-center'}
                                      contactClassName={'d-none'}
                         />
-                        {/*    </Col>*/}
-                        {/*</Row>*/}
-
 
                         {/*  PROFILE  /  SIGN IN  */}
                         {userInfo && (
@@ -106,15 +97,15 @@ const MobileHeader = () => {
                             <Nav.Link>
 
                                 {cartItems.length !== 0 ? (
-                                    <span className={cartItems.length !== 0 && ('borderBlink')}>
-                                        <span className='text-white'>&nbsp;
-                                {cartItems.length}&nbsp;
-                                        </span>
-                                        <span className='global_red'>
-                                             <i className=" fal fa-envelope-open-text"> </i>
-                                        </span>
+                                    <p className={cartItems.length !== 0 && ('borderBlink')}>
+                                        <p className='text-white d-inline' style={{fontSize: '1.3em'}}>
+                                            &nbsp;{cartItems.length}&nbsp;
+                                        </p>
+                                        <p className='global_red d-inline'>
+                                             <i style={{fontSize: '1.3em'}} className=" fal fa-envelope-open-text"> </i>
+                                        </p>
 
-                                    </span>
+                                    </p>
                                 ) : (
                                     <span className=''>
                                 {cartItems.length}&nbsp;<i className=" fal fa-envelope-open-text"> </i>
