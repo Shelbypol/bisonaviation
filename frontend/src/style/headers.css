@@ -135,8 +135,9 @@ button.navbar-toggler:hover {
 }
 
 .MobileHeader_search_btn_padding{
-    padding-top: 2em;
-    padding-bottom: 1.45em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    color: white;
 }
 
 .MobileHeader_text{
@@ -173,8 +174,39 @@ button.navbar-toggler:hover {
     color: black;
     border-bottom: 1px solid black;
 }
+
 .MobileHeaderAdmin_text:hover{
     background-color: gray;
+}
+
+.MobileHeader_cart-length{
+    margin-left: 50vw;
+    border: 1px solid white;
+}
+
+@-webkit-keyframes borderBlink {
+    from, to {
+        border-color: transparent
+    }
+    50% {
+        border-color: #2576e5;
+    }
+}
+@keyframes borderBlink {
+    from, to {
+        border-color: transparent
+    }
+    50% {
+        border-color: #2576e5;
+    }
+}
+.borderBlink{
+    border-left: 2px solid #2576e5;
+    /* add 'border-color: transparent' if you wish no border to show initially */
+}
+.borderBlink {
+    -webkit-animation: borderBlink 3s step-end infinite;
+    animation: borderBlink 3s step-end infinite;
 }
 
 /*    ======   MOBILE RESPONSIVE    ======    */
@@ -193,5 +225,11 @@ button.navbar-toggler:hover {
         display: flex;
         justify-content: center;
         scroll-behavior: auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .MobileHeader_cart-length {
+        margin-left: 30vw;
     }
 }

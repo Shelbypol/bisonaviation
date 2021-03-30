@@ -1,6 +1,6 @@
 import React, {useLayoutEffect} from 'react'
-import MechanicsHero from "../components/2/mechanics-screen/MechanicsHero";
-import AvionicsIcons from "../components/2/avionics-Screen/AvionicsIcons";
+import MechanicsHero from "../components/mechanics-screen/MechanicsHero";
+import AvionicsIcons from "../components/avionics-Screen/AvionicsIcons";
 
 
 const MaintenanceScreen = () => {

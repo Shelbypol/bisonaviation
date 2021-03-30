@@ -1,6 +1,6 @@
 import React from 'react'
-import '../../../style/avionicsScreen/AvionicsHero.css'
-import HeroCarousel from "../../HeroCarousel";
+import '../../style/avionicsScreen/AvionicsHero.css'
+import HeroCarousel from "../HeroCarousel";
 
 const AvionicsHero = () => {
 

@@ -1,11 +1,11 @@
 import React, {useLayoutEffect} from 'react'
 import '../style/global-2.css'
-import HomeHero from '../components/2/HomeHero'
-import RepairAward from '../components/2/RepairAward'
-import Services from "../components/2/Services";
-import Avionics from "../components/2/Avionics";
-import Mechanics from "../components/2/Mechanics";
-import Flir from "../components/2/Flir";
+import HomeHero from '../components/HomeHero'
+import RepairAward from '../components/home-screen/RepairAward'
+import Services from "../components/home-screen/Services";
+import Avionics from "../components/home-screen/Avionics";
+import Mechanics from "../components/home-screen/Mechanics";
+import Flir from "../components/home-screen/Flir";
 import { Container} from 'react-bootstrap';
 import { Jumbotron } from "reactstrap";
 

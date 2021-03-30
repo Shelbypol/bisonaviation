@@ -1,32 +1,23 @@
 import React, {useEffect, useLayoutEffect, useState} from 'react'
-import {Col, Row} from 'react-bootstrap'
+import {Row} from 'react-bootstrap'
 import Meta from "../../components/Meta";
 import CategoryManufacturerDisplay from "../../components/ProductDisplay/CategoryManufacturerDisplay";
 import {Jumbotron} from "reactstrap";
 import StickyHeader from "../../components/Headers-Nav-Footer/StickyHeader";
-import {Route} from "react-router-dom";
-import SearchBox from "../../components/SearchBox";
 import MobileHeader from "../../components/Headers-Nav-Footer/MobileHeader";
-import {useDispatch, useSelector} from "react-redux";
-import {listProducts} from "../../actions/productActions";
+import {useDispatch} from "react-redux";
 
 const ProductsDisplayScreen = ({match, history}) => {
 
-    const [header, setHeader] = useState(false);
-
     const [width, setWidth] = useState(window.innerWidth);
 
-    const breakpoint = 850;
+    const breakpoint = 1000;
 
     const dispatch = useDispatch();
 
 
     useEffect(() => {
-       // headerSize();
         window.addEventListener("resize", handleWindowResize);
-        if (width < breakpoint) {
-            setHeader(!header);
-        }
         return () => window.removeEventListener("resize", handleWindowResize);
 
     }, [dispatch, width]);
@@ -35,11 +26,6 @@ const ProductsDisplayScreen = ({match, history}) => {
         window.scrollTo(0, 0)
     });
 
-    const headerSize = () => {
-        if (width < breakpoint) {
-            setHeader(!header);
-        }
-    };
 
     const handleWindowResize = () => {
         setWidth(window.innerWidth);
@@ -47,7 +33,7 @@ const ProductsDisplayScreen = ({match, history}) => {
 
     return (
         <>
-            {header ? (
+            {width < breakpoint ? (
                 <MobileHeader/>
             ) : (
                 <StickyHeader/>

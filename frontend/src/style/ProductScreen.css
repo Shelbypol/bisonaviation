@@ -8,3 +8,11 @@
     z-index: 1;
     border: none;
 }
+
+.ProductScreen_img p{
+    margin-left: -10vw;
+}
+
+@media (max-width: 900px) {
+
+}

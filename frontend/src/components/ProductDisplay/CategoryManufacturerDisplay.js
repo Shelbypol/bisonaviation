@@ -33,18 +33,19 @@ const CategoryManufacturerDisplay = ({match, history}) => {
 
     useEffect(() => {
         dispatch(listProducts(keyword, pageNumber));
-        if (width < breakpoint) {
-                setSideBar(!sideBar);
-            }
         window.addEventListener("resize", handleWindowResize);
         return () => window.removeEventListener("resize", handleWindowResize);
-
 
     }, [dispatch, updateCat, updateManufacturer, keyword, pageNumber, setUpdateManufacturer, setUpdateCat, width]);
 
 
     const handleWindowResize = () => {
         setWidth(window.innerWidth);
+        if (width < breakpoint) {
+            if(sideBar){
+                setSideBar(!sideBar);
+            }
+        }
     };
 
     //SIDE BAR
@@ -76,6 +77,7 @@ const CategoryManufacturerDisplay = ({match, history}) => {
         }
     };
 
+
     const maufacturerArr = [...new Set(products.map(product => product.brand))];
     const catArr = [...new Set(products.map(product => product.category))];
 
@@ -90,7 +92,7 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                         <>
                             {sideBar ? (
                                 <>
-                                    <Col lg={2} xs={12} className='global_cursor CatMan_sidebar-icon '>
+                                    <Col lg={2} xs={12} className='global_cursor CatMan_sidebar-icon-x '>
                                         <h5 onClick={showSideBar}
                                             className='pl-4 pt-3 global_white-text-red-hover'>X</h5>
                                     </Col>
@@ -102,6 +104,11 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                                         <h6 className='global_blood-red' onClick={showSideBar}><span><h3
                                             className='d-inline'>|||</h3></span>&nbsp;categories
                                         </h6>
+                                        {width < breakpoint && (
+                                            <h5 className='pt-2'>
+                                                {updateCat || updateManufacturer}
+                                            </h5>
+                                        )}
                                     </Col>
                                     <Col lg={10} xs={0}> </Col>
                                 </>
@@ -144,16 +151,15 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                                                     <p className='global_cursor CatMan-text CatMan-sub-titles py-2'>Categories</p>
                                                 </Row>
 
-                                                {products.map(product => (
+
+                                                {catArr.map((product, index) => (
                                                     <Row xs={12}
-                                                         onClick={(ev) => sortByCategoryHandler(product.category, ev)}
+                                                         onClick={(ev) => sortByCategoryHandler(product, ev)}
                                                          className='btn btn-block global_cursor CatMan-text CatMan_items'
                                                          type='button'
-                                                         key={product._id}
+                                                         key={index}
                                                     >
-                                                        {/*<h6 className=''>*/}
-                                                        {product.category}
-                                                        {/*</h6>*/}
+                                                        {product}
                                                     </Row>
                                                 ))}
 
@@ -164,18 +170,17 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                                                     <p className='global_cursor CatMan-text CatMan-sub-titles py-2'>Manufactures</p>
                                                 </Row>
 
-                                                {products.map(product => (
+                                                {maufacturerArr.map((product, index) => (
                                                     <Row xs={12}
-                                                         onClick={(ev) => sortByManufacturerHandler(product.brand, ev)}
+                                                         onClick={(ev) => sortByManufacturerHandler(product, ev)}
                                                          className='btn btn-block global_cursor CatMan-text CatMan_items'
                                                          type='button'
-                                                         key={product._id}
+                                                         key={index}
                                                     >
-                                                        {/*<h6 className='CatMan_items'>*/}
-                                                        {product.brand}
-                                                        {/*</h6>*/}
+                                                        {product}
                                                     </Row>
                                                 ))}
+
 
                                             </>
 
@@ -199,9 +204,7 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                                                          type='button'
                                                          key={index}
                                                     >
-                                                        {/*<h6 className='CatMan-ind-item'>*/}
                                                         {product}
-                                                        {/*</h6>*/}
                                                     </Row>
                                                 ))}
 
@@ -211,6 +214,7 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                                                         className='py-3 CatMan-title'>Manufacturers</h5>
                                                 </Row>
 
+
                                                 {maufacturerArr.map((product, index) => (
                                                     <Row xs={12}
                                                          onClick={(ev) => sortByManufacturerHandler(product, ev)}
@@ -218,11 +222,8 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                                                          type='button'
                                                          key={index}
                                                     >
-                                                        {/*<h6 className='CatMan-ind-item'>*/}
                                                         {product}
-                                                        {/*</h6>*/}
                                                     </Row>
-
                                                 ))}
 
 
