@@ -1,8 +1,10 @@
 import React, {useEffect, useState} from 'react';
 import {Link} from 'react-router-dom'
-import {Row, Col, Card} from 'react-bootstrap'
+import {Row, Col, Card, ListGroup} from 'react-bootstrap'
 import {useDispatch, useSelector} from "react-redux";
 import {addToCart, removeFromCart} from "../../actions/cartActions";
+import {listMyWishLists} from "../../actions/wishListActions";
+import Message from "../Message";
 
 
 const Product = ({product, history, match}) => {
@@ -18,18 +20,26 @@ const Product = ({product, history, match}) => {
     const {userInfo} = userLogin;
 
     useEffect(() => {
-    }, [dispatch, activeHeart, match, wishList, userInfo]);
+        dispatch(listMyWishLists());
+    }, [dispatch, activeHeart, match, history, wishList]);
 
-    // const alreadySaved = () => {
-    //     if (wishList.wishListItems.filter(function(e) { return e._id === product.id; }).length > 0) {
-    //         /* vendors contains the element we're looking for */
+
+    // const alreadySaved = (id) => {
+    //     if (userInfo) {
+    //         console.log(wishList);
+    //         console.log(id)
     //     }
-    //
     // };
+
 
     const like = () => {
         setActiveHeart(!activeHeart);
         dispatch(addToCart(product._id, 1));
+
+        if (userInfo) {
+            console.log(wishList);
+        }
+
         // history.push(`/cart/${id}?qty=1`);
     };
 
@@ -38,6 +48,7 @@ const Product = ({product, history, match}) => {
         dispatch(removeFromCart(product._id))
         // history.push(`/cart/${id}?qty=1`);
     };
+
 
     const MAX_LENGTH = 75;
 
@@ -51,51 +62,37 @@ const Product = ({product, history, match}) => {
                     </Link>
 
                     {/*<Card.Text>*/}
-                        <Row>
-                            <Col xs={6} lg={6} className='pt-3 d-flex justify-content-start'>
-                                {/* LIKE BTN */}
-                                <>
-
-                                    {/*{userInfo && (wishList.wishListItems.filter(function (e) {*/}
-                                    {/*    return e._id === product.id;*/}
-                                    {/*}).length > 0) && (*/}
-
-                                    {/*    <i onClick={unlike}*/}
-                                    {/*       className='global_cursor'>already saved</i>*/}
-
-                                    {/*)}*/}
-                                    {activeHeart ? (
-                                        <>
-                                            {/*<span onClick={unlike}*/}
-                                            {/*      className='global_cursor'*/}
-                                            {/*      style={{color: 'rgba(200, 0, 0, 1)', fontSize: '1.3em'}}>*/}
-                                            <i onClick={unlike}
-                                               style={{color: 'rgba(200, 0, 0, 1)', fontSize: '1.3em'}}
-                                               className="mt-auto fas fa-heart global_cursor"> </i>
-                                            {/*</span>*/}
-                                        </>
-
-                                    ) : (
-                                        <>
-                                            {/*<span className='global_cursor' onClick={like}*/}
-                                            {/*      style={{fontSize: '1.3em'}}>*/}
-                                            <i onClick={like}
-                                               style={{fontSize: '1.3em'}}
-                                               className="mt-auto fas fa-heart global_cursor"> </i>
-                                            {/*</span>*/}
-                                        </>
-                                    )}
-                                </>
-                            </Col>
-                            <Col xs={6} lg={6} className='font-weight-bold pt-3 d-flex justify-content-center'>
-                                {/*<Card.Text>*/}
-                                ${product.price}
-                                {/*</Card.Text>*/}
-                            </Col>
-                        </Row>
+                    <Row>
+                        <Col xs={6} lg={6} className='pt-3 d-flex justify-content-start'>
+                            {/* LIKE BTN */}
+                            <>
+                                {activeHeart ? (
+                                    <>
+                                            <span onClick={unlike}
+                                                  className='global_cursor'
+                                                  style={{color: 'rgba(200, 0, 0, 1)', fontSize: '1.3em'}}>
+                                            <i className="mt-auto fas fa-heart"> </i>
+                                            </span>
+                                    </>
+                                ) : (
+                                    <>
+                                            <span className='global_cursor' onClick={like}
+                                                  style={{fontSize: '1.3em'}}>
+                                            <i className="mt-auto fas fa-heart "> </i>
+                                            </span>
+                                    </>
+                                )}
+                            </>
+                        </Col>
+                        <Col xs={6} lg={6} className='font-weight-bold pt-3 d-flex justify-content-center'>
+                            {/*<Card.Text>*/}
+                            ${product.price}
+                            {/*</Card.Text>*/}
+                        </Col>
+                    </Row>
                     {/*</Card.Text>*/}
 
-                    <Link to={`/product/${product._id}`}  className='pt-3'>
+                    <Link to={`/product/${product._id}`} className='pt-3'>
                         <Card.Title
                             className='CatMan_card-text font-weight-bolder global_blood-red'>{product.name}</Card.Title>
                     </Link>
