@@ -20,8 +20,11 @@ const Product = ({product, history, match}) => {
     const {userInfo} = userLogin;
 
     useEffect(() => {
-        dispatch(listMyWishLists());
-    }, [dispatch, activeHeart, match, history, wishList]);
+        if (userInfo) {
+            dispatch(listMyWishLists());
+        }
+
+    }, [dispatch, activeHeart, match, history]);
 
 
     // const alreadySaved = (id) => {
@@ -37,7 +40,9 @@ const Product = ({product, history, match}) => {
         dispatch(addToCart(product._id, 1));
 
         if (userInfo) {
-            console.log(wishList);
+           for(let i=0; i <= wishList.length; i++){
+              console.log(wishList[i].wishListItems[0].name)
+           }
         }
 
         // history.push(`/cart/${id}?qty=1`);
