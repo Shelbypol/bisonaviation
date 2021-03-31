@@ -11,22 +11,20 @@ const Product = ({product, history, match}) => {
 
     const dispatch = useDispatch();
 
-
     const wishListMy = useSelector(state => state.wishListMy);
     const {loading: loadingOrders, error: errorOrders, wishList} = wishListMy;
 
+    const userLogin = useSelector(state => state.userLogin);
+    const {userInfo} = userLogin;
 
     useEffect(() => {
-    }, [dispatch, activeHeart, match, wishList]);
+    }, [dispatch, activeHeart, match, wishList, userInfo]);
 
-    // const alreadySaved = (id) => {
-    //     let savedArr = [];
-    //     wishList.map(wishes => (
-    //         wishes.wishListItems.map(item => (
-    //             console.log(item.id)
-    //             // savedArr.push(item.id)
-    //         ))));
-    //     // return(savedArr.includes(id))
+    // const alreadySaved = () => {
+    //     if (wishList.wishListItems.filter(function(e) { return e._id === product.id; }).length > 0) {
+    //         /* vendors contains the element we're looking for */
+    //     }
+    //
     // };
 
     const like = () => {
@@ -48,28 +46,43 @@ const Product = ({product, history, match}) => {
             <Col sm={12} className='my-5 d-flex justify-content-center align-content-center'>
                 <Card className='border-0 CatMan_card'>
 
-                        <Link to={`/product/${product._id}`}>
-                            <Card.Img src={product.image} alt={product.name} className='CatMan_card-img'/>
-                        </Link>
+                    <Link to={`/product/${product._id}`}>
+                        <Card.Img src={product.image} alt={product.name} className='CatMan_card-img'/>
+                    </Link>
 
-                    <Card.Text>
+                    {/*<Card.Text>*/}
                         <Row>
                             <Col xs={6} lg={6} className='pt-3 d-flex justify-content-start'>
                                 {/* LIKE BTN */}
                                 <>
+
+                                    {/*{userInfo && (wishList.wishListItems.filter(function (e) {*/}
+                                    {/*    return e._id === product.id;*/}
+                                    {/*}).length > 0) && (*/}
+
+                                    {/*    <i onClick={unlike}*/}
+                                    {/*       className='global_cursor'>already saved</i>*/}
+
+                                    {/*)}*/}
                                     {activeHeart ? (
                                         <>
-                                        <span onClick={unlike}
-                                              className='global_cursor'
-                                              style={{color: 'rgba(200, 0, 0, 1)', fontSize: '1.3em'}}>
-                                            <i className="mt-auto fas fa-heart "> </i>
-                                        </span>
+                                            {/*<span onClick={unlike}*/}
+                                            {/*      className='global_cursor'*/}
+                                            {/*      style={{color: 'rgba(200, 0, 0, 1)', fontSize: '1.3em'}}>*/}
+                                            <i onClick={unlike}
+                                               style={{color: 'rgba(200, 0, 0, 1)', fontSize: '1.3em'}}
+                                               className="mt-auto fas fa-heart global_cursor"> </i>
+                                            {/*</span>*/}
                                         </>
+
                                     ) : (
                                         <>
-                                        <span className='global_cursor' onClick={like} style={{fontSize: '1.3em'}}>
-                                            <i className="mt-auto fas fa-heart"> </i>
-                                        </span>
+                                            {/*<span className='global_cursor' onClick={like}*/}
+                                            {/*      style={{fontSize: '1.3em'}}>*/}
+                                            <i onClick={like}
+                                               style={{fontSize: '1.3em'}}
+                                               className="mt-auto fas fa-heart global_cursor"> </i>
+                                            {/*</span>*/}
                                         </>
                                     )}
                                 </>
@@ -80,9 +93,9 @@ const Product = ({product, history, match}) => {
                                 {/*</Card.Text>*/}
                             </Col>
                         </Row>
-                    </Card.Text>
+                    {/*</Card.Text>*/}
 
-                    <Link to={`/product/${product._id}`}>
+                    <Link to={`/product/${product._id}`}  className='pt-3'>
                         <Card.Title
                             className='CatMan_card-text font-weight-bolder global_blood-red'>{product.name}</Card.Title>
                     </Link>
