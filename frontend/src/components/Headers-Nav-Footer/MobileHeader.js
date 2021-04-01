@@ -72,7 +72,6 @@ const MobileHeader = () => {
 
                         />}/>
 
-
                         {/*   SOCIAL ICONS   */}
                         <SocialIcons socialClassName={'mr-5 mb-5'}
                                      facebookClassName={' d-flex justify-content-center'}
@@ -91,7 +90,7 @@ const MobileHeader = () => {
                             </LinkContainer>
                         )}
 
-                        {/*  Wishlist  */}
+                        {/*  WISHLIST  */}
                         <LinkContainer className='mx-0 pb-0 pt-3 MobileHeader_text d-flex justify-content-center'
                                        to='/wishlist'>
                             <Nav.Link>
