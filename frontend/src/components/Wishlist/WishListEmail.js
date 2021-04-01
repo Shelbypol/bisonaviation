@@ -154,7 +154,7 @@ const WishListEmail = ({userInfo, cart, cartItems, success}) => {
                                             <Col className='my-auto' md={4} xs={12}>
                                                 <Link to={`product/${item.product}`}>
                                                     <Image src={item.image} alt={item.name}
-                                                           className='py-2 justify-content-center rounded h-100 w-100'/>
+                                                           className='pt-2 justify-content-center rounded h-100 w-100'/>
                                                 </Link>
                                             </Col>
                                             <Col className='my-auto px-0' md={8} xs={10}>
