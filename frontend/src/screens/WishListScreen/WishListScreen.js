@@ -6,10 +6,9 @@ import WishListSave from "../../components/Wishlist/WishListSave";
 import WishListEmail from "../../components/Wishlist/WishListEmail";
 import {EMAIL_RESET} from "../../constants/emailConstants";
 import '../../style/wishListScreen/WishListScreen.css';
+import {Link} from "react-router-dom";
 
 const WishListScreen = () => {
-
-    const [width, setWidth] = useState(window.innerWidth);
 
     const dispatch = useDispatch();
 
@@ -22,21 +21,8 @@ const WishListScreen = () => {
     const wishListCreate = useSelector(state => state.wishListCreate);
     const {wishList, success, error} = wishListCreate;
 
-    const breakpoint = 1000;
-
     useEffect(() => {
-        window.addEventListener("resize", handleWindowResize);
-        return () => window.removeEventListener("resize", handleWindowResize);
-    }, [dispatch, success, userInfo, width]);
-
-    const handleWindowResize = () => {
-        setWidth(window.innerWidth);
-        if (width < breakpoint) {
-            if (sideBar) {
-                setSideBar(!sideBar);
-            }
-        }
-    };
+    }, [dispatch, success, userInfo]);
 
     const clearWishList = () => {
         dispatch({type: CART_RESET});
@@ -46,6 +32,14 @@ const WishListScreen = () => {
     return (
         <>
             <Container className='bg-white p-5' fluid>
+                <Row>
+                    <Col>
+                        <Link className='global_bisonRedBgWhiteHoverBgBtnRedBorderbg-transparent mb-3 mt-4 pb-1 px-1'
+                              to='/'>
+                            Close
+                        </Link>
+                    </Col>
+                </Row>
                 <Row className=' p-0 d-flex justify-content-end' style={{zIndex: 100}}>
                     <Col xs={2}>
                         <h6 onClick={clearWishList}
@@ -57,14 +51,15 @@ const WishListScreen = () => {
                     <Col xs={12}>
                         <Tabs defaultActiveKey="wishlist" id="uncontrolled-tab-example"
                               ClassName='d-flex justify-content-center'>
-                            <Tab tabClassName=' global_cursor global_bisonFadedRedHover p-auto
+                            <Tab tabClassName=' global_cursor global_blood-red  p-auto
                         text-center d-flex align-items-center justify-content-center' eventKey="wishlist"
                                  title='Wishlist'>
                                 <WishListSave cartItems={cartItems} cart={cart} success={success}/>
                             </Tab>
-                            <Tab eventKey="profile" title="Purchase Inquiry"
+                            <Tab eventKey="purchase" title="Purchase Inquiry"
                                  tabClassName='animations_img-hover-zoom-n-out global_cursor global_bisonFadedRedHover p-auto d-flex align-items-center justify-content-center'>
                                 <WishListEmail userInfo={userInfo} cartItems={cartItems} cart={cart} success={success}/>
+
                             </Tab>
 
                         </Tabs>

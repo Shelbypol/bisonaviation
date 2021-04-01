@@ -1,5 +1,5 @@
 import React, {Fragment, useEffect, useState} from 'react';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch,} from 'react-router-dom';
 import {Container} from 'react-bootstrap'
 import Headers from "./components/Headers-Nav-Footer/Headers";
 import Footer from "./components/Headers-Nav-Footer/Footer";
@@ -35,6 +35,18 @@ import {listProducts} from "./actions/productActions";
 
 const App = () => {
 
+    const [width, setWidth] = useState(window.innerWidth);
+    const breakpoint = 1000;
+
+    useEffect(() => {
+        window.addEventListener("resize", handleWindowResize);
+        return () => window.removeEventListener("resize", handleWindowResize);
+    }, [width]);
+
+    const handleWindowResize = () => {
+        setWidth(window.innerWidth);
+    };
+
     return (
         <Router>
 
@@ -62,7 +74,10 @@ const App = () => {
                     <Route path='/terms' component={TermsScreen}/>
                     <Route path='/flir-terms' component={TermsFlirScreen}/>
                     <Route path='/register' component={RegisterScreen}/>
-                    <Route path='/wishlist' component={WishListScreen}/>
+
+
+
+                                {width <= 1000 && <Route path='/wishlist' component={WishListScreen} />}
 
 
                     <Container className='mb-0 pb-0'>
