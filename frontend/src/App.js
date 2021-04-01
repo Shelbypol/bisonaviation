@@ -77,7 +77,7 @@ const App = () => {
 
 
 
-                                {width <= 1000 && <Route path='/wishlist' component={WishListScreen} />}
+                                {width <= 1150 && <Route path='/wishlist' component={WishListScreen} />}
 
 
                     <Container className='mb-0 pb-0'>

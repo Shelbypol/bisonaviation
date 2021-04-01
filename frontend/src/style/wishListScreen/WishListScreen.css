@@ -3,8 +3,8 @@
     /*--bg-accent: #484a4d;*/
     /*--text-color: #dadce1;*/
     --nav-size: 100px;
-    --border: 1px solid #474a4d;
-    --border-radius: 8px;
+    /*--border: 1px solid #474a4d;*/
+    /*--border-radius: 8px;*/
     --speed: 500ms;
 }
 
@@ -47,12 +47,8 @@ a {
     color: red;
 }
 
-/* <nav> */
 .wishList-navbar {
-    /*height: var(--nav-size);*/
-    /*background-color: #;*/
     padding: 0;
-    /*border-bottom: var(--border);*/
 }
 
 /* <ul> */
@@ -66,7 +62,6 @@ a {
 
 /* <li> */
 .wishList-nav-item {
-    /*width: calc(var(--nav-size) * 0.8);*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -75,32 +70,6 @@ a {
 .wishList-nav-item a:hover{
     text-decoration: none;
 }
-
-/* Icon Button */
-/*.wishList-icon-button {*/
-/*    --button-size: calc(var(--nav-size) * 0.5);*/
-/*    width: var(--button-size);*/
-/*    height: var(--button-size);*/
-/*    !*background-color: #484a4d;*!*/
-/*    background-color: #000;*/
-/*    border-radius: 50%;*/
-/*    padding: 5px;*/
-/*    margin: 2px;*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*    justify-content: center;*/
-/*    transition: filter 300ms;*/
-/*}*/
-
-/*.wishList-icon-button:hover {*/
-/*    filter: brightness(1.2);*/
-/*}*/
-
-/*.wishList-icon-button svg {*/
-/*    fill: var(--text-color);*/
-/*    width: 20px;*/
-/*    height: 20px;*/
-/*}*/
 
 /* Dropdown Menu */
 
@@ -114,8 +83,8 @@ a {
     /*transform: translateX(-45%);*/
     transform: translateX(-11%);
     background-color: #fff;
-    border: var(--border);
-    border-radius: var(--border-radius);
+    /*border: var(--border);*/
+    /*border-radius: var(--border-radius);*/
     padding: 1rem;
     overflow-y: scroll;
     transition: none;
@@ -129,7 +98,7 @@ a {
 }
 
 .wishList-menu-item {
-    border-radius: var(--border-radius);
+    /*border-radius: var(--border-radius);*/
     transition: background var(--speed);
     padding: 0.5rem;
 }
@@ -137,11 +106,6 @@ a {
 .wishList-menu-item .wishList-icon-button {
     margin-right: 0.5rem;
 }
-
-
-/*.wishList-menu-item .wishList-icon-button:hover {*/
-/*    filter: none;*/
-/*}*/
 
 .icon-right {
     margin-left: auto;

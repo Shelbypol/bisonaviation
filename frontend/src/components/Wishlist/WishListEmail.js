@@ -53,13 +53,13 @@ const WishListEmail = ({userInfo, cart, cartItems, success}) => {
         //         userProducts,
         //     ))
         // } else {
-            dispatch(addToEmail(
-                userName,
-                userEmail,
-                userText,
-                isEmailed,
-                userProducts,
-            ));
+        dispatch(addToEmail(
+            userName,
+            userEmail,
+            userText,
+            isEmailed,
+            userProducts,
+        ));
         e.preventDefault();
         setUserEmail('');
         setTimeout(Email, 5000);
@@ -92,14 +92,16 @@ const WishListEmail = ({userInfo, cart, cartItems, success}) => {
                 )}
                 <Form onSubmit={submitHandler}>
                     <Row xs={12}>
-                        <Col xs={8}>
+
+
+                        <Col lg={8} xs={12}>
                             <Form.Group controlId='name'>
                                 <Form.Label>Name</Form.Label>
                                 <Form.Control type='name'
                                               placeholder='Enter name'
                                               value={userName}
                                               onChange={
-                                                      (e) => setUserName(e.target.value)}>
+                                                  (e) => setUserName(e.target.value)}>
                                 </Form.Control>
                             </Form.Group>
 
@@ -109,14 +111,14 @@ const WishListEmail = ({userInfo, cart, cartItems, success}) => {
                                               placeholder='Enter email'
                                               value={userEmail}
                                               onChange={
-                                                      (e) => setUserEmail(e.target.value)}>
+                                                  (e) => setUserEmail(e.target.value)}>
                                 </Form.Control>
                             </Form.Group>
                             <Form.Group controlId="exampleForm.ControlTextarea1">
                                 <Form.Label>Inquire</Form.Label>
                                 <Form.Control as="textarea"
                                               value={userText}
-                                              placeholder='Items on the right will be included in the email '
+                                              placeholder='Selected items will be included in the email '
                                               onChange={(e) => setUserText(e.target.value)}
                                               rows={3}
                                 />
@@ -142,37 +144,35 @@ const WishListEmail = ({userInfo, cart, cartItems, success}) => {
 
 
                         </Col>
-                        <Col xs={4} className='m-0 p-0'>
+                        <Col lg={4} xs={12} className='m-0 pt-5'>
 
                             <ListGroup variant='flush'>
                                 {cartItems.map(item => (
-                                    // <ListGroup.Item key={item.product} className='global_bisonDarkFadedBgColorHover'>
-                                    // <Link to={`products/${item.product}`}>
                                     <ListGroup.Item key={item._id}
-                                                    className='global_bisonDarkFadedBgColorHover stick-margins'>
+                                                    className='stick-margins border-0'>
                                         <Row xs={12}>
-                                            <Col className='my-auto' md={4}>
-                                                <Image src={item.image} alt={item.name} fluid
-                                                       className='rounded h-100 w-100'/>
+                                            <Col className='my-auto' md={4} xs={12}>
+                                                <Link to={`product/${item.product}`}>
+                                                    <Image src={item.image} alt={item.name}
+                                                           className='py-2 justify-content-center rounded h-100 w-100'/>
+                                                </Link>
                                             </Col>
-                                            <Col className='my-auto' md={8}>
+                                            <Col className='my-auto px-0' md={8} xs={10}>
                                                 {item.name}
                                             </Col>
-                                            {/*<Col className='my-auto' md={2}>*/}
-                                            {/*    /!*<Button type='button' variant='light'*!/*/}
-                                            {/*    /!*        // onClick={() => removeFromWishListHandler(item.product)}*!/*/}
-                                            {/*    /!*>*!/*/}
-                                            {/*    /!*    <i onClick={() => removeFromWishListHandler(item.product)} className='fas fa-trash global_cursor'> </i>*!/*/}
-                                            {/*    /!*</Button>*!/*/}
-                                            {/*</Col>*/}
+                                            <Col className='my-auto px-0' xs={2}>
+
+                                                <Button type='button' variant='light'
+                                                        onClick={() => removeFromWishListHandler(item.product)}>
+                                                    <i className='fas fa-trash'> </i>
+                                                </Button>
+                                            </Col>
                                         </Row>
                                     </ListGroup.Item>
-                                    // </Link>
                                 ))}
                             </ListGroup>
 
                         </Col>
-                        {/*<Button onClick={() => {submitHandler()}} type='submit' variant='primary'>Email Inquiry</Button>*/}
                     </Row>
                 </Form>
             </Col>

@@ -21,7 +21,7 @@ const Headers = () => {
     }, [width]);
 
 
-    const breakpoint = 1000;
+    const breakpoint = 1150;
     // const breakpoint = 620;
 
     return(

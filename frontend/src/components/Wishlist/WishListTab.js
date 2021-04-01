@@ -71,7 +71,7 @@ const NavItem = (props) => {
                     <p className='global_cursor global_white-text-red-hover pt-2'>{props.icon}</p>
                 ) : (
                     <>
-                        <p className=' global_cursor global_white-text-red-hover pt-2'>{cartItems.length}&nbsp;{props.icon}</p>
+                        <p className=' global_cursor global_white-text-red-hover ml-2 pt-2'>{cartItems.length}&nbsp;{props.icon}</p>
                     </>
                 )}
             </a>
@@ -108,7 +108,6 @@ const DropdownMenu = () => {
 
 
     return (
-        // <div className="wishList-Dropdown" >
         <div className="wishList-Dropdown" style={{height: menuHeight}} ref={dropdownRef}>
 
             <CSSTransition
@@ -119,45 +118,13 @@ const DropdownMenu = () => {
                 onEnter={calcHeight}
             >
                 <div className="wishList-menu">
-                    {/*<DropdownItem><Button onClick={}>X</Button> </DropdownItem>*/}
                     <DropdownItem>
                         <WishListTabInfo/>
                     </DropdownItem>
 
 
-                    {/*<DropdownItem*/}
-                    {/*    // leftIcon={<i className='fa fa-long-arrow-left'> </i>}*/}
-                    {/*    rightIcon={<i className='fa fa-long-arrow-right'> </i>}*/}
-                    {/*    goToMenu="settings">*/}
-                    {/*    Settings*/}
-                    {/*</DropdownItem>*/}
-
-
                 </div>
             </CSSTransition>
-
-            {/*<CSSTransition*/}
-            {/*    in={activeMenu === 'main'}*/}
-            {/*    timeout={500}*/}
-            {/*    classNames="wishList-menu-primary"*/}
-            {/*    unmountOnExit*/}
-            {/*    onEnter={calcHeight}*/}
-            {/*>*/}
-            {/*    <div className="wishList-menu">*/}
-            {/*        /!*<DropdownItem><Button onClick={}>X</Button> </DropdownItem>*!/*/}
-            {/*        /!*<DropdownItem>*!/*/}
-            {/*        /!*    <WishListTabInfo/>*!/*/}
-            {/*        /!*</DropdownItem>*!/*/}
-
-            {/*        /!*<DropdownItem*!/*/}
-            {/*        /!*    // leftIcon={<i className='fa fa-long-arrow-left'> </i>}*!/*/}
-            {/*        /!*    rightIcon={<i className='fa fa-long-arrow-right'> </i>}*!/*/}
-            {/*        /!*    goToMenu="settings">*!/*/}
-            {/*        /!*    Settings*!/*/}
-            {/*        /!*</DropdownItem>*!/*/}
-
-            {/*    </div>*/}
-            {/*</CSSTransition>*/}
 
         </div>
     );

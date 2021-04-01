@@ -114,7 +114,7 @@ const StickyHeader = () => {
 
 
                         {/*============= PROFILE BTNS ==============*/}
-                        <Nav className='col-sm-3 justify-content-end'>
+                        <Nav className='col-sm-3 justify-content-center'>
 
                             <WishListTab/>
 

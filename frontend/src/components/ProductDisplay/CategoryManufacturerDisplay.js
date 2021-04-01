@@ -19,7 +19,7 @@ const CategoryManufacturerDisplay = ({match, history}) => {
     const [updateCat, setUpdateCat] = useState('');
     const [updateManufacturer, setUpdateManufacturer] = useState('');
 
-    const breakpoint = 1000;
+    const breakpoint = 1150;
 
     const keyword = match.params.keyword;
 

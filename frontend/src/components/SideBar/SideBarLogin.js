@@ -47,11 +47,11 @@ const SideBarLogin = () => {
                 {/*<FaIcons.FaBars onClick={showSidebar} />*/}
                 {userInfo ? (
                     <Link to='#'>
-                        <p onClick={showSidebar} className='.StickyHeader_links pr-4'>{userInfo.name}</p>
+                        <p onClick={showSidebar} className='StickyHeader_links pr-4'>{userInfo.name}</p>
                     </Link>
                 ) : (
                     <Link to='#'>
-                        <p onClick={showSidebar} className='.StickyHeader_links pr-4'>Login</p>
+                        <p onClick={showSidebar} className='StickyHeader_links pr-4'>Login</p>
                     </Link>
                 )}
                 {/*</div>*/}

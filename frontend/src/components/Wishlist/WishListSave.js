@@ -59,7 +59,7 @@ const WishListSave = ({success, cartItems, cart}) => {
                                 <ListGroup variant='flush'>
                                     {cartItems.map(item => (
                                         // <ListGroup.Item key={item.product} className='global_bisonDarkFadedBgColorHover'>
-                                        <ListGroup.Item key={item.product} className='global_bisonDarkFadedBgColorHover global_cursor'>
+                                        <ListGroup.Item key={item.product} className='global_cursor'>
                                             <Row xs={12}>
                                                 <Col className='my-auto' md={6}>
                                                     <Image src={item.image} alt={item.name} fluid

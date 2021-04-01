@@ -7,6 +7,7 @@ import WishListEmail from "../../components/Wishlist/WishListEmail";
 import {EMAIL_RESET} from "../../constants/emailConstants";
 import '../../style/wishListScreen/WishListScreen.css';
 import {Link} from "react-router-dom";
+import {createWishList} from "../../actions/wishListActions";
 
 const WishListScreen = () => {
 
@@ -24,6 +25,16 @@ const WishListScreen = () => {
     useEffect(() => {
     }, [dispatch, success, userInfo]);
 
+    const addToWishListHandler = () => {
+
+        cart.cartItems.map(item => {
+            dispatch(createWishList({
+                wishListItems: item
+            }));
+        });
+        dispatch({type: CART_RESET});
+    };
+
     const clearWishList = () => {
         dispatch({type: CART_RESET});
         dispatch({type: EMAIL_RESET})
@@ -31,38 +42,50 @@ const WishListScreen = () => {
 
     return (
         <>
-            <Container className='bg-white p-5' fluid>
-                <Row>
-                    <Col>
-                        <Link className='global_bisonRedBgWhiteHoverBgBtnRedBorderbg-transparent mb-3 mt-4 pb-1 px-1'
-                              to='/'>
-                            Close
+            <Container className='bg-white py-4 px-2' fluid>
+                <Row className=' p-0 d-flex justify-content-end' style={{zIndex: 100}}>
+                    <Col xs={6}>
+                        <Link to='/'>
+                            <h6 className='global_cursor stick p-3 m-auto d-flex justify-content-start'>
+                                x
+                            </h6>
                         </Link>
                     </Col>
-                </Row>
-                <Row className=' p-0 d-flex justify-content-end' style={{zIndex: 100}}>
-                    <Col xs={2}>
+                    <Col xs={6}>
                         <h6 onClick={clearWishList}
-                            className='global_cursor stick global_bisonFadedRedHover p-3 m-auto d-flex justify-content-center'>
+                            className='global_cursor stick global_bisonFadedRedHover p-3 m-auto d-flex justify-content-end'>
                             clear</h6>
                     </Col>
                 </Row>
-                <Row xs={12} className='global_bisonRedTxt'>
+                <Row xs={12} className='global_bisonRedTxt pt-3'>
                     <Col xs={12}>
-                        <Tabs defaultActiveKey="wishlist" id="uncontrolled-tab-example"
-                              ClassName='d-flex justify-content-center'>
-                            <Tab tabClassName=' global_cursor global_blood-red  p-auto
-                        text-center d-flex align-items-center justify-content-center' eventKey="wishlist"
-                                 title='Wishlist'>
-                                <WishListSave cartItems={cartItems} cart={cart} success={success}/>
-                            </Tab>
-                            <Tab eventKey="purchase" title="Purchase Inquiry"
-                                 tabClassName='animations_img-hover-zoom-n-out global_cursor global_bisonFadedRedHover p-auto d-flex align-items-center justify-content-center'>
-                                <WishListEmail userInfo={userInfo} cartItems={cartItems} cart={cart} success={success}/>
+                        <h5 className='d-flex justify-content-center'>WishList</h5>
+                    </Col>
+                    <Col xs={12}>
 
-                            </Tab>
-
-                        </Tabs>
+                        {userInfo ? (
+                            <h6 className='global_cursor-underline global_bisonRedTxt mb-3 py-3 px-2'
+                                onClick={addToWishListHandler}>Save wishlist to profile</h6>
+                        ) : (
+                            <Link to='/login'>
+                                {cartItems.length !== 0 && (
+                                    <h6 className='py-3'>
+                                        <strong className='global_bisonRedTxt global_cursor'>sign in</strong> to save
+                                    </h6>
+                                )}
+                            </Link>
+                        )}
+                        {cartItems.length === 0
+                            ? (
+                                <p className='mt-5 text-center'>Your wishlist is empty <p style={{fontSize: '12px'}}>
+                                    <Link
+                                        to={'/products'} className='global_bisonRedTxt'>Browse items</Link></p></p>)
+                            : (
+                                <>
+                                    < WishListEmail userInfo={userInfo} cartItems={cartItems} cart={cart}
+                                                    success={success}/>
+                                </>
+                            )}
                     </Col>
                 </Row>
 
