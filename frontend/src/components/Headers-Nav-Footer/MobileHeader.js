@@ -91,27 +91,29 @@ const MobileHeader = () => {
                             </LinkContainer>
                         )}
 
-                        {/*  BROWSE PRODUCTS  */}
-                        <LinkContainer className='mx-1 MobileHeader_text d-flex justify-content-center'
-                                       to='/products'>
+                        {/*  Wishlist  */}
+                        <LinkContainer className='mx-0 pb-0 pt-3 MobileHeader_text d-flex justify-content-center'
+                                       to='/wishlist'>
                             <Nav.Link>
-
-                                {cartItems.length !== 0 ? (
+                                {cartItems.length !== 0 && (
                                     <p className={cartItems.length !== 0 && ('borderBlink')}>
                                         <p className='text-white d-inline' style={{fontSize: '1.3em'}}>
                                             &nbsp;{cartItems.length}&nbsp;
                                         </p>
+
                                         <p className='global_red d-inline'>
-                                             <i style={{fontSize: '1.3em'}} className=" fal fa-envelope-open-text"> </i>
+                                            <i style={{fontSize: '1.3em'}} className=" fal fa-envelope-open-text"> </i>
                                         </p>
 
                                     </p>
-                                ) : (
-                                    <span className=''>
-                                {cartItems.length}&nbsp;<i className=" fal fa-envelope-open-text"> </i>
-                                    </span>
                                 )}
-                                &nbsp;&nbsp;
+                            </Nav.Link>
+                        </LinkContainer>
+
+                        {/*  BROWSE PRODUCTS  */}
+                        <LinkContainer className='mx-1 MobileHeader_text d-flex justify-content-center'
+                                       to='/products'>
+                            <Nav.Link>
                                 Browse Products
                             </Nav.Link>
                         </LinkContainer>

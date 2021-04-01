@@ -1,6 +1,6 @@
 import React, {useState, useEffect, useRef} from 'react';
 import {CSSTransition} from 'react-transition-group';
-import WishListTabInfo from "./WishListTabInfo";
+import WishListTabInfo from '../../components/Wishlist/WishListTabInfo'
 import '../../style/WishListTab.css'
 import {useDispatch, useSelector} from "react-redux";
 
@@ -108,7 +108,6 @@ const DropdownMenu = () => {
 
 
     return (
-        // <div className="wishList-Dropdown" >
         <div className="wishList-Dropdown" style={{height: menuHeight}} ref={dropdownRef}>
 
             <CSSTransition
@@ -119,45 +118,13 @@ const DropdownMenu = () => {
                 onEnter={calcHeight}
             >
                 <div className="wishList-menu">
-                    {/*<DropdownItem><Button onClick={}>X</Button> </DropdownItem>*/}
                     <DropdownItem>
                         <WishListTabInfo/>
                     </DropdownItem>
 
-
-                    {/*<DropdownItem*/}
-                    {/*    // leftIcon={<i className='fa fa-long-arrow-left'> </i>}*/}
-                    {/*    rightIcon={<i className='fa fa-long-arrow-right'> </i>}*/}
-                    {/*    goToMenu="settings">*/}
-                    {/*    Settings*/}
-                    {/*</DropdownItem>*/}
-
-
                 </div>
             </CSSTransition>
 
-            {/*<CSSTransition*/}
-            {/*    in={activeMenu === 'main'}*/}
-            {/*    timeout={500}*/}
-            {/*    classNames="wishList-menu-primary"*/}
-            {/*    unmountOnExit*/}
-            {/*    onEnter={calcHeight}*/}
-            {/*>*/}
-            {/*    <div className="wishList-menu">*/}
-            {/*        /!*<DropdownItem><Button onClick={}>X</Button> </DropdownItem>*!/*/}
-            {/*        /!*<DropdownItem>*!/*/}
-            {/*        /!*    <WishListTabInfo/>*!/*/}
-            {/*        /!*</DropdownItem>*!/*/}
-
-            {/*        /!*<DropdownItem*!/*/}
-            {/*        /!*    // leftIcon={<i className='fa fa-long-arrow-left'> </i>}*!/*/}
-            {/*        /!*    rightIcon={<i className='fa fa-long-arrow-right'> </i>}*!/*/}
-            {/*        /!*    goToMenu="settings">*!/*/}
-            {/*        /!*    Settings*!/*/}
-            {/*        /!*</DropdownItem>*!/*/}
-
-            {/*    </div>*/}
-            {/*</CSSTransition>*/}
 
         </div>
     );

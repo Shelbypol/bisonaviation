@@ -252,7 +252,8 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                                                             pages={pages}
                                                             page={page}
                                                             updateCatProp={updateCat}
-                                                            updateManufacturerProp={updateManufacturer}/>
+                                                            updateManufacturerProp={updateManufacturer}
+                                    />
                                 </Col>
                             )}
 

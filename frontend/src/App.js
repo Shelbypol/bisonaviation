@@ -27,6 +27,7 @@ import TeamScreen from "./screens/TeamScreen";
 import ContactScreen from "./screens/ContactScreen";
 import TermsScreen from "./screens/TermsScreen";
 import TermsFlirScreen from "./screens/TermsFlirScreen";
+import WishListScreen from "./screens/WishListScreen/WishListScreen"
 import StickyHeader from "./components/Headers-Nav-Footer/StickyHeader";
 import MobileHeader from "./components/Headers-Nav-Footer/MobileHeader";
 import {listProducts} from "./actions/productActions";
@@ -50,7 +51,6 @@ const App = () => {
                 <Route path='/page/:pageNumber' component={ProductsDisplayScreen} exact/>
                 <Route path='/search/:keyword/page/:pageNumber' component={ProductsDisplayScreen}/>
 
-
                 <Fragment>
                     <Headers/>
                     <Route path='/' component={HomeScreen} exact/>
@@ -62,6 +62,7 @@ const App = () => {
                     <Route path='/terms' component={TermsScreen}/>
                     <Route path='/flir-terms' component={TermsFlirScreen}/>
                     <Route path='/register' component={RegisterScreen}/>
+                    <Route path='/wishlist' component={WishListScreen}/>
 
 
                     <Container className='mb-0 pb-0'>

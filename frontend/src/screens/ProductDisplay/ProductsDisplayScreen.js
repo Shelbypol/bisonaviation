@@ -1,11 +1,12 @@
 import React, {useEffect, useLayoutEffect, useState} from 'react'
-import {Row} from 'react-bootstrap'
+import {ListGroup, Row} from 'react-bootstrap'
 import Meta from "../../components/Meta";
 import CategoryManufacturerDisplay from "../../components/ProductDisplay/CategoryManufacturerDisplay";
 import {Jumbotron} from "reactstrap";
 import StickyHeader from "../../components/Headers-Nav-Footer/StickyHeader";
 import MobileHeader from "../../components/Headers-Nav-Footer/MobileHeader";
-import {useDispatch} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
+import {listMyWishLists} from "../../actions/wishListActions";
 
 const ProductsDisplayScreen = ({match, history}) => {
 
@@ -15,17 +16,15 @@ const ProductsDisplayScreen = ({match, history}) => {
 
     const dispatch = useDispatch();
 
-
     useEffect(() => {
+
         window.addEventListener("resize", handleWindowResize);
         return () => window.removeEventListener("resize", handleWindowResize);
-
     }, [dispatch, width]);
 
     useLayoutEffect(() => {
         window.scrollTo(0, 0)
     });
-
 
     const handleWindowResize = () => {
         setWidth(window.innerWidth);

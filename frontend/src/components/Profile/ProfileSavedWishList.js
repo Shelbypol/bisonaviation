@@ -50,7 +50,7 @@ const ProfileSavedWishList = ({match, history, userInfo}) => {
                                                                     className='border-0 global_bisonDarkFadedBgColorHover global_cursor'>
                                                         <ProfileSavedProduct
                                                             wishList={wishList} wishes={wishes} product={product}
-                                                            item={item} userInfor={userInfo}/>
+                                                            item={item} userInfo={userInfo}/>
                                                     </ListGroup.Item>
                                                 </>
                                         ))

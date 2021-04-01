@@ -7,14 +7,17 @@ import {listMyWishLists} from "../../actions/wishListActions";
 import Message from "../Message";
 
 
-const Product = ({product, history, match}) => {
+const Product = ({ product, history, match}) => {
 
     const [activeHeart, setActiveHeart] = useState(false);
 
     const dispatch = useDispatch();
 
-    const wishListMy = useSelector(state => state.wishListMy);
-    const {loading: loadingOrders, error: errorOrders, wishList} = wishListMy;
+    const cart = useSelector(state => state.cart);
+    const {cartItems} = cart;
+
+    // const wishListMy = useSelector(state => state.wishListMy);
+    // const {loading: loadingOrders, error: errorOrders, wishList} = wishListMy;
 
     const userLogin = useSelector(state => state.userLogin);
     const {userInfo} = userLogin;
@@ -23,9 +26,7 @@ const Product = ({product, history, match}) => {
         if (userInfo) {
             dispatch(listMyWishLists());
         }
-
-
-    }, [dispatch, activeHeart, match, history]);
+    }, [dispatch, activeHeart, match, history, cartItems]);
 
 
 
@@ -33,14 +34,6 @@ const Product = ({product, history, match}) => {
         setActiveHeart(!activeHeart);
         dispatch(addToCart(product._id, 1));
 
-        if (userInfo) {
-            for (let i = 0; i <= wishList.length; i++) {
-                if (product.name === wishList[i].wishListItems[0].name) {
-                    console.log('same');
-                    console.log(product.name && wishList[i].wishListItems[0].name);
-                }
-            }
-        }
 
         // history.push(`/cart/${id}?qty=1`);
     };
