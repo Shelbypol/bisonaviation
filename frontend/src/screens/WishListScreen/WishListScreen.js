@@ -8,6 +8,7 @@ import {EMAIL_RESET} from "../../constants/emailConstants";
 import '../../style/wishListScreen/WishListScreen.css';
 import {Link} from "react-router-dom";
 import {createWishList} from "../../actions/wishListActions";
+import WishListHero from "../../components/Wishlist/WishListHero";
 
 const WishListScreen = () => {
 
@@ -42,6 +43,7 @@ const WishListScreen = () => {
 
     return (
         <>
+            <WishListHero/>
             <Container className='bg-white py-4 px-2' fluid>
                 <Row className=' p-0 d-flex justify-content-end' style={{zIndex: 100}}>
                     <Col xs={6}>

@@ -86,32 +86,13 @@ const ProductScreen = ({history, match}) => {
                     <>
                         <Meta title={product.name}/>
 
-                        <Row className='bg-white'>
+                        <Row className='bg-transparent'>
                             <Col className='bg-white d-flex justify-content-center mx-lg-3 mx-sm-0'
                                  style={{height: '50%'}}
                                  md={6}
                                  xs={12}>
                                 <img src={product.image} alt={product.name} className='h-50 w-50'/>
 
-
-                                {/*<div className="fluid__image-container ProductScreen_img-magAb">*/}
-                                {/*    <ReactImageMagnify {...{*/}
-                                {/*        smallImage: {*/}
-                                {/*            alt: product.name,*/}
-                                {/*            isFluidWidth: true,*/}
-                                {/*            src: product.image*/}
-                                {/*        },*/}
-                                {/*        largeImage: {*/}
-                                {/*            src: product.image,*/}
-                                {/*            width: 1200,*/}
-                                {/*            height: 1800,*/}
-                                {/*            enlargedImageContainerClassName: 'border-0',*/}
-                                {/*        },*/}
-                                {/*            enlargedImagePosition: 'over',*/}
-                                {/*            isHintEnabled: true,*/}
-                                {/*            shouldHideHintAfterFirstActivation: false,*/}
-                                {/*    }} />*/}
-                                {/*</div>*/}
                             </Col>
                             <Col className=' bg-transparent global_cursor' md={5} xs={12}>
 
