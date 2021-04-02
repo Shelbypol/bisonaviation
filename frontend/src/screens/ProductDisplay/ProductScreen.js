@@ -7,7 +7,6 @@ import Message from '../../components/Message'
 import Loader from '../../components/Loader'
 import {PRODUCT_CREATE_REVIEW_RESET} from "../../constants/productConstants";
 import Meta from "../../components/Meta";
-import ReactImageMagnify from "react-image-magnify";
 import {addToCart, removeFromCart} from "../../actions/cartActions";
 
 const ProductScreen = ({history, match}) => {
