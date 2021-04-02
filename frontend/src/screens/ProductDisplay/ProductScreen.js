@@ -78,6 +78,7 @@ const ProductScreen = ({history, match}) => {
 
     return (
         <>
+
                 <Link className='global_white-text-red-hover bg-transparent btn btn-light mb-3 mt-4 pb-1 px-1'
                       to='/products'>
                     Go back
