@@ -79,115 +79,115 @@ const ProductScreen = ({history, match}) => {
 
     return (
         <>
-            <Link className='global_white-text-red-hover bg-transparent btn btn-light mb-3 mt-4 pb-1 px-1'
-                  to='/products'>
-                Go back
-            </Link>
-            {loading ? <Loader/> : error ? <Message variant='danger'>{error}</Message> : (
-                <>
-                    <Meta title={product.name}/>
+                <Link className='global_white-text-red-hover bg-transparent btn btn-light mb-3 mt-4 pb-1 px-1'
+                      to='/products'>
+                    Go back
+                </Link>
+                {loading ? <Loader/> : error ? <Message variant='danger'>{error}</Message> : (
+                    <>
+                        <Meta title={product.name}/>
 
-                    <Row className='text-white'>
-                        <Col className='bg-white d-flex justify-content-center mx-lg-3 mx-sm-0' style={{height: '50%'}}
-                             md={6}
-                             xs={12}>
-                            <img src={product.image} alt={product.name} className='h-50 w-50'/>
+                        <Row className='bg-white'>
+                            <Col className='bg-white d-flex justify-content-center mx-lg-3 mx-sm-0'
+                                 style={{height: '50%'}}
+                                 md={6}
+                                 xs={12}>
+                                <img src={product.image} alt={product.name} className='h-50 w-50'/>
 
 
-                            {/*<div className="fluid__image-container ProductScreen_img-magAb">*/}
-                            {/*    <ReactImageMagnify {...{*/}
-                            {/*        smallImage: {*/}
-                            {/*            alt: product.name,*/}
-                            {/*            isFluidWidth: true,*/}
-                            {/*            src: product.image*/}
-                            {/*        },*/}
-                            {/*        largeImage: {*/}
-                            {/*            src: product.image,*/}
-                            {/*            width: 1200,*/}
-                            {/*            height: 1800,*/}
-                            {/*            enlargedImageContainerClassName: 'border-0',*/}
-                            {/*        },*/}
-                            {/*            enlargedImagePosition: 'over',*/}
-                            {/*            isHintEnabled: true,*/}
-                            {/*            shouldHideHintAfterFirstActivation: false,*/}
-                            {/*    }} />*/}
-                            {/*</div>*/}
-                        </Col>
-                        <Col className=' bg-transparent global_cursor' md={5} xs={12}>
+                                {/*<div className="fluid__image-container ProductScreen_img-magAb">*/}
+                                {/*    <ReactImageMagnify {...{*/}
+                                {/*        smallImage: {*/}
+                                {/*            alt: product.name,*/}
+                                {/*            isFluidWidth: true,*/}
+                                {/*            src: product.image*/}
+                                {/*        },*/}
+                                {/*        largeImage: {*/}
+                                {/*            src: product.image,*/}
+                                {/*            width: 1200,*/}
+                                {/*            height: 1800,*/}
+                                {/*            enlargedImageContainerClassName: 'border-0',*/}
+                                {/*        },*/}
+                                {/*            enlargedImagePosition: 'over',*/}
+                                {/*            isHintEnabled: true,*/}
+                                {/*            shouldHideHintAfterFirstActivation: false,*/}
+                                {/*    }} />*/}
+                                {/*</div>*/}
+                            </Col>
+                            <Col className=' bg-transparent global_cursor' md={5} xs={12}>
 
-                            {/*AVAILABLE*/}
-                            <ListGroup variant='flush'>
-                                <ListGroup.Item className=' border-0 py-0 bg-transparent'>
-                                    {!product.isAvailable && (
-                                        <i className='mt-5'>not available </i>
-                                    )}
-                                </ListGroup.Item>
+                                {/*AVAILABLE*/}
+                                <ListGroup variant='flush'>
+                                    <ListGroup.Item className=' border-0 py-0 bg-transparent'>
+                                        {!product.isAvailable && (
+                                            <i className='mt-5'>not available </i>
+                                        )}
+                                    </ListGroup.Item>
 
-                                {/* NAME */}
-                                <ListGroup.Item className='border-0 bg-transparent global_red ProductScreen_img'>
-                                    {product.isPromo && (
-                                        <p className='flag red global_accentFont mb-0 mt-lg-n2 mt-2' style={{marginLeft: '-6vw'}}>{product.isPromoType}</p>
-                                    )}
+                                    {/* NAME */}
+                                    <ListGroup.Item className='border-0 bg-transparent global_red ProductScreen_img'>
+                                        {product.isPromo && (
+                                            <p className='flag red global_accentFont mb-0 mt-lg-n2 mt-2'
+                                               style={{marginLeft: '-6vw'}}>{product.isPromoType}</p>
+                                        )}
 
-                                    {/*pl-sm-5*/}
-                                    <h1 className='mt-4'>{product.name}</h1>
-                                </ListGroup.Item>
+                                        {/*pl-sm-5*/}
+                                        <h1 className='mt-4'>{product.name}</h1>
+                                    </ListGroup.Item>
 
-                                {/* PART # */}
-                                <ListGroup.Item className='border-0 mb-3 bg-transparent'>
-                                    <h5>
+                                    {/* PART # */}
+                                    <ListGroup.Item className='border-0 mb-3 bg-transparent'>
+                                        <h5>
                                         <span className='global_blue'>
                                         Part #:
                                         </span>
-                                        &nbsp; {product.partNumber}
-                                    </h5>
-                                </ListGroup.Item>
+                                            &nbsp; {product.partNumber}
+                                        </h5>
+                                    </ListGroup.Item>
 
-                                <Row xs={12} className='ml-1'>
-                                    <Col xs={2}>
-                                        <ListGroup.Item
-                                            className='border-0 d-flex justify-content-center bg-transparent'>
-                                            {/* LIKE BTN */}
-                                            {activeHeart ? (
-                                                <>
+                                    <Row xs={12} className='ml-1'>
+                                        <Col xs={2}>
+                                            <ListGroup.Item
+                                                className='border-0 d-flex justify-content-center bg-transparent'>
+                                                {/* LIKE BTN */}
+                                                {activeHeart ? (
+                                                    <>
                                             <span onClick={unlike}
                                                   className='global_cursor'
                                                   style={{color: 'rgba(200, 0, 0, 1)', fontSize: '1.5em'}}>
                                                 <i className="mt-auto fas fa-heart bg-transparent"> </i>
                                             </span>
-                                                </>
-                                            ) : (
-                                                <>
+                                                    </>
+                                                ) : (
+                                                    <>
                                             <span className='global_cursor' onClick={like} style={{fontSize: '1.5em'}}>
                                                 <i className="mt-auto fas fa-heart bg-transparent"> </i>
                                             </span>
-                                                </>
-                                            )}
-                                        </ListGroup.Item>
-                                    </Col>
-                                    <Col xs={10}>
-                                        {/* PRICE */}
-                                        <ListGroup.Item className='mt-1 border-0 bg-transparent'>
-                                            <h4>
-                                                ${product.price}
-                                            </h4>
-                                        </ListGroup.Item>
-                                    </Col>
+                                                    </>
+                                                )}
+                                            </ListGroup.Item>
+                                        </Col>
+                                        <Col xs={10}>
+                                            {/* PRICE */}
+                                            <ListGroup.Item className='mt-1 border-0 bg-transparent'>
+                                                <h4>
+                                                    ${product.price}
+                                                </h4>
+                                            </ListGroup.Item>
+                                        </Col>
 
-                                </Row>
+                                    </Row>
 
-                            </ListGroup>
-                        </Col>
-                    </Row>
-                    <Row className='mb-5'>
-                        <Col xs={12}>
-                            <ControlledTabs/>
-                        </Col>
-                    </Row>
-
-                </>
-            )}
-
+                                </ListGroup>
+                            </Col>
+                        </Row>
+                        <Row className='mb-5'>
+                            <Col xs={12}>
+                                <ControlledTabs/>
+                            </Col>
+                        </Row>
+                    </>
+                )}
         </>
     )
 };

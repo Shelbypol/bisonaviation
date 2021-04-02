@@ -75,10 +75,7 @@ const App = () => {
                     <Route path='/flir-terms' component={TermsFlirScreen}/>
                     <Route path='/register' component={RegisterScreen}/>
 
-
-
-                                {width <= 1150 && <Route path='/wishlist' component={WishListScreen} />}
-
+                    {width <= 1150 && <Route path='/wishlist' component={WishListScreen} />}
 
                     <Container className='mb-0 pb-0'>
                         <Route path='/login' component={LoginScreen}/>
