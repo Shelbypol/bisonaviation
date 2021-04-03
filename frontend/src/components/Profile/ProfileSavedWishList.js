@@ -34,8 +34,8 @@ const ProfileSavedWishList = ({match, history, userInfo}) => {
     return (
         <>
             <h2>Wishlist</h2>
-            <Row xs={12}>
-                <Col xs={9}>
+            <Row >
+                <Col xs={12}>
                     {loadingOrders
                         ? <Loader/>
                         : errorOrders
@@ -47,7 +47,7 @@ const ProfileSavedWishList = ({match, history, userInfo}) => {
                                             item.length === 0 ? <Message>Wishlist is empty</Message> :
                                                 <>
                                                     <ListGroup.Item key={wishes._id}
-                                                                    className='border-0 global_bisonDarkFadedBgColorHover global_cursor'>
+                                                                    className='border-0 global global_cursor'>
                                                         <ProfileSavedProduct
                                                             wishList={wishList} wishes={wishes} product={product}
                                                             item={item} userInfo={userInfo}/>
@@ -61,10 +61,10 @@ const ProfileSavedWishList = ({match, history, userInfo}) => {
 
                 </Col>
 
-                <Col xs={3}>
-                    <ProfileEmailState userInfo={userInfo} emailItems={emailItems}/>
-                    {/*<WishListEmail/>*/}
-                </Col>
+                {/*<Col xs={3}>*/}
+                {/*    <ProfileEmailState userInfo={userInfo} emailItems={emailItems}/>*/}
+                {/*    /!*<WishListEmail/>*!/*/}
+                {/*</Col>*/}
             </Row>
         </>
     )

@@ -49,13 +49,13 @@ const ProfileSavedProduct = ({wishList, wishes, item, product, userInfo}) => {
     return (
         <>
             <Row xs={12}>
-                <Col xs={2}>
+                <Col xs={4}>
                     {/*<Link to={`/product/${item.product}`}>*/}
                     <Image src={item.image} alt={item.name} fluid
                            rounded/>
                     {/*</Link>*/}
                 </Col>
-                <Col xs={2} className='d-flex align-items-center'>
+                <Col xs={4} className='d-flex align-items-center'>
                     <Link to={`/product/${item.product}`}>
                         {item.name}
                     </Link>
@@ -69,22 +69,22 @@ const ProfileSavedProduct = ({wishList, wishes, item, product, userInfo}) => {
                      className='global_bisonDarkFadedBgColorHover d-flex justify-content-center align-items-center'>
                     <i className='fas fa-trash'> </i>
                 </Col>
-                {activeEmail ? (
-                    // <Col xs={2} onClick={() => removeFromEmailListHandler}
-                    <Col xs={2} onClick={removeFromEmailListHandler}
-                         className='global_cursor d-flex justify-content-center align-items-center'
-                         style={{backgroundColor: 'green'}}>
-                        <i className='fas fa-envelope'> </i>
-                    </Col>
-                ) : (
-                    <Col xs={2} onClick={addToEmailListHandler}
-                         className='global_cursor d-flex justify-content-center align-items-center'>
-                        <i className='fas fa-envelope'> </i>
-                    </Col>
+                {/*{activeEmail ? (*/}
+                {/*    // <Col xs={2} onClick={() => removeFromEmailListHandler}*/}
+                {/*    <Col xs={2} onClick={removeFromEmailListHandler}*/}
+                {/*         className='global_cursor d-flex justify-content-center align-items-center'*/}
+                {/*         style={{backgroundColor: 'green'}}>*/}
+                {/*        <i className='fas fa-envelope'> </i>*/}
+                {/*    </Col>*/}
+                {/*) : (*/}
+                {/*    <Col xs={2} onClick={addToEmailListHandler}*/}
+                {/*         className='global_cursor d-flex justify-content-center align-items-center'>*/}
+                {/*        <i className='fas fa-envelope'> </i>*/}
+                {/*    </Col>*/}
 
 
-                )
-                }
+                {/*)*/}
+                {/*}*/}
 
 
             </Row>

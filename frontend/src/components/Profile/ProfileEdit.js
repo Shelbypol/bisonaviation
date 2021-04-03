@@ -71,13 +71,12 @@ const ProfileEdit = ({match, history}) => {
 
     return (
         <>
-            {/*<Col md={3}>*/}
-                <h2>User Profile</h2>
+                <h2 className='global_blood-red'>Edit &nbsp;{userInfo.name}'s&nbsp; Profile</h2>
                 {message && <Message variant='danger'>{message}</Message>}
                 {error && <Message variant='danger'>{error}</Message>}
                 {success && <Message variant='success'>Profile updated</Message>}
                 {loading && <Loader/>}
-                <Form onSubmit={submitHandler}>
+                <Form onSubmit={submitHandler} className='global_blood-red'>
                     <Form.Group controlId='name'>
                         <Form.Label>Name</Form.Label>
                         <Form.Control type='name'
@@ -114,7 +113,7 @@ const ProfileEdit = ({match, history}) => {
                         </Form.Control>
                     </Form.Group>
 
-                    <Button type='submit' variant='primary'>Update</Button>
+                    <Button className='global_blood-red-bg text-white' type='submit' variant='primary'>Update</Button>
                 </Form>
             {/*</Col>*/}
         </>

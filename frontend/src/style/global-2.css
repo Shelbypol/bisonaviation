@@ -52,6 +52,16 @@ main {
 .global_blood-red{
     color: #660708;
 }
+
+.global_white-txt-blood-red-bg-hover{
+    color: #660708;
+    background-color: white;
+}
+.global_white-txt-blood-red-bg-hover:hover{
+    color: white;
+    background-color: #660708;
+}
+
 .global_silver-chalice{
     color:  #B1A7A6;
 }
