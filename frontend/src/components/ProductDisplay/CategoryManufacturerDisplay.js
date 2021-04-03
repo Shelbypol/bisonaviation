@@ -12,7 +12,7 @@ import {Container} from "react-bootstrap/cjs";
 
 const CategoryManufacturerDisplay = ({match, history}) => {
 
-    const [sideBar, setSideBar] = useState(true);
+    const [sideBar, setSideBar] = useState(false);
 
     const [width, setWidth] = useState(window.innerWidth);
 
@@ -41,11 +41,6 @@ const CategoryManufacturerDisplay = ({match, history}) => {
 
     const handleWindowResize = () => {
         setWidth(window.innerWidth);
-        if (width < breakpoint) {
-            if(sideBar){
-                setSideBar(!sideBar);
-            }
-        }
     };
 
     //SIDE BAR
