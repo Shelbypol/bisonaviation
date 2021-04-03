@@ -78,7 +78,7 @@ const ProductScreen = ({history, match}) => {
 
     return (
         <>
-            <Jumbotron className='bg-white'>
+            <Jumbotron className='bg-white m-0 p-0'>
                 <Container className='mb-0 pb-0'>
                     <Link className='global_white-text-red-hover bg-transparent btn btn-light mb-3 mt-4 pb-1 px-1'
                           to='/products'>

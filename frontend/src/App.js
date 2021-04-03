@@ -76,7 +76,8 @@ const App = () => {
                     <Route path='/register' component={RegisterScreen}/>
                     <Route path='/product/:id' component={ProductScreen}/>
 
-                    {width <= 1150 && <Route path='/wishlist' component={WishListScreen} />}
+                    <Route path='/wishlist' component={WishListScreen} />
+                    {/*{width <= 1150 && <Route path='/wishlist' component={WishListScreen} />}*/}
 
                     <Container className='mb-0 pb-0'>
                         <Route path='/login' component={LoginScreen}/>
