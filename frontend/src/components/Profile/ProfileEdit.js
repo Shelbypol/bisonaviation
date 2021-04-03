@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import {Button, Form} from "react-bootstrap";
+import {Button, Col, Form, Row} from "react-bootstrap";
 import {useSelector, useDispatch} from "react-redux";
 import Loader from "../Loader";
 import Message from "../Message";
@@ -71,51 +71,58 @@ const ProfileEdit = ({match, history}) => {
 
     return (
         <>
-                <h2 className='global_blood-red'>Edit &nbsp;{userInfo.name}'s&nbsp; Profile</h2>
-                {message && <Message variant='danger'>{message}</Message>}
-                {error && <Message variant='danger'>{error}</Message>}
-                {success && <Message variant='success'>Profile updated</Message>}
-                {loading && <Loader/>}
-                <Form onSubmit={submitHandler} className='global_blood-red'>
-                    <Form.Group controlId='name'>
-                        <Form.Label>Name</Form.Label>
-                        <Form.Control type='name'
-                                      placeholder='Enter name'
-                                      value={name}
-                                      onChange={(e) => setName(e.target.value)}>
-                        </Form.Control>
-                    </Form.Group>
+            <h2 className='global_blood-red'>Edit Profile</h2>
+            {message && <Message variant='danger'>{message}</Message>}
+            {error && <Message variant='danger'>{error}</Message>}
+            {success && <Message variant='success'>Profile updated</Message>}
+            {loading && <Loader/>}
 
-                    <Form.Group controlId='email'>
-                        <Form.Label>Email Address</Form.Label>
-                        <Form.Control type='email'
-                                      placeholder='Enter email'
-                                      value={email}
-                                      onChange={(e) => setEmail(e.target.value)}>
-                        </Form.Control>
-                    </Form.Group>
+            <Row>
+                <Col className='p-3 text-dark border rounded global_light-grey-bg'>
 
-                    <Form.Group controlId='Password'>
-                        <Form.Label>Password</Form.Label>
-                        <Form.Control type='password'
-                                      placeholder='Enter Password'
-                                      value={password}
-                                      onChange={(e) => setPassword(e.target.value)}>
-                        </Form.Control>
-                    </Form.Group>
+                    <Form onSubmit={submitHandler} className='global_blood-red'>
+                        <Form.Group controlId='name'>
+                            <Form.Label>Name</Form.Label>
+                            <Form.Control type='name'
+                                          placeholder='Enter name'
+                                          value={name}
+                                          onChange={(e) => setName(e.target.value)}>
+                            </Form.Control>
+                        </Form.Group>
 
-                    <Form.Group controlId='confirmPassword'>
-                        <Form.Label>Confirm Password</Form.Label>
-                        <Form.Control type='password'
-                                      placeholder='Confirm Password'
-                                      value={confirmPassword}
-                                      onChange={(e) => setConfirmPassword(e.target.value)}>
-                        </Form.Control>
-                    </Form.Group>
+                        <Form.Group controlId='email'>
+                            <Form.Label>Email Address</Form.Label>
+                            <Form.Control type='email'
+                                          placeholder='Enter email'
+                                          value={email}
+                                          onChange={(e) => setEmail(e.target.value)}>
+                            </Form.Control>
+                        </Form.Group>
 
-                    <Button className='global_blood-red-bg text-white' type='submit' variant='primary'>Update</Button>
-                </Form>
-            {/*</Col>*/}
+                        <Form.Group controlId='Password'>
+                            <Form.Label>Password</Form.Label>
+                            <Form.Control type='password'
+                                          placeholder='Enter Password'
+                                          value={password}
+                                          onChange={(e) => setPassword(e.target.value)}>
+                            </Form.Control>
+                        </Form.Group>
+
+                        <Form.Group controlId='confirmPassword'>
+                            <Form.Label>Confirm Password</Form.Label>
+                            <Form.Control type='password'
+                                          placeholder='Confirm Password'
+                                          value={confirmPassword}
+                                          onChange={(e) => setConfirmPassword(e.target.value)}>
+                            </Form.Control>
+                        </Form.Group>
+
+                        <Button className='global_blood-red-bg text-white' type='submit'
+                                variant='primary'>Update</Button>
+                    </Form>
+                </Col>
+            </Row>
+
         </>
     )
 };

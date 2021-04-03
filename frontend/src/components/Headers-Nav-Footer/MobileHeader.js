@@ -91,10 +91,10 @@ const MobileHeader = () => {
                         )}
 
                         {/*  WISHLIST  */}
+                                {cartItems.length !== 0 && (
                         <LinkContainer className='mx-0 pb-0 pt-3 MobileHeader_text d-flex justify-content-center'
                                        to='/wishlist'>
                             <Nav.Link>
-                                {cartItems.length !== 0 && (
                                     <p className={cartItems.length !== 0 && ('borderBlink')}>
                                         <p className='text-white d-inline' style={{fontSize: '1.3em'}}>
                                             &nbsp;{cartItems.length}&nbsp;
@@ -105,9 +105,9 @@ const MobileHeader = () => {
                                         </p>
 
                                     </p>
-                                )}
                             </Nav.Link>
                         </LinkContainer>
+                                )}
 
                         {/*  BROWSE PRODUCTS  */}
                         <LinkContainer className='mx-1 MobileHeader_text d-flex justify-content-center'
@@ -181,11 +181,20 @@ const MobileHeader = () => {
                             </Nav.Link>
 
                         ) : (
-                            <LinkContainer to='/login'>
-                                <Nav.Link className='MobileHeader_login-text d-flex justify-content-center'>
-                                    Login
-                                </Nav.Link>
-                            </LinkContainer>
+                            <>
+                                <LinkContainer to='/register' className='MobileHeader_text d-flex justify-content-center'>
+                                    <Nav.Link>
+                                        Register
+                                    </Nav.Link>
+                                </LinkContainer>
+
+                                <LinkContainer to='/login'>
+                                    <Nav.Link className='MobileHeader_login-text d-flex justify-content-center'>
+                                        Login
+                                    </Nav.Link>
+                                </LinkContainer>
+
+                            </>
                         )}
 
 

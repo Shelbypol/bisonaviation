@@ -38,7 +38,7 @@ const LoginScreen = ({location, history}) => {
 
     return (
         <>
-            <Row className='my-5 mx-1 text-dark border rounded global_light-grey-bg'>
+            <Row className='my-5 mx-3 text-dark border rounded global_light-grey-bg'>
                 <Col xs={12}>
                     <FormContainer className='my-5'>
                         <h1 className='global_blood-red'>Sign in</h1>

@@ -55,18 +55,18 @@ const ProfileSavedProduct = ({wishList, wishes, item, product, userInfo}) => {
                            rounded/>
                     {/*</Link>*/}
                 </Col>
-                <Col xs={4} className='d-flex align-items-center'>
+                <Col xs={5} className='d-flex align-items-center'>
                     <Link to={`/product/${item.product}`}>
                         {item.name}
                     </Link>
                 </Col>
-                <Col xs={2} className='d-flex justify-content-center align-items-center'>
-                    <Link to={`/product/${item.product}`}>
-                        <strong>${item.price}</strong>
-                    </Link>
-                </Col>
-                <Col xs={2} onClick={() => deleteHandler(wishes._id)}
-                     className='global_bisonDarkFadedBgColorHover d-flex justify-content-center align-items-center'>
+                {/*<Col xs={2} className='d-flex justify-content-center align-items-center'>*/}
+                {/*    <Link to={`/product/${item.product}`}>*/}
+                {/*        <strong>${item.price}</strong>*/}
+                {/*    </Link>*/}
+                {/*</Col>*/}
+                <Col xs={3} onClick={() => deleteHandler(wishes._id)}
+                     className='global_blood-red d-flex justify-content-center align-items-center'>
                     <i className='fas fa-trash'> </i>
                 </Col>
                 {/*{activeEmail ? (*/}
