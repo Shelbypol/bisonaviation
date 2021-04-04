@@ -6,19 +6,12 @@ const TeamCard = ({img, headerName, headerPosition, name, position, certificatio
 
     const [show, setShow] = useState(false);
 
-    const cardShow = () => {
-        if (show) {
-            setShow(!show)
-        } else if (!show) {
-            setShow(!show)
-        }
-    };
 
     return (
 
         <>
             <Col sm={1} md={3} className='my-2'>
-                <Card className='bg-transparent border-0' onClick={cardShow}>
+                <Card className='bg-transparent border-0' onClick={setShow(!show)}>
                     <Card.Img src={img} className='rounded'/>
                     <Card.Header
                         className='global_cultured global_rich-black-bg text-center d-flex justify-content-center align-items-center'
