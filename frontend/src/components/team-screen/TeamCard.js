@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import Fade from 'react-reveal/Fade';
 import {Card, Row, Col} from "react-bootstrap";
 
@@ -6,12 +6,31 @@ const TeamCard = ({img, headerName, headerPosition, name, position, certificatio
 
     const [show, setShow] = useState(false);
 
+    const cardShow = () => {
+            setShow(!show)
+    };
+
+    const node = useRef(show);
+
+    useEffect(() => {
+        document.addEventListener("click", handleClick);
+        return () => {
+            document.removeEventListener("click", handleClick);
+        };
+    }, []);
+
+    const handleClick = (e) => {
+        if (node.current.contains(e.target) === false) {
+            setShow(false)
+        }
+    };
 
     return (
 
         <>
-            <Col sm={1} md={3} className='my-2'>
-                <Card className='bg-transparent border-0' onClick={setShow(!show)}>
+            <Col sm={1} md={3} className='my-2' ref={node} onClick={(e) => {
+                handleClick(e)}}>
+                <Card className='bg-transparent border-0' onClick={cardShow}>
                     <Card.Img src={img} className='rounded'/>
                     <Card.Header
                         className='global_cultured global_rich-black-bg text-center d-flex justify-content-center align-items-center'

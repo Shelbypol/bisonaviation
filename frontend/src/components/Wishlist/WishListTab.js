@@ -52,7 +52,7 @@ const NavItem = (props) => {
             setOpen(false)
         }
     };
-    const handleClick = () => {
+    const handleClick = (e) => {
         // if (node.current.contains(e.target) === false) {
         //     setOpen(false)
         // }
