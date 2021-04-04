@@ -17,7 +17,7 @@ const TeamCard = ({img, headerName, headerPosition, name, position, certificatio
     return (
 
         <>
-            <Col sm={1} md={3}>
+            <Col sm={1} md={3} className='my-2'>
                 <Card className='bg-transparent border-0' onClick={cardShow}>
                     <Card.Img src={img} className='rounded'/>
                     <Card.Header
@@ -35,10 +35,10 @@ const TeamCard = ({img, headerName, headerPosition, name, position, certificatio
                     <Fade duration={4000}>
                         <Col className='col-sm-12 my-3'>
                             <Row xs={12}>
-                                <Col xs={6}>
+                                <Col md={6} className='d-none d-md-block'>
                                     <Card.Img variant="top" src={img} className='w-100 h-100'/>
                                 </Col>
-                                <Col xs={6} className='bg-transparent global_cultured'>
+                                <Col xs={12} md={6} className='bg-transparent global_cultured'>
                                     <Col xs={12}>
                                         {/*MEMBER NAME*/}
                                         <strong className='Team_underline ' style={{color: 'red'}}> TEAM

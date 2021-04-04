@@ -30,20 +30,19 @@ const TeamScreen = () => {
         <>
             <TeamHero/>
 
-            <Container className='p-0 fluid'>
+            {/*<Container className='p-0 fluid'>*/}
 
-                <Jumbotron className='mx-5 px-5 bg-transparent m-0 p-0 global_cultured'
+                <Jumbotron className='px-3 mt-n5 bg-transparent global_cultured'
                            fluid>
-                    <h1 className='p-0 mb-0 mx-0 mt-5' style={{color: 'red'}}>Meet the Bison Team</h1>
+                    <h1 className='px-md-5 px-sm-0 m-0' style={{color: 'red'}}>Meet the Bison Team</h1>
                     <br/>
-                    <p>The Bison Aviation team is made up of professionally trained, highly skilled individuals, selected specifically for their particular expertise in the fields of general aviation maintenance and avionics. All of our primary technicians are fully FAA licensed (something which isn't true in most maintenance shops). The experience and skills of our team members is what makes Bison Aviation a leader in the aircraft service industry and we are proud to have each of these individuals as a part of the Bison Aviation Team!</p>
+                    <p className='px-md-5 px-sm-0 m-0'>The Bison Aviation team is made up of professionally trained, highly skilled individuals, selected specifically for their particular expertise in the fields of general aviation maintenance and avionics. All of our primary technicians are fully FAA licensed (something which isn't true in most maintenance shops). The experience and skills of our team members is what makes Bison Aviation a leader in the aircraft service industry and we are proud to have each of these individuals as a part of the Bison Aviation Team!</p>
                 </Jumbotron>
 
-                <Jumbotron className='mx-5 px-5 bg-transparent'
+                <Jumbotron className='mt-n5 mx-3 bg-transparent px-md-5 px-sm-0'
                            fluid>
 
-                    <Row className='mt-n5'>
-
+                    <Row>
                             {/*   JOHN ATKIN   */}
                             <TeamCard
                                 eventKey={'0'}
@@ -123,7 +122,7 @@ const TeamScreen = () => {
                     </Row>
 
                     {/*============   ROW TWO  ==========*/}
-                    <Row className='px-auto mt-5 d-flex justify-content-center'>
+                    <Row className='px-auto d-flex justify-content-center'>
 
                             {/*   JD PHILIPS   */}
                             <TeamCard
@@ -196,7 +195,7 @@ const TeamScreen = () => {
 
                     </Row>
 
-                    <Row className='px-auto mt-5 d-flex justify-content-center'>
+                    <Row className='px-auto d-flex justify-content-center'>
                             {/*  Cody Strack  */}
                             <TeamCard
                                 eventKey={'8'}
@@ -268,7 +267,7 @@ const TeamScreen = () => {
                     </Row>
 
                     {/*============   ROW FOUR  ==========*/}
-                    <Row className='px-auto mt-5 d-flex justify-content-center'>
+                    <Row className='px-auto d-flex justify-content-center'>
 
                             {/*  Halibut */}
                             <TeamCard
@@ -327,7 +326,7 @@ const TeamScreen = () => {
 
 
                 </Jumbotron>
-            </Container>
+            {/*</Container>*/}
 
         </>
     )
