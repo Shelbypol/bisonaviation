@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React, {useEffect, useLayoutEffect, useState} from 'react'
 import {Button, Col, Form, Image, ListGroup, Row} from "react-bootstrap";
 import {Link} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
@@ -6,6 +6,8 @@ import '../../style/WishListTab.css'
 import {removeFromCart} from "../../actions/cartActions";
 import {listMyWishLists} from "../../actions/wishListActions";
 import {addToEmail} from "../../actions/emailActions";
+import {CART_RESET} from "../../constants/cartConstants";
+import {EMAIL_RESET} from "../../constants/emailConstants";
 
 
 const WishListEmail = ({userInfo, cart, cartItems, success}) => {
@@ -27,10 +29,6 @@ const WishListEmail = ({userInfo, cart, cartItems, success}) => {
     useEffect(() => {
         dispatch(listMyWishLists());
 
-        // if(userInfo){
-        //     setUserName(userInfo.name);
-        //     setUserEmail(userInfo.email);
-        // }
         console.log(emailItems)
 
     }, [userInfo, success, emailItems, userText, userEmail, userName, isEmailed]);
@@ -65,8 +63,21 @@ const WishListEmail = ({userInfo, cart, cartItems, success}) => {
         setTimeout(Email, 5000);
         setUserName('');
         setUserText('');
+
+        window.scrollTo(0, 0);
+
     };
 
+
+        // useLayoutEffect(() => {
+        //     window.scrollTo(0, 0)
+        // });
+
+
+    // const clearWishList = () => {
+    //     dispatch({type: CART_RESET});
+    //     dispatch({type: EMAIL_RESET})
+    // };
 
     const removeFromWishListHandler = (id) => {
         dispatch(removeFromCart(id))
@@ -90,10 +101,10 @@ const WishListEmail = ({userInfo, cart, cartItems, success}) => {
                     )
 
                 )}
-                <Form onSubmit={submitHandler}>
-                    <Row xs={12}>
-                        <Col md={7} xs={11}
-                             className='global_blood-red py-3 ml-4 border rounded global_light-grey-bg'>
+                <Form onSubmit={submitHandler} md={7} xs={12} className='m-3 p-2'>
+                    <Row>
+                        <Col
+                             className='global_blood-red p-3 border global_light-grey-bg'>
                             <Form.Group controlId='name'>
                                 <Form.Label>Name</Form.Label>
                                 <Form.Control type='name'
@@ -137,20 +148,18 @@ const WishListEmail = ({userInfo, cart, cartItems, success}) => {
                                             variant='primary'
                                             className='global_blue-bg'
                                             onClick={() => {
-                                                setIsEmailed(true)
-                                            }}
+                                                setIsEmailed(true)                                            }}
                                     >Email Inquiry</Button>
                                 )
                             }
 
-
                         </Col>
 
-                        <Col md={4} xs={12} className='m-0 pt-5'>
-                            <ListGroup variant='flush'>
+                        <Col md={5} xs={12} className='m-0 px-0'>
                                 {cartItems.map(item => (
+                            <ListGroup variant='flush'>
                                     <ListGroup.Item key={item._id}
-                                                    className='stick-margins border-0'>
+                                                    className='border-0'>
                                         <Row xs={12}>
                                             <Col className='my-auto px-0' xs={2}>
                                                 <Button type='button' variant='light'
@@ -158,19 +167,19 @@ const WishListEmail = ({userInfo, cart, cartItems, success}) => {
                                                     <i className='fas fa-trash'> </i>
                                                 </Button>
                                             </Col>
-                                            <Col className='my-auto' md={4} xs={6}>
+                                            <Col className='' >
                                                 <Link to={`product/${item.product}`}>
                                                     <Image src={item.image} alt={item.name}
                                                            className='pt-2 justify-content-center rounded h-100 w-100'/>
                                                 </Link>
                                             </Col>
-                                            <Col className='my-auto px-0' md={7} xs={4}>
+                                            <Col className='my-auto px-0'>
                                                 {item.name}
                                             </Col>
                                         </Row>
                                     </ListGroup.Item>
-                                ))}
                             </ListGroup>
+                                ))}
 
                         </Col>
                     </Row>

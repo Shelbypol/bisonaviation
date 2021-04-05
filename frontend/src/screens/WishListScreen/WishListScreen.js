@@ -45,8 +45,8 @@ const WishListScreen = () => {
         <>
             <WishListHero/>
 
-            <Container className='bg-white py-4 px-2' fluid>
-                <Row className=' p-0 d-flex justify-content-end' style={{zIndex: 100}}>
+            <Container className='bg-white py-4 px-2 mt-n5' fluid>
+                <Row className='m-0 p-0 d-flex justify-content-end' style={{zIndex: 100}}>
                     <Col xs={6}>
                         <Link to='/'>
                             <h6 className='global_cursor stick p-3 m-auto d-flex justify-content-start'>
