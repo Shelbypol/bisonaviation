@@ -28,7 +28,7 @@ const TeamCard = ({img, headerName, headerPosition, name, position, certificatio
     return (
 
         <>
-            <Col sm={1} md={3} className='my-2' ref={node} onClick={(e) => {
+            <Col sm={1} md={3} className='my-2 ' ref={node} onClick={(e) => {
                 handleClick(e)}}>
                 <Card className='bg-transparent border-0' onClick={cardShow}>
                     <Card.Img src={img} className='rounded'/>
@@ -45,8 +45,8 @@ const TeamCard = ({img, headerName, headerPosition, name, position, certificatio
             {show && (
                 <>
                     <Fade duration={4000}>
-                        <Col className='col-12 my-3'>
-                            <Row xs={12}>
+                        <Col xs={12} className='my-3'>
+                            <Row>
                                 <Col md={6} className='d-none d-md-block'>
                                     <Card.Img variant="top" src={img} className='w-100 h-100'/>
                                 </Col>
