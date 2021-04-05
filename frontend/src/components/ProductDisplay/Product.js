@@ -28,8 +28,6 @@ const Product = ({ product, history, match}) => {
         }
     }, [dispatch, activeHeart, match, history, cartItems]);
 
-
-
     const like = () => {
         setActiveHeart(!activeHeart);
         dispatch(addToCart(product._id, 1));
@@ -58,7 +56,6 @@ const Product = ({ product, history, match}) => {
                         <Col xs={6} lg={6} className='pt-3 d-flex justify-content-start'>
                             {/* LIKE BTN */}
                             <>
-
 
                                 {activeHeart ? (
                                         <>

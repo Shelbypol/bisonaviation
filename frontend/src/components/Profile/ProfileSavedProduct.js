@@ -1,10 +1,10 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import {Col, Image,  Row} from "react-bootstrap";
 import {Link} from "react-router-dom";
 import {addToEmail} from "../../actions/emailActions";
-import {useDispatch} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 
-import { deleteWishListItem} from "../../actions/wishListActions";
+import {deleteWishListItem, listMyWishLists} from "../../actions/wishListActions";
 import {addToCart, removeFromCart} from "../../actions/cartActions";
 
 
@@ -19,11 +19,18 @@ const ProfileSavedProduct = ({wishList, wishes, item, product, userInfo}) => {
                 item
             )))));
 
+    const dispatch = useDispatch();
+
+    const cart = useSelector(state => state.cart);
+    const {cartItems} = cart;
 
     // const email = useSelector(state => state.email);
     // const {emailItems} = email;
 
-    const dispatch = useDispatch();
+    useEffect(() => {
+
+    }, [dispatch, activeHeart, cartItems]);
+
 
     const addToEmailListHandler = () => {
         setActiveEmail(!activeEmail);
@@ -51,13 +58,14 @@ const ProfileSavedProduct = ({wishList, wishes, item, product, userInfo}) => {
 
     const like = () => {
         setActiveHeart(!activeHeart);
-        dispatch(addToCart(item._id, 1));
+        console.log(wishes)
+        dispatch(addToCart(wishes.wishListItems[0].product, 1));
         // history.push(`/cart/${id}?qty=1`);
     };
 
     const unlike = () => {
         setActiveHeart(!activeHeart);
-        dispatch(removeFromCart(item._id))
+        dispatch(removeFromCart(wishes.wishListItems[0].product))
         // history.push(`/cart/${id}?qty=1`);
     };
 
@@ -77,9 +85,25 @@ const ProfileSavedProduct = ({wishList, wishes, item, product, userInfo}) => {
                     </Link>
                 </Col>
 
-                <Col md={2} xs={6} onClick={() => like}
+                <Col md={2} xs={6} onClick={() => like(item._id)}
                      className='pt-2 global_blue d-flex justify-content-center align-items-center'>
-                    <i className='fas fa-envelope-open-text'> </i>
+
+                    {activeHeart ? (
+                        <>
+                                            <span onClick={unlike}
+                                                  className='global_cursor'
+                                                  style={{fontSize: '1.3em'}}>
+                                            <i className="mt-auto fas fa-envelope"> </i>
+                                            </span>
+                        </>
+                    ) : (
+
+                        <span className='global_cursor' onClick={like}
+                              style={{fontSize: '1.3em'}}>
+                                        <i className="mt-auto fas fa-envelope-open-text "> </i>
+                                    </span>
+                    )}
+
                 </Col>
 
                 <Col md={2} xs={6} onClick={() => deleteHandler(wishes._id)}
