@@ -86,15 +86,14 @@ const WishListEmail = ({userInfo, cart, cartItems, success}) => {
                                 items</Link></p>
                         </>
                     ) : (
-                        <p>Ask the experts!</p>
+                        <p className='global_blue'>Ask the experts!</p>
                     )
 
                 )}
                 <Form onSubmit={submitHandler}>
                     <Row xs={12}>
-
-
-                        <Col lg={8} xs={12}>
+                        <Col md={7} xs={11}
+                             className='global_blood-red py-3 ml-4 border rounded global_light-grey-bg'>
                             <Form.Group controlId='name'>
                                 <Form.Label>Name</Form.Label>
                                 <Form.Control type='name'
@@ -128,6 +127,7 @@ const WishListEmail = ({userInfo, cart, cartItems, success}) => {
                                 (<Button type='submit'
                                          disabled
                                          variant='primary'
+                                         className='global_blue-bg'
                                          onClick={() => {
                                              setIsEmailed(true)
                                          }}
@@ -135,6 +135,7 @@ const WishListEmail = ({userInfo, cart, cartItems, success}) => {
                                 ) : (
                                     <Button type='submit'
                                             variant='primary'
+                                            className='global_blue-bg'
                                             onClick={() => {
                                                 setIsEmailed(true)
                                             }}
@@ -144,28 +145,27 @@ const WishListEmail = ({userInfo, cart, cartItems, success}) => {
 
 
                         </Col>
-                        <Col lg={4} xs={12} className='m-0 pt-5'>
 
+                        <Col md={4} xs={12} className='m-0 pt-5'>
                             <ListGroup variant='flush'>
                                 {cartItems.map(item => (
                                     <ListGroup.Item key={item._id}
                                                     className='stick-margins border-0'>
                                         <Row xs={12}>
-                                            <Col className='my-auto' md={4} xs={12}>
+                                            <Col className='my-auto px-0' xs={2}>
+                                                <Button type='button' variant='light'
+                                                        onClick={() => removeFromWishListHandler(item.product)}>
+                                                    <i className='fas fa-trash'> </i>
+                                                </Button>
+                                            </Col>
+                                            <Col className='my-auto' md={4} xs={6}>
                                                 <Link to={`product/${item.product}`}>
                                                     <Image src={item.image} alt={item.name}
                                                            className='pt-2 justify-content-center rounded h-100 w-100'/>
                                                 </Link>
                                             </Col>
-                                            <Col className='my-auto px-0' md={8} xs={10}>
+                                            <Col className='my-auto px-0' md={7} xs={4}>
                                                 {item.name}
-                                            </Col>
-                                            <Col className='my-auto px-0' xs={2}>
-
-                                                <Button type='button' variant='light'
-                                                        onClick={() => removeFromWishListHandler(item.product)}>
-                                                    <i className='fas fa-trash'> </i>
-                                                </Button>
                                             </Col>
                                         </Row>
                                     </ListGroup.Item>

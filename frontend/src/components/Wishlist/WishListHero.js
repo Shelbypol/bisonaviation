@@ -8,7 +8,7 @@ const WishListHero = () => {
     return (
 
 
-        <Jumbotron className='WishListScreen_hero-img '
+        <Jumbotron className='WishListScreen_hero-img'
                    fluid>
         </Jumbotron>
 

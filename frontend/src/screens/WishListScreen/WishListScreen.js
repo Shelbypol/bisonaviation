@@ -57,12 +57,13 @@ const WishListScreen = () => {
                     <Col xs={6}>
                         <h6 onClick={clearWishList}
                             className='global_cursor stick global_bisonFadedRedHover p-3 m-auto d-flex justify-content-end'>
-                            clear</h6>
+                            clear
+                        </h6>
                     </Col>
                 </Row>
                 <Row xs={12} className='global_bisonRedTxt pt-3'>
                     <Col xs={12}>
-                        <h5 className='d-flex justify-content-center'>WishList</h5>
+                        <h3 className='d-flex justify-content-center global_blood-red bold'>WishList</h3>
                     </Col>
                     <Col xs={12}>
 
