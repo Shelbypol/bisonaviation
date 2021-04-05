@@ -33,7 +33,7 @@ const ProfileSavedWishList = ({match, history, userInfo}) => {
 
     return (
         <>
-            <h2>Wishlist</h2>
+            <h2 className='global_blood-red'>Saved Items</h2>
             <Row >
                 <Col xs={12}>
                     {loadingOrders
@@ -56,15 +56,8 @@ const ProfileSavedWishList = ({match, history, userInfo}) => {
                                         ))
                                     ))}
                                 </ListGroup>
-
                             )}
-
                 </Col>
-
-                {/*<Col xs={3}>*/}
-                {/*    <ProfileEmailState userInfo={userInfo} emailItems={emailItems}/>*/}
-                {/*    /!*<WishListEmail/>*!/*/}
-                {/*</Col>*/}
             </Row>
         </>
     )

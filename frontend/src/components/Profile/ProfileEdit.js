@@ -79,8 +79,9 @@ const ProfileEdit = ({match, history}) => {
 
             <Row>
                 <Col className='p-3 text-dark border rounded global_light-grey-bg'>
+                {/*<Col className='p-3 text-dark border rounded global_light-grey-bg'>*/}
 
-                    <Form onSubmit={submitHandler} className='global_blood-red'>
+                    <Form onSubmit={submitHandler} className='global_blue'>
                         <Form.Group controlId='name'>
                             <Form.Label>Name</Form.Label>
                             <Form.Control type='name'

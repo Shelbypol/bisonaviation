@@ -54,7 +54,7 @@ const WishListScreen = () => {
                             </h6>
                         </Link>
                     </Col>
-                    <Col xs={1} className='global_hover-border d-flex justify-content-center align-items-center px-4' onClick={clearWishList}>
+                    <Col xs={1} className='global_cursor global_hover-border d-flex justify-content-center align-items-center px-4' onClick={clearWishList}>
                         {/*<h6 onClick={clearWishList}*/}
                         {/*    className='global_cursor stick m-0 '>*/}
                             clear

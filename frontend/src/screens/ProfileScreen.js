@@ -21,30 +21,24 @@ const ProfileScreen = ({location, history}) => {
                     <h1>{userInfo.name}</h1>
 
                     <Tab.Container id="left-tabs-example" defaultActiveKey="first">
-                        <Row className='d-flex justify-content-center'>
-                            <Col lg={3} xs={6} className='mb-5 px-0 mx-0'>
-                                <Nav fill variant="tabs" className="border-0 flex-md-column ">
-                                    <Nav.Item className='m-0'>
+                        <Row className=' d-flex justify-content-start'>
+                            <Col md={3} xs={6} className='mb-5 px-0 mx-0'>
+                                <Nav fill variant="tabs" className="border-0 flex-column">
+                                    <Nav.Item className='m-0 border-0'>
                                         <Nav.Link className='p-2 global_white-txt-blood-red-bg-hover' eventKey="first"><span className='text-uppercase'>Saved Items</span></Nav.Link>
                                     </Nav.Item>
                                     <Nav.Item className='m-0'>
                                         <Nav.Link className='p-2 global_white-txt-blood-red-bg-hover' eventKey="second"><span className='text-uppercase'>Edit Profile</span></Nav.Link>
                                     </Nav.Item>
-                                    <Nav.Item className='m-0'>
-                                        <Nav.Link className='p-2 global_white-txt-blood-red-bg-hover' eventKey="third"><span className='text-uppercase'>Product Inquiry</span></Nav.Link>
-                                    </Nav.Item>
                                 </Nav>
                             </Col>
-                            <Col lg={9} xs={12} className=''>
+                            <Col md={8} xs={12} className='mr-5 border-0'>
                                 <Tab.Content>
                                     <Tab.Pane eventKey="first">
                                         <ProfileSavedWishList userInfo={userInfo}/>
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="second" className='p-2'>
                                         <ProfileEdit/>
-                                    </Tab.Pane>
-                                    <Tab.Pane eventKey="third">
-                                        <h1>hello world</h1>
                                     </Tab.Pane>
                                 </Tab.Content>
                             </Col>

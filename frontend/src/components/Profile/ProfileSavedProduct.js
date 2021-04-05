@@ -58,7 +58,6 @@ const ProfileSavedProduct = ({wishList, wishes, item, product, userInfo}) => {
 
     const like = () => {
         setActiveHeart(!activeHeart);
-        console.log(wishes)
         dispatch(addToCart(wishes.wishListItems[0].product, 1));
         // history.push(`/cart/${id}?qty=1`);
     };
