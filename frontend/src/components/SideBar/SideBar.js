@@ -26,6 +26,7 @@ const SideBar = () => {
             setSidebar(false)
         }
     };
+
     return (
         <>
             <IconContext.Provider value={{color: '#fff'}}>
@@ -39,7 +40,6 @@ const SideBar = () => {
                         <p onClick={showSidebar} className='global_white-text-red-hover mt-3 ' style={{fontSize:'14px'}}>Login</p>
                     </Link>
                 )}
-
 
                 {userInfo ? (
                     <nav className={sidebar ? 'SideBar-nav-menu-user-logged active' : 'SideBar-nav-menu-user-logged'} ref={node}

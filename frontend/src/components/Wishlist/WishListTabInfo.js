@@ -52,11 +52,11 @@ const WishListTabInfo = () => {
             </Row>
             <Row xs={12} className='mt-n3 global_bisonRedTxt'>
                 <Col xs={12}>
-                    <Tabs defaultActiveKey="wishlist" id="uncontrolled-tab-example"
-                          ClassName='d-flex justify-content-center'>
-                        <Tab tabClassName=' global_cursor global_bisonFadedRedHover p-auto
-                        text-center d-flex align-items-center justify-content-center' eventKey="wishlist"
-                             title='Wishlist'>
+                    {/*<Tabs defaultActiveKey="wishlist" id="uncontrolled-tab-example"*/}
+                    {/*      ClassName='d-flex justify-content-center'>*/}
+                    {/*    <Tab tabClassName=' global_cursor p-auto*/}
+                    {/*    text-center d-flex align-items-center justify-content-center' eventKey="wishlist"*/}
+                    {/*         title='Wishlist'>*/}
                              {/*//     userInfo ? (*/}
                              {/*//*/}
                              {/*//     <h6 onClick={addToWishListHandler}>Save wishlist to profile</h6>*/}
@@ -69,13 +69,13 @@ const WishListTabInfo = () => {
                              {/*// )}*/}
                         {/*// >*/}
                             <WishListSave cartItems={cartItems} cart={cart} success={success}/>
-                        </Tab>
-                        <Tab eventKey="profile" title="Purchase Inquiry"
-                             tabClassName='animations_img-hover-zoom-n-out global_cursor global_bisonFadedRedHover p-auto d-flex align-items-center justify-content-center'>
-                            <WishListEmail userInfo={userInfo} cartItems={cartItems} cart={cart} success={success}/>
-                        </Tab>
+                        {/*</Tab>*/}
+                        {/*<Tab eventKey="profile" title="Purchase Inquiry"*/}
+                        {/*     tabClassName='animations_img-hover-zoom-n-out global_cursor global_bisonFadedRedHover p-auto d-flex align-items-center justify-content-center'>*/}
+                        {/*    <WishListEmail userInfo={userInfo} cartItems={cartItems} cart={cart} success={success}/>*/}
+                        {/*</Tab>*/}
 
-                    </Tabs>
+                    {/*</Tabs>*/}
                 </Col>
             </Row>
 

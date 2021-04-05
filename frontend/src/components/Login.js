@@ -8,7 +8,7 @@ import Loader from '../components/Loader'
 import {login} from '../actions/userActions'
 import FormContainer from "../components/FormContainer";
 
-const Login = ({history, showSidebar}) => {
+const Login = ({history, showSidebar, loginTitle}) => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
@@ -29,7 +29,7 @@ const Login = ({history, showSidebar}) => {
 
     return (
             <Form onSubmit={submitHandler} className='mx-2'>
-                <h4 className='global_blue'>Login</h4>
+                <h4 className='global_blue'>{loginTitle}</h4>
                 <Form.Group controlId='email'>
                     {/*<Form.Label>Email Address</Form.Label>*/}
                     <Form.Control type='email'
