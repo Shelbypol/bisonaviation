@@ -5,10 +5,13 @@ import {addToEmail} from "../../actions/emailActions";
 import {useDispatch} from "react-redux";
 
 import { deleteWishListItem} from "../../actions/wishListActions";
+import {addToCart, removeFromCart} from "../../actions/cartActions";
 
 
 
 const ProfileSavedProduct = ({wishList, wishes, item, product, userInfo}) => {
+    const [activeHeart, setActiveHeart] = useState(false);
+
     const [activeEmail, setActiveEmail] = useState(false);
     const [userProducts, setUserProducts] = useState(
         wishList.map(wishes => (
@@ -46,55 +49,48 @@ const ProfileSavedProduct = ({wishList, wishes, item, product, userInfo}) => {
         dispatch(deleteWishListItem(id));
     };
 
+    const like = () => {
+        setActiveHeart(!activeHeart);
+        dispatch(addToCart(item._id, 1));
+        // history.push(`/cart/${id}?qty=1`);
+    };
+
+    const unlike = () => {
+        setActiveHeart(!activeHeart);
+        dispatch(removeFromCart(item._id))
+        // history.push(`/cart/${id}?qty=1`);
+    };
+
+
     return (
         <>
             <Row xs={12}>
-                <Col xs={4}>
+                <Col md={3}  xs={6}>
                     {/*<Link to={`/product/${item.product}`}>*/}
                     <Image src={item.image} alt={item.name} fluid
                            rounded/>
                     {/*</Link>*/}
                 </Col>
-                <Col xs={5} className='d-flex align-items-center'>
+                <Col md={5} xs={6} className='d-flex align-items-center'>
                     <Link to={`/product/${item.product}`}>
                         {item.name}
                     </Link>
                 </Col>
-                {/*<Col xs={2} className='d-flex justify-content-center align-items-center'>*/}
-                {/*    <Link to={`/product/${item.product}`}>*/}
-                {/*        <strong>${item.price}</strong>*/}
-                {/*    </Link>*/}
-                {/*</Col>*/}
-                <Col xs={3} onClick={() => deleteHandler(wishes._id)}
-                     className='global_blood-red d-flex justify-content-center align-items-center'>
+
+                <Col md={2} xs={6} onClick={() => like}
+                     className='pt-2 global_blue d-flex justify-content-center align-items-center'>
+                    <i className='fas fa-envelope-open-text'> </i>
+                </Col>
+
+                <Col md={2} xs={6} onClick={() => deleteHandler(wishes._id)}
+                     className='pt-2 global_blood-red d-flex justify-content-center align-items-center'>
                     <i className='fas fa-trash'> </i>
                 </Col>
-                {/*{activeEmail ? (*/}
-                {/*    // <Col xs={2} onClick={() => removeFromEmailListHandler}*/}
-                {/*    <Col xs={2} onClick={removeFromEmailListHandler}*/}
-                {/*         className='global_cursor d-flex justify-content-center align-items-center'*/}
-                {/*         style={{backgroundColor: 'green'}}>*/}
-                {/*        <i className='fas fa-envelope'> </i>*/}
-                {/*    </Col>*/}
-                {/*) : (*/}
-                {/*    <Col xs={2} onClick={addToEmailListHandler}*/}
-                {/*         className='global_cursor d-flex justify-content-center align-items-center'>*/}
-                {/*        <i className='fas fa-envelope'> </i>*/}
-                {/*    </Col>*/}
-
-
-                {/*)*/}
-                {/*}*/}
 
 
             </Row>
+                <hr className='d-sm-block d-md-none border-bottom'/>
 
-            {/*        )))}*/}
-            {/*    /!*))}*!/*/}
-            {/*</Row>*/}
-            {/*<Row xs={2}>*/}
-            {/*    <ProfileEmailState emailItems={emailItems} />*/}
-            {/*</Row>*/}
 
         </>
     )

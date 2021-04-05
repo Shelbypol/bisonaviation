@@ -60,9 +60,11 @@ const WishListEmail = ({userInfo, cart, cartItems, success}) => {
         ));
         e.preventDefault();
         setUserEmail('');
-        setTimeout(Email, 5000);
+        setTimeout(Email, 7000);
         setUserName('');
         setUserText('');
+
+            // dispatch({type: CART_RESET});
 
         window.scrollTo(0, 0);
 
@@ -161,12 +163,6 @@ const WishListEmail = ({userInfo, cart, cartItems, success}) => {
                                     <ListGroup.Item key={item._id}
                                                     className='border-0'>
                                         <Row xs={12}>
-                                            <Col className='my-auto px-0' xs={2}>
-                                                <Button type='button' variant='light'
-                                                        onClick={() => removeFromWishListHandler(item.product)}>
-                                                    <i className='fas fa-trash'> </i>
-                                                </Button>
-                                            </Col>
                                             <Col className='' >
                                                 <Link to={`product/${item.product}`}>
                                                     <Image src={item.image} alt={item.name}
@@ -175,6 +171,12 @@ const WishListEmail = ({userInfo, cart, cartItems, success}) => {
                                             </Col>
                                             <Col className='my-auto px-0'>
                                                 {item.name}
+                                            </Col>
+                                            <Col className='my-auto px-0' xs={2}>
+                                                <Button type='button' variant='light'
+                                                        onClick={() => removeFromWishListHandler(item.product)}>
+                                                    <i className='fas fa-trash'> </i>
+                                                </Button>
                                             </Col>
                                         </Row>
                                     </ListGroup.Item>

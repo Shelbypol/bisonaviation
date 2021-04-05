@@ -45,20 +45,20 @@ const WishListScreen = () => {
         <>
             <WishListHero/>
 
-            <Container className='bg-white py-4 px-2 mt-n5' fluid>
-                <Row className='m-0 p-0 d-flex justify-content-end' style={{zIndex: 100}}>
-                    <Col xs={6}>
+            <Container className='bg-white py-4 px-3 mt-n5' fluid>
+                <Row className='m-0 p-0 d-flex justify-content-between' style={{zIndex: 100}}>
+                    <Col xs={1} className='d-flex justify-content-start'>
                         <Link to='/'>
-                            <h6 className='global_cursor stick p-3 m-auto d-flex justify-content-start'>
+                            <h6 className=' global_cursor stick p-3 m-auto'>
                                 x
                             </h6>
                         </Link>
                     </Col>
-                    <Col xs={6}>
-                        <h6 onClick={clearWishList}
-                            className='global_cursor stick global_bisonFadedRedHover p-3 m-auto d-flex justify-content-end'>
+                    <Col xs={1} className='global_hover-border d-flex justify-content-center align-items-center px-4' onClick={clearWishList}>
+                        {/*<h6 onClick={clearWishList}*/}
+                        {/*    className='global_cursor stick m-0 '>*/}
                             clear
-                        </h6>
+                        {/*</h6>*/}
                     </Col>
                 </Row>
                 <Row xs={12} className='global_bisonRedTxt pt-3'>

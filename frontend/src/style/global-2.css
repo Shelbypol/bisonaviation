@@ -50,8 +50,7 @@ main {
     color: #161A1D;
 }
 .global_blood-red{
-    color: #660708;
-}
+    color: #660708;}
 
 .global_white-txt-blood-red-bg-hover{
     color: #660708;
@@ -102,6 +101,19 @@ main {
 
 .global_red-text-white-hover:hover{
     color:red;
+}
+
+/* ============== BORDER BTN ======================*/
+.global_hover-border{
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.global_hover-border:hover{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: none;
+    border-right: none;
 }
 
 /*================= CAROUSEL ======================*/
