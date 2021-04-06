@@ -217,6 +217,27 @@ main {
     margin-top: -15vh;
 }
 
+.Global_graphic-productDisplayScreen{
+    /*background-image: url("../images/bg-graphics/graphics/black-top-large-left.png");*/
+    height: 10vh;
+    /*-webkit-transform: rotateY(180deg);*/
+    background-color: white;
+    background-position: 0 25vh;
+    z-index: 2;
+    top:6vh;
+    margin-top: -4vh;
+
+}
+
+.Global_graphic-productDisplayScreen-bg{
+    margin-top: -5vh;
+    top: 3vh;
+    z-index: 1;
+    background-color: white;
+    /*height: 10vh;*/
+}
+
+
 /*    ======   MOBILE RESPONSIVE    ======    */
 @media (max-width: 900px) {
     .global_carousel-divider-img{

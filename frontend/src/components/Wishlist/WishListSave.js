@@ -1,4 +1,4 @@
-import {Button, Col, Image, ListGroup, Row} from "react-bootstrap";
+import {Button, Col, Image, ListGroup, Row, Dropdown} from "react-bootstrap";
 import {Link} from "react-router-dom";
 import React, {useEffect, useRef, useState} from "react";
 import {createWishList, listMyWishLists} from "../../actions/wishListActions";
@@ -61,8 +61,8 @@ const WishListSave = ({success, cartItems, cart}) => {
                         <h6 className='global_cursor-underline global_bisonRedTxt mb-3 py-0 px-2 '
                             onClick={addToWishListHandler}>Save wishlist to profile</h6>
                     )}
-                        {/*// : (*/}
-                        {/*// <Link to={'/login'}>*/}
+                    {/*// : (*/}
+                    {/*// <Link to={'/login'}>*/}
                     {/*    <>*/}
                     {/*    <h6>*/}
                     {/*        <strong onClick={showSidebar} className='global_bisonRedTxt global_cursor'>sign*/}
@@ -78,58 +78,88 @@ const WishListSave = ({success, cartItems, cart}) => {
                     {/*)}*/}
 
 
-                        {
-                            cartItems.length === 0
-                                ? (<p className='mt-5 text-center'>Your wishlist is empty <p style={{fontSize: '12px'}}>
-                                    <Link
-                                        to={'/products'} className='global_bisonRedTxt'>Browse items</Link></p></p>)
-                                : (<>
-                                        {/*<LinkContainer to={`/`}>*/}
-                                        {/*    <Button variant='dark' className='btn-sm'>*/}
-                                        {/*        Continue Shopping*/}
-                                        {/*    </Button>*/}
-                                        {/*</LinkContainer>*/}
+                    {
+                        cartItems.length === 0
+                            ? (<p className='mt-5 text-center'>Your wishlist is empty <p style={{fontSize: '12px'}}>
+                                <Link
+                                    to={'/products'} className='global_bisonRedTxt'>Browse items</Link></p></p>)
+                            : (<>
+                                    {/*<LinkContainer to={`/`}>*/}
+                                    {/*    <Button variant='dark' className='btn-sm'>*/}
+                                    {/*        Continue Shopping*/}
+                                    {/*    </Button>*/}
+                                    {/*</LinkContainer>*/}
 
 
-                                        {!userInfo && (
-                                            <>
-                                                <h6>
-                                                    <strong className='global_bisonRedTxt global_cursor'>sign
-                                                        in</strong> to save
-                                                </h6>
-                                                <Link to='/register' className=''>
-                                                    <h6 className='py-2 global_blue'>not a user?</h6>
-                                                </Link>
-                                            </>
-                                        )}
-                                                {login && (
-                                                <Login loginTitle={''} showSideBar={showSidebar}/>
-                                                )}
+                                    {!userInfo && (
 
-                                        <ListGroup variant='flush'>
-                                            {cartItems.map(item => (
-                                                // <ListGroup.Item key={item.product} className='global_bisonDarkFadedBgColorHover'>
-                                                <ListGroup.Item key={item.product} className='global_cursor'>
-                                                    <Row xs={12}>
-                                                        <Col className='my-auto' md={6}>
-                                                            <Image src={item.image} alt={item.name} fluid
-                                                                   className='rounded h-50 w-50'/>
-                                                        </Col>
-                                                        <Col className='my-auto' md={4}>
-                                                            <Link to={`product/${item.product}`}>{item.name}</Link>
-                                                        </Col>
-                                                        <Col className='my-auto' md={2}>
-                                                            <Button type='button' variant='light'
-                                                                    onClick={() => removeFromWishListHandler(item.product)}>
-                                                                <i className='fas fa-trash'> </i>
-                                                            </Button>
-                                                        </Col>
-                                                    </Row>
-                                                </ListGroup.Item>
-                                            ))}
-                                        </ListGroup>
-                                    </>
-                                )
+
+                                        <>
+
+                                            <Row>
+                                                <Col xs={1} className='pr-5 mr-2 d-flex justify-content-start'>
+                                                    <Dropdown className=' '>
+                                                        <Dropdown.Toggle varient='dark' id="dropdown-basic"
+                                                                         className='p-0 bg-white'>
+                                                            <h6 className='global_bisonRedTxt global_cursor p-0'>sign
+                                                                in</h6>
+                                                        </Dropdown.Toggle>
+
+                                                        <Dropdown.Menu>
+                                                            <Dropdown.Item href="#/action-1">
+                                                            <Login loginTitle={''} showSideBar={showSidebar}/>
+                                                            </Dropdown.Item>
+
+                                                        </Dropdown.Menu>
+                                                    </Dropdown>
+
+                                                </Col>
+                                                <Col xs={3} className=''>
+                                                    <h6 className=' '>
+                                                        to save
+                                                    </h6>
+
+                                                </Col>
+                                            </Row>
+
+
+                                            {/*<h6>*/}
+                                            {/*    <strong className='global_bisonRedTxt global_cursor'>sign*/}
+                                            {/*        in</strong> to save*/}
+                                            {/*</h6>*/}
+                                            <Link to='/register' className=''>
+                                                <h6 className='py-2 global_blue'>not a user?</h6>
+                                            </Link>
+                                        </>
+                                    )}
+                                    {/*{login && (*/}
+                                    {/*<Login loginTitle={''} showSideBar={showSidebar}/>*/}
+                                    {/*)}*/}
+
+                                    <ListGroup variant='flush'>
+                                        {cartItems.map(item => (
+                                            // <ListGroup.Item key={item.product} className='global_bisonDarkFadedBgColorHover'>
+                                            <ListGroup.Item key={item.product} className='global_cursor'>
+                                                <Row xs={12}>
+                                                    <Col className='my-auto' md={6}>
+                                                        <Image src={item.image} alt={item.name} fluid
+                                                               className='rounded h-50 w-50'/>
+                                                    </Col>
+                                                    <Col className='my-auto' md={4}>
+                                                        <Link to={`product/${item.product}`}>{item.name}</Link>
+                                                    </Col>
+                                                    <Col className='my-auto' md={2}>
+                                                        <Button type='button' variant='light'
+                                                                onClick={() => removeFromWishListHandler(item.product)}>
+                                                            <i className='fas fa-trash'> </i>
+                                                        </Button>
+                                                    </Col>
+                                                </Row>
+                                            </ListGroup.Item>
+                                        ))}
+                                    </ListGroup>
+                                </>
+                            )
 
                     }
 

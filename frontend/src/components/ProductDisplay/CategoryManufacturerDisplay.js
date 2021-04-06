@@ -9,6 +9,7 @@ import '../../style/CategoryManufacturerSideBar.css'
 import {Route} from "react-router-dom";
 import SearchBox from "../SearchBox";
 import {Container} from "react-bootstrap/cjs";
+import {Jumbotron} from "reactstrap";
 
 const CategoryManufacturerDisplay = ({match, history}) => {
 
@@ -95,9 +96,9 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                                 </>
                             ) : (
                                 <>
-                                    <Col lg={2} xs={12} className='bg-white global_cursor CatMan_sidebar-icon pl-4 pt-2'>
+                                    <Col lg={2} xs={12} className='bg-transparent global_cursor CatMan_sidebar-icon pl-4 pt-2'>
                                         <h6 className='global_blood-red' onClick={showSideBar}><span><h3
-                                            className='d-inline'>|||</h3></span>&nbsp;categories
+                                            className='d-inline global_blood-red'>|||</h3></span>&nbsp;categories
                                         </h6>
                                         {width < breakpoint && (
                                             <h5 className='pt-2'>

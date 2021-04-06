@@ -35,8 +35,9 @@
 }
 
 .StickyHeader_nav{
-    background-image: url("../images/bg-graphics/graphics/dots.png");
-    background-color: rgba(0,0,0, .9);
+    /*background-image: url("../images/bg-graphics/graphics/dots.png");*/
+    background-color: #06080b;
+    /*background-color: rgba(0,0,0, 1);*/
     height: 6vh;
 }
 
