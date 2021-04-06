@@ -46,11 +46,11 @@ const WishListTabInfo = () => {
             <Row className='mt-n4 p-0 d-flex justify-content-end' style={{zIndex: 100}}>
                 <Col xs={2}>
                     <h6 onClick={clearWishList}
-                        className='global_cursor stick global_bisonFadedRedHover p-3 m-auto d-flex justify-content-center'>
+                        className='global_cursor stick global_bisonFadedRedHover pt-3 pl-0 pb-0 ml-n4'>
                         clear</h6>
                 </Col>
             </Row>
-            <Row xs={12} className='mt-n3 global_bisonRedTxt'>
+            <Row xs={12} className=' global_bisonRedTxt'>
                 <Col xs={12}>
                     {/*<Tabs defaultActiveKey="wishlist" id="uncontrolled-tab-example"*/}
                     {/*      ClassName='d-flex justify-content-center'>*/}

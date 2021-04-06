@@ -40,10 +40,10 @@ const NavItem = (props) => {
 
     useEffect(() => {
         document.addEventListener("scroll", handleScroll);
-        document.addEventListener("click", handleClick);
+        // document.addEventListener("click", handleClick);
         return () => {
             document.removeEventListener("scroll", handleScroll);
-            document.removeEventListener("click", handleClick);
+            // document.removeEventListener("click", handleClick);
         };
     }, [cartItems]);
 
@@ -52,18 +52,22 @@ const NavItem = (props) => {
             setOpen(false)
         }
     };
-    const handleClick = (e) => {
-        if (node.current.contains(e.target) === false) {
-            setOpen(false)
-        }
-    };
+    // const handleClick = (e) => {
+    //     if (node.current.contains(e.target) === false) {
+    //         setOpen(false)
+    //     }
+    // };
 
     return (
-        <li ref={node} onClick={(e) => {
-            // handleClick(e);
-            setOpen(!open);
-            handleScroll(e)
-        }} className="wishList-nav-item pt-2">
+        // <li onClick={(e) => {
+        //     // setOpen(!open);
+        // }} className="wishList-nav-item pt-2">
+         <li ref={node} onClick={(e) => {
+             // handleClick(e);
+            // setOpen(!open);
+             handleScroll(e)
+         }} className="wishList-nav-item pt-2"
+             >
             {/*<li ref={node} onClick={(e) => (handleScroll(e))} className="wishList-nav-item">*/}
             {/*<a href="#" className="wishList-icon-button" onClick={() => setOpen(!open)}>*/}
             <a onClick={() => setOpen(!open)}>

@@ -61,21 +61,7 @@ const WishListSave = ({success, cartItems, cart}) => {
                         <h6 className='global_cursor-underline global_bisonRedTxt mb-3 py-0 px-2 '
                             onClick={addToWishListHandler}>Save wishlist to profile</h6>
                     )}
-                    {/*// : (*/}
-                    {/*// <Link to={'/login'}>*/}
-                    {/*    <>*/}
-                    {/*    <h6>*/}
-                    {/*        <strong onClick={showSidebar} className='global_bisonRedTxt global_cursor'>sign*/}
-                    {/*            in</strong> to save*/}
-                    {/*    </h6>*/}
-                    {/*     <Link to='/register' className=''>*/}
-                    {/*        <h6 className='py-2 global_blue'>not a user?</h6>*/}
-                    {/*     </Link>*/}
-                    {/*    /!*{sidebar && (*!/*/}
-                    {/*    <Login loginTitle={''} showSideBar={showSidebar}/>*/}
-                    {/*/!*)}*!/*/}
-                    {/*    </>*/}
-                    {/*)}*/}
+
 
 
                     {
@@ -84,11 +70,11 @@ const WishListSave = ({success, cartItems, cart}) => {
                                 <Link
                                     to={'/products'} className='global_bisonRedTxt'>Browse items</Link></p></p>)
                             : (<>
-                                    {/*<LinkContainer to={`/`}>*/}
+                                    {/*<Link to={`/`}>*/}
                                     {/*    <Button variant='dark' className='btn-sm'>*/}
                                     {/*        Continue Shopping*/}
                                     {/*    </Button>*/}
-                                    {/*</LinkContainer>*/}
+                                    {/*</Link>*/}
 
 
                                     {!userInfo && (
@@ -96,40 +82,31 @@ const WishListSave = ({success, cartItems, cart}) => {
 
                                         <>
 
-                                            <Row>
-                                                <Col xs={1} className='pr-5 mr-2 d-flex justify-content-start'>
-                                                    <Dropdown className=' '>
-                                                        <Dropdown.Toggle varient='dark' id="dropdown-basic"
-                                                                         className='p-0 bg-white'>
-                                                            <h6 className='global_bisonRedTxt global_cursor p-0'>sign
-                                                                in</h6>
-                                                        </Dropdown.Toggle>
-
-                                                        <Dropdown.Menu>
-                                                            <Dropdown.Item href="#/action-1">
-                                                            <Login loginTitle={''} showSideBar={showSidebar}/>
-                                                            </Dropdown.Item>
-
-                                                        </Dropdown.Menu>
-                                                    </Dropdown>
-
+                                            <Row className='d-flex justify-content-end w-100'>
+                                                <Col xs={6}>
+                                                    <h4>wishlist</h4>
                                                 </Col>
-                                                <Col xs={3} className=''>
-                                                    <h6 className=' '>
-                                                        to save
-                                                    </h6>
-
+                                                <Col xs={6} className='d-flex justify-content-end'>
+                                                    <Link to='/wishlist'>
+                                                        {/*<h6 className='bg-transparent pt-2'>&nbsp;Your Product Questions Today!</h6>*/}
+                                                        <Button className='global_blue-bg py-1 px-3'>email wishlist</Button>
+                                                    </Link>
                                                 </Col>
+                                                <Col xs={12} className='mb-5 mt-0 pt-0 d-flex justify-content-start'>
+                                                    <i style={{fontSize: '1vw', color: 'rgba(0,0,0, .5)'}}>sign in to save</i>
+                                                </Col>
+                                                {/*<Col xs={6} className='d-flex justify-content-end'>*/}
+                                                {/*    <Link to='/wishlist'>*/}
+                                                {/*        /!*<h6 className='bg-transparent pt-2'>&nbsp;Your Product Questions Today!</h6>*!/*/}
+                                                {/*        <Button className='global_blue-bg py-1 px-3'>email us</Button>*/}
+                                                {/*    </Link>*/}
+                                                {/*</Col>*/}
                                             </Row>
 
 
-                                            {/*<h6>*/}
-                                            {/*    <strong className='global_bisonRedTxt global_cursor'>sign*/}
-                                            {/*        in</strong> to save*/}
-                                            {/*</h6>*/}
-                                            <Link to='/register' className=''>
-                                                <h6 className='py-2 global_blue'>not a user?</h6>
-                                            </Link>
+                                            {/*<Link to='/register' className=''>*/}
+                                            {/*    <h6 className='py-2 global_blue'>not a user?</h6>*/}
+                                            {/*</Link>*/}
                                         </>
                                     )}
                                     {/*{login && (*/}
