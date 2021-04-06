@@ -83,15 +83,13 @@
 }
 
 .StickyHeader_contact-btn{
-    border: 1px solid #660708;
-    color: red;
-    background-color: black;
+    background-color: #660708;
+    color: white;
 }
 
 .StickyHeader_contact-btn:hover{
-    border: 1px solid white;
-    color: red;
-
+    background-color: white;
+    color: #660708;
 }
 
 /*   NAV BOOTSTRAP DROPDOWN STYLE    */

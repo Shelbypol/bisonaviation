@@ -80,7 +80,7 @@ const RegisterScreen = ({location, history}) => {
                         {error && <Message variant='danger'>{error}</Message>}
                         {loading && <Loader/>}
                         <Form onSubmit={submitHandler}>
-                            <h1 className='global_red'>Register</h1>
+                            <h1 className='global_blood-red'>Register</h1>
                             <Form.Group controlId='name'>
                                 <Form.Label>Name</Form.Label>
                                 <Form.Control type='name'

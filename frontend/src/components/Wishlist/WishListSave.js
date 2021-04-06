@@ -17,13 +17,14 @@ const WishListSave = ({success, cartItems, cart}) => {
     const {userInfo} = userLogin;
 
     const node = useRef();
+
     useEffect(() => {
         dispatch(listMyWishLists());
 
-        document.addEventListener("scroll", handleScroll);
-        return () => {
-            document.removeEventListener("scroll", handleScroll);
-        };
+        // document.addEventListener("scroll", handleScroll);
+        // return () => {
+        //     document.removeEventListener("scroll", handleScroll);
+        // };
     }, [dispatch, userInfo]);
 
     const showSidebar = () => {
@@ -38,7 +39,6 @@ const WishListSave = ({success, cartItems, cart}) => {
     };
 
     const addToWishListHandler = () => {
-
         cart.cartItems.map(item => {
             dispatch(createWishList({
                 wishListItems: item
@@ -46,7 +46,6 @@ const WishListSave = ({success, cartItems, cart}) => {
         });
         dispatch({type: CART_RESET});
     };
-
 
     const removeFromWishListHandler = (id) => {
         dispatch(removeFromCart(id))
@@ -95,7 +94,7 @@ const WishListSave = ({success, cartItems, cart}) => {
                                         {!userInfo && (
                                             <>
                                                 <h6>
-                                                    <strong onClick={showSidebar} className='global_bisonRedTxt global_cursor'>sign
+                                                    <strong className='global_bisonRedTxt global_cursor'>sign
                                                         in</strong> to save
                                                 </h6>
                                                 <Link to='/register' className=''>
