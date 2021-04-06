@@ -57,10 +57,10 @@ const WishListSave = ({success, cartItems, cart}) => {
         <>
             <Row xs={12} className='mt-2'>
                 <Col className='mt-3' md={12}>
-                    {userInfo && (
-                        <h6 className='global_cursor-underline global_bisonRedTxt mb-3 py-0 px-2 '
-                            onClick={addToWishListHandler}>Save wishlist to profile</h6>
-                    )}
+                    {/*{(userInfo && cartItems.length >=1) && (*/}
+                    {/*    <h6 className='global_cursor-underline global_bisonRedTxt mb-3 py-0 px-2 '*/}
+                    {/*        onClick={addToWishListHandler}>Save wishlist to profile</h6>*/}
+                    {/*)}*/}
 
 
 
@@ -70,50 +70,38 @@ const WishListSave = ({success, cartItems, cart}) => {
                                 <Link
                                     to={'/products'} className='global_bisonRedTxt'>Browse items</Link></p></p>)
                             : (<>
-                                    {/*<Link to={`/`}>*/}
-                                    {/*    <Button variant='dark' className='btn-sm'>*/}
-                                    {/*        Continue Shopping*/}
-                                    {/*    </Button>*/}
-                                    {/*</Link>*/}
 
-
-                                    {!userInfo && (
+                                    {/*{!userInfo && (*/}
 
 
                                         <>
 
-                                            <Row className='d-flex justify-content-end w-100'>
-                                                <Col xs={6}>
-                                                    <h4>wishlist</h4>
-                                                </Col>
-                                                <Col xs={6} className='d-flex justify-content-end'>
+                                            <Row className='d-flex justify-content-end w-100 sticky-top bg-transparent' style={{top:'1vh',zIndex: '1'}}>
+                                                {/*<Col xs={6}>*/}
+                                                {/*    <h4>wishlist</h4>*/}
+                                                {/*</Col>*/}
+                                                <Col xs={6} className='d-flex justify-content-end bg-white'>
                                                     <Link to='/wishlist'>
                                                         {/*<h6 className='bg-transparent pt-2'>&nbsp;Your Product Questions Today!</h6>*/}
                                                         <Button className='global_blue-bg py-1 px-3'>email wishlist</Button>
                                                     </Link>
                                                 </Col>
-                                                <Col xs={12} className='mb-5 mt-0 pt-0 d-flex justify-content-start'>
-                                                    <i style={{fontSize: '1vw', color: 'rgba(0,0,0, .5)'}}>sign in to save</i>
-                                                </Col>
-                                                {/*<Col xs={6} className='d-flex justify-content-end'>*/}
-                                                {/*    <Link to='/wishlist'>*/}
-                                                {/*        /!*<h6 className='bg-transparent pt-2'>&nbsp;Your Product Questions Today!</h6>*!/*/}
-                                                {/*        <Button className='global_blue-bg py-1 px-3'>email us</Button>*/}
-                                                {/*    </Link>*/}
-                                                {/*</Col>*/}
+                                                {(!userInfo && cartItems.length >= 1) ? (
+                                                    <Col xs={12} className='mb-5 mt-0 pt-2 d-flex justify-content-end'>
+                                                    <i style={{fontSize: '1vw', color: 'rgba(0,0,0, .5)'}} className='bg-white'>sign in to save</i>
+                                                    </Col>
+                                                ):(
+                                                    <Col xs={12} className='mb-5 pt-0 d-flex justify-content-end mt-3'>
+                                                    <h6 className='global_cursor-underline global_bisonRedTxt py-0 bg-white'
+                                                        onClick={addToWishListHandler}><span className='rounded'>save wishlist</span></h6>
+                                                    </Col>
+                                                )}
+
                                             </Row>
-
-
-                                            {/*<Link to='/register' className=''>*/}
-                                            {/*    <h6 className='py-2 global_blue'>not a user?</h6>*/}
-                                            {/*</Link>*/}
                                         </>
-                                    )}
-                                    {/*{login && (*/}
-                                    {/*<Login loginTitle={''} showSideBar={showSidebar}/>*/}
-                                    {/*)}*/}
 
-                                    <ListGroup variant='flush'>
+
+                                    <ListGroup variant='flush' style={{zIndex: '5'}}>
                                         {cartItems.map(item => (
                                             // <ListGroup.Item key={item.product} className='global_bisonDarkFadedBgColorHover'>
                                             <ListGroup.Item key={item.product} className='global_cursor'>

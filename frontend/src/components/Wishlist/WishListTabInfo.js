@@ -43,10 +43,13 @@ const WishListTabInfo = () => {
 
     return (
         <>
-            <Row className='mt-n4 p-0 d-flex justify-content-end' style={{zIndex: 100}}>
+            <Row className='mt-n5 pt-5 d-flex justify-content-between bg-white' style={{zIndex: 1, top: '0'}}>
+                <Col xs={6} className='d-flex justify-content-start'>
+                    <h4>wishlist</h4>
+                </Col>
                 <Col xs={2}>
                     <h6 onClick={clearWishList}
-                        className='global_cursor stick global_bisonFadedRedHover pt-3 pl-0 pb-0 ml-n4'>
+                        className='global_cursor stick bg-white pt-3 pl-0 pb-0 ml-n4'>
                         clear</h6>
                 </Col>
             </Row>
