@@ -35,7 +35,7 @@ const WishListScreen = () => {
 
         window.addEventListener("resize", handleWindowResize);
         return () => window.removeEventListener("resize", handleWindowResize);
-    }, [dispatch, width,  success, userInfo]);
+    }, [dispatch, width, success, userInfo]);
 
     useLayoutEffect(() => {
         window.scrollTo(0, 0)
@@ -71,22 +71,44 @@ const WishListScreen = () => {
                 </>
             )}
 
+
             <WishListHero/>
-            <Jumbotron className='Global_graphic bg-transparent mb-0 pb-0 sticky-top' style={{zIndex: '1', top: '25vh', width: '100vw'}} fluid> </Jumbotron>
+            <Jumbotron
+                className='Global_graphic mb-0 bg-transparent sticky-top WishListScreen_graphic min-vw-100'
+                fluid>
+                <Row className='d-flex justify-content-between w-100'>
 
-
-            <Container className='bg-white pb-5 pt-3 px-5 min-vh-100 position-sticky' style={{marginTop: '-25vh'}} fluid>
-                <Row className='m-0 px-0 pb-0 pt-5 d-flex justify-content-between'>
-                    <Col xs={1} className='d-flex justify-content-start'>
-                        <Link to='/'>
-                            <h6 className='sticky-top position-relative global_cursor'>
+                    <Col xs={1} className=' d-flex justify-content-start p-0'>
+                        <Link to='/' className='text-decoration-none'>
+                            <h6 className='WishListScreen_x-btn global_cursor'>
                                 x
                             </h6>
                         </Link>
                     </Col>
-                    <Col xs={1} className='sticky-top position-relative global_cursor global_hover-border d-flex justify-content-center align-items-center' onClick={clearWishList}>
-                            clear
+
+                    <Col xs={1}
+                         className='WishListScreen_clear-btn global_cursor global_hover-border d-flex justify-content-center align-items-center'
+                         onClick={clearWishList}>
+                        clear
                     </Col>
+                </Row>
+            </Jumbotron>
+
+
+            <Container className='bg-white pb-5 pt-3 px-5 min-vh-100 position-sticky WishListScreen_container' fluid>
+                <Row className='m-0 px-0 pb-0 pt-5 d-flex justify-content-between' style={{zIndex: '3'}}>
+                    {/*<Col xs={1} className='d-flex justify-content-start'>*/}
+                    {/*    <Link to='/'>*/}
+                    {/*        <h6 className='sticky-top  global_cursor'>*/}
+                    {/*            x*/}
+                    {/*        </h6>*/}
+                    {/*    </Link>*/}
+                    {/*</Col>*/}
+                    {/*<Col xs={1}*/}
+                    {/*     className='WishListScreen_clear-btn sticky-top global_cursor global_hover-border d-flex justify-content-center align-items-center'*/}
+                    {/*     onClick={clearWishList}>*/}
+                    {/*    clear*/}
+                    {/*</Col>*/}
                 </Row>
                 <Row xs={12} className='global_bisonRedTxt pt-3'>
                     <Col xs={12}>
@@ -98,7 +120,8 @@ const WishListScreen = () => {
                             <Link to='/login'>
                                 {cartItems.length !== 0 && (
                                     <h6 className='py-3'>
-                                        <i style={{fontSize: '1vw', color: 'rgba(0,0,0, .5)'}} className='bg-white'>sign in to save</i>
+                                        <i style={{fontSize: '1vw', color: 'rgba(0,0,0, .5)'}} className='bg-white'>sign
+                                            in to save</i>
                                     </h6>
                                 )}
                             </Link>

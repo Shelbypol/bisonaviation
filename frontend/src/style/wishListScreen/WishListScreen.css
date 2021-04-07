@@ -9,7 +9,7 @@
 }
 
 
-.stick{
+.stick {
     /*position: sticky;*/
     /*top: 5%;*/
     /*z-index: 100;*/
@@ -18,7 +18,7 @@
     margin-top: -10%;
 }
 
-.stick-margins{
+.stick-margins {
     position: sticky;
     height: auto;
     top: 5%;
@@ -39,11 +39,11 @@ a {
 
 /* Top Navigation Bar */
 
-.WishListTab_icon{
+.WishListTab_icon {
     color: white;
 }
 
-.WishListTab_icon:hover{
+.WishListTab_icon:hover {
     color: red;
 }
 
@@ -67,7 +67,7 @@ a {
     justify-content: center;
 }
 
-.wishList-nav-item a:hover{
+.wishList-nav-item a:hover {
     text-decoration: none;
 }
 
@@ -117,13 +117,16 @@ a {
     transform: translateX(-110%);
 
 }
+
 .wishList-menu-primary-enter-active {
     transform: translateX(-110%);
     transition: all var(--speed) ease;
 }
+
 .wishList-menu-primary-exit {
     position: absolute;
 }
+
 .wishList-menu-primary-exit-active {
     transform: translateX(-110%);
     transition: all var(--speed) ease;
@@ -132,39 +135,95 @@ a {
 .menu-secondary-enter {
     transform: translateX(110%);
 }
+
 .menu-secondary-enter-active {
     transform: translateX(0%);
     transition: all var(--speed) ease;
 }
+
 .menu-secondary-exit {
 
 }
+
 .menu-secondary-exit-active {
     transform: translateX(110%);
     transition: all var(--speed) ease;
 }
 
-.WishListScreen_hero-img{
+.WishListScreen_hero-img {
     background-image: url("../../images/bg-graphics/jd-roel-flir-end.png");
     background-repeat: no-repeat;
     /*background-attachment: fixed;*/
-    height: 250px;
-    background-position: 50% -5vh;
+    height: 200px;
+    background-position: 50% -9vh;
     width: 100vw;
     /*background-color: black;*/
     top: 6vh;
-    z-index: 2;
+    z-index: 5;
 }
 
-.WishListScreen_title{
+.WishListScreen_title {
     font-size: 4vw;
     color: #660708;
     margin-left: 50vw;
-    top:50%;
+    top: 50%;
 }
+
+.WishListScreen_graphic {
+    z-index: 1;
+    /*top: 5vh;*/
+    top: 18vh;
+    /*position: absolute;*/
+}
+
+.WishListScreen_container {
+    margin-top: -25vh;
+    padding-top: 10vh;
+    z-index: -2;
+}
+
+.WishListScreen_clear-btn {
+    margin-top: 22vh;
+    margin-right: 10vw;
+}
+
+.WishListScreen_x-btn{
+    margin-top: 25vh;
+    margin-left: 10vw;
+    padding: 0 1vw 0 1vw;
+}
+
+.WishListScreen_x-btn:hover{
+   border-top: 1px solid black;
+   border-bottom: 1px solid black;
+
+}
+
 
 /*    ======   MOBILE RESPONSIVE    ======    */
 @media (max-width: 900px) {
+    .WishListScreen_container {
+        margin-top: -18vh;
+        padding-top: 10vh;
+        z-index: -2;
+    }
 
+    .WishListScreen_clear-btn {
+        margin-top: 26vh;
+        margin-right: 10vw;
+    }
+
+    .WishListScreen_x-btn{
+        margin-top: 30vh;
+        margin-left: 10vw;
+        padding: 0 1vw 0 1vw;
+    }
+
+    .WishListScreen_clear-btn {
+        margin-top: 29vh;
+        margin-right: 10vw;
+        background-color: transparent;
+        color: black;
+    }
 
 }
