@@ -1,10 +1,12 @@
 import React, {useEffect} from 'react'
 import {useDispatch, useSelector} from 'react-redux'
-import {Row, Col, Tab, Tabs} from 'react-bootstrap'
+import {Row, Col, Tab, Tabs, Button} from 'react-bootstrap'
 import {CART_RESET} from "../../constants/cartConstants";
 import WishListSave from "./WishListSave";
 import WishListEmail from "./WishListEmail";
 import {EMAIL_RESET} from "../../constants/emailConstants";
+import {createWishList, listMyWishLists} from "../../actions/wishListActions";
+import {Link} from "react-router-dom";
 
 
 // match == id, location == get a query string '?qty', history == used to redirect
@@ -22,9 +24,9 @@ const WishListTabInfo = () => {
 
 
     useEffect(() => {
+        dispatch(listMyWishLists());
 
-
-    }, [ dispatch, success, userInfo]);
+    }, [dispatch, success, userInfo]);
 
     // const addToWishListHandler = () => {
     //
@@ -41,44 +43,52 @@ const WishListTabInfo = () => {
         dispatch({type: EMAIL_RESET})
     };
 
+    const addToWishListHandler = () => {
+        cart.cartItems.map(item => {
+            dispatch(createWishList({
+                wishListItems: item
+            }));
+        });
+        dispatch({type: CART_RESET});
+    };
+
     return (
         <>
             <Row className='mt-n5 pt-5 d-flex justify-content-between bg-white' style={{zIndex: 1, top: '0'}}>
-                <Col xs={6} className='d-flex justify-content-start'>
-                    <h4>wishlist</h4>
-                </Col>
-                <Col xs={2}>
-                    <h6 onClick={clearWishList}
-                        className='global_cursor stick bg-white pt-3 pl-0 pb-0 ml-n4'>
-                        clear</h6>
-                </Col>
-            </Row>
-            <Row xs={12} className=' global_bisonRedTxt'>
-                <Col xs={12}>
-                    {/*<Tabs defaultActiveKey="wishlist" id="uncontrolled-tab-example"*/}
-                    {/*      ClassName='d-flex justify-content-center'>*/}
-                    {/*    <Tab tabClassName=' global_cursor p-auto*/}
-                    {/*    text-center d-flex align-items-center justify-content-center' eventKey="wishlist"*/}
-                    {/*         title='Wishlist'>*/}
-                             {/*//     userInfo ? (*/}
-                             {/*//*/}
-                             {/*//     <h6 onClick={addToWishListHandler}>Save wishlist to profile</h6>*/}
-                             {/*// ) : (*/}
-                             {/*//     <Link to='/login'>*/}
-                             {/*//         <h6>*/}
-                             {/*//             <strong className='global_bisonRedTxt global_cursor'>sign in</strong> to save*/}
-                             {/*//         </h6>*/}
-                             {/*//     </Link>*/}
-                             {/*// )}*/}
-                        {/*// >*/}
-                            <WishListSave cartItems={cartItems} cart={cart} success={success}/>
-                        {/*</Tab>*/}
-                        {/*<Tab eventKey="profile" title="Purchase Inquiry"*/}
-                        {/*     tabClassName='animations_img-hover-zoom-n-out global_cursor global_bisonFadedRedHover p-auto d-flex align-items-center justify-content-center'>*/}
-                        {/*    <WishListEmail userInfo={userInfo} cartItems={cartItems} cart={cart} success={success}/>*/}
-                        {/*</Tab>*/}
+                <Col xs={6} className='mb-5 mt-0'>
+                    {(!userInfo) ? (
+                        <>
+                        <h6>
+                            <i style={{color: 'rgba(0,0,0, .5)'}} className='bg-white'>sign in to save</i>
+                        </h6>
+                            <Link to='/wishlist'>
+                                <h6 className='global_cursor-underline global_blue py-2 my-0 border-top'>email wishlist</h6>
+                            </Link>
+                        </>
+                    ) : (
+                        <>
+                            <h6 className='global_cursor-underline global_bisonRedTxt py-0 bg-white'
+                                onClick={addToWishListHandler}><span className='rounded'>save wishlist</span></h6>
 
-                    {/*</Tabs>*/}
+                            <Link to='/wishlist'>
+                                <h6 className='global_cursor-underline global_blue py-2 my-0 border-top'>email wishlist</h6>
+                            </Link>
+                        </>
+                    )}
+                </Col>
+
+                <Col xs={6} className='mb-5 mt-0 d-flex justify-content-end'>
+                    <>
+                        <h6 onClick={clearWishList}
+                            className='global_cursor stick bg-white pt-3 pl-0 pb-0 my-0'>
+                            clear</h6>
+                    </>
+                </Col>
+
+            </Row>
+            <Row xs={12} className=' global_bisonRedTxt mt-n5 pt-0'>
+                <Col xs={12}>
+                    <WishListSave cartItems={cartItems} cart={cart} success={success}/>
                 </Col>
             </Row>
 

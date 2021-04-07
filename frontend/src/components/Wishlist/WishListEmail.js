@@ -64,16 +64,16 @@ const WishListEmail = ({userInfo, cart, cartItems, success}) => {
         setUserName('');
         setUserText('');
 
-            // dispatch({type: CART_RESET});
+        // dispatch({type: CART_RESET});
 
         window.scrollTo(0, 0);
 
     };
 
 
-        // useLayoutEffect(() => {
-        //     window.scrollTo(0, 0)
-        // });
+    // useLayoutEffect(() => {
+    //     window.scrollTo(0, 0)
+    // });
 
 
     // const clearWishList = () => {
@@ -99,14 +99,24 @@ const WishListEmail = ({userInfo, cart, cartItems, success}) => {
                                 items</Link></p>
                         </>
                     ) : (
-                        <p className='global_blue'>Ask the experts!</p>
+                        <>
+                            <Row className='d-flex justify-content-between'>
+                                <Col xs={7}>
+                                    <h5 className='global_blue'>Ask the experts!</h5>
+                                </Col>
+                                <Col xs={3}>
+                                    <p>items listed will be included on email</p>
+
+                                </Col>
+                            </Row>
+                        </>
                     )
 
                 )}
                 <Form onSubmit={submitHandler} md={7} xs={12} className='m-3 p-2'>
                     <Row>
                         <Col
-                             className='global_blood-red p-3 border global_light-grey-bg'>
+                            className='global_blood-red p-3 border global_light-grey-bg'>
                             <Form.Group controlId='name'>
                                 <Form.Label>Name</Form.Label>
                                 <Form.Control type='name'
@@ -150,7 +160,8 @@ const WishListEmail = ({userInfo, cart, cartItems, success}) => {
                                             variant='primary'
                                             className='global_blue-bg'
                                             onClick={() => {
-                                                setIsEmailed(true)                                            }}
+                                                setIsEmailed(true)
+                                            }}
                                     >Email Inquiry</Button>
                                 )
                             }
@@ -158,12 +169,12 @@ const WishListEmail = ({userInfo, cart, cartItems, success}) => {
                         </Col>
 
                         <Col md={5} xs={12} className='m-0 px-0'>
-                                {cartItems.map(item => (
-                            <ListGroup variant='flush'>
+                            {cartItems.map(item => (
+                                <ListGroup variant='flush'>
                                     <ListGroup.Item key={item._id}
                                                     className='border-0'>
                                         <Row xs={12}>
-                                            <Col className='' >
+                                            <Col className=''>
                                                 <Link to={`product/${item.product}`}>
                                                     <Image src={item.image} alt={item.name}
                                                            className='pt-2 justify-content-center rounded h-100 w-100'/>
@@ -180,8 +191,8 @@ const WishListEmail = ({userInfo, cart, cartItems, success}) => {
                                             </Col>
                                         </Row>
                                     </ListGroup.Item>
-                            </ListGroup>
-                                ))}
+                                </ListGroup>
+                            ))}
 
                         </Col>
                     </Row>

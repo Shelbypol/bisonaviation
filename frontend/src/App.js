@@ -62,6 +62,7 @@ const App = () => {
                 <Route path='/search/:keyword' component={ProductsDisplayScreen} exact/>
                 <Route path='/page/:pageNumber' component={ProductsDisplayScreen} exact/>
                 <Route path='/search/:keyword/page/:pageNumber' component={ProductsDisplayScreen}/>
+                <Route path='/wishlist' component={WishListScreen}/>
 
                 <Fragment>
                     <Headers/>
@@ -77,17 +78,16 @@ const App = () => {
                     <Route path='/product/:id' component={ProductScreen}/>
                     <Route path='/profile' component={ProfileScreen}/>
 
-                    <Route path='/wishlist' component={WishListScreen} />
                     {/*{width <= 1150 && <Route path='/wishlist' component={WishListScreen} />}*/}
 
                     {/*<Container className='mb-0 pb-0'>*/}
-                        <Route path='/login' component={LoginScreen}/>
-                        <Route path='/cart/:id?' component={CartScreen}/>
-                        <Route path='/shipping' component={ShippingScreen}/>
-                        <Route path='/payment' component={PaymentScreen}/>
-                        <Route path='/placeorder' component={PlaceOrderScreen}/>
-                        <Route path='/order/:id' component={OrderScreen}/>
-                        <Route path='/thankyou/:id' component={ThankYouScreen}/>
+                    <Route path='/login' component={LoginScreen}/>
+                    <Route path='/cart/:id?' component={CartScreen}/>
+                    <Route path='/shipping' component={ShippingScreen}/>
+                    <Route path='/payment' component={PaymentScreen}/>
+                    <Route path='/placeorder' component={PlaceOrderScreen}/>
+                    <Route path='/order/:id' component={OrderScreen}/>
+                    <Route path='/thankyou/:id' component={ThankYouScreen}/>
                     {/*</Container>*/}
 
                     <Footer/>

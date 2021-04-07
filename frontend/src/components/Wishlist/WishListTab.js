@@ -122,7 +122,7 @@ const DropdownMenu = () => {
                 onEnter={calcHeight}
             >
                 <div className="wishList-menu">
-                    <DropdownItem>
+                    <DropdownItem >
                         <WishListTabInfo/>
                     </DropdownItem>
 

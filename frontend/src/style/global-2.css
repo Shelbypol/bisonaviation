@@ -105,15 +105,15 @@ main {
 
 /* ============== BORDER BTN ======================*/
 .global_hover-border{
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+    background-color: #660708;
+    color: white;
 }
 
 .global_hover-border:hover{
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    border-left: none;
-    border-right: none;
+    border-top: 1px solid #660708;
+    border-bottom: 1px solid #660708;
+    background-color: transparent;
+    color: #660708;
 }
 
 /*================= CAROUSEL ======================*/

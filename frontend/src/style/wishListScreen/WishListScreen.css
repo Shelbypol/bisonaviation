@@ -75,26 +75,26 @@ a {
 
 .wishList-Dropdown {
     position: absolute;
-    top: 58px;
-    width: 175%;
-    /*width: 150%;*/
-    height: 90vh;
-    max-height: 90vh;
-    /*transform: translateX(-45%);*/
-    transform: translateX(-11%);
+    top: 7.2vh;
+    /*top: 58px;*/
+    width: 150%;
+    height: 100vh;
+    max-height: 100vh;
+    /*transform: translateX(-11%);*/
+    transform: translateX(0%);
     background-color: #fff;
     /*border: var(--border);*/
     /*border-radius: var(--border-radius);*/
-    padding: 1rem;
+    padding: 1.5rem 3em 1.5em 1.5em;
     overflow-y: scroll;
     transition: none;
     /*transition: height var(--speed) ease;*/
 }
 
 .wishList-menu {
-    height: 75vh;
-    max-height: 75vh;
-    width: 100%;
+    height: 100%;
+    max-height: 110vh;
+    width: 90%;
 }
 
 .wishList-menu-item {
@@ -145,11 +145,19 @@ a {
 }
 
 .WishListScreen_hero-img{
-    background-image: url("../../images/bg-graphics/screen-team/team.png");
+    background-image: url("../../images/bg-graphics/jd-roel-flir-end.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 250px;
-    background-position: 50% 45%;
+    background-position: 50% -5vh;
     width: 100vw;
     background-color: black;
+    top: 1vh;
+}
+
+.WishListScreen_title{
+    font-size: 4vw;
+    color: #660708;
+    margin-left: 50vw;
+    top:50%;
 }
