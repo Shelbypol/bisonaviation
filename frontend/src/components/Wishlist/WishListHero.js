@@ -8,7 +8,7 @@ const WishListHero = () => {
     return (
 
 
-        <Jumbotron className='WishListScreen_hero-img d-flex justify-content-center align-items-center bg-white'
+        <Jumbotron className='WishListScreen_hero-img sticky-top m-0 p-0 d-flex justify-content-center align-items-center bg-white'
                    fluid>
             <p className='WishListScreen_title '>Ask the experts!</p>
         </Jumbotron>

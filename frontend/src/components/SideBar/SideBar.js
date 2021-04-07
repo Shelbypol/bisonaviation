@@ -51,7 +51,7 @@ const SideBar = () => {
                 ) :(
                 <nav className={sidebar ? 'SideBar-nav-menu-user-not-logged active' : 'SideBar-nav-menu-user-not-logged'} ref={node}
                      onClick={(e) => (handleScroll(e))}>
-                    <ul className='SideBar-nav-menu-items'>
+                    <ul className='SideBar-nav-menu-items ' style={{zIndex: '5000'}}>
                         <SideBarData showSidebar={showSidebar}/>
                     </ul>
                 </nav>

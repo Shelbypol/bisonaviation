@@ -11,6 +11,7 @@ import {createWishList} from "../../actions/wishListActions";
 import WishListHero from "../../components/Wishlist/WishListHero";
 import MobileHeader from "../../components/Headers-Nav-Footer/MobileHeader";
 import StickyHeader from "../../components/Headers-Nav-Footer/StickyHeader";
+import {Jumbotron} from "reactstrap";
 
 const WishListScreen = () => {
 
@@ -71,27 +72,23 @@ const WishListScreen = () => {
             )}
 
             <WishListHero/>
+            <Jumbotron className='Global_graphic bg-transparent mb-0 pb-0 sticky-top' style={{zIndex: '1', top: '25vh', width: '100vw'}} fluid> </Jumbotron>
 
-            <Container className='bg-white py-5 px-3 mt-n5 min-vh-100' fluid>
-                <Row className='m-0 p-0 d-flex justify-content-between' style={{zIndex: 100}}>
+
+            <Container className='bg-white pb-5 pt-3 px-5 min-vh-100 position-sticky' style={{marginTop: '-25vh'}} fluid>
+                <Row className='m-0 px-0 pb-0 pt-5 d-flex justify-content-between'>
                     <Col xs={1} className='d-flex justify-content-start'>
                         <Link to='/'>
-                            <h6 className=' global_cursor stick p-3 m-auto'>
+                            <h6 className='sticky-top position-relative global_cursor'>
                                 x
                             </h6>
                         </Link>
                     </Col>
-                    <Col xs={1} className='global_cursor global_hover-border d-flex justify-content-center align-items-center px-4' onClick={clearWishList}>
-                        {/*<h6 onClick={clearWishList}*/}
-                        {/*    className='global_cursor stick m-0 '>*/}
+                    <Col xs={1} className='sticky-top position-relative global_cursor global_hover-border d-flex justify-content-center align-items-center' onClick={clearWishList}>
                             clear
-                        {/*</h6>*/}
                     </Col>
                 </Row>
                 <Row xs={12} className='global_bisonRedTxt pt-3'>
-                    {/*<Col xs={12}>*/}
-                        {/*<h3 className='d-flex justify-content-center global_blood-red bold'></h3>*/}
-                    {/*</Col>*/}
                     <Col xs={12}>
 
                         {userInfo ? (
