@@ -161,3 +161,9 @@ a {
     margin-left: 50vw;
     top:50%;
 }
+
+/*    ======   MOBILE RESPONSIVE    ======    */
+@media (max-width: 900px) {
+
+
+}

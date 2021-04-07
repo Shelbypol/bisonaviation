@@ -39,19 +39,25 @@ const NavItem = (props) => {
     const node = useRef(open);
 
     useEffect(() => {
-        document.addEventListener("scroll", handleScroll);
+        // document.addEventListener("scroll", handleScroll);
         // document.addEventListener("click", handleClick);
         return () => {
-            document.removeEventListener("scroll", handleScroll);
+            // document.removeEventListener("scroll", handleScroll);
             // document.removeEventListener("click", handleClick);
         };
     }, [cartItems]);
 
-    const handleScroll = e => {
-        if (node.current.contains(e.target) === false) {
-            setOpen(false)
-        }
-    };
+    // const handleClick = e => {
+    //     if (node.current.contains(e.target) === false) {
+    //         setOpen(false)
+    //     }
+    // };
+
+    // const handleScroll = e => {
+    //     if (node.current.contains(e.target) === false) {
+    //         setOpen(false)
+    //     }
+    // };
     // const handleClick = (e) => {
     //     if (node.current.contains(e.target) === false) {
     //         setOpen(false)
@@ -65,7 +71,7 @@ const NavItem = (props) => {
          <li ref={node} onClick={(e) => {
              // handleClick(e);
             // setOpen(!open);
-             handleScroll(e)
+            //  handleScroll(e)
          }} className="wishList-nav-item pt-2"
              >
             {/*<li ref={node} onClick={(e) => (handleScroll(e))} className="wishList-nav-item">*/}
