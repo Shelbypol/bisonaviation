@@ -36,33 +36,44 @@ const NavItem = (props) => {
     const {cartItems} = cart;
 
     const dispatch = useDispatch();
-    const node = useRef();
+    const node = useRef(open);
 
     useEffect(() => {
-        document.addEventListener("scroll", handleScroll);
-        document.addEventListener("click", handleClick);
+        // document.addEventListener("scroll", handleScroll);
+        // document.addEventListener("click", handleClick);
         return () => {
-            document.removeEventListener("scroll", handleScroll);
-            document.removeEventListener("click", handleClick);
+            // document.removeEventListener("scroll", handleScroll);
+            // document.removeEventListener("click", handleClick);
         };
     }, [cartItems]);
 
-    const handleScroll = e => {
-        if (node.current.contains(e.target) === false) {
-            setOpen(false)
-        }
-    };
-    const handleClick = e => {
-        if (node.current.contains(e.target) === false) {
-            setOpen(false)
-        }
-    };
+    // const handleClick = e => {
+    //     if (node.current.contains(e.target) === false) {
+    //         setOpen(false)
+    //     }
+    // };
+
+    // const handleScroll = e => {
+    //     if (node.current.contains(e.target) === false) {
+    //         setOpen(false)
+    //     }
+    // };
+    // const handleClick = (e) => {
+    //     if (node.current.contains(e.target) === false) {
+    //         setOpen(false)
+    //     }
+    // };
 
     return (
-        <li ref={node} onClick={(e) => {
-            handleScroll(e);
-            handleClick(e);
-        }} className="wishList-nav-item pt-2">
+        // <li onClick={(e) => {
+        //     // setOpen(!open);
+        // }} className="wishList-nav-item pt-2">
+         <li ref={node} onClick={(e) => {
+             // handleClick(e);
+            // setOpen(!open);
+            //  handleScroll(e)
+         }} className="wishList-nav-item pt-2"
+             >
             {/*<li ref={node} onClick={(e) => (handleScroll(e))} className="wishList-nav-item">*/}
             {/*<a href="#" className="wishList-icon-button" onClick={() => setOpen(!open)}>*/}
             <a onClick={() => setOpen(!open)}>
@@ -70,7 +81,7 @@ const NavItem = (props) => {
                     <p className='global_cursor global_white-text-red-hover pt-2'>{props.icon}</p>
                 ) : (
                     <>
-                        <p className=' global_cursor global_white-text-red-hover pt-2'>{cartItems.length}&nbsp;{props.icon}</p>
+                        <p className=' global_cursor global_white-text-red-hover ml-2 pt-2'>{cartItems.length}&nbsp;{props.icon}</p>
                     </>
                 )}
             </a>
@@ -107,7 +118,6 @@ const DropdownMenu = () => {
 
 
     return (
-        // <div className="wishList-Dropdown" >
         <div className="wishList-Dropdown" style={{height: menuHeight}} ref={dropdownRef}>
 
             <CSSTransition
@@ -118,45 +128,13 @@ const DropdownMenu = () => {
                 onEnter={calcHeight}
             >
                 <div className="wishList-menu">
-                    {/*<DropdownItem><Button onClick={}>X</Button> </DropdownItem>*/}
-                    <DropdownItem>
+                    <DropdownItem >
                         <WishListTabInfo/>
                     </DropdownItem>
 
 
-                    {/*<DropdownItem*/}
-                    {/*    // leftIcon={<i className='fa fa-long-arrow-left'> </i>}*/}
-                    {/*    rightIcon={<i className='fa fa-long-arrow-right'> </i>}*/}
-                    {/*    goToMenu="settings">*/}
-                    {/*    Settings*/}
-                    {/*</DropdownItem>*/}
-
-
                 </div>
             </CSSTransition>
-
-            {/*<CSSTransition*/}
-            {/*    in={activeMenu === 'main'}*/}
-            {/*    timeout={500}*/}
-            {/*    classNames="wishList-menu-primary"*/}
-            {/*    unmountOnExit*/}
-            {/*    onEnter={calcHeight}*/}
-            {/*>*/}
-            {/*    <div className="wishList-menu">*/}
-            {/*        /!*<DropdownItem><Button onClick={}>X</Button> </DropdownItem>*!/*/}
-            {/*        /!*<DropdownItem>*!/*/}
-            {/*        /!*    <WishListTabInfo/>*!/*/}
-            {/*        /!*</DropdownItem>*!/*/}
-
-            {/*        /!*<DropdownItem*!/*/}
-            {/*        /!*    // leftIcon={<i className='fa fa-long-arrow-left'> </i>}*!/*/}
-            {/*        /!*    rightIcon={<i className='fa fa-long-arrow-right'> </i>}*!/*/}
-            {/*        /!*    goToMenu="settings">*!/*/}
-            {/*        /!*    Settings*!/*/}
-            {/*        /!*</DropdownItem>*!/*/}
-
-            {/*    </div>*/}
-            {/*</CSSTransition>*/}
 
         </div>
     );

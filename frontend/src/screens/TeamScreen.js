@@ -1,4 +1,4 @@
-import React, {useLayoutEffect} from 'react'
+import React, {useEffect, useLayoutEffect, useState} from 'react'
 import {Container, Row} from "react-bootstrap";
 import TeamHero from "../components/team-screen/TeamHero";
 import TeamCard from "../components/team-screen/TeamCard";
@@ -18,9 +18,36 @@ import matthewGurniak from '../images/bg-graphics/screen-team/matthew_gurniak.pn
 import halibut from '../images/bg-graphics/screen-team/halibut.png'
 import tuna from '../images/bg-graphics/screen-team/tuna.png'
 import mackerel from '../images/bg-graphics/screen-team/mackeral.png'
+import HeroDivider from "../components/HeroDivider";
+import '../style/2/teamScreen/TeamHero.css';
+import {useDispatch} from "react-redux";
+import MobileHeader from "../components/Headers-Nav-Footer/MobileHeader";
+import StickyHeader from "../components/Headers-Nav-Footer/StickyHeader";
+import Footer from "../components/Headers-Nav-Footer/Footer";
 
 
 const TeamScreen = () => {
+
+
+    const [width, setWidth] = useState(window.innerWidth);
+
+    const breakpoint = 1000;
+
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+
+        window.addEventListener("resize", handleWindowResize);
+        return () => window.removeEventListener("resize", handleWindowResize);
+    }, [dispatch, width]);
+
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0)
+    });
+
+    const handleWindowResize = () => {
+        setWidth(window.innerWidth);
+    };
 
     useLayoutEffect(() => {
         window.scrollTo(0, 0)
@@ -28,22 +55,34 @@ const TeamScreen = () => {
 
     return (
         <>
-            <TeamHero/>
+            {width < breakpoint ? (
+                <MobileHeader/>
+            ) : (
+                <>
+                    <StickyHeader/>
+                </>
+            )}
 
-            <Container className='p-0 fluid'>
+            <HeroDivider
+                img={'TeamScreen_hero-img'}
+                showImg={true}
+                title={''}
+            />
 
-                <Jumbotron className='mx-5 px-5 bg-transparent m-0 p-0 global_cultured'
+
+            {/*<Container className='p-0 fluid'>*/}
+
+                <Jumbotron className='px-3 bg-transparent global_cultured global_HeroDivider-margin-btm'
                            fluid>
-                    <h1 className='p-0 mb-0 mx-0 mt-5' style={{color: 'red'}}>Meet the Bison Team</h1>
+                    <h1 className='px-md-5 px-sm-0 m-0' style={{color: 'red'}}>Meet the Bison Team</h1>
                     <br/>
-                    <p>The Bison Aviation team is made up of professionally trained, highly skilled individuals, selected specifically for their particular expertise in the fields of general aviation maintenance and avionics. All of our primary technicians are fully FAA licensed (something which isn't true in most maintenance shops). The experience and skills of our team members is what makes Bison Aviation a leader in the aircraft service industry and we are proud to have each of these individuals as a part of the Bison Aviation Team!</p>
+                    <p className='px-md-5 px-sm-0 m-0'>The Bison Aviation team is made up of professionally trained, highly skilled individuals, selected specifically for their particular expertise in the fields of general aviation maintenance and avionics. All of our primary technicians are fully FAA licensed (something which isn't true in most maintenance shops). The experience and skills of our team members is what makes Bison Aviation a leader in the aircraft service industry and we are proud to have each of these individuals as a part of the Bison Aviation Team!</p>
                 </Jumbotron>
 
-                <Jumbotron className='mx-5 px-5 bg-transparent'
+                <Jumbotron className='mt-n5 mx-3 bg-transparent px-md-5 px-sm-0'
                            fluid>
 
-                    <Row className='mt-n5'>
-
+                    <Row>
                             {/*   JOHN ATKIN   */}
                             <TeamCard
                                 eventKey={'0'}
@@ -123,7 +162,7 @@ const TeamScreen = () => {
                     </Row>
 
                     {/*============   ROW TWO  ==========*/}
-                    <Row className='px-auto mt-5 d-flex justify-content-center'>
+                    <Row className='px-auto d-flex justify-content-center'>
 
                             {/*   JD PHILIPS   */}
                             <TeamCard
@@ -177,42 +216,10 @@ const TeamScreen = () => {
                                 favAircraft={'King Air 350 & AH-64D Apache'}
                             />
 
-                            {/*   CHAD BROOKS   */}
-                            <TeamCard
-                                eventKey={'7'}
-                                img={chadBrooks}
-                                headerName={'Chad Brooks'}
-                                headerPosition={'AET'}
-                                name={'Chad Brooks'}
-                                position={''}
-                                certifications={''}
-                                locations={'Boerne Stage Airfield - 5C1'}
-                                specialTraining={'Mooney M20 Series, Aircraft Wiring, Garmin G1000, GFC Series.'}
-                                bio={
-                                    'Chad began his avionics career with Mooney Aircraft in Kerrville, TX where he earned his certification as an aircraft assembler. He has more than twenty years of experience designing and fabricating wiring harnesses and structural components for avionics installations. In 2006 Chad went to work for Boeing performing electrical and avionics installations on the 737 and 787 series aircraft. He returned to Mooney four years later where he continued to work as the Lead Electrical and Avionics installer until the factory closed in late 2019.'
-                                }
-                                favAircraft={'Boeing 787 Dreamliner'}
-                            />
-
                     </Row>
 
-                    <Row className='px-auto mt-5 d-flex justify-content-center'>
-                            {/*  Cody Strack  */}
-                            <TeamCard
-                                eventKey={'8'}
-                                img={codyStrack}
-                                headerName={'Cody Strack'}
-                                headerPosition={'A&P / IA'}
-                                name={'Cody Strack'}
-                                position={''}
-                                certifications={'FAA: Mechanic - Airframe & Powerplant, Inspection Authorization'}
-                                locations={'Boerne Stage Airfield - 5C1'}
-                                specialTraining={'Cirrus SR20 & SR22 Factory Certified, American Bonanza Society Bonanza & Baron Series, Cessna 300 & 400 Series Maintenance, Advanced Pilot Seminar'}
-                                bio={
-                                    'Cody left a career in the oil and gas industry to pursue his goal of becoming an aircraft mechanic. Cody\'s hard work and dedication lead him to successful completion of his A&P training at the Aviation School of Maintenance in Houston, and later his FAA Inspection Authorization. In addition to his A&P license, Cody has undertaken extensive type-specific training, including the full Cirrus Factory Maintenance certification course at the Cirrus Factory in Duluth, MN. Cody is an avid UAV pilot and enjoys building and flying his own creative designs.'
-                                }
-                                favAircraft={'Cessna Twins'}
-                            />
+                    <Row className='px-auto d-flex justify-content-center'>
+
 
                             {/*  Jerry Fitzgerald */}
                             <TeamCard
@@ -248,27 +255,10 @@ const TeamScreen = () => {
                                 favAircraft={'Beechcraft Bonanza'}
                             />
 
-                            {/*  Matthew Gurniak */}
-                            <TeamCard
-                                eventKey={'11'}
-                                img={matthewGurniak}
-                                headerName={'Matthew Gurniak'}
-                                headerPosition={''}
-                                name={'Matthew Gurniak'}
-                                position={''}
-                                certifications={'FAA: Mechanic - Airframe & Powerplant; Private Pilot - ASEL'}
-                                locations={'Boerne Stage Airfield - 5C1'}
-                                specialTraining={'Bell 206'}
-                                bio={
-                                    ' Matthew\'s interest in aviation began when he was in the third-grade when his class went on a field trip to a local FBO that provided rides to the students. That trip around the pattern sparked a passion for aviation and Matthew earned his Private Pilot\'s License at age 17. After high school, Matthew joined the United States Air Force where he served as an aircraft mechanic, maintaining aircraft such as the F-15, F-16, A-10, F-117, C-130, C-141, C-17 and C-5. After twenty six years of service, Matthew retired in the top 1% of the enlisted corps as a Chief Master Sergeant. Matthew continues to enjoy flying and is working on his instrument rating. He joined the Bison Aviation team so that he could enjoy the camaraderie of the general aviation community.  Matt is also the first candidate to matriculate through the Bison Aviation A&P Apprentice Program and earn his FAA A&P license!'
-                                }
-                                favAircraft={'Cessna 100 & 200 series'}
-                            />
-
                     </Row>
 
                     {/*============   ROW FOUR  ==========*/}
-                    <Row className='px-auto mt-5 d-flex justify-content-center'>
+                    <Row className='px-auto d-flex justify-content-center'>
 
                             {/*  Halibut */}
                             <TeamCard
@@ -327,7 +317,8 @@ const TeamScreen = () => {
 
 
                 </Jumbotron>
-            </Container>
+            {/*</Container>*/}
+            <Footer/>
 
         </>
     )

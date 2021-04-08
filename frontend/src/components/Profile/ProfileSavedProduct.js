@@ -1,14 +1,17 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import {Col, Image,  Row} from "react-bootstrap";
 import {Link} from "react-router-dom";
 import {addToEmail} from "../../actions/emailActions";
-import {useDispatch} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 
-import { deleteWishListItem} from "../../actions/wishListActions";
+import {deleteWishListItem, listMyWishLists} from "../../actions/wishListActions";
+import {addToCart, removeFromCart} from "../../actions/cartActions";
 
 
 
 const ProfileSavedProduct = ({wishList, wishes, item, product, userInfo}) => {
+    const [activeHeart, setActiveHeart] = useState(false);
+
     const [activeEmail, setActiveEmail] = useState(false);
     const [userProducts, setUserProducts] = useState(
         wishList.map(wishes => (
@@ -16,11 +19,18 @@ const ProfileSavedProduct = ({wishList, wishes, item, product, userInfo}) => {
                 item
             )))));
 
+    const dispatch = useDispatch();
+
+    const cart = useSelector(state => state.cart);
+    const {cartItems} = cart;
 
     // const email = useSelector(state => state.email);
     // const {emailItems} = email;
 
-    const dispatch = useDispatch();
+    useEffect(() => {
+
+    }, [dispatch, activeHeart, cartItems]);
+
 
     const addToEmailListHandler = () => {
         setActiveEmail(!activeEmail);
@@ -46,55 +56,64 @@ const ProfileSavedProduct = ({wishList, wishes, item, product, userInfo}) => {
         dispatch(deleteWishListItem(id));
     };
 
+    const like = () => {
+        setActiveHeart(!activeHeart);
+        dispatch(addToCart(wishes.wishListItems[0].product, 1));
+        // history.push(`/cart/${id}?qty=1`);
+    };
+
+    const unlike = () => {
+        setActiveHeart(!activeHeart);
+        dispatch(removeFromCart(wishes.wishListItems[0].product))
+        // history.push(`/cart/${id}?qty=1`);
+    };
+
+
     return (
         <>
             <Row xs={12}>
-                <Col xs={2}>
+                <Col md={3}  xs={6}>
                     {/*<Link to={`/product/${item.product}`}>*/}
                     <Image src={item.image} alt={item.name} fluid
                            rounded/>
                     {/*</Link>*/}
                 </Col>
-                <Col xs={2} className='d-flex align-items-center'>
+                <Col md={5} xs={6} className='d-flex align-items-center'>
                     <Link to={`/product/${item.product}`}>
                         {item.name}
                     </Link>
                 </Col>
-                <Col xs={2} className='d-flex justify-content-center align-items-center'>
-                    <Link to={`/product/${item.product}`}>
-                        <strong>${item.price}</strong>
-                    </Link>
+
+                <Col md={2} xs={6} onClick={() => like(item._id)}
+                     className='pt-2 global_blue d-flex justify-content-center align-items-center'>
+
+                    {activeHeart ? (
+                        <>
+                                            <span onClick={unlike}
+                                                  className='global_cursor'
+                                                  style={{fontSize: '1.3em'}}>
+                                            <i className="mt-auto fas fa-envelope"> </i>
+                                            </span>
+                        </>
+                    ) : (
+
+                        <span className='global_cursor' onClick={like}
+                              style={{fontSize: '1.3em'}}>
+                                        <i className="mt-auto fas fa-envelope-open-text "> </i>
+                                    </span>
+                    )}
+
                 </Col>
-                <Col xs={2} onClick={() => deleteHandler(wishes._id)}
-                     className='global_bisonDarkFadedBgColorHover d-flex justify-content-center align-items-center'>
+
+                <Col md={2} xs={6} onClick={() => deleteHandler(wishes._id)}
+                     className='pt-2 global_blood-red d-flex justify-content-center align-items-center'>
                     <i className='fas fa-trash'> </i>
                 </Col>
-                {activeEmail ? (
-                    // <Col xs={2} onClick={() => removeFromEmailListHandler}
-                    <Col xs={2} onClick={removeFromEmailListHandler}
-                         className='global_cursor d-flex justify-content-center align-items-center'
-                         style={{backgroundColor: 'green'}}>
-                        <i className='fas fa-envelope'> </i>
-                    </Col>
-                ) : (
-                    <Col xs={2} onClick={addToEmailListHandler}
-                         className='global_cursor d-flex justify-content-center align-items-center'>
-                        <i className='fas fa-envelope'> </i>
-                    </Col>
-
-
-                )
-                }
 
 
             </Row>
+                <hr className='d-sm-block d-md-none border-bottom'/>
 
-            {/*        )))}*/}
-            {/*    /!*))}*!/*/}
-            {/*</Row>*/}
-            {/*<Row xs={2}>*/}
-            {/*    <ProfileEmailState emailItems={emailItems} />*/}
-            {/*</Row>*/}
 
         </>
     )

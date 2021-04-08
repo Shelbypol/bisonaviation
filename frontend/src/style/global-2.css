@@ -50,8 +50,17 @@ main {
     color: #161A1D;
 }
 .global_blood-red{
+    color: #660708;}
+
+.global_white-txt-blood-red-bg-hover{
     color: #660708;
+    background-color: white;
 }
+.global_white-txt-blood-red-bg-hover:hover{
+    color: white;
+    background-color: #660708;
+}
+
 .global_silver-chalice{
     color:  #B1A7A6;
 }
@@ -92,6 +101,19 @@ main {
 
 .global_red-text-white-hover:hover{
     color:red;
+}
+
+/* ============== BORDER BTN ======================*/
+.global_hover-border{
+    background-color: #660708;
+    color: white;
+}
+
+.global_hover-border:hover{
+    border-top: 1px solid #660708;
+    border-bottom: 1px solid #660708;
+    background-color: transparent;
+    color: #660708;
 }
 
 /*================= CAROUSEL ======================*/
@@ -193,7 +215,47 @@ main {
     background-image: url("../images/bg-graphics/graphics/black-top-large-left.png");
     height: 300px;
     margin-top: -15vh;
+    background-repeat: no-repeat;
 }
+
+/*.Global_graphic-wishlist{*/
+/*    background-image: url("../images/bg-graphics/graphics/black-top-large-left.png");*/
+/*    z-index: 1;*/
+/*    background-repeat: no-repeat;*/
+
+/*    height: 300px;*/
+/*    margin-top: -12vh;*/
+/*}*/
+
+.Global_graphic-productDisplayScreen{
+    /*background-image: url("../images/bg-graphics/graphics/black-top-large-left.png");*/
+    height: 10vh;
+    /*-webkit-transform: rotateY(180deg);*/
+    background-color: white;
+    background-position: 0 25vh;
+    z-index: 2;
+    top:6vh;
+    margin-top: -4vh;
+
+}
+
+.Global_graphic-productDisplayScreen-bg{
+    margin-top: -5vh;
+    top: 3vh;
+    z-index: 1;
+    background-color: white;
+    /*height: 10vh;*/
+}
+
+
+.global_HeroDivider-margin-btm{
+    padding-top: 12vh;
+    margin-top: -40vh;
+    z-index: 5;
+}
+
+
+
 
 /*    ======   MOBILE RESPONSIVE    ======    */
 @media (max-width: 900px) {

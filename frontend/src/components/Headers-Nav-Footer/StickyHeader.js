@@ -114,20 +114,22 @@ const StickyHeader = () => {
 
 
                         {/*============= PROFILE BTNS ==============*/}
-                        <Nav className='col-sm-3 justify-content-end'>
+                        <Nav className='col-sm-3 justify-content-center'>
 
-                            <WishListTab/>
+                            {/*<div className='mr-5 pr-5 d-flex justify-content-start'>*/}
+                                <WishListTab/>
+                            {/*</div>*/}
 
-                                {!userInfo && (
-                            <div className='px-3 py-0 mt-2'>
+                            {!userInfo && (
+                                <div className='px-3 py-0 mt-2'>
                                     <SideBar/>
-                            </div>
-                                )}
+                                </div>
+                            )}
 
                             <LinkContainer to='/contact'>
                                 <Nav.Link>
                                     <Button
-                                        className='px-3 py-0 mt-2 mr-4 rounded-pill StickyHeader_contact-btn StickyHeader_iconHidden '>
+                                        className='px-3 py-0 mt-2 mr-4 rounded StickyHeader_contact-btn StickyHeader_iconHidden '>
                                                     <span className='StickyHeader_hideIcon'>
                                                      Contact
                                                  </span>
@@ -135,6 +137,7 @@ const StickyHeader = () => {
                                     </Button>
                                 </Nav.Link>
                             </LinkContainer>
+
 
 
                         </Nav>

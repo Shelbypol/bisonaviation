@@ -2,6 +2,7 @@ import React from "react";
 import {Col, Row} from "react-bootstrap";
 import Paginate from "../Paginate";
 import Product from "./Product";
+import CategoryManufacturerDisplay from "./CategoryManufacturerDisplay";
 
 const ProductsDisplaySByCatMan = ({sideBar, history, match, updateCatProp, updateManufacturerProp, keyword, pages, page, products}) => {
 

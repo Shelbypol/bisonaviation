@@ -35,8 +35,9 @@
 }
 
 .StickyHeader_nav{
-    background-image: url("../images/bg-graphics/graphics/dots.png");
-    background-color: rgba(0,0,0, .9);
+    /*background-image: url("../images/bg-graphics/graphics/dots.png");*/
+    background-color: #06080b;
+    /*background-color: rgba(0,0,0, 1);*/
     height: 6vh;
 }
 
@@ -83,15 +84,13 @@
 }
 
 .StickyHeader_contact-btn{
-    border: 1px solid #660708;
-    color: red;
-    background-color: black;
+    background-color: #660708;
+    color: white;
 }
 
 .StickyHeader_contact-btn:hover{
-    border: 1px solid white;
-    color: red;
-
+    background-color: white;
+    color: #660708;
 }
 
 /*   NAV BOOTSTRAP DROPDOWN STYLE    */
@@ -162,8 +161,8 @@ button.navbar-toggler:hover {
 }
 
 .MobileHeader_login-text:hover{
-    background-color: white;
-    color: #660708;
+    background-color: #2576e5;
+    color: white;
 }
 
 .MobileHeaderAdmin_text{

@@ -32,7 +32,7 @@ const SideBarDataLogin = ({showSidebar}) => {
             {userInfo ? (
                     <>
 
-                        <span><h4 className='mx-3'>{userInfo.name}</h4></span>
+                        <span><h4 className='mx-3 '>{userInfo.name}</h4></span>
 
                         {/*<li className='SideBarLogin-nav-text'>*/}
                         {/*    <Link to='/' onClick={showSidebar}>*/}

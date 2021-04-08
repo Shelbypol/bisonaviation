@@ -31,8 +31,7 @@ const MobileHeader = () => {
 
     return (
         <>
-            <header className='m-auto header d-block p-0 col-xs-12'>
-
+            <header className='m-auto header d-block p-0 col-xs-12 '>
                 <Navbar expand="xl"
                         collapseOnSelect
                         style={{backgroundColor: 'black'}}
@@ -72,7 +71,6 @@ const MobileHeader = () => {
 
                         />}/>
 
-
                         {/*   SOCIAL ICONS   */}
                         <SocialIcons socialClassName={'mr-5 mb-5'}
                                      facebookClassName={' d-flex justify-content-center'}
@@ -91,27 +89,29 @@ const MobileHeader = () => {
                             </LinkContainer>
                         )}
 
-                        {/*  BROWSE PRODUCTS  */}
-                        <LinkContainer className='mx-1 MobileHeader_text d-flex justify-content-center'
-                                       to='/products'>
+                        {/*  WISHLIST  */}
+                                {cartItems.length !== 0 && (
+                        <LinkContainer className='mx-0 pb-0 pt-3 MobileHeader_text d-flex justify-content-center'
+                                       to='/wishlist'>
                             <Nav.Link>
-
-                                {cartItems.length !== 0 ? (
                                     <p className={cartItems.length !== 0 && ('borderBlink')}>
                                         <p className='text-white d-inline' style={{fontSize: '1.3em'}}>
                                             &nbsp;{cartItems.length}&nbsp;
                                         </p>
+
                                         <p className='global_red d-inline'>
-                                             <i style={{fontSize: '1.3em'}} className=" fal fa-envelope-open-text"> </i>
+                                            <i style={{fontSize: '1.3em'}} className=" fal fa-envelope-open-text"> </i>
                                         </p>
 
                                     </p>
-                                ) : (
-                                    <span className=''>
-                                {cartItems.length}&nbsp;<i className=" fal fa-envelope-open-text"> </i>
-                                    </span>
+                            </Nav.Link>
+                        </LinkContainer>
                                 )}
-                                &nbsp;&nbsp;
+
+                        {/*  BROWSE PRODUCTS  */}
+                        <LinkContainer className='mx-1 MobileHeader_text d-flex justify-content-center'
+                                       to='/products'>
+                            <Nav.Link>
                                 Browse Products
                             </Nav.Link>
                         </LinkContainer>
@@ -180,11 +180,20 @@ const MobileHeader = () => {
                             </Nav.Link>
 
                         ) : (
-                            <LinkContainer to='/login'>
-                                <Nav.Link className='MobileHeader_login-text d-flex justify-content-center'>
-                                    Login
-                                </Nav.Link>
-                            </LinkContainer>
+                            <>
+                                <LinkContainer to='/register' className='MobileHeader_text d-flex justify-content-center'>
+                                    <Nav.Link>
+                                        Register
+                                    </Nav.Link>
+                                </LinkContainer>
+
+                                <LinkContainer to='/login'>
+                                    <Nav.Link className='MobileHeader_login-text d-flex justify-content-center'>
+                                        Login
+                                    </Nav.Link>
+                                </LinkContainer>
+
+                            </>
                         )}
 
 

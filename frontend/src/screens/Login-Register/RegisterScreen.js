@@ -51,12 +51,14 @@ const RegisterScreen = ({location, history}) => {
     return (
         <>
             <Container className='w-100'>
-                <Row>
-                    <Col className='text-center d-flex justify-content-center align-items-center'>
+                <Row className='mt-5'>
+
+                    <Col xs={12} md={6} className='mt-3 text-center d-flex justify-content-center align-items-center'>
                         <Row>
-                            <Col xs={12}>
-                                <h1 className='global_red'>Bison Aviation Registration Form</h1>
+                            <Col xs={12} className='text-white'>
+                                <h4 className='global_blue'>BISON AVIATION WELCOMES YOU!</h4>
                             </Col>
+
                             <Col xs={12} className='text-white'>
                                 <p>Bison Aviation is an FAA certificated Part 145 Repair Station serving the general
                                     aviation community. Founded by an avid general aviation pilot and fellow aircraft
@@ -67,20 +69,18 @@ const RegisterScreen = ({location, history}) => {
                                     that our customers rely on us to provide them with an honest and frank assessment of
                                     the condition of their aircraft, and we are honored to accept that charge.</p>
                             </Col>
-                            <Col xs={12} className='text-white'>
-                                <h4 className='global_blue'>BISON AVIATION WELCOMES YOU!</h4>
-                            </Col>
                         </Row>
 
                     </Col>
-                    <Col className='m-5 p-5 text-dark border rounded global_light-grey-bg'>
+
+                    <Col xs={11} md={5} className='m-3 pb-3 text-dark border rounded global_light-grey-bg'>
 
                         {message && <Message variant='danger'>{message}</Message>}
 
                         {error && <Message variant='danger'>{error}</Message>}
                         {loading && <Loader/>}
                         <Form onSubmit={submitHandler}>
-
+                            <h1 className='global_blood-red'>Register</h1>
                             <Form.Group controlId='name'>
                                 <Form.Label>Name</Form.Label>
                                 <Form.Control type='name'
@@ -122,7 +122,7 @@ const RegisterScreen = ({location, history}) => {
                         <Row className='my-3'>
                             <Col xs={12}>
                                 Have an account? <Link
-                                to={redirect ? `/login?redirect=${redirect}` : '/login'}>Login</Link>
+                                to={redirect ? `/login?redirect=${redirect}` : '/login'}><span className='global_red'>Login</span></Link>
                             </Col>
                         </Row>
                         <Row>
@@ -143,6 +143,9 @@ const RegisterScreen = ({location, history}) => {
 
                         {/*</FormContainer>*/}
                     </Col>
+
+
+
                 </Row>
             </Container>
         </>

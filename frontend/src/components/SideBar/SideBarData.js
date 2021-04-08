@@ -55,7 +55,7 @@ const SideBarData = ({showSidebar}) => {
                 ) :
                 <>
                     <li className='my-3'>
-                        <Login showSideBar={showSidebar}/>
+                        <Login loginTitle={'Login'} showSideBar={showSidebar}/>
                     </li>
 
                 </>

@@ -1,5 +1,5 @@
-import React, {Fragment, useEffect, useState} from 'react';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import React, {Fragment, useEffect, useLayoutEffect, useState} from 'react';
+import {BrowserRouter as Router, Route, Switch,} from 'react-router-dom';
 import {Container} from 'react-bootstrap'
 import Headers from "./components/Headers-Nav-Footer/Headers";
 import Footer from "./components/Headers-Nav-Footer/Footer";
@@ -27,12 +27,34 @@ import TeamScreen from "./screens/TeamScreen";
 import ContactScreen from "./screens/ContactScreen";
 import TermsScreen from "./screens/TermsScreen";
 import TermsFlirScreen from "./screens/TermsFlirScreen";
+import WishListScreen from "./screens/WishListScreen/WishListScreen"
 import StickyHeader from "./components/Headers-Nav-Footer/StickyHeader";
 import MobileHeader from "./components/Headers-Nav-Footer/MobileHeader";
 import {listProducts} from "./actions/productActions";
+import {useDispatch} from "react-redux";
 
 
 const App = () => {
+
+    const [width, setWidth] = useState(window.innerWidth);
+
+    const breakpoint = 1000;
+
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+
+        window.addEventListener("resize", handleWindowResize);
+        return () => window.removeEventListener("resize", handleWindowResize);
+    }, [dispatch, width]);
+
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0)
+    });
+
+    const handleWindowResize = () => {
+        setWidth(window.innerWidth);
+    };
 
     return (
         <Router>
@@ -44,40 +66,43 @@ const App = () => {
                 <Route path='/admin/productlist/:pageNumber' component={ProductListScreen} exact/>
                 <Route path='/admin/product/:id/edit' component={ProductEditScreen}/>
                 <Route path='/admin/orderlist' component={OrderListScreen}/>
-
                 <Route path='/products' component={ProductsDisplayScreen} exact/>
                 <Route path='/search/:keyword' component={ProductsDisplayScreen} exact/>
                 <Route path='/page/:pageNumber' component={ProductsDisplayScreen} exact/>
                 <Route path='/search/:keyword/page/:pageNumber' component={ProductsDisplayScreen}/>
+                    <Route path='/product/:id' component={ProductScreen}/>
 
+                {/* ================    STICKY HEADER ONLY W/ FOOTER    =================*/}
+                {/*<Fragment>*/}
+                    <Route path='/wishlist' component={WishListScreen}/>
+                    <Route path='/flir' component={FlirScreen}/>
+                    <Route path='/team' component={TeamScreen}/>
+                    <Route path='/maintenance' component={MaintenanceScreen}/>
+                    <Route path='/avionics' component={AvionicsScreen}/>
+                {/*</Fragment>*/}
 
+                {/* ================    STICKY & DESKTOP HEADER W/ FOOTER    =================*/}
                 <Fragment>
                     <Headers/>
                     <Route path='/' component={HomeScreen} exact/>
-                    <Route path='/avionics' component={AvionicsScreen}/>
-                    <Route path='/flir' component={FlirScreen}/>
-                    <Route path='/maintenance' component={MaintenanceScreen}/>
-                    <Route path='/team' component={TeamScreen}/>
                     <Route path='/contact' component={ContactScreen}/>
                     <Route path='/terms' component={TermsScreen}/>
                     <Route path='/flir-terms' component={TermsFlirScreen}/>
                     <Route path='/register' component={RegisterScreen}/>
+                    <Route path='/profile' component={ProfileScreen}/>
 
-
-                    <Container className='mb-0 pb-0'>
-                        <Route path='/login' component={LoginScreen}/>
-                        <Route path='/profile' component={ProfileScreen}/>
-                        <Route path='/product/:id' component={ProductScreen}/>
-                        <Route path='/cart/:id?' component={CartScreen}/>
-                        <Route path='/shipping' component={ShippingScreen}/>
-                        <Route path='/payment' component={PaymentScreen}/>
-                        <Route path='/placeorder' component={PlaceOrderScreen}/>
-                        <Route path='/order/:id' component={OrderScreen}/>
-                        <Route path='/thankyou/:id' component={ThankYouScreen}/>
-                    </Container>
-
+                    {/*<Container className='mb-0 pb-0'>*/}
+                    <Route path='/login' component={LoginScreen}/>
+                    <Route path='/cart/:id?' component={CartScreen}/>
+                    <Route path='/shipping' component={ShippingScreen}/>
+                    <Route path='/payment' component={PaymentScreen}/>
+                    <Route path='/placeorder' component={PlaceOrderScreen}/>
+                    <Route path='/order/:id' component={OrderScreen}/>
+                    <Route path='/thankyou/:id' component={ThankYouScreen}/>
+                    {/*</Container>*/}
                     <Footer/>
                 </Fragment>
+                {/*<Footer/>*/}
             </Switch>
 
         </Router>
