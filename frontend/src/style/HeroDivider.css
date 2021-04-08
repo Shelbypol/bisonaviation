@@ -1,8 +1,9 @@
 
 .HeroDivider_wrap{
-    top: -38vh;
+    /*top: -320px;*/
+    top: -42vh;
     z-index: 1;
-    position: sticky;
+    /*position: sticky;*/
 }
 
 /*=============== IMG / TITLE WRAP*/
@@ -18,7 +19,6 @@
 .HeroDivider_title {
     color: #660708;
     font-size: 4vw;
-    margin-left: 35vw;
 }
 
 /*================= GRAPHIC =====================*/
@@ -31,25 +31,40 @@
     transform: rotateY(180deg) rotateX(60deg);
 }
 
+/*================ MEDIA QUERY (900px - 1400PX) ===============*/
+/*@media only screen and (min-width: 900px) and (max-width: 1400px){*/
+/*    .HeroDivider_wrap{*/
+/*        top: 6vh;*/
+/*    }*/
 
-/*================ MEDIA 900 PX ===============*/
-@media (max-width: 1000px) {
+/*}*/
+
+
+/*================ MEDIA QUERY (900px) ===============*/
+@media (max-width: 900px) {
     .HeroDivider_wrap{
-        position: sticky;
-        top: -55vh;
-    /*    z-index: 1;*/
+        top: -50vh;
     }
 
-    /* ==================   TITLE   =====================*/
+    .HeroDivider_graphic{
+        background-image: url("../images/bg-graphics/graphics/black-top-large-left.png");
+        background-repeat: no-repeat;
+        height: 300px;
+        top: -15vh;
+        /*z-index: -1;*/
+        transform: rotateY(180deg) rotateX(60deg);
+    }
+
+    /* ===========  TITLE  ============*/
     .HeroDivider_title {
         background-color: #660708;
         color: white;
-        font-size: 4vw;
-        /*margin-left: 35vw;*/
-        padding: 0 1em;
+        font-size: 5vw;
+        padding-left: 1em ;
+        padding-right: 1em ;
     }
 
-    /*================= GRAPHIC =====================*/
+    /*============  GRAPHIC  ==============*/
     .HeroDivider_graphic{
         background-image: url("../images/bg-graphics/graphics/black-top-large-left.png");
         background-repeat: no-repeat;
@@ -60,3 +75,20 @@
     }
 
 }
+
+/*================ MEDIA QUERY (400px) ===============*/
+@media (max-width: 400px) {
+
+    .HeroDivider_img-title-wrap {
+        background-position: 10% 0;
+    }
+
+    .HeroDivider_wrap{
+        top: -55vh;
+    }
+
+
+}
+
+/*================ MEDIA QUERY (1100px) ===============*/
+/*@media (max-width: 1100px) && (min-width:*/

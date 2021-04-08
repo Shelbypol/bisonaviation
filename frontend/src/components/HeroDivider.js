@@ -7,27 +7,37 @@ const HeroDivider = ({img}) => {
 
     return (
         <>
-            <Row className='HeroDivider_wrap'>
+            <Row
+                className='
+                HeroDivider_wrap
+                sticky-top
+                '>
                 <Col xs={12}
-                     // style={{img}}
+                    // style={{img}}
                      className='
-                     align-items-center
-                     d-flex
                      HeroDivider_img-title-wrap
+                     d-flex
+                     justify-content-sm-start
+                     justify-content-md-end
+                     align-items-center
                      m-0
                      p-0
-                     justify-content-lg-center
-                     justify-content-sm-start
                      '>
-                    <p className='HeroDivider_title'>Ask the experts!</p>
+                    <p
+                        className='
+                        HeroDivider_title
+                        pr-5
+                        mr-5
+                        '>
+                        Ask the experts!</p>
                 </Col>
                 <Col xs={12}
                      className='
-                     bg-transparent
                      HeroDivider_graphic
+                     bg-transparent
                      m-0
                      p-0
-                     border
+
                      '>
                 </Col>
             </Row>
