@@ -50,7 +50,7 @@ const FlirScreen = () => {
             />
 
 
-            <Container>
+            <Container className='global_HeroDivider-margin-btm'>
                 <h1 className='FlirScreen_Title'>Airborne FLIR, EO/IR, & Thermography Systems</h1>
             <FlirText/>
             </Container>

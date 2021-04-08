@@ -72,7 +72,7 @@ const TeamScreen = () => {
 
             {/*<Container className='p-0 fluid'>*/}
 
-                <Jumbotron className='px-3 mt-n5 bg-transparent global_cultured'
+                <Jumbotron className='px-3 bg-transparent global_cultured global_HeroDivider-margin-btm'
                            fluid>
                     <h1 className='px-md-5 px-sm-0 m-0' style={{color: 'red'}}>Meet the Bison Team</h1>
                     <br/>

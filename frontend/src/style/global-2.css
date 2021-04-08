@@ -251,6 +251,7 @@ main {
 .global_HeroDivider-margin-btm{
     padding-top: 12vh;
     margin-top: -40vh;
+    z-index: 5;
 }
 
 

@@ -73,13 +73,13 @@ const App = () => {
                     <Route path='/product/:id' component={ProductScreen}/>
 
                 {/* ================    STICKY HEADER ONLY W/ FOOTER    =================*/}
-                <Fragment>
+                {/*<Fragment>*/}
                     <Route path='/wishlist' component={WishListScreen}/>
                     <Route path='/flir' component={FlirScreen}/>
                     <Route path='/team' component={TeamScreen}/>
                     <Route path='/maintenance' component={MaintenanceScreen}/>
                     <Route path='/avionics' component={AvionicsScreen}/>
-                </Fragment>
+                {/*</Fragment>*/}
 
                 {/* ================    STICKY & DESKTOP HEADER W/ FOOTER    =================*/}
                 <Fragment>
