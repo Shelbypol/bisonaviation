@@ -150,21 +150,9 @@ a {
     transition: all var(--speed) ease;
 }
 
-/*.WishListScreen_hero-img {*/
-/*    background-image: url("../../images/bg-graphics/jd-roel-flir-end.png");*/
-/*    background-repeat: no-repeat;*/
-/*    height: 200px;*/
-/*    background-position: 50% -9vh;*/
-/*    width: 100vw;*/
-/*    z-index: 5;*/
-/*}*/
-
-/*.WishListScreen_title {*/
-/*    font-size: 4vw;*/
-/*    color: #660708;*/
-/*    margin-left: 35vw;*/
-/*    top: 50%;*/
-/*}*/
+.WishListScreenImg{
+    background-image: url("../../images/bg-graphics/jd-roel-flir-end.png");
+}
 
 .WishListScreen_graphic {
     z-index: 1;
@@ -172,8 +160,8 @@ a {
 }
 
 .WishListScreen_container {
-    /*padding-top: -10vh;*/
-    /*margin-top: -30vh;*/
+    margin-top: -37vh;
+    z-index: 2;
 }
 
 .WishListScreen_clear-btn {

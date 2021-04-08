@@ -13,6 +13,7 @@ import MobileHeader from "../../components/Headers-Nav-Footer/MobileHeader";
 import StickyHeader from "../../components/Headers-Nav-Footer/StickyHeader";
 import {Jumbotron} from "reactstrap";
 import HeroDivider from "../../components/HeroDivider";
+import heroImg from '../../images/bg-graphics/jd-roel-flir-end.png'
 
 const WishListScreen = () => {
 
@@ -68,27 +69,21 @@ const WishListScreen = () => {
                 <MobileHeader/>
             ) : (
                 <>
-                    <StickyHeader />
+                    <StickyHeader/>
                 </>
             )}
 
-            {/*<Jumbotron*/}
-            {/*    className='WishListScreen_graphic m-0 p-0'>*/}
-
-                {/*<WishListHero/>*/}
-                {/*<Jumbotron*/}
-                {/*    className='Global_graphic-wishlist sticky-top mb-0 position-relative bg-transparent'*/}
-                {/*    fluid>*/}
-                {/*</Jumbotron>*/}
-
-
-            {/*</Jumbotron>*/}
 
 
             <Container className='bg-white py-0 min-vh-100 WishListScreen_container position-relative' fluid>
-                <HeroDivider/>
 
-                <Row className='d-flex justify-content-between w-100 px-5'>
+            <HeroDivider
+                img={'WishListScreenImg'}
+                showImg={true}
+                title={'Ask the experts!'}
+            />
+
+                <Row className='d-flex justify-content-between w-100 px-5' style={{backgroundImage: 'url('}}>
 
                     <Col xs={1} className=' d-flex justify-content-start py-1 px-0'>
                         <Link to='/' className='text-decoration-none'>
@@ -114,12 +109,12 @@ const WishListScreen = () => {
                         ) : (
                             cartItems.length !== 0 && (
                                 <h6 className=' pt-3 mb-0 pb-0'>
-                                    <i style={{fontSize: '1vw', color: 'rgba(0,0,0, .5)'}} className='WishListScreen_mobile-sign-in bg-white'>sign
+                                    <i style={{fontSize: '1vw', color: 'rgba(0,0,0, .5)'}}
+                                       className='WishListScreen_mobile-sign-in bg-white'>sign
                                         in to save</i>
                                 </h6>
                             )
                         )}
-
 
 
                         {cartItems.length === 0

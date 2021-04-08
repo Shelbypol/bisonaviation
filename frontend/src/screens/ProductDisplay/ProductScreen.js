@@ -8,6 +8,9 @@ import Loader from '../../components/Loader'
 import {PRODUCT_CREATE_REVIEW_RESET} from "../../constants/productConstants";
 import Meta from "../../components/Meta";
 import {addToCart, removeFromCart} from "../../actions/cartActions";
+import MobileHeader from "../../components/Headers-Nav-Footer/MobileHeader";
+import StickyHeader from "../../components/Headers-Nav-Footer/StickyHeader";
+import HeroDivider from "../../components/HeroDivider";
 
 const ProductScreen = ({history, match}) => {
     const [qty, setQty] = useState(1);
@@ -29,6 +32,7 @@ const ProductScreen = ({history, match}) => {
 
     const userLogin = useSelector(state => state.userLogin);
     const {userInfo} = userLogin;
+    const [width, setWidth] = useState(window.innerWidth);
 
     useLayoutEffect(() => {
         window.scrollTo(0, 0)
@@ -41,10 +45,11 @@ const ProductScreen = ({history, match}) => {
             setComment('');
             dispatch({type: PRODUCT_CREATE_REVIEW_RESET})
         }
-        dispatch(listProductDetails(match.params.id))
+        dispatch(listProductDetails(match.params.id));
+        window.addEventListener("resize", handleWindowResize);
+        return () => window.removeEventListener("resize", handleWindowResize);
 
-
-    }, [dispatch, match, successProductReview, activeHeart, match, wishList]);
+    }, [dispatch, match, successProductReview, activeHeart, match, wishList, width]);
 
     const like = () => {
         setActiveHeart(!activeHeart);
@@ -76,8 +81,35 @@ const ProductScreen = ({history, match}) => {
     }
 
 
+    const breakpoint = 1000;
+
+
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0)
+    });
+
+    const handleWindowResize = () => {
+        setWidth(window.innerWidth);
+    };
+
+
     return (
         <>
+
+            {width < breakpoint ? (
+                <MobileHeader/>
+            ) : (
+                <>
+                    <StickyHeader/>
+                </>
+            )}
+
+            <HeroDivider
+                img={''}
+                showImg={false}
+                title={''}
+            />
+
             <Jumbotron className='bg-white m-0 px-0 pt-0 pb-5'>
                 <Container className='mb-0 pb-0'>
                     <Link className='global_blood-red bg-transparent btn btn-light mb-3 mt-4 pb-1 px-1'

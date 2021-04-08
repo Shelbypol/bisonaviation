@@ -1,10 +1,5 @@
 
 .TeamScreen_hero-img{
     background-image: url("../../../images/bg-graphics/screen-team/team.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 250px;
-    background-position: 50% 45%;
-    width: 100vw;
-    background-color: black;
+    background-position: 50% 55%;
 }

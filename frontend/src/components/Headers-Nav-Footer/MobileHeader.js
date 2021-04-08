@@ -31,7 +31,7 @@ const MobileHeader = () => {
 
     return (
         <>
-            <header className='m-auto header d-block p-0 col-xs-12'>
+            <header className='m-auto header d-block p-0 col-xs-12 ' style={{zIndex: '3'}}>
 
                 <Navbar expand="xl"
                         collapseOnSelect

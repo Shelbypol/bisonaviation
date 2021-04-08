@@ -248,6 +248,14 @@ main {
 }
 
 
+.global_HeroDivider-margin-btm{
+    padding-top: 12vh;
+    margin-top: -40vh;
+}
+
+
+
+
 /*    ======   MOBILE RESPONSIVE    ======    */
 @media (max-width: 900px) {
     .global_carousel-divider-img{

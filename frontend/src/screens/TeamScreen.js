@@ -1,4 +1,4 @@
-import React, {useLayoutEffect, useState} from 'react'
+import React, {useEffect, useLayoutEffect, useState} from 'react'
 import {Container, Row} from "react-bootstrap";
 import TeamHero from "../components/team-screen/TeamHero";
 import TeamCard from "../components/team-screen/TeamCard";
@@ -18,9 +18,36 @@ import matthewGurniak from '../images/bg-graphics/screen-team/matthew_gurniak.pn
 import halibut from '../images/bg-graphics/screen-team/halibut.png'
 import tuna from '../images/bg-graphics/screen-team/tuna.png'
 import mackerel from '../images/bg-graphics/screen-team/mackeral.png'
+import HeroDivider from "../components/HeroDivider";
+import '../style/2/teamScreen/TeamHero.css';
+import {useDispatch} from "react-redux";
+import MobileHeader from "../components/Headers-Nav-Footer/MobileHeader";
+import StickyHeader from "../components/Headers-Nav-Footer/StickyHeader";
+import Footer from "../components/Headers-Nav-Footer/Footer";
 
 
 const TeamScreen = () => {
+
+
+    const [width, setWidth] = useState(window.innerWidth);
+
+    const breakpoint = 1000;
+
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+
+        window.addEventListener("resize", handleWindowResize);
+        return () => window.removeEventListener("resize", handleWindowResize);
+    }, [dispatch, width]);
+
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0)
+    });
+
+    const handleWindowResize = () => {
+        setWidth(window.innerWidth);
+    };
 
     useLayoutEffect(() => {
         window.scrollTo(0, 0)
@@ -28,7 +55,20 @@ const TeamScreen = () => {
 
     return (
         <>
-            <TeamHero/>
+            {width < breakpoint ? (
+                <MobileHeader/>
+            ) : (
+                <>
+                    <StickyHeader/>
+                </>
+            )}
+
+            <HeroDivider
+                img={'TeamScreen_hero-img'}
+                showImg={true}
+                title={''}
+            />
+
 
             {/*<Container className='p-0 fluid'>*/}
 
@@ -278,6 +318,7 @@ const TeamScreen = () => {
 
                 </Jumbotron>
             {/*</Container>*/}
+            <Footer/>
 
         </>
     )
