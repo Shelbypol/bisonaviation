@@ -100,20 +100,17 @@ const WishListEmail = ({userInfo, cart, cartItems, success}) => {
                         </>
                     ) : (
                         <>
-                            <Row className='d-flex justify-content-between'>
-                                <Col xs={7}>
-                                    <h5 className='global_blue'>Ask the experts!</h5>
-                                </Col>
-                                <Col xs={3}>
-                                    <p>items listed will be included on email</p>
-
+                            <Row className='d-flex justify-content-between mb-4'>
+                                <Col xs={12}>
+                                    <h3 className='global_blue mb-0'>Send us your questions</h3>
+                                    <span style={{color: 'rgba(0,0,0, .8)'}}>Items listed will automatically be included in the email</span>
                                 </Col>
                             </Row>
                         </>
                     )
 
                 )}
-                <Form onSubmit={submitHandler} md={7} xs={12} className='m-3 p-2'>
+                <Form onSubmit={submitHandler} md={7} xs={12} className='mx-0 px-0 my-3 py-2'>
                     <Row>
                         <Col
                             className='global_blood-red p-3 border global_light-grey-bg'>

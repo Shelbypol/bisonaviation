@@ -150,80 +150,67 @@ a {
     transition: all var(--speed) ease;
 }
 
-.WishListScreen_hero-img {
-    background-image: url("../../images/bg-graphics/jd-roel-flir-end.png");
-    background-repeat: no-repeat;
-    /*background-attachment: fixed;*/
-    height: 200px;
-    background-position: 50% -9vh;
-    width: 100vw;
-    /*background-color: black;*/
-    top: 6vh;
-    z-index: 5;
-}
+/*.WishListScreen_hero-img {*/
+/*    background-image: url("../../images/bg-graphics/jd-roel-flir-end.png");*/
+/*    background-repeat: no-repeat;*/
+/*    height: 200px;*/
+/*    background-position: 50% -9vh;*/
+/*    width: 100vw;*/
+/*    z-index: 5;*/
+/*}*/
 
-.WishListScreen_title {
-    font-size: 4vw;
-    color: #660708;
-    margin-left: 50vw;
-    top: 50%;
-}
+/*.WishListScreen_title {*/
+/*    font-size: 4vw;*/
+/*    color: #660708;*/
+/*    margin-left: 35vw;*/
+/*    top: 50%;*/
+/*}*/
 
 .WishListScreen_graphic {
     z-index: 1;
-    /*top: 5vh;*/
-    top: 18vh;
-    /*position: absolute;*/
+
 }
 
 .WishListScreen_container {
-    margin-top: -25vh;
-    padding-top: 10vh;
-    z-index: -2;
+    padding-top: -10vh;
+    /*margin-top: -30vh;*/
 }
 
 .WishListScreen_clear-btn {
     margin-top: 22vh;
     margin-right: 10vw;
+
 }
 
 .WishListScreen_x-btn{
     margin-top: 25vh;
-    margin-left: 10vw;
-    padding: 0 1vw 0 1vw;
+    margin-left: 1vw;
+    /*padding: 0 1vw 0 1vw;*/
 }
 
 .WishListScreen_x-btn:hover{
    border-top: 1px solid black;
    border-bottom: 1px solid black;
+}
 
+.WishListScreen_content{
+    padding-top: 50vh;
 }
 
 
 /*    ======   MOBILE RESPONSIVE    ======    */
 @media (max-width: 900px) {
-    .WishListScreen_container {
-        margin-top: -18vh;
-        padding-top: 10vh;
-        z-index: -2;
-    }
+
 
     .WishListScreen_clear-btn {
-        margin-top: 26vh;
-        margin-right: 10vw;
-    }
-
-    .WishListScreen_x-btn{
-        margin-top: 30vh;
-        margin-left: 10vw;
-        padding: 0 1vw 0 1vw;
-    }
-
-    .WishListScreen_clear-btn {
-        margin-top: 29vh;
-        margin-right: 10vw;
+        /*margin-top: 32vh;*/
+        /*margin-right: 10vw;*/
         background-color: transparent;
         color: black;
+    }
+
+    .WishListScreen_mobile-sign-in{
+        font-size: 5em;
     }
 
 }

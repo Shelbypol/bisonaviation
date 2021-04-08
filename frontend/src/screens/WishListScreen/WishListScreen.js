@@ -12,6 +12,7 @@ import WishListHero from "../../components/Wishlist/WishListHero";
 import MobileHeader from "../../components/Headers-Nav-Footer/MobileHeader";
 import StickyHeader from "../../components/Headers-Nav-Footer/StickyHeader";
 import {Jumbotron} from "reactstrap";
+import HeroDivider from "../../components/HeroDivider";
 
 const WishListScreen = () => {
 
@@ -67,18 +68,29 @@ const WishListScreen = () => {
                 <MobileHeader/>
             ) : (
                 <>
-                    <StickyHeader/>
+                    <StickyHeader />
                 </>
             )}
 
+            {/*<Jumbotron*/}
+            {/*    className='WishListScreen_graphic m-0 p-0'>*/}
 
-            <WishListHero/>
-            <Jumbotron
-                className='Global_graphic mb-0 bg-transparent sticky-top WishListScreen_graphic min-vw-100'
-                fluid>
-                <Row className='d-flex justify-content-between w-100'>
+                {/*<WishListHero/>*/}
+                {/*<Jumbotron*/}
+                {/*    className='Global_graphic-wishlist sticky-top mb-0 position-relative bg-transparent'*/}
+                {/*    fluid>*/}
+                {/*</Jumbotron>*/}
 
-                    <Col xs={1} className=' d-flex justify-content-start p-0'>
+
+            {/*</Jumbotron>*/}
+
+
+            <Container className='bg-white py-0 min-vh-100 WishListScreen_container position-relative' fluid>
+                <HeroDivider/>
+
+                <Row className='d-flex justify-content-between w-100 px-5'>
+
+                    <Col xs={1} className=' d-flex justify-content-start py-1 px-0'>
                         <Link to='/' className='text-decoration-none'>
                             <h6 className='WishListScreen_x-btn global_cursor'>
                                 x
@@ -87,50 +99,35 @@ const WishListScreen = () => {
                     </Col>
 
                     <Col xs={1}
-                         className='WishListScreen_clear-btn global_cursor global_hover-border d-flex justify-content-center align-items-center'
+                         className='WishListScreen_clear-btn py-1 global_cursor global_hover-border d-flex justify-content-center align-items-center'
                          onClick={clearWishList}>
                         clear
                     </Col>
                 </Row>
-            </Jumbotron>
 
+                <Row className='global_bisonRedTxt  position-sticky px-5'>
+                    <Col xs={12} className=''>
 
-            <Container className='bg-white pb-5 pt-3 px-5 min-vh-100 position-sticky WishListScreen_container' fluid>
-                <Row className='m-0 px-0 pb-0 pt-5 d-flex justify-content-between' style={{zIndex: '3'}}>
-                    {/*<Col xs={1} className='d-flex justify-content-start'>*/}
-                    {/*    <Link to='/'>*/}
-                    {/*        <h6 className='sticky-top  global_cursor'>*/}
-                    {/*            x*/}
-                    {/*        </h6>*/}
-                    {/*    </Link>*/}
-                    {/*</Col>*/}
-                    {/*<Col xs={1}*/}
-                    {/*     className='WishListScreen_clear-btn sticky-top global_cursor global_hover-border d-flex justify-content-center align-items-center'*/}
-                    {/*     onClick={clearWishList}>*/}
-                    {/*    clear*/}
-                    {/*</Col>*/}
-                </Row>
-                <Row xs={12} className='global_bisonRedTxt pt-3'>
-                    <Col xs={12}>
-
-                        {userInfo ? (
-                            <h6 className='global_cursor-underline global_bisonRedTxt mb-3 py-3 px-2'
+                        {userInfo && cartItems.length > 0 ? (
+                            <h6 className='WishListScreen_mobile-sign-in global_cursor-underline global_bisonRedTxt mb-3 pt-3 px-2'
                                 onClick={addToWishListHandler}>Save wishlist to profile</h6>
                         ) : (
-                            <Link to='/login'>
-                                {cartItems.length !== 0 && (
-                                    <h6 className='py-3'>
-                                        <i style={{fontSize: '1vw', color: 'rgba(0,0,0, .5)'}} className='bg-white'>sign
-                                            in to save</i>
-                                    </h6>
-                                )}
-                            </Link>
+                            cartItems.length !== 0 && (
+                                <h6 className=' pt-3 mb-0 pb-0'>
+                                    <i style={{fontSize: '1vw', color: 'rgba(0,0,0, .5)'}} className='WishListScreen_mobile-sign-in bg-white'>sign
+                                        in to save</i>
+                                </h6>
+                            )
                         )}
+
+
+
                         {cartItems.length === 0
                             ? (
-                                <p className='mt-5 text-center'>Your wishlist is empty <p style={{fontSize: '12px'}}>
+                                <h2 className='mt-5 text-center global_blood-red'>Your wishlist is empty <p
+                                    style={{fontSize: '12px'}}>
                                     <Link
-                                        to={'/products'} className='global_bisonRedTxt'>Browse items</Link></p></p>)
+                                        to={'/products'} className='global_eerie-black'>Browse items</Link></p></h2>)
                             : (
                                 <>
                                     < WishListEmail userInfo={userInfo} cartItems={cartItems} cart={cart}

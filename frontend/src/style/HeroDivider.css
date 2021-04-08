@@ -1,0 +1,62 @@
+
+.HeroDivider_wrap{
+    top: -38vh;
+    z-index: 1;
+    position: sticky;
+}
+
+/*=============== IMG / TITLE WRAP*/
+.HeroDivider_img-title-wrap {
+    background-image: url("../images/bg-graphics/jd-roel-flir-end.png");
+    background-repeat: no-repeat;
+    background-color: #FBFAFB;
+    height:350px;
+}
+
+
+/* ==================   TITLE   =====================*/
+.HeroDivider_title {
+    color: #660708;
+    font-size: 4vw;
+    margin-left: 35vw;
+}
+
+/*================= GRAPHIC =====================*/
+.HeroDivider_graphic{
+    background-image: url("../images/bg-graphics/graphics/black-top-large-left.png");
+    background-repeat: no-repeat;
+    height: 300px;
+    top: -15vh;
+    z-index: -1;
+    transform: rotateY(180deg) rotateX(60deg);
+}
+
+
+/*================ MEDIA 900 PX ===============*/
+@media (max-width: 1000px) {
+    .HeroDivider_wrap{
+        position: sticky;
+        top: -55vh;
+    /*    z-index: 1;*/
+    }
+
+    /* ==================   TITLE   =====================*/
+    .HeroDivider_title {
+        background-color: #660708;
+        color: white;
+        font-size: 4vw;
+        /*margin-left: 35vw;*/
+        padding: 0 1em;
+    }
+
+    /*================= GRAPHIC =====================*/
+    .HeroDivider_graphic{
+        background-image: url("../images/bg-graphics/graphics/black-top-large-left.png");
+        background-repeat: no-repeat;
+        height: 300px;
+        top: -15vh;
+        z-index: -1;
+        transform: rotateY(180deg) rotateX(60deg);
+    }
+
+}
