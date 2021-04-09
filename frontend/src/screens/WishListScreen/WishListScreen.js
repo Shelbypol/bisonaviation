@@ -95,9 +95,9 @@ const WishListScreen = () => {
                     </Col>
 
                     <Col xs={1}
-                         className='WishListScreen_clear-btn py-1 global_cursor global_hover-border d-flex justify-content-center align-items-center'
+                         className='WishListScreen_clear-btn py-1 global_cursor global_hover-border d-flex justify-content-center align-content-center'
                          onClick={clearWishList}>
-                       <h6 className='WishListScreen_clear-btn-txt'>clear</h6>
+                       <h6 className='WishListScreen_clear-btn-txt text-white'>clear</h6>
                     </Col>
                 </Row>
 
