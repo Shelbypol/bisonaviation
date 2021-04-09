@@ -5,6 +5,7 @@
 
 .Services_text-row{
     height: 25vh;
+    margin-top: 3em;
 }
 
 .Services_btn{
@@ -15,13 +16,12 @@
     z-index: 200;
     letter-spacing: .1em;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
-    background-color: #660708;
 }
 
 .Services_btn:hover{
     background-color: #F5F3F4;
     /*background-color: #660708;*/
-    color: #660708;
+    color: #2576e5;
     /*color: #F5F3F4;*/
     font-weight: lighter;
     border: none;
@@ -45,6 +45,11 @@
     height: 238px;
 }
 
+.Services_icon{
+    font-size: 3em;
+    color: slategray;
+}
+
 .Services_nav_text {
     color: white;
     font-size: 28px;
@@ -53,16 +58,27 @@
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+
+    background-color: #660708;
+    width: 50vh;
+    padding: 0 1em 0 1em;
+    margin-left: 25vh;
+}
+
+.Services_nav_text:hover{
+    background-color: white;
+    color: #660708;
+}
+
+.Services_first-col{
+    /*width: 75vh;*/
 }
 
 /*    ======   MOBILE RESPONSIVE    ======    */
 @media (max-width: 900px) {
     .Services_nav_text {
         background-color: #660708;
-
-        /*color: white;*/
         width: 50vh;
-
         padding: 0 1em 0 1em;
     }
 

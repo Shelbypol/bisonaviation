@@ -42,7 +42,6 @@ const FlirScreen = () => {
                 </>
             )}
 
-
             <HeroDivider
                 img={'FlirHero_img'}
                 showImg={true}
