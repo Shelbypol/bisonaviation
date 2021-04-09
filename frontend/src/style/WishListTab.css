@@ -77,8 +77,10 @@ a {
     width: 175%;
     background-color: #fff;
     /*border-left: var(--border);*/
-    border-left: 5px solid #660708;
-    border-top-left-radius: 4vw;
+    border-left: 2vw solid #660708;
+    /*border-left: 5px solid #660708;*/
+    /*border-top-left-radius: 1vw;*/
+    border-top: 2px solid white;
     /*border-radius: var(--border-radius);*/
     overflow-y: scroll;
     margin-right: -5.8vw;

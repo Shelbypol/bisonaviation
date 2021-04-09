@@ -154,35 +154,48 @@ a {
     background-image: url("../../images/bg-graphics/jd-roel-flir-end.png");
 }
 
-.WishListScreen_graphic {
+/*.WishListScreen_graphic {*/
+/*    z-index: 1;*/
+/*}*/
+
+.WishListScreen_HeroDivider-margin{
+    margin-top: -45vh;
+    /*margin-top: -55vh;*/
+    padding-top: 20vh;
     z-index: 1;
-
-}
-
-.WishListScreen_container {
-    margin-top: -37vh;
-    z-index: 2;
+    min-height: 68vh;
 }
 
 .WishListScreen_clear-btn {
-    margin-top: 22vh;
+    /*margin-top: 22vh;*/
     margin-right: 10vw;
+}
 
+.WishListScreen_clear-btn-text{
+    color: white;
+}
+
+.WishListScreen_clear-btn-text:hover{
+    color: black;
 }
 
 .WishListScreen_x-btn{
-    margin-top: 25vh;
+    /*margin-top: 25vh;*/
     margin-left: 1vw;
     /*padding: 0 1vw 0 1vw;*/
 }
 
 .WishListScreen_x-btn:hover{
-   border-top: 1px solid black;
-   border-bottom: 1px solid black;
+   font-size: 2vh;
 }
 
 .WishListScreen_content{
     padding-top: 50vh;
+}
+
+.WisListEmail_scroll-box{
+    max-height: 55vh;
+    overflow-y: scroll;
 }
 
 
@@ -198,7 +211,8 @@ a {
     }
 
     .WishListScreen_mobile-sign-in{
-        font-size: 5em;
+        /*font-size: 5em;*/
+        font-size: 2vh;
     }
 
 }

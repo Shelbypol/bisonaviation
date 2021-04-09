@@ -74,16 +74,17 @@ const WishListScreen = () => {
             )}
 
 
-
-            <Container className='bg-white py-0 min-vh-100 WishListScreen_container position-relative' fluid>
-
             <HeroDivider
                 img={'WishListScreenImg'}
                 showImg={true}
                 title={'Ask the experts!'}
             />
+            <Container className='bg-white WishListScreen_HeroDivider-margin' fluid>
+            {/*<Container className='bg-white min-vh-100 global_HeroDivider-margin border' fluid>*/}
+            {/*<Container className='bg-white min-vh-100 WishListScreen_HeroDivider-margin border' fluid>*/}
 
-                <Row className='d-flex justify-content-between w-100 px-5' style={{backgroundImage: 'url('}}>
+
+                <Row className='d-flex justify-content-between mt-0 ml-5'>
 
                     <Col xs={1} className=' d-flex justify-content-start py-1 px-0'>
                         <Link to='/' className='text-decoration-none'>
@@ -96,11 +97,11 @@ const WishListScreen = () => {
                     <Col xs={1}
                          className='WishListScreen_clear-btn py-1 global_cursor global_hover-border d-flex justify-content-center align-items-center'
                          onClick={clearWishList}>
-                        clear
+                       <h6 className='WishListScreen_clear-btn-txt'>clear</h6>
                     </Col>
                 </Row>
 
-                <Row className='global_bisonRedTxt  position-sticky px-5'>
+                <Row className='global_bisonRedTxt  px-5'>
                     <Col xs={12} className=''>
 
                         {userInfo && cartItems.length > 0 ? (
@@ -109,8 +110,8 @@ const WishListScreen = () => {
                         ) : (
                             cartItems.length !== 0 && (
                                 <h6 className=' pt-3 mb-0 pb-0'>
-                                    <i style={{fontSize: '1vw', color: 'rgba(0,0,0, .5)'}}
-                                       className='WishListScreen_mobile-sign-in bg-white'>sign
+                                    <i style={{ color: 'rgba(0,0,0, .5)'}}
+                                       className='WishListScreen_mobile-sign-in bg-transparent'>sign
                                         in to save</i>
                                 </h6>
                             )
