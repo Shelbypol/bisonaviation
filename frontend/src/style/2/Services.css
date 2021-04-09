@@ -1,7 +1,11 @@
 .Services_row{
-    /*height: 400px ;*/
+   /*background-color: rgba(0,0,0,.5);*/
+    width: 100vw;
 }
 
+.Services_text-row{
+    height: 25vh;
+}
 
 .Services_btn{
     color: #F5F3F4;
@@ -25,7 +29,7 @@
 
 .Services_nav_overlay {
 
-    background-color: rgba(0,0,0, .5);
+    /*background-color: rgba(0,0,0, .5);*/
 }
 
 .Services_nav_hoverTitle:hover  {
@@ -42,12 +46,36 @@
 }
 
 .Services_nav_text {
+    color: white;
     font-size: 28px;
     letter-spacing: .1em;
     position: absolute;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+}
+
+/*    ======   MOBILE RESPONSIVE    ======    */
+@media (max-width: 900px) {
+    .Services_nav_text {
+        background-color: #660708;
+
+        /*color: white;*/
+        width: 50vh;
+
+        padding: 0 1em 0 1em;
+    }
+
+    .Services_nav_text:hover{
+        background-color: white;
+        color: #660708;
+    }
+
+    .Services_text-row{
+        margin-top: 3em;
+    }
+
+
 }
 
 
