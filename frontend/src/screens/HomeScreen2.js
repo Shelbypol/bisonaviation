@@ -33,11 +33,11 @@ const HomeScreen2 = () => {
             {/*    <hr className='global_cultured-bg'/>*/}
             {/*</Container>*/}
 
-            <Container className='p-o py-5 fluid'>
+            {/*<Container className='p-0 m-0 bg-white' fluid>*/}
                 <Services
                     showTag={true}
                 />
-            </Container>
+            {/*</Container>*/}
             <hr className='global_blood-red-bg'/>
 
             <Jumbotron className='Global_Avionics_bg-img p-0 mb-1 mt-n3 d-flex align-content-stretch bg-transparent'

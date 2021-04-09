@@ -47,6 +47,7 @@ const FlirScreen = () => {
                 img={'FlirHero_img'}
                 showImg={true}
                 title={'EO/IR - FLIR'}
+                showDivider={true}
             />
 
 <Container className=' global_HeroDivider-margin pt-5'>
