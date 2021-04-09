@@ -9,7 +9,7 @@ const HeroDivider = ({img, showImg, textColor, title}) => {
         <>
 
             {/*<Row  className='HeroDivider_no-img-wrap' >*/}
-             <Row  className={!showImg ?('HeroDivider_no-img-wrap') : ('HeroDivider_wrap')} >
+            <Row className={!showImg ? ('HeroDivider_no-img-wrap') : ('HeroDivider_wrap')}>
 
 
                 {showImg && (
@@ -30,15 +30,27 @@ const HeroDivider = ({img, showImg, textColor, title}) => {
                     </Col>
                 )}
 
-                <Col xs={12}
-                     className='
+                {/*{!showImg ? (*/}
+                {/*    <Col xs={12}*/}
+                {/*         className='*/}
+                {/*     HeroDivider_graphic-no-img*/}
+                {/*     bg-transparent*/}
+                {/*     m-0*/}
+                {/*     p-0*/}
+
+                {/*     '>*/}
+                {/*    </Col>*/}
+                {/*) : (*/}
+                    <Col xs={12}
+                         className='
                      HeroDivider_graphic
                      bg-transparent
                      m-0
                      p-0
 
                      '>
-                </Col>
+                    </Col>
+                {/*)}*/}
             </Row>
 
 

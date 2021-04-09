@@ -48,10 +48,7 @@ const ProductsDisplayScreen = ({match, history}) => {
                         title={''}
                     />
 
-                {/*<Image src={heroImg} fluid className='Global_graphic-productDisplayScreen sticky-top w-100 h-100' />*/}
-            <div className='bg-white global_HeroDivider-margin-btm'>
-                {/*<Jumbotron className='Global_graphic-productDisplayScreen bg-transparent sticky-top' fluid> </Jumbotron>*/}
-                {/*<Jumbotron className='Global_graphic-productDisplayScreen-bg bg-transparent sticky-top' fluid> </Jumbotron>*/}
+            <div className='bg-white global_HeroDivider-margin' >
                 <Jumbotron className='bg-white mt-n5 mb-0 p-0' style={{zIndex: '2'}} fluid>
 
                     <>

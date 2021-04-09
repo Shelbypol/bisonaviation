@@ -46,18 +46,20 @@ const FlirScreen = () => {
             <HeroDivider
                 img={'FlirHero_img'}
                 showImg={true}
-                title={''}
+                title={'EO/IR - FLIR'}
             />
 
+<Container className=' global_HeroDivider-margin pt-5'>
 
-            <Container className='global_HeroDivider-margin-btm'>
+
                 <h1 className='FlirScreen_Title'>Airborne FLIR, EO/IR, & Thermography Systems</h1>
             <FlirText/>
-            </Container>
+            {/*</Container>*/}
 
-                <Jumbotron className='FlirScreen_style bg-transparent' fluid>
+                <Jumbotron className='FlirScreen_style bg-transparent p-0 m-0' fluid>
                     <FlirTable/>
                 </Jumbotron>
+</Container>
 
             <Footer />
         </>

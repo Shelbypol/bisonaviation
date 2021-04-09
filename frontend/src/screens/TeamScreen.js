@@ -66,23 +66,23 @@ const TeamScreen = () => {
             <HeroDivider
                 img={'TeamScreen_hero-img'}
                 showImg={true}
-                title={''}
+                title={'Meet the Bison Team'}
             />
 
 
             {/*<Container className='p-0 fluid'>*/}
 
-                <Jumbotron className='px-3 bg-transparent global_cultured global_HeroDivider-margin-btm'
+                <Jumbotron className='px-3 bg-transparent global_cultured global_HeroDivider-margin'
                            fluid>
-                    <h1 className='px-md-5 px-sm-0 m-0' style={{color: 'red'}}>Meet the Bison Team</h1>
+                    <h1 className='px-md-5 px-sm-0 m-0 global_red d-flex d-sm-none d-md-block'>The Team</h1>
                     <br/>
-                    <p className='px-md-5 px-sm-0 m-0'>The Bison Aviation team is made up of professionally trained, highly skilled individuals, selected specifically for their particular expertise in the fields of general aviation maintenance and avionics. All of our primary technicians are fully FAA licensed (something which isn't true in most maintenance shops). The experience and skills of our team members is what makes Bison Aviation a leader in the aircraft service industry and we are proud to have each of these individuals as a part of the Bison Aviation Team!</p>
+                    <p className='px-md-5 py-0 px-sm-0 m-0'>The Bison Aviation team is made up of professionally trained, highly skilled individuals, selected specifically for their particular expertise in the fields of general aviation maintenance and avionics. All of our primary technicians are fully FAA licensed (something which isn't true in most maintenance shops). The experience and skills of our team members is what makes Bison Aviation a leader in the aircraft service industry and we are proud to have each of these individuals as a part of the Bison Aviation Team!</p>
                 </Jumbotron>
 
                 <Jumbotron className='mt-n5 mx-3 bg-transparent px-md-5 px-sm-0'
                            fluid>
 
-                    <Row>
+                    <Row >
                             {/*   JOHN ATKIN   */}
                             <TeamCard
                                 eventKey={'0'}

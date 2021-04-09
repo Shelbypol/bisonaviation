@@ -247,11 +247,12 @@ main {
     /*height: 10vh;*/
 }
 
-
-.global_HeroDivider-margin-btm{
-    padding-top: 12vh;
-    margin-top: -40vh;
+/*=================     GRAPHIC BTM MARGIN      ==============*/
+.global_HeroDivider-margin{
+    margin-top: -36vh;
     z-index: 5;
+    /*margin-top: -36vh;*/
+    /*z-index: 5;*/
 }
 
 
