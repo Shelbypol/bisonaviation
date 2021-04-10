@@ -72,16 +72,16 @@ const NavItem = (props) => {
              // handleClick(e);
             // setOpen(!open);
             //  handleScroll(e)
-         }} className="wishList-nav-item pt-2"
+         }} className="wishList-nav-item pt-1"
              >
             {/*<li ref={node} onClick={(e) => (handleScroll(e))} className="wishList-nav-item">*/}
             {/*<a href="#" className="wishList-icon-button" onClick={() => setOpen(!open)}>*/}
             <a onClick={() => setOpen(!open)}>
                 {cartItems.length === 0 ? (
-                    <p className='global_cursor global_white-text-red-hover pt-2'>{props.icon}</p>
+                    <span className='global_cursor StickyHeader_links w-100'>&nbsp;{props.icon}</span>
                 ) : (
                     <>
-                        <p className=' global_cursor global_white-text-red-hover ml-2 pt-2'>{cartItems.length}&nbsp;{props.icon}</p>
+                        <span className=' global_cursor StickyHeader_links w-100 text-white'>{cartItems.length}&nbsp;{props.icon}&nbsp;</span>
                     </>
                 )}
             </a>

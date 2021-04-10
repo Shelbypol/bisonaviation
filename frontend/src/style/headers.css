@@ -15,14 +15,10 @@
 
 .DesktopHeader_nav {
     height: 15vh;
-    /*height: 20vh;*/
-    /*max-height: 100%;*/
-    /*margin-top: -7vh;*/
-    /*top: -6vh;*/
     bottom: 0;
     z-index: 2;
-    background-image: url("../images/bg-graphics/graphics/dots.png");
-    background-color: rgba(0,0,0, .9);
+    /*background-image: url("../images/bg-graphics/graphics/dots.png");*/
+    background-color: rgba(0,0,0, .5);
 }
 
 /*       STICKY HEADER       */
@@ -34,16 +30,18 @@
     margin: 0;
 }
 
+.StickyHeader_right-row{
+    height: 6vh;
+}
+
+
+
 .StickyHeader_nav{
-    /*background-image: url("../images/bg-graphics/graphics/dots.png");*/
-    background-color: #06080b;
-    /*background-color: rgba(0,0,0, 1);*/
+    background-color: #414141;
     height: 6vh;
 }
 
 .StickyHeader_search_btn_padding{
-    /*padding-top: 2em;*/
-    /*padding-bottom: 1.45em;*/
     padding: .87em .8em;
     background-color:  #4A433D;
     color: #000;

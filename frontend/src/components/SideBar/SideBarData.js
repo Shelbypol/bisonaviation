@@ -21,7 +21,7 @@ const SideBarData = ({showSidebar}) => {
 
     useEffect(() => {
 
-    }, [loginShow]);
+    }, [loginShow, userInfo]);
 
     const loginForm = () => {
         setLoginShow(!loginShow)
