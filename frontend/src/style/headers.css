@@ -6,63 +6,47 @@
     cursor: pointer;
 }
 
-.DesktopHeader_search_btn_padding{
-    /*padding-top: 1.82em;*/
-    /*padding: -1em -1em;*/
+.DesktopHeader_search_btn_padding {
     padding: .95em 1em;
-    background-color:  #4A433D;
+    background-color: rgba(0,0,0,.5)
 }
 
 .DesktopHeader_nav {
     height: 15vh;
     bottom: 0;
     z-index: 2;
-    /*background-color: transparent;*/
-    /*!*background-image: url("../images/bg-graphics/graphics/dots.png");*!*/
-    /*background-image: url("../images/bg-graphics/graphics/body-bg.png");*/
-    /*background-color: rgba(0,0,0, .5);*/
-    background-color: transparent;
-}
-
-/*       STICKY HEADER       */
-
-.StickyHeader_searchBox{
-    width: 16vw;
-    /*margin-top: 6vh;*/
+    background-color: rgba(255, 255, 255, .3);
     padding-top: 1.5vh;
     margin: 0;
 }
 
-.StickyHeader_right-row{
+.DesktopHeader_search-color{
+    background-color: rgba(255, 255, 255, .8);}
+
+.StickyHeader_right-row {
     height: 6vh;
 }
 
 
-
-.StickyHeader_nav{
-    /*background-color: transparent;*/
-    background-color: rgba(0,0,0,.8);
-border-bottom: 1px solid rgba(255,255,255,.5);
+.StickyHeader_nav {
+    background-color: rgba(0,0,0,1);
+    /*background-color: rgba(96,96,96,.1);*/
     height: 6vh;
 }
 
-.StickyHeader_search_btn_padding{
+.StickyHeader_search_btn_padding {
     padding: .87em .8em;
-    background-color:  #4A433D;
+    background-color: #4A433D;
     color: #000;
 }
 
-.StickyHeader_search_btn_padding:hover{
+.StickyHeader_search_btn_padding:hover {
     background-color: #660708;
     color: white;
 }
 
-.StickyHeader_icon-size{
+.StickyHeader_icon-size {
     font-size: 1.5em;
-}
-
-.StickyHeader_search-gradient{
-    /*background: linear-gradient(to right, #161A1D, #B1A7A6);*/
 }
 
 /* HIDE AND SHOW ICONS */
@@ -78,51 +62,52 @@ border-bottom: 1px solid rgba(255,255,255,.5);
     display: none;
 }
 
-.StickyHeader_links{
-    color: rgba(255,255,255, 0.5);
+.StickyHeader_links {
+    color: rgba(255, 255, 255, 0.5);
 }
 
-.StickyHeader_links:hover{
+.StickyHeader_links:hover {
     color: white;
 }
 
 /* =================    LOGIN /WISHLIST /CONTACT BTNS   ==========*/
-.StickyHeader_login-btn{
+.StickyHeader_login-btn {
     color: white;
-    /*background-color: rgba(0,0,0,.);*/
-    background-color: rgba(255,255,255,.1);
+    /*background-color: rgba(255, 255, 255, .1);*/
 }
+
 /*======    WISHLIST    ============*/
-.StickyHeader_wishlist-btn{
+.StickyHeader_wishlist-btn {
     color: white;
 }
 
-.StickyHeader_wishlist-btn:hover{
+.StickyHeader_wishlist-btn:hover {
     color: black;
 }
 
-.StickyHeader_wishlist-btn-bg{
-    background-color: rgba(0,0,0,.2);
+.StickyHeader_wishlist-btn-bg {
+    /*background-color: rgba(0, 0, 0, .2);*/
 
     /*background-color: rgba(255,255,255,.1);*/
 }
 
-.StickyHeader_wishlist-btn-bg:hover{
+.StickyHeader_wishlist-btn-bg:hover {
     background-color: lightgray;
     color: black !important;
 }
+
 /*======    CONTACT    ============*/
-.StickyHeader_contact-btn{
+.StickyHeader_contact-btn {
     color: black !important;
     background-color: white;
 }
 
-.StickyHeader_contact-btn:hover{
-    color: rgba(0,0,0,.5) !important;
+.StickyHeader_contact-btn:hover {
+    color: rgba(0, 0, 0, .5) !important;
     /*background-color: rgba(0,0,0,.2);*/
 }
 
-.StickyHeader_contact-btn-bg{
+.StickyHeader_contact-btn-bg {
 
 }
 
@@ -142,7 +127,7 @@ button.navbar-toggler:hover {
 }
 
 .dropdown-menu {
-    border-left: 5px solid rgba(90, 00, 09,1);
+    border-left: 5px solid rgba(90, 00, 09, 1);
     background-color: black;
     color: white;
 }
@@ -166,25 +151,25 @@ button.navbar-toggler:hover {
     height: 12vh;
 }
 
-.MobileHeader_search_btn_padding{
+.MobileHeader_search_btn_padding {
     padding-top: 1em;
     padding-bottom: 1em;
     color: white;
 }
 
-.MobileHeader_text{
+.MobileHeader_text {
     font-size: 2.5vw;
     padding-top: 3vw;
     padding-bottom: 3vw;
-    border-bottom: .01vh solid rgba(255,255,255, .1);
+    border-bottom: .01vh solid rgba(255, 255, 255, .1);
 }
 
-.MobileHeader_text:hover{
+.MobileHeader_text:hover {
     background-color: #2576e5;
     color: white;
 }
 
-.MobileHeader_login-text{
+.MobileHeader_login-text {
     font-size: 2.5vw;
     padding-top: 4vw;
     padding-bottom: 4vw;
@@ -193,25 +178,25 @@ button.navbar-toggler:hover {
     margin-top: auto;
 }
 
-.MobileHeader_login-text:hover{
+.MobileHeader_login-text:hover {
     background-color: #2576e5;
     color: white;
 }
 
-.MobileHeaderAdmin_text{
+.MobileHeaderAdmin_text {
     font-size: 2.5vw;
     padding-top: 4vw;
     padding-bottom: 4vw;
-    background-color:lightgrey;
+    background-color: lightgrey;
     color: black;
     border-bottom: 1px solid black;
 }
 
-.MobileHeaderAdmin_text:hover{
+.MobileHeaderAdmin_text:hover {
     background-color: gray;
 }
 
-.MobileHeader_cart-length{
+.MobileHeader_cart-length {
     margin-left: 50vw;
     border: 1px solid white;
 }
@@ -224,6 +209,7 @@ button.navbar-toggler:hover {
         border-color: #2576e5;
     }
 }
+
 @keyframes borderBlink {
     from, to {
         border-color: transparent
@@ -232,10 +218,12 @@ button.navbar-toggler:hover {
         border-color: #2576e5;
     }
 }
-.borderBlink{
+
+.borderBlink {
     border-left: 2px solid #2576e5;
     /* add 'border-color: transparent' if you wish no border to show initially */
 }
+
 .borderBlink {
     -webkit-animation: borderBlink 3s step-end infinite;
     animation: borderBlink 3s step-end infinite;
@@ -243,7 +231,7 @@ button.navbar-toggler:hover {
 
 /*    ======   MOBILE RESPONSIVE    ======    */
 @media (max-width: 500px) {
-    .MobileHeader_text{
+    .MobileHeader_text {
         font-size: 4vw;
     }
 

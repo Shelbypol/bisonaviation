@@ -55,7 +55,7 @@ const HeroCarousel = (
                 <Carousel.Item>
                     <Carousel.Caption>
                         <Row className='global_carousel-text-box'>
-                            <Col md={5} xs={7} className='global_carousel-text-top-bar global_red-bg'> </Col>
+                            <Col md={5} xs={7} className='global_carousel-text-top-bar'> </Col>
 
                             <Col xs={12}
                                  className='d-flex justify-content-start align-content-center '>

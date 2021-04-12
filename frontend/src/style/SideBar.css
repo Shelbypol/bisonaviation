@@ -19,7 +19,7 @@
     width: 20vw;
     height: 100vh;
     display: flex;
-    justify-content: start;
+    justify-content: end;
     position: absolute;
     padding-left: 2vw;
     padding-top: 1vw;

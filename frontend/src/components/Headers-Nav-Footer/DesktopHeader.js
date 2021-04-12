@@ -18,9 +18,9 @@ const DesktopHeader = () => {
             <Fade top duration={3000} >
                 <Navbar expand="sm"
                         collapseOnSelect
-                        className='DesktopHeader_nav navbar navbar-dark navbar-expand-lg'>
+                        className='DesktopHeader_nav navbar global_dots navbar-dark navbar-expand-lg py-0 px-4 m-0'>
 
-                    <Container className='col-sm-12'>
+                    <Container className='col-sm-12 p-0 m-0'>
 
                         <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                         <Navbar.Collapse id="basic-navbar-nav">
@@ -40,9 +40,9 @@ const DesktopHeader = () => {
                                 <Route render={({history}) => <SearchBox history={history}
                                                                          searchSize={'sm'}
                                                                          formClasses={'col-sm-12'}
-                                                                         searchClasses={'col-10 global_gradient text-white'}
+                                                                         searchClasses={'col-10 DesktopHeader_search-color'}
                                                                          btnSize={'sm'}
-                                                                         btnClasses={'global_bisonDarkFadedBgColorHover DesktopHeader_search_btn_padding col-2 rounded-right'}
+                                                                         btnClasses={'DesktopHeader_search_btn_padding col-2 rounded-right'}
                                                                          iconClass={'fal fa-search'}
                                 />}/>
 

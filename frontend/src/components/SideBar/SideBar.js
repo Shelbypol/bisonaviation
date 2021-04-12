@@ -45,8 +45,8 @@ const SideBar = () => {
                     <>
                         {userInfo.isAdmin && (
                             <Link to='#'>
-                                <h4 onClick={showSidebar}
-                                    className='SideBar_Name d-flex justify-content-center pr-2'>{userInfo.name}</h4>
+                                <h6 onClick={showSidebar}
+                                    className='SideBar_Name d-flex justify-content-center px-5'>{userInfo.name}</h6>
                             </Link>
                         )}
 
