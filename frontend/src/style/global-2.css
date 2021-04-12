@@ -169,7 +169,6 @@ main {
     margin-left: -5vw;
     width: 75%
 }
-
 .global_carousel-title{
     font-size: 3vw !important;
 }
@@ -183,16 +182,15 @@ main {
 }
 
 .global_carousel-text-top-bar {
-    height: 1.5vh !important;
+    height: 1.2vh !important;
     margin-top: -3vh;
-    /*background-color: black;*/
-    background-color: rgba(255, 255, 255, .7);
+    background-color: rgba(255, 255, 255, .5);
 }
 
 .global_carousel-text-btm-bar{
-    height: 1.5vh !important;
+    height: 1.2vh !important;
     margin-top: 3vh;
-    background-color: rgba(255, 255, 255, .7);
+    background-color: rgba(255, 255, 255, .5);
 }
 
 

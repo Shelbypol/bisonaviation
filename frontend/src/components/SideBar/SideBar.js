@@ -43,12 +43,12 @@ const SideBar = () => {
 
                 {userInfo ? (
                     <>
-                        {userInfo.isAdmin && (
-                            <Link to='#'>
+                        <Link to='#'>
+
                                 <h6 onClick={showSidebar}
                                     className='SideBar_Name d-flex justify-content-center px-5'>{userInfo.name}</h6>
-                            </Link>
-                        )}
+                        </Link>
+
 
                         <li className='SideBar-nav-text'>
                             <Link to='/profile'>

@@ -1,8 +1,11 @@
 import React from 'react'
 import {Row, Col} from 'reactstrap';
 import img1 from '../images/bg-graphics/graphics/fs-slider-caption-bg.png'
-import {Carousel} from "react-bootstrap"
+import {Carousel, Nav, Navbar} from "react-bootstrap"
 import Slide from "react-reveal/Slide";
+import {LinkContainer} from "react-router-bootstrap";
+import logo from "../images/bg-graphics/graphics/Final-Logo-Horizontal.png";
+import SocialIcons from "./SocialIcons";
 
 
 const HeroCarousel = (
@@ -87,6 +90,9 @@ const HeroCarousel = (
                                 alt=" "
                                 height={'100%'}
                             />
+                    <SocialIcons socialClassName={'col-sm-3 mt-n4 justify-content-end'}
+                                 contactClassName={'d-none'}
+                    />
                         </Slide>
                     </div>
                 </Carousel.Item>
