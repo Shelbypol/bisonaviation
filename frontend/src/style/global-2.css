@@ -24,7 +24,10 @@ main {
 }
 
 .global_bg-overlay{
-    background-color: rgba(0,0,0,.5);
+    background-color: rgba(0,0,0,.5) ;
+    /*background-color: rgba(255,255,255,.1) ;*/
+    /*background-image: linear-gradient(90deg, #000000 25%, #414141 74%);*/
+    /*background-color: #333333;*/
 }
 /*================= SITE THEME ===================*/
 /* COLORS-BG */

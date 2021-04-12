@@ -63,7 +63,7 @@ const StickyHeader = () => {
                         <Nav
                             className=' d-sm-none d-md-block min-vw-100 StickyHeader_nav d-lg-flex justify-content-between'>
                             {userInfo ? (
-                                <Nav xs={8} className='d-flex justify-content-start pl-3'>
+                                <Nav xs={8} className='pl-3'>
                                     <SideBar/>
 
                                     {/*  HOME  */}
@@ -122,7 +122,7 @@ const StickyHeader = () => {
                                 </Nav>
                             ) : (
                                 <>
-                                    <Nav xs={8} className='d-flex justify-content-start pl-3'>
+                                    <Nav xs={6} className=' pl-3'>
                                         {/*  HOME  */}
                                         <LinkContainer className='mx-1' to='/'>
                                             <Nav.Link>
@@ -184,25 +184,22 @@ const StickyHeader = () => {
 
 
                             {/*============= PROFILE BTNS ==============*/}
-                            <Nav xs={3} className='d-flex justify-content-end pr-3'>
+                            <Nav className=' pr-3 w-25 d-flex justify-content-end'>
                                 <Nav.Link
-                                    className='d-flex justify-content-center'>
+                                    className=' w-25 d-flex align-items-center justify-content-center StickyHeader_wishlist-btn-bg'>
                                     <WishListTab/>
                                 </Nav.Link>
 
                                 {!userInfo && (
-                                    <Nav.Link className='d-flex justify-content-center'>
+                                    <span className=' w-25 d-flex align-items-center justify-content-center StickyHeader_login-btn'>
                                         <SideBar/>
 
-                                    </Nav.Link>
+                                    </span>
                                 )}
 
                                 <LinkContainer to='/contact'>
-                                    <Nav.Link  className='d-flex justify-content-center align-items-center StickyHeader_contact-btn'>
-                                        {/*<span*/}
-                                        {/*    className='StickyHeader_contact-btn px-2 py-0'>*/}
+                                    <Nav.Link className='w-25 align-items-center justify-content-center StickyHeader_contact-btn'>
                                             Contact
-                                        {/*</span>*/}
                                     </Nav.Link>
                                 </LinkContainer>
 

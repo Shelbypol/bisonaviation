@@ -29,37 +29,40 @@ const SideBarData = ({showSidebar}) => {
 
     return (
         <>
-            {userInfo ? (
-                    <>
+            {/*{userInfo ? (*/}
+            {/*        <>*/}
 
-                        <li className='SideBar-nav-text'>
-                            <Link to='/' onClick={showSidebar}>
-                                <span>Home</span>
-                            </Link>
-                        </li>
+            {/*            <li className='SideBar-nav-text'>*/}
+            {/*                <Link to='/' onClick={showSidebar}>*/}
+            {/*                    <span>Home</span>*/}
+            {/*                </Link>*/}
+            {/*            </li>*/}
 
-                        <li className='SideBar-nav-text'>
-                            <Link to='/profile' onClick={showSidebar}>
-                                <span>Profile</span>
-                            </Link>
-                        </li>
+            {/*            <li className='SideBar-nav-text'>*/}
+            {/*                <Link to='/profile' onClick={showSidebar}>*/}
+            {/*                    <span>Profile</span>*/}
+            {/*                </Link>*/}
+            {/*            </li>*/}
 
-                        <li className='SideBar-nav-text'>
-                            <Link onClick={logoutHandler} to='/'>
-                                <span>Logout</span>
-                            </Link>
-                        </li>
+            {/*            <li className='SideBar-nav-text'>*/}
+            {/*                <Link onClick={logoutHandler} to='/'>*/}
+            {/*                    <span>Logout</span>*/}
+            {/*                </Link>*/}
+            {/*            </li>*/}
 
-                    </>
+            {/*        </>*/}
 
-                ) :
+            {/*    ) :*/}
+            {!userInfo && (
+
                 <>
                     <li className='my-3'>
                         <Login loginTitle={'Login'} showSideBar={showSidebar}/>
                     </li>
 
                 </>
-            }
+            )}
+            {/*// }*/}
             {/*  REGISTER  */}
             {!userInfo && (
                 <li className='mx-2'>

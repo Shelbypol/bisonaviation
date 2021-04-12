@@ -25,9 +25,9 @@ const HomeScreen2 = () => {
 
             <HomeHero/>
 
-            <Jumbotron className='Global_graphic mb-0 pb-0' style={{backgroundColor: 'rgba(0,0,0,.5)'}}
+            <Jumbotron className='Global_graphic mb-0 pb-0 bg-transparent'
                        fluid> </Jumbotron>
-            <Container className='m-0 p-0' style={{backgroundColor: 'rgba(0,0,0,.5)'}} fluid>
+            <Container className='m-0 p-0' fluid>
                 <RepairAward/>
 
                 {/*<Container className='p-0 fluid'>*/}

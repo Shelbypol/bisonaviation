@@ -40,6 +40,8 @@
 
 /*================= GRAPHIC =====================*/
 .HeroDivider_graphic{
+    /*background-image: url("../images/bg-graphics/graphics/transparent-divider.png");*/
+    /*background-image: url("../images/bg-graphics/graphics/gray-divider.png");*/
     background-image: url("../images/bg-graphics/graphics/black-top-large-left-lg-size.png");
     background-repeat: no-repeat;
     height: 300px;

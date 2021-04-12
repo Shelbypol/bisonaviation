@@ -93,12 +93,13 @@
 }
 
 .SideBar_Name{
-    color: rgba(255,255,255, 1);
+    color: rgba(255,255,255, .6);
     font-weight: lighter;
+    /*margin-topL*/
 }
 
 .SideBar_Login{
-    color: rgba(255,255,255, 0.5);
+    /*color: rgba(255,255,255, 0.5);*/
     font-weight: lighter;
 }
 

@@ -29,18 +29,18 @@ const HeroDivider = ({img, showImg, showDivider, textColor, title}) => {
                         >{title}</p>
                     </Col>
                 )}
-                {showDivider && (
+                {/*{showDivider && (*/}
 
-                    <Col xs={12}
-                         className='
-                     HeroDivider_graphic
-                     bg-transparent
-                     m-0
-                     p-0
+                {/*    <Col xs={12}*/}
+                {/*         className='*/}
+                {/*     HeroDivider_graphic*/}
+                {/*     bg-transparent*/}
+                {/*     m-0*/}
+                {/*     p-0*/}
 
-                     '>
-                    </Col>
-                )}
+                {/*     '>*/}
+                {/*    </Col>*/}
+                {/*)}*/}
             </Row>
 
 
