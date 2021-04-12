@@ -173,7 +173,7 @@ const StickyHeader = () => {
 
                     </Col>
                 </Row>
-            </header>
+            {/*</header>*/}
             <header className='sticky-top m-0 p-0' style={{top: '6vh'}}>
                 {userInfo && (
 
@@ -208,6 +208,7 @@ const StickyHeader = () => {
                         </Nav>
                     </Nav>
                 )}
+            </header>
             </header>
         </>
 
