@@ -78,10 +78,10 @@ const NavItem = (props) => {
             {/*<a href="#" className="wishList-icon-button" onClick={() => setOpen(!open)}>*/}
             <a onClick={() => setOpen(!open)}>
                 {cartItems.length === 0 ? (
-                    <span className='global_cursor w-100 StickyHeader_wishlist-btn-bg'>&nbsp;{props.icon}</span>
+                    <span className='global_cursor StickyHeader_wishlist-btn-bg pl-2'>&nbsp;{props.icon}</span>
                 ) : (
                     <>
-                        <span className=' global_cursor w-100 StickyHeader_wishlist-btn-bg'>{cartItems.length}&nbsp;{props.icon}</span>
+                        <span className=' global_cursor StickyHeader_wishlist-btn-bg pl-2'>&nbsp;{cartItems.length}&nbsp;{props.icon}</span>
                     </>
                 )}
             </a>

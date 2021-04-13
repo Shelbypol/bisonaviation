@@ -6,6 +6,8 @@ import {IconContext} from 'react-icons';
 import {useDispatch, useSelector} from "react-redux";
 import {CART_RESET} from "../../constants/cartConstants";
 import {logout} from "../../actions/userActions";
+import WishListTab from "../Wishlist/WishListTab";
+import {Nav} from "react-bootstrap";
 
 const SideBar = () => {
     const [sidebar, setSidebar] = useState(false);
@@ -43,11 +45,14 @@ const SideBar = () => {
 
                 {userInfo ? (
                     <>
-                        <Link to='#'>
+                        {/*<Link to='#'>*/}
 
-                                <h6
-                                    className='SideBar_Name px-3 pt-3'>{userInfo.name}</h6>
-                        </Link>
+                        {/*        <h6*/}
+                        {/*            className='SideBar_Name px-3 pt-3'>{userInfo.name}</h6>*/}
+                        {/*</Link>*/}
+
+                        {/*    className=''>*/}
+                            <WishListTab/>
 
 
                         <li className='SideBar-nav-text'>
