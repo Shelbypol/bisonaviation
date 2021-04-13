@@ -118,30 +118,48 @@ const StickyHeader = () => {
 
                         {/*============= WISHLIST / LOGIN / CONTACT BTNS ==============*/}
 
-                        <Col xs={3} className='h-50 d-flex justify-content-around'>
                             {/*{!userInfo && (*/}
                             {/*)}*/}
+                            {!userInfo ? (
+                                <>
+                        <Col xs={3} className='h-50 d-flex justify-content-end'>
                             <Nav.Link
-                                className='  d-flex align-items-center justify-content-center StickyHeader_wishlist-btn-bg'>
+                                className='  d-flex align-items-center justify-content-center StickyHeader_wishlist-btn-bg '>
                                 <WishListTab/>
                             </Nav.Link>
 
-                            {!userInfo && (
                                 <span
-                                    className='  d-flex align-items-center justify-content-center StickyHeader_login-btn'>
+                                    className='w-25 d-flex align-items-center justify-content-center StickyHeader_login-btn'>
                                         <SideBar/>
                                     </span>
-                            )}
 
                             <LinkContainer to='/contact'>
                                 <Nav.Link
-                                    className=' align-content-center justify-content-center StickyHeader_contact-btn'>
+                                    className='d-flex align-items-center justify-content-center StickyHeader_contact-btn'>
                                     Contact
                                 </Nav.Link>
                             </LinkContainer>
+                                    </Col>
+                            </>
+                            ):(
+                                <>
+                                <Col xs={3} className='h-50 d-flex justify-content-end'>
+                                    <Nav.Link
+                                        className='  d-flex align-items-center justify-content-center StickyHeader_wishlist-btn-bg'>
+                                        <WishListTab/>
+                                    </Nav.Link>
 
-
+                                    <LinkContainer to='/contact'>
+                                        <Nav.Link
+                                            className=' align-content-center justify-content-center StickyHeader_contact-btn'>
+                                            Contact
+                                        </Nav.Link>
+                                    </LinkContainer>
                         </Col>
+                                </>
+                                )}
+
+
 
 
                         {/*/ =========== PROFILE / ADMIN BTNS ============*!/*/}
