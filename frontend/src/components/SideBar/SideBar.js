@@ -45,8 +45,8 @@ const SideBar = () => {
                     <>
                         <Link to='#'>
 
-                                <h6 onClick={showSidebar}
-                                    className='SideBar_Name d-flex justify-content-center px-5'>{userInfo.name}</h6>
+                                <h6
+                                    className='SideBar_Name px-3 pt-3'>{userInfo.name}</h6>
                         </Link>
 
 
@@ -64,7 +64,7 @@ const SideBar = () => {
                     </>
                 ) : (
                     <Link to='#'>
-                        <span onClick={showSidebar} className='SideBar_Login pr-1 pt-2 StickyHeader_login-btngit'>Login</span>
+                        <span onClick={showSidebar} className='SideBar_Login pr-1 pt-2 StickyHeader_login-btn'>Login</span>
                     </Link>
                 )}
 

@@ -8,6 +8,8 @@ import {Link, Route} from "react-router-dom";
 import SearchBox from "../SearchBox";
 import WishListTab from "../Wishlist/WishListTab";
 import SideBar from "../SideBar/SideBar";
+import logo from '../../images/bg-graphics/graphics/Final-Logo-Horizontal.png'
+
 
 const StickyHeader = () => {
 
@@ -55,7 +57,15 @@ const StickyHeader = () => {
                 className=' sticky-top StickyHeader_nav m-0 p-0 border-0 global_dots ' style={{height: '12vh'}}>
                     {/*===============  SIDEBAR  ==================*/}
 
-                        <Col xs={3} style={{height: '12vh'}} className=''> </Col>
+                        <Col xs={3} style={{height: '12vh'}} className='d-flex justify-content-center'>
+                            <LinkContainer to='/'>
+                                <img
+                                    src={logo}
+
+                                    className='DesktopHeader_logo pb-1 px-1 pt-0'
+                                    alt="Bison Aviation"/>
+                            </LinkContainer>
+                        </Col>
 
                         <Col xs={6} className=' d-flex justify-content-center h-50'>
 
@@ -170,18 +180,18 @@ const StickyHeader = () => {
                                     {(userInfo && userInfo.isAdmin) && (
                                         <>
                                             <LinkContainer to='/admin/userlist'>
-                                                <Nav.Link>Users</Nav.Link>
+                                                <Nav.Link className='SideBar_Name pt-3 border-left'>Users</Nav.Link>
                                             </LinkContainer>
 
                                             <LinkContainer to='/admin/productlist'>
-                                                <Nav.Link>
+                                                <Nav.Link className='SideBar_Name pt-3'>
                                                     Products
                                                 </Nav.Link>
                                             </LinkContainer>
 
 
                                             <LinkContainer to='/admin/orderlist'>
-                                                <Nav.Link>
+                                                <Nav.Link className='SideBar_Name pt-3 border-right'>
                                                     Data - Info
                                                 </Nav.Link>
                                             </LinkContainer>
