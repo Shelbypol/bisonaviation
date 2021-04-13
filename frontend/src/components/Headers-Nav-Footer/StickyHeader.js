@@ -131,14 +131,14 @@ const StickyHeader = () => {
                 {/*)}*/}
                 {!userInfo ? (
                     <>
-                        <Col xs={3} className='h-50 d-flex justify-content-end p-0 m-0'>
-                            <Nav.Link>
+                        <Col xs={3} className='h-50 d-flex justify-content-end m-0 p-0'>
+                            <Nav.Link className='mt-n2'>
                                 <WishListTab/>
                             </Nav.Link>
 
-                            <span className=' d-flex align-items-center justify-content-center mr-3 StickyHeader_login-btn'>
-                                        <SideBar/>
-                            </span>
+                            {/*<span className=' d-flex align-items-center justify-content-center mr-3 StickyHeader_login-btn'>*/}
+                            {/*            <SideBar/>*/}
+                            {/*</span>*/}
 
 
                             <LinkContainer to='/contact'>
@@ -172,6 +172,12 @@ const StickyHeader = () => {
                 <Col xs={9}
                      className='ml-auto d-flex align-items-center justify-content-end StickyHeader_login-btn'
                      style={{marginTop: '-6vh'}}>
+
+                    {!userInfo && (
+                        <span className=' d-flex align-items-center justify-content-end StickyHeader_login-btn'>
+                                        <SideBar/>
+                            </span>
+                    )}
 
                     {userInfo && (
                         <>

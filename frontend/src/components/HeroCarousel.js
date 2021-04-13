@@ -1,6 +1,6 @@
 import React from 'react'
 import {Row, Col} from 'reactstrap';
-import img1 from '../images/bg-graphics/graphics/fs-slider-caption-bg.png'
+import img1 from '../images/bg-graphics/graphics/fs-slider-caption-bg-dark.png'
 import {Carousel, Nav, Navbar} from "react-bootstrap"
 import Slide from "react-reveal/Slide";
 import {LinkContainer} from "react-router-bootstrap";
@@ -53,7 +53,7 @@ const HeroCarousel = (
 ) => {
     return (
         <>
-            <Carousel className=''>
+            <Carousel className='h-75'>
                 {/*    ================= Img 1 */}
                 <Carousel.Item>
                     <Carousel.Caption>
