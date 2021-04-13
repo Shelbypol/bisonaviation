@@ -124,12 +124,12 @@ const StickyHeader = () => {
                                 <>
                         <Col xs={3} className='h-50 d-flex justify-content-end'>
                             <Nav.Link
-                                className='  d-flex align-items-center justify-content-center StickyHeader_wishlist-btn-bg '>
+                                className='w-50'>
                                 <WishListTab/>
                             </Nav.Link>
 
                                 <span
-                                    className='w-25 d-flex align-items-center justify-content-center StickyHeader_login-btn'>
+                                    className='w-25 d-flex align-items-center justify-content-start StickyHeader_login-btn'>
                                         <SideBar/>
                                     </span>
 

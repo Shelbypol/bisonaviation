@@ -80,6 +80,10 @@
     /*background-color: rgba(255, 255, 255, .1);*/
 }
 
+.StickyHeader_login-btn:hover{
+    color: #2576e5 !important;
+}
+
 /*======    WISHLIST    ============*/
 .StickyHeader_wishlist-btn {
     color: white;
@@ -90,14 +94,10 @@
 }
 
 .StickyHeader_wishlist-btn-bg {
-    /*background-color: rgba(0, 0, 0, .2);*/
-
-    /*background-color: rgba(255,255,255,.1);*/
 }
 
 .StickyHeader_wishlist-btn-bg:hover {
-    background-color: lightgray;
-    color: black !important;
+    color: #660708 !important;
 }
 
 /*======    CONTACT    ============*/

@@ -64,7 +64,7 @@ const SideBar = () => {
                     </>
                 ) : (
                     <Link to='#'>
-                        <span onClick={showSidebar} className='SideBar_Login pr-1 pt-2'>Login</span>
+                        <span onClick={showSidebar} className='SideBar_Login pr-1 pt-2 StickyHeader_login-btngit'>Login</span>
                     </Link>
                 )}
 
