@@ -69,7 +69,7 @@ const SideBar = () => {
                     </>
                 ) : (
                     <Link to='#'>
-                        <span onClick={showSidebar} className='SideBar_Login pr-1 pt-2 StickyHeader_login-btn'>Login</span>
+                        <h6 onClick={showSidebar} className='SideBar_Login pr-1 pt-2 StickyHeader_login-btn'>Sign in</h6>
                     </Link>
                 )}
 

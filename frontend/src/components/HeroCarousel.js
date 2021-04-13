@@ -78,7 +78,13 @@ const HeroCarousel = (
                                 </Col>
                             )}
 
-                            <Col md={7} xs={10} className='global_carousel-text-btm-bar global_red-bg'> </Col>
+                            <Col md={7} xs={10} className='global_carousel-text-btm-bar'> </Col>
+
+                            <Col xs={12} className='ml-n3'>
+                                <SocialIcons socialClassName={'col-sm-3 '}
+                                             contactClassName={'d-none'}
+                                />
+                            </Col>
                         </Row>
                     </Carousel.Caption>
 
@@ -90,9 +96,6 @@ const HeroCarousel = (
                                 alt=" "
                                 height={'100%'}
                             />
-                    <SocialIcons socialClassName={'col-sm-3 mt-n4 justify-content-end'}
-                                 contactClassName={'d-none'}
-                    />
                         </Slide>
                     </div>
                 </Carousel.Item>
@@ -124,6 +127,11 @@ const HeroCarousel = (
                                 )}
 
                                 <Col md={7} xs={10} className='global_carousel-text-btm-bar global_red-bg'> </Col>
+                                <Col xs={12} className='ml-n3'>
+                                    <SocialIcons socialClassName={'col-sm-3 '}
+                                                 contactClassName={'d-none'}
+                                    />
+                                </Col>
                             </Row>
                         </Carousel.Caption>
 
@@ -167,7 +175,12 @@ const HeroCarousel = (
                                 )}
 
                                 <Col md={7} xs={10} className='global_carousel-text-btm-bar global_red-bg'> </Col>
-                            </Row>
+                                <Col xs={12} className='ml-n3'>
+                                    <SocialIcons socialClassName={'col-sm-3 '}
+                                                 contactClassName={'d-none'}
+                                    />
+                                </Col>
+                             </Row>
                         </Carousel.Caption>
 
                         <div id={IDslide3} className=' global_HeroCarousel-animation'>
@@ -212,6 +225,11 @@ const HeroCarousel = (
                                 )}
 
                                 <Col md={7} xs={10} className='global_carousel-text-btm-bar global_red-bg'> </Col>
+                                <Col xs={12} className='ml-n3'>
+                                    <SocialIcons socialClassName={'col-sm-3 '}
+                                                 contactClassName={'d-none'}
+                                    />
+                                </Col>
                             </Row>
                         </Carousel.Caption>
 
@@ -255,11 +273,16 @@ const HeroCarousel = (
                                 )}
 
                                 <Col md={7} xs={10} className='global_carousel-text-btm-bar global_red-bg'> </Col>
+                                <Col xs={12} className='ml-n3'>
+                                    <SocialIcons socialClassName={'col-sm-3 '}
+                                                 contactClassName={'d-none'}
+                                    />
+                                </Col>
                             </Row>
                         </Carousel.Caption>
 
                         <div id={IDslide5} className=' global_HeroCarousel-animation'>
-                            <Slide left >
+                            <Slide left>
                                 <img
                                     className='global_carousel-divider-img '
                                     src={img1}

@@ -182,13 +182,15 @@ main {
 .global_carousel-text-top-bar {
     height: 1.2vh !important;
     margin-top: -3vh;
-    background-color: rgba(255, 255, 255, .5);
+    background-color: #660708;
+    /*background-color: rgba(255, 255, 255, .5);*/
 }
 
 .global_carousel-text-btm-bar{
     height: 1.2vh !important;
     margin-top: 3vh;
-    background-color: rgba(255, 255, 255, .5);
+    background-color: #660708;
+    /*background-color: rgba(255, 255, 255, .5);*/
 }
 
 
