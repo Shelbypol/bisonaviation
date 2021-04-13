@@ -8,7 +8,8 @@ body {
     width: 100vw;
     max-width: 100%;
     contain: content;
-    background-image: url("../images/bg-graphics/graphics/body-bg.png");
+    /*background-image: url("../images/bg-graphics/graphics/body-bg.png");*/
+    background-image: url("../images/bg-graphics/graphics/smooth-overlay-boxed-bg.png");
 }
 
 html {
@@ -24,10 +25,19 @@ main {
 }
 
 .global_bg-overlay{
-    background-color: rgba(0,0,0,.8) ;
+    /*background-image: url("../images/bg-graphics/");*/
+    background-color: rgba(0,0,0, .8);
     /*background-color: rgba(96,96,96, .5);*/
-
 }
+
+.global_dots{
+    /*background-image: url("../images/bg-graphics/graphics/dots-xl.png");*/
+}
+
+.global_smooth-dots{
+    background-image: url("../images/bg-graphics/graphics/smooth-overlay-boxed-bg.png");
+}
+
 /*================= SITE THEME ===================*/
 /* COLORS-BG */
 .global_rich-black-bg{
@@ -256,10 +266,6 @@ main {
     z-index: 1;
     background-color: white;
     /*height: 10vh;*/
-}
-
-.global_dots{
-    background-image: url("../images/bg-graphics/graphics/dots.png");
 }
 
 /*=================     GRAPHIC BTM MARGIN      ==============*/

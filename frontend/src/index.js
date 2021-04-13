@@ -11,8 +11,9 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
     <Provider store={store}>
-        <div className='global_bg-overlay'>
-            <App/>
+        <div className=' global_bg-overlay'>
+        {/*<div className='global_bg-overlay'>*/}
+                <App/>
         </div>
     </Provider>,
     document.getElementById('root')

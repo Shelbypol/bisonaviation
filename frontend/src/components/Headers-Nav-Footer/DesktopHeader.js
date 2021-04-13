@@ -12,8 +12,11 @@ const DesktopHeader = () => {
 
     return (
         <>
-
+            <div className='bg-white'>
             <StickyHeader/>
+
+            </div>
+
 
             {/*<Fade top duration={3000} >*/}
             {/*    <Navbar expand="sm"*/}

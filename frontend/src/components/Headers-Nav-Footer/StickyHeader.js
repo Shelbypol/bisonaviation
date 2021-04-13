@@ -53,10 +53,10 @@ const StickyHeader = () => {
         <>
 
 
-            <Row className='sticky-top StickyHeader_nav m-0 px-0 pb-2 global_dots' style={{height: '12.5vh'}}>
+            <Row className='sticky-top global_dots StickyHeader_nav-color'>
                 {/*===============  SIDEBAR  ==================*/}
 
-                <Col xs={3} style={{height: '12vh'}} className='d-flex justify-content-start'>
+                <Col xs={3} style={{height: '12vh'}} className=' d-flex justify-content-start'>
                     <LinkContainer to='/'>
                         <img
                             src={logo}
@@ -127,11 +127,9 @@ const StickyHeader = () => {
 
                 {/*============= WISHLIST / LOGIN / CONTACT BTNS ==============*/}
 
-                {/*{!userInfo && (*/}
-                {/*)}*/}
                 {!userInfo ? (
                     <>
-                        <Col xs={3} className='h-50 d-flex justify-content-end m-0 p-0'>
+                        <Col xs={3} className=' h-50 d-flex justify-content-end m-0 p-0'>
                             <Nav.Link className='mt-n2'>
                                 <WishListTab/>
                             </Nav.Link>
@@ -151,7 +149,7 @@ const StickyHeader = () => {
                     </>
                 ) : (
                     <>
-                        <Col xs={3} className='h-50 d-flex justify-content-end p-0 m-0'>
+                        <Col xs={3} className=' h-50 d-flex justify-content-end p-0 m-0'>
                             <Link to='#'>
                                 <h6
                                     className='SideBar_Name px-3 pt-3'>{userInfo.name}</h6>
@@ -170,7 +168,7 @@ const StickyHeader = () => {
 
                 {/*/ =========== PROFILE / ADMIN BTNS ============*!/*/}
                 <Col xs={9}
-                     className='ml-auto d-flex align-items-center justify-content-end StickyHeader_login-btn'
+                     className='sticky-top ml-auto d-flex align-items-center justify-content-end StickyHeader_login-btn'
                      style={{marginTop: '-6vh'}}>
 
                     {!userInfo && (
