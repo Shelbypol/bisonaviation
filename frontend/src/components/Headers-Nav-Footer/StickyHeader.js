@@ -50,146 +50,134 @@ const StickyHeader = () => {
     return (
         <>
 
-            <header className='sticky-top m-0 p-0'>
 
-
-                <Row
-                    className='StickyHeader_nav m-0 p-0 border-0 global_dots' style={{height: '12vh'}}>
-
+            <Row
+                className=' sticky-top StickyHeader_nav m-0 p-0 border-0 global_dots ' style={{height: '12vh'}}>
                     {/*===============  SIDEBAR  ==================*/}
-                    <Col xs={4} style={{height: '12vh'}} className='border'>
 
-                    </Col>
+                        <Col xs={3} style={{height: '12vh'}} className=''> </Col>
 
-                    {/*<Nav className=' d-sm-none d-md-block min-vw-100 StickyHeader_nav d-lg-flex justify-content-between'>*/}
-                    <Col xs={5} className='border' style={{height: '6vh'}}>
+                        <Col xs={6} className=' d-flex justify-content-center h-50'>
 
-                        {/*  HOME  */}
-                        <LinkContainer className='d-inline' to='/'>
-                            <Nav.Link>
-                                <i className='far fa-home StickyHeader_links'
-                                   style={{fontSize: '1.5em'}}> </i>
-                            </Nav.Link>
-                        </LinkContainer>
+                            {/*  HOME  */}
+                            <LinkContainer className='d-inline' to='/'>
+                                <Nav.Link>
+                                    <i className='far fa-home StickyHeader_links'
+                                       style={{fontSize: '1.5em'}}> </i>
+                                </Nav.Link>
+                            </LinkContainer>
 
-                        {/*  BROWSE PRODUCTS  */}
-                        <LinkContainer className='d-inline' to='/products'>
-                            <Nav.Link className=''>
+                            {/*  BROWSE PRODUCTS  */}
+                            <LinkContainer className='d-inline' to='/products'>
+                                <Nav.Link className=''>
                                     <span className='StickyHeader_links'>
                                     Products
                                     </span>
-                            </Nav.Link>
-                        </LinkContainer>
+                                </Nav.Link>
+                            </LinkContainer>
 
-                        {/*  AVIONICS  */}
-                        <LinkContainer className='d-inline' to='/avionics'>
-                            <Nav.Link>
+                            {/*  AVIONICS  */}
+                            <LinkContainer className='d-inline' to='/avionics'>
+                                <Nav.Link>
                                     <span className='StickyHeader_links'>
                                     Avionics
                                     </span>
-                            </Nav.Link>
-                        </LinkContainer>
+                                </Nav.Link>
+                            </LinkContainer>
 
-                        {/*  MAINTENANCE  */}
-                        <LinkContainer className='d-inline' to='/maintenance'>
-                            <Nav.Link>
+                            {/*  MAINTENANCE  */}
+                            <LinkContainer className='d-inline' to='/maintenance'>
+                                <Nav.Link>
                                     <span className='StickyHeader_links'>
                                     Maintenance
                                     </span>
-                            </Nav.Link>
-                        </LinkContainer>
+                                </Nav.Link>
+                            </LinkContainer>
 
-                        {/*  EO/IR FLIR  */}
-                        <LinkContainer className='d-inline' to='/flir'>
-                            <Nav.Link>
+                            {/*  EO/IR FLIR  */}
+                            <LinkContainer className='d-inline' to='/flir'>
+                                <Nav.Link>
                                     <span className='StickyHeader_links'>
                                     Flir
 
                                     </span>
-                            </Nav.Link>
-                        </LinkContainer>
+                                </Nav.Link>
+                            </LinkContainer>
 
-                        {/*  TEAM  */}
-                        <LinkContainer className='d-inline' to='/team'>
-                            <Nav.Link>
+                            {/*  TEAM  */}
+                            <LinkContainer className='d-inline' to='/team'>
+                                <Nav.Link>
                                     <span className='StickyHeader_links'>
                                     Team
                                     </span>
+                                </Nav.Link>
+                            </LinkContainer>
+
+                        </Col>
+
+
+                        {/*============= WISHLIST / LOGIN / CONTACT BTNS ==============*/}
+
+                        <Col xs={3} className='h-50 d-flex justify-content-around'>
+                            {/*{!userInfo && (*/}
+                            {/*)}*/}
+                            <Nav.Link
+                                className='  d-flex align-items-center justify-content-center StickyHeader_wishlist-btn-bg'>
+                                <WishListTab/>
                             </Nav.Link>
-                        </LinkContainer>
 
-                    </Col>
-
-
-                    {/*============= WISHLIST / LOGIN / CONTACT BTNS ==============*/}
-
-                    <Col xs={3} style={{height: '6vh'}} className=' w-25 d-flex justify-content-end'>
-                        {/*{!userInfo && (*/}
-                        {/*)}*/}
-                        <Nav.Link
-                            className=' w-25 d-flex align-items-center justify-content-center StickyHeader_wishlist-btn-bg'>
-                            <WishListTab/>
-                        </Nav.Link>
-
-                        {!userInfo && (
-                            <span
-                                className=' w-25 d-flex align-items-center justify-content-center StickyHeader_login-btn'>
+                            {!userInfo && (
+                                <span
+                                    className='  d-flex align-items-center justify-content-center StickyHeader_login-btn'>
                                         <SideBar/>
                                     </span>
-                        )}
+                            )}
 
-                        <LinkContainer to='/contact'>
-                            <Nav.Link
-                                className='w-50 align-content-center justify-content-center StickyHeader_contact-btn'>
-                                Contact
-                            </Nav.Link>
-                        </LinkContainer>
-
-
-                    </Col>
+                            <LinkContainer to='/contact'>
+                                <Nav.Link
+                                    className=' align-content-center justify-content-center StickyHeader_contact-btn'>
+                                    Contact
+                                </Nav.Link>
+                            </LinkContainer>
 
 
-                    <Col className='sticky-top m-0 p-0' style={{top: '6vh', height: '6vh'}}>
-                        {userInfo && (
-
-                            <Nav
-                                className='d-flex align-items-center justify-content-end StickyHeader_login-btn StickyHeader_nav'>
-
-                                {/*/ ===========  ADMIN BTNS ============*!/*/}
-                                {userInfo && userInfo.isAdmin && (
-                                    <>
-                                        <LinkContainer to='/admin/userlist'>
-                                            <Nav.Link>Users</Nav.Link>
-                                        </LinkContainer>
-
-                                        <LinkContainer to='/admin/productlist'>
-                                            <Nav.Link>
-                                                Products
-                                            </Nav.Link>
-                                        </LinkContainer>
+                        </Col>
 
 
-                                        <LinkContainer to='/admin/orderlist'>
-                                            <Nav.Link>
-                                                Data - Info
-                                            </Nav.Link>
-                                        </LinkContainer>
+                        {/*/ =========== PROFILE / ADMIN BTNS ============*!/*/}
+                        <Col xs={9}
+                             className='ml-auto d-flex align-items-center justify-content-end StickyHeader_login-btn' style={{marginTop: '-6vh'}}>
+                            {userInfo && (
+                                <>
+                                    {(userInfo && userInfo.isAdmin) && (
+                                        <>
+                                            <LinkContainer to='/admin/userlist'>
+                                                <Nav.Link>Users</Nav.Link>
+                                            </LinkContainer>
 
-                                    </>
-                                )}
+                                            <LinkContainer to='/admin/productlist'>
+                                                <Nav.Link>
+                                                    Products
+                                                </Nav.Link>
+                                            </LinkContainer>
 
 
-                                {/*======== PROFILE AND LOGOUT BTN============*/}
-                                <Nav>
-                                    <SideBar/>
-                                </Nav>
-                            </Nav>
-                        )}
+                                            <LinkContainer to='/admin/orderlist'>
+                                                <Nav.Link>
+                                                    Data - Info
+                                                </Nav.Link>
+                                            </LinkContainer>
 
-                    </Col>
+                                        </>
+                                    )}
 
-                </Row>
-            </header>
+                                    <Nav>
+                                        <SideBar/>
+                                    </Nav>
+                                </>
+                            )}
+                        </Col>
+                    </Row>
         </>
 
     )
