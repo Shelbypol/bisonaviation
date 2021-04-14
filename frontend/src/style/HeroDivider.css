@@ -1,19 +1,19 @@
 
 .HeroDivider_wrap{
-    top:-33vh;
-    position: sticky;
-    position: -webkit-sticky;
+    /*top: -25vh;*/
+    /*position: sticky;*/
+    /*position: -webkit-sticky;*/
     /*z-index: -1;*/
     /*z-index: 1;*/
 
 }
 
 .HeroDivider_no-img-wrap{
-    top: 5vh;
+    top: -25vh;
     padding-top: 1vh;
     background-color: white;
-    position: sticky;
-    position: -webkit-sticky;
+    /*position: sticky;*/
+    /*position: -webkit-sticky;*/
     z-index: -1;
 }
 
@@ -24,8 +24,7 @@
     background-color: #FBFAFB;
     background-repeat: no-repeat;
     height:300px;
-    z-index: 1;
-
+    z-index: 1000;
 }
 
 

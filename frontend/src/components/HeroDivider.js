@@ -18,9 +18,10 @@ const HeroDivider = ({img, showImg, showDivider, textColor, title}) => {
                          HeroDivider_img-title-wrap
                          d-flex
                          justify-content-sm-start
-                         justify-content-md-end
+                         justify-content-md-center
                          align-items-center
-                         m-0
+                        
+                         ml-5
                          p-0
                         ${img}`}
                     >
