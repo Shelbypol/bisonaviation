@@ -7,8 +7,8 @@ const AvionicsHero = () => {
     return (
         <HeroCarousel
             IDslide1={'AvionicsHero_carouselImg1'}
-            slide1firstTitleLetter={'C'}
-            slide1firstTitleWord={'USTOM PANELS'}
+            slide1firstTitleLetter={'A'}
+            slide1firstTitleWord={'VIONICS'}
             slide1firstSentence={'ARE YOU READY FOR THE ULTIMATE PANEL MAKEOVER?'}
             slide1secondSentenceTrue={false}
             slide1secondSentence={''}
