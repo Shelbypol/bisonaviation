@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Provider } from 'react-redux'
+import {Provider} from 'react-redux'
 import store from './store'
 import './bootstrap.min.css'
 // import 'bootstrap/dist/css/bootstrap.min.css';
@@ -11,7 +11,10 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
     <Provider store={store}>
-        <App />
+        <div className=' global_bg-overlay'>
+        {/*<div className='global_bg-overlay'>*/}
+                <App/>
+        </div>
     </Provider>,
     document.getElementById('root')
 );

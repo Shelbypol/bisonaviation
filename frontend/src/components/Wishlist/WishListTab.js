@@ -6,12 +6,14 @@ import {useDispatch, useSelector} from "react-redux";
 
 const WishList = () => {
 
+
     return (
 
         <Navbar id='app' className='wishList'>
             <NavItem icon={
-                <span className='global_cursor pr-3 ' style={{fontSize: '1.3em'}}>
-                    <i className="fal fa-envelope-open-text"> </i>
+                <span className='global_cursor ' style={{fontSize: '1.3em'}}>
+                    +<i className="fal fa-list-alt"> </i>
+                    {/*<i className="fal fa-envelope-open-text"> </i>*/}
                 </span>
             }>
                 <DropdownMenu> </DropdownMenu>
@@ -68,20 +70,21 @@ const NavItem = (props) => {
         // <li onClick={(e) => {
         //     // setOpen(!open);
         // }} className="wishList-nav-item pt-2">
-         <li ref={node} onClick={(e) => {
-             // handleClick(e);
+        <li ref={node} onClick={(e) => {
+            // handleClick(e);
             // setOpen(!open);
             //  handleScroll(e)
-         }} className="wishList-nav-item pt-2"
-             >
+        }} className="wishList-nav-item pt-1 StickyHeader_wishlist-btn px-3"
+        >
             {/*<li ref={node} onClick={(e) => (handleScroll(e))} className="wishList-nav-item">*/}
             {/*<a href="#" className="wishList-icon-button" onClick={() => setOpen(!open)}>*/}
             <a onClick={() => setOpen(!open)}>
                 {cartItems.length === 0 ? (
-                    <p className='global_cursor global_white-text-red-hover pt-2'>{props.icon}</p>
+                    <span className='global_cursor StickyHeader_icon StickyHeader_links'>&nbsp;{props.icon}</span>
                 ) : (
                     <>
-                        <p className=' global_cursor global_white-text-red-hover ml-2 pt-2'>{cartItems.length}&nbsp;{props.icon}</p>
+                        <span
+                            className=' global_cursor StickyHeader_icon'>&nbsp;{cartItems.length}&nbsp;{props.icon}</span>
                     </>
                 )}
             </a>
@@ -95,6 +98,9 @@ const DropdownMenu = () => {
     const [activeMenu, setActiveMenu] = useState('main');
     const [menuHeight, setMenuHeight] = useState(null);
     const dropdownRef = useRef(null);
+
+    const userLogin = useSelector(state => state.userLogin);
+    const {userInfo} = userLogin;
 
     useEffect(() => {
         setMenuHeight(dropdownRef.current?.firstChild.offsetHeight);
@@ -118,25 +124,50 @@ const DropdownMenu = () => {
 
 
     return (
-        <div className="wishList-Dropdown" style={{height: menuHeight}} ref={dropdownRef}>
+        <>
+            {userInfo ? (
+            <div className="wishList-Dropdown" style={{height: menuHeight, zIndex: '1000', marginTop: '-6.25vh'}} ref={dropdownRef}>
+                <CSSTransition
+                    in={activeMenu === 'main'}
+                    timeout={500}
+                    classNames="wishList-menu-primary"
+                    unmountOnExit
+                    onEnter={calcHeight}
+                >
+                    <div className="wishList-menu">
+                        <DropdownItem>
+                            <WishListTabInfo/>
+                        </DropdownItem>
 
-            <CSSTransition
-                in={activeMenu === 'main'}
-                timeout={500}
-                classNames="wishList-menu-primary"
-                unmountOnExit
-                onEnter={calcHeight}
-            >
-                <div className="wishList-menu">
-                    <DropdownItem >
-                        <WishListTabInfo/>
-                    </DropdownItem>
 
+                    </div>
+                </CSSTransition>
+
+            </div>
+
+            ):(
+                <div className="wishList-Dropdown" style={{height: menuHeight, zIndex: '1000'}} ref={dropdownRef}>
+
+                    <CSSTransition
+                        in={activeMenu === 'main'}
+                        timeout={500}
+                        classNames="wishList-menu-primary"
+                        unmountOnExit
+                        onEnter={calcHeight}
+                    >
+                        <div className="wishList-menu">
+                            <DropdownItem>
+                                <WishListTabInfo/>
+                            </DropdownItem>
+
+
+                        </div>
+                    </CSSTransition>
 
                 </div>
-            </CSSTransition>
+            )}
 
-        </div>
+        </>
     );
 };
 export default WishList;

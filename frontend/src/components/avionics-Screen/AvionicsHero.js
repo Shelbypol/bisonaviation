@@ -7,35 +7,35 @@ const AvionicsHero = () => {
     return (
         <HeroCarousel
             IDslide1={'AvionicsHero_carouselImg1'}
-            slide1firstTitleLetter={'M'}
-            slide1firstTitleWord={'aintenance'}
-            slide1firstSentence={'Looks complicated...'}
-            slide1secondSentenceTrue={true}
-            slide1secondSentence={'...that\'s because it is!'}
+            slide1firstTitleLetter={'A'}
+            slide1firstTitleWord={'VIONICS'}
+            slide1firstSentence={'ARE YOU READY FOR THE ULTIMATE PANEL MAKEOVER?'}
+            slide1secondSentenceTrue={false}
+            slide1secondSentence={''}
 
             IDslide2={'AvionicsHero_carouselImg2'}
             carouselImg2True={true}
-            slide2firstTitleLetter={'F'}
-            slide2firstTitleWord={'rom gliders...'}
-            slide2firstSentence={'...to gulfstreams, THE BISON Team'}
-            slide2secondSentenceTrue={true}
-            slide2secondSentence={'KNOWS YOUR AIRCRAFT INSIDE AND OUT!'}
+            slide2firstTitleLetter={'E'}
+            slide2firstTitleWord={'XPERT SERVICE'}
+            slide2firstSentence={'OUR TECHNICIANS HAVE YEARS OF EXPERIENCE'}
+            slide2secondSentenceTrue={false}
+            slide2secondSentence={''}
 
             IDslide3={'AvionicsHero_carouselImg3'}
             carouselImg3True={true}
-            slide3firstTitleLetter={'I'}
-            slide3firstTitleWord={'t isn\'t over until...'}
-            slide3firstSentence={'...the paperwork is finished. Let Bison '}
+            slide3firstTitleLetter={'L'}
+            slide3firstTitleWord={'ATEST TECHNOLOGY'}
+            slide3firstSentence={'N-HOUSE 3D PRINTING, CNC MACHINING,'}
             slide3secondSentenceTrue={true}
-            slide3secondSentence={'cure your logbook log jams!'}
+            slide3secondSentence={'LASER CUTTING & ENGRAVING & MORE'}
 
             IDslide4={'AvionicsHero_carouselImg4'}
             carouselImg4True={true}
-            slide4firstTitleLetter={'F'}
-            slide4firstTitleWord={'rom minor repairs...'}
-            slide4firstSentence={'...TO COMPLETE RADOME TO TAIL CONE REFURBISHMENT.'}
+            slide4firstTitleLetter={'T'}
+            slide4firstTitleWord={'HE RIGHT EQUIPMENT'}
+            slide4firstSentence={'EUQIPPED WITH THE NEWEST & BEST EQUIPMENT'}
             slide4secondSentenceTrue={true}
-            slide4secondSentence={'BISON IS READY FOR YOUR MAINTENANCE PROJECT!'}
+            slide4secondSentence={'FOR THE MOST DEMANDING TASKS!'}
 
             IDslide5={'AvionicsHero_carouselImg5'}
             carouselImg5True={false}

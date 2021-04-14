@@ -9,6 +9,7 @@ import MobileHeader from "../components/Headers-Nav-Footer/MobileHeader";
 import StickyHeader from "../components/Headers-Nav-Footer/StickyHeader";
 import Footer from "../components/Headers-Nav-Footer/Footer";
 import {useDispatch} from "react-redux";
+import DesktopHeader from "../components/Headers-Nav-Footer/DesktopHeader";
 
 const FlirScreen = () => {
 
@@ -24,9 +25,9 @@ const FlirScreen = () => {
         return () => window.removeEventListener("resize", handleWindowResize);
     }, [dispatch, width]);
 
-    useLayoutEffect(() => {
-        window.scrollTo(0, 0)
-    });
+    // useLayoutEffect(() => {
+    //     window.scrollTo(0, 0)
+    // });
 
     const handleWindowResize = () => {
         setWidth(window.innerWidth);
@@ -37,27 +38,27 @@ const FlirScreen = () => {
             {width < breakpoint ? (
                 <MobileHeader/>
             ) : (
-                <>
-                    <StickyHeader/>
-                </>
+                <DesktopHeader/>
             )}
-
 
             <HeroDivider
                 img={'FlirHero_img'}
                 showImg={true}
-                title={''}
+                title={'EO/IR - FLIR'}
+                showDivider={true}
             />
 
+<Container className=' global_HeroDivider-margin pt-5'>
 
-            <Container className='global_HeroDivider-margin-btm'>
+
                 <h1 className='FlirScreen_Title'>Airborne FLIR, EO/IR, & Thermography Systems</h1>
             <FlirText/>
-            </Container>
+            {/*</Container>*/}
 
-                <Jumbotron className='FlirScreen_style bg-transparent' fluid>
+                <Jumbotron className='FlirScreen_style bg-transparent p-0 m-0' fluid>
                     <FlirTable/>
                 </Jumbotron>
+</Container>
 
             <Footer />
         </>

@@ -1,8 +1,11 @@
 import React from 'react'
 import {Row, Col} from 'reactstrap';
-import img1 from '../images/bg-graphics/graphics/fs-slider-caption-bg.png'
-import {Carousel} from "react-bootstrap"
+import img1 from '../images/bg-graphics/graphics/fs-slider-caption-bg-dark.png'
+import {Carousel, Nav, Navbar} from "react-bootstrap"
 import Slide from "react-reveal/Slide";
+import {LinkContainer} from "react-router-bootstrap";
+import logo from "../images/bg-graphics/graphics/Final-Logo-Horizontal.png";
+import SocialIcons from "./SocialIcons";
 
 
 const HeroCarousel = (
@@ -50,12 +53,12 @@ const HeroCarousel = (
 ) => {
     return (
         <>
-            <Carousel className=''>
+            <Carousel className='h-75'>
                 {/*    ================= Img 1 */}
                 <Carousel.Item>
                     <Carousel.Caption>
                         <Row className='global_carousel-text-box'>
-                            <Col md={5} xs={7} className='global_carousel-text-top-bar global_red-bg'> </Col>
+                            <Col md={5} xs={7} className='global_carousel-text-top-bar'> </Col>
 
                             <Col xs={12}
                                  className='d-flex justify-content-start align-content-center '>
@@ -75,7 +78,13 @@ const HeroCarousel = (
                                 </Col>
                             )}
 
-                            <Col md={7} xs={10} className='global_carousel-text-btm-bar global_red-bg'> </Col>
+                            <Col md={7} xs={10} className='global_carousel-text-btm-bar'> </Col>
+
+                            <Col xs={12} className='ml-n3'>
+                                <SocialIcons socialClassName={'col-sm-3 '}
+                                             contactClassName={'d-none'}
+                                />
+                            </Col>
                         </Row>
                     </Carousel.Caption>
 
@@ -118,6 +127,11 @@ const HeroCarousel = (
                                 )}
 
                                 <Col md={7} xs={10} className='global_carousel-text-btm-bar global_red-bg'> </Col>
+                                <Col xs={12} className='ml-n3'>
+                                    <SocialIcons socialClassName={'col-sm-3 '}
+                                                 contactClassName={'d-none'}
+                                    />
+                                </Col>
                             </Row>
                         </Carousel.Caption>
 
@@ -161,7 +175,12 @@ const HeroCarousel = (
                                 )}
 
                                 <Col md={7} xs={10} className='global_carousel-text-btm-bar global_red-bg'> </Col>
-                            </Row>
+                                <Col xs={12} className='ml-n3'>
+                                    <SocialIcons socialClassName={'col-sm-3 '}
+                                                 contactClassName={'d-none'}
+                                    />
+                                </Col>
+                             </Row>
                         </Carousel.Caption>
 
                         <div id={IDslide3} className=' global_HeroCarousel-animation'>
@@ -206,6 +225,11 @@ const HeroCarousel = (
                                 )}
 
                                 <Col md={7} xs={10} className='global_carousel-text-btm-bar global_red-bg'> </Col>
+                                <Col xs={12} className='ml-n3'>
+                                    <SocialIcons socialClassName={'col-sm-3 '}
+                                                 contactClassName={'d-none'}
+                                    />
+                                </Col>
                             </Row>
                         </Carousel.Caption>
 
@@ -249,11 +273,16 @@ const HeroCarousel = (
                                 )}
 
                                 <Col md={7} xs={10} className='global_carousel-text-btm-bar global_red-bg'> </Col>
+                                <Col xs={12} className='ml-n3'>
+                                    <SocialIcons socialClassName={'col-sm-3 '}
+                                                 contactClassName={'d-none'}
+                                    />
+                                </Col>
                             </Row>
                         </Carousel.Caption>
 
                         <div id={IDslide5} className=' global_HeroCarousel-animation'>
-                            <Slide left >
+                            <Slide left>
                                 <img
                                     className='global_carousel-divider-img '
                                     src={img1}

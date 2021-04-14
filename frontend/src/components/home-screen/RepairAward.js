@@ -4,7 +4,7 @@ import '../../style/2/RepairAward.css'
 
 const RepairAward = () => {
     return (
-        <Jumbotron className='RepairAward_bg-img bg-transparent mt-n5 p-0' fluid>
+        <Jumbotron className='RepairAward_bg-img d-none d-md-block px-0 pt-0 m-0' fluid>
         </Jumbotron>
 
     );

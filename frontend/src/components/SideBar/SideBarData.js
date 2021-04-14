@@ -5,6 +5,7 @@ import {CART_RESET} from "../../constants/cartConstants";
 import {logout} from "../../actions/userActions";
 import Login from "../Login";
 import '../../style/SideBar.css'
+import {Button, Form} from "react-bootstrap";
 
 const SideBarData = ({showSidebar}) => {
     const [loginShow, setLoginShow] = useState(false);
@@ -21,7 +22,7 @@ const SideBarData = ({showSidebar}) => {
 
     useEffect(() => {
 
-    }, [loginShow]);
+    }, [loginShow, userInfo]);
 
     const loginForm = () => {
         setLoginShow(!loginShow)
@@ -29,45 +30,27 @@ const SideBarData = ({showSidebar}) => {
 
     return (
         <>
-            {userInfo ? (
-                    <>
+            {!userInfo && (
 
-                        <li className='SideBar-nav-text'>
-                            <Link to='/' onClick={showSidebar}>
-                                <span>Home</span>
-                            </Link>
-                        </li>
-
-                        <li className='SideBar-nav-text'>
-                            <Link to='/profile' onClick={showSidebar}>
-                                <span>Profile</span>
-                            </Link>
-                        </li>
-
-                        <li className='SideBar-nav-text'>
-                            <Link onClick={logoutHandler} to='/'>
-                                <span>Logout</span>
-                            </Link>
-                        </li>
-
-                    </>
-
-                ) :
                 <>
                     <li className='my-3'>
-                        <Login loginTitle={'Login'} showSideBar={showSidebar}/>
+                        <Login loginTitle={'Sign In'} showSideBar={showSidebar}/>
                     </li>
 
                 </>
-            }
+            )}
+            {/*// }*/}
             {/*  REGISTER  */}
             {!userInfo && (
+                <>
                 <li className='mx-2'>
+                <h6 className='text-muted'>if not a user</h6>
                     <Link to='/Register' onClick={showSidebar}>
-                        {/*<i className='fal fa-clipboard-user StickyHeader_icon-size'> </i>*/}
-                        <span className='global_redFontHover'>Register</span>
+                <Button className=' py-2 px-3 global_blood-red-bg global_cultured rounded'
+                ><i className="fal fa-clipboard-user"> </i>&nbsp;Register</Button>
                     </Link>
                 </li>
+</>
             )}
 
             {/*  ADMIN DROPDOWN  */}

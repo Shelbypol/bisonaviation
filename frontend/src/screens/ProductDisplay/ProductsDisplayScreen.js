@@ -10,6 +10,7 @@ import {listMyWishLists} from "../../actions/wishListActions";
 // import heroImg from '../../images/bg-graphics/screen-products-display/divider-white-bg-cropped.png'
 import heroImg from '../../images/bg-graphics/divider-no-bg.png';
 import HeroDivider from "../../components/HeroDivider";
+import DesktopHeader from "../../components/Headers-Nav-Footer/DesktopHeader";
 
 const ProductsDisplayScreen = ({match, history}) => {
 
@@ -38,21 +39,17 @@ const ProductsDisplayScreen = ({match, history}) => {
             {width < breakpoint ? (
                 <MobileHeader/>
             ) : (
-                <>
-                    <StickyHeader/>
-                </>
+                    <DesktopHeader/>
             )}
+
                     <HeroDivider
                         img={''}
                         showImg={false}
                         title={''}
                     />
 
-                {/*<Image src={heroImg} fluid className='Global_graphic-productDisplayScreen sticky-top w-100 h-100' />*/}
-            <div className='bg-white global_HeroDivider-margin-btm'>
-                {/*<Jumbotron className='Global_graphic-productDisplayScreen bg-transparent sticky-top' fluid> </Jumbotron>*/}
-                {/*<Jumbotron className='Global_graphic-productDisplayScreen-bg bg-transparent sticky-top' fluid> </Jumbotron>*/}
-                <Jumbotron className='bg-white mt-n5 mb-0 p-0' style={{zIndex: '2'}} fluid>
+            <div className='bg-white global_HeroDivider-margin mt-4' >
+                <Jumbotron className='bg-white mt-n5 mb-0 px-0 pt-3 pb-0' style={{zIndex: '2'}} fluid>
 
                     <>
                         <Meta title='Bison | Products'/>

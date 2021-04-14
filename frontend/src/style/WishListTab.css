@@ -76,18 +76,14 @@ a {
     position: absolute;
     width: 175%;
     background-color: #fff;
-    /*border-left: var(--border);*/
-    border-left: 5px solid #660708;
-    border-top-left-radius: 4vw;
-    /*border-radius: var(--border-radius);*/
+    border-left: 2vw solid #660708;
+    border-top: 2px solid white;
     overflow-y: scroll;
     margin-right: -5.8vw;
     transition: height var(--speed) ease;
 }
 
 .wishList-menu {
-    /*height: 75vh;*/
-    /*max-height: 75vh;*/
     width: 100%;
 }
 
@@ -124,7 +120,7 @@ a {
 }
 
 .menu-secondary-enter {
-    transform: translateX(110%);
+    transform: translateX(50%);
 }
 .menu-secondary-enter-active {
     transform: translateX(0%);

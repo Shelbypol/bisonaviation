@@ -103,7 +103,7 @@ const WishListEmail = ({userInfo, cart, cartItems, success}) => {
                             <Row className='d-flex justify-content-between mb-4'>
                                 <Col xs={12}>
                                     <h3 className='global_blue mb-0'>Send us your questions</h3>
-                                    <span style={{color: 'rgba(0,0,0, .8)'}}>Items listed will automatically be included in the email</span>
+                                    <h6 style={{color: 'rgba(0,0,0, .8)'}}>Items listed will automatically be included in the email</h6>
                                 </Col>
                             </Row>
                         </>
@@ -165,7 +165,8 @@ const WishListEmail = ({userInfo, cart, cartItems, success}) => {
 
                         </Col>
 
-                        <Col md={5} xs={12} className='m-0 px-0'>
+                        <Col md={5} xs={12} className='m-0 px-0 WisListEmail_scroll-box'>
+                            <h6><i className='pl-2 d-none d-lg-block'>hover & scroll to view</i></h6>
                             {cartItems.map(item => (
                                 <ListGroup variant='flush'>
                                     <ListGroup.Item key={item._id}

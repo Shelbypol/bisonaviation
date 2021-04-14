@@ -1,30 +1,30 @@
 
 .HeroDivider_wrap{
-    top:-38vh;
-    position: sticky;
-    position: -webkit-sticky;
-    z-index: 1;
+    /*top: -25vh;*/
+    /*position: sticky;*/
+    /*position: -webkit-sticky;*/
+    /*z-index: -1;*/
+    /*z-index: 1;*/
 
 }
 
 .HeroDivider_no-img-wrap{
-    top: 2.2vh;
-    /*top: -1vh;*/
-    position: sticky;
-    position: -webkit-sticky;
-    z-index: 1;
+    top: -25vh;
+    padding-top: 1vh;
+    background-color: white;
+    /*position: sticky;*/
+    /*position: -webkit-sticky;*/
+    z-index: -1;
 }
 
 
 /*=============== IMG / TITLE WRAP*/
 .HeroDivider_img-title-wrap {
-    /*background-image: url("../images/bg-graphics/jd-roel-flir-end.png");*/
     background-attachment: fixed;
     background-color: #FBFAFB;
     background-repeat: no-repeat;
     height:300px;
-    z-index: 1;
-    /*height:350px;*/
+    z-index: 1000;
 }
 
 
@@ -39,22 +39,22 @@
 
 /*================= GRAPHIC =====================*/
 .HeroDivider_graphic{
-    background-image: url("../images/bg-graphics/graphics/black-top-large-left.png");
+    /*background-image: url("../images/bg-graphics/graphics/transparent-divider.png");*/
+    /*background-image: url("../images/bg-graphics/graphics/gray-divider.png");*/
+    background-image: url("../images/bg-graphics/graphics/black-top-large-left-lg-size.png");
     background-repeat: no-repeat;
     height: 300px;
-    top: -15vh;
-    /*top: -15vh;*/
+    top: -20vh;
     z-index: 1;
-    transform: rotateY(180deg) rotateX(60deg);
+    transform: rotateY(180deg) rotateX(78deg);
 }
 
 
 /*================ MEDIA QUERY (900px) ===============*/
+/*@media (max-width: 1024px) {*/
 @media (max-width: 900px) {
     .HeroDivider_wrap{
         top: -42vh;
-        /*margin-top: -10vh;*/
-        /*top: -5vh;*/
     }
 
     /* ===========  TITLE  ============*/
@@ -88,7 +88,6 @@
     .HeroDivider_wrap{
         top: -55vh;
     }
-
 
 }
 

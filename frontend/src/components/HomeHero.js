@@ -8,43 +8,46 @@ const HomeHero = () => {
         <HeroCarousel
 
             IDslide1={'HomeHero_carouselImg1'}
-            slide1firstTitleLetter={'M'}
-            slide1firstTitleWord={'aintenance'}
-            slide1firstSentence={'Looks complicated...'}
+            slide1firstTitleLetter={'B'}
+            slide1firstTitleWord={'ison Aviation'}
+            slide1firstSentence={'Professional Aviation Solutions'}
             slide1secondSentenceTrue={true}
-            slide1secondSentence={'...that\'s because it is!'}
+            slide1secondSentence={'FAA Repair Station: 85NR497D'}
+            // slide1firstSentence={'we work hard on the ground,'}
+            // slide1secondSentenceTrue={true}
+            // slide1secondSentence={'so you can fly with confidence!'}
 
             IDslide2={'HomeHero_carouselImg2'}
             carouselImg2True={true}
-            slide2firstTitleLetter={'F'}
-            slide2firstTitleWord={'rom gliders...'}
-            slide2firstSentence={'...to gulfstreams, THE BISON Team'}
+            slide2firstTitleLetter={'A'}
+            slide2firstTitleWord={'vionics Services'}
+            slide2firstSentence={'MINOR REPAIRS TO COMPLETE PANEL UPGRADES. '}
             slide2secondSentenceTrue={true}
-            slide2secondSentence={'KNOWS YOUR AIRCRAFT INSIDE AND OUT!'}
+            slide2secondSentence={'ALL PERFORMED IN-HOUSE!'}
 
             IDslide3={'HomeHero_carouselImg3'}
             carouselImg3True={true}
-            slide3firstTitleLetter={'I'}
-            slide3firstTitleWord={'t isn\'t over until...'}
-            slide3firstSentence={'...the paperwork is finished. Let Bison '}
+            slide3firstTitleLetter={'C'}
+            slide3firstTitleWord={'UTTING EDGE TECHNOLOGY'}
+            slide3firstSentence={'CNC MACHINING, LASER ENGRAVING & 3D PRINTING.'}
             slide3secondSentenceTrue={true}
-            slide3secondSentence={'cure your logbook log jams!'}
+            slide3secondSentence={'THE CUTTING EDGE OF AIRCRAFT MAINTENANCE!'}
 
             IDslide4={'HomeHero_carouselImg4'}
             carouselImg4True={true}
-            slide4firstTitleLetter={'F'}
-            slide4firstTitleWord={'rom minor repairs...'}
-            slide4firstSentence={'...TO COMPLETE RADOME TO TAIL CONE REFURBISHMENT.'}
+            slide4firstTitleLetter={'S'}
+            slide4firstTitleWord={'TRUCTURAL REPAIRS'}
+            slide4firstSentence={'SKIN REPLACEMENTS TO STRUCTURES FABRICATION,'}
             slide4secondSentenceTrue={true}
-            slide4secondSentence={'BISON IS READY FOR YOUR MAINTENANCE PROJECT!'}
+            slide4secondSentence={'NO PROJECT IS TOO BIG OR TOO SMALL!'}
 
             IDslide5={'HomeHero_carouselImg5'}
             carouselImg5True={true}
-            slide5firstTitleLetter={'F'}
-            slide5firstTitleWord={'rom minor repairs...'}
-            slide5firstSentence={'...TO COMPLETE RADOME TO TAIL CONE REFURBISHMENT.'}
+            slide5firstTitleLetter={'A'}
+            slide5firstTitleWord={'IRBORNE EO/IR - FLIR'}
+            slide5firstSentence={'WORLD LEADER IN LEGACY AIRBORNE'}
             slide5secondSentenceTrue={true}
-            slide5secondSentence={'BISON IS READY FOR YOUR MAINTENANCE PROJECT!'}
+            slide5secondSentence={'EO/IR EQUIPMENT SERVICE AND SALES!'}
         />
 
     );

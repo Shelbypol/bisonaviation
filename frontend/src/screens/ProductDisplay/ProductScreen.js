@@ -9,8 +9,8 @@ import {PRODUCT_CREATE_REVIEW_RESET} from "../../constants/productConstants";
 import Meta from "../../components/Meta";
 import {addToCart, removeFromCart} from "../../actions/cartActions";
 import MobileHeader from "../../components/Headers-Nav-Footer/MobileHeader";
-import StickyHeader from "../../components/Headers-Nav-Footer/StickyHeader";
 import HeroDivider from "../../components/HeroDivider";
+import DesktopHeader from "../../components/Headers-Nav-Footer/DesktopHeader";
 
 const ProductScreen = ({history, match}) => {
     const [width, setWidth] = useState(window.innerWidth);
@@ -83,8 +83,6 @@ const ProductScreen = ({history, match}) => {
     }
 
 
-
-
     useLayoutEffect(() => {
         window.scrollTo(0, 0)
     });
@@ -101,7 +99,7 @@ const ProductScreen = ({history, match}) => {
                 <MobileHeader/>
             ) : (
                 <>
-                    <StickyHeader/>
+                    <DesktopHeader/>
                 </>
             )}
 
@@ -111,11 +109,11 @@ const ProductScreen = ({history, match}) => {
                 title={''}
             />
 
-            <Jumbotron className='bg-white px-0 pb-5' style={{marginTop: '-38vh', zIndex: '4'}}>
-                <Container className='mb-0 pb-0' style={{paddingTop: '10vh'}}>
+            <Jumbotron className='bg-white px-0 mt-n3 pb-5 global_HeroDivider-margin'>
+                <Container className='mb-0 px-0 pt-3 pb-0' >
                     <Link className='global_blood-red global_cursor bg-transparent btn btn-light mb-3 mt-4 pb-1 px-1'
                           to='/products'>
-                        Go back
+                        back
                     </Link>
                     {loading ? <Loader/> : error ? <Message variant='danger'>{error}</Message> : (
                         <>
@@ -141,7 +139,7 @@ const ProductScreen = ({history, match}) => {
 
                                         {/* NAME */}
                                         <ListGroup.Item
-                                            className='border-0 bg-transparent global_red ProductScreen_img'>
+                                            className='border-0 bg-transparent global_blue ProductScreen_img'>
                                             {product.isPromo && (
                                                 <p className='flag red global_accentFont mb-0 mt-lg-n2 mt-2'
                                                    style={{marginLeft: '-6vw'}}>{product.isPromoType}</p>
@@ -154,7 +152,7 @@ const ProductScreen = ({history, match}) => {
                                         {/* PART # */}
                                         <ListGroup.Item className='border-0 mb-3 bg-transparent'>
                                             <h5>
-                                        <span className='global_blue'>
+                                        <span className='global_blood-red'>
                                         Part #:
                                         </span>
                                                 &nbsp; {product.partNumber}
