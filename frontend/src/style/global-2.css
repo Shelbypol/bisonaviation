@@ -32,6 +32,9 @@ main {
 
 .global_dots{
     background-image: url("../images/bg-graphics/graphics/dots-xl.png");
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
 }
 
 .global_smooth-dots{
@@ -270,7 +273,9 @@ main {
 
 /*=================     GRAPHIC BTM MARGIN      ==============*/
 .global_HeroDivider-margin{
-    margin-top: -36vh;
+    /*margin-top: -36vh;*/
+    /*z-index: 5;  */
+    /*margin-top: -20vh;*/
     z-index: 5;
 }
 

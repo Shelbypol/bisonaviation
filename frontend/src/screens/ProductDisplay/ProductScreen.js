@@ -9,8 +9,8 @@ import {PRODUCT_CREATE_REVIEW_RESET} from "../../constants/productConstants";
 import Meta from "../../components/Meta";
 import {addToCart, removeFromCart} from "../../actions/cartActions";
 import MobileHeader from "../../components/Headers-Nav-Footer/MobileHeader";
-import StickyHeader from "../../components/Headers-Nav-Footer/StickyHeader";
 import HeroDivider from "../../components/HeroDivider";
+import DesktopHeader from "../../components/Headers-Nav-Footer/DesktopHeader";
 
 const ProductScreen = ({history, match}) => {
     const [width, setWidth] = useState(window.innerWidth);
@@ -99,7 +99,7 @@ const ProductScreen = ({history, match}) => {
                 <MobileHeader/>
             ) : (
                 <>
-                    <StickyHeader/>
+                    <DesktopHeader/>
                 </>
             )}
 
@@ -109,8 +109,8 @@ const ProductScreen = ({history, match}) => {
                 title={''}
             />
 
-            <Jumbotron className='bg-white px-0 pb-5 global_HeroDivider-margin'>
-                <Container className='mb-0 pb-0' >
+            <Jumbotron className='bg-white px-0 mt-n3 pb-5 global_HeroDivider-margin'>
+                <Container className='mb-0 px-0 pt-3 pb-0' >
                     <Link className='global_blood-red global_cursor bg-transparent btn btn-light mb-3 mt-4 pb-1 px-1'
                           to='/products'>
                         back

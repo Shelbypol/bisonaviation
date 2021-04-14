@@ -73,7 +73,7 @@ const NavItem = (props) => {
             // handleClick(e);
             // setOpen(!open);
             //  handleScroll(e)
-        }} className="wishList-nav-item pt-1 StickyHeader_wishlist-btn "
+        }} className="wishList-nav-item pt-1 StickyHeader_wishlist-btn pr-3"
         >
             {/*<li ref={node} onClick={(e) => (handleScroll(e))} className="wishList-nav-item">*/}
             {/*<a href="#" className="wishList-icon-button" onClick={() => setOpen(!open)}>*/}
@@ -120,7 +120,7 @@ const DropdownMenu = () => {
 
 
     return (
-        <div className="wishList-Dropdown" style={{height: menuHeight}} ref={dropdownRef}>
+        <div className="wishList-Dropdown" style={{height: menuHeight, zIndex: '1000'}} ref={dropdownRef}>
 
             <CSSTransition
                 in={activeMenu === 'main'}

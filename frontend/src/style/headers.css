@@ -23,7 +23,8 @@
 }
 
 .DesktopHeader_search-color{
-    background-color: rgba(255, 255, 255, .8);}
+    background-color: rgba(255, 255, 255, .8);
+}
 
 .StickyHeader_right-row {
     height: 6vh;
@@ -67,7 +68,7 @@
 }
 
 .StickyHeader_links {
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .StickyHeader_links:hover {

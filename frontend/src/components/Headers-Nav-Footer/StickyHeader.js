@@ -53,10 +53,10 @@ const StickyHeader = () => {
         <>
 
 
-            <Row className='sticky-top global_dots StickyHeader_nav-color'>
+            <Row className='global_dots StickyHeader_nav-color sticky-top' style={{top: '0', zIndex: 6000}}>
                 {/*===============  SIDEBAR  ==================*/}
 
-                <Col xs={3} style={{height: '12vh'}} className=' d-flex justify-content-start'>
+                <Col xs={3} className=' d-flex justify-content-start sticky-top' style={{top: '0', height: '12vh'}}>
                     <LinkContainer to='/'>
                         <img
                             src={logo}
@@ -66,7 +66,7 @@ const StickyHeader = () => {
                     </LinkContainer>
                 </Col>
 
-                <Col xs={6} className=' d-flex justify-content-center h-50'>
+                <Col xs={6} className=' d-flex justify-content-center h-50 sticky-top' style={{top: '0'}}>
 
                     {/*  HOME  */}
                     <LinkContainer className='d-inline' to='/'>
@@ -135,7 +135,7 @@ const StickyHeader = () => {
 
                 {!userInfo ? (
                     <>
-                        <Col xs={3} className=' h-50 d-flex justify-content-end m-0 p-0'>
+                        <Col xs={3} className=' h-50 d-flex justify-content-end m-0 p-0 sticky-top' style={{top: '0'}}>
                             {/*<Nav.Link className='mt-n2'>*/}
                             {/*    <WishListTab/>*/}
                             {/*</Nav.Link>*/}
@@ -150,7 +150,7 @@ const StickyHeader = () => {
                     </>
                 ) : (
                     <>
-                        <Col xs={3} className=' h-50 d-flex justify-content-end p-0 m-0'>
+                        <Col xs={3} className=' h-50 d-flex justify-content-end p-0 m-0 sticky-top' style={{top: '0'}}>
                             <Link to='#'>
                                 <h6
                                     className='SideBar_Name px-3 pt-3'>{userInfo.name}</h6>
@@ -169,8 +169,8 @@ const StickyHeader = () => {
 
                 {/*/ =========== PROFILE / ADMIN BTNS ============*!/*/}
                 <Col xs={9}
-                     className='sticky-top ml-auto d-flex align-items-center justify-content-end StickyHeader_login-btn'
-                     style={{marginTop: '-6vh'}}>
+                     className='sticky-top ml-auto d-flex align-items-center justify-content-end StickyHeader_login-btn sticky-top'
+                     style={{marginTop: '-6vh', top: '6vh'}}>
 
                     {!userInfo && (
                         <span className=' d-flex align-items-center justify-content-end StickyHeader_login-btn'>

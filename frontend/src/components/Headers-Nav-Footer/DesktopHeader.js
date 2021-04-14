@@ -13,7 +13,7 @@ const DesktopHeader = () => {
     return (
         <>
             <div className='bg-white'>
-            <StickyHeader/>
+                <StickyHeader/>
 
             </div>
 
