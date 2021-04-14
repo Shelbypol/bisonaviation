@@ -1,8 +1,8 @@
 .SideBar-navbar {
     background-color: rgba(0, 0, 0, .5);
     /*background-color: #060b26;*/
-    height: 50px;
-    width: 50px;
+    /*height: 5vh;*/
+    width: 25vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,7 +40,7 @@
     background-image: url("../images/bg-graphics/graphics/dots.png");
     background-color: rgba(0,0,0, .7);
     width: 30vw;
-    height: 50vh;
+    /*height: 50vh;*/
     display: flex;
     justify-content: start;
     position: absolute;
@@ -88,7 +88,7 @@
 }
 
 .SideBar-nav-menu-items {
-    margin-top: 10px;
+    /*margin-top: 1vh;*/
     width: 100%;
 }
 
