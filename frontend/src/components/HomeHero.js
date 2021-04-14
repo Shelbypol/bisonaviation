@@ -10,9 +10,12 @@ const HomeHero = () => {
             IDslide1={'HomeHero_carouselImg1'}
             slide1firstTitleLetter={'B'}
             slide1firstTitleWord={'ison Aviation'}
-            slide1firstSentence={'we work hard on the ground,'}
+            slide1firstSentence={'Professional Aviation Solutions'}
             slide1secondSentenceTrue={true}
-            slide1secondSentence={'so you can fly with confidence!'}
+            slide1secondSentence={'FAA Repair Station: 85NR497D'}
+            // slide1firstSentence={'we work hard on the ground,'}
+            // slide1secondSentenceTrue={true}
+            // slide1secondSentence={'so you can fly with confidence!'}
 
             IDslide2={'HomeHero_carouselImg2'}
             carouselImg2True={true}
