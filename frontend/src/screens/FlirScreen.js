@@ -9,6 +9,7 @@ import MobileHeader from "../components/Headers-Nav-Footer/MobileHeader";
 import StickyHeader from "../components/Headers-Nav-Footer/StickyHeader";
 import Footer from "../components/Headers-Nav-Footer/Footer";
 import {useDispatch} from "react-redux";
+import DesktopHeader from "../components/Headers-Nav-Footer/DesktopHeader";
 
 const FlirScreen = () => {
 
@@ -37,9 +38,7 @@ const FlirScreen = () => {
             {width < breakpoint ? (
                 <MobileHeader/>
             ) : (
-                <>
-                    <StickyHeader/>
-                </>
+                <DesktopHeader/>
             )}
 
             <HeroDivider

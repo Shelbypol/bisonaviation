@@ -71,7 +71,7 @@ const StickyHeader = () => {
                     {/*  HOME  */}
                     <LinkContainer className='d-inline' to='/'>
                         <Nav.Link>
-                            <i className='far fa-home StickyHeader_links'
+                            <i className='far fa-home StickyHeader_home'
                                style={{fontSize: '1.5em'}}> </i>
                         </Nav.Link>
                     </LinkContainer>
@@ -122,6 +122,12 @@ const StickyHeader = () => {
                         </Nav.Link>
                     </LinkContainer>
 
+                    {!userInfo && (
+                        <Nav.Link className='mt-n2'>
+                            <WishListTab/>
+                        </Nav.Link>
+                    )}
+
                 </Col>
 
 
@@ -130,14 +136,9 @@ const StickyHeader = () => {
                 {!userInfo ? (
                     <>
                         <Col xs={3} className=' h-50 d-flex justify-content-end m-0 p-0'>
-                            <Nav.Link className='mt-n2'>
-                                <WishListTab/>
-                            </Nav.Link>
-
-                            {/*<span className=' d-flex align-items-center justify-content-center mr-3 StickyHeader_login-btn'>*/}
-                            {/*            <SideBar/>*/}
-                            {/*</span>*/}
-
+                            {/*<Nav.Link className='mt-n2'>*/}
+                            {/*    <WishListTab/>*/}
+                            {/*</Nav.Link>*/}
 
                             <LinkContainer to='/contact'>
                                 <Nav.Link

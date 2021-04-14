@@ -74,23 +74,31 @@
     color: white;
 }
 
+.StickyHeader_home{
+    color: white;
+}
+
+.StickyHeader_home:hover {
+    color: white;
+}
+
 /* =================    LOGIN /WISHLIST /CONTACT BTNS   ==========*/
 .StickyHeader_login-btn {
-    color: white;
-    /*background-color: rgba(255, 255, 255, .1);*/
+    color: orangered;
 }
 
 .StickyHeader_login-btn:hover{
-    color: rgba(255, 255, 255, .8) !important;
+    text-underline: none;
+    color: #2576e5 !important;
 }
 
-/*======    WISHLIST    ============*/
+/*======    WISHLIST ICON NOT LOGGED ON    ============*/
 .StickyHeader_wishlist-btn {
     color: white;
 }
 
 .StickyHeader_wishlist-btn:hover {
-    background-color: #660708;
+    /*background-color: #660708;*/
     /*color: #fff !important;*/
     /*padding: .5vw 16px;*/
 }
@@ -106,14 +114,16 @@
 
 .StickyHeader_contact-btn:hover {
     background-color: rgba(255,255,255, .7);
+    color: #2576e5;
+
 }
 
-.StickHeader_contact-txt{
+.StickHeader_contact-txt {
     /*font-weight: lighter;*/
-    color: rgba(255,255,255, 1);}
-
+    /*color: rgba(255,255,255, 1);}*/
+    color: rgba(255,255,255, 1);
+}
 .StickHeader_contact-txt:hover{
-    /*color: rgba(255,255,255, 1);*/
     /*color: #2576e5;*/
 }
 

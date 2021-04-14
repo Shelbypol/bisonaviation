@@ -10,8 +10,9 @@ const WishList = () => {
 
         <Navbar id='app' className='wishList'>
             <NavItem icon={
-                <span className='global_cursor pr-3 ' style={{fontSize: '1.3em'}}>
-                    <i className="fal fa-envelope-open-text"> </i>
+                <span className='global_cursor ' style={{fontSize: '1.3em'}}>
+                    +<i className="fal fa-list-alt"> </i>
+                    {/*<i className="fal fa-envelope-open-text"> </i>*/}
                 </span>
             }>
                 <DropdownMenu> </DropdownMenu>
@@ -68,20 +69,21 @@ const NavItem = (props) => {
         // <li onClick={(e) => {
         //     // setOpen(!open);
         // }} className="wishList-nav-item pt-2">
-         <li ref={node} onClick={(e) => {
-             // handleClick(e);
+        <li ref={node} onClick={(e) => {
+            // handleClick(e);
             // setOpen(!open);
             //  handleScroll(e)
-         }} className="wishList-nav-item pt-1 StickyHeader_wishlist-btn"
-             >
+        }} className="wishList-nav-item pt-1 StickyHeader_wishlist-btn "
+        >
             {/*<li ref={node} onClick={(e) => (handleScroll(e))} className="wishList-nav-item">*/}
             {/*<a href="#" className="wishList-icon-button" onClick={() => setOpen(!open)}>*/}
             <a onClick={() => setOpen(!open)}>
                 {cartItems.length === 0 ? (
-                    <span className='global_cursor StickyHeader_icon pl-2'>&nbsp;{props.icon}</span>
+                    <span className='global_cursor StickyHeader_icon StickyHeader_links'>&nbsp;{props.icon}</span>
                 ) : (
                     <>
-                        <span className=' global_cursor StickyHeader_icon pl-2'>&nbsp;{cartItems.length}&nbsp;{props.icon}</span>
+                        <span
+                            className=' global_cursor StickyHeader_icon'>&nbsp;{cartItems.length}&nbsp;{props.icon}</span>
                     </>
                 )}
             </a>
@@ -128,7 +130,7 @@ const DropdownMenu = () => {
                 onEnter={calcHeight}
             >
                 <div className="wishList-menu">
-                    <DropdownItem >
+                    <DropdownItem>
                         <WishListTabInfo/>
                     </DropdownItem>
 

@@ -5,6 +5,7 @@ import {useDispatch} from "react-redux";
 import MobileHeader from "../components/Headers-Nav-Footer/MobileHeader";
 import StickyHeader from "../components/Headers-Nav-Footer/StickyHeader";
 import Footer from "../components/Headers-Nav-Footer/Footer";
+import DesktopHeader from "../components/Headers-Nav-Footer/DesktopHeader";
 
 
 const MaintenanceScreen = () => {
@@ -36,7 +37,7 @@ const MaintenanceScreen = () => {
                 <MobileHeader/>
             ) : (
                 <>
-                    <StickyHeader/>
+                    <DesktopHeader/>
                 </>
             )}
 

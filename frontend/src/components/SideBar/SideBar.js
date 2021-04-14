@@ -57,19 +57,19 @@ const SideBar = () => {
 
                         <li className='SideBar-nav-text'>
                             <Link to='/profile'>
-                                <i className="fas fa-user border-0 StickyHeader_icon"> </i>
+                                <i className="fas fa-user border-0 StickyHeader_icon StickyHeader_links"> </i>
                             </Link>
                         </li>
 
                         <li className='SideBar-nav-text'>
                             <Link onClick={logoutHandler} to='/'>
-                                <i className="fal fa-sign-out border-0 StickyHeader_icon"> </i>
+                                <i className="fal fa-sign-out border-0 StickyHeader_icon StickyHeader_links"> </i>
                             </Link>
                         </li>
                     </>
                 ) : (
                     <Link to='#'>
-                        <h6 onClick={showSidebar} className='SideBar_Login pt-2 StickyHeader_login-btn'>Sign in / Register</h6>
+                        <h6 onClick={showSidebar} className='SideBar_Login pt-2 pr-1 StickyHeader_login-btn'>Sign in - Register</h6>
                     </Link>
                 )}
 
