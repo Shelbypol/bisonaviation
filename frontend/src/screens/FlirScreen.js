@@ -25,9 +25,9 @@ const FlirScreen = () => {
         return () => window.removeEventListener("resize", handleWindowResize);
     }, [dispatch, width]);
 
-    useLayoutEffect(() => {
-        window.scrollTo(0, 0)
-    });
+    // useLayoutEffect(() => {
+    //     window.scrollTo(0, 0)
+    // });
 
     const handleWindowResize = () => {
         setWidth(window.innerWidth);

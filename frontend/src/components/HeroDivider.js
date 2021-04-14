@@ -20,8 +20,8 @@ const HeroDivider = ({img, showImg, showDivider, textColor, title}) => {
                          justify-content-sm-start
                          justify-content-md-center
                          align-items-center
-                        
-                         ml-5
+                       
+                         m-0
                          p-0
                         ${img}`}
                     >
