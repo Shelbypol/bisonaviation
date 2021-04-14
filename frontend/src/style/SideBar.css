@@ -38,8 +38,8 @@
 
 .SideBar-nav-menu-user-not-logged {
     background-image: url("../images/bg-graphics/graphics/dots.png");
-    background-color: rgba(0,0,0, 1);
-    width: 40vw;
+    background-color: rgba(0,0,0, .7);
+    width: 30vw;
     height: 50vh;
     display: flex;
     justify-content: start;
@@ -47,7 +47,7 @@
     padding: 2%;
     /*position: fixed;*/
     z-index: 2000;
-    top: 7vh;
+    top: 6.25vh;
     right: -500%;
     transition: 850ms;
 }

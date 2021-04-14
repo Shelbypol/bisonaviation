@@ -136,9 +136,6 @@ const StickyHeader = () => {
                 {!userInfo ? (
                     <>
                         <Col xs={3} className=' h-50 d-flex justify-content-end m-0 p-0 sticky-top' style={{top: '0'}}>
-                            {/*<Nav.Link className='mt-n2'>*/}
-                            {/*    <WishListTab/>*/}
-                            {/*</Nav.Link>*/}
 
                             <LinkContainer to='/contact'>
                                 <Nav.Link

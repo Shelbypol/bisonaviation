@@ -6,6 +6,7 @@ import {useDispatch, useSelector} from "react-redux";
 
 const WishList = () => {
 
+
     return (
 
         <Navbar id='app' className='wishList'>
@@ -98,6 +99,9 @@ const DropdownMenu = () => {
     const [menuHeight, setMenuHeight] = useState(null);
     const dropdownRef = useRef(null);
 
+    const userLogin = useSelector(state => state.userLogin);
+    const {userInfo} = userLogin;
+
     useEffect(() => {
         setMenuHeight(dropdownRef.current?.firstChild.offsetHeight);
         setMenuHeight(dropdownRef.current)
@@ -120,25 +124,50 @@ const DropdownMenu = () => {
 
 
     return (
-        <div className="wishList-Dropdown" style={{height: menuHeight, zIndex: '1000'}} ref={dropdownRef}>
+        <>
+            {userInfo ? (
+            <div className="wishList-Dropdown" style={{height: menuHeight, zIndex: '1000', marginTop: '-6.25vh'}} ref={dropdownRef}>
+                <CSSTransition
+                    in={activeMenu === 'main'}
+                    timeout={500}
+                    classNames="wishList-menu-primary"
+                    unmountOnExit
+                    onEnter={calcHeight}
+                >
+                    <div className="wishList-menu">
+                        <DropdownItem>
+                            <WishListTabInfo/>
+                        </DropdownItem>
 
-            <CSSTransition
-                in={activeMenu === 'main'}
-                timeout={500}
-                classNames="wishList-menu-primary"
-                unmountOnExit
-                onEnter={calcHeight}
-            >
-                <div className="wishList-menu">
-                    <DropdownItem>
-                        <WishListTabInfo/>
-                    </DropdownItem>
 
+                    </div>
+                </CSSTransition>
+
+            </div>
+
+            ):(
+                <div className="wishList-Dropdown" style={{height: menuHeight, zIndex: '1000'}} ref={dropdownRef}>
+
+                    <CSSTransition
+                        in={activeMenu === 'main'}
+                        timeout={500}
+                        classNames="wishList-menu-primary"
+                        unmountOnExit
+                        onEnter={calcHeight}
+                    >
+                        <div className="wishList-menu">
+                            <DropdownItem>
+                                <WishListTabInfo/>
+                            </DropdownItem>
+
+
+                        </div>
+                    </CSSTransition>
 
                 </div>
-            </CSSTransition>
+            )}
 
-        </div>
+        </>
     );
 };
 export default WishList;

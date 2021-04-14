@@ -29,7 +29,8 @@ const Login = ({history, showSidebar, loginTitle}) => {
 
     return (
             <Form onSubmit={submitHandler} className='mx-2'>
-                <h4 className='global_blue'>{loginTitle}</h4>
+                <h4 className='global_white'><i
+                    className="fas fa-user-alt"> </i>&nbsp;{loginTitle}</h4>
                 <Form.Group controlId='email'>
                     {/*<Form.Label>Email Address</Form.Label>*/}
                     <Form.Control type='email'
@@ -47,8 +48,10 @@ const Login = ({history, showSidebar, loginTitle}) => {
                                   onChange={(e) => setPassword(e.target.value)}>
                     </Form.Control>
                 </Form.Group>
-                <Button className=' py-2 px-3 global_whiteFontRedHoverWhiteBg global_blue-bg rounded' type='submit' variant='primary'
-                        onClick={showSidebar}>Sign In</Button>
+                <Button className='d-inline py-2 px-3 global_whiteFontRedHoverWhiteBg global_blue-bg rounded' type='submit' variant='primary'
+                        onClick={showSidebar}><i className="far fa-lock"> </i>&nbsp;Sign In</Button>
+
+
             </Form>
 
     )

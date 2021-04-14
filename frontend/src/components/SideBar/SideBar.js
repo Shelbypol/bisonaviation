@@ -45,15 +45,7 @@ const SideBar = () => {
 
                 {userInfo ? (
                     <>
-                        {/*<Link to='#'>*/}
-
-                        {/*        <h6*/}
-                        {/*            className='SideBar_Name px-3 pt-3'>{userInfo.name}</h6>*/}
-                        {/*</Link>*/}
-
-                        {/*    className=''>*/}
-                            <WishListTab/>
-
+                        <WishListTab/>
 
                         <li className='SideBar-nav-text'>
                             <Link to='/profile'>
