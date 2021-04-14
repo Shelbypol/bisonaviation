@@ -95,6 +95,7 @@
 .SideBar_Name{
     color: rgba(255,255,255, .9);
     font-weight: lighter;
+    height: 5.8vh;
     /*margin-topL*/
 }
 

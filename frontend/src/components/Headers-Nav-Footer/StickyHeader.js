@@ -180,18 +180,18 @@ const StickyHeader = () => {
                             {(userInfo && userInfo.isAdmin) && (
                                 <>
                                     <LinkContainer to='/admin/userlist'>
-                                        <Nav.Link className='SideBar_Name pt-3 border-left'>Users</Nav.Link>
+                                        <Nav.Link className='SideBar_Name pt-2 border-left'>Users</Nav.Link>
                                     </LinkContainer>
 
                                     <LinkContainer to='/admin/productlist'>
-                                        <Nav.Link className='SideBar_Name pt-3'>
+                                        <Nav.Link className='SideBar_Name pt-2'>
                                             Products
                                         </Nav.Link>
                                     </LinkContainer>
 
 
                                     <LinkContainer to='/admin/orderlist'>
-                                        <Nav.Link className='SideBar_Name pt-3 border-right'>
+                                        <Nav.Link className='SideBar_Name pt-2 border-right'>
                                             Data - Info
                                         </Nav.Link>
                                     </LinkContainer>
