@@ -74,7 +74,7 @@ const NavItem = (props) => {
             // handleClick(e);
             // setOpen(!open);
             //  handleScroll(e)
-        }} className="wishList-nav-item pt-1 StickyHeader_wishlist-btn pr-3"
+        }} className="wishList-nav-item pt-1 StickyHeader_wishlist-btn px-3"
         >
             {/*<li ref={node} onClick={(e) => (handleScroll(e))} className="wishList-nav-item">*/}
             {/*<a href="#" className="wishList-icon-button" onClick={() => setOpen(!open)}>*/}

@@ -85,12 +85,12 @@
 
 /* =================    LOGIN /WISHLIST /CONTACT BTNS   ==========*/
 .StickyHeader_login-btn {
-    color: orangered;
+    color: white;
 }
 
 .StickyHeader_login-btn:hover{
     text-underline: none;
-    color: #2576e5 !important;
+    color: orangered;
 }
 
 /*======    WISHLIST ICON NOT LOGGED ON    ============*/
