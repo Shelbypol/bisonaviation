@@ -72,12 +72,12 @@ const MobileHeader = () => {
                         />}/>
 
                         {/*   SOCIAL ICONS   */}
-                        <SocialIcons socialClassName={'mr-5 mb-5'}
-                                     facebookClassName={' d-flex justify-content-center'}
-                                     instaClassName={' d-flex justify-content-center'}
-                                     twitterClassName={' d-flex justify-content-center'}
-                                     contactClassName={'d-none'}
-                        />
+                        {/*<SocialIcons socialClassName={'mr-5 mb-5'}*/}
+                        {/*             facebookClassName={' d-flex justify-content-center'}*/}
+                        {/*             instaClassName={' d-flex justify-content-center'}*/}
+                        {/*             twitterClassName={' d-flex justify-content-center'}*/}
+                        {/*             contactClassName={'d-none'}*/}
+                        {/*/>*/}
 
                         {/*  PROFILE  /  SIGN IN  */}
                         {userInfo && (

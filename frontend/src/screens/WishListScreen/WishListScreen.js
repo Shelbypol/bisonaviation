@@ -78,7 +78,7 @@ const WishListScreen = () => {
                 img={'WishListScreenImg'}
                 showImg={true}
                 title={'Ask the experts!'}
-                showDivider={true}
+                leftTitle={true}
             />
             <Container className='bg-white WishListScreen_HeroDivider-margin' fluid>
             {/*<Container className='bg-white min-vh-100 global_HeroDivider-margin border' fluid>*/}

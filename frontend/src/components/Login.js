@@ -28,6 +28,15 @@ const Login = ({history, showSidebar, loginTitle}) => {
     };
 
     return (
+        <>
+            {error && (
+                <>
+                    <div className='text-center border-bottom mb-2 mt-n4'>
+                        <h6 className='global_red'>ERROR</h6>
+                        <h6 className='text-white'>username and password do not match</h6>
+                    </div>
+                </>
+            )}
             <Form onSubmit={submitHandler} className='mx-2'>
                 <h4 className='global_white'><i
                     className="fas fa-user-alt"> </i>&nbsp;{loginTitle}</h4>
@@ -48,11 +57,12 @@ const Login = ({history, showSidebar, loginTitle}) => {
                                   onChange={(e) => setPassword(e.target.value)}>
                     </Form.Control>
                 </Form.Group>
-                <Button className='d-inline py-2 px-3 global_whiteFontRedHoverWhiteBg global_blue-bg rounded' type='submit' variant='primary'
+                <Button className='d-inline py-2 px-3 global_whiteFontRedHoverWhiteBg global_blue-bg rounded'
+                        type='submit' variant='primary'
                         onClick={showSidebar}><i className="far fa-lock"> </i>&nbsp;Sign In</Button>
-
-
             </Form>
+
+        </>
 
     )
 };

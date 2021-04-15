@@ -62,9 +62,9 @@ a {
 
 /* <li> */
 .wishList-nav-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
 }
 
 .wishList-nav-item a:hover {
@@ -159,11 +159,12 @@ a {
 /*}*/
 
 .WishListScreen_HeroDivider-margin{
-    margin-top: -45vh;
+    /*margin-top: -45vh;*/
     /*margin-top: -55vh;*/
-    padding-top: 20vh;
+    padding-top: 5vh;
     z-index: 1;
-    min-height: 68vh;
+    min-height: 100vh;
+    /*top: 55vw;*/
 }
 
 .WishListScreen_clear-btn {

@@ -1,12 +1,54 @@
 .SocialIcons_socialIcons:hover {
-    color: #2576e5;
+    color: white;
+
 }
 
 .SocialIcons_socialIcons {
     font-size: 2em;
-    /*font-size: 1.6em;*/
+    color: white;
+    padding-left: 3px;
+
 }
 
 .SocialIcons_socialIcons-size {
     font-size: 2em;
+    color: white;
+    padding-left: 3px;
+}
+
+.SocialIcons_row{
+    height: 10vh;
+
+    /*width:auto;*/
+}
+
+.SocialIcons_col-bg{
+    background-image: url("../images/bg-graphics/graphics/social-icon-bg-blood-red.png");
+    background-repeat: no-repeat;
+    height: 10vh;
+    /*border: 2px solid red;*/
+    /*width: 10vw;*/
+
+}
+
+.SocialIcons_col-bg:hover{
+    background-image: url("../images/bg-graphics/graphics/social-icon-bg-dark.png");
+}
+
+/*    ======   MOBILE RESPONSIVE    ======    */
+@media (max-width: 1200px) {
+    .SocialIcons_row{
+        width: 100vw;
+    }
+}
+
+@media (max-width: 800px) {
+    .SocialIcons_row{
+        width: 150vw;
+    }
+
+    .SocialIcons_mobile-col{
+        /*margin: 0 2vw 0 2vw;*/
+    }
+
 }

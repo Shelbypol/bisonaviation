@@ -81,9 +81,7 @@ const HeroCarousel = (
                             <Col md={7} xs={10} className='global_carousel-text-btm-bar'> </Col>
 
                             <Col xs={12} className='ml-n3'>
-                                <SocialIcons socialClassName={'col-sm-3 '}
-                                             contactClassName={'d-none'}
-                                />
+                                <SocialIcons/>
                             </Col>
                         </Row>
                     </Carousel.Caption>
@@ -128,22 +126,20 @@ const HeroCarousel = (
 
                                 <Col md={7} xs={10} className='global_carousel-text-btm-bar global_red-bg'> </Col>
                                 <Col xs={12} className='ml-n3'>
-                                    <SocialIcons socialClassName={'col-sm-3 '}
-                                                 contactClassName={'d-none'}
-                                    />
+                                    <SocialIcons/>
                                 </Col>
                             </Row>
                         </Carousel.Caption>
 
                         <div id={IDslide2} className=' global_HeroCarousel-animation'>
-                            <Slide left duration={2500}>
+                            {/*<Slide left duration={2500}>*/}
                                 <img
                                     className='global_carousel-divider-img '
                                     src={img1}
                                     alt=" "
                                     height={'100%'}
                                 />
-                            </Slide>
+                            {/*</Slide>*/}
                         </div>
                     </Carousel.Item>
                 )}
@@ -176,22 +172,20 @@ const HeroCarousel = (
 
                                 <Col md={7} xs={10} className='global_carousel-text-btm-bar global_red-bg'> </Col>
                                 <Col xs={12} className='ml-n3'>
-                                    <SocialIcons socialClassName={'col-sm-3 '}
-                                                 contactClassName={'d-none'}
-                                    />
+                                    <SocialIcons/>
                                 </Col>
                              </Row>
                         </Carousel.Caption>
 
                         <div id={IDslide3} className=' global_HeroCarousel-animation'>
-                            <Slide left duration={2500}>
+                            {/*<Slide left duration={2500}>*/}
                                 <img
                                     className='global_carousel-divider-img '
                                     src={img1}
                                     alt=" "
                                     height={'100%'}
                                 />
-                            </Slide>
+                            {/*</Slide>*/}
                         </div>
                     </Carousel.Item>
                 )}
@@ -226,22 +220,20 @@ const HeroCarousel = (
 
                                 <Col md={7} xs={10} className='global_carousel-text-btm-bar global_red-bg'> </Col>
                                 <Col xs={12} className='ml-n3'>
-                                    <SocialIcons socialClassName={'col-sm-3 '}
-                                                 contactClassName={'d-none'}
-                                    />
+                                    <SocialIcons/>
                                 </Col>
                             </Row>
                         </Carousel.Caption>
 
                         <div id={IDslide4} className='global_HeroCarousel-animation'>
-                            <Slide left duration={2500}>
+                            {/*<Slide left duration={2500}>*/}
                                 <img
                                     className='global_carousel-divider-img '
                                     src={img1}
                                     alt=" "
                                     height={'100%'}
                                 />
-                            </Slide>
+                            {/*</Slide>*/}
                         </div>
                     </Carousel.Item>
                 )}
@@ -274,22 +266,20 @@ const HeroCarousel = (
 
                                 <Col md={7} xs={10} className='global_carousel-text-btm-bar global_red-bg'> </Col>
                                 <Col xs={12} className='ml-n3'>
-                                    <SocialIcons socialClassName={'col-sm-3 '}
-                                                 contactClassName={'d-none'}
-                                    />
+                                    <SocialIcons/>
                                 </Col>
                             </Row>
                         </Carousel.Caption>
 
                         <div id={IDslide5} className=' global_HeroCarousel-animation'>
-                            <Slide left>
+                            {/*<Slide left>*/}
                                 <img
                                     className='global_carousel-divider-img '
                                     src={img1}
                                     alt=" "
                                     height={'100%'}
                                 />
-                            </Slide>
+                            {/*</Slide>*/}
                         </div>
                     </Carousel.Item>
                 )}

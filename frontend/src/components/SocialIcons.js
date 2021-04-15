@@ -10,58 +10,59 @@ const SocialIcons = ({socialClassName, socialClass, cartClassName, contactClassN
 
     return (
         <>
-            <Nav className={socialClassName}>
+            {/*<Nav className={socialClassName}>*/}
 
 
-                <Row xs={12}>
-                    <Col xs={4}>
-                        {/*  FACEBOOK  */}
-                        <LinkContainer className={facebookClassName} to='/'>
+                <Row className='SocialIcons_row mt-1 ml-1'>
+                    <Col xs={1} className='m-0 p-0 SocialIcons_mobile-col'>
+                        {/*  FACEBOOK */}
+                        <LinkContainer className='SocialIcons_col-bg' to='/'>
                             <Nav.Link className='flip-container'>
                                 <div className='flipper'>
-                            <span className='SocialIcons_socialIcons front'>
-                                <i className="m-auto fab fa-facebook "> </i>
+                            <span className='SocialIcons_socialIcons front pt-1'>
+                                <i className="m-auto fab fa-facebook"> </i>
                             </span>
-                                    <span className='SocialIcons_socialIcons-size back'>
+                                    <span className='SocialIcons_socialIcons-size back pt-1'>
                                 <i className="m-auto fab fa-facebook "> </i>
                             </span>
                                 </div>
                             </Nav.Link>
                         </LinkContainer>
                     </Col>
-                    <Col xs={4}>
+                    <Col xs={1} className='mx-2 p-0 SocialIcons_mobile-col'>
                         {/*  INSTAGRAM */}
-                        <LinkContainer className={instaClassName} to='/'>
+                        <LinkContainer className='SocialIcons_col-bg' to='/'>
                             <Nav.Link className='flip-container'>
                                 <div className='flipper'>
-                            <span className='SocialIcons_socialIcons front'>
-                                <i className="m-auto fab fa-instagram "> </i>
+                            <span className='SocialIcons_socialIcons front pl-1 pt-1'>
+                                <i className="m-auto fab fa-instagram"> </i>
                             </span>
-                                    <span className='SocialIcons_socialIcons-size back'>
+                                    <span className='SocialIcons_socialIcons-size back pl-1 pt-1'>
                                 <i className="m-auto fab fa-instagram "> </i>
                             </span>
                                 </div>
                             </Nav.Link>
                         </LinkContainer>
                     </Col>
-                    <Col xs={4}>
+                    <Col xs={1} className='m-0 p-0 SocialIcons_mobile-col'>
                         {/*  TWITTER */}
-                        <LinkContainer className={twitterClassName} to='/'>
+                        <LinkContainer className='SocialIcons_col-bg' to='/'>
                             <Nav.Link className='flip-container'>
                                 <div className='flipper'>
-                            <span className='SocialIcons_socialIcons front'>
-                                <i className="m-auto fab fa-twitter "> </i>
+                            <span className='SocialIcons_socialIcons front pt-1'>
+                                <i className="m-auto fab fa-twitter"> </i>
                             </span>
-                                    <span className='SocialIcons_socialIcons-size back'>
+                                    <span className='SocialIcons_socialIcons-size back pt-1'>
                                 <i className="m-auto fab fa-twitter "> </i>
                             </span>
                                 </div>
                             </Nav.Link>
                         </LinkContainer>
                     </Col>
+
                     {/*<WishListTab/>*/}
                 </Row>
-            </Nav>
+            {/*</Nav>*/}
         </>
     )
 };

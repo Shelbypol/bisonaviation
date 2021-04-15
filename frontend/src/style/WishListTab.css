@@ -9,8 +9,8 @@
 }
 
 .stick{
-    /*position: sticky;*/
-    /*top: 5%;*/
+    position: sticky;
+    top: 6.25vh;
     /*z-index: 100;*/
     background-color: #fff;
     padding-top: 10%;
@@ -37,7 +37,6 @@ a {
 }
 
 /* Top Navigation Bar */
-
 .WishListTab_icon{
     color: white;
 }
@@ -74,13 +73,14 @@ a {
 /* Dropdown Menu */
 .wishList-Dropdown {
     position: absolute;
-    width: 175%;
+    /*width: 275%;*/
     background-color: #fff;
     border-left: 2vw solid #660708;
     border-top: 2px solid white;
     overflow-y: scroll;
-    margin-right: -5.8vw;
-    transition: height var(--speed) ease;
+    /*margin-right: -5.8vw;*/
+    /*transition: height var(--speed) ease;*/
+    margin-top: -6.25vh
 }
 
 .wishList-menu {
@@ -89,7 +89,7 @@ a {
 
 .wishList-menu-item {
     border-radius: var(--border-radius);
-    transition: background var(--speed);
+    /*transition: background var(--speed);*/
     padding: 0.5rem;
 }
 
@@ -102,36 +102,36 @@ a {
 }
 
  /*CSSTransition classes  */
-.wishList-menu-primary-enter {
-    position: absolute;
-    transform: translateX(-110%);
+/*.wishList-menu-primary-enter {*/
+/*    position: absolute;*/
+/*    transform: translateX(100%);*/
 
-}
-.wishList-menu-primary-enter-active {
-    transform: translateX(-110%);
-    transition: all var(--speed) ease;
-}
-.wishList-menu-primary-exit {
-    position: absolute;
-}
-.wishList-menu-primary-exit-active {
-    transform: translateX(-110%);
-    transition: all var(--speed) ease;
-}
+/*}*/
+/*.wishList-menu-primary-enter-active {*/
+/*    transform: translateX(100%);*/
+/*    transition: all var(--speed) ease;*/
+/*}*/
+/*.wishList-menu-primary-exit {*/
+/*    position: absolute;*/
+/*}*/
+/*.wishList-menu-primary-exit-active {*/
+/*    transform: translateX(-100%);*/
+/*    transition: all var(--speed) ease;*/
+/*}*/
 
-.menu-secondary-enter {
-    transform: translateX(50%);
-}
-.menu-secondary-enter-active {
-    transform: translateX(0%);
-    transition: all var(--speed) ease;
-}
-.menu-secondary-exit {
+/*.menu-secondary-enter {*/
+/*    transform: translateX(100%);*/
+/*}*/
+/*.menu-secondary-enter-active {*/
+/*    transform: translateX(100%);*/
+/*    transition: all var(--speed) ease;*/
+/*}*/
+/*.menu-secondary-exit {*/
 
-}
-.menu-secondary-exit-active {
-    transform: translateX(110%);
-    transition: all var(--speed) ease;
-}
+/*}*/
+/*.menu-secondary-exit-active {*/
+/*    transform: translateX(100%);*/
+/*    transition: all var(--speed) ease;*/
+/*}*/
 
 

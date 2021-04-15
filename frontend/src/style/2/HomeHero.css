@@ -2,24 +2,29 @@
 
 #HomeHero_carouselImg1{
     background-image: url("../../images/bg-graphics/home-screen/home-slider/large-wing.png");
+    background-position: 50% 60%;
 }
 
 /*IMG 2*/
 
 #HomeHero_carouselImg2{
     background-image: url("../../images/bg-graphics/home-screen/home-slider/fullscreen-slider2.png");
+    background-position: 50% 10%;
+    transform: rotateX(25deg);
 }
 
 /*IMG 3*/
 
 #HomeHero_carouselImg3{
     background-image: url("../../images/bg-graphics/home-screen/home-slider/cnc-machine copy.png");
+    background-position: 50% 65%;
 }
 
 /*IMG 4*/
 
 #HomeHero_carouselImg4{
     background-image: url("../../images/bg-graphics/home-screen/home-slider/riveting-large.png");
+    background-position: 50% 50%;
 }
 
 /*IMG 5*/

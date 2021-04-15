@@ -1,8 +1,8 @@
 .SideBar-navbar {
     background-color: rgba(0, 0, 0, .5);
     /*background-color: #060b26;*/
-    height: 50px;
-    width: 50px;
+    /*height: 5vh;*/
+    width: 25vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,16 +38,18 @@
 
 .SideBar-nav-menu-user-not-logged {
     background-image: url("../images/bg-graphics/graphics/dots.png");
+    /*background-color: rgba(255,255,255, .7);*/
+    /*background-color: rgba(67,13,10, .8);*/
     background-color: rgba(0,0,0, .7);
     width: 30vw;
-    height: 50vh;
+    /*height: 50vh;*/
     display: flex;
     justify-content: start;
     position: absolute;
     padding: 2%;
     /*position: fixed;*/
     z-index: 2000;
-    top: 6.25vh;
+    top: 12.5vh;
     right: -500%;
     transition: 850ms;
 }
@@ -88,13 +90,14 @@
 }
 
 .SideBar-nav-menu-items {
-    margin-top: 10px;
+    /*margin-top: 1vh;*/
     width: 100%;
 }
 
 .SideBar_Name{
     color: rgba(255,255,255, .9);
     font-weight: lighter;
+    height: 5.8vh;
     /*margin-topL*/
 }
 
