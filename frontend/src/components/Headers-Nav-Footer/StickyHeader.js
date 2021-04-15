@@ -80,18 +80,12 @@ const StickyHeader = () => {
 
                     {userInfo && (
                         <>
-                        {userInfo.isAdmin ? (
+                        {/*{userInfo.isAdmin ? (*/}
                             <Link to='#'>
                                 <h6
                                     className='SideBar_Name pt-3 pr-3'>{userInfo.name}</h6>
                             </Link>
 
-                        ):(
-                            <Link to='#'>
-                                <h6
-                                    className='SideBar_Name pt-3'>{userInfo.name}</h6>
-                            </Link>
-                        )}
                             </>
                     )}
 
@@ -184,11 +178,11 @@ const StickyHeader = () => {
                         </Nav.Link>
                     </LinkContainer>
 
-                    {!userInfo && (
+                    {/*{!userInfo && (*/}
                         <Nav.Link className='StickyHeader_wishList-btn' style={{height: '6vh'}}>
                             <WishListTab/>
                         </Nav.Link>
-                    )}
+                    {/*)}*/}
 
                 </Col>
 
