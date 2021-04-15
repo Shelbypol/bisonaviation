@@ -14,18 +14,21 @@
 
 .SocialIcons_socialIcons-size {
     font-size: 2em;
+    color: #2576e5;
 }
 
 .SocialIcons_row{
     height: 10vh;
     width: 20vw;
+    /*width:auto;*/
 }
 
 .SocialIcons_col-bg{
-    background-image: url("../images/bg-graphics/graphics/social-icon-bg.png");
+    background-image: url("../images/bg-graphics/graphics/social-icon-bg-blood-red.png");
     background-repeat: no-repeat;
     height: 10vh;
-    width: 5vw;
+    /*display: flex;*/
+    /*justify-content: center;*/
 }
 
 .SocialIcon_icon-container{
