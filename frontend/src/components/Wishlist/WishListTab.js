@@ -140,7 +140,7 @@ const DropdownMenu = () => {
                     <CSSTransition
                         in={activeMenu === 'main'}
                         timeout={500}
-                        classNames="wishList-menu-primary"
+                        classNames="wishList-menu-primary "
                         unmountOnExit
                         onEnter={calcHeight}
                     >
