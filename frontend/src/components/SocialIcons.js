@@ -13,29 +13,29 @@ const SocialIcons = ({socialClassName, socialClass, cartClassName, contactClassN
             <Nav className={socialClassName}>
 
 
-                <Row xs={12}>
-                    <Col xs={4}>
+                <Row xs={12} className='SocialIcons_row ml-2 d-flex justify-content-center align-content-center'>
+                    <Col xs={4} className=''>
                         {/*  FACEBOOK  */}
-                        <LinkContainer className={facebookClassName} to='/'>
+                        <LinkContainer to='/' className=' SocialIcons_col-bg'>
                             <Nav.Link className='flip-container'>
                                 <div className='flipper'>
-                            <span className='SocialIcons_socialIcons front'>
-                                <i className="m-auto fab fa-facebook "> </i>
+                            <span className='SocialIcons_socialIcons front pl-1 pt-1'>
+                                <i className="fab fa-facebook"> </i>
                             </span>
                                     <span className='SocialIcons_socialIcons-size back'>
-                                <i className="m-auto fab fa-facebook "> </i>
+                                <i className="fab fa-facebook "> </i>
                             </span>
                                 </div>
                             </Nav.Link>
                         </LinkContainer>
                     </Col>
-                    <Col xs={4}>
+                    <Col xs={4} className=''>
                         {/*  INSTAGRAM */}
-                        <LinkContainer className={instaClassName} to='/'>
+                        <LinkContainer className='SocialIcons_col-bg' to='/'>
                             <Nav.Link className='flip-container'>
                                 <div className='flipper'>
-                            <span className='SocialIcons_socialIcons front'>
-                                <i className="m-auto fab fa-instagram "> </i>
+                            <span className='SocialIcons_socialIcons front pl-1 pt-1'>
+                                <i className="m-auto fab fa-instagram"> </i>
                             </span>
                                     <span className='SocialIcons_socialIcons-size back'>
                                 <i className="m-auto fab fa-instagram "> </i>
@@ -44,13 +44,13 @@ const SocialIcons = ({socialClassName, socialClass, cartClassName, contactClassN
                             </Nav.Link>
                         </LinkContainer>
                     </Col>
-                    <Col xs={4}>
+                    <Col xs={4} className=''>
                         {/*  TWITTER */}
-                        <LinkContainer className={twitterClassName} to='/'>
+                        <LinkContainer className='SocialIcons_col-bg' to='/'>
                             <Nav.Link className='flip-container'>
                                 <div className='flipper'>
-                            <span className='SocialIcons_socialIcons front'>
-                                <i className="m-auto fab fa-twitter "> </i>
+                            <span className='SocialIcons_socialIcons front pl-1 pt-1'>
+                                <i className="m-auto fab fa-twitter"> </i>
                             </span>
                                     <span className='SocialIcons_socialIcons-size back'>
                                 <i className="m-auto fab fa-twitter "> </i>

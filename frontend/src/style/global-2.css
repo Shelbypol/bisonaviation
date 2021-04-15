@@ -242,15 +242,6 @@ main {
     background-repeat: no-repeat;
 }
 
-/*.Global_graphic-wishlist{*/
-/*    background-image: url("../images/bg-graphics/graphics/black-top-large-left.png");*/
-/*    z-index: 1;*/
-/*    background-repeat: no-repeat;*/
-
-/*    height: 300px;*/
-/*    margin-top: -12vh;*/
-/*}*/
-
 .Global_graphic-productDisplayScreen{
     /*background-image: url("../images/bg-graphics/graphics/black-top-large-left.png");*/
     height: 10vh;
@@ -273,13 +264,8 @@ main {
 
 /*=================     GRAPHIC BTM MARGIN      ==============*/
 .global_HeroDivider-margin{
-    /*margin-top: -36vh;*/
-    /*z-index: 5;  */
-    /*margin-top: -20vh;*/
     z-index: 5;
 }
-
-
 
 
 /*    ======   MOBILE RESPONSIVE    ======    */

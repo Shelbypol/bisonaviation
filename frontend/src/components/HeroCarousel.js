@@ -81,7 +81,7 @@ const HeroCarousel = (
                             <Col md={7} xs={10} className='global_carousel-text-btm-bar'> </Col>
 
                             <Col xs={12} className='ml-n3'>
-                                <SocialIcons socialClassName={'col-sm-3 '}
+                                <SocialIcons socialClassName={'col-sm-12 '}
                                              contactClassName={'d-none'}
                                 />
                             </Col>
@@ -128,7 +128,7 @@ const HeroCarousel = (
 
                                 <Col md={7} xs={10} className='global_carousel-text-btm-bar global_red-bg'> </Col>
                                 <Col xs={12} className='ml-n3'>
-                                    <SocialIcons socialClassName={'col-sm-3 '}
+                                    <SocialIcons socialClassName={'col-sm-12'}
                                                  contactClassName={'d-none'}
                                     />
                                 </Col>
@@ -176,7 +176,7 @@ const HeroCarousel = (
 
                                 <Col md={7} xs={10} className='global_carousel-text-btm-bar global_red-bg'> </Col>
                                 <Col xs={12} className='ml-n3'>
-                                    <SocialIcons socialClassName={'col-sm-3 '}
+                                    <SocialIcons socialClassName={'col-sm-12'}
                                                  contactClassName={'d-none'}
                                     />
                                 </Col>
@@ -226,7 +226,7 @@ const HeroCarousel = (
 
                                 <Col md={7} xs={10} className='global_carousel-text-btm-bar global_red-bg'> </Col>
                                 <Col xs={12} className='ml-n3'>
-                                    <SocialIcons socialClassName={'col-sm-3 '}
+                                    <SocialIcons socialClassName={'col-sm-12'}
                                                  contactClassName={'d-none'}
                                     />
                                 </Col>
@@ -274,7 +274,7 @@ const HeroCarousel = (
 
                                 <Col md={7} xs={10} className='global_carousel-text-btm-bar global_red-bg'> </Col>
                                 <Col xs={12} className='ml-n3'>
-                                    <SocialIcons socialClassName={'col-sm-3 '}
+                                    <SocialIcons socialClassName={'col-sm-12'}
                                                  contactClassName={'d-none'}
                                     />
                                 </Col>

@@ -127,8 +127,8 @@ const StickyHeader = () => {
                 </Col>
 
 
-                <Col xs={6} className='ml-auto d-flex justify-content-center StickyHeader_right-row sticky-top '
-                     style={{marginTop: '-6vh', top: '6vh'}}>
+                <Col xs={6} className='ml-auto pb-0 d-flex justify-content-center StickyHeader_right-row sticky-top '
+                     style={{marginTop: '-5.75vh'}}>
 
                     {/*  HOME  */}
                     <LinkContainer className='d-inline' to='/'>
@@ -139,53 +139,53 @@ const StickyHeader = () => {
                     </LinkContainer>
 
                     {/*  BROWSE PRODUCTS  */}
-                    <LinkContainer className='d-inline' to='/products'>
+                    <LinkContainer className='d-inline StickyHeader_link-hover' to='/products'>
                         <Nav.Link className=''>
-                                    <span className='StickyHeader_links'>
+                                    <h6 className='StickyHeader_links pt-1'>
                                     Products
-                                    </span>
+                                    </h6>
                         </Nav.Link>
                     </LinkContainer>
 
                     {/*  AVIONICS  */}
-                    <LinkContainer className='d-inline' to='/avionics'>
+                    <LinkContainer className='d-inline StickyHeader_link-hover' to='/avionics'>
                         <Nav.Link>
-                                    <span className='StickyHeader_links'>
+                                    <h6 className='StickyHeader_links pt-1'>
                                     Avionics
-                                    </span>
+                                    </h6>
                         </Nav.Link>
                     </LinkContainer>
 
                     {/*  MAINTENANCE  */}
-                    <LinkContainer className='d-inline' to='/maintenance'>
+                    <LinkContainer className='d-inline StickyHeader_link-hover' to='/maintenance'>
                         <Nav.Link>
-                                    <span className='StickyHeader_links'>
+                                    <h6 className='StickyHeader_links pt-1'>
                                     Maintenance
-                                    </span>
+                                    </h6>
                         </Nav.Link>
                     </LinkContainer>
 
                     {/*  EO/IR FLIR  */}
-                    <LinkContainer className='d-inline' to='/flir'>
+                    <LinkContainer className='d-inline StickyHeader_link-hover' to='/flir'>
                         <Nav.Link>
-                                    <span className='StickyHeader_links'>
+                                    <h6 className='StickyHeader_links pt-1'>
                                     Flir
 
-                                    </span>
+                                    </h6>
                         </Nav.Link>
                     </LinkContainer>
 
                     {/*  TEAM  */}
-                    <LinkContainer className='d-inline' to='/team'>
+                    <LinkContainer className='d-inline StickyHeader_link-hover' to='/team'>
                         <Nav.Link>
-                                    <span className='StickyHeader_links'>
+                                    <h6 className='StickyHeader_links pt-1'>
                                     Team
-                                    </span>
+                                    </h6>
                         </Nav.Link>
                     </LinkContainer>
 
                     {!userInfo && (
-                        <Nav.Link className='mt-n2 ml-n4'>
+                        <Nav.Link className='mt-n2 ml-n4 StickyHeader_wishList-btn' style={{height: '6vh'}}>
                             <WishListTab/>
                         </Nav.Link>
                     )}

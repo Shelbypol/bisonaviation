@@ -1,12 +1,34 @@
 .SocialIcons_socialIcons:hover {
-    color: #2576e5;
+    color: white;
+
 }
 
 .SocialIcons_socialIcons {
     font-size: 2em;
-    /*font-size: 1.6em;*/
+    color: white;
+    /*background-image: url("../images/bg-graphics/graphics/social-icon-bg.png");*/
+    /*background-repeat: no-repeat;*/
+    /*height: 10vh;*/
+    /*width: 5vw;*/
 }
 
 .SocialIcons_socialIcons-size {
     font-size: 2em;
 }
+
+.SocialIcons_row{
+    height: 10vh;
+    width: 20vw;
+}
+
+.SocialIcons_col-bg{
+    background-image: url("../images/bg-graphics/graphics/social-icon-bg.png");
+    background-repeat: no-repeat;
+    height: 10vh;
+    width: 5vw;
+}
+
+.SocialIcon_icon-container{
+
+}
+
