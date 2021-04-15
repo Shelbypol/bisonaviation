@@ -136,14 +136,14 @@ const HeroCarousel = (
                         </Carousel.Caption>
 
                         <div id={IDslide2} className=' global_HeroCarousel-animation'>
-                            <Slide left duration={2500}>
+                            {/*<Slide left duration={2500}>*/}
                                 <img
                                     className='global_carousel-divider-img '
                                     src={img1}
                                     alt=" "
                                     height={'100%'}
                                 />
-                            </Slide>
+                            {/*</Slide>*/}
                         </div>
                     </Carousel.Item>
                 )}
@@ -184,14 +184,14 @@ const HeroCarousel = (
                         </Carousel.Caption>
 
                         <div id={IDslide3} className=' global_HeroCarousel-animation'>
-                            <Slide left duration={2500}>
+                            {/*<Slide left duration={2500}>*/}
                                 <img
                                     className='global_carousel-divider-img '
                                     src={img1}
                                     alt=" "
                                     height={'100%'}
                                 />
-                            </Slide>
+                            {/*</Slide>*/}
                         </div>
                     </Carousel.Item>
                 )}
@@ -234,14 +234,14 @@ const HeroCarousel = (
                         </Carousel.Caption>
 
                         <div id={IDslide4} className='global_HeroCarousel-animation'>
-                            <Slide left duration={2500}>
+                            {/*<Slide left duration={2500}>*/}
                                 <img
                                     className='global_carousel-divider-img '
                                     src={img1}
                                     alt=" "
                                     height={'100%'}
                                 />
-                            </Slide>
+                            {/*</Slide>*/}
                         </div>
                     </Carousel.Item>
                 )}
@@ -282,14 +282,14 @@ const HeroCarousel = (
                         </Carousel.Caption>
 
                         <div id={IDslide5} className=' global_HeroCarousel-animation'>
-                            <Slide left>
+                            {/*<Slide left>*/}
                                 <img
                                     className='global_carousel-divider-img '
                                     src={img1}
                                     alt=" "
                                     height={'100%'}
                                 />
-                            </Slide>
+                            {/*</Slide>*/}
                         </div>
                     </Carousel.Item>
                 )}

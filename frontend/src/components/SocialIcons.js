@@ -19,10 +19,10 @@ const SocialIcons = ({socialClassName, socialClass, cartClassName, contactClassN
                         <LinkContainer className='SocialIcons_col-bg' to='/'>
                             <Nav.Link className='flip-container'>
                                 <div className='flipper'>
-                            <span className='SocialIcons_socialIcons front pl-1 pt-1'>
+                            <span className='SocialIcons_socialIcons front pt-1'>
                                 <i className="m-auto fab fa-facebook"> </i>
                             </span>
-                                    <span className='SocialIcons_socialIcons-size back pl-1 pt-1'>
+                                    <span className='SocialIcons_socialIcons-size back pt-1'>
                                 <i className="m-auto fab fa-facebook "> </i>
                             </span>
                                 </div>
@@ -49,10 +49,10 @@ const SocialIcons = ({socialClassName, socialClass, cartClassName, contactClassN
                         <LinkContainer className='SocialIcons_col-bg' to='/'>
                             <Nav.Link className='flip-container'>
                                 <div className='flipper'>
-                            <span className='SocialIcons_socialIcons front pl-1 pt-1'>
+                            <span className='SocialIcons_socialIcons front pt-1'>
                                 <i className="m-auto fab fa-twitter"> </i>
                             </span>
-                                    <span className='SocialIcons_socialIcons-size back pl-1 pt-1'>
+                                    <span className='SocialIcons_socialIcons-size back pt-1'>
                                 <i className="m-auto fab fa-twitter "> </i>
                             </span>
                                 </div>

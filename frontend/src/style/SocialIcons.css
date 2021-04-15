@@ -6,15 +6,14 @@
 .SocialIcons_socialIcons {
     font-size: 2em;
     color: white;
-    /*background-image: url("../images/bg-graphics/graphics/social-icon-bg.png");*/
-    /*background-repeat: no-repeat;*/
-    /*height: 10vh;*/
-    /*width: 5vw;*/
+    padding-left: 3px;
+
 }
 
 .SocialIcons_socialIcons-size {
     font-size: 2em;
-    color: #2576e5;
+    color: white;
+    padding-left: 3px;
 }
 
 .SocialIcons_row{
@@ -27,8 +26,11 @@
     background-image: url("../images/bg-graphics/graphics/social-icon-bg-blood-red.png");
     background-repeat: no-repeat;
     height: 10vh;
-    /*display: flex;*/
-    /*justify-content: center;*/
+
+}
+
+.SocialIcons_col-bg:hover{
+    background-image: url("../images/bg-graphics/graphics/social-icon-bg-dark.png");
 }
 
 .SocialIcon_icon-container{
