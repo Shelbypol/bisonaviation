@@ -62,9 +62,9 @@ a {
 
 /* <li> */
 .wishList-nav-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
 }
 
 .wishList-nav-item a:hover {

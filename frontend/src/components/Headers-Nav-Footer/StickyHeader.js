@@ -127,7 +127,7 @@ const StickyHeader = () => {
                 </Col>
 
 
-                <Col xs={6} className='ml-auto pb-0 d-flex justify-content-center StickyHeader_right-row sticky-top '
+                <Col xs={7} className='ml-auto mr-5 pb-0 d-flex justify-content-center StickyHeader_right-row sticky-top '
                      style={{marginTop: '-5.75vh'}}>
 
                     {/*  HOME  */}
@@ -185,7 +185,7 @@ const StickyHeader = () => {
                     </LinkContainer>
 
                     {!userInfo && (
-                        <Nav.Link className='mt-n2 ml-n4 StickyHeader_wishList-btn' style={{height: '6vh'}}>
+                        <Nav.Link className='StickyHeader_wishList-btn' style={{height: '6vh'}}>
                             <WishListTab/>
                         </Nav.Link>
                     )}
@@ -194,7 +194,7 @@ const StickyHeader = () => {
 
 
                 {/*============= WISHLIST / LOGIN / CONTACT BTNS ==============*/}
-                <Col xs={3} className='d-flex justify-content-end StickyHeader_right-row sticky-top '
+                <Col xs={2} className='d-flex justify-content-end StickyHeader_right-row sticky-top '
                      style={{marginTop: '-6vh', top: '6vh'}}>
 
                     <LinkContainer to='/contact'>

@@ -14,7 +14,7 @@ const SocialIcons = ({socialClassName, socialClass, cartClassName, contactClassN
 
 
                 <Row className='SocialIcons_row mt-1 ml-1'>
-                    <Col xs={2} className=''>
+                    <Col xs={2} className='m-0 p-0'>
                         {/*  FACEBOOK */}
                         <LinkContainer className='SocialIcons_col-bg' to='/'>
                             <Nav.Link className='flip-container'>
@@ -29,7 +29,7 @@ const SocialIcons = ({socialClassName, socialClass, cartClassName, contactClassN
                             </Nav.Link>
                         </LinkContainer>
                     </Col>
-                    <Col xs={2} className=''>
+                    <Col xs={2} className='m-0 p-0'>
                         {/*  INSTAGRAM */}
                         <LinkContainer className='SocialIcons_col-bg' to='/'>
                             <Nav.Link className='flip-container'>
@@ -44,7 +44,7 @@ const SocialIcons = ({socialClassName, socialClass, cartClassName, contactClassN
                             </Nav.Link>
                         </LinkContainer>
                     </Col>
-                    <Col xs={2} className=''>
+                    <Col xs={2} className='m-0 p-0'>
                         {/*  TWITTER */}
                         <LinkContainer className='SocialIcons_col-bg' to='/'>
                             <Nav.Link className='flip-container'>
@@ -59,6 +59,7 @@ const SocialIcons = ({socialClassName, socialClass, cartClassName, contactClassN
                             </Nav.Link>
                         </LinkContainer>
                     </Col>
+
                     {/*<WishListTab/>*/}
                 </Row>
             {/*</Nav>*/}

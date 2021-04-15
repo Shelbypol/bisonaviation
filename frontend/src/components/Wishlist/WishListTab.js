@@ -17,9 +17,9 @@ const WishList = () => {
 
         <Navbar id='app' className='wishList'>
             <NavItem icon={
-                <span className='global_cursor ' style={{fontSize: '1.3em'}}>
+                <span className='global_cursor' style={{fontSize: '1.3em'}}>
                     {/*{cartItems.length === 0 ? (*/}
-                        +<i className="fal fa-list-alt"> </i>
+                        <i className="fal fa-list-alt"> </i>
                     {/*// ) : (*/}
                     {/*//     <i className="fal fa-list-alt"> </i>*/}
                     {/*// )}*/}
@@ -83,17 +83,17 @@ const NavItem = (props) => {
             // handleClick(e);
             // setOpen(!open);
             //  handleScroll(e)
-        }} className="wishList-nav-item pt-1 StickyHeader_wishlist-btn px-3"
+        }} className=" StickyHeader_wishlist-btn"
         >
             {/*<li ref={node} onClick={(e) => (handleScroll(e))} className="wishList-nav-item">*/}
             {/*<a href="#" className="wishList-icon-button" onClick={() => setOpen(!open)}>*/}
             <a onClick={() => setOpen(!open)}>
                 {cartItems.length === 0 ? (
-                    <span className='global_cursor StickyHeader_icon StickyHeader_links'>&nbsp;{props.icon}</span>
+                    <span className='global_cursor StickyHeader_links'>&nbsp;{props.icon}</span>
                 ) : (
                     <>
                         <span
-                            className=' global_cursor StickyHeader_icon'>&nbsp;{cartItems.length}&nbsp;{props.icon}</span>
+                            className='global_cursor'>&nbsp;{cartItems.length}&nbsp;{props.icon}</span>
                     </>
                 )}
             </a>
