@@ -68,7 +68,7 @@ const TeamScreen = () => {
                 img={'TeamScreen_hero-img'}
                 showImg={true}
                 title={'Meet the Bison Team'}
-                showDivider={true}
+                leftTitle={false}
             />
 
 

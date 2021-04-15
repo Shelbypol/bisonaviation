@@ -3,7 +3,7 @@ import '../style/HeroDivider.css';
 import {Jumbotron, Image, Row, Col} from "react-bootstrap";
 import graphic from '../images/bg-graphics/graphics/black-top-large-left.png'
 
-const HeroDivider = ({img, showImg, showDivider, textColor, title}) => {
+const HeroDivider = ({img, showImg, showDivider, textColor, title, leftTitle}) => {
 
     return (
         <>
@@ -20,14 +20,20 @@ const HeroDivider = ({img, showImg, showDivider, textColor, title}) => {
                          justify-content-sm-start
                          justify-content-md-center
                          align-items-center
-                       
                          m-0
                          p-0
                         ${img}`}
                     >
+                        {leftTitle ? (
+                            <p
+                                className={'HeroDivider_title pr-5 ml-auto'}
+                            >{title}</p>
+                        ):(
                         <p
                             className={'HeroDivider_title pr-5 mr-5'}
                         >{title}</p>
+
+                        )}
                     </Col>
                 )}
                 {/*{showDivider && (*/}
