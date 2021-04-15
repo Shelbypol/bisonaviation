@@ -10,11 +10,11 @@ const SocialIcons = ({socialClassName, socialClass, cartClassName, contactClassN
 
     return (
         <>
-            <Nav className={socialClassName}>
+            {/*<Nav className={socialClassName}>*/}
 
 
-                <Row xs={12} className='SocialIcons_row mt-1 ml-1 d-flex align-items-center'>
-                    <Col xs={4} className=''>
+                <Row className='SocialIcons_row mt-1 ml-1'>
+                    <Col xs={2} className=''>
                         {/*  FACEBOOK */}
                         <LinkContainer className='SocialIcons_col-bg' to='/'>
                             <Nav.Link className='flip-container'>
@@ -29,7 +29,7 @@ const SocialIcons = ({socialClassName, socialClass, cartClassName, contactClassN
                             </Nav.Link>
                         </LinkContainer>
                     </Col>
-                    <Col xs={4} className=''>
+                    <Col xs={2} className=''>
                         {/*  INSTAGRAM */}
                         <LinkContainer className='SocialIcons_col-bg' to='/'>
                             <Nav.Link className='flip-container'>
@@ -44,7 +44,7 @@ const SocialIcons = ({socialClassName, socialClass, cartClassName, contactClassN
                             </Nav.Link>
                         </LinkContainer>
                     </Col>
-                    <Col xs={4} className=''>
+                    <Col xs={2} className=''>
                         {/*  TWITTER */}
                         <LinkContainer className='SocialIcons_col-bg' to='/'>
                             <Nav.Link className='flip-container'>
@@ -61,7 +61,7 @@ const SocialIcons = ({socialClassName, socialClass, cartClassName, contactClassN
                     </Col>
                     {/*<WishListTab/>*/}
                 </Row>
-            </Nav>
+            {/*</Nav>*/}
         </>
     )
 };

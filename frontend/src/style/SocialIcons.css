@@ -18,7 +18,7 @@
 
 .SocialIcons_row{
     height: 10vh;
-    width: 20vw;
+    width: 40vw;
     /*width:auto;*/
 }
 
@@ -33,7 +33,22 @@
     background-image: url("../images/bg-graphics/graphics/social-icon-bg-dark.png");
 }
 
-.SocialIcon_icon-container{
+/*    ======   MOBILE RESPONSIVE    ======    */
+@media (max-width: 1200px) {
+    .SocialIcons_row{
+        width: 100vw;
+    }
 
 }
 
+@media (max-width: 800px) {
+    .SocialIcons_row{
+        width: 150vw;
+    }
+
+    .SocialIcons_col-bg{
+        width: 25vw;
+
+    }
+
+}
