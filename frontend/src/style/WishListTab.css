@@ -37,7 +37,6 @@ a {
 }
 
 /* Top Navigation Bar */
-
 .WishListTab_icon{
     color: white;
 }
@@ -73,14 +72,14 @@ a {
 
 /* Dropdown Menu */
 .wishList-Dropdown {
-    /*position: absolute;*/
-    /*width: 175%;*/
+    position: absolute;
+    /*width: 275%;*/
     background-color: #fff;
     border-left: 2vw solid #660708;
     border-top: 2px solid white;
     overflow-y: scroll;
-    margin-right: -5.8vw;
-    transition: height var(--speed) ease;
+    /*margin-right: -5.8vw;*/
+    /*transition: height var(--speed) ease;*/
     margin-top: -6.25vh
 }
 
@@ -90,7 +89,7 @@ a {
 
 .wishList-menu-item {
     border-radius: var(--border-radius);
-    transition: background var(--speed);
+    /*transition: background var(--speed);*/
     padding: 0.5rem;
 }
 

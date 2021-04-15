@@ -14,7 +14,7 @@ const SocialIcons = ({socialClassName, socialClass, cartClassName, contactClassN
 
 
                 <Row className='SocialIcons_row mt-1 ml-1'>
-                    <Col xs={2} className='m-0 p-0'>
+                    <Col xs={1} className='m-0 p-0 SocialIcons_mobile-col'>
                         {/*  FACEBOOK */}
                         <LinkContainer className='SocialIcons_col-bg' to='/'>
                             <Nav.Link className='flip-container'>
@@ -29,7 +29,7 @@ const SocialIcons = ({socialClassName, socialClass, cartClassName, contactClassN
                             </Nav.Link>
                         </LinkContainer>
                     </Col>
-                    <Col xs={2} className='m-0 p-0'>
+                    <Col xs={1} className='mx-2 p-0 SocialIcons_mobile-col'>
                         {/*  INSTAGRAM */}
                         <LinkContainer className='SocialIcons_col-bg' to='/'>
                             <Nav.Link className='flip-container'>
@@ -44,7 +44,7 @@ const SocialIcons = ({socialClassName, socialClass, cartClassName, contactClassN
                             </Nav.Link>
                         </LinkContainer>
                     </Col>
-                    <Col xs={2} className='m-0 p-0'>
+                    <Col xs={1} className='m-0 p-0 SocialIcons_mobile-col'>
                         {/*  TWITTER */}
                         <LinkContainer className='SocialIcons_col-bg' to='/'>
                             <Nav.Link className='flip-container'>

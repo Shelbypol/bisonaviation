@@ -28,9 +28,9 @@ const TeamCard = ({img, headerName, headerPosition, name, position, certificatio
     return (
 
         <>
-            <Col sm={1} md={3} className='my-2 ' ref={node} onClick={(e) => {
+            <Col sm={1} md={2} className='my-2 p-0 mx-4 global_cursor' ref={node} onClick={(e) => {
                 handleClick(e)}}>
-                <Card className='bg-transparent border-0' onClick={cardShow}>
+                <Card className='bg-transparent border-0 w-100 h-100 m-0 p-0' onClick={cardShow}>
                     <Card.Img src={img} className='rounded'/>
                     <Card.Header
                         className='global_cultured global_rich-black-bg text-center d-flex justify-content-center align-items-center'
