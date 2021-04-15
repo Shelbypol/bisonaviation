@@ -135,7 +135,7 @@ const DropdownMenu = () => {
     return (
         <>
             {userInfo ? (
-                <div className="wishList-Dropdown" style={{height: menuHeight, zIndex: '1000', marginTop: '-6.25vh'}}
+                <div className="wishList-Dropdown" style={{height: menuHeight, zIndex: '1000'}}
                      ref={dropdownRef}>
                     <CSSTransition
                         in={activeMenu === 'main'}

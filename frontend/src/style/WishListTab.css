@@ -81,6 +81,7 @@ a {
     overflow-y: scroll;
     margin-right: -5.8vw;
     transition: height var(--speed) ease;
+    margin-top: -6.25vh
 }
 
 .wishList-menu {
@@ -104,11 +105,11 @@ a {
  /*CSSTransition classes  */
 .wishList-menu-primary-enter {
     position: absolute;
-    transform: translateX(-110%);
+    transform: translateX(100%);
 
 }
 .wishList-menu-primary-enter-active {
-    transform: translateX(-110%);
+    transform: translateX(100%);
     transition: all var(--speed) ease;
 }
 .wishList-menu-primary-exit {
@@ -120,10 +121,10 @@ a {
 }
 
 .menu-secondary-enter {
-    transform: translateX(50%);
+    transform: translateX(100%);
 }
 .menu-secondary-enter-active {
-    transform: translateX(0%);
+    transform: translateX(100%);
     transition: all var(--speed) ease;
 }
 .menu-secondary-exit {
