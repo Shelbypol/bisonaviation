@@ -50,7 +50,7 @@ const ProductsDisplaySByCatMan = ({sideBar, history, match, updateCatProp, updat
             </Row>
 
             {sideBar ? (
-                <Row className='d-lg-flex justify-content-lg-center ml-5 pl-5 pb-5 d-md-block d-sm-none  fixed-bottom'>
+                <Row className='d-lg-flex justify-content-lg-center ml-5 pl-5 pb-5 d-md-block d-sm-none fixed-bottom'>
                     <Paginate pages={pages} page={page} isAdmin={false} keyword={keyword ? keyword : ''}/>
                 </Row>
 

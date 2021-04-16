@@ -27,30 +27,28 @@
 .CatMan-nav-menu {
     display: flex;
     align-items: flex-start;
-    background-color: rgba(255,);
 }
 
 .CatMan-nav-menu-items {
     position: -webkit-sticky;
     position: sticky;
     top: 12.50vh;
-    /*border-left: 2px solid rgba(255,255,255, .5);*/
-    /*background-image: url("../images/bg-graphics/graphics/dots-xl.png");*/
-    /*background-color: rgba(255,255,255, .1);*/
-    /*background-color: rgba(0, 0, 0, .5);*/
     padding-left: 3vw;
-    /*margin-right: 2vw;*/
-    /*padding-top: 5.5vh;*/
-    /*margin-top: -5.9vh;*/
     min-height: 100vh;
+}
+
+.CatMan_items-bg{
+    background-color: rgba(0,0,0, .1);
+    padding-left: 2vw;
 }
 
 .CatMan_items {
     color: black;
-    padding: 0 1vw 0 1vw;
     margin: 0;
     width: 100%;
-    border-bottom: 1px solid rgba(255, 255, 255, .5);
+    padding: 0;
+    font-weight: lighter;
+    /*border-bottom: 1px solid rgba(255, 255, 255, .5);*/
 }
 
 .CatMan_items:hover {
@@ -60,22 +58,25 @@
 
 .CatMan-title {
     top: 6vh;
-    background-color: #660708;
-    color: white;
+    /*background-color: #660708;*/
+    color: black;
     /*background-color: lightgrey;*/
-    padding-left: .5vw;
+    padding: .5vw .5vw 0 0;
 }
 
 .CatMan-sub-titles {
-    border-top: 1px solid rgba(0,0,0, .5);
+    font-weight: bolder;
+    /*border-top: 1px solid rgba(0,0,0, .5);*/
     width: 100%;
-    background-color: lightgray;
+    /*background-color: lightgray;*/
     color: black;
-    padding-left: 1vw;
+    margin-top: 1vw;
+    /*padding: 0 1vw 0 1vw;*/
 }
 
 .CatMan-sub-titles:hover{
-    color: #660708;
+    /*background-color: rgba(255,255,255, .2);*/
+    /*color: white;*/
 }
 
 /*PRODUCT CARD*/
