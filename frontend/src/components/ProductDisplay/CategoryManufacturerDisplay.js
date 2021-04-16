@@ -15,11 +15,11 @@ import Paginate from "../Paginate";
 const CategoryManufacturerDisplay = ({match, history}) => {
 
     const [sideBar, setSideBar] = useState(true);
-
     const [width, setWidth] = useState(window.innerWidth);
-
     const [updateCat, setUpdateCat] = useState('');
     const [updateManufacturer, setUpdateManufacturer] = useState('');
+    const [clicked, setClicked] = useState(false);
+    const [rmvClick, setRmvClick] = useState(false);
 
     const breakpoint = 1150;
 
@@ -50,6 +50,7 @@ const CategoryManufacturerDisplay = ({match, history}) => {
 
     // SORT CAT HANDLER
     const sortByCategoryHandler = (a) => {
+        setClicked(true);
         setUpdateManufacturer('');
         setUpdateCat(a);
         if (width < breakpoint) {
@@ -67,6 +68,7 @@ const CategoryManufacturerDisplay = ({match, history}) => {
 
     //  SORT BRAND HANDLER
     const sortByManufacturerHandler = (a) => {
+        setClicked(true);
         setUpdateCat('');
         setUpdateManufacturer(a);
         if (width < breakpoint) {
@@ -97,12 +99,12 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                         <>
                             {sideBar ? (
                                 <>
-                                    <Col lg={2} xs={12}
-                                         className=' global_cursor CatMan_sidebar-icon-x d-flex justify-content-start'>
-                                        <p onClick={showSideBar}
-                                           className='pl-5 pt-2 pb-5 global_blood-red'>x</p>
-                                    </Col>
-                                    <Col lg={10} xs={0}> </Col>
+                                    {/*<Col lg={2} xs={12}*/}
+                                    {/*     className=' global_cursor CatMan_sidebar-icon-x d-flex justify-content-start'>*/}
+                                    {/*    <p onClick={showSideBar}*/}
+                                    {/*       className='pt-2 pb-5 text-white'>x</p>*/}
+                                    {/*</Col>*/}
+                                    {/*<Col lg={10} xs={0}> </Col>*/}
                                 </>
                             ) : (
                                 <>
@@ -123,25 +125,25 @@ const CategoryManufacturerDisplay = ({match, history}) => {
 
                             {sideBar ? (
                                 <>
-                                    <Col lg={2} xs={12} className='CatMan-nav-menu-items'>
-                                        {/*     MANUFACTURER SORT DISPLAY AVAILABLE CATS ON CLICK    */}
+                                    <Col lg={2} xs={12} className='CatMan-nav-menu-items mr-1 '>
 
-                                        <Route render={({history}) => <SearchBox history={history}
-                                                                                 formClasses={'pb-2 ml-n2 StickyHeader_searchBox'}
-                                                                                 searchSize={'sm'}
-                                                                                 searchClasses={'col-9 py-0 border-top border-bottom border-left'}
-                                                                                 btnSize={'sm'}
-                                                                                 btnClasses={'bg-dark text-white StickyHeader_search_btn_padding px-1 col-2 rounded-right border-top border-bottom border-right'}
-                                                                                 iconClass={'fal fa-search p-0'}
-                                        />}/>
+                                        {/*     MANUFACTURER SORT DISPLAY AVAILABLE CATS ON CLICK    */}
+                                            <Route render={({history}) => <SearchBox history={history}
+                                                                                     formClasses={'pb-2 ml-n3 CatMan_search-form'}
+                                                                                     searchSize={'sm'}
+                                                                                     searchClasses={'col-10 py-0 CatMan_search-bar'}
+                                                                                     btnSize={'sm'}
+                                                                                     btnClasses={'bg-dark text-white StickyHeader_search_btn_padding px-1 col-2 rounded-right'}
+                                                                                     iconClass={'fal fa-search p-0'}
+                                            />}/>
 
 
                                         {(updateManufacturer !== '' || updateCat !== '') &&
                                         (
                                             <>
                                                 <Row xs={12}
-                                                     className='global_accentFont CatMan-text p-0'>
-                                                    <h4 className='pl-3 global_cursor global_blood-red'>{updateManufacturer || updateCat}</h4>
+                                                     className='global_accentFont CatMan-text py-2'>
+                                                    <h4 className=' global_cursor global_blood-red'>{updateManufacturer || updateCat}</h4>
                                                 </Row>
 
                                                 {/* ALL PRODUCTS*/}
@@ -212,9 +214,8 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                                                 </Row>
 
                                                 <Row xs={12}
-                                                     className='global_accentFont mt-0 CatMan-text global_cursor'>
-                                                    <h5 onClick={displayAllHandler}
-                                                        className='CatMan-sub-titles'>Categories</h5>
+                                                     className='global_accentFont'>
+                                                    <h6 className='global_cursor CatMan-text CatMan-sub-titles'>Categories</h6>
                                                 </Row>
 
                                                 <Row className='CatMan_items-bg'>
@@ -255,7 +256,7 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                                         )}
                                     </Col>
                                     {/*<Col lg={10} xs={12} className='mt-lg-5 bg-white'>*/}
-                                    <Col lg={10} xs={12} className='min-vh-100 bg-white pl-5'>
+                                    <Col lg={9} xs={12} className='min-vh-100 pt-3 ml-5 bg-white pl-5 pl-1'>
 
                                         <ProductDisplayByCatMan products={products}
                                                                 history={history}
@@ -272,7 +273,7 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                             ) : (
                                 <>
                                     <Col xs={12}
-                                         className='pt-5 mt-2 CatMan_products  min-vh-100 bg-white d-flex justify-content-center '>
+                                         className='pt-5 mt-2 CatMan_products min-vh-100 bg-white d-flex justify-content-center ml-1 '>
                                         <ProductDisplayByCatMan products={products}
                                                                 history={history}
                                                                 match={match}

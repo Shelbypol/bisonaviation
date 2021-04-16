@@ -49,7 +49,7 @@ const ProductsDisplayScreen = ({match, history}) => {
                     />
 
             {/*<div className=' global_HeroDivider-margin mt-4' >*/}
-                <Jumbotron className='CatMan_screen-bg mt-n5 mb-0 px-0 pt-0 pb-0' style={{zIndex: '2'}} fluid>
+                <Jumbotron className='CatMan_screen-bg mb-0 px-0 pt-0 pb-0' style={{zIndex: '2'}} fluid>
 
                     <>
                         <Meta title='Bison | Products'/>

@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import {Form, Button} from 'react-bootstrap'
 
 
-const SearchBox = ({history, searchClasses, formClasses, btnClasses, btnSize, searchSize, btnStyle, iconClass, imgClasses}) => {
+const SearchBox = ({history, searchClasses, formClasses, btnClasses, btnSize, searchSize, btnStyle, iconClass, inputStyle, imgClasses}) => {
     const [keyword, setKeyword] = useState('');
 
     const submitHandler = (e) => {
@@ -26,6 +26,7 @@ const SearchBox = ({history, searchClasses, formClasses, btnClasses, btnSize, se
                     onChange={(e) => setKeyword(e.target.value)}
                     size={searchSize}
                     className={searchClasses}
+                    style={inputStyle}
                 >
                 </Form.Control>
                 <Button type='submit' id='StickyHeader_SearchBox_searchImage' size={btnSize} className={btnClasses} style={btnStyle}
