@@ -70,7 +70,7 @@ const App = () => {
                 <Route path='/search/:keyword' component={ProductsDisplayScreen} exact/>
                 <Route path='/page/:pageNumber' component={ProductsDisplayScreen} exact/>
                 <Route path='/search/:keyword/page/:pageNumber' component={ProductsDisplayScreen}/>
-                    <Route path='/product/:id' component={ProductScreen}/>
+                <Route path='/product/:id' component={ProductScreen}/>
 
                 {/* ================    STICKY HEADER ONLY W/ FOOTER    =================*/}
                 {/*<Fragment>*/}
@@ -83,7 +83,7 @@ const App = () => {
 
                 {/* ================    STICKY & DESKTOP HEADER W/ FOOTER    =================*/}
                 <Fragment>
-                    <Headers/>
+                    <StickyHeader/>
                     <Route path='/' component={HomeScreen} exact/>
                     <Route path='/contact' component={ContactScreen}/>
                     <Route path='/terms' component={TermsScreen}/>

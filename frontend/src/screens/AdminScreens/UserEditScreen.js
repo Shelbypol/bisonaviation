@@ -52,7 +52,7 @@ const UserEditScreen = ({ match, history}) => {
     return (
         <>
             <StickyHeader/>
-            <Container>
+            <Container className='bg-white  min-vh-100'>
             <Link to='/admin/userlist' className='btn btn-light my-3'>
                 Go Back
             </Link>

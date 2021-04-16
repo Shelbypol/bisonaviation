@@ -38,7 +38,7 @@ const FlirScreen = () => {
             {width < breakpoint ? (
                 <MobileHeader/>
             ) : (
-                <DesktopHeader/>
+                <StickyHeader/>
             )}
 
             <HeroDivider

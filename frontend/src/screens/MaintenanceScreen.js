@@ -37,7 +37,7 @@ const MaintenanceScreen = () => {
                 <MobileHeader/>
             ) : (
                 <>
-                    <DesktopHeader/>
+                    <StickyHeader/>
                 </>
             )}
 

@@ -83,7 +83,7 @@ const StickyHeader = () => {
                         {/*{userInfo.isAdmin ? (*/}
                             <Link to='#'>
                                 <h6
-                                    className='SideBar_Name pt-3 pr-3'>{userInfo.name}</h6>
+                                    className='SideBar_Name pt-3 pr-3'>Welcome,&nbsp;{userInfo.name}</h6>
                             </Link>
 
                             </>

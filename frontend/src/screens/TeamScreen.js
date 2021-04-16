@@ -60,7 +60,7 @@ const TeamScreen = () => {
                 <MobileHeader/>
             ) : (
                 <>
-                    <DesktopHeader/>
+                    <StickyHeader/>
                 </>
             )}
 

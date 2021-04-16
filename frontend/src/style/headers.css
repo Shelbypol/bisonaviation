@@ -116,18 +116,22 @@
 
 /*======    CONTACT    ============*/
 .StickyHeader_contact-btn {
-    background-color: rgba(255,255,255, .5);
+    background-color: rgba(255,255,255, .2);
+    /*background-color: rgba(255,255,255, .8);*/
+    border-left: 5px solid #660708;
 }
 
 .StickyHeader_contact-btn:hover {
-    background-color: rgba(255,255,255, .7);
+    /*border-left: 5px solid #2576e5;*/
+    background-color: rgba(255,255,255, .4);
 }
 
 .StickHeader_contact-txt {
-    color: rgba(255,255,255, 1);
+    /*color: #660708;*/
+    color: white;
 }
 .StickHeader_contact-txt:hover{
-    color: #2576e5;
+    /*color: black;*/
 }
 
 /*   NAV BOOTSTRAP DROPDOWN STYLE    */
