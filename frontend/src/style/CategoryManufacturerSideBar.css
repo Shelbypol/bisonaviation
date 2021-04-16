@@ -1,17 +1,21 @@
 
+.CatMan_screen-bg{
+    background-color: rgba(255,255,255, 1);
+}
+
 .CatMan_sidebar-icon{
     z-index: 2;
     padding:0;
     position: -webkit-sticky;
     position: sticky;
-    top: 8vh;
+    top: 13vh;
 }
 
 .CatMan_sidebar-icon-x{
     z-index: 2;
     padding:0;
-    position: -webkit-sticky;
-    position: sticky;
+    /*position: -webkit-sticky;*/
+    /*position: sticky;*/
     top: 6vh;
 }
 
@@ -23,17 +27,21 @@
 .CatMan-nav-menu {
     display: flex;
     align-items: flex-start;
+    background-color: rgba(255,);
 }
 
 .CatMan-nav-menu-items {
     position: -webkit-sticky;
     position: sticky;
-    top: 0;
+    top: 12.50vh;
+    /*border-left: 2px solid rgba(255,255,255, .5);*/
     /*background-image: url("../images/bg-graphics/graphics/dots-xl.png");*/
-    background-color: rgba(0, 0, 0, .1);
-    padding-left: 2vw;
-    padding-top: 5.5vh;
-    margin-top: -5.6vh;
+    /*background-color: rgba(255,255,255, .1);*/
+    /*background-color: rgba(0, 0, 0, .5);*/
+    padding-left: 3vw;
+    /*margin-right: 2vw;*/
+    /*padding-top: 5.5vh;*/
+    /*margin-top: -5.9vh;*/
     min-height: 100vh;
 }
 
@@ -101,6 +109,7 @@
         padding-left: 1vw;
         padding-top: 8vh;
         margin-top: -8vh;
+
     }
 
     .CatMan_sidebar-icon-x{

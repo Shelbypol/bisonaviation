@@ -9,8 +9,10 @@ const ProductsDisplaySByCatMan = ({sideBar, history, match, updateCatProp, updat
 
     return (
         <>
+            <Row xs={12}
+                 className={` ${sideBar ? ('pr-5 mr-4 d-flex justify-content-center mt-n5'):('pl-5 pr-5 d-flex justify-content-center mt-n5')}`}>
 
-            <Row xs={12} className='pl-5 pr-5 bg-white d-flex justify-content-center mt-n5 border'>
+
                 {/*CATEGORY*/}
                 {(updateCatProp !== '') && (
                     <>
@@ -48,12 +50,12 @@ const ProductsDisplaySByCatMan = ({sideBar, history, match, updateCatProp, updat
             </Row>
 
             {sideBar ? (
-                <Row className='d-lg-flex justify-content-lg-center border ml-5 pl-5 pb-5 d-md-block d-sm-none  fixed-bottom'>
+                <Row className='d-lg-flex justify-content-lg-center ml-5 pl-5 pb-5 d-md-block d-sm-none  fixed-bottom'>
                     <Paginate pages={pages} page={page} isAdmin={false} keyword={keyword ? keyword : ''}/>
                 </Row>
 
             ):(
-                <Row className='d-lg-flex justify-content-lg-center border pb-5 d-md-block d-sm-none fixed-bottom'>
+                <Row className='d-lg-flex justify-content-lg-center pb-5 d-md-block d-sm-none fixed-bottom'>
                     <Paginate pages={pages} page={page} isAdmin={false} keyword={keyword ? keyword : ''}/>
                 </Row>
             )}

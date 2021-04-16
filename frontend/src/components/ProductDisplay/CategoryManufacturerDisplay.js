@@ -89,17 +89,17 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                         <>
                             {sideBar ? (
                                 <>
-                                    <Col lg={2} xs={12} className='global_cursor CatMan_sidebar-icon-x '>
-                                        <h5 onClick={showSideBar}
-                                            className='pl-4 pt-3 global_white-text-red-hover'>X</h5>
+                                    <Col lg={2} xs={12} className=' global_cursor CatMan_sidebar-icon-x d-flex justify-content-start'>
+                                        <p onClick={showSideBar}
+                                            className='pl-5 pt-2 pb-5 global_blood-red'>x</p>
                                     </Col>
                                     <Col lg={10} xs={0}> </Col>
                                 </>
                             ) : (
                                 <>
                                     <Col lg={2} xs={12}
-                                         className='bg-transparent global_cursor CatMan_sidebar-icon pl-4 pt-2'>
-                                        <h6 className='global_blood-red' onClick={showSideBar}><span><h3
+                                         className=' bg-transparent global_cursor CatMan_sidebar-icon pl-4 pt-2'>
+                                        <h6 className='global_blood-red bg-white' onClick={showSideBar}><span><h3
                                             className='d-inline global_blood-red'>|||</h3></span>&nbsp;categories
                                         </h6>
                                         {width < breakpoint && (
@@ -120,9 +120,9 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                                         <Route render={({history}) => <SearchBox history={history}
                                                                                  formClasses={'pb-2 ml-n2 StickyHeader_searchBox'}
                                                                                  searchSize={'sm'}
-                                                                                 searchClasses={'col-9 py-0 bg-white border-top border-bottom border-left'}
+                                                                                 searchClasses={'col-9 py-0 border-top border-bottom border-left'}
                                                                                  btnSize={'sm'}
-                                                                                 btnClasses={'bg-white StickyHeader_search_btn_padding px-1 col-2 rounded-right border-top border-bottom border-right'}
+                                                                                 btnClasses={'bg-dark text-white StickyHeader_search_btn_padding px-1 col-2 rounded-right border-top border-bottom border-right'}
                                                                                  iconClass={'fal fa-search p-0'}
                                         />}/>
 
@@ -228,8 +228,10 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                                             </>
                                         )}
                                     </Col>
-                                    <Col lg={10} xs={12} className='mt-lg-5'>
-                                        <ProductDisplayByCatMan products={products}
+                                    {/*<Col lg={10} xs={12} className='mt-lg-5 bg-white'>*/}
+                                    <Col lg={10} xs={12} className='min-vh-100 bg-white pl-5'>
+
+                                    <ProductDisplayByCatMan products={products}
                                                                 history={history}
                                                                 match={match}
                                                                 keyword={keyword}
@@ -243,7 +245,7 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                                 </>
                             ) : (
                                 <>
-                                    <Col xs={12} className='CatMan_products min-vh-100'>
+                                    <Col xs={12} className='pt-5 mt-2 CatMan_products  min-vh-100 bg-white d-flex justify-content-center '>
                                         <ProductDisplayByCatMan products={products}
                                                                 history={history}
                                                                 match={match}
