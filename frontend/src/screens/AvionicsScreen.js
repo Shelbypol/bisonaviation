@@ -36,7 +36,7 @@ const AvionicsScreen = () => {
                 <MobileHeader/>
             ) : (
                 <>
-                    <DesktopHeader/>
+                    <StickyHeader/>
                 </>
             )}
 

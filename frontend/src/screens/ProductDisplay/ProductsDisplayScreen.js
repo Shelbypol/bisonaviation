@@ -39,7 +39,7 @@ const ProductsDisplayScreen = ({match, history}) => {
             {width < breakpoint ? (
                 <MobileHeader/>
             ) : (
-                    <DesktopHeader/>
+                    <StickyHeader/>
             )}
 
                     <HeroDivider

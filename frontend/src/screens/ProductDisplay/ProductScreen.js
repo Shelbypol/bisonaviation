@@ -11,6 +11,7 @@ import {addToCart, removeFromCart} from "../../actions/cartActions";
 import MobileHeader from "../../components/Headers-Nav-Footer/MobileHeader";
 import HeroDivider from "../../components/HeroDivider";
 import DesktopHeader from "../../components/Headers-Nav-Footer/DesktopHeader";
+import StickyHeader from "../../components/Headers-Nav-Footer/StickyHeader";
 
 const ProductScreen = ({history, match}) => {
     const [width, setWidth] = useState(window.innerWidth);
@@ -99,7 +100,7 @@ const ProductScreen = ({history, match}) => {
                 <MobileHeader/>
             ) : (
                 <>
-                    <DesktopHeader/>
+                    <StickyHeader/>
                 </>
             )}
 
