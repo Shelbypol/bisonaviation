@@ -114,8 +114,8 @@ const ProductEditScreen = ({match, history}) => {
     return (
         <>
         <StickyHeader/>
-        <Container className='px-0 mx-auto'>
-            <Row xs={12} className='mb-5 mt-n3 border-bottom'>
+        <Container className=' bg-white  min-vh-100 min-vw-100'>
+            <Row xs={12} className='my-0 px-3 py-5 border-bottom'>
                 <Col xs={10} className='d-flex justify-content-start'>
                     <h4>Edit Product</h4>
                 </Col>
@@ -132,7 +132,7 @@ const ProductEditScreen = ({match, history}) => {
             {loading && <Message variant='danger'>{error}</Message>}
             {loading ? <Loader/> : error ? <Message variant='danger'>{error}</Message> : (
 
-                <Form onSubmit={submitHandler} className='mt-n3'>
+                <Form onSubmit={submitHandler} className='p-3'>
                     <Row className='p-0 mb-2'>
                         <Col className='pr-3 m-0 d-flex justify-content-end'>
                             <Button type='submit' variant='primary' className='px-3 py-1 global_RedFontWhiteBg'>Update</Button>
@@ -147,6 +147,7 @@ const ProductEditScreen = ({match, history}) => {
                                             checked={isAvailable}
                                             onChange={(e) => setIsAvailable(e.target.checked)}>
                                 </Form.Check>
+
 
                             </Form.Group>
                             {/* PROMO*/}

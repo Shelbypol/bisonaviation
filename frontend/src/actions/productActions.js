@@ -43,6 +43,7 @@ export const listProducts = (keyword = '', pageNumber = '') => async (dispatch) 
             type: PRODUCT_LIST_SUCCESS,
             payload: data
         })
+
     } catch(error){
         dispatch({
             type: PRODUCT_LIST_FAIL,

@@ -10,10 +10,11 @@ import {Route} from "react-router-dom";
 import SearchBox from "../SearchBox";
 import {Container} from "react-bootstrap/cjs";
 import {Jumbotron} from "reactstrap";
+import Paginate from "../Paginate";
 
 const CategoryManufacturerDisplay = ({match, history}) => {
 
-    const [sideBar, setSideBar] = useState(false);
+    const [sideBar, setSideBar] = useState(true);
 
     const [width, setWidth] = useState(window.innerWidth);
 
@@ -51,7 +52,7 @@ const CategoryManufacturerDisplay = ({match, history}) => {
     const sortByCategoryHandler = (a) => {
         setUpdateManufacturer('');
         setUpdateCat(a);
-        if(width < breakpoint){
+        if (width < breakpoint) {
             setSideBar(!sideBar);
         }
     };
@@ -59,7 +60,7 @@ const CategoryManufacturerDisplay = ({match, history}) => {
     const displayAllHandler = () => {
         setUpdateManufacturer('');
         setUpdateCat('');
-        if(width < breakpoint){
+        if (width < breakpoint) {
             setSideBar(!sideBar);
         }
     };
@@ -68,7 +69,7 @@ const CategoryManufacturerDisplay = ({match, history}) => {
     const sortByManufacturerHandler = (a) => {
         setUpdateCat('');
         setUpdateManufacturer(a);
-        if(width < breakpoint){
+        if (width < breakpoint) {
             setSideBar(!sideBar);
         }
     };
@@ -96,7 +97,8 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                                 </>
                             ) : (
                                 <>
-                                    <Col lg={2} xs={12} className='bg-transparent global_cursor CatMan_sidebar-icon pl-4 pt-2'>
+                                    <Col lg={2} xs={12}
+                                         className='bg-transparent global_cursor CatMan_sidebar-icon pl-4 pt-2'>
                                         <h6 className='global_blood-red' onClick={showSideBar}><span><h3
                                             className='d-inline global_blood-red'>|||</h3></span>&nbsp;categories
                                         </h6>
@@ -112,7 +114,7 @@ const CategoryManufacturerDisplay = ({match, history}) => {
 
                             {sideBar ? (
                                 <>
-                                    <Col lg={2} xs={12} className=' CatMan-nav-menu-items'>
+                                    <Col lg={2} xs={12} className='CatMan-nav-menu-items'>
                                         {/*     MANUFACTURER SORT DISPLAY AVAILABLE CATS ON CLICK    */}
 
                                         <Route render={({history}) => <SearchBox history={history}
@@ -240,17 +242,21 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                                     </Col>
                                 </>
                             ) : (
-                                <Col xs={12} className='mt-5 CatMan_products'>
-                                    <ProductDisplayByCatMan products={products}
-                                                            history={history}
-                                                            match={match}
-                                                            keyword={keyword}
-                                                            pages={pages}
-                                                            page={page}
-                                                            updateCatProp={updateCat}
-                                                            updateManufacturerProp={updateManufacturer}
-                                    />
-                                </Col>
+                                <>
+                                    <Col xs={12} className='CatMan_products min-vh-100'>
+                                        <ProductDisplayByCatMan products={products}
+                                                                history={history}
+                                                                match={match}
+                                                                keyword={keyword}
+                                                                pages={pages}
+                                                                page={page}
+                                                                updateCatProp={updateCat}
+                                                                updateManufacturerProp={updateManufacturer}
+                                                                sideBar={sideBar}
+                                        />
+                                    </Col>
+
+                                </>
                             )}
 
                         </>

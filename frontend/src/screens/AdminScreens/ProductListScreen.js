@@ -68,7 +68,7 @@ const ProductListScreen = ({ history, match }) => {
     return (
         <>
             <StickyHeader/>
-            <Container>
+            <Container className='bg-white min-vh-100 min-vw-100 px-3'>
             <Row className='align-items-center'>
                 <Col>
                     <h1>Products</h1>

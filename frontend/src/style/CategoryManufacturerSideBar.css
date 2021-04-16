@@ -20,7 +20,6 @@
     color: black;
 }
 
-
 .CatMan-nav-menu {
     display: flex;
     align-items: flex-start;
@@ -30,17 +29,16 @@
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    background-image: url("../images/bg-graphics/graphics/dots.png");
-    background-color: rgba(0, 0, 0, .8);
+    /*background-image: url("../images/bg-graphics/graphics/dots-xl.png");*/
+    background-color: rgba(0, 0, 0, .1);
     padding-left: 2vw;
-    padding-top: 11vh;
-    margin-top: -5.5vh;
+    padding-top: 5.5vh;
+    margin-top: -5.6vh;
     min-height: 100vh;
-
 }
 
 .CatMan_items {
-    color: white;
+    color: black;
     padding: 0 1vw 0 1vw;
     margin: 0;
     width: 100%;

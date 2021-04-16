@@ -9,20 +9,19 @@ const ProductsDisplaySByCatMan = ({sideBar, history, match, updateCatProp, updat
 
     return (
         <>
-            <Row xs={12} className='pl-5 pr-5 bg-white'>
-                <Paginate pages={pages} page={page} keyword={keyword ? keyword : ''}/>
 
+            <Row xs={12} className='pl-5 pr-5 bg-white d-flex justify-content-center mt-n5 border'>
                 {/*CATEGORY*/}
-                    {(updateCatProp !== '') && (
-                        <>
-                            {products.filter(product => product.category === updateCatProp).map(filteredProduct => (
-                                <Col key={filteredProduct._id}  lg={sideBar ? 4 : 3} md={4} sm={12}>
-                                    <Product product={filteredProduct} history={history} match={match}/>
-                                </Col>
+                {(updateCatProp !== '') && (
+                    <>
+                        {products.filter(product => product.category === updateCatProp).map(filteredProduct => (
+                            <Col key={filteredProduct._id} lg={sideBar ? 4 : 3} md={4} sm={12}>
+                                <Product product={filteredProduct} history={history} match={match}/>
+                            </Col>
 
-                            ))}
-                        </>
-                    )}
+                        ))}
+                    </>
+                )}
 
 
                 {(updateManufacturerProp !== '') && (
@@ -46,8 +45,20 @@ const ProductsDisplaySByCatMan = ({sideBar, history, match, updateCatProp, updat
                     </>
                 )}
 
-                <Paginate pages={pages} page={page} keyword={keyword ? keyword : ''}/>
             </Row>
+
+            {sideBar ? (
+                <Row className='d-lg-flex justify-content-lg-center border ml-5 pl-5 pb-5 d-md-block d-sm-none  fixed-bottom'>
+                    <Paginate pages={pages} page={page} isAdmin={false} keyword={keyword ? keyword : ''}/>
+                </Row>
+
+            ):(
+                <Row className='d-lg-flex justify-content-lg-center border pb-5 d-md-block d-sm-none fixed-bottom'>
+                    <Paginate pages={pages} page={page} isAdmin={false} keyword={keyword ? keyword : ''}/>
+                </Row>
+            )}
+
+
         </>
     )
 };
