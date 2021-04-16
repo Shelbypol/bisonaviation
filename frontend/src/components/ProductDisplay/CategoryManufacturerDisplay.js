@@ -202,8 +202,17 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                                         {/*    ALL CAT & ALL MAN INITIAL DISPLAY    */}
                                         {(updateCat === '' && updateManufacturer === '') && (
                                             <>
+
+                                                {/* ALL PRODUCTS*/}
                                                 <Row xs={12}
-                                                     className='global_accentFont mt-0 CatMan-text global_cursor CatMan-sub-titles'>
+                                                     className='global_accentFont'
+                                                     onClick={displayAllHandler}>
+                                                    <h6 className='global_cursor CatMan-text CatMan-sub-titles'>All
+                                                        Products</h6>
+                                                </Row>
+
+                                                <Row xs={12}
+                                                     className='global_accentFont mt-0 CatMan-text global_cursor'>
                                                     <h5 onClick={displayAllHandler}
                                                         className='CatMan-sub-titles'>Categories</h5>
                                                 </Row>
@@ -222,7 +231,7 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                                                 </Row>
 
                                                 <Row xs={12}
-                                                     className='global_accentFont mt-3 CatMan-text global_cursor CatMan-title'>
+                                                     className='global_accentFont mt-3 CatMan-text global_cursor '>
                                                     <h6 onClick={displayAllHandler}
                                                         className='CatMan-sub-titles'>Manufacturers</h6>
                                                 </Row>
