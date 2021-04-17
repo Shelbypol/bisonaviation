@@ -26,9 +26,7 @@
     background-image: url("../images/bg-graphics/graphics/social-icon-bg-blood-red.png");
     background-repeat: no-repeat;
     height: 10vh;
-    /*border: 2px solid red;*/
-    /*width: 10vw;*/
-
+    width: 20vw !important;
 }
 
 .SocialIcons_col-bg:hover{
@@ -47,8 +45,9 @@
         width: 150vw;
     }
 
-    .SocialIcons_mobile-col{
-        /*margin: 0 2vw 0 2vw;*/
+    .SocialIcons_col-bg{
+        width:20vw !important;
     }
+
 
 }
