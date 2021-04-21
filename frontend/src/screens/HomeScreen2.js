@@ -6,8 +6,8 @@ import Services from "../components/home-screen/Services";
 import Avionics from "../components/home-screen/Avionics";
 import Mechanics from "../components/home-screen/Mechanics";
 import Flir from "../components/home-screen/Flir";
-import {Container} from 'react-bootstrap';
-import {Jumbotron} from "reactstrap";
+import {Container, Jumbotron} from 'react-bootstrap';
+
 
 
 const HomeScreen2 = () => {
