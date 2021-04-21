@@ -83,7 +83,13 @@ const App = () => {
 
                 {/* ================    STICKY & DESKTOP HEADER W/ FOOTER    =================*/}
                 <Fragment>
-                    <StickyHeader/>
+                    {width < breakpoint ? (
+                        <MobileHeader/>
+                    ) : (
+                        <>
+                            <StickyHeader/>
+                        </>
+                    )}
                     <Route path='/' component={HomeScreen} exact/>
                     <Route path='/contact' component={ContactScreen}/>
                     <Route path='/terms' component={TermsScreen}/>

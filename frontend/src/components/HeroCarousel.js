@@ -6,6 +6,7 @@ import Slide from "react-reveal/Slide";
 import {LinkContainer} from "react-router-bootstrap";
 import logo from "../images/bg-graphics/graphics/Final-Logo-Horizontal.png";
 import SocialIcons from "./SocialIcons";
+import '../style/HeroCarousel.css';
 
 
 const HeroCarousel = (
@@ -58,11 +59,11 @@ const HeroCarousel = (
                 <Carousel.Item>
                     <Carousel.Caption>
                         <Row className='global_carousel-text-box'>
-                            <Col md={5} xs={7} className='global_carousel-text-top-bar'> </Col>
+                            <Col md={5} xs={7} className='global_carousel-text-top-bar '> </Col>
 
                             <Col xs={12}
                                  className='d-flex justify-content-start align-content-center '>
-                                <h1 className='global_carousel-title ml-n2 global_cultured'>
+                                <h1 className='global_carousel-title global_cultured'>
                                     <span
                                         className='global_carousel-letter global_cultured'>{slide1firstTitleLetter}</span>{slide1firstTitleWord}
                                 </h1>
@@ -108,7 +109,7 @@ const HeroCarousel = (
 
                                 <Col xs={12}
                                      className='d-flex justify-content-start align-content-center '>
-                                    <h1 className='global_carousel-title ml-n2 global_cultured'>
+                                    <h1 className='global_carousel-title global_cultured'>
                                     <span
                                         className='global_carousel-letter global_cultured'>{slide2firstTitleLetter}</span>{slide2firstTitleWord}
                                     </h1>
@@ -154,7 +155,7 @@ const HeroCarousel = (
 
                                 <Col xs={12}
                                      className='d-flex justify-content-start align-content-center '>
-                                    <h1 className='global_carousel-title ml-n2 global_cultured'>
+                                    <h1 className='global_carousel-title global_cultured'>
                                     <span
                                         className='global_carousel-letter global_cultured'>{slide3firstTitleLetter}</span>{slide3firstTitleWord}
                                     </h1>
@@ -171,7 +172,7 @@ const HeroCarousel = (
                                 )}
 
                                 <Col md={7} xs={10} className='global_carousel-text-btm-bar global_red-bg'> </Col>
-                                <Col xs={12} className='ml-n3'>
+                                <Col xs={12} className='ml-n3 global_carousel-social-icons'>
                                     <SocialIcons/>
                                 </Col>
                              </Row>
@@ -202,7 +203,7 @@ const HeroCarousel = (
 
                                 <Col xs={12}
                                      className='d-flex justify-content-start align-content-center '>
-                                    <h1 className='global_carousel-title ml-n2 global_cultured'>
+                                    <h1 className='global_carousel-title global_cultured'>
                                     <span
                                         className='global_carousel-letter global_cultured'>{slide4firstTitleLetter}</span>{slide4firstTitleWord}
                                     </h1>
@@ -248,7 +249,7 @@ const HeroCarousel = (
 
                                 <Col xs={12}
                                      className='d-flex justify-content-start align-content-center '>
-                                    <h1 className='global_carousel-title ml-n2 global_cultured'>
+                                    <h1 className='global_carousel-title global_cultured'>
                                     <span
                                         className='global_carousel-letter global_cultured'>{slide5firstTitleLetter}</span>{slide5firstTitleWord}
                                     </h1>

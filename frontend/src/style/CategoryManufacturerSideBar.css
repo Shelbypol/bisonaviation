@@ -46,6 +46,10 @@
     min-height: 100vh;
 }
 
+.CatMan_scroll{
+    overflow-y: scroll;
+}
+
 .CatMan_items-bg{
     background-color: rgba(0,0,0, .1);
     padding: .5vw 0 .5vw 1vw;
@@ -75,12 +79,10 @@
 
 .CatMan-sub-titles {
     font-weight: bolder;
-    /*border-top: 1px solid rgba(0,0,0, .5);*/
     width: 100%;
-    /*background-color: lightgray;*/
     color: black;
-    margin-top: 1vw;
-    /*padding: 0 1vw 0 1vw;*/
+    margin-top: 3vw;
+    /*margin-top: 1vw;*/
 }
 
 .CatMan-sub-titles:hover{

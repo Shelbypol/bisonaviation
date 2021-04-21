@@ -126,7 +126,7 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                             {sideBar ? (
                                 <>
                                     <Col lg={2} xs={12} className='CatMan-nav-menu-items mr-1 '>
-
+{/*<div className='CatMan_scroll p-0 m-0'>*/}
                                         {/*     MANUFACTURER SORT DISPLAY AVAILABLE CATS ON CLICK    */}
                                             <Route render={({history}) => <SearchBox history={history}
                                                                                      formClasses={'pb-2 ml-n3 CatMan_search-form'}
@@ -254,8 +254,8 @@ const CategoryManufacturerDisplay = ({match, history}) => {
 
                                             </>
                                         )}
+{/*</div>*/}
                                     </Col>
-                                    {/*<Col lg={10} xs={12} className='mt-lg-5 bg-white'>*/}
                                     <Col lg={9} xs={12} className='min-vh-100 pt-3 ml-5 bg-white pl-5 pl-1'>
 
                                         <ProductDisplayByCatMan products={products}
