@@ -1,7 +1,8 @@
 import React from "react";
 import '../../style/2/Services.css'
 import '../../style/flag.scss'
-import {Button, Col, Row, Card} from "react-bootstrap";
+import {Button, Col, Row, Card, Container} from "react-bootstrap";
+import {Link} from 'react-router-dom';
 import {Jumbotron} from "reactstrap";
 import Zoom from 'react-reveal/Zoom';
 
@@ -9,152 +10,65 @@ const Services = () => {
     return (
 
         <>
-            {/*<Container className='p-0 min-vh-100' fluid>*/}
+            <Row className='text-white text-center my-5'>
 
+                {/*<Col md={6} lg={3} className='d-flex justify-content-center global_cursor'>*/}
+                {/*    <Card className='bg-transparent border-0 w-100'>*/}
+                {/*        <Card.Body>*/}
+                {/*            <Card.Title className='Services_nav_text m-0'> Products</Card.Title>*/}
+                {/*            <div className='Services_text w-100 h-100 d-flex align-items-center justify-content-center'>*/}
+                {/*                <Card.Text*/}
+                {/*                    className='my-0 p-0'>*/}
+                {/*                    Authorized Garmin dealer.*/}
+                {/*                </Card.Text>*/}
+                {/*                <br/>*/}
+                {/*          */}
+                {/*            </div>*/}
+                {/*        </Card.Body>*/}
+                {/*    </Card>*/}
+                {/*</Col>*/}
 
-            <Row className=' Services_row p-5 mb-3 d-flex justify-content-between text-white'>
-                <Col xs={3}>
-                    <Card style={{width: '18rem'}} className='bg-transparent border-0'>
+                <Col md={6} lg={4} className='d-flex justify-content-center'>
+                    <Card className='bg-transparent border-0 w-100'>
                         <Card.Body>
-                            <Card.Title><i className='far fa-tablet-rugged Services_icon'> </i> Products</Card.Title>
-                            <Card.Text>
-                                Authorized Garmin dealer.
+                            <Card.Title className='Services_nav_text mx-auto'> Maintenance</Card.Title>
+                            <Card.Text className='Services_text w-100 h-100 d-flex justify-content-center align-items-center'>
+                                Simple skin replacement, structures, fabrication, CNC machining, to laser engraving & 3D
+                                printing
                             </Card.Text>
-                            <Card.Link href="/products">Browse Products</Card.Link>
                         </Card.Body>
                     </Card>
                 </Col>
 
-                <Col xs={3}>
-                    <Card style={{width: '18rem'}} className='bg-transparent border-0'>
+                <Col md={6} lg={4} className='d-flex justify-content-center'>
+                    <Card className='bg-transparent border-0 w-100'>
                         <Card.Body>
-                            <Card.Title>  <i className='far fa-tablet-rugged Services_icon'> </i> Products</Card.Title>
-                            <Card.Text>
-                                Authorized Garmin dealer.
+                            <Card.Title className='Services_nav_text mx-auto'> Avionics</Card.Title>
+                            <Card.Text className='Services_text w-100 h-100 d-flex justify-content-center align-items-center'>
+                                From minor repairs to complete panel upgrades. All services are performed in
+                                house.
                             </Card.Text>
-                            <Card.Link href="/products">Browse Products</Card.Link>
                         </Card.Body>
+                        <Card.Link href="/products" className='global_blue'>browse
+                            products
+                        </Card.Link>
                     </Card>
                 </Col>
 
-                <Col xs={3}>
-                    <Card style={{width: '18rem'}} className='bg-transparent border-0'>
+                <Col md={6} lg={4} className='d-flex justify-content-center'>
+                    <Card className='bg-transparent border-0 w-100'>
                         <Card.Body>
-                            <Card.Title><i className='far fa-tablet-rugged Services_icon'> </i> Products</Card.Title>
-                            <Card.Text>
-                                Authorized Garmin dealer.
+                            <Card.Title className='Services_nav_text mx-auto'>EO/IR Flir</Card.Title>
+                            <Card.Text className='Services_text w-100 h-100 d-flex justify-content-center align-items-center'>
+                                World leader in legacy airborne EO / IR equipment
+                                service and sales.
                             </Card.Text>
-                            <Card.Link href="/products">Browse Products</Card.Link>
-                        </Card.Body>
-                    </Card>
-                </Col>
-
-                <Col xs={3}>
-                    <Card style={{width: '18rem'}} className='bg-transparent border-0'>
-                        <Card.Body>
-                            <Card.Title><i className='far fa-tablet-rugged Services_icon'> </i> Products</Card.Title>
-                            <Card.Text>
-                                Authorized Garmin dealer.
-                            </Card.Text>
-                            <Card.Link href="/products">Browse Products</Card.Link>
                         </Card.Body>
                     </Card>
                 </Col>
 
             </Row>
 
-            {/*======================   PRODUCTS / MAINTENANCE COL     ======================*/}
-
-            {/*<Col xs={12} md={4} className=''>*/}
-            {/*    <Col xs={3}>*/}
-            {/*        <Col className='Services_nav_hoverTitle mb-3'>*/}
-            {/*            <Zoom>*/}
-            {/*                <Col className='d-flex justify-content-start'>*/}
-            {/*                    <p className='Services_nav_text d-flex justify-content-start Services_first-col'>Products</p>*/}
-            {/*                </Col>*/}
-
-            {/*            </Zoom>*/}
-            {/*        </Col>*/}
-            {/*        <Row xs={12} className='Services_text-row'>*/}
-            {/*            <Col xs={2} className='d-flex justify-content-center mt-3'>*/}
-            {/*                <i className='far fa-tablet-rugged Services_icon'> </i>*/}
-            {/*            </Col>*/}
-            {/*            <Col xs={8}>*/}
-            {/*                <p>*/}
-            {/*                    Authorized Garmin dealer.*/}
-            {/*                </p>*/}
-            {/*            </Col>*/}
-            {/*        </Row>*/}
-            {/*    </Col>*/}
-
-            {/*    <Col xs={3}>*/}
-            {/*        <Col className='Services_nav_hoverTitle mb-3'>*/}
-            {/*            <Zoom>*/}
-            {/*                <Col className='d-flex justify-content-center'>*/}
-            {/*                    <p className='Services_nav_text d-flex justify-content-center Services_first-col'>Maintenance</p>*/}
-            {/*                </Col>*/}
-            {/*            </Zoom>*/}
-            {/*        </Col>*/}
-            {/*        <Row xs={12} className='Services_text-row'>*/}
-            {/*            <Col xs={2} className='d-flex justify-content-center mt-3'>*/}
-            {/*                <i className='far fa-camera-home Services_icon'> </i>*/}
-            {/*            </Col>*/}
-            {/*            <Col xs={8}>*/}
-            {/*                <p>*/}
-            {/*                    Simple skin replacement, structures, fabrication, CNC machining, to laser engraving & 3D*/}
-            {/*                    printing*/}
-            {/*                </p>*/}
-            {/*            </Col>*/}
-            {/*        </Row>*/}
-            {/*    </Col>*/}
-
-
-            {/*    /!*</Col>*!/*/}
-
-
-            {/*    /!*<Col xs={12} md={4} className=''>*!/*/}
-            {/*    <Col xs={3}>*/}
-            {/*        <Col className='Services_nav_hoverTitle mb-3'>*/}
-            {/*            <Zoom>*/}
-            {/*                <Col>*/}
-            {/*                    <p className='Services_nav_text d-flex justify-content-center '>Avionics</p>*/}
-            {/*                </Col>*/}
-            {/*            </Zoom>*/}
-            {/*        </Col>*/}
-            {/*        <Row xs={12} className='Services_text-row'>*/}
-            {/*            <Col xs={2} className='d-flex justify-content-center mt-3'>*/}
-            {/*                <i className='far fa-headset Services_icon'> </i>*/}
-            {/*            </Col>*/}
-            {/*            <Col xs={8}>*/}
-            {/*                <p>*/}
-            {/*                    From minor repairs to complete panel upgrades. All services are performed in*/}
-            {/*                    house...*/}
-            {/*                </p>*/}
-            {/*            </Col>*/}
-            {/*        </Row>*/}
-            {/*    </Col>*/}
-            {/*    <Col xs={3}>*/}
-            {/*        <Col className='Services_nav_hoverTitle mb-3'>*/}
-            {/*            <Zoom>*/}
-            {/*                <Col>*/}
-            {/*                    <p className='Services_nav_text d-flex justify-content-center'>EO/IR Flir</p>*/}
-            {/*                </Col>*/}
-            {/*            </Zoom>*/}
-            {/*        </Col>*/}
-            {/*        <Row xs={12} className='Services_text-row'>*/}
-            {/*            <Col xs={2} className='d-flex justify-content-center mt-3'>*/}
-            {/*                <i className='far fa-camera-home Services_icon'> </i>*/}
-            {/*            </Col>*/}
-            {/*            <Col xs={8}>*/}
-            {/*                <p>*/}
-            {/*                    Bison Aviation is the world's leader in legacy airborne EO / IR equipment*/}
-            {/*                    service and sales.*/}
-            {/*                </p>*/}
-            {/*            </Col>*/}
-            {/*        </Row>*/}
-            {/*    </Col>*/}
-
-            {/*</Row>*/}
         </>
 
     )
