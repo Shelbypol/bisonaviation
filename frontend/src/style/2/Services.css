@@ -1,21 +1,39 @@
+.Services_row{
+    height: 50vh;
+}
 
 .Services_description{
-    line-height:1.5vw;
+    line-height:1.3vw;
     color: rgba(255,255,255, .7);
 }
 
 .Services_nav_text {
     color: white;
     /*background-color: rgba(0, 0, 0, .5);*/
-    padding: .5em 1em .5em 1em;
+    /*padding: .5em 1em .5em 1em;*/
     width: inherit;
 }
 
-
-.Services_text{
-    background-color: rgba(0, 0, 0, .5);
+.Services_icon{
+    font-size: 1.5vw !important;
 }
 
+.Services_bg{
+    /*background-color: rgba(0, 0, 0, 1);*/
+    background-color: transparent;
+}
+
+.Services_link{
+    color: white;
+    font-weight: lighter;
+    border: 1px solid black;
+    background-color: #2576e5;
+}
+
+.Services_link:hover{
+    color: white;
+    border: 1px solid white;
+}
 
 
 /*    ======   MOBILE RESPONSIVE    ======    */
