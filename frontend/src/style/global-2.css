@@ -153,10 +153,6 @@ main {
 }
 
 /* ============= AVIONICS JUMBO ===========*/
-.Global_Avionics_bg-img{
-    background-image: url("../images/bg-graphics/home-screen/home-section-body-bg/avionics-hero-img-overlay.png");
-    background-position: center 5%;
-}
 
 .Global_Flir_bg-img{
     background-image: url("../images/bg-graphics/home-screen/home-section-body-bg/flir-jumbo-img.png");

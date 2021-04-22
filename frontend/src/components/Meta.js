@@ -7,16 +7,14 @@ const Meta = ({ title, description, keywords }) => {
             <title>{title}</title>
             <meta name='description' content={description} />
             <meta name='keyword' content={keywords} />
-
         </Helmet>
     )
 };
 
 Meta.defaultProps = {
-    title: 'Proshop',
-    description: 'We sell the best products for cheap',
+    title: 'Bison Aviation',
+    description: 'Bison Aviation is an FAA certificated Part 145 Repair Station',
     keywords: 'electronics, buy electronics, cheap electronics'
-
 };
 
 export default Meta
