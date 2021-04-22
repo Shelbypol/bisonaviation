@@ -16,11 +16,11 @@ const Services = () => {
 
                 </Col>
 
-                <Col md={3} className='mt-n5 d-flex justify-content-center global_cursor'>
+                <Col md={3} className='Services_col d-flex justify-content-center global_cursor'>
                     <Card className='p-2 border-0 w-100 Services_bg'>
                         <Card.Body>
-                            <Card.Title className='mx-auto my-0 w-25 border rounded-circle px-2 py-3 global_blood-red-bg'>
-                                <i className='Services_icon fas fa-cart-arrow-down'> </i>
+                            <Card.Title className='mx-auto my-0 w-25 rounded-circle px-2 py-3 global_blood-red-bg'>
+                                <i className='Services_icon far fa-tools'> </i>
                             </Card.Title>
                             <Card.Subtitle className='mx-auto my-3'>
                                 <h5 className='Services_nav_text'>Maintenance</h5>
@@ -36,11 +36,11 @@ const Services = () => {
                     </Card>
                 </Col>
 
-                <Col md={3} className='mt-n5 d-flex justify-content-center global_cursor'>
+                <Col md={3} className='Services_col d-flex justify-content-center global_cursor'>
                     <Card className='p-2 border-0 w-100 Services_bg'>
                         <Card.Body>
-                            <Card.Title className='mx-auto my-0 w-25 border rounded-circle px-2 py-3 global_blood-red-bg'>
-                                    <i className='Services_icon fas fa-cart-arrow-down'> </i>
+                            <Card.Title className='mx-auto my-0 w-25 rounded-circle px-2 py-3 global_blood-red-bg'>
+                                    <i className='Services_icon fal fa-tachometer-alt-fastest'> </i>
                             </Card.Title>
                             <Card.Subtitle className='mx-auto my-3'>
                                 <h5 className='Services_nav_text'>Avionics</h5>
@@ -60,12 +60,12 @@ const Services = () => {
                     </Card>
                 </Col>
 
-                <Col md={3} className='mt-n5 d-flex justify-content-center global_cursor'>
+                <Col md={3} className='Services_col d-flex justify-content-center global_cursor'>
                     <Card className='p-2 border-0 w-100 Services_bg'>
                         <Card.Body
                             className=''>
-                            <Card.Title className='mx-auto my-0 w-25 border rounded-circle px-2 py-3 global_blood-red-bg'>
-                                <i className='Services_icon fas fa-cart-arrow-down'> </i>
+                            <Card.Title className='mx-auto my-0 w-25 rounded-circle px-2 py-3 global_blood-red-bg'>
+                                <i className='Services_icon far fa-webcam'> </i>
                             </Card.Title>
                             <Card.Subtitle className='mx-auto my-3'>
                                 <h5 className='Services_nav_text'>EO/IR Flir</h5>
