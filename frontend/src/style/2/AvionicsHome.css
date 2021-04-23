@@ -1,3 +1,6 @@
+.AvionicsHome_row{
+    margin-top: -15vh;
+}
 
 .AvionicsContainer {
     background-image: url("../../images/bg-graphics/graphics/smooth-overlay-boxed-bg.png");
@@ -11,16 +14,16 @@
 }
 
 .AvionicsHome_title-col{
-    margin-top: -25vh;
+    margin-top: -30vh;
     height: 12vh;
 }
 
 .AvionicsHome_title{
-   font-size: 10vh;
+   font-size: 8vh;
 }
 
 .AvionicsHome_text {
-    margin-top: 10vh;
+    /*margin-top: 10vh;*/
     /*background-color: rgba(255,255,255,.3);*/
     background-color: rgba(0,0,0,.6);
     color: rgba(255,255,255,.8);

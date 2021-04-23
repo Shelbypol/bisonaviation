@@ -19,9 +19,9 @@ const AvionicsHome = () => {
                     <h1 className='AvionicsHome_title text-white'>Avionics</h1>
                 </Col>
             </Row>
-            <Row className='AvionicsHome_row  m-0 d-flex justify-content-center'>
+            <Row className='AvionicsHome_row d-flex justify-content-center'>
                 <Col xs={9}
-                     className='AvionicsHome_text p-3 mt-n5 d-flex justify-content-center align-content-center'>
+                     className='AvionicsHome_text p-3 d-flex justify-content-center align-content-center'>
                     <p className='text-center px-5'>
                         Whether you need to add ADS-B OUT capabilities in order to meet the December
                         31,
@@ -44,8 +44,8 @@ const AvionicsHome = () => {
                                 <i className='global_blood-red Services_icon far fa-tools'> </i>
                         </Col>
                         <Col xs={4}
-                             className=' global_cursor d-flex justify-content-center'>
-                                <i className='global_blood-red Services_icon far fa-tools'> </i>
+                             className='global_cursor d-flex justify-content-center'>
+                                <i className='border rounded-circle global_blood-red Services_icon far fa-tools'> </i>
                         </Col>
                         <Col xs={4}
                              className=' global_cursor d-flex justify-content-center'>
