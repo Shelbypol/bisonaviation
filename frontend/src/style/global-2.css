@@ -8,7 +8,6 @@ body {
     width: 100vw;
     max-width: 100%;
     contain: content;
-    /*background-image: url("../images/bg-graphics/graphics/body-bg.png");*/
     background-image: url("../images/bg-graphics/graphics/smooth-overlay-boxed-bg.png");
 }
 
@@ -25,9 +24,7 @@ main {
 }
 
 .global_bg-overlay{
-    /*background-image: url("../images/bg-graphics/");*/
     background-color: rgba(0,0,0, .8);
-    /*background-color: rgba(96,96,96, .5);*/
 }
 
 .global_dots{
