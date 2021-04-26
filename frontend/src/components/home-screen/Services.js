@@ -10,9 +10,9 @@ const Services = () => {
     return (
 
         <>
-            <Row className='Services_row text-white text-center mt-0 mb-5 d-flex justify-content-center'>
+            <Row className='Services_row text-white text-center p-0 m-0 d-flex justify-content-center align-content-center'>
 
-                <Col md={3} className='Services_col global_cursor'>
+                <Col md={3} className='Services_col global_cursor bg-dark d-flex align-items-center'>
                     <Card className='p-2 border-0 w-100 Services_bg'>
                         <Card.Body>
                             <Card.Title className='mx-auto my-0 w-25 rounded-circle px-2 py-3 global_blood-red-bg'>
@@ -32,7 +32,7 @@ const Services = () => {
                     </Card>
                 </Col>
 
-                <Col md={3} className='Services_col global_cursor'>
+                <Col md={3} className='Services_col global_cursor bg-dark mx-3 p-0 d-flex align-items-center'>
                     <Card className='p-2 border-0 w-100 Services_bg mr-2'>
                         <Card.Body>
                             <Card.Title className='mx-auto my-0 w-25 rounded-circle px-2 py-3 global_blood-red-bg'>
@@ -49,14 +49,14 @@ const Services = () => {
                                     </span>
                                 </p>
                             </Card.Text>
-                            <Card.Link href="/products" className='w-50 mt-n2 rounded-pill px-2 mx-auto px-auto Services_link'>browse
+                            <Card.Link href="/products" className='w-50 mt-n2 rounded px-2 mx-auto px-auto Services_link'>browse
                                 products
                             </Card.Link>
                         </Card.Body>
                     </Card>
                 </Col>
 
-                <Col md={3} className='Services_col global_cursor'>
+                <Col md={3} className='Services_col global_cursor bg-dark d-flex align-items-center'>
                     <Card className='p-2 border-0 w-100 Services_bg'>
                         <Card.Body
                             className=''>

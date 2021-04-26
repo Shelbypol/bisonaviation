@@ -14,16 +14,12 @@ const AvionicsHome = () => {
 
     return (
         <>
-            <Row className='m-0 d-flex justify-content-center'>
+            <Row className='mt-5 d-flex justify-content-center'>
                 <Col xs={12} className='AvionicsHome_image m-0'> </Col>
-                {/*<Col xs={12} className='AvionicsHome_overlay m-0'> </Col>*/}
-                {/*<Col xs={9}*/}
-                {/*     className='AvionicsHome_title-col d-flex justify-content-center align-content-center'>*/}
-                {/*    <h1 className='AvionicsHome_title text-white'>Avionics</h1>*/}
-                {/*</Col>*/}
             </Row>
+
             <Row className='AvionicsHome_row d-flex justify-content-center align-content-center'>
-                <Col xs={8} className='AvionicsHome_bg pt-3 mb-5 pb-5'>
+                <Col xs={8} className='AvionicsHome_bg mb-5 pb-5'>
                     <Row className='d-flex justify-content-center'>
 
                             <Col xs={12}
@@ -42,7 +38,7 @@ const AvionicsHome = () => {
                                     your avionics systems into the 21st century!
                                     <br/>
                                     <Button href="/avionics"
-                                            className='py-1 px-2 border-0 mt-3 rounded-pill Services_link'>learn
+                                            className='py-1 px-2 border-0 mt-3 rounded-pill AvionicsHome_link'>learn
                                         more
                                     </Button>
                                 </p>
@@ -52,16 +48,16 @@ const AvionicsHome = () => {
                             <Col xs={12} className='my-5'>
                                 <Row className='mb-4'>
                                     <Col xs={4}
-                                         className=' global_cursor d-flex justify-content-center'>
-                                        <i className='global_blood-red AvionicsHome_icon far fa-tools'> </i>
-                                    </Col>
-                                    <Col xs={4}
-                                         className='global_cursor d-flex justify-content-center'>
-                                        <i className=' global_blood-red AvionicsHome_icon far fa-tools'> </i>
+                                         className='bg-dark global_cursor d-flex justify-content-center'>
+                                        <i className=' rounded-circle AvionicsHome_icon far fa-tools'> </i>
                                     </Col>
                                     <Col xs={4}
                                          className=' global_cursor d-flex justify-content-center'>
-                                        <i className='global_blood-red  AvionicsHome_icon far fa-tools'> </i>
+                                        <i className='  rounded-circle AvionicsHome_icon far fa-tools'> </i>
+                                    </Col>
+                                    <Col xs={4}
+                                         className='bg-dark global_cursor d-flex justify-content-center'>
+                                        <i className=' rounded-circle  AvionicsHome_icon far fa-tools'> </i>
                                     </Col>
                                 </Row>
 

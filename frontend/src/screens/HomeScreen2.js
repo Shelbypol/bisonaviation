@@ -31,15 +31,8 @@ const HomeScreen2 = () => {
             <Container className='m-0 p-0' fluid>
                 <RepairAward/>
 
-                {/*<Container className='m-5 p-0' fluid>*/}
-                    <Services
-                        showTag={true}
-                    />
+                    <Services/>
 
-                {/*</Container>*/}
-                {/*<hr className='global_blood-red-bg'/>*/}
-                {/*<Row className=' m-0 d-flex justify-content-center'>*/}
-                {/*    <Col xs={12} className='AvionicsHome_image m-0'>*/}
                 <AvionicsHome/>
 
                     {/*</Col>*/}
