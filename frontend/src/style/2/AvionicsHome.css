@@ -1,6 +1,5 @@
 .AvionicsHome_row {
-    margin-top: -150vh;
-    background-color: red;
+    margin-top: -135vh;
 }
 
 .AvionicsContainer {
@@ -9,7 +8,7 @@
 
 .AvionicsHome_image {
     /*z-index: -1;*/
-    height: 150vh;
+    height: 135vh;
     /*height: 40vh;*/
     background-image: url("../../images/bg-graphics/home-screen/home-slider/fullscreen-slider2.png");
     background-position: center 20%;
@@ -31,12 +30,12 @@
 }
 
 .AvionicsHome_img{
-    height: 35vh;
+    height: 30vh;
     width: fit-content;
 }
 
 
 .Avionics_img-col{
-    background-color: black;
+    /*background-color: black;*/
 }
 

@@ -23,11 +23,11 @@ const AvionicsHome = () => {
                 {/*</Col>*/}
             </Row>
             <Row className='AvionicsHome_row d-flex justify-content-center align-content-center'>
-                <Col xs={9} className='AvionicsHome_bg  px-5'>
-                    <Row className='d-flex justify-content-center border-top'>
+                <Col xs={9} className='AvionicsHome_bg pt-3 px-5 mb-5 pb-5'>
+                    <Row className='d-flex justify-content-center'>
 
                             <Col xs={12}
-                                 className=' AvionicsHome_title-col d-flex justify-content-center align-content-center'>
+                                 className=' AvionicsHome_title-col pb-5 d-flex justify-content-center align-content-center'>
                                 <h1 className='AvionicsHome_title text-white'>Avionics</h1>
                             </Col>
 
@@ -109,7 +109,7 @@ const AvionicsHome = () => {
                             <Col xs={10} className='mt-5 Avionics_img-col'>
                                 <Row className=''>
                                     <Col xs={4} className=' p-0'>
-                                        <Image className=' AvionicsHome_img pr-1' src={tayseer} fluid/>
+                                        <Image className=' AvionicsHome_img pr-2' src={tayseer} fluid/>
                                     </Col>
                                     <Col xs={8} className='p-0'>
                                         <Image className=' AvionicsHome_img' src={tests} fluid/>
@@ -117,10 +117,10 @@ const AvionicsHome = () => {
                                 </Row>
                                 <Row className=''>
                                     <Col xs={8} className='p-0'>
-                                        <Image className=' AvionicsHome_img pt-1' src={roel} fluid/>
+                                        <Image className=' AvionicsHome_img pt-2' src={roel} fluid/>
                                     </Col>
                                     <Col xs={4} className=' p-0 '>
-                                        <Image className='AvionicsHome_img pl-1 pt-1' src={tayseer} fluid/>
+                                        <Image className='AvionicsHome_img pl-2 pt-2' src={tayseer} fluid/>
                                     </Col>
                                 </Row>
                             </Col>
