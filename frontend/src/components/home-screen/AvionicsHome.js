@@ -23,7 +23,7 @@ const AvionicsHome = () => {
                 {/*</Col>*/}
             </Row>
             <Row className='AvionicsHome_row d-flex justify-content-center align-content-center'>
-                <Col xs={9} className='AvionicsHome_bg pt-3 px-5 mb-5 pb-5'>
+                <Col xs={8} className='AvionicsHome_bg pt-3 mb-5 pb-5'>
                     <Row className='d-flex justify-content-center'>
 
                             <Col xs={12}
@@ -49,19 +49,19 @@ const AvionicsHome = () => {
 
                             </Col>
 
-                            <Col xs={12} className='mt-5'>
+                            <Col xs={12} className='my-5'>
                                 <Row className='mb-4'>
                                     <Col xs={4}
                                          className=' global_cursor d-flex justify-content-center'>
-                                        <i className='global_blood-red Services_icon far fa-tools'> </i>
+                                        <i className='global_blood-red AvionicsHome_icon far fa-tools'> </i>
                                     </Col>
                                     <Col xs={4}
                                          className='global_cursor d-flex justify-content-center'>
-                                        <i className='border rounded-circle global_blood-red Services_icon far fa-tools'> </i>
+                                        <i className=' global_blood-red AvionicsHome_icon far fa-tools'> </i>
                                     </Col>
                                     <Col xs={4}
                                          className=' global_cursor d-flex justify-content-center'>
-                                        <i className='global_blood-red Services_icon far fa-tools'> </i>
+                                        <i className='global_blood-red  AvionicsHome_icon far fa-tools'> </i>
                                     </Col>
                                 </Row>
 
@@ -70,7 +70,7 @@ const AvionicsHome = () => {
                                     <Col xs={4}
                                          className=' global_cursor d-flex justify-content-center'>
                                         <Zoom>
-                                            <h5 className='text-white'>Custom Panels</h5>
+                                            <h5 className='text-white text-center'>Custom Panels</h5>
                                         </Zoom>
                                     </Col>
 
@@ -78,7 +78,7 @@ const AvionicsHome = () => {
                                     <Col xs={4}
                                          className=' global_cursor d-flex justify-content-center'>
                                         <Zoom>
-                                            <h5 className='text-white'>In-Depth Tests & Checks</h5>
+                                            <h5 className='text-white text-center'>In-Depth Tests & Checks</h5>
                                         </Zoom>
                                     </Col>
 
@@ -86,7 +86,7 @@ const AvionicsHome = () => {
                                     <Col xs={4}
                                          className=' global_cursor d-flex justify-content-center'>
                                         <Zoom>
-                                            <h5 className='text-white'> Software Updates</h5>
+                                            <h5 className='text-white text-center'> Software Updates</h5>
                                         </Zoom>
                                     </Col>
                                 </Row>
