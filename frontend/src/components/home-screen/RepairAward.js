@@ -4,9 +4,12 @@ import '../../style/2/RepairAward.css'
 
 const RepairAward = () => {
     return (
-        <Jumbotron className='RepairAward_bg-img d-none d-md-block my-0 px-0 pt-0' fluid>
-        </Jumbotron>
-
+        <>
+            <Jumbotron className='RepairAward_bg-img d-none d-md-block my-0 px-0 pt-5' fluid>
+            </Jumbotron>
+            {/*<Jumbotron className='RepairAward_bg d-none d-md-block my-0 px-0 pt-0' fluid>*/}
+            {/*</Jumbotron>*/}
+        </>
     );
 };
 

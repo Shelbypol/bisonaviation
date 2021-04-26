@@ -2,6 +2,9 @@ import React from "react";
 import {Button, Col, Row, Card, Container, Jumbotron, Image} from "react-bootstrap";
 import '../../style/2/AvionicsHome.css';
 import test from '../../images/bg-graphics/screen-avionics/avionics/avionics-hero-img.png'
+// import tayseer from '../../images/bg-graphics/screen-avionics/avionics-slider/avionics2.png'
+import tests from '../../images/bg-graphics/screen-avionics/avionics-slider/avionics4.png'
+import roel from '../../images/bg-graphics/screen-avionics/avionics-slider/avionics2.png'
 import tayseer from '../../images/bg-graphics/screen-avionics/avionics/tayseer-avionics.png'
 import {LinkContainer} from "react-router-bootstrap";
 import Zoom from "react-reveal/Zoom";
@@ -14,12 +17,18 @@ const AvionicsHome = () => {
             <Row className=' m-0 d-flex justify-content-center'>
                 <Col xs={12} className='AvionicsHome_image m-0'> </Col>
                 {/*<Col xs={12} className='AvionicsHome_overlay m-0'> </Col>*/}
+                {/*<Col xs={9}*/}
+                {/*     className='AvionicsHome_title-col d-flex justify-content-center align-content-center'>*/}
+                {/*    <h1 className='AvionicsHome_title text-white'>Avionics</h1>*/}
+                {/*</Col>*/}
+            </Row>
+            <Row className='AvionicsHome_row d-flex justify-content-center'>
+
                 <Col xs={9}
                      className='AvionicsHome_title-col d-flex justify-content-center align-content-center'>
                     <h1 className='AvionicsHome_title text-white'>Avionics</h1>
                 </Col>
-            </Row>
-            <Row className='AvionicsHome_row d-flex justify-content-center'>
+
                 <Col xs={9}
                      className='AvionicsHome_text p-3 d-flex justify-content-center align-content-center'>
                     <p className='text-center px-5'>
@@ -52,6 +61,8 @@ const AvionicsHome = () => {
                                 <i className='global_blood-red Services_icon far fa-tools'> </i>
                         </Col>
                     </Row>
+
+
                     <Row>
                         <Col xs={4}
                              className=' global_cursor d-flex justify-content-center'>
@@ -92,21 +103,21 @@ const AvionicsHome = () => {
                 {/*</Col>*/}
 
 
-                <Col xs={9} className='mt-5' style={{backgroundColor: 'rgba(0,0,0,.5)'}}>
+                <Col xs={9} className='mt-5 Avionics_img-col'>
                     <Row className=''>
                         <Col xs={4} className=' p-0'>
-                            <Image className=' AvionicsHome_img pr-2' src={tayseer} fluid/>
+                            <Image className=' AvionicsHome_img pr-1' src={tayseer} fluid/>
                         </Col>
                         <Col xs={8} className='p-0'>
-                            <Image className=' AvionicsHome_img' src={test} fluid/>
+                            <Image className=' AvionicsHome_img' src={tests} fluid/>
                         </Col>
                     </Row>
                     <Row className=''>
                         <Col xs={8} className='p-0'>
-                            <Image className=' AvionicsHome_img pt-2' src={test} fluid/>
+                            <Image className=' AvionicsHome_img pt-1' src={roel} fluid/>
                         </Col>
                         <Col xs={4} className=' p-0 '>
-                            <Image className='AvionicsHome_img pl-2 pt-2' src={tayseer} fluid/>
+                            <Image className='AvionicsHome_img pl-1 pt-1' src={tayseer} fluid/>
                         </Col>
                     </Row>
                 </Col>

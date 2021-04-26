@@ -6,7 +6,7 @@ import Services from "../components/home-screen/Services";
 import Avionics from "../components/home-screen/Avionics";
 import Mechanics from "../components/home-screen/Mechanics";
 import Flir from "../components/home-screen/Flir";
-import {Container, Jumbotron} from 'react-bootstrap';
+import {Col, Container, Jumbotron, Row} from 'react-bootstrap';
 import Garmin from "../components/Garmin";
 import MultiCarouselPage from "../components/MulitCarouselPage";
 import AvionicsAd from "../components/avionics-Screen/AvionicsAd";
@@ -38,8 +38,17 @@ const HomeScreen2 = () => {
 
                 {/*</Container>*/}
                 {/*<hr className='global_blood-red-bg'/>*/}
-
+                {/*<Row className=' m-0 d-flex justify-content-center'>*/}
+                {/*    <Col xs={12} className='AvionicsHome_image m-0'>*/}
                 <AvionicsHome/>
+
+                    {/*</Col>*/}
+                    {/*<Col xs={12} className='AvionicsHome_overlay m-0'> </Col>*/}
+                    {/*<Col xs={9}*/}
+                    {/*     className='AvionicsHome_title-col d-flex justify-content-center align-content-center'>*/}
+                    {/*    <h1 className='AvionicsHome_title text-white'>Avionics</h1>*/}
+                    {/*</Col>*/}
+                {/*</Row>*/}
 
                 {/*<Jumbotron className='Global_Avionics_bg-img p-0 mb-1 mt-n3 d-flex align-content-stretch bg-transparent'*/}
                 {/*           fluid>*/}

@@ -1,5 +1,5 @@
-.AvionicsHome_row{
-    margin-top: -15vh;
+.AvionicsHome_row {
+    margin-top: -25vh;
 }
 
 .AvionicsContainer {
@@ -14,7 +14,7 @@
 }
 
 .AvionicsHome_title-col{
-    margin-top: -30vh;
+    /*margin-top: -30vh;*/
     height: 12vh;
 }
 
@@ -23,15 +23,17 @@
 }
 
 .AvionicsHome_text {
-    /*margin-top: 10vh;*/
-    /*background-color: rgba(255,255,255,.3);*/
     background-color: rgba(0,0,0,.6);
     color: rgba(255,255,255,.8);
 }
 
 .AvionicsHome_img{
-    height: 25vh;
+    height: 35vh;
     width: fit-content;
 }
 
+
+.Avionics_img-col{
+    background-color: black;
+}
 

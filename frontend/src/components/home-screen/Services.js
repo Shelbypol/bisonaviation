@@ -12,10 +12,6 @@ const Services = () => {
         <>
             <Row className='Services_row text-white text-center mt-0 mb-5 d-flex justify-content-around'>
 
-                <Col xs={12} className='mb-n3 pb-0' style={{backgroundColor: 'rgba(0,0,0,.4)', height: '10vh'}}>
-
-                </Col>
-
                 <Col md={3} className='Services_col d-flex justify-content-center global_cursor'>
                     <Card className='p-2 border-0 w-100 Services_bg'>
                         <Card.Body>
