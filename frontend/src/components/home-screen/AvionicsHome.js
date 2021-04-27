@@ -19,7 +19,7 @@ const AvionicsHome = () => {
             </Row>
 
             <Row className='AvionicsHome_row d-flex justify-content-center align-content-center'>
-                <Col xs={8} className='AvionicsHome_bg mb-5 pb-5'>
+                <Col xs={9} className='AvionicsHome_bg mb-5 pb-5'>
                     <Row className='d-flex justify-content-center'>
 
                             <Col xs={12}
@@ -48,7 +48,7 @@ const AvionicsHome = () => {
                             <Col xs={12} className='my-5'>
                                 <Row className='mb-4'>
                                     <Col xs={4}
-                                         className='global_blood-red-bg global_cursor d-flex justify-content-center'>
+                                         className='global_cursor d-flex justify-content-center'>
                                         <i className=' rounded-circle AvionicsHome_icon far fa-tools'> </i>
                                     </Col>
                                     <Col xs={4}
@@ -56,7 +56,7 @@ const AvionicsHome = () => {
                                         <i className='  rounded-circle AvionicsHome_icon far fa-tools'> </i>
                                     </Col>
                                     <Col xs={4}
-                                         className='global_blood-red-bg global_cursor d-flex justify-content-center'>
+                                         className='global_cursor d-flex justify-content-center'>
                                         <i className=' rounded-circle  AvionicsHome_icon far fa-tools'> </i>
                                     </Col>
                                 </Row>

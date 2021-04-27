@@ -24,7 +24,8 @@
 }
 
 .AvionicsHome_bg{
-    background-color: #181818;
+    background-color: rgba(24,24,24,.9 );
+    /*background-color: #181818;*/
     /*background-color: rgba(0,0,0,.8);*/
     color: rgba(255,255,255,.8);
 }

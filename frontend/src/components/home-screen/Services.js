@@ -56,7 +56,7 @@ const Services = () => {
                     </Card>
                 </Col>
 
-                <Col md={3} className='Services_col global_cursor bg-dark d-flex align-items-center'>
+                <Col md={3} className='Services_col global_cursor p-0 bg-dark d-flex align-items-center'>
                     <Card className='p-2 border-0 w-100 Services_bg'>
                         <Card.Body
                             className=''>
