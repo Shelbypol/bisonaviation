@@ -12,7 +12,7 @@ const Services = () => {
         <>
             <Row className='Services_row text-white text-center p-0 m-0 d-flex justify-content-center align-content-center'>
 
-                <Col md={3} className='Services_col global_cursor bg-dark d-flex align-items-center'>
+                <Col md={3} className='Services_col global_cursor d-flex align-items-center'>
                     <Card className='p-2 border-0 w-100 Services_bg'>
                         <Card.Body>
                             <Card.Title className='mx-auto my-0 w-25 rounded-circle px-2 py-3 global_blood-red-bg'>
@@ -32,7 +32,7 @@ const Services = () => {
                     </Card>
                 </Col>
 
-                <Col md={3} className='Services_col global_cursor bg-dark mx-3 p-0 d-flex align-items-center'>
+                <Col md={3} className='Services_col global_cursor mx-3 p-0 d-flex align-items-center'>
                     <Card className='p-2 border-0 w-100 Services_bg mr-2'>
                         <Card.Body>
                             <Card.Title className='mx-auto my-0 w-25 rounded-circle px-2 py-3 global_blood-red-bg'>
@@ -56,7 +56,7 @@ const Services = () => {
                     </Card>
                 </Col>
 
-                <Col md={3} className='Services_col global_cursor p-0 bg-dark d-flex align-items-center'>
+                <Col md={3} className='Services_col global_cursor p-0 d-flex align-items-center'>
                     <Card className='p-2 border-0 w-100 Services_bg'>
                         <Card.Body
                             className=''>

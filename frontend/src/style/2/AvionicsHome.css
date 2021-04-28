@@ -1,17 +1,17 @@
-.AvionicsHome_row {
-    margin-top: -135vh;
-}
+
 
 .AvionicsContainer {
     background-image: url("../../images/bg-graphics/graphics/smooth-overlay-boxed-bg.png");
 }
 
 .AvionicsHome_image {
-    z-index: -1;
-    height: 135vh;
-    /*height: 40vh;*/
     background-image: url("../../images/bg-graphics/home-screen/home-slider/fullscreen-slider2.png");
     background-position: center 20%;
+}
+
+.AvionicsHome_bg{
+    background-color: rgba(0,0,0,1);
+    color: rgba(255,255,255,.8);
 }
 
 .AvionicsHome_title-col{
@@ -23,12 +23,6 @@
    font-size: 8vh;
 }
 
-.AvionicsHome_bg{
-    background-color: rgba(24,24,24,.9 );
-    /*background-color: #181818;*/
-    /*background-color: rgba(0,0,0,.8);*/
-    color: rgba(255,255,255,.8);
-}
 
 .AvionicsHome_img{
     height: 30vh;

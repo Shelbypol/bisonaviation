@@ -28,44 +28,43 @@ const HomeScreen2 = () => {
 
             <HomeHero/>
 
-            <Container className='m-0 p-0' fluid>
-                <RepairAward/>
+            {/*<Container className='m-0 p-0' fluid>*/}
+            <RepairAward/>
+
+            <Row className='d-flex justify-content-center' style={{backgroundColor: 'black'}}>
+                <Col xs={10}>
 
                     <Services/>
 
-                <AvionicsHome/>
+                    <Row className='mt-5 d-flex justify-content-center'>
+                        <Col xs={12} className='AvionicsHome_image m-0'>
+                            <Row>
 
-                    {/*</Col>*/}
-                    {/*<Col xs={12} className='AvionicsHome_overlay m-0'> </Col>*/}
-                    {/*<Col xs={9}*/}
-                    {/*     className='AvionicsHome_title-col d-flex justify-content-center align-content-center'>*/}
-                    {/*    <h1 className='AvionicsHome_title text-white'>Avionics</h1>*/}
-                    {/*</Col>*/}
-                {/*</Row>*/}
+                                <Col xs={12} style={{backgroundColor: 'rgba(0,0,0, .8)', zIndex: '3000'}}>
+                                    <AvionicsHome/>
+                                </Col>
+                            </Row>
+                        </Col>
+                    </Row>
 
-                {/*<Jumbotron className='Global_Avionics_bg-img p-0 mb-1 mt-n3 d-flex align-content-stretch bg-transparent'*/}
-                {/*           fluid>*/}
-                {/*    <Container className='p-0 fluid'>*/}
-                {/*        <Avionics/>*/}
-                {/*    </Container>*/}
-                {/*</Jumbotron>*/}
-
-                {/*<hr className='global_blood-red-bg mt-n1'/>*/}
-                <Container className='p-0 fluid'>
-                    <Mechanics/>
-                </Container>
-
-
-                <hr className='global_blood-red-bg mt-n1'/>
-                <Jumbotron
-                    className='Global_Flir_bg-img mt-n3 mb-0 p-0 pb-5 d-flex align-content-stretch bg-transparent'
-                    fluid>
                     <Container className='p-0 fluid'>
-                        <Flir/>
+                        <Mechanics/>
                     </Container>
-                </Jumbotron>
 
-            </Container>
+
+                    <hr className='global_blood-red-bg mt-n1'/>
+                    <Jumbotron
+                        className='Global_Flir_bg-img mt-n3 mb-0 p-0 pb-5 d-flex align-content-stretch bg-transparent'
+                        fluid>
+                        <Container className='p-0 fluid'>
+                            <Flir/>
+                        </Container>
+                    </Jumbotron>
+
+                </Col>
+            </Row>
+
+            {/*</Container>*/}
 
         </>
 
