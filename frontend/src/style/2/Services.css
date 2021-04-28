@@ -1,70 +1,42 @@
 
-.Services_text-row{
-    height: 25vh;
-    margin-top: 3em;
+.Services_row{
+    height: 80vh;
 }
 
-.Services_btn{
-    color: #F5F3F4;
-    font-size: 15px;
-    font-weight: lighter;
-    padding: 15px;
-    z-index: 200;
-    letter-spacing: .1em;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+.Services_col{
+   background-color: rgba(0,0,0,.5);
 }
 
-.Services_btn:hover{
-    background-color: #F5F3F4;
-    /*background-color: #660708;*/
-    color: #2576e5;
-    /*color: #F5F3F4;*/
-    font-weight: lighter;
-    border: none;
-}
-
-.Services_nav_overlay {
-
-    /*background-color: rgba(0,0,0, .5);*/
-}
-
-.Services_nav_hoverTitle:hover  {
-    transition: .5s ease;
-    cursor: pointer;
-    color: #F3F4F5;
-    transform: scale(1.1);
-}
-
-.Services_form{
-    background-image: url("../../images/bg-graphics/home-screen/services/services-form.png");
-    background-repeat: no-repeat;
-    height: 238px;
-}
-
-.Services_icon{
-    font-size: 1.5vw;
-    color: white;
-}
-
-.Services_icon:hover{
-    color: #660708;
+.Services_description{
+    line-height:1.3vw;
+    color: rgba(255,255,255, .7);
 }
 
 .Services_nav_text {
     color: white;
-    /*background-color: rgba(0, 0, 0, .5);*/
-    padding: .5em 1em .5em 1em;
     width: inherit;
 }
 
-.Services_nav_text:hover{
-    color: #660708;
+.Services_icon{
+    font-size: 1.5vw !important;
 }
 
-.Services_text{
-    background-color: rgba(0, 0, 0, .5);
+.Services_bg{
+    height: max-content;
+    background-color: rgba(255, 255, 255, .1);
 }
 
+.Services_link{
+    color: white;
+    font-weight: lighter;
+    /*border: 1px solid black;*/
+    background-color: #2576e5;
+}
+
+.Services_link:hover{
+    color: white;
+    border: 1px solid white;
+}
 
 
 /*    ======   MOBILE RESPONSIVE    ======    */

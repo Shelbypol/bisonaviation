@@ -2,7 +2,6 @@
     background-image: url("../../images/bg-graphics/home-screen/repair-award/repair-line-no-bg.png");
     background-position: center;
     background-repeat: no-repeat;
-    height: 96px;
+    /*height: 0vh;*/
     background-color: rgba(0,0,0,.5);
-
 }

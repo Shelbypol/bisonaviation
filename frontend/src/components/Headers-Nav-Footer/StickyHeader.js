@@ -56,7 +56,7 @@ const StickyHeader = () => {
             <Row className='global_dots StickyHeader_nav-color sticky-top' style={{top: '0', zIndex: 6000}}>
                 {/*===============  SIDEBAR  ==================*/}
 
-                <Col xs={3} className=' d-flex justify-content-start sticky-top' style={{top: '0', height: '12vh'}}>
+                <Col xs={3} className=' d-flex justify-content-center sticky-top' style={{top: '0', height: '12vh'}}>
                     <LinkContainer to='/'>
                         <img
                             src={logo}

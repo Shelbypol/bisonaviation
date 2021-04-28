@@ -1,8 +1,8 @@
 import React from "react";
-import {Jumbotron} from "reactstrap";
 import Fade from 'react-reveal/Fade';
-import {Card, Col, Row} from "react-bootstrap";
-import product from '../../images/bg-graphics/avionics/GTN625_HR_820.jpg'
+import {Card, Col, Row, Jumbotron} from "react-bootstrap";
+// import product from '../images/bg-graphics/home-screen/GTN625_HR_820.jpg'
+// import product from '../images/bg-graphics/avionics/GTN625_HR_820.jpg'
 import AvionicsProducts from "./AvionicsProducts";
 import '../style/2/GarminHomeFlag.scss'
 
@@ -39,7 +39,7 @@ const Garmin = () => {
                             <Col className=''>
                                 <Card style={{width: '18.2rem'}} className='border-0 bg-transparent'>
                                     {/*<Card.Subtitle className='Garmin_flag red global_accentFont mt-n1 mb-0 mx-0'>sale</Card.Subtitle>*/}
-                                    <Card.Img variant="top" src={product}/>
+                                    {/*<Card.Img variant="top" src=/>*/}
                                 </Card>
                             </Col>
 

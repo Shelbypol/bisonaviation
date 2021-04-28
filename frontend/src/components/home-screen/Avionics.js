@@ -12,8 +12,6 @@ const Avionics = () => {
 
     return (
         <>
-
-
             <Jumbotron id='home-avionics' className='Avionics_jumbo bg-transparent global_cultured p-0 m-0'
                        fluid>
                 <Row>
