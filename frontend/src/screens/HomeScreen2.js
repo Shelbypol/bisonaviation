@@ -32,7 +32,7 @@ const HomeScreen2 = () => {
             <RepairAward/>
 
             <Row className='d-flex justify-content-center' style={{backgroundColor: 'black'}}>
-                <Col xs={10}>
+                <Col xs={12}>
 
                     <Services/>
 

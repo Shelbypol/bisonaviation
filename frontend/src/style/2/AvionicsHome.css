@@ -25,7 +25,8 @@
 
 
 .AvionicsHome_img{
-    height: 30vh;
+    /*height: auto;*/
+    height: 35vh;
     width: fit-content;
 }
 

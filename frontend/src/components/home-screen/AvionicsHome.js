@@ -7,8 +7,8 @@ import tests from '../../images/bg-graphics/screen-avionics/avionics-slider/avio
 import roel from '../../images/bg-graphics/screen-avionics/avionics-slider/avionics2.png'
 import tayseer from '../../images/bg-graphics/screen-avionics/avionics/tayseer-avionics.png'
 import {LinkContainer} from "react-router-bootstrap";
-import Zoom from "react-reveal/Zoom";
-
+import Fade from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
 
 const AvionicsHome = () => {
 
@@ -19,14 +19,15 @@ const AvionicsHome = () => {
             {/*</Row>*/}
 
             <Row className='AvionicsHome_row d-flex justify-content-center align-content-center'>
-                <Col xs={10} className='AvionicsHome_bg pb-5'>
+                <Col xs={9} className='AvionicsHome_bg pb-5'>
                     <Row className='d-flex justify-content-center'>
-
+                        {/*<Fade top>*/}
                             <Col xs={12}
                                  className=' AvionicsHome_title-col pb-5 d-flex justify-content-center align-content-center'>
                                 <h1 className='AvionicsHome_title text-white'>Avionics</h1>
                             </Col>
-
+                        {/*</Fade>*/}
+                        <Fade top>
                             <Col xs={12}
                                  className='p-3 d-flex justify-content-center align-content-center'>
                                 <p className='text-center px-5'>
@@ -44,6 +45,8 @@ const AvionicsHome = () => {
                                 </p>
 
                             </Col>
+                        </Fade>
+                        <Fade top>
 
                             <Col xs={12} className='mb-5 mt-3'>
                                 <Row className='mb-4'>
@@ -65,61 +68,62 @@ const AvionicsHome = () => {
                                 <Row>
                                     <Col xs={4}
                                          className=' global_cursor d-flex justify-content-center'>
-                                        <Zoom>
-                                            <h5 className='text-white text-center'>Custom Panels</h5>
-                                        </Zoom>
+                                        {/*<Zoom>*/}
+                                        <h5 className='text-white text-center'>Custom Panels</h5>
+                                        {/*</Zoom>*/}
                                     </Col>
 
 
                                     <Col xs={4}
                                          className=' global_cursor d-flex justify-content-center'>
-                                        <Zoom>
-                                            <h5 className='text-white text-center'>In-Depth Tests & Checks</h5>
-                                        </Zoom>
+                                        {/*<Zoom>*/}
+                                        <h5 className='text-white text-center'>In-Depth Tests & Checks</h5>
+                                        {/*</Zoom>*/}
                                     </Col>
 
 
                                     <Col xs={4}
                                          className=' global_cursor d-flex justify-content-center'>
-                                        <Zoom>
-                                            <h5 className='text-white text-center'> Software Updates</h5>
-                                        </Zoom>
+                                        {/*<Zoom>*/}
+                                        <h5 className='text-white text-center'> Software Updates</h5>
+                                        {/*</Zoom>*/}
                                     </Col>
                                 </Row>
 
 
                             </Col>
+                        </Fade>
 
-                            {/*<hr className='global_blood-red-bg h-25'/>*/}
+                        {/*<hr className='global_blood-red-bg h-25'/>*/}
 
-                            {/*<Col xs={9} className='mt-3'>*/}
-                            {/*    <h6 className='pt-3 text-white text-center'>*/}
+                        {/*<Col xs={9} className='mt-3'>*/}
+                        {/*    <h6 className='pt-3 text-white text-center'>*/}
 
-                            {/*        FROM MINOR REPAIRS TO COMPLETE PANEL UPGRADES.*/}
-                            {/*        ALL SERVICES PERFORMED IN-HOUSE AT BISON AVIATION.*/}
+                        {/*        FROM MINOR REPAIRS TO COMPLETE PANEL UPGRADES.*/}
+                        {/*        ALL SERVICES PERFORMED IN-HOUSE AT BISON AVIATION.*/}
 
-                            {/*    </h6>*/}
-                            {/*</Col>*/}
+                        {/*    </h6>*/}
+                        {/*</Col>*/}
 
 
-                            <Col xs={10} className=' Avionics_img-col'>
-                                <Row className=''>
-                                    <Col xs={4} className=' p-0'>
-                                        <Image className=' AvionicsHome_img pr-3' src={tayseer} fluid/>
-                                    </Col>
-                                    <Col xs={8} className='p-0'>
-                                        <Image className=' AvionicsHome_img' src={tests} fluid/>
-                                    </Col>
-                                </Row>
-                                <Row className=''>
-                                    <Col xs={8} className='p-0'>
-                                        <Image className=' AvionicsHome_img pt-3' src={roel} fluid/>
-                                    </Col>
-                                    <Col xs={4} className=' p-0 '>
-                                        <Image className='AvionicsHome_img pl-3 pt-3' src={tayseer} fluid/>
-                                    </Col>
-                                </Row>
-                            </Col>
+                        <Col xs={10} className=' Avionics_img-col'>
+                            <Row className=''>
+                                <Col xs={4} className=' p-0'>
+                                    <Image className=' AvionicsHome_img pr-3' src={tayseer} fluid/>
+                                </Col>
+                                <Col xs={8} className='p-0'>
+                                    <Image className=' AvionicsHome_img' src={tests} fluid/>
+                                </Col>
+                            </Row>
+                            <Row className=''>
+                                <Col xs={8} className='p-0'>
+                                    <Image className=' AvionicsHome_img pt-3' src={roel} fluid/>
+                                </Col>
+                                <Col xs={4} className=' p-0 '>
+                                    <Image className='AvionicsHome_img pl-3 pt-3' src={tayseer} fluid/>
+                                </Col>
+                            </Row>
+                        </Col>
 
 
                     </Row>
