@@ -28,9 +28,8 @@ const AvionicsHome = () => {
                             </Col>
                         {/*</Fade>*/}
                         <Fade top>
-                            <Col xs={12}
-                                 className='p-3 d-flex justify-content-center align-content-center'>
-                                <p className='text-center px-5'>
+                            <Col xs={8} className='p-3 mx-auto'>
+                                <p className='text-center'>
                                     Whether you need to add ADS-B OUT capabilities in order to meet the December
                                     31,
                                     2019 deadline, a routine pitot-static / transponder certification, or it's
@@ -46,8 +45,8 @@ const AvionicsHome = () => {
 
                             </Col>
                         </Fade>
-                        <Fade top>
 
+                        <Fade top>
                             <Col xs={12} className='mb-5 mt-3'>
                                 <Row className='mb-4'>
                                     <Col xs={4}
@@ -94,19 +93,7 @@ const AvionicsHome = () => {
                             </Col>
                         </Fade>
 
-                        {/*<hr className='global_blood-red-bg h-25'/>*/}
-
-                        {/*<Col xs={9} className='mt-3'>*/}
-                        {/*    <h6 className='pt-3 text-white text-center'>*/}
-
-                        {/*        FROM MINOR REPAIRS TO COMPLETE PANEL UPGRADES.*/}
-                        {/*        ALL SERVICES PERFORMED IN-HOUSE AT BISON AVIATION.*/}
-
-                        {/*    </h6>*/}
-                        {/*</Col>*/}
-
-
-                        <Col xs={10} className=' Avionics_img-col'>
+                        <Col xs={8} className='Avionics_img-col'>
                             <Row className=''>
                                 <Col xs={4} className=' p-0'>
                                     <Image className=' AvionicsHome_img pr-3' src={tayseer} fluid/>
