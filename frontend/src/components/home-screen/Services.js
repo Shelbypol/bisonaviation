@@ -12,8 +12,8 @@ const Services = () => {
         <>
             <Row
                 className='Services_row text-white text-center p-0 m-0 d-flex justify-content-center align-content-center'>
-                    <Col md={3} className='Services_col global_cursor d-flex align-items-center'>
-                <Fade left>
+                <Col md={3} xs={12} className='Services_col global_cursor d-flex align-items-center'>
+                    <Fade left>
                         <Card className='p-2 border-0 w-100 Services_bg'>
                             <Card.Body>
                                 <Card.Title className='mx-auto my-0 w-25 rounded-circle px-2 py-3 global_blood-red-bg'>
@@ -32,10 +32,10 @@ const Services = () => {
                                 </Card.Text>
                             </Card.Body>
                         </Card>
-                </Fade>
-                    </Col>
+                    </Fade>
+                </Col>
 
-                <Col md={3} className='Services_col global_cursor mx-3 p-0 d-flex align-items-center'>
+                <Col md={3} xs={12} className='Services_col global_cursor mx-3 p-0 d-flex align-items-center'>
                     <Card className='p-2 border-0 w-100 Services_bg mr-2'>
                         <Card.Body>
                             <Card.Title className='mx-auto my-0 w-25 rounded-circle px-2 py-3 global_blood-red-bg'>
@@ -59,27 +59,27 @@ const Services = () => {
                         </Card.Body>
                     </Card>
                 </Col>
-                    <Col md={3} className='Services_col global_cursor p-0 d-flex align-items-center'>
-                <Fade right>
+
+                <Col md={3} xs={12} className='Services_col global_cursor d-flex align-items-center'>
+                    <Fade left>
                         <Card className='p-2 border-0 w-100 Services_bg'>
-                            <Card.Body
-                                className=''>
+                            <Card.Body>
                                 <Card.Title className='mx-auto my-0 w-25 rounded-circle px-2 py-3 global_blood-red-bg'>
-                                    <i className='Services_icon far fa-webcam'> </i>
+                                    <i className='Services_icon far fa-tools'> </i>
                                 </Card.Title>
                                 <Card.Subtitle className='mx-auto my-3'>
                                     <h5 className='Services_nav_text'>EO/IR Flir</h5>
                                 </Card.Subtitle>
                                 <Card.Text>
-                                    <p className=' Services_description'>
+                                    <p className='Services_description'>
                                         World leader in legacy airborne EO / IR equipment
-                                        service and sales.
+                                                            service and sales.
                                     </p>
                                 </Card.Text>
                             </Card.Body>
                         </Card>
-                </Fade>
-                    </Col>
+                    </Fade>
+                </Col>
             </Row>
 
 
