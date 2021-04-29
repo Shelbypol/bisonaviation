@@ -22,10 +22,10 @@ const AvionicsHome = () => {
                 <Col xs={9} className='AvionicsHome_bg pb-5'>
                     <Row className='d-flex justify-content-center'>
                         {/*<Fade top>*/}
-                            <Col xs={12}
-                                 className=' AvionicsHome_title-col pb-5 d-flex justify-content-center align-content-center'>
-                                <h1 className='AvionicsHome_title text-white'>Avionics</h1>
-                            </Col>
+                        <Col xs={12}
+                             className=' AvionicsHome_title-col pb-5 d-flex justify-content-center align-content-center'>
+                            <h1 className='AvionicsHome_title text-white'>Avionics</h1>
+                        </Col>
                         {/*</Fade>*/}
                         <Fade top>
                             <Col xs={8} className='p-3 mx-auto'>
@@ -46,52 +46,52 @@ const AvionicsHome = () => {
                             </Col>
                         </Fade>
 
-                        <Fade top>
-                            <Col xs={12} className='mb-5 mt-3'>
-                                <Row className='mb-4'>
-                                    <Col xs={4}
-                                         className='global_cursor d-flex justify-content-center'>
-                                        <i className=' rounded-circle AvionicsHome_icon far fa-tools'> </i>
-                                    </Col>
-                                    <Col xs={4}
-                                         className=' global_cursor d-flex justify-content-center'>
-                                        <i className='  rounded-circle AvionicsHome_icon far fa-tools'> </i>
-                                    </Col>
-                                    <Col xs={4}
-                                         className='global_cursor d-flex justify-content-center'>
-                                        <i className=' rounded-circle  AvionicsHome_icon far fa-tools'> </i>
-                                    </Col>
-                                </Row>
+                        <Col xs={12} className='mb-5 mt-3'>
+                            <Row className='mb-4'>
+
+                                <Col xs={4}
+                                     className='global_cursor d-flex justify-content-center'>
+                                    <i className=' rounded-circle AvionicsHome_icon far fa-tools'> </i>
+                                </Col>
+
+                                <Col xs={4}
+                                     className=' global_cursor d-flex justify-content-center'>
+                                    <i className='  rounded-circle AvionicsHome_icon far fa-tools'> </i>
+                                </Col>
+
+                                <Col xs={4}
+                                     className='global_cursor d-flex justify-content-center'>
+                                    <i className=' rounded-circle  AvionicsHome_icon far fa-tools'> </i>
+                                </Col>
+
+                            </Row>
 
 
-                                <Row>
-                                    <Col xs={4}
-                                         className=' global_cursor d-flex justify-content-center'>
-                                        {/*<Zoom>*/}
+                            <Row>
+                                <Col xs={4}
+                                     className=' global_cursor d-flex justify-content-center'>
+                                    <Fade left>
                                         <h5 className='text-white text-center'>Custom Panels</h5>
-                                        {/*</Zoom>*/}
-                                    </Col>
+                                    </Fade>
+                                </Col>
 
 
-                                    <Col xs={4}
-                                         className=' global_cursor d-flex justify-content-center'>
-                                        {/*<Zoom>*/}
-                                        <h5 className='text-white text-center'>In-Depth Tests & Checks</h5>
-                                        {/*</Zoom>*/}
-                                    </Col>
+                                <Col xs={4}
+                                     className=' global_cursor d-flex justify-content-center'>
+                                    <h5 className='text-white text-center'>In-Depth Tests & Checks</h5>
+                                </Col>
 
 
-                                    <Col xs={4}
-                                         className=' global_cursor d-flex justify-content-center'>
-                                        {/*<Zoom>*/}
+                                <Col xs={4}
+                                     className=' global_cursor d-flex justify-content-center'>
+                                    <Fade right>
                                         <h5 className='text-white text-center'> Software Updates</h5>
-                                        {/*</Zoom>*/}
-                                    </Col>
-                                </Row>
+                                    </Fade>
+                                </Col>
+                            </Row>
 
 
-                            </Col>
-                        </Fade>
+                        </Col>
 
                         <Col xs={8} className='Avionics_img-col'>
                             <Row className=''>
@@ -101,8 +101,10 @@ const AvionicsHome = () => {
                                 <Col xs={8} className='p-0'>
                                     <Image className=' AvionicsHome_img' src={tests} fluid/>
                                 </Col>
+
                             </Row>
                             <Row className=''>
+
                                 <Col xs={8} className='p-0'>
                                     <Image className=' AvionicsHome_img pt-3' src={roel} fluid/>
                                 </Col>
@@ -119,7 +121,8 @@ const AvionicsHome = () => {
             </Row>
 
 
-            {/*</Container>*/}
+            {/*</Container>*/
+            }
 
         </>
 

@@ -5,6 +5,8 @@
 
 .Services_col{
    background-color: rgba(0,0,0,.5);
+    height: max-content;
+    max-height: 100%;
 }
 
 .Services_description{

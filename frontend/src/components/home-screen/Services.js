@@ -61,7 +61,7 @@ const Services = () => {
                 </Col>
 
                 <Col md={3} xs={12} className='Services_col global_cursor d-flex align-items-center'>
-                    <Fade left>
+                    <Fade right>
                         <Card className='p-2 border-0 w-100 Services_bg'>
                             <Card.Body>
                                 <Card.Title className='mx-auto my-0 w-25 rounded-circle px-2 py-3 global_blood-red-bg'>
