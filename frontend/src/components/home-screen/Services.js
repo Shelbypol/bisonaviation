@@ -17,8 +17,11 @@ const Services = () => {
                     <Fade left>
                         <Card className='p-2 border-0 w-100 bg-transparent'>
                             <Card.Body>
-                                <Card.Title className='mx-auto my-0 w-25 rounded-circle px-2 py-3 global_blood-red-bg'>
-                                    <i className='Services_icon far fa-tools'> </i>
+                                <Card.Title className=''>
+                                    <span className="fa-stack fa-2x">
+                                          <i className="fa fa-circle fa-stack-2x icon-background2"> </i>
+                                    <i className='Services_icon far fa-tools fa-stack-1x'> </i>
+                                    </span>
                                 </Card.Title>
                                 <Card.Subtitle className='mx-auto my-3'>
                                     <h5 className='Services_nav_text'>Maintenance</h5>
@@ -37,30 +40,31 @@ const Services = () => {
                 </Col>
 
 
-                <Col lg={3} xs={12} className='Services_col global_cursor d-flex align-items-start Services_bg h-auto my-sm-2 my-md-auto mx-md-2'>
+                <Col lg={3} xs={12}
+                     className='Services_col global_cursor d-flex align-items-start Services_bg h-auto my-sm-2 my-md-auto mx-md-2'>
                     <Fade>
-                    <Card className='p-2 border-0 w-100 bg-transparent'>
-                        <Card.Body>
-                            <Card.Title className='mx-auto my-0 w-25 rounded-circle px-2 py-3 global_blood-red-bg'>
-                                <i className='Services_icon fal fa-tachometer-alt-fastest'> </i>
-                            </Card.Title>
-                            <Card.Subtitle className='mx-auto my-3'>
-                                <h5 className='Services_nav_text'>Avionics</h5>
-                            </Card.Subtitle>
-                            <Card.Text>
-                                <p className='Services_description'>
-                                    From minor repairs to complete panel upgrades. All services are performed in
-                                    house.
-                                    <span>
+                        <Card className='p-2 border-0 w-100 bg-transparent'>
+                            <Card.Body>
+                                <Card.Title className='mx-auto my-0 w-25 rounded-circle px-2 py-3 global_blood-red-bg'>
+                                    <i className='Services_icon fal fa-tachometer-alt-fastest'> </i>
+                                </Card.Title>
+                                <Card.Subtitle className='mx-auto my-3'>
+                                    <h5 className='Services_nav_text'>Avionics</h5>
+                                </Card.Subtitle>
+                                <Card.Text>
+                                    <p className='Services_description'>
+                                        From minor repairs to complete panel upgrades. All services are performed in
+                                        house.
+                                        <span>
                                     </span>
-                                </p>
-                            </Card.Text>
-                            <Card.Link href="/products"
-                                       className='w-50 mt-n2 rounded px-2 mx-auto px-auto Services_link'>browse
-                                products
-                            </Card.Link>
-                        </Card.Body>
-                    </Card>
+                                    </p>
+                                </Card.Text>
+                                <Card.Link href="/products"
+                                           className='w-50 mt-n2 rounded px-2 mx-auto px-auto Services_link'>browse
+                                    products
+                                </Card.Link>
+                            </Card.Body>
+                        </Card>
                     </Fade>
                 </Col>
 
