@@ -11,9 +11,9 @@ const Services = () => {
 
         <>
             <Row
-                className='Services_row text-white text-center p-0 m-0 d-flex justify-content-center align-content-center'>
+                className='Services_row text-white text-center p-0 m-0 d-flex justify-content-center align-content-center mb-sm-5 mb-sm-auto'>
 
-                <Col lg={3} xs={12} className='Services_col global_cursor d-flex align-items-center Services_bg h-auto'>
+                <Col lg={3} xs={12} className='Services_col global_cursor d-flex align-items-start Services_bg h-auto'>
                     <Fade left>
                         <Card className='p-2 border-0 w-100 bg-transparent'>
                             <Card.Body>
@@ -37,7 +37,7 @@ const Services = () => {
                 </Col>
 
 
-                <Col lg={3} xs={12} className='Services_col global_cursor d-flex align-items-center Services_bg h-auto'>
+                <Col lg={3} xs={12} className='Services_col global_cursor d-flex align-items-start Services_bg h-auto my-sm-2 my-md-auto mx-md-2'>
                     <Fade>
                     <Card className='p-2 border-0 w-100 bg-transparent'>
                         <Card.Body>
@@ -64,7 +64,7 @@ const Services = () => {
                     </Fade>
                 </Col>
 
-                <Col lg={3} xs={12} className='Services_col global_cursor d-flex align-items-center Services_bg h-auto'>
+                <Col lg={3} xs={12} className='Services_col global_cursor d-flex align-items-start Services_bg h-auto '>
                     <Fade right>
                         <Card className='p-2 border-0 w-100 bg-transparent'>
                             <Card.Body>
@@ -77,13 +77,34 @@ const Services = () => {
                                 <Card.Text>
                                     <p className='Services_description'>
                                         World leader in legacy airborne EO / IR equipment
-                                                            service and sales.
+                                        service and sales.
                                     </p>
                                 </Card.Text>
                             </Card.Body>
                         </Card>
                     </Fade>
                 </Col>
+
+                {/*<Col lg={3} xs={12} className='Services_col global_cursor d-flex align-items-center Services_bg h-auto'>*/}
+                {/*    <Fade right>*/}
+                {/*        <Card className='p-2 border-0 w-100 bg-transparent'>*/}
+                {/*            <Card.Body>*/}
+                {/*                <Card.Title className='mx-auto my-0 w-25 rounded-circle px-2 py-3 global_blood-red-bg'>*/}
+                {/*                    <i className='Services_icon far fa-tools'> </i>*/}
+                {/*                </Card.Title>*/}
+                {/*                <Card.Subtitle className='mx-auto my-3'>*/}
+                {/*                    <h5 className='Services_nav_text'>EO/IR Flir</h5>*/}
+                {/*                </Card.Subtitle>*/}
+                {/*                <Card.Text>*/}
+                {/*                    <p className='Services_description'>*/}
+                {/*                        World leader in legacy airborne EO / IR equipment*/}
+                {/*                                            service and sales.*/}
+                {/*                    </p>*/}
+                {/*                </Card.Text>*/}
+                {/*            </Card.Body>*/}
+                {/*        </Card>*/}
+                {/*    </Fade>*/}
+                {/*</Col>*/}
             </Row>
 
 
