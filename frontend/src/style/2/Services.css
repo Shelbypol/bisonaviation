@@ -6,11 +6,14 @@
 .Services_col{
    background-color: rgba(0,0,0,.5);
     height: max-content;
-    max-height: 100%;
+    max-height: border-box;
+}
+
+.Services_col:hover{
+    background-color: #660708;
 }
 
 .Services_description{
-    line-height:1.3vw;
     color: rgba(255,255,255, .7);
 }
 
@@ -20,7 +23,7 @@
 }
 
 .Services_icon{
-    font-size: 1.5vw !important;
+    /*font-size: 1.5vw !important;*/
 }
 
 .Services_bg{
@@ -42,16 +45,14 @@
 
 
 /*    ======   MOBILE RESPONSIVE    ======    */
-@media (max-width: 900px) {
-    .Services_nav_text {
-        /*background-color: #660708;*/
-        width: 50vh;
-        padding: 0 1em 0 1em;
+@media (max-width: 800px) {
+    .Services_row {
+      height: auto;
     }
 
     .Services_nav_text:hover{
         /*background-color: white;*/
-        color: #660708;
+
     }
 
     .Services_text-row{

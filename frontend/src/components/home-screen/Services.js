@@ -12,9 +12,10 @@ const Services = () => {
         <>
             <Row
                 className='Services_row text-white text-center p-0 m-0 d-flex justify-content-center align-content-center'>
-                <Col md={3} xs={12} className='Services_col global_cursor d-flex align-items-center'>
+
+                <Col lg={3} xs={12} className='Services_col global_cursor d-flex align-items-center Services_bg h-auto'>
                     <Fade left>
-                        <Card className='p-2 border-0 w-100 Services_bg'>
+                        <Card className='p-2 border-0 w-100 bg-transparent'>
                             <Card.Body>
                                 <Card.Title className='mx-auto my-0 w-25 rounded-circle px-2 py-3 global_blood-red-bg'>
                                     <i className='Services_icon far fa-tools'> </i>
@@ -35,8 +36,10 @@ const Services = () => {
                     </Fade>
                 </Col>
 
-                <Col md={3} xs={12} className='Services_col global_cursor mx-3 p-0 d-flex align-items-center'>
-                    <Card className='p-2 border-0 w-100 Services_bg mr-2'>
+
+                <Col lg={3} xs={12} className='Services_col global_cursor d-flex align-items-center Services_bg h-auto'>
+                    <Fade>
+                    <Card className='p-2 border-0 w-100 bg-transparent'>
                         <Card.Body>
                             <Card.Title className='mx-auto my-0 w-25 rounded-circle px-2 py-3 global_blood-red-bg'>
                                 <i className='Services_icon fal fa-tachometer-alt-fastest'> </i>
@@ -58,11 +61,12 @@ const Services = () => {
                             </Card.Link>
                         </Card.Body>
                     </Card>
+                    </Fade>
                 </Col>
 
-                <Col md={3} xs={12} className='Services_col global_cursor d-flex align-items-center'>
+                <Col lg={3} xs={12} className='Services_col global_cursor d-flex align-items-center Services_bg h-auto'>
                     <Fade right>
-                        <Card className='p-2 border-0 w-100 Services_bg'>
+                        <Card className='p-2 border-0 w-100 bg-transparent'>
                             <Card.Body>
                                 <Card.Title className='mx-auto my-0 w-25 rounded-circle px-2 py-3 global_blood-red-bg'>
                                     <i className='Services_icon far fa-tools'> </i>
