@@ -17,11 +17,11 @@ const Services = () => {
                     <Fade left>
                         <Card className='p-2 border-0 w-100 bg-transparent'>
                             <Card.Body>
-                                <Card.Title className=''>
-                                    <span className="fa-stack fa-2x">
-                                          <i className="fa fa-circle fa-stack-2x icon-background2"> </i>
-                                    <i className='Services_icon far fa-tools fa-stack-1x'> </i>
-                                    </span>
+                                <Card.Title className='fa-stack fa-2x'>
+                                    {/*<span className="fa-stack fa-2x">*/}
+                                        <i className="fa fa-circle fa-stack-2x bg-transparent"> </i>
+                                        <i className='Services_icon far fa-tools global_blue fa-stack-1x fa-inverse'> </i>
+                                    {/*</span>*/}
                                 </Card.Title>
                                 <Card.Subtitle className='mx-auto my-3'>
                                     <h5 className='Services_nav_text'>Maintenance</h5>
