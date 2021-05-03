@@ -16,12 +16,10 @@ const Services = () => {
                 <Col lg={3} xs={12} className='Services_col global_cursor d-flex align-items-start Services_bg h-auto'>
                     <Fade left>
                         <Card className='p-2 border-0 w-100 bg-transparent'>
-                            <Card.Body>
-                                <Card.Title className='fa-stack fa-2x'>
-                                    {/*<span className="fa-stack fa-2x">*/}
-                                        <i className="fa fa-circle fa-stack-2x bg-transparent"> </i>
-                                        <i className='Services_icon far fa-tools global_blue fa-stack-1x fa-inverse'> </i>
-                                    {/*</span>*/}
+                            <Card.Body className=''>
+                                <Card.Title className='fa-stack fa-2x ml-n5'>
+                                        <i className="fas fa-square fa-stack-2x global_blood-red "> </i>
+                                        <i className='Services_icon far fa-tools fa-stack-2x  global_cultured '> </i>
                                 </Card.Title>
                                 <Card.Subtitle className='mx-auto my-3'>
                                     <h5 className='Services_nav_text'>Maintenance</h5>
@@ -45,9 +43,16 @@ const Services = () => {
                     <Fade>
                         <Card className='p-2 border-0 w-100 bg-transparent'>
                             <Card.Body>
-                                <Card.Title className='mx-auto my-0 w-25 rounded-circle px-2 py-3 global_blood-red-bg'>
-                                    <i className='Services_icon fal fa-tachometer-alt-fastest'> </i>
+                                <Card.Title className='fa-stack fa-2x ml-n5'>
+                                    <i className="fas fa-circle fa-stack-2x global_blood-red "> </i>
+                                    <i className='Services_icon fal fa-tachometer-alt-fastest fa-stack-2x global_cultured'> </i>
                                 </Card.Title>
+{/*                                <Card.Title>*/}
+{/*                                    <span  className="fa-stack" style="vertical-align: top;">*/}
+{/*                                  <i className="far fa-circle fa-stack-2x"> </i>*/}
+{/*                                  <i className="fas fa-flag fa-stack-1x"> </i>*/}
+{/*</span>*/}
+{/*                                </Card.Title>*/}
                                 <Card.Subtitle className='mx-auto my-3'>
                                     <h5 className='Services_nav_text'>Avionics</h5>
                                 </Card.Subtitle>
@@ -72,9 +77,11 @@ const Services = () => {
                     <Fade right>
                         <Card className='p-2 border-0 w-100 bg-transparent'>
                             <Card.Body>
-                                <Card.Title className='mx-auto my-0 w-25 rounded-circle px-2 py-3 global_blood-red-bg'>
-                                    <i className='Services_icon far fa-tools'> </i>
+                                <Card.Title className='fa-stack fa-2x ml-n5'>
+                                    <i className="fas fa-circle fa-stack-2x global_blood-red "> </i>
+                                    <i className='Services_icon fal far fa-camera-home fa-stack-2x global_cultured '> </i>
                                 </Card.Title>
+
                                 <Card.Subtitle className='mx-auto my-3'>
                                     <h5 className='Services_nav_text'>EO/IR Flir</h5>
                                 </Card.Subtitle>

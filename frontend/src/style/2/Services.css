@@ -23,8 +23,12 @@
 }
 
 .Services_icon{
-    /*font-size: 1.5vw !important;*/
+    /*font-weight: lighter;*/
+    /*font-size: 1.5vw;*/
 }
+
+.fa-stack { font-size: 0.5em; }
+i { vertical-align: middle; }
 
 .Services_bg{
     height: max-content;
