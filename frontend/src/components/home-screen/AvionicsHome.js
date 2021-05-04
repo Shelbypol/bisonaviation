@@ -46,29 +46,40 @@ const AvionicsHome = () => {
                             </Col>
                         </Fade>
 
-                        <Col xs={12} className='mb-5 mt-3'>
+                        <Col md={12} className='mb-5 mt-3'>
                             <Row className='mb-4'>
 
-                                <Col xs={4}
+                                <Col md={4}
                                      className='global_cursor d-flex justify-content-center'>
-                                    <i className=' rounded-circle AvionicsHome_icon far fa-tools'> </i>
+                                    {/*<i className=' rounded-circle AvionicsHome_icon far fa-tools'> </i>*/}
+                                    <span className='fa-stack fa-2x ml-n3'>
+                                        <i className="fas fa-circle fa-stack-2x global_blood-red "> </i>
+                                        <i className='Services_icon fal far fa-camera-home fa-stack-2x global_cultured '> </i>
+                                    </span>
                                 </Col>
 
-                                <Col xs={4}
+                                <Col md={4}
                                      className=' global_cursor d-flex justify-content-center'>
-                                    <i className='  rounded-circle AvionicsHome_icon far fa-tools'> </i>
+                                    {/*<i className='  rounded-circle AvionicsHome_icon far fa-tools'> </i>*/}
+                                    <span className='fa-stack fa-2x ml-n3'>
+                                        <i className="fas fa-circle fa-stack-2x global_blood-red "> </i>
+                                        <i className='Services_icon fal far fa-camera-home fa-stack-2x global_cultured '> </i>
+                                    </span>
                                 </Col>
 
-                                <Col xs={4}
+                                <Col md={4}
                                      className='global_cursor d-flex justify-content-center'>
-                                    <i className=' rounded-circle  AvionicsHome_icon far fa-tools'> </i>
+                                    {/*<i className=' rounded-circle  AvionicsHome_icon far fa-tools'> </i>*/}
+                                    <span className='fa-stack fa-2x ml-n3'>
+                                        <i className="fas fa-circle fa-stack-2x global_blood-red "> </i>
+                                        <i className='Services_icon fal far fa-camera-home fa-stack-2x global_cultured '> </i>
+                                    </span>
                                 </Col>
-
                             </Row>
 
 
                             <Row>
-                                <Col xs={4}
+                                <Col md={4}
                                      className=' global_cursor d-flex justify-content-center'>
                                     <Fade left>
                                         <h5 className='text-white text-center'>Custom Panels</h5>
@@ -76,13 +87,13 @@ const AvionicsHome = () => {
                                 </Col>
 
 
-                                <Col xs={4}
+                                <Col md={4}
                                      className=' global_cursor d-flex justify-content-center'>
                                     <h5 className='text-white text-center'>In-Depth Tests & Checks</h5>
                                 </Col>
 
 
-                                <Col xs={4}
+                                <Col md={4}
                                      className=' global_cursor d-flex justify-content-center'>
                                     <Fade right>
                                         <h5 className='text-white text-center'> Software Updates</h5>
@@ -93,23 +104,23 @@ const AvionicsHome = () => {
 
                         </Col>
 
-                        <Col xs={8} className='Avionics_img-col'>
+                        <Col md={12} sm={12} className='Avionics_img-col'>
                             <Row className=''>
-                                <Col xs={4} className=' p-0'>
-                                    <Image className=' AvionicsHome_img pr-3' src={tayseer} fluid/>
+                                <Col md={4} sm={12} className=' p-0'>
+                                    <Image className=' AvionicsHome_img pr-md-3' src={tayseer} fluid/>
                                 </Col>
-                                <Col xs={8} className='p-0'>
+                                <Col md={8} sm={12} className='p-0'>
                                     <Image className=' AvionicsHome_img' src={tests} fluid/>
                                 </Col>
 
                             </Row>
                             <Row className=''>
 
-                                <Col xs={8} className='p-0'>
-                                    <Image className=' AvionicsHome_img pt-3' src={roel} fluid/>
+                                <Col md={8} sm={12} className='p-0'>
+                                    <Image className=' AvionicsHome_img pt-md-3' src={roel} fluid/>
                                 </Col>
-                                <Col xs={4} className=' p-0 '>
-                                    <Image className='AvionicsHome_img pl-3 pt-3' src={tayseer} fluid/>
+                                <Col md={4} sm={12} className=' p-0 '>
+                                    <Image className='AvionicsHome_img pl-md-3 pt-md-3' src={tayseer} fluid/>
                                 </Col>
                             </Row>
                         </Col>
