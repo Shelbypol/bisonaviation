@@ -13,7 +13,8 @@ const Services = () => {
             <Row
                 className='Services_row text-white text-center p-0 m-0 d-flex justify-content-center align-content-center mb-sm-5 mb-sm-auto'>
 
-                <Col lg={3} xs={12} className='Services_col global_cursor d-flex align-items-start h-auto'>
+                <Col lg={3} xs={12} className='Services_col global_cursor d-flex align-items-start h-auto justify-content-center'>
+                {/*<Col lg={3} xs={12} className='Services_col global_cursor d-flex align-items-start h-auto'>*/}
                     <Fade left>
                         <Card className='p-2 border-0 w-100 bg-transparent'>
                             <Card.Body className=''>
@@ -38,8 +39,9 @@ const Services = () => {
                 </Col>
 
 
-                <Col lg={3} xs={12}
-                     className='Services_col-avionics global_cursor d-flex align-items-start h-auto my-sm-2 my-md-auto mx-md-2'>
+                <Col lg={3} xs={12} className='Services_col-avionics global_cursor d-flex align-items-start h-auto justify-content-center'>
+                    {/*<Col lg={3} xs={12}*/}
+                    {/* className='Services_col-avionics global_cursor d-flex align-items-start h-auto my-sm-2 my-md-auto mx-md-2'>*/}
                     <Fade>
                         <Card className='p-2 border-0 w-100 bg-transparent'>
                             <Card.Body>
@@ -73,7 +75,8 @@ const Services = () => {
                     </Fade>
                 </Col>
 
-                <Col lg={3} xs={12} className='Services_col global_cursor d-flex align-items-start h-auto '>
+                <Col lg={3} xs={12} className='Services_col global_cursor d-flex align-items-start h-auto justify-content-center'>
+                {/*<Col lg={3} xs={12} className='Services_col global_cursor d-flex align-items-start h-auto '>*/}
                     <Fade right>
                         <Card className='p-2 border-0 w-100 bg-transparent'>
                             <Card.Body>
