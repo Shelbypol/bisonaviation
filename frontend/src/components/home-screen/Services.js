@@ -13,11 +13,11 @@ const Services = () => {
             <Row
                 className='Services_row text-white text-center p-0 m-0 d-flex justify-content-center align-content-center mb-sm-5 mb-sm-auto'>
 
-                <Col lg={3} xs={12} className='Services_col global_cursor d-flex align-items-start Services_bg h-auto'>
+                <Col lg={3} xs={12} className='Services_col global_cursor d-flex align-items-start h-auto'>
                     <Fade left>
                         <Card className='p-2 border-0 w-100 bg-transparent'>
                             <Card.Body className=''>
-                                <Card.Title className='fa-stack fa-2x ml-n5'>
+                                <Card.Title className='fa-stack fa-2x ml-n4'>
                                         <i className="fas fa-square fa-stack-2x global_blood-red "> </i>
                                         <i className='Services_icon far fa-tools fa-stack-2x  global_cultured '> </i>
                                 </Card.Title>
@@ -39,11 +39,11 @@ const Services = () => {
 
 
                 <Col lg={3} xs={12}
-                     className='Services_col global_cursor d-flex align-items-start Services_bg h-auto my-sm-2 my-md-auto mx-md-2'>
+                     className='Services_col-avionics global_cursor d-flex align-items-start h-auto my-sm-2 my-md-auto mx-md-2'>
                     <Fade>
                         <Card className='p-2 border-0 w-100 bg-transparent'>
                             <Card.Body>
-                                <Card.Title className='fa-stack fa-2x ml-n5'>
+                                <Card.Title className='fa-stack fa-2x ml-n4'>
                                     <i className="fas fa-circle fa-stack-2x global_blood-red "> </i>
                                     <i className='Services_icon fal fa-tachometer-alt-fastest fa-stack-2x global_cultured'> </i>
                                 </Card.Title>
@@ -73,11 +73,11 @@ const Services = () => {
                     </Fade>
                 </Col>
 
-                <Col lg={3} xs={12} className='Services_col global_cursor d-flex align-items-start Services_bg h-auto '>
+                <Col lg={3} xs={12} className='Services_col global_cursor d-flex align-items-start h-auto '>
                     <Fade right>
                         <Card className='p-2 border-0 w-100 bg-transparent'>
                             <Card.Body>
-                                <Card.Title className='fa-stack fa-2x ml-n5'>
+                                <Card.Title className='fa-stack fa-2x ml-n3'>
                                     <i className="fas fa-circle fa-stack-2x global_blood-red "> </i>
                                     <i className='Services_icon fal far fa-camera-home fa-stack-2x global_cultured '> </i>
                                 </Card.Title>

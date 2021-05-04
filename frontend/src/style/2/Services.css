@@ -4,14 +4,27 @@
 }
 
 .Services_col{
-   background-color: rgba(0,0,0,.5);
+   background-color: rgba(255,255,255,.3);
     height: max-content;
     max-height: border-box;
 }
 
 .Services_col:hover{
-    background-color: #660708;
+    background-color: black;
+    border-bottom: 5px solid #660708;
 }
+
+.Services_col-avionics{
+    background-color: #660708;
+    height: max-content;
+    max-height: border-box;
+}
+
+.Services_col-avionics:hover{
+    background-color: black;
+    border-bottom: 5px solid #660708;
+}
+
 
 .Services_description{
     color: rgba(255,255,255, .7);
@@ -27,7 +40,7 @@
     /*font-size: 1.5vw;*/
 }
 
-.fa-stack { font-size: 0.5em; }
+.fa-stack { font-size: .5em; }
 i { vertical-align: middle; }
 
 .Services_bg{
