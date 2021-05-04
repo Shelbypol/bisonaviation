@@ -19,7 +19,7 @@ const AvionicsHome = () => {
             {/*</Row>*/}
 
             <Row className='AvionicsHome_row d-flex justify-content-center align-content-center'>
-                <Col xs={9} className='AvionicsHome_bg pb-5'>
+                <Col xs={12} className='AvionicsHome_bg pb-5'>
                     <Row className='d-flex justify-content-center'>
                         {/*<Fade top>*/}
                         <Col xs={12}

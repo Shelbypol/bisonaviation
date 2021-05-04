@@ -37,9 +37,9 @@ const HomeScreen2 = () => {
                     <Services/>
 
                     <Row className='mt-5 d-flex justify-content-center'>
-                        <Col xs={12} className='AvionicsHome_image m-0'>
-                            <Row>
-                                <Col xs={12} style={{backgroundColor: 'rgba(0,0,0, .8)', zIndex: '3000'}}>
+                        <Col xs={12} className='AvionicsHome_image'>
+                            <Row className='d-flex justify-content-center'>
+                                <Col xs={9} style={{backgroundColor: 'rgba(0,0,0, .8)', zIndex: '3000'}}>
                                     <AvionicsHome/>
                                 </Col>
                             </Row>
