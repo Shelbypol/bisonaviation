@@ -40,18 +40,28 @@ const HomeScreen2 = () => {
                     <Row className='mt-5 d-flex justify-content-center mb-0 pb-0'>
                         <Col xs={12} className='AvionicsHome_image mb-0 pb-0'>
                             <Row className='d-flex justify-content-center m-0 p-0'>
-                                <Col md={10} xs={12} className='AvionicsHome_mobile AvionicsHome_desktop' style={{zIndex: '3000'}}>
+                                <Col md={10} xs={12} className='AvionicsHome_mobile AvionicsHome_desktop'
+                                     style={{zIndex: '3000'}}>
                                     <AvionicsHome/>
                                 </Col>
                             </Row>
                         </Col>
                     </Row>
 
-                    <TestimonialCarousel/>
+                    <Row className='mt-5 d-flex justify-content-center mb-0 pb-0'>
+                        <Col xs={10} className='mb-0 pb-0 global_rich-black-bg'>
+                            <TestimonialCarousel/>
+                        </Col>
+                    </Row>
 
-                    <Container className='p-0 fluid'>
-                        <Mechanics/>
-                    </Container>
+
+                    <Row className='mt-5 d-flex justify-content-center mb-0 pb-0'>
+                        <Col xs={12} className='AvionicsHome_image mb-0 pb-0'>
+
+                            <Mechanics/>
+
+                        </Col>
+                    </Row>
 
 
                     <hr className='global_blood-red-bg mt-n1'/>
