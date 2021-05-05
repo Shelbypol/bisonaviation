@@ -45,28 +45,28 @@ const AvionicsHome = () => {
                             </Col>
                         </Fade>
 
-                        <Col md={12} className='mb-5 mt-3 '>
+                        <Col xs={12} className='mb-5 mt-3 '>
                             <Row className='mb-4 '>
                             {/*<Col xs={2}>*/}
-                                <Col md={4} className=' global_cursor d-flex justify-content-center '>
+                                <Col xs={4} className=' global_cursor d-flex justify-content-center '>
                                     {/*<i className=' rounded-circle AvionicsHome_icon far fa-tools'> </i>*/}
-                                    <span className='fa-stack fa-2x ml-n3'>
+                                    <span className='fa-stack fa-2x ml-md-n3'>
                                         <i className="fas fa-circle fa-stack-2x global_blood-red "> </i>
                                         <i className='Services_icon fal far fa-camera-home fa-stack-2x global_cultured '> </i>
                                     </span>
                                 </Col>
 
-                                <Col md={4} className=' global_cursor d-flex justify-content-center'>
+                                <Col xs={4} className=' global_cursor d-flex justify-content-center'>
                                     {/*<i className='  rounded-circle AvionicsHome_icon far fa-tools'> </i>*/}
-                                    <span className='fa-stack fa-2x ml-n3'>
+                                    <span className='fa-stack fa-2x ml-md-n3'>
                                         <i className="fas fa-circle fa-stack-2x global_blood-red "> </i>
                                         <i className='Services_icon fal far fa-tools fa-stack-2x global_cultured '> </i>
                                     </span>
                                 </Col>
 
-                                <Col md={4} className='global_cursor d-flex justify-content-center'>
+                                <Col xs={4} className='global_cursor d-flex justify-content-center'>
                                     {/*<i className=' rounded-circle  AvionicsHome_icon far fa-tools'> </i>*/}
-                                    <span className='fa-stack fa-2x ml-n3'>
+                                    <span className='fa-stack fa-2x ml-md-n3'>
                                         <i className="fas fa-circle fa-stack-2x global_blood-red "> </i>
                                         <i className='Services_icon fal far fa-camera-home fa-stack-2x global_cultured '> </i>
                                     </span>
@@ -100,7 +100,7 @@ const AvionicsHome = () => {
 
                         </Col>
 
-                        <Col md={12} sm={12} className='mb-0 pb-0'>
+                        <Col md={10} sm={12} className='mb-0 pb-0'>
                             <Row className='m-0 p-0'>
                                 <Col md={4} sm={12} className=' p-0'>
                                     <Image className=' AvionicsHome_img pr-md-3' src={tayseer} fluid/>

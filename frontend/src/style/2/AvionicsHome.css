@@ -1,4 +1,6 @@
-
+.AvionicsHome_desktop{
+    background-color: rgba(0,0,0, .8);
+}
 
 .AvionicsContainer {
     background-image: url("../../images/bg-graphics/graphics/smooth-overlay-boxed-bg.png");
@@ -51,4 +53,15 @@
     /*border: 1px solid white !important;*/
 }
 
+@media only screen and (max-width: 500px) {
+    .AvionicsHome_mobile{
+        background-image: url("../../images/bg-graphics/home-screen/home-slider/fullscreen-slider2.png");
+        background-position: center 20%;
+        /*background-color: rgba(0,0,0, .2);*/
+    }
+    .AvionicsHome_desktop{
+        background-color: transparent;
+    }
+
+}
 

@@ -8,7 +8,7 @@ import Zoom from 'react-reveal/Zoom';
 const TestimonialCarousel = () => {
     return (
         <>
-            <Jumbotron className=' global_blood-red-bg m-0 p-0'
+            <Jumbotron className=' m-0 p-0 global_blood-red-bg TestimonialCarousel_jumbotron '
                        fluid>
                 <Zoom>
                     <Carousel
@@ -19,7 +19,7 @@ const TestimonialCarousel = () => {
                         autoPlay={true}
                         interval={3000}
                     >
-                        <div>
+                        {/*<div className=''>*/}
                             {/*<img src="/images/shirley.png" />*/}
                             <div className="myCarousel global_blood-red-bg">
                                 <h3 className='global_cultured'>Richard F.</h3>
@@ -43,11 +43,11 @@ const TestimonialCarousel = () => {
                                     seat time. Bison will be a go-to for me on trips south.
                                 </p>
                             </div>
-                        </div>
+                        {/*</div>*/}
 
-                        <div>
+                        {/*<div>*/}
                             {/*<img src="/images/daniel.png" />*/}
-                            <div className="myCarousel global_blood-red-bg">
+                            <div className="myCarousel my-auto global_blood-red-bg">
                                 <h3 className='global_cultured'>Daniel K.</h3>
                                 <h1>
                                     {/*<i className='fas fa-star global_blood-red'> </i>*/}
@@ -68,11 +68,11 @@ const TestimonialCarousel = () => {
                                     the sky.
                                 </p>
                             </div>
-                        </div>
+                        {/*</div>*/}
 
-                        <div>
+                        {/*<div>*/}
                             {/*<img src="/images/theo.png" />*/}
-                            <div className="myCarousel global_blood-red-bg">
+                            <div className="myCarousel my-auto global_blood-red-bg">
                                 <h3 className='global_cultured'>Allen H.</h3>
                                 <h1>
                                     {/*<i className='fas fa-star global_blood-red'> </i>*/}
@@ -91,7 +91,7 @@ const TestimonialCarousel = () => {
                                     cup-holders for my wife!
                                 </p>
                             </div>
-                        </div>
+                        {/*</div>*/}
                     </Carousel>
                 </Zoom>
             </Jumbotron>
