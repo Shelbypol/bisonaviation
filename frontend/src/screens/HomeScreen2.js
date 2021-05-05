@@ -11,6 +11,7 @@ import Garmin from "../components/Garmin";
 import MultiCarouselPage from "../components/MulitCarouselPage";
 import AvionicsAd from "../components/avionics-Screen/AvionicsAd";
 import AvionicsHome from "../components/home-screen/AvionicsHome";
+import TestimonialCarousel from "../components/TestimonialCarousel";
 
 
 const HomeScreen2 = () => {
@@ -36,15 +37,17 @@ const HomeScreen2 = () => {
 
                     <Services/>
 
-                    <Row className='mt-5 d-flex justify-content-center'>
-                        <Col xs={12} className='AvionicsHome_image m-0'>
-                            <Row>
-                                <Col xs={12} style={{backgroundColor: 'rgba(0,0,0, .8)', zIndex: '3000'}}>
+                    <Row className='mt-5 d-flex justify-content-center mb-0 pb-0'>
+                        <Col xs={12} className='AvionicsHome_image mb-0 pb-0'>
+                            <Row className='d-flex justify-content-center m-0 p-0'>
+                                <Col md={9} xs={11} style={{backgroundColor: 'rgba(0,0,0, .8)', zIndex: '3000'}}>
                                     <AvionicsHome/>
                                 </Col>
                             </Row>
                         </Col>
                     </Row>
+
+                    <TestimonialCarousel/>
 
                     <Container className='p-0 fluid'>
                         <Mechanics/>

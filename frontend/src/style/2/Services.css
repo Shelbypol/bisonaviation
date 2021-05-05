@@ -4,11 +4,29 @@
 }
 
 .Services_col{
-   background-color: rgba(0,0,0,.5);
+   background-color: rgba(255,255,255,.3);
+    height: max-content;
+    max-height: border-box;
 }
 
+.Services_col:hover{
+    background-color: black;
+    border-bottom: 5px solid #660708;
+}
+
+.Services_col-avionics{
+    background-color: #660708;
+    height: max-content;
+    max-height: border-box;
+}
+
+.Services_col-avionics:hover{
+    background-color: black;
+    border-bottom: 5px solid #660708;
+}
+
+
 .Services_description{
-    line-height:1.3vw;
     color: rgba(255,255,255, .7);
 }
 
@@ -18,8 +36,12 @@
 }
 
 .Services_icon{
-    font-size: 1.5vw !important;
+    /*font-weight: lighter;*/
+    /*font-size: 1.5vw;*/
 }
+
+.fa-stack { font-size: .5em; }
+i { vertical-align: middle; }
 
 .Services_bg{
     height: max-content;
@@ -40,16 +62,14 @@
 
 
 /*    ======   MOBILE RESPONSIVE    ======    */
-@media (max-width: 900px) {
-    .Services_nav_text {
-        /*background-color: #660708;*/
-        width: 50vh;
-        padding: 0 1em 0 1em;
+@media (max-width: 800px) {
+    .Services_row {
+      height: auto;
     }
 
     .Services_nav_text:hover{
         /*background-color: white;*/
-        color: #660708;
+
     }
 
     .Services_text-row{
