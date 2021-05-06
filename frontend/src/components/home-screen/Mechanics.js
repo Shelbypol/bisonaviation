@@ -16,16 +16,15 @@ const Mechanics = () => {
             {/*<Jumbotron className='Mechanics_jumbo AvionicsHome_bg global_cultured p-0 m-0'*/}
             {/*           fluid>*/}
             <Row className='Mechanics_jumbo AvionicsHome_bg global_cultured p-0 m-0'>
-                <Col xs={12}>
+                <Col xs={12} className='px-2'>
 
 
-                    <Row>
-                        <Col>
-                            <h1 className='mt-5 global_cultured'>Maintenance</h1>
-                        </Col>
-                    </Row>
+                    <Col xs={12}
+                         className=' AvionicsHome_title-col pb-5 d-flex justify-content-center align-content-center'>
+                        <h1 className='AvionicsHome_title text-white'>Maintenance</h1>
+                    </Col>
 
-                    <Row className='pt-5'>
+                    <Row className='py-5'>
 
                         <Col xs={7} className=''>
                             <Zoom>
@@ -102,39 +101,39 @@ const Mechanics = () => {
                         <Col xs={4} className='d-flex justify-content-center'>
                             <Card className='Avionics_card border-0 bg-transparent rounded'>
                                 <Card.Img variant="top" src={test} className=' Avionics_card-img '/>
-                                <Card.Body>
-                                    <Card.Text>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dolor ea est
-                                        eveniet
-                                        exercitationem illum incidunt maiores odio quam veritatis.
-                                    </Card.Text>
-                                </Card.Body>
+                                {/*<Card.Body>*/}
+                                {/*    <Card.Text>*/}
+                                {/*        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dolor ea est*/}
+                                {/*        eveniet*/}
+                                {/*        exercitationem illum incidunt maiores odio quam veritatis.*/}
+                                {/*    </Card.Text>*/}
+                                {/*</Card.Body>*/}
                             </Card>
                         </Col>
 
                         <Col xs={4} className='d-flex justify-content-center'>
                             <Card className='Avionics_card border-0 bg-transparent rounded'>
                                 <Card.Img variant="top" src={test} className='Avionics_card-img '/>
-                                <Card.Body>
-                                    <Card.Text>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dolor ea est
-                                        eveniet
-                                        exercitationem illum incidunt maiores odio quam veritatis.
-                                    </Card.Text>
-                                </Card.Body>
+                                {/*<Card.Body>*/}
+                                {/*    <Card.Text>*/}
+                                {/*        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dolor ea est*/}
+                                {/*        eveniet*/}
+                                {/*        exercitationem illum incidunt maiores odio quam veritatis.*/}
+                                {/*    </Card.Text>*/}
+                                {/*</Card.Body>*/}
                             </Card>
                         </Col>
 
                         <Col xs={4} className='d-flex justify-content-center'>
                             <Card className='Avionics_card border-0 bg-transparent rounded'>
                                 <Card.Img variant="top" src={tayseer} className='Avionics_card-img'/>
-                                <Card.Body>
-                                    <Card.Text>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dolor ea est
-                                        eveniet
-                                        exercitationem illum incidunt maiores odio quam veritatis.
-                                    </Card.Text>
-                                </Card.Body>
+                                {/*<Card.Body>*/}
+                                {/*    <Card.Text>*/}
+                                {/*        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dolor ea est*/}
+                                {/*        eveniet*/}
+                                {/*        exercitationem illum incidunt maiores odio quam veritatis.*/}
+                                {/*    </Card.Text>*/}
+                                {/*</Card.Body>*/}
                             </Card>
                         </Col>
                     </Row>

@@ -9,6 +9,8 @@ import tayseer from '../../images/bg-graphics/screen-avionics/avionics/tayseer-a
 import {LinkContainer} from "react-router-bootstrap";
 import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
+import MultiCarouselPage from "../MulitCarouselPage";
+import AvionicsAd from "../avionics-Screen/AvionicsAd";
 
 const AvionicsHome = () => {
 
@@ -222,6 +224,9 @@ const AvionicsHome = () => {
 
 
                         </Row>
+
+
+                        {/*<MultiCarouselPage/>*/}
 
 
                         {/*<Col md={10} sm={12} className='mb-0 pb-0'>*/}
