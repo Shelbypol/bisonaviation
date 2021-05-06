@@ -11,6 +11,7 @@ import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
 import MultiCarouselPage from "../MulitCarouselPage";
 import AvionicsAd from "../avionics-Screen/AvionicsAd";
+import ProductCarousel from "../ProductCarousel";
 
 const AvionicsHome = () => {
 
@@ -209,7 +210,8 @@ const AvionicsHome = () => {
                                 </Row>
                                 <Row className='m-0 p-0'>
 
-                                    <Col md={8} sm={12} className='p-0'>
+                                    <Col md={8} sm={12} className='p-0 d-flex align-content-center justify-content-center align-content-center'>
+                                        {/*<ProductCarousel/>*/}
                                         <Image className=' AvionicsHome_img pt-md-3' src={roel} fluid/>
                                     </Col>
                                     <Col md={4} sm={12} className=' p-0 '>

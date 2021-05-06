@@ -14,6 +14,7 @@ import AvionicsHome from "../components/home-screen/AvionicsHome";
 import TestimonialCarousel from "../components/TestimonialCarousel";
 
 
+
 const HomeScreen2 = () => {
 
     window.onbeforeunload = () => {
@@ -48,14 +49,6 @@ const HomeScreen2 = () => {
                         </Col>
                     </Row>
 
-                    {/*<Row className='mt-5 d-flex justify-content-center mb-0 pb-0'>*/}
-                    {/*    <Col xs={10} className='mb-0 pb-0 global_rich-black-bg'>*/}
-
-                            <TestimonialCarousel/>
-                    {/*    </Col>*/}
-                    {/*</Row>*/}
-
-
                     <Row className='mt-5 d-flex justify-content-center mb-0 pb-0'>
                         <Col xs={12} className='global_rich-black-bg mb-0 pb-0'>
                             <Row className='d-flex justify-content-center m-0 p-0'>
@@ -67,6 +60,7 @@ const HomeScreen2 = () => {
                         </Col>
                     </Row>
 
+                            <TestimonialCarousel/>
 
                     <hr className='global_blood-red-bg mt-n1'/>
                     <Jumbotron
