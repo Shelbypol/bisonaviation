@@ -8,18 +8,15 @@ const MultiCarouselPage = () => {
 
     return (
 
-            <Row md={12} className='mt-3'>
+            <Row md={12} className='mt-3 d-flex justify-content-center'>
                     <Col>
                         <ProductCarousel />
                     </Col>
                     <Col>
-                        <ProductCarousel />
+                        <ProductCarousel x={'1'}/>
                     </Col>
                     <Col>
-                        <ProductCarousel />
-                    </Col>
-                    <Col>
-                        <ProductCarousel />
+                        <ProductCarousel x={'2'} />
                     </Col>
             </Row>
     )

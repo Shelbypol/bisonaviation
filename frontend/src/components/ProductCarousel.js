@@ -10,7 +10,7 @@ import {listProducts} from "../actions/productActions";
 // import '../style/ProductCarousel.css'
 
 
-const ProductCarousel = () => {
+const ProductCarousel = ({x}) => {
 
     // const dispatch = useDispatch();
     //
@@ -26,18 +26,18 @@ const ProductCarousel = () => {
     const productList = useSelector(state => state.productList);
     const {loading, error, products} = productList;
 
-
     useEffect(() => {
         dispatch(listProducts());
     }, [dispatch]);
 
     return loading ? <Loader/> : error ? <Message variant='danger'>{error}</Message> : (
-        <Carousel interval={3000} controls={false} pause='hover' className='bg-none border-0 d-flex justify-content-end'>
+        <Carousel interval={3000} controls={false} indicators={false} pause='hover' className='bg-none border-0 d-flex justify-content-center'>
             {products.map((product, index) => (
-                    <Carousel.Item key={product._id}>
-                        <Link to={`/product/${product._id }`}>
+                    <Carousel.Item key={(product._id * x)} className=''>
+                        <Link to={`/product/${product._id}`}>
                             {/*<h3 className='text-center d-flex global_eerie-black justify-content-center pb-4'>{product.name}{index}</h3>*/}
-                            <Image src={product.image} alt={product.name} className='h-25 w-25 ml-5 mt-4'/>
+                            <Image src={product.image} alt={product.name} style={{height: '20vh', width: '20vw'}}/>
+                            {/*<Image src={product.image} alt={product.name} className= ' border h-25 w-25'/>*/}
                         </Link>
                     </Carousel.Item>
             ))}

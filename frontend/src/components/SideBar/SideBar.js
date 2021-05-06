@@ -28,9 +28,9 @@ const SideBar = () => {
     const showSidebar = () => setSidebar(!sidebar);
 
     const handleScroll = e => {
-        if (node.current.contains(e.target) === false) {
-            setSidebar(false)
-        }
+    //     if (node.current.contains(e.target) === false) {
+    //         setSidebar(false)
+    //     }
     };
 
     const logoutHandler = () => {

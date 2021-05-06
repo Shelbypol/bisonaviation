@@ -104,22 +104,19 @@ const AvionicsHome = () => {
                         {/*</Col>*/}
 
 
-                        <Row className=''>
+                        <Row className='mb-5'>
 
-
-                            {/*</Row>*/}
-                            <Col xs={5} className='p-0 m-0'>
-                                <Row className='m-0 p-0'>
+                            <Col xs={5} className='p-0 mx-0 m-0'>
+                                <Row className='mx-0 mt-n3 mb-0 p-0'>
                                     <LinkContainer to={`/mechanics`}>
                                         <Col xs={12}
                                              className='global_cursor Mechanics_col  '>
                                             <Zoom>
                                                 <Row className='p-0 m-0'>
-                                                    <Col xs={2} className='p-0 m-0 d-flex justify-content-start'>
-
-                                                        <i className='Services_icon fal far fa-tools fa-stack-1x global_cultured '> </i>
-                                                    </Col>
-                                                    <Col xs={10} className='p-0 m-0 Mechanics_col d-flex align-items-center'>
+                                                    {/*<Col className='p-0 m-0 d-flex justify-content-start'>*/}
+                                                    {/*    <i className='Services_icon fal far fa-tools fa-stack-1x global_cultured '> </i>*/}
+                                                    {/*</Col>*/}
+                                                    <Col className='p-0 m-0 Mechanics_col d-flex align-items-center justify-content-start'>
                                                         <p className='Avionics_text-titles'>Annual Inspections</p>
                                                     </Col>
                                                 </Row>
@@ -132,11 +129,11 @@ const AvionicsHome = () => {
                                              className='global_cursor Mechanics_col  '>
                                             <Zoom>
                                                 <Row className='p-0 m-0'>
-                                                    <Col xs={2} className='p-0 m-0 d-flex justify-content-start'>
+                                                    {/*<Col className='p-0 m-0 d-flex justify-content-start'>*/}
 
-                                                        <i className='Services_icon fal far fa-tools fa-stack-1x global_cultured '> </i>
-                                                    </Col>
-                                                    <Col xs={10} className='p-0 m-0 Mechanics_col d-flex align-items-center'>
+                                                    {/*    <i className='Services_icon fal far fa-tools fa-stack-1x global_cultured '> </i>*/}
+                                                    {/*</Col>*/}
+                                                    <Col  className='p-0 m-0 Mechanics_col d-flex align-items-center justify-content-start'>
                                                         <p className='Avionics_text-titles'>Prop Balance</p>
                                                     </Col>
                                                 </Row>
@@ -149,11 +146,11 @@ const AvionicsHome = () => {
                                              className='global_cursor Mechanics_col  '>
                                             <Zoom>
                                                 <Row className='p-0 m-0'>
-                                                    <Col xs={2} className='p-0 m-0 d-flex justify-content-start'>
+                                                    {/*<Col className='p-0 m-0 d-flex justify-content-start'>*/}
 
-                                                        <i className='Services_icon fal far fa-tools fa-stack-1x global_cultured '> </i>
-                                                    </Col>
-                                                    <Col xs={10} className='p-0 m-0 Mechanics_col d-flex align-items-center'>
+                                                    {/*    <i className='Services_icon fal far fa-tools fa-stack-1x global_cultured '> </i>*/}
+                                                    {/*</Col>*/}
+                                                    <Col className='p-0 m-0 Mechanics_col d-flex align-items-center justify-content-start'>
                                                         <p className='Avionics_text-titles'>Pre-Buy Inspections</p>
                                                     </Col>
                                                 </Row>
@@ -166,34 +163,35 @@ const AvionicsHome = () => {
                                              className='global_cursor Mechanics_col  '>
                                             <Zoom>
                                                 <Row className='p-0 m-0'>
-                                                    <Col xs={2} className='p-0 m-0 d-flex justify-content-start'>
+                                                    {/*<Col className='p-0 m-0 d-flex justify-content-start'>*/}
 
-                                                        <i className='Services_icon fal far fa-tools fa-stack-1x global_cultured '> </i>
-                                                    </Col>
-                                                    <Col xs={10} className='p-0 m-0 Mechanics_col d-flex align-items-center'>
-                                                        <p className='Avionics_text-titles'>Expert Staff</p>
-                                                    </Col>
-                                                </Row>
-                                            </Zoom>
-                                        </Col>
-                                    </LinkContainer>
-
-                                    <LinkContainer to={`/mechanics`}>
-                                        <Col xs={12}
-                                             className='global_cursor Mechanics_col  '>
-                                            <Zoom>
-                                                <Row className='p-0 m-0'>
-                                                    <Col xs={2} className='p-0 m-0 d-flex justify-content-start'>
-
-                                                        <i className='Services_icon fal far fa-tools fa-stack-1x global_cultured '> </i>
-                                                    </Col>
-                                                    <Col xs={10} className='p-0 m-0 Mechanics_col d-flex align-items-center'>
+                                                    {/*    <i className='Services_icon fal far fa-tools fa-stack-1x global_cultured '> </i>*/}
+                                                    {/*</Col>*/}
+                                                    <Col  className='p-0 m-0 Mechanics_col d-flex align-items-center justify-content-start'>
                                                         <p className='Avionics_text-titles'>30+ years of experience</p>
                                                     </Col>
                                                 </Row>
                                             </Zoom>
                                         </Col>
                                     </LinkContainer>
+
+                                    <LinkContainer to={`/products`}>
+                                        <Col xs={12}
+                                             className='global_cursor Mechanics_col  '>
+                                            <Zoom>
+                                                <Row className='p-0 m-0'>
+                                                    {/*<Col className='p-0 m-0 d-flex justify-content-start'>*/}
+
+                                                    {/*    <i className='Services_icon fal far fa-tools fa-stack-1x global_cultured '> </i>*/}
+                                                    {/*</Col>*/}
+                                                    <Col  className='px-0 py-2 m-0 Mechanics_col d-flex align-items-center justify-content-start bg-dark'>
+                                                        <p className='Avionics_text-titles '>Authorized avionics dealer</p>
+                                                    </Col>
+                                                </Row>
+                                            </Zoom>
+                                        </Col>
+                                    </LinkContainer>
+
                                 </Row>
                             </Col>
 
@@ -226,8 +224,7 @@ const AvionicsHome = () => {
                         </Row>
 
 
-                        {/*<MultiCarouselPage/>*/}
-
+                        <MultiCarouselPage/>
 
                         {/*<Col md={10} sm={12} className='mb-0 pb-0'>*/}
                         {/*    <Row className='m-0 p-0'>*/}
