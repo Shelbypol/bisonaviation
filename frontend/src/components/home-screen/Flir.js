@@ -11,8 +11,8 @@ import tayseer from "../../images/bg-graphics/screen-avionics/avionics/tayseer-a
 const Flir = () => {
     return (
         <>
-            <Jumbotron id='home-avionics' className='Avionics_jumbo bg-transparent global_cultured p-0 mb-5'
-                       fluid>
+            {/*<Jumbotron id='home-avionics' className='Avionics_jumbo bg-transparent global_cultured p-0 mb-5'*/}
+            {/*           fluid>*/}
 
                 <Row>
                     <Col>
@@ -65,60 +65,72 @@ const Flir = () => {
                     <Col xs={5} className=' p-0 m-0'>
                         <LinkContainer to={`/mechanics`}>
                             <Col xs={12}
-                                 className=' global_cursor border-left Mechanics_col d-flex align-items-center '>
+                                 className=' global_cursor border-left d-flex align-items-center '>
                                 <Zoom>
-                                    <p className='Avionics_text-titles'>World's largest inventory</p>
+                                    {/*<p className='Avionics_text-titles'>World's largest inventory</p>*/}
+                                    <Card className='Avionics_card border-0 bg-transparent rounded'>
+                                        <Card.Img variant="top" src={cnc} className=' Avionics_card-img h-100 w-100'/>
+
+                                    </Card>
                                 </Zoom>
                             </Col>
                         </LinkContainer>
 
-                        <LinkContainer to={`/mechanics`}>
-                            <Col xs={12}
-                                 className=' global_cursor border-left Mechanics_col d-flex align-items-center '>
-                                <Zoom>
-                                    <p className='Avionics_text-titles'>Major manufacturers</p>
-                                </Zoom>
-                            </Col>
-                        </LinkContainer>
+                        {/*<LinkContainer to={`/mechanics`}>*/}
+                        {/*    <Col xs={12}*/}
+                        {/*         className=' global_cursor border-left d-flex align-items-center '>*/}
+                        {/*        <Zoom>*/}
+                        {/*            /!*<p className='Avionics_text-titles'>Major manufacturers</p>*!/*/}
+                        {/*            <Card className='Avionics_card border-0 bg-transparent rounded'>*/}
+                        {/*                <Card.Img variant="top" src={cnc} className=' Avionics_card-img h-100 w-100'/>*/}
 
-                        <LinkContainer to={`/mechanics`}>
-                            <Col xs={12}
-                                 className=' global_cursor border-left Mechanics_col d-flex align-items-center '>
-                                <Zoom>
-                                    <p className='Avionics_text-titles'> Independent ISR sensor labs</p>
-                                </Zoom>
-                            </Col>
-                        </LinkContainer>
+                        {/*            </Card>*/}
+                        {/*        </Zoom>*/}
+                        {/*    </Col>*/}
+                        {/*</LinkContainer>*/}
+
+                        {/*<LinkContainer to={`/mechanics`}>*/}
+                        {/*    <Col xs={12}*/}
+                        {/*         className=' global_cursor border-left d-flex align-items-center '>*/}
+                        {/*        <Zoom>*/}
+                        {/*            /!*<p className='Avionics_text-titles'> Independent ISR sensor labs</p>*!/*/}
+                        {/*            <Card className='Avionics_card border-0 bg-transparent rounded'>*/}
+                        {/*                <Card.Img variant="top" src={cnc} className=' Avionics_card-img h-100 w-100'/>*/}
+
+                        {/*            </Card>*/}
+                        {/*        </Zoom>*/}
+                        {/*    </Col>*/}
+                        {/*</LinkContainer>*/}
 
                     </Col>
                 </Row>
 
 
-            </Jumbotron>
+            {/*</Jumbotron>*/}
 
 
-            <Row className='d-flex justify-content-center mb-5'>
-                <Col xs={4} className='d-flex justify-content-center'>
-                    <Card className='Avionics_card border-0 bg-transparent rounded'>
-                        <Card.Img variant="top" src={cnc} className=' Avionics_card-img '/>
+            {/*<Row className='d-flex justify-content-center mb-5'>*/}
+            {/*    <Col xs={4} className='d-flex justify-content-center'>*/}
+            {/*        <Card className='Avionics_card border-0 bg-transparent rounded'>*/}
+            {/*            <Card.Img variant="top" src={cnc} className=' Avionics_card-img '/>*/}
 
-                    </Card>
-                </Col>
+            {/*        </Card>*/}
+            {/*    </Col>*/}
 
-                <Col xs={4} className='d-flex justify-content-center'>
-                    <Card className='Avionics_card border-0 bg-transparent rounded'>
-                        <Card.Img variant="top" src={test} className='Avionics_card-img '/>
+            {/*    <Col xs={4} className='d-flex justify-content-center'>*/}
+            {/*        <Card className='Avionics_card border-0 bg-transparent rounded'>*/}
+            {/*            <Card.Img variant="top" src={test} className='Avionics_card-img '/>*/}
 
-                    </Card>
-                </Col>
+            {/*        </Card>*/}
+            {/*    </Col>*/}
 
-                <Col xs={4} className='d-flex justify-content-center'>
-                    <Card className='Avionics_card border-0 bg-transparent rounded'>
-                        <Card.Img variant="top" src={tayseer} className='Avionics_card-img'/>
+            {/*    <Col xs={4} className='d-flex justify-content-center'>*/}
+            {/*        <Card className='Avionics_card border-0 bg-transparent rounded'>*/}
+            {/*            <Card.Img variant="top" src={tayseer} className='Avionics_card-img'/>*/}
 
-                    </Card>
-                </Col>
-            </Row>
+            {/*        </Card>*/}
+            {/*    </Col>*/}
+            {/*</Row>*/}
 
 
 
