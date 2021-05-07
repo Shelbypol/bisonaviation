@@ -26,10 +26,8 @@ const HomeScreen2 = () => {
 
     return (
         <>
-
             <HomeHero/>
 
-            {/*<Container className='m-0 p-0' fluid>*/}
             <RepairAward/>
 
             <Row className='d-flex justify-content-center' style={{backgroundColor: 'black'}}>
@@ -48,8 +46,10 @@ const HomeScreen2 = () => {
                         </Col>
                     </Row>
 
+                    <TestimonialCarousel/>
+
                     <Row className='mt-5 d-flex justify-content-center mb-0 pb-0'>
-                        <Col xs={12} className='global_rich-black-bg mb-0 pb-0'>
+                        <Col xs={12} className='global_black mb-0 pb-0'>
                             <Row className='d-flex justify-content-center m-0 p-0'>
                                 <Col md={10} xs={12} className=''
                                      style={{zIndex: '3000'}}>
@@ -59,11 +59,10 @@ const HomeScreen2 = () => {
                         </Col>
                     </Row>
 
-                    <TestimonialCarousel/>
+                    <Services/>
 
-                    <hr className='global_blood-red-bg mt-n1'/>
-                    <Row className='mt-5 d-flex justify-content-center mb-0 pb-0'>
-                        <Col xs={12} className='global_rich-black-bg mb-0 pb-0'>
+                    <Row className='mt-5 d-flex justify-content-center mb-0 pb-5'>
+                        <Col xs={12} className='Global_Flir_bg-img mb-0 pb-0'>
                             <Row className='d-flex justify-content-center m-0 p-0'>
                                 <Col md={10} xs={12} className=''
                                      style={{zIndex: '3000'}}>
@@ -75,8 +74,6 @@ const HomeScreen2 = () => {
 
                 </Col>
             </Row>
-
-            {/*</Container>*/}
 
         </>
 

@@ -32,7 +32,7 @@ const AvionicsHome = () => {
                         {/*</Fade>*/}
                         <Fade top>
                             <Col md={10} xs={10} className='p-3 mx-auto'>
-                                <p className='text-center'>
+                                <p className='text-center AvionicsHome_text'>
                                     Whether you need to add ADS-B OUT capabilities in order to meet the December
                                     31,
                                     2019 deadline, a routine pitot-static / transponder certification, or it's
@@ -48,72 +48,33 @@ const AvionicsHome = () => {
                             </Col>
                         </Fade>
 
-                        {/*<Col xs={12} className='mb-5 mt-3 '>*/}
-                        {/*    <Row className='mb-4 '>*/}
-                        {/*        /!*<Col xs={2}>*!/*/}
-                        {/*        <Col xs={4} className=' global_cursor d-flex justify-content-center '>*/}
-                        {/*            /!*<i className=' rounded-circle AvionicsHome_icon far fa-tools'> </i>*!/*/}
-                        {/*            /!*<span className='fa-stack fa-2x ml-md-n3'>*!/*/}
-                        {/*            /!*    <i className="fas fa-circle fa-stack-2x global_blood-red "> </i>*!/*/}
-                        {/*            <i className='Services_icon fal far fa-camera-home fa-stack-2x global_cultured '> </i>*/}
-                        {/*            /!*</span>*!/*/}
-                        {/*        </Col>*/}
-
-                        {/*        <Col xs={4} className=' global_cursor d-flex justify-content-center'>*/}
-                        {/*            /!*<i className='  rounded-circle AvionicsHome_icon far fa-tools'> </i>*!/*/}
-                        {/*            /!*<span className='fa-stack fa-2x ml-md-n3'>*!/*/}
-                        {/*            /!*    <i className="fas fa-circle fa-stack-2x global_blood-red "> </i>*!/*/}
-                        {/*            <i className='Services_icon fal far fa-tools fa-stack-2x global_cultured '> </i>*/}
-                        {/*            /!*</span>*!/*/}
-                        {/*        </Col>*/}
-
-                        {/*        <Col xs={4} className='global_cursor d-flex justify-content-center'>*/}
-                        {/*            /!*<i className=' rounded-circle  AvionicsHome_icon far fa-tools'> </i>*!/*/}
-                        {/*            /!*<span className='fa-stack fa-2x ml-md-n3'>*!/*/}
-                        {/*            /!*    <i className="fas fa-circle fa-stack-2x global_blood-red "> </i>*!/*/}
-                        {/*            <i className='Services_icon fal far fa-camera-home fa-stack-2x global_cultured '> </i>*/}
-                        {/*            /!*</span>*!/*/}
-                        {/*        </Col>*/}
-                        {/*        /!*</Col>*!/*/}
-                        {/*    </Row>*/}
-                        {/*</Col>*/}
-
-                        {/*    <Row>*/}
-                        {/*    /!*<Col xs={9}>*!/*/}
-                        {/*        <Col md={4}*/}
-                        {/*             className='global_cursor d-flex justify-content-center'>*/}
-                        {/*            <Fade left>*/}
-                        {/*                <h5 className='text-white text-center'>Custom Panels</h5>*/}
-                        {/*            </Fade>*/}
-                        {/*        </Col>*/}
-
-                        {/*        <Col md={4}*/}
-                        {/*             className='global_cursor d-flex justify-content-center'>*/}
-                        {/*            <h5 className='text-white text-center'>In-Depth Tests & Checks</h5>*/}
-                        {/*        </Col>*/}
-
-                        {/*        <Col md={4}*/}
-                        {/*             className='global_cursor d-flex justify-content-center'>*/}
-                        {/*            <Fade right>*/}
-                        {/*                <h5 className='text-white text-center'> Software Updates</h5>*/}
-                        {/*            </Fade>*/}
-                        {/*        </Col>*/}
-                        {/*    /!*</Col>*!/*/}
-                        {/*    </Row>*/}
-
-
-                        {/*</Col>*/}
-
-
                         <Row className='mb-5'>
 
                             <Col xs={5} className='p-0 mx-0 m-0'>
-                                <Row className='mx-0 mt-n3 mb-0 p-0'>
+                                <Row className='mx-0 mb-0 p-0'>
+
+                                    <LinkContainer to={`/products`}>
+                                        <Col xs={12}
+                                             className='global_cursor Mechanics_col  '>
+                                            <Zoom>
+                                                <Row className='AvionicsHome_product-title p-0 m-0'>
+                                                    {/*<Col className='p-0 m-0 d-flex justify-content-start'>*/}
+
+                                                    {/*    <i className='Services_icon fal far fa-tools fa-stack-1x global_cultured '> </i>*/}
+                                                    {/*</Col>*/}
+                                                    <Col  className='px-0 py-2 m-0 Mechanics_col d-flex align-items-center justify-content-start '>
+                                                        <p className='Avionics_text-titles '>Authorized avionics dealer</p>
+                                                    </Col>
+                                                </Row>
+                                            </Zoom>
+                                        </Col>
+                                    </LinkContainer>
+
                                     <LinkContainer to={`/mechanics`}>
                                         <Col xs={12}
                                              className='global_cursor Mechanics_col  '>
                                             <Zoom>
-                                                <Row className='p-0 m-0'>
+                                                <Row className='AvionicsHome_titles p-0 m-0'>
                                                     {/*<Col className='p-0 m-0 d-flex justify-content-start'>*/}
                                                     {/*    <i className='Services_icon fal far fa-tools fa-stack-1x global_cultured '> </i>*/}
                                                     {/*</Col>*/}
@@ -129,7 +90,7 @@ const AvionicsHome = () => {
                                         <Col xs={12}
                                              className='global_cursor Mechanics_col  '>
                                             <Zoom>
-                                                <Row className='p-0 m-0'>
+                                                <Row className='AvionicsHome_titles p-0 m-0'>
                                                     {/*<Col className='p-0 m-0 d-flex justify-content-start'>*/}
 
                                                     {/*    <i className='Services_icon fal far fa-tools fa-stack-1x global_cultured '> </i>*/}
@@ -146,7 +107,7 @@ const AvionicsHome = () => {
                                         <Col xs={12}
                                              className='global_cursor Mechanics_col  '>
                                             <Zoom>
-                                                <Row className='p-0 m-0'>
+                                                <Row className='AvionicsHome_titles p-0 m-0'>
                                                     {/*<Col className='p-0 m-0 d-flex justify-content-start'>*/}
 
                                                     {/*    <i className='Services_icon fal far fa-tools fa-stack-1x global_cultured '> </i>*/}
@@ -163,7 +124,7 @@ const AvionicsHome = () => {
                                         <Col xs={12}
                                              className='global_cursor Mechanics_col  '>
                                             <Zoom>
-                                                <Row className='p-0 m-0'>
+                                                <Row className='AvionicsHome_titles p-0 m-0'>
                                                     {/*<Col className='p-0 m-0 d-flex justify-content-start'>*/}
 
                                                     {/*    <i className='Services_icon fal far fa-tools fa-stack-1x global_cultured '> </i>*/}
@@ -176,22 +137,7 @@ const AvionicsHome = () => {
                                         </Col>
                                     </LinkContainer>
 
-                                    <LinkContainer to={`/products`}>
-                                        <Col xs={12}
-                                             className='global_cursor Mechanics_col  '>
-                                            <Zoom>
-                                                <Row className='p-0 m-0'>
-                                                    {/*<Col className='p-0 m-0 d-flex justify-content-start'>*/}
 
-                                                    {/*    <i className='Services_icon fal far fa-tools fa-stack-1x global_cultured '> </i>*/}
-                                                    {/*</Col>*/}
-                                                    <Col  className='px-0 py-2 m-0 Mechanics_col d-flex align-items-center justify-content-start bg-dark'>
-                                                        <p className='Avionics_text-titles '>Authorized avionics dealer</p>
-                                                    </Col>
-                                                </Row>
-                                            </Zoom>
-                                        </Col>
-                                    </LinkContainer>
 
                                 </Row>
                             </Col>
@@ -201,7 +147,7 @@ const AvionicsHome = () => {
                                 {/*<Col md={10} sm={12} className='mb-0 pb-0'>*/}
                                 <Row className='m-0 p-0'>
                                     <Col md={4} sm={12} className=' p-0'>
-                                        <Image className=' AvionicsHome_img pr-md-3' src={tayseer} fluid/>
+                                        <Image className=' AvionicsHome_img pr-md-2' src={tayseer} fluid/>
                                     </Col>
                                     <Col md={8} sm={12} className='p-0'>
                                         <Image className=' AvionicsHome_img' src={tests} fluid/>
@@ -212,10 +158,10 @@ const AvionicsHome = () => {
 
                                     <Col md={8} sm={12} className='p-0 d-flex align-content-center justify-content-center align-content-center'>
                                         {/*<ProductCarousel/>*/}
-                                        <Image className=' AvionicsHome_img pt-md-3' src={roel} fluid/>
+                                        <Image className=' AvionicsHome_img pt-md-2' src={roel} fluid/>
                                     </Col>
-                                    <Col md={4} sm={12} className=' p-0 '>
-                                        <Image className='AvionicsHome_img pl-md-3 pt-md-3' src={tayseer} fluid/>
+                                    <Col md={4} sm={12} className=' p-0'>
+                                        <Image className='AvionicsHome_img pl-md-2 pt-md-2' src={tayseer} fluid/>
                                     </Col>
                                 </Row>
                                 {/*</Col>*/}
@@ -226,7 +172,7 @@ const AvionicsHome = () => {
                         </Row>
 
 
-                        <MultiCarouselPage/>
+                        {/*<MultiCarouselPage/>*/}
 
                         {/*<Col md={10} sm={12} className='mb-0 pb-0'>*/}
                         {/*    <Row className='m-0 p-0'>*/}

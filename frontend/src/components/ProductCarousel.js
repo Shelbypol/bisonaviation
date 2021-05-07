@@ -33,7 +33,8 @@ const ProductCarousel = ({x}) => {
     return loading ? <Loader/> : error ? <Message variant='danger'>{error}</Message> : (
         <Carousel interval={3000} controls={false} indicators={false} pause='hover' className='bg-none border-0 d-flex justify-content-center'>
             {products.map((product, index) => (
-                    <Carousel.Item key={(product._id * x)} className=''>
+                    // <Carousel.Item key={index + x} className=''>
+                    <Carousel.Item key={product._id} className=''>
                         <Link to={`/product/${product._id}`}>
                             {/*<h3 className='text-center d-flex global_eerie-black justify-content-center pb-4'>{product.name}{index}</h3>*/}
                             <Image src={product.image} alt={product.name} style={{height: '20vh', width: '20vw'}}/>

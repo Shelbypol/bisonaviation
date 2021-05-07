@@ -16,7 +16,7 @@ const Mechanics = () => {
             {/*<Jumbotron className='Mechanics_jumbo AvionicsHome_bg global_cultured p-0 m-0'*/}
             {/*           fluid>*/}
             <Row className='Mechanics_jumbo AvionicsHome_bg global_cultured p-0 m-0'>
-                <Col xs={12} className='px-2'>
+                <Col xs={12} className='px-2 m-0 py-0'>
 
 
                     <Col xs={12}
@@ -66,7 +66,7 @@ const Mechanics = () => {
                         <Col xs={5} className=' p-0 m-0'>
                             <LinkContainer to={`/mechanics`}>
                                 <Col xs={12}
-                                     className=' global_cursor border-left Mechanics_col d-flex align-items-center '>
+                                     className='AvionicsHome_titles global_cursor border-left Mechanics_col d-flex align-items-center '>
                                     <Zoom>
                                         <p className='Avionics_text-titles'>Annual Inspections</p>
                                     </Zoom>
@@ -75,7 +75,7 @@ const Mechanics = () => {
 
                             <LinkContainer to={`/mechanics`}>
                                 <Col xs={12}
-                                     className=' global_cursor border-left Mechanics_col d-flex align-items-center '>
+                                     className='AvionicsHome_titles global_cursor border-left Mechanics_col d-flex align-items-center '>
                                     <Zoom>
                                         <p className='Avionics_text-titles'>Propeller Balance</p>
                                     </Zoom>
@@ -84,7 +84,7 @@ const Mechanics = () => {
 
                             <LinkContainer to={`/mechanics`}>
                                 <Col xs={12}
-                                     className=' global_cursor border-left Mechanics_col d-flex align-items-center '>
+                                     className='AvionicsHome_titles global_cursor border-left Mechanics_col d-flex align-items-center '>
                                     <Zoom>
                                         <p className='Avionics_text-titles'> Pre-Buy Inspections</p>
                                     </Zoom>

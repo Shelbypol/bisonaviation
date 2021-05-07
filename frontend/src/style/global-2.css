@@ -132,8 +132,6 @@ main {
     color: #660708;
 }
 
-
-
 /*================= SITE TITLES ===================*/
 
 .global_title{
@@ -149,10 +147,15 @@ main {
     font-size: 30px;
 }
 
+.global_black{
+    background-color: black;
+}
+
 /* ============= AVIONICS JUMBO ===========*/
 
 .Global_Flir_bg-img{
-    background-image: url("../images/bg-graphics/home-screen/home-section-body-bg/flir-jumbo-img.png");
+    background-image: url("../images/bg-graphics/home-screen/home-slider/large-flir.png");
+    /*background-image: url("../images/bg-graphics/home-screen/home-section-body-bg/flir-jumbo-img.png");*/
     background-position: center 5%;
 }
 

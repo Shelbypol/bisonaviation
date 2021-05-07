@@ -76,8 +76,9 @@ a {
 .wishList-Dropdown {
     position: absolute;
     top: 12.5vh;
+    right: 2vw;
     /*top: 58px;*/
-    width: 150%;
+    width: 75%;
     height: 100vh;
     max-height: 100vh;
     /*transform: translateX(-11%);*/
@@ -94,7 +95,8 @@ a {
 .wishList-menu {
     height: 100%;
     max-height: 110vh;
-    width: 90%;
+    width: 150%;
+    /*width: 90%;*/
 }
 
 .wishList-menu-item {
