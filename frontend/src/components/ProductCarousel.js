@@ -37,8 +37,9 @@ const ProductCarousel = ({x}) => {
                     <Carousel.Item key={product._id} className=''>
                         <Link to={`/product/${product._id}`}>
                             {/*<h3 className='text-center d-flex global_eerie-black justify-content-center pb-4'>{product.name}{index}</h3>*/}
-                            <Image src={product.image} alt={product.name} style={{height: '20vh', width: '20vw'}}/>
-                            {/*<Image src={product.image} alt={product.name} className= ' border h-25 w-25'/>*/}
+                            {/*<Image src={product.image} alt={product.name}/>*/}
+                            {/*<Image src={product.image} alt={product.name} style={{height: '20vh', width: '20vw'}}/>/*/}
+                            <Image src={product.image} alt={product.name} className= ' h-50 w-50'/>
                         </Link>
                     </Carousel.Item>
             ))}
