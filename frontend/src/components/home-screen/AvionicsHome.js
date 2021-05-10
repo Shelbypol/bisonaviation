@@ -17,20 +17,16 @@ const AvionicsHome = () => {
 
     return (
         <>
-            {/*<Row className='mt-5 d-flex justify-content-center'>*/}
-            {/*    <Col xs={12} className='AvionicsHome_image m-0'> </Col>*/}
-            {/*</Row>*/}
-
             <Row className='AvionicsHome_row d-flex justify-content-center align-content-center'>
                 <Col xs={12} className='AvionicsHome_bg pb-5'>
                     <Row className='d-flex justify-content-center'>
-                        {/*<Fade top>*/}
+                        <Fade top>
                         <Col xs={12}
                              className=' AvionicsHome_title-col pb-5 d-flex justify-content-center align-content-center'>
                             <h1 className='AvionicsHome_title text-white'>Avionics</h1>
                         </Col>
-                        {/*</Fade>*/}
-                        <Fade top>
+                        </Fade>
+                        <Fade bottom>
                             <Col md={10} xs={10} className='p-3 mx-auto'>
                                 <p className='text-center AvionicsHome_text'>
                                     Whether you need to add ADS-B OUT capabilities in order to meet the December
@@ -139,6 +135,7 @@ const AvionicsHome = () => {
 
                                     <Col xs={12}
                                          className='global_cursor Mechanics_col  '>
+                                    <ProductCarousel/>
                                         {/*<Row className='AvionicsProducts_row d-flex align-content-center pr-3'>*/}
                                         {/*    <Fade duration={1500} left>*/}
                                         {/*        <Col xs={12} className='AvionicsProducts_img-left '>*/}
@@ -189,6 +186,25 @@ const AvionicsHome = () => {
                                     <Col md={4} sm={12} className=' p-0'>
                                         <Image className='AvionicsHome_img pl-md-2 pt-md-2' src={tayseer} fluid/>
                                     </Col>
+
+                                </Row>
+
+                                <Row className='AvionicsProducts_row mt-5 mx-0 p-0 d-flex justify-content-center'>
+                                    <Fade duration={1500} left>
+                                        <Col xs={12} className='AvionicsProducts_img-left'>
+                                            <p className='Avionics_flag red global_accentFont mt-n1 mb-0 mx-0'>NEW!</p>
+                                            <Fade duration={1500} right>
+                                                <LinkContainer to={`/products`}>
+                                                    <div
+                                                        className='AvionicsProducts_jumbo global_cultured d-flex justify-content-center align-items-center'>
+                                                        <Button
+                                                            className='AvionicsProducts_searchBtn global_blood-red-bg py-2 px-5'>Browse
+                                                            Products</Button>
+                                                    </div>
+                                                </LinkContainer>
+                                            </Fade>
+                                        </Col>
+                                    </Fade>
                                 </Row>
 
 

@@ -12,7 +12,7 @@ const Flir = () => {
     return (
         <>
 
-            <Row className='Mechanics_jumbo AvionicsHome_bg global_cultured px-0 pb-5 mt-n4 mx-0 pb-0'>
+            <Row className='Mechanics_jumbo AvionicsHome_bg global_cultured px-0 pb-5 mx-0 pb-0'>
                 <Col xs={12} className='px-2'>
 
                     <Col xs={12}
@@ -25,7 +25,7 @@ const Flir = () => {
                         <Col xs={7} className=''>
                             <Zoom>
 
-                                <Col xs={12} className='mb-2 mr-2 pr-4'>
+                                <Col xs={12} className='mb-2 mr-2 px-4'>
                                     <h1 className='global_cultured'>
                                         Bison Aviation’s maintains the world’s largest inventory of legacy airborne
                                         EO/IR equipment.
@@ -34,7 +34,7 @@ const Flir = () => {
                                 </Col>
                             </Zoom>
 
-                            <Col xs={12} className='global_cursor mr-5 pr-4 mt-4'>
+                            <Col xs={12} className='global_cursor mr-5 px-4 mt-4'>
                                 <Zoom>
                                     <p className='pr-3 '>
                                         Bison Aviation’s Sensor Service team maintains an average of more than sixty
@@ -51,7 +51,7 @@ const Flir = () => {
                             <Col xs={12} className='py-1 global_cursor '>
                                 <LinkContainer to={`/maintenance`}>
                                     <Zoom>
-                                        <Button className='global_cultured global_blood-red-bg '>
+                                        <Button className='pl-4 global_cultured global_blood-red-bg '>
                                             Learn More
                                         </Button>
                                     </Zoom>
