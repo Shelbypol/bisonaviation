@@ -66,7 +66,7 @@ const Mechanics = () => {
                         <Col xs={5} className=' p-0 m-0'>
                             <LinkContainer to={`/mechanics`}>
                                 <Col xs={12}
-                                     className='AvionicsHome_titles global_cursor border-left Mechanics_col d-flex align-items-center '>
+                                     className='Mechanics_title global_cursor border-left Mechanics_col d-flex align-items-center '>
                                     <Zoom>
                                         <p className='Avionics_text-titles'>Annual Inspections</p>
                                     </Zoom>
