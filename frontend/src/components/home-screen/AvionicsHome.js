@@ -198,7 +198,7 @@ const AvionicsHome = () => {
                                                     <div
                                                         className='AvionicsProducts_jumbo global_cultured d-flex justify-content-center align-items-center'>
                                                         <Button
-                                                            className='AvionicsProducts_searchBtn global_blood-red-bg py-2 px-5'>Browse
+                                                            className='AvionicsProducts_searchBtn global_blood-red-bg py-2 px-auto'>Browse
                                                             Products</Button>
                                                     </div>
                                                 </LinkContainer>
