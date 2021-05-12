@@ -2,7 +2,6 @@ import React from "react";
 import {Button, Col, Row, Card, Container, Jumbotron, Image} from "react-bootstrap";
 import '../../style/2/AvionicsHome.css';
 import test from '../../images/bg-graphics/screen-avionics/avionics/avionics-hero-img.png'
-// import tayseer from '../../images/bg-graphics/screen-avionics/avionics-slider/avionics2.png'
 import tests from '../../images/bg-graphics/screen-avionics/avionics-slider/avionics4.png'
 import roel from '../../images/bg-graphics/screen-avionics/avionics-slider/avionics2.png'
 import tayseer from '../../images/bg-graphics/screen-avionics/avionics/tayseer-avionics.png'
@@ -53,9 +52,6 @@ const AvionicsHome = () => {
                                              className='global_cursor Mechanics_col  '>
                                             <Zoom>
                                                 <Row className='AvionicsHome_titles p-0 m-0'>
-                                                    {/*<Col className='p-0 m-0 d-flex justify-content-start'>*/}
-                                                    {/*    <i className='Services_icon fal far fa-tools fa-stack-1x global_cultured '> </i>*/}
-                                                    {/*</Col>*/}
                                                     <Col
                                                         className='p-0 m-0 Mechanics_col d-flex align-items-center justify-content-start'>
                                                         <p className='Avionics_text-titles'>Annual Inspections</p>
@@ -70,10 +66,6 @@ const AvionicsHome = () => {
                                              className='global_cursor Mechanics_col  '>
                                             <Zoom>
                                                 <Row className='AvionicsHome_titles p-0 m-0'>
-                                                    {/*<Col className='p-0 m-0 d-flex justify-content-start'>*/}
-
-                                                    {/*    <i className='Services_icon fal far fa-tools fa-stack-1x global_cultured '> </i>*/}
-                                                    {/*</Col>*/}
                                                     <Col
                                                         className='p-0 m-0 Mechanics_col d-flex align-items-center justify-content-start'>
                                                         <p className='Avionics_text-titles'>Prop Balance</p>
@@ -88,10 +80,6 @@ const AvionicsHome = () => {
                                              className='global_cursor Mechanics_col  '>
                                             <Zoom>
                                                 <Row className='AvionicsHome_titles p-0 m-0'>
-                                                    {/*<Col className='p-0 m-0 d-flex justify-content-start'>*/}
-
-                                                    {/*    <i className='Services_icon fal far fa-tools fa-stack-1x global_cultured '> </i>*/}
-                                                    {/*</Col>*/}
                                                     <Col
                                                         className='p-0 m-0 Mechanics_col d-flex align-items-center justify-content-start'>
                                                         <p className='Avionics_text-titles'>Pre-Buy Inspections</p>
@@ -106,9 +94,6 @@ const AvionicsHome = () => {
                                              className='global_cursor Mechanics_col  '>
                                             <Zoom>
                                                 <Row className='AvionicsHome_titles p-0 m-0'>
-                                                    {/*<Col className='p-0 m-0 d-flex justify-content-start'>*/}
-                                                    {/*    <i className='Services_icon fal far fa-tools fa-stack-1x global_cultured '> </i>*/}
-                                                    {/*</Col>*/}
                                                     <Col
                                                         className='p-0 m-0 Mechanics_col d-flex align-items-center justify-content-start'>
                                                         <p className='Avionics_text-titles'>30+ years of experience</p>
@@ -132,16 +117,7 @@ const AvionicsHome = () => {
                                             </Zoom>
                                         </Col>
                                     </LinkContainer>
-
-
                                 </Row>
-
-                                {/*<Row>*/}
-                                {/*    <Col xs={12}*/}
-                                {/*         className='global_cursor d-flex justify-content-center border m-0 p-0'>*/}
-                                {/*        <ProductCarousel/>*/}
-                                {/*    </Col>*/}
-                                {/*</Row>*/}
                             </Col>
 
 
@@ -169,62 +145,17 @@ const AvionicsHome = () => {
 
                                 </Row>
 
-                                {/*<Row className='AvionicsProducts_row mt-5 mx-0 p-0 d-flex justify-content-center'>*/}
-                                {/*    <Fade duration={1500} left>*/}
-                                {/*        <Col xs={12} className='AvionicsProducts_img-left'>*/}
-                                {/*            <p className='Avionics_flag red global_accentFont mt-n1 mb-0 mx-0'>NEW!</p>*/}
-                                {/*            <Fade duration={1500} right>*/}
-                                {/*                <LinkContainer to={`/products`}>*/}
-                                {/*                    <div*/}
-                                {/*                        className='AvionicsProducts_jumbo global_cultured d-flex justify-content-center align-items-center'>*/}
-                                {/*                        <Button*/}
-                                {/*                            className='AvionicsProducts_searchBtn global_blood-red-bg py-2 px-auto'>Browse*/}
-                                {/*                            Products</Button>*/}
-                                {/*                    </div>*/}
-                                {/*                </LinkContainer>*/}
-                                {/*            </Fade>*/}
-                                {/*        </Col>*/}
-                                {/*    </Fade>*/}
-                                {/*</Row>*/}
-
 
                             </Col>
                         </Row>
-
-
-                        {/*<Row className='mx-0 p-0 d-flex justify-content-center border'>*/}
-                            {/*<Fade duration={1500} left>*/}
-                            {/*<Col xs={5}*/}
-                            {/*     className='global_cursor d-flex justify-content-center border m-0 p-0'>*/}
-                            {/*    <ProductCarousel/>*/}
-                            {/*</Col>*/}
-
-                            {/*    <Col xs={7} className='AvionicsProducts_img-left'>*/}
-                            {/*        <p className='Avionics_flag red global_accentFont mt-n1 mb-0 mx-0'>NEW!</p>*/}
-                            {/*        <Fade duration={1500} right>*/}
-                            {/*            <LinkContainer to={`/products`}>*/}
-                            {/*                <div*/}
-                            {/*                    className='AvionicsProducts_jumbo global_cultured d-flex justify-content-center align-items-center'>*/}
-                            {/*                    <Button*/}
-                            {/*                        className='AvionicsProducts_searchBtn global_blood-red-bg py-2 px-auto'>Browse*/}
-                            {/*                        Products</Button>*/}
-                            {/*                </div>*/}
-                            {/*            </LinkContainer>*/}
-                            {/*        </Fade>*/}
-                            {/*    </Col>*/}
-                            {/*</Fade>*/}
-                        {/*</Row>*/}
-
-
                     </Row>
-                            <Garmin/>
+
+                    <Garmin/>
+
                 </Col>
 
             </Row>
 
-
-            {/*</Container>*/
-            }
 
         </>
 
