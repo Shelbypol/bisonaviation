@@ -9,9 +9,7 @@ import tayseer from '../../images/bg-graphics/screen-avionics/avionics/tayseer-a
 import {LinkContainer} from "react-router-bootstrap";
 import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
-import MultiCarouselPage from "../MulitCarouselPage";
-import AvionicsAd from "../avionics-Screen/AvionicsAd";
-import ProductCarousel from "../ProductCarousel";
+import Garmin from '../Garmin.js'
 
 const AvionicsHome = () => {
 
@@ -123,15 +121,15 @@ const AvionicsHome = () => {
                                     <LinkContainer to={`/products`}>
                                         <Col xs={12}
                                              className='global_cursor Mechanics_col mb-5 '>
-                                            {/*<Zoom>*/}
-                                            {/*    <Row className='AvionicsHome_product-title p-0 m-0'>*/}
-                                            {/*        <Col*/}
-                                            {/*            className='px-0 py-2 m-0 Mechanics_col d-flex align-items-center justify-content-start '>*/}
-                                            {/*            <p className='Avionics_text-titles '>Authorized avionics*/}
-                                            {/*                dealer</p>*/}
-                                            {/*        </Col>*/}
-                                            {/*    </Row>*/}
-                                            {/*</Zoom>*/}
+                                            <Zoom>
+                                                <Row className='AvionicsHome_product-title p-0 m-0'>
+                                                    <Col
+                                                        className='p-0 m-0 Mechanics_col d-flex align-items-center justify-content-start '>
+                                                        <p className='Avionics_text-titles '>Authorized avionics
+                                                            dealer</p>
+                                                    </Col>
+                                                </Row>
+                                            </Zoom>
                                         </Col>
                                     </LinkContainer>
 
@@ -147,7 +145,7 @@ const AvionicsHome = () => {
                             </Col>
 
 
-                            <Col xs={7} className=''>
+                            <Col xs={7} className='mt-3'>
                                 {/*<Col md={10} sm={12} className='mb-0 pb-0'>*/}
                                 <Row className='m-0 p-0'>
                                     <Col md={4} sm={12} className=' p-0'>
@@ -194,32 +192,32 @@ const AvionicsHome = () => {
                         </Row>
 
 
-                        <Row className='AvionicsProducts_row mx-0 p-0 d-flex justify-content-around'>
+                        {/*<Row className='mx-0 p-0 d-flex justify-content-center border'>*/}
                             {/*<Fade duration={1500} left>*/}
+                            {/*<Col xs={5}*/}
+                            {/*     className='global_cursor d-flex justify-content-center border m-0 p-0'>*/}
+                            {/*    <ProductCarousel/>*/}
+                            {/*</Col>*/}
 
-                            <Col xs={5}
-                                 className='global_cursor d-flex justify-content-center border m-0 p-0'>
-                                <ProductCarousel/>
-                            </Col>
-
-                                <Col xs={7} className='AvionicsProducts_img-left'>
-                                    <p className='Avionics_flag red global_accentFont mt-n1 mb-0 mx-0'>NEW!</p>
-                                    <Fade duration={1500} right>
-                                        <LinkContainer to={`/products`}>
-                                            <div
-                                                className='AvionicsProducts_jumbo global_cultured d-flex justify-content-center align-items-center'>
-                                                <Button
-                                                    className='AvionicsProducts_searchBtn global_blood-red-bg py-2 px-auto'>Browse
-                                                    Products</Button>
-                                            </div>
-                                        </LinkContainer>
-                                    </Fade>
-                                </Col>
+                            {/*    <Col xs={7} className='AvionicsProducts_img-left'>*/}
+                            {/*        <p className='Avionics_flag red global_accentFont mt-n1 mb-0 mx-0'>NEW!</p>*/}
+                            {/*        <Fade duration={1500} right>*/}
+                            {/*            <LinkContainer to={`/products`}>*/}
+                            {/*                <div*/}
+                            {/*                    className='AvionicsProducts_jumbo global_cultured d-flex justify-content-center align-items-center'>*/}
+                            {/*                    <Button*/}
+                            {/*                        className='AvionicsProducts_searchBtn global_blood-red-bg py-2 px-auto'>Browse*/}
+                            {/*                        Products</Button>*/}
+                            {/*                </div>*/}
+                            {/*            </LinkContainer>*/}
+                            {/*        </Fade>*/}
+                            {/*    </Col>*/}
                             {/*</Fade>*/}
-                        </Row>
+                        {/*</Row>*/}
 
 
                     </Row>
+                            <Garmin/>
                 </Col>
 
             </Row>

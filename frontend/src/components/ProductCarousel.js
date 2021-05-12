@@ -1,26 +1,18 @@
 import React, {useEffect} from 'react'
 import {Link} from 'react-router-dom'
 import {
-    Carousel, Image} from "react-bootstrap";
+    Carousel, Image
+} from "react-bootstrap";
 import Loader from "./Loader";
 import Message from "./Message";
 import {useDispatch, useSelector} from "react-redux";
 import {listProducts} from "../actions/productActions";
+import '../style/productCarousel.css'
 
 // import '../style/ProductCarousel.css'
 
 
-const ProductCarousel = ({x}) => {
-
-    // const dispatch = useDispatch();
-    //
-    // const productTopRated = useSelector(state => state.productTopRated);
-    // const { loading, error, products} = productTopRated;
-    //
-    // useEffect(() => {
-    //     dispatch(listTopProducts())
-    // }, [dispatch]);
-
+const ProductCarousel = () => {
     const dispatch = useDispatch();
 
     const productList = useSelector(state => state.productList);
@@ -33,15 +25,11 @@ const ProductCarousel = ({x}) => {
     return loading ? <Loader/> : error ? <Message variant='danger'>{error}</Message> : (
         <Carousel interval={3000} controls={false} indicators={false} pause='hover' className='bg-none border-0 '>
             {products.map((product, index) => (
-                    // <Carousel.Item key={index + x} className=''>
-                    <Carousel.Item key={product._id} className=''>
-                        <Link to={`/product/${product._id}`}>
-                            {/*<h3 className='text-center d-flex global_eerie-black justify-content-center pb-4'>{product.name}{index}</h3>*/}
-                            {/*<Image src={product.image} alt={product.name}/>*/}
-                            {/*<Image src={product.image} alt={product.name} style={{height: '20vh', width: '20vw'}}/>/*/}
-                            <Image src={product.image} alt={product.name} className= 'h-50 w-50'/>
-                        </Link>
-                    </Carousel.Item>
+                <Carousel.Item key={product._id} className=''>
+                    <Link to={`/product/${product._id}`}>
+                        <Image src={product.image} alt={product.name} className='ProductCarousel_img'/>
+                    </Link>
+                </Carousel.Item>
             ))}
         </Carousel>
     )

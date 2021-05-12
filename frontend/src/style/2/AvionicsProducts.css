@@ -1,15 +1,7 @@
 .AvionicsProducts_jumbo {
-    /*height: 155px;*/
-    /*width: 450px;*/
     z-index: 200;
 }
 
-.AvionicsProducts_row {
-    /*margin-left: 5vw;*/
-    /*height: 250px;*/
-    /*box-shadow: 0 8px 18px 0 rgba(00, 0, 0, 0.9), 0 8px 8px 0 rgba(0, 0, 0, 0.8) ;*/
-    /*box-shadow: 0 8px 8px 0 rgba(00, 0, 0, 0.5), 0 8px 5px 0 rgba(0, 0, 0, 0.2) ;*/
-}
 
 .AvionicsProducts_jumbo-left {
     margin-top: 5em;
@@ -19,16 +11,12 @@
     background-image: url("../../images/bg-graphics/screen-avionics/avionics/garmin-dealer-cropped.png");
     height: 224px;
     width: 650px;
-    /*object-fit: contain;*/
-    /*width: 580px;*/
-    /*width: fit-content;*/
     background-repeat: no-repeat;
     background-position: center 45%;
 }
 
 .AvionicsProducts_img-right {
     background-image: url("../../images/bg-graphics/screen-avionics/avionics/jd-roel.png");
-    /*background-image: url("../../images/bg-graphics/avionics/jd-roel.png");*/
     background-repeat: no-repeat;
     background-position: 5% 20%;
 }
@@ -40,7 +28,6 @@
     z-index: 200;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
     margin-top: 18vh;
-    /*margin-left: 5vw;*/
 }
 
 .AvionicsProducts_searchBtn:hover {
