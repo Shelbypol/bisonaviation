@@ -1,14 +1,12 @@
 import React from "react";
-import {Button, Col, Row, Card, Container, Jumbotron, Image} from "react-bootstrap";
+import {Button, Col, Row, Image} from "react-bootstrap";
 import '../../style/2/AvionicsHome.css';
-import test from '../../images/bg-graphics/screen-avionics/avionics/avionics-hero-img.png'
 import tests from '../../images/bg-graphics/screen-avionics/avionics-slider/avionics4.png'
 import roel from '../../images/bg-graphics/screen-avionics/avionics-slider/avionics2.png'
 import tayseer from '../../images/bg-graphics/screen-avionics/avionics/tayseer-avionics.png'
 import {LinkContainer} from "react-router-bootstrap";
 import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
-import Garmin from '../Garmin.js'
 
 const AvionicsHome = () => {
 
