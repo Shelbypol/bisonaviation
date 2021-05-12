@@ -15,7 +15,7 @@
 }
 
 .Services_col-avionics{
-    background-color: #660708;
+    background-color: #000;
     height: max-content;
     max-height: border-box;
 }
@@ -56,8 +56,9 @@ i { vertical-align: middle; }
 }
 
 .Services_link:hover{
-    color: white;
-    border: 1px solid white;
+    color: #fff;
+    background-color: rgba(255, 255, 255, .1);
+
 }
 
 
