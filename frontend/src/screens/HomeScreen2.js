@@ -5,14 +5,19 @@ import RepairAward from '../components/home-screen/RepairAward'
 import Services from "../components/home-screen/Services";
 import Avionics from "../components/home-screen/Avionics";
 import Mechanics from "../components/home-screen/Mechanics";
+import Team from "../components/home-screen/Team";
 import Flir from "../components/home-screen/Flir";
-import {Col, Container, Jumbotron, Row} from 'react-bootstrap';
+import {Col, Container, Jumbotron, Row, Button} from 'react-bootstrap';
 import Garmin from "../components/Garmin";
 import MultiCarouselPage from "../components/MulitCarouselPage";
 import AvionicsAd from "../components/avionics-Screen/AvionicsAd";
 import AvionicsHome from "../components/home-screen/AvionicsHome";
 import TestimonialCarousel from "../components/TestimonialCarousel";
-
+import Fade from 'react-reveal/Fade';
+import '../style/2/AvionicsProducts.css';
+import '../style/2/AvionicsProductsFlag.scss';
+import {LinkContainer} from "react-router-bootstrap";
+import ProductCarousel from "../components/ProductCarousel";
 
 
 const HomeScreen2 = () => {
@@ -27,10 +32,8 @@ const HomeScreen2 = () => {
 
     return (
         <>
-
             <HomeHero/>
 
-            {/*<Container className='m-0 p-0' fluid>*/}
             <RepairAward/>
 
             <Row className='d-flex justify-content-center' style={{backgroundColor: 'black'}}>
@@ -38,10 +41,11 @@ const HomeScreen2 = () => {
 
                     <Services/>
 
-                    <Row className='mt-5 d-flex justify-content-center mb-0 pb-0'>
-                        <Col xs={12} className='AvionicsHome_image mb-0 pb-0'>
-                            <Row className='d-flex justify-content-center m-0 p-0'>
-                                <Col md={10} xs={12} className=''
+                    <Row className='AvionicsHome_image d-flex justify-content-center m-0 p-0'>
+                        <Col xs={12} className=''>
+                            {/*<Col xs={12} className='AvionicsHome_image '>*/}
+                            <Row className='d-flex justify-content-center mb-0 p-0'>
+                                <Col md={10} xs={12}
                                      style={{zIndex: '3000'}}>
                                     <AvionicsHome/>
                                 </Col>
@@ -49,8 +53,21 @@ const HomeScreen2 = () => {
                         </Col>
                     </Row>
 
-                    <Row className='mt-5 d-flex justify-content-center mb-0 pb-0'>
-                        <Col xs={12} className='global_rich-black-bg mb-0 pb-0'>
+                    <Row style={{marginTop: '10vh'}}
+                         className='px-4 py-5 d-flex justify-content-center align-content-center global_black'>
+                        <Col xs={10} className=''>
+                            <Row
+                                className='d-flex justify-content-center align-content-center m-0 py-3 global_blood-red-bg'>
+                                <Col md={12} xs={12}
+                                     style={{zIndex: '3000'}} className='mx-auto p-5'>
+                                    <Garmin/>
+                                </Col>
+                            </Row>
+                        </Col>
+                    </Row>
+
+                    <Row className='my-5 d-flex justify-content-center'>
+                        <Col xs={12} className='global_black mb-0 pb-0'>
                             <Row className='d-flex justify-content-center m-0 p-0'>
                                 <Col md={10} xs={12} className=''
                                      style={{zIndex: '3000'}}>
@@ -60,21 +77,34 @@ const HomeScreen2 = () => {
                         </Col>
                     </Row>
 
-                            <TestimonialCarousel/>
 
-                    <hr className='global_blood-red-bg mt-n1'/>
-                    <Jumbotron
-                        className='Global_Flir_bg-img mt-n3 mb-0 p-0 pb-5 d-flex align-content-stretch bg-transparent'
-                        fluid>
-                        <Container className='p-0 fluid'>
-                            <Flir/>
-                        </Container>
-                    </Jumbotron>
+                    <Row style={{marginTop: '10vh'}}
+                         className='px-4 pb-5 d-flex justify-content-center align-content-center global_black'>
+                        <Col xs={10} className=''>
+                            <Row
+                                className='d-flex justify-content-center align-content-center m-0 global_blood-red-bg'>
+                                <Col md={12} xs={12}
+                                     style={{zIndex: '3000'}} className='mx-auto'>
+                                    <TestimonialCarousel/>
+                                </Col>
+                            </Row>
+                        </Col>
+                    </Row>
+
+
+                    <Row style={{marginTop: '15vh'}} className=' d-flex justify-content-center mb-0 p-0'>
+                        <Col xs={12} className='Global_Flir_bg-img mb-0 pb-0'>
+                            <Row className='d-flex justify-content-center m-0 p-0'>
+                                <Col md={10} xs={12} className=''
+                                     style={{zIndex: '3000'}}>
+                                    <Flir/>
+                                </Col>
+                            </Row>
+                        </Col>
+                    </Row>
 
                 </Col>
             </Row>
-
-            {/*</Container>*/}
 
         </>
 

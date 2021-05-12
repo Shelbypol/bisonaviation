@@ -13,9 +13,9 @@ const Footer = () => {
         <footer className='Footer_margin mb-n5 mt-0 mx-0 p-0'>
 
             <Zoom bottom duration={10000}>
-                <Jumbotron className='m-0 p-0 global_blood-red-bg global_cultured Footer_social-icons' fluid>
+                <Jumbotron className='m-0 p-0 global_blood-red-bg global_cultured Footer_social-icons ' fluid>
                     <Row>
-                        <Col xs={12} className='d-flex justify-content-center px-5'>
+                        <Col xs={12} className=' Footer_social-icons-col'>
                             <Fade duration={1500} right>
                                 <SocialIcons contactClassName={'d-none'}/>
                             </Fade>

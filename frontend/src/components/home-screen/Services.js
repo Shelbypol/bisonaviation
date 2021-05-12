@@ -67,7 +67,7 @@ const Services = () => {
                                     </p>
                                 </Card.Text>
                                 <Card.Link href="/products"
-                                           className='w-50 mt-n2 rounded px-2 mx-auto px-auto Services_link'>browse
+                                           className='w-50 mt-n2 px-5 py-2 mx-auto px-auto Services_link'>browse
                                     products
                                 </Card.Link>
                             </Card.Body>

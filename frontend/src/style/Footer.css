@@ -1,7 +1,16 @@
 .Footer_social-icons{
- height: 50px;
+ height: 75px;
 }
 
 .Footer_margin{
   margin-top: 15vh;
+}
+
+.Footer_social-icons-col{
+    margin-left: 38vw;
+    /*margin-left: 38vw;*/
+}
+
+@media (max-width: 600px) {
+
 }
