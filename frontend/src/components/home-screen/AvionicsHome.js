@@ -32,8 +32,8 @@ const AvionicsHome = () => {
                                     your avionics systems into the 21st century!
                                     <br/>
                                     <Button href="/avionics"
-                                            className='py-1 px-2 border-0 mt-3 rounded-pill AvionicsHome_link'>learn
-                                        more
+                                            className='py-2 px-4 border-0 mt-3 rounded-pill AvionicsHome_link'>
+                                        learn more
                                     </Button>
                                 </p>
                             </Col>
@@ -126,7 +126,7 @@ const AvionicsHome = () => {
                             </Col>
 
 
-                            <Col xs={8} className='mt-3 pr-3'>
+                            <Col xs={8} className='mt-3 pr-5'>
                                 {/*<Col md={10} sm={12} className='mb-0 pb-0'>*/}
                                 <Row className='m-0 p-0'>
                                     <Col md={4} sm={12} className=' p-0'>

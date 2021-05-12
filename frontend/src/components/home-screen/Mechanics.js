@@ -15,7 +15,7 @@ const Mechanics = () => {
 
             {/*<Jumbotron className='Mechanics_jumbo AvionicsHome_bg global_cultured p-0 m-0'*/}
             {/*           fluid>*/}
-            <Row className='Mechanics_jumbo AvionicsHome_bg global_cultured p-0 m-0'>
+            <Row className='Mechanics_jumbo AvionicsHome_bg global_cultured px-4 m-0'>
                 <Col xs={12} className='px-2 m-0 py-0'>
 
 
