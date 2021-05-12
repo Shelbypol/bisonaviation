@@ -1,16 +1,11 @@
 import React, {useEffect} from 'react'
 import {Link} from 'react-router-dom'
-import {
-    Carousel, Image
-} from "react-bootstrap";
+import {Carousel, Image} from "react-bootstrap";
 import Loader from "./Loader";
 import Message from "./Message";
 import {useDispatch, useSelector} from "react-redux";
 import {listProducts} from "../actions/productActions";
 import '../style/productCarousel.css'
-
-// import '../style/ProductCarousel.css'
-
 
 const ProductCarousel = () => {
     const dispatch = useDispatch();

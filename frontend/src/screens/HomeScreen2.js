@@ -44,37 +44,13 @@ const HomeScreen2 = () => {
                     <Row className='mt-5 d-flex justify-content-center mb-0 pb-0'>
                         <Col xs={12} className='AvionicsHome_image mb-0 pb-0'>
                             <Row className='d-flex justify-content-center m-0 p-0'>
-                                <Col md={10} xs={12} className=''
+                                <Col md={10} xs={12}
                                      style={{zIndex: '3000'}}>
                                     <AvionicsHome/>
                                 </Col>
                             </Row>
                         </Col>
                     </Row>
-
-
-                    {/*<Row className='AvionicsProducts_row d-flex align-content-center justify-content-center mt-3'>*/}
-                    {/*    <Fade duration={1500} left>*/}
-                    {/*        <Col>*/}
-                    {/*            <ProductCarousel/>*/}
-
-                    {/*        </Col>*/}
-                    {/*        <Col className='AvionicsProducts_img-left '>*/}
-                    {/*            <p className='Avionics_flag red global_accentFont mt-n1 mb-0 mx-0'>NEW!</p>*/}
-                    {/*            <Fade duration={1500} right>*/}
-                    {/*                <LinkContainer to={`/products`}>*/}
-                    {/*                    <div*/}
-                    {/*                        className='AvionicsProducts_jumbo global_cultured d-flex justify-content-center align-items-center'>*/}
-                    {/*                        <Button*/}
-                    {/*                            className='AvionicsProducts_searchBtn global_blood-red-bg py-2 px-5'>Browse*/}
-                    {/*                            Products</Button>*/}
-                    {/*                    </div>*/}
-                    {/*                </LinkContainer>*/}
-                    {/*            </Fade>*/}
-                    {/*        </Col>*/}
-                    {/*    </Fade>*/}
-                    {/*</Row>*/}
-
 
                     <Row className='mt-5 d-flex justify-content-center mb-0 pb-0'>
                         <Col xs={12} className='global_black mb-0 pb-0'>

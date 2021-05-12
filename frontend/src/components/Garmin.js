@@ -13,7 +13,7 @@ const Garmin = () => {
 
     return (
             <Row className='d-flex justify-content-around m-0 p-0 Garmin_card-row'>
-                <Col xs={5} className='bg-transparent d-flex justify-content-center'>
+                <Col xs={3} className='bg-transparent d-flex justify-content-center'>
                     <Fade duration={1500} right>
                         <Card style={{width: '18rem'}} className='border-0 bg-transparent'>
                             <Card.Body>

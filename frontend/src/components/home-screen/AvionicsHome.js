@@ -14,8 +14,8 @@ const AvionicsHome = () => {
 
     return (
         <>
-            <Row className='AvionicsHome_row d-flex justify-content-center align-content-center'>
-                <Col xs={12} className='AvionicsHome_bg pb-5'>
+            <Row className='d-flex justify-content-center align-content-center'>
+                <Col xs={12} className='AvionicsHome_bg '>
                     <Row className='d-flex justify-content-center'>
                         <Fade top>
                             <Col xs={12}
@@ -43,7 +43,7 @@ const AvionicsHome = () => {
 
                         <Row className='m-0 p-0'>
 
-                            <Col xs={5} className='p-0 mx-0 m-0'>
+                            <Col xs={4} className='p-0 mx-0 m-0'>
                                 <Row className='mx-0 mb-0 p-0'>
 
 
@@ -107,13 +107,20 @@ const AvionicsHome = () => {
                                         <Col xs={12}
                                              className='global_cursor Mechanics_col mb-5 '>
                                             <Zoom>
-                                                <Row className='AvionicsHome_product-title p-0 m-0'>
+                                                <Row className='AvionicsHome_titles p-0 m-0'>
                                                     <Col
                                                         className='p-0 m-0 Mechanics_col d-flex align-items-center justify-content-start '>
                                                         <p className='Avionics_text-titles '>Authorized avionics
                                                             dealer</p>
                                                     </Col>
                                                 </Row>
+                                                {/*<Row className='AvionicsHome_product-title p-0 m-0'>*/}
+                                                {/*    <Col*/}
+                                                {/*        className='p-0 m-0 Mechanics_col d-flex align-items-center justify-content-start '>*/}
+                                                {/*        <p className='Avionics_text-titles '>Authorized avionics*/}
+                                                {/*            dealer</p>*/}
+                                                {/*    </Col>*/}
+                                                {/*</Row>*/}
                                             </Zoom>
                                         </Col>
                                     </LinkContainer>
@@ -121,7 +128,7 @@ const AvionicsHome = () => {
                             </Col>
 
 
-                            <Col xs={7} className='mt-3'>
+                            <Col xs={8} className='mt-3 pr-3'>
                                 {/*<Col md={10} sm={12} className='mb-0 pb-0'>*/}
                                 <Row className='m-0 p-0'>
                                     <Col md={4} sm={12} className=' p-0'>
