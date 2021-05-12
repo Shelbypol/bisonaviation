@@ -15,9 +15,9 @@ const TestimonialCarousel = () => {
                         showArrows={true}
                         infiniteLoop={true}
                         showThumbs={false}
-                        showStatus={false}
+                        showStatus={true}
                         autoPlay={true}
-                        interval={3000}
+                        interval={4500}
                     >
                             <div className="myCarousel global_blood-red-bg">
                                 <h3 className=''>Richard F.</h3>
