@@ -29,9 +29,6 @@ const Garmin = () => {
 
             </Row>
 
-
-
-
     )
 };
 export default Garmin

@@ -41,9 +41,10 @@ const HomeScreen2 = () => {
 
                     <Services/>
 
-                    <Row className='mt-5 d-flex justify-content-center mb-0 pb-0'>
-                        <Col xs={12} className='AvionicsHome_image mb-0 pb-0'>
-                            <Row className='d-flex justify-content-center m-0 p-0'>
+                    <Row className='AvionicsHome_image d-flex justify-content-center'>
+                        <Col xs={12} className=''>
+                        {/*<Col xs={12} className='AvionicsHome_image '>*/}
+                            <Row className='d-flex justify-content-center mb-0 p-0'>
                                 <Col md={10} xs={12}
                                      style={{zIndex: '3000'}}>
                                     <AvionicsHome/>

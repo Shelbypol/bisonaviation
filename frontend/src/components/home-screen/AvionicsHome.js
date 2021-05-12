@@ -15,7 +15,7 @@ const AvionicsHome = () => {
     return (
         <>
             <Row className='d-flex justify-content-center align-content-center'>
-                <Col xs={12} className='AvionicsHome_bg '>
+                <Col xs={12} className='AvionicsHome_bg'>
                     <Row className='d-flex justify-content-center'>
                         <Fade top>
                             <Col xs={12}

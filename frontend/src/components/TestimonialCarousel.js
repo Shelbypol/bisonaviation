@@ -8,7 +8,7 @@ import Zoom from 'react-reveal/Zoom';
 const TestimonialCarousel = () => {
     return (
         <>
-            <Jumbotron className='m-0 p-0 global_blood-red-bg TestimonialCarousel_jumbotron '
+            <Jumbotron className='m-0 p-0 global_blood-red-bg global_white TestimonialCarousel_jumbotron '
                        fluid>
                 <Zoom>
                     <Carousel
@@ -19,23 +19,16 @@ const TestimonialCarousel = () => {
                         autoPlay={true}
                         interval={3000}
                     >
-                        {/*<div className=''>*/}
-                            {/*<img src="/images/shirley.png" />*/}
                             <div className="myCarousel global_blood-red-bg">
-                                <h3 className='global_cultured'>Richard F.</h3>
+                                <h3 className=''>Richard F.</h3>
                                 <h1>
-                                    {/*<i className='fas fa-star global_blood-red'> </i>*/}
-                                    {/*<i className='fas fa-star global_blood-red'> </i>*/}
-                                    {/*<i className='fas fa-star global_blood-red'> </i>*/}
-                                    {/*<i className='fas fa-star  global_blood-red'> </i>*/}
-                                    {/*<i className='fas fa-star global_blood-red'> </i>*/}
                                     <i className='fas fa-star global_cultured'> </i>
                                     <i className='fas fa-star global_cultured'> </i>
                                     <i className='fas fa-star global_cultured'> </i>
                                     <i className='fas fa-star  global_cultured'> </i>
                                     <i className='fas fa-star global_cultured'> </i>
                                 </h1>
-                                <p className='global_cultured'>
+                                <p className=''>
                                     Had the chance to work with John from Bison on his V-tail recently and the guy's
                                     just a
                                     class act. It's rare to meet someone with equal parts humility, technical acumen,
@@ -43,18 +36,11 @@ const TestimonialCarousel = () => {
                                     seat time. Bison will be a go-to for me on trips south.
                                 </p>
                             </div>
-                        {/*</div>*/}
 
-                        {/*<div>*/}
-                            {/*<img src="/images/daniel.png" />*/}
                             <div className="myCarousel my-auto global_blood-red-bg">
-                                <h3 className='global_cultured'>Daniel K.</h3>
+                                <h3 className=''>Daniel K.</h3>
                                 <h1>
-                                    {/*<i className='fas fa-star global_blood-red'> </i>*/}
-                                    {/*<i className='fas fa-star global_blood-red'> </i>*/}
-                                    {/*<i className='fas fa-star global_blood-red'> </i>*/}
-                                    {/*<i className='fas fa-star  global_blood-red'> </i>*/}
-                                    {/*<i className='fas fa-star-half-alt global_blood-red'> </i>*/}
+
                                     <i className='fas fa-star global_cultured'> </i>
                                     <i className='fas fa-star global_cultured'> </i>
                                     <i className='fas fa-star global_cultured'> </i>
@@ -62,36 +48,30 @@ const TestimonialCarousel = () => {
                                     <i className='fas fa-star-half-alt global_cultured'> </i>
 
                                 </h1>
-                                <p className='global_cultured'>
+                                <p className=''>
                                     First class maintenance shop. AOG response was fantastic and they quickly had me
                                     back in
                                     the sky.
                                 </p>
                             </div>
-                        {/*</div>*/}
 
-                        {/*<div>*/}
-                            {/*<img src="/images/theo.png" />*/}
+
+
                             <div className="myCarousel my-auto global_blood-red-bg">
-                                <h3 className='global_cultured'>Allen H.</h3>
+                                <h3 className=''>Allen H.</h3>
                                 <h1>
-                                    {/*<i className='fas fa-star global_blood-red'> </i>*/}
-                                    {/*<i className='fas fa-star global_blood-red'> </i>*/}
-                                    {/*<i className='fas fa-star global_blood-red'> </i>*/}
-                                    {/*<i className='fas fa-star  global_blood-red'> </i>*/}
-                                    {/*<i className='fas fa-star-half-alt global_blood-red'> </i>*/}
                                     <i className='fas fa-star global_cultured'> </i>
                                     <i className='fas fa-star global_cultured'> </i>
                                     <i className='fas fa-star global_cultured'> </i>
                                     <i className='fas fa-star  global_cultured'> </i>
                                     <i className='fas fa-star-half-alt global_cultured'> </i>
                                 </h1>
-                                <p className='global_cultured'>
+                                <p className=''>
                                     Avionics team worked with me for a full panel installation and even added custom
                                     cup-holders for my wife!
                                 </p>
                             </div>
-                        {/*</div>*/}
+
                     </Carousel>
                 </Zoom>
             </Jumbotron>
