@@ -41,13 +41,24 @@ const HomeScreen2 = () => {
 
                     <Services/>
 
-                    <Row className='AvionicsHome_image d-flex justify-content-center'>
+                    <Row className='AvionicsHome_image d-flex justify-content-center m-0 p-0'>
                         <Col xs={12} className=''>
-                        {/*<Col xs={12} className='AvionicsHome_image '>*/}
+                            {/*<Col xs={12} className='AvionicsHome_image '>*/}
                             <Row className='d-flex justify-content-center mb-0 p-0'>
                                 <Col md={10} xs={12}
                                      style={{zIndex: '3000'}}>
                                     <AvionicsHome/>
+                                </Col>
+                            </Row>
+                        </Col>
+                    </Row>
+
+                    <Row className='my-auto py-5 d-flex justify-content-center align-content-center global_blood-red-bg'>
+                        <Col xs={12} className=''>
+                            <Row className='d-flex justify-content-center align-content-center my-auto p-0'>
+                                <Col md={10} xs={12}
+                                     style={{zIndex: '3000'}}>
+                                    <Garmin/>
                                 </Col>
                             </Row>
                         </Col>

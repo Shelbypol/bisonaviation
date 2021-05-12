@@ -107,7 +107,7 @@ const AvionicsHome = () => {
                                         <Col xs={12}
                                              className='global_cursor Mechanics_col mb-5 '>
                                             <Zoom>
-                                                <Row className='AvionicsHome_titles p-0 m-0'>
+                                                <Row className='AvionicsHome_product-title p-0 m-0'>
                                                     <Col
                                                         className='p-0 m-0 Mechanics_col d-flex align-items-center justify-content-start '>
                                                         <p className='Avionics_text-titles '>Authorized avionics
@@ -157,7 +157,7 @@ const AvionicsHome = () => {
                         </Row>
                     </Row>
 
-                    <Garmin/>
+                    {/*<Garmin/>*/}
 
                 </Col>
 

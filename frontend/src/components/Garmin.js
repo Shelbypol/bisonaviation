@@ -12,20 +12,20 @@ const Garmin = () => {
 
 
     return (
-            <Row className='d-flex justify-content-around m-0 p-0 Garmin_card-row'>
-                <Col xs={3} className='bg-transparent d-flex justify-content-center'>
+            <Row className='d-flex justify-content-around Garmin_card-row m-0 p-0'>
+                <Col xs={6} className='d-flex align-content-center'>
+                    <AvionicsProducts/>
+                </Col>
+                <Col xs={6} className='bg-white d-flex justify-content-center'>
                     <Fade duration={1500} right>
-                        <Card style={{width: '18rem'}} className='border-0 bg-transparent'>
-                            <Card.Body>
+                        {/*<Card style={{width: '18rem'}} className='border-0 bg-white'>*/}
+                        {/*    <Card.Body>*/}
                                 <ProductCarousel/>
-                            </Card.Body>
-                        </Card>
+                            {/*</Card.Body>*/}
+                        {/*</Card>*/}
                     </Fade>
                 </Col>
 
-                <Col xs={7} className='d-flex align-content-center'>
-                    <AvionicsProducts/>
-                </Col>
 
             </Row>
 
