@@ -20,6 +20,14 @@
     color: rgba(255,255,255,.8);
 }
 
+.AvionicsHome_learn-btn{
+    border-left: 10px solid #2576e5;
+}
+
+.AvionicsHome_learn-btn:hover{
+    background-color: #2576e5;
+}
+
 .AvionicsHome_title-col{
     /*margin-top: -30vh;*/
     height: 12vh;
@@ -30,11 +38,11 @@
 }
 
 .AvionicsHome_product-title:hover{
-    background-color: rgba(255,255,255,.5);
+    background-color: rgba(255,255,255,.1);
 }
 
 .AvionicsHome_titles:hover{
-    background-color: rgba(255,255,255,.5);
+    background-color: rgba(255,255,255,.1);
 }
 
 .Avionics_text-titles{

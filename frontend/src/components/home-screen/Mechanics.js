@@ -6,6 +6,7 @@ import Zoom from 'react-reveal/Zoom';
 import {LinkContainer} from "react-router-bootstrap";
 import tayseer from "../../images/bg-graphics/screen-avionics/avionics/tayseer-avionics.png";
 import test from "../../images/bg-graphics/screen-avionics/avionics/avionics-test.jpg";
+import Fade from "react-reveal/Fade";
 
 
 const Mechanics = () => {
@@ -16,18 +17,25 @@ const Mechanics = () => {
             <Row className='Mechanics_jumbo AvionicsHome_bg global_cultured px-4 m-0'>
                 <Col xs={12} className='px-2 m-0 py-0'>
 
+                    <Row className='d-flex justify-content-start align-content-center ml-3 mb-5'>
+                        <Fade top>
+                            <Col xs={12}
+                                 className=' AvionicsHome_title-col'>
+                                <h1 className='AvionicsHome_title text-white'>Maintenance</h1>
+                            </Col>
+                        </Fade>
+                    </Row>
+                    {/*<Col xs={12}*/}
+                    {/*     className=' AvionicsHome_title-col mb-5 py-5 d-flex justify-content-center align-content-center'>*/}
+                    {/*    <h1 className='AvionicsHome_title text-white'>Maintenance</h1>*/}
+                    {/*</Col>*/}
 
-                    <Col xs={12}
-                         className=' AvionicsHome_title-col mb-5 py-5 d-flex justify-content-center align-content-center'>
-                        <h1 className='AvionicsHome_title text-white'>Maintenance</h1>
-                    </Col>
-
-                    <Row className='py-5'>
+                    <Row className='pb-5'>
 
                         <Col xs={7} className=''>
                             <Zoom>
 
-                                <Col xs={12} className='mb-2 mr-2 pr-4'>
+                                <Col xs={12} className='mb-2 mr-2 pr-4' style={{backgroundColor: 'rgba(255,255,255, .1)'}}>
                                     <h1 className='global_cultured'>You depend on your aircraft to carry you and your
                                         passengers safely.</h1>
 
@@ -64,7 +72,7 @@ const Mechanics = () => {
                         <Col xs={5} className=' p-0 m-0'>
                             <LinkContainer to={`/mechanics`}>
                                 <Col xs={12}
-                                     className='Mechanics_title global_cursor border-left Mechanics_col d-flex align-items-center '>
+                                     className=' global_cursor border-left Mechanics_col d-flex align-items-center '>
                                     <Zoom>
                                         <p className='Avionics_text-titles'>Annual Inspections</p>
                                     </Zoom>
@@ -82,7 +90,7 @@ const Mechanics = () => {
 
                             <LinkContainer to={`/mechanics`}>
                                 <Col xs={12}
-                                     className='Mechanics_title global_cursor border-left Mechanics_col d-flex align-items-center '>
+                                     className=' global_cursor border-left Mechanics_col d-flex align-items-center '>
                                     <Zoom>
                                         <p className='Avionics_text-titles'> Pre-Buy Inspections</p>
                                     </Zoom>

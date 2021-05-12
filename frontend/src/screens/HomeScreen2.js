@@ -53,18 +53,20 @@ const HomeScreen2 = () => {
                         </Col>
                     </Row>
 
-                    <Row style={{marginTop: '10vh'}} className=' py-5 d-flex justify-content-center align-content-center global_black'>
+                    <Row style={{marginTop: '10vh'}}
+                         className='px-4 py-5 d-flex justify-content-center align-content-center global_black'>
                         <Col xs={10} className=''>
-                            <Row className='d-flex justify-content-center align-content-center m-0 p-5 global_blood-red-bg'>
+                            <Row
+                                className='d-flex justify-content-center align-content-center m-0 py-3 global_blood-red-bg'>
                                 <Col md={12} xs={12}
-                                     style={{zIndex: '3000'}} className='mx-auto'>
+                                     style={{zIndex: '3000'}} className='mx-auto p-5'>
                                     <Garmin/>
                                 </Col>
                             </Row>
                         </Col>
                     </Row>
 
-                    <Row className='my-5 py-5 d-flex justify-content-center'>
+                    <Row className='my-5 d-flex justify-content-center'>
                         <Col xs={12} className='global_black mb-0 pb-0'>
                             <Row className='d-flex justify-content-center m-0 p-0'>
                                 <Col md={10} xs={12} className=''
@@ -75,11 +77,22 @@ const HomeScreen2 = () => {
                         </Col>
                     </Row>
 
-                            <TestimonialCarousel/>
+
+                    <Row style={{marginTop: '10vh'}}
+                         className='px-4 pb-5 d-flex justify-content-center align-content-center global_black'>
+                        <Col xs={10} className=''>
+                            <Row
+                                className='d-flex justify-content-center align-content-center m-0 global_blood-red-bg'>
+                                <Col md={12} xs={12}
+                                     style={{zIndex: '3000'}} className='mx-auto'>
+                                    <TestimonialCarousel/>
+                                </Col>
+                            </Row>
+                        </Col>
+                    </Row>
 
 
-
-                    <Row className='mt-5 d-flex justify-content-center mb-0 pb-5'>
+                    <Row style={{marginTop: '15vh'}} className=' d-flex justify-content-center mb-0 p-0'>
                         <Col xs={12} className='Global_Flir_bg-img mb-0 pb-0'>
                             <Row className='d-flex justify-content-center m-0 p-0'>
                                 <Col md={10} xs={12} className=''
