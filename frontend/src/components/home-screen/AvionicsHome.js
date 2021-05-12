@@ -43,7 +43,7 @@ const AvionicsHome = () => {
 
                         <Row className='m-0 p-0'>
 
-                            <Col xs={4} className='p-0 mx-0 m-0'>
+                            <Col xs={4} className='p-0 mx-0 mt-3'>
                                 <Row className='mx-0 mb-0 p-0'>
 
 
@@ -51,7 +51,7 @@ const AvionicsHome = () => {
                                         <Col xs={12}
                                              className='global_cursor Mechanics_col  '>
                                             <Zoom>
-                                                <Row className='AvionicsHome_titles p-0 m-0'>
+                                                <Row className='Mechanics_title p-0 m-0'>
                                                     <Col
                                                         className='p-0 m-0 Mechanics_col d-flex align-items-center justify-content-start'>
                                                         <p className='Avionics_text-titles'>Annual Inspections</p>
@@ -107,7 +107,7 @@ const AvionicsHome = () => {
                                         <Col xs={12}
                                              className='global_cursor Mechanics_col mb-5 '>
                                             <Zoom>
-                                                <Row className='AvionicsHome_product-title p-0 m-0'>
+                                                <Row className='AvionicsHome_titles p-0 m-0'>
                                                     <Col
                                                         className='p-0 m-0 Mechanics_col d-flex align-items-center justify-content-start '>
                                                         <p className='Avionics_text-titles '>Authorized avionics
@@ -156,8 +156,6 @@ const AvionicsHome = () => {
                             </Col>
                         </Row>
                     </Row>
-
-                    {/*<Garmin/>*/}
 
                 </Col>
 
