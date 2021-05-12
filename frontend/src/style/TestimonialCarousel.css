@@ -44,6 +44,7 @@
     font-weight: 600;
     text-transform: uppercase;
     font-size: 25px;
+    color: white;
 }
 
 .myCarousel p {
@@ -51,6 +52,7 @@
     line-height: 25px !important;
     font-size: 20px;
     font-family: sans-serif;
+    color: white;
     /*max-height: 100px;*/
 }
 
