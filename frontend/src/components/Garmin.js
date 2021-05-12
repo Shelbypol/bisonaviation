@@ -23,7 +23,7 @@ const Garmin = () => {
                     </Fade>
                 </Col>
 
-                <Col xs={7}>
+                <Col xs={7} className='d-flex align-content-center'>
                     <AvionicsProducts/>
                 </Col>
 
