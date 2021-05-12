@@ -13,14 +13,12 @@ const Mechanics = () => {
     return (
         <>
 
-            {/*<Jumbotron className='Mechanics_jumbo AvionicsHome_bg global_cultured p-0 m-0'*/}
-            {/*           fluid>*/}
             <Row className='Mechanics_jumbo AvionicsHome_bg global_cultured px-4 m-0'>
                 <Col xs={12} className='px-2 m-0 py-0'>
 
 
                     <Col xs={12}
-                         className=' AvionicsHome_title-col pb-5 d-flex justify-content-center align-content-center'>
+                         className=' AvionicsHome_title-col mb-5 py-5 d-flex justify-content-center align-content-center'>
                         <h1 className='AvionicsHome_title text-white'>Maintenance</h1>
                     </Col>
 

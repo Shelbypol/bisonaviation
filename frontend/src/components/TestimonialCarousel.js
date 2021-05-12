@@ -8,14 +8,14 @@ import Zoom from 'react-reveal/Zoom';
 const TestimonialCarousel = () => {
     return (
         <>
-            <Jumbotron className='m-0 p-0 global_blood-red-bg global_white TestimonialCarousel_jumbotron '
+            <Jumbotron className='m-0 p-0 global_blood-red-bg global_white'
                        fluid>
                 <Zoom>
                     <Carousel
-                        showArrows={true}
+                        showArrows={false}
                         infiniteLoop={true}
                         showThumbs={false}
-                        showStatus={true}
+                        showStatus={false}
                         autoPlay={true}
                         interval={4500}
                     >

@@ -16,9 +16,6 @@
 /*    border-radius: 50%;*/
 /*}*/
 
-.TestimonialCarousel_jumbotron{
-    /*height: 75vh;*/
-}
 
 .myCarousel {
     /*margin-top: -3%;*/
@@ -27,9 +24,6 @@
     margin-left: auto;
     margin-right: auto;
     padding: 6% 5% 8% 5%;
-    /*background-color: rgba(255,255,255,.3);*/
-
-
 }
 
 .carousel .control-dots {

@@ -39,9 +39,9 @@ const AvionicsHome = () => {
                             </Col>
                         </Fade>
 
-                        <Row className='m-0 p-0'>
+                        <Row className='p-0'>
 
-                            <Col xs={4} className='p-0 mx-0 mt-3'>
+                            <Col xs={4} className='p-0 mx-0 mt-3 d-flex align-content-center'>
                                 <Row className='mx-0 mb-0 p-0'>
 
 
@@ -49,7 +49,7 @@ const AvionicsHome = () => {
                                         <Col xs={12}
                                              className='global_cursor Mechanics_col  '>
                                             <Zoom>
-                                                <Row className='Mechanics_title p-0 m-0'>
+                                                <Row className='AvionicsHome_titles p-0 m-0'>
                                                     <Col
                                                         className='p-0 m-0 Mechanics_col d-flex align-items-center justify-content-start'>
                                                         <p className='Avionics_text-titles'>Annual Inspections</p>
@@ -65,7 +65,7 @@ const AvionicsHome = () => {
                                             <Zoom>
                                                 <Row className='AvionicsHome_titles p-0 m-0'>
                                                     <Col
-                                                        className='p-0 m-0 Mechanics_col d-flex align-items-center justify-content-start'>
+                                                        className=' p-0 m-0 Mechanics_col d-flex align-items-center justify-content-start'>
                                                         <p className='Avionics_text-titles'>Prop Balance</p>
                                                     </Col>
                                                 </Row>
@@ -101,27 +101,28 @@ const AvionicsHome = () => {
                                         </Col>
                                     </LinkContainer>
 
-                                    <LinkContainer to={`/products`}>
-                                        <Col xs={12}
-                                             className='global_cursor Mechanics_col mb-5 '>
-                                            <Zoom>
-                                                <Row className='AvionicsHome_titles p-0 m-0'>
-                                                    <Col
-                                                        className='p-0 m-0 Mechanics_col d-flex align-items-center justify-content-start '>
-                                                        <p className='Avionics_text-titles '>Authorized avionics
-                                                            dealer</p>
-                                                    </Col>
-                                                </Row>
-                                                {/*<Row className='AvionicsHome_product-title p-0 m-0'>*/}
-                                                {/*    <Col*/}
-                                                {/*        className='p-0 m-0 Mechanics_col d-flex align-items-center justify-content-start '>*/}
-                                                {/*        <p className='Avionics_text-titles '>Authorized avionics*/}
-                                                {/*            dealer</p>*/}
-                                                {/*    </Col>*/}
-                                                {/*</Row>*/}
-                                            </Zoom>
-                                        </Col>
-                                    </LinkContainer>
+
+                                    {/*<LinkContainer to={`/products`}>*/}
+                                    {/*    <Col xs={12}*/}
+                                    {/*         className='global_cursor Mechanics_col mb-5 '>*/}
+                                    {/*        <Zoom>*/}
+                                    {/*            <Row className='AvionicsHome_titles p-0 m-0'>*/}
+                                    {/*                <Col*/}
+                                    {/*                    className='p-0 m-0 Mechanics_col d-flex align-items-center justify-content-start '>*/}
+                                    {/*                    <p className='Avionics_text-titles '>Authorized avionics*/}
+                                    {/*                        dealer</p>*/}
+                                    {/*                </Col>*/}
+                                    {/*            </Row>*/}
+                                    {/*            /!*<Row className='AvionicsHome_product-title p-0 m-0'>*!/*/}
+                                    {/*            /!*    <Col*!/*/}
+                                    {/*            /!*        className='p-0 m-0 Mechanics_col d-flex align-items-center justify-content-start '>*!/*/}
+                                    {/*            /!*        <p className='Avionics_text-titles '>Authorized avionics*!/*/}
+                                    {/*            /!*            dealer</p>*!/*/}
+                                    {/*            /!*    </Col>*!/*/}
+                                    {/*            /!*</Row>*!/*/}
+                                    {/*        </Zoom>*/}
+                                    {/*    </Col>*/}
+                                    {/*</LinkContainer>*/}
                                 </Row>
                             </Col>
 

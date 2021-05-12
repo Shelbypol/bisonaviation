@@ -12,7 +12,7 @@ const Flir = () => {
     return (
         <>
 
-            <Row className='Mechanics_jumbo AvionicsHome_bg global_cultured px-4 pb-5 mx-0 pb-0'>
+            <Row className='Mechanics_jumbo AvionicsHome_bg global_cultured px-4 pb-5 m-0'>
                 <Col xs={12} className='px-2'>
 
                     <Col xs={12}
