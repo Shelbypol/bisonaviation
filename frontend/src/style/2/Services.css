@@ -18,10 +18,6 @@
     background-color: #000;
     height: max-content;
     max-height: border-box;
-}
-
-.Services_col-avionics:hover{
-    background-color: black;
     border-bottom: 5px solid #660708;
 }
 

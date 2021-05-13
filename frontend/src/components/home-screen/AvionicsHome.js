@@ -3,6 +3,8 @@ import {Button, Col, Row, Image} from "react-bootstrap";
 import '../../style/2/AvionicsHome.css';
 import tests from '../../images/bg-graphics/screen-avionics/avionics-slider/avionics4.png'
 import roel from '../../images/bg-graphics/screen-avionics/avionics-slider/avionics2.png'
+import cnc from '../../images/bg-graphics/home-screen/home-slider/cnc-machine copy.png'
+import panel from '../../images/bg-graphics/screen-avionics/avionics-slider/avionics1.png'
 import tayseer from '../../images/bg-graphics/screen-avionics/avionics/tayseer-avionics.png'
 import {LinkContainer} from "react-router-bootstrap";
 import Fade from 'react-reveal/Fade';
@@ -22,7 +24,7 @@ const AvionicsHome = () => {
                         </Col>
                     </Fade>
                 </Row>
-                <Row className='d-flex justify-content-start align-content-center mx-3 mb-3' style={{backgroundColor: 'rgba(255,255,255, .1)'}}>
+                <Row className='d-flex justify-content-start align-content-center mx-1 mb-3' style={{backgroundColor: 'rgba(255,255,255, .1)'}}>
                     <Fade bottom>
                         <Col md={12} xs={10} className='py-3 mx-auto'>
                             <p className=' AvionicsHome_text'>
@@ -106,26 +108,26 @@ const AvionicsHome = () => {
                 </Col>
 
 
-                <Col xs={8} className='mt-3 pr-5'>
+                <Col xs={8} className='mt-3 global_blood-red-bg'>
                     {/*<Col md={10} sm={12} className='mb-0 pb-0'>*/}
-                    <Row className='m-0 p-0'>
+                    <Row className='m-0 p-0 global_black'>
                         <Col md={4} sm={12} className=' p-0'>
                             <Image className=' AvionicsHome_img pr-md-2' src={tayseer} fluid/>
                         </Col>
                         <Col md={8} sm={12} className='p-0'>
-                            <Image className=' AvionicsHome_img' src={tests} fluid/>
+                            <Image className=' AvionicsHome_img' src={cnc} fluid/>
                         </Col>
 
                     </Row>
-                    <Row className='m-0 p-0'>
+                    <Row className='m-0 p-0 global_black'>
 
                         <Col md={8} sm={12}
                              className='p-0 d-flex align-content-center justify-content-center align-content-center'>
                             {/*<ProductCarousel/>*/}
-                            <Image className=' AvionicsHome_img pt-md-2' src={roel} fluid/>
+                            <Image className=' AvionicsHome_img pt-md-2' src={panel} fluid/>
                         </Col>
                         <Col md={4} sm={12} className=' p-0'>
-                            <Image className='AvionicsHome_img pl-md-2 pt-md-2' src={tayseer} fluid/>
+                            <Image className='AvionicsHome_img pl-md-2 pt-md-2' src={tests} fluid/>
                         </Col>
 
                     </Row>

@@ -11,7 +11,11 @@ const Services = () => {
 
         <>
             <Row
-                className='Services_row text-white text-center p-0 m-0 d-flex justify-content-center align-content-center mb-sm-5 mb-sm-auto'>
+                className='Services_row text-white text-center p-0 m-0 d-flex justify-content-center align-content-center mb-5'>
+
+                <Col xs={12} className='mb-2'>
+                    <h3 className='text-white font-weight-lighter'>Services Offered</h3>
+                </Col>
 
                 <Col lg={3} xs={12} className='Services_col global_cursor d-flex align-items-start h-auto justify-content-center'>
                 {/*<Col lg={3} xs={12} className='Services_col global_cursor d-flex align-items-start h-auto'>*/}
