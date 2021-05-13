@@ -54,7 +54,7 @@ const Mechanics = () => {
                             <Col xs={12} className='py-1 global_cursor '>
                                 <LinkContainer to={`/maintenance`}>
                                     <Zoom>
-                                        <Button className='global_cultured global_blood-red-bg '>
+                                        <Button className='global_cultured global_blue-bg'>
                                             Learn More
                                         </Button>
                                     </Zoom>

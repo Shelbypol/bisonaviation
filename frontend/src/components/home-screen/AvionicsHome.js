@@ -16,18 +16,20 @@ const AvionicsHome = () => {
         <>
         <Row className='d-flex justify-content-center align-content-center'>
             <Col xs={12} className='AvionicsHome_bg'>
-                <Row className='d-flex justify-content-start align-content-center ml-3 mb-5'>
-                    <Fade top>
-                        <Col xs={12}
-                             className=' AvionicsHome_title-col'>
+                <Row className='border'>
+                {/*<Row className='d-flex justify-content-start align-content-center ml-3 mb-5'>*/}
+                {/*    <Fade top>*/}
+                        <Col md={4} className='AvionicsHome_title-col m-0 p-0 border d-flex justify-content-center align-content-center'>
                             <h1 className='AvionicsHome_title text-white'>Avionics</h1>
                         </Col>
-                    </Fade>
-                </Row>
-                <Row className='d-flex justify-content-start align-content-center mx-1 mb-3' style={{backgroundColor: 'rgba(255,255,255, .1)'}}>
-                    <Fade bottom>
-                        <Col md={12} xs={10} className='py-3 mx-auto'>
-                            <p className=' AvionicsHome_text'>
+                    {/*</Fade>*/}
+                {/*</Row>*/}
+                {/*<Row className='d-flex justify-content-center align-content-center mx-1 mb-3' >*/}
+                {/*<Row className='d-flex justify-content-start align-content-center mx-1 mb-3' style={{backgroundColor: 'rgba(255,255,255, .1)'}}>*/}
+                {/*    <Fade bottom>*/}
+                        <Col md={8} className='border p-3 d-flex justify-content-end m-0 p-0' style={{backgroundColor: 'rgba(255,255,255, .1)'}}>
+                        {/*<Col md={6} xs={10} className='py-3 d-flex justify-content-end' style={{backgroundColor: 'rgba(255,255,255, .1)'}}>*/}
+                            <p className='AvionicsHome_text'>
                                 Whether you need to add ADS-B OUT capabilities in order to meet the December
                                 31,
                                 2019 deadline, a routine pitot-static / transponder certification, or it's
@@ -35,10 +37,12 @@ const AvionicsHome = () => {
                                 for a completely new panel, Bison Aviation's Avionics Team is ready to bring
                                 your avionics systems into the 21st century!
                                 <br/>
-
+                                <Button className='global_cultured global_blue-bg'>
+                                    Learn More
+                                </Button>
                             </p>
                         </Col>
-                    </Fade>
+                    {/*</Fade>*/}
             </Row>
 
             <Row className='p-0 mx-1'>
@@ -89,24 +93,24 @@ const AvionicsHome = () => {
                             </Col>
                         </LinkContainer>
 
-                        <LinkContainer to={`/avionics`}>
-                            <Col xs={12}
-                                 className='global_cursor Mechanics_col'>
-                                <Zoom>
-                                    <Row className='AvionicsHome_learn-btn  p-0 m-0'>
-                                        <Col
-                                            className='p-0 m-0 Mechanics_col d-flex align-items-center justify-content-start'>
-                                            <p className='Avionics_text-titles'>LEARN MORE</p>
-                                        </Col>
-                                    </Row>
-                                </Zoom>
-                            </Col>
-                        </LinkContainer>
+                        {/*<LinkContainer to={`/avionics`}>*/}
+                        {/*    <Col xs={12}*/}
+                        {/*         className='global_cursor Mechanics_col'>*/}
+                        {/*        <Zoom>*/}
+                        {/*            <Row className='AvionicsHome_learn-btn  p-0 m-0'>*/}
+                        {/*                <Col*/}
+                        {/*                    className='p-0 m-0 Mechanics_col d-flex align-items-center justify-content-start'>*/}
+                        {/*                    <p className='Avionics_text-titles'>LEARN MORE</p>*/}
+                        {/*                </Col>*/}
+                        {/*            </Row>*/}
+                        {/*        </Zoom>*/}
+                        {/*    </Col>*/}
+                        {/*</LinkContainer>*/}
                     </Row>
                 </Col>
 
 
-                <Col xs={8} className='mt-3 global_blue-bg'>
+                <Col xs={8} className='mt-3 global_blood-red-bg'>
                     {/*<Col md={10} sm={12} className='mb-0 pb-0'>*/}
                     <Row className='m-0 p-0 global_black'>
                         <Col md={4} sm={12} className=' p-0'>
