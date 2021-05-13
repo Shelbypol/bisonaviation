@@ -102,13 +102,11 @@ const AvionicsHome = () => {
                                 </Zoom>
                             </Col>
                         </LinkContainer>
-
-
                     </Row>
                 </Col>
 
 
-                <Col xs={8} className='mt-3 global_blood-red-bg'>
+                <Col xs={8} className='mt-3 global_blue-bg'>
                     {/*<Col md={10} sm={12} className='mb-0 pb-0'>*/}
                     <Row className='m-0 p-0 global_black'>
                         <Col md={4} sm={12} className=' p-0'>

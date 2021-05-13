@@ -25,16 +25,12 @@ const Mechanics = () => {
                             </Col>
                         </Fade>
                     </Row>
-                    {/*<Col xs={12}*/}
-                    {/*     className=' AvionicsHome_title-col mb-5 py-5 d-flex justify-content-center align-content-center'>*/}
-                    {/*    <h1 className='AvionicsHome_title text-white'>Maintenance</h1>*/}
-                    {/*</Col>*/}
 
-                    <Row className='pb-5'>
+
+                    <Row className='mb-5'>
 
                         <Col xs={7} className=''>
                             <Zoom>
-
                                 <Col xs={12} className='mb-2 mr-2 pr-4' style={{backgroundColor: 'rgba(255,255,255, .1)'}}>
                                     <h1 className='global_cultured'>You depend on your aircraft to carry you and your
                                         passengers safely.</h1>
@@ -69,10 +65,10 @@ const Mechanics = () => {
 
 
                         {/*</Row>*/}
-                        <Col xs={5} className=' p-0 m-0'>
+                        <Col xs={5} className=' p-0 m-0 global_blood-red-bg border-left'>
                             <LinkContainer to={`/mechanics`}>
                                 <Col xs={12}
-                                     className='AvionicsHome_titles global_cursor border-left Mechanics_col d-flex align-items-center '>
+                                     className='AvionicsHome_titles global_cursor Mechanics_col d-flex align-items-center '>
                                     <Zoom>
                                         <p className='Avionics_text-titles'>Annual Inspections</p>
                                     </Zoom>
@@ -81,7 +77,7 @@ const Mechanics = () => {
 
                             <LinkContainer to={`/mechanics`}>
                                 <Col xs={12}
-                                     className='AvionicsHome_titles global_cursor border-left Mechanics_col d-flex align-items-center '>
+                                     className='AvionicsHome_titles global_cursor Mechanics_col d-flex align-items-center '>
                                     <Zoom>
                                         <p className='Avionics_text-titles'>Propeller Balance</p>
                                     </Zoom>
@@ -90,7 +86,7 @@ const Mechanics = () => {
 
                             <LinkContainer to={`/mechanics`}>
                                 <Col xs={12}
-                                     className='AvionicsHome_titles global_cursor border-left Mechanics_col d-flex align-items-center '>
+                                     className='AvionicsHome_titles global_cursor Mechanics_col d-flex align-items-center '>
                                     <Zoom>
                                         <p className='Avionics_text-titles'> Pre-Buy Inspections</p>
                                     </Zoom>

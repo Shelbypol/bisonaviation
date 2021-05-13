@@ -6,7 +6,6 @@
 
 .Mechanics_learn-more-btn:hover{
     color: #161A1D;
-    /*text-decoration: underline;*/
 }
 
 .Mechanics_margin-pos-top{
@@ -17,24 +16,13 @@
     margin-top: -5vw;
 }
 
-.Mechanics-top-row{
-    /*width: 1500px;*/
-    /*z-index: 201;*/
-}
-
-.Mechanics_jumbo{
-    /*height: 600px;*/
-}
-
 .Mechanics_title{
     height: 100px;
     text-shadow: 2px 2px 4px #111111;
-    /*box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.6), 0 12px 20px 0 rgba(0, 0, 0, 0.19);*/
 }
 
 .Mechanics_row{
     height: 150px;
-    /*height: 200px;*/
     box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.6), 0 12px 20px 0 rgba(0, 0, 0, 0.19);
     font-size: 25px;
     color: #fff;
@@ -51,15 +39,14 @@
     margin: auto;
 }
 
-.Mechanics_btn{
-    background-color: #F5F3F4;
-    border: 1px solid #660708;
-    color: #660708;
-    font-size: 16px;
-    font-weight: lighter;
-    /*padding: 15px;*/
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+/*.Mechanics_btn{*/
+/*    background-color: #F5F3F4;*/
+/*    !*border: 1px solid #660708;*!*/
+/*    color: #660708;*/
+/*    font-size: 16px;*/
+/*    font-weight: lighter;*/
+/*    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+/*}*/
 
 .Mechanics_title{
     background-color: rgba(255,255,255,.1);
