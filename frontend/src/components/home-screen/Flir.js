@@ -42,7 +42,6 @@ const Flir = () => {
                                         Bison Aviation’s maintains the world’s largest inventory of legacy airborne
                                         EO/IR equipment.
                                     </h1>
-
                                 </Col>
                             </Zoom>
 
@@ -63,7 +62,7 @@ const Flir = () => {
                             <Col xs={12} className='py-1 global_cursor '>
                                 <LinkContainer to={`/maintenance`}>
                                     <Zoom>
-                                        <Button className='pl-4 global_cultured global_blood-red-bg '>
+                                        <Button className='pl-4 global_cultured global_black border-left' style={{backgroundColor: 'rgba(255,255,255,.1)'}}>
                                             Learn More
                                         </Button>
                                     </Zoom>
