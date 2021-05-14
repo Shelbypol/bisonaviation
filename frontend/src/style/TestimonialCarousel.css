@@ -119,4 +119,10 @@
         height: 75vh;
     }
 
+    .myCarousel {
+        margin-top: auto;
+        margin-bottom: auto;
+        height: 75vh;
+    }
+
 }

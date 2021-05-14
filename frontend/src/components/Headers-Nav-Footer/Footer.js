@@ -23,7 +23,7 @@ const Footer = () => {
                     </Row>
                 </Jumbotron>
 
-                <Jumbotron className=' global_rich-black-bg' fluid>
+                <Jumbotron className=' global_black' fluid>
                     <Row className='mt-4'>
                         <Col md={4} xs={12}>
                             <LinkContainer to='/avionics'

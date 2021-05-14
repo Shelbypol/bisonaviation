@@ -1,25 +1,26 @@
-import React, {Component} from "react";
+import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import {Carousel} from "react-responsive-carousel";
 import '../style/TestimonialCarousel.css'
-import {Jumbotron} from "reactstrap";
 import Zoom from 'react-reveal/Zoom';
+import {Col, Row} from "react-bootstrap";
 
 const TestimonialCarousel = () => {
     return (
         <>
-            <Jumbotron className='m-0 p-0 global_blood-red-bg global_white'
-                       fluid>
-                <Zoom>
-                    <Carousel
-                        showArrows={false}
-                        infiniteLoop={true}
-                        showThumbs={false}
-                        showStatus={false}
-                        autoPlay={true}
-                        interval={4500}
-                    >
-                            <div className="myCarousel global_blood-red-bg">
+            <Row className='global_cultured '>
+                <Col xs={12} className='py-0'>
+
+                    <Zoom>
+                        <Carousel
+                            showArrows={false}
+                            infiniteLoop={true}
+                            showThumbs={false}
+                            showStatus={false}
+                            autoPlay={true}
+                            interval={4500}
+                        >
+                            <div className="myCarousel global_blood-red-bg pb-5 my-auto">
                                 <h3 className=''>Richard F.</h3>
                                 <h1>
                                     <i className='fas fa-star global_cultured'> </i>
@@ -37,7 +38,7 @@ const TestimonialCarousel = () => {
                                 </p>
                             </div>
 
-                            <div className="myCarousel my-auto global_blood-red-bg">
+                            <div className="myCarousel my-auto global_blood-red-bg pb-5 my-auto">
                                 <h3 className=''>Daniel K.</h3>
                                 <h1>
 
@@ -56,8 +57,7 @@ const TestimonialCarousel = () => {
                             </div>
 
 
-
-                            <div className="myCarousel my-auto global_blood-red-bg">
+                            <div className="myCarousel my-auto global_blood-red-bg pb-5 my-auto">
                                 <h3 className=''>Allen H.</h3>
                                 <h1>
                                     <i className='fas fa-star global_cultured'> </i>
@@ -72,9 +72,10 @@ const TestimonialCarousel = () => {
                                 </p>
                             </div>
 
-                    </Carousel>
-                </Zoom>
-            </Jumbotron>
+                        </Carousel>
+                    </Zoom>
+                </Col>
+            </Row>
 
         </>
     );
