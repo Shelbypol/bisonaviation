@@ -72,7 +72,7 @@ const HomeScreen2 = () => {
                             <Row
                                 className='d-flex justify-content-center align-content-center m-0 py-3 bg-transparent'>
                                 <Col md={10} xs={12}
-                                     style={{zIndex: '3000'}} className='mx-auto p-5'>
+                                     style={{zIndex: '3000'}} className='mx-auto p-4'>
                                     <Garmin/>
                                 </Col>
                             </Row>
