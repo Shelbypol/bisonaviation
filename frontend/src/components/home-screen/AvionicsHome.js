@@ -15,20 +15,20 @@ const AvionicsHome = () => {
     return (
         <>
             <Row className='AvionicsHome_image d-flex justify-content-center align-content-center global_cultured'>
-                <Col xs={12} style={{backgroundColor: 'rgba(0,0,0,.7)'}}>
+                <Col xs={12} style={{backgroundColor: 'rgba(0,0,0,.8)'}} className='pb-3'>
 
-                    <Row className='d-flex justify-content-start align-content-center ml-1 mb-5'>
+                    <Row className='justify-content-start align-content-center ml-1 mb-5'>
                         <Fade top>
                             <Col xs={12}
-                                 className=' AvionicsHome_title-col'>
+                                 className=' AvionicsHome_title-col d-sm-flex justify-content-sm-center' >
                                 <h1 className='AvionicsHome_title text-white'>Avionics</h1>
                             </Col>
                         </Fade>
                     </Row>
 
-                    <Row className='mb-5 '>
+                    <Row className='mb-sm-0 pb-sm-3 mb-md-5'>
 
-                        <Col xs={7} className='' style={{backgroundColor: 'rgba(0,0,0, .5)'}}>
+                        <Col md={7} xs={12} className='' >
                             <Zoom>
                                 <Col xs={12} className='mb-2 pr-4'
                                 >
@@ -66,7 +66,7 @@ const AvionicsHome = () => {
                         </Col>
 
 
-                        <Col xs={4} className=' p-0 mx-auto global_blood-red-bg border-left'>
+                        <Col md={4}  className='p-0 mx-auto global_blood-red-bg border-left d-none d-lg-block'>
                             <LinkContainer to={`/mechanics`}>
                                 <Col xs={12}
                                      className='AvionicsHome_titles global_cursor Mechanics_col d-flex align-items-center '>
@@ -99,26 +99,26 @@ const AvionicsHome = () => {
 
                 </Col>
 
-                <Col xs={12} className='m-0 pt-3 px-0 global_black'>
+                <Col xs={12} className='m-0 pt-sm-0 pt-md-3 px-0 global_black'>
 
                     <Row className='m-0 p-0 global_black'>
-                        <Col xs={9}>
+                        <Col md={9} xs={12}>
                             <Row>
-                                <Col md={4} sm={12} className=' p-0'>
+                                <Col md={4} className=' p-0'>
                                     <Image className=' AvionicsHome_img pr-md-3' src={tayseer} fluid/>
                                 </Col>
-                                <Col md={8} sm={12} className='p-0'>
+                                <Col md={8} className='p-0'>
                                     <Image className=' AvionicsHome_img' src={cnc} fluid/>
                                 </Col>
-                                <Col sm={12}
+                                <Col xs={12}
                                      className='p-0 d-flex align-content-center justify-content-center align-content-center'>
                                     <Image className=' AvionicsHome_img pt-md-3' src={panel} fluid/>
                                 </Col>
                             </Row>
                         </Col>
-                        <Col xs={3}>
+                        <Col md={3} className='d-none d-md-block'>
                             <Row>
-                                <Col sm={12} className=' p-0'>
+                                <Col sm={12} className='pt-sm-5 p-md-0'>
                                     <Image className=' AvionicsHome_img pl-md-3' src={roel} fluid/>
                                 </Col>
                                     <Col sm={12} className=' p-0'>

@@ -13,7 +13,7 @@ const Flir = () => {
         <>
 
             <Row className='Global_Flir_bg-img global_cultured d-flex justify-content-center align-content-center'>
-                <Col xs={12} style={{backgroundColor: 'rgba(0,0,0,.7)'}}>
+                <Col xs={12} style={{backgroundColor: 'rgba(0,0,0,.8)'}}>
 
                     <Row className='d-flex justify-content-start align-content-center ml-3 mb-5'>
                         <Fade top>
@@ -26,7 +26,7 @@ const Flir = () => {
 
                     <Row className='mb-5'>
 
-                        <Col xs={7} className=''  style={{backgroundColor: 'rgba(0,0,0, .5)'}}>
+                        <Col xs={7} className='' >
                             <Zoom>
 
                                 <Col xs={12} className=' mr-2 px-4'>
