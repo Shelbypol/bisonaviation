@@ -14,10 +14,10 @@ const Mechanics = () => {
     return (
         <>
 
-            <Row className='Mechanics_jumbo AvionicsHome_bg global_cultured px-4 m-0'>
-                <Col xs={12} className='px-2 m-0 py-0'>
+            <Row className='Mechanics_jumbo AvionicsHome_bg global_cultured pr-3 m-0'>
+                <Col xs={12} className=' m-0 py-0'>
 
-                    <Row className='d-flex justify-content-start align-content-center ml-3 mb-5'>
+                    <Row className='d-flex justify-content-start align-content-center mb-5'>
                         <Fade top>
                             <Col xs={12}
                                  className=' AvionicsHome_title-col'>
@@ -99,43 +99,22 @@ const Mechanics = () => {
                     {/*</Jumbotron>*/}
 
 
-                    <Row className='d-flex justify-content-center mb-5'>
-                        <Col xs={4} className='d-flex justify-content-center'>
+                    <Row className='d-flex justify-content-between mb-5 p-0 ml-3'>
+                        <Col xs={4} className='d-flex justify-content-center pl-0 m-0'>
                             <Card className='Avionics_card border-0 bg-transparent rounded'>
                                 <Card.Img variant="top" src={test} className=' Avionics_card-img '/>
-                                {/*<Card.Body>*/}
-                                {/*    <Card.Text>*/}
-                                {/*        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dolor ea est*/}
-                                {/*        eveniet*/}
-                                {/*        exercitationem illum incidunt maiores odio quam veritatis.*/}
-                                {/*    </Card.Text>*/}
-                                {/*</Card.Body>*/}
                             </Card>
                         </Col>
 
-                        <Col xs={4} className='d-flex justify-content-center'>
+                        <Col xs={4} className='d-flex justify-content-center p-0 m-0'>
                             <Card className='Avionics_card border-0 bg-transparent rounded'>
                                 <Card.Img variant="top" src={test} className='Avionics_card-img '/>
-                                {/*<Card.Body>*/}
-                                {/*    <Card.Text>*/}
-                                {/*        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dolor ea est*/}
-                                {/*        eveniet*/}
-                                {/*        exercitationem illum incidunt maiores odio quam veritatis.*/}
-                                {/*    </Card.Text>*/}
-                                {/*</Card.Body>*/}
                             </Card>
                         </Col>
 
-                        <Col xs={4} className='d-flex justify-content-center'>
+                        <Col xs={4} className='d-flex justify-content-center pr-0 m-0'>
                             <Card className='Avionics_card border-0 bg-transparent rounded'>
                                 <Card.Img variant="top" src={tayseer} className='Avionics_card-img'/>
-                                {/*<Card.Body>*/}
-                                {/*    <Card.Text>*/}
-                                {/*        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dolor ea est*/}
-                                {/*        eveniet*/}
-                                {/*        exercitationem illum incidunt maiores odio quam veritatis.*/}
-                                {/*    </Card.Text>*/}
-                                {/*</Card.Body>*/}
                             </Card>
                         </Col>
                     </Row>
