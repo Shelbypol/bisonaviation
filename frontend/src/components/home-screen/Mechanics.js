@@ -27,7 +27,7 @@ const Mechanics = () => {
 
 
                     <Row className='mb-5'>
-                        <Col xs={7} className=''>
+                        <Col md={7} xs={12} className=''>
                             <Zoom>
                                 <Col xs={12} className='mb-2' style={{backgroundColor: 'rgba(255,255,255, .1)'}}>
                                     <h1 className='global_cultured'>You depend on your aircraft to carry you and your
@@ -61,7 +61,7 @@ const Mechanics = () => {
 
                         </Col>
 
-                        <Col xs={5} className=' global_blood-red-bg border-left'>
+                        <Col md={5} className='d-none d-md-block global_blood-red-bg border-left'>
                             <LinkContainer to={`/mechanics`}>
                                 <Col xs={12}
                                      className='AvionicsHome_titles global_cursor Mechanics_col d-flex align-items-center '>
@@ -93,19 +93,19 @@ const Mechanics = () => {
                     </Row>
 
                     <Row className='d-flex justify-content-between mb-5 p-0'>
-                        <Col xs={4} className='d-flex justify-content-center pl-0 m-0'>
+                        <Col md={4} xs={12} className='d-flex justify-content-center pl-0 m-0'>
                             <Card className='Avionics_card border-0 bg-transparent rounded'>
                                 <Card.Img variant="top" src={test} className=' Avionics_card-img h-100 w-100'/>
                             </Card>
                         </Col>
 
-                        <Col xs={4} className='d-flex justify-content-center p-0 m-0'>
+                        <Col md={4} xs={12} className='d-flex justify-content-center p-0 m-0'>
                             <Card className='Avionics_card border-0 bg-transparent rounded'>
                                 <Card.Img variant="top" src={test} className='Avionics_card-img h-100 w-100'/>
                             </Card>
                         </Col>
 
-                        <Col xs={4} className='d-flex justify-content-center pr-0 m-0'>
+                        <Col md={4} xs={12} className='d-flex justify-content-center pr-0 m-0'>
                             <Card className='Avionics_card border-0 bg-transparent rounded'>
                                 <Card.Img variant="top" src={tayseer} className='Avionics_card-img h-100 w-100'/>
                             </Card>
