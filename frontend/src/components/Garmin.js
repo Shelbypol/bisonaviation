@@ -11,10 +11,10 @@ const Garmin = () => {
 
     return (
         <Row className='d-flex justify-content-center Garmin_card-row bg-white'>
-            <Col xs={6} className='d-flex align-content-center  m-0 p-0'>
+            <Col md={6} xs={12} className='d-flex align-content-center m-0 p-0'>
                 <AvionicsProducts/>
             </Col>
-            <Col xs={6} className='bg-white d-flex justify-content-center m-0 p-0'>
+            <Col md={6} xs={12} className='bg-white d-flex justify-content-center m-0 p-0'>
                 <Fade duration={1500} right>
                     <ProductCarousel/>
                 </Fade>

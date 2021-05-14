@@ -35,3 +35,20 @@
     font-weight: lighter;
     border: none;
 }
+
+/*    ======   MOBILE RESPONSIVE    ======    */
+@media (max-width: 600px) {
+
+
+    .AvionicsProducts_img-left {
+        background-image: url("../../images/bg-graphics/screen-avionics/avionics/garmin-dealer-cropped.png");
+        height: 224px;
+        width: 650px;
+        max-height: 100%;
+        max-width: 100%;
+        /*margin-left: 50vw;*/
+        background-repeat: no-repeat;
+        background-position: center 50% ;
+    }
+
+}
