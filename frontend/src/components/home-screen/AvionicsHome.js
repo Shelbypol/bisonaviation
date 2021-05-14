@@ -17,7 +17,7 @@ const AvionicsHome = () => {
             <Row className='AvionicsHome_image d-flex justify-content-center align-content-center mx-1'>
                 <Col xs={12} style={{backgroundColor: 'rgba(0,0,0,.7)'}}>
 
-                    <Row className='d-flex justify-content-start align-content-center ml-3 mb-5'>
+                    <Row className='d-flex justify-content-start align-content-center ml-1 mb-5'>
                         <Fade top>
                             <Col xs={12}
                                  className=' AvionicsHome_title-col'>
@@ -26,11 +26,11 @@ const AvionicsHome = () => {
                         </Fade>
                     </Row>
 
-                    <Row className='mb-5 px-4'>
+                    <Row className='mb-5 '>
 
                         <Col xs={7} className='' style={{backgroundColor: 'rgba(0,0,0, .5)'}}>
                             <Zoom>
-                                <Col xs={12} className='mb-2 ml-3 pr-4'
+                                <Col xs={12} className='mb-2 pr-4'
                                 >
                                     <h1 className='global_cultured'>You depend on your aircraft to carry you and your
                                         passengers safely.</h1>
