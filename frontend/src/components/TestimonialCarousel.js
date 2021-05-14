@@ -11,8 +11,9 @@ const TestimonialCarousel = () => {
         <>
             {/*<Jumbotron className='m-0 p-0 global_blood-red-bg global_white'*/}
             {/*           fluid>*/}
-            <Row className='global_cultured ml-n4 mr-n5'>
-                <Col xs={12} className=' m-0 p-0'>
+            {/*<Row className='global_cultured mx-1'>*/}
+            <Row className='global_cultured mx-n5'>
+                <Col xs={12} className='my-0'>
 
                     {/*<Zoom>*/}
                         <Carousel

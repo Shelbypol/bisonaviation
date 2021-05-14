@@ -14,8 +14,11 @@ const Flir = () => {
     return (
         <>
 
-            <Row className='Mechanics_jumbo AvionicsHome_bg global_cultured px-4 pb-5 m-0'>
-                <Col xs={12} className='px-2'>
+            {/*<Row className='Mechanics_jumbo AvionicsHome_bg global_cultured px-4 pb-5 m-0'>*/}
+            {/*    <Col xs={12} className='px-2'>*/}
+
+            <Row className='Global_Flir_bg-img global_cultured d-flex justify-content-center align-content-center mx-3'>
+                <Col xs={12} style={{backgroundColor: 'rgba(0,0,0,.7)'}}>
 
                     <Row className='d-flex justify-content-start align-content-center ml-3 mb-5'>
                         <Fade top>
@@ -31,13 +34,12 @@ const Flir = () => {
                     {/*    <h1 className='AvionicsHome_title text-white'>EO/FLIR</h1>*/}
                     {/*</Col>*/}
 
-                    <Row className=''>
+                    <Row className='mb-5'>
 
-                        <Col xs={7} className=''>
+                        <Col xs={7} className=''  style={{backgroundColor: 'rgba(0,0,0, .5)'}}>
                             <Zoom>
 
-                                <Col xs={12} className='mb-2 mr-2 px-4'
-                                     style={{backgroundColor: 'rgba(255,255,255, .1)'}}>
+                                <Col xs={12} className=' mr-2 px-4'>
                                     <h1 className='global_cultured'>
                                         Bison Aviation’s maintains the world’s largest inventory of legacy airborne
                                         EO/IR equipment.
