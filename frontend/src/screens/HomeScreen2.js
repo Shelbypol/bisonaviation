@@ -3,21 +3,15 @@ import '../style/global-2.css'
 import HomeHero from '../components/HomeHero'
 import RepairAward from '../components/home-screen/RepairAward'
 import Services from "../components/home-screen/Services";
-import Avionics from "../components/home-screen/Avionics";
 import Mechanics from "../components/home-screen/Mechanics";
-import Team from "../components/home-screen/Team";
 import Flir from "../components/home-screen/Flir";
-import {Col, Container, Jumbotron, Row, Button} from 'react-bootstrap';
+import {Col, Row} from 'react-bootstrap';
 import Garmin from "../components/Garmin";
-import MultiCarouselPage from "../components/MulitCarouselPage";
-import AvionicsAd from "../components/avionics-Screen/AvionicsAd";
 import AvionicsHome from "../components/home-screen/AvionicsHome";
 import TestimonialCarousel from "../components/TestimonialCarousel";
-import Fade from 'react-reveal/Fade';
 import '../style/2/AvionicsProducts.css';
 import '../style/2/AvionicsProductsFlag.scss';
-import {LinkContainer} from "react-router-bootstrap";
-import ProductCarousel from "../components/ProductCarousel";
+
 
 
 const HomeScreen2 = () => {
@@ -39,76 +33,43 @@ const HomeScreen2 = () => {
             <Row className='d-flex justify-content-center' style={{backgroundColor: 'black'}}>
                 <Col xs={12} className=''>
 
-                    <Services/>
 
                     <Row className='my-5 d-flex justify-content-center'>
-                        <Col xs={12} className='global_black mb-5'>
-                            <Row className='d-flex justify-content-center m-0 p-0'>
-                                <Col md={10} xs={12} className=''
-                                     style={{zIndex: '3000'}}>
-                                    <AvionicsHome/>
-                                </Col>
-                            </Row>
+                        <Col md={9} xs={12} className='mb-5' style={{zIndex: '3000'}}>
+                            <Services/>
                         </Col>
                     </Row>
 
-                    <Row style={{marginTop: '5vh'}}
-                         className='my-5 py-5 d-flex justify-content-center align-content-center global_black'>
-                        <Col xs={12} className='mb-5'>
-                            <Row
-                                className='d-flex justify-content-center align-content-center m-0 py-3 bg-transparent'>
-                                <Col md={10} xs={12}
-                                     style={{zIndex: '3000'}} className='mx-auto p-4'>
-                                    <Garmin/>
-                                </Col>
-                            </Row>
+
+                    <Row className='my-5 py-5 d-flex justify-content-center'>
+                        <Col md={9} xs={12} className='mb-5' style={{zIndex: '3000'}}>
+                            <AvionicsHome/>
                         </Col>
                     </Row>
 
-                    <Row className='my-5 d-flex justify-content-center'>
-                        <Col xs={12} className='global_black mb-5'>
-                            <Row className='d-flex justify-content-center m-0 p-0'>
-                                <Col md={10} xs={12} className=''
-                                     style={{zIndex: '3000'}}>
-                                    <Mechanics/>
-                                </Col>
-                            </Row>
+                    <Row className='my-5 py-5 d-flex justify-content-center'>
+                        <Col md={9} xs={12} style={{zIndex: '3000'}} className='mb-5'>
+                            <Garmin/>
                         </Col>
                     </Row>
 
-                    {/*<Row className='my-5 d-flex justify-content-center'>*/}
-                    {/*    <Col xs={12} className='global_black mb-5'>*/}
-                    {/*        <Row className='d-flex justify-content-center m-0 p-0'>*/}
-                    {/*            <Col md={10} xs={12} className='global_blood-red-bg'*/}
-                    {/*                 style={{zIndex: '3000'}}>*/}
-                    {/*                <TestimonialCarousel/>*/}
-                    {/*            </Col>*/}
-                    {/*        </Row>*/}
-                    {/*    </Col>*/}
-                    {/*</Row>*/}
+                    <Row className='my-5 py-5 d-flex justify-content-center'>
+                        <Col md={9} xs={12} className='mb-5' style={{zIndex: '3000'}}>
+                            <Mechanics/>
+                        </Col>
+                    </Row>
 
-                    <Row className='my-5 py-5 d-flex justify-content-center' style={{marginTop: '10vh'}}>
-                        <Col xs={12} className='mb-5'>
-                            <Row className='d-flex justify-content-center'>
-                                <Col md={9} xs={12} className='mx-n3 global_blood-red-bg mx-auto'
-                                     style={{zIndex: '3000'}}>
+                    <Row className='my-5 py-5 d-flex justify-content-center'>
+                        <Col md={9} xs={12} className='global_blood-red-bg mb-5' style={{zIndex: '3000'}}>
                             <TestimonialCarousel/>
-                                </Col>
-                            </Row>
                         </Col>
                     </Row>
 
-                    <Row className='my-5 d-flex justify-content-center'>
-                        <Col xs={12} className='global_black mb-5'>
-                            <Row className='d-flex justify-content-center m-0 p-0'>
-                                <Col md={10} xs={12} className=''
-                                     style={{zIndex: '3000'}}>
-                                    <Flir/>
-                                </Col>
-                            </Row>
+                    <Row className='my-5 py-5 d-flex justify-content-center'>
+                        <Col md={9} xs={12} className='' style={{zIndex: '3000'}}>
+                            <Flir/>
                         </Col>
                     </Row>
-
 
                 </Col>
             </Row>

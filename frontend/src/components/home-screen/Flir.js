@@ -1,12 +1,10 @@
 import React from 'react';
-import {Jumbotron, Row, Col} from 'reactstrap';
+import {Row, Col} from 'reactstrap';
 import Zoom from 'react-reveal/Zoom'
-import {Button, Card, Container} from "react-bootstrap";
+import {Button, Card} from "react-bootstrap";
 import {LinkContainer} from "react-router-bootstrap";
 import flir from "../../images/bg-graphics/screen-flir/flir-sharp.png";
 import flir1 from "../../images/bg-graphics/screen-flir/flirinventory.png";
-import test from "../../images/bg-graphics/screen-avionics/avionics/avionics-test.jpg";
-import tayseer from "../../images/bg-graphics/screen-avionics/avionics/tayseer-avionics.png";
 import Fade from "react-reveal/Fade";
 
 
@@ -14,10 +12,7 @@ const Flir = () => {
     return (
         <>
 
-            {/*<Row className='Mechanics_jumbo AvionicsHome_bg global_cultured px-4 pb-5 m-0'>*/}
-            {/*    <Col xs={12} className='px-2'>*/}
-
-            <Row className='Global_Flir_bg-img global_cultured d-flex justify-content-center align-content-center mx-3'>
+            <Row className='Global_Flir_bg-img global_cultured d-flex justify-content-center align-content-center'>
                 <Col xs={12} style={{backgroundColor: 'rgba(0,0,0,.7)'}}>
 
                     <Row className='d-flex justify-content-start align-content-center ml-3 mb-5'>
@@ -28,11 +23,6 @@ const Flir = () => {
                             </Col>
                         </Fade>
                     </Row>
-
-                    {/*<Col xs={12}*/}
-                    {/*     className=' AvionicsHome_title-col pb-5 d-flex justify-content-center align-content-center'>*/}
-                    {/*    <h1 className='AvionicsHome_title text-white'>EO/FLIR</h1>*/}
-                    {/*</Col>*/}
 
                     <Row className='mb-5'>
 
@@ -83,7 +73,7 @@ const Flir = () => {
                                             <Card.Img variant="top" src={flir}
                                                       className='Avionics_card-img h-100 w-100'/>
                                             <Card.Img variant="top" src={flir1}
-                                                      className='Avionics_card-img h-100 w-100'/>
+                                                      className='Avionics_card-img h-100 w-100 mt-2'/>
                                         </Card>
                                     </Zoom>
                                 </Col>

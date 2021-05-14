@@ -14,7 +14,7 @@ const AvionicsHome = () => {
 
     return (
         <>
-            <Row className='AvionicsHome_image d-flex justify-content-center align-content-center mx-1'>
+            <Row className='AvionicsHome_image d-flex justify-content-center align-content-center global_cultured'>
                 <Col xs={12} style={{backgroundColor: 'rgba(0,0,0,.7)'}}>
 
                     <Row className='d-flex justify-content-start align-content-center ml-1 mb-5'>
@@ -99,9 +99,7 @@ const AvionicsHome = () => {
 
                 </Col>
 
-            </Row>
-            <Row className='m-0 p-0 global_black'>
-                <Col xs={12} className='mt-3 p-0 m-0'>
+                <Col xs={12} className='m-0 pt-3 px-0 global_black'>
 
                     <Row className='m-0 p-0 global_black'>
                         <Col xs={9}>

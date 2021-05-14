@@ -10,7 +10,7 @@ const Garmin = () => {
 
 
     return (
-        <Row className='d-flex justify-content-center Garmin_card-row ml-2 px-2 bg-white'>
+        <Row className='d-flex justify-content-center Garmin_card-row bg-white'>
             <Col xs={6} className='d-flex align-content-center  m-0 p-0'>
                 <AvionicsProducts/>
             </Col>

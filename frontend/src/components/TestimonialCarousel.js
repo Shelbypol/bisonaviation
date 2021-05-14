@@ -1,21 +1,17 @@
-import React, {Component} from "react";
+import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import {Carousel} from "react-responsive-carousel";
 import '../style/TestimonialCarousel.css'
-import {Jumbotron} from "reactstrap";
 import Zoom from 'react-reveal/Zoom';
 import {Col, Row} from "react-bootstrap";
 
 const TestimonialCarousel = () => {
     return (
         <>
-            {/*<Jumbotron className='m-0 p-0 global_blood-red-bg global_white'*/}
-            {/*           fluid>*/}
-            {/*<Row className='global_cultured mx-1'>*/}
-            <Row className='global_cultured mx-n5'>
-                <Col xs={12} className='my-0'>
+            <Row className='global_cultured '>
+                <Col xs={12} className='py-0'>
 
-                    {/*<Zoom>*/}
+                    <Zoom>
                         <Carousel
                             showArrows={false}
                             infiniteLoop={true}
@@ -77,8 +73,7 @@ const TestimonialCarousel = () => {
                             </div>
 
                         </Carousel>
-                    {/*</Zoom>*/}
-                    {/*</Jumbotron>*/}
+                    </Zoom>
                 </Col>
             </Row>
 
