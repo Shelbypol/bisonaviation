@@ -76,7 +76,6 @@ const HomeScreen2 = () => {
                         </Col>
                     </Row>
 
-
                     {/*<Row className='my-5 d-flex justify-content-center'>*/}
                     {/*    <Col xs={12} className='global_black mb-5'>*/}
                     {/*        <Row className='d-flex justify-content-center m-0 p-0'>*/}
@@ -87,7 +86,6 @@ const HomeScreen2 = () => {
                     {/*        </Row>*/}
                     {/*    </Col>*/}
                     {/*</Row>*/}
-
 
                     <Row className='my-5 py-5 d-flex justify-content-center' style={{marginTop: '10vh'}}>
                         <Col xs={12} className='mb-5'>
