@@ -14,9 +14,8 @@ const AvionicsHome = () => {
 
     return (
         <>
-            <Row className='AvionicsHome_image d-flex justify-content-center align-content-center'>
+            <Row className='AvionicsHome_image d-flex justify-content-center align-content-center mx-1'>
                 <Col xs={12} style={{backgroundColor: 'rgba(0,0,0,.7)'}}>
-                    {/*<Col xs={12} className='AvionicsHome_bg'>*/}
 
                     <Row className='d-flex justify-content-start align-content-center ml-3 mb-5'>
                         <Fade top>
@@ -113,12 +112,10 @@ const AvionicsHome = () => {
                                 <Col md={8} sm={12} className='p-0'>
                                     <Image className=' AvionicsHome_img' src={cnc} fluid/>
                                 </Col>
-                                {/*<Row>*/}
                                 <Col sm={12}
                                      className='p-0 d-flex align-content-center justify-content-center align-content-center'>
                                     <Image className=' AvionicsHome_img pt-md-3' src={panel} fluid/>
                                 </Col>
-                                {/*</Row>*/}
                             </Row>
                         </Col>
                         <Col xs={3}>
@@ -127,29 +124,15 @@ const AvionicsHome = () => {
                                     <Image className=' AvionicsHome_img pl-md-3' src={roel} fluid/>
                                 </Col>
                                     <Col sm={12} className=' p-0'>
-                                    <Image className=' AvionicsHome_img pt-md-3 pl-md-3' src={tayseer} fluid/>
+                                    <Image className=' AvionicsHome_img pt-md-3 pl-md-3' src={tests} fluid/>
                                 </Col>
 
                             </Row>
                         </Col>
 
                     </Row>
-                    {/*<Row className='m-0 p-0 global_black'>*/}
-                    {/*    <Col xs={9}>*/}
-                    {/*        <Row>*/}
-                    {/*            <Col sm={12}*/}
-                    {/*                 className='p-0 d-flex align-content-center justify-content-center align-content-center'>*/}
-                    {/*                <Image className=' AvionicsHome_img pt-md-3' src={panel} fluid/>*/}
-                    {/*            </Col>*/}
-                    {/*        </Row>*/}
-                    {/*    </Col>*/}
-                    {/*<Col md={4} sm={12} className=' p-0'>*/}
-                    {/*    <Image className='AvionicsHome_img pl-md-3 pt-md-3' src={tests} fluid/>*/}
-                    {/*</Col>*/}
                 </Col>
             </Row>
-
-            {/*</Row>*/}
 
         </>
 
