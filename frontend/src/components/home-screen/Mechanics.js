@@ -14,7 +14,7 @@ const Mechanics = () => {
     return (
         <>
 
-            <Row className='Mechanics_jumbo AvionicsHome_bg global_cultured pr-3 m-0'>
+            <Row className='Mechanics_jumbo AvionicsHome_bg global_cultured pr-1 m-0'>
                 <Col xs={12} className=' m-0 py-0'>
 
                     <Row className='d-flex justify-content-start align-content-center mb-5'>

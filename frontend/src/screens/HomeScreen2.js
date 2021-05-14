@@ -52,20 +52,6 @@ const HomeScreen2 = () => {
                         </Col>
                     </Row>
 
-
-                    {/*<Row className=' d-flex justify-content-center m-0 p-0'>*/}
-                    {/*/!*<Row className='AvionicsHome_image d-flex justify-content-center m-0 p-0'>*!/*/}
-                    {/*    <Col xs={12} className=''>*/}
-                    {/*        /!*<Col xs={12} className='AvionicsHome_image '>*!/*/}
-                    {/*        <Row className='d-flex justify-content-center mb-0 p-0'>*/}
-                    {/*            <Col md={10} xs={12}*/}
-                    {/*                 style={{zIndex: '3000'}}>*/}
-                    {/*                <AvionicsHome/>*/}
-                    {/*            </Col>*/}
-                    {/*        </Row>*/}
-                    {/*    </Col>*/}
-                    {/*</Row>*/}
-
                     <Row style={{marginTop: '5vh'}}
                          className=' py-5 d-flex justify-content-center align-content-center global_black'>
                         <Col xs={12} className=''>
@@ -79,19 +65,6 @@ const HomeScreen2 = () => {
                         </Col>
                     </Row>
 
-
-                    {/*<Row style={{marginTop: '5vh'}}*/}
-                    {/*     className='px-4 py-5 d-flex justify-content-center align-content-center global_black'>*/}
-                    {/*    <Col xs={12} className=''>*/}
-                    {/*        <Row*/}
-                    {/*            className='d-flex justify-content-center align-content-center m-0 py-3 bg-transparent'>*/}
-                    {/*            <Col md={10} xs={12}*/}
-                    {/*                 style={{zIndex: '3000'}} className='mx-auto p-5'>*/}
-                    {/*                <Garmin/>*/}
-                    {/*            </Col>*/}
-                    {/*        </Row>*/}
-                    {/*    </Col>*/}
-                    {/*</Row>*/}
 
                     <Row className='my-5 d-flex justify-content-center'>
                         <Col xs={12} className='global_black mb-0 pb-0'>
