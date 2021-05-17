@@ -4,7 +4,7 @@ import Paginate from "../Paginate";
 import Product from "./Product";
 // import ProductsBrowse from "./ProductsBrowse";
 
-const ProductsDisplayByCatMan = ({sideBar, history, match, updateCatProp, updateManufacturerProp, keyword, pages, page, products}) => {
+const ProductsImgDisplay = ({sideBar, history, match, updateCatProp, updateManufacturerProp, keyword, pages, page, products}) => {
 
 
     return (
@@ -64,4 +64,4 @@ const ProductsDisplayByCatMan = ({sideBar, history, match, updateCatProp, update
         </>
     )
 };
-export default ProductsDisplayByCatMan
+export default ProductsImgDisplay

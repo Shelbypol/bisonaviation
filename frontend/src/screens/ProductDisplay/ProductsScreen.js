@@ -1,14 +1,14 @@
 import React, {useEffect, useLayoutEffect, useState} from 'react'
 import { Row } from 'react-bootstrap'
 import Meta from "../../components/Meta";
-import ProductsBrowse from "../../components/Products/ProductsBrowse";
+import ProductsBrowse from "../../components/Products/ProductsPage";
 import {Jumbotron} from "reactstrap";
 import HeaderDesktop from "../../components/HeaderFooter/HeaderDesktop";
 import HeaderMobile from "../../components/HeaderFooter/HeaderMobile";
 import {useDispatch, useSelector} from "react-redux";
 import HeroDivider from "../../components/HeroDivider";
 
-const ProductsBrowseScreen = ({match, history}) => {
+const ProductsScreen = ({match, history}) => {
 
     const [width, setWidth] = useState(window.innerWidth);
 
@@ -62,4 +62,4 @@ const ProductsBrowseScreen = ({match, history}) => {
     )
 };
 
-export default ProductsBrowseScreen;
+export default ProductsScreen;

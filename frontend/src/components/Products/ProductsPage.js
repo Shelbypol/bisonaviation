@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react";
 import {Col, Nav, Row} from "react-bootstrap";
 import {useSelector, useDispatch} from "react-redux";
 import {listProducts} from "../../actions/productActions";
-import ProductDisplayByCatMan from "./ProductDisplayByCatMan";
+import ProductDisplayByCatMan from "./ProductsImgDisplay";
 import Loader from "../Loader";
 import Message from "../Message";
 import '../../style/CategoryManufacturerSideBar.css'
@@ -12,7 +12,7 @@ import {Container} from "react-bootstrap/cjs";
 import {Jumbotron} from "reactstrap";
 import Paginate from "../Paginate";
 
-const ProductBrowse = ({match, history}) => {
+const ProductsPage = ({match, history}) => {
 
     const [sideBar, setSideBar] = useState(true);
     const [width, setWidth] = useState(window.innerWidth);
@@ -296,4 +296,4 @@ const ProductBrowse = ({match, history}) => {
     )
 };
 
-export default ProductBrowse
+export default ProductsPage
