@@ -7,7 +7,7 @@ import Message from '../../components/Message'
 import Loader from '../../components/Loader'
 import {listProductDetails, updateProduct} from "../../actions/productActions";
 import {PRODUCT_UPDATE_RESET} from "../../constants/productConstants";
-import StickyHeader from "../../components/Header/StickyHeader";
+import HeaderDesktop from "../../components/HeaderFooter/HeaderDesktop";
 import '../../style/Admin.css'
 
 
@@ -113,7 +113,7 @@ const ProductEditScreen = ({match, history}) => {
 
     return (
         <>
-        <StickyHeader/>
+        <HeaderDesktop/>
         <Container className=' bg-white  min-vh-100 min-vw-100'>
             <Row xs={12} className='my-0 px-3 py-5 border-bottom'>
                 <Col xs={10} className='d-flex justify-content-start'>

@@ -10,7 +10,7 @@ import SignInBtn from "../SignIn/SignInBtn";
 import logo from '../../images/bg-graphics/graphics/Final-Logo-Horizontal.png'
 
 
-const StickyHeader = () => {
+const HeaderDesktop = () => {
 
     const dispatch = useDispatch();
 
@@ -207,4 +207,4 @@ const StickyHeader = () => {
 
 };
 
-export default StickyHeader;
+export default HeaderDesktop;

@@ -17,9 +17,9 @@ import mackerel from '../images/bg-graphics/screen-team/mackeral.png'
 import HeroDivider from "../components/HeroDivider";
 import '../style/2/teamScreen/TeamHero.css';
 import {useDispatch} from "react-redux";
-import MobileHeader from "../components/Header/MobileHeader";
-import StickyHeader from "../components/Header/StickyHeader";
-import Footer from "../components/Header/Footer";
+import MobileHeader from "../components/HeaderFooter/MobileHeader";
+import HeaderDesktop from "../components/HeaderFooter/HeaderDesktop";
+import Footer from "../components/HeaderFooter/Footer";
 
 
 const TeamScreen = () => {
@@ -55,7 +55,7 @@ const TeamScreen = () => {
                 <MobileHeader/>
             ) : (
                 <>
-                    <StickyHeader/>
+                    <HeaderDesktop/>
                 </>
             )}
 

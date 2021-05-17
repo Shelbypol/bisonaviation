@@ -7,7 +7,7 @@ import Loader from '../../components/Loader'
 import Paginate from "../../components/Paginate";
 import { listProducts, deleteProduct, createProduct } from "../../actions/productActions"
 import { PRODUCT_CREATE_RESET } from "../../constants/productConstants";
-import StickyHeader from "../../components/Header/StickyHeader";
+import HeaderDesktop from "../../components/HeaderFooter/HeaderDesktop";
 
 const ProductListScreen = ({ history, match }) => {
     const pageNumber = match.params.pageNumber || 1;
@@ -67,7 +67,7 @@ const ProductListScreen = ({ history, match }) => {
 
     return (
         <>
-            <StickyHeader/>
+            <HeaderDesktop/>
             <Container className='bg-white min-vh-100 min-vw-100 px-3'>
             <Row className='align-items-center'>
                 <Col>

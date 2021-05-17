@@ -5,7 +5,7 @@ import {useDispatch, useSelector} from 'react-redux'
 import Message from '../../components/Message'
 import Loader from '../../components/Loader'
 import { listOrders } from "../../actions/orderActions"
-import StickyHeader from "../../components/Header/StickyHeader";
+import HeaderDesktop from "../../components/HeaderFooter/HeaderDesktop";
 
 const OrderListScreen = ({ history }) => {
 
@@ -32,7 +32,7 @@ const OrderListScreen = ({ history }) => {
 
     return (
         <>
-            <StickyHeader/>
+            <HeaderDesktop/>
             <Container>
             <h1>Data - Products</h1>
             {loading ? <Loader /> : error ? <Message variant='danger'>{error}</Message>

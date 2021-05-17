@@ -7,8 +7,8 @@ import {EMAIL_RESET} from "../../constants/emailConstants";
 import '../../style/wishListScreen/WishListScreen.css';
 import {Link} from "react-router-dom";
 import {createWishList} from "../../actions/wishListActions";
-import MobileHeader from "../../components/Header/MobileHeader";
-import StickyHeader from "../../components/Header/StickyHeader";
+import MobileHeader from "../../components/HeaderFooter/MobileHeader";
+import HeaderDesktop from "../../components/HeaderFooter/HeaderDesktop";
 import HeroDivider from "../../components/HeroDivider";
 
 const WishListScreen = () => {
@@ -65,7 +65,7 @@ const WishListScreen = () => {
                 <MobileHeader/>
             ) : (
                 <>
-                    <StickyHeader/>
+                    <HeaderDesktop/>
                 </>
             )}
 

@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import MobileHeader from "./MobileHeader";
-import StickyHeader from "./StickyHeader";
+import HeaderDesktop from "./HeaderDesktop";
 import '../../style/headers.css'
 import '../../style/global-1.css'
 import Fade from "react-reveal/Fade";
@@ -28,7 +28,7 @@ const Headers = () => {
         width < breakpoint ?
             <MobileHeader />
             :
-            <StickyHeader />
+            <HeaderDesktop />
 
     )
 };

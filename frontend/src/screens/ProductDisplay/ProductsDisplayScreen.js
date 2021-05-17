@@ -3,8 +3,8 @@ import { Row } from 'react-bootstrap'
 import Meta from "../../components/Meta";
 import CategoryManufacturerDisplay from "../../components/ProductDisplay/CategoryManufacturerDisplay";
 import {Jumbotron} from "reactstrap";
-import StickyHeader from "../../components/Header/StickyHeader";
-import MobileHeader from "../../components/Header/MobileHeader";
+import HeaderDesktop from "../../components/HeaderFooter/HeaderDesktop";
+import MobileHeader from "../../components/HeaderFooter/MobileHeader";
 import {useDispatch, useSelector} from "react-redux";
 import HeroDivider from "../../components/HeroDivider";
 
@@ -35,7 +35,7 @@ const ProductsDisplayScreen = ({match, history}) => {
             {width < breakpoint ? (
                 <MobileHeader/>
             ) : (
-                    <StickyHeader/>
+                    <HeaderDesktop/>
             )}
 
                     <HeroDivider

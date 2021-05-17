@@ -5,7 +5,7 @@ import {useDispatch, useSelector} from 'react-redux'
 import Message from '../../components/Message'
 import Loader from '../../components/Loader'
 import { listUsers, deleteUser } from "../../actions/userActions"
-import StickyHeader from "../../components/Header/StickyHeader";
+import HeaderDesktop from "../../components/HeaderFooter/HeaderDesktop";
 
 const UserListScreen = ({ history }) => {
     const dispatch = useDispatch();
@@ -41,7 +41,7 @@ const UserListScreen = ({ history }) => {
 
     return (
         <>
-            <StickyHeader/>
+            <HeaderDesktop/>
             <Container>
             <h1>Users</h1>
             {loading ? <Loader /> : error ? <Message variant='danger'>{error}</Message>

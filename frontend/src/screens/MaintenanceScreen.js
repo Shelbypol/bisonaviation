@@ -1,10 +1,10 @@
 import React, {useEffect, useLayoutEffect, useState} from 'react'
-import MaintenanceHero from "../components/maintenance-page/MaintenanceHero";
+import MaintenanceHero from "../components/Maintenance/MaintenanceHero";
 import AvionicsIcons from "../components/Avionics/AvionicsIcons";
 import {useDispatch} from "react-redux";
-import MobileHeader from "../components/Header/MobileHeader";
-import StickyHeader from "../components/Header/StickyHeader";
-import Footer from "../components/Header/Footer";
+import MobileHeader from "../components/HeaderFooter/MobileHeader";
+import HeaderDesktop from "../components/HeaderFooter/HeaderDesktop";
+import Footer from "../components/HeaderFooter/Footer";
 
 
 const MaintenanceScreen = () => {
@@ -36,7 +36,7 @@ const MaintenanceScreen = () => {
                 <MobileHeader/>
             ) : (
                 <>
-                    <StickyHeader/>
+                    <HeaderDesktop/>
                 </>
             )}
 

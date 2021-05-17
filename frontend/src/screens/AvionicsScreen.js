@@ -1,9 +1,9 @@
 import React, {useEffect, useLayoutEffect, useState} from 'react'
 import AvionicsHero from "../components/Avionics/AvionicsHero";
-import MobileHeader from "../components/Header/MobileHeader";
-import StickyHeader from "../components/Header/StickyHeader";
+import MobileHeader from "../components/HeaderFooter/MobileHeader";
+import HeaderDesktop from "../components/HeaderFooter/HeaderDesktop";
 import {useDispatch} from "react-redux";
-import Footer from "../components/Header/Footer";
+import Footer from "../components/HeaderFooter/Footer";
 
 
 const AvionicsScreen = () => {
@@ -35,7 +35,7 @@ const AvionicsScreen = () => {
                 <MobileHeader/>
             ) : (
                 <>
-                    <StickyHeader/>
+                    <HeaderDesktop/>
                 </>
             )}
 
