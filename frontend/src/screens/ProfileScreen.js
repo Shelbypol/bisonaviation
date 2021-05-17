@@ -1,7 +1,7 @@
 import React, {useLayoutEffect} from 'react'
 import {Row, Col, Tab, Nav, Jumbotron, Container} from 'react-bootstrap'
-import ProfileEdit from "../components/profile/ProfileEdit";
-import ProfileSavedWishList from "../components/profile/ProfileSavedWishList";
+import ProfileEdit from "../components/Profile/ProfileEdit";
+import ProfileSavedWishList from "../components/Profile/ProfileSavedWishList";
 import '../style/ProfileScreen.css'
 import {useSelector} from "react-redux";
 

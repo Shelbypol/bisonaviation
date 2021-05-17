@@ -1,13 +1,13 @@
 import React, {useLayoutEffect} from 'react'
 import '../style/global-2.css'
 import HomeHero from '../components/HomeHero'
-import RepairAward from '../components/home-screen/RepairAward'
-import Services from "../components/home-screen/Services";
-import MaintenanceHomeSection from "../components/home-screen/MaintenanceHomeSection";
-import Flir from "../components/home-screen/Flir";
+import HomeAwardBanner from '../components/Home/HomeAwardBanner'
+import HomeServices from "../components/Home/HomeServices";
+import HomeMaintenance from "../components/Home/HomeMaintenance";
+import Flir from "../components/Home/Flir";
 import {Col, Row} from 'react-bootstrap';
 import Garmin from "../components/Garmin";
-import AvionicsHome from "../components/home-screen/AvionicsHome";
+import HomeAvionics from "../components/Home/HomeAvionics";
 import TestimonialCarousel from "../components/TestimonialCarousel";
 import '../style/2/AvionicsProducts.css';
 import '../style/2/AvionicsProductsFlag.scss';
@@ -28,7 +28,7 @@ const HomeScreen2 = () => {
         <>
             <HomeHero/>
 
-            <RepairAward/>
+            <HomeAwardBanner/>
 
             <Row className='d-flex justify-content-center' style={{backgroundColor: 'black'}}>
                 <Col xs={12} className=''>
@@ -36,14 +36,14 @@ const HomeScreen2 = () => {
 
                     <Row className='my-5 d-flex justify-content-center'>
                         <Col md={9} xs={12} className='mb-5' style={{zIndex: '3000'}}>
-                            <Services/>
+                            <HomeServices/>
                         </Col>
                     </Row>
 
 
                     <Row className='my-5 py-5 d-flex justify-content-center'>
                         <Col md={9} xs={12} className='mb-5' style={{zIndex: '3000'}}>
-                            <AvionicsHome/>
+                            <HomeAvionics/>
                         </Col>
                     </Row>
 
@@ -55,7 +55,7 @@ const HomeScreen2 = () => {
 
                     <Row className='my-5 py-5 d-flex justify-content-center'>
                         <Col md={9} xs={12} className='mb-5' style={{zIndex: '3000'}}>
-                            <MaintenanceHomeSection/>
+                            <HomeMaintenance/>
                         </Col>
                     </Row>
 

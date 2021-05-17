@@ -3,7 +3,7 @@ import {Container, Row, Col, Form, Button, Nav} from "react-bootstrap";
 import {LinkContainer} from "react-router-bootstrap";
 
 
-const FlirTermsText = () => {
+const TermsFlir = () => {
 
     return (
 
@@ -381,4 +381,4 @@ const FlirTermsText = () => {
 
     )
 };
-export default FlirTermsText
+export default TermsFlir

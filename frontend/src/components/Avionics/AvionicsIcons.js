@@ -13,7 +13,7 @@ const AvionicsIcons = (props) => {
 
                     <Col className='my-4 pb-4'>
                         <AlertDismissible icon={<i className='fas fa-bolt' style={{color: 'white'}}/>}
-                                          title={'Avionics Installations'}
+                                          title={'HomeAvionics Installations'}
                                           note={'From transponder' +
                                           ' upgrades to glass panel retrofits, the Bison Aviation avionics team is ready to take on your next ' +
                                           'avionics project.'}/>
@@ -21,7 +21,7 @@ const AvionicsIcons = (props) => {
 
                     <Col className='my-4 pb-4'>
                         <AlertDismissible icon={<i className='fas fa-bug' style={{color: 'white'}}/>}
-                                          title={'Avionics Repair'}
+                                          title={'HomeAvionics Repair'}
                                           note={'Already have a great panel, but things aren\'t working the way they should?' +
                                           ' Stop flying "partial panel" and let the Bison Aviation avionics team bring your ' +
                                           'equipment back to life.'}/>

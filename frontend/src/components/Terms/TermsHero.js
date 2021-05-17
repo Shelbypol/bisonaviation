@@ -2,7 +2,7 @@ import React from 'react'
 import {Jumbotron, Container} from "reactstrap";
 
 
-const TermHero = () => {
+const TermsHero = () => {
 
     return (
 
@@ -16,4 +16,4 @@ const TermHero = () => {
     )
 };
 
-export default TermHero
+export default TermsHero

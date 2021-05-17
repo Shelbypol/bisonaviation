@@ -3,12 +3,12 @@ import {Link} from 'react-router-dom'
 import {Form, Button, Row, Col} from 'react-bootstrap'
 // deals with our redux state
 import {useDispatch, useSelector} from 'react-redux'
-import Message from "./Message";
-import Loader from '../components/Loader'
-import {login} from '../actions/userActions'
-import FormContainer from "../components/FormContainer";
+import Message from "../Message";
+import Loader from '../Loader'
+import {login} from '../../actions/userActions'
 
-const Login = ({history, showSidebar, loginTitle}) => {
+
+const SignInForm = ({history, showSidebar, loginTitle}) => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
@@ -23,7 +23,6 @@ const Login = ({history, showSidebar, loginTitle}) => {
 
     const submitHandler = (e) => {
         e.preventDefault();
-        //    DISPATCH LOGIN
         dispatch(login(email, password))
     };
 
@@ -67,4 +66,4 @@ const Login = ({history, showSidebar, loginTitle}) => {
     )
 };
 
-export default Login
+export default SignInForm

@@ -1,7 +1,7 @@
 import React, {useLayoutEffect} from 'react'
-import TermHero from '../components/term-screen/TermHero';
+import TermsHero from '../components/Terms/TermsHero';
 import '../style/2/termsScreen/Terms.css';
-import FlirTermsText from "../components/term-screen/FlirTermsText";
+import TermsFlir from "../components/Terms/TermsFlir";
 
 
 const TermsFlirScreen = () => {
@@ -12,8 +12,8 @@ const TermsFlirScreen = () => {
 
     return (
         <>
-            <TermHero/>
-            <FlirTermsText/>
+            <TermsHero/>
+            <TermsFlir/>
         </>
 
     )

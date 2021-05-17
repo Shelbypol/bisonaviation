@@ -6,7 +6,7 @@ import {CART_RESET} from "../../constants/cartConstants";
 import {logout} from "../../actions/userActions";
 import {Link, Route} from "react-router-dom";
 import WishListTab from "../Wishlist/WishListTab";
-import SideBar from "../SideBar/SideBar";
+import SignInBtn from "../SideBar/SignInBtn";
 import logo from '../../images/bg-graphics/graphics/Final-Logo-Horizontal.png'
 
 
@@ -73,7 +73,7 @@ const StickyHeader = () => {
 
                     {!userInfo && (
                         <span className=' d-flex align-items-center justify-content-end StickyHeader_login-btn'>
-                                        <SideBar/>
+                                        <SignInBtn/>
                             </span>
                     )}
 
@@ -112,9 +112,9 @@ const StickyHeader = () => {
                                 </>
                             )}
 
-                            <Nav>
-                                <SideBar/>
-                            </Nav>
+                            {/*<Nav>*/}
+                            {/*    <SignInBtn/>*/}
+                            {/*</Nav>*/}
                         </>
                     )}
                 </Col>

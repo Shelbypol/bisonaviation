@@ -10,7 +10,7 @@ import {LinkContainer} from "react-router-bootstrap";
 import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
 
-const AvionicsHome = () => {
+const HomeAvionics = () => {
 
     return (
         <>
@@ -137,4 +137,4 @@ const AvionicsHome = () => {
     )
 };
 
-export default AvionicsHome
+export default HomeAvionics

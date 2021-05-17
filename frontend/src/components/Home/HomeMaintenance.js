@@ -8,7 +8,7 @@ import test from "../../images/bg-graphics/screen-avionics/avionics/avionics-tes
 import Fade from "react-reveal/Fade";
 
 
-const MaintenanceHomeSection = () => {
+const HomeMaintenance = () => {
 
     return (
         <>
@@ -121,5 +121,5 @@ const MaintenanceHomeSection = () => {
     )
 };
 
-export default MaintenanceHomeSection
+export default HomeMaintenance
 

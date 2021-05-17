@@ -3,11 +3,11 @@ import {Link} from 'react-router-dom';
 import {useDispatch, useSelector} from "react-redux";
 import {CART_RESET} from "../../constants/cartConstants";
 import {logout} from "../../actions/userActions";
-import Login from "../Login";
+import SignInForm from "./SignInForm";
 import '../../style/SideBar.css'
-import {Button, Form} from "react-bootstrap";
+import {Button} from "react-bootstrap";
 
-const SideBarData = ({showSidebar}) => {
+const SignInDropdown = ({ showSidebar }) => {
     const [loginShow, setLoginShow] = useState(false);
 
     const dispatch = useDispatch();
@@ -34,12 +34,12 @@ const SideBarData = ({showSidebar}) => {
 
                 <>
                     <li className='my-3'>
-                        <Login loginTitle={'Sign In'} showSideBar={showSidebar}/>
+                        <SignInForm loginTitle={'Sign In'} showSideBar={showSidebar}/>
                     </li>
 
                 </>
             )}
-            {/*// }*/}
+
             {/*  REGISTER  */}
             {!userInfo && (
                 <>
@@ -76,5 +76,5 @@ const SideBarData = ({showSidebar}) => {
         </>
     )
 };
-export default SideBarData
+export default SignInDropdown
 

@@ -3,10 +3,10 @@ import {Link} from 'react-router-dom';
 import {useDispatch, useSelector} from "react-redux";
 import {CART_RESET} from "../../constants/cartConstants";
 import {logout} from "../../actions/userActions";
-import Login from "../Login";
+import SignInForm from "./SignInForm";
 import '../../style/SideBar.css'
 
-const SideBarDataLogin = ({showSidebar}) => {
+const SignInTrueBtns = ({showSidebar}) => {
     const [loginShow, setLoginShow] = useState(false);
 
     const dispatch = useDispatch();
@@ -34,12 +34,6 @@ const SideBarDataLogin = ({showSidebar}) => {
 
                         <span><h4 className='mx-3 '>{userInfo.name}</h4></span>
 
-                        {/*<li className='SideBarLogin-nav-text'>*/}
-                        {/*    <Link to='/' onClick={showSidebar}>*/}
-                        {/*        <span>Home</span>*/}
-                        {/*    </Link>*/}
-                        {/*</li>*/}
-
                         <li className='SideBar-nav-text'>
                             <Link to='/profile' onClick={showSidebar}>
                                 <span>Profile</span>
@@ -48,7 +42,6 @@ const SideBarDataLogin = ({showSidebar}) => {
 
                         <li className='SideBar-nav-text'>
                             <Link onClick={logoutHandler} to='/'>
-                                {/*<i className='fal fa-plane-departure StickyHeader_icon-size'> </i>*/}
                                 <span>Logout</span>
                             </Link>
                         </li>
@@ -57,23 +50,17 @@ const SideBarDataLogin = ({showSidebar}) => {
 
                 ) :
                 <>
-                    {/*<li className='SideBarLogin-nav-text'>*/}
-                    {/*    <Link to='/'>*/}
-                    {/*        <span onClick={showSidebar}>Home</span>*/}
-                    {/*    </Link>*/}
-                    {/*</li>*/}
-
                     <li className='my-3'>
-                        <Login showSideBar={showSidebar}/>
+                        <SignInForm showSideBar={showSidebar}/>
                     </li>
 
                 </>
             }
+
             {/*  REGISTER  */}
             {!userInfo && (
                 <li className='mx-2'>
                     <Link to='/Register' onClick={showSidebar}>
-                        {/*<i className='fal fa-clipboard-user StickyHeader_icon-size'> </i>*/}
                         <span className='global_redFontHover'>Register</span>
                     </Link>
                 </li>
@@ -102,5 +89,5 @@ const SideBarDataLogin = ({showSidebar}) => {
         </>
     )
 };
-export default SideBarDataLogin
+export default SignInTrueBtns
 

@@ -1,6 +1,6 @@
 import React, {useLayoutEffect} from 'react'
-import TermHero from '../components/term-screen/TermHero';
-import TermText from '../components/term-screen/TermText';
+import TermsHero from '../components/Terms/TermsHero';
+import TermsGeneral from '../components/Terms/TermsGeneral';
 import '../style/2/termsScreen/Terms.css';
 
 
@@ -12,8 +12,8 @@ const TermsScreen = () => {
 
     return (
         <>
-            <TermHero/>
-            <TermText/>
+            <TermsHero/>
+            <TermsGeneral/>
         </>
 
     )

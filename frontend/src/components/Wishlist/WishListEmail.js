@@ -198,7 +198,7 @@ const WishListEmail = ({userInfo, cart, cartItems, success}) => {
             </Col>
             {/*<Row className='py-3'>*/}
             {/*    <Col>*/}
-            {/*        Have an account? <Link to={redirect ? `/login?redirect=${redirect}` : '/login'}>Login</Link>*/}
+            {/*        Have an account? <Link to={redirect ? `/login?redirect=${redirect}` : '/login'}>SignInForm</Link>*/}
             {/*    </Col>*/}
             {/*</Row>*/}
 

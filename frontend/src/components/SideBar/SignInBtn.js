@@ -1,6 +1,6 @@
 import React, {useEffect, useRef, useState} from 'react';
 import {Link} from 'react-router-dom';
-import SideBarData from "./SideBarData";
+import SignInDropdown from "./SignInDropdown";
 import '../../style/SideBar.css'
 import {IconContext} from 'react-icons';
 import {useDispatch, useSelector} from "react-redux";
@@ -9,7 +9,7 @@ import {logout} from "../../actions/userActions";
 import WishListTab from "../Wishlist/WishListTab";
 import {Nav} from "react-bootstrap";
 
-const SideBar = () => {
+const SignInBtn = () => {
     const [sidebar, setSidebar] = useState(false);
 
     const dispatch = useDispatch();
@@ -45,10 +45,6 @@ const SideBar = () => {
 
                 {userInfo ? (
                     <>
-                        {/*<span>*/}
-                        {/*<WishListTab/>*/}
-
-                        {/*</span>*/}
 
                         <li className='SideBar-nav-text'>
                             <Link to='/profile'>
@@ -65,7 +61,7 @@ const SideBar = () => {
                 ) : (
                     <Link to='#'>
                         <h6 onClick={showSidebar} className='SideBar_Login pt-2 pr-1 StickyHeader_login-btn'><i
-                            className="fas fa-user-alt"> </i>&nbsp;Sign in - Register</h6>
+                            className="fas fa-user-alt"> </i>&nbsp;Sign in / Register</h6>
                     </Link>
                 )}
 
@@ -74,7 +70,7 @@ const SideBar = () => {
                          ref={node}
                          onClick={(e) => (handleScroll(e))}>
                         <ul className='SideBar-nav-menu-items'>
-                            <SideBarData showSidebar={showSidebar}/>
+                            <SignInDropdown showSidebar={showSidebar}/>
                         </ul>
                     </nav>
                 ) : (
@@ -82,8 +78,9 @@ const SideBar = () => {
                         className={sidebar ? 'SideBar-nav-menu-user-not-logged active' : 'SideBar-nav-menu-user-not-logged'}
                         ref={node}
                         onClick={(e) => (handleScroll(e))}>
+                        {/*<ul className='SideBar-nav-menu-items '>*/}
                         <ul className='SideBar-nav-menu-items ' style={{zIndex: '5000'}}>
-                            <SideBarData showSidebar={showSidebar}/>
+                            <SignInDropdown showSidebar={showSidebar}/>
                         </ul>
                     </nav>
                 )}
@@ -94,4 +91,4 @@ const SideBar = () => {
     );
 };
 
-export default SideBar;
+export default SignInBtn;

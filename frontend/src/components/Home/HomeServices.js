@@ -4,7 +4,7 @@ import '../../style/flag.scss'
 import { Col, Row, Card} from "react-bootstrap";
 import Fade from 'react-reveal/Fade';
 
-const Services = () => {
+const HomeServices = () => {
     return (
 
         <>
@@ -95,7 +95,7 @@ const Services = () => {
     )
 };
 
-export default Services
+export default HomeServices
 
 
 

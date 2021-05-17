@@ -1,6 +1,6 @@
 import React from 'react';
 import {Row, Col} from "react-bootstrap";
-import '../style/1/Avionics.css'
+import '../style/1/HomeAvionics.css'
 import Zoom from 'react-reveal/Zoom';
 
 

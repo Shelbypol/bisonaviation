@@ -1,6 +1,6 @@
 import React, {useEffect, useLayoutEffect, useState} from 'react'
 import {Container, Row} from "react-bootstrap";
-import TeamCard from "../components/team-screen/TeamCard";
+import TeamCard from "../components/Team/TeamCard";
 import johnAtkin from '../images/bg-graphics/screen-team/john_atkin.png'
 import leslieBanner from '../images/bg-graphics/screen-team/leslie_banner.png'
 import deenaSmith from '../images/bg-graphics/screen-team/deena_smith.png'
@@ -173,7 +173,7 @@ const TeamScreen = () => {
                                 position={'Director of Maintenance, A&P / IA'}
                                 certifications={' FAA: Mechanic - Airframe & Powerplant / Inspection Authorization'}
                                 locations={'Boerne Stage Airfield - 5C1'}
-                                specialTraining={'NDT Level 2, EPA Refrigeration, Learjet 31A, 35, 36 40, 45, 45XR Maintenance, TFE731 Maintenance, Challenger 601 Maintenance & Ground Ops, Philips 66 Fuel Quality Management, JET Autopilot Maintenance, Honeywell / Garrett Fuel Control Maintenance, Cessna 208 Maintenance, Cessna 300 & 400 Series Maintenance, DEEC Setup & Adjustment, JT15D Maintenance & Troubleshooting, Flight Safety Avionics for AMTs.'}
+                                specialTraining={'NDT Level 2, EPA Refrigeration, Learjet 31A, 35, 36 40, 45, 45XR Maintenance, TFE731 Maintenance, Challenger 601 Maintenance & Ground Ops, Philips 66 Fuel Quality Management, JET Autopilot Maintenance, Honeywell / Garrett Fuel Control Maintenance, Cessna 208 Maintenance, Cessna 300 & 400 Series Maintenance, DEEC Setup & Adjustment, JT15D Maintenance & Troubleshooting, Flight Safety HomeAvionics for AMTs.'}
                                 bio={'' +
                                 'Growing up in the flight path of Ellington Air Force Base during the space race instilled JD with a great interest in technology and aviation. After working as a commercial photographer for fifteen years, JD decided to become an A&P mechanic in order to earn additional money so that he could purchase his own plane and tour the world by air. After earning his A&P certificate in 1992, JD discovered that he enjoyed working on aircraft so much that he wanted to make that his primary career. He has been diligently serving the general aviation community ever since. His extensive background includes experience with virtually every make and model of GA aircraft in the Part 91 and Part 135 environment, as well as significant work history in major Part 145 MROs and aircraft manufacturers.'
                                 }
@@ -185,14 +185,14 @@ const TeamScreen = () => {
                                 eventKey={'5'}
                                 img={roelRogerio}
                                 headerName={'Roel Rogerio'}
-                                headerPosition={'Avionics Manager'}
+                                headerPosition={'HomeAvionics Manager'}
                                 name={'Roel Rogerio'}
-                                position={'Avionics Manager, AET'}
+                                position={'HomeAvionics Manager, AET'}
                                 certifications={'FAA: Repairman'}
                                 locations={'Boerne Stage Airfield - 5C1'}
                                 specialTraining={'Garmin G500, G600, G1000 Line Maintenance, Raytheon Aircraft Maintenance Professionalism & Resource Management, Rockwell Collins Proline Maintenance'}
                                 bio={
-                                    'After earning his degree as an Electronics Technician at Texas A&M Extension Service in San Antonio, Roel joined the United States Army in 1988 where he served as an aircraft electronics technician maintaining avionics systems on aircraft such as the OV-1D and RC-12. Upon transitioning into the civilian world, Roel worked as Lead Avionics Technician for Raytheon (later called Hawker-Beechcraft) Services servicing Beechcraft, Hawker, Mitsubishi, Falcon, and various other aircraft for fourteen years. After Hawker-Beechcraft closed their San Antonio location, Roel worked at Sierra Industries, again serving as Avionics Crew Chief performing avionics repairs and installations on everything from Cessna 172s through Citations. When Sierra Industries was bought-out and subsequently closed, Roel found a new home at Bison Aviation where he serves as Lead Avionics Technician and Chief Installer.'
+                                    'After earning his degree as an Electronics Technician at Texas A&M Extension Service in San Antonio, Roel joined the United States Army in 1988 where he served as an aircraft electronics technician maintaining avionics systems on aircraft such as the OV-1D and RC-12. Upon transitioning into the civilian world, Roel worked as Lead HomeAvionics Technician for Raytheon (later called Hawker-Beechcraft) HomeServices servicing Beechcraft, Hawker, Mitsubishi, Falcon, and various other aircraft for fourteen years. After Hawker-Beechcraft closed their San Antonio location, Roel worked at Sierra Industries, again serving as HomeAvionics Crew Chief performing avionics repairs and installations on everything from Cessna 172s through Citations. When Sierra Industries was bought-out and subsequently closed, Roel found a new home at Bison Aviation where he serves as Lead HomeAvionics Technician and Chief Installer.'
                                 }
                                 favAircraft={'Beechcraft King Air series'}
                             />
@@ -204,7 +204,7 @@ const TeamScreen = () => {
                                 headerName={'Jeffrey Rossell'}
                                 headerPosition={'AET'}
                                 name={'Jeffery Rossell'}
-                                position={'Avionics Technician / CNC Operator'}
+                                position={'HomeAvionics Technician / CNC Operator'}
                                 certifications={'FAA: Repairman; FCC: GROL w/ Radar'}
                                 locations={'Boerne Stage Airfield - 5C1'}
                                 specialTraining={'Garmin G500, G600, G1000 Line Maintenance, Raytheon Aircraft Maintenance Professionalism & Resource Management, Rockwell Collins Proline Maintenance'}

@@ -1,6 +1,6 @@
 import React, {useEffect, useRef, useState} from 'react';
 import {Link} from 'react-router-dom';
-import SideBarDataLogin from "./SideBarDataLogin";
+import SignInTrueBtns from "./SignInTrueBtns";
 import '../../style/SideBar.css'
 import '../../style/headers.css'
 import {IconContext} from 'react-icons';
@@ -60,7 +60,7 @@ const SideBarLogin = () => {
                      onClick={(e) => { handleScroll(e); handleClick(e);}}>
                     <ul className='SideBar-nav-menu-items'>
 
-                        <SideBarDataLogin showSidebar={showSidebar}/>
+                        <SignInTrueBtns showSidebar={showSidebar}/>
 
                     </ul>
                 </nav>
