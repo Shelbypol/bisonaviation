@@ -1,10 +1,10 @@
 import React, {useEffect, useLayoutEffect, useState} from 'react'
-import MaintenanceCarousel from "../components/Maintenance/MaintenanceCarousel";
-import AvionicsIcons from "../components/Avionics/AvionicsIcons";
+import MaintenanceCarousel from "./MaintenanceCarousel";
+import AvionicsIcons from "../Avionics/AvionicsIcons";
 import {useDispatch} from "react-redux";
-import HeaderMobile from "../components/HeaderFooter/HeaderMobile";
-import HeaderDesktop from "../components/HeaderFooter/HeaderDesktop";
-import Footer from "../components/HeaderFooter/Footer";
+import HeaderMobile from "../HeaderFooter/HeaderMobile";
+import HeaderDesktop from "../HeaderFooter/HeaderDesktop";
+import Footer from "../HeaderFooter/Footer";
 
 
 const MaintenanceScreen = () => {

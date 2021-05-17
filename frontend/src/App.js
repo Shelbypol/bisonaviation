@@ -21,10 +21,10 @@ import OrderListScreen from "./screens/AdminScreens/OrderListScreen";
 import ThankYouScreen from "./screens/Payment/ThankYouScreen";
 import HomeScreen from "./components/Home/HomeScreen";
 import AvionicsScreen from "./components/Avionics/AvionicsScreen";
-import MaintenanceScreen from "./screens/MaintenanceScreen";
-import FlirScreen from "./screens/FlirScreen";
+import MaintenanceScreen from "./components/Maintenance/MaintenanceScreen";
+import FlirScreen from "./components/Flir/FlirScreen";
 import TeamScreen from "./screens/TeamScreen";
-import ContactScreen from "./screens/ContactScreen";
+import ContactScreen from "./components/Contact/ContactScreen";
 import TermsScreen from "./screens/TermsScreens/TermsScreen";
 import TermsFlirScreen from "./screens/TermsScreens/TermsFlirScreen";
 import WishListScreen from "./screens/WishListScreen/WishListScreen"

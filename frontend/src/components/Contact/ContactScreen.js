@@ -1,6 +1,6 @@
 import React, {useLayoutEffect} from 'react'
-import ContactHero from "../components/Contact/ContactHero";
-import ContactInfo from "../components/Contact/ContactInfo";
+import ContactHero from "./ContactHero";
+import ContactInfo from "./ContactInfo";
 
 const ContactScreen = () => {
 

@@ -1,13 +1,12 @@
 import React, {useEffect, useLayoutEffect, useState} from 'react';
-import '../style/flirScreen/Flir.css';
-import FlirHero from "../components/Flir/FlirHero";
-import FlirTable from "../components/Flir/FlirTable";
+import '../../style/flirScreen/Flir.css';
+import FlirTable from "../../components/Flir/FlirTable";
 import {Jumbotron, Container} from "reactstrap";
-import FlirText from "../components/Flir/FlirText";
-import HeroDivider from "../components/HeroDivider";
-import HeaderMobile from "../components/HeaderFooter/HeaderMobile";
-import HeaderDesktop from "../components/HeaderFooter/HeaderDesktop";
-import Footer from "../components/HeaderFooter/Footer";
+import FlirText from "../../components/Flir/FlirText";
+import JumbotronTitle from "../../components/JumbotronTitle";
+import HeaderMobile from "../../components/HeaderFooter/HeaderMobile";
+import HeaderDesktop from "../../components/HeaderFooter/HeaderDesktop";
+import Footer from "../../components/HeaderFooter/Footer";
 import {useDispatch} from "react-redux";
 
 const FlirScreen = () => {
@@ -40,7 +39,7 @@ const FlirScreen = () => {
                 <HeaderDesktop/>
             )}
 
-            <HeroDivider
+            <JumbotronTitle
                 img={'FlirHero_img'}
                 showImg={true}
                 title={'EO/IR - FLIR'}

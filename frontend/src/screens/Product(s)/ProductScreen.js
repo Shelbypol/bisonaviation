@@ -9,7 +9,7 @@ import {PRODUCT_CREATE_REVIEW_RESET} from "../../constants/productConstants";
 import Meta from "../../components/Meta";
 import {addToCart, removeFromCart} from "../../actions/cartActions";
 import HeaderMobile from "../../components/HeaderFooter/HeaderMobile";
-import HeroDivider from "../../components/HeroDivider";
+import JumbotronTitle from "../../components/JumbotronTitle";
 import HeaderDesktop from "../../components/HeaderFooter/HeaderDesktop";
 
 const ProductScreen = ({history, match}) => {
@@ -103,7 +103,7 @@ const ProductScreen = ({history, match}) => {
                 </>
             )}
 
-            <HeroDivider
+            <JumbotronTitle
                 img={''}
                 showImg={false}
                 title={''}

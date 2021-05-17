@@ -14,7 +14,7 @@ import matthewGurniak from '../images/bg-graphics/screen-team/matthew_gurniak.pn
 import halibut from '../images/bg-graphics/screen-team/halibut.png'
 import tuna from '../images/bg-graphics/screen-team/tuna.png'
 import mackerel from '../images/bg-graphics/screen-team/mackeral.png'
-import HeroDivider from "../components/HeroDivider";
+import JumbotronTitle from "../components/JumbotronTitle";
 import '../style/2/teamScreen/TeamHero.css';
 import {useDispatch} from "react-redux";
 import HeaderMobile from "../components/HeaderFooter/HeaderMobile";
@@ -59,7 +59,7 @@ const TeamScreen = () => {
                 </>
             )}
 
-            <HeroDivider
+            <JumbotronTitle
                 img={'TeamScreen_hero-img'}
                 showImg={true}
                 title={'Meet the Bison Team'}

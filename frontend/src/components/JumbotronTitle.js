@@ -2,7 +2,7 @@ import React from 'react'
 import '../style/HeroDivider.css';
 import {Row, Col} from "react-bootstrap";
 
-const HeroDivider = ({img, showImg, title, leftTitle}) => {
+const JumbotronTitle = ({img, showImg, title, leftTitle}) => {
 
     return (
         <>
@@ -43,4 +43,4 @@ const HeroDivider = ({img, showImg, title, leftTitle}) => {
     )
 };
 
-export default HeroDivider
+export default JumbotronTitle

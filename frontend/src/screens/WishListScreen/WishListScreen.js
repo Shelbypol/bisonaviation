@@ -9,7 +9,7 @@ import {Link} from "react-router-dom";
 import {createWishList} from "../../actions/wishListActions";
 import HeaderMobile from "../../components/HeaderFooter/HeaderMobile";
 import HeaderDesktop from "../../components/HeaderFooter/HeaderDesktop";
-import HeroDivider from "../../components/HeroDivider";
+import JumbotronTitle from "../../components/JumbotronTitle";
 
 const WishListScreen = () => {
 
@@ -70,7 +70,7 @@ const WishListScreen = () => {
             )}
 
 
-            <HeroDivider
+            <JumbotronTitle
                 img={'WishListScreenImg'}
                 showImg={true}
                 title={'Ask the experts!'}
