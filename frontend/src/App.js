@@ -3,8 +3,8 @@ import {BrowserRouter as Router, Route, Switch,} from 'react-router-dom';
 import {Container} from 'react-bootstrap'
 import Header from "./components/HeaderFooter/Header";
 import Footer from "./components/HeaderFooter/Footer";
-import ProductsScreen from "./screens/ProductDisplay/ProductsScreen";
-import ProductScreen from "./screens/ProductDisplay/ProductScreen";
+import ProductsScreen from "./screens/Product(s)/ProductsScreen";
+import ProductScreen from "./screens/Product(s)/ProductScreen";
 import CartScreen from "./screens/Payment/CartScreen";
 import LoginScreen from "./screens/Login-Register/LoginScreen";
 import RegisterScreen from "./screens/Login-Register/RegisterScreen";
@@ -25,8 +25,8 @@ import MaintenanceScreen from "./screens/MaintenanceScreen";
 import FlirScreen from "./screens/FlirScreen";
 import TeamScreen from "./screens/TeamScreen";
 import ContactScreen from "./screens/ContactScreen";
-import TermsScreen from "./screens/TermsScreen";
-import TermsFlirScreen from "./screens/TermsFlirScreen";
+import TermsScreen from "./screens/TermsScreens/TermsScreen";
+import TermsFlirScreen from "./screens/TermsScreens/TermsFlirScreen";
 import WishListScreen from "./screens/WishListScreen/WishListScreen"
 import HeaderDesktop from "./components/HeaderFooter/HeaderDesktop";
 import HeaderMobile from "./components/HeaderFooter/HeaderMobile";

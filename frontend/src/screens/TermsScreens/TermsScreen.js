@@ -1,7 +1,7 @@
 import React, {useLayoutEffect} from 'react'
-import TermsHero from '../components/Terms/TermsHero';
-import TermsGeneral from '../components/Terms/TermsGeneral';
-import '../style/2/termsScreen/Terms.css';
+import TermsHero from '../../components/Terms/TermsHero';
+import TermsGeneral from '../../components/Terms/TermsGeneral';
+import '../../style/2/termsScreen/Terms.css';
 
 
 const TermsScreen = () => {
