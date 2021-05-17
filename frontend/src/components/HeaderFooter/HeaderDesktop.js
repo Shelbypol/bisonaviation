@@ -6,7 +6,7 @@ import {CART_RESET} from "../../constants/cartConstants";
 import {logout} from "../../actions/userActions";
 import {Link, Route} from "react-router-dom";
 import WishListTab from "../Wishlist/WishListTab";
-import SignInBtn from "../SignIn/SignInBtn";
+import SignInBtn from "../SignInRegister/SignInBtn";
 import logo from '../../images/bg-graphics/graphics/Final-Logo-Horizontal.png'
 
 

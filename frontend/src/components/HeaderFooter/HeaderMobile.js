@@ -4,7 +4,7 @@ import {Navbar, Nav, Row, Col} from 'react-bootstrap'
 import {useDispatch, useSelector} from 'react-redux'
 import {LinkContainer} from 'react-router-bootstrap'
 import {logout} from '../../actions/userActions'
-import SearchBox from "../SearchBox";
+import ProductsSearchBox from "../Product(s)/ProductsSearchBox";
 import {CART_RESET} from "../../constants/cartConstants";
 import logo from '../../images/bg-graphics/graphics/Final-Logo-Horizontal.png'
 import SocialIcons from "../SocialIcons";
@@ -61,13 +61,13 @@ const HeaderMobile = () => {
                     <Navbar.Collapse id="basic-navbar-nav border">
 
                         {/*/!*  SEARCH BOX  *!/*/}
-                        <Route render={({history}) => <SearchBox history={history}
-                                                                 searchSize={'sm'}
-                                                                 formClasses={'col-sm-12 col-md-none my-4'}
-                                                                 searchClasses={'col-10'}
-                                                                 btnSize={'sm'}
-                                                                 iconClass={'fal fa-search p-0 m-0'}
-                                                                 btnClasses={'global_blood-red-bg text-white MobileHeader_search_btn_padding px-1 col-2'}
+                        <Route render={({history}) => <ProductsSearchBox history={history}
+                                                                         searchSize={'sm'}
+                                                                         formClasses={'col-sm-12 col-md-none my-4'}
+                                                                         searchClasses={'col-10'}
+                                                                         btnSize={'sm'}
+                                                                         iconClass={'fal fa-search p-0 m-0'}
+                                                                         btnClasses={'global_blood-red-bg text-white MobileHeader_search_btn_padding px-1 col-2'}
 
                         />}/>
 

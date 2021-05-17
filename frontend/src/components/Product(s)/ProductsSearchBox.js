@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import {Form, Button} from 'react-bootstrap'
 
 
-const SearchBox = ({history, searchClasses, formClasses, btnClasses, btnSize, searchSize, btnStyle, iconClass, inputStyle, imgClasses}) => {
+const ProductsSearchBox = ({history, searchClasses, formClasses, btnClasses, btnSize, searchSize, btnStyle, iconClass, inputStyle, imgClasses}) => {
     const [keyword, setKeyword] = useState('');
 
     const submitHandler = (e) => {
@@ -38,4 +38,4 @@ const SearchBox = ({history, searchClasses, formClasses, btnClasses, btnSize, se
     )
 };
 
-export default SearchBox
+export default ProductsSearchBox

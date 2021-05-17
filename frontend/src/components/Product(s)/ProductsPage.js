@@ -7,7 +7,7 @@ import Loader from "../Loader";
 import Message from "../Message";
 import '../../style/CategoryManufacturerSideBar.css'
 import {Route} from "react-router-dom";
-import SearchBox from "../SearchBox";
+import ProductsSearchBox from "./ProductsSearchBox";
 import {Container} from "react-bootstrap/cjs";
 import {Jumbotron} from "reactstrap";
 import Paginate from "../Paginate";
@@ -128,13 +128,13 @@ const ProductsPage = ({match, history}) => {
                                     <Col lg={2} xs={12} className='CatMan-nav-menu-items mr-1 '>
                                         {/*<div className='CatMan_scroll p-0 m-0'>*/}
                                         {/*     MANUFACTURER SORT DISPLAY AVAILABLE CATS ON CLICK    */}
-                                        <Route render={({history}) => <SearchBox history={history}
-                                                                                 formClasses={'pb-2 ml-n3 CatMan_search-form'}
-                                                                                 searchSize={'sm'}
-                                                                                 searchClasses={'col-10 py-0 CatMan_search-bar'}
-                                                                                 btnSize={'sm'}
-                                                                                 btnClasses={'bg-dark text-white StickyHeader_search_btn_padding px-1 col-2 rounded-right'}
-                                                                                 iconClass={'fal fa-search p-0'}
+                                        <Route render={({history}) => <ProductsSearchBox history={history}
+                                                                                         formClasses={'pb-2 ml-n3 CatMan_search-form'}
+                                                                                         searchSize={'sm'}
+                                                                                         searchClasses={'col-10 py-0 CatMan_search-bar'}
+                                                                                         btnSize={'sm'}
+                                                                                         btnClasses={'bg-dark text-white StickyHeader_search_btn_padding px-1 col-2 rounded-right'}
+                                                                                         iconClass={'fal fa-search p-0'}
                                         />}/>
 
 

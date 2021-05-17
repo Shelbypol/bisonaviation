@@ -6,8 +6,8 @@ import {CART_RESET} from "../../constants/cartConstants";
 import {removeFromCart} from "../../actions/cartActions";
 import {useDispatch, useSelector} from "react-redux";
 import '../../style/SideBar.css'
-import SignInForm from "../SignIn/SignInForm";
-import SignInDropdown from "../SignIn/SignInDropdown";
+import SignInForm from "../SignInRegister/SignInForm";
+import SignInDropdown from "../SignInRegister/SignInDropdown";
 
 const WishListSave = ({success, cartItems, cart}) => {
     const [login, setLogin] = useState(false);
