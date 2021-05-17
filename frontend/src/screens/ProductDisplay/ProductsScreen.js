@@ -6,7 +6,6 @@ import {Jumbotron} from "reactstrap";
 import HeaderDesktop from "../../components/HeaderFooter/HeaderDesktop";
 import HeaderMobile from "../../components/HeaderFooter/HeaderMobile";
 import {useDispatch, useSelector} from "react-redux";
-import HeroDivider from "../../components/HeroDivider";
 
 const ProductsScreen = ({match, history}) => {
 
@@ -37,12 +36,6 @@ const ProductsScreen = ({match, history}) => {
             ) : (
                     <HeaderDesktop/>
             )}
-
-                    <HeroDivider
-                        img={''}
-                        showImg={false}
-                        title={''}
-                    />
 
                 <Jumbotron className='CatMan_screen-bg mb-0 px-0 pt-0 pb-0' style={{zIndex: '2'}} fluid>
 

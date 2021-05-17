@@ -1,9 +1,9 @@
 import React from "react";
 import Fade from 'react-reveal/Fade';
 import {Col, Row} from "react-bootstrap";
-import AvionicsProducts from "./AvionicsProducts";
+import AvionicsProducts from "./Avionics/AvionicsProducts";
 import '../style/2/GarminHomeFlag.scss'
-import ProductCarousel from "./ProductCarousel";
+import ProductCarousel from "./Products/ProductsCarousel/ProductCarousel";
 
 
 const Garmin = () => {
