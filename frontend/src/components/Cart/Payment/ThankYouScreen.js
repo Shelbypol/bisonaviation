@@ -1,8 +1,8 @@
 import React, {useEffect} from 'react'
 import {useDispatch, useSelector} from 'react-redux'
-import Message from '../../components/Message'
-import Loader from '../../components/Loader'
-import {getOrderDetails} from "../../actions/orderActions"
+import Message from '../../Message'
+import Loader from '../../Loader'
+import {getOrderDetails} from "../../../actions/orderActions"
 
 const ThankYouScreen = ({history, match}) => {
     const orderId = match.params.id;

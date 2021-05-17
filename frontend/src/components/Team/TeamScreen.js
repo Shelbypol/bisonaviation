@@ -1,25 +1,24 @@
 import React, {useEffect, useLayoutEffect, useState} from 'react'
 import {Container, Row} from "react-bootstrap";
-import TeamCard from "../components/Team/TeamCard";
-import johnAtkin from '../images/bg-graphics/screen-team/john_atkin.png'
-import leslieBanner from '../images/bg-graphics/screen-team/leslie_banner.png'
-import deenaSmith from '../images/bg-graphics/screen-team/deena_smith.png'
-import jdPhillips from '../images/bg-graphics/screen-team/jd_phillips.png'
-import roelRogerio from '../images/bg-graphics/screen-team/roel_rogerio.png'
-import jeffRossell from '../images/bg-graphics/screen-team/jeffrey_rossell.png'
-import robinRodriguez from '../images/bg-graphics/screen-team/robin_rodriguez.png'
-import jerryFitzgerald from '../images/bg-graphics/screen-team/jerry_fitzgerald.png'
-import johnSenecal from '../images/bg-graphics/screen-team/john_senecal.png'
-import matthewGurniak from '../images/bg-graphics/screen-team/matthew_gurniak.png'
-import halibut from '../images/bg-graphics/screen-team/halibut.png'
-import tuna from '../images/bg-graphics/screen-team/tuna.png'
-import mackerel from '../images/bg-graphics/screen-team/mackeral.png'
-import JumbotronTitle from "../components/JumbotronTitle";
-import '../style/2/teamScreen/TeamHero.css';
+import TeamCard from "./TeamCard";
+import johnAtkin from '../../images/bg-graphics/screen-team/john_atkin.png'
+import leslieBanner from '../../images/bg-graphics/screen-team/leslie_banner.png'
+import deenaSmith from '../../images/bg-graphics/screen-team/deena_smith.png'
+import jdPhillips from '../../images/bg-graphics/screen-team/jd_phillips.png'
+import roelRogerio from '../../images/bg-graphics/screen-team/roel_rogerio.png'
+import jeffRossell from '../../images/bg-graphics/screen-team/jeffrey_rossell.png'
+import robinRodriguez from '../../images/bg-graphics/screen-team/robin_rodriguez.png'
+import jerryFitzgerald from '../../images/bg-graphics/screen-team/jerry_fitzgerald.png'
+import johnSenecal from '../../images/bg-graphics/screen-team/john_senecal.png'
+import halibut from '../../images/bg-graphics/screen-team/halibut.png'
+import tuna from '../../images/bg-graphics/screen-team/tuna.png'
+import mackerel from '../../images/bg-graphics/screen-team/mackeral.png'
+import JumbotronTitle from "../JumbotronTitle";
+import '../../style/2/teamScreen/TeamHero.css';
 import {useDispatch} from "react-redux";
-import HeaderMobile from "../components/HeaderFooter/HeaderMobile";
-import HeaderDesktop from "../components/HeaderFooter/HeaderDesktop";
-import Footer from "../components/HeaderFooter/Footer";
+import HeaderMobile from "../../components/HeaderFooter/HeaderMobile";
+import HeaderDesktop from "../../components/HeaderFooter/HeaderDesktop";
+import Footer from "../../components/HeaderFooter/Footer";
 
 
 const TeamScreen = () => {

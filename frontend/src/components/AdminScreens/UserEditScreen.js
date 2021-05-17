@@ -2,12 +2,12 @@ import React, {useState, useEffect, useLayoutEffect} from 'react'
 import {Link} from 'react-router-dom'
 import {Form, Button, Container} from 'react-bootstrap'
 import {useDispatch, useSelector} from 'react-redux'
-import Message from '../../components/Message'
-import Loader from '../../components/Loader'
-import FormContainer from "../../components/FormContainer";
+import Message from '../Message'
+import Loader from '../Loader'
+import FormContainer from "../FormContainer";
 import { getUserDetails, updateUser } from '../../actions/userActions'
 import { USER_UPDATE_RESET} from "../../constants/userConstants";
-import HeaderDesktop from "../../components/HeaderFooter/HeaderDesktop";
+import HeaderDesktop from "../HeaderFooter/HeaderDesktop";
 
 const UserEditScreen = ({ match, history}) => {
     const userId = match.params.id;

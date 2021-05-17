@@ -6,7 +6,7 @@ import {logout} from "../../actions/userActions";
 import SignInForm from "./SignInForm";
 import '../../style/SideBar.css'
 
-const SignInTrueBtns = ({showSidebar}) => {
+const SignInSuccess = ({showSidebar}) => {
     const [loginShow, setLoginShow] = useState(false);
 
     const dispatch = useDispatch();
@@ -89,5 +89,5 @@ const SignInTrueBtns = ({showSidebar}) => {
         </>
     )
 };
-export default SignInTrueBtns
+export default SignInSuccess
 

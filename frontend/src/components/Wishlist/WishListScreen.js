@@ -2,7 +2,7 @@ import React, {useEffect, useLayoutEffect, useState} from 'react'
 import {useDispatch, useSelector} from 'react-redux'
 import {Row, Col, Container} from 'react-bootstrap'
 import {CART_RESET} from "../../constants/cartConstants";
-import WishListEmail from "../../components/Wishlist/WishListEmail";
+import WishListEmail from "./WishListEmail";
 import {EMAIL_RESET} from "../../constants/emailConstants";
 import '../../style/wishListScreen/WishListScreen.css';
 import {Link} from "react-router-dom";

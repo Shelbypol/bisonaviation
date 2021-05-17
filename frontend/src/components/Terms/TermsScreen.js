@@ -1,10 +1,10 @@
 import React, {useLayoutEffect} from 'react'
-import TermsHero from '../../components/Terms/TermsHero';
+import TermsHero from './TermsHero';
+import TermsGeneral from './TermsGeneral';
 import '../../style/2/termsScreen/Terms.css';
-import TermsFlir from "../../components/Terms/TermsFlir";
 
 
-const TermsFlirScreen = () => {
+const TermsScreen = () => {
 
     useLayoutEffect(() => {
         window.scrollTo(0, 0)
@@ -13,11 +13,11 @@ const TermsFlirScreen = () => {
     return (
         <>
             <TermsHero/>
-            <TermsFlir/>
+            <TermsGeneral/>
         </>
 
     )
 
 };
 
-export default TermsFlirScreen
+export default TermsScreen

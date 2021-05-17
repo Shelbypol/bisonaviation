@@ -2,10 +2,10 @@ import React, {useState, useEffect, useLayoutEffect} from 'react'
 import {Link} from 'react-router-dom'
 import {Form, Button, Row, Col} from 'react-bootstrap'
 import {useDispatch, useSelector} from 'react-redux'
-import Message from '../../components/Message'
-import Loader from '../../components/Loader'
+import Message from '../Message'
+import Loader from '../Loader'
 import {login} from '../../actions/userActions'
-import FormContainer from "../../components/FormContainer";
+import FormContainer from "../FormContainer";
 
 
 const LoginScreen = ({location, history}) => {

@@ -1,10 +1,10 @@
 import React, {useEffect, useLayoutEffect, useState} from 'react'
 import { Row } from 'react-bootstrap'
-import Meta from "../../components/Meta";
-import ProductsBrowse from "../../components/Products/ProductsPage";
+import Meta from "../Meta";
+import ProductsBrowse from "./ProductsPage";
 import {Jumbotron} from "reactstrap";
-import HeaderDesktop from "../../components/HeaderFooter/HeaderDesktop";
-import HeaderMobile from "../../components/HeaderFooter/HeaderMobile";
+import HeaderDesktop from "../HeaderFooter/HeaderDesktop";
+import HeaderMobile from "../HeaderFooter/HeaderMobile";
 import {useDispatch, useSelector} from "react-redux";
 
 const ProductsScreen = ({match, history}) => {

@@ -2,10 +2,10 @@ import React, {useEffect, useLayoutEffect} from 'react'
 import {LinkContainer} from 'react-router-bootstrap'
 import {Table, Button, Container} from 'react-bootstrap'
 import {useDispatch, useSelector} from 'react-redux'
-import Message from '../../components/Message'
-import Loader from '../../components/Loader'
+import Message from '../Message'
+import Loader from '../Loader'
 import { listUsers, deleteUser } from "../../actions/userActions"
-import HeaderDesktop from "../../components/HeaderFooter/HeaderDesktop";
+import HeaderDesktop from "../HeaderFooter/HeaderDesktop";
 
 const UserListScreen = ({ history }) => {
     const dispatch = useDispatch();

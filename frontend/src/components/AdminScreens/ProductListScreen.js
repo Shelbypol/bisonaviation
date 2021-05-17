@@ -2,12 +2,12 @@ import React, {useEffect, useLayoutEffect} from 'react'
 import {LinkContainer} from 'react-router-bootstrap'
 import {Table, Button, Row, Col, Container} from 'react-bootstrap'
 import {useDispatch, useSelector} from 'react-redux'
-import Message from '../../components/Message'
-import Loader from '../../components/Loader'
-import Paginate from "../../components/Paginate";
+import Message from '../Message'
+import Loader from '../Loader'
+import Paginate from "../Paginate";
 import { listProducts, deleteProduct, createProduct } from "../../actions/productActions"
 import { PRODUCT_CREATE_RESET } from "../../constants/productConstants";
-import HeaderDesktop from "../../components/HeaderFooter/HeaderDesktop";
+import HeaderDesktop from "../HeaderFooter/HeaderDesktop";
 
 const ProductListScreen = ({ history, match }) => {
     const pageNumber = match.params.pageNumber || 1;

@@ -2,11 +2,11 @@ import React, { useEffect } from 'react'
 import {Link} from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { Row, Col, ListGroup, Image, Form, Button, Card } from 'react-bootstrap'
-import Message from '../../components/Message'
-import { addToCart, removeFromCart } from '../../actions/cartActions'
+import Message from '../../Message'
+import { addToCart, removeFromCart } from '../../../actions/cartActions'
 import {LinkContainer} from "react-router-bootstrap";
-import {createOrder} from "../../actions/orderActions";
-import {CART_RESET} from "../../constants/cartConstants";
+import {createOrder} from "../../../actions/orderActions";
+import {CART_RESET} from "../../../constants/cartConstants";
 
 // match == id, location == get a query string '?qty', history == used to redirect
 const CartScreen = ({ match, location, history }) => {

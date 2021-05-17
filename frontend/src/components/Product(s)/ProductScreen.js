@@ -3,14 +3,14 @@ import {Link} from 'react-router-dom'
 import {useDispatch, useSelector} from 'react-redux'
 import {Row, Col, ListGroup, Tabs, Tab, Jumbotron, Container} from 'react-bootstrap'
 import {listProductDetails} from '../../actions/productActions'
-import Message from '../../components/Message'
-import Loader from '../../components/Loader'
+import Message from '../Message'
+import Loader from '../Loader'
 import {PRODUCT_CREATE_REVIEW_RESET} from "../../constants/productConstants";
-import Meta from "../../components/Meta";
+import Meta from "../Meta";
 import {addToCart, removeFromCart} from "../../actions/cartActions";
-import HeaderMobile from "../../components/HeaderFooter/HeaderMobile";
-import JumbotronTitle from "../../components/JumbotronTitle";
-import HeaderDesktop from "../../components/HeaderFooter/HeaderDesktop";
+import HeaderMobile from "../HeaderFooter/HeaderMobile";
+import JumbotronTitle from "../JumbotronTitle";
+import HeaderDesktop from "../HeaderFooter/HeaderDesktop";
 
 const ProductScreen = ({history, match}) => {
     const [width, setWidth] = useState(window.innerWidth);

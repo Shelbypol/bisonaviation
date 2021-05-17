@@ -1,4 +1,4 @@
-import React, {useEffect, useLayoutEffect, useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import '../../style/flirScreen/Flir.css';
 import FlirTable from "../../components/Flir/FlirTable";
 import {Jumbotron, Container} from "reactstrap";
