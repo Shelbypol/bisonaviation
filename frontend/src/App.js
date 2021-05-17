@@ -19,7 +19,7 @@ import ProductListScreen from "./screens/AdminScreens/ProductListScreen";
 import ProductEditScreen from "./screens/AdminScreens/ProductEditScreen";
 import OrderListScreen from "./screens/AdminScreens/OrderListScreen";
 import ThankYouScreen from "./screens/Payment/ThankYouScreen";
-import HomeScreen from "./screens/HomeScreen2";
+import HomeScreen from "./screens/HomeScreen";
 import AvionicsScreen from "./screens/AvionicsScreen";
 import MaintenanceScreen from "./screens/MaintenanceScreen";
 import FlirScreen from "./screens/FlirScreen";

@@ -14,7 +14,7 @@ import '../style/2/AvionicsProductsFlag.scss';
 
 
 
-const HomeScreen2 = () => {
+const HomeScreen = () => {
 
     window.onbeforeunload = () => {
         localStorage.clear()
@@ -78,4 +78,4 @@ const HomeScreen2 = () => {
 
     )
 };
-export default HomeScreen2
+export default HomeScreen
