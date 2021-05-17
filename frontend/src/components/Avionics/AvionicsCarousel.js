@@ -2,7 +2,7 @@ import React from 'react'
 import '../../style/avionicsScreen/AvionicsHero.css'
 import HeroCarousel from "../HeroCarousel";
 
-const AvionicsHero = () => {
+const AvionicsCarousel = () => {
 
     return (
         <HeroCarousel
@@ -48,4 +48,4 @@ const AvionicsHero = () => {
     )
 };
 
-export default AvionicsHero
+export default AvionicsCarousel

@@ -1,5 +1,5 @@
 import React, {useEffect, useLayoutEffect, useState} from 'react'
-import MaintenanceHero from "../components/Maintenance/MaintenanceHero";
+import MaintenanceCarousel from "../components/Maintenance/MaintenanceCarousel";
 import AvionicsIcons from "../components/Avionics/AvionicsIcons";
 import {useDispatch} from "react-redux";
 import HeaderMobile from "../components/HeaderFooter/HeaderMobile";
@@ -40,7 +40,7 @@ const MaintenanceScreen = () => {
                 </>
             )}
 
-                <MaintenanceHero/>
+                <MaintenanceCarousel/>
                 <AvionicsIcons/>
                 <Footer/>
         </>

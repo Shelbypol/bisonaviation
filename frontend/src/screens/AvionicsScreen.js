@@ -1,5 +1,5 @@
 import React, {useEffect, useLayoutEffect, useState} from 'react'
-import AvionicsHero from "../components/Avionics/AvionicsHero";
+import AvionicsCarousel from "../components/Avionics/AvionicsCarousel";
 import HeaderMobile from "../components/HeaderFooter/HeaderMobile";
 import HeaderDesktop from "../components/HeaderFooter/HeaderDesktop";
 import {useDispatch} from "react-redux";
@@ -39,7 +39,7 @@ const AvionicsScreen = () => {
                 </>
             )}
 
-            <AvionicsHero/>
+            <AvionicsCarousel/>
 
             <Footer/>
         </>

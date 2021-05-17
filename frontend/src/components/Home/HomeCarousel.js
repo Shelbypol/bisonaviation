@@ -1,9 +1,9 @@
 import React from 'react';
-import '../style/2/HomeHero.css';
-import HeroCarousel from "./HeroCarousel";
+import '../../style/2/HomeHero.css';
+import HeroCarousel from "../HeroCarousel.js";
 
 
-const HomeHero = () => {
+const HomeCarousel = () => {
     return (
         <HeroCarousel
 
@@ -53,4 +53,4 @@ const HomeHero = () => {
     );
 };
 
-export default HomeHero;
+export default HomeCarousel;

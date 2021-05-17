@@ -8,7 +8,7 @@ import flir1 from "../../images/bg-graphics/screen-flir/flirinventory.png";
 import Fade from "react-reveal/Fade";
 
 
-const Flir = () => {
+const HomeFlir = () => {
     return (
         <>
 
@@ -93,4 +93,4 @@ const Flir = () => {
     )
 };
 
-export default Flir
+export default HomeFlir
