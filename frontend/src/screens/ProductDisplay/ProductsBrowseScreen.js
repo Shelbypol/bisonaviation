@@ -8,7 +8,7 @@ import HeaderMobile from "../../components/HeaderFooter/HeaderMobile";
 import {useDispatch, useSelector} from "react-redux";
 import HeroDivider from "../../components/HeroDivider";
 
-const ProductsDisplayScreen = ({match, history}) => {
+const ProductsBrowseScreen = ({match, history}) => {
 
     const [width, setWidth] = useState(window.innerWidth);
 
@@ -62,4 +62,4 @@ const ProductsDisplayScreen = ({match, history}) => {
     )
 };
 
-export default ProductsDisplayScreen;
+export default ProductsBrowseScreen;

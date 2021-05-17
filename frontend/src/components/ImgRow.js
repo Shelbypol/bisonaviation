@@ -1,6 +1,6 @@
 import React from "react";
 import {Col, Jumbotron, Row} from "reactstrap";
-import '../../style/2/ImgRow.css';
+import '../style/2/ImgRow.css';
 
 const ImgRow = () => {
 

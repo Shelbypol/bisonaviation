@@ -3,7 +3,7 @@ import {BrowserRouter as Router, Route, Switch,} from 'react-router-dom';
 import {Container} from 'react-bootstrap'
 import Header from "./components/HeaderFooter/Header";
 import Footer from "./components/HeaderFooter/Footer";
-import ProductsDisplayScreen from "./screens/ProductDisplay/ProductsDisplayScreen";
+import ProductsBrowseScreen from "./screens/ProductDisplay/ProductsBrowseScreen";
 import ProductScreen from "./screens/ProductDisplay/ProductScreen";
 import CartScreen from "./screens/Payment/CartScreen";
 import LoginScreen from "./screens/Login-Register/LoginScreen";
@@ -66,10 +66,10 @@ const App = () => {
                 <Route path='/admin/productlist/:pageNumber' component={ProductListScreen} exact/>
                 <Route path='/admin/product/:id/edit' component={ProductEditScreen}/>
                 <Route path='/admin/orderlist' component={OrderListScreen}/>
-                <Route path='/products' component={ProductsDisplayScreen} exact/>
-                <Route path='/search/:keyword' component={ProductsDisplayScreen} exact/>
-                <Route path='/page/:pageNumber' component={ProductsDisplayScreen} exact/>
-                <Route path='/search/:keyword/page/:pageNumber' component={ProductsDisplayScreen}/>
+                <Route path='/products' component={ProductsBrowseScreen} exact/>
+                <Route path='/search/:keyword' component={ProductsBrowseScreen} exact/>
+                <Route path='/page/:pageNumber' component={ProductsBrowseScreen} exact/>
+                <Route path='/search/:keyword/page/:pageNumber' component={ProductsBrowseScreen}/>
                 <Route path='/product/:id' component={ProductScreen}/>
 
                 {/* ================    STICKY HEADER ONLY W/ FOOTER    =================*/}

@@ -145,7 +145,6 @@ const ProductScreen = ({history, match}) => {
                                                    style={{marginLeft: '-6vw'}}>{product.isPromoType}</p>
                                             )}
 
-                                            {/*pl-sm-5*/}
                                             <h1 className='mt-4'>{product.name}</h1>
                                         </ListGroup.Item>
 

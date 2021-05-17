@@ -1,5 +1,5 @@
 import React from 'react';
-import Tabs from '../2/Tabs';
+import Tabs from '../Tabs';
 import {Row, Col, Tab, ListGroup} from 'react-bootstrap';
 import sales from '../../images/bg-graphics/screen-flir/flir-sharp.png'
 import maintanence from '../../images/bg-graphics/screen-flir/sales1.png'
