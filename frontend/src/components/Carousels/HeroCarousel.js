@@ -1,10 +1,8 @@
 import React from 'react'
 import {Row, Col} from 'reactstrap';
 import img1 from '../../images/bg-graphics/graphics/fs-slider-caption-bg-dark.png'
-import {Carousel, Nav, Navbar} from "react-bootstrap"
+import {Carousel} from "react-bootstrap"
 import Slide from "react-reveal/Slide";
-import {LinkContainer} from "react-router-bootstrap";
-import logo from "../../images/bg-graphics/graphics/Final-Logo-Horizontal.png";
 import SocialIcons from "../SocialIcons";
 import '../../style/HeroCarousel.css';
 

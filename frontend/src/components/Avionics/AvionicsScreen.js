@@ -1,8 +1,9 @@
 import React, {useEffect, useLayoutEffect, useState} from 'react'
-import AvionicsCarousel from "./AvionicsCarousel";
-import HeaderMobile from "../HeaderFooter/HeaderMobile";
-import HeaderDesktop from "../HeaderFooter/HeaderDesktop";
 import {useDispatch} from "react-redux";
+import AvionicsCarousel from "./AvionicsCarousel.css"
+// import AvionicsCarousel from "../AvionicsCarousel.js";
+import HeaderMobile from "../HeaderFooter/HeaderMobile.js";
+import HeaderDesktop from "../HeaderFooter/HeaderDesktop.js";
 import Footer from "../HeaderFooter/Footer";
 
 

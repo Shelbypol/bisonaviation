@@ -6,7 +6,7 @@ import HomeServices from "../../components/Home/HomeServices";
 import HomeMaintenance from "../../components/Home/HomeMaintenance";
 import HomeFlir from "../../components/Home/HomeFlir";
 import {Col, Row} from 'react-bootstrap';
-import GarminAd from "../../components/GarminAd";
+import ProductsCarouselGarminAd from "../Product(s)/ProductsCarousel/ProductsCarouselGarminAd";
 import HomeAvionics from "../../components/Home/HomeAvionics";
 import TestimonialCarousel from "../Carousels/TestimonialCarousel"
 import '../../style/2/AvionicsProducts.css';
@@ -49,7 +49,7 @@ const HomeScreen = () => {
 
                     <Row className='my-5 py-5 d-flex justify-content-center'>
                         <Col md={9} xs={12} style={{zIndex: '3000'}} className='mb-5'>
-                            <GarminAd/>
+                            <ProductsCarouselGarminAd/>
                         </Col>
                     </Row>
 

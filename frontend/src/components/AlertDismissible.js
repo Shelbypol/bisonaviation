@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
-import {Button, Alert, Col} from 'react-bootstrap';
+import {Button, Alert} from 'react-bootstrap';
 
 const AlertDismissible = (props) => {
-    const [show, setShow] = useState(false)
+    const [show, setShow] = useState(false);
 
 
     return (
@@ -23,12 +23,7 @@ const AlertDismissible = (props) => {
             {show &&
 
             <Alert>
-                {/*<p>*/}
-                {/*{props.title.toUpperCase()}*/}
-                {/*{props.title2 && ' ' + props.title2.toUpperCase()}*/}
-                {/*<br/>*/}
                 {props.note}
-                {/*</p>*/}
             </Alert>
 
 
@@ -37,6 +32,6 @@ const AlertDismissible = (props) => {
 
         </>
     );
-}
+};
 
 export default AlertDismissible;

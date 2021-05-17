@@ -1,13 +1,13 @@
 import React, {useState, useEffect, useLayoutEffect} from 'react'
 import {Link} from 'react-router-dom'
 import {useDispatch, useSelector} from 'react-redux'
+import {PRODUCT_CREATE_REVIEW_RESET} from "../../constants/productConstants";
 import {Row, Col, ListGroup, Tabs, Tab, Jumbotron, Container} from 'react-bootstrap'
+import {addToCart, removeFromCart} from "../../actions/cartActions";
 import {listProductDetails} from '../../actions/productActions'
 import Message from '../Message'
 import Loader from '../Loader'
-import {PRODUCT_CREATE_REVIEW_RESET} from "../../constants/productConstants";
 import Meta from "../Meta";
-import {addToCart, removeFromCart} from "../../actions/cartActions";
 import HeaderMobile from "../HeaderFooter/HeaderMobile";
 import JumbotronTitle from "../JumbotronTitle";
 import HeaderDesktop from "../HeaderFooter/HeaderDesktop";

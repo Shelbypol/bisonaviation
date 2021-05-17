@@ -1,8 +1,11 @@
 import React, {useState} from 'react'
 import {Col} from 'react-bootstrap';
 import AlertDismissible from '../AlertDismissible';
+
 const AvionicsIcons = (props) => {
-    const [show, setShow] = useState(false)
+
+    const [show, setShow] = useState(false);
+
     return (
         <>
             <h1>Avionics Services</h1>
