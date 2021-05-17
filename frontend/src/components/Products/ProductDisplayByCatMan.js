@@ -2,9 +2,9 @@ import React from "react";
 import {Col, Row} from "react-bootstrap";
 import Paginate from "../Paginate";
 import Product from "./Product";
-import CategoryManufacturerDisplay from "./CategoryManufacturerDisplay";
+// import ProductsBrowse from "./ProductsBrowse";
 
-const ProductsDisplaySByCatMan = ({sideBar, history, match, updateCatProp, updateManufacturerProp, keyword, pages, page, products}) => {
+const ProductsDisplayByCatMan = ({sideBar, history, match, updateCatProp, updateManufacturerProp, keyword, pages, page, products}) => {
 
 
     return (
@@ -64,4 +64,4 @@ const ProductsDisplaySByCatMan = ({sideBar, history, match, updateCatProp, updat
         </>
     )
 };
-export default ProductsDisplaySByCatMan
+export default ProductsDisplayByCatMan

@@ -1,7 +1,7 @@
 import React, {useEffect, useLayoutEffect, useState} from 'react'
 import { Row } from 'react-bootstrap'
 import Meta from "../../components/Meta";
-import CategoryManufacturerDisplay from "../../components/ProductDisplay/CategoryManufacturerDisplay";
+import ProductsBrowse from "../../components/Products/ProductsBrowse";
 import {Jumbotron} from "reactstrap";
 import HeaderDesktop from "../../components/HeaderFooter/HeaderDesktop";
 import HeaderMobile from "../../components/HeaderFooter/HeaderMobile";
@@ -51,7 +51,7 @@ const ProductsBrowseScreen = ({match, history}) => {
 
                         <Row xs={12} className='CatMan-nav-menu'>
                             {/*     MANUFACTURER SORT DISPLAY AVAILABLE CATS ON CLICK    */}
-                            <CategoryManufacturerDisplay match={match} history={history}/>
+                            <ProductsBrowse match={match} history={history}/>
 
                         </Row>
                     </>

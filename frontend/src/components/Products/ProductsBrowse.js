@@ -12,7 +12,7 @@ import {Container} from "react-bootstrap/cjs";
 import {Jumbotron} from "reactstrap";
 import Paginate from "../Paginate";
 
-const CategoryManufacturerDisplay = ({match, history}) => {
+const ProductBrowse = ({match, history}) => {
 
     const [sideBar, setSideBar] = useState(true);
     const [width, setWidth] = useState(window.innerWidth);
@@ -126,16 +126,16 @@ const CategoryManufacturerDisplay = ({match, history}) => {
                             {sideBar ? (
                                 <>
                                     <Col lg={2} xs={12} className='CatMan-nav-menu-items mr-1 '>
-{/*<div className='CatMan_scroll p-0 m-0'>*/}
+                                        {/*<div className='CatMan_scroll p-0 m-0'>*/}
                                         {/*     MANUFACTURER SORT DISPLAY AVAILABLE CATS ON CLICK    */}
-                                            <Route render={({history}) => <SearchBox history={history}
-                                                                                     formClasses={'pb-2 ml-n3 CatMan_search-form'}
-                                                                                     searchSize={'sm'}
-                                                                                     searchClasses={'col-10 py-0 CatMan_search-bar'}
-                                                                                     btnSize={'sm'}
-                                                                                     btnClasses={'bg-dark text-white StickyHeader_search_btn_padding px-1 col-2 rounded-right'}
-                                                                                     iconClass={'fal fa-search p-0'}
-                                            />}/>
+                                        <Route render={({history}) => <SearchBox history={history}
+                                                                                 formClasses={'pb-2 ml-n3 CatMan_search-form'}
+                                                                                 searchSize={'sm'}
+                                                                                 searchClasses={'col-10 py-0 CatMan_search-bar'}
+                                                                                 btnSize={'sm'}
+                                                                                 btnClasses={'bg-dark text-white StickyHeader_search_btn_padding px-1 col-2 rounded-right'}
+                                                                                 iconClass={'fal fa-search p-0'}
+                                        />}/>
 
 
                                         {(updateManufacturer !== '' || updateCat !== '') &&
@@ -254,7 +254,7 @@ const CategoryManufacturerDisplay = ({match, history}) => {
 
                                             </>
                                         )}
-{/*</div>*/}
+                                        {/*</div>*/}
                                     </Col>
                                     <Col lg={9} xs={12} className='min-vh-100 pt-3 ml-5 bg-white pl-5 pl-1'>
 
@@ -296,4 +296,4 @@ const CategoryManufacturerDisplay = ({match, history}) => {
     )
 };
 
-export default CategoryManufacturerDisplay
+export default ProductBrowse
