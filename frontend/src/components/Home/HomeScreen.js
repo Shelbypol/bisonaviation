@@ -1,16 +1,16 @@
 import React, {useLayoutEffect} from 'react'
-import '../style/global-2.css'
-import HomeCarousel from '../components/Home/HomeCarousel'
-import HomeAwardBanner from '../components/Home/HomeAwardBanner'
-import HomeServices from "../components/Home/HomeServices";
-import HomeMaintenance from "../components/Home/HomeMaintenance";
-import HomeFlir from "../components/Home/HomeFlir";
+import '../../style/global-2.css'
+import HomeCarousel from '../../components/Home/HomeCarousel'
+import HomeAwardBanner from '../../components/Home/HomeAwardBanner'
+import HomeServices from "../../components/Home/HomeServices";
+import HomeMaintenance from "../../components/Home/HomeMaintenance";
+import HomeFlir from "../../components/Home/HomeFlir";
 import {Col, Row} from 'react-bootstrap';
-import GarminAd from "../components/GarminAd";
-import HomeAvionics from "../components/Home/HomeAvionics";
-import TestimonialCarousel from "../components/TestimonialCarousel";
-import '../style/2/AvionicsProducts.css';
-import '../style/2/AvionicsProductsFlag.scss';
+import GarminAd from "../../components/GarminAd";
+import HomeAvionics from "../../components/Home/HomeAvionics";
+import TestimonialCarousel from "../../components/TestimonialCarousel"
+import '../../style/2/AvionicsProducts.css';
+import '../../style/2/AvionicsProductsFlag.scss';
 
 
 

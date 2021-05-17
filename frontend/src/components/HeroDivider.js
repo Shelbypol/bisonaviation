@@ -1,9 +1,8 @@
 import React from 'react'
 import '../style/HeroDivider.css';
-import {Jumbotron, Image, Row, Col} from "react-bootstrap";
-import graphic from '../images/bg-graphics/graphics/black-top-large-left.png'
+import {Row, Col} from "react-bootstrap";
 
-const HeroDivider = ({img, showImg, showDivider, textColor, title, leftTitle}) => {
+const HeroDivider = ({img, showImg, title, leftTitle}) => {
 
     return (
         <>
@@ -36,18 +35,7 @@ const HeroDivider = ({img, showImg, showDivider, textColor, title, leftTitle}) =
                         )}
                     </Col>
                 )}
-                {/*{showDivider && (*/}
 
-                {/*    <Col xs={12}*/}
-                {/*         className='*/}
-                {/*     HeroDivider_graphic*/}
-                {/*     bg-transparent*/}
-                {/*     m-0*/}
-                {/*     p-0*/}
-
-                {/*     '>*/}
-                {/*    </Col>*/}
-                {/*)}*/}
             </Row>
 
 

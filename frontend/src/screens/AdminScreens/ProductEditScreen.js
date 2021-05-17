@@ -8,7 +8,7 @@ import Loader from '../../components/Loader'
 import {listProductDetails, updateProduct} from "../../actions/productActions";
 import {PRODUCT_UPDATE_RESET} from "../../constants/productConstants";
 import HeaderDesktop from "../../components/HeaderFooter/HeaderDesktop";
-import '../../style/Admin.css'
+import './Admin.css'
 
 
 const ProductEditScreen = ({match, history}) => {
