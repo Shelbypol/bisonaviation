@@ -5,7 +5,7 @@ import '../../style/headers.css'
 import '../../style/global-1.css'
 import Fade from "react-reveal/Fade";
 
-const Headers = () => {
+const Header = () => {
     const [width, setWidth] = useState(window.innerWidth);
 
 
@@ -33,4 +33,4 @@ const Headers = () => {
     )
 };
 
-export default Headers
+export default Header

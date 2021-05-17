@@ -1,7 +1,7 @@
 import React, {Fragment, useEffect, useLayoutEffect, useState} from 'react';
 import {BrowserRouter as Router, Route, Switch,} from 'react-router-dom';
 import {Container} from 'react-bootstrap'
-import Headers from "./components/HeaderFooter/Headers";
+import Header from "./components/HeaderFooter/Header";
 import Footer from "./components/HeaderFooter/Footer";
 import ProductsDisplayScreen from "./screens/ProductDisplay/ProductsDisplayScreen";
 import ProductScreen from "./screens/ProductDisplay/ProductScreen";
