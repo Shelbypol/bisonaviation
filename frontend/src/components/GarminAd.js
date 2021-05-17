@@ -6,7 +6,7 @@ import '../style/2/GarminHomeFlag.scss'
 import ProductCarousel from "./Products/ProductsCarousel/ProductCarousel";
 
 
-const Garmin = () => {
+const GarminAd = () => {
     return (
         <Row className='d-flex justify-content-center Garmin_card-row bg-white'>
             <Col md={6} xs={12} className='d-flex align-content-center m-0 p-0'>
@@ -21,4 +21,4 @@ const Garmin = () => {
 
     )
 };
-export default Garmin
+export default GarminAd
