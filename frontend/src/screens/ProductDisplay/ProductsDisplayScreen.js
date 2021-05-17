@@ -4,7 +4,7 @@ import Meta from "../../components/Meta";
 import CategoryManufacturerDisplay from "../../components/ProductDisplay/CategoryManufacturerDisplay";
 import {Jumbotron} from "reactstrap";
 import HeaderDesktop from "../../components/HeaderFooter/HeaderDesktop";
-import MobileHeader from "../../components/HeaderFooter/MobileHeader";
+import HeaderMobile from "../../components/HeaderFooter/HeaderMobile";
 import {useDispatch, useSelector} from "react-redux";
 import HeroDivider from "../../components/HeroDivider";
 
@@ -33,7 +33,7 @@ const ProductsDisplayScreen = ({match, history}) => {
     return (
         <>
             {width < breakpoint ? (
-                <MobileHeader/>
+                <HeaderMobile/>
             ) : (
                     <HeaderDesktop/>
             )}

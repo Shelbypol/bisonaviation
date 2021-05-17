@@ -5,7 +5,7 @@ import FlirTable from "../components/Flir/FlirTable";
 import {Jumbotron, Container} from "reactstrap";
 import FlirText from "../components/Flir/FlirText";
 import HeroDivider from "../components/HeroDivider";
-import MobileHeader from "../components/HeaderFooter/MobileHeader";
+import HeaderMobile from "../components/HeaderFooter/HeaderMobile";
 import HeaderDesktop from "../components/HeaderFooter/HeaderDesktop";
 import Footer from "../components/HeaderFooter/Footer";
 import {useDispatch} from "react-redux";
@@ -35,7 +35,7 @@ const FlirScreen = () => {
     return (
         <>
             {width < breakpoint ? (
-                <MobileHeader/>
+                <HeaderMobile/>
             ) : (
                 <HeaderDesktop/>
             )}

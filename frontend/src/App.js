@@ -29,7 +29,7 @@ import TermsScreen from "./screens/TermsScreen";
 import TermsFlirScreen from "./screens/TermsFlirScreen";
 import WishListScreen from "./screens/WishListScreen/WishListScreen"
 import HeaderDesktop from "./components/HeaderFooter/HeaderDesktop";
-import MobileHeader from "./components/HeaderFooter/MobileHeader";
+import HeaderMobile from "./components/HeaderFooter/HeaderMobile";
 import {listProducts} from "./actions/productActions";
 import {useDispatch} from "react-redux";
 
@@ -82,7 +82,7 @@ const App = () => {
                 {/* ================    STICKY / MOBILE HEADER W/ FOOTER    =================*/}
                 <Fragment>
                     {width < breakpoint ? (
-                        <MobileHeader/>
+                        <HeaderMobile/>
                     ) : (
                         <HeaderDesktop/>
                     )}

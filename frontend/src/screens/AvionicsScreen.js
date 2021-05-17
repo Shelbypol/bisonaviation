@@ -1,6 +1,6 @@
 import React, {useEffect, useLayoutEffect, useState} from 'react'
 import AvionicsHero from "../components/Avionics/AvionicsHero";
-import MobileHeader from "../components/HeaderFooter/MobileHeader";
+import HeaderMobile from "../components/HeaderFooter/HeaderMobile";
 import HeaderDesktop from "../components/HeaderFooter/HeaderDesktop";
 import {useDispatch} from "react-redux";
 import Footer from "../components/HeaderFooter/Footer";
@@ -32,7 +32,7 @@ const AvionicsScreen = () => {
         <>
 
             {width < breakpoint ? (
-                <MobileHeader/>
+                <HeaderMobile/>
             ) : (
                 <>
                     <HeaderDesktop/>

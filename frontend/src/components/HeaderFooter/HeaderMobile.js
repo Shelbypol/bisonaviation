@@ -10,7 +10,7 @@ import logo from '../../images/bg-graphics/graphics/Final-Logo-Horizontal.png'
 import SocialIcons from "../SocialIcons";
 import WishListTab from "../Wishlist/WishListTab";
 
-const MobileHeader = () => {
+const HeaderMobile = () => {
 
     const dispatch = useDispatch();
 
@@ -205,4 +205,4 @@ const MobileHeader = () => {
 
     )
 };
-export default MobileHeader
+export default HeaderMobile

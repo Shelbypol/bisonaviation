@@ -17,7 +17,7 @@ import mackerel from '../images/bg-graphics/screen-team/mackeral.png'
 import HeroDivider from "../components/HeroDivider";
 import '../style/2/teamScreen/TeamHero.css';
 import {useDispatch} from "react-redux";
-import MobileHeader from "../components/HeaderFooter/MobileHeader";
+import HeaderMobile from "../components/HeaderFooter/HeaderMobile";
 import HeaderDesktop from "../components/HeaderFooter/HeaderDesktop";
 import Footer from "../components/HeaderFooter/Footer";
 
@@ -52,7 +52,7 @@ const TeamScreen = () => {
     return (
         <>
             {width < breakpoint ? (
-                <MobileHeader/>
+                <HeaderMobile/>
             ) : (
                 <>
                     <HeaderDesktop/>

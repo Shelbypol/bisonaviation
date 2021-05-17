@@ -7,7 +7,7 @@ import {EMAIL_RESET} from "../../constants/emailConstants";
 import '../../style/wishListScreen/WishListScreen.css';
 import {Link} from "react-router-dom";
 import {createWishList} from "../../actions/wishListActions";
-import MobileHeader from "../../components/HeaderFooter/MobileHeader";
+import HeaderMobile from "../../components/HeaderFooter/HeaderMobile";
 import HeaderDesktop from "../../components/HeaderFooter/HeaderDesktop";
 import HeroDivider from "../../components/HeroDivider";
 
@@ -62,7 +62,7 @@ const WishListScreen = () => {
         <>
 
             {width < breakpoint ? (
-                <MobileHeader/>
+                <HeaderMobile/>
             ) : (
                 <>
                     <HeaderDesktop/>

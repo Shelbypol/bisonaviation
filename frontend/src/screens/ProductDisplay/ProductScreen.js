@@ -8,7 +8,7 @@ import Loader from '../../components/Loader'
 import {PRODUCT_CREATE_REVIEW_RESET} from "../../constants/productConstants";
 import Meta from "../../components/Meta";
 import {addToCart, removeFromCart} from "../../actions/cartActions";
-import MobileHeader from "../../components/HeaderFooter/MobileHeader";
+import HeaderMobile from "../../components/HeaderFooter/HeaderMobile";
 import HeroDivider from "../../components/HeroDivider";
 import HeaderDesktop from "../../components/HeaderFooter/HeaderDesktop";
 
@@ -96,7 +96,7 @@ const ProductScreen = ({history, match}) => {
         <>
 
             {width < breakpoint ? (
-                <MobileHeader/>
+                <HeaderMobile/>
             ) : (
                 <>
                     <HeaderDesktop/>

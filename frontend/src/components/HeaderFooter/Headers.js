@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import MobileHeader from "./MobileHeader";
+import HeaderMobile from "./HeaderMobile";
 import HeaderDesktop from "./HeaderDesktop";
 import '../../style/headers.css'
 import '../../style/global-1.css'
@@ -26,7 +26,7 @@ const Headers = () => {
 
     return(
         width < breakpoint ?
-            <MobileHeader />
+            <HeaderMobile />
             :
             <HeaderDesktop />
 
