@@ -1,6 +1,6 @@
 import React, {useLayoutEffect} from 'react'
-import ContactHero from "../components/contact-screen/ContactHero";
-import ContactInfo from "../components/contact-screen/ContactInfo";
+import ContactHero from "../components/Contact/ContactHero";
+import ContactInfo from "../components/Contact/ContactInfo";
 
 const ContactScreen = () => {
 
@@ -10,11 +10,8 @@ const ContactScreen = () => {
 
     return (
         <>
-
             <ContactHero/>
             <ContactInfo/>
-
-
         </>
 
     )

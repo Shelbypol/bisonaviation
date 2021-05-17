@@ -7,7 +7,7 @@ import Message from '../../components/Message'
 import Loader from '../../components/Loader'
 import {listProductDetails, updateProduct} from "../../actions/productActions";
 import {PRODUCT_UPDATE_RESET} from "../../constants/productConstants";
-import StickyHeader from "../../components/Headers-Nav-Footer/StickyHeader";
+import StickyHeader from "../../components/Header/StickyHeader";
 import '../../style/Admin.css'
 
 

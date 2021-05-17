@@ -5,7 +5,7 @@ import {useDispatch, useSelector} from 'react-redux'
 import Message from '../../components/Message'
 import Loader from '../../components/Loader'
 import { listOrders } from "../../actions/orderActions"
-import StickyHeader from "../../components/Headers-Nav-Footer/StickyHeader";
+import StickyHeader from "../../components/Header/StickyHeader";
 
 const OrderListScreen = ({ history }) => {
 

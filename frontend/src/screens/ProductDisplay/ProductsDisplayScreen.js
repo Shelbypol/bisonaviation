@@ -1,16 +1,12 @@
 import React, {useEffect, useLayoutEffect, useState} from 'react'
-import {ListGroup, Row, Image} from 'react-bootstrap'
+import { Row } from 'react-bootstrap'
 import Meta from "../../components/Meta";
 import CategoryManufacturerDisplay from "../../components/ProductDisplay/CategoryManufacturerDisplay";
 import {Jumbotron} from "reactstrap";
-import StickyHeader from "../../components/Headers-Nav-Footer/StickyHeader";
-import MobileHeader from "../../components/Headers-Nav-Footer/MobileHeader";
+import StickyHeader from "../../components/Header/StickyHeader";
+import MobileHeader from "../../components/Header/MobileHeader";
 import {useDispatch, useSelector} from "react-redux";
-import {listMyWishLists} from "../../actions/wishListActions";
-// import heroImg from '../../images/bg-graphics/screen-products-display/divider-white-bg-cropped.png'
-import heroImg from '../../images/bg-graphics/divider-no-bg.png';
 import HeroDivider from "../../components/HeroDivider";
-import DesktopHeader from "../../components/Headers-Nav-Footer/DesktopHeader";
 
 const ProductsDisplayScreen = ({match, history}) => {
 
@@ -48,7 +44,6 @@ const ProductsDisplayScreen = ({match, history}) => {
                         title={''}
                     />
 
-            {/*<div className=' global_HeroDivider-margin mt-4' >*/}
                 <Jumbotron className='CatMan_screen-bg mb-0 px-0 pt-0 pb-0' style={{zIndex: '2'}} fluid>
 
                     <>
@@ -62,7 +57,6 @@ const ProductsDisplayScreen = ({match, history}) => {
                     </>
 
                 </Jumbotron>
-            {/*</div>*/}
 
         </>
     )

@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {Col, Button, Row} from "react-bootstrap";
 import Fade from 'react-reveal/Fade';
 import {LinkContainer} from "react-router-bootstrap";
@@ -7,7 +7,6 @@ const AvionicsProducts = () => {
 
         return (
             <>
-                {/*<Row className='AvionicsProducts_row d-flex align-content-center pr-3'>*/}
                 <Row className='AvionicsProducts_row d-flex align-content-center'>
                     <Fade duration={1500} left>
                         <Col md={12} xs={8} className='AvionicsProducts_img-left '>

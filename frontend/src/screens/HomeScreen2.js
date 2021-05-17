@@ -3,7 +3,7 @@ import '../style/global-2.css'
 import HomeHero from '../components/HomeHero'
 import RepairAward from '../components/home-screen/RepairAward'
 import Services from "../components/home-screen/Services";
-import Mechanics from "../components/home-screen/Mechanics";
+import MaintenanceHomeSection from "../components/home-screen/MaintenanceHomeSection";
 import Flir from "../components/home-screen/Flir";
 import {Col, Row} from 'react-bootstrap';
 import Garmin from "../components/Garmin";
@@ -55,7 +55,7 @@ const HomeScreen2 = () => {
 
                     <Row className='my-5 py-5 d-flex justify-content-center'>
                         <Col md={9} xs={12} className='mb-5' style={{zIndex: '3000'}}>
-                            <Mechanics/>
+                            <MaintenanceHomeSection/>
                         </Col>
                     </Row>
 

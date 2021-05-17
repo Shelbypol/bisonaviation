@@ -8,10 +8,9 @@ import Loader from '../../components/Loader'
 import {PRODUCT_CREATE_REVIEW_RESET} from "../../constants/productConstants";
 import Meta from "../../components/Meta";
 import {addToCart, removeFromCart} from "../../actions/cartActions";
-import MobileHeader from "../../components/Headers-Nav-Footer/MobileHeader";
+import MobileHeader from "../../components/Header/MobileHeader";
 import HeroDivider from "../../components/HeroDivider";
-import DesktopHeader from "../../components/Headers-Nav-Footer/DesktopHeader";
-import StickyHeader from "../../components/Headers-Nav-Footer/StickyHeader";
+import StickyHeader from "../../components/Header/StickyHeader";
 
 const ProductScreen = ({history, match}) => {
     const [width, setWidth] = useState(window.innerWidth);

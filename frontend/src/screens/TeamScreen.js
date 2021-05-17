@@ -1,16 +1,12 @@
 import React, {useEffect, useLayoutEffect, useState} from 'react'
 import {Container, Row} from "react-bootstrap";
-import TeamHero from "../components/team-screen/TeamHero";
 import TeamCard from "../components/team-screen/TeamCard";
-import {Jumbotron} from "reactstrap";
 import johnAtkin from '../images/bg-graphics/screen-team/john_atkin.png'
 import leslieBanner from '../images/bg-graphics/screen-team/leslie_banner.png'
 import deenaSmith from '../images/bg-graphics/screen-team/deena_smith.png'
 import jdPhillips from '../images/bg-graphics/screen-team/jd_phillips.png'
 import roelRogerio from '../images/bg-graphics/screen-team/roel_rogerio.png'
 import jeffRossell from '../images/bg-graphics/screen-team/jeffrey_rossell.png'
-import chadBrooks from '../images/bg-graphics/screen-team/chad_brooks.png'
-import codyStrack from '../images/bg-graphics/screen-team/cody_strack.png'
 import robinRodriguez from '../images/bg-graphics/screen-team/robin_rodriguez.png'
 import jerryFitzgerald from '../images/bg-graphics/screen-team/jerry_fitzgerald.png'
 import johnSenecal from '../images/bg-graphics/screen-team/john_senecal.png'
@@ -21,10 +17,9 @@ import mackerel from '../images/bg-graphics/screen-team/mackeral.png'
 import HeroDivider from "../components/HeroDivider";
 import '../style/2/teamScreen/TeamHero.css';
 import {useDispatch} from "react-redux";
-import MobileHeader from "../components/Headers-Nav-Footer/MobileHeader";
-import StickyHeader from "../components/Headers-Nav-Footer/StickyHeader";
-import Footer from "../components/Headers-Nav-Footer/Footer";
-import DesktopHeader from "../components/Headers-Nav-Footer/DesktopHeader";
+import MobileHeader from "../components/Header/MobileHeader";
+import StickyHeader from "../components/Header/StickyHeader";
+import Footer from "../components/Header/Footer";
 
 
 const TeamScreen = () => {

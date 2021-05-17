@@ -1,19 +1,15 @@
 import React, {useEffect, useLayoutEffect, useState} from 'react'
 import {useDispatch, useSelector} from 'react-redux'
-import {Row, Col, Tab, Tabs, Container} from 'react-bootstrap'
+import {Row, Col, Container} from 'react-bootstrap'
 import {CART_RESET} from "../../constants/cartConstants";
-import WishListSave from "../../components/Wishlist/WishListSave";
 import WishListEmail from "../../components/Wishlist/WishListEmail";
 import {EMAIL_RESET} from "../../constants/emailConstants";
 import '../../style/wishListScreen/WishListScreen.css';
 import {Link} from "react-router-dom";
 import {createWishList} from "../../actions/wishListActions";
-import WishListHero from "../../components/Wishlist/WishListHero";
-import MobileHeader from "../../components/Headers-Nav-Footer/MobileHeader";
-import StickyHeader from "../../components/Headers-Nav-Footer/StickyHeader";
-import {Jumbotron} from "reactstrap";
+import MobileHeader from "../../components/Header/MobileHeader";
+import StickyHeader from "../../components/Header/StickyHeader";
 import HeroDivider from "../../components/HeroDivider";
-import heroImg from '../../images/bg-graphics/jd-roel-flir-end.png'
 
 const WishListScreen = () => {
 
@@ -81,9 +77,6 @@ const WishListScreen = () => {
                 leftTitle={true}
             />
             <Container className='bg-white WishListScreen_HeroDivider-margin' fluid>
-            {/*<Container className='bg-white min-vh-100 global_HeroDivider-margin border' fluid>*/}
-            {/*<Container className='bg-white min-vh-100 WishListScreen_HeroDivider-margin border' fluid>*/}
-
 
                 <Row className='d-flex justify-content-between mt-0 ml-5'>
 

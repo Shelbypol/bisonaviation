@@ -1,10 +1,9 @@
 import React, {useEffect, useLayoutEffect, useState} from 'react'
-import AvionicsHero from "../components/avionics-Screen/AvionicsHero";
-import MobileHeader from "../components/Headers-Nav-Footer/MobileHeader";
-import StickyHeader from "../components/Headers-Nav-Footer/StickyHeader";
+import AvionicsHero from "../components/Avionics/AvionicsHero";
+import MobileHeader from "../components/Header/MobileHeader";
+import StickyHeader from "../components/Header/StickyHeader";
 import {useDispatch} from "react-redux";
-import Footer from "../components/Headers-Nav-Footer/Footer";
-import DesktopHeader from "../components/Headers-Nav-Footer/DesktopHeader";
+import Footer from "../components/Header/Footer";
 
 
 const AvionicsScreen = () => {

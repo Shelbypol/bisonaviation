@@ -3,7 +3,7 @@ import '../../style/mechanicsScreen/MechanicsHero.css'
 import HeroCarousel from "../HeroCarousel";
 
 
-const MechanicsHero = () => {
+const MaintenanceHero = () => {
     return (
         <>
             <HeroCarousel
@@ -51,4 +51,4 @@ const MechanicsHero = () => {
     );
 };
 
-export default MechanicsHero;
+export default MaintenanceHero;

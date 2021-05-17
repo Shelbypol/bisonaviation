@@ -1,8 +1,8 @@
 import React, {Fragment, useEffect, useLayoutEffect, useState} from 'react';
 import {BrowserRouter as Router, Route, Switch,} from 'react-router-dom';
 import {Container} from 'react-bootstrap'
-import Headers from "./components/Headers-Nav-Footer/Headers";
-import Footer from "./components/Headers-Nav-Footer/Footer";
+import Headers from "./components/Header/Headers";
+import Footer from "./components/Header/Footer";
 import ProductsDisplayScreen from "./screens/ProductDisplay/ProductsDisplayScreen";
 import ProductScreen from "./screens/ProductDisplay/ProductScreen";
 import CartScreen from "./screens/Payment/CartScreen";
@@ -28,8 +28,8 @@ import ContactScreen from "./screens/ContactScreen";
 import TermsScreen from "./screens/TermsScreen";
 import TermsFlirScreen from "./screens/TermsFlirScreen";
 import WishListScreen from "./screens/WishListScreen/WishListScreen"
-import StickyHeader from "./components/Headers-Nav-Footer/StickyHeader";
-import MobileHeader from "./components/Headers-Nav-Footer/MobileHeader";
+import StickyHeader from "./components/Header/StickyHeader";
+import MobileHeader from "./components/Header/MobileHeader";
 import {listProducts} from "./actions/productActions";
 import {useDispatch} from "react-redux";
 
@@ -73,22 +73,18 @@ const App = () => {
                 <Route path='/product/:id' component={ProductScreen}/>
 
                 {/* ================    STICKY HEADER ONLY W/ FOOTER    =================*/}
-                {/*<Fragment>*/}
-                    <Route path='/wishlist' component={WishListScreen}/>
-                    <Route path='/flir' component={FlirScreen}/>
-                    <Route path='/team' component={TeamScreen}/>
-                    <Route path='/maintenance' component={MaintenanceScreen}/>
-                    <Route path='/avionics' component={AvionicsScreen}/>
-                {/*</Fragment>*/}
+                <Route path='/wishlist' component={WishListScreen}/>
+                <Route path='/flir' component={FlirScreen}/>
+                <Route path='/team' component={TeamScreen}/>
+                <Route path='/maintenance' component={MaintenanceScreen}/>
+                <Route path='/avionics' component={AvionicsScreen}/>
 
-                {/* ================    STICKY & DESKTOP HEADER W/ FOOTER    =================*/}
+                {/* ================    STICKY / MOBILE HEADER W/ FOOTER    =================*/}
                 <Fragment>
                     {width < breakpoint ? (
                         <MobileHeader/>
                     ) : (
-                        <>
-                            <StickyHeader/>
-                        </>
+                        <StickyHeader/>
                     )}
                     <Route path='/' component={HomeScreen} exact/>
                     <Route path='/contact' component={ContactScreen}/>
@@ -96,8 +92,6 @@ const App = () => {
                     <Route path='/flir-terms' component={TermsFlirScreen}/>
                     <Route path='/register' component={RegisterScreen}/>
                     <Route path='/profile' component={ProfileScreen}/>
-
-                    {/*<Container className='mb-0 pb-0'>*/}
                     <Route path='/login' component={LoginScreen}/>
                     <Route path='/cart/:id?' component={CartScreen}/>
                     <Route path='/shipping' component={ShippingScreen}/>
@@ -105,10 +99,8 @@ const App = () => {
                     <Route path='/placeorder' component={PlaceOrderScreen}/>
                     <Route path='/order/:id' component={OrderScreen}/>
                     <Route path='/thankyou/:id' component={ThankYouScreen}/>
-                    {/*</Container>*/}
                     <Footer/>
                 </Fragment>
-                {/*<Footer/>*/}
             </Switch>
 
         </Router>

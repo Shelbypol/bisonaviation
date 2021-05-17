@@ -1,15 +1,14 @@
 import React, {useEffect, useLayoutEffect, useState} from 'react';
 import '../style/flirScreen/Flir.css';
-import FlirHero from "../components/flir-screen/FlirHero";
-import FlirTable from "../components/flir-screen/FlirTable";
+import FlirHero from "../components/Flir/FlirHero";
+import FlirTable from "../components/Flir/FlirTable";
 import {Jumbotron, Container} from "reactstrap";
-import FlirText from "../components/flir-screen/FlirText";
+import FlirText from "../components/Flir/FlirText";
 import HeroDivider from "../components/HeroDivider";
-import MobileHeader from "../components/Headers-Nav-Footer/MobileHeader";
-import StickyHeader from "../components/Headers-Nav-Footer/StickyHeader";
-import Footer from "../components/Headers-Nav-Footer/Footer";
+import MobileHeader from "../components/Header/MobileHeader";
+import StickyHeader from "../components/Header/StickyHeader";
+import Footer from "../components/Header/Footer";
 import {useDispatch} from "react-redux";
-import DesktopHeader from "../components/Headers-Nav-Footer/DesktopHeader";
 
 const FlirScreen = () => {
 

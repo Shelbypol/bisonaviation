@@ -1,11 +1,10 @@
 import React, {useState, useRef, useEffect} from "react";
-import {Button, Nav, Navbar, Row, Col, Image} from "react-bootstrap";
+import { Nav, Navbar, Row, Col} from "react-bootstrap";
 import {LinkContainer} from "react-router-bootstrap";
 import {useDispatch, useSelector} from "react-redux";
 import {CART_RESET} from "../../constants/cartConstants";
 import {logout} from "../../actions/userActions";
 import {Link, Route} from "react-router-dom";
-import SearchBox from "../SearchBox";
 import WishListTab from "../Wishlist/WishListTab";
 import SideBar from "../SideBar/SideBar";
 import logo from '../../images/bg-graphics/graphics/Final-Logo-Horizontal.png'
