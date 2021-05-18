@@ -1,10 +1,10 @@
 import React from "react";
 import {Button, Col, Row, Image} from "react-bootstrap";
 import '../../style/2/AvionicsHome.css';
-import tests from '../../images/bg-graphics/screen-avionics/avionics-slider/avionics4.png'
-import roel from '../../images/bg-graphics/screen-avionics/avionics-slider/avionics2.png'
+import tests from '../Avionics/avionics-slider/avionics4.png'
+import roel from '../Avionics/avionics-slider/avionics2.png'
 import cnc from '../../images/bg-graphics/home-screen/home-slider/cnc-machine copy.png'
-import panel from '../../images/bg-graphics/screen-avionics/avionics-slider/avionics1.png'
+import panel from '../Avionics/avionics-slider/avionics1.png'
 import tayseer from '../../images/bg-graphics/screen-avionics/avionics/tayseer-avionics.png'
 import {LinkContainer} from "react-router-bootstrap";
 import Fade from 'react-reveal/Fade';
