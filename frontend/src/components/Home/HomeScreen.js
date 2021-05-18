@@ -12,8 +12,6 @@ import TestimonialCarousel from "../Carousels/TestimonialCarousel"
 import '../../style/2/AvionicsProducts.css';
 import '../../style/2/AvionicsProductsFlag.scss';
 
-
-
 const HomeScreen = () => {
 
     window.onbeforeunload = () => {
