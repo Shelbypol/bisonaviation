@@ -1,0 +1,129 @@
+.carousel-root {
+    /*width: 100% !important;*/
+    /*margin: auto !important;*/
+    /*margin-top: 3% !important;*/
+    /*padding-bottom: 3%;*/
+    /*padding-top:3%;*/
+}
+
+.carousel .slide {
+    background: #fff !important;
+    color: black;
+    height: 100%;
+}
+
+/*.carousel .slide img {*/
+/*    width: 139px !important;*/
+/*    border-radius: 50%;*/
+/*}*/
+
+.myCarousel {
+    /*margin-top: -3%;*/
+    /*width: 100%;*/
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    /*padding: 6% 5% 8% 5%;*/
+    /*height: 286px;*/
+}
+
+.carousel .control-dots {
+    /*padding-left: 5px !important;*/
+    /*outline: 0;*/
+    /*margin-top: 20px;*/
+    /*bottom: 5% !important;*/
+    display: none;
+}
+
+.myCarousel h3 {
+    color: #222;
+    letter-spacing: 0.2px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+.myCarousel p {
+    font-weight: 100 !important;
+    line-height: 25px !important;
+    color: #222;
+    font-size: 15px;
+    font-family: sans-serif;
+    max-height: 100px;
+}
+
+.myCarousel p:before {
+    /*content: "“";*/
+    /*color: #aaa;*/
+    /*font-size: 26px;*/
+    /*font-family: monospace;*/
+    /*font-weight: 100;*/
+    display: none;
+}
+
+.myCarousel p:after {
+    /*content: "”";*/
+    /*color: #aaa;*/
+    /*font-size: 26px;*/
+    /*font-family: monospace;*/
+    /*font-weight: 100;*/
+    /*line-height: 0;*/
+    display: none;
+}
+
+.carousel .control-dots .dot {
+    /*box-shadow: none !important;*/
+    /*background: rgba(90, 00, 09, 1) !important;*/
+    /*!*background: #454545 !important;*!*/
+    /*outline: 0;*/
+    display: none;
+}
+
+.carousel.carousel-slider .control-arrow {
+    /*color: rgba(90, 00, 09, 1);*/
+    /*height: 50px !important;*/
+    /*position: absolute;*/
+    /*top: 35% !important;*/
+    display: none;
+}
+
+.ProductCarousel_img{
+    height: 30vh;
+}
+
+
+@media only screen and (max-width: 950px) {
+    .carousel-root {
+        outline: 0;
+        width: 100% !important;
+        margin: auto !important;
+        height: auto;
+    }
+
+    .carousel.carousel-slider .control-arrow {
+        display: none !important;
+    }
+
+    .myCarousel {
+        margin-top: -9%;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 8% 5% 8% 5%;
+        height: auto;
+    }
+
+    .carousel .control-dots {
+        display: none;
+    }
+
+    /*.carousel .slide img {*/
+    /*    width: 24% !important;*/
+    /*    border-radius: 50%;*/
+    /*}*/
+}
+
+@media only screen and (max-width: 500px) {
+    .carousel-root {
+        padding-top: 10%;
+    }
+}
