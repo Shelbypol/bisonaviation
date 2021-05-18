@@ -4,7 +4,6 @@ import FlirTable from "../../components/Flir/FlirTable";
 import {Jumbotron, Container} from "reactstrap";
 import FlirText from "../../components/Flir/FlirText";
 import JumbotronTitle from "../../components/JumbotronTitle";
-import Footer from "../../components/HeaderFooter/Footer";
 
 const FlirScreen = () => {
 
@@ -27,8 +26,6 @@ const FlirScreen = () => {
                     <FlirTable/>
                 </Jumbotron>
             </Container>
-
-            <Footer/>
         </>
     )
 };

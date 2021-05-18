@@ -15,7 +15,6 @@ import tuna from '../../images/bg-graphics/screen-team/tuna.png'
 import mackerel from '../../images/bg-graphics/screen-team/mackeral.png'
 import JumbotronTitle from "../JumbotronTitle";
 import '../../style/2/teamScreen/TeamHero.css';
-import Footer from "../../components/HeaderFooter/Footer";
 
 
 const TeamScreen = () => {
@@ -276,8 +275,7 @@ const TeamScreen = () => {
 
 
                 </Container>
-            {/*</Container>*/}
-            <Footer/>
+
 
         </>
     )
