@@ -24,11 +24,19 @@ const Header = () => {
     const breakpoint = 1150;
     // const breakpoint = 620;
 
-    return(
+    return (
         width < breakpoint ?
-            <HeaderMobile />
+            <>
+                <Fade top duration={3500}>
+                    <HeaderMobile/>
+                </Fade>
+            </>
             :
-            <HeaderDesktop />
+            <>
+                <Fade top duration={3500}>
+                    <HeaderDesktop/>
+                </Fade>
+            </>
 
     )
 };
