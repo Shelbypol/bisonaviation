@@ -3,8 +3,8 @@ import {Row, Col} from 'reactstrap';
 import Zoom from 'react-reveal/Zoom'
 import {Button, Card} from "react-bootstrap";
 import {LinkContainer} from "react-router-bootstrap";
-import flir from "../../images/bg-graphics/screen-flir/flir-sharp.png";
-import flir1 from "../../images/bg-graphics/screen-flir/flirinventory.png";
+import flir from "../Flir/images/flir-sharp.png";
+import flir1 from "../Flir/images/flirinventory.png";
 import Fade from "react-reveal/Fade";
 
 

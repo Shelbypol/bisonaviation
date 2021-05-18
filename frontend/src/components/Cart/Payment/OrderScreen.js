@@ -8,7 +8,7 @@ import Message from "../../Message";
 import Loader from "../../Loader";
 import {getOrderDetails, payOrder, deliverOrder } from "../../../actions/orderActions";
 import { ORDER_PAY_RESET, ORDER_DELIVER_RESET } from "../../../constants/orderConstants";
-import {CART_RESET, CART_SAVE_SHIPPING_ADDRESS} from "../../../constants/cartConstants";
+import {CART_RESET} from "../../../constants/cartConstants";
 
 const OrderScreen = ({ match, history }) => {
     const orderId = match.params.id;

@@ -6,7 +6,6 @@ import Message from '../../Message'
 import { addToCart, removeFromCart } from '../../../actions/cartActions'
 import {LinkContainer} from "react-router-bootstrap";
 import {createOrder} from "../../../actions/orderActions";
-import {CART_RESET} from "../../../constants/cartConstants";
 
 // match == id, location == get a query string '?qty', history == used to redirect
 const CartScreen = ({ match, location, history }) => {

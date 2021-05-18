@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import HeaderMobile from "./HeaderMobile";
 import HeaderDesktop from "./HeaderDesktop";
-import '../../style/headers.css'
+import './headers.css'
 import '../../style/global-1.css'
 import Fade from "react-reveal/Fade";
 
@@ -24,11 +24,19 @@ const Header = () => {
     const breakpoint = 1150;
     // const breakpoint = 620;
 
-    return(
+    return (
         width < breakpoint ?
-            <HeaderMobile />
+            <>
+                <Fade top duration={3500}>
+                    <HeaderMobile/>
+                </Fade>
+            </>
             :
-            <HeaderDesktop />
+            <>
+                <Fade top duration={3500}>
+                    <HeaderDesktop/>
+                </Fade>
+            </>
 
     )
 };

@@ -153,11 +153,10 @@ main {
 
 /* ============= AVIONICS JUMBO ===========*/
 
-.Global_Flir_bg-img{
-    background-image: url("../images/bg-graphics/home-screen/home-slider/large-flir.png");
-    /*background-image: url("../images/bg-graphics/home-screen/home-section-body-bg/flir-jumbo-img.png");*/
-    background-position: center 5%;
-}
+/*.Global_Flir_bg-img{*/
+/*    background-image: url("src/components/Home/home-slider/large-flir.png");*/
+/*    background-position: center 5%;*/
+/*}*/
 
 .Global_graphic{
     /*background-image: url("../images/bg-graphics/graphics/black-top-large-left.png");*/

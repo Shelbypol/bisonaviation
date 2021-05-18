@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../style/flirScreen/Flir.css';
+import './Flir.css';
 import FlirTable from "../../components/Flir/FlirTable";
 import {Jumbotron, Container} from "reactstrap";
 import FlirText from "../../components/Flir/FlirText";

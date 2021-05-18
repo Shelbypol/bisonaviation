@@ -1,10 +1,10 @@
 import React from 'react';
 import Tabs from '../Tabs';
 import {Row, Col, Tab, ListGroup} from 'react-bootstrap';
-import sales from '../../images/bg-graphics/screen-flir/flir-sharp.png'
-import maintanence from '../../images/bg-graphics/screen-flir/sales1.png'
-import accessories from '../../images/bg-graphics/screen-flir/acessories.png'
-import purchase from '../../images/bg-graphics/screen-flir/flirinventory.png'
+import sales from './images/flir-sharp.png'
+import maintanence from './images/sales1.png'
+import accessories from './images/acessories.png'
+import purchase from './images/flirinventory.png'
 import {LinkContainer} from "react-router-bootstrap";
 
 

@@ -1,7 +1,7 @@
 import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import {Carousel} from "react-responsive-carousel";
-import '../../style/TestimonialCarousel.css'
+import './TestimonialCarousel.css'
 import Zoom from 'react-reveal/Zoom';
 import {Col, Row} from "react-bootstrap";
 
