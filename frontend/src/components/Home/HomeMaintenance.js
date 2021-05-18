@@ -3,8 +3,8 @@ import {Button, Card, Col, Row} from "react-bootstrap";
 import '../../style/2/Mechanics.css';
 import Zoom from 'react-reveal/Zoom';
 import {LinkContainer} from "react-router-bootstrap";
-import tayseer from "../../images/bg-graphics/screen-avionics/avionics/tayseer-avionics.png";
-import test from "../../images/bg-graphics/screen-avionics/avionics/avionics-test.jpg";
+import tayseer from "../Avionics/images/avionics/tayseer-avionics.png";
+import test from "../Avionics/images/avionics/avionics-test.jpg";
 import Fade from "react-reveal/Fade";
 
 

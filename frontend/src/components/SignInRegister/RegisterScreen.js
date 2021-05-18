@@ -6,7 +6,7 @@ import Message from '../Message'
 import Loader from '../Loader'
 import FormContainer from "../FormContainer";
 import {register} from '../../actions/userActions'
-import '../../style/registerScreen/registerScreen.css'
+import './registerScreen.css'
 
 import {Jumbotron} from "reactstrap";
 import {LinkContainer} from "react-router-bootstrap";

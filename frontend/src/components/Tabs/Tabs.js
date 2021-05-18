@@ -1,6 +1,6 @@
 import React from "react";
 import {Col, ListGroup, Row, Tab, Image} from "react-bootstrap";
-import '../style/Tabs.css';
+import './Tabs.css';
 
 
 const Tabs = ({

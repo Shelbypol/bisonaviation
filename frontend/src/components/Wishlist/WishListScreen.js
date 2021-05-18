@@ -4,18 +4,12 @@ import {Row, Col, Container} from 'react-bootstrap'
 import {CART_RESET} from "../../constants/cartConstants";
 import WishListEmail from "./WishListEmail";
 import {EMAIL_RESET} from "../../constants/emailConstants";
-import '../../style/wishListScreen/WishListScreen.css';
+import './WishListScreen.css';
 import {Link} from "react-router-dom";
 import {createWishList} from "../../actions/wishListActions";
-import HeaderMobile from "../../components/HeaderFooter/HeaderMobile";
-import HeaderDesktop from "../../components/HeaderFooter/HeaderDesktop";
 import JumbotronTitle from "../../components/JumbotronTitle";
 
 const WishListScreen = () => {
-
-    const [width, setWidth] = useState(window.innerWidth);
-
-    const breakpoint = 1000;
 
     const dispatch = useDispatch();
 
@@ -30,18 +24,13 @@ const WishListScreen = () => {
 
 
     useEffect(() => {
-
-        window.addEventListener("resize", handleWindowResize);
-        return () => window.removeEventListener("resize", handleWindowResize);
-    }, [dispatch, width, success, userInfo]);
+        }, [dispatch, success, userInfo]);
 
     useLayoutEffect(() => {
         window.scrollTo(0, 0)
     });
 
-    const handleWindowResize = () => {
-        setWidth(window.innerWidth);
-    };
+
 
     const addToWishListHandler = () => {
 
@@ -60,16 +49,6 @@ const WishListScreen = () => {
 
     return (
         <>
-
-            {width < breakpoint ? (
-                <HeaderMobile/>
-            ) : (
-                <>
-                    <HeaderDesktop/>
-                </>
-            )}
-
-
             <JumbotronTitle
                 img={'WishListScreenImg'}
                 showImg={true}

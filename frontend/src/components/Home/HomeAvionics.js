@@ -5,7 +5,7 @@ import tests from '../Avionics/images/avionics4.png'
 import roel from '../Avionics/images/avionics2.png'
 import cnc from './images/cnc-machine copy.png'
 import panel from '../Avionics/images/avionics1.png'
-import tayseer from '../../images/bg-graphics/screen-avionics/avionics/tayseer-avionics.png'
+import tayseer from '../Avionics/images/avionics/tayseer-avionics.png'
 import {LinkContainer} from "react-router-bootstrap";
 import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';

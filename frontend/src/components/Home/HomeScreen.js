@@ -6,10 +6,10 @@ import HomeServices from "../../components/Home/HomeServices";
 import HomeMaintenance from "../../components/Home/HomeMaintenance";
 import HomeFlir from "../../components/Home/HomeFlir";
 import {Col, Row} from 'react-bootstrap';
-import ProductsCarouselGarminAd from "../Product(s)/ProductsCarousel/ProductsCarouselGarminAd";
+import ProductsCarouselGarminAd from "../ProductsCarousel/ProductsCarouselGarminAd";
 import HomeAvionics from "../../components/Home/HomeAvionics";
 import TestimonialCarousel from "../Carousels/TestimonialCarousel"
-import '../../style/2/AvionicsProducts.css';
+import '../Avionics/AvionicsProducts.css';
 import '../../style/2/AvionicsProductsFlag.scss';
 
 const HomeScreen = () => {

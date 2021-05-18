@@ -8,7 +8,7 @@
 }
 
 .AvionicsProducts_img-left {
-    background-image: url("../../images/bg-graphics/screen-avionics/avionics/garmin-dealer-cropped.png");
+    background-image: url("./images/garmin-dealer-cropped.png");
     height: 224px;
     width: 650px;
     background-repeat: no-repeat;
@@ -16,7 +16,7 @@
 }
 
 .AvionicsProducts_img-right {
-    background-image: url("../../images/bg-graphics/screen-avionics/avionics/jd-roel.png");
+    background-image: url("./images/jd-roel.png");
     background-repeat: no-repeat;
     background-position: 5% 20%;
 }
@@ -41,7 +41,7 @@
 
 
     .AvionicsProducts_img-left {
-        background-image: url("../../images/bg-graphics/screen-avionics/avionics/garmin-dealer-cropped.png");
+        background-image: url("./images/garmin-dealer-cropped.png");
         height: 224px;
         width: 650px;
         max-height: 100%;
