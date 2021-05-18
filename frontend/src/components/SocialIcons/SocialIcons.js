@@ -1,9 +1,9 @@
 import React from "react";
 import {Nav, Navbar, Row, Col} from "react-bootstrap";
 import {LinkContainer} from "react-router-bootstrap";
-import WishListTab from "./Wishlist/WishListTab";
-import '../style/SocialIcons.css'
-import '../style/animations.css'
+import WishListTab from "../Wishlist/WishListTab";
+import './SocialIcons.css'
+import './animations.css'
 
 
 const SocialIcons = () => {

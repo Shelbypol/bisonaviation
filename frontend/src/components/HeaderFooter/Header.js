@@ -33,7 +33,7 @@ const Header = () => {
             </>
             :
             <>
-                <Fade top duration={3500}>
+                <Fade top duration={2000}>
                     <HeaderDesktop/>
                 </Fade>
             </>

@@ -4,7 +4,7 @@ import Footer from "./components/HeaderFooter/Footer";
 import ProductsScreen from "./components/Product(s)/ProductsScreen";
 import ProductScreen from "./components/Product(s)/ProductScreen";
 import CartScreen from "./components/Cart/Payment/CartScreen";
-import LoginScreen from "./components/SignInRegister/LoginScreen";
+import SignInScreen from "./components/SignInRegister/SignInScreen";
 import RegisterScreen from "./components/SignInRegister/RegisterScreen";
 import ProfileScreen from "./components/Profile/ProfileScreen";
 import ShippingScreen from "./components/Cart/Payment/ShippingScreen";
@@ -27,9 +27,6 @@ import TermsScreen from "./components/Terms/TermsScreen";
 import TermsFlirScreen from "./components/Terms/TermsFlirScreen";
 import WishListScreen from "./components/Wishlist/WishListScreen"
 import Header from "./components/HeaderFooter/Header";
-// import HeaderDesktop from "./components/HeaderFooter/HeaderDesktop";
-import HeaderMobile from "./components/HeaderFooter/HeaderMobile";
-import {listProducts} from "./actions/productActions";
 import {useDispatch} from "react-redux";
 
 
@@ -89,7 +86,7 @@ const App = () => {
                     <Route path='/flir-terms' component={TermsFlirScreen}/>
                     <Route path='/register' component={RegisterScreen}/>
                     <Route path='/profile' component={ProfileScreen}/>
-                    <Route path='/login' component={LoginScreen}/>
+                    <Route path='/login' component={SignInScreen}/>
                     <Route path='/cart/:id?' component={CartScreen}/>
                     <Route path='/shipping' component={ShippingScreen}/>
                     <Route path='/payment' component={PaymentScreen}/>

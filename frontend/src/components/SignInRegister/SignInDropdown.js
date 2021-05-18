@@ -4,7 +4,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {CART_RESET} from "../../constants/cartConstants";
 import {logout} from "../../actions/userActions";
 import SignInForm from "./SignInForm";
-import '../../style/SideBar.css'
+import './SideBar.css'
 import {Button} from "react-bootstrap";
 
 const SignInDropdown = ({ showSidebar }) => {
@@ -33,7 +33,7 @@ const SignInDropdown = ({ showSidebar }) => {
             {!userInfo && (
 
                 <>
-                    <li className='my-3'>
+                    <li className='my-3' >
                         <SignInForm loginTitle={'Sign In'} showSideBar={showSidebar}/>
                     </li>
 

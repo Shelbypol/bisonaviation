@@ -1,7 +1,7 @@
 import React, {useEffect, useRef, useState} from 'react';
 import {Link} from 'react-router-dom';
 import SignInDropdown from "./SignInDropdown";
-import '../../style/SideBar.css'
+import './SideBar.css'
 import {IconContext} from 'react-icons';
 import {useDispatch, useSelector} from "react-redux";
 import {CART_RESET} from "../../constants/cartConstants";
@@ -65,26 +65,27 @@ const SignInBtn = () => {
                     </Link>
                 )}
 
-                {userInfo ? (
-                    <nav className={sidebar ? 'SideBar-nav-menu-user-logged active' : 'SideBar-nav-menu-user-logged'}
-                         ref={node}
-                         onClick={(e) => (handleScroll(e))}>
-                        <ul className='SideBar-nav-menu-items'>
-                            <SignInDropdown showSidebar={showSidebar}/>
-                        </ul>
-                    </nav>
-                ) : (
+                {/*{userInfo ? (*/}
+                {/*    <nav className={sidebar ? 'SideBar-nav-menu-user-logged active' : 'SideBar-nav-menu-user-logged'} style={{zIndex: '5000'}}*/}
+                {/*         ref={node}*/}
+                {/*         onClick={(e) => (handleScroll(e))}>*/}
+                {/*        <ul className='SideBar-nav-menu-items border'>*/}
+                {/*            <SignInDropdown showSidebar={showSidebar}/>*/}
+                {/*        </ul>*/}
+                {/*    </nav>*/}
+                {/*) : (*/}
+                {!userInfo &&(
                     <nav
                         className={sidebar ? 'SideBar-nav-menu-user-not-logged active' : 'SideBar-nav-menu-user-not-logged'}
                         ref={node}
-                        onClick={(e) => (handleScroll(e))}>
+                        onClick={(e) => (handleScroll(e))}
+                    >
                         {/*<ul className='SideBar-nav-menu-items '>*/}
-                        <ul className='SideBar-nav-menu-items ' style={{zIndex: '5000'}}>
+                        <ul className='SideBar-nav-menu-items '>
                             <SignInDropdown showSidebar={showSidebar}/>
                         </ul>
                     </nav>
                 )}
-
 
             </IconContext.Provider>
         </>

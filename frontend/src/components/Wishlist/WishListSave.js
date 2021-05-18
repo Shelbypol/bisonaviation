@@ -5,7 +5,7 @@ import {createWishList, listMyWishLists} from "../../actions/wishListActions";
 import {CART_RESET} from "../../constants/cartConstants";
 import {removeFromCart} from "../../actions/cartActions";
 import {useDispatch, useSelector} from "react-redux";
-import '../../style/SideBar.css'
+import '../SignInRegister/SideBar.css'
 import SignInForm from "../SignInRegister/SignInForm";
 import SignInDropdown from "../SignInRegister/SignInDropdown";
 

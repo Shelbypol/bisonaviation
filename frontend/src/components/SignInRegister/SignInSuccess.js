@@ -4,7 +4,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {CART_RESET} from "../../constants/cartConstants";
 import {logout} from "../../actions/userActions";
 import SignInForm from "./SignInForm";
-import '../../style/SideBar.css'
+import './SideBar.css'
 
 const SignInSuccess = ({showSidebar}) => {
     const [loginShow, setLoginShow] = useState(false);

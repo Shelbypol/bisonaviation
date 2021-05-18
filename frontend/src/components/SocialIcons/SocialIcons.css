@@ -23,14 +23,14 @@
 }
 
 .SocialIcons_col-bg{
-    background-image: url("../images/bg-graphics/graphics/social-icon-bg-blood-red.png");
+    background-image: url("./social-icon-bg-blood-red.png");
     background-repeat: no-repeat;
     height: 10vh;
     width: 20vw !important;
 }
 
 .SocialIcons_col-bg:hover{
-    background-image: url("../images/bg-graphics/graphics/social-icon-bg-dark.png");
+    background-image: url("./social-icon-bg-dark.png");
 }
 
 /*    ======   MOBILE RESPONSIVE    ======    */

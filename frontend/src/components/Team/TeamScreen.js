@@ -1,20 +1,20 @@
 import React, { useLayoutEffect} from 'react'
 import {Container, Row} from "react-bootstrap";
 import TeamCard from "./TeamCard";
-import johnAtkin from '../../images/bg-graphics/screen-team/john_atkin.png'
-import leslieBanner from '../../images/bg-graphics/screen-team/leslie_banner.png'
-import deenaSmith from '../../images/bg-graphics/screen-team/deena_smith.png'
-import jdPhillips from '../../images/bg-graphics/screen-team/jd_phillips.png'
-import roelRogerio from '../../images/bg-graphics/screen-team/roel_rogerio.png'
-import jeffRossell from '../../images/bg-graphics/screen-team/jeffrey_rossell.png'
-import robinRodriguez from '../../images/bg-graphics/screen-team/robin_rodriguez.png'
-import jerryFitzgerald from '../../images/bg-graphics/screen-team/jerry_fitzgerald.png'
-import johnSenecal from '../../images/bg-graphics/screen-team/john_senecal.png'
-import halibut from '../../images/bg-graphics/screen-team/halibut.png'
-import tuna from '../../images/bg-graphics/screen-team/tuna.png'
-import mackerel from '../../images/bg-graphics/screen-team/mackeral.png'
+import johnAtkin from './images/john_atkin.png'
+import leslieBanner from './images/leslie_banner.png'
+import deenaSmith from './images/deena_smith.png'
+import jdPhillips from './images/jd_phillips.png'
+import roelRogerio from './images/roel_rogerio.png'
+import jeffRossell from './images/jeffrey_rossell.png'
+import robinRodriguez from './images/robin_rodriguez.png'
+import jerryFitzgerald from './images/jerry_fitzgerald.png'
+import johnSenecal from './images/john_senecal.png'
+import halibut from './images/halibut.png'
+import tuna from './images/tuna.png'
+import mackerel from './images/mackeral.png'
 import JumbotronTitle from "../JumbotronTitle";
-import '../../style/2/teamScreen/TeamHero.css';
+import './TeamHero.css';
 
 
 const TeamScreen = () => {

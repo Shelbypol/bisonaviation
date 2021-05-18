@@ -8,7 +8,7 @@ import {login} from '../../actions/userActions'
 import FormContainer from "../FormContainer";
 
 
-const LoginScreen = ({location, history}) => {
+const SignInScreen = ({location, history}) => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
@@ -78,4 +78,4 @@ const LoginScreen = ({location, history}) => {
     )
 };
 
-export default LoginScreen
+export default SignInScreen

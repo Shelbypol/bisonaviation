@@ -3,7 +3,7 @@ import {Row, Col} from 'reactstrap';
 import img1 from '../../images/bg-graphics/graphics/fs-slider-caption-bg-dark.png'
 import {Carousel} from "react-bootstrap"
 import Slide from "react-reveal/Slide";
-import SocialIcons from "../SocialIcons";
+import SocialIcons from "../SocialIcons/SocialIcons";
 import './HeroCarousel.css';
 
 
