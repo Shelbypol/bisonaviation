@@ -1,9 +1,9 @@
 import React from "react";
 import {Button, Col, Row, Image} from "react-bootstrap";
-import '../../style/2/AvionicsHome.css';
+import './AvionicsHome.css';
 import tests from '../Avionics/images/avionics4.png'
 import roel from '../Avionics/images/avionics2.png'
-import cnc from '../../images/bg-graphics/home-screen/home-slider/cnc-machine copy.png'
+import cnc from './images/cnc-machine copy.png'
 import panel from '../Avionics/images/avionics1.png'
 import tayseer from '../../images/bg-graphics/screen-avionics/avionics/tayseer-avionics.png'
 import {LinkContainer} from "react-router-bootstrap";

@@ -1,0 +1,34 @@
+/*IMG ONE*/
+
+#HomeHero_carouselImg1{
+    background-image: url("./images/large-wing.png");
+    background-position: 50% 60%;
+}
+
+/*IMG 2*/
+
+#HomeHero_carouselImg2{
+    background-image: url("./images/fullscreen-slider2.png");
+    background-position: 50% 10%;
+    transform: rotateX(25deg);
+}
+
+/*IMG 3*/
+
+#HomeHero_carouselImg3{
+    background-image: url("./images/cnc-machine copy.png");
+    background-position: 50% 65%;
+}
+
+/*IMG 4*/
+
+#HomeHero_carouselImg4{
+    background-image: url("./images/riveting-large.png");
+    background-position: 50% 50%;
+}
+
+/*IMG 5*/
+
+#HomeHero_carouselImg5{
+    background-image: url("./images/large-flir.png");
+}

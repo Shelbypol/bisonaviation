@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import HeaderMobile from "./HeaderMobile";
 import HeaderDesktop from "./HeaderDesktop";
-import '../../style/headers.css'
+import './headers.css'
 import '../../style/global-1.css'
 import Fade from "react-reveal/Fade";
 

@@ -1,10 +1,10 @@
 import React, {useState, useRef, useEffect} from "react";
-import { Nav, Navbar, Row, Col} from "react-bootstrap";
+import { Nav, Row, Col} from "react-bootstrap";
 import {LinkContainer} from "react-router-bootstrap";
 import {useDispatch, useSelector} from "react-redux";
 import {CART_RESET} from "../../constants/cartConstants";
 import {logout} from "../../actions/userActions";
-import {Link, Route} from "react-router-dom";
+import {Link} from "react-router-dom";
 import WishListTab from "../Wishlist/WishListTab";
 import SignInBtn from "../SignInRegister/SignInBtn";
 import logo from '../../images/bg-graphics/graphics/Final-Logo-Horizontal.png'
