@@ -1,7 +1,5 @@
 import React, {Fragment, useEffect, useLayoutEffect, useState} from 'react';
 import {BrowserRouter as Router, Route, Switch,} from 'react-router-dom';
-import {Container} from 'react-bootstrap'
-import Header from "./components/HeaderFooter/Header";
 import Footer from "./components/HeaderFooter/Footer";
 import ProductsScreen from "./components/Product(s)/ProductsScreen";
 import ProductScreen from "./components/Product(s)/ProductScreen";
@@ -28,7 +26,8 @@ import ContactScreen from "./components/Contact/ContactScreen";
 import TermsScreen from "./components/Terms/TermsScreen";
 import TermsFlirScreen from "./components/Terms/TermsFlirScreen";
 import WishListScreen from "./components/Wishlist/WishListScreen"
-import HeaderDesktop from "./components/HeaderFooter/HeaderDesktop";
+import Header from "./components/HeaderFooter/Header";
+// import HeaderDesktop from "./components/HeaderFooter/HeaderDesktop";
 import HeaderMobile from "./components/HeaderFooter/HeaderMobile";
 import {listProducts} from "./actions/productActions";
 import {useDispatch} from "react-redux";
@@ -81,11 +80,9 @@ const App = () => {
 
                 {/* ================    STICKY / MOBILE HEADER W/ FOOTER    =================*/}
                 <Fragment>
-                    {width < breakpoint ? (
-                        <HeaderMobile/>
-                    ) : (
-                        <HeaderDesktop/>
-                    )}
+
+                    <Header/>
+
                     <Route path='/' component={HomeScreen} exact/>
                     <Route path='/contact' component={ContactScreen}/>
                     <Route path='/terms' component={TermsScreen}/>
@@ -99,6 +96,7 @@ const App = () => {
                     <Route path='/placeorder' component={PlaceOrderScreen}/>
                     <Route path='/order/:id' component={OrderScreen}/>
                     <Route path='/thankyou/:id' component={ThankYouScreen}/>
+
                     <Footer/>
                 </Fragment>
             </Switch>

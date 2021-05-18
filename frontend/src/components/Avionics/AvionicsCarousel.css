@@ -1,29 +1,21 @@
-/*IMG ONE*/
-
 #AvionicsHero_carouselImg1 {
-    background-image: url("src/images/bg-graphics/home-screen/home-slider/fullscreen-slider2.png");
+    /*background-image: url("src/images/bg-graphics/screen-avionics/avionics-slider/avionics2.png");*/
+    /*background-image: url("src/images/bg-graphics/home-screen/home-slider/fullscreen-slider2.png");*/
     background-position: 50% 10%;
     transform: rotateX(25deg);
 }
 
-/*IMG 2*/
-
 #AvionicsHero_carouselImg2 {
-    background-image: url("src/images/bg-graphics/screen-avionics/avionics-slider/avionics2.png");
+    /*background-image: url("src/images/bg-graphics/screen-avionics/avionics-slider/avionics2.png");*/
     background-position: 50% 10%;
 }
 
-/*IMG 3*/
-
 #AvionicsHero_carouselImg3{
-    background-image: url("src/images/bg-graphics/screen-avionics/avionics-slider/avionics3.png");
+    /*background-image: url("src/images/bg-graphics/screen-avionics/avionics-slider/avionics3.png");*/
     background-position: 50% 30%;
 }
 
-
-/*IMG 4*/
-
 #AvionicsHero_carouselImg4{
-    background-image: url("src/images/bg-graphics/screen-avionics/avionics-slider/avionics4.png");
+    /*background-image: url("src/images/bg-graphics/screen-avionics/avionics-slider/avionics4.png");*/
     background-position: 50% 30%;
 }

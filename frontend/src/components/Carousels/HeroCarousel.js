@@ -4,7 +4,7 @@ import img1 from '../../images/bg-graphics/graphics/fs-slider-caption-bg-dark.pn
 import {Carousel} from "react-bootstrap"
 import Slide from "react-reveal/Slide";
 import SocialIcons from "../SocialIcons";
-import '../../style/HeroCarousel.css';
+import './HeroCarousel.css';
 
 
 const HeroCarousel = (
