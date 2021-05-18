@@ -2,7 +2,7 @@ import React from "react";
 import Fade from 'react-reveal/Fade';
 import {Col, Row} from "react-bootstrap";
 import AvionicsProducts from "../../Avionics/AvionicsProducts";
-import '../../../style/2/GarminHomeFlag.scss'
+import './GarminHomeFlag.scss'
 import ProductCarousel from "../../Product(s)/ProductsCarousel/ProductCarousel";
 
 

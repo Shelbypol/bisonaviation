@@ -115,7 +115,7 @@
         position: -webkit-sticky;
         position: sticky;
         top: 0;
-        background-image: url("../images/bg-graphics/graphics/dots.png");
+        /*background-image: url("src/images/bg-graphics/graphics/dots.png");*/
         background-color: rgba(0, 0, 0, 1);
         padding-left: 1vw;
         padding-top: 8vh;

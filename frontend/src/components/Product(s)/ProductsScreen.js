@@ -5,7 +5,7 @@ import ProductsBrowse from "./ProductsPage";
 import {Jumbotron} from "reactstrap";
 import HeaderDesktop from "../HeaderFooter/HeaderDesktop";
 import HeaderMobile from "../HeaderFooter/HeaderMobile";
-import {useDispatch, useSelector} from "react-redux";
+import {useDispatch} from "react-redux";
 
 const ProductsScreen = ({match, history}) => {
 
