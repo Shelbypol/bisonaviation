@@ -72,11 +72,11 @@ const App = () => {
                 <Route path='/product/:id' component={ProductScreen}/>
 
                 {/* ================    STICKY HEADER ONLY W/ FOOTER    =================*/}
-                <Route path='/wishlist' component={WishListScreen}/>
-                <Route path='/flir' component={FlirScreen}/>
-                <Route path='/team' component={TeamScreen}/>
-                <Route path='/maintenance' component={MaintenanceScreen}/>
-                <Route path='/avionics' component={AvionicsScreen}/>
+                {/*<Route path='/wishlist' component={WishListScreen}/>*/}
+                {/*<Route path='/flir' component={FlirScreen}/>*/}
+                {/*<Route path='/team' component={TeamScreen}/>*/}
+                {/*<Route path='/maintenance' component={MaintenanceScreen}/>*/}
+                {/*<Route path='/avionics' component={AvionicsScreen}/>*/}
 
                 {/* ================    STICKY / MOBILE HEADER W/ FOOTER    =================*/}
                 <Fragment>
@@ -96,6 +96,13 @@ const App = () => {
                     <Route path='/placeorder' component={PlaceOrderScreen}/>
                     <Route path='/order/:id' component={OrderScreen}/>
                     <Route path='/thankyou/:id' component={ThankYouScreen}/>
+
+                    <Route path='/wishlist' component={WishListScreen}/>
+                    <Route path='/flir' component={FlirScreen}/>
+                    <Route path='/team' component={TeamScreen}/>
+                    <Route path='/maintenance' component={MaintenanceScreen}/>
+                    <Route path='/avionics' component={AvionicsScreen}/>
+
 
                     <Footer/>
                 </Fragment>

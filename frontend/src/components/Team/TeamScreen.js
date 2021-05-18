@@ -1,4 +1,4 @@
-import React, {useEffect, useLayoutEffect, useState} from 'react'
+import React, { useLayoutEffect} from 'react'
 import {Container, Row} from "react-bootstrap";
 import TeamCard from "./TeamCard";
 import johnAtkin from '../../images/bg-graphics/screen-team/john_atkin.png'
@@ -15,49 +15,18 @@ import tuna from '../../images/bg-graphics/screen-team/tuna.png'
 import mackerel from '../../images/bg-graphics/screen-team/mackeral.png'
 import JumbotronTitle from "../JumbotronTitle";
 import '../../style/2/teamScreen/TeamHero.css';
-import {useDispatch} from "react-redux";
-import HeaderMobile from "../../components/HeaderFooter/HeaderMobile";
-import HeaderDesktop from "../../components/HeaderFooter/HeaderDesktop";
 import Footer from "../../components/HeaderFooter/Footer";
 
 
 const TeamScreen = () => {
 
-
-    const [width, setWidth] = useState(window.innerWidth);
-
-    const breakpoint = 1000;
-
-    const dispatch = useDispatch();
-
-    useEffect(() => {
-
-        window.addEventListener("resize", handleWindowResize);
-        return () => window.removeEventListener("resize", handleWindowResize);
-    }, [dispatch, width]);
-
     useLayoutEffect(() => {
         window.scrollTo(0, 0)
     });
 
-    const handleWindowResize = () => {
-        setWidth(window.innerWidth);
-    };
-
-    useLayoutEffect(() => {
-        window.scrollTo(0, 0)
-    });
 
     return (
         <>
-            {width < breakpoint ? (
-                <HeaderMobile/>
-            ) : (
-                <>
-                    <HeaderDesktop/>
-                </>
-            )}
-
             <JumbotronTitle
                 img={'TeamScreen_hero-img'}
                 showImg={true}
@@ -66,10 +35,7 @@ const TeamScreen = () => {
             />
 
 
-            {/*<Container className='p-0 fluid'>*/}
 
-                {/*<Container className='px-3 bg-transparent global_cultured global_HeroDivider-margin'*/}
-                {/*           fluid>        */}
                     <Container className='mx-md-5 px-md-3 bg-transparent global_cultured global_HeroDivider-margin'
                            fluid>
                     <h1 className='px-md-5 mx-md-5 px-sm-0 mt-5 global_red d-flex d-sm-none d-md-block'>The Team</h1>

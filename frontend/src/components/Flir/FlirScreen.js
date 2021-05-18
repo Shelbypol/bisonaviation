@@ -1,44 +1,15 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import '../../style/flirScreen/Flir.css';
 import FlirTable from "../../components/Flir/FlirTable";
 import {Jumbotron, Container} from "reactstrap";
 import FlirText from "../../components/Flir/FlirText";
 import JumbotronTitle from "../../components/JumbotronTitle";
-import HeaderMobile from "../../components/HeaderFooter/HeaderMobile";
-import HeaderDesktop from "../../components/HeaderFooter/HeaderDesktop";
 import Footer from "../../components/HeaderFooter/Footer";
-import {useDispatch} from "react-redux";
 
 const FlirScreen = () => {
 
-    const [width, setWidth] = useState(window.innerWidth);
-
-    const breakpoint = 1000;
-
-    const dispatch = useDispatch();
-
-    useEffect(() => {
-
-        window.addEventListener("resize", handleWindowResize);
-        return () => window.removeEventListener("resize", handleWindowResize);
-    }, [dispatch, width]);
-
-    // useLayoutEffect(() => {
-    //     window.scrollTo(0, 0)
-    // });
-
-    const handleWindowResize = () => {
-        setWidth(window.innerWidth);
-    };
-
     return (
         <>
-            {width < breakpoint ? (
-                <HeaderMobile/>
-            ) : (
-                <HeaderDesktop/>
-            )}
-
             <JumbotronTitle
                 img={'FlirHero_img'}
                 showImg={true}
@@ -46,19 +17,18 @@ const FlirScreen = () => {
                 leftTitle={false}
             />
 
-<Container className=' global_HeroDivider-margin pt-5'>
+            <Container className=' global_HeroDivider-margin pt-5'>
 
 
                 <h1 className='FlirScreen_Title'>Airborne FLIR, EO/IR, & Thermography Systems</h1>
-            <FlirText/>
-            {/*</Container>*/}
+                <FlirText/>
 
                 <Jumbotron className='FlirScreen_style bg-transparent p-0 m-0' fluid>
                     <FlirTable/>
                 </Jumbotron>
-</Container>
+            </Container>
 
-            <Footer />
+            <Footer/>
         </>
     )
 };

@@ -1,6 +1,5 @@
 #AvionicsHero_carouselImg1 {
     background-image: url("./images/avionics2.png");
-    /*background-image: url("/avionics-slider/avionics2.png");*/
     background-position: 50% 10%;
     transform: rotateX(25deg);
 }
