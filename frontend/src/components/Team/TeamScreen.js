@@ -13,7 +13,7 @@ import johnSenecal from './images/john_senecal.png'
 import halibut from './images/halibut.png'
 import tuna from './images/tuna.png'
 import mackerel from './images/mackeral.png'
-import JumbotronTitle from "../JumbotronTitle";
+import HeroJumbotron from "../HeroJumbotron/HeroJumbotron";
 import './TeamHero.css';
 
 
@@ -26,7 +26,7 @@ const TeamScreen = () => {
 
     return (
         <>
-            <JumbotronTitle
+            <HeroJumbotron
                 img={'TeamScreen_hero-img'}
                 showImg={true}
                 title={'Meet the Bison Team'}

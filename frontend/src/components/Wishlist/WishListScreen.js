@@ -7,7 +7,7 @@ import {EMAIL_RESET} from "../../constants/emailConstants";
 import './WishListScreen.css';
 import {Link} from "react-router-dom";
 import {createWishList} from "../../actions/wishListActions";
-import JumbotronTitle from "../../components/JumbotronTitle";
+import HeroJumbotron from "../HeroJumbotron/HeroJumbotron";
 
 const WishListScreen = () => {
 
@@ -49,7 +49,7 @@ const WishListScreen = () => {
 
     return (
         <>
-            <JumbotronTitle
+            <HeroJumbotron
                 img={'WishListScreenImg'}
                 showImg={true}
                 title={'Ask the experts!'}

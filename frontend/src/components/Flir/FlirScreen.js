@@ -3,13 +3,13 @@ import './Flir.css';
 import FlirTable from "../../components/Flir/FlirTable";
 import {Jumbotron, Container} from "reactstrap";
 import FlirText from "../../components/Flir/FlirText";
-import JumbotronTitle from "../../components/JumbotronTitle";
+import HeroJumbotron from "../HeroJumbotron/HeroJumbotron";
 
 const FlirScreen = () => {
 
     return (
         <>
-            <JumbotronTitle
+            <HeroJumbotron
                 img={'FlirHero_img'}
                 showImg={true}
                 title={'EO/IR - FLIR'}

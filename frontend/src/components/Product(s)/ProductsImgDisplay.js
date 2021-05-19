@@ -2,7 +2,6 @@ import React from "react";
 import {Col, Row} from "react-bootstrap";
 import Paginate from "../Paginate";
 import Product from "./Product";
-// import ProductsBrowse from "./ProductsBrowse";
 
 const ProductsImgDisplay = ({sideBar, history, match, updateCatProp, updateManufacturerProp, keyword, pages, page, products}) => {
 

@@ -1,19 +1,11 @@
 
 .HeroDivider_wrap{
-    /*top: -25vh;*/
-    /*position: sticky;*/
-    /*position: -webkit-sticky;*/
-    /*z-index: -1;*/
-    /*z-index: 1;*/
-
 }
 
 .HeroDivider_no-img-wrap{
     top: -25vh;
     padding-top: 1vh;
     background-color: white;
-    /*position: sticky;*/
-    /*position: -webkit-sticky;*/
     z-index: -1;
 }
 
@@ -41,9 +33,7 @@
 
 /*================= GRAPHIC =====================*/
 .HeroDivider_graphic{
-    /*background-image: url("../images/bg-graphics/graphics/transparent-divider.png");*/
-    /*background-image: url("../images/bg-graphics/graphics/gray-divider.png");*/
-    background-image: url("../images/bg-graphics/graphics/black-top-large-left-lg-size.png");
+    background-image: url("./black-top-large-left-lg-size.png");
     background-repeat: no-repeat;
     height: 300px;
     top: -20vh;
@@ -53,7 +43,6 @@
 
 
 /*================ MEDIA QUERY (900px) ===============*/
-/*@media (max-width: 1024px) {*/
 @media (max-width: 900px) {
     .HeroDivider_wrap{
         top: -42vh;
@@ -70,7 +59,7 @@
 
     /*============  GRAPHIC  ==============*/
     .HeroDivider_graphic{
-        background-image: url("../images/bg-graphics/graphics/black-top-large-left.png");
+        background-image: url("./black-top-large-left.png");
         background-repeat: no-repeat;
         height: 300px;
         top: -15vh;
@@ -92,6 +81,3 @@
     }
 
 }
-
-/*================ MEDIA QUERY (1100px) ===============*/
-/*@media (max-width: 1100px) && (min-width:*/

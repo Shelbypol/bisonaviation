@@ -1,8 +1,8 @@
 import React from 'react'
-import '../style/HeroDivider.css';
+import './HeroDivider.css';
 import {Row, Col} from "react-bootstrap";
 
-const JumbotronTitle = ({img, showImg, title, leftTitle}) => {
+const HeroJumbotron = ({img, showImg, title, leftTitle}) => {
 
     return (
         <>
@@ -43,4 +43,4 @@ const JumbotronTitle = ({img, showImg, title, leftTitle}) => {
     )
 };
 
-export default JumbotronTitle
+export default HeroJumbotron
