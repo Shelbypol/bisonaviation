@@ -42,7 +42,6 @@
     justify-content: start;
     position: absolute;
     padding: 2%;
-    z-index: 9500;
     top: 12.5vh;
     right: -500%;
     transition: 850ms;
@@ -93,6 +92,7 @@
 }
 
 .SideBar_Login{
+    z-index: 9800;
     font-weight: lighter;
 }
 

@@ -33,7 +33,7 @@ const SignInDropdown = ({ showSidebar }) => {
             {!userInfo && (
 
                 <>
-                    <li className='my-3' >
+                    <li className='my-3'>
                         <SignInForm loginTitle={'Sign In'} showSideBar={showSidebar}/>
                     </li>
 

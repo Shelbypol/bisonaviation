@@ -137,6 +137,9 @@ p{
 .global_black{
     background-color: black;
 }
+.global_black-text{
+    color: black;
+}
 
 .global_blue{
     color: #2576e5;

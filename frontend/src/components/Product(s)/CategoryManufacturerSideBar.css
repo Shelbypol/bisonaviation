@@ -30,6 +30,7 @@
 }
 
 .CatMan_search-form{
+    z-index: 9800;
     width:  120%;
 }
 

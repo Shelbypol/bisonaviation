@@ -6,8 +6,6 @@ const HeroJumbotron = ({img, showImg, title, leftTitle}) => {
 
     return (
         <>
-
-            {/*<Row  className='HeroDivider_no-img-wrap' >*/}
             <Row className={!showImg ? ('HeroJumbotron_no-img-wrap') : ('HeroJumbotron_wrap')}>
 
 

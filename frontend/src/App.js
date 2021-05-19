@@ -77,9 +77,7 @@ const App = () => {
 
                 {/* ================    STICKY / MOBILE HEADER W/ FOOTER    =================*/}
                 <Fragment>
-
                     <Header/>
-
                     <Route path='/' component={HomeScreen} exact/>
                     <Route path='/contact' component={ContactScreen}/>
                     <Route path='/terms' component={TermsScreen}/>

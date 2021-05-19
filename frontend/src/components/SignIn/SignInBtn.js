@@ -65,16 +65,16 @@ const SignInBtn = () => {
                     </Link>
                 )}
 
-                {/*{userInfo ? (*/}
-                {/*    <nav className={sidebar ? 'SideBar-nav-menu-user-logged active' : 'SideBar-nav-menu-user-logged'} style={{zIndex: '5000'}}*/}
-                {/*         ref={node}*/}
-                {/*         onClick={(e) => (handleScroll(e))}>*/}
-                {/*        <ul className='SideBar-nav-menu-items border'>*/}
-                {/*            <SignInDropdown showSidebar={showSidebar}/>*/}
-                {/*        </ul>*/}
-                {/*    </nav>*/}
-                {/*) : (*/}
-                {!userInfo &&(
+                {userInfo ? (
+                // {sidebar ? (
+                    <nav className={sidebar ? 'SideBar-nav-menu-user-logged active' : 'SideBar-nav-menu-user-logged'} style={{zIndex: '5000'}}
+                         ref={node}
+                         onClick={(e) => (handleScroll(e))}>
+                        <ul className='SideBar-nav-menu-items border'>
+                            <SignInDropdown showSidebar={showSidebar}/>
+                        </ul>
+                    </nav>
+                ) : (
                     <nav
                         className={sidebar ? 'SideBar-nav-menu-user-not-logged active' : 'SideBar-nav-menu-user-not-logged'}
                         ref={node}

@@ -42,6 +42,7 @@
 }
 
 .global_carousel-text-box{
+
     margin-top: -45vh;
     margin-left: -5vw;
     width: 75%
@@ -94,10 +95,11 @@
         font-size: 3vw !important;
     }
 
-    .global_carousel-text-box{
-        text-align: center;
-        width: 80vw;
-    }
+    /*.global_carousel-text-box{*/
+    /*    z-index: 1;*/
+    /*    text-align: center;*/
+    /*    width: 80vw;*/
+    /*}*/
 
     .global_HeroCarousel-animation{
         height: 85vh;
@@ -105,8 +107,7 @@
 
     .global_carousel-text-box{
         margin-top: -55vh;
-        /*    !*margin-left: -5vw;*!*/
-        /*    width: 75%;*/
+        z-index: 1;
         display: flex;
         justify-content: center;
     }
