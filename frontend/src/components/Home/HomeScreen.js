@@ -8,7 +8,7 @@ import HomeFlir from "../../components/Home/HomeFlir";
 import {Col, Row} from 'react-bootstrap';
 import GarminAdProductCarousel from "../GarminBanner/GarminAdProductCarousel";
 import HomeAvionics from "../../components/Home/HomeAvionics";
-import TestimonialCarousel from "../Carousels/TestimonialCarousel"
+import TestimonialCarousel from "../TestimonialCarousel/TestimonialCarousel"
 import '../GarminBanner/GarminAd.css';
 import '../../style/2/AvionicsProductsFlag.scss';
 

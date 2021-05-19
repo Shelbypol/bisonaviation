@@ -5,7 +5,7 @@ import {Carousel, Image} from "react-bootstrap";
 import {listProducts} from "../../actions/productActions";
 import Loader from "../Loader";
 import Message from "../Message";
-import './productCarousel.css'
+import './ProductCarousel.css'
 
 const ProductCarousel = () => {
     const dispatch = useDispatch();

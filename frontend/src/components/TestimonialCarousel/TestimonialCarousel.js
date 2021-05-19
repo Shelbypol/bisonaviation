@@ -8,7 +8,7 @@ import {Col, Row} from "react-bootstrap";
 const TestimonialCarousel = () => {
     return (
         <>
-            <Row className='global_cultured '>
+            <Row className='text-white'>
                 <Col xs={12} className='py-0'>
 
                     <Zoom>
