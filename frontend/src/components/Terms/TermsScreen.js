@@ -1,7 +1,7 @@
 import React, {useLayoutEffect} from 'react'
 import TermsHero from './TermsHero';
 import TermsGeneral from './TermsGeneral';
-import '../../style/2/termsScreen/Terms.css';
+import './Terms.css';
 
 
 const TermsScreen = () => {

@@ -1,6 +1,6 @@
 import React from "react";
 import {Button, Card, Col, Row} from "react-bootstrap";
-import '../../style/2/Mechanics.css';
+import './HomeMaintenance.css';
 import Zoom from 'react-reveal/Zoom';
 import {LinkContainer} from "react-router-bootstrap";
 import tayseer from "../Avionics/images/avionics/tayseer-avionics.png";
