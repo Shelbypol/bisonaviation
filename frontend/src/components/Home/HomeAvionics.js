@@ -1,6 +1,6 @@
 import React from "react";
 import {Button, Col, Row, Image} from "react-bootstrap";
-import './AvionicsHome.css';
+import './HomeAvionics.css';
 import tests from '../Avionics/images/avionics4.png'
 import roel from '../Avionics/images/avionics2.png'
 import cnc from './images/cnc-machine copy.png'

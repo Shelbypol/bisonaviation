@@ -1,5 +1,5 @@
 import React from 'react'
-import './MechanicsHero.css'
+import './MaintenanceCarousel.css'
 import HeroCarousel from "../Carousels/HeroCarousel";
 
 
