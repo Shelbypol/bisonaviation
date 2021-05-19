@@ -8,7 +8,6 @@ import HomeFlir from "../../components/Home/HomeFlir";
 import GarminAdProductCarousel from "../GarminBanner/GarminAdProductCarousel";
 import HomeAvionics from "../../components/Home/HomeAvionics";
 import TestimonialCarousel from "../TestimonialCarousel/TestimonialCarousel"
-import '../../style/global-2.css'
 
 const HomeScreen = () => {
 

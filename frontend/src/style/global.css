@@ -18,6 +18,10 @@ body {
     background: linear-gradient(to right, #1A1715, #4A433D);
 }
 
+.global_bg-overlay{
+    background-color: rgba(0,0,0, .8);
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -34,6 +38,17 @@ main {
 /*h1, .global_accentFont {*/
 /*    font-family: 'Sanchez', serif;*/
 /*}*/
+
+.global_dots{
+    background-image: url("../images/bg-graphics/graphics/dots-xl.png");
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+.global_smooth-dots{
+    background-image: url("../images/bg-graphics/graphics/smooth-overlay-boxed-bg.png");
+}
 
 .global_white {
     color: #fff;
@@ -61,7 +76,6 @@ p{
     font-weight: lighter;
 }
 
-/*   ======   SITE COLOR   ======   */
 .global_cursor:hover{
     cursor: pointer;
 }
@@ -71,12 +85,89 @@ p{
     text-decoration: underline;
 }
 
-.bgphoto {
-    /*background-image: url("../images/sharpen-hero1-red-tint.png");*/
-    /*height: 1000px;*/
-    /*width: 100%;*/
-    /*background-repeat: no-repeat;*/
-    /*overflow: hidden;*/
+/*================= SITE THEME ===================*/
+/* COLORS-BG */
+.global_rich-black-bg{
+    background-color: #0B090A;
+}
+.global_eerie-black-bg{
+    background-color: #161A1D;
+}
+.global_blood-red-bg{
+    background-color: #660708;
+}
+.global_silver-chalice-bg{
+    background-color:  #B1A7A6;
+}
+.global_light-grey-bg{
+    background-color: #D3D3D3;
+}
+.global_cultured-bg{
+    background-color: #F5F3F4;
+}
+/* COLORS-FONT */
+.global_rich-black{
+    color: #0B090A;
+}
+.global_eerie-black{
+    color: #161A1D;
+}
+.global_blood-red{
+    color: #660708;}
+
+.global_white-txt-blood-red-bg-hover{
+    color: #660708;
+    background-color: white;
+}
+.global_white-txt-blood-red-bg-hover:hover{
+    color: white;
+    background-color: #660708;
+}
+
+.global_silver-chalice{
+    color:  #B1A7A6;
+}
+.global_light-grey{
+    color: #D3D3D3;
+}
+.global_cultured{
+    color: #F5F3F4;
+}
+
+.global_black{
+    background-color: black;
+}
+
+.global_blue{
+    color: #2576e5;
+}
+
+.global_blue-bg{
+    background-color: #2576e5
+}
+
+.global_red{
+    color: red;
+}
+
+.global_red-bg{
+    background-color: red;
+}
+
+.global_white-text-red-hover{
+    color: white;
+}
+
+.global_white-text-red-hover:hover{
+    color:red;
+}
+
+.global_red-text-white-hover{
+    color: white;
+}
+
+.global_red-text-white-hover:hover{
+    color:red;
 }
 
 .global_bisonRedTxt {
@@ -179,24 +270,6 @@ p{
     color: rgba(90, 00, 09, 1);
 }
 
-
-/*   ======    HORIZONTAL GRADIENTS   ======  */
-.global_right-gradient{
-    background-image: linear-gradient(to right, rgba(90, 00, 09, 1), #fff);
-}
-
-.global_left-gradient{
-    background-image: linear-gradient(to left, rgba(90, 00, 09, 1), #fff);
-}
-
-.global_black-horizontal-gradient {
-    background: linear-gradient(rgba(04, 06, 07, 1), #fff, #fff);
-}
-
-.global_red-horizontal-gradient {
-    background: linear-gradient(#87CEEB, #fff, #fff);
-}
-
 .global_circleHover:hover {
     background-color: black;
 }
@@ -219,6 +292,21 @@ p{
     top: 20vh;
     /*scroll-behavior: smooth;*/
     overflow-y: auto;
+}
+
+/*================= SITE TITLES ===================*/
+
+.global_title{
+    font-size: 60px;
+}
+
+.global_title-letter{
+    color: #660708;
+    font-size: 75px;
+}
+
+.global_font-30px{
+    font-size: 30px;
 }
 
 /*.global_why-bg{*/
