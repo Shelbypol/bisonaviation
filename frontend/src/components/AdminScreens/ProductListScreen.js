@@ -67,98 +67,101 @@ const ProductListScreen = ({history, match}) => {
 
     return (
         <>
-            <Container className='bg-transparent text-white min-vh-100 min-vw-100 px-3'>
-                <Row className='align-items-center'>
+            <Row className='d-flex justify-content-center bg-transparent text-white my-5'>
+                <Col lg={9} xs={12}>
+                    {/*<Container className='bg-transparent text-white min-vh-100 min-vw-100 px-3'>*/}
+                    <Row className='align-items-center'>
+                        <Col className='d-flex justify-content-start'>
+                            <h4 className='text-white'>Products</h4>
+                        </Col>
 
-                    <Col xs={10} className='d-flex justify-content-start'>
-                        <h4 className='text-white'>Products</h4>
-                    </Col>
+                        <Col className='text-right'>
+                            <Button className='my-3 global_blue-bg' onClick={createProductHandler}>
+                                <i className='fas fa-plus'> </i> Create Product
+                            </Button>
+                        </Col>
+                    </Row>
+                    {loadingDelete && <Loader/>}
+                    {errorDelete && <Message variant='danger'>{errorDelete}</Message>}
 
-                    <Col className='text-right'>
-                        <Button className='my-3 global_blue-bg' onClick={createProductHandler}>
-                            <i className='fas fa-plus'> </i> Create Product
-                        </Button>
-                    </Col>
-                </Row>
-                {loadingDelete && <Loader/>}
-                {errorDelete && <Message variant='danger'>{errorDelete}</Message>}
+                    {loadingCreate && <Loader/>}
+                    {errorCreate && <Message variant='danger'>{errorCreate}</Message>}
 
-                {loadingCreate && <Loader/>}
-                {errorCreate && <Message variant='danger'>{errorCreate}</Message>}
-
-                {loading ? <Loader/> : error ? (
-                    <Message variant='danger'>{error}</Message>
-                ) : (
-                    <>
-                        <Row className='d-flex justify-content-center'>
-                            <Col md={10} xs={12}>
-                                <Paginate pages={pages} page={page} isAdmin={true}/>
-                                <Table striped bordered hover responsive className='table-sm bg-light mx-auto'>
-                                    <thead>
-                                    <tr>
-                                        <th>GARMIN PART #</th>
-                                        <th>NAME</th>
-                                        <th>PRICE</th>
-                                        <th>PROMO</th>
-                                        <th>AVAILABLE</th>
-                                        <th></th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    {products.map((product => (
-                                        <tr key={product._id} className=''>
-                                            <td>{product.partNumber}</td>
-                                            <td>{product.name}</td>
-                                            <td>${product.price}</td>
-                                            {product.isPromo ? (
-                                                <>
-                                                    <td><i className='fal fa-check'
-                                                           style={{color: 'green'}}> </i>&nbsp; {product.isPromoType}
-                                                    </td>
-                                                </>
-                                            ) : (
-                                                <>
-                                                    <td style={{color: 'red'}}>X</td>
-                                                </>
-                                            )}
-
-                                            {product.isAvailable ? (
-                                                <>
-                                                    <td><i className='fal fa-check' style={{color: 'green'}}> </i>
-                                                    </td>
-                                                </>
-                                            ) : (
-                                                <>
-                                                    <td style={{color: 'red'}}>X</td>
-                                                </>
-                                            )}
-
-
-                                            <td>
-                                                <LinkContainer to={`/admin/product/${product._id}/edit`}>
-                                                    <Button variant='light' className='btn-sm'>
-                                                        <i className='fas fa-edit'> </i>
-                                                    </Button>
-                                                </LinkContainer>
-
-                                                <Button variant='danger' className='btn-sm'
-                                                        onClick={() => deleteHandler(product._id)}>
-                                                    <i className='fas fa-trash'> </i>
-                                                </Button>
-
-                                            </td>
+                    {loading ? <Loader/> : error ? (
+                        <Message variant='danger'>{error}</Message>
+                    ) : (
+                        <>
+                            <Row className='d-flex justify-content-center'>
+                                <Col md={12} xs={12}>
+                                    <Paginate pages={pages} page={page} isAdmin={true}/>
+                                    <Table striped bordered hover responsive className='table-sm bg-light mx-auto'>
+                                        <thead>
+                                        <tr className=''>
+                                            <th className='border global_gray-bg text-white'>GARMIN PART #</th>
+                                            <th className='border global_gray-bg text-white'>NAME</th>
+                                            <th className='border global_gray-bg text-white'>PRICE</th>
+                                            <th className='border global_gray-bg text-white'>PROMO</th>
+                                            <th className='border global_gray-bg text-white'>AVAILABLE</th>
+                                            <th className='border global_gray-bg text-white'> </th>
                                         </tr>
-                                    )))}
-                                    </tbody>
-                                </Table>
+                                        </thead>
+                                        <tbody>
+                                        {products.map((product => (
+                                            <tr key={product._id} className=''>
+                                                <td>{product.partNumber}</td>
+                                                <td>{product.name}</td>
+                                                <td>${product.price}</td>
+                                                {product.isPromo ? (
+                                                    <>
+                                                        <td><i className='fal fa-check'
+                                                               style={{color: 'green'}}> </i>&nbsp; {product.isPromoType}
+                                                        </td>
+                                                    </>
+                                                ) : (
+                                                    <>
+                                                        <td style={{color: 'red'}}>X</td>
+                                                    </>
+                                                )}
 
-                                <Paginate pages={pages} page={page} isAdmin={true}/>
+                                                {product.isAvailable ? (
+                                                    <>
+                                                        <td><i className='fal fa-check' style={{color: 'green'}}> </i>
+                                                        </td>
+                                                    </>
+                                                ) : (
+                                                    <>
+                                                        <td style={{color: 'red'}}>X</td>
+                                                    </>
+                                                )}
 
-                            </Col>
-                        </Row>
-                    </>
-                )}
-            </Container>
+
+                                                <td>
+                                                    <LinkContainer to={`/admin/product/${product._id}/edit`}>
+                                                        <Button variant='light' className='btn-sm'>
+                                                            <i className='fas fa-edit'> </i>
+                                                        </Button>
+                                                    </LinkContainer>
+
+                                                    <Button variant='danger' className='btn-sm'
+                                                            onClick={() => deleteHandler(product._id)}>
+                                                        <i className='fas fa-trash'> </i>
+                                                    </Button>
+
+                                                </td>
+                                            </tr>
+                                        )))}
+                                        </tbody>
+                                    </Table>
+
+                                    <Paginate pages={pages} page={page} isAdmin={true}/>
+
+                                </Col>
+                            </Row>
+                        </>
+                    )}
+                    {/*</Container>*/}
+                </Col>
+            </Row>
         </>
     )
 };

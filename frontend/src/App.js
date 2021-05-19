@@ -103,7 +103,9 @@ const App = () => {
                     <Route path='/admin/productlist' component={ProductListScreen} exact/>
                     <Route path='/admin/productlist/:pageNumber' component={ProductListScreen} exact/>
                     <Route path='/admin/product/:id/edit' component={ProductEditScreen}/>
-                    <Route path='/admin/orderlist' component={OrderListScreen}/>
+
+                    {/*<Route path='/admin/orderlist' component={OrderListScreen}/>*/}
+
                     {/*<Route path='/products' component={ProductsScreen} exact/>*/}
                     {/*<Route path='/search/:keyword' component={ProductsScreen} exact/>*/}
                     {/*<Route path='/page/:pageNumber' component={ProductsScreen} exact/>*/}

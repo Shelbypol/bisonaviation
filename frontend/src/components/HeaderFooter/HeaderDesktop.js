@@ -103,11 +103,11 @@ const HeaderDesktop = () => {
                                     </LinkContainer>
 
 
-                                    <LinkContainer to='/admin/orderlist' className='d-flex justify-content-center mt-1' style={{height: '5vh'}}>
-                                        <Nav.Link className='SideBar_Name border-right'>
-                                            Data - Info
-                                        </Nav.Link>
-                                    </LinkContainer>
+                                    {/*<LinkContainer to='/admin/orderlist' className='d-flex justify-content-center mt-1' style={{height: '5vh'}}>*/}
+                                    {/*    <Nav.Link className='SideBar_Name border-right'>*/}
+                                    {/*        Data - Info*/}
+                                    {/*    </Nav.Link>*/}
+                                    {/*</LinkContainer>*/}
 
                                 </>
                             )}
