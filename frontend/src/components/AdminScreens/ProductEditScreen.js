@@ -113,7 +113,7 @@ const ProductEditScreen = ({match, history}) => {
 
     return (
         <>
-        <HeaderDesktop/>
+        {/*<HeaderDesktop/>*/}
         <Container className=' bg-transparent text-white  min-vh-100 min-vw-100'>
             <Row xs={12} className='my-0 px-3 py-5'>
                 <Col xs={10} className='d-flex justify-content-start'>
@@ -139,7 +139,7 @@ const ProductEditScreen = ({match, history}) => {
                     {/*    </Col>*/}
                     {/*</Row>*/}
                     <Row className=' '>
-                        <Col xs={3} className=''>
+                        <Col lg={3} xs={12} className=''>
                             {/* PROMO*/}
                             <Form.Group controlId='isAvailable'>
                                 <Form.Check type='checkbox'
@@ -186,7 +186,7 @@ const ProductEditScreen = ({match, history}) => {
                             </Form.Group>
 
                         </Col>
-                        <Col xs={5} className=''>
+                        <Col lg={5} xs={12} className=''>
                             {/* NAME */}
                             <Form.Group controlId='name'>
                                 <Form.Label className='mb-0 pt-2 px-1 w-100 Admin_form-titles'><h4 className='text-white'>Name</h4></Form.Label>
@@ -229,7 +229,7 @@ const ProductEditScreen = ({match, history}) => {
 
 
                         </Col>
-                        <Col xs={4}>
+                        <Col lg={4} xs={12}>
                             {/* COUNT IN STOCK*/}
                             <Form.Group controlId='countInStock'>
                                 <Form.Label className='mb-0 pt-2 px-1 w-100 Admin_form-titles'><h4 className='text-white'>Count in Stock</h4></Form.Label>

@@ -56,12 +56,12 @@ const App = () => {
         <Router>
 
             <Switch>
-                <Route path='/admin/userlist' component={UserListScreen}/>
-                <Route path='/admin/user/:id/edit' component={UserEditScreen}/>
-                <Route path='/admin/productlist' component={ProductListScreen} exact/>
-                <Route path='/admin/productlist/:pageNumber' component={ProductListScreen} exact/>
-                <Route path='/admin/product/:id/edit' component={ProductEditScreen}/>
-                <Route path='/admin/orderlist' component={OrderListScreen}/>
+                {/*<Route path='/admin/userlist' component={UserListScreen}/>*/}
+                {/*<Route path='/admin/user/:id/edit' component={UserEditScreen}/>*/}
+                {/*<Route path='/admin/productlist' component={ProductListScreen} exact/>*/}
+                {/*<Route path='/admin/productlist/:pageNumber' component={ProductListScreen} exact/>*/}
+                {/*<Route path='/admin/product/:id/edit' component={ProductEditScreen}/>*/}
+                {/*<Route path='/admin/orderlist' component={OrderListScreen}/>*/}
                 <Route path='/products' component={ProductsScreen} exact/>
                 <Route path='/search/:keyword' component={ProductsScreen} exact/>
                 <Route path='/page/:pageNumber' component={ProductsScreen} exact/>
@@ -97,6 +97,18 @@ const App = () => {
                     <Route path='/team' component={TeamScreen}/>
                     <Route path='/maintenance' component={MaintenanceScreen}/>
                     <Route path='/avionics' component={AvionicsScreen}/>
+
+                    <Route path='/admin/userlist' component={UserListScreen}/>
+                    <Route path='/admin/user/:id/edit' component={UserEditScreen}/>
+                    <Route path='/admin/productlist' component={ProductListScreen} exact/>
+                    <Route path='/admin/productlist/:pageNumber' component={ProductListScreen} exact/>
+                    <Route path='/admin/product/:id/edit' component={ProductEditScreen}/>
+                    <Route path='/admin/orderlist' component={OrderListScreen}/>
+                    {/*<Route path='/products' component={ProductsScreen} exact/>*/}
+                    {/*<Route path='/search/:keyword' component={ProductsScreen} exact/>*/}
+                    {/*<Route path='/page/:pageNumber' component={ProductsScreen} exact/>*/}
+                    {/*<Route path='/search/:keyword/page/:pageNumber' component={ProductsScreen}/>*/}
+                    {/*<Route path='/product/:id' component={ProductScreen}/>*/}
 
 
                     <Footer/>

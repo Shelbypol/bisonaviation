@@ -50,6 +50,14 @@ main {
     background-image: url("../images/bg-graphics/graphics/smooth-overlay-boxed-bg.png");
 }
 
+.global_gray-bg{
+    background-color: #313131;
+}
+
+.global_gray-bg:hover{
+    background-color: #fff;
+}
+
 .global_white {
     color: #fff;
 }
@@ -172,6 +180,7 @@ p{
 .global_red-text-white-hover:hover{
     color:red;
 }
+
 
 .global_bisonRedTxt {
     color: rgba(90, 00, 09, 1);
