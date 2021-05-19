@@ -1,16 +1,14 @@
 import React, {useLayoutEffect} from 'react'
-import '../../style/global-2.css'
+import {Col, Row} from 'react-bootstrap';
 import HomeCarousel from '../../components/Home/HomeCarousel'
 import HomeAwardBanner from '../../components/Home/HomeAwardBanner'
 import HomeServices from "../../components/Home/HomeServices";
 import HomeMaintenance from "../../components/Home/HomeMaintenance";
 import HomeFlir from "../../components/Home/HomeFlir";
-import {Col, Row} from 'react-bootstrap';
 import GarminAdProductCarousel from "../GarminBanner/GarminAdProductCarousel";
 import HomeAvionics from "../../components/Home/HomeAvionics";
 import TestimonialCarousel from "../TestimonialCarousel/TestimonialCarousel"
-import '../GarminBanner/GarminAd.css';
-import '../../style/2/AvionicsProductsFlag.scss';
+import '../../style/global-2.css'
 
 const HomeScreen = () => {
 

@@ -3,6 +3,8 @@ import {Col, Button, Row} from "react-bootstrap";
 import Fade from 'react-reveal/Fade';
 import {LinkContainer} from "react-router-bootstrap";
 
+
+
 const GarminAd = () => {
 
         return (

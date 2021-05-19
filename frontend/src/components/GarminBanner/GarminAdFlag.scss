@@ -1,15 +1,15 @@
-.Garmin_flag{
+.Avionics_flag{
   position: absolute;
-  //font-size: 25px;
-  //left:-30px;
-  //top:-12px;
+  font-size: 25px;
+  left:-5px;
+  top:-12px;
   display: block;
   //height: 30px;
   height: 46px;
-  //line-height: 14px;
-  background: #660708;
+  line-height: 24px;
+  background: gold;
   color: #000;
-  padding: 5px 10px 5px 10px;
+  padding: 10px 20px 10px 20px;
   z-index: 1;
   box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 12px 20px 0 rgba(0, 0, 0, 0.19);
 

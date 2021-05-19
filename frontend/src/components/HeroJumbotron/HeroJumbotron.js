@@ -1,5 +1,5 @@
 import React from 'react'
-import './HeroDivider.css';
+import './HeroJumbotron.css';
 import {Row, Col} from "react-bootstrap";
 
 const HeroJumbotron = ({img, showImg, title, leftTitle}) => {
