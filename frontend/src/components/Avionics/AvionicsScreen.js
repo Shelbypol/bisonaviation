@@ -1,12 +1,12 @@
 import React from 'react'
 import AvionicsCarousel from "./AvionicsCarousel";
-import GarminBanner from "../GarminBanner/GarminBanner";
+import GarminAd from "../GarminBanner/GarminAd";
 
 const AvionicsScreen = () => {
     return (
         <>
            <AvionicsCarousel/>
-           <GarminBanner/>
+           <GarminAd/>
         </>
     )
 };

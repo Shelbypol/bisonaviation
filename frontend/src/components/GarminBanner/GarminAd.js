@@ -3,7 +3,7 @@ import {Col, Button, Row} from "react-bootstrap";
 import Fade from 'react-reveal/Fade';
 import {LinkContainer} from "react-router-bootstrap";
 
-const GarminBanner = () => {
+const GarminAd = () => {
 
         return (
             <>
@@ -29,4 +29,4 @@ const GarminBanner = () => {
     }
 ;
 
-export default GarminBanner;
+export default GarminAd;

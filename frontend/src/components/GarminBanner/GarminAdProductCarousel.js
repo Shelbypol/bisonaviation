@@ -1,16 +1,16 @@
 import React from "react";
 import Fade from 'react-reveal/Fade';
 import {Col, Row} from "react-bootstrap";
-import GarminBanner from "./GarminBanner";
-import './GarminHomeFlag.scss'
+import GarminAd from "./GarminAd";
+import './GarminAdFlag.scss'
 import ProductCarousel from "../ProductsCarousel/ProductCarousel";
 
 
-const ProductsCarouselGarminAd = () => {
+const GarminAdProductCarousel = () => {
     return (
         <Row className='d-flex justify-content-center Garmin_card-row bg-white'>
             <Col md={6} xs={12} className='d-flex align-content-center m-0 p-0'>
-                <GarminBanner/>
+                <GarminAd/>
             </Col>
             <Col md={6} xs={12} className='bg-white d-flex justify-content-center m-0 p-0'>
                 <Fade duration={1500} right>
@@ -21,4 +21,4 @@ const ProductsCarouselGarminAd = () => {
 
     )
 };
-export default ProductsCarouselGarminAd
+export default GarminAdProductCarousel
