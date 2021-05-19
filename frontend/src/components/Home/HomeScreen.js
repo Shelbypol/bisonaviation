@@ -6,10 +6,10 @@ import HomeServices from "../../components/Home/HomeServices";
 import HomeMaintenance from "../../components/Home/HomeMaintenance";
 import HomeFlir from "../../components/Home/HomeFlir";
 import {Col, Row} from 'react-bootstrap';
-import ProductsCarouselGarminAd from "../ProductsCarousel/ProductsCarouselGarminAd";
+import ProductsCarouselGarminAd from "../GarminBanner/ProductsCarouselGarminAd";
 import HomeAvionics from "../../components/Home/HomeAvionics";
 import TestimonialCarousel from "../Carousels/TestimonialCarousel"
-import '../Avionics/AvionicsProducts.css';
+import '../GarminBanner/GarminBanner.css';
 import '../../style/2/AvionicsProductsFlag.scss';
 
 const HomeScreen = () => {
