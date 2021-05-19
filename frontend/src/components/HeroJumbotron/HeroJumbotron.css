@@ -1,8 +1,6 @@
 
-.HeroDivider_wrap{
-}
 
-.HeroDivider_no-img-wrap{
+.HeroJumbotron_no-img-wrap{
     top: -25vh;
     padding-top: 1vh;
     background-color: white;
@@ -11,7 +9,7 @@
 
 
 /*=============== IMG / TITLE WRAP*/
-.HeroDivider_img-title-wrap {
+.HeroJumbotron_img-title-wrap {
     background-attachment: fixed;
     background-color: #FBFAFB;
     background-repeat: no-repeat;
@@ -22,7 +20,7 @@
 
 
 /* ==================   TITLE   =====================*/
-.HeroDivider_title {
+.HeroJumbotron_title {
     font-size: 4vw;
     background-color: #660708;
     padding: 0 1em 0 1em;
@@ -32,7 +30,7 @@
 }
 
 /*================= GRAPHIC =====================*/
-.HeroDivider_graphic{
+.HeroJumbotron_graphic{
     background-image: url("./black-top-large-left-lg-size.png");
     background-repeat: no-repeat;
     height: 300px;
@@ -44,12 +42,12 @@
 
 /*================ MEDIA QUERY (900px) ===============*/
 @media (max-width: 900px) {
-    .HeroDivider_wrap{
+    .HeroJumbotron_wrap{
         top: -42vh;
     }
 
     /* ===========  TITLE  ============*/
-    .HeroDivider_title {
+    .HeroJumbotron_title {
         background-color: #660708;
         color: white;
         font-size: 5vw;
@@ -58,7 +56,7 @@
     }
 
     /*============  GRAPHIC  ==============*/
-    .HeroDivider_graphic{
+    .HeroJumbotron_graphic{
         background-image: url("./black-top-large-left.png");
         background-repeat: no-repeat;
         height: 300px;
@@ -72,11 +70,11 @@
 /*================ MEDIA QUERY (400px) ===============*/
 @media (max-width: 400px) {
 
-    .HeroDivider_img-title-wrap {
+    .HeroJumbotron_img-title-wrap {
         background-position: 10% 0;
     }
 
-    .HeroDivider_wrap{
+    .HeroJumbotron_wrap{
         top: -55vh;
     }
 

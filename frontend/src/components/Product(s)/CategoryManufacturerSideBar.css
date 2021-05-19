@@ -4,7 +4,7 @@
 }
 
 .CatMan_sidebar-icon{
-    z-index: 2;
+    z-index: 9000;
     padding:0;
     position: -webkit-sticky;
     position: sticky;
@@ -12,7 +12,7 @@
 }
 
 .CatMan_sidebar-icon-x{
-    z-index: 2;
+    z-index: 9000;
     padding:0;
     /*position: -webkit-sticky;*/
     /*position: sticky;*/
@@ -61,7 +61,6 @@
     width: 100%;
     padding: 0;
     font-weight: lighter;
-    /*border-bottom: 1px solid rgba(255, 255, 255, .5);*/
 }
 
 .CatMan_items:hover {
@@ -71,9 +70,7 @@
 
 .CatMan-title {
     top: 6vh;
-    /*background-color: #660708;*/
     color: black;
-    /*background-color: lightgrey;*/
     padding: .5vw .5vw 0 0;
 }
 
@@ -82,16 +79,13 @@
     width: 100%;
     color: black;
     margin-top: 3vw;
-    /*margin-top: 1vw;*/
 }
 
 .CatMan-sub-titles:hover{
-    /*background-color: rgba(255,255,255, .2);*/
-    /*color: white;*/
+
 }
 
 /*PRODUCT CARD*/
-
 .CatMan_card-text{
     width: 18vw;
 }
@@ -111,11 +105,10 @@
 /*    ======   MOBILE RESPONSIVE    ======    */
 @media (max-width: 1000px) {
     .CatMan-nav-menu-items {
-        z-index: 1;
+        z-index: 9000;
         position: -webkit-sticky;
         position: sticky;
         top: 0;
-        /*background-image: url("src/images/bg-graphics/graphics/dots.png");*/
         background-color: rgba(0, 0, 0, 1);
         padding-left: 1vw;
         padding-top: 8vh;

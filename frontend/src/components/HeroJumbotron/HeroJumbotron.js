@@ -8,13 +8,13 @@ const HeroJumbotron = ({img, showImg, title, leftTitle}) => {
         <>
 
             {/*<Row  className='HeroDivider_no-img-wrap' >*/}
-            <Row className={!showImg ? ('HeroDivider_no-img-wrap') : ('HeroDivider_wrap')}>
+            <Row className={!showImg ? ('HeroJumbotron_no-img-wrap') : ('HeroJumbotron_wrap')}>
 
 
                 {showImg && (
                     <Col xs={12}
                          className={`
-                         HeroDivider_img-title-wrap
+                         HeroJumbotron_img-title-wrap
                          d-flex
                          justify-content-sm-start
                          justify-content-md-center
@@ -25,11 +25,11 @@ const HeroJumbotron = ({img, showImg, title, leftTitle}) => {
                     >
                         {leftTitle ? (
                             <p
-                                className={'HeroDivider_title pr-5 ml-auto'}
+                                className={'HeroJumbotron_title pr-5 ml-auto'}
                             >{title}</p>
                         ):(
                         <p
-                            className={'HeroDivider_title pr-5 mr-5'}
+                            className={'HeroJumbotron_title pr-5 mr-5'}
                         >{title}</p>
 
                         )}

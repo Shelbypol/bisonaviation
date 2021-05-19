@@ -1,12 +1,9 @@
 .SideBar-navbar {
     background-color: rgba(0, 0, 0, .5);
-    /*background-color: #060b26;*/
-    /*height: 5vh;*/
     width: 25vh;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .SideBar-menu-bars {
@@ -39,17 +36,13 @@
 
 .SideBar-nav-menu-user-not-logged {
     background-image: url("./dots.png");
-    /*background-color: rgba(255,255,255, .7);*/
-    /*background-color: rgba(67,13,10, .8);*/
     background-color: rgba(0,0,0, .7);
     width: 30vw;
-    /*height: 50vh;*/
     display: flex;
     justify-content: start;
     position: absolute;
     padding: 2%;
-    /*position: fixed;*/
-    z-index: 10000;
+    z-index: 9500;
     top: 12.5vh;
     right: -500%;
     transition: 850ms;
@@ -79,19 +72,16 @@
     display: flex;
     align-items: center;
     padding: .5vw 16px;
-    /*border-left: 1px solid #2576e5;*/
     border-left: 1px solid rgba(255,255,255,.8);
 }
 
 .SideBar-nav-text a:hover {
-    /*background-color: #2576e5;*/
     background-color: #660708;
     color: #fff;
     border-left: 1px solid rgba(255,255,255,.8);
 }
 
 .SideBar-nav-menu-items {
-    /*margin-top: 1vh;*/
     width: 100%;
 
 }
@@ -100,11 +90,9 @@
     color: rgba(255,255,255, .9);
     font-weight: lighter;
     height: 5.8vh;
-    /*margin-topL*/
 }
 
 .SideBar_Login{
-    /*color: rgba(255,255,255, 0.5);*/
     font-weight: lighter;
 }
 

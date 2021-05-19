@@ -21,13 +21,16 @@ const HomeScreen = () => {
 
     return (
         <>
-            <HomeCarousel/>
-
-            <HomeAwardBanner/>
-
             <Row className='d-flex justify-content-center' style={{backgroundColor: 'black'}}>
-                <Col xs={12} className=''>
+                <Col xs={12} className='' style={{zIndex: '1'}}>
 
+                    <Row className='m-0 p-0 d-flex justify-content-center'>
+                        <Col xs={12} className='mx-0 mt-0 mb-n3 p-0' style={{zIndex: '9900'}}>
+                            <HomeCarousel/>
+                        </Col>
+                    </Row>
+
+                            <HomeAwardBanner/>
 
                     <Row className='my-5 d-flex justify-content-center'>
                         <Col md={9} xs={12} className='mb-5' style={{zIndex: '3000'}}>

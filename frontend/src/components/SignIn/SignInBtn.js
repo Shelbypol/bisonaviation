@@ -41,7 +41,7 @@ const SignInBtn = () => {
 
     return (
         <>
-            <IconContext.Provider value={{color: '#fff'}}>
+            <IconContext.Provider value={{color: '#fff', zIndex: '95000'}}>
 
                 {userInfo ? (
                     <>
@@ -79,8 +79,8 @@ const SignInBtn = () => {
                         className={sidebar ? 'SideBar-nav-menu-user-not-logged active' : 'SideBar-nav-menu-user-not-logged'}
                         ref={node}
                         onClick={(e) => (handleScroll(e))}
+
                     >
-                        {/*<ul className='SideBar-nav-menu-items '>*/}
                         <ul className='SideBar-nav-menu-items '>
                             <SignInDropdown showSidebar={showSidebar}/>
                         </ul>
