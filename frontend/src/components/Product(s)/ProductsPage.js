@@ -1,15 +1,13 @@
 import React, {useEffect, useState} from "react";
-import {Col, Nav, Row} from "react-bootstrap";
+import {Col, Row} from "react-bootstrap";
 import {useSelector, useDispatch} from "react-redux";
 import {listProducts} from "../../actions/productActions";
 import ProductDisplayByCatMan from "./ProductsImgDisplay";
 import Loader from "../Loader";
 import Message from "../Message";
-import '../../style/CategoryManufacturerSideBar.css'
+import './CategoryManufacturerSideBar.css'
 import {Route} from "react-router-dom";
 import ProductsSearchBox from "./ProductsSearchBox";
-import {Container} from "react-bootstrap/cjs";
-import {Jumbotron} from "reactstrap";
 import Paginate from "../Paginate";
 
 const ProductsPage = ({match, history}) => {

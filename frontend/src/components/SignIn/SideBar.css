@@ -1,0 +1,106 @@
+.SideBar-navbar {
+    background-color: rgba(0, 0, 0, .5);
+    width: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SideBar-menu-bars {
+    font-size: 1rem;
+}
+
+/*SIDE NAV LOGGED IN*/
+.SideBar-nav-menu-user-logged {
+    background-image: url("./dots.png");
+    background-color: rgba(0,0,0, 1);
+    width: 20vw;
+    height: 100vh;
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    padding-left: 2vw;
+    padding-top: 1vw;
+    z-index: 10000;
+    top: 6.5vh;
+    left: -100vw;
+    transition: 850ms;
+}
+
+.SideBar-nav-menu-user-logged.active {
+    left: -2vw;
+    transition: 350ms;
+}
+
+/* SIDE NAV NOT LOGGED IN*/
+
+.SideBar-nav-menu-user-not-logged {
+    background-image: url("./dots.png");
+    background-color: rgba(0,0,0, .7);
+    width: 30vw;
+    display: flex;
+    justify-content: start;
+    position: absolute;
+    padding: 2%;
+    top: 12.5vh;
+    right: -500%;
+    transition: 850ms;
+}
+
+.SideBar-nav-menu-user-not-logged.active {
+    /*left: 0;*/
+    right: 0;
+    transition: 350ms;
+}
+
+.SideBar-nav-text {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 4px 0 4px 0;
+    list-style: none;
+}
+
+.SideBar-nav-text a {
+    font-weight: lighter;
+    text-decoration: none;
+    color: rgba(255,255,255, .8);
+    font-size: 1.2vw;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: .5vw 16px;
+    border-left: 1px solid rgba(255,255,255,.8);
+}
+
+.SideBar-nav-text a:hover {
+    background-color: #660708;
+    color: #fff;
+    /*border-left: 1px solid rgba(255,255,255,.8);*/
+}
+
+.SideBar-nav-menu-items {
+    width: 100%;
+}
+
+.SideBar_Name{
+    color: rgba(255,255,255, .9);
+    font-weight: lighter;
+    height: 5.8vh;
+}
+
+.SideBar_Name:hover{
+    color: black;
+    background-color: rgba(255,255,255,.8);
+}
+
+.SideBar_Login{
+    z-index: 9800;
+    font-weight: lighter;
+}
+
+.SideBar_admin a{
+    background-color: lightgrey;
+    color: black;
+}

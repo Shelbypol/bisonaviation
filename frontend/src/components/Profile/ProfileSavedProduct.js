@@ -7,8 +7,6 @@ import {useDispatch, useSelector} from "react-redux";
 import {deleteWishListItem, listMyWishLists} from "../../actions/wishListActions";
 import {addToCart, removeFromCart} from "../../actions/cartActions";
 
-
-
 const ProfileSavedProduct = ({wishList, wishes, item, product, userInfo}) => {
     const [activeHeart, setActiveHeart] = useState(false);
 

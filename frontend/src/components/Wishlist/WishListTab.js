@@ -1,7 +1,7 @@
 import React, {useState, useEffect, useRef} from 'react';
 import {CSSTransition} from 'react-transition-group';
 import WishListTabInfo from "./WishListTabInfo";
-import '../../style/WishListTab.css'
+import './WishListTab.css'
 import {useDispatch, useSelector} from "react-redux";
 
 const WishList = () => {

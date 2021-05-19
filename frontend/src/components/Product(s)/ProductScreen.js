@@ -9,7 +9,7 @@ import Message from '../Message'
 import Loader from '../Loader'
 import Meta from "../Meta";
 import HeaderMobile from "../HeaderFooter/HeaderMobile";
-import JumbotronTitle from "../JumbotronTitle";
+import HeroJumbotron from "../HeroJumbotron/HeroJumbotron";
 import HeaderDesktop from "../HeaderFooter/HeaderDesktop";
 
 const ProductScreen = ({history, match}) => {
@@ -103,7 +103,7 @@ const ProductScreen = ({history, match}) => {
                 </>
             )}
 
-            <JumbotronTitle
+            <HeroJumbotron
                 img={''}
                 showImg={false}
                 title={''}

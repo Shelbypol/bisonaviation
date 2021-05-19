@@ -1,6 +1,6 @@
 import React, {useState, useEffect, useLayoutEffect} from 'react'
 import {Link} from 'react-router-dom'
-import {Form, Button, Container} from 'react-bootstrap'
+import {Form, Button, Container, Row, Col} from 'react-bootstrap'
 import {useDispatch, useSelector} from 'react-redux'
 import Message from '../Message'
 import Loader from '../Loader'
@@ -51,13 +51,16 @@ const UserEditScreen = ({ match, history}) => {
 
     return (
         <>
-            <HeaderDesktop/>
-            <Container className='bg-white  min-vh-100'>
-            <Link to='/admin/userlist' className='btn btn-light my-3'>
-                Go Back
-            </Link>
+            <Container className=' bg-transparent text-white  min-vh-100 min-vw-100'>
+                <Row className='my-0 px-3 py-5'>
+                    <Col xs={12} className='d-flex justify-content-end'>
+                        <Link to='/admin/userlist' className='btn global_bisonRedBgWhiteHoverBgBtnRedBorder rounded py-1 px-2'>
+                            back
+                        </Link>
+                    </Col>
+                </Row>
             <FormContainer>
-                <h1>Edit User</h1>
+                <h1 className='text-white'>Edit User</h1>
                 {loadingUpdate && <Loader />}
                 {loadingUpdate && <Message variant='danger'>{errorUpdate}</Message> }
                 {loading ? <Loader/> : error ? <Message variant='danger'>{error}</Message> : (
@@ -88,7 +91,7 @@ const UserEditScreen = ({ match, history}) => {
                             </Form.Check>
                         </Form.Group>
 
-                        <Button type='submit' variant='primary'>Update</Button>
+                        <Button type='submit' variant='primary global_blue-bg'>Update</Button>
                     </Form>
                 ) }
             </FormContainer>

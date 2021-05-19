@@ -1,6 +1,5 @@
 import React from "react";
-import '../../style/2/Services.css'
-import '../../style/flag.scss'
+import './Services.css'
 import { Col, Row, Card} from "react-bootstrap";
 import Fade from 'react-reveal/Fade';
 

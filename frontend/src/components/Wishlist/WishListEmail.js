@@ -2,7 +2,7 @@ import React, {useEffect, useLayoutEffect, useState} from 'react'
 import {Button, Col, Form, Image, ListGroup, Row} from "react-bootstrap";
 import {Link} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
-import '../../style/WishListTab.css'
+import './WishListTab.css'
 import {removeFromCart} from "../../actions/cartActions";
 import {listMyWishLists} from "../../actions/wishListActions";
 import {addToEmail} from "../../actions/emailActions";

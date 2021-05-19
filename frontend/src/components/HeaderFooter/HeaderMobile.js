@@ -7,7 +7,7 @@ import {logout} from '../../actions/userActions'
 import ProductsSearchBox from "../Product(s)/ProductsSearchBox";
 import {CART_RESET} from "../../constants/cartConstants";
 import logo from '../../images/bg-graphics/graphics/Final-Logo-Horizontal.png'
-import SocialIcons from "../SocialIcons";
+import SocialIcons from "../SocialIcons/SocialIcons";
 import WishListTab from "../Wishlist/WishListTab";
 
 const HeaderMobile = () => {

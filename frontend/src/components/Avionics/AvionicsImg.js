@@ -1,6 +1,6 @@
 import {Jumbotron} from "reactstrap";
 import {Button, Card, Col, Row} from "react-bootstrap";
-import AvionicsProducts from "./AvionicsProducts";
+import GarminAd from "../GarminBanner/GarminAd";
 import React from "react";
 import Zoom from 'react-reveal/Zoom'
 
@@ -188,7 +188,7 @@ const AvionicsImg = () => {
                         </Row>
                     </Col>
 
-                    <AvionicsProducts/>
+                    <GarminAd/>
 
                 </Row>
             </Jumbotron>

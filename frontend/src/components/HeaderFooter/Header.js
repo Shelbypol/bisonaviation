@@ -2,7 +2,6 @@ import React, {useEffect, useState} from "react";
 import HeaderMobile from "./HeaderMobile";
 import HeaderDesktop from "./HeaderDesktop";
 import './headers.css'
-import '../../style/global-1.css'
 import Fade from "react-reveal/Fade";
 
 const Header = () => {
@@ -33,7 +32,7 @@ const Header = () => {
             </>
             :
             <>
-                <Fade top duration={3500}>
+                <Fade top duration={2000}>
                     <HeaderDesktop/>
                 </Fade>
             </>

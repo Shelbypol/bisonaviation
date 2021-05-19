@@ -1,6 +1,6 @@
 import React from 'react';
 import {Jumbotron} from 'reactstrap';
-import '../../style/2/RepairAward.css'
+import './HomeAwardBanner.css'
 
 const HomeAwardBanner = () => {
     return (

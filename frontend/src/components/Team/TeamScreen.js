@@ -1,21 +1,20 @@
 import React, { useLayoutEffect} from 'react'
 import {Container, Row} from "react-bootstrap";
 import TeamCard from "./TeamCard";
-import johnAtkin from '../../images/bg-graphics/screen-team/john_atkin.png'
-import leslieBanner from '../../images/bg-graphics/screen-team/leslie_banner.png'
-import deenaSmith from '../../images/bg-graphics/screen-team/deena_smith.png'
-import jdPhillips from '../../images/bg-graphics/screen-team/jd_phillips.png'
-import roelRogerio from '../../images/bg-graphics/screen-team/roel_rogerio.png'
-import jeffRossell from '../../images/bg-graphics/screen-team/jeffrey_rossell.png'
-import robinRodriguez from '../../images/bg-graphics/screen-team/robin_rodriguez.png'
-import jerryFitzgerald from '../../images/bg-graphics/screen-team/jerry_fitzgerald.png'
-import johnSenecal from '../../images/bg-graphics/screen-team/john_senecal.png'
-import halibut from '../../images/bg-graphics/screen-team/halibut.png'
-import tuna from '../../images/bg-graphics/screen-team/tuna.png'
-import mackerel from '../../images/bg-graphics/screen-team/mackeral.png'
-import JumbotronTitle from "../JumbotronTitle";
-import '../../style/2/teamScreen/TeamHero.css';
-import Footer from "../../components/HeaderFooter/Footer";
+import johnAtkin from './images/john_atkin.png'
+import leslieBanner from './images/leslie_banner.png'
+import deenaSmith from './images/deena_smith.png'
+import jdPhillips from './images/jd_phillips.png'
+import roelRogerio from './images/roel_rogerio.png'
+import jeffRossell from './images/jeffrey_rossell.png'
+import robinRodriguez from './images/robin_rodriguez.png'
+import jerryFitzgerald from './images/jerry_fitzgerald.png'
+import johnSenecal from './images/john_senecal.png'
+import halibut from './images/halibut.png'
+import tuna from './images/tuna.png'
+import mackerel from './images/mackeral.png'
+import HeroJumbotron from "../HeroJumbotron/HeroJumbotron";
+import './TeamHero.css';
 
 
 const TeamScreen = () => {
@@ -27,7 +26,7 @@ const TeamScreen = () => {
 
     return (
         <>
-            <JumbotronTitle
+            <HeroJumbotron
                 img={'TeamScreen_hero-img'}
                 showImg={true}
                 title={'Meet the Bison Team'}
@@ -155,7 +154,7 @@ const TeamScreen = () => {
                                 position={'HomeAvionics Manager, AET'}
                                 certifications={'FAA: Repairman'}
                                 locations={'Boerne Stage Airfield - 5C1'}
-                                specialTraining={'ProductsCarouselGarminAd G500, G600, G1000 Line Maintenance, Raytheon Aircraft Maintenance Professionalism & Resource Management, Rockwell Collins Proline Maintenance'}
+                                specialTraining={'GarminAdProductCarousel G500, G600, G1000 Line Maintenance, Raytheon Aircraft Maintenance Professionalism & Resource Management, Rockwell Collins Proline Maintenance'}
                                 bio={
                                     'After earning his degree as an Electronics Technician at Texas A&M Extension Service in San Antonio, Roel joined the United States Army in 1988 where he served as an aircraft electronics technician maintaining avionics systems on aircraft such as the OV-1D and RC-12. Upon transitioning into the civilian world, Roel worked as Lead HomeAvionics Technician for Raytheon (later called Hawker-Beechcraft) HomeServices servicing Beechcraft, Hawker, Mitsubishi, Falcon, and various other aircraft for fourteen years. After Hawker-Beechcraft closed their San Antonio location, Roel worked at Sierra Industries, again serving as HomeAvionics Crew Chief performing avionics repairs and installations on everything from Cessna 172s through Citations. When Sierra Industries was bought-out and subsequently closed, Roel found a new home at Bison Aviation where he serves as Lead HomeAvionics Technician and Chief Installer.'
                                 }
@@ -172,7 +171,7 @@ const TeamScreen = () => {
                                 position={'HomeAvionics Technician / CNC Operator'}
                                 certifications={'FAA: Repairman; FCC: GROL w/ Radar'}
                                 locations={'Boerne Stage Airfield - 5C1'}
-                                specialTraining={'ProductsCarouselGarminAd G500, G600, G1000 Line Maintenance, Raytheon Aircraft Maintenance Professionalism & Resource Management, Rockwell Collins Proline Maintenance'}
+                                specialTraining={'GarminAdProductCarousel G500, G600, G1000 Line Maintenance, Raytheon Aircraft Maintenance Professionalism & Resource Management, Rockwell Collins Proline Maintenance'}
                                 bio={
                                     'Jeffrey began his avionics career in the United States Army as an AH-64 Armament / Electrical Systems Repairman and FARP Pad Chief.  After serving three tours of duty in Iraq and one in Korea, Jeffrey returned to civilian life and began his extensive career installing, repairing and troubleshooting avionics systems in general aviation and corporate aircraft.  Jeffrey also has significant experience maintaining and installing airborne EO/IR, FLIR, electronic countermeasure, sighting and tracking systems on military aircraft.  During his career, Jeffrey has gained a tremendous amount of experience working with avionics systems from almost every major manufacturer and continues to enjoy the challenges of integrating complex avionics equipment.\n' +
                                     '\n'
@@ -276,8 +275,7 @@ const TeamScreen = () => {
 
 
                 </Container>
-            {/*</Container>*/}
-            <Footer/>
+
 
         </>
     )

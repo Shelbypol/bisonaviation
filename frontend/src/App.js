@@ -4,8 +4,8 @@ import Footer from "./components/HeaderFooter/Footer";
 import ProductsScreen from "./components/Product(s)/ProductsScreen";
 import ProductScreen from "./components/Product(s)/ProductScreen";
 import CartScreen from "./components/Cart/Payment/CartScreen";
-import LoginScreen from "./components/SignInRegister/LoginScreen";
-import RegisterScreen from "./components/SignInRegister/RegisterScreen";
+import SignInScreen from "./components/SignIn/SignInScreen";
+import RegisterScreen from "./components/Register/RegisterScreen";
 import ProfileScreen from "./components/Profile/ProfileScreen";
 import ShippingScreen from "./components/Cart/Payment/ShippingScreen";
 import PaymentScreen from "./components/Cart/Payment/PaymentScreen";
@@ -27,9 +27,6 @@ import TermsScreen from "./components/Terms/TermsScreen";
 import TermsFlirScreen from "./components/Terms/TermsFlirScreen";
 import WishListScreen from "./components/Wishlist/WishListScreen"
 import Header from "./components/HeaderFooter/Header";
-// import HeaderDesktop from "./components/HeaderFooter/HeaderDesktop";
-import HeaderMobile from "./components/HeaderFooter/HeaderMobile";
-import {listProducts} from "./actions/productActions";
 import {useDispatch} from "react-redux";
 
 
@@ -59,12 +56,12 @@ const App = () => {
         <Router>
 
             <Switch>
-                <Route path='/admin/userlist' component={UserListScreen}/>
-                <Route path='/admin/user/:id/edit' component={UserEditScreen}/>
-                <Route path='/admin/productlist' component={ProductListScreen} exact/>
-                <Route path='/admin/productlist/:pageNumber' component={ProductListScreen} exact/>
-                <Route path='/admin/product/:id/edit' component={ProductEditScreen}/>
-                <Route path='/admin/orderlist' component={OrderListScreen}/>
+                {/*<Route path='/admin/userlist' component={UserListScreen}/>*/}
+                {/*<Route path='/admin/user/:id/edit' component={UserEditScreen}/>*/}
+                {/*<Route path='/admin/productlist' component={ProductListScreen} exact/>*/}
+                {/*<Route path='/admin/productlist/:pageNumber' component={ProductListScreen} exact/>*/}
+                {/*<Route path='/admin/product/:id/edit' component={ProductEditScreen}/>*/}
+                {/*<Route path='/admin/orderlist' component={OrderListScreen}/>*/}
                 <Route path='/products' component={ProductsScreen} exact/>
                 <Route path='/search/:keyword' component={ProductsScreen} exact/>
                 <Route path='/page/:pageNumber' component={ProductsScreen} exact/>
@@ -80,16 +77,14 @@ const App = () => {
 
                 {/* ================    STICKY / MOBILE HEADER W/ FOOTER    =================*/}
                 <Fragment>
-
                     <Header/>
-
                     <Route path='/' component={HomeScreen} exact/>
                     <Route path='/contact' component={ContactScreen}/>
                     <Route path='/terms' component={TermsScreen}/>
                     <Route path='/flir-terms' component={TermsFlirScreen}/>
                     <Route path='/register' component={RegisterScreen}/>
                     <Route path='/profile' component={ProfileScreen}/>
-                    <Route path='/login' component={LoginScreen}/>
+                    <Route path='/login' component={SignInScreen}/>
                     <Route path='/cart/:id?' component={CartScreen}/>
                     <Route path='/shipping' component={ShippingScreen}/>
                     <Route path='/payment' component={PaymentScreen}/>
@@ -102,6 +97,20 @@ const App = () => {
                     <Route path='/team' component={TeamScreen}/>
                     <Route path='/maintenance' component={MaintenanceScreen}/>
                     <Route path='/avionics' component={AvionicsScreen}/>
+
+                    <Route path='/admin/userlist' component={UserListScreen}/>
+                    <Route path='/admin/user/:id/edit' component={UserEditScreen}/>
+                    <Route path='/admin/productlist' component={ProductListScreen} exact/>
+                    <Route path='/admin/productlist/:pageNumber' component={ProductListScreen} exact/>
+                    <Route path='/admin/product/:id/edit' component={ProductEditScreen}/>
+
+                    {/*<Route path='/admin/orderlist' component={OrderListScreen}/>*/}
+
+                    {/*<Route path='/products' component={ProductsScreen} exact/>*/}
+                    {/*<Route path='/search/:keyword' component={ProductsScreen} exact/>*/}
+                    {/*<Route path='/page/:pageNumber' component={ProductsScreen} exact/>*/}
+                    {/*<Route path='/search/:keyword/page/:pageNumber' component={ProductsScreen}/>*/}
+                    {/*<Route path='/product/:id' component={ProductScreen}/>*/}
 
 
                     <Footer/>

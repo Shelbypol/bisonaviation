@@ -1,8 +1,7 @@
 import React from 'react';
 import {Jumbotron, Row, Col} from 'reactstrap';
 import Zoom from 'react-reveal/Zoom'
-import '../../style/2/Team.css'
-import {Container} from "react-bootstrap";
+import './Team.css'
 
 const Team = () => {
     return (

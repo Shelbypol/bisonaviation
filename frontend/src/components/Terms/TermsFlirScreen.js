@@ -1,6 +1,6 @@
 import React, {useLayoutEffect} from 'react'
 import TermsHero from './TermsHero';
-import '../../style/2/termsScreen/Terms.css';
+import './Terms.css';
 import TermsFlir from "../../components/Terms/TermsFlir";
 
 

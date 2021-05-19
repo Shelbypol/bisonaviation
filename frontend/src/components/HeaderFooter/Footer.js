@@ -4,7 +4,7 @@ import {LinkContainer} from "react-router-bootstrap";
 import logo from "../../images/bg-graphics/graphics/Final-Logo-Horizontal.png";
 import './Footer.css'
 import {Jumbotron} from "reactstrap";
-import SocialIcons from "../SocialIcons";
+import SocialIcons from "../SocialIcons/SocialIcons";
 import Fade from 'react-reveal';
 import Zoom from 'react-reveal';
 

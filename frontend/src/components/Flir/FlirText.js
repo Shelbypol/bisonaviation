@@ -1,5 +1,5 @@
 import React from 'react';
-import Tabs from '../Tabs';
+import Tabs from '../Tabs/Tabs';
 import {Row, Col, Tab, ListGroup} from 'react-bootstrap';
 import sales from './images/flir-sharp.png'
 import maintanence from './images/sales1.png'

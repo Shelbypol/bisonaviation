@@ -1,7 +1,7 @@
 import React from 'react'
 import MaintenanceCarousel from "./MaintenanceCarousel";
 import AvionicsIcons from "../Avionics/AvionicsIcons";
-import Footer from "../HeaderFooter/Footer";
+
 
 
 const MaintenanceScreen = () => {
@@ -12,7 +12,6 @@ const MaintenanceScreen = () => {
         <>
                 <MaintenanceCarousel/>
                 <AvionicsIcons/>
-                <Footer/>
         </>
     )
 };

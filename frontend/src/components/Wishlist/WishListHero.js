@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../style/wishListScreen/WishListScreen.css'
+import './WishListScreen.css'
 import {Container, Jumbotron} from "reactstrap";
 
 

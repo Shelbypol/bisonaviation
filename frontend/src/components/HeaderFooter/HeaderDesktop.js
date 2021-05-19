@@ -6,7 +6,7 @@ import {CART_RESET} from "../../constants/cartConstants";
 import {logout} from "../../actions/userActions";
 import {Link} from "react-router-dom";
 import WishListTab from "../Wishlist/WishListTab";
-import SignInBtn from "../SignInRegister/SignInBtn";
+import SignInBtn from "../SignIn/SignInBtn";
 import logo from '../../images/bg-graphics/graphics/Final-Logo-Horizontal.png'
 
 
@@ -103,17 +103,17 @@ const HeaderDesktop = () => {
                                     </LinkContainer>
 
 
-                                    <LinkContainer to='/admin/orderlist' className='d-flex justify-content-center mt-1' style={{height: '5vh'}}>
-                                        <Nav.Link className='SideBar_Name border-right'>
-                                            Data - Info
-                                        </Nav.Link>
-                                    </LinkContainer>
+                                    {/*<LinkContainer to='/admin/orderlist' className='d-flex justify-content-center mt-1' style={{height: '5vh'}}>*/}
+                                    {/*    <Nav.Link className='SideBar_Name border-right'>*/}
+                                    {/*        Data - Info*/}
+                                    {/*    </Nav.Link>*/}
+                                    {/*</LinkContainer>*/}
 
                                 </>
                             )}
 
                         {/*     PROFILE AND LOGOUT BTNS    */}
-                            <Nav>
+                            <Nav style={{zIndex: '9000'}}>
                                 <SignInBtn/>
                             </Nav>
                         </>

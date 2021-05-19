@@ -113,15 +113,15 @@ const ProductEditScreen = ({match, history}) => {
 
     return (
         <>
-        <HeaderDesktop/>
-        <Container className=' bg-white  min-vh-100 min-vw-100'>
-            <Row xs={12} className='my-0 px-3 py-5 border-bottom'>
+        {/*<HeaderDesktop/>*/}
+        <Container className=' bg-transparent text-white  min-vh-100 min-vw-100'>
+            <Row xs={12} className='my-0 px-3 py-5'>
                 <Col xs={10} className='d-flex justify-content-start'>
-                    <h4>Edit Product</h4>
+                    <h4 className='text-white'>Edit Product</h4>
                 </Col>
                 <Col xs={2} className='d-flex justify-content-end'>
-                    <Link to='/admin/productlist' className='btn btn-light py-0 px-1'>
-                        Go Back
+                    <Link to='/admin/productlist' className='btn global_bisonRedBgWhiteHoverBgBtnRedBorder rounded py-1 px-2'>
+                        back
                     </Link>
                 </Col>
             </Row>
@@ -133,13 +133,13 @@ const ProductEditScreen = ({match, history}) => {
             {loading ? <Loader/> : error ? <Message variant='danger'>{error}</Message> : (
 
                 <Form onSubmit={submitHandler} className='p-3'>
-                    <Row className='p-0 mb-2'>
-                        <Col className='pr-3 m-0 d-flex justify-content-end'>
-                            <Button type='submit' variant='primary' className='px-3 py-1 global_RedFontWhiteBg'>Update</Button>
-                        </Col>
-                    </Row>
-                    <Row className='mt-1'>
-                        <Col xs={3} className='border-right'>
+                    {/*<Row className='p-0 mb-2'>*/}
+                    {/*    <Col className='pr-3 m-0 d-flex justify-content-end'>*/}
+                    {/*        <Button type='submit' variant='primary' className='px-3 py-1 global_blue-bg border-left border-bottom'>Update</Button>*/}
+                    {/*    </Col>*/}
+                    {/*</Row>*/}
+                    <Row className=' '>
+                        <Col lg={3} xs={12} className=''>
                             {/* PROMO*/}
                             <Form.Group controlId='isAvailable'>
                                 <Form.Check type='checkbox'
@@ -160,7 +160,7 @@ const ProductEditScreen = ({match, history}) => {
                             </Form.Group>
 
                             <Form.Group controlId='isPromoType'>
-                                <Form.Label className='px-2 w-100 Admin_form-titles'>Promo Type</Form.Label>
+                                <Form.Label className='mb-0 pt-2 px-1 w-100 Admin_form-titles'><h4 className='text-white'>Promo Type</h4></Form.Label>
                                 <Form.Control type='text'
                                               placeholder='discount %, new price, on sale etc.'
                                               value={isPromoType}
@@ -170,7 +170,7 @@ const ProductEditScreen = ({match, history}) => {
 
                             {/* IMAGE */}
                             <Form.Group controlId='image'>
-                                <Form.Label className='px-2 w-100 Admin_form-titles'>Image</Form.Label>
+                                <Form.Label className='mb-0 pt-2 px-1 w-100 Admin_form-titles'><h4 className='text-white'>Image</h4></Form.Label>
                                 <Form.Control type='text'
                                               placeholder='Enter image url'
                                               value={image}
@@ -186,10 +186,10 @@ const ProductEditScreen = ({match, history}) => {
                             </Form.Group>
 
                         </Col>
-                        <Col xs={5} className='border-right'>
+                        <Col lg={5} xs={12} className=''>
                             {/* NAME */}
                             <Form.Group controlId='name'>
-                                <Form.Label className='px-2 w-100 Admin_form-titles'>Name</Form.Label>
+                                <Form.Label className='mb-0 pt-2 px-1 w-100 Admin_form-titles'><h4 className='text-white'>Name</h4></Form.Label>
                                 <Form.Control type='name'
                                               placeholder='Enter name'
                                               value={name}
@@ -199,7 +199,7 @@ const ProductEditScreen = ({match, history}) => {
 
                             {/* PART NUMBER */}
                             <Form.Group controlId='partNumber'>
-                                <Form.Label className='px-2 w-100 Admin_form-titles'>Part Number</Form.Label>
+                                <Form.Label className='mb-0 pt-2 px-1 w-100 Admin_form-titles'><h4 className='text-white'>Part Number</h4></Form.Label>
                                 <Form.Control type='partNumber'
                                               placeholder='Part number'
                                               value={partNumber}
@@ -209,7 +209,7 @@ const ProductEditScreen = ({match, history}) => {
 
                             {/* PRICE */}
                             <Form.Group controlId='price'>
-                                <Form.Label className='px-2 w-100 Admin_form-titles'>Price</Form.Label>
+                                <Form.Label className='mb-0 pt-2 px-1 w-100 Admin_form-titles'><h4 className='text-white'>Price</h4></Form.Label>
                                 <Form.Control type='number'
                                               placeholder='Enter price'
                                               value={price}
@@ -219,7 +219,7 @@ const ProductEditScreen = ({match, history}) => {
 
                             {/* BRAND */}
                             <Form.Group controlId='manufacturer'>
-                                <Form.Label className='px-2 w-100 Admin_form-titles'>Brand</Form.Label>
+                                <Form.Label className='mb-0 pt-2 px-1 w-100 Admin_form-titles'><h4 className='text-white'>Brand</h4></Form.Label>
                                 <Form.Control type='text'
                                               placeholder='Enter manufacturer'
                                               value={brand}
@@ -229,10 +229,10 @@ const ProductEditScreen = ({match, history}) => {
 
 
                         </Col>
-                        <Col xs={4}>
+                        <Col lg={4} xs={12}>
                             {/* COUNT IN STOCK*/}
                             <Form.Group controlId='countInStock'>
-                                <Form.Label className='px-2 w-100 Admin_form-titles'>Count In Stock</Form.Label>
+                                <Form.Label className='mb-0 pt-2 px-1 w-100 Admin_form-titles'><h4 className='text-white'>Count in Stock</h4></Form.Label>
                                 <Form.Control type='number'
                                               placeholder='Enter count in stock'
                                               value={countInStock}
@@ -241,7 +241,7 @@ const ProductEditScreen = ({match, history}) => {
                             </Form.Group>
                             {/* CATEGORIES */}
                             <Form.Group controlId='category'>
-                                <Form.Label className='px-2 w-100 Admin_form-titles'>Category</Form.Label>
+                                <Form.Label className='mb-0 pt-2 px-1 w-100 Admin_form-titles'><h4 className='text-white'>Category</h4></Form.Label>
                                 <Form.Control type='text'
                                               placeholder='Enter category'
                                               value={category}
@@ -250,7 +250,7 @@ const ProductEditScreen = ({match, history}) => {
                             </Form.Group>
                             {/* DESCRIPTION */}
                             <Form.Group controlId='description'>
-                                <Form.Label className='px-2 w-100 Admin_form-titles'>Overview / Description</Form.Label>
+                                <Form.Label className='mb-0 pt-2 px-1 w-100 Admin_form-titles'><h4 className='text-white'>overview description</h4></Form.Label>
                                 <Form.Control type='text'
                                               placeholder='Enter description'
                                               value={description}
@@ -260,7 +260,7 @@ const ProductEditScreen = ({match, history}) => {
 
                             {/* PARTS INCLUDED */}
                             <Form.Group controlId='includedParts'>
-                                <Form.Label className='px-2 w-100 Admin_form-titles'>Parts included</Form.Label>
+                                <Form.Label className='mb-0 pt-2 px-1 w-100 Admin_form-titles'><h4 className='text-white'>Parts Included</h4></Form.Label>
                                 <Form.Control type='text'
                                               placeholder='Parts included'
                                               value={includedParts}
@@ -270,6 +270,11 @@ const ProductEditScreen = ({match, history}) => {
                         </Col>
 
 
+                    </Row>
+                    <Row className='p-0 mb-2 d-flex justify-content-center'>
+                        <Col xs={4} className=' m-0 d-flex justify-content-center global_blue-bg'>
+                            <Button type='submit' variant='primary' className='w-100 global_blue-bg '>Update</Button>
+                        </Col>
                     </Row>
                 </Form>
             )}

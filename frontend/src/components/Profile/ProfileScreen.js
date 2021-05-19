@@ -2,7 +2,7 @@ import React, {useLayoutEffect} from 'react'
 import {Row, Col, Tab, Nav, Jumbotron, Container} from 'react-bootstrap'
 import ProfileEdit from "./ProfileEdit";
 import ProfileSavedWishList from "./ProfileSavedWishList";
-import '../../style/ProfileScreen.css'
+import './ProfileScreen.css'
 import {useSelector} from "react-redux";
 
 const ProfileScreen = ({location, history}) => {
