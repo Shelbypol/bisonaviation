@@ -139,7 +139,7 @@ const AdminScreensProductEditScreen = ({match, history}) => {
                     {/*    </Col>*/}
                     {/*</Row>*/}
                     <Row className=' '>
-                        <Col lg={3} xs={12} className=''>
+                        <Col lg={9} xs={12} className=''>
                             {/* PROMO*/}
                             <Form.Group controlId='isAvailable'>
                                 <Form.Check type='checkbox'
@@ -147,7 +147,6 @@ const AdminScreensProductEditScreen = ({match, history}) => {
                                             checked={isAvailable}
                                             onChange={(e) => setIsAvailable(e.target.checked)}>
                                 </Form.Check>
-
 
                             </Form.Group>
                             {/* PROMO*/}
@@ -160,7 +159,7 @@ const AdminScreensProductEditScreen = ({match, history}) => {
                             </Form.Group>
 
                             <Form.Group controlId='isPromoType'>
-                                <Form.Label className='mb-0 pt-2 px-1 w-100 Admin_form-titles'><h4 className='text-white'>Promo Type</h4></Form.Label>
+                                <Form.Label className='mb-0 pt-2 px-1 w-100 AdminScreen_form-titles '><h4 className='text-white'>Promo Type</h4></Form.Label>
                                 <Form.Control type='text'
                                               placeholder='discount %, new price, on sale etc.'
                                               value={isPromoType}
@@ -185,8 +184,8 @@ const AdminScreensProductEditScreen = ({match, history}) => {
                                 {uploading && <Loader/>}
                             </Form.Group>
 
-                        </Col>
-                        <Col lg={5} xs={12} className=''>
+                        {/*</Col>*/}
+                        {/*<Col lg={5} xs={12} className=''>*/}
                             {/* NAME */}
                             <Form.Group controlId='name'>
                                 <Form.Label className='mb-0 pt-2 px-1 w-100 AdminScreen_form-titles'><h6 className='text-white'>Name</h6></Form.Label>
@@ -228,8 +227,8 @@ const AdminScreensProductEditScreen = ({match, history}) => {
                             </Form.Group>
 
 
-                        </Col>
-                        <Col lg={4} xs={12}>
+                        {/*</Col>*/}
+                        {/*<Col lg={4} xs={12}>*/}
                             {/* COUNT IN STOCK*/}
                             <Form.Group controlId='countInStock'>
                                 <Form.Label className='mb-0 pt-2 px-1 w-100 AdminScreens_form-titles'><h6 className='text-white'>Count in Stock</h6></Form.Label>

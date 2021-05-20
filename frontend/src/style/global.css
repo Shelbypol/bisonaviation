@@ -98,21 +98,24 @@ p{
 .global_rich-black-bg{
     background-color: #0B090A;
 }
-.global_eerie-black-bg{
-    background-color: #161A1D;
+
+.global_blood-red{
+    color: #660708;
 }
+
 .global_blood-red-bg{
     background-color: #660708;
 }
-.global_silver-chalice-bg{
-    background-color:  #B1A7A6;
-}
-.global_light-grey-bg{
-    background-color: #D3D3D3;
-}
-.global_cultured-bg{
-    background-color: #F5F3F4;
-}
+
+/*.global_silver-chalice-bg{*/
+/*    background-color:  #B1A7A6;*/
+/*}*/
+/*.global_light-grey-bg{*/
+/*    background-color: #D3D3D3;*/
+/*}*/
+/*.global_cultured-bg{*/
+/*    background-color: #F5F3F4;*/
+/*}*/
 /* COLORS-FONT */
 .global_rich-black{
     color: #0B090A;
@@ -120,8 +123,6 @@ p{
 .global_eerie-black{
     color: #161A1D;
 }
-.global_blood-red{
-    color: #660708;}
 
 .global_white-txt-blood-red-bg-hover{
     color: #660708;
@@ -132,12 +133,12 @@ p{
     background-color: #660708;
 }
 
-.global_silver-chalice{
-    color:  #B1A7A6;
-}
-.global_light-grey{
-    color: #D3D3D3;
-}
+/*.global_silver-chalice{*/
+/*    color:  #B1A7A6;*/
+/*}*/
+/*.global_light-grey{*/
+/*    color: #D3D3D3;*/
+/*}*/
 .global_cultured{
     color: #F5F3F4;
 }
@@ -157,14 +158,6 @@ p{
     background-color: #2576e5
 }
 
-.global_red{
-    color: red;
-}
-
-.global_red-bg{
-    background-color: red;
-}
-
 .global_white-text-red-hover{
     color: white;
 }
@@ -181,6 +174,31 @@ p{
     color:red;
 }
 
+.global_goldenrod{
+    color: #daa520;
+}
+.global_goldenrod-bg{
+    background-color: #daa520;
+}
+
+/*________________  BUTTONS */
+.global_goldenrodtxt-btn {
+    color: #daa520;
+    font-weight: lighter;
+    background-color: rgba(0,0,0,.8);
+    border-left: 1px solid rgba(0,0,0,.8);
+    border-right: 1px solid rgba(0,0,0,.8);
+}
+
+.global_goldenrodtxt-btn:hover {
+    color: #fff;
+    border-left: 1px solid #daa520;
+    border-right: 1px solid #daa520;
+}
+
+
+
+
 
 .global_bisonRedTxt {
     color: rgba(90, 00, 09, 1);
@@ -190,12 +208,12 @@ p{
      background-color: rgba(0, 00, 0, .1);
 }
 
-.global_bisonDarkFadedBgColorHover:hover{
-    background: linear-gradient(to right, #4A433D, #1A1715);
-    /*background-color: rgba(0, 0, 0, .1);*/
-    /*border: 1px solid #3f3f3f;*/
-    /*border-left:none;*/
-}
+/*.global_bisonDarkFadedBgColorHover:hover{*/
+/*    background: linear-gradient(to right, #4A433D, #1A1715);*/
+/*    !*background-color: rgba(0, 0, 0, .1);*!*/
+/*    !*border: 1px solid #3f3f3f;*!*/
+/*    !*border-left:none;*!*/
+/*}*/
 
 .global_whiteFontRedHoverWhiteBg:hover {
     background-color: #fff;
@@ -218,36 +236,36 @@ p{
 /*    color: rgba(90, 00, 09, .8);*/
 /*}*/
 
-.global_bisonRedBgWhiteHoverBgBtnRedBorder {
-    background-color: rgba(90, 00, 09, 1);
-    color: white;
-}
+/*.global_bisonRedBgWhiteHoverBgBtnRedBorder {*/
+/*    background-color: rgba(90, 00, 09, 1);*/
+/*    color: white;*/
+/*}*/
 
-.global_bisonRedBgWhiteHoverBgBtnRedBorder:hover {
-    background-color: white;
-    color: rgba(90, 00, 09, 1);
-    border: 1px solid rgba(90, 00, 09, 1);
-}
+/*.global_bisonRedBgWhiteHoverBgBtnRedBorder:hover {*/
+/*    background-color: white;*/
+/*    color: rgba(90, 00, 09, 1);*/
+/*    border: 1px solid rgba(90, 00, 09, 1);*/
+/*}*/
 
-.global_bisonRedBgWhiteHoverBgBtn {
-    background-color: rgba(90, 00, 09, 1);
-    color: white;
-}
+/*.global_bisonRedBgWhiteHoverBgBtn {*/
+/*    background-color: rgba(90, 00, 09, 1);*/
+/*    color: white;*/
+/*}*/
 
-.global_bisonRedBgWhiteHoverBgBtn:hover {
-    background-color: white;
-    color: rgba(90, 00, 09, 1);
-}
+/*.global_bisonRedBgWhiteHoverBgBtn:hover {*/
+/*    background-color: white;*/
+/*    color: rgba(90, 00, 09, 1);*/
+/*}*/
 
-.global_RedFontWhiteBgBtn {
-    background-color: #fff;
-    color: rgba(90, 00, 09, 1);
-}
+/*.global_RedFontWhiteBgBtn {*/
+/*    background-color: #fff;*/
+/*    color: rgba(90, 00, 09, 1);*/
+/*}*/
 
-.global_RedFontWhiteBg:hover {
-    background-color: rgba(90, 00, 09, 1);
-    color: white;
-}
+/*.global_RedFontWhiteBg:hover {*/
+/*    background-color: rgba(90, 00, 09, 1);*/
+/*    color: white;*/
+/*}*/
 
 .global_bisonWhiteBgBtnSearch {
     background-color: #f6f5f8;
@@ -264,15 +282,15 @@ p{
     background-color: #fff;
 }
 
-.global_heart-whiteBgRedHover{
-    color: rgba(90, 00, 09, 1);
-    /*background-color: white;*/
-}
+/*.global_heart-whiteBgRedHover{*/
+/*     color: rgba(90, 00, 09, 1);*/
+/*     !*background-color: white;*!*/
+/* }*/
 
-.global_heart-whiteBgRedHover:hover{
-    color: rgba(90, 00, 09, 1);
-    /*background-color: white;*/
-}
+/*.global_heart-whiteBgRedHover:hover{*/
+/*    color: rgba(90, 00, 09, 1);*/
+/*    !*background-color: white;*!*/
+/*}*/
 
 .global_whiteFontRedFontHover{
     color: #fff;
@@ -282,9 +300,9 @@ p{
     color: rgba(90, 00, 09, 1);
 }
 
-.global_circleHover:hover {
-    background-color: black;
-}
+/*.global_circleHover:hover {*/
+/*    background-color: black;*/
+/*}*/
 
 .global_bisonWhiteFont{
     color: white;

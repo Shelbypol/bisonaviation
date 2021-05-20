@@ -55,8 +55,7 @@ const HomeAvionics = () => {
                             <Col xs={12} className='py-1 global_cursor ml-2'>
                                 <LinkContainer to={`/maintenance`}>
                                     <Zoom>
-                                        <Button className=' border-left border-right'
-                                                style={{backgroundColor: 'rgba(255,255,255,.3)'}}>
+                                        <Button className=' global_goldenrodtxt-btn'>
                                             Learn More
                                         </Button>
                                     </Zoom>

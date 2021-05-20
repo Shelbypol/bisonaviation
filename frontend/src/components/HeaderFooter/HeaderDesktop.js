@@ -67,7 +67,7 @@ const HeaderDesktop = () => {
 
                 {/*/ =========== PROFILE / ADMIN BTNS ============*!/*/}
                 <Col xs={9}
-                     className='sticky-top border-bottom StickyHeader_right-row ml-auto d-flex justify-content-end StickyHeader_login-btn'
+                     className='sticky-top StickyHeader_right-row ml-auto d-flex justify-content-end StickyHeader_login-btn'
                      style={{top: '0'}}
                 >
 
@@ -133,7 +133,7 @@ const HeaderDesktop = () => {
                     </LinkContainer>
 
                     {/*  BROWSE PRODUCTS  */}
-                    <LinkContainer className='d-inline StickyHeader_link-hover' to='/products'>
+                    <LinkContainer className='d-inline ' to='/products'>
                         <Nav.Link className=''>
                                     <h6 className='StickyHeader_links pt-1'>
                                     Products
@@ -178,11 +178,14 @@ const HeaderDesktop = () => {
                         </Nav.Link>
                     </LinkContainer>
 
-                    {/*{!userInfo && (*/}
+                    {/*  WISHLIST  */}
+                    <LinkContainer className='d-inline StickyHeader_link-hover' to='/wishlist'>
                         <Nav.Link className='StickyHeader_wishList-btn' style={{height: '6vh'}}>
-                            <WishListTab/>
+                            {/*<WishListTab/>*/}
+                            <i className="fal fa-list-alt StickyHeader_links pt-1"> </i>
+
                         </Nav.Link>
-                    {/*)}*/}
+                    </LinkContainer>
 
                 </Col>
 

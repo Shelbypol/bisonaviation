@@ -54,7 +54,7 @@ const HomeFlir = () => {
                             <Col xs={12} className='py-1 global_cursor '>
                                 <LinkContainer to={`/maintenance`}>
                                     <Zoom>
-                                        <Button className='pl-4 global_cultured global_black border-left' style={{backgroundColor: 'rgba(255,255,255,.1)'}}>
+                                        <Button className='pl-4 global_goldenrodtxt-btn'>
                                             Learn More
                                         </Button>
                                     </Zoom>
