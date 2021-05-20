@@ -9,7 +9,7 @@ import {listProducts, deleteProduct, createProduct} from "../../actions/productA
 import {PRODUCT_CREATE_RESET} from "../../constants/productConstants";
 import HeaderDesktop from "../HeaderFooter/HeaderDesktop";
 
-const ProductListScreen = ({history, match}) => {
+const AdminScreenProductListScreen = ({history, match}) => {
     const pageNumber = match.params.pageNumber || 1;
 
     const dispatch = useDispatch();
@@ -166,4 +166,4 @@ const ProductListScreen = ({history, match}) => {
     )
 };
 
-export default ProductListScreen
+export default AdminScreenProductListScreen

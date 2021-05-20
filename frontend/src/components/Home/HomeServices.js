@@ -19,7 +19,7 @@ const HomeServices = () => {
                             <Card.Body className=''>
                                 <Card.Title className='fa-stack fa-2x ml-n4'>
                                         <i className="fas fa-square fa-stack-2x global_blood-red "> </i>
-                                        <i className='Services_icon far fa-tools fa-stack-2x global_cultured '> </i>
+                                        <i className='far fa-tools fa-stack-2x global_cultured '> </i>
                                 </Card.Title>
                                 <Card.Subtitle className='mx-auto my-3'>
                                     <h5 className='Services_nav_text'>Maintenance</h5>
@@ -43,7 +43,7 @@ const HomeServices = () => {
                             <Card.Body>
                                 <Card.Title className='fa-stack fa-2x ml-n4'>
                                     <i className="fas fa-circle fa-stack-2x global_blood-red "> </i>
-                                    <i className='Services_icon fal fa-tachometer-alt-fastest fa-stack-2x global_cultured'> </i>
+                                    <i className='fal fa-tachometer-alt-fastest fa-stack-2x global_cultured'> </i>
                                 </Card.Title>
                                 <Card.Subtitle className='mx-auto my-3'>
                                     <h5 className='Services_nav_text'>Avionics</h5>
@@ -57,7 +57,7 @@ const HomeServices = () => {
                                     </p>
                                 </Card.Text>
                                 <Card.Link href="/products"
-                                           className=' mt-n2 px-5 py-2 Services_link'>browse products
+                                           className=' mt-n2 px-5 py-2 global_goldenrodtxt-btn'>browse products
                                 </Card.Link>
                             </Card.Body>
                         </Card>
@@ -70,7 +70,7 @@ const HomeServices = () => {
                             <Card.Body>
                                 <Card.Title className='fa-stack fa-2x ml-n3'>
                                     <i className="fas fa-circle fa-stack-2x global_blood-red "> </i>
-                                    <i className='Services_icon fal far fa-camera-home fa-stack-2x global_cultured '> </i>
+                                    <i className='fal far fa-camera-home fa-stack-2x global_cultured '> </i>
                                 </Card.Title>
 
                                 <Card.Subtitle className='mx-auto my-3'>

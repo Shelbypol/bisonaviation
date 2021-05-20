@@ -12,7 +12,7 @@
 
 .AvionicsHome_image {
     background-image: url("./images/fullscreen-slider2.png");
-    background-position: center 45%;
+    background-position: center top;
 }
 
 .AvionicsHome_bg{
@@ -41,9 +41,9 @@
     background-color: rgba(255,255,255,.1);
 }
 
-.AvionicsHome_titles:hover{
-    background-color: rgba(255,255,255,.1);
-}
+/*.AvionicsHome_titles:hover{*/
+/*    background-color: rgba(255,255,255,.1);*/
+/*}*/
 
 .Avionics_text-titles{
     font-size: 1.8vw;
@@ -54,9 +54,33 @@
 }
 
 .AvionicsHome_img{
-    /*height: auto;*/
     height: 33vh;
     width: fit-content;
+}
+
+.AvionicsHome_tayseer-img{
+    background-image: url('../Avionics/images/avionics/tayseer-avionics.png');
+    background-position: 25% center;
+}
+
+.AvionicsHome_cnc-img{
+    background-image: url('../Avionics/images/avionics/cnc-machine copy.png');
+    background-position: 50% 50%;
+}
+
+.AvionicsHome_roel-img{
+    background-image: url('../Avionics/images/avionics2.png');
+    background-position: 65% 95%;
+}
+
+.AvionicsHome_tests-img{
+    background-image: url('../Avionics/images/avionics4.png');
+    background-position: 5% 10%;
+}
+
+.AvionicsHome_panel-img{
+    background-image: url('../Avionics/images/avionics1.png');
+    background-position: 10% 65%;
 }
 
 .Avionics_img-col{

@@ -125,44 +125,44 @@ const HeaderDesktop = () => {
                      style={{marginTop: '-5.75vh'}}>
 
                     {/*  HOME  */}
-                    <LinkContainer className='d-inline' to='/'>
+                    <LinkContainer className='d-inline global_goldenrodtxt-btn' to='/'>
                         <Nav.Link>
-                            <i className='far fa-home StickyHeader_home'
+                            <i className='far fa-home global_white'
                                style={{fontSize: '1.5em'}}> </i>
                         </Nav.Link>
                     </LinkContainer>
 
                     {/*  BROWSE PRODUCTS  */}
-                    <LinkContainer className='d-inline StickyHeader_link-hover' to='/products'>
+                    <LinkContainer className='d-inline global_goldenrodtxt-btn' to='/products'>
                         <Nav.Link className=''>
-                                    <h6 className='StickyHeader_links pt-1'>
+                                    <h6 className='global_white pt-1'>
                                     Products
                                     </h6>
                         </Nav.Link>
                     </LinkContainer>
 
                     {/*  AVIONICS  */}
-                    <LinkContainer className='d-inline StickyHeader_link-hover' to='/avionics'>
+                    <LinkContainer className='d-inline global_goldenrodtxt-btn' to='/avionics'>
                         <Nav.Link>
-                                    <h6 className='StickyHeader_links pt-1'>
+                                    <h6 className='global_white pt-1'>
                                     Avionics
                                     </h6>
                         </Nav.Link>
                     </LinkContainer>
 
                     {/*  MAINTENANCE  */}
-                    <LinkContainer className='d-inline StickyHeader_link-hover' to='/maintenance'>
+                    <LinkContainer className='d-inline global_goldenrodtxt-btn' to='/maintenance'>
                         <Nav.Link>
-                                    <h6 className='StickyHeader_links pt-1'>
+                                    <h6 className='global_white pt-1'>
                                     Maintenance
                                     </h6>
                         </Nav.Link>
                     </LinkContainer>
 
                     {/*  EO/IR FLIR  */}
-                    <LinkContainer className='d-inline StickyHeader_link-hover' to='/flir'>
+                    <LinkContainer className='d-inline global_goldenrodtxt-btn' to='/flir'>
                         <Nav.Link>
-                                    <h6 className='StickyHeader_links pt-1'>
+                                    <h6 className='global_white pt-1'>
                                     Flir
 
                                     </h6>
@@ -170,31 +170,37 @@ const HeaderDesktop = () => {
                     </LinkContainer>
 
                     {/*  TEAM  */}
-                    <LinkContainer className='d-inline StickyHeader_link-hover' to='/team'>
+                    <LinkContainer className='d-inline global_goldenrodtxt-btn' to='/team'>
                         <Nav.Link>
-                                    <h6 className='StickyHeader_links pt-1'>
+                                    <h6 className='global_white pt-1'>
                                     Team
                                     </h6>
                         </Nav.Link>
                     </LinkContainer>
 
-                    {/*{!userInfo && (*/}
-                        <Nav.Link className='StickyHeader_wishList-btn' style={{height: '6vh'}}>
-                            <WishListTab/>
+                    {/*  WISHLIST  */}
+                    <LinkContainer className='d-inline global_goldenrodtxt-btn' to='/wishlist'>
+                        <Nav.Link className='global_white' style={{height: '6vh'}}>
+                            {/*<WishListTab/>*/}
+                            <h6 className='global_white'>
+
+                            <i className="fal fa-list-alt pt-1 StickyHeader_icon-size "> </i>
+                            </h6>
+
                         </Nav.Link>
-                    {/*)}*/}
+                    </LinkContainer>
 
                 </Col>
 
 
                 {/*============= WISHLIST / LOGIN / CONTACT BTNS ==============*/}
-                <Col xs={2} className='d-flex justify-content-end StickyHeader_right-row sticky-top '
+                <Col xs={2} className='d-flex justify-content-end StickyHeader_right-row sticky-top'
                      style={{marginTop: '-6vh', top: '6vh'}}>
 
-                    <LinkContainer to='/contact'>
+                    <LinkContainer to='/contact' className=''>
                         <Nav.Link
-                            className='pt-3 StickyHeader_contact-btn '>
-                            <h6 className='StickHeader_contact-txt '>Contact</h6>
+                            className='pt-3 '>
+                            <h6 className='global_goldenrodtxt-btn px-5'>Contact</h6>
                         </Nav.Link>
                     </LinkContainer>
                 </Col>

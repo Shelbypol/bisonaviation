@@ -8,18 +8,7 @@ body {
     width: 100vw;
     max-width: 100%;
     contain: content;
-    /*background-color: #fff;*/
-    /*background: linear-gradient(to right, #1A1715, #4A433D);*/
-    /*background: linear-gradient(to right, #161616, #3f3f3f);*/
     background-color: #F5F3F4;
-}
-
-.global_gradient{
-    background: linear-gradient(to right, #1A1715, #4A433D);
-}
-
-.global_bg-overlay{
-    background-color: rgba(0,0,0, .8);
 }
 
 html {
@@ -48,18 +37,6 @@ main {
 
 .global_smooth-dots{
     background-image: url("../images/bg-graphics/graphics/smooth-overlay-boxed-bg.png");
-}
-
-.global_gray-bg{
-    background-color: #313131;
-}
-
-.global_gray-bg-hover:hover{
-    background-color: #fff;
-}
-
-.global_white {
-    color: #fff;
 }
 
 h1 {
@@ -94,61 +71,31 @@ p{
 }
 
 /*================= SITE THEME ===================*/
-/* COLORS-BG */
-.global_rich-black-bg{
-    background-color: #0B090A;
+
+.global_white {
+    color: #fff;
 }
-.global_eerie-black-bg{
-    background-color: #161A1D;
+
+.global_white-bg{
+    background-color: #fff;
 }
+
+/*===========   RED */
+.global_blood-red{
+    color: #660708;
+}
+
 .global_blood-red-bg{
     background-color: #660708;
 }
-.global_silver-chalice-bg{
-    background-color:  #B1A7A6;
-}
-.global_light-grey-bg{
-    background-color: #D3D3D3;
-}
-.global_cultured-bg{
-    background-color: #F5F3F4;
-}
-/* COLORS-FONT */
-.global_rich-black{
-    color: #0B090A;
-}
-.global_eerie-black{
-    color: #161A1D;
-}
-.global_blood-red{
-    color: #660708;}
-
-.global_white-txt-blood-red-bg-hover{
-    color: #660708;
-    background-color: white;
-}
-.global_white-txt-blood-red-bg-hover:hover{
-    color: white;
-    background-color: #660708;
-}
-
-.global_silver-chalice{
-    color:  #B1A7A6;
-}
-.global_light-grey{
-    color: #D3D3D3;
-}
-.global_cultured{
-    color: #F5F3F4;
-}
-
-.global_black{
+/*==========    BLACK*/
+.global_black-bg{
     background-color: black;
 }
-.global_black-text{
+.global_black{
     color: black;
 }
-
+/*==========    BLUE*/
 .global_blue{
     color: #2576e5;
 }
@@ -156,147 +103,73 @@ p{
 .global_blue-bg{
     background-color: #2576e5
 }
-
-.global_red{
-    color: red;
+/*=========     GOLDENROD*/
+.global_goldenrod{
+    color: #daa520;
+}
+.global_goldenrod-bg{
+    background-color: #daa520;
 }
 
-.global_red-bg{
-    background-color: red;
+/* =========    LIGHT GRAY*/
+.global_light-transparent{
+    background-color: rgba(255, 255, 255, .1);
 }
 
-.global_white-text-red-hover{
-    color: white;
+/*===========   DARK GARY*/
+.global_black-transparent{
+    background-color: rgba(0,0,0,.9);
 }
 
-.global_white-text-red-hover:hover{
-    color:red;
-}
-
-.global_red-text-white-hover{
-    color: white;
-}
-
-.global_red-text-white-hover:hover{
-    color:red;
-}
-
-
-.global_bisonRedTxt {
-    color: rgba(90, 00, 09, 1);
-}
-
-.global_bisonRedFadedBgColor {
-     background-color: rgba(0, 00, 0, .1);
-}
-
-.global_bisonDarkFadedBgColorHover:hover{
-    background: linear-gradient(to right, #4A433D, #1A1715);
-    /*background-color: rgba(0, 0, 0, .1);*/
-    /*border: 1px solid #3f3f3f;*/
-    /*border-left:none;*/
-}
-
-.global_whiteFontRedHoverWhiteBg:hover {
-    background-color: #fff;
-    color: rgba(90, 00, 09, 1)
-}
-
-.global_bisonFadedRedHover:hover{
-    background-color: rgba(90, 00, 09, .1);
-}
-
-.global_redFontHover:hover{
-    color: rgba(90, 00, 09, 1)
-}
-
-/*.global_bisonRedBg{*/
-/*    background-color: rgba(90, 00, 09, 1);*/
-/*}*/
-
-/*.global_bisonRedDarkerFadedTextColor{*/
-/*    color: rgba(90, 00, 09, .8);*/
-/*}*/
-
-.global_bisonRedBgWhiteHoverBgBtnRedBorder {
-    background-color: rgba(90, 00, 09, 1);
-    color: white;
-}
-
-.global_bisonRedBgWhiteHoverBgBtnRedBorder:hover {
-    background-color: white;
-    color: rgba(90, 00, 09, 1);
-    border: 1px solid rgba(90, 00, 09, 1);
-}
-
-.global_bisonRedBgWhiteHoverBgBtn {
-    background-color: rgba(90, 00, 09, 1);
-    color: white;
-}
-
-.global_bisonRedBgWhiteHoverBgBtn:hover {
-    background-color: white;
-    color: rgba(90, 00, 09, 1);
-}
-
-.global_RedFontWhiteBgBtn {
-    background-color: #fff;
-    color: rgba(90, 00, 09, 1);
-}
-
-.global_RedFontWhiteBg:hover {
-    background-color: rgba(90, 00, 09, 1);
-    color: white;
-}
-
-.global_bisonWhiteBgBtnSearch {
-    background-color: #f6f5f8;
-    color: rgba(90, 00, 09, 1);
-}
-
-.global_bisonWhiteBgBtnSearch:hover {
-    background-color: rgba(90, 00, 09, 1);
-    color: white;
-}
-
-.global_bisonRedFontWhiteBg{
-    color: rgba(90, 00, 09, 1);
-    background-color: #fff;
-}
-
-.global_heart-whiteBgRedHover{
-    color: rgba(90, 00, 09, 1);
-    /*background-color: white;*/
-}
-
-.global_heart-whiteBgRedHover:hover{
-    color: rgba(90, 00, 09, 1);
-    /*background-color: white;*/
-}
-
-.global_whiteFontRedFontHover{
-    color: #fff;
-}
-
-.global_whiteFontRedFontHover:hover{
-    color: rgba(90, 00, 09, 1);
-}
-
-.global_circleHover:hover {
-    background-color: black;
-}
-
-.global_bisonWhiteFont{
-    color: white;
-}
-
-.global_smallFont{
-    font-size: 12px;
+.global_whiteFontHover{
+    color: rgba(255, 255, 255, .5)
 }
 
 .global_whiteFontHover:hover{
-    color: white;
-    cursor: pointer;
+    color: #fff;
+}
+
+/*________________  BUTTONS */
+.global_goldenrodtxt-btn {
+    color: #daa520;
+    font-weight: lighter;
+    background-color: rgba(0,0,0,1);
+    border-left: 1px solid rgba(0,0,0,1);
+    border-right: 1px solid rgba(0,0,0,1);
+}
+
+.global_goldenrodtxt-btn:hover {
+    color: #fff;
+    background-color: rgba(0,0,0,1);
+    border-left: 1px solid #daa520;
+    border-right: 1px solid #daa520;
+}
+
+.global_goldenrodtxtborder-btn {
+    color: #daa520;
+    font-weight: lighter;
+    background-color: rgba(0,0,0,1);
+    border-left: 1px solid #daa520;
+    border-right: 1px solid #daa520;
+}
+
+.global_goldenrodtxtborder-btn:hover {
+    color: #fff;
+    background-color: rgba(0,0,0,1);
+    border-left: 1px solid #daa520;
+    border-right: 1px solid #daa520;
+}
+
+.global_goldenrodtxthoverwhite{
+    color: goldenrod;
+}
+
+.global_goldenrodtxthoverwhite:hover{
+    color: #fff;
+}
+
+.global_font12px{
+    font-size: 12px;
 }
 
 .global_sticky_scroll{
@@ -320,12 +193,6 @@ p{
 .global_font-30px{
     font-size: 30px;
 }
-
-/*.global_why-bg{*/
-/*    background-image: url("../images/bg-graphics/whyBison/why.png");*/
-/*    background-repeat: no-repeat;*/
-/*    background-position: center;*/
-/*}*/
 
 
 /*    ======   MOBILE RESPONSIVE    ======    */

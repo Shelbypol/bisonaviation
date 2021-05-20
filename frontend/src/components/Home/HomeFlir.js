@@ -11,33 +11,44 @@ import Fade from "react-reveal/Fade";
 const HomeFlir = () => {
     return (
         <>
+            <Row className=' global_white m-0 p-0'>
+                {/*<Col xs={12} className='m-0 p-0'>*/}
+                <Col xs={12} className=' p-0 mt-5 mx-0 mb-0'>
+            {/*<Row className=' global_white d-flex justify-content-center align-content-center'>*/}
+            {/*    <Col xs={12} style={{backgroundColor: 'rgba(0,0,0,.8)'}}>*/}
 
-            <Row className='Global_Flir_bg-img global_cultured d-flex justify-content-center align-content-center'>
-                <Col xs={12} style={{backgroundColor: 'rgba(0,0,0,.8)'}}>
+                    {/*<Row className=' Global_Flir_bg-img d-flex justify-content-start align-content-center ml-3 mb-5'>*/}
 
-                    <Row className='d-flex justify-content-start align-content-center ml-3 mb-5'>
-                        <Fade top>
-                            <Col xs={12}
-                                 className=' AvionicsHome_title-col'>
-                                <h1 className='AvionicsHome_title text-white'>EO/FLIR</h1>
-                            </Col>
-                        </Fade>
+                    <Row className='Global_Flir_bg-img HomeMaintenance_image d-flex justify-content-start align-content-center'>
+                    <Fade top>
+                        <Col xs={12}
+                             className='  d-sm-flex justify-content-sm-center global_blood-red-bg my-5'>
+                            <h1 className='AvionicsHome_title text-white '>EO /IR FLIR</h1>
+                        </Col>
+                    </Fade>
+
+                        {/*<Fade top>*/}
+                        {/*    <Col xs={12}*/}
+                        {/*         className=' AvionicsHome_title-col global_blood-red-bg'>*/}
+                        {/*        <h1 className='AvionicsHome_title text-white'>EO/FLIR</h1>*/}
+                        {/*    </Col>*/}
+                        {/*</Fade>*/}
                     </Row>
 
-                    <Row className='mb-5'>
+                    <Row className='my-5 d-flex justify-content-between'>
 
-                        <Col xs={7} className='' >
+                        <Col xs={8} className='' >
                             <Zoom>
 
-                                <Col xs={12} className=' mr-2 px-4'>
-                                    <h1 className='global_cultured'>
+                                <Col xs={12} className=' mx-0 px-0'>
+                                    <h1 className='global_white'>
                                         Bison Aviation’s maintains the world’s largest inventory of legacy airborne
                                         EO/IR equipment.
                                     </h1>
                                 </Col>
                             </Zoom>
 
-                            <Col xs={12} className='global_cursor mr-5 px-4 mt-4'>
+                            <Col xs={12} className='global_cursor mx-0 px-0 mt-4'>
                                 <Zoom>
                                     <p className='pr-3 py-3'>
                                         Bison Aviation’s Sensor Service team maintains an average of more than sixty
@@ -51,10 +62,10 @@ const HomeFlir = () => {
                                 </Zoom>
                             </Col>
 
-                            <Col xs={12} className='py-1 global_cursor '>
+                            <Col xs={12} className='py-1 global_cursor mx-0 px-0'>
                                 <LinkContainer to={`/maintenance`}>
                                     <Zoom>
-                                        <Button className='pl-4 global_cultured global_black border-left' style={{backgroundColor: 'rgba(255,255,255,.1)'}}>
+                                        <Button className='pl-4 global_goldenrodtxtborder-btn'>
                                             Learn More
                                         </Button>
                                     </Zoom>
@@ -63,10 +74,10 @@ const HomeFlir = () => {
                         </Col>
 
 
-                        <Col xs={5} className='p-0 m-0 d-flex align-content-center'>
+                        <Col xs={4} className='p-0 m-0 d-flex align-content-center justify-content-end'>
                             <LinkContainer to={`/mechanics`}>
                                 <Col xs={12}
-                                     className=' global_cursor d-flex align-items-center'>
+                                     className=' global_cursor d-flex align-items-center '>
                                     <Zoom>
 
                                         <Card className='Avionics_card border-0 bg-transparent rounded'>

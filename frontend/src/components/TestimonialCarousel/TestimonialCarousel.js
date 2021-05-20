@@ -22,12 +22,12 @@ const TestimonialCarousel = () => {
                         >
                             <div className="myCarousel global_blood-red-bg pb-5 my-auto">
                                 <h3 className=''>Richard F.</h3>
-                                <h1>
-                                    <i className='fas fa-star global_cultured'> </i>
-                                    <i className='fas fa-star global_cultured'> </i>
-                                    <i className='fas fa-star global_cultured'> </i>
-                                    <i className='fas fa-star  global_cultured'> </i>
-                                    <i className='fas fa-star global_cultured'> </i>
+                                <h1 className='global_white'>
+                                    <i className='fas fa-star'> </i>
+                                    <i className='fas fa-star'> </i>
+                                    <i className='fas fa-star'> </i>
+                                    <i className='fas fa-star '> </i>
+                                    <i className='fas fa-star'> </i>
                                 </h1>
                                 <p className=''>
                                     Had the chance to work with John from Bison on his V-tail recently and the guy's
@@ -40,13 +40,12 @@ const TestimonialCarousel = () => {
 
                             <div className="myCarousel my-auto global_blood-red-bg pb-5 my-auto">
                                 <h3 className=''>Daniel K.</h3>
-                                <h1>
-
-                                    <i className='fas fa-star global_cultured'> </i>
-                                    <i className='fas fa-star global_cultured'> </i>
-                                    <i className='fas fa-star global_cultured'> </i>
-                                    <i className='fas fa-star  global_cultured'> </i>
-                                    <i className='fas fa-star-half-alt global_cultured'> </i>
+                                <h1 className='global_white'>
+                                    <i className='fas fa-star'> </i>
+                                    <i className='fas fa-star'> </i>
+                                    <i className='fas fa-star'> </i>
+                                    <i className='fas fa-star '> </i>
+                                    <i className='fas fa-star-half-alt'> </i>
 
                                 </h1>
                                 <p className=''>
@@ -59,12 +58,12 @@ const TestimonialCarousel = () => {
 
                             <div className="myCarousel my-auto global_blood-red-bg pb-5 my-auto">
                                 <h3 className=''>Allen H.</h3>
-                                <h1>
-                                    <i className='fas fa-star global_cultured'> </i>
-                                    <i className='fas fa-star global_cultured'> </i>
-                                    <i className='fas fa-star global_cultured'> </i>
-                                    <i className='fas fa-star  global_cultured'> </i>
-                                    <i className='fas fa-star-half-alt global_cultured'> </i>
+                                <h1 className='global_white'>
+                                    <i className='fas fa-star'> </i>
+                                    <i className='fas fa-star'> </i>
+                                    <i className='fas fa-star'> </i>
+                                    <i className='fas fa-star '> </i>
+                                    <i className='fas fa-star-half-alt'> </i>
                                 </h1>
                                 <p className=''>
                                     Avionics team worked with me for a full panel installation and even added custom

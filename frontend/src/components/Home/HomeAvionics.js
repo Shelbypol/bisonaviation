@@ -1,5 +1,5 @@
 import React from "react";
-import {Button, Col, Row, Image} from "react-bootstrap";
+import {Button, Col, Row, Image, CardImg} from "react-bootstrap";
 import './HomeAvionics.css';
 import tests from '../Avionics/images/avionics4.png'
 import roel from '../Avionics/images/avionics2.png'
@@ -14,25 +14,25 @@ const HomeAvionics = () => {
 
     return (
         <>
-            <Row className='AvionicsHome_image d-flex justify-content-center align-content-center global_cultured'>
-                <Col xs={12} style={{backgroundColor: 'rgba(0,0,0,.8)'}} className='pb-3'>
+            <Row className=' d-flex justify-content-center align-content-center'>
+                <Col xs={12} className='AvionicsHome_image p-0 mt-5 mb-0 mx-0 mb-0'>
 
-                    <Row className='justify-content-start align-content-center ml-1 mb-5'>
+                    <Row className='justify-content-start align-content-center mx-0 my-5'>
                         <Fade top>
                             <Col xs={12}
-                                 className=' AvionicsHome_title-col d-sm-flex justify-content-sm-center' >
-                                <h1 className='AvionicsHome_title text-white'>Avionics</h1>
+                                 className=' AvionicsHome_title-col d-sm-flex justify-content-sm-center global_blood-red-bg'>
+                                <h1 className='AvionicsHome_title text-white '>Avionics</h1>
                             </Col>
                         </Fade>
                     </Row>
 
-                    <Row className='mb-sm-0 pb-sm-3 mb-md-5'>
+                    <Row className='mt-5 pt-5 pb-0 mb-0 global_black-bg d-flex justify-content-between px-0 mx-0'>
 
-                        <Col md={7} xs={12} className='' >
+                        <Col md={7} xs={12} className='m-0 px-0 pt-0 pb-3'>
                             <Zoom>
                                 <Col xs={12} className='mb-2 pr-4'
                                 >
-                                    <h1 className='global_cultured'>You depend on your aircraft to carry you and your
+                                    <h1 className='global_white'>You depend on your aircraft to carry you and your
                                         passengers safely.</h1>
 
                                 </Col>
@@ -55,8 +55,7 @@ const HomeAvionics = () => {
                             <Col xs={12} className='py-1 global_cursor ml-2'>
                                 <LinkContainer to={`/maintenance`}>
                                     <Zoom>
-                                        <Button className=' border-left border-right'
-                                                style={{backgroundColor: 'rgba(255,255,255,.3)'}}>
+                                        <Button className=' global_goldenrodtxtborder-btn'>
                                             Learn More
                                         </Button>
                                     </Zoom>
@@ -66,10 +65,11 @@ const HomeAvionics = () => {
                         </Col>
 
 
-                        <Col md={4}  className='p-0 mx-auto global_blood-red-bg border-left d-none d-lg-block'>
+                        <Col md={4}
+                             className='pt-4 mx-0 px-0 global_goldenrod global_black-transparent d-none d-lg-block'>
                             <LinkContainer to={`/mechanics`}>
                                 <Col xs={12}
-                                     className='AvionicsHome_titles global_cursor Mechanics_col d-flex align-items-center '>
+                                     className='AvionicsHome_titles global_cursor global_goldenrodtxtborder-btn Mechanics_col d-flex align-items-end justify-content-center p-0 m-0'>
                                     <Zoom>
                                         <p className='Avionics_text-titles'>Annual Inspections</p>
                                     </Zoom>
@@ -78,7 +78,7 @@ const HomeAvionics = () => {
 
                             <LinkContainer to={`/mechanics`}>
                                 <Col xs={12}
-                                     className='AvionicsHome_titles global_cursor Mechanics_col d-flex align-items-center '>
+                                     className='AvionicsHome_titles global_cursor global_goldenrodtxtborder-btn Mechanics_col d-flex align-items-center justify-content-center p-0 m-0'>
                                     <Zoom>
                                         <p className='Avionics_text-titles'>Propeller Balance</p>
                                     </Zoom>
@@ -87,9 +87,9 @@ const HomeAvionics = () => {
 
                             <LinkContainer to={`/mechanics`}>
                                 <Col xs={12}
-                                     className='AvionicsHome_titles global_cursor Mechanics_col d-flex align-items-center '>
+                                     className='AvionicsHome_titles global_cursor global_goldenrodtxtborder-btn Mechanics_col d-flex align-items-start justify-content-center p-0 m-0'>
                                     <Zoom>
-                                        <p className='Avionics_text-titles'> Pre-Buy Inspections</p>
+                                        <p className='Avionics_text-titles '> Pre-Buy Inspections</p>
                                     </Zoom>
                                 </Col>
                             </LinkContainer>
@@ -99,39 +99,30 @@ const HomeAvionics = () => {
 
                 </Col>
 
-                <Col xs={12} className='m-0 pt-sm-0 pt-md-3 px-0 global_black'>
+                <Col xs={12} className='m-0 pt-sm-0 px-0 global_black'>
 
                     <Row className='m-0 p-0 global_black'>
-                        <Col md={9} xs={12}>
-                            <Row>
-                                <Col md={4} className=' p-0'>
-                                    <Image className=' AvionicsHome_img pr-md-3' src={tayseer} fluid/>
+                        <Col xs={12} className=''>
+                            <Row className='d-flex justify-content-between'>
+
+
+                                <Col className='m-0 p-0 AvionicsHome_tayseer-img AvionicsHome_img'>
                                 </Col>
-                                <Col md={8} className='p-0'>
-                                    <Image className=' AvionicsHome_img' src={cnc} fluid/>
+                                <Col className='mx-3 p-0 AvionicsHome_img AvionicsHome_cnc-img'>
                                 </Col>
-                                <Col xs={12}
-                                     className='p-0 d-flex align-content-center justify-content-center align-content-center'>
-                                    <Image className=' AvionicsHome_img pt-md-3' src={panel} fluid/>
+                                <Col className='m-0 p-0 AvionicsHome_roel-img AvionicsHome_img'>
                                 </Col>
-                            </Row>
-                        </Col>
-                        <Col md={3} className='d-none d-md-block'>
-                            <Row>
-                                <Col sm={12} className='pt-sm-5 p-md-0'>
-                                    <Image className=' AvionicsHome_img pl-md-3' src={roel} fluid/>
-                                </Col>
-                                    <Col sm={12} className=' p-0'>
-                                    <Image className=' AvionicsHome_img pt-md-3 pl-md-3' src={tests} fluid/>
+                                <Col md={12} className=' AvionicsHome_panel-img AvionicsHome_img mt-3'>
                                 </Col>
 
                             </Row>
+
+
                         </Col>
 
                     </Row>
                 </Col>
             </Row>
-
         </>
 
     )
