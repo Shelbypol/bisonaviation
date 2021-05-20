@@ -61,19 +61,19 @@ const HeroCarousel = (
 
                             <Col xs={12}
                                  className='d-flex justify-content-start align-content-center '>
-                                <h1 className='global_carousel-title global_cultured'>
+                                <h1 className='global_carousel-title global_white'>
                                     <span
-                                        className='global_carousel-letter global_cultured'>{slide1firstTitleLetter}</span>{slide1firstTitleWord}
+                                        className='global_carousel-letter global_white'>{slide1firstTitleLetter}</span>{slide1firstTitleWord}
                                 </h1>
                             </Col>
 
                             <Col xs={12} className=' d-flex justify-content-start'>
-                                <h3 className='global_carousel-text m-0 p-0 global_cultured'>{slide1firstSentence}</h3>
+                                <h3 className='global_carousel-text m-0 p-0 global_white'>{slide1firstSentence}</h3>
                             </Col>
 
                             {slide1secondSentenceTrue && (
                                 <Col xs={12} className='d-flex justify-content-start'>
-                                    <h3 className='text-left global_carousel-text m-0 p-0 global_cultured'>{slide1secondSentence}</h3>
+                                    <h3 className='text-left global_carousel-text m-0 p-0 global_white'>{slide1secondSentence}</h3>
                                 </Col>
                             )}
 
@@ -109,17 +109,17 @@ const HeroCarousel = (
                                      className='d-flex justify-content-start align-content-center '>
                                     <h1 className='global_carousel-title global_cultured'>
                                     <span
-                                        className='global_carousel-letter global_cultured'>{slide2firstTitleLetter}</span>{slide2firstTitleWord}
+                                        className='global_carousel-letter global_white'>{slide2firstTitleLetter}</span>{slide2firstTitleWord}
                                     </h1>
                                 </Col>
 
                                 <Col xs={12} className=' d-flex justify-content-start'>
-                                    <h3 className='global_carousel-text m-0 p-0 global_cultured'>{slide2firstSentence}</h3>
+                                    <h3 className='global_carousel-text m-0 p-0 global_white'>{slide2firstSentence}</h3>
                                 </Col>
 
                                 {slide2secondSentenceTrue && (
                                     <Col xs={12} className='d-flex justify-content-start'>
-                                        <h3 className='global_carousel-text m-0 p-0 global_cultured'>{slide2secondSentence}</h3>
+                                        <h3 className='global_carousel-text m-0 p-0 global_white'>{slide2secondSentence}</h3>
                                     </Col>
                                 )}
 
@@ -153,19 +153,19 @@ const HeroCarousel = (
 
                                 <Col xs={12}
                                      className='d-flex justify-content-start align-content-center '>
-                                    <h1 className='global_carousel-title global_cultured'>
+                                    <h1 className='global_carousel-title global_white'>
                                     <span
-                                        className='global_carousel-letter global_cultured'>{slide3firstTitleLetter}</span>{slide3firstTitleWord}
+                                        className='global_carousel-letter global_white'>{slide3firstTitleLetter}</span>{slide3firstTitleWord}
                                     </h1>
                                 </Col>
 
                                 <Col xs={12} className=' d-flex justify-content-start'>
-                                    <h3 className='global_carousel-text m-0 p-0 global_cultured'>{slide3firstSentence}</h3>
+                                    <h3 className='global_carousel-text m-0 p-0 global_white'>{slide3firstSentence}</h3>
                                 </Col>
 
                                 {slide3secondSentenceTrue && (
                                     <Col xs={12} className='d-flex justify-content-start'>
-                                        <h3 className='global_carousel-text m-0 p-0 global_cultured'>{slide3secondSentence}</h3>
+                                        <h3 className='global_carousel-text m-0 p-0 global_white'>{slide3secondSentence}</h3>
                                     </Col>
                                 )}
 
@@ -201,19 +201,19 @@ const HeroCarousel = (
 
                                 <Col xs={12}
                                      className='d-flex justify-content-start align-content-center '>
-                                    <h1 className='global_carousel-title global_cultured'>
+                                    <h1 className='global_carousel-title global_white'>
                                     <span
-                                        className='global_carousel-letter global_cultured'>{slide4firstTitleLetter}</span>{slide4firstTitleWord}
+                                        className='global_carousel-letter global_white'>{slide4firstTitleLetter}</span>{slide4firstTitleWord}
                                     </h1>
                                 </Col>
 
                                 <Col xs={12} className=' d-flex justify-content-start'>
-                                    <h3 className='global_carousel-text m-0 p-0 global_cultured'>{slide4firstSentence}</h3>
+                                    <h3 className='global_carousel-text m-0 p-0 global_white'>{slide4firstSentence}</h3>
                                 </Col>
 
                                 {slide4secondSentenceTrue && (
                                     <Col xs={12} className='d-flex justify-content-start'>
-                                        <h3 className='global_carousel-text m-0 p-0 global_cultured'>{slide4secondSentence}</h3>
+                                        <h3 className='global_carousel-text m-0 p-0 global_white'>{slide4secondSentence}</h3>
                                     </Col>
                                 )}
 
@@ -247,19 +247,19 @@ const HeroCarousel = (
 
                                 <Col xs={12}
                                      className='d-flex justify-content-start align-content-center '>
-                                    <h1 className='global_carousel-title global_cultured'>
+                                    <h1 className='global_carousel-title global_white'>
                                     <span
-                                        className='global_carousel-letter global_cultured'>{slide5firstTitleLetter}</span>{slide5firstTitleWord}
+                                        className='global_carousel-letter global_white'>{slide5firstTitleLetter}</span>{slide5firstTitleWord}
                                     </h1>
                                 </Col>
 
                                 <Col xs={12} className=' d-flex justify-content-start'>
-                                    <h3 className='global_carousel-text m-0 p-0 global_cultured'>{slide5firstSentence}</h3>
+                                    <h3 className='global_carousel-text m-0 p-0 global_white'>{slide5firstSentence}</h3>
                                 </Col>
 
                                 {slide5secondSentenceTrue && (
                                     <Col xs={12} className='d-flex justify-content-start'>
-                                        <h3 className='global_carousel-text m-0 p-0 global_cultured'>{slide5secondSentence}</h3>
+                                        <h3 className='global_carousel-text m-0 p-0 global_white'>{slide5secondSentence}</h3>
                                     </Col>
                                 )}
 

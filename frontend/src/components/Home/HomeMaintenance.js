@@ -42,7 +42,7 @@ const HomeMaintenance = () => {
 
                             <Col xs={12} className='global_cursor mt-4'>
                                 <Zoom>
-                                    <p className=''>
+                                    <p className='global_white'>
                                         Whether it's time for a routine annual, a complete series of phase inspections
                                         or a
                                         pre-purchase inspection, Bison Aviation's team of FAA licensed technicians is
@@ -65,7 +65,7 @@ const HomeMaintenance = () => {
 
                         </Col>
 
-                        <Col md={4} className='d-none d-md-block global_black-bg'>
+                        <Col md={4} className='d-none d-md-block global_black-bg global_white'>
                             <LinkContainer to={`/mechanics`}>
                                 <Col xs={12}
                                      className='AvionicsHome_titles global_cursor Mechanics_col d-flex align-items-end justify-content-center'>

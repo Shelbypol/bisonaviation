@@ -32,7 +32,7 @@ const HomeAvionics = () => {
                             <Zoom>
                                 <Col xs={12} className='mb-2 pr-4'
                                 >
-                                    <h1 className='global_cultured'>You depend on your aircraft to carry you and your
+                                    <h1 className='global_white'>You depend on your aircraft to carry you and your
                                         passengers safely.</h1>
 
                                 </Col>
