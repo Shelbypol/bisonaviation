@@ -19,7 +19,7 @@ body {
 }
 
 .global_light-transparent{
-    background-color: rgba(0,0,0,.3);
+    background-color: rgba(255, 255, 255, .1);
 }
 
 .global_black-transparent{
@@ -54,13 +54,13 @@ main {
     background-image: url("../images/bg-graphics/graphics/smooth-overlay-boxed-bg.png");
 }
 
-.global_gray-bg{
-    background-color: #313131;
-}
+/*.global_gray-bg{*/
+/*    background-color: #313131;*/
+/*}*/
 
-.global_gray-bg-hover:hover{
-    background-color: #fff;
-}
+/*.global_gray-bg-hover:hover{*/
+/*    background-color: #fff;*/
+/*}*/
 
 .global_white {
     color: #fff;
@@ -99,9 +99,9 @@ p{
 
 /*================= SITE THEME ===================*/
 /* COLORS-BG */
-.global_rich-black-bg{
-    background-color: #0B090A;
-}
+/*.global_rich-black-bg{*/
+/*    background-color: #0B090A;*/
+/*}*/
 
 .global_blood-red{
     color: #660708;
@@ -121,21 +121,21 @@ p{
 /*    background-color: #F5F3F4;*/
 /*}*/
 /* COLORS-FONT */
-.global_rich-black{
-    color: #0B090A;
-}
-.global_eerie-black{
-    color: #161A1D;
-}
+/*.global_rich-black{*/
+/*    color: #0B090A;*/
+/*}*/
+/*.global_eerie-black{*/
+/*    color: #161A1D;*/
+/*}*/
 
-.global_white-txt-blood-red-bg-hover{
-    color: #660708;
-    background-color: white;
-}
-.global_white-txt-blood-red-bg-hover:hover{
-    color: white;
-    background-color: #660708;
-}
+/*.global_white-txt-blood-red-bg-hover{*/
+/*    color: #660708;*/
+/*    background-color: white;*/
+/*}*/
+/*.global_white-txt-blood-red-bg-hover:hover{*/
+/*    color: white;*/
+/*    background-color: #660708;*/
+/*}*/
 
 /*.global_silver-chalice{*/
 /*    color:  #B1A7A6;*/
@@ -162,13 +162,13 @@ p{
     background-color: #2576e5
 }
 
-.global_white-text-red-hover{
-    color: white;
-}
+/*.global_white-text-red-hover{*/
+/*    color: white;*/
+/*}*/
 
-.global_white-text-red-hover:hover{
-    color:red;
-}
+/*.global_white-text-red-hover:hover{*/
+/*    color:red;*/
+/*}*/
 
 .global_red-text-white-hover{
     color: white;
