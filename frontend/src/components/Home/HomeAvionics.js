@@ -14,19 +14,19 @@ const HomeAvionics = () => {
 
     return (
         <>
-            <Row className='AvionicsHome_image d-flex justify-content-center align-content-center global_cultured'>
-                <Col xs={12} style={{backgroundColor: 'rgba(0,0,0,.8)'}} className='pb-3'>
+            <Row className='AvionicsHome_image d-flex justify-content-center align-content-center'>
+                <Col xs={12} className='pb-3 global_black-transparent'>
 
                     <Row className='justify-content-start align-content-center ml-1 mb-5'>
                         <Fade top>
                             <Col xs={12}
-                                 className=' AvionicsHome_title-col d-sm-flex justify-content-sm-center' >
-                                <h1 className='AvionicsHome_title text-white'>Avionics</h1>
+                                 className=' AvionicsHome_title-col d-sm-flex justify-content-sm-center global_blood-red-bg' >
+                                <h1 className='AvionicsHome_title text-white '>Avionics</h1>
                             </Col>
                         </Fade>
                     </Row>
 
-                    <Row className='mb-sm-0 pb-sm-3 mb-md-5'>
+                    <Row className='m-0 p-0 global_black'>
 
                         <Col md={7} xs={12} className='' >
                             <Zoom>
@@ -65,7 +65,7 @@ const HomeAvionics = () => {
                         </Col>
 
 
-                        <Col md={4}  className='p-0 mx-auto global_black global_goldenrod d-none d-lg-block'>
+                        <Col md={4}  className='p-0 mx-auto global_goldenrod d-none d-lg-block'>
                             <LinkContainer to={`/mechanics`}>
                                 <Col xs={12}
                                      className='AvionicsHome_titles global_cursor Mechanics_col d-flex align-items-center justify-content-center '>
@@ -98,7 +98,7 @@ const HomeAvionics = () => {
 
                 </Col>
 
-                <Col xs={12} className='m-0 pt-sm-0 pt-md-3 px-0 global_black'>
+                <Col xs={12} className='m-0 pt-sm-0  px-0 global_black'>
 
                     <Row className='m-0 p-0 global_black'>
                         <Col md={9} xs={12}>

@@ -18,7 +18,7 @@ const HomeFlir = () => {
                     <Row className='d-flex justify-content-start align-content-center ml-3 mb-5'>
                         <Fade top>
                             <Col xs={12}
-                                 className=' AvionicsHome_title-col'>
+                                 className=' AvionicsHome_title-col global_blood-red-bg'>
                                 <h1 className='AvionicsHome_title text-white'>EO/FLIR</h1>
                             </Col>
                         </Fade>

@@ -22,7 +22,7 @@ const HomeScreen = () => {
     return (
         <>
             <HomeCarousel/>
-            <Row className='d-flex justify-content-center global_black'>
+            <Row className='d-flex justify-content-center'>
                 <Col xs={12} className='' style={{zIndex: '1'}}>
 
                     {/*<Row className='m-0 p-0 d-flex justify-content-center'>*/}

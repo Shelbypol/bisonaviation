@@ -7,7 +7,7 @@
   //height: 30px;
   height: 46px;
   line-height: 24px;
-  background: gold;
+  background: #daa520;
   color: #000;
   padding: 10px 20px 10px 20px;
   z-index: 1;
@@ -24,9 +24,9 @@
   }
 
   &.red{
-    background: gold;
+    background: #daa520;
     &:after{
-      border-color: gold transparent gold transparent;
+      border-color:goldenrod transparent goldenrod transparent;
       //border-color: orange transparent orange transparent;
     }
   }

@@ -18,8 +18,8 @@ body {
     background: linear-gradient(to right, #1A1715, #4A433D);
 }
 
-.global_bg-overlay{
-    background-color: rgba(0,0,0, .8);
+.global_black-transparent{
+    background-color: rgba(0,0,0,.5);
 }
 
 html {
@@ -143,10 +143,10 @@ p{
     color: #F5F3F4;
 }
 
-.global_black{
+.global_black-bg{
     background-color: black;
 }
-.global_black-text{
+.global_black{
     color: black;
 }
 
