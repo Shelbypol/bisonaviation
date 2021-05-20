@@ -27,53 +27,21 @@ import TermsScreen from "./components/Terms/TermsScreen";
 import TermsFlirScreen from "./components/Terms/TermsFlirScreen";
 import WishListScreen from "./components/Wishlist/WishListScreen"
 import Header from "./components/HeaderFooter/Header";
-import {useDispatch} from "react-redux";
-
 
 const App = () => {
 
-    const [width, setWidth] = useState(window.innerWidth);
-
-    const breakpoint = 1000;
-
-    const dispatch = useDispatch();
-
-    useEffect(() => {
-
-        window.addEventListener("resize", handleWindowResize);
-        return () => window.removeEventListener("resize", handleWindowResize);
-    }, [dispatch, width]);
-
-    useLayoutEffect(() => {
-        window.scrollTo(0, 0)
-    });
-
-    const handleWindowResize = () => {
-        setWidth(window.innerWidth);
-    };
 
     return (
         <Router>
 
             <Switch>
-                {/*<Route path='/admin/userlist' component={UserListScreen}/>*/}
-                {/*<Route path='/admin/user/:id/edit' component={UserEditScreen}/>*/}
-                {/*<Route path='/admin/productlist' component={AdminScreenProductListScreen} exact/>*/}
-                {/*<Route path='/admin/productlist/:pageNumber' component={AdminScreenProductListScreen} exact/>*/}
-                {/*<Route path='/admin/product/:id/edit' component={AdminScreensProductEditScreen}/>*/}
-                {/*<Route path='/admin/orderlist' component={OrderListScreen}/>*/}
-                <Route path='/products' component={ProductsScreen} exact/>
-                <Route path='/search/:keyword' component={ProductsScreen} exact/>
-                <Route path='/page/:pageNumber' component={ProductsScreen} exact/>
-                <Route path='/search/:keyword/page/:pageNumber' component={ProductsScreen}/>
-                <Route path='/product/:id' component={ProductScreen}/>
+                {/*<Route path='/products' component={ProductsScreen} exact/>*/}
+                {/*<Route path='/search/:keyword' component={ProductsScreen} exact/>*/}
+                {/*<Route path='/page/:pageNumber' component={ProductsScreen} exact/>*/}
+                {/*<Route path='/search/:keyword/page/:pageNumber' component={ProductsScreen}/>*/}
+                {/*<Route path='/product/:id' component={ProductScreen}/>*/}
 
                 {/* ================    STICKY HEADER ONLY W/ FOOTER    =================*/}
-                {/*<Route path='/wishlist' component={WishListScreen}/>*/}
-                {/*<Route path='/flir' component={FlirScreen}/>*/}
-                {/*<Route path='/team' component={TeamScreen}/>*/}
-                {/*<Route path='/maintenance' component={MaintenanceScreen}/>*/}
-                {/*<Route path='/avionics' component={AvionicsScreen}/>*/}
 
                 {/* ================    STICKY / MOBILE HEADER W/ FOOTER    =================*/}
                 <Fragment>
@@ -104,13 +72,11 @@ const App = () => {
                     <Route path='/admin/productlist/:pageNumber' component={AdminScreenProductListScreen} exact/>
                     <Route path='/admin/product/:id/edit' component={AdminScreensProductEditScreen}/>
 
-                    {/*<Route path='/admin/orderlist' component={OrderListScreen}/>*/}
-
-                    {/*<Route path='/products' component={ProductsScreen} exact/>*/}
-                    {/*<Route path='/search/:keyword' component={ProductsScreen} exact/>*/}
-                    {/*<Route path='/page/:pageNumber' component={ProductsScreen} exact/>*/}
-                    {/*<Route path='/search/:keyword/page/:pageNumber' component={ProductsScreen}/>*/}
-                    {/*<Route path='/product/:id' component={ProductScreen}/>*/}
+                    <Route path='/products' component={ProductsScreen} exact/>
+                    <Route path='/search/:keyword' component={ProductsScreen} exact/>
+                    <Route path='/page/:pageNumber' component={ProductsScreen} exact/>
+                    <Route path='/search/:keyword/page/:pageNumber' component={ProductsScreen}/>
+                    <Route path='/product/:id' component={ProductScreen}/>
 
 
                     <Footer/>

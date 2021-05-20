@@ -160,6 +160,14 @@ p{
     border-right: 1px solid #daa520;
 }
 
+.global_goldenrodtxthoverwhite{
+    color: goldenrod;
+}
+
+.global_goldenrodtxthoverwhite:hover{
+    color: #fff;
+}
+
 .global_font12px{
     font-size: 12px;
 }
