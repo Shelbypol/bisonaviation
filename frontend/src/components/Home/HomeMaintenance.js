@@ -19,7 +19,7 @@ const HomeMaintenance = () => {
                 <Col xs={12} className=' p-0 mt-5 mx-0 mb-0'>
 
 
-                <Row className='HomeMaintenance_image d-flex justify-content-start align-content-center mx-0 px-0 mb-5'>
+                <Row className='HomeMaintenance_image d-flex justify-content-between align-content-center mb-5'>
                         <Fade top>
                             <Col xs={12}
                                  className=' AvionicsHome_title-col d-sm-flex justify-content-sm-center global_blood-red-bg my-5'>
@@ -31,16 +31,16 @@ const HomeMaintenance = () => {
 
 
                     {/*<Row className='mb-5'>*/}
-                        <Col md={8} xs={12} className='m-0 p-0 global_black-bg'>
+                        <Col md={8} xs={12} className='pt-5 mx-0 global_black-bg'>
                             <Zoom>
-                                <Col xs={12} className='mb-2 '>
-                                    <h1 className='global_goldenrod'>You depend on your aircraft to carry you and your
+                                <Col xs={10} className='mb-2 mx-0 px-0'>
+                                    <h1 className='global_white global_black-bg'>You depend on your aircraft to carry you and your
                                         passengers safely.</h1>
 
                                 </Col>
                             </Zoom>
 
-                            <Col xs={12} className='global_cursor mt-4'>
+                            <Col xs={10} className='global_cursor mt-4 mx-0 px-0'>
                                 <Zoom>
                                     <p className='global_white'>
                                         Whether it's time for a routine annual, a complete series of phase inspections
@@ -53,7 +53,7 @@ const HomeMaintenance = () => {
                                 </Zoom>
                             </Col>
 
-                            <Col xs={12} className='py-1 global_cursor '>
+                            <Col xs={12} className='py-1 global_cursor mx-0 px-0'>
                                 <LinkContainer to={`/maintenance`}>
                                     <Zoom>
                                         <Button className=' global_goldenrodtxtborder-btn'>
@@ -65,10 +65,10 @@ const HomeMaintenance = () => {
 
                         </Col>
 
-                        <Col md={4} className='d-none d-md-block global_black-bg global_white'>
+                        <Col md={4} className='pt-5 d-none d-md-block global_black-bg global_white mx-0 px-0'>
                             <LinkContainer to={`/mechanics`}>
                                 <Col xs={12}
-                                     className='AvionicsHome_titles global_cursor Mechanics_col d-flex align-items-end justify-content-center'>
+                                     className='AvionicsHome_titles global_cursor Mechanics_col d-flex align-items-end justify-content-center global_goldenrodtxtborder-btn'>
                                     <Zoom>
                                         <p className='Avionics_text-titles'>Annual Inspections</p>
                                     </Zoom>
@@ -86,7 +86,7 @@ const HomeMaintenance = () => {
 
                             <LinkContainer to={`/mechanics`}>
                                 <Col xs={12}
-                                     className='AvionicsHome_titles global_cursor Mechanics_col d-flex align-items-start justify-content-center'>
+                                     className='AvionicsHome_titles global_cursor Mechanics_col d-flex align-items-start justify-content-center global_goldenrodtxtborder-btn'>
                                     <Zoom>
                                         <p className='Avionics_text-titles'> Pre-Buy Inspections</p>
                                     </Zoom>

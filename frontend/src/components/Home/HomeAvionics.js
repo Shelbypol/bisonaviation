@@ -26,7 +26,7 @@ const HomeAvionics = () => {
                         </Fade>
                     </Row>
 
-                    <Row className='mt-5 pt-2 pb-0 mb-0 global_black-bg'>
+                    <Row className='mt-5 pt-5 pb-0 mb-0 global_black-bg d-flex justify-content-between px-0 mx-0'>
 
                         <Col md={7} xs={12} className='m-0 px-0 pt-0 pb-3'>
                             <Zoom>
@@ -66,10 +66,10 @@ const HomeAvionics = () => {
 
 
                         <Col md={4}
-                             className='pt-4 mx-auto global_goldenrod global_black-transparent d-none d-lg-block'>
+                             className='pt-4 mx-0 px-0 global_goldenrod global_black-transparent d-none d-lg-block'>
                             <LinkContainer to={`/mechanics`}>
                                 <Col xs={12}
-                                     className='AvionicsHome_titles global_cursor global_goldenrodtxt-btn Mechanics_col d-flex align-items-end justify-content-center p-0 m-0'>
+                                     className='AvionicsHome_titles global_cursor global_goldenrodtxtborder-btn Mechanics_col d-flex align-items-end justify-content-center p-0 m-0'>
                                     <Zoom>
                                         <p className='Avionics_text-titles'>Annual Inspections</p>
                                     </Zoom>
@@ -80,14 +80,14 @@ const HomeAvionics = () => {
                                 <Col xs={12}
                                      className='AvionicsHome_titles global_cursor global_goldenrodtxtborder-btn Mechanics_col d-flex align-items-center justify-content-center p-0 m-0'>
                                     <Zoom>
-                                        <p className='Avionics_text-titles text-white '>Propeller Balance</p>
+                                        <p className='Avionics_text-titles'>Propeller Balance</p>
                                     </Zoom>
                                 </Col>
                             </LinkContainer>
 
                             <LinkContainer to={`/mechanics`}>
                                 <Col xs={12}
-                                     className='AvionicsHome_titles global_cursor global_goldenrodtxt-btn Mechanics_col d-flex align-items-start justify-content-center p-0 m-0'>
+                                     className='AvionicsHome_titles global_cursor global_goldenrodtxtborder-btn Mechanics_col d-flex align-items-start justify-content-center p-0 m-0'>
                                     <Zoom>
                                         <p className='Avionics_text-titles '> Pre-Buy Inspections</p>
                                     </Zoom>
