@@ -54,9 +54,33 @@
 }
 
 .AvionicsHome_img{
-    /*height: auto;*/
     height: 33vh;
     width: fit-content;
+}
+
+.AvionicsHome_tayseer-img{
+    background-image: url('../Avionics/images/avionics/tayseer-avionics.png');
+    background-position: 25% center;
+}
+
+.AvionicsHome_cnc-img{
+    background-image: url('../Avionics/images/avionics/cnc-machine copy.png');
+    background-position: 50% 50%;
+}
+
+.AvionicsHome_roel-img{
+    background-image: url('../Avionics/images/avionics2.png');
+    background-position: 65% 95%;
+}
+
+.AvionicsHome_tests-img{
+    background-image: url('../Avionics/images/avionics4.png');
+    background-position: 5% 10%;
+}
+
+.AvionicsHome_panel-img{
+    background-image: url('../Avionics/images/avionics1.png');
+    background-position: 50% 25%;
 }
 
 .Avionics_img-col{

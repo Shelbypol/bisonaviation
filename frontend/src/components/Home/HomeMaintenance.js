@@ -30,7 +30,7 @@ const HomeMaintenance = () => {
                         <Col md={7} xs={12} className=''>
                             <Zoom>
                                 <Col xs={12} className='mb-2' style={{backgroundColor: 'rgba(255,255,255, .1)'}}>
-                                    <h1 className='global_cultured'>You depend on your aircraft to carry you and your
+                                    <h1 className='global_goldenrod'>You depend on your aircraft to carry you and your
                                         passengers safely.</h1>
 
                                 </Col>
