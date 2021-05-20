@@ -15,9 +15,9 @@ const HomeAvionics = () => {
     return (
         <>
             <Row className=' d-flex justify-content-center align-content-center'>
-                <Col xs={12} className='AvionicsHome_image p-0 mt-5 mx-0 mb-0'>
+                <Col xs={12} className='AvionicsHome_image p-0 mt-5 mb-0 mx-0 mb-0'>
 
-                    <Row className='justify-content-start align-content-center ml-1 my-5'>
+                    <Row className='justify-content-start align-content-center mx-0 my-5'>
                         <Fade top>
                             <Col xs={12}
                                  className=' AvionicsHome_title-col d-sm-flex justify-content-sm-center global_blood-red-bg'>
@@ -99,7 +99,7 @@ const HomeAvionics = () => {
 
                 </Col>
 
-                <Col xs={12} className='m-0 pt-sm-0  px-0 global_black'>
+                <Col xs={12} className='m-0 pt-sm-0 px-0 global_black'>
 
                     <Row className='m-0 p-0 global_black'>
                         <Col xs={12} className=''>
@@ -107,60 +107,22 @@ const HomeAvionics = () => {
 
 
                                 <Col className='m-0 p-0 AvionicsHome_tayseer-img AvionicsHome_img'>
-                                    {/*<CardImg className=' AvionicsHome_roel-img mb-3' src={tayseer} fluid/>*/}
-                                    {/*<Image className=' AvionicsHome_img mb-3' src={tayseer} fluid/>*/}
                                 </Col>
-                                <Col className='mx-4 p-0 AvionicsHome_img AvionicsHome_cnc-img'>
-                                    {/*<CardImg className=' AvionicsHome_img mb-3' src={cnc} fluid/>*/}
-                                    {/*<Image className='m-0 p-0' src={panel} fluid/>*/}
+                                <Col className='mx-3 p-0 AvionicsHome_img AvionicsHome_cnc-img'>
                                 </Col>
                                 <Col className='m-0 p-0 AvionicsHome_roel-img AvionicsHome_img'>
-                                    {/*<CardImg className=' AvionicsHome_img' src={panel} fluid/>*/}
-                                    {/*<Image className=' AvionicsHome_img ' src={panel} fluid/>*/}
                                 </Col>
-
-                                <Col md={12} className=' AvionicsHome_panel-img AvionicsHome_img mt-4'>
+                                <Col md={12} className=' AvionicsHome_panel-img AvionicsHome_img mt-3'>
                                 </Col>
 
                             </Row>
 
 
-                            {/*<Row className='d-flex justify-content-between mt-3'>*/}
-                            {/*    <Col md={6} className=' AvionicsHome_img'>*/}
-                            {/*        /!*<CardImg className=' AvionicsHome_img mb-3' src={cnc} fluid/>*!/*/}
-                            {/*        <Image className='  ' src={panel} fluid/>*/}
-                            {/*    </Col>*/}
-                            {/*    <Col xs={2}*/}
-                            {/*         className='AvionicsHome_roel-img AvionicsHome_img'>*/}
-                            {/*        /!*<CardImg className=' AvionicsHome_img' src={panel} fluid/>*!/*/}
-                            {/*        /!*<Image className=' AvionicsHome_img ' src={panel} fluid/>*!/*/}
-                            {/*    </Col>*/}
-                            {/*    <Col md={4} className='AvionicsHome_tayseer-img AvionicsHome_img'>*/}
-                            {/*        /!*<CardImg className=' AvionicsHome_roel-img mb-3' src={tayseer} fluid/>*!/*/}
-                            {/*        /!*<Image className=' AvionicsHome_img mb-3' src={tayseer} fluid/>*!/*/}
-                            {/*    </Col>*/}
-                            {/*</Row>*/}
-
                         </Col>
-                                {/*<Col md={3} className='d-none d-md-block'>*/}
-                                {/*    <Row>*/}
-                                {/*        <Col xs={12} className='AvionicsHome_roel-img AvionicsHome_img mb-4 '>*/}
-                                {/*            /!*<CardImg className=' AvionicsHome_img mb-3' src={roel} fluid/>*!/*/}
-                                {/*            /!*<Image className=' AvionicsHome_img mb-3' src={roel} fluid/>*!/*/}
-                                {/*        </Col>*/}
-                                {/*            <Col xs={12} className='AvionicsHome_tests-img AvionicsHome_img ml-4'>*/}
-                                {/*                /!*<CardImg className=' AvionicsHome_img' src={tests} fluid/>*!/*/}
-                                {/*            /!*<Image className=' AvionicsHome_img  ' src={tests} fluid/>*!/*/}
-                                {/*        </Col>*/}
 
-                                {/*    </Row>*/}
-                                {/*</Col>*/}
-
-                            </Row>
-                        </Col>
                     </Row>
-            {/*    </Col>*/}
-            {/*</Row>*/}
+                </Col>
+            </Row>
         </>
 
     )

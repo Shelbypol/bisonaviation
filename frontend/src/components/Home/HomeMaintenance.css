@@ -3,6 +3,11 @@
     text-decoration: underline;
 }
 
+.HomeMaintenance_image {
+    background-image: url("../Maintenance/images/maintenance1.jpg");
+    background-position: center top;
+}
+
 .Mechanics_learn-more-btn:hover{
     color: #161A1D;
 }
