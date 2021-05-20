@@ -185,13 +185,14 @@ p{
 .global_goldenrodtxt-btn {
     color: #daa520;
     font-weight: lighter;
-    background-color: rgba(0,0,0,.8);
-    border-left: 1px solid rgba(0,0,0,.8);
-    border-right: 1px solid rgba(0,0,0,.8);
+    background-color: rgba(0,0,0,1);
+    border-left: 1px solid rgba(0,0,0,1);
+    border-right: 1px solid rgba(0,0,0,1);
 }
 
 .global_goldenrodtxt-btn:hover {
     color: #fff;
+    background-color: rgba(0,0,0,1);
     border-left: 1px solid #daa520;
     border-right: 1px solid #daa520;
 }

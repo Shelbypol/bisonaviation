@@ -52,7 +52,7 @@ const HomeMaintenance = () => {
                             <Col xs={12} className='py-1 global_cursor '>
                                 <LinkContainer to={`/maintenance`}>
                                     <Zoom>
-                                        <Button className='global_goldenrodtxt-btn'>
+                                        <Button className=' global_goldenrodtxt-btn'>
                                             Learn More
                                         </Button>
                                     </Zoom>

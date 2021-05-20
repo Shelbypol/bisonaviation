@@ -65,10 +65,10 @@ const HomeAvionics = () => {
                         </Col>
 
 
-                        <Col md={4}  className='p-0 mx-auto global_blood-red-bg border-left d-none d-lg-block'>
+                        <Col md={4}  className='p-0 mx-auto global_black global_goldenrod d-none d-lg-block'>
                             <LinkContainer to={`/mechanics`}>
                                 <Col xs={12}
-                                     className='AvionicsHome_titles global_cursor Mechanics_col d-flex align-items-center '>
+                                     className='AvionicsHome_titles global_cursor Mechanics_col d-flex align-items-center justify-content-center '>
                                     <Zoom>
                                         <p className='Avionics_text-titles'>Annual Inspections</p>
                                     </Zoom>
@@ -77,7 +77,7 @@ const HomeAvionics = () => {
 
                             <LinkContainer to={`/mechanics`}>
                                 <Col xs={12}
-                                     className='AvionicsHome_titles global_cursor Mechanics_col d-flex align-items-center '>
+                                     className='AvionicsHome_titles global_cursor Mechanics_col d-flex align-items-center justify-content-center'>
                                     <Zoom>
                                         <p className='Avionics_text-titles'>Propeller Balance</p>
                                     </Zoom>
@@ -86,7 +86,7 @@ const HomeAvionics = () => {
 
                             <LinkContainer to={`/mechanics`}>
                                 <Col xs={12}
-                                     className='AvionicsHome_titles global_cursor Mechanics_col d-flex align-items-center '>
+                                     className='AvionicsHome_titles global_cursor Mechanics_col d-flex align-items-center justify-content-center'>
                                     <Zoom>
                                         <p className='Avionics_text-titles'> Pre-Buy Inspections</p>
                                     </Zoom>
