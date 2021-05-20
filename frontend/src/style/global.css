@@ -111,12 +111,22 @@ p{
     background-color: #daa520;
 }
 
+/* =========    LIGHT GRAY*/
 .global_light-transparent{
     background-color: rgba(255, 255, 255, .1);
 }
 
+/*===========   DARK GARY*/
 .global_black-transparent{
     background-color: rgba(0,0,0,.9);
+}
+
+.global_whiteFontHover{
+    color: rgba(255, 255, 255, .5)
+}
+
+.global_whiteFontHover:hover{
+    color: #fff;
 }
 
 /*________________  BUTTONS */

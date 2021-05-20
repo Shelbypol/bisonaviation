@@ -13,7 +13,7 @@ const Footer = () => {
         <footer className='Footer_margin mb-n5 mt-0 mx-0 p-0'>
 
             <Zoom bottom duration={10000}>
-                <Jumbotron className='m-0 p-0 global_blood-red-bg global_cultured Footer_social-icons ' fluid>
+                <Jumbotron className='m-0 p-0 global_blood-red-bg global_white Footer_social-icons ' fluid>
                     <Row>
                         <Col xs={12} className=' Footer_social-icons-col'>
                             <Fade duration={1500} right>
@@ -23,7 +23,7 @@ const Footer = () => {
                     </Row>
                 </Jumbotron>
 
-                <Jumbotron className=' global_black' fluid>
+                <Jumbotron className=' global_black-bg' fluid>
                     <Row className='mt-4'>
                         <Col md={4} xs={12}>
                             <LinkContainer to='/avionics'
