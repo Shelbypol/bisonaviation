@@ -18,8 +18,12 @@ body {
     background: linear-gradient(to right, #1A1715, #4A433D);
 }
 
+.global_light-transparent{
+    background-color: rgba(0,0,0,.3);
+}
+
 .global_black-transparent{
-    background-color: rgba(0,0,0,.5);
+    background-color: rgba(0,0,0,.9);
 }
 
 html {
@@ -191,6 +195,21 @@ p{
 }
 
 .global_goldenrodtxt-btn:hover {
+    color: #fff;
+    background-color: rgba(0,0,0,1);
+    border-left: 1px solid #daa520;
+    border-right: 1px solid #daa520;
+}
+
+.global_goldenrodtxtborder-btn {
+    color: #daa520;
+    font-weight: lighter;
+    background-color: rgba(0,0,0,1);
+    border-left: 1px solid #daa520;
+    border-right: 1px solid #daa520;
+}
+
+.global_goldenrodtxtborder-btn:hover {
     color: #fff;
     background-color: rgba(0,0,0,1);
     border-left: 1px solid #daa520;

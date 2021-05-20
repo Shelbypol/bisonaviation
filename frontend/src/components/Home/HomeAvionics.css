@@ -12,7 +12,7 @@
 
 .AvionicsHome_image {
     background-image: url("./images/fullscreen-slider2.png");
-    background-position: center 45%;
+    background-position: center top;
 }
 
 .AvionicsHome_bg{
@@ -41,9 +41,9 @@
     background-color: rgba(255,255,255,.1);
 }
 
-.AvionicsHome_titles:hover{
-    background-color: rgba(255,255,255,.1);
-}
+/*.AvionicsHome_titles:hover{*/
+/*    background-color: rgba(255,255,255,.1);*/
+/*}*/
 
 .Avionics_text-titles{
     font-size: 1.8vw;
