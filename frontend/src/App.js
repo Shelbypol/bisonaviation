@@ -13,8 +13,8 @@ import PlaceOrderScreen from "./components/Cart/Payment/PlaceOrderScreen";
 import OrderScreen from "./components/Cart/Payment/OrderScreen";
 import UserListScreen from "./components/AdminScreens/UserListScreen";
 import UserEditScreen from "./components/AdminScreens/UserEditScreen";
-import ProductListScreen from "./components/AdminScreens/ProductListScreen";
-import ProductEditScreen from "./components/AdminScreens/ProductEditScreen";
+import AdminScreenProductListScreen from "./components/AdminScreens/AdminScreenProductListScreen";
+import AdminScreensProductEditScreen from "./components/AdminScreens/AdminScreensProductEditScreen";
 import OrderListScreen from "./components/Cart/OrderListScreen";
 import ThankYouScreen from "./components/Cart/Payment/ThankYouScreen";
 import HomeScreen from "./components/Home/HomeScreen";
@@ -58,9 +58,9 @@ const App = () => {
             <Switch>
                 {/*<Route path='/admin/userlist' component={UserListScreen}/>*/}
                 {/*<Route path='/admin/user/:id/edit' component={UserEditScreen}/>*/}
-                {/*<Route path='/admin/productlist' component={ProductListScreen} exact/>*/}
-                {/*<Route path='/admin/productlist/:pageNumber' component={ProductListScreen} exact/>*/}
-                {/*<Route path='/admin/product/:id/edit' component={ProductEditScreen}/>*/}
+                {/*<Route path='/admin/productlist' component={AdminScreenProductListScreen} exact/>*/}
+                {/*<Route path='/admin/productlist/:pageNumber' component={AdminScreenProductListScreen} exact/>*/}
+                {/*<Route path='/admin/product/:id/edit' component={AdminScreensProductEditScreen}/>*/}
                 {/*<Route path='/admin/orderlist' component={OrderListScreen}/>*/}
                 <Route path='/products' component={ProductsScreen} exact/>
                 <Route path='/search/:keyword' component={ProductsScreen} exact/>
@@ -100,9 +100,9 @@ const App = () => {
 
                     <Route path='/admin/userlist' component={UserListScreen}/>
                     <Route path='/admin/user/:id/edit' component={UserEditScreen}/>
-                    <Route path='/admin/productlist' component={ProductListScreen} exact/>
-                    <Route path='/admin/productlist/:pageNumber' component={ProductListScreen} exact/>
-                    <Route path='/admin/product/:id/edit' component={ProductEditScreen}/>
+                    <Route path='/admin/productlist' component={AdminScreenProductListScreen} exact/>
+                    <Route path='/admin/productlist/:pageNumber' component={AdminScreenProductListScreen} exact/>
+                    <Route path='/admin/product/:id/edit' component={AdminScreensProductEditScreen}/>
 
                     {/*<Route path='/admin/orderlist' component={OrderListScreen}/>*/}
 

@@ -67,7 +67,7 @@ const HeaderDesktop = () => {
 
                 {/*/ =========== PROFILE / ADMIN BTNS ============*!/*/}
                 <Col xs={9}
-                     className='sticky-top StickyHeader_right-row ml-auto d-flex justify-content-end StickyHeader_login-btn'
+                     className='sticky-top border-bottom StickyHeader_right-row ml-auto d-flex justify-content-end StickyHeader_login-btn'
                      style={{top: '0'}}
                 >
 
