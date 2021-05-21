@@ -1,6 +1,6 @@
 import React from 'react'
 import AvionicsCarousel from "./AvionicsCarousel";
-import GarminAd from "../GarminBanner/GarminAd";
+import GarminAd from "../GarminAd/GarminAd";
 
 const AvionicsScreen = () => {
     return (

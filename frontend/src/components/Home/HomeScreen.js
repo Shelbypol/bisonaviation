@@ -5,7 +5,7 @@ import HomeAwardBanner from '../../components/Home/HomeAwardBanner'
 import HomeServices from "../../components/Home/HomeServices";
 import HomeMaintenance from "../../components/Home/HomeMaintenance";
 import HomeFlir from "../../components/Home/HomeFlir";
-import GarminAdProductCarousel from "../GarminBanner/GarminAdProductCarousel";
+import GarminAdProductCarousel from "../GarminAd/GarminAdProductCarousel";
 import HomeAvionics from "../../components/Home/HomeAvionics";
 import TestimonialCarousel from "../TestimonialCarousel/TestimonialCarousel"
 
