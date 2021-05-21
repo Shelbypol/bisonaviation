@@ -71,11 +71,11 @@ const AdminScreenProductListScreen = ({history, match}) => {
                     {/*<Container className='bg-transparent text-white min-vh-100 min-vw-100 px-3'>*/}
                     <Row className='align-items-center'>
                         <Col className='d-flex justify-content-start'>
-                            <h4 className='text-white'>Products</h4>
+                            <h4 className='global_white'>Products</h4>
                         </Col>
 
                         <Col className='text-right'>
-                            <Button className='my-3 global_blue-bg' onClick={createProductHandler}>
+                            <Button className='my-3 global_goldenrodtxtborder-btn rounded' onClick={createProductHandler}>
                                 <i className='fas fa-plus'> </i> Create Product
                             </Button>
                         </Col>
@@ -93,51 +93,51 @@ const AdminScreenProductListScreen = ({history, match}) => {
                             <Row className='d-flex justify-content-center'>
                                 <Col md={12} xs={12}>
                                     <Paginate pages={pages} page={page} isAdmin={true}/>
-                                    <Table striped bordered hover responsive className='table-sm bg-light mx-auto'>
+                                    <Table striped bordered hover responsive className='table-sm global_light-transparent mx-auto'>
                                         <thead>
-                                        <tr className=''>
-                                            <th className='border global_gray-bg text-white'>GARMIN PART #</th>
-                                            <th className='border global_gray-bg text-white'>NAME</th>
-                                            <th className='border global_gray-bg text-white'>PRICE</th>
-                                            <th className='border global_gray-bg text-white'>PROMO</th>
-                                            <th className='border global_gray-bg text-white'>AVAILABLE</th>
-                                            <th className='border global_gray-bg text-white'> </th>
+                                        <tr className='global_light-transparent'>
+                                            <th className='global_goldenrodtxtborder-btn'>GARMIN PART #</th>
+                                            <th className='global_goldenrodtxtborder-btn'>NAME</th>
+                                            <th className='global_goldenrodtxtborder-btn'>PRICE</th>
+                                            <th className='global_goldenrodtxtborder-btn'>PROMO</th>
+                                            <th className='global_goldenrodtxtborder-btn'>AVAILABLE</th>
+                                            <th className='global_goldenrodtxtborder-btn'> </th>
                                         </tr>
                                         </thead>
-                                        <tbody>
+                                        <tbody className='global_white'>
                                         {products.map((product => (
                                             <tr key={product._id} className=''>
-                                                <td>{product.partNumber}</td>
-                                                <td>{product.name}</td>
-                                                <td>${product.price}</td>
+                                                <td className='border-right'>{product.partNumber}</td>
+                                                <td className='border-right'>{product.name}</td>
+                                                <td className='border-right'>${product.price}</td>
                                                 {product.isPromo ? (
                                                     <>
-                                                        <td><i className='fal fa-check'
+                                                        <td className='border-right'><i className='fal fa-check'
                                                                style={{color: 'green'}}> </i>&nbsp; {product.isPromoType}
                                                         </td>
                                                     </>
                                                 ) : (
                                                     <>
-                                                        <td style={{color: 'red'}}>X</td>
+                                                        <td className='border-right' style={{color: 'red'}}>X</td>
                                                     </>
                                                 )}
 
                                                 {product.isAvailable ? (
                                                     <>
-                                                        <td><i className='fal fa-check' style={{color: 'green'}}> </i>
+                                                        <td className='border-right'><i className='fal fa-check' style={{color: 'green'}}> </i>
                                                         </td>
                                                     </>
                                                 ) : (
                                                     <>
-                                                        <td style={{color: 'red'}}>X</td>
+                                                        <td className='border-right' style={{color: 'red'}}>X</td>
                                                     </>
                                                 )}
 
 
                                                 <td>
                                                     <LinkContainer to={`/admin/product/${product._id}/edit`}>
-                                                        <Button variant='light' className='btn-sm'>
-                                                            <i className='fas fa-edit'> </i>
+                                                        <Button variant='dark' className='btn-sm'>
+                                                            <i className='fas fa-edit global_goldenrod'> </i>
                                                         </Button>
                                                     </LinkContainer>
 
