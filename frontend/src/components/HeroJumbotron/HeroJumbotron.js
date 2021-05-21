@@ -14,8 +14,7 @@ const HeroJumbotron = ({img, showImg, title, leftTitle}) => {
                          className={`
                          HeroJumbotron_img-title-wrap
                          d-flex
-                         justify-content-sm-start
-                         justify-content-md-center
+                         justify-content-center
                          align-items-center
                          m-0
                          p-0
@@ -23,11 +22,11 @@ const HeroJumbotron = ({img, showImg, title, leftTitle}) => {
                     >
                         {leftTitle ? (
                             <p
-                                className={'HeroJumbotron_title pr-5 ml-auto'}
+                                className={'HeroJumbotron_title global_goldenrodtxtborder-btn'}
                             >{title}</p>
                         ):(
                         <p
-                            className={'HeroJumbotron_title pr-5 mr-5'}
+                            className={'HeroJumbotron_title  global_goldenrodtxtborder-btn'}
                         >{title}</p>
 
                         )}

@@ -111,6 +111,14 @@ p{
     background-color: #daa520;
 }
 
+.global_goldenrod-border-left{
+    border-left: 1px solid #daa520;
+}
+
+.global_goldenrod-border-right{
+    border-right: 1px solid #daa520;
+}
+
 /* =========    LIGHT GRAY*/
 .global_light-transparent{
     background-color: rgba(255, 255, 255, .1);

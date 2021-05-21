@@ -1,18 +1,18 @@
 import React from 'react'
 import './Contact.css'
-import {Jumbotron, Container} from "reactstrap";
+import HeroJumbotron from "../HeroJumbotron/HeroJumbotron";
+
 
 
 const ContactHero = () => {
 
     return (
-
-        <Jumbotron className='ContactScreen_hero-img '
-                   fluid>
-            <Container className='text-center border-5 ContactHero_title-box'>
-                <p className='ContactHero_title'>Get In Touch!</p>
-            </Container>
-        </Jumbotron>
+        <HeroJumbotron
+            img={'Contact_hero-img'}
+            showImg={true}
+            title={'Contact'}
+            leftTitle={false}
+        />
 
     )
 };

@@ -1,5 +1,5 @@
-.ContactScreen_hero-img{
-    background-image: url("./images/contact-section-bg.png");
+.Contact_hero-img{
+    /*background-image: url("src/components/Contact/contact-section-bg.png");*/
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 200px;
@@ -7,6 +7,12 @@
     width: 100vw;
     background-color: black;
 }
+
+.Contact_hero-img{
+    background-image: url("./contact-section-bg.png");
+    background-position: 50% 55%;
+}
+
 
 .Contact_border{
     border-left: 1px solid #2576e5;
@@ -16,12 +22,11 @@
 
 .Contact_icons{
     font-size: 2.5vw;
-    color: white;
-    /*color: #2576e5;*/
+    /*color: #daa520;*/
+    /*color: rgba(255,255,255,.5)*/
 }
 
 .Contact_icons-title{
-    color: #2576e5;
     font-size: 1.5vw;
 }
 
@@ -31,11 +36,11 @@
     text-align: center;
 }
 
-.ContactHero_title-box{
+.Contact_hero-title-box{
     width: 30vw;
 }
 
-.ContactHero_title{
+.Contact_hero-title{
     font-size: 4vw;
     color: #660708;
 }
