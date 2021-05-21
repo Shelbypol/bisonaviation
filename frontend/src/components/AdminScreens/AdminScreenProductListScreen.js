@@ -71,16 +71,14 @@ const AdminScreenProductListScreen = ({history, match}) => {
                 <Row className='d-flex justify-content-center bg-transparent text-white my-5'>
                     <Col lg={10} xs={12}>
                         <Row className='align-items-center'>
-                            <Col xs={12} className='d-flex justify-content-start'>
-                                <h4 className='global_white'>Products</h4>
-                            </Col>
-
                             <Col xs={12} className='d-flex justify-content-start d-lg-none d-block global_blood-red-bg'>
                                 <h3 className='global_white text-center'>rotate phone to view entire chart</h3>
                             </Col>
+                            <Col md={6} xs={12} className='d-flex justify-content-start mt-1'>
+                                <h4 className='global_white'>Products</h4>
+                            </Col>
 
-
-                            <Col className='text-right'>
+                            <Col md={6} xs={12} className='d-flex justify-content-md-end justify-content-sm-start'>
                                 <Button className='my-3 global_goldenrodtxtborder-btn rounded'
                                         onClick={createProductHandler}>
                                     <i className='fas fa-plus'> </i> Create Product
