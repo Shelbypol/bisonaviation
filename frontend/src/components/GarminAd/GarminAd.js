@@ -17,7 +17,7 @@ const GarminAd = () => {
                             <Image src={garminad} fluid/>
                         </Fade>
                     </Col>
-                    <Col md={9} xs={12} className='d-flex justify-content-center'>
+                    <Col md={10} xs={12} className='d-flex justify-content-center'>
                         <Fade duration={1500} top>
                             <LinkContainer to={`/products`}>
                                 <Button className='GarminAd_browse-products-btn global_blood-red-bg py-3  '>Browse

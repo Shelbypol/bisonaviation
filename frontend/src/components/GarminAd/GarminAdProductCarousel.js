@@ -10,10 +10,10 @@ import ProductCarousel from "../ProductCarousel/ProductCarousel";
 const GarminAdProductCarousel = () => {
     return (
         <Row className='d-flex justify-content-center bg-white'>
-            <Col md={8} xs={12} className='d-flex align-content-center m-0 p-0'>
+            <Col md={7} xs={12} className='d-flex align-content-center m-0 p-0'>
                 <GarminAd/>
             </Col>
-            <Col md={4} xs={12} className='bg-white d-flex justify-content-center m-0 p-0'>
+            <Col md={5} xs={12} className='bg-white d-flex justify-content-center m-0 p-0'>
                 <Fade duration={1500} right>
                     <ProductCarousel/>
                 </Fade>
