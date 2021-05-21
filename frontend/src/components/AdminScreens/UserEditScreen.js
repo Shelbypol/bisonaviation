@@ -73,18 +73,20 @@ const UserEditScreen = ({match, history}) => {
                             {loading ? <Loader/> : error ? <Message variant='danger'>{error}</Message> : (
                                 <Form onSubmit={submitHandler}>
                                     <Form.Group controlId='name'>
-                                        <Form.Label>Name</Form.Label>
+                                        <Form.Label className='global_goldenrod'>Name</Form.Label>
                                         <Form.Control type='name'
                                                       placeholder='Enter name'
+                                                      className='global_light-transparent global_white'
                                                       value={name}
                                                       onChange={(e) => setName(e.target.value)}>
                                         </Form.Control>
                                     </Form.Group>
 
                                     <Form.Group controlId='email'>
-                                        <Form.Label>Email Address</Form.Label>
+                                        <Form.Label className='global_goldenrod'>Email Address</Form.Label>
                                         <Form.Control type='email'
                                                       placeholder='Enter email'
+                                                      className='global_light-transparent global_white'
                                                       value={email}
                                                       onChange={(e) => setEmail(e.target.value)}>
                                         </Form.Control>
@@ -98,7 +100,7 @@ const UserEditScreen = ({match, history}) => {
                                         </Form.Check>
                                     </Form.Group>
 
-                                    <Button type='submit' variant='primary global_blue-bg'>Update</Button>
+                                    <Button type='submit' variant='primary global_goldenrodtxtborder-btn rounded'>Update</Button>
                                 </Form>
                             )}
                         {/*</FormContainer>*/}

@@ -1,6 +1,6 @@
 import React, {useEffect, useLayoutEffect} from 'react'
 import {LinkContainer} from 'react-router-bootstrap'
-import {Table, Button, Col, Row} from 'react-bootstrap'
+import {Table, Button, Col, Row, Container} from 'react-bootstrap'
 import {useDispatch, useSelector} from 'react-redux'
 import Message from '../Message'
 import Loader from '../Loader'
@@ -41,15 +41,18 @@ const UserListScreen = ({history}) => {
 
     return (
         <>
-            <Row className='d-flex justify-content-center bg-transparent text-white my-5'>
-                <Col lg={9} xs={12}>
-                    {/*<Container className='bg-transparent text-white min-vh-100 min-vw-100 px-3'>*/}
+            <Container className=' bg-transparent text-white  min-vh-100 min-vw-100'>
+
+                <Row className='d-flex justify-content-center bg-transparent text-white my-5'>
+                    <Col lg={9} xs={12}>
+                        {/*<Container className='bg-transparent text-white min-vh-100 min-vw-100 px-3'>*/}
                         <h4 className='text-white my-3'>Users</h4>
                         {loading ? <Loader/> : error ? <Message variant='danger'>{error}</Message>
                             : (
                                 <Row className='d-flex justify-content-center'>
                                     <Col md={12} xs={12}>
-                                        <Table striped bordered hover responsive className='table-sm global_light-transparent mx-auto'>
+                                        <Table striped bordered hover responsive
+                                               className='table-sm global_light-transparent mx-auto'>
                                             <thead>
                                             <tr>
                                                 <th className='global_goldenrodtxtborder-btn'>ID</th>
@@ -64,7 +67,8 @@ const UserListScreen = ({history}) => {
                                                 <tr key={user._id}>
                                                     <td className='border-right'>{user._id}</td>
                                                     <td className='border-right'>{user.name}</td>
-                                                    <td className='border-right'><a href={`mailto:${user.email}`}>{user.email}</a></td>
+                                                    <td className='border-right'><a
+                                                        href={`mailto:${user.email}`}>{user.email}</a></td>
                                                     <td className='border-right'>
                                                         {user.isAdmin
                                                             ? (<i className='fas fa-check'
@@ -74,12 +78,13 @@ const UserListScreen = ({history}) => {
                                                     </td>
                                                     <td className='d-flex justify-content-between'>
                                                         <LinkContainer to={`/admin/user/${user._id}/edit`}>
-                                                            <Button variant='light' className='btn-sm global_light-transparent global_goldenrodtxt-btn'>
+                                                            <Button variant='light'
+                                                                    className='btn-sm global_light-transparent global_goldenrodtxt-btn'>
                                                                 <i className='fas fa-edit'> </i>
                                                             </Button>
                                                         </LinkContainer>
-                                                    {/*</td>*/}
-                                                    {/*<td className=' border-0'>*/}
+                                                        {/*</td>*/}
+                                                        {/*<td className=' border-0'>*/}
                                                         <Button className='btn-sm global_blood-red-bg'
                                                                 onClick={() => deleteHandler(user._id)}>
                                                             <i className='fas fa-trash'> </i>
@@ -92,9 +97,10 @@ const UserListScreen = ({history}) => {
                                     </Col>
                                 </Row>
                             )}
-                    {/*</Container>*/}
-                </Col>
-            </Row>
+                        {/*</Container>*/}
+                    </Col>
+                </Row>
+            </Container>
         </>
     )
 };

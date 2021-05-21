@@ -110,7 +110,7 @@ const AdminScreensProductEditScreen = ({match, history}) => {
 
     return (
         <>
-        <Container className='bg-transparent text-white min-vh-100 min-vw-100 pt-5'>
+        <Container className='bg-transparent text-white min-vh-100 min-vw-100 py-5'>
             {/*<Row className='my-0 px-3 py-5'>*/}
             {/*    <Col xs={10} className='d-flex justify-content-start'>*/}
             {/*        <h4 className='text-white'>Edit Product</h4>*/}
@@ -285,7 +285,7 @@ const AdminScreensProductEditScreen = ({match, history}) => {
 
 
                     </Row>
-                    <Row className='p-0 mb-2 d-flex justify-content-center'>
+                    <Row className='p-0 mb-5 d-flex justify-content-center'>
                         <Col xs={4} className=' m-0 d-flex justify-content-center'>
                             <Button type='submit' variant='primary' className='w-100 global_goldenrodtxtborder-btn rounded '>
                                 Update
