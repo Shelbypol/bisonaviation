@@ -3,7 +3,7 @@ import Fade from 'react-reveal/Fade';
 import {Col, Row} from "react-bootstrap";
 import GarminAd from "./GarminAd";
 import './GarminAd.css';
-import './GarminAdFlag.scss';
+import './GarminAd.scss';
 
 import ProductCarousel from "../ProductCarousel/ProductCarousel";
 

@@ -1,12 +1,4 @@
-.AvionicsProducts_jumbo {
-    z-index: 200;
-}
-
-.AvionicsProducts_jumbo-left {
-    margin-top: 5em;
-}
-
-.AvionicsProducts_img-left {
+.GarminAd_img {
     background-image: url("./garmin-dealer-cropped.png");
     height: 224px;
     width: 650px;
@@ -14,13 +6,7 @@
     background-position: center 45%;
 }
 
-.AvionicsProducts_img-right {
-    background-image: url("./jd-roel.png");
-    background-repeat: no-repeat;
-    background-position: 5% 20%;
-}
-
-.AvionicsProducts_searchBtn {
+.GarminAd_browse-products-btn {
     color: #F5F3F4;
     font-size: 16px;
     font-weight: lighter;
@@ -29,7 +15,7 @@
     margin-top: 18vh;
 }
 
-.AvionicsProducts_searchBtn:hover {
+.GarminAd_browse-products-btn:hover {
     background-color: #161A1D;
     font-weight: lighter;
     border: none;
@@ -39,7 +25,7 @@
 @media (max-width: 600px) {
 
 
-    .AvionicsProducts_img-left {
+    .GarminAd_img {
         background-position: center 50% ;
     }
 
