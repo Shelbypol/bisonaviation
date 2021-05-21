@@ -12,7 +12,7 @@ const AvionicsImg = () => {
 
 
         <>
-            <Jumbotron id='home-avionics' className='global_cultured-bg global_rich-black p-0 m-0'
+            <Jumbotron id='home-avionics' className='global_white-bg global_rich-black p-0 m-0'
                        fluid>
 
                 <Row className='d-flex align-items-center pb-5 pl-5'>
@@ -23,7 +23,7 @@ const AvionicsImg = () => {
                                 <Col xs={12}>
                                     <Zoom>
                                         <Col className='py-3'>
-                                            <h4 className='global_eerie-black'>Panel Upgrades</h4>
+                                            <h4 className='global_black'>Panel Upgrades</h4>
                                         </Col>
                                     </Zoom>
                                 </Col>
@@ -79,7 +79,7 @@ const AvionicsImg = () => {
                                             </Col>
                                         </Row>
 
-                                        <hr className='global_rich-black-bg'/>
+                                        <hr className='global_black-bg'/>
 
                                     </Col>
 
@@ -93,7 +93,7 @@ const AvionicsImg = () => {
                                 <Col xs={12}>
                                     <Zoom>
                                         <Col className='py-3'>
-                                            <h4 className='global_eerie-black'>Tests, Checks & Repairs</h4>
+                                            <h4 className='global_black'>Tests, Checks & Repairs</h4>
                                         </Col>
                                     </Zoom>
                                 </Col>
@@ -133,7 +133,7 @@ const AvionicsImg = () => {
                                                             <p className='global_accentFont'>routine static system</p>
                                                         </Col>
                                                     </Zoom>
-                                                    <hr className='global_rich-black-bg'/>
+                                                    <hr className='global_black-bg'/>
                                                 </Col>
                                             </Col>
 

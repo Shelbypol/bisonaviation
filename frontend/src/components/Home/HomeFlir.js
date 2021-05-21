@@ -11,7 +11,7 @@ import Fade from "react-reveal/Fade";
 const HomeFlir = () => {
     return (
         <>
-            <Row className=' global_white m-0 p-0'>
+            <Row className=' global_white m-0 p-0 d-flex justify-content-between'>
                 {/*<Col xs={12} className='m-0 p-0'>*/}
                 <Col xs={12} className=' p-0 mt-5 mx-0 mb-0'>
             {/*<Row className=' global_white d-flex justify-content-center align-content-center'>*/}
@@ -35,9 +35,9 @@ const HomeFlir = () => {
                         {/*</Fade>*/}
                     </Row>
 
-                    <Row className='my-5 d-flex justify-content-between'>
+                    <Row className='my-5 mx-0 px-0 d-flex justify-content-between'>
 
-                        <Col xs={8} className='' >
+                        <Col xs={8} className='m-0 p-0' >
                             <Zoom>
 
                                 <Col xs={12} className=' mx-0 px-0'>
@@ -74,10 +74,10 @@ const HomeFlir = () => {
                         </Col>
 
 
-                        <Col xs={4} className='p-0 m-0 d-flex align-content-center justify-content-end'>
+                        <Col xs={4} className='pl-5'>
                             <LinkContainer to={`/mechanics`}>
                                 <Col xs={12}
-                                     className=' global_cursor d-flex align-items-center '>
+                                     className='m-0 p-0 global_cursor d-flex align-items-center '>
                                     <Zoom>
 
                                         <Card className='Avionics_card border-0 bg-transparent rounded'>

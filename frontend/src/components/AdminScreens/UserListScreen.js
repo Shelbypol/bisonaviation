@@ -1,11 +1,10 @@
 import React, {useEffect, useLayoutEffect} from 'react'
 import {LinkContainer} from 'react-router-bootstrap'
-import {Table, Button, Container, Col, Row} from 'react-bootstrap'
+import {Table, Button, Col, Row, Container} from 'react-bootstrap'
 import {useDispatch, useSelector} from 'react-redux'
 import Message from '../Message'
 import Loader from '../Loader'
 import {listUsers, deleteUser} from "../../actions/userActions"
-import HeaderDesktop from "../HeaderFooter/HeaderDesktop";
 import Paginate from "../Paginate";
 
 const UserListScreen = ({history}) => {
@@ -42,48 +41,63 @@ const UserListScreen = ({history}) => {
 
     return (
         <>
-            <Row className='d-flex justify-content-center bg-transparent text-white my-5'>
-                <Col lg={9} xs={12}>
-                    {/*<Container className='bg-transparent text-white min-vh-100 min-vw-100 px-3'>*/}
+            <Container className='m-0 p-0 bg-transparent text-white  min-vh-100 min-vw-100'>
+
+                <Row className='d-flex justify-content-center bg-transparent text-white my-5'>
+                    <Col lg={9} xs={12}>
                         <h4 className='text-white my-3'>Users</h4>
+
+                        <Col xs={12} className='d-flex justify-content-start d-lg-none d-block global_blood-red-bg'>
+                            <h3 className='global_white text-center'>rotate phone to view entire chart</h3>
+                        </Col>
+
                         {loading ? <Loader/> : error ? <Message variant='danger'>{error}</Message>
                             : (
                                 <Row className='d-flex justify-content-center'>
                                     <Col md={12} xs={12}>
-                                        <Table striped bordered hover responsive className='table-sm bg-light mx-auto'>
+                                        <Table striped bordered hover responsive
+                                               className='table-sm global_light-transparent m-0 p-0'>
                                             <thead>
                                             <tr>
-                                                <th className='border global_gray-bg text-white'>ID</th>
-                                                <th className='border global_gray-bg text-white'>NAME</th>
-                                                <th className='border global_gray-bg text-white'>EMAIL</th>
-                                                <th className='border border-left global_gray-bg text-white'>ADMIN</th>
-                                                <th className='border global_gray-bg text-white'> </th>
+                                                {/*<th className='global_goldenrodtxtborder-btn'>ID</th>*/}
+                                                <th className='global_goldenrodtxtborder-btn'>NAME</th>
+                                                <th className='global_goldenrodtxtborder-btn'>EMAIL</th>
+                                                <th className='global_goldenrodtxtborder-btn'>ADMIN</th>
+                                                <th className='global_goldenrodtxtborder-btn border-0'>EDIT</th>
                                             </tr>
                                             </thead>
-                                            <tbody>
+                                            <tbody className='global_white'>
                                             {users.map((user => (
                                                 <tr key={user._id}>
-                                                    <td>{user._id}</td>
-                                                    <td>{user.name}</td>
-                                                    <td><a href={`mailto:${user.email}`}>{user.email}</a></td>
-                                                    <td>
+                                                    {/*<td className='border-right'>{user._id}</td>*/}
+                                                    <td className='border-right'>{user.name}</td>
+                                                    <td className='border-right'><a
+                                                        href={`mailto:${user.email}`}>{user.email}</a></td>
+                                                    <td className='border-right'>
                                                         {user.isAdmin
                                                             ? (<i className='fas fa-check'
                                                                   style={{color: 'green'}}> </i>)
                                                             : (<i className='fas fa-times' style={{color: 'red'}}> </i>
                                                             )}
                                                     </td>
-                                                    <td>
-                                                        <LinkContainer to={`/admin/user/${user._id}/edit`}>
-                                                            <Button variant='light' className='btn-sm'>
-                                                                <i className='fas fa-edit'> </i>
-                                                            </Button>
-                                                        </LinkContainer>
+                                                    <td className=''>
+                                                        <Row className='m-0 p-0 '>
+                                                            <Col className='m-0 p-0'>
+                                                                <LinkContainer to={`/admin/user/${user._id}/edit`}>
+                                                                    <Button variant='light'
+                                                                            className='btn-sm global_light-transparent global_goldenrodtxt-btn'>
+                                                                        <i className='fas fa-edit'> </i>
+                                                                    </Button>
+                                                                </LinkContainer>
+                                                            </Col>
+                                                            <Col className='m-0 p-0'>
+                                                                <Button className='btn-sm global_blood-red-bg'
+                                                                        onClick={() => deleteHandler(user._id)}>
+                                                                    <i className='fas fa-trash'> </i>
+                                                                </Button>
 
-                                                        <Button variant='danger' className='btn-sm'
-                                                                onClick={() => deleteHandler(user._id)}>
-                                                            <i className='fas fa-trash'> </i>
-                                                        </Button>
+                                                            </Col>
+                                                        </Row>
 
                                                     </td>
                                                 </tr>
@@ -93,9 +107,9 @@ const UserListScreen = ({history}) => {
                                     </Col>
                                 </Row>
                             )}
-                    {/*</Container>*/}
-                </Col>
-            </Row>
+                    </Col>
+                </Row>
+            </Container>
         </>
     )
 };

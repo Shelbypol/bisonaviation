@@ -15,7 +15,7 @@ const AvionicsIcons = (props) => {
                 <Col className='col-sm-6'>
 
                     <Col className='my-4 pb-4'>
-                        <AlertDismissible icon={<i className='fas fa-bolt' style={{color: 'white'}}/>}
+                        <AlertDismissible icon={<i className='fas fa-bolt global_white'/>}
                                           title={'HomeAvionics Installations'}
                                           note={'From transponder' +
                                           ' upgrades to glass panel retrofits, the Bison Aviation avionics team is ready to take on your next ' +
@@ -23,7 +23,7 @@ const AvionicsIcons = (props) => {
                     </Col>
 
                     <Col className='my-4 pb-4'>
-                        <AlertDismissible icon={<i className='fas fa-bug' style={{color: 'white'}}/>}
+                        <AlertDismissible icon={<i className='fas fa-bug global_white'/>}
                                           title={'HomeAvionics Repair'}
                                           note={'Already have a great panel, but things aren\'t working the way they should?' +
                                           ' Stop flying "partial panel" and let the Bison Aviation avionics team bring your ' +
@@ -31,7 +31,7 @@ const AvionicsIcons = (props) => {
                     </Col>
 
                     <Col className='my-4 pb-4'>
-                        <AlertDismissible icon={<i className='far fa-check-square' style={{color: 'white'}}/>}
+                        <AlertDismissible icon={<i className='far fa-check-square global_white'/>}
                                           title={'Biennial 91.411 & 91.413'}
                                           title2={'Re-certification'}
                                           note={'It happens like clockwork - every 24 months your static system and ' +
@@ -45,7 +45,7 @@ const AvionicsIcons = (props) => {
                 <Col className='col-sm-6'>
 
                     <Col className='my-4 pb-4'>
-                        <AlertDismissible icon={<i className='fas fa-bullseye' style={{color: 'white'}}/>}
+                        <AlertDismissible icon={<i className='fas fa-bullseye global_white' />}
                                           title={'ADS-B Upgrades'}
                                           note={'\nWe all know that time is running out to comply with the FAA\'s 2020 ' +
                                           'mandate. Bison Aviation\'s avionics team can make sure you\'re still flying on ' +
@@ -53,7 +53,7 @@ const AvionicsIcons = (props) => {
                     </Col>
 
                     <Col className='my-4 pb-4'>
-                        <AlertDismissible icon={<i className='fas fa-cogs' style={{color: 'white'}}/>}
+                        <AlertDismissible icon={<i className='fas fa-cogs global_white'/>}
                                           title={'Cutting-Edge Technology'}
                                           note={'\nBison Aviation\'s avionics team utilizes some of the newest technology ' +
                                           'available in the industry, including CNC machining, 3D printing & scanning, ' +
@@ -61,7 +61,7 @@ const AvionicsIcons = (props) => {
                     </Col>
 
                     <Col className='my-4 pb-4'>
-                        <AlertDismissible icon={<i className='fas fa-tachometer-alt' style={{color: 'white'}}/>}
+                        <AlertDismissible icon={<i className='fas fa-tachometer-alt global_white'/>}
                                           title={'RVSM Ready'}
                                           note={'If your RVSM aircraft is due for recertification or if a component in ' +
                                           'your RVSM certified altitude reporting system has failed, Bison Aviation\'s ' +

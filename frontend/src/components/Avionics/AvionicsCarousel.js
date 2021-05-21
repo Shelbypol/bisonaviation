@@ -6,14 +6,14 @@ const AvionicsCarousel = () => {
 
     return (
         <HeroCarousel
-            IDslide1={'AvionicsHero_carouselImg1'}
+            IDslide1={'AvionicsCarousel_carouselImg1'}
             slide1firstTitleLetter={'A'}
             slide1firstTitleWord={'VIONICS'}
             slide1firstSentence={'ARE YOU READY FOR THE ULTIMATE PANEL MAKEOVER?'}
             slide1secondSentenceTrue={false}
             slide1secondSentence={''}
 
-            IDslide2={'AvionicsHero_carouselImg2'}
+            IDslide2={'AvionicsCarousel_carouselImg2'}
             carouselImg2True={true}
             slide2firstTitleLetter={'E'}
             slide2firstTitleWord={'XPERT SERVICE'}
@@ -21,7 +21,7 @@ const AvionicsCarousel = () => {
             slide2secondSentenceTrue={false}
             slide2secondSentence={''}
 
-            IDslide3={'AvionicsHero_carouselImg3'}
+            IDslide3={'AvionicsCarousel_carouselImg3'}
             carouselImg3True={true}
             slide3firstTitleLetter={'L'}
             slide3firstTitleWord={'ATEST TECHNOLOGY'}
@@ -29,7 +29,7 @@ const AvionicsCarousel = () => {
             slide3secondSentenceTrue={true}
             slide3secondSentence={'LASER CUTTING & ENGRAVING & MORE'}
 
-            IDslide4={'AvionicsHero_carouselImg4'}
+            IDslide4={'AvionicsCarousel_carouselImg4'}
             carouselImg4True={true}
             slide4firstTitleLetter={'T'}
             slide4firstTitleWord={'HE RIGHT EQUIPMENT'}
@@ -37,7 +37,7 @@ const AvionicsCarousel = () => {
             slide4secondSentenceTrue={true}
             slide4secondSentence={'FOR THE MOST DEMANDING TASKS!'}
 
-            IDslide5={'AvionicsHero_carouselImg5'}
+            IDslide5={'AvionicsCarousel_carouselImg5'}
             carouselImg5True={false}
             slide5firstTitleLetter={'F'}
             slide5firstTitleWord={'rom minor repairs...'}

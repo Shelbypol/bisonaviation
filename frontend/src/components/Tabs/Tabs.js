@@ -27,31 +27,31 @@ const Tabs = ({
 
 
     return (
-        <Tab.Container id="list-group-tabs-example" defaultActiveKey="#link1">
-            <Row>
-                <Col sm={4}>
-                    <Col sm={12} className='mb-0 pb-0'>
+        <Tab.Container id="list-group-tabs-example" defaultActiveKey="#link1" className='mx-0 px-0'>
+            <Row className='mx-0 px-0'>
+                <Col sm={4} className='mx-0 px-0'>
+                    <Col sm={12} className='mx-0 px-0 mb-0 pb-0'>
                         <ListGroup>
-                            <ListGroup.Item className='Tabs_itemStyle' action href="#link1">
+                            <ListGroup.Item className='Tabs_itemStyle global_goldenrodtxtborder-btn' action href="#link1">
                                 {tabOne}
                             </ListGroup.Item>
                             {twoTrue && (
-                                <ListGroup.Item className='Tabs_itemStyle' action href="#link2">
+                                <ListGroup.Item className='Tabs_itemStyle global_goldenrodtxtborder-btn' action href="#link2">
                                     {tabTwo}
                                 </ListGroup.Item>
                             )}
                             {threeTrue && (
-                                <ListGroup.Item className='Tabs_itemStyle' action href="#link3">
+                                <ListGroup.Item className='Tabs_itemStyle global_goldenrodtxtborder-btn' action href="#link3">
                                     {tabThree}
                                 </ListGroup.Item>
                             )}
                             {fourTrue && (
-                                <ListGroup.Item className='Tabs_itemStyle' action href="#link4">
+                                <ListGroup.Item className='Tabs_itemStyle global_goldenrodtxtborder-btn' action href="#link4">
                                     {tabFour}
                                 </ListGroup.Item>
                             )}
                             {fiveTrue && (
-                                <ListGroup.Item className='Tabs_itemStyle' action href="#link5">
+                                <ListGroup.Item className='Tabs_itemStyle global_goldenrodtxtborder-btn' action href="#link5">
                                     {tabFive}
                                 </ListGroup.Item>
                             )}
@@ -64,7 +64,7 @@ const Tabs = ({
 
                         <Tab.Content className='bg-transparent text-center mt-3'>
                             <Tab.Pane eventKey="#link1">
-                                <Image src={tabOneImg} fluid rounded/>
+                                <Image src={tabOneImg} className='h-75 w-75' fluid rounded/>
                             </Tab.Pane>
                         </Tab.Content>
 
@@ -72,7 +72,7 @@ const Tabs = ({
                         {twoTrue && (
                             <Tab.Content className='bg-transparent text-center mt-3'>
                                 <Tab.Pane eventKey="#link2">
-                                    <Image src={tabTwoImg} rounded/>
+                                    <Image src={tabTwoImg} className='h-75 w-75' rounded/>
                                 </Tab.Pane>
                             </Tab.Content>
                         )}
@@ -81,7 +81,7 @@ const Tabs = ({
                         {tabThree && (
                             <Tab.Content className='bg-transparent text-center mt-3'>
                                 <Tab.Pane eventKey="#link3">
-                                    <Image src={tabThreeImg} rounded/>
+                                    <Image src={tabThreeImg} className='h-75 w-75' rounded/>
                                 </Tab.Pane>
                             </Tab.Content>
                         )}
@@ -90,7 +90,7 @@ const Tabs = ({
                         {tabFour && (
                             <Tab.Content className='bg-transparent text-center mt-3'>
                                 <Tab.Pane eventKey="#link4">
-                                    <Image src={tabFourImg} rounded/>
+                                    <Image src={tabFourImg} className='h-75 w-75' rounded/>
                                 </Tab.Pane>
                             </Tab.Content>
                         )}
@@ -99,7 +99,7 @@ const Tabs = ({
                         {tabFive && (
                             <Tab.Content className='bg-transparent text-center mt-3'>
                                 <Tab.Pane eventKey="#link5">
-                                    <Image src={tabFiveImg} rounded/>
+                                    <Image src={tabFiveImg} className='h-75 w-75' rounded/>
                                 </Tab.Pane>
                             </Tab.Content>
                         )}
