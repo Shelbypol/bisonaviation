@@ -13,10 +13,10 @@ const FlirText = () => {
     return (
         <>
             <Tabs
-
-                                    // TAB 1
+                // TAB 1
+                className='global_goldenrodtxtborder-btn mx-0 px-0'
                 tabOne={' Maintenance:'}
-                tabOneInfo={'Bison Aviation provides full maintenance and support for all airborne EO/IR and FLIR systems, including legacy models such as the FLIR Series 2000, 3000, 4000, Ultra 6000, Ultra 7000, Ultra 7500, Ultra 8000, Ultra 8500 and SAFIRE series. We also support the Inframetrics Mk I, Mk II, and Mk III systems, along with all systems from Polytech, SweSystems, Agema, Wescam, and Gyrocam. Our support services are backed by the world\'s largest inventory of legacy FLIR & EO/IR system parts, comprised of OEM components, after-market accessories, and of course, complete flight-ready systems.\n' +
+                tabOneInfo={ 'Bison Aviation provides full maintenance and support for all airborne EO/IR and FLIR systems, including legacy models such as the FLIR Series 2000, 3000, 4000, Ultra 6000, Ultra 7000, Ultra 7500, Ultra 8000, Ultra 8500 and SAFIRE series. We also support the Inframetrics Mk I, Mk II, and Mk III systems, along with all systems from Polytech, SweSystems, Agema, Wescam, and Gyrocam. Our support services are backed by the world\'s largest inventory of legacy FLIR & EO/IR system parts, comprised of OEM components, after-market accessories, and of course, complete flight-ready systems.\n' +
                 '\n' +
                 'By performing component level repairs, Bison Aviation is able to save customers thousands of dollars. Rental and loaner systems are available in many cases where downtime is simply not an option. Customers ranging from private operators and local municipalities to federal agencies and military forces throughout the world trust Bison Aviation to keep their FLIR / TIS / EO/IR equipment operating in top condition.\n' +
                 '\n' +
@@ -53,13 +53,13 @@ const FlirText = () => {
 
         <Row className='mt-5'>
             <Col xs={12} >
-                <h3 className='FlirScreen_Title'>If you're looking for FLIR parts, you've come to the right place!</h3>
+                <h3 className='FlirScreen_Title global_goldenrod global_goldenrod-border-left pl-2'>If you're looking for FLIR parts, you've come to the right place!</h3>
             </Col>
             <Col xs={12} className='text-white'>
                 <p>Bison Aviation is proud to stock the largest in-house inventory of legacy FLIR and EO/IR system parts in the world. Below is a small sample of our airborne EO/IR equipment inventory. If you don't see the part you need, please contact us; chances are we have it in stock.</p>
             </Col>
             <Col xs={12}>
-                <h5 className='FlirScreen_Title'>Surplus Equipment Purchasing</h5>
+                <h5 className='FlirScreen_Title global_goldenrod'>Surplus Equipment Purchasing</h5>
             </Col>
             <Col xs={12} className='text-white'>
                 <p>

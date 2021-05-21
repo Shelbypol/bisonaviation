@@ -156,13 +156,13 @@ const ContactInfo = () => {
                     </Col>
                     <Col xs={12} className='text-center my-5'>
                         <LinkContainer to='/terms'>
-                            <span className='global_goldenrodtxt-btn global_cursor Contact_hover-terms px-3'>
+                            <span className=' global_cursor Contact_hover-terms px-3'>
                               GENERAL TERMS AND CONDITIONS
                             </span>
                         </LinkContainer>
                         <br/>
                         <LinkContainer to='/flir-terms'>
-                            <span className='global_goldenrodtxt-btn global_cursor Contact_hover-terms px-3'>
+                            <span className=' global_cursor Contact_hover-terms px-3'>
                               FLIR TERMS AND CONDITIONS
                             </span>
                         </LinkContainer>
