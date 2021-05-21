@@ -69,7 +69,7 @@ const AdminScreenProductListScreen = ({history, match}) => {
             <Container className=' bg-transparent text-white  min-vh-100 min-vw-100'>
 
                 <Row className='d-flex justify-content-center bg-transparent text-white my-5'>
-                    <Col lg={9} xs={12}>
+                    <Col lg={10} xs={12}>
                         <Row className='align-items-center'>
                             <Col className='d-flex justify-content-start'>
                                 <h4 className='global_white'>Products</h4>
@@ -104,7 +104,7 @@ const AdminScreenProductListScreen = ({history, match}) => {
                                                 <th className='global_goldenrodtxtborder-btn'>PRICE</th>
                                                 <th className='global_goldenrodtxtborder-btn'>PROMO</th>
                                                 <th className='global_goldenrodtxtborder-btn'>AVAILABLE</th>
-                                                <th className='global_goldenrodtxtborder-btn'> </th>
+                                                <th className='global_goldenrodtxtborder-btn'>EDIT </th>
                                             </tr>
                                             </thead>
                                             <tbody className='global_white'>
@@ -137,20 +137,28 @@ const AdminScreenProductListScreen = ({history, match}) => {
                                                         </>
                                                     )}
 
+                                                    <td className=''>
+                                                        <Row className='m-0 p-0 '>
+                                                            <Col className='m-0 p-0'>
+                                                                <LinkContainer to={`/admin/product/${product._id}/edit`}>
+                                                                    <Button variant='light'
+                                                                            className='btn-sm global_light-transparent global_goldenrodtxt-btn'>
+                                                                        <i className='fas fa-edit'> </i>
+                                                                    </Button>
+                                                                </LinkContainer>
+                                                            </Col>
+                                                            <Col className='m-0 p-0'>
+                                                                <Button className='btn-sm global_blood-red-bg'
+                                                                        onClick={() => deleteHandler(product._id)}>
+                                                                    <i className='fas fa-trash'> </i>
+                                                                </Button>
 
-                                                    <td>
-                                                        <LinkContainer to={`/admin/product/${product._id}/edit`}>
-                                                            <Button variant='dark' className='btn-sm'>
-                                                                <i className='fas fa-edit global_goldenrod'> </i>
-                                                            </Button>
-                                                        </LinkContainer>
-
-                                                        <Button variant='danger' className='btn-sm'
-                                                                onClick={() => deleteHandler(product._id)}>
-                                                            <i className='fas fa-trash'> </i>
-                                                        </Button>
+                                                            </Col>
+                                                        </Row>
 
                                                     </td>
+
+
                                                 </tr>
                                             )))}
                                             </tbody>

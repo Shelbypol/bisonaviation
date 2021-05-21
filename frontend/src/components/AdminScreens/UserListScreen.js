@@ -45,14 +45,13 @@ const UserListScreen = ({history}) => {
 
                 <Row className='d-flex justify-content-center bg-transparent text-white my-5'>
                     <Col lg={9} xs={12}>
-                        {/*<Container className='bg-transparent text-white min-vh-100 min-vw-100 px-3'>*/}
                         <h4 className='text-white my-3'>Users</h4>
                         {loading ? <Loader/> : error ? <Message variant='danger'>{error}</Message>
                             : (
                                 <Row className='d-flex justify-content-center'>
                                     <Col md={12} xs={12}>
                                         <Table striped bordered hover responsive
-                                               className='table-sm global_light-transparent mx-auto'>
+                                               className='table-sm global_light-transparent m-0 p-0'>
                                             <thead>
                                             <tr>
                                                 <th className='global_goldenrodtxtborder-btn'>ID</th>
@@ -76,19 +75,25 @@ const UserListScreen = ({history}) => {
                                                             : (<i className='fas fa-times' style={{color: 'red'}}> </i>
                                                             )}
                                                     </td>
-                                                    <td className='d-flex justify-content-between'>
-                                                        <LinkContainer to={`/admin/user/${user._id}/edit`}>
-                                                            <Button variant='light'
-                                                                    className='btn-sm global_light-transparent global_goldenrodtxt-btn'>
-                                                                <i className='fas fa-edit'> </i>
-                                                            </Button>
-                                                        </LinkContainer>
-                                                        {/*</td>*/}
-                                                        {/*<td className=' border-0'>*/}
-                                                        <Button className='btn-sm global_blood-red-bg'
-                                                                onClick={() => deleteHandler(user._id)}>
-                                                            <i className='fas fa-trash'> </i>
-                                                        </Button>
+                                                    <td className=''>
+                                                        <Row className='m-0 p-0 '>
+                                                            <Col className='m-0 p-0'>
+                                                                <LinkContainer to={`/admin/user/${user._id}/edit`}>
+                                                                    <Button variant='light'
+                                                                            className='btn-sm global_light-transparent global_goldenrodtxt-btn'>
+                                                                        <i className='fas fa-edit'> </i>
+                                                                    </Button>
+                                                                </LinkContainer>
+                                                            </Col>
+                                                            <Col className='m-0 p-0'>
+                                                                <Button className='btn-sm global_blood-red-bg'
+                                                                        onClick={() => deleteHandler(user._id)}>
+                                                                    <i className='fas fa-trash'> </i>
+                                                                </Button>
+
+                                                            </Col>
+                                                        </Row>
+
                                                     </td>
                                                 </tr>
                                             )))}
@@ -97,7 +102,6 @@ const UserListScreen = ({history}) => {
                                     </Col>
                                 </Row>
                             )}
-                        {/*</Container>*/}
                     </Col>
                 </Row>
             </Container>
