@@ -35,15 +35,6 @@ const App = () => {
         <Router>
 
             <Switch>
-                {/*<Route path='/products' component={ProductsScreen} exact/>*/}
-                {/*<Route path='/search/:keyword' component={ProductsScreen} exact/>*/}
-                {/*<Route path='/page/:pageNumber' component={ProductsScreen} exact/>*/}
-                {/*<Route path='/search/:keyword/page/:pageNumber' component={ProductsScreen}/>*/}
-                {/*<Route path='/product/:id' component={ProductScreen}/>*/}
-
-                {/* ================    STICKY HEADER ONLY W/ FOOTER    =================*/}
-
-                {/* ================    STICKY / MOBILE HEADER W/ FOOTER    =================*/}
                 <Fragment>
                     <Header/>
                     <Route path='/' component={HomeScreen} exact/>
@@ -78,8 +69,8 @@ const App = () => {
                     <Route path='/search/:keyword/page/:pageNumber' component={ProductsScreen}/>
                     <Route path='/product/:id' component={ProductScreen}/>
 
-
                     <Footer/>
+
                 </Fragment>
             </Switch>
 

@@ -7,7 +7,6 @@ import Loader from '../Loader'
 import FormContainer from "../FormContainer";
 import { getUserDetails, updateUser } from '../../actions/userActions'
 import { USER_UPDATE_RESET} from "../../constants/userConstants";
-import HeaderDesktop from "../HeaderFooter/HeaderDesktop";
 
 const UserEditScreen = ({ match, history}) => {
     const userId = match.params.id;

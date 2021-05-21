@@ -7,9 +7,6 @@ import Message from '../Message'
 import Loader from '../Loader'
 import {listProductDetails, updateProduct} from "../../actions/productActions";
 import {PRODUCT_UPDATE_RESET} from "../../constants/productConstants";
-import HeaderDesktop from "../HeaderFooter/HeaderDesktop";
-import './AdminScreens.css'
-
 
 const AdminScreensProductEditScreen = ({match, history}) => {
 
@@ -113,19 +110,17 @@ const AdminScreensProductEditScreen = ({match, history}) => {
 
     return (
         <>
-        {/*<HeaderDesktop/>*/}
-        <Container className=' bg-transparent text-white  min-vh-100 min-vw-100'>
-            <Row xs={12} className='my-0 px-3 py-5'>
-                <Col xs={10} className='d-flex justify-content-start'>
-                    <h4 className='text-white'>Edit Product</h4>
-                </Col>
-                <Col xs={2} className='d-flex justify-content-end'>
-                    <Link to='/admin/productlist' className='btn global_bisonRedBgWhiteHoverBgBtnRedBorder rounded py-1 px-2'>
-                        back
-                    </Link>
-                </Col>
-            </Row>
-            {/*<FormContainer>*/}
+        <Container className='bg-transparent text-white min-vh-100 min-vw-100 pt-5'>
+            {/*<Row className='my-0 px-3 py-5'>*/}
+            {/*    <Col xs={10} className='d-flex justify-content-start'>*/}
+            {/*        <h4 className='text-white'>Edit Product</h4>*/}
+            {/*    </Col>*/}
+            {/*    <Col xs={2} className='d-flex justify-content-end'>*/}
+            {/*        <Link to='/admin/productlist' className='btn global_goldenrodtxtborder-btn rounded py-1 px-2'>*/}
+            {/*            back*/}
+            {/*        </Link>*/}
+            {/*    </Col>*/}
+            {/*</Row>*/}
             {loadingUpdate && <Loader/>}
             {errorUpdate && <Message variant='danger'>{errorUpdate}</Message>}
             {loading && <Loader/>}
@@ -133,13 +128,22 @@ const AdminScreensProductEditScreen = ({match, history}) => {
             {loading ? <Loader/> : error ? <Message variant='danger'>{error}</Message> : (
 
                 <Form onSubmit={submitHandler} className='p-3'>
-                    {/*<Row className='p-0 mb-2'>*/}
-                    {/*    <Col className='pr-3 m-0 d-flex justify-content-end'>*/}
-                    {/*        <Button type='submit' variant='primary' className='px-3 py-1 global_blue-bg border-left border-bottom'>Update</Button>*/}
-                    {/*    </Col>*/}
-                    {/*</Row>*/}
-                    <Row className=' '>
-                        <Col lg={9} xs={12} className=''>
+                    <Row className='d-flex justify-content-center '>
+
+                        <Col lg={6} xs={12} className=''>
+
+                            <Row className='pb-5 '>
+                                <Col xs={6}>
+                                     <h4 className='text-white'>Edit Product</h4>
+                                </Col>
+                                <Col xs={6} className='d-flex justify-content-end'>
+                                    <Link to='/admin/productlist'
+                                          className='btn global_goldenrodtxtborder-btn rounded py-1 px-2'>
+                                        back
+                                    </Link>
+                                </Col>
+                            </Row>
+
                             {/* PROMO*/}
                             <Form.Group controlId='isAvailable'>
                                 <Form.Check type='checkbox'
@@ -159,9 +163,10 @@ const AdminScreensProductEditScreen = ({match, history}) => {
                             </Form.Group>
 
                             <Form.Group controlId='isPromoType'>
-                                <Form.Label className='mb-0 pt-2 px-1 w-100 AdminScreen_form-titles '><h4 className='text-white'>Promo Type</h4></Form.Label>
+                                <Form.Label className='mb-0 pt-2 px-1 w-100 global_goldenrod'><h6 className='global_goldenrod'>Promo Type</h6></Form.Label>
                                 <Form.Control type='text'
                                               placeholder='discount %, new price, on sale etc.'
+                                              className='global_light-transparent'
                                               value={isPromoType}
                                               onChange={(e) => setIsPromoType(e.target.value)}>
                                 </Form.Control>
@@ -169,9 +174,10 @@ const AdminScreensProductEditScreen = ({match, history}) => {
 
                             {/* IMAGE */}
                             <Form.Group controlId='image'>
-                                <Form.Label className='mb-0 pt-2 px-1 w-100 AdminScreen_form-titles'><h4 className='text-white'>Image</h4></Form.Label>
+                                <Form.Label className='mb-0 pt-2 px-1 w-100'><h6 className='global_goldenrod'>Image</h6></Form.Label>
                                 <Form.Control type='text'
                                               placeholder='Enter image url'
+                                              className='global_light-transparent'
                                               value={image}
                                               onChange={(e) => setImage(e.target.value)}>
                                 </Form.Control>
@@ -179,6 +185,7 @@ const AdminScreensProductEditScreen = ({match, history}) => {
                                            label='Choose File'
                                            custom
                                            onChange={uploadFileHandler}
+                                           className='global_goldenrod'
                                 />
 
                                 {uploading && <Loader/>}
@@ -188,9 +195,10 @@ const AdminScreensProductEditScreen = ({match, history}) => {
                         {/*<Col lg={5} xs={12} className=''>*/}
                             {/* NAME */}
                             <Form.Group controlId='name'>
-                                <Form.Label className='mb-0 pt-2 px-1 w-100 AdminScreen_form-titles'><h6 className='text-white'>Name</h6></Form.Label>
+                                <Form.Label className='mb-0 pt-2 px-1 w-100'><h6 className='global_goldenrod'>Name</h6></Form.Label>
                                 <Form.Control type='name'
                                               placeholder='Enter name'
+                                              className='global_light-transparent'
                                               value={name}
                                               onChange={(e) => setName(e.target.value)}>
                                 </Form.Control>
@@ -198,9 +206,10 @@ const AdminScreensProductEditScreen = ({match, history}) => {
 
                             {/* PART NUMBER */}
                             <Form.Group controlId='partNumber'>
-                                <Form.Label className='mb-0 pt-2 px-1 w-100 AdminScreens_form-titles'><h6 className='text-white'>Part Number</h6></Form.Label>
+                                <Form.Label className='mb-0 pt-2 px-1 w-100'><h6 className='global_goldenrod'>Part Number</h6></Form.Label>
                                 <Form.Control type='partNumber'
                                               placeholder='Part number'
+                                              className='global_light-transparent'
                                               value={partNumber}
                                               onChange={(e) => setPartNumber(e.target.value)}>
                                 </Form.Control>
@@ -208,9 +217,10 @@ const AdminScreensProductEditScreen = ({match, history}) => {
 
                             {/* PRICE */}
                             <Form.Group controlId='price'>
-                                <Form.Label className='mb-0 pt-2 px-1 w-100 AdminScreens_form-titles'><h6 className='text-white'>Price</h6></Form.Label>
+                                <Form.Label className='mb-0 pt-2 px-1 w-100'><h6 className='global_goldenrod'>Price</h6></Form.Label>
                                 <Form.Control type='number'
                                               placeholder='Enter price'
+                                              className='global_light-transparent'
                                               value={price}
                                               onChange={(e) => setPrice(e.target.value)}>
                                 </Form.Control>
@@ -218,9 +228,10 @@ const AdminScreensProductEditScreen = ({match, history}) => {
 
                             {/* BRAND */}
                             <Form.Group controlId='manufacturer'>
-                                <Form.Label className='mb-0 pt-2 px-1 w-100 AdminScreens_form-titles'><h6 className='text-white'>Brand</h6></Form.Label>
+                                <Form.Label className='mb-0 pt-2 px-1 w-100'><h6 className='global_goldenrod'>Brand</h6></Form.Label>
                                 <Form.Control type='text'
                                               placeholder='Enter manufacturer'
+                                              className='global_light-transparent'
                                               value={brand}
                                               onChange={(e) => setBrand(e.target.value)}>
                                 </Form.Control>
@@ -231,27 +242,30 @@ const AdminScreensProductEditScreen = ({match, history}) => {
                         {/*<Col lg={4} xs={12}>*/}
                             {/* COUNT IN STOCK*/}
                             <Form.Group controlId='countInStock'>
-                                <Form.Label className='mb-0 pt-2 px-1 w-100 AdminScreens_form-titles'><h6 className='text-white'>Count in Stock</h6></Form.Label>
+                                <Form.Label className='mb-0 pt-2 px-1 w-100'><h6 className='global_goldenrod'>Count in Stock</h6></Form.Label>
                                 <Form.Control type='number'
                                               placeholder='Enter count in stock'
+                                              className='global_light-transparent'
                                               value={countInStock}
                                               onChange={(e) => setCountInStock(e.target.value)}>
                                 </Form.Control>
                             </Form.Group>
                             {/* CATEGORIES */}
                             <Form.Group controlId='category'>
-                                <Form.Label className='mb-0 pt-2 px-1 w-100 AdminScreens_form-titles'><h6 className='text-white'>Category</h6></Form.Label>
+                                <Form.Label className='mb-0 pt-2 px-1 w-100'><h6 className='global_goldenrod'>Category</h6></Form.Label>
                                 <Form.Control type='text'
                                               placeholder='Enter category'
+                                              className='global_light-transparent'
                                               value={category}
                                               onChange={(e) => setCategory(e.target.value)}>
                                 </Form.Control>
                             </Form.Group>
                             {/* DESCRIPTION */}
                             <Form.Group controlId='description'>
-                                <Form.Label className='mb-0 pt-2 px-1 w-100 AdminScreens_form-titles'><h6 className='text-white'>overview description</h6></Form.Label>
+                                <Form.Label className='mb-0 pt-2 px-1 w-100'><h6 className='global_goldenrod'>overview description</h6></Form.Label>
                                 <Form.Control type='text'
                                               placeholder='Enter description'
+                                              className='global_light-transparent'
                                               value={description}
                                               onChange={(e) => setDescription(e.target.value)}>
                                 </Form.Control>
@@ -259,9 +273,10 @@ const AdminScreensProductEditScreen = ({match, history}) => {
 
                             {/* PARTS INCLUDED */}
                             <Form.Group controlId='includedParts'>
-                                <Form.Label className='mb-0 pt-2 px-1 w-100 AdminScreens_form-titles'><h6 className='text-white'>Parts Included</h6></Form.Label>
+                                <Form.Label className='mb-0 pt-2 px-1 w-100'><h6 className='global_goldenrod'>Parts Included</h6></Form.Label>
                                 <Form.Control type='text'
                                               placeholder='Parts included'
+                                              className='global_light-transparent'
                                               value={includedParts}
                                               onChange={(e) => setIncludedParts(e.target.value)}>
                                 </Form.Control>
@@ -271,13 +286,14 @@ const AdminScreensProductEditScreen = ({match, history}) => {
 
                     </Row>
                     <Row className='p-0 mb-2 d-flex justify-content-center'>
-                        <Col xs={4} className=' m-0 d-flex justify-content-center global_blue-bg'>
-                            <Button type='submit' variant='primary' className='w-100 global_blue-bg '>Update</Button>
+                        <Col xs={4} className=' m-0 d-flex justify-content-center'>
+                            <Button type='submit' variant='primary' className='w-100 global_goldenrodtxtborder-btn rounded '>
+                                Update
+                            </Button>
                         </Col>
                     </Row>
                 </Form>
             )}
-            {/*</FormContainer>*/}
         </Container>
         </>
 
