@@ -49,41 +49,41 @@ const UserListScreen = ({history}) => {
                             : (
                                 <Row className='d-flex justify-content-center'>
                                     <Col md={12} xs={12}>
-                                        <Table striped bordered hover responsive className='table-sm bg-light mx-auto'>
+                                        <Table striped bordered hover responsive className='table-sm global_light-transparent mx-auto'>
                                             <thead>
                                             <tr>
-                                                <th className='border global_gray-bg text-white'>ID</th>
-                                                <th className='border global_gray-bg text-white'>NAME</th>
-                                                <th className='border global_gray-bg text-white'>EMAIL</th>
-                                                <th className='border border-left global_gray-bg text-white'>ADMIN</th>
-                                                <th className='border global_gray-bg text-white'> </th>
+                                                <th className='global_goldenrodtxtborder-btn'>ID</th>
+                                                <th className='global_goldenrodtxtborder-btn'>NAME</th>
+                                                <th className='global_goldenrodtxtborder-btn'>EMAIL</th>
+                                                <th className='global_goldenrodtxtborder-btn'>ADMIN</th>
+                                                <th className='global_goldenrodtxtborder-btn border-0'>EDIT</th>
                                             </tr>
                                             </thead>
-                                            <tbody>
+                                            <tbody className='global_white'>
                                             {users.map((user => (
                                                 <tr key={user._id}>
-                                                    <td>{user._id}</td>
-                                                    <td>{user.name}</td>
-                                                    <td><a href={`mailto:${user.email}`}>{user.email}</a></td>
-                                                    <td>
+                                                    <td className='border-right'>{user._id}</td>
+                                                    <td className='border-right'>{user.name}</td>
+                                                    <td className='border-right'><a href={`mailto:${user.email}`}>{user.email}</a></td>
+                                                    <td className='border-right'>
                                                         {user.isAdmin
                                                             ? (<i className='fas fa-check'
                                                                   style={{color: 'green'}}> </i>)
                                                             : (<i className='fas fa-times' style={{color: 'red'}}> </i>
                                                             )}
                                                     </td>
-                                                    <td>
+                                                    <td className='d-flex justify-content-between'>
                                                         <LinkContainer to={`/admin/user/${user._id}/edit`}>
-                                                            <Button variant='light' className='btn-sm'>
+                                                            <Button variant='light' className='btn-sm global_light-transparent global_goldenrodtxt-btn'>
                                                                 <i className='fas fa-edit'> </i>
                                                             </Button>
                                                         </LinkContainer>
-
-                                                        <Button variant='danger' className='btn-sm'
+                                                    {/*</td>*/}
+                                                    {/*<td className=' border-0'>*/}
+                                                        <Button className='btn-sm global_blood-red-bg'
                                                                 onClick={() => deleteHandler(user._id)}>
                                                             <i className='fas fa-trash'> </i>
                                                         </Button>
-
                                                     </td>
                                                 </tr>
                                             )))}
