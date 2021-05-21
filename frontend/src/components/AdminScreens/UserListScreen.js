@@ -41,11 +41,16 @@ const UserListScreen = ({history}) => {
 
     return (
         <>
-            <Container className=' bg-transparent text-white  min-vh-100 min-vw-100'>
+            <Container className='m-0 p-0 bg-transparent text-white  min-vh-100 min-vw-100'>
 
                 <Row className='d-flex justify-content-center bg-transparent text-white my-5'>
                     <Col lg={9} xs={12}>
                         <h4 className='text-white my-3'>Users</h4>
+
+                        <Col xs={12} className='d-flex justify-content-start d-lg-none d-block global_blood-red-bg'>
+                            <h3 className='global_white text-center'>rotate phone to view entire chart</h3>
+                        </Col>
+
                         {loading ? <Loader/> : error ? <Message variant='danger'>{error}</Message>
                             : (
                                 <Row className='d-flex justify-content-center'>
@@ -54,7 +59,7 @@ const UserListScreen = ({history}) => {
                                                className='table-sm global_light-transparent m-0 p-0'>
                                             <thead>
                                             <tr>
-                                                <th className='global_goldenrodtxtborder-btn'>ID</th>
+                                                {/*<th className='global_goldenrodtxtborder-btn'>ID</th>*/}
                                                 <th className='global_goldenrodtxtborder-btn'>NAME</th>
                                                 <th className='global_goldenrodtxtborder-btn'>EMAIL</th>
                                                 <th className='global_goldenrodtxtborder-btn'>ADMIN</th>
@@ -64,7 +69,7 @@ const UserListScreen = ({history}) => {
                                             <tbody className='global_white'>
                                             {users.map((user => (
                                                 <tr key={user._id}>
-                                                    <td className='border-right'>{user._id}</td>
+                                                    {/*<td className='border-right'>{user._id}</td>*/}
                                                     <td className='border-right'>{user.name}</td>
                                                     <td className='border-right'><a
                                                         href={`mailto:${user.email}`}>{user.email}</a></td>

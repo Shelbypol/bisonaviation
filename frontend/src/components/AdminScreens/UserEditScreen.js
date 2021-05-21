@@ -56,10 +56,10 @@ const UserEditScreen = ({match, history}) => {
                     <Col lg={6} xs={12} className=''>
 
                         <Row className='pb-5 '>
-                            <Col xs={6}>
+                            <Col md={6} xs={12}>
                                 <h4 className='text-white'>Edit {name}'s info</h4>
                             </Col>
-                            <Col xs={6} className='d-flex justify-content-end'>
+                            <Col md={6} xs={12} className='d-flex justify-content-md-end justify-content-sm-start'>
                                 <Link to='/admin/userlist'
                                       className='btn global_goldenrodtxtborder-btn rounded py-1 px-2'>
                                     back
