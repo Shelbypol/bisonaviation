@@ -30,7 +30,7 @@ const Header = () => {
     return (
         width < breakpoint ?
             <>
-                <Fade top duration={3500}>
+                <Fade top duration={2000}>
                     <HeaderMobile/>
                 </Fade>
             </>
@@ -38,9 +38,10 @@ const Header = () => {
             <>
                 {/*<Row className='position-fixed m-0 p-0' style={{top: '1vh'}}>*/}
                 {/*    <Col xs={12} className='m-0 p-0'>*/}
-                        {/*<Fade top duration={2000} className='position-fixed' style={{top: '1vh'}}>*/}
-                        <HeaderDesktop/>
-                    {/*</Col>*/}
+                {/*<Fade top duration={2000} className='position-fixed' style={{top: '1vh'}}>*/}
+                    <HeaderDesktop/>
+                {/*</Fade>*/}
+                {/*</Col>*/}
                 {/*</Row>*/}
             </>
 
