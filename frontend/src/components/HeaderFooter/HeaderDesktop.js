@@ -5,7 +5,6 @@ import {useDispatch, useSelector} from "react-redux";
 import {CART_RESET} from "../../constants/cartConstants";
 import {logout} from "../../actions/userActions";
 import {Link} from "react-router-dom";
-import WishListTab from "../Wishlist/WishListTab";
 import SignInBtn from "../SignIn/SignInBtn";
 import logo from '../../images/bg-graphics/graphics/Final-Logo-Horizontal.png'
 

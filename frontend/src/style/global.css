@@ -173,7 +173,13 @@ p{
     color: #daa520;
 }
 
+.global_whitehovergoldenrodtxt{
+    color: #fff;
+}
 
+.global_whitehovergoldenrodtxt:hover{
+    color: #daa520;
+}
 
 /*=================== BORDERS*/
 .global_goldenrodtxtborder-btn {
