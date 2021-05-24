@@ -30,49 +30,70 @@ const HeaderDesktop = () => {
     const [goingUp, setGoingUp] = useState(false);
 
     useEffect(() => {
-        const handleScroll = () => {
-            const currentScrollY = window.scrollY;
-            if (prevScrollY.current > currentScrollY && goingUp) {
-                setGoingUp(false);
-            }
 
-            if (prevScrollY.current < currentScrollY && !goingUp) {
-                setGoingUp(true);
-            }
 
-            prevScrollY.current = currentScrollY;
-        };
-
-        window.addEventListener("scroll", handleScroll, {passive: true});
-
-        return () => window.removeEventListener("scroll", handleScroll);
     }, [goingUp, userInfo]);
+
+    // useRef(() => {
+    //     // const handleScroll = () => {
+    //     //     const currentScrollY = window.scrollY;
+    //     //     if (prevScrollY.current > currentScrollY && goingUp) {
+    //     //         setGoingUp(false);
+    //     //     }
+    //     //
+    //     //     if (prevScrollY.current < currentScrollY && !goingUp) {
+    //     //         setGoingUp(true);
+    //     //     }
+    //     //
+    //     //     prevScrollY.current = currentScrollY;
+    //     // };
+    //     //
+    //     // window.addEventListener("scroll", handleScroll, {passive: true});
+    //     //
+    //     // return () => window.removeEventListener("scroll");
+    // });
+    //
+    // // useEffect(() => {
+    // //     const handleScroll = () => {
+    // //         const currentScrollY = window.scrollY;
+    // //         if (prevScrollY.current > currentScrollY && goingUp) {
+    // //             setGoingUp(false);
+    // //         }
+    // //
+    // //         if (prevScrollY.current < currentScrollY && !goingUp) {
+    // //             setGoingUp(true);
+    // //         }
+    // //
+    // //         prevScrollY.current = currentScrollY;
+    // //     };
+    // //
+    // //     window.addEventListener("scroll", handleScroll, {passive: true});
+    // //
+    // //     return () => window.removeEventListener("scroll", handleScroll);
+    // // }, [goingUp, userInfo]);
 
     return (
         <>
 
 
-            <Row className='global_dots StickyHeader_nav-color sticky-top' style={{top: '0', zIndex: 6000}}>
+            <Row className='global_dots HeaderDesktop_nav-color sticky-top' style={{top: '0', zIndex: 6000}}>
                 {/*===============  SIDEBAR  ==================*/}
 
-                <Col xs={3} className=' d-flex justify-content-center sticky-top' style={{top: '0', height: '12vh'}}>
+                <Col xs={3} className=' d-flex justify-content-center' style={{ height: '12vh'}}>
                     <LinkContainer to='/'>
                         <img
                             src={logo}
-                            className='DesktopHeader_logo px-1 pt-0'
+                            className='HeaderDesktop_logo px-1 pt-0'
                             alt="Bison Aviation"/>
                     </LinkContainer>
                 </Col>
 
 
                 {/*/ =========== PROFILE / ADMIN BTNS ============*!/*/}
-                <Col xs={9}
-                     className='sticky-top StickyHeader_right-row ml-auto d-flex justify-content-end StickyHeader_login-btn'
-                     style={{top: '0'}}
-                >
+                <Col xs={9} className='HeaderDesktop_profile-admin-btns-row ml-auto d-flex justify-content-end'>
 
                     {!userInfo && (
-                        <span className=' d-flex align-items-center justify-content-end StickyHeader_login-btn'>
+                        <span className=' d-flex align-items-center justify-content-end'>
                                         <SignInBtn/>
                             </span>
                     )}
@@ -80,9 +101,9 @@ const HeaderDesktop = () => {
                     {userInfo && (
                         <>
                         {/*{userInfo.isAdmin ? (*/}
-                            <Link to='#'>
+                            <Link to='#' className='global_goldenrod-border-right'>
                                 <h6
-                                    className='SideBar_Name pt-3 pr-3'>Welcome,&nbsp;{userInfo.name}</h6>
+                                    className=' global_white pt-3 pr-3 ' style={{fontWeight: 'lighter'}}>{userInfo.name}</h6>
                             </Link>
 
                             </>
@@ -92,12 +113,12 @@ const HeaderDesktop = () => {
                         <>
                             {(userInfo && userInfo.isAdmin) && (
                                 <>
-                                    <LinkContainer to='/admin/userlist' className='d-flex justify-content-center mt-1' style={{height: '5vh'}}>
-                                        <Nav.Link className='SideBar_Name border-left'>Users</Nav.Link>
+                                    <LinkContainer to='/admin/userlist' className='d-flex justify-content-center'>
+                                        <Nav.Link className='HeaderDesktop_user-btns'>Users</Nav.Link>
                                     </LinkContainer>
 
-                                    <LinkContainer to='/admin/productlist' className='d-flex justify-content-center mt-1' style={{height: '5vh'}}>
-                                        <Nav.Link className='SideBar_Name'>
+                                    <LinkContainer to='/admin/productlist' className='d-flex justify-content-center'>
+                                        <Nav.Link className='HeaderDesktop_user-btns'>
                                             Products
                                         </Nav.Link>
                                     </LinkContainer>

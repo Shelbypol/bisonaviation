@@ -1,5 +1,5 @@
 /*      DESKTOP HEADER        */
-.DesktopHeader_logo {
+.HeaderDesktop_logo {
     /*height: 15vh;*/
     height: 12vh;
     max-height: 100%;
@@ -26,14 +26,61 @@
     background-color: rgba(255, 255, 255, .8);
 }
 
-.StickyHeader_right-row {
+.HeaderDesktop_profile-admin-btns-row {
     height: 6vh;
 }
 
-.StickyHeader_nav-color{
+.HeaderDesktop_nav-color{
     background-color: rgba(0,0,0, 1);
     height: 12.5vh;
 }
+
+.HeaderDesktop_user-btns {
+    font-weight: lighter;
+    color: rgba(255, 255, 255, .8);
+    font-size: 1vw;
+    display: flex;
+    align-items: center;
+}
+
+.HeaderDesktop_user-btns:hover {
+    background-color: #660708;
+    color: #fff;
+}
+
+
+.HeaderDesktop_user-btns a {
+    font-weight: lighter;
+    text-decoration: none;
+    color: rgba(255,255,255, .8);
+    font-size: 1.2vw;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: .5vw 16px;
+    /*border-left: 1px solid rgba(255,255,255,.8);*/
+}
+
+.HeaderDesktop_user-btns a:hover {
+    background-color: #660708;
+    color: #fff;
+}
+
+
+/*.HeaderDesktop_user-btns{*/
+/*    !*color: rgba(255,255,255, .9);*!*/
+/*    font-weight: lighter;*/
+/*    height: 5vh;*/
+/*}*/
+
+/*.HeaderDesktop_Name:hover{*/
+/*    color: black;*/
+/*    background-color: rgba(255,255,255,.8);*/
+/*}*/
+
+
+
 
 .StickyHeader_nav {
     background-color: rgba(0,0,0, .9);
@@ -70,7 +117,7 @@
 
 
 /* =================    LOGIN /WISHLIST /CONTACT BTNS   ==========*/
-.StickyHeader_login-btn {
+.HeaderDesktop_login-btn {
     color: rgba(255, 255, 255, 0.7);
 }
 
@@ -91,29 +138,9 @@
     /*padding: .5vw 16px;*/
 }
 
-.StickyHeader_icon{
+.HeaderDesktop_icon{
     font-size: 1vw;
 }
-
-/*======    CONTACT    ============*/
-.StickyHeader_contact-btn {
-    background-color: rgba(255,255,255, .5);
-    /*background-color: rgba(255,255,255, .8);*/
-    border-left: 5px solid #660708;
-}
-
-.StickyHeader_contact-btn:hover {
-    /*border-left: 5px solid #2576e5;*/
-    background-color: rgba(255,255,255, .4);
-}
-
-/*.StickHeader_contact-txt {*/
-/*    !*color: #660708;*!*/
-/*    color: white;*/
-/*}*/
-/*.StickHeader_contact-txt:hover{*/
-/*    !*color: black;*!*/
-/*}*/
 
 /*   NAV BOOTSTRAP DROPDOWN STYLE    */
 .navbar-toggler {
@@ -223,15 +250,7 @@ button.navbar-toggler:hover {
     }
 }
 
-.borderBlink {
-    border-left: 2px solid #2576e5;
-    /* add 'border-color: transparent' if you wish no border to show initially */
-}
 
-.borderBlink {
-    -webkit-animation: borderBlink 3s step-end infinite;
-    animation: borderBlink 3s step-end infinite;
-}
 
 /*    ======   MOBILE RESPONSIVE    ======    */
 @media (max-width: 500px) {

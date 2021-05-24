@@ -1,7 +1,7 @@
 import React, {useEffect, useLayoutEffect, useState} from "react";
 import HeaderMobile from "./HeaderMobile";
 import HeaderDesktop from "./HeaderDesktop";
-import './headers.css'
+import './Header.css'
 import Fade from "react-reveal/Fade";
 import {useDispatch} from "react-redux";
 
