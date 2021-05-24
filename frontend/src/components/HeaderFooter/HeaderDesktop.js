@@ -53,7 +53,7 @@ const HeaderDesktop = () => {
         <>
 
 
-            <Row className='global_dots HeaderDesktop_nav-color'>
+            <Row className='global_dots HeaderDesktop_nav-color sticky-top' style={{top: '0'}}>
                 {/*===============  SIDEBAR  ==================*/}
 
                 <Col xs={3} className=' d-flex justify-content-center' style={{height: '12vh'}}>

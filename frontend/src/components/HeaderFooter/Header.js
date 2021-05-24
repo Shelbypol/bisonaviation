@@ -1,6 +1,7 @@
 import React, {useEffect, useLayoutEffect, useState} from "react";
 import HeaderMobile from "./HeaderMobile";
 import HeaderDesktop from "./HeaderDesktop";
+import {Row, Col} from 'react-bootstrap';
 import './HeaderDesktop.css'
 import Fade from "react-reveal/Fade";
 import {useDispatch} from "react-redux";
@@ -35,9 +36,12 @@ const Header = () => {
             </>
             :
             <>
-                <Fade top duration={2000} className='sticky-top' style={{top: '0'}}>
-                    <HeaderDesktop/>
-                </Fade>
+                {/*<Row className='position-fixed m-0 p-0' style={{top: '1vh'}}>*/}
+                {/*    <Col xs={12} className='m-0 p-0'>*/}
+                        {/*<Fade top duration={2000} className='position-fixed' style={{top: '1vh'}}>*/}
+                        <HeaderDesktop/>
+                    {/*</Col>*/}
+                {/*</Row>*/}
             </>
 
     )
