@@ -1,0 +1,28 @@
+.GarminAd_img {
+    background-image: url("./garmin-ad.png");
+    background-repeat: no-repeat;
+    background-position: center 45%;
+}
+
+.GarminAd_browse-products-btn {
+    font-size: 16px;
+    font-weight: lighter;
+    z-index: 200;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+}
+
+.GarminAd_browse-products-btn:hover {
+
+    font-weight: lighter;
+    border: none;
+}
+
+/*    ======   MOBILE RESPONSIVE    ======    */
+@media (max-width: 600px) {
+
+
+    .GarminAd_img {
+        background-position: center 50% ;
+    }
+
+}

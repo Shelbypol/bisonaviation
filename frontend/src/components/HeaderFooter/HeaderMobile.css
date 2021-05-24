@@ -1,0 +1,43 @@
+/*       MOBILE HEADER       */
+.HeaderMobile_logo {
+    height: 12vh;
+}
+
+.MobileHeader_search_btn_padding {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    color: white;
+}
+
+.HeaderMobile_text {
+    color: white;
+    font-size: 3vw;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+    padding-left: 20px;
+    border-right: 16px solid #daa520;
+    margin: 0;
+}
+
+.HeaderMobile_text:hover {
+    padding-left: 14px;
+    border-left: 6px solid #daa520;
+    color: #daa520;
+}
+
+.HeaderMobile_text-inverted {
+    color: #daa520;
+    font-size: 3vw;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+    padding-left: 20px;
+    border-left: 6px solid #daa520;
+    border-right: 16px solid #daa520;
+}
+
+.HeaderMobile_text-inverted:hover {
+    padding-left: 14px;
+    border-left: 6px solid #daa520;
+    border-right: 16px solid #daa520;
+    color: #fff;
+}

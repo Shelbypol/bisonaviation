@@ -61,42 +61,16 @@
     list-style: none;
 }
 
-.SideBar-nav-text a {
-    font-weight: lighter;
-    text-decoration: none;
-    color: rgba(255,255,255, .8);
-    font-size: 1.2vw;
-    width: 95%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding: .5vw 16px;
-    border-left: 1px solid rgba(255,255,255,.8);
-}
 
-.SideBar-nav-text a:hover {
-    background-color: #660708;
-    color: #fff;
-    /*border-left: 1px solid rgba(255,255,255,.8);*/
-}
 
 .SideBar-nav-menu-items {
     width: 100%;
+    z-index: 34500;
 }
 
-.SideBar_Name{
-    color: rgba(255,255,255, .9);
-    font-weight: lighter;
-    height: 5.8vh;
-}
-
-.SideBar_Name:hover{
-    color: black;
-    background-color: rgba(255,255,255,.8);
-}
 
 .SideBar_Login{
-    z-index: 9800;
+    z-index: 98900;
     font-weight: lighter;
 }
 

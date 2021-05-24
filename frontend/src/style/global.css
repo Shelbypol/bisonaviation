@@ -161,6 +161,27 @@ p{
     border-right: 1px solid #daa520;
 }
 
+.global_whitehovergoldenrodtxt-btn {
+    color: #fff;
+    font-weight: lighter;
+    background-color: rgba(0,0,0,1);
+    border-left: 1px solid #daa520;
+    border-right: 1px solid #daa520;
+}
+
+.global_whitehovergoldenrodtxt-btn:hover {
+    color: #daa520;
+}
+
+.global_whitehovergoldenrodtxt{
+    color: #fff;
+}
+
+.global_whitehovergoldenrodtxt:hover{
+    color: #daa520;
+}
+
+/*=================== BORDERS*/
 .global_goldenrodtxtborder-btn {
     color: #daa520;
     font-weight: lighter;

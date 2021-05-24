@@ -41,33 +41,34 @@ const SignInBtn = () => {
 
     return (
         <>
-            <IconContext.Provider value={{color: '#fff', zIndex: '95000'}}>
+            <IconContext.Provider value={{ color: '#fff', zIndex: '98000' }}>
 
                 {userInfo ? (
                     <>
 
-                        <li className='SideBar-nav-text'>
+                        <li className='HeaderDesktop_user-btns'>
                             <Link to='/profile'>
-                                <i className="fas fa-user border-0 StickyHeader_icon StickyHeader_links"> </i>
+                                <i className="fas fa-user border-0  "> </i>
                             </Link>
                         </li>
 
-                        <li className='SideBar-nav-text'>
+                        <li className='HeaderDesktop_user-btns'>
                             <Link onClick={logoutHandler} to='/'>
-                                <i className="fal fa-sign-out border-0 StickyHeader_icon StickyHeader_links"> </i>
+                                <i className="fal fa-sign-out border-0"> </i>
                             </Link>
                         </li>
                     </>
                 ) : (
                     <Link to='#'>
-                        <h6 onClick={showSidebar} className='SideBar_Login pt-2 pr-1 StickyHeader_login-btn'><i
-                            className="fas fa-user-alt"> </i>&nbsp;Sign in / Register</h6>
+                        <h6 onClick={showSidebar} className='SideBar_Login p-2 global_whitehovergoldenrodtxt-btn'>
+                            {/*<i className="fas fa-user-alt"> </i>*/}
+                            Sign in / Register</h6>
                     </Link>
                 )}
 
                 {userInfo ? (
                 // {sidebar ? (
-                    <nav className={sidebar ? 'SideBar-nav-menu-user-logged active' : 'SideBar-nav-menu-user-logged'} style={{zIndex: '5000'}}
+                    <nav className={sidebar ? 'SideBar-nav-menu-user-logged active' : 'SideBar-nav-menu-user-logged'} style={{zIndex: '50000'}}
                          ref={node}
                          onClick={(e) => (handleScroll(e))}>
                         <ul className='SideBar-nav-menu-items border'>

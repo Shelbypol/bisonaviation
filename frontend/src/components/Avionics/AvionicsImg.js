@@ -1,6 +1,6 @@
 import {Jumbotron} from "reactstrap";
 import {Button, Card, Col, Row} from "react-bootstrap";
-import GarminAd from "../GarminBanner/GarminAd";
+import GarminAd from "../GarminAd/GarminAd";
 import React from "react";
 import Zoom from 'react-reveal/Zoom'
 

@@ -1,0 +1,60 @@
+.HeaderDesktop_logo {
+    height: 12vh;
+    max-height: 100%;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.HeaderDesktop_profile-admin-btns-row {
+    height: 6vh;
+}
+
+.HeaderDesktop_nav-color{
+    background-color: rgba(0,0,0, 1);
+    height: 12.5vh;
+}
+
+.HeaderDesktop_user-btns {
+    font-weight: lighter;
+    color: rgba(255, 255, 255, .8);
+    font-size: 1vw;
+    display: flex;
+    align-items: center;
+}
+
+.HeaderDesktop_user-btns:hover {
+    background-color: #660708;
+    color: #fff;
+}
+
+.HeaderDesktop_user-btns a {
+    font-weight: lighter;
+    text-decoration: none;
+    color: rgba(255,255,255, .8);
+    font-size: 1.2vw;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: .5vw 16px;
+}
+
+.HeaderDesktop_user-btns a:hover {
+    background-color: #660708;
+    color: #fff;
+}
+
+.HeaderDesktop_nav-tab-icon-size {
+    /*font-size: 1.8em;*/
+    font-size: 1.5em;
+}
+
+
+.HeaderDesktop_login-btn {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.HeaderDesktop_icon{
+    font-size: 1vw;
+}
+
