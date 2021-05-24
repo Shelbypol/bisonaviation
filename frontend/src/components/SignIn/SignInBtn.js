@@ -60,8 +60,9 @@ const SignInBtn = () => {
                     </>
                 ) : (
                     <Link to='#'>
-                        <h6 onClick={showSidebar} className='SideBar_Login p-2 global_whitehovergoldenrodtxt-btn'><i
-                            className="fas fa-user-alt"> </i>&nbsp;Sign in / Register</h6>
+                        <h6 onClick={showSidebar} className='SideBar_Login p-2 global_whitehovergoldenrodtxt-btn'>
+                            {/*<i className="fas fa-user-alt"> </i>*/}
+                            Sign in / Register</h6>
                     </Link>
                 )}
 

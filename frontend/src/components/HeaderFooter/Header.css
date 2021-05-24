@@ -82,22 +82,23 @@
 
 
 
-.StickyHeader_nav {
-    background-color: rgba(0,0,0, .9);
-}
+/*.StickyHeader_nav {*/
+/*    background-color: rgba(0,0,0, .9);*/
+/*}*/
 
-.StickyHeader_search_btn_padding {
-    padding: .87em .8em;
-    background-color: #4A433D;
-    color: #000;
-}
+/*.StickyHeader_search_btn_padding {*/
+/*    padding: .87em .8em;*/
+/*    background-color: #4A433D;*/
+/*    color: #000;*/
+/*}*/
 
-.StickyHeader_search_btn_padding:hover {
-    background-color: #660708;
-    color: white;
-}
+/*.StickyHeader_search_btn_padding:hover {*/
+/*    background-color: #660708;*/
+/*    color: white;*/
+/*}*/
 
-.StickyHeader_icon-size {
+.HeaderDesktop_nav-tab-icon-size {
+    /*font-size: 1.8em;*/
     font-size: 1.5em;
 }
 
@@ -128,15 +129,6 @@
 }
 
 /*======    WISHLIST ICON NOT LOGGED ON    ============*/
-.StickyHeader_wishlist-btn {
-    color: white;
-}
-
-.StickyHeader_wishlist-btn:hover {
-    /*background-color: #660708;*/
-    /*color: #fff !important;*/
-    /*padding: .5vw 16px;*/
-}
 
 .HeaderDesktop_icon{
     font-size: 1vw;

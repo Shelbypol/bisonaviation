@@ -18,11 +18,11 @@ const WishList = () => {
         <Navbar id='app' className='wishList'>
             <NavItem icon={
                 <span className='global_cursor' style={{fontSize: '1.3em'}}>
-                    {/*{cartItems.length === 0 ? (*/}
+                    {cartItems.length === 0 ? (
                         <i className="fal fa-list-alt"> </i>
-                    {/*// ) : (*/}
-                    {/*//     <i className="fal fa-list-alt"> </i>*/}
-                    {/*// )}*/}
+                     ) : (
+                        <i className="fal fa-list-alt"> </i>
+                    )}
                 </span>
             }>
                 <DropdownMenu> </DropdownMenu>

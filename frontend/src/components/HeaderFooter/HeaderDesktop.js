@@ -1,5 +1,5 @@
 import React, {useState, useRef, useEffect} from "react";
-import { Nav, Row, Col} from "react-bootstrap";
+import {Nav, Row, Col} from "react-bootstrap";
 import {LinkContainer} from "react-router-bootstrap";
 import {useDispatch, useSelector} from "react-redux";
 import {CART_RESET} from "../../constants/cartConstants";
@@ -28,58 +28,36 @@ const HeaderDesktop = () => {
     const prevScrollY = useRef(0);
 
     const [goingUp, setGoingUp] = useState(false);
+    const cart = useSelector(state => state.cart);
+    const {cartItems} = cart;
 
     useEffect(() => {
+        const handleScroll = () => {
+            const currentScrollY = window.scrollY;
+            if (prevScrollY.current > currentScrollY && goingUp) {
+                setGoingUp(false);
+            }
 
+            if (prevScrollY.current < currentScrollY && !goingUp) {
+                setGoingUp(true);
+            }
 
-    }, [goingUp, userInfo]);
+            prevScrollY.current = currentScrollY;
+        };
 
-    // useRef(() => {
-    //     // const handleScroll = () => {
-    //     //     const currentScrollY = window.scrollY;
-    //     //     if (prevScrollY.current > currentScrollY && goingUp) {
-    //     //         setGoingUp(false);
-    //     //     }
-    //     //
-    //     //     if (prevScrollY.current < currentScrollY && !goingUp) {
-    //     //         setGoingUp(true);
-    //     //     }
-    //     //
-    //     //     prevScrollY.current = currentScrollY;
-    //     // };
-    //     //
-    //     // window.addEventListener("scroll", handleScroll, {passive: true});
-    //     //
-    //     // return () => window.removeEventListener("scroll");
-    // });
-    //
-    // // useEffect(() => {
-    // //     const handleScroll = () => {
-    // //         const currentScrollY = window.scrollY;
-    // //         if (prevScrollY.current > currentScrollY && goingUp) {
-    // //             setGoingUp(false);
-    // //         }
-    // //
-    // //         if (prevScrollY.current < currentScrollY && !goingUp) {
-    // //             setGoingUp(true);
-    // //         }
-    // //
-    // //         prevScrollY.current = currentScrollY;
-    // //     };
-    // //
-    // //     window.addEventListener("scroll", handleScroll, {passive: true});
-    // //
-    // //     return () => window.removeEventListener("scroll", handleScroll);
-    // // }, [goingUp, userInfo]);
+        window.addEventListener("scroll", handleScroll, {passive: true});
+
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, [goingUp, userInfo, cartItems]);
 
     return (
         <>
 
 
-            <Row className='global_dots HeaderDesktop_nav-color sticky-top' style={{top: '0', zIndex: 6000}}>
+            <Row className='global_dots HeaderDesktop_nav-color'>
                 {/*===============  SIDEBAR  ==================*/}
 
-                <Col xs={3} className=' d-flex justify-content-center' style={{ height: '12vh'}}>
+                <Col xs={3} className=' d-flex justify-content-center' style={{height: '12vh'}}>
                     <LinkContainer to='/'>
                         <img
                             src={logo}
@@ -100,13 +78,14 @@ const HeaderDesktop = () => {
 
                     {userInfo && (
                         <>
-                        {/*{userInfo.isAdmin ? (*/}
+                            {/*{userInfo.isAdmin ? (*/}
                             <Link to='#' className='global_goldenrod-border-right'>
                                 <h6
-                                    className=' global_white pt-3 pr-3 ' style={{fontWeight: 'lighter'}}>{userInfo.name}</h6>
+                                    className=' global_white pt-3 pr-3 '
+                                    style={{fontWeight: 'lighter'}}>{userInfo.name}</h6>
                             </Link>
 
-                            </>
+                        </>
                     )}
 
                     {userInfo && (
@@ -123,7 +102,6 @@ const HeaderDesktop = () => {
                                         </Nav.Link>
                                     </LinkContainer>
 
-
                                     {/*<LinkContainer to='/admin/orderlist' className='d-flex justify-content-center mt-1' style={{height: '5vh'}}>*/}
                                     {/*    <Nav.Link className='SideBar_Name border-right'>*/}
                                     {/*        Data - Info*/}
@@ -133,8 +111,8 @@ const HeaderDesktop = () => {
                                 </>
                             )}
 
-                        {/*     PROFILE AND LOGOUT BTNS    */}
-                            <Nav style={{zIndex: '9000'}}>
+                            {/*     PROFILE AND LOGOUT BTNS    */}
+                            <Nav style={{zIndex: '15000'}}>
                                 <SignInBtn/>
                             </Nav>
                         </>
@@ -142,7 +120,8 @@ const HeaderDesktop = () => {
                 </Col>
 
 
-                <Col xs={7} className='ml-auto mr-5 pb-0 d-flex justify-content-center StickyHeader_right-row sticky-top '
+                <Col xs={7}
+                     className='ml-auto mr-5 pb-0 d-flex justify-content-center HeaderDesktop_profile-admin-btns-row sticky-top '
                      style={{marginTop: '-5.75vh'}}>
 
                     {/*  HOME  */}
@@ -156,46 +135,46 @@ const HeaderDesktop = () => {
                     {/*  BROWSE PRODUCTS  */}
                     <LinkContainer className='d-inline global_goldenrodtxt-btn' to='/products'>
                         <Nav.Link className=''>
-                                    <h6 className='global_white pt-1'>
-                                    Products
-                                    </h6>
+                            <h6 className='global_white pt-1'>
+                                Products
+                            </h6>
                         </Nav.Link>
                     </LinkContainer>
 
                     {/*  AVIONICS  */}
                     <LinkContainer className='d-inline global_goldenrodtxt-btn' to='/avionics'>
                         <Nav.Link>
-                                    <h6 className='global_white pt-1'>
-                                    Avionics
-                                    </h6>
+                            <h6 className='global_white pt-1'>
+                                Avionics
+                            </h6>
                         </Nav.Link>
                     </LinkContainer>
 
                     {/*  MAINTENANCE  */}
                     <LinkContainer className='d-inline global_goldenrodtxt-btn' to='/maintenance'>
                         <Nav.Link>
-                                    <h6 className='global_white pt-1'>
-                                    Maintenance
-                                    </h6>
+                            <h6 className='global_white pt-1'>
+                                Maintenance
+                            </h6>
                         </Nav.Link>
                     </LinkContainer>
 
                     {/*  EO/IR FLIR  */}
                     <LinkContainer className='d-inline global_goldenrodtxt-btn' to='/flir'>
                         <Nav.Link>
-                                    <h6 className='global_white pt-1'>
-                                    Flir
+                            <h6 className='global_white pt-1'>
+                                Flir
 
-                                    </h6>
+                            </h6>
                         </Nav.Link>
                     </LinkContainer>
 
                     {/*  TEAM  */}
                     <LinkContainer className='d-inline global_goldenrodtxt-btn' to='/team'>
                         <Nav.Link>
-                                    <h6 className='global_white pt-1'>
-                                    Team
-                                    </h6>
+                            <h6 className='global_white pt-1'>
+                                Team
+                            </h6>
                         </Nav.Link>
                     </LinkContainer>
 
@@ -204,8 +183,12 @@ const HeaderDesktop = () => {
                         <Nav.Link className='global_white' style={{height: '6vh'}}>
                             {/*<WishListTab/>*/}
                             <h6 className='global_white'>
-
-                            <i className="fal fa-list-alt pt-1 StickyHeader_icon-size "> </i>
+                                    <>
+                                        {cartItems.length}
+                                        &nbsp;
+                                        <i className="fal fa-envelope-open-text HeaderDesktop_nav-tab-icon-size"> </i>                                        {/*<i className="fal fa-list-alt "> </i>*/}
+                                    </>
+                                {/*)}*/}
                             </h6>
 
                         </Nav.Link>
@@ -215,13 +198,10 @@ const HeaderDesktop = () => {
 
 
                 {/*============= WISHLIST / LOGIN / CONTACT BTNS ==============*/}
-                <Col xs={2} className='d-flex justify-content-end StickyHeader_right-row sticky-top'
-                     style={{marginTop: '-6vh', top: '6vh'}}>
-
+                <Col xs={2} className='d-flex justify-content-end' style={{marginTop: '-5.75vh'}}>
                     <LinkContainer to='/contact' className=''>
-                        <Nav.Link
-                            className='pt-3 '>
-                            <h6 className='global_goldenrodtxt-btn px-5'>Contact</h6>
+                        <Nav.Link className=''>
+                            <h6 className='global_whitehovergoldenrodtxt-btn mr-n3 ml-0 py-0 px-3'>Contact</h6>
                         </Nav.Link>
                     </LinkContainer>
                 </Col>
