@@ -46,13 +46,13 @@ const SignInBtn = () => {
                 {userInfo ? (
                     <>
 
-                        <li className='HeaderDesktop_user-btns ml-3'>
+                        <li className='HeaderDesktop_user-btns ml-2'>
                             <Link to='/profile'>
                                 <i className="fas fa-user border-0  "> </i>
                             </Link>
                         </li>
 
-                        <li className='HeaderDesktop_user-btns'>
+                        <li className='HeaderDesktop_user-btns ml-1'>
                             <Link onClick={logoutHandler} to='/'>
                                 <i className="fal fa-sign-out border-0"> </i>
                             </Link>
