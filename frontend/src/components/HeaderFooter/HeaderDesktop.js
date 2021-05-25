@@ -124,71 +124,69 @@ const HeaderDesktop = () => {
                          style={{marginTop: '-5.75vh'}}>
 
                         {/*  HOME  */}
-                        <LinkContainer className='d-inline global_goldenrodtxt-btn' to='/'>
+                        <LinkContainer className='d-inline global_whitehovergoldenrodtxt global_goldenrod-border-left-hover ' to='/'>
                             <Nav.Link>
-                                <i className='far fa-home global_white'
+                                <i className='far fa-home'
                                    style={{fontSize: '1.5em'}}> </i>
                             </Nav.Link>
                         </LinkContainer>
 
                         {/*  BROWSE PRODUCTS  */}
-                        <LinkContainer className='d-inline global_goldenrodtxt-btn' to='/products'>
+                        <LinkContainer className='d-inline global_whitehovergoldenrodtxt global_goldenrod-border-left-hover ' to='/products'>
                             <Nav.Link className=''>
-                                <h6 className='global_white pt-1'>
-                                    Products
-                                </h6>
+                                    PRODUCTS
                             </Nav.Link>
                         </LinkContainer>
 
                         {/*  AVIONICS  */}
-                        <LinkContainer className='d-inline global_goldenrodtxt-btn' to='/avionics'>
+                        <LinkContainer className='d-inline global_whitehovergoldenrodtxt global_goldenrod-border-left-hover ' to='/avionics'>
                             <Nav.Link>
-                                <h6 className='global_white pt-1'>
-                                    Avionics
-                                </h6>
+                                {/*<h6 className='global_white pt-1'>*/}
+                                    AVIONICS
+                                {/*</h6>*/}
                             </Nav.Link>
                         </LinkContainer>
 
                         {/*  MAINTENANCE  */}
-                        <LinkContainer className='d-inline global_goldenrodtxt-btn' to='/maintenance'>
+                        <LinkContainer className='d-inline global_whitehovergoldenrodtxt global_goldenrod-border-left-hover ' to='/maintenance'>
                             <Nav.Link>
-                                <h6 className='global_white pt-1'>
-                                    Maintenance
-                                </h6>
+                                {/*<h6 className='global_white pt-1'>*/}
+                                    MAINTENANCE
+                                {/*</h6>*/}
                             </Nav.Link>
                         </LinkContainer>
 
                         {/*  EO/IR FLIR  */}
-                        <LinkContainer className='d-inline global_goldenrodtxt-btn' to='/flir'>
+                        <LinkContainer className='d-inline global_whitehovergoldenrodtxt global_goldenrod-border-left-hover ' to='/flir'>
                             <Nav.Link>
-                                <h6 className='global_white pt-1'>
-                                    Flir
+                                {/*<h6 className='global_white pt-1'>*/}
+                                    FLIR
 
-                                </h6>
+                                {/*</h6>*/}
                             </Nav.Link>
                         </LinkContainer>
 
                         {/*  TEAM  */}
-                        <LinkContainer className='d-inline global_goldenrodtxt-btn' to='/team'>
+                        <LinkContainer className='d-inline global_whitehovergoldenrodtxt global_goldenrod-border-left-hover ' to='/team'>
                             <Nav.Link>
-                                <h6 className='global_white pt-1'>
-                                    Team
-                                </h6>
+                                {/*<h6 className='global_white pt-1'>*/}
+                                    TEAM
+                                {/*</h6>*/}
                             </Nav.Link>
                         </LinkContainer>
 
                         {/*  WISHLIST  */}
-                        <LinkContainer className='d-inline global_goldenrodtxt-btn' to='/wishlist'>
-                            <Nav.Link className='global_white' style={{height: '6vh'}}>
+                        <LinkContainer className='d-inline global_whitehovergoldenrodtxt global_goldenrod-border-left-hover ' to='/wishlist'>
+                            <Nav.Link className='' style={{height: '6vh'}}>
                                 {/*<WishListTab/>*/}
-                                <h6 className='global_white'>
+                                {/*<h6 className=''>*/}
                                     <>
                                         {cartItems.length}
                                         &nbsp;
                                         <i className="fal fa-envelope-open-text HeaderDesktop_nav-tab-icon-size"> </i> {/*<i className="fal fa-list-alt "> </i>*/}
                                     </>
                                     {/*)}*/}
-                                </h6>
+                                {/*</h6>*/}
 
                             </Nav.Link>
                         </LinkContainer>
