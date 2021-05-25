@@ -55,29 +55,29 @@ const HeroCarousel = (
             <Carousel className='h-75'>
                 {/*    ================= Img 1 */}
                 <Carousel.Item>
-                    <Carousel.Caption>p
-                        <Row className='global_carousel-text-box'>
-                            <Col md={5} xs={7} className='global_carousel-text-top-bar '> </Col>
+                    <Carousel.Caption>
+                        <Row className='HeroCarousel_carousel-text-box'>
+                            <Col md={5} xs={7} className='HeroCarousel_carousel-text-top-bar '> </Col>
 
                             <Col xs={12}
                                  className='d-flex justify-content-start align-content-center '>
-                                <h1 className='global_carousel-title global_white'>
+                                <h1 className='HeroCarousel_carousel-title global_white'>
                                     <span
-                                        className='global_carousel-letter global_white'>{slide1firstTitleLetter}</span>{slide1firstTitleWord}
+                                        className='HeroCarousel_carousel-letter global_white'>{slide1firstTitleLetter}</span>{slide1firstTitleWord}
                                 </h1>
                             </Col>
 
                             <Col xs={12} className=' d-flex justify-content-start'>
-                                <h3 className='global_carousel-text m-0 p-0 global_white'>{slide1firstSentence}</h3>
+                                <h3 className='HeroCarousel_carousel-text m-0 p-0 global_white'>{slide1firstSentence}</h3>
                             </Col>
 
                             {slide1secondSentenceTrue && (
                                 <Col xs={12} className='d-flex justify-content-start'>
-                                    <h3 className='text-left global_carousel-text m-0 p-0 global_white'>{slide1secondSentence}</h3>
+                                    <h3 className='text-left HeroCarousel_carousel-text m-0 p-0 global_white'>{slide1secondSentence}</h3>
                                 </Col>
                             )}
 
-                            <Col md={7} xs={10} className='global_carousel-text-btm-bar'> </Col>
+                            <Col md={7} xs={10} className='HeroCarousel_carousel-text-btm-bar'> </Col>
 
                             <Col xs={12} className='ml-n3'>
                                 <SocialIcons/>
@@ -85,10 +85,10 @@ const HeroCarousel = (
                         </Row>
                     </Carousel.Caption>
 
-                    <div id={IDslide1} className=' global_HeroCarousel-animation'>
+                    <div id={IDslide1} className='HeroCarousel_animation'>
                         <Slide left duration={2500}>
                             <img
-                                className='global_carousel-divider-img'
+                                className='HeroCarousel_carousel-divider-img'
                                 src={img1}
                                 alt=" "
                                 height={'100%'}
@@ -102,38 +102,38 @@ const HeroCarousel = (
                 {carouselImg2True && (
                     <Carousel.Item>
                         <Carousel.Caption>
-                            <Row className='global_carousel-text-box'>
-                                <Col md={5} xs={7} className='global_carousel-text-top-bar global_red-bg'> </Col>
+                            <Row className='HeroCarousel_carousel-text-box'>
+                                <Col md={5} xs={7} className='HeroCarousel_carousel-text-top-bar global_blood-red-bg'> </Col>
 
                                 <Col xs={12}
                                      className='d-flex justify-content-start align-content-center '>
-                                    <h1 className='global_carousel-title global_white'>
+                                    <h1 className='HeroCarousel_carousel-title global_white'>
                                     <span
-                                        className='global_carousel-letter global_white'>{slide2firstTitleLetter}</span>{slide2firstTitleWord}
+                                        className='HeroCarousel_carousel-letter global_white'>{slide2firstTitleLetter}</span>{slide2firstTitleWord}
                                     </h1>
                                 </Col>
 
                                 <Col xs={12} className=' d-flex justify-content-start'>
-                                    <h3 className='global_carousel-text m-0 p-0 global_white'>{slide2firstSentence}</h3>
+                                    <h3 className='HeroCarousel_carousel-text m-0 p-0 global_white'>{slide2firstSentence}</h3>
                                 </Col>
 
                                 {slide2secondSentenceTrue && (
                                     <Col xs={12} className='d-flex justify-content-start'>
-                                        <h3 className='global_carousel-text m-0 p-0 global_white'>{slide2secondSentence}</h3>
+                                        <h3 className='HeroCarousel_carousel-text m-0 p-0 global_white'>{slide2secondSentence}</h3>
                                     </Col>
                                 )}
 
-                                <Col md={7} xs={10} className='global_carousel-text-btm-bar global_red-bg'> </Col>
+                                <Col md={7} xs={10} className='HeroCarousel_carousel-text-btm-bar global_red-bg'> </Col>
                                 <Col xs={12} className='ml-n3'>
                                     <SocialIcons/>
                                 </Col>
                             </Row>
                         </Carousel.Caption>
 
-                        <div id={IDslide2} className=' global_HeroCarousel-animation'>
+                        <div id={IDslide2} className='HeroCarousel_animation'>
                             {/*<Slide left duration={2500}>*/}
                                 <img
-                                    className='global_carousel-divider-img '
+                                    className='HeroCarousel_carousel-divider-img '
                                     src={img1}
                                     alt=" "
                                     height={'100%'}
@@ -148,91 +148,85 @@ const HeroCarousel = (
                 {carouselImg3True && (
                     <Carousel.Item>
                         <Carousel.Caption>
-                            <Row className='global_carousel-text-box'>
-                                <Col md={5} xs={7} className='global_carousel-text-top-bar global_red-bg'> </Col>
+                            <Row className='HeroCarousel_carousel-text-box'>
+                                <Col md={5} xs={7} className='global_carousel-text-top-bar global_blood-red-bg'> </Col>
 
                                 <Col xs={12}
                                      className='d-flex justify-content-start align-content-center '>
-                                    <h1 className='global_carousel-title global_white'>
+                                    <h1 className='HeroCarousel_carousel-title global_white'>
                                     <span
-                                        className='global_carousel-letter global_white'>{slide3firstTitleLetter}</span>{slide3firstTitleWord}
+                                        className='HeroCarousel_carousel-letter global_white'>{slide3firstTitleLetter}</span>{slide3firstTitleWord}
                                     </h1>
                                 </Col>
 
                                 <Col xs={12} className=' d-flex justify-content-start'>
-                                    <h3 className='global_carousel-text m-0 p-0 global_white'>{slide3firstSentence}</h3>
+                                    <h3 className='HeroCarousel_carousel-text m-0 p-0 global_white'>{slide3firstSentence}</h3>
                                 </Col>
 
                                 {slide3secondSentenceTrue && (
                                     <Col xs={12} className='d-flex justify-content-start'>
-                                        <h3 className='global_carousel-text m-0 p-0 global_white'>{slide3secondSentence}</h3>
+                                        <h3 className='HeroCarousel_carousel-text m-0 p-0 global_white'>{slide3secondSentence}</h3>
                                     </Col>
                                 )}
 
-                                <Col md={7} xs={10} className='global_carousel-text-btm-bar global_red-bg'> </Col>
-                                <Col xs={12} className='ml-n3 global_carousel-social-icons'>
+                                <Col md={7} xs={10} className='HeroCarousel_carousel-text-btm-bar global_blood-red-bg'> </Col>
+                                <Col xs={12} className='ml-n3 HeroCarousel_carousel-social-icons'>
                                     <SocialIcons/>
                                 </Col>
                              </Row>
                         </Carousel.Caption>
 
-                        <div id={IDslide3} className=' global_HeroCarousel-animation'>
-                            {/*<Slide left duration={2500}>*/}
+                        <div id={IDslide3} className='HeroCarousel_animation'>
                                 <img
-                                    className='global_carousel-divider-img '
+                                    className='HeroCarousel_carousel-divider-img '
                                     src={img1}
                                     alt=" "
                                     height={'100%'}
                                 />
-                            {/*</Slide>*/}
                         </div>
                     </Carousel.Item>
                 )}
 
 
                 {/*    ================= Img 4 */}
-
-
                 {carouselImg4True && (
                     <Carousel.Item>
                         <Carousel.Caption>
-                            <Row className='global_carousel-text-box'>
-                                <Col md={5} xs={7} className='global_carousel-text-top-bar global_red-bg'> </Col>
+                            <Row className='HeroCarousel_carousel-text-box'>
+                                <Col md={5} xs={7} className='HeroCarousel_carousel-text-top-bar global_blood-red-bg'> </Col>
 
                                 <Col xs={12}
                                      className='d-flex justify-content-start align-content-center '>
-                                    <h1 className='global_carousel-title global_white'>
+                                    <h1 className='HeroCarousel_carousel-title global_white'>
                                     <span
-                                        className='global_carousel-letter global_white'>{slide4firstTitleLetter}</span>{slide4firstTitleWord}
+                                        className='HeroCarousel_carousel-letter global_white'>{slide4firstTitleLetter}</span>{slide4firstTitleWord}
                                     </h1>
                                 </Col>
 
                                 <Col xs={12} className=' d-flex justify-content-start'>
-                                    <h3 className='global_carousel-text m-0 p-0 global_white'>{slide4firstSentence}</h3>
+                                    <h3 className='HeroCarousel_carousel-text m-0 p-0 global_white'>{slide4firstSentence}</h3>
                                 </Col>
 
                                 {slide4secondSentenceTrue && (
                                     <Col xs={12} className='d-flex justify-content-start'>
-                                        <h3 className='global_carousel-text m-0 p-0 global_white'>{slide4secondSentence}</h3>
+                                        <h3 className='HeroCarousel_carousel-text m-0 p-0 global_white'>{slide4secondSentence}</h3>
                                     </Col>
                                 )}
 
-                                <Col md={7} xs={10} className='global_carousel-text-btm-bar global_red-bg'> </Col>
+                                <Col md={7} xs={10} className='HeroCarousel_carousel-text-btm-bar global_blood-red-bg'> </Col>
                                 <Col xs={12} className='ml-n3'>
                                     <SocialIcons/>
                                 </Col>
                             </Row>
                         </Carousel.Caption>
 
-                        <div id={IDslide4} className='global_HeroCarousel-animation'>
-                            {/*<Slide left duration={2500}>*/}
+                        <div id={IDslide4} className='HeroCarousel_animation'>
                                 <img
-                                    className='global_carousel-divider-img '
+                                    className='HeroCarousel_carousel-divider-img '
                                     src={img1}
                                     alt=" "
                                     height={'100%'}
                                 />
-                            {/*</Slide>*/}
                         </div>
                     </Carousel.Item>
                 )}
@@ -242,43 +236,41 @@ const HeroCarousel = (
                 {carouselImg5True && (
                     <Carousel.Item>
                         <Carousel.Caption>
-                            <Row className='global_carousel-text-box'>
-                                <Col md={5} xs={7} className='global_carousel-text-top-bar global_red-bg'> </Col>
+                            <Row className='HeroCarousel_carousel-text-box'>
+                                <Col md={5} xs={7} className='HeroCarousel_carousel-text-top-bar global_blood-red-bg'> </Col>
 
                                 <Col xs={12}
                                      className='d-flex justify-content-start align-content-center '>
-                                    <h1 className='global_carousel-title global_white'>
+                                    <h1 className='HeroCarousel_carousel-title global_white'>
                                     <span
-                                        className='global_carousel-letter global_white'>{slide5firstTitleLetter}</span>{slide5firstTitleWord}
+                                        className='HeroCarousel_carousel-letter global_white'>{slide5firstTitleLetter}</span>{slide5firstTitleWord}
                                     </h1>
                                 </Col>
 
                                 <Col xs={12} className=' d-flex justify-content-start'>
-                                    <h3 className='global_carousel-text m-0 p-0 global_white'>{slide5firstSentence}</h3>
+                                    <h3 className='HeroCarousel_carousel-text m-0 p-0 global_white'>{slide5firstSentence}</h3>
                                 </Col>
 
                                 {slide5secondSentenceTrue && (
                                     <Col xs={12} className='d-flex justify-content-start'>
-                                        <h3 className='global_carousel-text m-0 p-0 global_white'>{slide5secondSentence}</h3>
+                                        <h3 className='HeroCarousel_carousel-text m-0 p-0 global_white'>{slide5secondSentence}</h3>
                                     </Col>
                                 )}
 
-                                <Col md={7} xs={10} className='global_carousel-text-btm-bar global_red-bg'> </Col>
+                                <Col md={7} xs={10} className='HeroCarousel_carousel-text-btm-bar global_red-bg'> </Col>
                                 <Col xs={12} className='ml-n3'>
                                     <SocialIcons/>
                                 </Col>
                             </Row>
                         </Carousel.Caption>
 
-                        <div id={IDslide5} className=' global_HeroCarousel-animation'>
-                            {/*<Slide left>*/}
+                        <div id={IDslide5} className='HeroCarousel_HeroCarousel-animation'>
                                 <img
-                                    className='global_carousel-divider-img '
+                                    className='HeroCarousel_carousel-divider-img '
                                     src={img1}
                                     alt=" "
                                     height={'100%'}
                                 />
-                            {/*</Slide>*/}
                         </div>
                     </Carousel.Item>
                 )}
