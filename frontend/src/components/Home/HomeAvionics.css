@@ -12,6 +12,7 @@
 
 .AvionicsHome_image {
     background-image: url("./images/fullscreen-slider2.png");
+    /*background-image: url("src/components/Home/images/fullscreen-slider2.png");*/
     background-position: center top;
 }
 
