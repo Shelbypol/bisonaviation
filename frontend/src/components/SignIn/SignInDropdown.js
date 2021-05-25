@@ -7,7 +7,7 @@ import SignInForm from "./SignInForm";
 import './SideBar.css'
 import {Button} from "react-bootstrap";
 
-const SignInDropdown = ({ showSidebar }) => {
+const SignInDropdown = ({showSidebar}) => {
     const [loginShow, setLoginShow] = useState(false);
 
     const dispatch = useDispatch();
@@ -43,14 +43,15 @@ const SignInDropdown = ({ showSidebar }) => {
             {/*  REGISTER  */}
             {!userInfo && (
                 <>
-                <li className='mx-2'>
-                <h6 className='text-muted'>if not a user</h6>
-                    <Link to='/Register' onClick={showSidebar}>
-                <Button className=' py-2 px-3 global_blood-red-bg global_cultured rounded'
-                ><i className="fal fa-clipboard-user"> </i>&nbsp;Register</Button>
-                    </Link>
-                </li>
-</>
+                    <li className='mx-2'>
+                        <h6 className='text-muted'>if not a user</h6>
+                        <Link to='/Register' onClick={showSidebar}>
+                            <Button className=' py-2 px-3 global_blood-red-bg global_cultured rounded'>
+                                Register
+                            </Button>
+                        </Link>
+                    </li>
+                </>
             )}
 
             {/*  ADMIN DROPDOWN  */}

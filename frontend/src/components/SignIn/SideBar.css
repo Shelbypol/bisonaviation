@@ -36,7 +36,7 @@
 
 .SideBar-nav-menu-user-not-logged {
     background-image: url("./dots.png");
-    background-color: rgba(0,0,0, .7);
+    background-color: rgba(0,0,0, 1);
     width: 30vw;
     display: flex;
     justify-content: start;

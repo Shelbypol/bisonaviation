@@ -1,10 +1,6 @@
 import React, {useState, useEffect} from 'react'
-import {Link} from 'react-router-dom'
 import {Form, Button, Row, Col} from 'react-bootstrap'
-// deals with our redux state
 import {useDispatch, useSelector} from 'react-redux'
-import Message from "../Message";
-import Loader from '../Loader'
 import {login} from '../../actions/userActions'
 
 
@@ -31,14 +27,16 @@ const SignInForm = ({history, showSidebar, loginTitle}) => {
             {error && (
                 <>
                     <div className='text-center border-bottom mb-2 mt-n4'>
-                        <h6 className='global_red'>ERROR</h6>
-                        <h6 className='text-white'>username and password do not match</h6>
+                        <h6 className='global_goldenrod'>ERROR</h6>
+                        <h6 className='global_white'>username and password do not match</h6>
                     </div>
                 </>
             )}
             <Form onSubmit={submitHandler} className='mx-2'>
-                <h4 className='global_white'><i
-                    className="fas fa-user-alt"> </i>&nbsp;{loginTitle}</h4>
+                <h4>
+                    <i className="fas fa-user-alt global_goldenrod d-inline"> </i>
+                    <h4 className='global_white d-inline'>&nbsp;{loginTitle}</h4>
+                </h4>
                 <Form.Group controlId='email'>
                     {/*<Form.Label>Email Address</Form.Label>*/}
                     <Form.Control type='email'
@@ -56,7 +54,7 @@ const SignInForm = ({history, showSidebar, loginTitle}) => {
                                   onChange={(e) => setPassword(e.target.value)}>
                     </Form.Control>
                 </Form.Group>
-                <Button className='d-inline py-2 px-3 global_whiteFontRedHoverWhiteBg global_blue-bg rounded'
+                <Button className='d-inline py-2 px-3 global_goldenrodtxtborder-btn rounded'
                         type='submit' variant='primary'
                         onClick={showSidebar}><i className="far fa-lock"> </i>&nbsp;Sign In</Button>
             </Form>

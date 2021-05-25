@@ -181,6 +181,22 @@ p{
     color: #daa520;
 }
 
+.global_goldenrod-border-left-hover{
+    border-left: 1px solid #000;
+}
+
+.global_goldenrod-border-left-hover:hover{
+    border-left: 1px solid #daa520;
+}
+
+.global_goldenrod-border-right-hover{
+    border-left: 1px solid #000;
+}
+
+.global_goldenrod-border-right-hover:hover{
+    border-left: 1px solid #daa520;
+}
+
 /*=================== BORDERS*/
 .global_goldenrodtxtborder-btn {
     color: #daa520;

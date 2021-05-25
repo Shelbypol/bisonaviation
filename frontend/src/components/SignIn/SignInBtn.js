@@ -23,14 +23,14 @@ const SignInBtn = () => {
         return () => {
             document.removeEventListener("scroll", handleScroll);
         };
-    }, []);
+    }, [sidebar]);
 
     const showSidebar = () => setSidebar(!sidebar);
 
     const handleScroll = e => {
-    //     if (node.current.contains(e.target) === false) {
-    //         setSidebar(false)
-    //     }
+        if (node.current.contains(e.target) === false) {
+            setSidebar(false)
+        }
     };
 
     const logoutHandler = () => {
@@ -46,13 +46,13 @@ const SignInBtn = () => {
                 {userInfo ? (
                     <>
 
-                        <li className='HeaderDesktop_user-btns'>
+                        <li className='HeaderDesktop_user-btns ml-2'>
                             <Link to='/profile'>
                                 <i className="fas fa-user border-0  "> </i>
                             </Link>
                         </li>
 
-                        <li className='HeaderDesktop_user-btns'>
+                        <li className='HeaderDesktop_user-btns ml-1'>
                             <Link onClick={logoutHandler} to='/'>
                                 <i className="fal fa-sign-out border-0"> </i>
                             </Link>
@@ -61,7 +61,6 @@ const SignInBtn = () => {
                 ) : (
                     <Link to='#'>
                         <h6 onClick={showSidebar} className='SideBar_Login p-2 global_whitehovergoldenrodtxt-btn'>
-                            {/*<i className="fas fa-user-alt"> </i>*/}
                             Sign in / Register</h6>
                     </Link>
                 )}
