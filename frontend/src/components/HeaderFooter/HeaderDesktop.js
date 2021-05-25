@@ -134,7 +134,7 @@ const HeaderDesktop = () => {
                         {/*  BROWSE PRODUCTS  */}
                         <LinkContainer className='d-inline global_whitehovergoldenrodtxt global_goldenrod-border-left-hover ' to='/products'>
                             <Nav.Link className=''>
-                                    PRODUCTS
+                                   PRODUCTS
                             </Nav.Link>
                         </LinkContainer>
 
@@ -171,9 +171,16 @@ const HeaderDesktop = () => {
                         <LinkContainer className='d-inline global_whitehovergoldenrodtxt global_goldenrod-border-left-hover ' to='/wishlist'>
                             <Nav.Link className='' style={{height: '6vh'}}>
                                     <>
+                                        <span className={
+                                            cartItems.length > 0 ?
+                                                ' global_goldenrod'
+                                                :
+                                                'global_white'}>
                                         {cartItems.length}
+
+                                        </span>
                                         &nbsp;
-                                        <i className="fal fa-envelope-open-text HeaderDesktop_nav-tab-icon-size"> </i> {/*<i className="fal fa-list-alt "> </i>*/}
+                                        <i className='fal fa-envelope-open-text HeaderDesktop_nav-tab-icon-size'> </i>
                                     </>
                             </Nav.Link>
                         </LinkContainer>

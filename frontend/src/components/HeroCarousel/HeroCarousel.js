@@ -55,7 +55,7 @@ const HeroCarousel = (
             <Carousel className='h-75'>
                 {/*    ================= Img 1 */}
                 <Carousel.Item>
-                    <Carousel.Caption>
+                    <Carousel.Caption>p
                         <Row className='global_carousel-text-box'>
                             <Col md={5} xs={7} className='global_carousel-text-top-bar '> </Col>
 

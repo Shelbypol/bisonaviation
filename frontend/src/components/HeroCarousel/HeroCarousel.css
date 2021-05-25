@@ -1,7 +1,3 @@
-
-
-
-/*================= CAROUSEL ======================*/
 .global_HeroCarousel-animation {
     -webkit-animation: zoomin 25s; /* Chrome, Safari, Opera */
     animation: zoomin infinite 25s;
@@ -94,12 +90,6 @@
     .global_carousel-text{
         font-size: 3vw !important;
     }
-
-    /*.global_carousel-text-box{*/
-    /*    z-index: 1;*/
-    /*    text-align: center;*/
-    /*    width: 80vw;*/
-    /*}*/
 
     .global_HeroCarousel-animation{
         height: 85vh;
