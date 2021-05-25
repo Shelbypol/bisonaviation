@@ -141,53 +141,40 @@ const HeaderDesktop = () => {
                         {/*  AVIONICS  */}
                         <LinkContainer className='d-inline global_whitehovergoldenrodtxt global_goldenrod-border-left-hover ' to='/avionics'>
                             <Nav.Link>
-                                {/*<h6 className='global_white pt-1'>*/}
                                     AVIONICS
-                                {/*</h6>*/}
                             </Nav.Link>
                         </LinkContainer>
 
                         {/*  MAINTENANCE  */}
                         <LinkContainer className='d-inline global_whitehovergoldenrodtxt global_goldenrod-border-left-hover ' to='/maintenance'>
                             <Nav.Link>
-                                {/*<h6 className='global_white pt-1'>*/}
                                     MAINTENANCE
-                                {/*</h6>*/}
                             </Nav.Link>
                         </LinkContainer>
 
                         {/*  EO/IR FLIR  */}
                         <LinkContainer className='d-inline global_whitehovergoldenrodtxt global_goldenrod-border-left-hover ' to='/flir'>
                             <Nav.Link>
-                                {/*<h6 className='global_white pt-1'>*/}
                                     FLIR
 
-                                {/*</h6>*/}
                             </Nav.Link>
                         </LinkContainer>
 
                         {/*  TEAM  */}
                         <LinkContainer className='d-inline global_whitehovergoldenrodtxt global_goldenrod-border-left-hover ' to='/team'>
                             <Nav.Link>
-                                {/*<h6 className='global_white pt-1'>*/}
                                     TEAM
-                                {/*</h6>*/}
                             </Nav.Link>
                         </LinkContainer>
 
                         {/*  WISHLIST  */}
                         <LinkContainer className='d-inline global_whitehovergoldenrodtxt global_goldenrod-border-left-hover ' to='/wishlist'>
                             <Nav.Link className='' style={{height: '6vh'}}>
-                                {/*<WishListTab/>*/}
-                                {/*<h6 className=''>*/}
                                     <>
                                         {cartItems.length}
                                         &nbsp;
                                         <i className="fal fa-envelope-open-text HeaderDesktop_nav-tab-icon-size"> </i> {/*<i className="fal fa-list-alt "> </i>*/}
                                     </>
-                                    {/*)}*/}
-                                {/*</h6>*/}
-
                             </Nav.Link>
                         </LinkContainer>
 
@@ -198,7 +185,7 @@ const HeaderDesktop = () => {
                     <Col xs={2} className='d-flex justify-content-end' style={{marginTop: '-5.75vh'}}>
                         <LinkContainer to='/contact' className=''>
                             <Nav.Link className=''>
-                                <h6 className='global_whitehovergoldenrodtxt-btn mr-n3 ml-0 py-0 px-3'>Contact</h6>
+                                <h6 className='global_whitehovergoldenrodtxt global_goldenrod-border-left pl-3'>Contact</h6>
                             </Nav.Link>
                         </LinkContainer>
                     </Col>

@@ -93,7 +93,7 @@ const HeaderMobile = () => {
                                     </p>
 
                                     <p className='global_red d-inline'>
-                                        <i style={{fontSize: '6vw'}} className=" fal fa-envelope-open-text"> </i>
+                                        <i style={{fontSize: '4vw'}} className=" fal fa-envelope-open-text"> </i>
                                     </p>
 
                                 </p>

@@ -31,8 +31,7 @@ const SignInSuccess = ({showSidebar}) => {
         <>
             {userInfo ? (
                     <>
-
-                        <span><h4 className='mx-3 '>{userInfo.name}</h4></span>
+                        <h4 className='mx-3 '>{userInfo.name}</h4>
 
                         <li className='SideBar-nav-text'>
                             <Link to='/profile' onClick={showSidebar}>
