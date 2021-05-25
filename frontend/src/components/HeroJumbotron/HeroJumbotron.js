@@ -22,11 +22,11 @@ const HeroJumbotron = ({img, showImg, title, leftTitle}) => {
                     >
                         {leftTitle ? (
                             <p
-                                className={'HeroJumbotron_title global_goldenrodtxtborder-btn'}
+                                className={'HeroJumbotron_title global_black-bg global_white global_goldenrod-border-left'}
                             >{title}</p>
                         ):(
                         <p
-                            className={'HeroJumbotron_title  global_goldenrodtxtborder-btn'}
+                            className={'HeroJumbotron_title global_black-bg global_white global_goldenrod-border-left'}
                         >{title}</p>
 
                         )}

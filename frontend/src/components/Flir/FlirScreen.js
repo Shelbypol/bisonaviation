@@ -20,7 +20,7 @@ const FlirScreen = () => {
             <Container className=' pt-5'>
 
 
-                <h1 className='global_white px-0 mx-0'>Airborne FLIR, EO/IR, & Thermography Systems</h1>
+                <h1 className='global_whiteFontHover px-0 mx-0'>Airborne FLIR, EO/IR, & Thermography Systems</h1>
                 <FlirText/>
 
                 <Jumbotron className='FlirScreen_style bg-transparent p-0 m-0' fluid>
