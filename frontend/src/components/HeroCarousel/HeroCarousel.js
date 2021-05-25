@@ -60,20 +60,20 @@ const HeroCarousel = (
                             <Col md={5} xs={7} className='HeroCarousel_carousel-text-top-bar '> </Col>
 
                             <Col xs={12}
-                                 className='d-flex justify-content-start align-content-center '>
+                                 className='d-sm-flex justify-content-sm-center justify-content-md-start align-content-center '>
                                 <h1 className='HeroCarousel_carousel-title global_white'>
                                     <span
                                         className='HeroCarousel_carousel-letter global_white'>{slide1firstTitleLetter}</span>{slide1firstTitleWord}
                                 </h1>
                             </Col>
 
-                            <Col xs={12} className=' d-flex justify-content-start'>
+                            <Col xs={12} className='d-sm-flex justify-content-sm-center justify-content-md-start'>
                                 <h3 className='HeroCarousel_carousel-text m-0 p-0 global_white'>{slide1firstSentence}</h3>
                             </Col>
 
                             {slide1secondSentenceTrue && (
-                                <Col xs={12} className='d-flex justify-content-start'>
-                                    <h3 className='text-left HeroCarousel_carousel-text m-0 p-0 global_white'>{slide1secondSentence}</h3>
+                                <Col xs={12} className='d-sm-flex justify-content-sm-center justify-content-md-start'>
+                                    <h3 className=' HeroCarousel_carousel-text m-0 p-0 global_white'>{slide1secondSentence}</h3>
                                 </Col>
                             )}
 
@@ -106,19 +106,19 @@ const HeroCarousel = (
                                 <Col md={5} xs={7} className='HeroCarousel_carousel-text-top-bar global_blood-red-bg'> </Col>
 
                                 <Col xs={12}
-                                     className='d-flex justify-content-start align-content-center '>
+                                     className='d-sm-flex justify-content-sm-center justify-content-md-start align-content-center'>
                                     <h1 className='HeroCarousel_carousel-title global_white'>
                                     <span
                                         className='HeroCarousel_carousel-letter global_white'>{slide2firstTitleLetter}</span>{slide2firstTitleWord}
                                     </h1>
                                 </Col>
 
-                                <Col xs={12} className=' d-flex justify-content-start'>
+                                <Col xs={12} className='d-sm-flex justify-content-sm-center justify-content-md-start align-content-center'>
                                     <h3 className='HeroCarousel_carousel-text m-0 p-0 global_white'>{slide2firstSentence}</h3>
                                 </Col>
 
                                 {slide2secondSentenceTrue && (
-                                    <Col xs={12} className='d-flex justify-content-start'>
+                                    <Col xs={12} className='d-sm-flex justify-content-sm-center justify-content-md-start align-content-center'>
                                         <h3 className='HeroCarousel_carousel-text m-0 p-0 global_white'>{slide2secondSentence}</h3>
                                     </Col>
                                 )}
@@ -152,19 +152,19 @@ const HeroCarousel = (
                                 <Col md={5} xs={7} className='global_carousel-text-top-bar global_blood-red-bg'> </Col>
 
                                 <Col xs={12}
-                                     className='d-flex justify-content-start align-content-center '>
+                                     className='d-sm-flex justify-content-sm-center justify-content-md-start align-content-center '>
                                     <h1 className='HeroCarousel_carousel-title global_white'>
                                     <span
                                         className='HeroCarousel_carousel-letter global_white'>{slide3firstTitleLetter}</span>{slide3firstTitleWord}
                                     </h1>
                                 </Col>
 
-                                <Col xs={12} className=' d-flex justify-content-start'>
+                                <Col xs={12} className='d-sm-flex justify-content-sm-center justify-content-md-start align-content-center '>
                                     <h3 className='HeroCarousel_carousel-text m-0 p-0 global_white'>{slide3firstSentence}</h3>
                                 </Col>
 
                                 {slide3secondSentenceTrue && (
-                                    <Col xs={12} className='d-flex justify-content-start'>
+                                    <Col xs={12} className='d-sm-flex justify-content-sm-center justify-content-md-start align-content-center '>
                                         <h3 className='HeroCarousel_carousel-text m-0 p-0 global_white'>{slide3secondSentence}</h3>
                                     </Col>
                                 )}
@@ -196,19 +196,19 @@ const HeroCarousel = (
                                 <Col md={5} xs={7} className='HeroCarousel_carousel-text-top-bar global_blood-red-bg'> </Col>
 
                                 <Col xs={12}
-                                     className='d-flex justify-content-start align-content-center '>
+                                     className='d-sm-flex justify-content-sm-center justify-content-md-start align-content-center '>
                                     <h1 className='HeroCarousel_carousel-title global_white'>
                                     <span
                                         className='HeroCarousel_carousel-letter global_white'>{slide4firstTitleLetter}</span>{slide4firstTitleWord}
                                     </h1>
                                 </Col>
 
-                                <Col xs={12} className=' d-flex justify-content-start'>
+                                <Col xs={12} className='d-sm-flex justify-content-sm-center justify-content-md-start align-content-center '>
                                     <h3 className='HeroCarousel_carousel-text m-0 p-0 global_white'>{slide4firstSentence}</h3>
                                 </Col>
 
                                 {slide4secondSentenceTrue && (
-                                    <Col xs={12} className='d-flex justify-content-start'>
+                                    <Col xs={12} className='d-sm-flex justify-content-sm-center justify-content-md-start align-content-center '>
                                         <h3 className='HeroCarousel_carousel-text m-0 p-0 global_white'>{slide4secondSentence}</h3>
                                     </Col>
                                 )}
@@ -240,19 +240,19 @@ const HeroCarousel = (
                                 <Col md={5} xs={7} className='HeroCarousel_carousel-text-top-bar global_blood-red-bg'> </Col>
 
                                 <Col xs={12}
-                                     className='d-flex justify-content-start align-content-center '>
+                                     className='d-sm-flex justify-content-sm-center justify-content-md-start align-content-center'>
                                     <h1 className='HeroCarousel_carousel-title global_white'>
                                     <span
                                         className='HeroCarousel_carousel-letter global_white'>{slide5firstTitleLetter}</span>{slide5firstTitleWord}
                                     </h1>
                                 </Col>
 
-                                <Col xs={12} className=' d-flex justify-content-start'>
+                                <Col xs={12} className='d-sm-flex justify-content-sm-center justify-content-md-start align-content-center'>
                                     <h3 className='HeroCarousel_carousel-text m-0 p-0 global_white'>{slide5firstSentence}</h3>
                                 </Col>
 
                                 {slide5secondSentenceTrue && (
-                                    <Col xs={12} className='d-flex justify-content-start'>
+                                    <Col xs={12} className='d-sm-flex justify-content-sm-center justify-content-md-start align-content-center '>
                                         <h3 className='HeroCarousel_carousel-text m-0 p-0 global_white'>{slide5secondSentence}</h3>
                                     </Col>
                                 )}
@@ -264,7 +264,7 @@ const HeroCarousel = (
                             </Row>
                         </Carousel.Caption>
 
-                        <div id={IDslide5} className='HeroCarousel_HeroCarousel-animation'>
+                        <div id={IDslide5} className='HeroCarousel_animation'>
                                 <img
                                     className='HeroCarousel_carousel-divider-img '
                                     src={img1}

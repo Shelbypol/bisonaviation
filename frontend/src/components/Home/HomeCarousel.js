@@ -20,7 +20,7 @@ const HomeCarousel = () => {
             IDslide2={'HomeHero_carouselImg2'}
             carouselImg2True={true}
             slide2firstTitleLetter={'A'}
-            slide2firstTitleWord={'vionics HomeServices'}
+            slide2firstTitleWord={'vionics'}
             slide2firstSentence={'MINOR REPAIRS TO COMPLETE PANEL UPGRADES. '}
             slide2secondSentenceTrue={true}
             slide2secondSentence={'ALL PERFORMED IN-HOUSE!'}
