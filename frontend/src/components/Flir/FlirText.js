@@ -53,15 +53,15 @@ const FlirText = () => {
 
         <Row className='mt-5'>
             <Col xs={12} >
-                <h3 className='FlirScreen_Title global_whiteFontHover pl-2'>If you're looking for FLIR parts, you've come to the right place!</h3>
+                <h3 className='FlirScreen_Title global_white pl-2 global_goldenrod-border-left'>If you're looking for FLIR parts, you've come to the right place!</h3>
             </Col>
-            <Col xs={12} className='text-white'>
+            <Col xs={12} className='Tabs_contentStyle'>
                 <p>Bison Aviation is proud to stock the largest in-house inventory of legacy FLIR and EO/IR system parts in the world. Below is a small sample of our airborne EO/IR equipment inventory. If you don't see the part you need, please contact us; chances are we have it in stock.</p>
             </Col>
             <Col xs={12}>
-                <h5 className='FlirScreen_Title global_whiteFontHover pl-2'>Surplus Equipment Purchasing</h5>
+                <h5 className='FlirScreen_Title global_white pl-2 global_goldenrod-border-left'>Surplus Equipment Purchasing</h5>
             </Col>
-            <Col xs={12} className='text-white'>
+            <Col xs={12} className='Tabs_contentStyle'>
                 <p>
                     Bison Aviation is always in the market for used airborne FLIR & EO/IR systems, along with related mission support equipment. If you have equipment taking up space in the back of your hangar, or if your agency is ready to upgrade and doesn't know what to do with its old equipment, contact Bison Aviation. We will provide you with a firm offer to purchase your equipment and will even work directly with manufacturers to help offset the cost of your new system, rather than allowing the value of the surplus equipment to simply be dropped back into the general fund.
                 </p>

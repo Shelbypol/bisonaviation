@@ -145,6 +145,10 @@ p{
     color: #fff;
 }
 
+.global_light-gray{
+    color: rgba(255,255,255,.6);
+}
+
 /*________________  BUTTONS */
 .global_goldenrodtxt-btn {
     color: #daa520;
