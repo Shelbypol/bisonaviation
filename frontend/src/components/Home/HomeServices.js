@@ -1,6 +1,6 @@
 import React from "react";
-import './Services.css'
-import { Col, Row, Card} from "react-bootstrap";
+import './HomeServices.css'
+import {Col, Row, Card} from "react-bootstrap";
 import Fade from 'react-reveal/Fade';
 
 const HomeServices = () => {
@@ -10,16 +10,22 @@ const HomeServices = () => {
             <Row className='text-white text-center mb-3'>
 
                 <Col xs={12} className='my-5'>
-                    <h3 className='text-white font-weight-lighter'>Services Offered</h3>
+                    <i>
+                        <h4 className='text-white font-weight-lighter'>
+                            Services
+                        </h4>
+                    </i>
+
                 </Col>
 
-                <Col lg={4} xs={12} className='HomeServices_col global_cursor d-flex align-items-start h-auto justify-content-center'>
+                <Col lg={4} xs={12}
+                     className='HomeServices_col global_cursor d-flex align-items-start h-auto justify-content-center'>
                     <Fade left>
                         <Card className='p-2 border-0 w-100 bg-transparent'>
                             <Card.Body className=''>
                                 <Card.Title className='fa-stack fa-2x ml-n4'>
-                                        <i className="fas fa-square fa-stack-2x global_blood-red "> </i>
-                                        <i className='far fa-tools fa-stack-2x global_cultured '> </i>
+                                    <i className="fas fa-square fa-stack-2x global_blood-red "> </i>
+                                    <i className='far fa-tools fa-stack-2x global_cultured '> </i>
                                 </Card.Title>
                                 <Card.Subtitle className='mx-auto my-3'>
                                     <h5 className='HomeServices_nav_text'>Maintenance</h5>
@@ -37,7 +43,8 @@ const HomeServices = () => {
                     </Fade>
                 </Col>
 
-                <Col lg={4} xs={12} className='HomeServices_col-avionics global_cursor d-flex align-items-start h-auto justify-content-center'>
+                <Col lg={4} xs={12}
+                     className='HomeServices_col-avionics global_cursor d-flex align-items-start h-auto justify-content-center'>
                     <Fade>
                         <Card className='p-2 border-0 w-100 bg-transparent'>
                             <Card.Body>
@@ -64,7 +71,8 @@ const HomeServices = () => {
                     </Fade>
                 </Col>
 
-                <Col lg={4} xs={12} className='HomeServices_col global_cursor d-flex align-items-start h-auto justify-content-center'>
+                <Col lg={4} xs={12}
+                     className='HomeServices_col global_cursor d-flex align-items-start h-auto justify-content-center'>
                     <Fade right>
                         <Card className='p-2 border-0 w-100 bg-transparent'>
                             <Card.Body>
