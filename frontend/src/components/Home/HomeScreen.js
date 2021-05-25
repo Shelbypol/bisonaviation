@@ -25,45 +25,40 @@ const HomeScreen = () => {
             <Row className='d-flex justify-content-center'>
                 <Col xs={12} className='' style={{zIndex: '1'}}>
 
-                    {/*<Row className='m-0 p-0 d-flex justify-content-center'>*/}
-                    {/*    <Col xs={12} className='mx-0 mt-0 mb-n3 p-0' style={{zIndex: '1'}}>*/}
-                    {/*    </Col>*/}
-                    {/*</Row>*/}
-
                     <HomeAwardBanner/>
 
-                    <Row className='my-5 d-flex justify-content-center'>
-                        <Col md={9} xs={12} className='mb-5' style={{zIndex: '3000'}}>
+                    <Row className='my-md-5 mb-sm-0 mt-sm-3 d-flex justify-content-center'>
+                        <Col md={9} xs={12} className='mb-md-5 mb-sm-0' style={{zIndex: '3000'}}>
                             <HomeServices/>
                         </Col>
                     </Row>
 
-
-                    <Row className='my-5 py-5 d-flex justify-content-center'>
+                    <Row className='my-md-5 py-md-5 my-sm-0 py-sm-0
+                     d-flex justify-content-center'>
                         <Col md={9} xs={12} className='mb-5' style={{zIndex: '3000'}}>
                             <HomeAvionics/>
                         </Col>
                     </Row>
 
-                    <Row className='my-5 py-5 d-flex justify-content-center'>
-                        <Col md={9} xs={12} style={{zIndex: '3000'}} className='mb-5'>
+                    <Row className='my-md-5 py-md-5 my-sm-0 py-sm-0 d-flex justify-content-center'>
+                        <Col md={9} xs={12} style={{zIndex: '3000'}} className='mb-md-5 mb-sm-0'>
                             <GarminAdProductCarousel/>
                         </Col>
                     </Row>
 
-                    <Row className='my-5 py-5 d-flex justify-content-center'>
+                    <Row className='my-md-5 py-md-5 my-sm-0 py-sm-0 d-flex justify-content-center'>
                         <Col md={9} xs={12} className='mb-5' style={{zIndex: '3000'}}>
                             <HomeMaintenance/>
                         </Col>
                     </Row>
 
-                    <Row className='my-5 py-5 d-flex justify-content-center'>
-                        <Col md={9} xs={12} className='global_blood-red-bg mb-5' style={{zIndex: '3000'}}>
+                    <Row className='my-md-5 py-md-5 my-sm-0 py-sm-0 d-flex justify-content-center'>
+                        <Col md={9} xs={12} className='global_blood-red-bg mb-md-5 mb-sm-0' style={{zIndex: '3000'}}>
                             <TestimonialCarousel/>
                         </Col>
                     </Row>
 
-                    <Row className='my-5 py-5 d-flex justify-content-center'>
+                    <Row className='my-md-5 py-md-5 my-sm-0 py-sm-0 d-flex justify-content-center'>
                         <Col md={9} xs={12} className='' style={{zIndex: '3000'}}>
                             <HomeFlir/>
                         </Col>
