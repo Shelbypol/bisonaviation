@@ -28,14 +28,6 @@
         top: -42vh;
     }
 
-    .HeroJumbotron_graphic{
-        background-image: url("src/components/HeroJumbotron/hero-jumbotron-overlay.png");
-        background-repeat: no-repeat;
-        height: 300px;
-        top: -15vh;
-        z-index: -1;
-        transform: rotateY(180deg) rotateX(60deg);
-    }
 
 }
 
