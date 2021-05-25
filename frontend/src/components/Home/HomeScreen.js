@@ -2,7 +2,7 @@ import React, {useLayoutEffect} from 'react'
 import {Col, Row} from 'react-bootstrap';
 import HomeCarousel from '../../components/Home/HomeCarousel'
 import HomeAwardBanner from '../../components/Home/HomeAwardBanner'
-import HomeServices from "../../components/Home/HomeServices";
+import HomeServices from "./HomeServices/HomeServices";
 import HomeMaintenance from "../../components/Home/HomeMaintenance";
 import HomeFlir from "../../components/Home/HomeFlir";
 import GarminAdProductCarousel from "../GarminAd/GarminAdProductCarousel";

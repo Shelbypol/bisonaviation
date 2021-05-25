@@ -201,6 +201,14 @@ p{
     border-left: 1px solid #daa520;
 }
 
+.global_goldenrod-to-white{
+    color: #daa520;
+}
+
+.global_goldenrod-to-white:hover{
+    color: #fff;
+}
+
 /*=================== BORDERS*/
 .global_goldenrodtxtborder-btn {
     color: #daa520;

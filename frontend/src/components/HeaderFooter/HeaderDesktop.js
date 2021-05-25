@@ -192,7 +192,7 @@ const HeaderDesktop = () => {
                     <Col xs={2} className='d-flex justify-content-end' style={{marginTop: '-5.75vh'}}>
                         <LinkContainer to='/contact' className=''>
                             <Nav.Link className=''>
-                                <h6 className='global_whitehovergoldenrodtxt global_goldenrod-border-left pl-3'>Contact</h6>
+                                <h6 className='global_goldenrod-to-white global_goldenrod-border-left pl-3'>Contact</h6>
                             </Nav.Link>
                         </LinkContainer>
                     </Col>
