@@ -105,6 +105,8 @@
     }
 
 }
+
+
 @media only screen and (max-width: 750px) {
     .HomeAvionics_title-row{
         height: 60vh;
@@ -116,8 +118,6 @@
 
     .HomeAvionics_image {
         background-image: url("./images/fullscreen-slider2.png");
-        /*background-position: 25% -15%;*/
-        /*background-repeat: no-repeat;*/
     }
 
     .HomeAvionics_panel-img{
@@ -135,11 +135,11 @@
     }
 
     .HomeAvionics_text-titles {
-        font-size: 4vh;
+        font-size: 3.5vh;
     }
 
     .HomeAvionics_title{
         text-align: center;
-        font-size: 8vh;
+        font-size: 7vh;
     }
 }
