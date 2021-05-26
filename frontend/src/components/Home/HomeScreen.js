@@ -53,7 +53,7 @@ const HomeScreen = () => {
                     </Row>
 
                     <Row className='my-md-5 py-md-5 my-sm-0 py-sm-0 d-flex justify-content-center'>
-                        <Col md={9} xs={12} className='global_blood-red-bg mb-md-5 mb-sm-0' style={{zIndex: '3000'}}>
+                        <Col md={9} xs={12} className='global_blood-red-bg mb-5' style={{zIndex: '3000'}}>
                             <TestimonialCarousel/>
                         </Col>
                     </Row>

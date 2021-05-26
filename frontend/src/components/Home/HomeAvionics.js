@@ -1,11 +1,6 @@
 import React from "react";
 import {Button, Col, Row} from "react-bootstrap";
 import './HomeAvionics.css';
-// import tests from '../Avionics/images/avionics4.png'
-// import roel from '../Avionics/images/avionics2.png'
-// import cnc from './images/cnc-machine copy.png'
-// import panel from '../Avionics/images/avionics1.png'
-// import tayseer from '../Avionics/images/avionics/tayseer-avionics.png'
 import {LinkContainer} from "react-router-bootstrap";
 import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
@@ -17,21 +12,49 @@ const HomeAvionics = () => {
             <Row className='px-1 d-flex justify-content-center align-content-center'>
                 <Col xs={12} className='HomeAvionics_image p-0 mt-5 mb-0 mx-0 mb-0'>
 
-                    <Row className='justify-content-start align-content-center mx-0 my-5'>
-                        <Fade top>
-                            <Col xs={12}
-                                 className='d-sm-flex justify-content-sm-center align-items-sm-start align-items-md-center global_black-bg '>
+                    <Row className='justify-content-start align-content-end m-0 p-0 HomeAvionics_title-row'>
+                        <Fade top >
+                            <Col xs={12} className='global_black-bg m-0 pb-1 pr-5'>
                                 <h1 className='HomeAvionics_title global_white'>Avionics</h1>
                             </Col>
                         </Fade>
                     </Row>
 
-                    <Row className='mt-5 pt-5 pb-0 mb-0 global_black-bg d-flex justify-content-between px-0 mx-0'>
+                    <Row className=' pb-0 px-0 pt-3 mx-0 global_black-bg d-flex justify-content-between'>
 
-                        <Col md={7} xs={12} className='m-0 px-0 pt-0 pb-3'>
+                        <Col md={4} className=' mx-0 p-0 my-md-5 my-sm-0 global_goldenrod global_black-transparent global_goldenrod-border-left global_goldenrod-border-right'>
+                            <LinkContainer to={`/mechanics`}>
+                                <Col xs={12}
+                                     className='HomeAvionics_titles global_cursor global_goldenrodtxt-btn Mechanics_col d-flex align-items-end justify-content-center p-0 m-0'>
+                                    <Zoom>
+                                        <p className='HomeAvionics_text-titles'>Annual Inspections</p>
+                                    </Zoom>
+                                </Col>
+                            </LinkContainer>
+
+                            <LinkContainer to={`/mechanics`}>
+                                <Col xs={12}
+                                     className='HomeAvionics_titles global_cursor global_goldenrodtxt-btn Mechanics_col d-flex align-items-center justify-content-center p-0 m-0'>
+                                    <Zoom>
+                                        <p className='HomeAvionics_text-titles'>Propeller Balance</p>
+                                    </Zoom>
+                                </Col>
+                            </LinkContainer>
+
+                            <LinkContainer to={`/mechanics`}>
+                                <Col xs={12}
+                                     className='HomeAvionics_titles global_cursor global_goldenrodtxt-btn Mechanics_col d-flex align-items-start justify-content-center p-0 m-0'>
+                                    <Zoom>
+                                        <p className='HomeAvionics_text-titles'> Pre-Buy Inspections</p>
+                                    </Zoom>
+                                </Col>
+                            </LinkContainer>
+                        </Col>
+
+
+                        <Col md={7} xs={12} className='mx-0 p-0 my-auto'>
                             <Zoom>
-                                <Col xs={12} className='mb-2 pr-4'
-                                >
+                                <Col xs={12} className='mb-2 pr-4'>
                                     <h1 className='global_white'>You depend on your aircraft to carry you and your
                                         passengers safely.</h1>
 
@@ -52,10 +75,10 @@ const HomeAvionics = () => {
                                 </Zoom>
                             </Col>
 
-                            <Col xs={12} className='py-1 py-sm-1 global_cursor ml-lg-2 d-none d-lg-block'>
+                            <Col xs={12} className='py-1 py-sm-1 global_cursor ml-lg-2'>
                                 <LinkContainer to={`/maintenance`}>
                                     <Zoom>
-                                        <Button className='global_goldenrodtxtborder-btn d-sm-flex justify-content-sm-center justify-content-md-start'>
+                                        <Button className='global_dark-bg-btn d-sm-flex justify-content-sm-center justify-content-md-start'>
                                             Learn More
                                         </Button>
                                     </Zoom>
@@ -63,44 +86,11 @@ const HomeAvionics = () => {
                             </Col>
 
                         </Col>
-                        {/*d-none d-lg-block*/}
-
-                        <Col md={4}
-                             className='pt-sm-0 mt-0 pt-md-4 mx-0 px-0 global_goldenrod global_black-transparent '>
-                            <LinkContainer to={`/mechanics`}>
-                                <Col xs={12}
-                                     className='HomeAvionics_titles global_cursor global_goldenrodtxtborder-btn Mechanics_col d-flex align-items-end justify-content-center p-0 m-0'>
-                                    <Zoom>
-                                        <p className='HomeAvionics_text-titles'>Annual Inspections</p>
-                                    </Zoom>
-                                </Col>
-                            </LinkContainer>
-
-                            <LinkContainer to={`/mechanics`}>
-                                <Col xs={12}
-                                     className='HomeAvionics_titles global_cursor global_goldenrodtxtborder-btn Mechanics_col d-flex align-items-center justify-content-center p-0 m-0'>
-                                    <Zoom>
-                                        <p className='HomeAvionics_text-titles'>Propeller Balance</p>
-                                    </Zoom>
-                                </Col>
-                            </LinkContainer>
-
-                            <LinkContainer to={`/mechanics`}>
-                                <Col xs={12}
-                                     className='HomeAvionics_titles global_cursor global_goldenrodtxtborder-btn Mechanics_col d-flex align-items-start justify-content-center p-0 m-0'>
-                                    <Zoom>
-                                        <p className='HomeAvionics_text-titles'> Pre-Buy Inspections</p>
-                                    </Zoom>
-                                </Col>
-                            </LinkContainer>
-
-                        </Col>
                     </Row>
 
                 </Col>
 
                 <Col xs={12} className='m-0 pt-sm-0 px-0 global_black'>
-
                     <Row className='m-0 p-0 global_black'>
                         <Col xs={12} className=''>
                             <Row className='d-flex justify-content-between'>

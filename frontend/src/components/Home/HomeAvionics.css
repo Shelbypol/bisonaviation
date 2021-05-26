@@ -42,14 +42,20 @@
 /*}*/
 
 .HomeAvionics_text-titles{
-    font-size: 2.5vh;
+    font-size: 3.2vh;
+    /*font-size: 2.5vh;*/
 }
 
 .HomeAvionics_title{
    font-size: 8vh;
 }
 
+.HomeAvionics_title-row{
+    height: 25vh;
+}
+
 .HomeAvionics_img{
+    /*height: 60vh;*/
     height: 33vh;
     width: fit-content;
 }
@@ -74,30 +80,11 @@
     background-position: 5% 10%;
 }
 
-/*.AvionicsHome_panel-img{*/
-/*    background-image: url('../Avionics/images/avionics1.png');*/
-/*    background-position: 10% 65%;*/
-/*}*/
+.HomeAvionics_panel-img{
+    background-image: url('../Avionics/images/avionics1.png');
+    background-position: 10% 65%;
+}
 
-/*.Avionics_img-col{*/
-/*    !*background-color: black;*!*/
-/*}*/
-
-/*.AvionicsHome_icon{*/
-/*    font-size: 2vw !important;*/
-/*}*/
-
-/*.AvionicsHome_link{*/
-/*    color: white;*/
-/*    font-weight: lighter;*/
-/*    border: 1px solid black;*/
-/*    background-color: #2576e5;*/
-/*}*/
-
-/*.AvionicsHome_link:hover{*/
-/*    color: white;*/
-/*    background-color: #660708;*/
-/*}*/
 
 .Global_Flir_bg-img{
     background-image: url("./images/large-flir.png");
@@ -107,7 +94,12 @@
 @media only screen and (max-width: 800px) {
 
     .HomeAvionics_text-titles{
-        font-size: 2.8vh;
+        font-size: 3.5vh;
     }
+
+    .HomeAvionics_title-row{
+        height: 75vh;
+    }
+
 }
 
