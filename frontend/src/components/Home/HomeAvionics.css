@@ -51,11 +51,10 @@
 }
 
 .HomeAvionics_title-row{
-    height: 25vh;
+    height: 35vh;
 }
 
 .HomeAvionics_img{
-    /*height: 60vh;*/
     height: 33vh;
     width: fit-content;
 }
@@ -82,7 +81,7 @@
 
 .HomeAvionics_panel-img{
     background-image: url('../Avionics/images/avionics1.png');
-    background-position: 10% 65%;
+    background-position: 20% 60%;
 }
 
 
@@ -91,15 +90,56 @@
     background-position: center 5%;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1100px) {
+
+    .HomeAvionics_title{
+        font-size: 5vh;
+    }
 
     .HomeAvionics_text-titles{
-        font-size: 3.5vh;
+        font-size: 2vh;
     }
+
+    .HomeAvionics_panel-img {
+        background-position: 48% 70%;
+    }
+
+}
+@media only screen and (max-width: 750px) {
+    .HomeAvionics_title-row{
+        height: 60vh;
+    }
+
+    .HomeAvionics_text-titles{
+        font-size: 3vh;
+    }
+
+    .HomeAvionics_image {
+        background-image: url("./images/fullscreen-slider2.png");
+        /*background-position: 25% -15%;*/
+        /*background-repeat: no-repeat;*/
+    }
+
+    .HomeAvionics_panel-img{
+        background-image: url('../Avionics/images/avionics/avionics-4.png');
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
 
     .HomeAvionics_title-row{
         height: 75vh;
     }
 
-}
+    .HomeAvionics_text-titles {
+        font-size: 4vh;
+    }
 
+    .HomeAvionics_title{
+        text-align: center;
+        font-size: 8vh;
+    }
+}

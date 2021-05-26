@@ -177,6 +177,19 @@ p{
     color: #daa520;
 }
 
+.global_dark-bg-btn{
+    background-color: rgba(255,255,255,.1);
+    color: #daa520;
+}
+
+.global_dark-bg-btn:hover{
+    background-color: transparent;
+    color: white;
+    border-left: 1px solid #daa520;
+    border-right: 1px solid #daa520;
+}
+
+
 .global_whitehovergoldenrodtxt{
     color: #fff;
 }
