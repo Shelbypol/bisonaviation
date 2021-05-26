@@ -1,12 +1,9 @@
-
-
 .HeroJumbotron_no-img-wrap{
     top: -25vh;
     padding-top: 1vh;
     background-color: white;
     z-index: -1;
 }
-
 
 /*=============== IMG / TITLE WRAP*/
 .HeroJumbotron_img-title-wrap {
@@ -17,28 +14,13 @@
     z-index: 1000;
 }
 
-
-
 /* ==================   TITLE   =====================*/
 .HeroJumbotron_title {
     font-size: 4vw;
-    /*background-color: #660708;*/
     padding: 0 1em 0 1em;
-    /*color: white;*/
     width: 50vw;
     text-align: center;
 }
-
-/*================= GRAPHIC =====================*/
-/*.HeroJumbotron_graphic{*/
-/*    background-image: url("./black-top-large-left-lg-size.png");*/
-/*    background-repeat: no-repeat;*/
-/*    height: 300px;*/
-/*    top: -20vh;*/
-/*    z-index: 1;*/
-/*    transform: rotateY(180deg) rotateX(78deg);*/
-/*}*/
-
 
 /*================ MEDIA QUERY (900px) ===============*/
 @media (max-width: 900px) {
@@ -46,34 +28,16 @@
         top: -42vh;
     }
 
-    /* ===========  TITLE  ============*/
-    /*.HeroJumbotron_title {*/
-    /*    background-color: #660708;*/
-    /*    color: white;*/
-    /*    font-size: 5vw;*/
-    /*    padding-left: 1em ;*/
-    /*    padding-right: 1em ;*/
-    /*}*/
-
-    /*============  GRAPHIC  ==============*/
-    .HeroJumbotron_graphic{
-        background-image: url("./black-top-large-left.png");
-        background-repeat: no-repeat;
-        height: 300px;
-        top: -15vh;
-        z-index: -1;
-        transform: rotateY(180deg) rotateX(60deg);
-    }
 
 }
 
 /*================ MEDIA QUERY (400px) ===============*/
-@media (max-width: 400px) {
+@media (max-width: 600px) {
 
-    /*.HeroJumbotron_img-title-wrap {*/
-    /*    background-position: 10% 0;*/
-    /*}*/
-
+    .HeroJumbotron_title {
+        font-size: 8vw;
+        width: 90vw;
+    }
     .HeroJumbotron_wrap{
         top: -55vh;
     }
