@@ -12,7 +12,7 @@ const HomeAvionics = () => {
             <Row className='d-flex justify-content-center align-content-center'>
                 <Col xs={12} className='HomeAvionics_image p-0 mt-5 mb-0 mx-0 global_goldenrod-border-right'>
 
-                    <Row className='d-flex align-content-end mx-0 mt-0 p-0 mb-5 ml-n1 HomeAvionics_title-row '>
+                    <Row className='d-flex align-content-center mr-0 my-0 py-0 ml-n1 HomeAvionics_title-row '>
                         <Col md={6} xs={12}
                              className='p-0 mx-0  mb-sm-5 mb-md-n2 global_goldenrod-border-right global_black-bg'>
                             <h2 className='HomeAvionics_title global_white text-center'>
@@ -28,6 +28,7 @@ const HomeAvionics = () => {
 
                         <Col lg={6} md={5} xs={12}
                              className='mx-0 py-0 px-2 my-md-5 my-sm-0 global_goldenrod global_black-transparent global_goldenrod-border-left global_goldenrod-border-right'>
+
                             <LinkContainer to={`/avionics`}>
                                 <Col xs={12}
                                      className='HomeAvionics_titles global_cursor global_goldenrodtxt-btn Mechanics_col d-flex align-items-center justify-content-center p-0 m-0'>
@@ -92,6 +93,7 @@ const HomeAvionics = () => {
                                 </Zoom>
                             </Col>
 
+
                             <Col xs={10} md={12} className='global_cursor mb-5 py-2 mx-auto d-flex justify-content-center global_dark-bg-btn'>
                                 <LinkContainer to={`/avionics`}>
                                     {/*<Button className=' text-center'>*/}
@@ -105,6 +107,9 @@ const HomeAvionics = () => {
                         </Col>
                     </Row>
                 </Col>
+
+                <Col xs={10}
+                     className='HomeAvionics_tayseer-img HomeAvionics_img mx-auto mb-5 mt-0 py-0 d-sm-block d-md-none'> </Col>
 
                 <Col xs={12}
                      className='HomeAvionics_panel-img HomeAvionics_img d-none d-md-block global_goldenrod-border-right'> </Col>
