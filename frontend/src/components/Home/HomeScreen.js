@@ -33,7 +33,7 @@ const HomeScreen = () => {
                         </Col>
                     </Row>
 
-                    <Row className='my-md-5 py-md-5 mt-sm-0 mb-sm-5 py-sm-0
+                    <Row className='my-md-5 py-md-5 mt-sm-0 py-sm-0
                      d-flex justify-content-center'>
                         <Col md={9} xs={12} className='mb-5' style={{zIndex: '3000'}}>
                             <HomeAvionics/>

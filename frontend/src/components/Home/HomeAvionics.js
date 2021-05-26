@@ -12,9 +12,9 @@ const HomeAvionics = () => {
             <Row className='d-flex justify-content-center align-content-center'>
                 <Col xs={12} className='HomeAvionics_image p-0 mt-5 mb-0 mx-0 global_goldenrod-border-right'>
 
-                    <Row className='d-flex align-content-end mx-0 mt-0 p-0 mb-n1 ml-n1 HomeAvionics_title-row '>
+                    <Row className='d-flex align-content-end mx-0 mt-0 p-0 mb-5 ml-n1 HomeAvionics_title-row '>
                         <Col md={6} xs={12}
-                             className='p-0 mx-0 mb-md-n2 mb-sm-3 global_goldenrod-border-right global_black-bg'>
+                             className='p-0 mx-0  mb-sm-5 mb-md-n2 global_goldenrod-border-right global_black-bg'>
                             <h2 className='HomeAvionics_title global_white text-center'>
                                 <Fade top>
                                     Avionics
@@ -96,7 +96,7 @@ const HomeAvionics = () => {
                                 <LinkContainer to={`/avionics`}>
                                     {/*<Button className=' text-center'>*/}
                                         <Zoom>
-                                            Learn More
+                                            LEARN MORE
                                         </Zoom>
                                     {/*</Button>*/}
                                 </LinkContainer>
