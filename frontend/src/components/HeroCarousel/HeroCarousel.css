@@ -73,7 +73,7 @@
 @media (max-width: 600px) {
     .HeroCarousel_carousel-divider-img{
         /*width: 250vw;*/
-        width: 350vw;
+        width: 100%;
     }
 
     .HeroCarousel_carousel-social-icons{
@@ -103,5 +103,11 @@
         display: flex;
         justify-content: center;
     }
+
+    /*.HeroCarousel_carousel-text-box{*/
+    /*    margin-top: -45vh;*/
+    /*    margin-left: -5vw;*/
+    /*    width: 75%*/
+    /*}*/
 
 }

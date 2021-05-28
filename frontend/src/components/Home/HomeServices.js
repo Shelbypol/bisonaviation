@@ -54,7 +54,7 @@ const HomeServices = () => {
                                     </span>
                                     </p>
                                 </Card.Text>
-                                <Card.Link href="/products" className=' px-5 py-2 global_goldenrodtxt-btn'>
+                                <Card.Link href="/products" className='d-none d-md-block px-5 py-2 global_goldenrodtxt-btn'>
                                     browse
                                 </Card.Link>
                             </Card.Body>

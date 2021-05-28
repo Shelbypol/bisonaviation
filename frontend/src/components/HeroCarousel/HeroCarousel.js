@@ -56,11 +56,11 @@ const HeroCarousel = (
                 {/*    ================= Img 1 */}
                 <Carousel.Item>
                     <Carousel.Caption>
-                        <Row className='HeroCarousel_carousel-text-box'>
+                        <Row className='HeroCarousel_carousel-text-box d-flex justify-content-sm-center'>
                             <Col md={5} xs={7} className='HeroCarousel_carousel-text-top-bar '> </Col>
 
                             <Col xs={12}
-                                 className='d-sm-flex justify-content-sm-center justify-content-md-start align-content-center '>
+                                 className='d-flex justify-content-sm-center justify-content-md-start align-content-center '>
                                 <h1 className='HeroCarousel_carousel-title global_white'>
                                     <span
                                         className='HeroCarousel_carousel-letter global_white'>{slide1firstTitleLetter}</span>{slide1firstTitleWord}

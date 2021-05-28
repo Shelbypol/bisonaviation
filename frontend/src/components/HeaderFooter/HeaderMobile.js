@@ -7,6 +7,7 @@ import {logout} from '../../actions/userActions'
 import './HeaderMobile.css'
 import {CART_RESET} from "../../constants/cartConstants";
 import logo from '../../images/bg-graphics/graphics/Final-Logo-Horizontal.png'
+import SocialIcons from "../SocialIcons/SocialIcons";
 
 
 const HeaderMobile = () => {
@@ -73,14 +74,6 @@ const HeaderMobile = () => {
                                 </Nav.Link>
                             </LinkContainer>
                         )}
-
-                        {/*  CONTACT US  */}
-                        <LinkContainer className='HeaderMobile_text global_goldenrod d-flex justify-content-start'
-                                       to='/contact'>
-                            <Nav.Link>
-                                Contact
-                            </Nav.Link>
-                        </LinkContainer>
 
 
                         {/*  WISHLIST  */}
@@ -177,11 +170,21 @@ const HeaderMobile = () => {
 
                         {/*  PROFILE  /  SIGN IN  */}
                         {userInfo ? (
+                            <>
+                                {/*  CONTACT US  */}
+                                <LinkContainer
+                                    className='HeaderMobile_text global_goldenrod d-flex justify-content-start'
+                                    to='/contact'>
+                                    <Nav.Link>
+                                        Contact
+                                    </Nav.Link>
+                                </LinkContainer>
 
-                            <Nav.Link onClick={logoutHandler}
-                                      className='HeaderMobile_text d-flex justify-content-start py-3'>
-                                Log out
-                            </Nav.Link>
+                                <Nav.Link onClick={logoutHandler}
+                                          className='HeaderMobile_text d-flex justify-content-start py-3'>
+                                    Log out
+                                </Nav.Link>
+                            </>
 
                         ) : (
                             <>
@@ -189,6 +192,15 @@ const HeaderMobile = () => {
                                                className='HeaderMobile_text d-flex justify-content-start'>
                                     <Nav.Link>
                                         Register
+                                    </Nav.Link>
+                                </LinkContainer>
+
+                                {/*  CONTACT US  */}
+                                <LinkContainer
+                                    className='HeaderMobile_text global_goldenrod d-flex justify-content-start'
+                                    to='/contact'>
+                                    <Nav.Link>
+                                        Contact
                                     </Nav.Link>
                                 </LinkContainer>
 
@@ -200,7 +212,6 @@ const HeaderMobile = () => {
 
                             </>
                         )}
-
 
 
 
