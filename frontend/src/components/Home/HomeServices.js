@@ -9,15 +9,6 @@ const HomeServices = () => {
         <>
             <Row className='text-white text-center my-5'>
 
-                {/*<Col xs={12} className='my-5'>*/}
-                {/*    <i>*/}
-                {/*        <h4 className='text-white font-weight-lighter'>*/}
-                {/*            Services*/}
-                {/*        </h4>*/}
-                {/*    </i>*/}
-
-                {/*</Col>*/}
-
                 <Col lg={4} xs={12}
                      className='HomeServices_col global_cursor d-flex align-items-start h-auto justify-content-center'>
                     <Fade left>
@@ -30,7 +21,7 @@ const HomeServices = () => {
                                 <Card.Subtitle className='mx-auto my-3'>
                                     <h5 className='HomeServices_nav_text'>Maintenance</h5>
                                 </Card.Subtitle>
-                                <Card.Text>
+                                <Card.Text className='d-none d-md-block'>
                                     <p className='HomeServices_description'>
                                         Simple skin replacement, structures, fabrication, CNC machining, to laser
                                         engraving
@@ -55,7 +46,7 @@ const HomeServices = () => {
                                 <Card.Subtitle className='mx-auto my-3'>
                                     <h5 className='HomeServices_nav_text'>Avionics</h5>
                                 </Card.Subtitle>
-                                <Card.Text>
+                                <Card.Text className='d-none d-md-block'>
                                     <p className='HomeServices_description'>
                                         From minor repairs to complete panel upgrades. All services are performed in
                                         house.
@@ -84,7 +75,7 @@ const HomeServices = () => {
                                 <Card.Subtitle className='mx-auto my-3'>
                                     <h5 className='HomeServices_nav_text'>EO/IR Flir</h5>
                                 </Card.Subtitle>
-                                <Card.Text>
+                                <Card.Text className='d-none d-md-block'>
                                     <p className='HomeServices_description'>
                                         World leader in legacy airborne EO / IR equipment
                                         service and sales.
