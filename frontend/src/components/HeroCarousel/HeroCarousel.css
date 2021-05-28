@@ -72,11 +72,13 @@
 /*    ======   MOBILE RESPONSIVE    ======    */
 @media (max-width: 600px) {
     .HeroCarousel_carousel-divider-img{
-        width: 250vw;
+        /*width: 250vw;*/
+        width: 350vw;
     }
 
     .HeroCarousel_carousel-social-icons{
-        margin-left: 25vw;
+        /*margin-left: 25vw;*/
+        /*margin-left: 25vw;*/
     }
 
     .HeroCarousel_carousel-title{

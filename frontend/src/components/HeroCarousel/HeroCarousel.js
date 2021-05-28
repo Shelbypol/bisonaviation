@@ -79,7 +79,7 @@ const HeroCarousel = (
 
                             <Col md={7} xs={10} className='HeroCarousel_carousel-text-btm-bar'> </Col>
 
-                            <Col xs={12} className='ml-n3'>
+                            <Col xs={12} className='ml-n3 d-none d-md-block'>
                                 <SocialIcons/>
                             </Col>
                         </Row>
@@ -124,7 +124,7 @@ const HeroCarousel = (
                                 )}
 
                                 <Col md={7} xs={10} className='HeroCarousel_carousel-text-btm-bar global_red-bg'> </Col>
-                                <Col xs={12} className='ml-n3'>
+                                <Col xs={12} className='ml-n3 d-none d-md-block'>
                                     <SocialIcons/>
                                 </Col>
                             </Row>
@@ -170,7 +170,7 @@ const HeroCarousel = (
                                 )}
 
                                 <Col md={7} xs={10} className='HeroCarousel_carousel-text-btm-bar global_blood-red-bg'> </Col>
-                                <Col xs={12} className='ml-n3 HeroCarousel_carousel-social-icons'>
+                                <Col xs={12} className='ml-n3 HeroCarousel_carousel-social-icons d-none d-md-block'>
                                     <SocialIcons/>
                                 </Col>
                              </Row>
@@ -214,7 +214,7 @@ const HeroCarousel = (
                                 )}
 
                                 <Col md={7} xs={10} className='HeroCarousel_carousel-text-btm-bar global_blood-red-bg'> </Col>
-                                <Col xs={12} className='ml-n3'>
+                                <Col xs={12} className='ml-n3 d-none d-md-block'>
                                     <SocialIcons/>
                                 </Col>
                             </Row>
@@ -258,7 +258,7 @@ const HeroCarousel = (
                                 )}
 
                                 <Col md={7} xs={10} className='HeroCarousel_carousel-text-btm-bar global_red-bg'> </Col>
-                                <Col xs={12} className='ml-n3'>
+                                <Col xs={12} className='ml-n3 d-none d-md-block'>
                                     <SocialIcons/>
                                 </Col>
                             </Row>
