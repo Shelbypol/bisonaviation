@@ -7,16 +7,16 @@ const HomeServices = () => {
     return (
 
         <>
-            <Row className='text-white text-center mb-3'>
+            <Row className='text-white text-center my-5'>
 
-                <Col xs={12} className='my-5'>
-                    <i>
-                        <h4 className='text-white font-weight-lighter'>
-                            Services
-                        </h4>
-                    </i>
+                {/*<Col xs={12} className='my-5'>*/}
+                {/*    <i>*/}
+                {/*        <h4 className='text-white font-weight-lighter'>*/}
+                {/*            Services*/}
+                {/*        </h4>*/}
+                {/*    </i>*/}
 
-                </Col>
+                {/*</Col>*/}
 
                 <Col lg={4} xs={12}
                      className='HomeServices_col global_cursor d-flex align-items-start h-auto justify-content-center'>
