@@ -94,7 +94,8 @@
     }
 
     .HeroCarousel_animation{
-        height: 85vh;
+        height: 86vh;
+        width:350vw;
     }
 
     .HeroCarousel_carousel-text-box{
@@ -104,10 +105,5 @@
         justify-content: center;
     }
 
-    /*.HeroCarousel_carousel-text-box{*/
-    /*    margin-top: -45vh;*/
-    /*    margin-left: -5vw;*/
-    /*    width: 75%*/
-    /*}*/
 
 }
