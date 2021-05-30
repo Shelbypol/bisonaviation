@@ -9,35 +9,42 @@
     color: white;
 }
 
+.HeaderMobile_social-icons{
+    font-size: 4.5vw;
+}
+
+.HeaderMobile_top-rounded-border{
+    border-top-left-radius: 5vw;
+}
+
 .HeaderMobile_text {
     color: white;
-    font-size: 3.8vw;
+    font-size: 4vw;
     padding-top: 3vw;
     padding-bottom: 3vw;
     padding-left: 20px;
-    border-right: 16px solid #daa520;
+    /*border-right: 10px solid #daa520;*/
+    border-left: 5px solid #daa520;
     margin: 0;
 }
 
 .HeaderMobile_text:hover {
-    padding-left: 14px;
+    padding-left: 30px;
     border-left: 6px solid #daa520;
+    /*border-right: 6px solid #daa520;*/
     color: #daa520;
 }
 
-.HeaderMobile_text-inverted {
-    color: #daa520;
-    font-size: 3vw;
-    padding-top: 3vw;
-    padding-bottom: 3vw;
-    padding-left: 20px;
+.HeaderMobile_text-contact {
+    color:#daa520;
+    font-size: 4vw;
+    padding-left: 30px;
     border-left: 6px solid #daa520;
-    border-right: 16px solid #daa520;
+    margin: 0;
 }
 
-.HeaderMobile_text-inverted:hover {
-    padding-left: 14px;
+.HeaderMobile_text-contact:hover {
+    /*padding-left: 36px;*/
     border-left: 6px solid #daa520;
-    border-right: 16px solid #daa520;
     color: #fff;
 }
