@@ -38,22 +38,24 @@
 }
 
 .HeroCarousel_carousel-text-box{
-    margin-top: -45vh;
-    width: 75%
+    margin-top: -48vh;
+    width: 100%
+    /*width: 75%*/
 }
 
 .HeroCarousel_carousel-title{
-    font-size: 2.8vw !important;
+    font-size: 3.2vw !important;
 }
 
 .HeroCarousel_carousel-letter{
-    font-size: 4vw !important;
+    font-size: 5vw !important;
 }
 
 .HeroCarousel_carousel-text{
-    font-size: 1.2vw !important;
+    font-size: 1.8vw !important;
     font-weight: lighter;
 }
+
 
 .HeroCarousel_carousel-text-top-bar {
     height: 1.2vh !important;
@@ -65,8 +67,17 @@
     margin-top: 3vh;
 }
 
+.HeroCarousel_text-box-margin{
+    margin-left: -3vw;
+}
+
 /*    ======   MOBILE RESPONSIVE    ======    */
 @media (max-width: 600px) {
+
+    .HeroCarousel_text-box-margin{
+        margin-left: 5vw;
+    }
+
     .HeroCarousel_carousel-divider-img{
         width: 100%;
     }

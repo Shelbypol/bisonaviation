@@ -54,12 +54,9 @@ const HeroCarousel = (
         <>
             <Carousel className='h-75'>
                 {/*    ================= Img 1 */}
-                <Carousel.Item className='ml-2'>
+                <Carousel.Item className='HeroCarousel_text-box-margin'>
                     <Carousel.Caption>
                         <Row className='HeroCarousel_carousel-text-box  '>
-
-                            <Col md={7} xs={12}
-                                 className='HeroCarousel_carousel-text-btm-bar global_blood-red-bg d-flex justify-content-sm-center justify-content-md-start'> </Col>
 
                                     <Col xs={12}
                                          className='d-flex justify-content-sm-center justify-content-md-start'>
@@ -69,15 +66,18 @@ const HeroCarousel = (
                                         </h1>
                                     </Col>
 
-                                    <Col xs={12}
+                            <Col md={7} xs={12} className='HeroCarousel_carousel-text-btm-bar global_blood-red-bg d-block d-md-none p-0 mt-0 mb-3'> </Col>
+
+
+                            <Col xs={12}
                                          className='d-flex justify-content-sm-center justify-content-md-start'>
-                                        <h3 className='HeroCarousel_carousel-text m-0 p-0 global_white'>{slide1firstSentence}</h3>
+                                        <h4 className='HeroCarousel_carousel-text m-0 p-0 global_white'>{slide1firstSentence}</h4>
                                     </Col>
 
                                     {slide1secondSentenceTrue && (
                                         <Col xs={12}
                                              className='d-flex justify-content-sm-center justify-content-md-start'>
-                                            <h3 className=' HeroCarousel_carousel-text m-0 p-0 global_white'>{slide1secondSentence}</h3>
+                                            <h4 className=' HeroCarousel_carousel-text m-0 p-0 global_white'>{slide1secondSentence}</h4>
                                         </Col>
                                     )}
 
@@ -105,12 +105,9 @@ const HeroCarousel = (
 
                 {/*    ================= Img 2 */}
 
-                <Carousel.Item className='ml-2'>
+                <Carousel.Item className='HeroCarousel_text-box-margin'>
                     <Carousel.Caption>
                         <Row className='HeroCarousel_carousel-text-box  '>
-
-                            <Col md={7} xs={12}
-                                 className='HeroCarousel_carousel-text-btm-bar global_blood-red-bg d-flex justify-content-sm-center justify-content-md-start'> </Col>
 
                             <Col xs={12}
                                  className='d-flex justify-content-sm-center justify-content-md-start'>
@@ -120,15 +117,18 @@ const HeroCarousel = (
                                 </h1>
                             </Col>
 
+                            <Col md={7} xs={12} className='HeroCarousel_carousel-text-btm-bar global_blood-red-bg d-block d-md-none p-0 mt-0 mb-3'> </Col>
+
+
                             <Col xs={12}
                                  className='d-flex justify-content-sm-center justify-content-md-start'>
-                                <h3 className='HeroCarousel_carousel-text m-0 p-0 global_white'>{slide2firstSentence}</h3>
+                                <h4 className='HeroCarousel_carousel-text m-0 p-0 global_white'>{slide2firstSentence}</h4>
                             </Col>
 
                             {slide2secondSentenceTrue && (
                                 <Col xs={12}
                                      className='d-flex justify-content-sm-center justify-content-md-start'>
-                                    <h3 className=' HeroCarousel_carousel-text m-0 p-0 global_white'>{slide2secondSentence}</h3>
+                                    <h4 className=' HeroCarousel_carousel-text m-0 p-0 global_white'>{slide2secondSentence}</h4>
                                 </Col>
                             )}
 
@@ -157,12 +157,10 @@ const HeroCarousel = (
 
                 {/*    ================= Img 3 */}
 
-                <Carousel.Item className='ml-2'>
+                <Carousel.Item className='HeroCarousel_text-box-margin'>
                     <Carousel.Caption>
                         <Row className='HeroCarousel_carousel-text-box  '>
 
-                            <Col md={7} xs={12}
-                                 className='HeroCarousel_carousel-text-btm-bar global_blood-red-bg d-flex justify-content-sm-center justify-content-md-start'> </Col>
 
                             <Col xs={12}
                                  className='d-flex justify-content-sm-center justify-content-md-start'>
@@ -172,15 +170,18 @@ const HeroCarousel = (
                                 </h1>
                             </Col>
 
+                            <Col md={7} xs={12} className='HeroCarousel_carousel-text-btm-bar global_blood-red-bg d-block d-md-none p-0 mt-0 mb-3'> </Col>
+
+
                             <Col xs={12}
                                  className='d-flex justify-content-sm-center justify-content-md-start'>
-                                <h3 className='HeroCarousel_carousel-text m-0 p-0 global_white'>{slide3firstSentence}</h3>
+                                <h4 className='HeroCarousel_carousel-text m-0 p-0 global_white'>{slide3firstSentence}</h4>
                             </Col>
 
                             {slide3secondSentenceTrue && (
                                 <Col xs={12}
                                      className='d-flex justify-content-sm-center justify-content-md-start'>
-                                    <h3 className=' HeroCarousel_carousel-text m-0 p-0 global_white'>{slide3secondSentence}</h3>
+                                    <h4 className=' HeroCarousel_carousel-text m-0 p-0 global_white'>{slide3secondSentence}</h4>
                                 </Col>
                             )}
 
@@ -212,12 +213,9 @@ const HeroCarousel = (
                 {/*    ================= Img 4 */}
 
 
-                <Carousel.Item className='ml-2'>
+                <Carousel.Item className='HeroCarousel_text-box-margin'>
                     <Carousel.Caption>
                         <Row className='HeroCarousel_carousel-text-box  '>
-
-                            <Col md={7} xs={12}
-                                 className='HeroCarousel_carousel-text-btm-bar global_blood-red-bg d-flex justify-content-sm-center justify-content-md-start'> </Col>
 
                             <Col xs={12}
                                  className='d-flex justify-content-sm-center justify-content-md-start'>
@@ -227,15 +225,18 @@ const HeroCarousel = (
                                 </h1>
                             </Col>
 
+                            <Col md={7} xs={12} className='HeroCarousel_carousel-text-btm-bar global_blood-red-bg d-block d-md-none p-0 mt-0 mb-3'> </Col>
+
+
                             <Col xs={12}
                                  className='d-flex justify-content-sm-center justify-content-md-start'>
-                                <h3 className='HeroCarousel_carousel-text m-0 p-0 global_white'>{slide4firstSentence}</h3>
+                                <h4 className='HeroCarousel_carousel-text m-0 p-0 global_white'>{slide4firstSentence}</h4>
                             </Col>
 
                             {slide4secondSentenceTrue && (
                                 <Col xs={12}
                                      className='d-flex justify-content-sm-center justify-content-md-start'>
-                                    <h3 className=' HeroCarousel_carousel-text m-0 p-0 global_white'>{slide4secondSentence}</h3>
+                                    <h4 className=' HeroCarousel_carousel-text m-0 p-0 global_white'>{slide4secondSentence}</h4>
                                 </Col>
                             )}
 
@@ -263,14 +264,9 @@ const HeroCarousel = (
 
 
                 {/*    ================= Img 5 */}
-
-
-                <Carousel.Item className='ml-2'>
+                <Carousel.Item className='HeroCarousel_text-box-margin'>
                     <Carousel.Caption>
                         <Row className='HeroCarousel_carousel-text-box  '>
-
-                            <Col md={7} xs={12}
-                                 className='HeroCarousel_carousel-text-btm-bar global_blood-red-bg d-flex justify-content-sm-center justify-content-md-start'> </Col>
 
                             <Col xs={12}
                                  className='d-flex justify-content-sm-center justify-content-md-start'>
@@ -280,15 +276,18 @@ const HeroCarousel = (
                                 </h1>
                             </Col>
 
+                            <Col md={7} xs={12} className='HeroCarousel_carousel-text-btm-bar global_blood-red-bg d-block d-md-none p-0 mt-0 mb-3'> </Col>
+
+
                             <Col xs={12}
                                  className='d-flex justify-content-sm-center justify-content-md-start'>
-                                <h3 className='HeroCarousel_carousel-text m-0 p-0 global_white'>{slide5firstSentence}</h3>
+                                <h4 className='HeroCarousel_carousel-text m-0 p-0 global_white'>{slide5firstSentence}</h4>
                             </Col>
 
                             {slide5secondSentenceTrue && (
                                 <Col xs={12}
                                      className='d-flex justify-content-sm-center justify-content-md-start'>
-                                    <h3 className=' HeroCarousel_carousel-text m-0 p-0 global_white'>{slide5secondSentence}</h3>
+                                    <h4 className=' HeroCarousel_carousel-text m-0 p-0 global_white'>{slide5secondSentence}</h4>
                                 </Col>
                             )}
 
@@ -313,8 +312,6 @@ const HeroCarousel = (
                         </Slide>
                     </div>
                 </Carousel.Item>
-
-                )}
 
             </Carousel>
         </>
