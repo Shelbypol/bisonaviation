@@ -1,5 +1,4 @@
 import React, {useEffect} from 'react'
-import {Route} from 'react-router-dom'
 import {Navbar, Nav, Row, Col} from 'react-bootstrap'
 import {useDispatch, useSelector} from 'react-redux'
 import {LinkContainer} from 'react-router-bootstrap'
@@ -62,25 +61,83 @@ const HeaderMobile = () => {
 
                         {/*  PROFILE  /  SIGN IN  */}
                         {userInfo && (
-                            <LinkContainer to='/profile'
-                                           className='HeaderMobile_text d-flex justify-content-start global_blue'>
-                                <Nav.Link>
-                                    <h5 className='global_goldenrodtxt-btn m-0 pl-2'>
-                                        <i className="fas fa-user-cog"> </i>&nbsp;
 
-                                        {userInfo.name}
-                                    </h5>
+                            <>
+                                <LinkContainer to='/profile'
+                                               className='HeaderMobile_text  border-0 d-flex justify-content-start ml-2'>
+                                    <Nav.Link>
+                                            <i className="fas fa-user-cog global_goldenrod HeaderMobile_social-icons"> </i>
+                                            &nbsp;&nbsp;{userInfo.name}
+                                    </Nav.Link>
+                                </LinkContainer>
+
+
+                                {/*  ADMIN DROPDOWN  */}
+                                {userInfo && userInfo.isAdmin && (
+                                    <>
+                                        <LinkContainer to='/admin/userlist'
+                                                       className='HeaderMobile_text border-0 d-flex justify-content-start ml-2'>
+                                            <Nav.Link className='global_goldenrodtxthoverwhite'>
+                                                Admin <span className=''>&nbsp;<i className='global_goldenrod-border-left pl-1'>Users </i></span>
+                                            </Nav.Link>
+                                        </LinkContainer>
+
+                                        <LinkContainer to='/admin/productlist'
+                                                       className='HeaderMobile_text border-0 d-flex justify-content-start ml-2 '>
+                                            <Nav.Link className='global_goldenrodtxthoverwhite'>
+                                                Admin <span className=''>&nbsp;<i className='global_goldenrod-border-left pl-1'>Products</i></span>
+                                            </Nav.Link>
+                                        </LinkContainer>
+                                    </>
+                                )}
+
+
+                                <Nav.Link onClick={logoutHandler}
+                                          className='HeaderMobile_text border-0 d-flex justify-content-start py-3 ml-2'>
+                                    <i className="fal fa-sign-out border-0 global_goldenrod HeaderMobile_social-icons"> </i>
+                                    &nbsp;&nbsp;
                                 </Nav.Link>
-                            </LinkContainer>
+                            </>
                         )}
 
-                        {/*  CONTACT US  */}
-                        <LinkContainer className='HeaderMobile_text global_goldenrod d-flex justify-content-start'
-                                       to='/contact'>
-                            <Nav.Link>
-                                Contact
-                            </Nav.Link>
+
+                        {/*  SOCIAL MEDIA ICONS  */}
+                        <LinkContainer className='HeaderMobile_text HeaderMobile_top-rounded-border py-3'
+                                       to='/'>
+                            <Row className='m-0 p-0 '>
+                                <Col xs={4} className='m-0 p-0 d-flex justify-content-center'>
+                                    <Nav.Link className=''>
+                                        <i className="fab fa-facebook MobileHeader_social-icons global_whitehovergoldenrodtxt"> </i>
+                                    </Nav.Link>
+                                </Col>
+                                <Col xs={4} className='m-0 p-0 d-flex justify-content-center'>
+                                    <Nav.Link className=''>
+                                        <i className="fab fa-instagram MobileHeader_social-icons global_whitehovergoldenrodtxt"> </i>
+                                    </Nav.Link>
+                                </Col>
+                                <Col xs={4} className='m-0 p-0 d-flex justify-content-center'>
+                                    <Nav.Link className=''>
+                                        <i className="fab fa-twitter MobileHeader_social-icons global_whitehovergoldenrodtxt"> </i>
+                                    </Nav.Link>
+                                </Col>
+                            </Row>
                         </LinkContainer>
+
+
+                        {/*/!*  PROFILE  /  SIGN IN  *!/*/}
+                        {!userInfo && (
+                            <>
+
+                                <LinkContainer to='/login'>
+                                    <Nav.Link className='HeaderMobile_text d-flex justify-content-start py-3'>
+                                        <span className='global_goldenrod'>
+                                        Login - Register
+                                        </span>
+                                    </Nav.Link>
+                                </LinkContainer>
+
+                            </>
+                        )}
 
 
                         {/*  WISHLIST  */}
@@ -93,13 +150,12 @@ const HeaderMobile = () => {
                                     </p>
 
                                     <p className='global_red d-inline'>
-                                        <i style={{fontSize: '4vw'}} className=" fal fa-envelope-open-text"> </i>
+                                        <i className=" fal fa-envelope-open-text HeaderMobile_social-icons"> </i>
                                     </p>
 
                                 </p>
                             </Nav.Link>
                         </LinkContainer>
-                        {/*)}*/}
 
                         {/*  BROWSE PRODUCTS  */}
                         <LinkContainer className='HeaderMobile_text d-flex justify-content-start'
@@ -113,9 +169,7 @@ const HeaderMobile = () => {
                         <LinkContainer to='/avionics'
                                        className='HeaderMobile_text d-flex justify-content-start'>
                             <Nav.Link>
-                                {/*<h5 className='global_white m-0 pl-2'>*/}
                                 Avionics
-                                {/*</h5>*/}
                             </Nav.Link>
                         </LinkContainer>
 
@@ -123,9 +177,7 @@ const HeaderMobile = () => {
                         <LinkContainer to='/maintenance'
                                        className='HeaderMobile_text d-flex justify-content-start'>
                             <Nav.Link>
-                                {/*<h5 className='global_white m-0 pl-2'>*/}
                                 Maintenance
-                                {/*</h5>*/}
                             </Nav.Link>
                         </LinkContainer>
 
@@ -134,75 +186,24 @@ const HeaderMobile = () => {
                         <LinkContainer to='/flir'
                                        className='HeaderMobile_text d-flex justify-content-start'>
                             <Nav.Link>
-                                {/*<h5 className='global_white m-0 pl-2'>*/}
                                 EO/IR Flir
-                                {/*</h5>*/}
                             </Nav.Link>
                         </LinkContainer>
 
                         {/*  TEAM  */}
                         <LinkContainer to='/team' className='HeaderMobile_text d-flex justify-content-start'>
                             <Nav.Link>
-                                {/*<h5 className='global_white m-0 pl-2'>*/}
                                 Team
-                                {/*</h5>*/}
                             </Nav.Link>
                         </LinkContainer>
 
-
-                        {/*  ADMIN DROPDOWN  */}
-                        {userInfo && userInfo.isAdmin && (
-                            <>
-                                <LinkContainer to='/admin/userlist'
-                                               className='HeaderMobile_text-inverted d-flex justify-content-start'>
-                                    <Nav.Link>
-                                        Users
-                                    </Nav.Link>
-                                </LinkContainer>
-
-                                <LinkContainer to='/admin/productlist'
-                                               className='HeaderMobile_text-inverted d-flex justify-content-start'>
-                                    <Nav.Link>
-                                        Products
-                                    </Nav.Link>
-                                </LinkContainer>
-
-                                {/*<LinkContainer to='/admin/orderlist'*/}
-                                {/*               className='mb-5 MobileHeaderAdmin_text d-flex justify-content-center'>*/}
-                                {/*    <Nav.Link>Orders</Nav.Link>*/}
-                                {/*</LinkContainer>*/}
-                            </>
-                        )}
-
-
-                        {/*  PROFILE  /  SIGN IN  */}
-                        {userInfo ? (
-
-                            <Nav.Link onClick={logoutHandler}
-                                      className='HeaderMobile_text d-flex justify-content-start py-3'>
-                                Log out
+                        <LinkContainer
+                            className='HeaderMobile_text global_goldenrod d-flex justify-content-start pb-5'
+                            to='/contact'>
+                            <Nav.Link>
+                                Contact
                             </Nav.Link>
-
-                        ) : (
-                            <>
-                                <LinkContainer to='/register'
-                                               className='HeaderMobile_text d-flex justify-content-start'>
-                                    <Nav.Link>
-                                        Register
-                                    </Nav.Link>
-                                </LinkContainer>
-
-                                <LinkContainer to='/login'>
-                                    <Nav.Link className='HeaderMobile_text-inverted d-flex justify-content-start py-3'>
-                                        Login
-                                    </Nav.Link>
-                                </LinkContainer>
-
-                            </>
-                        )}
-
-
-
+                        </LinkContainer>
 
                     </Navbar.Collapse>
                 </Navbar>
