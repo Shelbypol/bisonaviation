@@ -19,7 +19,7 @@
 
 .HeaderMobile_text {
     color: white;
-    font-size: 4vw;
+    font-size: 3.3vw;
     padding-top: 3vw;
     padding-bottom: 3vw;
     padding-left: 5vw;
@@ -41,7 +41,6 @@
 }
 
 .HeaderMobile_text-contact:hover {
-    /*padding-left: 36px;*/
     border-left: 6px solid #daa520;
     color: #fff;
 }

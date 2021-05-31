@@ -1,5 +1,4 @@
 import React, {useEffect} from 'react'
-import {Route} from 'react-router-dom'
 import {Navbar, Nav, Row, Col} from 'react-bootstrap'
 import {useDispatch, useSelector} from 'react-redux'
 import {LinkContainer} from 'react-router-bootstrap'
@@ -7,7 +6,6 @@ import {logout} from '../../actions/userActions'
 import './HeaderMobile.css'
 import {CART_RESET} from "../../constants/cartConstants";
 import logo from '../../images/bg-graphics/graphics/Final-Logo-Horizontal.png'
-import SocialIcons from "../SocialIcons/SocialIcons";
 
 
 const HeaderMobile = () => {
@@ -66,12 +64,10 @@ const HeaderMobile = () => {
 
                             <>
                                 <LinkContainer to='/profile'
-                                               className='HeaderMobile_text border-0 d-flex justify-content-start global_blue'>
+                                               className='HeaderMobile_text  border-0 d-flex justify-content-start ml-2'>
                                     <Nav.Link>
-                                        <h5 className='global_goldenrodtxthoverwhite m-0 p-0'>
-                                            <i className="fas fa-user-cog"> </i>
-                                            &nbsp;{userInfo.name}
-                                        </h5>
+                                            <i className="fas fa-user-cog global_goldenrod HeaderMobile_social-icons"> </i>
+                                            &nbsp;&nbsp;{userInfo.name}
                                     </Nav.Link>
                                 </LinkContainer>
 
@@ -80,16 +76,16 @@ const HeaderMobile = () => {
                                 {userInfo && userInfo.isAdmin && (
                                     <>
                                         <LinkContainer to='/admin/userlist'
-                                                       className='HeaderMobile_text-inverted d-flex justify-content-start global_goldenrod-border-bottom ml-2 pb-3'>
+                                                       className='HeaderMobile_text border-0 d-flex justify-content-start ml-2'>
                                             <Nav.Link className='global_goldenrodtxthoverwhite'>
-                                                Admin - <span className='global_white'>&nbsp;<i>Users </i></span>
+                                                Admin <span className=''>&nbsp;<i className='global_goldenrod-border-left pl-1'>Users </i></span>
                                             </Nav.Link>
                                         </LinkContainer>
 
                                         <LinkContainer to='/admin/productlist'
-                                                       className='HeaderMobile_text-inverted d-flex justify-content-start ml-2 pt-3'>
+                                                       className='HeaderMobile_text border-0 d-flex justify-content-start ml-2 '>
                                             <Nav.Link className='global_goldenrodtxthoverwhite'>
-                                                Admin - <span className='global_white'>&nbsp; <i>Products</i></span>
+                                                Admin <span className=''>&nbsp;<i className='global_goldenrod-border-left pl-1'>Products</i></span>
                                             </Nav.Link>
                                         </LinkContainer>
                                     </>
@@ -97,8 +93,9 @@ const HeaderMobile = () => {
 
 
                                 <Nav.Link onClick={logoutHandler}
-                                          className='HeaderMobile_text border-0 d-flex justify-content-start py-3 '>
-                                    Log out
+                                          className='HeaderMobile_text border-0 d-flex justify-content-start py-3 ml-2'>
+                                    <i className="fal fa-sign-out border-0 global_goldenrod HeaderMobile_social-icons"> </i>
+                                    &nbsp;&nbsp;
                                 </Nav.Link>
                             </>
                         )}
@@ -159,7 +156,6 @@ const HeaderMobile = () => {
                                 </p>
                             </Nav.Link>
                         </LinkContainer>
-                        {/*)}*/}
 
                         {/*  BROWSE PRODUCTS  */}
                         <LinkContainer className='HeaderMobile_text d-flex justify-content-start'
@@ -173,9 +169,7 @@ const HeaderMobile = () => {
                         <LinkContainer to='/avionics'
                                        className='HeaderMobile_text d-flex justify-content-start'>
                             <Nav.Link>
-                                {/*<h5 className='global_white m-0 pl-2'>*/}
                                 Avionics
-                                {/*</h5>*/}
                             </Nav.Link>
                         </LinkContainer>
 
@@ -183,9 +177,7 @@ const HeaderMobile = () => {
                         <LinkContainer to='/maintenance'
                                        className='HeaderMobile_text d-flex justify-content-start'>
                             <Nav.Link>
-                                {/*<h5 className='global_white m-0 pl-2'>*/}
                                 Maintenance
-                                {/*</h5>*/}
                             </Nav.Link>
                         </LinkContainer>
 
@@ -206,60 +198,12 @@ const HeaderMobile = () => {
                         </LinkContainer>
 
                         <LinkContainer
-                            className='HeaderMobile_text global_goldenrod d-flex justify-content-start mb-5'
+                            className='HeaderMobile_text global_goldenrod d-flex justify-content-start pb-5'
                             to='/contact'>
                             <Nav.Link>
                                 Contact
                             </Nav.Link>
                         </LinkContainer>
-
-
-                        {/*/!*  PROFILE  /  SIGN IN  *!/*/}
-                        {/*{userInfo ? (*/}
-                        {/*    <>*/}
-                        {/*        /!*  CONTACT US  *!/*/}
-                        {/*        /!*<LinkContainer*!/*/}
-                        {/*        /!*    className='HeaderMobile_text global_goldenrod d-flex justify-content-start'*!/*/}
-                        {/*        /!*    to='/contact'>*!/*/}
-                        {/*        /!*    <Nav.Link>*!/*/}
-                        {/*        /!*        Contact*!/*/}
-                        {/*        /!*    </Nav.Link>*!/*/}
-                        {/*        /!*</LinkContainer>*!/*/}
-
-                        {/*        <Nav.Link onClick={logoutHandler}*/}
-                        {/*                  className='HeaderMobile_text d-flex justify-content-start pt-3 pb-5 '>*/}
-                        {/*            Log out*/}
-                        {/*        </Nav.Link>*/}
-                        {/*    </>*/}
-
-                        {/*) : (*/}
-                        {/*    <>*/}
-                        {/*        <LinkContainer to='/register'*/}
-                        {/*                       className='HeaderMobile_text d-flex justify-content-start'>*/}
-                        {/*            <Nav.Link>*/}
-                        {/*                Register*/}
-                        {/*            </Nav.Link>*/}
-                        {/*        </LinkContainer>*/}
-
-                        {/*        /!*  CONTACT US  *!/*/}
-                        {/*        /!*<LinkContainer*!/*/}
-                        {/*        /!*    className='HeaderMobile_text global_goldenrod d-flex justify-content-start'*!/*/}
-                        {/*        /!*    to='/contact'>*!/*/}
-                        {/*        /!*    <Nav.Link>*!/*/}
-                        {/*        /!*        Contact*!/*/}
-                        {/*        /!*    </Nav.Link>*!/*/}
-                        {/*        /!*</LinkContainer>*!/*/}
-
-                        {/*        <LinkContainer to='/login'>*/}
-                        {/*            <Nav.Link className='HeaderMobile_text-inverted d-flex justify-content-start py-3 pb-5'>*/}
-                        {/*                Login*/}
-                        {/*            </Nav.Link>*/}
-                        {/*        </LinkContainer>*/}
-
-
-                        {/*</>*/}
-                        {/*)}*/}
-
 
                     </Navbar.Collapse>
                 </Navbar>
