@@ -22,16 +22,13 @@
     font-size: 4vw;
     padding-top: 3vw;
     padding-bottom: 3vw;
-    padding-left: 20px;
-    /*border-right: 10px solid #daa520;*/
-    border-left: 5px solid #daa520;
+    padding-left: 5vw;
+    border-left: 6px solid #daa520;
     margin: 0;
 }
 
 .HeaderMobile_text:hover {
-    padding-left: 30px;
-    border-left: 6px solid #daa520;
-    /*border-right: 6px solid #daa520;*/
+    border-left: 6px solid #000;
     color: #daa520;
 }
 
