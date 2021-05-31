@@ -39,7 +39,6 @@
 
 .HeroCarousel_carousel-text-box{
     margin-top: -45vh;
-    margin-left: -5vw;
     width: 75%
 }
 
@@ -59,38 +58,30 @@
 .HeroCarousel_carousel-text-top-bar {
     height: 1.2vh !important;
     margin-top: -3vh;
-    background-color: #660708;
 }
 
 .HeroCarousel_carousel-text-btm-bar{
     height: 1.2vh !important;
     margin-top: 3vh;
-    background-color: #660708;
-    /*background-color: rgba(255, 255, 255, .5);*/
 }
 
 /*    ======   MOBILE RESPONSIVE    ======    */
 @media (max-width: 600px) {
     .HeroCarousel_carousel-divider-img{
-        /*width: 250vw;*/
         width: 100%;
     }
 
-    .HeroCarousel_carousel-social-icons{
-        /*margin-left: 25vw;*/
-        /*margin-left: 25vw;*/
-    }
-
     .HeroCarousel_carousel-title{
-        font-size: 6vw !important;
+        font-size: 9vw !important;
     }
 
     .HeroCarousel_carousel-letter{
-        font-size: 8vw !important;
+        font-size: 14vw !important;
     }
 
     .HeroCarousel_carousel-text{
-        font-size: 3vw !important;
+        font-size: 3.8vw !important;
+        /*font-size: 3.5vw !important;*/
     }
 
     .HeroCarousel_animation{
@@ -99,10 +90,8 @@
     }
 
     .HeroCarousel_carousel-text-box{
-        margin-top: -55vh;
-        z-index: 1;
-        display: flex;
-        justify-content: center;
+      margin-top: -60vh;
+        width: 100%
     }
 
 
