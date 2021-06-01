@@ -8,7 +8,6 @@ const List = ({link, lg, md, xs, item1, item2, item3, item4, item5, item6, item7
 
     return (
 
-        // <Col lg={6} md={5} xs={12}
         <Col lg={lg} md={md} xs={xs}
              className='mx-0 py-0 px-2 my-md-5 my-sm-0 global_goldenrod global_black-transparent global_goldenrod-border-left global_goldenrod-border-right'>
 
