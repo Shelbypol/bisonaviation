@@ -40,13 +40,13 @@ const HomeScreen = () => {
                         </Col>
                     </Row>
 
-                    <Row className='my-md-5 py-md-5 my-sm-0 py-sm-0 d-flex justify-content-center'>
-                        <Col md={9} xs={12} style={{zIndex: '3000'}} className='mb-md-5 mb-sm-0'>
+                    <Row className='my-5 py-sm-0 d-flex justify-content-center'>
+                        <Col md={9} xs={12} style={{zIndex: '3000'}} className='mb-5'>
                             <GarminAdProductCarousel/>
                         </Col>
                     </Row>
 
-                    <Row className='my-md-5 py-md-5 my-sm-0 py-sm-0 d-flex justify-content-center'>
+                    <Row className='my-5 py-md-5 py-sm-0 d-flex justify-content-center'>
                         <Col md={9} xs={12} className='mb-5' style={{zIndex: '3000'}}>
                             <HomeMaintenance/>
                         </Col>
@@ -58,7 +58,7 @@ const HomeScreen = () => {
                         </Col>
                     </Row>
 
-                    <Row className='my-md-5 py-md-5 my-sm-0 py-sm-0 d-flex justify-content-center'>
+                    <Row className='my-5 py-md-5 py-sm-0 d-flex justify-content-center'>
                         <Col md={9} xs={12} className='' style={{zIndex: '3000'}}>
                             <HomeFlir/>
                         </Col>

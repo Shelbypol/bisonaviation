@@ -1,0 +1,43 @@
+.HomeFlir_title-row{
+    height: 35vh;
+}
+
+.HomeFlir_bg-img{
+    background-image: url("./images/large-flir.png");
+    background-position: center 5%;
+}
+
+.HomeFlir_title{
+    font-size: 8vh;
+}
+
+.HomeMaintenance_panel-img{
+    background-image: url('../Avionics/images/avionics1.png');
+    background-position: 20% 60%;
+}
+
+.HomeFlir_img{
+    height: 33vh;
+    width: fit-content;
+}
+
+.HomeFlir_flir1-img{
+    background-image: url('../Flir/images/flirinventory.png');
+    background-position: 25% center;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+
+.HomeFlir_flir2-img{
+    background-image: url('../Flir/images/flir-sharp.png');
+    background-position: 25% center;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .HomeFlir_title {
+        font-size: 5vh;
+    }
+
+}

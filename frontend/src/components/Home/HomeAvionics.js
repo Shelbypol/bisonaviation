@@ -73,8 +73,8 @@ const HomeAvionics = () => {
                     </Row>
                 </Col>
 
-                <Col xs={10}
-                     className='HomeAvionics_tayseer-img HomeAvionics_img mx-auto mb-5 mt-0 py-0 d-sm-block d-md-none'> </Col>
+                <Col xs={9} className='HomeAvionics_panel-glow-img HomeAvionics_img mx-auto mb-5 mt-0 py-0 d-sm-block d-md-none'> </Col>
+                <Col xs={9} className='HomeAvionics_tayseer-img HomeAvionics_img mx-auto mb-5 mt-0 py-0 d-sm-block d-md-none'> </Col>
 
                 <Col xs={12}
                      className='HomeAvionics_panel-img HomeAvionics_img d-none d-md-block global_goldenrod-border-right'> </Col>
