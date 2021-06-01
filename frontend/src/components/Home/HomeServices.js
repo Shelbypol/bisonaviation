@@ -7,7 +7,7 @@ const HomeServices = () => {
     return (
 
         <>
-            <Row className='text-white text-center my-5'>
+            <Row className='text-white text-center mt-5'>
 
                 <Col lg={4} xs={12}
                      className='HomeServices_col global_cursor d-flex align-items-start h-auto justify-content-center'>
@@ -72,7 +72,7 @@ const HomeServices = () => {
                                     <i className='fal far fa-camera-home fa-stack-2x global_cultured '> </i>
                                 </Card.Title>
 
-                                <Card.Subtitle className='mx-auto my-3'>
+                                <Card.Subtitle className='mx-auto mt-3'>
                                     <h5 className='HomeServices_nav_text'>EO/IR Flir</h5>
                                 </Card.Subtitle>
                                 <Card.Text className='d-none d-md-block'>

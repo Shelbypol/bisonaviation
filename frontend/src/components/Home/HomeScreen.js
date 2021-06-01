@@ -27,7 +27,7 @@ const HomeScreen = () => {
 
                     <HomeAwardBanner/>
 
-                    <Row className='my-md-5 mb-sm-0 mt-sm-3 d-flex justify-content-center'>
+                    <Row className='my-md-5 mb-sm-0 mt-sm-3 pb-0 d-flex justify-content-center'>
                         <Col md={9} xs={12} className='mb-md-5 mb-sm-0' style={{zIndex: '3000'}}>
                             <HomeServices/>
                         </Col>
