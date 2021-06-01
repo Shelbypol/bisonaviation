@@ -4,6 +4,7 @@ import './HomeAvionics.css';
 import {LinkContainer} from "react-router-bootstrap";
 import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
+import TenItemList from '../../components/TenItemList';
 
 const HomeAvionics = () => {
 
@@ -23,49 +24,59 @@ const HomeAvionics = () => {
                         </Col>
                     </Row>
 
-                    <Row
-                        className='pb-0 px-2 pt-md-3 pt-sm-0 mx-n1 mb-n1 my-0 global_black-bg d-flex justify-content-between'>
+                    <Row className='pb-0 px-2 pt-md-3 pt-sm-0 mx-n1 mb-n1 my-0 global_black-bg d-flex justify-content-between'>
 
-                        <Col lg={6} md={5} xs={12}
-                             className='mx-0 py-0 px-2 my-md-5 my-sm-0 global_goldenrod global_black-transparent global_goldenrod-border-left global_goldenrod-border-right'>
+                        <TenItemList
+                            lg={6}
+                            md={5}
+                            xs={12}
+                            link={`/avionics`}
+                            item1={'Annual Inspections'}
+                            item2={'Propeller Balance'}
+                            item3={'Pre-Buy Inspections'}
+                            item4={'Annual Inspections'}
+                        />
 
-                            <LinkContainer to={`/avionics`}>
-                                <Col xs={12}
-                                     className='HomeAvionics_titles global_cursor global_goldenrodtxt-btn Mechanics_col d-flex align-items-center justify-content-center p-0 m-0'>
-                                    <Zoom>
-                                        <p className='HomeAvionics_text-titles'>Annual Inspections</p>
-                                    </Zoom>
-                                </Col>
-                            </LinkContainer>
+                        {/*<Col lg={6} md={5} xs={12}*/}
+                        {/*     className='mx-0 py-0 px-2 my-md-5 my-sm-0 global_goldenrod global_black-transparent global_goldenrod-border-left global_goldenrod-border-right'>*/}
 
-                            <LinkContainer to={`/avionics`}>
-                                <Col xs={12}
-                                     className='HomeAvionics_titles global_cursor global_goldenrodtxt-btn Mechanics_col d-flex align-items-center justify-content-center p-0 m-0'>
-                                    <Zoom>
-                                        <p className='HomeAvionics_text-titles'>Propeller Balance</p>
-                                    </Zoom>
-                                </Col>
-                            </LinkContainer>
+                        {/*    <LinkContainer to={`/avionics`}>*/}
+                        {/*        <Col xs={12}*/}
+                        {/*             className='HomeAvionics_titles global_cursor global_goldenrodtxt-btn Mechanics_col d-flex align-items-center justify-content-center p-0 m-0'>*/}
+                        {/*            <Zoom>*/}
+                        {/*                <p className='HomeAvionics_text-titles'>Annual Inspections</p>*/}
+                        {/*            </Zoom>*/}
+                        {/*        </Col>*/}
+                        {/*    </LinkContainer>*/}
 
-                            <LinkContainer to={`/avionics`}>
-                                <Col xs={12}
-                                     className='HomeAvionics_titles global_cursor global_goldenrodtxt-btn Mechanics_col d-flex align-items-center justify-content-center p-0 m-0'>
-                                    <Zoom>
-                                        <p className='HomeAvionics_text-titles'> Pre-Buy Inspections</p>
-                                    </Zoom>
-                                </Col>
-                            </LinkContainer>
+                        {/*    <LinkContainer to={`/avionics`}>*/}
+                        {/*        <Col xs={12}*/}
+                        {/*             className='HomeAvionics_titles global_cursor global_goldenrodtxt-btn Mechanics_col d-flex align-items-center justify-content-center p-0 m-0'>*/}
+                        {/*            <Zoom>*/}
+                        {/*                <p className='HomeAvionics_text-titles'>Propeller Balance</p>*/}
+                        {/*            </Zoom>*/}
+                        {/*        </Col>*/}
+                        {/*    </LinkContainer>*/}
 
-                            <LinkContainer to={`/avionics`}>
-                                <Col xs={12}
-                                     className='HomeAvionics_titles global_cursor global_goldenrodtxt-btn Mechanics_col d-flex align-items-center justify-content-center p-0 m-0'>
-                                    <Zoom>
-                                        <p className='HomeAvionics_text-titles'>Annual Inspections</p>
-                                    </Zoom>
-                                </Col>
-                            </LinkContainer>
+                        {/*    <LinkContainer to={`/avionics`}>*/}
+                        {/*        <Col xs={12}*/}
+                        {/*             className='HomeAvionics_titles global_cursor global_goldenrodtxt-btn Mechanics_col d-flex align-items-center justify-content-center p-0 m-0'>*/}
+                        {/*            <Zoom>*/}
+                        {/*                <p className='HomeAvionics_text-titles'> Pre-Buy Inspections</p>*/}
+                        {/*            </Zoom>*/}
+                        {/*        </Col>*/}
+                        {/*    </LinkContainer>*/}
 
-                        </Col>
+                        {/*    <LinkContainer to={`/avionics`}>*/}
+                        {/*        <Col xs={12}*/}
+                        {/*             className='HomeAvionics_titles global_cursor global_goldenrodtxt-btn Mechanics_col d-flex align-items-center justify-content-center p-0 m-0'>*/}
+                        {/*            <Zoom>*/}
+                        {/*                <p className='HomeAvionics_text-titles'>Annual Inspections</p>*/}
+                        {/*            </Zoom>*/}
+                        {/*        </Col>*/}
+                        {/*    </LinkContainer>*/}
+
+                        {/*</Col>*/}
 
                         {/*MOBILE IMAGE*/}
                         <Col xs={11}
