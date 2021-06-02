@@ -7,13 +7,13 @@
     font-size: 3.2vh;
 }
 
-.HomeAvionics_title{
-   font-size: 8vh;
-}
+/*.HomeAvionics_title{*/
+/*   font-size: 8vh;*/
+/*}*/
 
-.HomeAvionics_title-row{
-    height: 35vh;
-}
+/*.HomeAvionics_title-row{*/
+/*    height: 35vh;*/
+/*}*/
 
 .HomeAvionics_img{
     height: 33vh;
@@ -47,9 +47,6 @@
 
 @media only screen and (max-width: 1100px) {
 
-    .HomeAvionics_title{
-        font-size: 5vh;
-    }
 
     .HomeAvionics_text-titles{
         font-size: 2vh;
@@ -63,9 +60,6 @@
 
 
 @media only screen and (max-width: 800px) {
-    .HomeAvionics_title-row{
-        height: 60vh;
-    }
 
     .HomeAvionics_text-titles{
         font-size: 3vh;
@@ -85,16 +79,7 @@
 
 @media only screen and (max-width: 600px) {
 
-    .HomeAvionics_title-row{
-        /*height: 75vh;*/
-    }
-
     .HomeAvionics_text-titles {
         font-size: 3.5vh;
-    }
-
-    .HomeAvionics_title{
-        text-align: center;
-        font-size: 7vh;
     }
 }

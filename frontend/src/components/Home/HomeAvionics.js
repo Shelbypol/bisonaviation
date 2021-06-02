@@ -14,19 +14,8 @@ const HomeAvionics = () => {
             <Row className='d-flex justify-content-center align-content-center'>
                 <Col xs={12} className='HomeAvionics_image p-0 mt-5 mb-0 mx-0'>
 
-
                     <SectionTitle titleText={'AVIONICS'}/>
 
-                    {/*<Row className='d-flex align-items-center mr-0 my-0 py-0 ml-n1 HomeAvionics_title-row '>*/}
-                    {/*    <Col md={6} xs={12}*/}
-                    {/*         className='p-0 mx-0  mb-sm-5 mb-md-n2 global_goldenrod-border-right global_black-bg'>*/}
-                    {/*        <h2 className='HomeAvionics_title global_white text-center'>*/}
-                    {/*            <Fade top>*/}
-                    {/*                Avionics*/}
-                    {/*            </Fade>*/}
-                    {/*        </h2>*/}
-                    {/*    </Col>*/}
-                    {/*</Row>*/}
 
                     <Row className='pb-0 px-2 pt-md-3 pt-sm-0 mx-n1 mb-n1 my-0 global_black-bg d-flex justify-content-between'>
 
