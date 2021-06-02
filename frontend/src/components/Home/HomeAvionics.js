@@ -19,16 +19,19 @@ const HomeAvionics = () => {
 
                     <Row className='pb-0 px-2 pt-md-3 pt-sm-0 mx-n1 mb-n1 my-0 global_black-bg d-flex justify-content-between'>
 
-                        <TenItemList
-                            lg={6}
-                            md={5}
-                            xs={12}
-                            link={`/avionics`}
-                            item1={'Annual Inspections'}
-                            item2={'Propeller Balance'}
-                            item3={'Pre-Buy Inspections'}
-                            item4={'Annual Inspections'}
-                        />
+                        <Col lg={6} md={5} xs={12} className=' m-0 p-0'>
+
+                            <TenItemList
+                                // lg={12}
+                                // md={5}
+                                xs={12}
+                                link={`/avionics`}
+                                item1={'Annual Inspections'}
+                                item2={'Propeller Balance'}
+                                item3={'Pre-Buy Inspections'}
+                                item4={'Annual Inspections'}
+                            />
+                        </Col>
 
                         {/*MOBILE IMAGE*/}
                         <Col xs={11} className='HomeAvionics_panel-img HomeAvionics_img mx-auto my-0 py-0 d-sm-block d-md-none'> </Col>
