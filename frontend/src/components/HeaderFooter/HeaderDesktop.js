@@ -79,7 +79,7 @@ const HeaderDesktop = () => {
                                 {/*{userInfo.isAdmin ? (*/}
                                 <Link to='#' className='global_goldenrod-border-right'>
                                     <h6
-                                        className=' global_white pt-3 pr-3'
+                                        className=' global_white pt-4 pr-3'
                                         style={{fontWeight: 'lighter'}}>{userInfo.name}</h6>
                                 </Link>
 
