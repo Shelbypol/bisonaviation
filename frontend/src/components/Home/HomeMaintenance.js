@@ -8,6 +8,7 @@ import img1 from "../Maintenance/images/maintenance2.png";
 import img2 from "../Maintenance/images/maintenance5.png";
 import img3 from "../Maintenance/images/maintenance4.png";
 import Fade from "react-reveal/Fade";
+import SectionTitle from "../SectionTitle";
 
 
 const HomeMaintenance = () => {
@@ -18,16 +19,18 @@ const HomeMaintenance = () => {
             <Row className='d-flex justify-content-center align-content-center'>
                 <Col xs={12} className='HomeMaintenance_image p-0 mt-5 mb-0 mx-0 global_goldenrod-border-right'>
 
-                    <Row className='d-flex align-items-center mr-0 my-0 py-0 ml-n1 HomeAvionics_title-row '>
-                        <Col lg={6} md={10} xs={12}
-                             className='p-0 mx-0 mb-sm-5 mb-md-n2 global_goldenrod-border-right global_black-bg d-flex justify-content-center'>
-                            <h2 className='HomeMaintenance_title global_white text-center'>
-                                <Fade top>
-                                    Maintenance
-                                </Fade>
-                            </h2>
-                        </Col>
-                    </Row>
+                    <SectionTitle titleText={'MAINTENANCE'}/>
+
+                    {/*<Row className='d-flex align-items-center mr-0 my-0 py-0 ml-n1 HomeAvionics_title-row '>*/}
+                    {/*    <Col lg={6} md={10} xs={12}*/}
+                    {/*         className='p-0 mx-0 mb-sm-5 mb-md-n2 global_goldenrod-border-right global_black-bg d-flex justify-content-center'>*/}
+                    {/*        <h2 className='HomeMaintenance_title global_white text-center'>*/}
+                    {/*            <Fade top>*/}
+                    {/*                Maintenance*/}
+                    {/*            </Fade>*/}
+                    {/*        </h2>*/}
+                    {/*    </Col>*/}
+                    {/*</Row>*/}
 
                     <Row
                         className='pb-0 px-2 pt-3 mx-n1 mb-n1 my-0 global_black-bg d-flex justify-content-between'>
