@@ -6,6 +6,7 @@ import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
 import TenItemList from '../../components/TenItemList';
 import SectionTitle from "../SectionTitle";
+import SectionText from "../SectionText";
 
 const HomeAvionics = () => {
 
@@ -36,36 +37,15 @@ const HomeAvionics = () => {
                         {/*MOBILE IMAGE*/}
                         <Col xs={11} className='HomeAvionics_panel-img HomeAvionics_img mx-auto my-0 py-0 d-sm-block d-md-none'> </Col>
 
+                        <SectionText
+                            lg={6}
+                            md={6}
+                            xs={12}
+                            headerText={'You depend on your aircraft to carry you and your passengers safely.'}
+                            paragraphText={' Whether you need to add ADS-B OUT capabilities in order to meet the December 31, 2019 deadline, a routine pitot-static / transponder certification, or it\'s time for a completely new panel, Bison Aviation\'s Avionics Team is ready to bring your avionics systems into the 21st century!'}
+                            btn={'LEARN MORE'}
+                        />
 
-                        <Col lg={6} md={6} xs={12} className='mx-0 mt-auto'>
-                            <Col xs={12} className='mb-2 pr-4 d-none d-md-block'>
-                                <Zoom>
-                                    <h1 className='global_white'>You depend on your aircraft to carry you and your
-                                        passengers safely.</h1>
-                                </Zoom>
-                            </Col>
-
-                            <Col xs={12} className='global_cursor mt-4 text-center text-md-left'>
-                                <Zoom>
-                                    <p className='pr-3 global_white'>
-                                        Whether you need to add ADS-B OUT capabilities in order to meet the December
-                                        31,
-                                        2019 deadline, a routine pitot-static / transponder certification, or it's
-                                        time
-                                        for a completely new panel, Bison Aviation's Avionics Team is ready to bring
-                                        your avionics systems into the 21st century!
-                                    </p>
-                                </Zoom>
-                            </Col>
-
-                            <Col xs={10} md={12} className='global_cursor mb-5 py-2 mx-auto d-flex justify-content-center global_dark-bg-btn'>
-                                <LinkContainer to={`/avionics`}>
-                                    <Button className=' text-center'>
-                                            LEARN MORE
-                                    </Button>
-                                </LinkContainer>
-                            </Col>
-                        </Col>
                     </Row>
                 </Col>
 

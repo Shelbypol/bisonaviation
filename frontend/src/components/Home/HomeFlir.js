@@ -11,6 +11,7 @@ import img3 from "../Maintenance/images/maintenance4.png";
 import flir1 from '../Flir/images/flirinventory.png'
 import flir2 from '../Flir/images/acessories.png'
 import flir3 from '../Flir/images/flir-multiple.jpg'
+import SectionTitle from "../SectionTitle";
 
 
 const HomeFlir = () => {
@@ -20,16 +21,19 @@ const HomeFlir = () => {
             <Row className='d-flex justify-content-center align-content-center'>
                 <Col xs={12} className='HomeFlir_bg-img p-0 mt-5 mb-0 mx-0 global_goldenrod-border-right'>
 
-                    <Row className='d-flex align-items-center mr-0 my-0 py-0 ml-n1 HomeFlir_title-row '>
-                        <Col md={6} xs={12}
-                             className='p-0 mx-0  mb-sm-5 mb-md-n2 global_goldenrod-border-right global_black-bg'>
-                            <h2 className='HomeFlir_title global_white text-center'>
-                                <Fade top>
-                                    EO / IR FLIR
-                                </Fade>
-                            </h2>
-                        </Col>
-                    </Row>
+                    <SectionTitle titleText={'EO / IR FLIR'}/>
+
+
+                    {/*<Row className='d-flex align-items-center mr-0 my-0 py-0 ml-n1 HomeFlir_title-row '>*/}
+                    {/*    <Col md={6} xs={12}*/}
+                    {/*         className='p-0 mx-0  mb-sm-5 mb-md-n2 global_goldenrod-border-right global_black-bg'>*/}
+                    {/*        <h2 className='HomeFlir_title global_white text-center'>*/}
+                    {/*            <Fade top>*/}
+                    {/*                EO / IR FLIR*/}
+                    {/*            </Fade>*/}
+                    {/*        </h2>*/}
+                    {/*    </Col>*/}
+                    {/*</Row>*/}
 
                     <Row
                         className='pb-0 px-2 pt-md-3 pt-sm-0 mx-n1 mb-n1 my-0 global_black-bg d-flex justify-content-between'>

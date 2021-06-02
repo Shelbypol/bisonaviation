@@ -10,7 +10,7 @@ const SectionTitle = ({titleText}) => {
         };
 
         const rowHeight = {
-            height: "45vh"
+            height: "40vh"
         };
 
 
