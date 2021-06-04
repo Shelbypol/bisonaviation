@@ -7,14 +7,6 @@
     font-size: 3.2vh;
 }
 
-/*.HomeAvionics_title{*/
-/*   font-size: 8vh;*/
-/*}*/
-
-/*.HomeAvionics_title-row{*/
-/*    height: 35vh;*/
-/*}*/
-
 .HomeAvionics_img{
     height: 33vh;
     width: fit-content;
@@ -24,16 +16,6 @@
     background-image: url('../Avionics/images/avionics/tayseer-avionics.png');
     background-position: 25% center;
 }
-
-/*.HomeAvionics_cnc-img{*/
-/*    background-image: url('../Avionics/images/avionics/cnc-machine copy.png');*/
-/*    background-position: 50% 50%;*/
-/*}*/
-
-/*.HomeAvionics_roel-img{*/
-/*    background-image: url('../Avionics/images/avionics2.png');*/
-/*    background-position: 20% top;*/
-/*}*/
 
 .HomeAvionics_panel-glow-img{
     background-image: url('../Avionics/images/avionics/avionics-1.png');
