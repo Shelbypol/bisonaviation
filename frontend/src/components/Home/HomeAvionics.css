@@ -8,19 +8,9 @@
 }
 
 .HomeAvionics_img{
-    height: 30vh;
+    height: 20vh;
     width: fit-content;
 }
-
-/*.HomeAvionics_tayseer-img{*/
-/*    background-image: url('../Avionics/images/avionics/tayseer-avionics.png');*/
-/*    background-position: 25% center;*/
-/*}*/
-
-/*.HomeAvionics_panel-glow-img{*/
-/*    background-image: url('../Avionics/images/avionics/avionics-hero-img.png');*/
-/*    background-position: 45% 25%;*/
-/*}*/
 
 .HomeAvionics_panel-img{
     background-image: url('../Avionics/images/avionics1.png');
@@ -47,9 +37,9 @@
         font-size: 3vh;
     }
 
-    .HomeAvionics_image {
-        background-image: url("./images/fullscreen-slider2.png");
-    }
+    /*.HomeAvionics_image {*/
+    /*    background-image: url("./images/fullscreen-slider2.png");*/
+    /*}*/
 
     .HomeAvionics_panel-img{
         background-image: url('../Avionics/images/avionics/avionics-4.png');

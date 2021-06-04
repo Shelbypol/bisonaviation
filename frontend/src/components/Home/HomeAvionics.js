@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Row} from "react-bootstrap";
+import {Col, Row} from "react-bootstrap";
 import './HomeAvionics.css';
 import TenItemList from '../../components/TenItemList';
 import SectionTitle from "../SectionTitle";
@@ -13,12 +13,13 @@ const HomeAvionics = () => {
 
     return (
         <>
-            <Row >
+            <Row className='d-flex justify-content-center'>
                 <Col xs={12} className='HomeAvionics_image p-0 mt-5 mb-0 mx-0'>
 
                     <SectionTitle titleText={'AVIONICS'}/>
 
-                    <Row className='pb-0 px-2 pt-md-3 pt-sm-0 mx-n1 mb-n1 my-0 global_black-bg d-flex justify-content-between'>
+                    <Row
+                        className='pb-0 px-2 pt-md-3 pt-sm-0 mx-n1 mb-n1 my-0 global_black-bg d-flex justify-content-between'>
 
                         <Col lg={6} md={5} xs={12} className=' m-0 p-0'>
 
@@ -34,8 +35,9 @@ const HomeAvionics = () => {
                             />
                         </Col>
 
-                        {/*MOBILE IMAGE*/}
-                        <Col xs={11} className='HomeAvionics_panel-img HomeAvionics_img mx-auto my-0 py-0 d-sm-block d-md-none'> </Col>
+                        {/*MOBILE ONLY IMAGE*/}
+                        <Col xs={11}
+                             className='HomeAvionics_panel-img HomeAvionics_img mx-auto my-0 py-0 d-sm-block d-md-none'> </Col>
 
                         <SectionText
                             lg={6}
@@ -52,7 +54,7 @@ const HomeAvionics = () => {
                 <SectionImages img1={img1} img2={img2} img3={img3}/>
 
                 <Col xs={12}
-                     className='mt-3 HomeAvionics_panel-img HomeAvionics_img d-none d-md-block global_goldenrod-border-right'> </Col>
+                     className='mt-3 mb-5 HomeAvionics_panel-img HomeAvionics_img d-none d-md-block global_goldenrod-border-bottom'> </Col>
 
 
             </Row>
