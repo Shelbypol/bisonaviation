@@ -10,7 +10,7 @@ const GarminAd = () => {
 
         return (
             <>
-                <Fade duration={1500} top>
+                <Fade duration={1500} left>
                     <Row className=' d-flex align-content-center pb-2'>
                         <Col xs={12}>
                             <p className='GarminAd_flag red global_accentFont mt-n3 mb-0 mx-0 global_white'>NEW!</p>

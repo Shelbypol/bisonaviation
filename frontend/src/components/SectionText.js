@@ -1,5 +1,5 @@
 import React from "react";
-import {Button, Col, Row} from "react-bootstrap";
+import {Button, Col} from "react-bootstrap";
 import Zoom from "react-reveal/Zoom";
 import {LinkContainer} from "react-router-bootstrap";
 
