@@ -1,7 +1,7 @@
 import React from "react";
 import {Col, Row} from "react-bootstrap";
 import './HomeMaintenance.css';
-import TenItemList from '../../components/TenItemList'
+import TenItemList from '../SectionList'
 import img1 from "../Maintenance/images/maintenance2.png";
 import img2 from "../Maintenance/images/maintenance5.png";
 import img3 from "../Maintenance/images/maintenance4.png";

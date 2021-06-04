@@ -1,7 +1,7 @@
 import React from "react";
 import {Col, Image, Row} from "react-bootstrap";
 import './HomeAvionics.css';
-import TenItemList from '../../components/TenItemList';
+import TenItemList from '../SectionList';
 import SectionTitle from "../SectionTitle";
 import SectionText from "../SectionText";
 import img0 from '../Avionics/images/avionics1.png';
@@ -55,8 +55,7 @@ const HomeAvionics = () => {
 
                 <SectionImages img1={img1} img2={img2} img3={img3}/>
 
-                <Col xs={12}
-                     className='mt-3 mb-5 HomeAvionics_panel-img HomeAvionics_img d-none d-lg-block'> </Col>
+                <Col xs={12} className='mt-3 mb-5 HomeAvionics_panel-img HomeAvionics_img d-none d-lg-block'> </Col>
 
 
             </Row>
