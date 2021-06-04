@@ -1,103 +1,50 @@
 import React from 'react';
 import {Row, Col} from 'reactstrap';
-import Zoom from 'react-reveal/Zoom'
-import {Button, Card} from "react-bootstrap";
-import {LinkContainer} from "react-router-bootstrap";
-import flir from "../Flir/images/flir-sharp.png";
-import flir1 from "../Flir/images/flirinventory.png";
-import Fade from "react-reveal/Fade";
+import TenItemList from "../SectionList";
+import './HomeFlir.css';
+import flir1 from '../Flir/images/flirinventory.png'
+import flir2 from '../Flir/images/acessories.png'
+import flir3 from '../Flir/images/flir-multiple.jpg'
+import SectionTitle from "../SectionTitle";
+import SectionText from "../SectionText";
+import SectionImages from "../SectionImages";
 
 
 const HomeFlir = () => {
     return (
         <>
-            <Row className=' global_white m-0 p-0 d-flex justify-content-between'>
-                {/*<Col xs={12} className='m-0 p-0'>*/}
-                <Col xs={12} className=' p-0 mt-5 mx-0 mb-0'>
-            {/*<Row className=' global_white d-flex justify-content-center align-content-center'>*/}
-            {/*    <Col xs={12} style={{backgroundColor: 'rgba(0,0,0,.8)'}}>*/}
+            <Row className='d-flex justify-content-center align-content-center'>
+                <Col xs={12} className='HomeFlir_bg-img p-0 mt-5 mb-0 mx-0'>
 
-                    {/*<Row className=' Global_Flir_bg-img d-flex justify-content-start align-content-center ml-3 mb-5'>*/}
+                    <SectionTitle titleText={'EO / IR FLIR'}/>
 
-                    <Row className='Global_Flir_bg-img HomeMaintenance_image d-flex justify-content-start align-content-center'>
-                    <Fade top>
-                        <Col xs={12}
-                             className='  d-sm-flex justify-content-sm-center global_blood-red-bg my-5'>
-                            <h1 className='AvionicsHome_title text-white '>EO /IR FLIR</h1>
-                        </Col>
-                    </Fade>
+                    <Row
+                        className='pb-0 px-2 pt-md-3 pt-sm-0 mx-n1 mb-n1 my-0 global_black-bg d-flex justify-content-between'>
 
-                        {/*<Fade top>*/}
-                        {/*    <Col xs={12}*/}
-                        {/*         className=' AvionicsHome_title-col global_blood-red-bg'>*/}
-                        {/*        <h1 className='AvionicsHome_title text-white'>EO/FLIR</h1>*/}
-                        {/*    </Col>*/}
-                        {/*</Fade>*/}
+                        <TenItemList
+                            lg={4}
+                            md={6}
+                            xs={12}
+                            link={`/flir`}
+                            item1={'World\'s largest inventory'}
+                            item2={'In-house sensor service team'}
+                            borderLeftTrue={true}
+                        />
+
+                        <SectionText
+                            lg={8}
+                            md={6}
+                            xs={12}
+                            headerText={'You depend on your aircraft to carry you and your passengers safely.'}
+                            paragraphText={' Whether you need to add ADS-B OUT capabilities in order to meet the December 31, 2019 deadline, a routine pitot-static / transponder certification, or it\'s time for a completely new panel, Bison Aviation\'s Avionics Team is ready to bring your avionics systems into the 21st century!'}
+                            btn={'LEARN MORE'}
+                        />
                     </Row>
-
-                    <Row className='my-5 mx-0 px-0 d-flex justify-content-between'>
-
-                        <Col xs={8} className='m-0 p-0' >
-                            <Zoom>
-
-                                <Col xs={12} className=' mx-0 px-0'>
-                                    <h1 className='global_white'>
-                                        Bison Aviation’s maintains the world’s largest inventory of legacy airborne
-                                        EO/IR equipment.
-                                    </h1>
-                                </Col>
-                            </Zoom>
-
-                            <Col xs={12} className='global_cursor mx-0 px-0 mt-4'>
-                                <Zoom>
-                                    <p className='pr-3 py-3'>
-                                        Bison Aviation’s Sensor Service team maintains an average of more than sixty
-                                        flight-ready systems from manufacturers such as Wescam, FLIR Systems, Inc.,
-                                        GyroCam, PolyTech, SweSystems, and more. Through significant investments in
-                                        research and engineering, Bison Aviation has developed the tools and procedures
-                                        necessary to repair & service nearly all makes and models of airborne equipment
-                                        at the component level.
-
-                                    </p>
-                                </Zoom>
-                            </Col>
-
-                            <Col xs={12} className='py-1 global_cursor mx-0 px-0'>
-                                <LinkContainer to={`/maintenance`}>
-                                    <Zoom>
-                                        <Button className='pl-4 global_goldenrodtxtborder-btn'>
-                                            Learn More
-                                        </Button>
-                                    </Zoom>
-                                </LinkContainer>
-                            </Col>
-                        </Col>
-
-
-                        <Col xs={4} className='pl-5'>
-                            <LinkContainer to={`/mechanics`}>
-                                <Col xs={12}
-                                     className='m-0 p-0 global_cursor d-flex align-items-center '>
-                                    <Zoom>
-
-                                        <Card className='Avionics_card border-0 bg-transparent rounded'>
-                                            <Card.Img variant="top" src={flir}
-                                                      className='Avionics_card-img h-100 w-100'/>
-                                            <Card.Img variant="top" src={flir1}
-                                                      className='Avionics_card-img h-100 w-100 mt-2'/>
-                                        </Card>
-                                    </Zoom>
-                                </Col>
-                            </LinkContainer>
-
-                        </Col>
-
-
-                    </Row>
-
                 </Col>
-            </Row>
 
+                <SectionImages img1={flir2} img2={flir1} img3={flir3}/>
+
+            </Row>
 
         </>
 

@@ -163,7 +163,7 @@ const HeroCarousel = (
 
 
                             <Col xs={12}
-                                 className='d-flex justify-content-sm-center justify-content-md-start'>
+                                 className='d-flex justify-content-start'>
                                 <h1 className='HeroCarousel_carousel-title global_white'>
                                     <span
                                         className='HeroCarousel_carousel-letter global_white'>{slide3firstTitleLetter}</span>{slide3firstTitleWord}

@@ -12,7 +12,7 @@ const HomeCarousel = () => {
             slide1firstTitleWord={'ison Aviation'}
             slide1firstSentence={'Professional Aviation Solutions'}
             slide1secondSentenceTrue={true}
-            slide1secondSentence={'FAA Repair Station: 85NR497D'}
+            slide1secondSentence={<span className='global_goldenrod'>FAA Repair Station: 85NR497D</span>}
             // slide1firstSentence={'we work hard on the ground,'}
             // slide1secondSentenceTrue={true}
             // slide1secondSentence={'so you can fly with confidence!'}

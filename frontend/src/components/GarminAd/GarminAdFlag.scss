@@ -4,12 +4,11 @@
   left:15px;
   top:-12px;
   display: block;
-  //height: 30px;
   height: 46px;
   line-height: 24px;
   background: #daa520;
-  color: #000;
   padding: 10px 20px 10px 20px;
+  font-weight: lighter;
   z-index: 1;
   box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 12px 20px 0 rgba(0, 0, 0, 0.19);
 
@@ -27,7 +26,6 @@
     background: #daa520;
     &:after{
       border-color:goldenrod transparent goldenrod transparent;
-      //border-color: orange transparent orange transparent;
     }
   }
 

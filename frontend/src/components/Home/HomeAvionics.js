@@ -1,114 +1,61 @@
 import React from "react";
-import {Button, Col, Row} from "react-bootstrap";
+import {Col, Image, Row} from "react-bootstrap";
 import './HomeAvionics.css';
-import {LinkContainer} from "react-router-bootstrap";
-import Fade from 'react-reveal/Fade';
-import Zoom from 'react-reveal/Zoom';
+import TenItemList from '../SectionList';
+import SectionTitle from "../SectionTitle";
+import SectionText from "../SectionText";
+import img0 from '../Avionics/images/avionics1.png';
+import img1 from "../Avionics/images/avionics/tayseer-avionics.png";
+import img2 from "../Avionics/images/avionics/avionics-4.png";
+import img3 from "../Avionics/images/avionics/avionics-3.png";
+import SectionImages from "../SectionImages";
 
 const HomeAvionics = () => {
 
     return (
         <>
-            <Row className='d-flex justify-content-center align-content-center'>
-                <Col xs={12} className='HomeAvionics_image p-0 mt-5 mb-0 mx-0 global_goldenrod-border-right'>
+            <Row className='d-flex justify-content-center'>
+                <Col xs={12} className='HomeAvionics_image p-0 mt-5 mb-0 mx-0'>
 
-                    <Row className='d-flex align-items-center mr-0 my-0 py-0 ml-n1 HomeAvionics_title-row '>
-                        <Col md={6} xs={12}
-                             className='p-0 mx-0  mb-sm-5 mb-md-n2 global_goldenrod-border-right global_black-bg'>
-                            <h2 className='HomeAvionics_title global_white text-center'>
-                                <Fade top>
-                                    Avionics
-                                </Fade>
-                            </h2>
-                        </Col>
-                    </Row>
+                    <SectionTitle titleText={'AVIONICS'}/>
 
                     <Row
-                        className='pb-0 px-2 pt-md-3 pt-sm-0 mx-n1 mb-n1 my-0 global_black-bg d-flex justify-content-between'>
+                        className='pb-0 px-2 pt-md-3 pt-sm-0 mx-n1 mb-n1 my-0 global_black-bg d-flex justify-content-between align-items-center'>
 
-                        <Col lg={6} md={5} xs={12}
-                             className='mx-0 py-0 px-2 my-md-5 my-sm-0 global_goldenrod global_black-transparent global_goldenrod-border-left global_goldenrod-border-right'>
+                        <Col lg={6} md={5} xs={12} className=' m-0 p-0'>
 
-                            <LinkContainer to={`/avionics`}>
-                                <Col xs={12}
-                                     className='HomeAvionics_titles global_cursor global_goldenrodtxt-btn Mechanics_col d-flex align-items-center justify-content-center p-0 m-0'>
-                                    <Zoom>
-                                        <p className='HomeAvionics_text-titles'>Annual Inspections</p>
-                                    </Zoom>
-                                </Col>
-                            </LinkContainer>
-
-                            <LinkContainer to={`/avionics`}>
-                                <Col xs={12}
-                                     className='HomeAvionics_titles global_cursor global_goldenrodtxt-btn Mechanics_col d-flex align-items-center justify-content-center p-0 m-0'>
-                                    <Zoom>
-                                        <p className='HomeAvionics_text-titles'>Propeller Balance</p>
-                                    </Zoom>
-                                </Col>
-                            </LinkContainer>
-
-                            <LinkContainer to={`/avionics`}>
-                                <Col xs={12}
-                                     className='HomeAvionics_titles global_cursor global_goldenrodtxt-btn Mechanics_col d-flex align-items-center justify-content-center p-0 m-0'>
-                                    <Zoom>
-                                        <p className='HomeAvionics_text-titles'> Pre-Buy Inspections</p>
-                                    </Zoom>
-                                </Col>
-                            </LinkContainer>
-
-                            <LinkContainer to={`/avionics`}>
-                                <Col xs={12}
-                                     className='HomeAvionics_titles global_cursor global_goldenrodtxt-btn Mechanics_col d-flex align-items-center justify-content-center p-0 m-0'>
-                                    <Zoom>
-                                        <p className='HomeAvionics_text-titles'>Annual Inspections</p>
-                                    </Zoom>
-                                </Col>
-                            </LinkContainer>
-
+                            <TenItemList
+                                xs={12}
+                                link={`/avionics`}
+                                item1={'Annual Inspections'}
+                                item2={'Propeller Balance'}
+                                item3={'Pre-Buy Inspections'}
+                                item4={'Annual Inspections'}
+                                borderLeftTrue={true}
+                            />
                         </Col>
 
-                        {/*MOBILE IMAGE*/}
-                        <Col xs={11}
-                             className='HomeAvionics_panel-img HomeAvionics_img mx-auto my-0 py-0 d-sm-block d-md-none'> </Col>
-
-
-                        <Col lg={6} md={6} xs={12} className='mx-0 mt-auto'>
-                            <Col xs={12} className='mb-2 pr-4 d-none d-md-block'>
-                                <Zoom>
-                                    <h1 className='global_white'>You depend on your aircraft to carry you and your
-                                        passengers safely.</h1>
-                                </Zoom>
-                            </Col>
-
-                            <Col xs={12} className='global_cursor mt-4 text-center text-md-left'>
-                                <Zoom>
-                                    <p className='pr-3 global_white'>
-                                        Whether you need to add ADS-B OUT capabilities in order to meet the December
-                                        31,
-                                        2019 deadline, a routine pitot-static / transponder certification, or it's
-                                        time
-                                        for a completely new panel, Bison Aviation's Avionics Team is ready to bring
-                                        your avionics systems into the 21st century!
-                                    </p>
-                                </Zoom>
-                            </Col>
-
-                            <Col xs={10} md={12} className='global_cursor mb-5 py-2 mx-auto d-flex justify-content-center global_dark-bg-btn'>
-                                <LinkContainer to={`/avionics`}>
-                                    <Button className=' text-center'>
-                                            LEARN MORE
-                                    </Button>
-                                </LinkContainer>
-                            </Col>
+                        {/*MOBILE ONLY IMAGE*/}
+                        <Col xs={11} className=' my-2 pl-md-0 d-sm-block d-md-none mx-auto' style={{height: '25vh'}}>
+                            <Image src={img0} className='h-100 w-100' fluid/>
                         </Col>
+
+
+                        <SectionText
+                            lg={6}
+                            md={6}
+                            xs={12}
+                            headerText={'You depend on your aircraft to carry you and your passengers safely.'}
+                            paragraphText={' Whether you need to add ADS-B OUT capabilities in order to meet the December 31, 2019 deadline, a routine pitot-static / transponder certification, or it\'s time for a completely new panel, Bison Aviation\'s Avionics Team is ready to bring your avionics systems into the 21st century!'}
+                            btn={'LEARN MORE'}
+                        />
+
                     </Row>
                 </Col>
 
-                <Col xs={10}
-                     className='HomeAvionics_tayseer-img HomeAvionics_img mx-auto mb-5 mt-0 py-0 d-sm-block d-md-none'> </Col>
+                <SectionImages img1={img1} img2={img2} img3={img3}/>
 
-                <Col xs={12}
-                     className='HomeAvionics_panel-img HomeAvionics_img d-none d-md-block global_goldenrod-border-right'> </Col>
+                <Col xs={12} className='mt-3 mb-5 HomeAvionics_panel-img HomeAvionics_img d-none d-lg-block'> </Col>
 
 
             </Row>

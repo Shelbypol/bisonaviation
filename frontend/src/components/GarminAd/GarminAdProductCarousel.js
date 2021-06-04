@@ -14,9 +14,7 @@ const GarminAdProductCarousel = () => {
                 <GarminAd/>
             </Col>
             <Col md={5} xs={12} className='bg-white d-flex justify-content-center m-0 p-0'>
-                <Fade duration={1500} right>
                     <ProductCarousel/>
-                </Fade>
             </Col>
         </Row>
 

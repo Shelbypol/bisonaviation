@@ -1,82 +1,15 @@
-.AvionicsHome_desktop{
-    background-color: rgba(0,0,0, .8);
-}
-
-.AvionicsHome_text{
-    font-size: 1.3vw;
-}
-
 .HomeAvionics_image {
     background-image: url("./images/fullscreen-slider2.png");
     background-position: center top;
 }
 
-/*.AvionicsHome_bg{*/
-/*    background-color: rgba(0,0,0,1);*/
-/*    color: rgba(255,255,255,.8);*/
-/*}*/
-
-/*.AvionicsHome_learn-btn{*/
-/*    border-left: 10px solid #2576e5;*/
-/*}*/
-
-/*.AvionicsHome_learn-btn:hover{*/
-/*    background-color: #2576e5;*/
-/*}*/
-
-/*.AvionicsHome_title-col{*/
-/*    !*margin-top: -30vh;*!*/
-/*    height: 12vh;*/
-/*}*/
-
-/*.AvionicsHome_product-title{*/
-/*    background-color: #2576e5;*/
-/*}*/
-
-/*.AvionicsHome_product-title:hover{*/
-/*    background-color: rgba(255,255,255,.1);*/
-/*}*/
-
-/*.HomeAvionics_titles:hover{*/
-/*    background-color: rgba(255,255,255,.1);*/
-/*}*/
-
 .HomeAvionics_text-titles{
     font-size: 3.2vh;
-    /*font-size: 2.5vh;*/
-}
-
-.HomeAvionics_title{
-   font-size: 8vh;
-}
-
-.HomeAvionics_title-row{
-    height: 35vh;
 }
 
 .HomeAvionics_img{
-    height: 33vh;
+    height: 20vh;
     width: fit-content;
-}
-
-.HomeAvionics_tayseer-img{
-    background-image: url('../Avionics/images/avionics/tayseer-avionics.png');
-    background-position: 25% center;
-}
-
-.HomeAvionics_cnc-img{
-    background-image: url('../Avionics/images/avionics/cnc-machine copy.png');
-    background-position: 50% 50%;
-}
-
-.HomeAvionics_roel-img{
-    background-image: url('../Avionics/images/avionics2.png');
-    background-position: 20% top;
-}
-
-.HomeAvionics_tests-img{
-    background-image: url('../Avionics/images/avionics4.png');
-    background-position: 5% 10%;
 }
 
 .HomeAvionics_panel-img{
@@ -84,17 +17,8 @@
     background-position: 20% 60%;
 }
 
-
-.Global_Flir_bg-img{
-    background-image: url("./images/large-flir.png");
-    background-position: center 5%;
-}
-
 @media only screen and (max-width: 1100px) {
 
-    .HomeAvionics_title{
-        font-size: 5vh;
-    }
 
     .HomeAvionics_text-titles{
         font-size: 2vh;
@@ -107,18 +31,15 @@
 }
 
 
-@media only screen and (max-width: 750px) {
-    .HomeAvionics_title-row{
-        height: 60vh;
-    }
+@media only screen and (max-width: 800px) {
 
     .HomeAvionics_text-titles{
         font-size: 3vh;
     }
 
-    .HomeAvionics_image {
-        background-image: url("./images/fullscreen-slider2.png");
-    }
+    /*.HomeAvionics_image {*/
+    /*    background-image: url("./images/fullscreen-slider2.png");*/
+    /*}*/
 
     .HomeAvionics_panel-img{
         background-image: url('../Avionics/images/avionics/avionics-4.png');
@@ -130,16 +51,7 @@
 
 @media only screen and (max-width: 600px) {
 
-    .HomeAvionics_title-row{
-        height: 75vh;
-    }
-
     .HomeAvionics_text-titles {
         font-size: 3.5vh;
-    }
-
-    .HomeAvionics_title{
-        text-align: center;
-        font-size: 7vh;
     }
 }
