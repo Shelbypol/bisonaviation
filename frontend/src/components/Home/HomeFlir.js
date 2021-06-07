@@ -18,8 +18,7 @@ const HomeFlir = () => {
 
                     <SectionTitle titleText={'EO / IR FLIR'}/>
 
-                    <Row
-                        className='pb-0 px-2 pt-md-3 pt-sm-0 mx-n1 mb-n1 my-0 global_black-bg d-flex justify-content-between'>
+                    <Row className='pb-0 px-2 pt-md-3 pt-sm-0 mx-n1 mb-n1 my-0 global_black-bg d-flex justify-content-between'>
 
                         <TenItemList
                             lg={4}

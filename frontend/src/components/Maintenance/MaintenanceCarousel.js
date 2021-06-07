@@ -7,14 +7,14 @@ const MaintenanceCarousel = () => {
     return (
         <>
             <HeroCarousel
-                IDslide1={'MechanicsHero_carouselImg1'}
+                IDslide1={'MaintenanceHero_carouselImg1'}
                 slide1firstTitleLetter={'M'}
                 slide1firstTitleWord={'aintenance'}
                 slide1firstSentence={'LOOKS COMPLICATED, THAT\'S BECAUSE IT IS; '}
                 slide1secondSentenceTrue={true}
                 slide1secondSentence={'BUT DON\'T WORRY, WE KNOW HOW TO FIX IT!'}
 
-                IDslide2={'MechanicsHero_carouselImg2'}
+                IDslide2={'MaintenanceHero_carouselImg2'}
                 carouselImg2True={true}
                 slide2firstTitleLetter={'F'}
                 slide2firstTitleWord={'rom gliders...'}
@@ -22,7 +22,7 @@ const MaintenanceCarousel = () => {
                 slide2secondSentenceTrue={true}
                 slide2secondSentence={'KNOWS YOUR AIRCRAFT INSIDE AND OUT!'}
 
-                IDslide3={'MechanicsHero_carouselImg3'}
+                IDslide3={'MaintenanceHero_carouselImg3'}
                 carouselImg3True={true}
                 slide3firstTitleLetter={'I'}
                 slide3firstTitleWord={'t isn\'t over until...'}
@@ -30,7 +30,7 @@ const MaintenanceCarousel = () => {
                 slide3secondSentenceTrue={true}
                 slide3secondSentence={' Let Bison cure your logbook log jams!'}
 
-                IDslide4={'MechanicsHero_carouselImg4'}
+                IDslide4={'MaintenanceHero_carouselImg4'}
                 carouselImg4True={true}
                 slide4firstTitleLetter={'F'}
                 slide4firstTitleWord={'rom minor repairs...'}
@@ -38,13 +38,8 @@ const MaintenanceCarousel = () => {
                 slide4secondSentenceTrue={true}
                 slide4secondSentence={'BISON IS READY FOR YOUR MAINTENANCE PROJECT!'}
 
-                IDslide5={'MechanicsHero_carouselImg5'}
+                // IDslide5={'MaintenanceHero_carouselImg5'}
                 carouselImg5True={false}
-                // // slide5firstTitleLetter={}
-                // // slide5firstTitleWord={}
-                // // slide5firstSentence={}
-                // // slide5secondSentenceTrue={}
-                // // slide5secondSentence={}
             />
 
         </>
