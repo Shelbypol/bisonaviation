@@ -1,9 +1,8 @@
-import React, {useEffect, useLayoutEffect, useState} from 'react'
+import React from 'react'
 import { Row } from 'react-bootstrap'
 import Meta from "../Meta";
 import ProductsPage from "./ProductsPage";
 import {Jumbotron} from "reactstrap";
-import {useDispatch} from "react-redux";
 
 const ProductsScreen = ({match, history}) => {
 
@@ -16,7 +15,6 @@ const ProductsScreen = ({match, history}) => {
                         <Meta title='Bison | Products'/>
 
                         <Row xs={12} className='CatMan-nav-menu'>
-                            {/*     MANUFACTURER SORT DISPLAY AVAILABLE CATS ON CLICK    */}
                             <ProductsPage match={match} history={history}/>
 
                         </Row>

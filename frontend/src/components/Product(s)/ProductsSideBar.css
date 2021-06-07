@@ -1,0 +1,63 @@
+.ProductsSideBar_icon{
+    z-index: 9000;
+    padding:0;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 13vh;
+}
+
+.ProductsSidebar_menu-items {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 13.5vh;
+    padding-left: 3vw;
+    min-height: 100vh;
+}
+
+.ProductsSideBar_search-form{
+    z-index: 9800;
+    width:  120%;
+}
+
+.ProductsSideBar_search-bar{
+    background-color: rgba(0,0,0, .1);
+    color: black;
+}
+
+.ProductsSideBar_text{
+    display: flex;
+    justify-content: start;
+}
+
+.ProductsSideBar_sub-titles {
+    font-weight: bolder;
+    width: 100%;
+    color: black;
+    margin-top: 3vw;
+}
+
+.ProductsSideBar_items {
+    color: black;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    font-weight: lighter;
+}
+
+.ProductsSideBar_items:hover {
+    background-color: lightgrey;
+    color: black;
+}
+
+.ProductsSideBar_items-bg{
+    background-color: rgba(0,0,0, .1);
+    padding: .5vw 0 .5vw 1vw;
+}
+
+.ProductsSideBar_screen-bg{
+    background-color: rgba(255,255,255, 1);
+}
+
+.ProductsSideBar_scroll{
+    overflow-y: scroll;
+}

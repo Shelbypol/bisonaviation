@@ -5,7 +5,8 @@ import {listProducts} from "../../actions/productActions";
 import ProductDisplayByCatMan from "./ProductsImgDisplay";
 import Loader from "../Loader";
 import Message from "../Message";
-import './CategoryManufacturerSideBar.css'
+import './ProductsSideBar.css'
+// import './CategoryManufacturerSideBar.css'
 import {Route} from "react-router-dom";
 import ProductsSearchBox from "./ProductsSearchBox";
 import Paginate from "../Paginate";
@@ -17,8 +18,7 @@ const ProductsPage = ({match, history}) => {
     const [updateCat, setUpdateCat] = useState('');
     const [updateManufacturer, setUpdateManufacturer] = useState('');
     const [clicked, setClicked] = useState(false);
-    const [rmvClick, setRmvClick] = useState(false);
-
+    // const [rmvClick, setRmvClick] = useState(false);
     const breakpoint = 1150;
 
     const keyword = match.params.keyword;
@@ -74,7 +74,6 @@ const ProductsPage = ({match, history}) => {
         }
     };
 
-
     const maufacturerArr = [...new Set(products.map(product => product.brand))];
     const catArr = [...new Set(products.map(product => product.category))];
 
@@ -98,7 +97,7 @@ const ProductsPage = ({match, history}) => {
                             {sideBar ? (
                                 <>
                                     {/*<Col lg={2} xs={12}*/}
-                                    {/*     className=' global_cursor CatMan_sidebar-icon-x d-flex justify-content-start'>*/}
+                                    {/*     className=' global_cursor ProductsSideBar_sidebar-icon-x d-flex justify-content-start'>*/}
                                     {/*    <p onClick={showSideBar}*/}
                                     {/*       className='pt-2 pb-5 text-white'>x</p>*/}
                                     {/*</Col>*/}
@@ -107,7 +106,7 @@ const ProductsPage = ({match, history}) => {
                             ) : (
                                 <>
                                     <Col lg={2} xs={12}
-                                         className=' bg-transparent global_cursor CatMan_sidebar-icon pl-4 pt-2'>
+                                         className=' bg-transparent global_cursor ProductsSideBar_icon pl-4 pt-2'>
                                         <h6 className='global_blood-red bg-white' onClick={showSideBar}><span><h3
                                             className='d-inline global_blood-red'>|||</h3></span>&nbsp;categories
                                         </h6>
@@ -123,13 +122,13 @@ const ProductsPage = ({match, history}) => {
 
                             {sideBar ? (
                                 <>
-                                    <Col lg={2} xs={12} className='CatMan-nav-menu-items mr-1 '>
-                                        {/*<div className='CatMan_scroll p-0 m-0'>*/}
+                                    <Col lg={2} xs={12} className='ProductsSidebar_menu-items mr-1 '>
+                                        {/*<div className='ProductsSideBar_scroll p-0 m-0'>*/}
                                         {/*     MANUFACTURER SORT DISPLAY AVAILABLE CATS ON CLICK    */}
                                         <Route render={({history}) => <ProductsSearchBox history={history}
-                                                                                         formClasses={'pb-2 ml-n3 CatMan_search-form'}
+                                                                                         formClasses={'pb-2 ml-n3 ProductsSideBar_search-form'}
                                                                                          searchSize={'sm'}
-                                                                                         searchClasses={'col-10 py-0 CatMan_search-bar'}
+                                                                                         searchClasses={'col-10 py-0 ProductsSideBar_search-bar'}
                                                                                          btnSize={'sm'}
                                                                                          btnClasses={'bg-dark text-white StickyHeader_search_btn_padding px-1 col-2 rounded-right'}
                                                                                          iconClass={'fal fa-search p-0'}
@@ -140,7 +139,7 @@ const ProductsPage = ({match, history}) => {
                                         (
                                             <>
                                                 <Row xs={12}
-                                                     className='global_accentFont CatMan-text py-2'>
+                                                     className='global_accentFont ProductsSideBar_text py-2'>
                                                     <h4 className=' global_cursor global_blood-red'>{updateManufacturer || updateCat}</h4>
                                                 </Row>
 
@@ -148,22 +147,22 @@ const ProductsPage = ({match, history}) => {
                                                 <Row xs={12}
                                                      className='global_accentFont'
                                                      onClick={displayAllHandler}>
-                                                    <h6 className='global_cursor CatMan-text CatMan-sub-titles'>All
+                                                    <h6 className='global_cursor ProductsSideBar_text ProductsSideBar_sub-titles'>All
                                                         Products</h6>
                                                 </Row>
 
                                                 {/*   ALL CATEGORIES  */}
                                                 <Row xs={12}
                                                      className='global_accentFont'>
-                                                    <h6 className='global_cursor CatMan-text CatMan-sub-titles'>Categories</h6>
+                                                    <h6 className='global_cursor ProductsSideBar_text ProductsSideBar_sub-titles'>Categories</h6>
                                                 </Row>
 
 
-                                                <Row className='CatMan_items-bg'>
+                                                <Row className='ProductsSideBar_items-bg'>
                                                     {catArr.map((product, index) => (
                                                         <Col xs={12}
                                                              onClick={(ev) => sortByCategoryHandler(product, ev)}
-                                                             className='btn btn-block global_cursor CatMan-text CatMan_items'
+                                                             className='btn btn-block global_cursor ProductsSideBar_text ProductsSideBar_items'
                                                              type='button'
                                                              key={index}
                                                         >
@@ -176,14 +175,14 @@ const ProductsPage = ({match, history}) => {
                                                 <Row xs={12}
                                                      className='global_accentFont mt-4'
                                                 >
-                                                    <h6 className='global_cursor CatMan-text CatMan-sub-titles'>Manufactures</h6>
+                                                    <h6 className='global_cursor ProductsSideBar_text ProductsSideBar_sub-titles'>Manufactures</h6>
                                                 </Row>
 
-                                                <Row className='CatMan_items-bg'>
+                                                <Row className='ProductsSideBar_items-bg'>
                                                     {maufacturerArr.map((product, index) => (
                                                         <Col xs={12}
                                                              onClick={(ev) => sortByManufacturerHandler(product, ev)}
-                                                             className='btn btn-block global_cursor CatMan-text CatMan_items'
+                                                             className='btn btn-block global_cursor ProductsSideBar_text ProductsSideBar_items'
                                                              type='button'
                                                              key={index}
                                                         >
@@ -202,25 +201,24 @@ const ProductsPage = ({match, history}) => {
                                         {/*    ALL CAT & ALL MAN INITIAL DISPLAY    */}
                                         {(updateCat === '' && updateManufacturer === '') && (
                                             <>
-
                                                 {/* ALL PRODUCTS*/}
                                                 <Row xs={12}
                                                      className='global_accentFont'
                                                      onClick={displayAllHandler}>
-                                                    <h6 className='global_cursor CatMan-text CatMan-sub-titles'>All
+                                                    <h6 className='global_cursor ProductsSideBar_text ProductsSideBar_sub-titles'>All
                                                         Products</h6>
                                                 </Row>
 
                                                 <Row xs={12}
                                                      className='global_accentFont'>
-                                                    <h6 className='global_cursor CatMan-text CatMan-sub-titles'>Categories</h6>
+                                                    <h6 className='global_cursor ProductsSideBar_text ProductsSideBar_sub-titles'>Categories</h6>
                                                 </Row>
 
-                                                <Row className='CatMan_items-bg'>
+                                                <Row className='ProductsSideBar_items-bg'>
                                                     {catArr.map((product, index) => (
                                                         <Col xs={12}
                                                              onClick={(ev) => sortByCategoryHandler(product, ev)}
-                                                             className='btn btn-block global_cursor CatMan-text CatMan_items'
+                                                             className='btn btn-block global_cursor ProductsSideBar_text ProductsSideBar_items'
                                                              type='button'
                                                              key={index}
                                                         >
@@ -230,17 +228,17 @@ const ProductsPage = ({match, history}) => {
                                                 </Row>
 
                                                 <Row xs={12}
-                                                     className='global_accentFont mt-3 CatMan-text global_cursor '>
+                                                     className='global_accentFont mt-3 ProductsSideBar_text global_cursor '>
                                                     <h6 onClick={displayAllHandler}
-                                                        className='CatMan-sub-titles'>Manufacturers</h6>
+                                                        className='ProductsSideBar_sub-titles'>Manufacturers</h6>
                                                 </Row>
 
 
-                                                <Row className='CatMan_items-bg'>
+                                                <Row className='ProductsSideBar_items-bg'>
                                                     {maufacturerArr.map((product, index) => (
                                                         <Col xs={12}
                                                              onClick={(ev) => sortByManufacturerHandler(product, ev)}
-                                                             className='btn btn-block global_cursor CatMan-text CatMan_items'
+                                                             className='btn btn-block global_cursor ProductsSideBar_text ProductsSideBar_items'
                                                              type='button'
                                                              key={index}
                                                         >
@@ -254,6 +252,8 @@ const ProductsPage = ({match, history}) => {
                                         )}
                                         {/*</div>*/}
                                     </Col>
+
+
                                     <Col lg={9} xs={12} className='min-vh-100 pt-3 ml-5 bg-white pl-5 pl-1'>
 
                                         <ProductDisplayByCatMan products={products}
