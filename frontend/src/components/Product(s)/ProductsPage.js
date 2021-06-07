@@ -10,6 +10,7 @@ import './CategoryManufacturerSideBar.css'
 import {Route} from "react-router-dom";
 import ProductsSearchBox from "./ProductsSearchBox";
 import Paginate from "../Paginate";
+import ProductHeroAd from "./ProductHeroAd";
 
 const ProductsPage = ({match, history}) => {
 
@@ -252,9 +253,10 @@ const ProductsPage = ({match, history}) => {
                                         {/*</div>*/}
                                     </Col>
 
+                                    <ProductHeroAd/>
 
-                                    <Col lg={9} xs={12} className='min-vh-100 pt-3 ml-5 bg-white pl-5 pl-1'>
 
+                                    <Col lg={8} xs={12} className='min-vh-100 pt-3 ml-5 bg-white pl-5 pl-1'>
                                         <ProductDisplayByCatMan products={products}
                                                                 history={history}
                                                                 match={match}
