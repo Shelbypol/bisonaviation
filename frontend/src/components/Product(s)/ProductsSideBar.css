@@ -3,13 +3,13 @@
     padding:0;
     position: -webkit-sticky;
     position: sticky;
-    top: 13vh;
+    top: 15vh;
 }
 
 .ProductsSidebar_menu-items {
     position: -webkit-sticky;
     position: sticky;
-    top: 13.5vh;
+    top: 15vh;
     padding-left: 3vw;
     min-height: 100vh;
 }
@@ -60,4 +60,52 @@
 
 .ProductsSideBar_scroll{
     overflow-y: scroll;
+}
+
+/*    ======   MOBILE RESPONSIVE    ======    */
+@media (max-width: 1000px) {
+    .ProductsSideBar_menu-items {
+        z-index: 9000;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        background-color: rgba(0, 0, 0, 1);
+        /*padding-left: 1vw;*/
+        /*padding-top: 8vh;*/
+        /*margin-top: -8vh;*/
+
+    }
+
+    .ProductsSideBar_sidebar-icon-x{
+        top: 5vh;
+        padding-top: 3vh;
+    }
+
+    /*.CatMan_card-text{*/
+    /*    width: auto;*/
+    /*}*/
+
+    /*.CatMan_card-img{*/
+    /*    height: 20vh;*/
+    /*    margin-left: 20%;*/
+    /*}*/
+
+    .ProductsSideBar_text{
+        display: flex;
+        justify-content: center;
+    }
+
+    .ProductsSideBar_-icon{
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        padding-left: 2vh;
+        margin-top: 3vh;
+        padding-top:  5vh;
+    }
+
+    .CatMan_products{
+        display: block;
+    }
+
 }

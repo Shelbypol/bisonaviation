@@ -6,7 +6,7 @@ import ProductDisplayByCatMan from "./ProductsImgDisplay";
 import Loader from "../Loader";
 import Message from "../Message";
 import './ProductsSideBar.css'
-// import './CategoryManufacturerSideBar.css'
+import './CategoryManufacturerSideBar.css'
 import {Route} from "react-router-dom";
 import ProductsSearchBox from "./ProductsSearchBox";
 import Paginate from "../Paginate";
@@ -105,8 +105,7 @@ const ProductsPage = ({match, history}) => {
                                 </>
                             ) : (
                                 <>
-                                    <Col lg={2} xs={12}
-                                         className=' bg-transparent global_cursor ProductsSideBar_icon pl-4 pt-2'>
+                                    <Col lg={2} xs={12} className=' bg-transparent global_cursor ProductsSideBar_icon pl-4 pt-2'>
                                         <h6 className='global_blood-red bg-white' onClick={showSideBar}><span><h3
                                             className='d-inline global_blood-red'>|||</h3></span>&nbsp;categories
                                         </h6>
@@ -122,7 +121,7 @@ const ProductsPage = ({match, history}) => {
 
                             {sideBar ? (
                                 <>
-                                    <Col lg={2} xs={12} className='ProductsSidebar_menu-items mr-1 '>
+                                    <Col lg={2} xs={8} className='ProductsSidebar_menu-items'>
                                         {/*<div className='ProductsSideBar_scroll p-0 m-0'>*/}
                                         {/*     MANUFACTURER SORT DISPLAY AVAILABLE CATS ON CLICK    */}
                                         <Route render={({history}) => <ProductsSearchBox history={history}
