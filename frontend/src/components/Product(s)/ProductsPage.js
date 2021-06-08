@@ -250,8 +250,6 @@ const ProductsPage = ({match, history}) => {
                                                     </Col>
                                                 ))}
                                             </Row>
-
-
                                         </>
                                     )}
                                     {/*</div>*/}
@@ -259,9 +257,11 @@ const ProductsPage = ({match, history}) => {
 
                                 <Col lg={10} className=''>
                                     <ProductHeroAd products={products}/>
+
                                     {/*</Col>*/}
                                     {/**/}
                                     {/*<Col lg={10} xs={12} className=' pt-3 bg-white d-flex justify-content-end'>*/}
+
                                     <ProductsImgDisplay products={products}
                                                         history={history}
                                                         match={match}

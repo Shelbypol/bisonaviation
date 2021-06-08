@@ -34,6 +34,11 @@ const App = () => {
         <Router>
 
             <Switch>
+                {/*<Fragment>*/}
+
+                    {/*</Fragment>*/}
+                {/*</Fragment>*/}
+
                 <Fragment>
                     <Header/>
                     <Route path='/' component={HomeScreen} exact/>
@@ -43,14 +48,7 @@ const App = () => {
                     <Route path='/register' component={RegisterScreen}/>
                     <Route path='/profile' component={ProfileScreen}/>
                     <Route path='/login' component={SignInScreen}/>
-                    <Route path='/cart/:id?' component={CartScreen}/>
-                    <Route path='/shipping' component={ShippingScreen}/>
-                    <Route path='/payment' component={PaymentScreen}/>
-                    <Route path='/placeorder' component={PlaceOrderScreen}/>
-                    <Route path='/order/:id' component={OrderScreen}/>
-                    <Route path='/thankyou/:id' component={ThankYouScreen}/>
 
-                    <Route path='/wishlist' component={WishListScreen}/>
                     <Route path='/flir' component={FlirScreen}/>
                     <Route path='/team' component={TeamScreen}/>
                     <Route path='/maintenance' component={MaintenanceScreen}/>
@@ -62,11 +60,13 @@ const App = () => {
                     <Route path='/admin/productlist/:pageNumber' component={AdminScreenProductListScreen} exact/>
                     <Route path='/admin/product/:id/edit' component={AdminScreensProductEditScreen}/>
 
+
                     <Route path='/products' component={ProductsScreen} exact/>
                     <Route path='/search/:keyword' component={ProductsScreen} exact/>
                     <Route path='/page/:pageNumber' component={ProductsScreen} exact/>
                     <Route path='/search/:keyword/page/:pageNumber' component={ProductsScreen}/>
                     <Route path='/product/:id' component={ProductScreen}/>
+                    <Route path='/wishlist' component={WishListScreen}/>
 
                     <Footer/>
 
