@@ -7,12 +7,7 @@ import Loader from "../Loader";
 import Message from "../Message";
 import './ProductsSideBar.css'
 import './CategoryManufacturerSideBar.css'
-import {Route} from "react-router-dom";
-import ProductsSearchBox from "./ProductsSearchBox";
-import Paginate from "../Paginate";
 import ad1 from '../../images/uploads copy/image-1608754595861.jpg';
-import ad2 from '../../images/uploads copy/image-1608754791621.jpg';
-import ad3 from '../../images/uploads copy/image-1608754966157.jpg';
 
 const ProductHeroAd = ({products}) => {
 
@@ -32,7 +27,7 @@ const ProductHeroAd = ({products}) => {
             <Row style={{height: '50vh'}} className='global_white-bg'>
                 <Col xs={12} className='d-flex justify-content-center mb-0 pb-0'>
                     <Row>
-                        <Col lg={5} className='d-flex align-items-center justify-content-end text-center'>
+                        <Col lg={4} className='d-flex align-items-center justify-content-end text-center'>
                             <Row>
                                 <Col xs={12}>
                                     <h1 className='global_blood-red font-weight-bold'>Ad Title</h1>
@@ -43,8 +38,9 @@ const ProductHeroAd = ({products}) => {
                             </Row>
                         </Col>
                         <Col lg={7} className='d-flex align-items-center'>
-                            <Image src={ad1} className='rounded w-100 mt-3' style={{height: '40vh'}}/>
+                            <Image src={ad1} className='rounded w-100 mt-3' style={{height: '30vh'}}/>
                         </Col>
+
                     </Row>
                 </Col>
 

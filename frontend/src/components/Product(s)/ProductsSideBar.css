@@ -36,6 +36,10 @@
     margin-top: 2vw;
 }
 
+.ProductsSideBar_sub-titles:hover{
+    text-decoration: underline;
+}
+
 .ProductsSideBar_items {
     color: black;
     margin: 0;

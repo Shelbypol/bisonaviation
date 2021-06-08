@@ -19,6 +19,7 @@ const ProductsPage = ({match, history}) => {
     const [updateCat, setUpdateCat] = useState('');
     const [updateManufacturer, setUpdateManufacturer] = useState('');
     const [clicked, setClicked] = useState(false);
+    const [showAd, setShowAd] = useState(true);
     // const [rmvClick, setRmvClick] = useState(false);
     const breakpoint = 1150;
 
@@ -37,7 +38,7 @@ const ProductsPage = ({match, history}) => {
         window.addEventListener("resize", handleWindowResize);
         return () => window.removeEventListener("resize", handleWindowResize);
 
-    }, [dispatch, updateCat, updateManufacturer, keyword, pageNumber, setUpdateManufacturer, setUpdateCat, width]);
+    }, [dispatch, updateCat, updateManufacturer, keyword, pageNumber, setUpdateManufacturer, setUpdateCat, width, showAd]);
 
 
     const handleWindowResize = () => {
@@ -96,8 +97,6 @@ const ProductsPage = ({match, history}) => {
                     : (
                         <>
 
-                            {/*<ProductHeroAd products={products}/>*/}
-
                             {sideBar ? (
                                 <>
                                     {/*<Col lg={2} xs={12}*/}
@@ -126,7 +125,7 @@ const ProductsPage = ({match, history}) => {
 
                             {/*{sideBar ? (*/}
                             <>
-                                <Col lg={2} xs={8} className='ProductsSidebar_menu-items'>
+                                <Col lg={2} xs={8} className='ProductsSidebar_menu-items '>
                                     {/*<div className='ProductsSideBar_scroll p-0 m-0'>*/}
                                     {/*     MANUFACTURER SORT DISPLAY AVAILABLE CATS ON CLICK    */}
                                     <Route render={({history}) => <ProductsSearchBox history={history}
@@ -142,7 +141,7 @@ const ProductsPage = ({match, history}) => {
                                     (
                                         <>
                                             <Row xs={12}
-                                                 className='global_accentFont ProductsSideBar_text py-2'>
+                                                 className='global_accentFont ProductsSideBar_text py-2 '>
                                                 <h4 className=' global_cursor global_blood-red'>{updateManufacturer || updateCat}</h4>
                                             </Row>
 
@@ -256,7 +255,25 @@ const ProductsPage = ({match, history}) => {
                                 </Col>
 
                                 <Col lg={10} className=''>
-                                    <ProductHeroAd products={products}/>
+
+                                    <Row className='mt-3'>
+                                        <Col xs={11} className='d-flex justify-content-end'>
+                                            <button onClick={() => {
+                                                setShowAd(!showAd)
+                                            }}
+                                                    className='bg-transparent global_blood-red border-0 global_cursor'>
+                                                {showAd && (
+                                                    <>
+                                                        x
+                                                    </>
+                                                )}
+                                            </button>
+                                        </Col>
+                                    </Row>
+
+                                    {showAd && (
+                                        <ProductHeroAd products={products}/>
+                                    )}
 
                                     {/*</Col>*/}
                                     {/**/}
