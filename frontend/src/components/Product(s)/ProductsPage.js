@@ -95,6 +95,9 @@ const ProductsPage = ({match, history}) => {
                     )
                     : (
                         <>
+
+                            <ProductHeroAd products={products}/>
+
                             {sideBar ? (
                                 <>
                                     {/*<Col lg={2} xs={12}*/}
@@ -253,7 +256,7 @@ const ProductsPage = ({match, history}) => {
                                         {/*</div>*/}
                                     </Col>
 
-                                    <ProductHeroAd/>
+                                    {/*<ProductHeroAd products={products}/>*/}
 
 
                                     <Col lg={8} xs={12} className='min-vh-100 pt-3 ml-5 bg-white pl-5 pl-1'>

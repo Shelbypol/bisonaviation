@@ -274,7 +274,7 @@ const HeroCarousel = (
 
                                 <Col xs={12}
                                      className='d-flex justify-content-sm-center justify-content-md-start'>
-                                    <h1 className='HeroCarousel_carousel-title global_white border'>
+                                    <h1 className='HeroCarousel_carousel-title global_white'>
                                     <span className='HeroCarousel_carousel-letter global_white'>{slide5firstTitleLetter}</span>
                                         {slide5firstTitleWord}
                                     </h1>
