@@ -32,13 +32,12 @@ const ProductHeroAd = ({products}) => {
             <Row style={{height: '50vh'}} className='global_white-bg'>
                 <Col xs={12} className='d-flex justify-content-center mb-0 pb-0'>
                     <Row>
-                        {/*  SHOW ON LG */}
                         <Col lg={5} className='d-flex align-items-center justify-content-end text-center'>
                             <Row>
                                 <Col xs={12}>
                                     <h1 className='global_blood-red font-weight-bold'>Ad Title</h1>
                                 </Col>
-                                <Col xs={12} className=''>
+                                <Col xs={12} className='px-5'>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                                 </Col>
                             </Row>

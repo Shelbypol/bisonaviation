@@ -32,8 +32,8 @@
 .ProductsSideBar_sub-titles {
     font-weight: bolder;
     width: 100%;
-    color: black;
-    margin-top: 3vw;
+    color: #660708;
+    margin-top: 2vw;
 }
 
 .ProductsSideBar_items {
@@ -45,12 +45,15 @@
 }
 
 .ProductsSideBar_items:hover {
+    padding-left: 1vh;
+    padding-right: 1vh;
     background-color: lightgrey;
     color: black;
 }
 
 .ProductsSideBar_items-bg{
-    background-color: rgba(0,0,0, .1);
+    background-color: #fff;
+    /*background-color: rgba(0,0,0, .1);*/
     padding: .5vw 0 .5vw 1vw;
 }
 

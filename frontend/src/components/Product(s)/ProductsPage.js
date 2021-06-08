@@ -138,7 +138,6 @@ const ProductsPage = ({match, history}) => {
                                                                                      iconClass={'fal fa-search p-0'}
                                     />}/>
 
-
                                     {(updateManufacturer !== '' || updateCat !== '') &&
                                     (
                                         <>
@@ -151,8 +150,9 @@ const ProductsPage = ({match, history}) => {
                                             <Row xs={12}
                                                  className='global_accentFont'
                                                  onClick={displayAllHandler}>
-                                                <h6 className='global_cursor ProductsSideBar_text ProductsSideBar_sub-titles'>All
-                                                    Products</h6>
+                                                <h6 className='global_cursor ProductsSideBar_text ProductsSideBar_sub-titles'>
+                                                    All Products
+                                                </h6>
                                             </Row>
 
                                             {/*   ALL CATEGORIES  */}

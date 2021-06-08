@@ -8,7 +8,7 @@ const ProductsImgDisplay = ({sideBar, history, match, updateCatProp, updateManuf
 
     return (
         <>
-                <Row className={` ${sideBar ? (' d-flex justify-content-center bg-white') : (' d-flex justify-content-center bg-white')}`}>
+                <Row className={` ${sideBar ? (' d-flex justify-content-center bg-white') : ('d-flex justify-content-center bg-white')}`}>
 
                     {/*CATEGORY*/}
                     {(updateCatProp !== '') && (
@@ -21,7 +21,6 @@ const ProductsImgDisplay = ({sideBar, history, match, updateCatProp, updateManuf
                             ))}
                         </>
                     )}
-
 
                     {(updateManufacturerProp !== '') && (
                         <>
