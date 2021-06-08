@@ -16,7 +16,6 @@ const ProductsScreen = ({match, history}) => {
 
                         <Row xs={12} className='CatMan-nav-menu'>
                             <ProductsPage match={match} history={history}/>
-
                         </Row>
                     </>
 

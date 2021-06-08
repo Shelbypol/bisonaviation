@@ -10,7 +10,7 @@ import './CategoryManufacturerSideBar.css'
 import {Route} from "react-router-dom";
 import ProductsSearchBox from "./ProductsSearchBox";
 import Paginate from "../Paginate";
-import ad1 from '../Avionics/images/avionics1.png'
+import ad1 from '../../images/uploads copy/image-1608754595861.jpg';
 
 const ProductHeroAd = ({products}) => {
 
@@ -28,74 +28,70 @@ const ProductHeroAd = ({products}) => {
     return (
         <>
 
-            <Col lg={12} className='mb-5'>
+            {/*<Col lg={10} className='mb-5'>*/}
                 <Row>
-                    <Col lg={8} xs={12} className='global_light-transparent'>
+
+                    <Col xs={12} className='d-flex justify-content-center'>
                         <Row>
                             {/*  SHOW ON LG */}
-                            <Col lg={4} className='d-flex align-items-center justify-content-center'>
+                            <Col lg={5} className='d-flex align-items-center justify-content-end text-center'>
                                 <Row>
                                     <Col xs={12}>
-                                        <h1>Ad Title</h1>
+                                        <h2>Ad Title</h2>
                                     </Col>
                                     <Col xs={12}>
-                                        <Button>go</Button>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                                     </Col>
                                 </Row>
                             </Col>
-                            <Col lg={8}>
-                                <Image src={ad1} className='h-100 w-100 mt-3 mb-5'/>
-                            </Col>
-                            {/*/!*  SHOW ON SM & MD *!/*/}
-                            {/*<Col lg={4} className='d-flex align-items-center justify-content-center d-bock d-lg-none'>*/}
-                            {/*    <Row>*/}
-                            {/*        <Col xs={12}>*/}
-                            {/*            <h1>Ad Title</h1>*/}
-                            {/*        </Col>*/}
-                            {/*        <Col xs={12}>*/}
-                            {/*            <Button>go</Button>*/}
-                            {/*        </Col>*/}
-                            {/*    </Row>*/}
-                            {/*</Col>*/}
-                        </Row>
-                    </Col>
-                    <Col lg={4} className='d-none d-lg-block'>
-                        <Row>
-                            <Col xs={12}>
-                                <Row>
-                                    <Col lg={4} className='d-flex align-items-center justify-content-center'>
-                                        <Row>
-                                            <Col xs={12}>
-                                                <h1>Ad Title</h1>
-                                            </Col>
-                                        </Row>
-                                    </Col>
-                                    <Col lg={8} className='mt-3'>
-                                        <Image src={ad1} className='h-100 w-100'/>
-                                    </Col>
-                                </Row>
-                            </Col>
-                            <Col xs={12} className='mt-5'>
-                                <Row>
-                                    <Col lg={4} className='d-flex align-items-center justify-content-center'>
-                                        <Row>
-                                            <Col xs={12}>
-                                                <h1>Ad Title</h1>
-                                            </Col>
-                                        </Row>
-                                    </Col>
-                                    <Col lg={8}>
-                                        <Image src={ad1} className='h-100 w-100'/>
-                                    </Col>
-                                </Row>
+                            <Col lg={7} className='d-flex justify-content-center'>
+                                <Image src={ad1} className='rounded h-75 w-75 mt-3 mb-5'/>
                             </Col>
                         </Row>
 
+
                     </Col>
+                            <Col xs={12} className='global_black-bg'>
+                            </Col>
+
+
+                    {/*<Col lg={4} className='d-none d-lg-block'>*/}
+                    {/*    <Row  className='mt-3 pr-2'>*/}
+                    {/*        <Col xs={12} className=''>*/}
+                    {/*            <Row>*/}
+                    {/*                <Col lg={4} className='d-flex align-items-center justify-content-center'>*/}
+                    {/*                    <Row>*/}
+                    {/*                        <Col xs={12}>*/}
+                    {/*                            <h5>Ad Title</h5>*/}
+                    {/*                        </Col>*/}
+                    {/*                    </Row>*/}
+                    {/*                </Col>*/}
+                    {/*                <Col lg={8} className='mt-3'>*/}
+                    {/*                    <Image src={ad1} className='h-100 w-100'/>*/}
+                    {/*                </Col>*/}
+                    {/*            </Row>*/}
+                    {/*        </Col>*/}
+                    {/*        <Col xs={12} className='mt-5'>*/}
+                    {/*            <Row>*/}
+                    {/*                <Col lg={4} className='d-flex align-items-center justify-content-center'>*/}
+                    {/*                    <Row>*/}
+                    {/*                        <Col xs={12}>*/}
+                    {/*                            <h5>Ad Title</h5>*/}
+                    {/*                        </Col>*/}
+                    {/*                    </Row>*/}
+                    {/*                </Col>*/}
+                    {/*                <Col lg={8}>*/}
+                    {/*                    <Image src={ad1} className='h-100 w-100'/>*/}
+                    {/*                </Col>*/}
+                    {/*            </Row>*/}
+                    {/*        </Col>*/}
+                    {/*    </Row>*/}
+
+                    {/*</Col>*/}
                 </Row>
 
 
-            </Col>
+            {/*</Col>*/}
 
         </>
     )
