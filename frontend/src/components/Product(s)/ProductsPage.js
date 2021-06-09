@@ -35,11 +35,7 @@ const ProductsPage = ({match, history}) => {
 
     useEffect(() => {
         dispatch(listProducts(keyword, pageNumber));
-        if(width < breakpoint){
-            setSideBar(false)
-        }else{
-            setSideBar(true)
-        }
+
         window.addEventListener("resize", handleWindowResize);
         return () => window.removeEventListener("resize", handleWindowResize);
 
@@ -123,13 +119,13 @@ const ProductsPage = ({match, history}) => {
                                             </h5>
                                         )}
                                     </Col>
-                                    {/*<Col lg={10} xs={0}> </Col>*/}
+                                    <Col lg={10} xs={0}> </Col>
                                 </>
                             )}
 
                             {sideBar ? (
                                 <>
-                                    <Col lg={2} xs={8} className='ProductsSidebar_menu-items border-right'>
+                                    <Col lg={2} xs={8} className='ProductsSidebar_menu-items border-right' style={{zIndex: '1000'}}>
                                         {/*<div className='ProductsSideBar_scroll p-0 m-0'>*/}
                                         {/*     MANUFACTURER SORT DISPLAY AVAILABLE CATS ON CLICK    */}
                                         <Route render={({history}) => <ProductsSearchBox history={history}
@@ -318,7 +314,7 @@ const ProductsPage = ({match, history}) => {
                                         </Col>
 
                                         <Col xs={12}
-                                             className='pt-5 mt-2 CatMan_products min-vh-100 bg-white d-flex justify-content-center ml-1 '>
+                                             className='mt-2 CatMan_products min-vh-100 bg-white d-flex justify-content-center ml-1 '>
                                             <ProductsImgDisplay products={products}
                                                                 history={history}
                                                                 match={match}
