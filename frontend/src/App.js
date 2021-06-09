@@ -3,19 +3,13 @@ import {BrowserRouter as Router, Route, Switch,} from 'react-router-dom';
 import Footer from "./components/HeaderFooter/Footer";
 import ProductsScreen from "./components/Product(s)/ProductsScreen";
 import ProductScreen from "./components/Product(s)/ProductScreen";
-import CartScreen from "./components/Cart/Payment/CartScreen";
 import SignInScreen from "./components/SignIn/SignInScreen";
 import RegisterScreen from "./components/Register/RegisterScreen";
 import ProfileScreen from "./components/Profile/ProfileScreen";
-import ShippingScreen from "./components/Cart/Payment/ShippingScreen";
-import PaymentScreen from "./components/Cart/Payment/PaymentScreen";
-import PlaceOrderScreen from "./components/Cart/Payment/PlaceOrderScreen";
-import OrderScreen from "./components/Cart/Payment/OrderScreen";
 import UserListScreen from "./components/AdminScreens/UserListScreen";
 import UserEditScreen from "./components/AdminScreens/UserEditScreen";
 import AdminScreenProductListScreen from "./components/AdminScreens/AdminScreenProductListScreen";
 import AdminScreensProductEditScreen from "./components/AdminScreens/AdminScreensProductEditScreen";
-import ThankYouScreen from "./components/Cart/Payment/ThankYouScreen";
 import HomeScreen from "./components/Home/HomeScreen";
 import AvionicsScreen from "./components/Avionics/AvionicsScreen";
 import MaintenanceScreen from "./components/Maintenance/MaintenanceScreen";
@@ -33,14 +27,12 @@ const App = () => {
     return (
         <Router>
 
-            <Switch>
-                {/*<Fragment>*/}
+            <Fragment>
 
-                    {/*</Fragment>*/}
-                {/*</Fragment>*/}
+                <Header/>
 
-                <Fragment>
-                    <Header/>
+                <Switch>
+
                     <Route path='/' component={HomeScreen} exact/>
                     <Route path='/contact' component={ContactScreen}/>
                     <Route path='/terms' component={TermsScreen}/>
@@ -60,18 +52,17 @@ const App = () => {
                     <Route path='/admin/productlist/:pageNumber' component={AdminScreenProductListScreen} exact/>
                     <Route path='/admin/product/:id/edit' component={AdminScreensProductEditScreen}/>
 
-
                     <Route path='/products' component={ProductsScreen} exact/>
                     <Route path='/search/:keyword' component={ProductsScreen} exact/>
                     <Route path='/page/:pageNumber' component={ProductsScreen} exact/>
                     <Route path='/search/:keyword/page/:pageNumber' component={ProductsScreen}/>
                     <Route path='/product/:id' component={ProductScreen}/>
                     <Route path='/wishlist' component={WishListScreen}/>
+                </Switch>
 
-                    <Footer/>
+                <Footer/>
 
-                </Fragment>
-            </Switch>
+            </Fragment>
 
         </Router>
     );

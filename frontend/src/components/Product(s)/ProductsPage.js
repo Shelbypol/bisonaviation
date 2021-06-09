@@ -125,13 +125,13 @@ const ProductsPage = ({match, history}) => {
 
                             {/*{sideBar ? (*/}
                             <>
-                                <Col lg={2} xs={8} className='ProductsSidebar_menu-items '>
+                                <Col lg={2} xs={8} className='ProductsSidebar_menu-items border-right'>
                                     {/*<div className='ProductsSideBar_scroll p-0 m-0'>*/}
                                     {/*     MANUFACTURER SORT DISPLAY AVAILABLE CATS ON CLICK    */}
                                     <Route render={({history}) => <ProductsSearchBox history={history}
-                                                                                     formClasses={'pb-2 ml-n3 ProductsSideBar_search-form'}
+                                                                                     formClasses={'pb-2 mt-1 ml-n3 ProductsSideBar_search-form'}
                                                                                      searchSize={'sm'}
-                                                                                     searchClasses={'col-10 py-0 ProductsSideBar_search-bar'}
+                                                                                     searchClasses={'col-9 py-0 ProductsSideBar_search-bar'}
                                                                                      btnSize={'sm'}
                                                                                      btnClasses={'bg-dark text-white StickyHeader_search_btn_padding px-1 col-2 rounded-right'}
                                                                                      iconClass={'fal fa-search p-0'}
@@ -256,24 +256,27 @@ const ProductsPage = ({match, history}) => {
 
                                 <Col lg={10} className=''>
 
-                                    <Row className='mt-3'>
-                                        <Col xs={11} className='d-flex justify-content-end'>
+                                    <Row className='mt-3 d-none d-lg-block pr-5'>
+                                        <Col xs={12} className='d-flex justify-content-end'>
                                             <button onClick={() => {
                                                 setShowAd(!showAd)
                                             }}
                                                     className='bg-transparent global_blood-red border-0 global_cursor'>
                                                 {showAd && (
                                                     <>
-                                                        x
+                                                        hide
                                                     </>
                                                 )}
                                             </button>
                                         </Col>
+                                        <Col xs={12} className='mt-0 mb-2'>
+
+                                                {showAd && (
+                                                    <ProductHeroAd products={products}/>
+                                                )}
+                                        </Col>
                                     </Row>
 
-                                    {showAd && (
-                                        <ProductHeroAd products={products}/>
-                                    )}
 
                                     {/*</Col>*/}
                                     {/**/}
