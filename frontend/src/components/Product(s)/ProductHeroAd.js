@@ -33,7 +33,7 @@ const ProductHeroAd = ({products}) => {
     return (
         <>
             <Row>
-                <Col xs={8} className='d-flex justify-content-end global_white-bg' style={adRow}>
+                <Col xs={12} lg={8} className='d-flex justify-content-end global_white-bg' style={adRow}>
                     <Row>
                         <Col lg={4} className='d-flex align-items-center text-center'>
                             <Row>
@@ -52,7 +52,7 @@ const ProductHeroAd = ({products}) => {
                     </Row>
                 </Col>
 
-                <Col xs={4} className='text-center'>
+                <Col xs={4} className='text-center d-none d-lg-block'>
                     <Row>
                         <Col xs={12} style={{height: '15vh'}} className='d-flex align-items-center'>
                             <Row className='d-flex align-items-center'>

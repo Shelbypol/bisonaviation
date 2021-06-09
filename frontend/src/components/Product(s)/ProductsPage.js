@@ -256,7 +256,7 @@ const ProductsPage = ({match, history}) => {
 
                                 <Col lg={10} className=''>
 
-                                    <Row className='mt-3 d-none d-lg-block pr-5'>
+                                    <Row className='mt-3 d-none d-md-block pr-5'>
                                         <Col xs={12} className='d-flex justify-content-end'>
                                             <button onClick={() => {
                                                 setShowAd(!showAd)
@@ -269,7 +269,7 @@ const ProductsPage = ({match, history}) => {
                                                 )}
                                             </button>
                                         </Col>
-                                        <Col xs={12} className='mt-0 mb-2'>
+                                        <Col xs={12} className='mt-0 mb-5'>
 
                                                 {showAd && (
                                                     <ProductHeroAd products={products}/>
