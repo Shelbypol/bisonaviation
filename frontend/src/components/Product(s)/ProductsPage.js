@@ -35,6 +35,7 @@ const ProductsPage = ({match, history}) => {
 
     useEffect(() => {
         dispatch(listProducts(keyword, pageNumber));
+
         window.addEventListener("resize", handleWindowResize);
         return () => window.removeEventListener("resize", handleWindowResize);
 
@@ -43,7 +44,6 @@ const ProductsPage = ({match, history}) => {
 
     const handleWindowResize = () => {
         setWidth(window.innerWidth);
-        width < breakpoint ? setSideBar(false) : setSideBar(true);
     };
 
     //SIDE BAR
@@ -54,17 +54,17 @@ const ProductsPage = ({match, history}) => {
         setClicked(true);
         setUpdateManufacturer('');
         setUpdateCat(a);
-        // if (width < breakpoint) {
-        //     setSideBar(!sideBar);
-        // }
+        if (width < breakpoint) {
+            setSideBar(!sideBar);
+        }
     };
 
     const displayAllHandler = () => {
         setUpdateManufacturer('');
         setUpdateCat('');
-        // if (width < breakpoint) {
-        //     setSideBar(!sideBar);
-        // }
+        if (width < breakpoint) {
+            setSideBar(!sideBar);
+        }
     };
 
     //  SORT BRAND HANDLER
@@ -72,9 +72,9 @@ const ProductsPage = ({match, history}) => {
         setClicked(true);
         setUpdateCat('');
         setUpdateManufacturer(a);
-        // if (width < breakpoint) {
-        //     setSideBar(!sideBar);
-        // }
+        if (width < breakpoint) {
+            setSideBar(!sideBar);
+        }
     };
 
     const maufacturerArr = [...new Set(products.map(product => product.brand))];
@@ -105,13 +105,12 @@ const ProductsPage = ({match, history}) => {
                                         <h6 className='global_blood-red bg-white' onClick={showSideBar}><span><h3
                                             className='d-inline global_blood-red'>|||</h3>&nbsp;categories</span>
                                         </h6>
-                                    </>
-                                )}
 
-                                {width < breakpoint && (
-                                    <h5 className='pt-2'>
-                                        {updateCat || updateManufacturer}
-                                    </h5>
+
+                                        <h5 className='pt-2'>
+                                            {updateCat || updateManufacturer}
+                                        </h5>
+                                    </>
                                 )}
 
                             </Col>
