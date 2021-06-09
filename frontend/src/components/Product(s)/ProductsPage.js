@@ -38,7 +38,7 @@ const ProductsPage = ({match, history}) => {
         window.addEventListener("resize", handleWindowResize);
         return () => window.removeEventListener("resize", handleWindowResize);
 
-    }, [dispatch, updateCat, updateManufacturer, keyword, pageNumber, setUpdateManufacturer, setUpdateCat, width, showAd]);
+    }, [dispatch, updateCat, updateManufacturer, keyword, pageNumber, setUpdateManufacturer, setUpdateCat, width, showAd, sideBar]);
 
 
     const handleWindowResize = () => {
@@ -99,12 +99,11 @@ const ProductsPage = ({match, history}) => {
 
                             {sideBar ? (
                                 <>
-                                    {/*<Col lg={2} xs={12}*/}
-                                    {/*     className=' global_cursor ProductsSideBar_sidebar-icon-x d-flex justify-content-start'>*/}
-                                    {/*    <p onClick={showSideBar}*/}
-                                    {/*       className='pt-2 pb-5 text-white'>x</p>*/}
-                                    {/*</Col>*/}
-                                    {/*<Col lg={10} xs={0}> </Col>*/}
+                                    <Col lg={2} xs={12}
+                                         className='global_cursor ProductsSideBar_sidebar-icon d-flex justify-content-end'>
+                                        <p onClick={showSideBar}>x</p>
+                                    </Col>
+                                    <Col lg={10} xs={0}> </Col>
                                 </>
                             ) : (
                                 <>
@@ -119,11 +118,11 @@ const ProductsPage = ({match, history}) => {
                                             </h5>
                                         )}
                                     </Col>
-                                    <Col lg={10} xs={0}> </Col>
+                                    {/*<Col lg={10} xs={0}> </Col>*/}
                                 </>
                             )}
 
-                            {/*{sideBar ? (*/}
+                            {sideBar ? (
                             <>
                                 <Col lg={2} xs={8} className='ProductsSidebar_menu-items border-right'>
                                     {/*<div className='ProductsSideBar_scroll p-0 m-0'>*/}
@@ -135,7 +134,9 @@ const ProductsPage = ({match, history}) => {
                                                                                      btnSize={'sm'}
                                                                                      btnClasses={'bg-dark text-white StickyHeader_search_btn_padding px-1 col-2 rounded-right'}
                                                                                      iconClass={'fal fa-search p-0'}
-                                    />}/>
+                                    />
+                                    }
+                                    />
 
                                     {(updateManufacturer !== '' || updateCat !== '') &&
                                     (
@@ -271,9 +272,9 @@ const ProductsPage = ({match, history}) => {
                                         </Col>
                                         <Col xs={12} className='mt-0 mb-5'>
 
-                                                {showAd && (
-                                                    <ProductHeroAd products={products}/>
-                                                )}
+                                            {showAd && (
+                                                <ProductHeroAd products={products}/>
+                                            )}
                                         </Col>
                                     </Row>
 
@@ -294,24 +295,48 @@ const ProductsPage = ({match, history}) => {
                                     />
                                 </Col>
                             </>
-                            {/*) : (*/}
-                            {/*    <>*/}
-                            {/*        <Col xs={12}*/}
-                            {/*             className='pt-5 mt-2 CatMan_products min-vh-100 bg-white d-flex justify-content-center ml-1 '>*/}
-                            {/*            <ProductsImgDisplay products={products}*/}
-                            {/*                                    history={history}*/}
-                            {/*                                    match={match}*/}
-                            {/*                                    keyword={keyword}*/}
-                            {/*                                    pages={pages}*/}
-                            {/*                                    page={page}*/}
-                            {/*                                    updateCatProp={updateCat}*/}
-                            {/*                                    updateManufacturerProp={updateManufacturer}*/}
-                            {/*                                    sideBar={sideBar}*/}
-                            {/*            />*/}
-                            {/*        </Col>*/}
+                            ) : (
+                                <>
 
-                            {/*    </>*/}
-                            {/*)}*/}
+                                    <Col xs={12}>
+                                        <Row className='mt-3 d-none d-md-block pr-5'>
+                                            <Col xs={12} className='d-flex justify-content-end'>
+                                                <button onClick={() => {
+                                                    setShowAd(!showAd)
+                                                }}
+                                                        className='bg-transparent global_blood-red border-0 global_cursor'>
+                                                    {showAd && (
+                                                        <>
+                                                            hide
+                                                        </>
+                                                    )}
+                                                </button>
+                                            </Col>
+                                            <Col xs={12} className='mt-0 mb-5'>
+
+                                                {showAd && (
+                                                    <ProductHeroAd products={products}/>
+                                                )}
+                                            </Col>
+                                        </Row>
+                                    </Col>
+
+                                    <Col xs={12}
+                                         className='pt-5 mt-2 CatMan_products min-vh-100 bg-white d-flex justify-content-center ml-1 '>
+                                        <ProductsImgDisplay products={products}
+                                                                history={history}
+                                                                match={match}
+                                                                keyword={keyword}
+                                                                pages={pages}
+                                                                page={page}
+                                                                updateCatProp={updateCat}
+                                                                updateManufacturerProp={updateManufacturer}
+                                                                sideBar={sideBar}
+                                        />
+                                    </Col>
+
+                                </>
+                            )}
 
                         </>
 
