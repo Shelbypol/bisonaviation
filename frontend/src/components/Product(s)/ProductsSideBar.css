@@ -3,7 +3,7 @@
     padding:0;
     position: -webkit-sticky;
     position: sticky;
-    top: 13vh;
+    top: 13.5vh;
 }
 
 .ProductsSidebar_menu-items {
@@ -83,10 +83,6 @@
 
     }
 
-    .ProductsSideBar_sidebar-icon-x{
-        top: 5vh;
-        padding-top: 3vh;
-    }
 
     /*.CatMan_card-text{*/
     /*    width: auto;*/
@@ -105,7 +101,7 @@
     .ProductsSideBar_icon{
         position: -webkit-sticky;
         position: sticky;
-        top: 0;
+        top:0;
         padding-left: 2vh;
         margin-top: 3vh;
         padding-top:  5vh;

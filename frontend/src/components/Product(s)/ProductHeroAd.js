@@ -14,8 +14,11 @@ import ad3 from '../../images/uploads copy/image-1608754463191.jpg';
 const ProductHeroAd = ({products}) => {
 
     const adRow = {
-        height: '30vh',
+        height: '36vh',
+    };
 
+    const indAd = {
+        height: '18vh'
     };
 
 
@@ -30,10 +33,11 @@ const ProductHeroAd = ({products}) => {
     // }, [dispatch]);
 
 
+
     return (
         <>
-            <Row>
-                <Col xs={12} lg={8} className='d-flex justify-content-end global_white-bg' style={adRow}>
+            <Row style={adRow}>
+                <Col xs={12} xl={8} className='d-flex justify-content-end global_white-bg'>
                     <Row>
                         <Col lg={4} className='d-flex align-items-center text-center'>
                             <Row>
@@ -46,31 +50,31 @@ const ProductHeroAd = ({products}) => {
                             </Row>
                         </Col>
                         <Col>
-                            <Image src={ad1} className='rounded w-100' style={{height: '30vh'}}/>
+                            <Image src={ad1} className='rounded w-100' style={adRow}/>
                         </Col>
 
                     </Row>
                 </Col>
 
-                <Col xs={4} className='text-center d-none d-lg-block'>
+                <Col xs={4} className='text-center d-none d-xl-block'>
                     <Row>
-                        <Col xs={12} style={{height: '15vh'}} className='d-flex align-items-center'>
+                        <Col xs={12} style={indAd} className='d-flex align-items-center mb-1'>
                             <Row className='d-flex align-items-center'>
                                 <Col xs={6}>
                                     <h6 className='global_goldenrod'>Lorem ipsum dolor sit amet.</h6>
                                 </Col>
                                 <Col xs={6}>
-                                    <Image src={ad2} className='h-75 w-75 rounded'/>
+                                    <Image src={ad2} className='w-75 rounded' style={indAd}/>
                                 </Col>
                             </Row>
                         </Col>
-                        <Col xs={12} style={{height: '15vh'}} className='d-flex align-items-center'>
+                        <Col xs={12} style={indAd} className='d-flex align-items-center'>
                             <Row className='d-flex align-items-center'>
                                 <Col xs={6}>
                                     <h6 className='global_goldenrod'>Lorem ipsum dolor sit amet.</h6>
                                 </Col>
                                 <Col xs={6}>
-                                    <Image src={ad3} className='h-75 w-75 rounded'/>
+                                    <Image src={ad3} className='w-75 rounded' style={indAd}/>
                                 </Col>
                             </Row>
                         </Col>

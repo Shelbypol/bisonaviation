@@ -21,7 +21,7 @@ const ProductsPage = ({match, history}) => {
     const [clicked, setClicked] = useState(false);
     const [showAd, setShowAd] = useState(true);
 
-    const breakpoint = 1150;
+    const breakpoint = 1050;
 
     const keyword = match.params.keyword;
 
@@ -35,7 +35,6 @@ const ProductsPage = ({match, history}) => {
 
     useEffect(() => {
         dispatch(listProducts(keyword, pageNumber));
-
         window.addEventListener("resize", handleWindowResize);
         return () => window.removeEventListener("resize", handleWindowResize);
 
@@ -44,6 +43,7 @@ const ProductsPage = ({match, history}) => {
 
     const handleWindowResize = () => {
         setWidth(window.innerWidth);
+        width < breakpoint ? setSideBar(false) : setSideBar(true);
     };
 
     //SIDE BAR
@@ -54,17 +54,17 @@ const ProductsPage = ({match, history}) => {
         setClicked(true);
         setUpdateManufacturer('');
         setUpdateCat(a);
-        if (width < breakpoint) {
-            setSideBar(!sideBar);
-        }
+        // if (width < breakpoint) {
+        //     setSideBar(!sideBar);
+        // }
     };
 
     const displayAllHandler = () => {
         setUpdateManufacturer('');
         setUpdateCat('');
-        if (width < breakpoint) {
-            setSideBar(!sideBar);
-        }
+        // if (width < breakpoint) {
+        //     setSideBar(!sideBar);
+        // }
     };
 
     //  SORT BRAND HANDLER
@@ -72,9 +72,9 @@ const ProductsPage = ({match, history}) => {
         setClicked(true);
         setUpdateCat('');
         setUpdateManufacturer(a);
-        if (width < breakpoint) {
-            setSideBar(!sideBar);
-        }
+        // if (width < breakpoint) {
+        //     setSideBar(!sideBar);
+        // }
     };
 
     const maufacturerArr = [...new Set(products.map(product => product.brand))];
@@ -97,36 +97,30 @@ const ProductsPage = ({match, history}) => {
                     )
                     : (
                         <>
+                            <Col lg={2} xs={12}
+                                 className='bg-transparent global_cursor ProductsSideBar_icon pl-4 py-2 mt-lg-4'>
 
-                            {sideBar ? (
-                                <>
-                                    <Col lg={2} xs={12}
-                                         className='global_cursor ProductsSideBar_sidebar-icon d-flex justify-content-end'>
-                                        <p onClick={showSideBar}>x</p>
-                                    </Col>
-                                    <Col lg={10} xs={0}> </Col>
-                                </>
-                            ) : (
-                                <>
-                                    <Col lg={2} xs={12}
-                                         className=' bg-transparent global_cursor ProductsSideBar_icon pl-4 pt-2'>
+                                {width < breakpoint && (
+                                    <>
                                         <h6 className='global_blood-red bg-white' onClick={showSideBar}><span><h3
-                                            className='d-inline global_blood-red'>|||</h3></span>&nbsp;categories
+                                            className='d-inline global_blood-red'>|||</h3>&nbsp;categories</span>
                                         </h6>
-                                        {width < breakpoint && (
-                                            <h5 className='pt-2'>
-                                                {updateCat || updateManufacturer}
-                                            </h5>
-                                        )}
-                                    </Col>
-                                    <Col lg={10} xs={0}> </Col>
-                                </>
-                            )}
+                                    </>
+                                )}
+
+                                {width < breakpoint && (
+                                    <h5 className='pt-2'>
+                                        {updateCat || updateManufacturer}
+                                    </h5>
+                                )}
+
+                            </Col>
+                            <Col lg={10} xs={0}> </Col>
 
                             {sideBar ? (
                                 <>
-                                    <Col lg={2} xs={8} className='ProductsSidebar_menu-items border-right' style={{zIndex: '1000'}}>
-                                        {/*<div className='ProductsSideBar_scroll p-0 m-0'>*/}
+                                    <Col lg={2} xs={8} className='ProductsSidebar_menu-items border-right'>
+
                                         {/*     MANUFACTURER SORT DISPLAY AVAILABLE CATS ON CLICK    */}
                                         <Route render={({history}) => <ProductsSearchBox history={history}
                                                                                          formClasses={'pb-2 mt-1 ml-n3 ProductsSideBar_search-form'}
@@ -139,8 +133,7 @@ const ProductsPage = ({match, history}) => {
                                         }
                                         />
 
-                                        {(updateManufacturer !== '' || updateCat !== '') &&
-                                        (
+                                        {(updateManufacturer !== '' || updateCat !== '') && (
                                             <>
                                                 <Row xs={12}
                                                      className='global_accentFont ProductsSideBar_text py-2 '>
@@ -177,9 +170,7 @@ const ProductsPage = ({match, history}) => {
                                                 </Row>
 
                                                 {/*   ALL MANUFACTURES  */}
-                                                <Row xs={12}
-                                                     className='global_accentFont mt-4'
-                                                >
+                                                <Row xs={12} className='global_accentFont mt-4'>
                                                     <h6 className='global_cursor ProductsSideBar_text ProductsSideBar_sub-titles'>Manufactures</h6>
                                                 </Row>
 
@@ -252,9 +243,47 @@ const ProductsPage = ({match, history}) => {
                                         )}
                                     </Col>
 
-                                    <Col lg={10} className=''>
+                                    <Col lg={10}>
 
-                                        <Row className='mt-3 d-none d-md-block pr-5'>
+                                        <Row className={showAd ? 'mt-3 mr-1 d-none d-md-block' : 'd-none'}>
+                                            <Col xs={12} className='d-flex justify-content-end mb-2'>
+                                                <button onClick={() => {
+                                                    setShowAd(!showAd)
+                                                }}
+                                                        className='bg-transparent global_blood-red border-0 global_cursor pr-4'>
+                                                    {showAd && (
+                                                        <>
+                                                            hide
+                                                        </>
+                                                    )}
+                                                </button>
+                                            </Col>
+
+                                            <Col xs={12} className='mt-0 mb-5'>
+                                                {showAd && (
+                                                    <ProductHeroAd products={products}/>
+                                                )}
+                                            </Col>
+
+                                        </Row>
+
+                                        <ProductsImgDisplay products={products}
+                                                            history={history}
+                                                            match={match}
+                                                            keyword={keyword}
+                                                            pages={pages}
+                                                            page={page}
+                                                            updateCatProp={updateCat}
+                                                            updateManufacturerProp={updateManufacturer}
+                                                            sideBar={sideBar}
+                                        />
+                                    </Col>
+                                </>
+                            ) : (
+                                <>
+
+                                    <Col xs={12}>
+                                        <Row className={showAd ? 'mt-3 mr-1 d-none d-md-block' : 'd-none'}>
                                             <Col xs={12} className='d-flex justify-content-end'>
                                                 <button onClick={() => {
                                                     setShowAd(!showAd)
@@ -274,7 +303,10 @@ const ProductsPage = ({match, history}) => {
                                                 )}
                                             </Col>
                                         </Row>
+                                    </Col>
 
+                                    <Col xs={12}
+                                         className=' CatMan_products min-vh-100 bg-white d-flex justify-content-center ml-1 '>
                                         <ProductsImgDisplay products={products}
                                                             history={history}
                                                             match={match}
@@ -286,55 +318,15 @@ const ProductsPage = ({match, history}) => {
                                                             sideBar={sideBar}
                                         />
                                     </Col>
-                                    </>
-                                    ) : (
-                                    <>
-
-                                        <Col xs={12}>
-                                            <Row className='mt-3 d-none d-md-block pr-5'>
-                                                <Col xs={12} className='d-flex justify-content-end'>
-                                                    <button onClick={() => {
-                                                        setShowAd(!showAd)
-                                                    }}
-                                                            className='bg-transparent global_blood-red border-0 global_cursor'>
-                                                        {showAd && (
-                                                            <>
-                                                                hide
-                                                            </>
-                                                        )}
-                                                    </button>
-                                                </Col>
-                                                <Col xs={12} className='mt-0 mb-5'>
-
-                                                    {showAd && (
-                                                        <ProductHeroAd products={products}/>
-                                                    )}
-                                                </Col>
-                                            </Row>
-                                        </Col>
-
-                                        <Col xs={12}
-                                             className='mt-2 CatMan_products min-vh-100 bg-white d-flex justify-content-center ml-1 '>
-                                            <ProductsImgDisplay products={products}
-                                                                history={history}
-                                                                match={match}
-                                                                keyword={keyword}
-                                                                pages={pages}
-                                                                page={page}
-                                                                updateCatProp={updateCat}
-                                                                updateManufacturerProp={updateManufacturer}
-                                                                sideBar={sideBar}
-                                            />
-                                        </Col>
-
-                                    </>
-                                    )}
 
                                 </>
-
                             )}
-                        </>
-                    )
-            };
 
-            export default ProductsPage
+                        </>
+
+                    )}
+        </>
+    )
+};
+
+export default ProductsPage
