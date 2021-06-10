@@ -13,13 +13,11 @@
     display: flex;
     justify-content: end;
     /*position: absolute;*/
-
     position: -webkit-sticky;
     position: sticky;
-
     padding-left: 2vw;
     padding-top: 1vw;
-    z-index: 10000;
+    /*z-index: 10000;*/
     top: 12vh;
     left: -100vw;
     transition: 850ms;
