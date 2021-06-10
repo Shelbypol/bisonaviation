@@ -137,7 +137,7 @@ const ProductsPage = ({match, history}) => {
                                  ref={node}
                                  onClick={(e) => (handleScroll(e))}>
 
-                                <Col xs={12} className='ProductsSidebar_menu-items border-right'>
+                                <Col xs={12} prclassName='ProductsSidebar_menu-items border-right'>
                                 {/*<Col lg={2} xs={8} className='ProductsSidebar_menu-items border-right'>*/}
 
                                     {/*     MANUFACTURER SORT DISPLAY AVAILABLE CATS ON CLICK    */}
