@@ -68,17 +68,11 @@ const ProductsPage = ({match, history}) => {
         setClicked(true);
         setUpdateManufacturer('');
         setUpdateCat(a);
-        // if (width < breakpoint) {
-        //     setSideBar(!sideBar);
-        // }
     };
 
     const displayAllHandler = () => {
         setUpdateManufacturer('');
         setUpdateCat('');
-        // if (width < breakpoint) {
-        //     setSideBar(!sideBar);
-        // }
     };
     //
     // //  SORT BRAND HANDLER
@@ -129,24 +123,24 @@ const ProductsPage = ({match, history}) => {
 
 
                             {/*===========   SIDE BAR ICON    ============*/}
-                            <Col xs={2}
+                            <Col xs={sideBar ? 2 : 0}
                                  className={sideBar ? 'ProductsSideBar_menu active' : 'ProductsSideBar_menu '}
                                  ref={node}
                                  onClick={(e) => (handleScroll(e))}
                             >
-                                <nav>
+                                {/*<nav>*/}
 
                                     <Row>
-                                        <Col xs={12} prclassName='ProductsSidebar_menu-items'>
+                                        <Col xs={12}>
                                             {/*<Col lg={2} xs={8} className='ProductsSidebar_menu-items border-right'>*/}
 
                                             {/*     MANUFACTURER SORT DISPLAY AVAILABLE CATS ON CLICK    */}
                                             <Route render={({history}) => <ProductsSearchBox history={history}
                                                                                              formClasses={'pb-2 mt-1 ml-n3 ProductsSideBar_search-form'}
                                                                                              searchSize={'sm'}
-                                                                                             searchClasses={'col-9 py-0 ProductsSideBar_search-bar'}
+                                                                                             searchClasses={' py-0 ProductsSideBar_search-bar'}
                                                                                              btnSize={'sm'}
-                                                                                             btnClasses={'bg-dark text-white StickyHeader_search_btn_padding px-1 col-2 rounded-right'}
+                                                                                             btnClasses={'bg-dark text-white StickyHeader_search_btn_padding px-1 rounded-right'}
                                                                                              iconClass={'fal fa-search p-0'}
                                             />
                                             }
@@ -261,50 +255,48 @@ const ProductsPage = ({match, history}) => {
                                             )}
                                         </Col>
                                     </Row>
-                                </nav>
+                                {/*</nav>*/}
                             </Col>
 
-                            <Col lg={10}>
 
-                                <Row className={showAd ? 'mt-3 mr-1 d-none d-md-block' : 'd-none'}>
-                                    <Col xs={12} className='d-flex justify-content-end mb-2'>
-                                        <button onClick={() => {
-                                            setShowAd(!showAd)
-                                        }}
-                                                className='bg-transparent global_blood-red border-0 global_cursor pr-4'>
+                            {/*{sideBar ? (*/}
+                            {/*    <Col lg={10}>*/}
+                                <Col lg={sideBar ? 10 : 12} >
+                                    <Row className={showAd ? 'mt-3 mr-1 d-none d-md-block' : 'd-none'}>
+                                        <Col xs={12} className='d-flex justify-content-end mb-2'>
+                                            <button onClick={() => {
+                                                setShowAd(!showAd)
+                                            }}
+                                                    className='bg-transparent global_blood-red border-0 global_cursor pr-4'>
+                                                {showAd && (
+                                                    <>
+                                                        hide
+                                                    </>
+                                                )}
+                                            </button>
+                                        </Col>
+
+                                        <Col xs={12} className='mt-0 mx-0 mb-5'>
                                             {showAd && (
-                                                <>
-                                                    hide
-                                                </>
+                                                <ProductHeroAd products={products}/>
                                             )}
-                                        </button>
-                                    </Col>
+                                        </Col>
 
-                                    <Col xs={12} className='mt-0 mx-0 mb-5'>
-                                        {showAd && (
-                                            <ProductHeroAd products={products}/>
-                                        )}
-                                    </Col>
+                                    </Row>
 
-                                </Row>
-
-                                <ProductsImgDisplay products={products}
-                                                    history={history}
-                                                    match={match}
-                                                    keyword={keyword}
-                                                    pages={pages}
-                                                    page={page}
-                                                    updateCatProp={updateCat}
-                                                    updateManufacturerProp={updateManufacturer}
-                                                    sideBar={sideBar}
-                                />
-                            </Col>
-
-
-                            {/*</>*/}
+                                    <ProductsImgDisplay products={products}
+                                                        history={history}
+                                                        match={match}
+                                                        keyword={keyword}
+                                                        pages={pages}
+                                                        page={page}
+                                                        updateCatProp={updateCat}
+                                                        updateManufacturerProp={updateManufacturer}
+                                                        sideBar={sideBar}
+                                    />
+                                </Col>
                             {/*// ) : (*/}
                             {/*//     <>*/}
-                            {/*//*/}
                             {/*//         <Col xs={12}>*/}
                             {/*//             <Row className={showAd ? 'mt-3 mr-1 d-none d-md-block' : 'd-none'}>*/}
                             {/*//                 <Col xs={12} className='d-flex justify-content-end'>*/}
@@ -341,10 +333,8 @@ const ProductsPage = ({match, history}) => {
                             {/*//                                 sideBar={sideBar}*/}
                             {/*//             />*/}
                             {/*//         </Col>*/}
-                            {/*//*/}
                             {/*//     </>*/}
                             {/*// )}*/}
-
                         </>
                     )}
         </>

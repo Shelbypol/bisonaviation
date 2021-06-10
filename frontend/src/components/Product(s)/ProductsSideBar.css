@@ -23,6 +23,7 @@
 }
 
 .ProductsSideBar_menu {
+    height: 0;
     left: -25vw;
     transition: 850ms;
 }
