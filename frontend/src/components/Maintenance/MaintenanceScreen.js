@@ -5,9 +5,6 @@ import AvionicsIcons from "../Avionics/AvionicsIcons";
 
 
 const MaintenanceScreen = () => {
-
-
-
     return (
         <>
                 <MaintenanceCarousel/>

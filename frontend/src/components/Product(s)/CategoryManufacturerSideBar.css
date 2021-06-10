@@ -1,15 +1,15 @@
 
-.CatMan_screen-bg{
-    background-color: rgba(255,255,255, 1);
-}
+/*.ProductsSideBar_screen-bg{*/
+/*    background-color: rgba(255,255,255, 1);*/
+/*}*/
 
-.CatMan_sidebar-icon{
-    z-index: 9000;
-    padding:0;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 13vh;
-}
+/*.CatMan_sidebar-icon{*/
+/*    z-index: 9000;*/
+/*    padding:0;*/
+/*    position: -webkit-sticky;*/
+/*    position: sticky;*/
+/*    top: 13vh;*/
+/*}*/
 
 .CatMan_sidebar-icon-x{
     z-index: 9000;
@@ -24,50 +24,46 @@
     color: black;
 }
 
-.CatMan-nav-menu {
-    display: flex;
-    align-items: flex-start;
-}
 
-.CatMan_search-form{
-    z-index: 9800;
-    width:  120%;
-}
+/*.CatMan_search-form{*/
+/*    z-index: 9800;*/
+/*    width:  120%;*/
+/*}*/
 
-.CatMan_search-bar{
-    background-color: rgba(0,0,0, .1);
-    color: black;
-}
+/*.CatMan_search-bar{*/
+/*    background-color: rgba(0,0,0, .1);*/
+/*    color: black;*/
+/*}*/
 
-.CatMan-nav-menu-items {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 13.5vh;
-    padding-left: 3vw;
-    min-height: 100vh;
-}
+/*.CatMan-nav-menu-items {*/
+/*    position: -webkit-sticky;*/
+/*    position: sticky;*/
+/*    top: 13.5vh;*/
+/*    padding-left: 3vw;*/
+/*    min-height: 100vh;*/
+/*}*/
 
-.CatMan_scroll{
-    overflow-y: scroll;
-}
+/*.CatMan_scroll{*/
+/*    overflow-y: scroll;*/
+/*}*/
 
-.CatMan_items-bg{
-    background-color: rgba(0,0,0, .1);
-    padding: .5vw 0 .5vw 1vw;
-}
+/*.CatMan_items-bg{*/
+/*    background-color: rgba(0,0,0, .1);*/
+/*    padding: .5vw 0 .5vw 1vw;*/
+/*}*/
 
-.CatMan_items {
-    color: black;
-    margin: 0;
-    width: 100%;
-    padding: 0;
-    font-weight: lighter;
-}
+/*.CatMan_items {*/
+/*    color: black;*/
+/*    margin: 0;*/
+/*    width: 100%;*/
+/*    padding: 0;*/
+/*    font-weight: lighter;*/
+/*}*/
 
-.CatMan_items:hover {
-    background-color: lightgrey;
-    color: black;
-}
+/*.CatMan_items:hover {*/
+/*    background-color: lightgrey;*/
+/*    color: black;*/
+/*}*/
 
 .CatMan-title {
     top: 6vh;
@@ -75,16 +71,16 @@
     padding: .5vw .5vw 0 0;
 }
 
-.CatMan-sub-titles {
-    font-weight: bolder;
-    width: 100%;
-    color: black;
-    margin-top: 3vw;
-}
+/*.CatMan-sub-titles {*/
+/*    font-weight: bolder;*/
+/*    width: 100%;*/
+/*    color: black;*/
+/*    margin-top: 3vw;*/
+/*}*/
 
-.CatMan-sub-titles:hover{
+/*.CatMan-sub-titles:hover{*/
 
-}
+/*}*/
 
 /*PRODUCT CARD*/
 .CatMan_card-text{
@@ -98,10 +94,10 @@
     background-color: white;
 }
 
-.CatMan-text{
-    display: flex;
-    justify-content: start;
-}
+/*.CatMan-text{*/
+/*    display: flex;*/
+/*    justify-content: start;*/
+/*}*/
 
 /*    ======   MOBILE RESPONSIVE    ======    */
 @media (max-width: 1000px) {

@@ -12,7 +12,6 @@
 
 /*SIDE NAV LOGGED IN*/
 .SideBar-nav-menu-user-logged {
-    background-image: url("./dots.png");
     background-color: rgba(0,0,0, 1);
     width: 20vw;
     height: 100vh;
@@ -28,7 +27,7 @@
 }
 
 .SideBar-nav-menu-user-logged.active {
-    left: -2vw;
+    left: 0;
     transition: 350ms;
 }
 
@@ -61,13 +60,10 @@
     list-style: none;
 }
 
-
-
 .SideBar-nav-menu-items {
     width: 100%;
     z-index: 34500;
 }
-
 
 .SideBar_Login{
     z-index: 98900;

@@ -1,27 +1,22 @@
-
 /*IMG ONE*/
-
-#MechanicsHero_carouselImg1{
+#MaintenanceHero_carouselImg1{
     background-image: url("./images/maintenance1.jpg");
     background-position: 50% 50%;
 }
 
 /*IMG 2*/
-
-#MechanicsHero_carouselImg2{
+#MaintenanceHero_carouselImg2{
     background-image: url("./images/maintenance2.png");
     background-position: 50% 15%;
 }
 
 /*IMG 3*/
-
-#MechanicsHero_carouselImg3{
+#MaintenanceHero_carouselImg3{
     background-image: url("./images/maintenance4.png");
 }
 
 /*IMG 4*/
-
-#MechanicsHero_carouselImg4{
+#MaintenanceHero_carouselImg4{
     background-image: url("./images/maintenance5.png");
     background-position: 50% 15%;
 }
