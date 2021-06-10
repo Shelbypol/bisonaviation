@@ -8,6 +8,7 @@ import './SideBar.css'
 import {Button} from "react-bootstrap";
 
 const SignInDropdown = ({showSidebar}) => {
+
     const [loginShow, setLoginShow] = useState(false);
 
     const dispatch = useDispatch();
@@ -24,14 +25,13 @@ const SignInDropdown = ({showSidebar}) => {
 
     }, [loginShow, userInfo]);
 
-    const loginForm = () => {
-        setLoginShow(!loginShow)
-    };
+    // const loginForm = () => {
+    //     setLoginShow(!loginShow)
+    // };
 
     return (
         <>
             {!userInfo && (
-
                 <>
                     <li className='my-3'>
                         <SignInForm loginTitle={'Sign In'} showSideBar={showSidebar}/>
@@ -46,7 +46,7 @@ const SignInDropdown = ({showSidebar}) => {
                     <li className='mx-2'>
                         <h6 className='text-muted'>if not a user</h6>
                         <Link to='/Register' onClick={showSidebar}>
-                            <Button className=' py-2 px-3 global_blood-red-bg global_cultured rounded'>
+                            <Button className='py-2 px-3 global_blood-red-bg global_cultured rounded'>
                                 Register
                             </Button>
                         </Link>

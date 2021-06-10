@@ -6,13 +6,40 @@
     top: 13.5vh;
 }
 
-.ProductsSidebar_menu-items {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 15vh;
-    padding-left: 3vw;
-    min-height: 100vh;
+/*SIDE NAV LOGGED IN*/
+.ProductsSideBar_menu {
+    background-color: rgba(0,0,0, 1);
+    width: 20vw;
+    height: 100vh;
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    padding-left: 2vw;
+    padding-top: 1vw;
+    z-index: 10000;
+    top: 6.5vh;
+    left: -100vw;
+    transition: 850ms;
 }
+
+.ProductsSideBar_menu.active {
+    left: 0;
+    transition: 350ms;
+}
+
+
+/*.ProductsSidebar_menu-items {*/
+/*    position: -webkit-sticky;*/
+/*    position: sticky;*/
+/*    top: 15vh;*/
+/*    padding-left: 3vw;*/
+/*    min-height: 100vh;*/
+/*!*    !*top: 6.5vh;*!*!*/
+/*!*;    left: -100vw;*!*/
+/*!*    transition: 850ms*!*/
+/*}*/
+
+/*.ProductsSidebar_menu-items:active{}*/
 
 .ProductsSideBar_search-form{
     z-index: 9800;
