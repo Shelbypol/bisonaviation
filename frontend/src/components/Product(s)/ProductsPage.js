@@ -111,36 +111,33 @@ const ProductsPage = ({match, history}) => {
                     )
                     : (
                         <>
+
                             <Col lg={2} xs={6}
                                  className='bg-transparent global_cursor ProductsSideBar_icon pl-4 py-2 mt-lg-4 global_black'>
+                                <>
+                                    <h6 className='global_blood-red bg-white' onClick={showSideBar}><span><h3
+                                        className='d-inline global_blood-red'>|||</h3>&nbsp;categories</span>
+                                    </h6>
 
-                                {/*{width < breakpoint && (*/}
-                                    <>
-                                        <h6 className='global_blood-red bg-white' onClick={showSideBar}><span><h3
-                                            className='d-inline global_blood-red'>|||</h3>&nbsp;categories</span>
-                                        </h6>
-
-
-                                        <h5 className='pt-2'>
-                                            {updateCat || updateManufacturer}
-                                        </h5>
-                                    </>
-                                {/*)}*/}
-
+                                    <h5 className='pt-2'>
+                                        {updateCat || updateManufacturer}
+                                    </h5>
+                                </>
                             </Col>
+
                             <Col lg={10} xs={0}> </Col>
 
 
                             {/*===========   SIDE BAR ICON    ============*/}
                             <Col xs={2}
-                                 className={sideBar ? 'ProductsSideBar_menu active global_white' : 'ProductsSideBar_menu global_white'}
+                                 className={sideBar ? 'ProductsSideBar_menu active' : 'ProductsSideBar_menu '}
                                  ref={node}
                                  onClick={(e) => (handleScroll(e))}
                             >
                                 <nav>
 
                                     <Row>
-                                        <Col xs={12} prclassName='ProductsSidebar_menu-items border-right'>
+                                        <Col xs={12} prclassName='ProductsSidebar_menu-items'>
                                             {/*<Col lg={2} xs={8} className='ProductsSidebar_menu-items border-right'>*/}
 
                                             {/*     MANUFACTURER SORT DISPLAY AVAILABLE CATS ON CLICK    */}
@@ -248,7 +245,6 @@ const ProductsPage = ({match, history}) => {
                                                             className='ProductsSideBar_sub-titles'>Manufacturers</h6>
                                                     </Row>
 
-
                                                     <Row className='ProductsSideBar_items-bg'>
                                                         {maufacturerArr.map((product, index) => (
                                                             <Col xs={12}
@@ -284,7 +280,7 @@ const ProductsPage = ({match, history}) => {
                                         </button>
                                     </Col>
 
-                                    <Col xs={12} className='mt-0 mb-5'>
+                                    <Col xs={12} className='mt-0 mx-0 mb-5'>
                                         {showAd && (
                                             <ProductHeroAd products={products}/>
                                         )}
