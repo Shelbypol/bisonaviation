@@ -8,16 +8,19 @@
 
 /*SIDE NAV LOGGED IN*/
 .ProductsSideBar_menu {
-    background-color: rgba(0,0,0, 1);
-    width: 20vw;
+    width: 25vw;
     height: 100vh;
     display: flex;
     justify-content: end;
-    position: absolute;
+    /*position: absolute;*/
+
+    position: -webkit-sticky;
+    position: sticky;
+
     padding-left: 2vw;
     padding-top: 1vw;
     z-index: 10000;
-    top: 6.5vh;
+    top: 12vh;
     left: -100vw;
     transition: 850ms;
 }
