@@ -67,11 +67,13 @@ const ProductsPage = ({match, history}) => {
         setClicked(true);
         setUpdateManufacturer('');
         setUpdateCat(a);
+        handleWindowResize();
     };
 
     const displayAllHandler = () => {
         setUpdateManufacturer('');
         setUpdateCat('');
+        handleWindowResize();
     };
 
     //  SORT BRAND HANDLER
@@ -79,6 +81,7 @@ const ProductsPage = ({match, history}) => {
         setClicked(true);
         setUpdateCat('');
         setUpdateManufacturer(a);
+        handleWindowResize();
     };
 
     const maufacturerArr = [...new Set(products.map(product => product.brand))];
@@ -132,9 +135,9 @@ const ProductsPage = ({match, history}) => {
                                         <Route render={({history}) => <ProductsSearchBox history={history}
                                                                                          formClasses={'pb-2 mt-1 ml-n3 ProductsSideBar_search-form'}
                                                                                          searchSize={'sm'}
-                                                                                         searchClasses={' py-0 ProductsSideBar_search-bar'}
+                                                                                         searchClasses={'py-0 ProductsSideBar_search-bar'}
                                                                                          btnSize={'sm'}
-                                                                                         btnClasses={'bg-dark text-white StickyHeader_search_btn_padding px-1 rounded-right'}
+                                                                                         btnClasses={'bg-dark text-white MobileHeader_search_btn_padding px-1 rounded-right'}
                                                                                          iconClass={'fal fa-search p-0'}
                                         />
                                         }
