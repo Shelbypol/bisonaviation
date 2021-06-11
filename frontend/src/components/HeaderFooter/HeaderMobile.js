@@ -29,7 +29,7 @@ const HeaderMobile = () => {
 
     return (
         <>
-            <header className='m-auto header d-block p-0 col-xs-12 '>
+            <header className='m-auto header d-block p-0 col-xs-12 sticky-top' style={{top: '0', height: '10vh'}}>
                 <Navbar expand="xl"
                         collapseOnSelect
                         style={{backgroundColor: 'black'}}
@@ -49,7 +49,7 @@ const HeaderMobile = () => {
                     {/*  LOGO  */}
                     <LinkContainer className='col-xs-2' to='/'>
                         <img src={logo}
-                             className='HeaderMobile_logo pb-3'
+                             className='HeaderMobile_logo'
                              alt="Bison Aviation"
                         />
                     </LinkContainer>

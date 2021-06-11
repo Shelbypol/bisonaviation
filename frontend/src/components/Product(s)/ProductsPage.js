@@ -36,9 +36,9 @@ const ProductsPage = ({match, history}) => {
     useEffect(() => {
         dispatch(listProducts(keyword, pageNumber));
         // document.addEventListener("scroll", handleScroll);
-            window.addEventListener("resize", handleWindowResize);
+        window.addEventListener("resize", handleWindowResize);
         // return () => {
-            // document.removeEventListener("scroll", handleScroll);// };
+        // document.removeEventListener("scroll", handleScroll);// };
     }, [dispatch, updateCat, updateManufacturer, keyword, pageNumber, setUpdateManufacturer, setUpdateCat, width, showAd, sideBar]);
 
     const handleWindowResize = () => {
@@ -131,27 +131,30 @@ const ProductsPage = ({match, history}) => {
                                 <Row>
                                     <Col xs={12}>
 
-                                        {/*     MANUFACTURER SORT DISPLAY AVAILABLE CATS ON CLICK    */}
-                                        <Route render={({history}) => <ProductsSearchBox history={history}
-                                                                                         formClasses={'pb-2 mt-1 ml-n3 ProductsSideBar_search-form'}
-                                                                                         searchSize={'sm'}
-                                                                                         searchClasses={'py-0 ProductsSideBar_search-bar'}
-                                                                                         btnSize={'sm'}
-                                                                                         btnClasses={'bg-dark text-white MobileHeader_search_btn_padding px-1 rounded-right'}
-                                                                                         iconClass={'fal fa-search p-0'}
-                                        />
-                                        }
-                                        />
+                                        <Row>
+
+                                            {/*     MANUFACTURER SORT DISPLAY AVAILABLE CATS ON CLICK    */}
+                                            <Route render={({history}) => <ProductsSearchBox history={history}
+                                                                                             formClasses={'pb-2 mt-1 ml-n3 ProductsSideBar_search-form'}
+                                                                                             searchSize={'sm'}
+                                                                                             searchClasses={'py-0 ProductsSideBar_search-bar'}
+                                                                                             btnSize={'sm'}
+                                                                                             btnClasses={'bg-dark text-white ProductsSideBar_search-btn px-1 rounded-right'}
+                                                                                             iconClass={'fal fa-search p-0'}
+                                            />
+                                            }
+                                            />
+                                        </Row>
 
                                         {(updateManufacturer !== '' || updateCat !== '') && (
                                             <>
-                                                <Row xs={12}
+                                                <Row
                                                      className='global_accentFont ProductsSideBar_text py-2 '>
                                                     <h4 className=' global_cursor global_blood-red'>{updateManufacturer || updateCat}</h4>
                                                 </Row>
 
                                                 {/* ALL PRODUCTS*/}
-                                                <Row xs={12}
+                                                <Row
                                                      className='global_accentFont'
                                                      onClick={displayAllHandler}>
                                                     <h6 className='global_cursor ProductsSideBar_text ProductsSideBar_sub-titles'>
@@ -160,7 +163,7 @@ const ProductsPage = ({match, history}) => {
                                                 </Row>
 
                                                 {/*   ALL CATEGORIES  */}
-                                                <Row xs={12}
+                                                <Row
                                                      className='global_accentFont'>
                                                     <h6 className='global_cursor ProductsSideBar_text ProductsSideBar_sub-titles'>Categories</h6>
                                                 </Row>
@@ -179,7 +182,7 @@ const ProductsPage = ({match, history}) => {
                                                 </Row>
 
                                                 {/*   ALL MANUFACTURES  */}
-                                                <Row xs={12} className='global_accentFont mt-4'>
+                                                <Row className='global_accentFont mt-4'>
                                                     <h6 className='global_cursor ProductsSideBar_text ProductsSideBar_sub-titles'>Manufactures</h6>
                                                 </Row>
 
@@ -204,14 +207,14 @@ const ProductsPage = ({match, history}) => {
                                         {(updateCat === '' && updateManufacturer === '') && (
                                             <>
                                                 {/* ALL PRODUCTS*/}
-                                                <Row xs={12}
+                                                <Row
                                                      className='global_accentFont'
                                                      onClick={displayAllHandler}>
                                                     <h6 className='global_cursor ProductsSideBar_text ProductsSideBar_sub-titles'>All
                                                         Products</h6>
                                                 </Row>
 
-                                                <Row xs={12}
+                                                <Row
                                                      className='global_accentFont'>
                                                     <h6 className='global_cursor ProductsSideBar_text ProductsSideBar_sub-titles'>Categories</h6>
                                                 </Row>
@@ -229,7 +232,7 @@ const ProductsPage = ({match, history}) => {
                                                     ))}
                                                 </Row>
 
-                                                <Row xs={12}
+                                                <Row
                                                      className='global_accentFont mt-3 ProductsSideBar_text global_cursor '>
                                                     <h6 onClick={displayAllHandler}
                                                         className='ProductsSideBar_sub-titles'>Manufacturers</h6>

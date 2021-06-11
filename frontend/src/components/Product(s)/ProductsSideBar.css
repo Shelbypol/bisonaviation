@@ -32,13 +32,20 @@
 
 .ProductsSideBar_search-form {
     border: 2px solid red;
-    width: 100%;
+    /*width: available;*/
 }
 
 .ProductsSideBar_search-bar {
     background-color: rgba(0, 0, 0, .1);
     color: black;
-    width: 20%;
+    width: 70%;
+}
+
+.ProductsSideBar_search-btn {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    color: white;
+    width: 30%;
 }
 
 .ProductsSideBar_text {
@@ -125,13 +132,13 @@
     .ProductsSideBar_menu.active {
         display: flex;
         justify-content: end;
-        width: 80vw;
+        width: 100vw;
         top: 7vh;
         background-color: #fff;
     }
 
     .ProductsSideBar_menu {
-        left: -80vw;
+        left: -100vw;
     }
 
 }
