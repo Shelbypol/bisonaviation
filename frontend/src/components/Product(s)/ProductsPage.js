@@ -106,18 +106,17 @@ const ProductsPage = ({match, history}) => {
                     : (
                         <>
 
-                            <Col lg={2} xs={6}
-                                 className='bg-transparent global_cursor ProductsSideBar_icon pl-4 py-2 mt-lg-4 global_black'>
-                                <>
-                                    <h6 className='global_blood-red bg-white' onClick={showSideBar}><span><h3
-                                        className='d-inline global_blood-red'>|||</h3>&nbsp;categories</span>
-                                    </h6>
+                                <Col lg={2} xs={6} className='bg-transparent global_cursor ProductsSideBar_icon pl-4 py-2 mt-lg-4 global_black'>
+                                    <>
+                                        <h6 className='global_blood-red bg-white' onClick={showSideBar}><span><h3
+                                            className='d-inline global_blood-red'>|||</h3>&nbsp;categories</span>
+                                        </h6>
 
-                                    <h5 className='pt-2'>
-                                        {updateCat || updateManufacturer}
-                                    </h5>
-                                </>
-                            </Col>
+                                        <h5 className='pt-2'>
+                                            {updateCat || updateManufacturer}
+                                        </h5>
+                                    </>
+                                </Col>
 
                             <Col lg={10} xs={0}> </Col>
 

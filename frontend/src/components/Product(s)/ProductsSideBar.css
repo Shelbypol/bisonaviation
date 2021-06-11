@@ -1,11 +1,15 @@
+
 .ProductsSideBar_icon {
     position: -webkit-sticky;
     position: sticky;
-    top: 12vh;
+    top: 12.5vh;
+    display: flex;
+    justify-content: flex-start;
+    z-index: 1000;
 }
 
-
 .ProductsSideBar_menu.active {
+    z-index: 1000;
     width: 25vw;
     height: 100vh;
     display: flex;
@@ -13,7 +17,7 @@
     position: -webkit-sticky;
     position: sticky;
     padding: 1vw 2vw;
-    top: 13vh;
+    top: 17vh;
     left: 0;
     transition: 850ms;
     background-color: #fff;
