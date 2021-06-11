@@ -97,8 +97,31 @@
 
 }
 
-/*@media (max-width: 600px) {*/
-/*    .ProductsSideBar_icon {*/
-/*        top: 2vh;*/
-/*    }*/
-/*}*/
+@media (max-width: 600px) {
+    .ProductsSideBar_icon {
+        margin-top: 5vh;
+        top: 0;
+    }
+
+    .ProductsSideBar_menu.active {
+        z-index: 1000;
+        width: 25vw;
+        height: 100vh;
+        display: flex;
+        justify-content: end;
+        position: -webkit-sticky;
+        position: sticky;
+        padding: 1vw 2vw;
+        top: 17vh;
+        left: 0;
+        transition: 850ms;
+        background-color: #fff;
+    }
+
+    .ProductsSideBar_menu {
+        height: 0;
+        left: -25vw;
+        transition: 850ms;
+    }
+
+}
