@@ -15,18 +15,15 @@ import SignInDropdown from "../SignIn/SignInDropdown";
 
 const ProductsPage = ({match, history}) => {
 
-    const [sideBar, setSideBar] = useState(true);
-
+    const [sideBar, setSideBar] = useState();
     const [width, setWidth] = useState(window.innerWidth);
     const [updateCat, setUpdateCat] = useState('');
     const [updateManufacturer, setUpdateManufacturer] = useState('');
     const [clicked, setClicked] = useState(false);
     const [showAd, setShowAd] = useState(true);
 
-    const breakpoint = 1050;
-
+    const breakpoint = 1000;
     const keyword = match.params.keyword;
-
     const pageNumber = match.params.pageNumber || 1;
 
     const dispatch = useDispatch();
@@ -38,15 +35,20 @@ const ProductsPage = ({match, history}) => {
 
     useEffect(() => {
         dispatch(listProducts(keyword, pageNumber));
-
         // document.addEventListener("scroll", handleScroll);
-        window.addEventListener("resize", handleWindowResize);
-        return () => {
-            // document.removeEventListener("scroll", handleScroll);
-            window.removeEventListener("resize", handleWindowResize);
-        };
+            window.addEventListener("resize", handleWindowResize);
+        // return () => {
+            // document.removeEventListener("scroll", handleScroll);// };
     }, [dispatch, updateCat, updateManufacturer, keyword, pageNumber, setUpdateManufacturer, setUpdateCat, width, showAd, sideBar]);
 
+    const handleWindowResize = () => {
+        if (window.innerWidth < breakpoint) {
+            setSideBar(false)
+        } else {
+            setSideBar(true)
+        }
+        setWidth(window.innerWidth);
+    };
 
     const handleScroll = e => {
         // if (node.current.contains(e.target) === false) {
@@ -56,14 +58,11 @@ const ProductsPage = ({match, history}) => {
         // }
     };
 
-    const handleWindowResize = () => {
-        setWidth(window.innerWidth);
-    };
 
     //SIDE BAR
     const showSideBar = () => setSideBar(!sideBar);
 
-    // // SORT CAT HANDLER
+    // SORT CAT HANDLER
     const sortByCategoryHandler = (a) => {
         setClicked(true);
         setUpdateManufacturer('');
@@ -74,15 +73,12 @@ const ProductsPage = ({match, history}) => {
         setUpdateManufacturer('');
         setUpdateCat('');
     };
-    //
-    // //  SORT BRAND HANDLER
+
+    //  SORT BRAND HANDLER
     const sortByManufacturerHandler = (a) => {
         setClicked(true);
         setUpdateCat('');
         setUpdateManufacturer(a);
-        // if (width < breakpoint) {
-        //     setSideBar(!sideBar);
-        // }
     };
 
     const maufacturerArr = [...new Set(products.map(product => product.brand))];
@@ -106,17 +102,18 @@ const ProductsPage = ({match, history}) => {
                     : (
                         <>
 
-                                <Col lg={2} xs={6} className='bg-transparent global_cursor ProductsSideBar_icon pl-4 py-2 mt-lg-4 global_black'>
-                                    <>
-                                        <h6 className='global_blood-red bg-white' onClick={showSideBar}><span><h3
-                                            className='d-inline global_blood-red'>|||</h3>&nbsp;categories</span>
-                                        </h6>
+                            <Col lg={2} xs={12}
+                                 className=' global_cursor ProductsSideBar_icon pl-4 pt-3 pb-3 mt-lg-4 global_black'>
+                                <>
+                                    <h6 className='global_blood-red bg-white' onClick={showSideBar}><span><h3
+                                        className='d-inline global_blood-red'>|||</h3>&nbsp;categories</span>
+                                    </h6>
 
-                                        <h5 className='pt-2'>
-                                            {updateCat || updateManufacturer}
-                                        </h5>
-                                    </>
-                                </Col>
+                                    <h5 className='pt-2'>
+                                        {updateCat || updateManufacturer}
+                                    </h5>
+                                </>
+                            </Col>
 
                             <Col lg={10} xs={0}> </Col>
 
