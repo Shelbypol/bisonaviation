@@ -10,16 +10,13 @@
     height: 100vh;
     display: flex;
     justify-content: end;
-    /*position: absolute;*/
     position: -webkit-sticky;
     position: sticky;
     padding: 1vw 2vw;
-    /*z-index: 10000;*/
     top: 13vh;
     left: 0;
     transition: 850ms;
     background-color: #fff;
-    /*border-right: 1px solid #000;*/
 }
 
 .ProductsSideBar_menu {

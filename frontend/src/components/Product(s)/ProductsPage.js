@@ -122,17 +122,15 @@ const ProductsPage = ({match, history}) => {
                             <Col lg={10} xs={0}> </Col>
 
 
-                            {/*===========   SIDE BAR ICON    ============*/}
+                            {/*===========   SIDE BAR    ============*/}
                             <Col xs={sideBar ? 2 : 0}
                                  className={sideBar ? 'ProductsSideBar_menu active' : 'ProductsSideBar_menu '}
                                  ref={node}
                                  onClick={(e) => (handleScroll(e))}
                             >
-                                {/*<nav>*/}
 
                                 <Row>
                                     <Col xs={12}>
-                                        {/*<Col lg={2} xs={8} className='ProductsSidebar_menu-items border-right'>*/}
 
                                         {/*     MANUFACTURER SORT DISPLAY AVAILABLE CATS ON CLICK    */}
                                         <Route render={({history}) => <ProductsSearchBox history={history}
@@ -272,7 +270,7 @@ const ProductsPage = ({match, history}) => {
                                         </button>
                                     </Col>
 
-                                    <Col xs={12} className='mt-0 mx-0 mb-5'>
+                                    <Col xs={12} className='mt-0 mx-0 mb-5 d-flex justify-content-center'>
                                         {showAd && (
                                             <ProductHeroAd products={products}/>
                                         )}
