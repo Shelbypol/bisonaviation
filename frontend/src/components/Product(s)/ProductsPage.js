@@ -37,10 +37,9 @@ const ProductsPage = ({match, history}) => {
         dispatch(listProducts(keyword, pageNumber));
         // document.addEventListener("scroll", handleScroll);
         window.addEventListener("resize", handleWindowResize);
-
-        // return () => {
+        // handleWindowResize();
         // document.removeEventListener("scroll", handleScroll);// };
-    }, [dispatch, updateCat, updateManufacturer, keyword, pageNumber, setUpdateManufacturer, setUpdateCat, width, showAd, sideBar]);
+    }, [dispatch, updateCat, updateManufacturer, keyword, pageNumber, width, showAd, sideBar]);
 
     const handleWindowResize = () => {
         if (window.innerWidth < breakpoint) {
@@ -65,7 +64,7 @@ const ProductsPage = ({match, history}) => {
 
     // SORT CAT HANDLER
     const sortByCategoryHandler = (a) => {
-        setClicked(true);
+        // setClicked(true);
         setUpdateManufacturer('');
         setUpdateCat(a);
         handleWindowResize();
@@ -79,7 +78,7 @@ const ProductsPage = ({match, history}) => {
 
     //  SORT BRAND HANDLER
     const sortByManufacturerHandler = (a) => {
-        setClicked(true);
+        // setClicked(true);
         setUpdateCat('');
         setUpdateManufacturer(a);
         handleWindowResize();
@@ -247,32 +246,30 @@ const ProductsPage = ({match, history}) => {
                                 <Col
                                     lg={sideBar ? 9 : 12}
                                     md={sideBar ? 8 : 12}
-                                    xs={sideBar ? 6 : 12}>
+                                    xs={sideBar ? 6 : 12}
+                                    className='d-flex justify-content-end border'
+                                >
 
                                     {/*     HERO AD    */}
-                                    {/*<Row className={showAd ? 'mt-3 mr-1 d-none d-md-block' : 'd-none'}>*/}
                                     <Row>
-                                        <Col xs={12} className={showAd ? 'mt-3 mr-1 d-none d-md-block' : 'd-none'} >
-                                            <button
-                                                onClick={() => {
-                                                    setShowAd(!showAd)
-                                                }}
-                                                className='bg-transparent global_blood-red border-0 global_cursor pr-4'>
-                                                {showAd && (
-                                                    <>
-                                                        hide
-                                                    </>
-                                                )}
-                                            </button>
-                                        </Col>
-
-                                        <Col xs={12} className='mt-0 mx-0 mb-5 d-flex justify-content-center'>
-                                            {showAd && (
+                                        {showAd && (
+                                            <Col xs={12}>
+                                                <button
+                                                    onClick={() => {
+                                                        setShowAd(!showAd)
+                                                    }}
+                                                    className=' bg-transparent global_blood-red border-0 global_cursor'>
+                                                    {showAd && (
+                                                        <>
+                                                            hide
+                                                        </>
+                                                    )}
+                                                </button>
                                                 <ProductHeroAd products={products}/>
-                                            )}
-                                        </Col>
+                                            </Col>
+                                        )}
 
-                                        <Col xs={12} className='mx-2 d-flex justify-content-center border'>
+                                        <Col xs={11}>
                                             <ProductsImgDisplay products={products}
                                                                 history={history}
                                                                 match={match}
