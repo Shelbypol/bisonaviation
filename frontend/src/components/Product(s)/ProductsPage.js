@@ -84,7 +84,7 @@ const ProductsPage = ({match, history}) => {
         handleWindowResize();
     };
 
-    const maufacturerArr = [...new Set(products.map(product => product.brand))];
+    const manufacturerArr = [...new Set(products.map(product => product.brand))];
     const catArr = [...new Set(products.map(product => product.category))];
 
 
@@ -122,15 +122,14 @@ const ProductsPage = ({match, history}) => {
 
 
                             {/*===========   SIDE BAR    ============*/}
-                            <Row
-                                xs={sideBar ? 2 : 0}
-                                className={sideBar ? 'ProductsSideBar_menu active' : 'ProductsSideBar_menu '}
-                                ref={node}
-                                onClick={(e) => (handleScroll(e))}
-                            >
-                                <Col xs={12}>
+                            <Row>
+                                <Col
+                                    xs={sideBar && 3}
+                                    className={sideBar ? 'ProductsSideBar_menu active' : 'ProductsSideBar_menu '}
+                                    ref={node}
+                                    onClick={(e) => (handleScroll(e))}
+                                >
 
-                                    {/*<Row className='ProductsSideBar_text'>*/}
                                     {/*     MANUFACTURER SORT DISPLAY AVAILABLE CATS ON CLICK    */}
                                     <Route render={({history}) => <ProductsSearchBox history={history}
                                                                                      formClasses={'pb-2 mt-1 ml-n3 ProductsSideBar_search-form'}
@@ -146,8 +145,7 @@ const ProductsPage = ({match, history}) => {
 
                                     {(updateManufacturer !== '' || updateCat !== '') && (
                                         <>
-                                            <Row
-                                                className='global_accentFont ProductsSideBar_text py-2 '>
+                                            <Row className='global_accentFont ProductsSideBar_text py-2 '>
                                                 <h4 className=' global_cursor global_blood-red'>{updateManufacturer || updateCat}</h4>
                                             </Row>
 
@@ -185,7 +183,7 @@ const ProductsPage = ({match, history}) => {
                                             </Row>
 
                                             <Row className='ProductsSideBar_items-bg'>
-                                                {maufacturerArr.map((product, index) => (
+                                                {manufacturerArr.map((product, index) => (
                                                     <Col xs={12}
                                                          onClick={(ev) => sortByManufacturerHandler(product, ev)}
                                                          className='btn btn-block global_cursor ProductsSideBar_text ProductsSideBar_items'
@@ -237,7 +235,7 @@ const ProductsPage = ({match, history}) => {
                                             </Row>
 
                                             <Row className='ProductsSideBar_items-bg'>
-                                                {maufacturerArr.map((product, index) => (
+                                                {manufacturerArr.map((product, index) => (
                                                     <Col xs={12}
                                                          onClick={(ev) => sortByManufacturerHandler(product, ev)}
                                                          className='btn btn-block global_cursor ProductsSideBar_text ProductsSideBar_items'
@@ -251,11 +249,10 @@ const ProductsPage = ({match, history}) => {
                                         </>
                                     )}
                                 </Col>
-                            </Row>
+                            {/*</Row>*/}
 
-                            <Row className='m-0 p-0'>
-                                <Col lg={sideBar ? 10 : 12}>
-                                    {/*<Row className={showAd ? 'mt-3 mr-1 d-none d-md-block' : 'd-none'}>*/}
+                            {/*<Row className='m-0 p-0'>*/}
+                                <Col lg={sideBar ? 9 : 12}>
                                     <Row className={showAd ? 'mt-3 mr-1 d-none d-md-block' : 'd-none'}>
                                         <Col xs={12} className='d-flex justify-content-end mb-2'>
                                             <button onClick={() => {

@@ -11,7 +11,7 @@
 
 .ProductsSideBar_menu.active {
     z-index: 1000;
-    width: 20vw;
+    /*width: 20vw;*/
     height: inherit;
     /*height: 100vh;*/
     display: flex;
@@ -27,6 +27,7 @@
 }
 
 .ProductsSideBar_menu {
+    /*width: 20vw;*/
     height: 0;
     left: -1000px;
     transition: 850ms;
@@ -40,14 +41,14 @@
 .ProductsSideBar_search-bar {
     background-color: rgba(0, 0, 0, .1);
     color: black;
-    width: 70%;
+    /*width: 70%;*/
 }
 
 .ProductsSideBar_search-btn {
     padding-top: 1em;
     padding-bottom: 1em;
     color: white;
-    width: 30%;
+    /*width: 30%;*/
 }
 
 .ProductsSideBar_text {
