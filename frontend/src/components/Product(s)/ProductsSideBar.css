@@ -12,10 +12,10 @@
 .ProductsSideBar_menu.active {
     z-index: 1000;
     /*width: 20vw;*/
-    height: inherit;
-    /*height: 100vh;*/
-    display: flex;
-    justify-content: end;
+    min-height: 100vh;
+    height: 100%;
+    /*display: flex;*/
+    /*justify-content: end;*/
     position: -webkit-sticky;
     position: sticky;
     padding: 1vw 2vw;
@@ -34,7 +34,7 @@
 }
 
 .ProductsSideBar_search-form {
-    border: 2px solid red;
+    /*border: 2px solid red;*/
     /*width: available;*/
 }
 
