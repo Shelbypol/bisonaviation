@@ -2,7 +2,7 @@
 .ProductsSideBar_icon {
     position: -webkit-sticky;
     position: sticky;
-    top: 12vh;
+    top: 13vh;
     display: flex;
     justify-content: flex-start;
     z-index: 1000;
@@ -19,7 +19,7 @@
     position: -webkit-sticky;
     position: sticky;
     padding: 1vw 2vw;
-    margin: 1vw 2vw;
+    /*margin: 1vw 2vw;*/
     top: 17vh;
     left: 0;
     transition: 850ms;
@@ -105,20 +105,20 @@
 
     .ProductsSideBar_icon {
         margin-top: 4vh;
-        top: 0;
+        top: 5vh;
         background-color: #fff;
     }
 
     .ProductsSideBar_menu.active {
-        width: 50vw;
+        /*width: 50vw;*/
         top: 6vh;
         background-color: #fff;
-        padding-left: 6vw;
+        /*padding-left: 6vw;*/
     }
 
-    .ProductsSideBar_menu {
-        left: -50vw;
-    }
+    /*.ProductsSideBar_menu {*/
+    /*    left: -;*/
+    /*}*/
 
     .ProductsSideBar_text {
         display: flex;

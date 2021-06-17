@@ -1,5 +1,5 @@
-import React, {useEffect, useRef, useState} from "react";
-import {Col, Row} from "react-bootstrap";
+import React, {useEffect, useLayoutEffect, useRef, useState} from "react";
+import {Col, Row, Button} from "react-bootstrap";
 import {useSelector, useDispatch} from "react-redux";
 import {listProducts} from "../../actions/productActions";
 import ProductsImgDisplay from "./ProductsImgDisplay";
@@ -17,9 +17,10 @@ const ProductsPage = ({match, history}) => {
 
     const [sideBar, setSideBar] = useState(true);
     const [width, setWidth] = useState(window.innerWidth);
+
     const [updateCat, setUpdateCat] = useState('');
     const [updateManufacturer, setUpdateManufacturer] = useState('');
-    const [clicked, setClicked] = useState(false);
+
     const [showAd, setShowAd] = useState(true);
 
     const breakpoint = 1000;
@@ -37,9 +38,12 @@ const ProductsPage = ({match, history}) => {
         dispatch(listProducts(keyword, pageNumber));
         // document.addEventListener("scroll", handleScroll);
         window.addEventListener("resize", handleWindowResize);
+        setWidth(window.innerWidth);
+
         // handleWindowResize();
         // document.removeEventListener("scroll", handleScroll);// };
-    }, [dispatch, updateCat, updateManufacturer, keyword, pageNumber, width, showAd, sideBar]);
+    }, [dispatch, updateCat, updateManufacturer, keyword, pageNumber, showAd, sideBar, width]);
+
 
     const handleWindowResize = () => {
         if (window.innerWidth < breakpoint) {
@@ -47,7 +51,7 @@ const ProductsPage = ({match, history}) => {
         } else {
             setSideBar(true)
         }
-        setWidth(window.innerWidth);
+        // setWidth(window.innerWidth);
     };
 
     const handleScroll = e => {
@@ -67,13 +71,13 @@ const ProductsPage = ({match, history}) => {
         // setClicked(true);
         setUpdateManufacturer('');
         setUpdateCat(a);
-        handleWindowResize();
+        // handleWindowResize();
     };
 
     const displayAllHandler = () => {
         setUpdateManufacturer('');
         setUpdateCat('');
-        handleWindowResize();
+        // handleWindowResize();
     };
 
     //  SORT BRAND HANDLER
@@ -81,7 +85,7 @@ const ProductsPage = ({match, history}) => {
         // setClicked(true);
         setUpdateCat('');
         setUpdateManufacturer(a);
-        handleWindowResize();
+        // handleWindowResize();
     };
 
     const manufacturerArr = [...new Set(products.map(product => product.brand))];
@@ -105,20 +109,17 @@ const ProductsPage = ({match, history}) => {
                     : (
                         <>
 
-                            <Col lg={2} xs={12}
-                                 className=' global_cursor ProductsSideBar_icon pl-4 pt-3 pb-3 mt-lg-4 global_black'>
-                                <h6 className='global_blood-red bg-white' onClick={showSideBar}><span><h3
-                                    className='d-inline global_blood-red'>|||</h3>&nbsp;categories</span>
-                                </h6>
-                            </Col>
-
-                            <Col lg={10} xs={0}> </Col>
-
+                                <Col xs={2}
+                                     className=' global_cursor ProductsSideBar_icon py-2 global_black'>
+                                    <h6 className='global_blood-red bg-white' onClick={showSideBar}><span><h3
+                                        className='d-inline global_blood-red'>|||</h3>&nbsp;categories</span>
+                                    </h6>
+                                </Col>
 
                             {/*===========   SIDE BAR    ============*/}
                             <Row>
                                 <Col
-                                    lg={sideBar && 2}
+                                    // lg={sideBar && 2}
                                     md={sideBar && 3}
                                     xs={sideBar && 5}
                                     className={sideBar ? 'ProductsSideBar_menu active' : 'ProductsSideBar_menu '}
@@ -244,43 +245,49 @@ const ProductsPage = ({match, history}) => {
                                 </Col>
 
                                 <Col
-                                    lg={sideBar ? 9 : 12}
+                                    // lg={sideBar ? 9 : 12}
                                     md={sideBar ? 8 : 12}
                                     xs={sideBar ? 6 : 12}
-                                    className='d-flex justify-content-end border'
+                                    className=''
                                 >
 
                                     {/*     HERO AD    */}
                                     <Row>
-                                        {showAd && (
-                                            <Col xs={12}>
-                                                <button
+                                        <>
+                                            <Col xs={12} className='d-flex justify-content-end'>
+                                                <Button
                                                     onClick={() => {
                                                         setShowAd(!showAd)
                                                     }}
-                                                    className=' bg-transparent global_blood-red border-0 global_cursor'>
-                                                    {showAd && (
-                                                        <>
-                                                            hide
-                                                        </>
+                                                    className=' bg-transparent global_blood-red global_cursor'>
+                                                    {showAd ? (
+                                                        <p>x</p>
+                                                    ) : (
+                                                        <p>^</p>
                                                     )}
-                                                </button>
-                                                <ProductHeroAd products={products}/>
+                                                </Button>
                                             </Col>
-                                        )}
+                                            <Col xs={12}>
 
-                                        <Col xs={11}>
-                                            <ProductsImgDisplay products={products}
-                                                                history={history}
-                                                                match={match}
-                                                                keyword={keyword}
-                                                                pages={pages}
-                                                                page={page}
-                                                                updateCatProp={updateCat}
-                                                                updateManufacturerProp={updateManufacturer}
-                                                                sideBar={sideBar}
-                                            />
-                                        </Col>
+                                                {showAd && (
+                                                    <ProductHeroAd products={products}/>
+                                                )}
+                                            </Col>
+
+
+                                            <Col xs={12}>
+                                                <ProductsImgDisplay products={products}
+                                                                    history={history}
+                                                                    match={match}
+                                                                    keyword={keyword}
+                                                                    pages={pages}
+                                                                    page={page}
+                                                                    updateCatProp={updateCat}
+                                                                    updateManufacturerProp={updateManufacturer}
+                                                                    sideBar={sideBar}
+                                                />
+                                            </Col>
+                                        </>
                                     </Row>
                                 </Col>
                             </Row>
