@@ -11,45 +11,32 @@
 
 .ProductsSideBar_menu.active {
     z-index: 1000;
-    /*width: 20vw;*/
     min-height: 100vh;
     height: 100%;
-    /*display: flex;*/
-    /*justify-content: end;*/
     position: -webkit-sticky;
     position: sticky;
     padding: 1vw 2vw;
-    /*margin: 1vw 2vw;*/
     top: 17vh;
     left: 0;
     transition: 850ms;
     background-color: #fff;
-    /*border: 1px solid black;*/
 }
 
 .ProductsSideBar_menu {
-    /*width: 20vw;*/
     height: 0;
     left: -1000px;
     transition: 850ms;
 }
 
-.ProductsSideBar_search-form {
-    /*border: 2px solid red;*/
-    /*width: available;*/
-}
-
 .ProductsSideBar_search-bar {
     background-color: rgba(0, 0, 0, .1);
     color: black;
-    /*width: 70%;*/
 }
 
 .ProductsSideBar_search-btn {
     padding-top: 1em;
     padding-bottom: 1em;
     color: white;
-    /*width: 30%;*/
 }
 
 .ProductsSideBar_text {
@@ -110,15 +97,9 @@
     }
 
     .ProductsSideBar_menu.active {
-        /*width: 50vw;*/
         top: 6vh;
         background-color: #fff;
-        /*padding-left: 6vw;*/
     }
-
-    /*.ProductsSideBar_menu {*/
-    /*    left: -;*/
-    /*}*/
 
     .ProductsSideBar_text {
         display: flex;
@@ -134,15 +115,7 @@
     }
 
     .ProductsSideBar_menu.active {
-        display: flex;
-        justify-content: end;
-        width: 75vw;
         top: 7vh;
         background-color: #fff;
     }
-
-    .ProductsSideBar_menu {
-        left: -75vw;
-    }
-
 }

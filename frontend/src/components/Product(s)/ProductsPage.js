@@ -36,12 +36,7 @@ const ProductsPage = ({match, history}) => {
 
     useEffect(() => {
         dispatch(listProducts(keyword, pageNumber));
-        // document.addEventListener("scroll", handleScroll);
         window.addEventListener("resize", handleWindowResize);
-        setWidth(window.innerWidth);
-
-        // handleWindowResize();
-        // document.removeEventListener("scroll", handleScroll);// };
     }, [dispatch, updateCat, updateManufacturer, keyword, pageNumber, showAd, sideBar, width]);
 
 
@@ -51,7 +46,7 @@ const ProductsPage = ({match, history}) => {
         } else {
             setSideBar(true)
         }
-        // setWidth(window.innerWidth);
+        setWidth(window.innerWidth);
     };
 
     const handleScroll = e => {
@@ -245,10 +240,8 @@ const ProductsPage = ({match, history}) => {
                                 </Col>
 
                                 <Col
-                                    // lg={sideBar ? 9 : 12}
-                                    md={sideBar ? 8 : 12}
+                                    md={sideBar ? 8 : 11}
                                     xs={sideBar ? 6 : 12}
-                                    className=''
                                 >
 
                                     {/*     HERO AD    */}
