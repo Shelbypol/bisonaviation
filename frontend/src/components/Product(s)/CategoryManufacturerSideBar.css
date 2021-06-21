@@ -83,16 +83,16 @@
 /*}*/
 
 /*PRODUCT CARD*/
-.CatMan_card-text{
-    width: 18vw;
-}
+/*.CatMan_card-text{*/
+/*    width: 18vw;*/
+/*}*/
 
-.CatMan_card-img{
-    height: 20vh;
-    width: 50%;
-    margin-left: 20%;
-    background-color: white;
-}
+/*.CatMan_card-img{*/
+/*    height: 20vh;*/
+/*    width: 50%;*/
+/*    margin-left: 20%;*/
+/*    background-color: white;*/
+/*}*/
 
 /*.CatMan-text{*/
 /*    display: flex;*/
@@ -122,10 +122,10 @@
         width: auto;
     }
 
-    .CatMan_card-img{
-        height: 20vh;
-        margin-left: 20%;
-    }
+    /*.CatMan_card-img{*/
+    /*    height: 20vh;*/
+    /*    margin-left: 20%;*/
+    /*}*/
 
     .CatMan-text{
         display: flex;

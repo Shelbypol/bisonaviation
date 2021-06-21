@@ -29,7 +29,7 @@ const ProductsSearchBox = ({history, searchClasses, formClasses, btnClasses, btn
                     style={inputStyle}
                 >
                 </Form.Control>
-                <Button type='submit' id='StickyHeader_SearchBox_searchImage' size={btnSize} className={btnClasses} style={btnStyle}
+                <Button type='submit' size={btnSize} className={btnClasses} style={btnStyle}
                 >
                     <i className={iconClass}> </i>
                 </Button>

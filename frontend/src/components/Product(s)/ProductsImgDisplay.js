@@ -1,14 +1,14 @@
 import React from "react";
 import {Col, Row} from "react-bootstrap";
 import Paginate from "../Paginate";
-import Product from "../ProductPage/Product";
+import Product from "./Product";
 
 const ProductsImgDisplay = ({sideBar, history, match, updateCatProp, updateManufacturerProp, keyword, pages, page, products}) => {
 
 
     return (
         <>
-                <Row className={` ${sideBar ? (' d-flex justify-content-center bg-white') : ('d-flex justify-content-center bg-white')}`}>
+                <Row className={` ${sideBar && ('d-flex justify-content-center bg-white')}`}>
 
                     {/*CATEGORY*/}
                     {(updateCatProp !== '') && (
