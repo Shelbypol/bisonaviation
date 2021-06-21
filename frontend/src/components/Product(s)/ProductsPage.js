@@ -49,7 +49,7 @@ const ProductsPage = ({match, history}) => {
 
     useEffect(() => {
         dispatch(listProducts(keyword, pageNumber));
-    }, [dispatch, updateCat, updateManufacturer, keyword, pageNumber, showAd]);
+    }, [dispatch, updateCat, updateManufacturer, keyword, pageNumber, showAd, sideBar]);
 
 
 
@@ -110,7 +110,7 @@ const ProductsPage = ({match, history}) => {
                                     xs={sideBar && 5}
                                     className={sideBar ? 'ProductsSideBar_menu active' : 'ProductsSideBar_menu '}
                                     ref={node}
-                                    onClick={(e) => (handleScroll(e))}
+                                    // onClick={(e) => (handleScroll(e))}
                                 >
 
                                     <Route render={({history}) => <ProductsSearchBox history={history}
