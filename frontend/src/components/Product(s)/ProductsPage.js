@@ -105,7 +105,6 @@ const ProductsPage = ({match, history}) => {
                             {/*===========   SIDE BAR    ============*/}
                             <Row>
                                 <Col
-                                    // lg={sideBar && 2}
                                     md={sideBar && 3}
                                     xs={sideBar && 5}
                                     className={sideBar ? 'ProductsSideBar_menu active' : 'ProductsSideBar_menu '}
