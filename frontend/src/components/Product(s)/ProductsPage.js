@@ -45,56 +45,33 @@ const ProductsPage = ({match, history}) => {
         } else {
             setSideBar(true)
         }
-        // return () => window.removeEventListener("resize", handleWindowResize);
-    },[width, sideBar]);
+    },[width]);
 
     useEffect(() => {
         dispatch(listProducts(keyword, pageNumber));
+    }, [dispatch, updateCat, updateManufacturer, keyword, pageNumber, showAd, sideBar]);
 
-
-    }, [dispatch, updateCat, updateManufacturer, keyword, pageNumber, showAd]);
-
-
-    // const windowResize = () => {
-    //     if (window.innerWidth < breakpoint) {
-    //         setSideBar(false)
-    //     } else {
-    //         setSideBar(true)
-    //     }
-    // };
-
-    const handleScroll = e => {
-        // if (node.current.contains(e.target) === false) {
-        //     setSideBar(false)
-        // }else if(node.current.contains(e.target) === null){
-        //     setSideBar(false)
-        // }
-    };
 
 
     //SIDE BAR
     const showSideBar = () => setSideBar(!sideBar);
 
-    // SORT CAT HANDLER
-    const sortByCategoryHandler = (a) => {
-        // setClicked(true);
-        setUpdateManufacturer('');
-        setUpdateCat(a);
-        // handleWindowResize();
-    };
-
     const displayAllHandler = () => {
         setUpdateManufacturer('');
         setUpdateCat('');
-        // handleWindowResize();
     };
+
+    // SORT CAT HANDLER
+    const sortByCategoryHandler = (a) => {
+        setUpdateManufacturer('');
+        setUpdateCat(a);
+    };
+
 
     //  SORT BRAND HANDLER
     const sortByManufacturerHandler = (a) => {
-        // setClicked(true);
         setUpdateCat('');
         setUpdateManufacturer(a);
-        // handleWindowResize();
     };
 
     const manufacturerArr = [...new Set(products.map(product => product.brand))];
@@ -128,12 +105,11 @@ const ProductsPage = ({match, history}) => {
                             {/*===========   SIDE BAR    ============*/}
                             <Row>
                                 <Col
-                                    // lg={sideBar && 2}
                                     md={sideBar && 3}
                                     xs={sideBar && 5}
                                     className={sideBar ? 'ProductsSideBar_menu active' : 'ProductsSideBar_menu '}
                                     ref={node}
-                                    onClick={(e) => (handleScroll(e))}
+                                    // onClick={(e) => (handleScroll(e))}
                                 >
 
                                     <Route render={({history}) => <ProductsSearchBox history={history}
