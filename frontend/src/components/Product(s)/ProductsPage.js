@@ -15,15 +15,18 @@ import SignInDropdown from "../SignIn/SignInDropdown";
 
 const ProductsPage = ({match, history}) => {
 
-    const [sideBar, setSideBar] = useState(true);
-    const [width, setWidth] = useState(window.innerWidth);
+    // const [sideBar, setSideBar] = useState(true);
+    // const [width, setWidth] = useState(window.innerWidth);
+    // const breakpoint = 1000;
 
     const [updateCat, setUpdateCat] = useState('');
     const [updateManufacturer, setUpdateManufacturer] = useState('');
 
     const [showAd, setShowAd] = useState(true);
-
+    const [sideBar, setSideBar] = useState(true);
+    const [width, setWidth] = useState(window.innerWidth);
     const breakpoint = 1000;
+
     const keyword = match.params.keyword;
     const pageNumber = match.params.pageNumber || 1;
 
@@ -34,20 +37,31 @@ const ProductsPage = ({match, history}) => {
 
     const node = useRef();
 
-    useEffect(() => {
-        dispatch(listProducts(keyword, pageNumber));
+    useLayoutEffect(() => {
+        const handleWindowResize = () => setWidth(window.innerWidth);
         window.addEventListener("resize", handleWindowResize);
-    }, [dispatch, updateCat, updateManufacturer, keyword, pageNumber, showAd, sideBar, width]);
-
-
-    const handleWindowResize = () => {
         if (window.innerWidth < breakpoint) {
             setSideBar(false)
         } else {
             setSideBar(true)
         }
-        setWidth(window.innerWidth);
-    };
+        // return () => window.removeEventListener("resize", handleWindowResize);
+    },[width, sideBar]);
+
+    useEffect(() => {
+        dispatch(listProducts(keyword, pageNumber));
+
+
+    }, [dispatch, updateCat, updateManufacturer, keyword, pageNumber, showAd]);
+
+
+    // const windowResize = () => {
+    //     if (window.innerWidth < breakpoint) {
+    //         setSideBar(false)
+    //     } else {
+    //         setSideBar(true)
+    //     }
+    // };
 
     const handleScroll = e => {
         // if (node.current.contains(e.target) === false) {
@@ -104,12 +118,12 @@ const ProductsPage = ({match, history}) => {
                     : (
                         <>
 
-                                <Col xs={2}
-                                     className=' global_cursor ProductsSideBar_icon py-2 global_black'>
-                                    <h6 className='global_blood-red bg-white' onClick={showSideBar}><span><h3
-                                        className='d-inline global_blood-red'>|||</h3>&nbsp;categories</span>
-                                    </h6>
-                                </Col>
+                            <Col xs={2}
+                                 className=' global_cursor ProductsSideBar_icon py-2 global_black'>
+                                <h6 className='global_blood-red bg-white' onClick={showSideBar}><span><h3
+                                    className='d-inline global_blood-red'>|||</h3>&nbsp;categories</span>
+                                </h6>
+                            </Col>
 
                             {/*===========   SIDE BAR    ============*/}
                             <Row>
