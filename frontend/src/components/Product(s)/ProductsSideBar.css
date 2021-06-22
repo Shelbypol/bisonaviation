@@ -9,10 +9,33 @@
     background-color: transparent;
 }
 
+.ProductSideBar_sticky-search{
+    z-index: 1000;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 13vh;
+}
+
+.ProductsSideBar_search-bar {
+    /*background-color: rgba(1,1,1, .7);*/
+    /*background-color: rgba(0, 0, 0, .5);*/
+    color: black;
+    width: 50vw;
+    /*border-left: 2px solid #000;*/
+    border-bottom: 1px solid #000;
+    border-radius: 10%;
+}
+
+.ProductsSideBar_search-btn {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    color: white;
+}
+
 .ProductsSideBar_menu.active {
-    /*z-index: 1000;*/
-    max-height: calc(100vh - 9rem);
+    max-height: calc(100vh - 10rem);
     height: 100%;
+    /*overflow: hidden;*/
     overflow-y: auto;
     position: -webkit-sticky;
     position: sticky;
@@ -28,17 +51,6 @@
     height: 0;
     left: -1000px;
     transition: 850ms;
-}
-
-.ProductsSideBar_search-bar {
-    background-color: rgba(0, 0, 0, .1);
-    color: black;
-}
-
-.ProductsSideBar_search-btn {
-    padding-top: 1em;
-    padding-bottom: 1em;
-    color: white;
 }
 
 .ProductsSideBar_text {
