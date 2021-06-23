@@ -93,200 +93,200 @@ const ProductsPage = ({match, history}) => {
                     )
                     : (
                         <>
-                        <Col xs={2}
-                             className=' global_cursor ProductsSideBar_icon py-2 global_black'>
-                            <h6 className='global_blood-red bg-white' onClick={showSideBar}><span><h3
-                                className='d-inline global_blood-red'>|||</h3>&nbsp;categories</span>
-                            </h6>
-                        </Col>
-                        <Route render={({history}) =>
-                        <Col xs={10} className='d-flex justify-content-end ProductSideBar_sticky-search pr-4'>
-                            <ProductsSearchBox history={history}
-                                                                         formClasses={'pb-2 mt-1'}
-                                                                         searchSize={'sm'}
-                                                                         searchClasses={'ProductsSideBar_search-bar'}
-                                                                         btnSize={'sm'}
-                                                                         btnClasses={'bg-dark text-white ProductsSideBar_search-btn px-3 rounded-right'}
-                                                                         iconClass={'fal fa-search p-0'}
-                        />
-                        </Col>
-                        }
-                        />
+                            <Col xs={12}
+                                 className=' global_cursor ProductsSideBar_icon global_black py-2'>
+                                <h6 className='pl-2 global_blood-red bg-white' onClick={showSideBar}><span><h3
+                                    className='d-inline global_blood-red'>|||</h3></span>
+                                </h6>
+                            {/*</Col>*/}
+                            <Route render={({history}) =>
+                                // <Col xs={11} className='d-flex justify-content-start ProductSideBar_sticky-search'>
+                                    <ProductsSearchBox history={history}
+                                                       formClasses={'pr-2'}
+                                                       searchSize={'sm'}
+                                                       searchClasses={'ProductsSideBar_search-bar'}
+                                                       btnSize={'sm'}
+                                                       btnClasses={'ProductsSideBar_search-btn px-3 rounded-right'}
+                                                       iconClass={'fal fa-search p-0 global_goldenrod'}
+                                    />
+                                // </Col>
+                            }
+                            />
 
-                        {/*</Col>*/}
+                            </Col>
 
-            {/*===========   SIDE BAR    ============*/}
-                <Row>
-                <Col
-                md={sideBar && 2}
-                xs={sideBar && 5}
-                className={sideBar ? 'ProductsSideBar_menu active' : 'ProductsSideBar_menu '}
-                ref={node}
-                // onClick={(e) => (handleScroll(e))}
-                >
-
-                {/*<Route render={({history}) => <ProductsSearchBox history={history}*/}
-                {/*                                                 formClasses={'pb-2 mt-1'}*/}
-                {/*                                                 searchSize={'sm'}*/}
-                {/*                                                 searchClasses={'py-0 ProductsSideBar_search-bar'}*/}
-                {/*                                                 btnSize={'sm'}*/}
-                {/*                                                 btnClasses={'bg-dark text-white ProductsSideBar_search-btn px-1 rounded-right'}*/}
-                {/*                                                 iconClass={'fal fa-search p-0'}*/}
-                {/*/>*/}
-                {/*}*/}
-                {/*/>*/}
-
-                {(updateManufacturer !== '' || updateCat !== '') && (
-                    <>
-                        <Row className='global_accentFont ProductsSideBar_text py-2 '>
-                            <h4 className=' global_cursor global_blood-red'>{updateManufacturer || updateCat}</h4>
-                        </Row>
-
-                        {/* ALL PRODUCTS*/}
-                        <Row
-                            className='global_accentFont'
-                            onClick={displayAllHandler}>
-                            <h6 className='global_cursor ProductsSideBar_text ProductsSideBar_sub-titles'>
-                                All Products
-                            </h6>
-                        </Row>
-
-                        {/*   ALL CATEGORIES  */}
-                        <Row className='global_accentFont'>
-                            <h6 className='global_cursor ProductsSideBar_text ProductsSideBar_sub-titles'>Categories</h6>
-                        </Row>
-
-                        <Row className='ProductsSideBar_items-bg'>
-                            {catArr.map((product, index) => (
-                                <Col xs={12}
-                                     onClick={(ev) => sortByCategoryHandler(product, ev)}
-                                     className='btn btn-block global_cursor ProductsSideBar_text ProductsSideBar_items'
-                                     type='button'
-                                     key={index}
+                            {/*===========   SIDE BAR    ============*/}
+                            <Row>
+                                <Col
+                                    md={sideBar && 2}
+                                    xs={sideBar && 5}
+                                    className={sideBar ? 'ProductsSideBar_menu active' : 'ProductsSideBar_menu '}
+                                    ref={node}
+                                    // onClick={(e) => (handleScroll(e))}
                                 >
-                                    {product}
+
+                                    {/*<Route render={({history}) => <ProductsSearchBox history={history}*/}
+                                    {/*                                                 formClasses={'pb-2 mt-1'}*/}
+                                    {/*                                                 searchSize={'sm'}*/}
+                                    {/*                                                 searchClasses={'py-0 ProductsSideBar_search-bar'}*/}
+                                    {/*                                                 btnSize={'sm'}*/}
+                                    {/*                                                 btnClasses={'bg-dark text-white ProductsSideBar_search-btn px-1 rounded-right'}*/}
+                                    {/*                                                 iconClass={'fal fa-search p-0'}*/}
+                                    {/*/>*/}
+                                    {/*}*/}
+                                    {/*/>*/}
+
+                                    {(updateManufacturer !== '' || updateCat !== '') && (
+                                        <>
+                                            <Row className='global_accentFont ProductsSideBar_text py-2 '>
+                                                <h4 className=' global_cursor global_blood-red'>{updateManufacturer || updateCat}</h4>
+                                            </Row>
+
+                                            {/* ALL PRODUCTS*/}
+                                            <Row
+                                                className='global_accentFont'
+                                                onClick={displayAllHandler}>
+                                                <h6 className='global_cursor ProductsSideBar_text ProductsSideBar_sub-titles'>
+                                                    All Products
+                                                </h6>
+                                            </Row>
+
+                                            {/*   ALL CATEGORIES  */}
+                                            <Row className='global_accentFont'>
+                                                <h6 className='global_cursor ProductsSideBar_text ProductsSideBar_sub-titles'>Categories</h6>
+                                            </Row>
+
+                                            <Row className='ProductsSideBar_items-bg'>
+                                                {catArr.map((product, index) => (
+                                                    <Col xs={12}
+                                                         onClick={(ev) => sortByCategoryHandler(product, ev)}
+                                                         className='btn btn-block global_cursor ProductsSideBar_text ProductsSideBar_items'
+                                                         type='button'
+                                                         key={index}
+                                                    >
+                                                        {product}
+                                                    </Col>
+                                                ))}
+                                            </Row>
+
+                                            {/*   ALL MANUFACTURES  */}
+                                            <Row className='global_accentFont mt-4'>
+                                                <h6 className='global_cursor ProductsSideBar_text ProductsSideBar_sub-titles'>Manufactures</h6>
+                                            </Row>
+
+                                            <Row className='ProductsSideBar_items-bg'>
+                                                {manufacturerArr.map((product, index) => (
+                                                    <Col xs={12}
+                                                         onClick={(ev) => sortByManufacturerHandler(product, ev)}
+                                                         className='btn btn-block global_cursor ProductsSideBar_text ProductsSideBar_items'
+                                                         type='button'
+                                                         key={index}
+                                                    >
+                                                        {product}
+                                                    </Col>
+                                                ))}
+                                            </Row>
+                                        </>
+                                    )}
+
+                                    {/*==============================================================================*/}
+
+                                    {/*    ALL CAT & ALL MAN INITIAL DISPLAY    */}
+                                    {(updateCat === '' && updateManufacturer === '') && (
+                                        <>
+                                            {/* ALL PRODUCTS*/}
+                                            <Row
+                                                className='global_accentFont'
+                                                onClick={displayAllHandler}>
+                                                <h6 className='global_cursor ProductsSideBar_text ProductsSideBar_sub-titles'>All
+                                                    Products</h6>
+                                            </Row>
+
+                                            <Row
+                                                className='global_accentFont'>
+                                                <h6 className='global_cursor ProductsSideBar_text ProductsSideBar_sub-titles'>Categories</h6>
+                                            </Row>
+
+                                            <Row className='ProductsSideBar_items-bg'>
+                                                {catArr.map((product, index) => (
+                                                    <Col xs={12}
+                                                         onClick={(ev) => sortByCategoryHandler(product, ev)}
+                                                         className='btn btn-block global_cursor ProductsSideBar_text ProductsSideBar_items'
+                                                         type='button'
+                                                         key={index}
+                                                    >
+                                                        {product}
+                                                    </Col>
+                                                ))}
+                                            </Row>
+
+                                            <Row
+                                                className='global_accentFont mt-3 ProductsSideBar_text global_cursor '>
+                                                <h6 onClick={displayAllHandler}
+                                                    className='ProductsSideBar_sub-titles'>Manufacturers</h6>
+                                            </Row>
+
+                                            <Row className='ProductsSideBar_items-bg'>
+                                                {manufacturerArr.map((product, index) => (
+                                                    <Col xs={12}
+                                                         onClick={(ev) => sortByManufacturerHandler(product, ev)}
+                                                         className='btn btn-block global_cursor ProductsSideBar_text ProductsSideBar_items'
+                                                         type='button'
+                                                         key={index}
+                                                    >
+                                                        {product}
+                                                    </Col>
+                                                ))}
+                                            </Row>
+                                        </>
+                                    )}
                                 </Col>
-                            ))}
-                        </Row>
 
-                        {/*   ALL MANUFACTURES  */}
-                        <Row className='global_accentFont mt-4'>
-                            <h6 className='global_cursor ProductsSideBar_text ProductsSideBar_sub-titles'>Manufactures</h6>
-                        </Row>
-
-                        <Row className='ProductsSideBar_items-bg'>
-                            {manufacturerArr.map((product, index) => (
-                                <Col xs={12}
-                                     onClick={(ev) => sortByManufacturerHandler(product, ev)}
-                                     className='btn btn-block global_cursor ProductsSideBar_text ProductsSideBar_items'
-                                     type='button'
-                                     key={index}
+                                <Col
+                                    md={sideBar ? 10 : 11}
+                                    xs={sideBar ? 6 : 12}
                                 >
-                                    {product}
+
+                                    {/*     HERO AD    */}
+                                    <Row className='d-flex justify-content-center border'>
+                                        <>
+                                            <Col xs={11} className='d-flex justify-content-end pr-3'>
+                                                <Button
+                                                    onClick={() => {
+                                                        setShowAd(!showAd)
+                                                    }}
+                                                    className=' bg-transparent global_blood-red global_cursor'>
+                                                    {showAd && (
+                                                        <p>x</p>
+                                                    )}
+                                                </Button>
+                                            </Col>
+                                            <Col xs={11} className='d-flex justify-content-center px-1'>
+
+                                                {showAd && (
+                                                    <ProductHeroAd products={products}/>
+                                                )}
+                                            </Col>
+
+
+                                            <Col xs={12} className='d-flex justify-content-center'>
+                                                <ProductsImgDisplay products={products}
+                                                                    history={history}
+                                                                    match={match}
+                                                                    keyword={keyword}
+                                                                    pages={pages}
+                                                                    page={page}
+                                                                    updateCatProp={updateCat}
+                                                                    updateManufacturerProp={updateManufacturer}
+                                                                    sideBar={sideBar}
+                                                />
+                                            </Col>
+                                        </>
+                                    </Row>
                                 </Col>
-                            ))}
-                        </Row>
-                    </>
-                )}
-
-                {/*==============================================================================*/}
-
-                {/*    ALL CAT & ALL MAN INITIAL DISPLAY    */}
-                {(updateCat === '' && updateManufacturer === '') && (
-                    <>
-                        {/* ALL PRODUCTS*/}
-                        <Row
-                            className='global_accentFont'
-                            onClick={displayAllHandler}>
-                            <h6 className='global_cursor ProductsSideBar_text ProductsSideBar_sub-titles'>All
-                                Products</h6>
-                        </Row>
-
-                        <Row
-                            className='global_accentFont'>
-                            <h6 className='global_cursor ProductsSideBar_text ProductsSideBar_sub-titles'>Categories</h6>
-                        </Row>
-
-                        <Row className='ProductsSideBar_items-bg'>
-                            {catArr.map((product, index) => (
-                                <Col xs={12}
-                                     onClick={(ev) => sortByCategoryHandler(product, ev)}
-                                     className='btn btn-block global_cursor ProductsSideBar_text ProductsSideBar_items'
-                                     type='button'
-                                     key={index}
-                                >
-                                    {product}
-                                </Col>
-                            ))}
-                        </Row>
-
-                        <Row
-                            className='global_accentFont mt-3 ProductsSideBar_text global_cursor '>
-                            <h6 onClick={displayAllHandler}
-                                className='ProductsSideBar_sub-titles'>Manufacturers</h6>
-                        </Row>
-
-                        <Row className='ProductsSideBar_items-bg'>
-                            {manufacturerArr.map((product, index) => (
-                                <Col xs={12}
-                                     onClick={(ev) => sortByManufacturerHandler(product, ev)}
-                                     className='btn btn-block global_cursor ProductsSideBar_text ProductsSideBar_items'
-                                     type='button'
-                                     key={index}
-                                >
-                                    {product}
-                                </Col>
-                            ))}
-                        </Row>
-                    </>
-                )}
-                </Col>
-
-                <Col
-                md={sideBar ? 10 : 11}
-                xs={sideBar ? 6 : 12}
-                >
-
-                {/*     HERO AD    */}
-                <Row className='d-flex justify-content-center border'>
-                <>
-                <Col xs={11} className='d-flex justify-content-end pr-3'>
-                <Button
-                onClick={() => {
-                setShowAd(!showAd)
-            }}
-                className=' bg-transparent global_blood-red global_cursor'>
-                {showAd && (
-                    <p>x</p>
-                )}
-                </Button>
-                </Col>
-                <Col xs={11} className='d-flex justify-content-center px-1'>
-
-                {showAd && (
-                    <ProductHeroAd products={products}/>
-                )}
-                </Col>
-
-
-                <Col xs={12} className='d-flex justify-content-center'>
-                <ProductsImgDisplay products={products}
-                history={history}
-                match={match}
-                keyword={keyword}
-                pages={pages}
-                page={page}
-                updateCatProp={updateCat}
-                updateManufacturerProp={updateManufacturer}
-                sideBar={sideBar}
-                />
-                </Col>
-                </>
-                </Row>
-                </Col>
-                </Row>
-                </>
-                )}
+                            </Row>
+                        </>
+                    )}
         </>
     )
 };
