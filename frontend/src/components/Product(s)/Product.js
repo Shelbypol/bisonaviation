@@ -93,7 +93,7 @@ const Product = ({ product, history, match}) => {
                         (
                             <Card.Text className='pt-3 CatMan_card-text'>
                                 {`${product.description.substring(0, MAX_LENGTH)}`}<Link
-                                to={`/product/${product._id}`} className='global_bisonRedTxt'><br/>...Read
+                                to={`/product/${product._id}`} className='global_blood-red'><br/>...Read
                                 more</Link>
                             </Card.Text>
                         ) :

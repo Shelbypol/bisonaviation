@@ -6,12 +6,10 @@ import ProductsImgDisplay from "./ProductsImgDisplay";
 import Loader from "../Loader";
 import Message from "../Message";
 import './ProductsSideBar.css'
-import './CategoryManufacturerSideBar.css'
 import {Route} from "react-router-dom";
 import ProductsSearchBox from "./ProductsSearchBox";
 import Paginate from "../Paginate";
 import ProductHeroAd from "./ProductHeroAd";
-import SignInDropdown from "../SignIn/SignInDropdown";
 
 const ProductsPage = ({match, history}) => {
 
@@ -230,13 +228,11 @@ const ProductsPage = ({match, history}) => {
                                     )}
                                 </Col>
 
-                                <Col
-                                    md={sideBar ? 10 : 11}
-                                    xs={sideBar ? 10 : 12}
-                                >
+                                {/*     AD & PRODUCTS DISPLAY    */}
+                                <Col xs={sideBar ? 10 : 12}>
 
-                                    {/*     AD & PRODUCTS DISPLAY    */}
-                                    <Row className={sideBar ? `d-flex justify-content-center` : `d-flex justify-content-end`}>
+                                    <Row
+                                        className={sideBar ? `d-flex justify-content-center` : `d-flex justify-content-center`}>
                                         <Col xs={11} className='d-flex justify-content-end'>
                                             <Button
                                                 onClick={() => {

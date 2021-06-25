@@ -6,7 +6,6 @@ import ProductDisplayByCatMan from "./ProductsImgDisplay";
 import Loader from "../Loader";
 import Message from "../Message";
 import './ProductsSideBar.css'
-import './CategoryManufacturerSideBar.css'
 import ad1 from '../../images/uploads copy/image-1608754595861.jpg';
 import ad2 from '../../images/uploads copy/image-1608754966157.jpg';
 import ad3 from '../../images/uploads copy/image-1608754463191.jpg';
