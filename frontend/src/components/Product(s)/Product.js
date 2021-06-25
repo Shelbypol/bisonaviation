@@ -41,7 +41,7 @@ const Product = ({product, history, match}) => {
     };
 
 
-    const MAX_LENGTH = 50;
+    const MAX_LENGTH = 75;
 
     return (
         <>
