@@ -7,7 +7,7 @@ import {listMyWishLists} from "../../actions/wishListActions";
 import Message from "../Message";
 
 
-const Product = ({ product, history, match}) => {
+const Product = ({product, history, match}) => {
 
     const [activeHeart, setActiveHeart] = useState(false);
 
@@ -41,54 +41,56 @@ const Product = ({ product, history, match}) => {
     };
 
 
-    const MAX_LENGTH = 75;
+    const MAX_LENGTH = 50;
 
     return (
         <>
             <Col sm={10} className='my-5'>
-                {/*<Card >*/}
 
-                    <Link to={`/product/${product._id}`}>
-                        <Card.Img src={product.image} alt={product.name}/>
-                    </Link>
+                <Link to={`/product/${product._id}`}>
+                    <Card.Img src={product.image} alt={product.name}/>
+                </Link>
 
-                    <Row className='px-2 pb-3'>
-                        <Col xs={6} className='d-flex justify-content-start'>
-                            <>
-                                {activeHeart ? (
-                                        <>
+                <Row className='py-3'>
+                    <Col xs={6} className='d-flex justify-content-start'>
+                        <>
+                            {activeHeart ? (
+                                <>
                                             <span onClick={unlike}
                                                   className='global_cursor'
                                                   style={{color: 'rgba(200, 0, 0, 1)', fontSize: '1.3em'}}>
                                             <i className="mt-auto fas fa-heart"> </i>
                                             </span>
-                                        </>
-                                    ) : (
+                                </>
+                            ) : (
 
-                                        <span className='global_cursor' onClick={like}
-                                              style={{fontSize: '1.3em'}}>
+                                <span className='global_cursor' onClick={like}
+                                      style={{fontSize: '1.3em'}}>
                                         <i className="mt-auto fas fa-heart "> </i>
                                     </span>
-                                )}
-                            </>
-                        </Col>
-                        <Col xs={6} className='font-weight-bold d-flex justify-content-end'>
-                            ${product.price}
-                        </Col>
-                    </Row>
+                            )}
+                        </>
+                    </Col>
+                    <Col xs={6} className='font-weight-bold d-flex justify-content-end'>
+                        ${product.price}
+                    </Col>
+                </Row>
 
-                    <Link to={`/product/${product._id}`} className='pt-3'>
-                        <Card.Title
-                            className=' font-weight-bolder global_blood-red'>{product.name}</Card.Title>
-                    </Link>
 
-                    <Card.Subtitle>
-                        {product.brand}
-                    </Card.Subtitle>
+                <Link to={`/product/${product._id}`} className='pt-3'>
+                    <Card.Title
+                        className=' font-weight-bolder global_blood-red'>{product.name}</Card.Title>
+                </Link>
 
+                <Card.Subtitle>
+                    {product.brand}
+                </Card.Subtitle>
+
+                <Row>
+                    <Col xs={12} className='p-3'>
                     {product.description.length > MAX_LENGTH ?
                         (
-                            <Card.Text className='pt-3'>
+                            <Card.Text>
                                 {`${product.description.substring(0, MAX_LENGTH)}`}<Link
                                 to={`/product/${product._id}`} className='global_blood-red'><br/>...Read
                                 more</Link>
@@ -98,9 +100,9 @@ const Product = ({ product, history, match}) => {
                             <p>{product.description}</p>
                         </Card.Text>
                     }
+                    </Col>
+                </Row>
 
-
-                {/*</Card>*/}
             </Col>
 
         </>

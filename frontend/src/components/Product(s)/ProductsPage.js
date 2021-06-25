@@ -251,7 +251,7 @@ const ProductsPage = ({match, history}) => {
                                             )}
                                         </Col>
 
-                                        <Col xs={11} className='px-1'>
+                                        <Col xs={11} className='px-1 '>
                                             <ProductsImgDisplay products={products}
                                                                 history={history}
                                                                 match={match}
