@@ -53,32 +53,31 @@ const ProductsPage = ({match, history}) => {
     //SIDE BAR
     const showSideBar = () => {
         setSideBar(!sideBar);
-
         if (window.innerWidth < breakpoint) {
                 window.scrollTo(0, 0)
         }
     };
 
     const displayAllHandler = () => {
-        setUpdateManufacturer('');
+        setUpdateManufacturer('').sort();
         setUpdateCat('');
     };
 
     // SORT CAT HANDLER
     const sortByCategoryHandler = (a) => {
-        setUpdateManufacturer('');
+        setUpdateManufacturer('').sort();
         setUpdateCat(a);
     };
 
 
     //  SORT BRAND HANDLER
     const sortByManufacturerHandler = (a) => {
-        setUpdateCat('');
+        setUpdateCat('').sort();
         setUpdateManufacturer(a);
     };
 
-    const manufacturerArr = [...new Set(products.map(product => product.brand))];
-    const catArr = [...new Set(products.map(product => product.category))];
+    const manufacturerArr = [...new Set(products.map(product => product.brand))].sort();
+    const catArr = [...new Set(products.map(product => product.category))].sort();
 
 
     return (
