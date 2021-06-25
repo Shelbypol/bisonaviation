@@ -7,7 +7,7 @@ import {listMyWishLists} from "../../actions/wishListActions";
 import Message from "../Message";
 
 
-const Product = ({product, history, match}) => {
+const ProductCard = ({product, history, match}) => {
 
     const [activeHeart, setActiveHeart] = useState(false);
 
@@ -109,4 +109,4 @@ const Product = ({product, history, match}) => {
     )
 };
 
-export default Product
+export default ProductCard

@@ -35,7 +35,7 @@ const getProductById = asyncHandler(async (req, res) => {
         res.json(product)
     }else{
         res.status(404);
-        throw new Error('Product not found')
+        throw new Error('ProductCard not found')
     }
 });
 
@@ -47,10 +47,10 @@ const deleteProduct = asyncHandler(async (req, res) => {
 
     if (product) {
         await product.remove();
-        res.json({ message: 'Product removed'})
+        res.json({ message: 'ProductCard removed'})
     }else{
         res.status(404);
-        throw new Error('Product not found')
+        throw new Error('ProductCard not found')
     }
 });
 
@@ -117,7 +117,7 @@ const updateProduct = asyncHandler(async (req, res) => {
 
     } else {
         res.status(404);
-        throw new Error('Product not found')
+        throw new Error('ProductCard not found')
     }
 
 });
@@ -137,7 +137,7 @@ const createProductReview = asyncHandler(async (req, res) => {
 
         if(alreadyReviewed){
             res.status(400);
-            throw new Error('Product already reviewed')
+            throw new Error('ProductCard already reviewed')
         }
 
         const review = {
@@ -158,7 +158,7 @@ const createProductReview = asyncHandler(async (req, res) => {
         res.status(201).json({ message: 'Review added'})
     } else {
         res.status(404);
-        throw new Error('Product not found')
+        throw new Error('ProductCard not found')
     }
 
 });
