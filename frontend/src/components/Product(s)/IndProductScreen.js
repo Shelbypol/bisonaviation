@@ -12,15 +12,10 @@ import HeaderMobile from "../HeaderFooter/HeaderMobile";
 import HeroJumbotron from "../HeroJumbotron/HeroJumbotron";
 import HeaderDesktop from "../HeaderFooter/HeaderDesktop";
 
-const ProductScreen = ({history, match}) => {
+const IndProductScreen = ({history, match}) => {
     const [width, setWidth] = useState(window.innerWidth);
-    const [qty, setQty] = useState(1);
-    const [rating, setRating] = useState(0);
-    const [comment, setComment] = useState('');
 
     const [activeHeart, setActiveHeart] = useState(false);
-
-    const breakpoint = 1000;
 
     const wishListMy = useSelector(state => state.wishListMy);
     const {loading: loadingOrders, error: errorOrders, wishList} = wishListMy;
@@ -43,8 +38,6 @@ const ProductScreen = ({history, match}) => {
     useEffect(() => {
         if (successProductReview) {
             alert('Review Submitted!');
-            setRating(0);
-            setComment('');
             dispatch({type: PRODUCT_CREATE_REVIEW_RESET})
         }
         dispatch(listProductDetails(match.params.id));
@@ -82,7 +75,6 @@ const ProductScreen = ({history, match}) => {
         );
     }
 
-
     useLayoutEffect(() => {
         window.scrollTo(0, 0)
     });
@@ -94,15 +86,6 @@ const ProductScreen = ({history, match}) => {
 
     return (
         <>
-
-            {width < breakpoint ? (
-                <HeaderMobile/>
-            ) : (
-                <>
-                    <HeaderDesktop/>
-                </>
-            )}
-
             <HeroJumbotron
                 img={''}
                 showImg={false}
@@ -207,4 +190,4 @@ const ProductScreen = ({history, match}) => {
     )
 };
 
-export default ProductScreen
+export default IndProductScreen
