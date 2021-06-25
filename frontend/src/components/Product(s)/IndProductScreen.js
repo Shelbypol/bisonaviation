@@ -8,9 +8,6 @@ import {listProductDetails} from '../../actions/productActions'
 import Message from '../Message'
 import Loader from '../Loader'
 import Meta from "../Meta";
-import HeaderMobile from "../HeaderFooter/HeaderMobile";
-import HeroJumbotron from "../HeroJumbotron/HeroJumbotron";
-import HeaderDesktop from "../HeaderFooter/HeaderDesktop";
 
 const IndProductScreen = ({history, match}) => {
     const [width, setWidth] = useState(window.innerWidth);
@@ -86,11 +83,11 @@ const IndProductScreen = ({history, match}) => {
 
     return (
         <>
-            <HeroJumbotron
-                img={''}
-                showImg={false}
-                title={''}
-            />
+            {/*<HeroJumbotron*/}
+            {/*    img={''}*/}
+            {/*    showImg={false}*/}
+            {/*    title={''}*/}
+            {/*/>*/}
 
             <Jumbotron className='bg-white px-0 mt-n3 pb-5 '>
                 <Container className='mb-0 px-0 pt-3 pb-0' >
