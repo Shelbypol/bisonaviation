@@ -45,18 +45,16 @@ const Product = ({ product, history, match}) => {
 
     return (
         <>
-            <Col sm={12} className='my-5 d-flex justify-content-center align-content-center'>
-                <Card className='border-0 CatMan_card'>
+            <Col sm={10} className='my-5'>
+                {/*<Card >*/}
 
                     <Link to={`/product/${product._id}`}>
-                        <Card.Img src={product.image} alt={product.name} className='CatMan_card-img'/>
+                        <Card.Img src={product.image} alt={product.name}/>
                     </Link>
 
-                    <Row>
-                        <Col xs={6} lg={6} className='pt-3 d-flex justify-content-start'>
-                            {/* LIKE BTN */}
+                    <Row className='px-2 pb-3'>
+                        <Col xs={6} className='d-flex justify-content-start'>
                             <>
-
                                 {activeHeart ? (
                                         <>
                                             <span onClick={unlike}
@@ -74,15 +72,14 @@ const Product = ({ product, history, match}) => {
                                 )}
                             </>
                         </Col>
-                        <Col xs={6} lg={6} className='font-weight-bold pt-3 d-flex justify-content-center'>
-
+                        <Col xs={6} className='font-weight-bold d-flex justify-content-end'>
                             ${product.price}
                         </Col>
                     </Row>
 
                     <Link to={`/product/${product._id}`} className='pt-3'>
                         <Card.Title
-                            className='CatMan_card-text font-weight-bolder global_blood-red'>{product.name}</Card.Title>
+                            className=' font-weight-bolder global_blood-red'>{product.name}</Card.Title>
                     </Link>
 
                     <Card.Subtitle>
@@ -91,19 +88,19 @@ const Product = ({ product, history, match}) => {
 
                     {product.description.length > MAX_LENGTH ?
                         (
-                            <Card.Text className='pt-3 CatMan_card-text'>
+                            <Card.Text className='pt-3'>
                                 {`${product.description.substring(0, MAX_LENGTH)}`}<Link
                                 to={`/product/${product._id}`} className='global_blood-red'><br/>...Read
                                 more</Link>
                             </Card.Text>
                         ) :
-                        <Card.Text className='CatMan_card-text'>
+                        <Card.Text>
                             <p>{product.description}</p>
                         </Card.Text>
                     }
 
 
-                </Card>
+                {/*</Card>*/}
             </Col>
 
         </>
