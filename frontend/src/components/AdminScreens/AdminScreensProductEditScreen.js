@@ -113,7 +113,7 @@ const AdminScreensProductEditScreen = ({match, history}) => {
         <Container className='bg-transparent text-white min-vh-100 min-vw-100 py-5'>
             {/*<Row className='my-0 px-3 py-5'>*/}
             {/*    <Col xs={10} className='d-flex justify-content-start'>*/}
-            {/*        <h4 className='text-white'>Edit Product</h4>*/}
+            {/*        <h4 className='text-white'>Edit ProductCard</h4>*/}
             {/*    </Col>*/}
             {/*    <Col xs={2} className='d-flex justify-content-end'>*/}
             {/*        <Link to='/admin/productlist' className='btn global_goldenrodtxtborder-btn rounded py-1 px-2'>*/}

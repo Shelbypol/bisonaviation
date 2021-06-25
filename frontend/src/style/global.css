@@ -90,10 +90,10 @@ p{
 }
 /*==========    BLACK*/
 .global_black-bg{
-    background-color: black;
+    background-color: #000;
 }
 .global_black{
-    color: black;
+    color: #000;
 }
 /*==========    BLUE*/
 .global_blue{

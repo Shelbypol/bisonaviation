@@ -1,21 +1,21 @@
 import React from "react";
 import {Col, Row} from "react-bootstrap";
 import Paginate from "../Paginate";
-import Product from "./Product";
+import ProductCard from "./ProductCard";
 
 const ProductsImgDisplay = ({sideBar, history, match, updateCatProp, updateManufacturerProp, keyword, pages, page, products}) => {
 
 
     return (
         <>
-                <Row className={` ${sideBar && ('d-flex justify-content-center bg-white')}`}>
+                <Row>
 
                     {/*CATEGORY*/}
                     {(updateCatProp !== '') && (
                         <>
                             {products.filter(product => product.category === updateCatProp).map(filteredProduct => (
                                 <Col key={filteredProduct._id} lg={sideBar ? 3 : 2} md={4} sm={12}>
-                                    <Product product={filteredProduct} history={history} match={match}/>
+                                    <ProductCard product={filteredProduct} history={history} match={match}/>
                                 </Col>
 
                             ))}
@@ -26,7 +26,7 @@ const ProductsImgDisplay = ({sideBar, history, match, updateCatProp, updateManuf
                         <>
                             {products.filter(product => product.brand === updateManufacturerProp).map(filteredProduct => (
                                 <Col key={filteredProduct._id} lg={sideBar ? 3 : 2} md={4} sm={12}>
-                                    <Product product={filteredProduct} history={history} match={match}/>
+                                    <ProductCard product={filteredProduct} history={history} match={match}/>
                                 </Col>
                             ))}
                         </>
@@ -36,8 +36,8 @@ const ProductsImgDisplay = ({sideBar, history, match, updateCatProp, updateManuf
                         <>
                             {products.map(product => (
                                 <Col key={product._id} lg={sideBar ? 3 : 2} md={4} sm={12}>
-                                    <Product product={product} history={history} match={match}
-                                             product_id={product._id}/>
+                                    <ProductCard product={product} history={history} match={match}
+                                                 product_id={product._id}/>
                                 </Col>
                             ))}
                         </>

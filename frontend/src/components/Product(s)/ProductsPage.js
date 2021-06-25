@@ -6,12 +6,10 @@ import ProductsImgDisplay from "./ProductsImgDisplay";
 import Loader from "../Loader";
 import Message from "../Message";
 import './ProductsSideBar.css'
-import './CategoryManufacturerSideBar.css'
 import {Route} from "react-router-dom";
 import ProductsSearchBox from "./ProductsSearchBox";
 import Paginate from "../Paginate";
 import ProductHeroAd from "./ProductHeroAd";
-import SignInDropdown from "../SignIn/SignInDropdown";
 
 const ProductsPage = ({match, history}) => {
 
@@ -45,26 +43,32 @@ const ProductsPage = ({match, history}) => {
         } else {
             setSideBar(true)
         }
-    },[width]);
+    }, [width]);
 
     useEffect(() => {
         dispatch(listProducts(keyword, pageNumber));
     }, [dispatch, updateCat, updateManufacturer, keyword, pageNumber, showAd, sideBar]);
 
 
-
     //SIDE BAR
-    const showSideBar = () => setSideBar(!sideBar);
+    const showSideBar = () => {
+        setSideBar(!sideBar);
+        if (window.innerWidth < breakpoint) {
+                window.scrollTo(0, 0)
+        }
+    };
 
     const displayAllHandler = () => {
         setUpdateManufacturer('');
         setUpdateCat('');
+        setShowAd(true);
     };
 
     // SORT CAT HANDLER
     const sortByCategoryHandler = (a) => {
         setUpdateManufacturer('');
         setUpdateCat(a);
+        setShowAd(false);
     };
 
 
@@ -72,10 +76,11 @@ const ProductsPage = ({match, history}) => {
     const sortByManufacturerHandler = (a) => {
         setUpdateCat('');
         setUpdateManufacturer(a);
+        setShowAd(false);
     };
 
-    const manufacturerArr = [...new Set(products.map(product => product.brand))];
-    const catArr = [...new Set(products.map(product => product.category))];
+    const manufacturerArr = [...new Set(products.map(product => product.brand))].sort();
+    const catArr = [...new Set(products.map(product => product.category))].sort();
 
 
     return (
@@ -94,34 +99,36 @@ const ProductsPage = ({match, history}) => {
                     )
                     : (
                         <>
-
-                            <Col xs={2}
-                                 className=' global_cursor ProductsSideBar_icon py-2 global_black'>
-                                <h6 className='global_blood-red bg-white' onClick={showSideBar}><span><h3
-                                    className='d-inline global_blood-red'>|||</h3>&nbsp;categories</span>
+                            <Col xs={12}
+                                 className='global_cursor ProductsSideBar_hamburger-menu global_black py-2'>
+                                <h6 className='pl-2 global_blood-red bg-white' onClick={showSideBar}><span><h3
+                                    className='d-inline global_blood-red'>|||</h3></span>
                                 </h6>
+                                <Route render={({history}) =>
+                                    <ProductsSearchBox history={history}
+                                                       formClasses={'pr-2'}
+                                                       searchSize={'sm'}
+                                                       searchClasses={'ProductsSideBar_search-bar'}
+                                                       btnSize={'sm'}
+                                                       btnClasses={'ProductsSideBar_search-btn px-3 rounded-right'}
+                                                       iconClass={'fal fa-search p-0 global_goldenrod'}
+                                    />
+                                }
+                                />
+
                             </Col>
 
                             {/*===========   SIDE BAR    ============*/}
-                            <Row>
+                            <Row className=''>
                                 <Col
-                                    md={sideBar && 3}
-                                    xs={sideBar && 5}
+                                    md={sideBar && 2}
+                                    xs={sideBar && 12}
                                     className={sideBar ? 'ProductsSideBar_menu active' : 'ProductsSideBar_menu '}
                                     ref={node}
                                     // onClick={(e) => (handleScroll(e))}
                                 >
 
-                                    <Route render={({history}) => <ProductsSearchBox history={history}
-                                                                                     formClasses={'pb-2 mt-1'}
-                                                                                     searchSize={'sm'}
-                                                                                     searchClasses={'py-0 ProductsSideBar_search-bar'}
-                                                                                     btnSize={'sm'}
-                                                                                     btnClasses={'bg-dark text-white ProductsSideBar_search-btn px-1 rounded-right'}
-                                                                                     iconClass={'fal fa-search p-0'}
-                                    />
-                                    }
-                                    />
+                                    {/*/>*/}
 
                                     {(updateManufacturer !== '' || updateCat !== '') && (
                                         <>
@@ -229,48 +236,42 @@ const ProductsPage = ({match, history}) => {
                                     )}
                                 </Col>
 
-                                <Col
-                                    md={sideBar ? 8 : 11}
-                                    xs={sideBar ? 6 : 12}
+                                {/*     AD & PRODUCTS DISPLAY    */}
+                                <Col md={sideBar ? 10 : 12}
+                                     xs={!sideBar && 12}
                                 >
-
-                                    {/*     HERO AD    */}
-                                    <Row>
-                                        <>
-                                            <Col xs={12} className='d-flex justify-content-end'>
-                                                <Button
-                                                    onClick={() => {
-                                                        setShowAd(!showAd)
-                                                    }}
-                                                    className=' bg-transparent global_blood-red global_cursor'>
-                                                    {showAd ? (
-                                                        <p>x</p>
-                                                    ) : (
-                                                        <p>^</p>
-                                                    )}
-                                                </Button>
-                                            </Col>
-                                            <Col xs={12}>
-
+                                    <Row
+                                        className='d-flex justify-content-center'>
+                                        <Col xs={11} className='d-flex justify-content-end'>
+                                            <Button
+                                                onClick={() => {
+                                                    setShowAd(!showAd)
+                                                }}
+                                                className='bg-transparent global_blood-red global_cursor'>
                                                 {showAd && (
-                                                    <ProductHeroAd products={products}/>
+                                                    <p>x</p>
                                                 )}
-                                            </Col>
+                                            </Button>
+                                        </Col>
+                                        <Col xs={11} className='d-flex justify-content-center px-1'>
 
+                                            {showAd && (
+                                                <ProductHeroAd products={products}/>
+                                            )}
+                                        </Col>
 
-                                            <Col xs={12}>
-                                                <ProductsImgDisplay products={products}
-                                                                    history={history}
-                                                                    match={match}
-                                                                    keyword={keyword}
-                                                                    pages={pages}
-                                                                    page={page}
-                                                                    updateCatProp={updateCat}
-                                                                    updateManufacturerProp={updateManufacturer}
-                                                                    sideBar={sideBar}
-                                                />
-                                            </Col>
-                                        </>
+                                        <Col xs={11} className='px-1 global_white-bg'>
+                                            <ProductsImgDisplay products={products}
+                                                                history={history}
+                                                                match={match}
+                                                                keyword={keyword}
+                                                                pages={pages}
+                                                                page={page}
+                                                                updateCatProp={updateCat}
+                                                                updateManufacturerProp={updateManufacturer}
+                                                                sideBar={sideBar}
+                                            />
+                                        </Col>
                                     </Row>
                                 </Col>
                             </Row>

@@ -2,7 +2,7 @@ import React, {Fragment} from 'react';
 import {BrowserRouter as Router, Route, Switch,} from 'react-router-dom';
 import Footer from "./components/HeaderFooter/Footer";
 import ProductsScreen from "./components/Product(s)/ProductsScreen";
-import ProductScreen from "./components/Product(s)/ProductScreen";
+import IndProductScreen from "./components/Product(s)/IndProductScreen";
 import SignInScreen from "./components/SignIn/SignInScreen";
 import RegisterScreen from "./components/Register/RegisterScreen";
 import ProfileScreen from "./components/Profile/ProfileScreen";
@@ -56,7 +56,7 @@ const App = () => {
                     <Route path='/search/:keyword' component={ProductsScreen} exact/>
                     <Route path='/page/:pageNumber' component={ProductsScreen} exact/>
                     <Route path='/search/:keyword/page/:pageNumber' component={ProductsScreen}/>
-                    <Route path='/product/:id' component={ProductScreen}/>
+                    <Route path='/product/:id' component={IndProductScreen}/>
                     <Route path='/wishlist' component={WishListScreen}/>
                 </Switch>
 
