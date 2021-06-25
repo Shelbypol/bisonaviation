@@ -59,21 +59,24 @@ const ProductsPage = ({match, history}) => {
     };
 
     const displayAllHandler = () => {
-        setUpdateManufacturer('').sort();
+        setUpdateManufacturer('');
         setUpdateCat('');
+        setShowAd(true);
     };
 
     // SORT CAT HANDLER
     const sortByCategoryHandler = (a) => {
-        setUpdateManufacturer('').sort();
+        setUpdateManufacturer('');
         setUpdateCat(a);
+        setShowAd(false);
     };
 
 
     //  SORT BRAND HANDLER
     const sortByManufacturerHandler = (a) => {
-        setUpdateCat('').sort();
+        setUpdateCat('');
         setUpdateManufacturer(a);
+        setShowAd(false);
     };
 
     const manufacturerArr = [...new Set(products.map(product => product.brand))].sort();
