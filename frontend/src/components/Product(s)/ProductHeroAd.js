@@ -12,14 +12,6 @@ import ad3 from '../../images/uploads copy/image-1608754463191.jpg';
 
 const ProductHeroAd = ({products}) => {
 
-    const adRow = {
-        height: '36vh',
-    };
-
-    const indAd = {
-        height: '18vh'
-    };
-
 
     // const dispatch = useDispatch();
 
@@ -32,12 +24,10 @@ const ProductHeroAd = ({products}) => {
     // }, [dispatch]);
 
 
-
     return (
         <>
-            <Row style={adRow}>
+            <Row>
                 <Col xs={12} className='d-flex justify-content-end global_white-bg'>
-                {/*<Col xs={12} xl={8} className='d-flex justify-content-end global_white-bg'>*/}
                     <Row>
                         <Col lg={4} xs={12} className='d-flex align-items-center text-center'>
                             <Row>
@@ -56,7 +46,6 @@ const ProductHeroAd = ({products}) => {
                     </Row>
                 </Col>
             </Row>
-
 
 
         </>
