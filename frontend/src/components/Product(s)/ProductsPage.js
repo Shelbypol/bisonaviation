@@ -230,11 +230,10 @@ const ProductsPage = ({match, history}) => {
 
                                 {/*     AD & PRODUCTS DISPLAY    */}
                                 <Col md={sideBar ? 10 : 12}
-                                     xs={!sideBar && 12}>
-                                    {/*md={sideBar && 2}*/}
-                                    {/*xs={sideBar && 12}*/}
+                                     xs={!sideBar && 12}
+                                >
                                     <Row
-                                        className={sideBar ? `d-flex justify-content-center` : `d-flex justify-content-center`}>
+                                        className='d-flex justify-content-center'>
                                         <Col xs={11} className='d-flex justify-content-end'>
                                             <Button
                                                 onClick={() => {

@@ -98,18 +98,7 @@
 @media (max-width: 1150px) {
 
     .ProductsSideBar_hamburger-menu {
-        /*position: -webkit-sticky;*/
-        /*position: sticky;*/
         top: 0;
-        /*display: flex;*/
-        /*justify-content: space-between;*/
-        /*z-index: 1000;*/
-        /*background-color: #fff;*/
-    }
-
-
-    .CatMan_products {
-        display: block;
     }
 
     .ProductsSideBar_icon {
@@ -123,20 +112,15 @@
         background-color: #fff;
     }
 
-    .ProductsSideBar_text {
-        display: flex;
-        justify-content: end;
-    }
 }
 
-@media (max-width: 600px) {
-    /*.ProductsSideBar_icon {*/
-    /*    margin-top: 5vh;*/
-    /*    top: 0;*/
-    /*    background-color: #fff;*/
-    /*}*/
+@media (max-width: 600px)   {
+    .ProductsSideBar_items, .ProductsSideBar_text {
+        padding-left: 15vw;
+    }
 
     .ProductsSideBar_menu.active {
+        /*text-align: center;*/
         top: 7vh;
         background-color: #fff;
     }
