@@ -111,7 +111,10 @@
         top: 6vh;
         background-color: #fff;
     }
+}
 
+
+    @media (max-width: 700px) {
     .ProductsSideBar_items, .ProductsSideBar_text {
         padding-left: 15vw;
     }
