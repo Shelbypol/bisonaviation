@@ -40,7 +40,7 @@ const ProductHeroAd = ({products}) => {
                             </Row>
                         </Col>
                         <Col>
-                            <Image src={ad1} className='rounded w-100'/>
+                            <Image src={ad1} className='rounded w-100 '/>
                         </Col>
 
                     </Row>

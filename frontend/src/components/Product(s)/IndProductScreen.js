@@ -83,14 +83,12 @@ const IndProductScreen = ({history, match}) => {
 
     return (
         <>
-            {/*<HeroJumbotron*/}
-            {/*    img={''}*/}
-            {/*    showImg={false}*/}
-            {/*    title={''}*/}
-            {/*/>*/}
+            {/*<Jumbotron className='bg-white px-0 mt-n3 pb-5 '>*/}
+            {/*    <Container className='mb-0 px-0 pt-3 pb-0'>*/}
 
-            <Jumbotron className='bg-white px-0 mt-n3 pb-5 '>
-                <Container className='mb-0 px-0 pt-3 pb-0' >
+            <Row className='global_white-bg display-flex justify-content-center' style={{minHeight: '100vh'}}>
+                <Col xs={10}>
+
                     <Link className='global_blood-red global_cursor bg-transparent btn btn-light mb-3 mt-4 pb-1 px-1'
                           to='/products'>
                         back
@@ -107,7 +105,7 @@ const IndProductScreen = ({history, match}) => {
                                     <img src={product.image} alt={product.name} className='h-50 w-50'/>
 
                                 </Col>
-                                <Col className=' bg-transparent global_cursor' md={5} xs={12}>
+                                <Col className='bg-transparent global_cursor' md={5} xs={12}>
 
                                     {/*AVAILABLE*/}
                                     <ListGroup variant='flush'>
@@ -119,7 +117,7 @@ const IndProductScreen = ({history, match}) => {
 
                                         {/* NAME */}
                                         <ListGroup.Item
-                                            className='border-0 bg-transparent global_blue ProductScreen_img'>
+                                            className='border-0 bg-transparent global_blood-red ProductScreen_img'>
                                             {product.isPromo && (
                                                 <p className='flag red global_accentFont mb-0 mt-lg-n2 mt-2'
                                                    style={{marginLeft: '-6vw'}}>{product.isPromoType}</p>
@@ -131,7 +129,7 @@ const IndProductScreen = ({history, match}) => {
                                         {/* PART # */}
                                         <ListGroup.Item className='border-0 mb-3 bg-transparent'>
                                             <h5>
-                                        <span className='global_blood-red'>
+                                        <span className='global_black font-weight-bolder'>
                                         Part #:
                                         </span>
                                                 &nbsp; {product.partNumber}
@@ -145,17 +143,18 @@ const IndProductScreen = ({history, match}) => {
                                                     {/* LIKE BTN */}
                                                     {activeHeart ? (
                                                         <>
-                                            <span onClick={unlike}
-                                                  className='global_cursor'
-                                                  style={{color: 'rgba(200, 0, 0, 1)', fontSize: '1.5em'}}>
-                                                <i className="mt-auto fas fa-heart bg-transparent"> </i>
-                                            </span>
+                                                        <span onClick={unlike}
+                                                              className='global_cursor'
+                                                              style={{color: 'rgba(200, 0, 0, 1)', fontSize: '1.5em'}}>
+                                                            <i className="mt-auto fas fa-heart bg-transparent"> </i>
+                                                        </span>
                                                         </>
                                                     ) : (
                                                         <>
-                                            <span className='global_cursor' onClick={like} style={{fontSize: '1.5em'}}>
-                                                <i className="mt-auto fas fa-heart bg-transparent"> </i>
-                                            </span>
+                                                        <span className='global_cursor' onClick={like}
+                                                              style={{fontSize: '1.5em'}}>
+                                                            <i className="mt-auto fas fa-heart bg-transparent"> </i>
+                                                        </span>
                                                         </>
                                                     )}
                                                 </ListGroup.Item>
@@ -181,8 +180,11 @@ const IndProductScreen = ({history, match}) => {
                             </Row>
                         </>
                     )}
-                </Container>
-            </Jumbotron>
+                </Col>
+            </Row>
+
+            {/*    </Container>*/}
+            {/*</Jumbotron>*/}
         </>
     )
 };
