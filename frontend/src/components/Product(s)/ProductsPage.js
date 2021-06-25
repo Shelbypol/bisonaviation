@@ -51,7 +51,13 @@ const ProductsPage = ({match, history}) => {
 
 
     //SIDE BAR
-    const showSideBar = () => setSideBar(!sideBar);
+    const showSideBar = () => {
+        setSideBar(!sideBar);
+
+        if (window.innerWidth < breakpoint) {
+                window.scrollTo(0, 0)
+        }
+    };
 
     const displayAllHandler = () => {
         setUpdateManufacturer('');
@@ -239,7 +245,7 @@ const ProductsPage = ({match, history}) => {
                                                 onClick={() => {
                                                     setShowAd(!showAd)
                                                 }}
-                                                className=' bg-transparent global_blood-red global_cursor'>
+                                                className='bg-transparent global_blood-red global_cursor'>
                                                 {showAd && (
                                                     <p>x</p>
                                                 )}

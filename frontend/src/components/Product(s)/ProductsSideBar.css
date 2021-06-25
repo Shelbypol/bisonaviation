@@ -112,9 +112,6 @@
         background-color: #fff;
     }
 
-}
-
-@media (max-width: 600px)   {
     .ProductsSideBar_items, .ProductsSideBar_text {
         padding-left: 15vw;
     }
@@ -125,3 +122,4 @@
         background-color: #fff;
     }
 }
+
