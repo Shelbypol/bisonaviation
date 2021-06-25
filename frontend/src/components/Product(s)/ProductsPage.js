@@ -92,7 +92,7 @@ const ProductsPage = ({match, history}) => {
                     : (
                         <>
                             <Col xs={12}
-                                 className=' global_cursor ProductsSideBar_icon global_black py-2'>
+                                 className='global_cursor ProductsSideBar_hamburger-menu global_black py-2'>
                                 <h6 className='pl-2 global_blood-red bg-white' onClick={showSideBar}><span><h3
                                     className='d-inline global_blood-red'>|||</h3></span>
                                 </h6>
