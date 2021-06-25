@@ -114,7 +114,7 @@ const ProductsPage = ({match, history}) => {
                             <Row className=''>
                                 <Col
                                     md={sideBar && 2}
-                                    xs={sideBar && 5}
+                                    xs={sideBar && 12}
                                     className={sideBar ? 'ProductsSideBar_menu active' : 'ProductsSideBar_menu '}
                                     ref={node}
                                     // onClick={(e) => (handleScroll(e))}
@@ -229,8 +229,10 @@ const ProductsPage = ({match, history}) => {
                                 </Col>
 
                                 {/*     AD & PRODUCTS DISPLAY    */}
-                                <Col xs={sideBar ? 10 : 12}>
-
+                                <Col md={sideBar ? 10 : 12}
+                                     xs={!sideBar && 12}>
+                                    {/*md={sideBar && 2}*/}
+                                    {/*xs={sideBar && 12}*/}
                                     <Row
                                         className={sideBar ? `d-flex justify-content-center` : `d-flex justify-content-center`}>
                                         <Col xs={11} className='d-flex justify-content-end'>
@@ -251,7 +253,7 @@ const ProductsPage = ({match, history}) => {
                                             )}
                                         </Col>
 
-                                        <Col xs={11} className='px-1'>
+                                        <Col xs={11} className='px-1 global_white-bg'>
                                             <ProductsImgDisplay products={products}
                                                                 history={history}
                                                                 match={match}
