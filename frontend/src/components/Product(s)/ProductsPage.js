@@ -54,13 +54,16 @@ const ProductsPage = ({match, history}) => {
     const showSideBar = () => {
         setSideBar(!sideBar);
         if (window.innerWidth < breakpoint) {
-                window.scrollTo(0, 0)
+            window.scrollTo(0, 0)
         }
     };
 
     const displayAllHandler = () => {
         setUpdateManufacturer('');
         setUpdateCat('');
+        if (window.innerWidth < breakpoint) {
+            setSideBar(false)
+        }
         setShowAd(true);
     };
 
@@ -68,6 +71,9 @@ const ProductsPage = ({match, history}) => {
     const sortByCategoryHandler = (a) => {
         setUpdateManufacturer('');
         setUpdateCat(a);
+        if (window.innerWidth < breakpoint) {
+            setSideBar(false)
+        }
         setShowAd(false);
     };
 
@@ -76,6 +82,9 @@ const ProductsPage = ({match, history}) => {
     const sortByManufacturerHandler = (a) => {
         setUpdateCat('');
         setUpdateManufacturer(a);
+        if (window.innerWidth < breakpoint) {
+            setSideBar(false)
+        }
         setShowAd(false);
     };
 
@@ -115,8 +124,14 @@ const ProductsPage = ({match, history}) => {
                                     />
                                 }
                                 />
-
                             </Col>
+                            {!sideBar && (
+                                <Col xs={12} className='ProductsSideBar_selected-cat mx-2 my-0 py-2'>
+                                    <h4 className='global_blood-red'>
+                                        {updateManufacturer || updateCat}
+                                    </h4>
+                                </Col>
+                            )}
 
                             {/*===========   SIDE BAR    ============*/}
                             <Row className=''>
