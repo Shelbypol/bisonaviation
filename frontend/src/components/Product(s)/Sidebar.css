@@ -1,13 +1,13 @@
 
 
-.SideBar_titles {
+.Sidebar_title {
     font-weight: bolder;
     padding: 0 3vh 0 3vh;
     /*color: #fff;*/
     margin-top: 2vw;
 }
 
-.SideBar_titles:hover {
+.Sidebar_title:hover {
     padding: 0 3vh 0 3vh;
 }
 
@@ -24,10 +24,5 @@
     background-color: lightgrey;
     color: black;
 }
-
-/*.ProductsSideBar_items-bg {*/
-/*    background-color: #fff;*/
-/*    padding: .5vw 0 .5vw 1vw;*/
-/*}*/
 
 
