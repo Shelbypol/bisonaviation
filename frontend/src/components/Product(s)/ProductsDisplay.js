@@ -51,8 +51,6 @@ const ProductsDisplay = () => {
 
             <Sidebar
                 sidebar={
-
-
                     <Row className=''>
                         <Col>
                             {(updateManufacturer !== '' || updateCat !== '') && (

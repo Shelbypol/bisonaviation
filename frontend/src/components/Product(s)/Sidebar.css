@@ -30,44 +30,4 @@
     padding: .5vw 0 .5vw 1vw;
 }
 
-/*.ProductsSideBar_screen-bg {*/
-/*    background-color: rgba(255, 255, 255, 1);*/
-/*}*/
-
-/*!*    ======   MOBILE RESPONSIVE    ======    *!*/
-/*@media (max-width: 1150px) {*/
-
-/*    .ProductsSideBar_hamburger-menu {*/
-/*        top: 0;*/
-/*    }*/
-
-/*    .ProductsSideBar_selected-cat {*/
-/*        top: 5vh;*/
-/*    }*/
-
-/*    .ProductsSideBar_icon {*/
-/*        margin-top: 4vh;*/
-/*        top: 5vh;*/
-/*        background-color: #fff;*/
-/*    }*/
-
-/*}*/
-
-
-/*@media (max-width: 700px) {*/
-
-/*    .ProductsSideBar_selected-cat {*/
-/*        top: 5.5vh;*/
-/*    }*/
-
-/*    .ProductsSideBar_items, .ProductsSideBar_text {*/
-/*        padding-left: 15vw;*/
-/*    }*/
-
-/*    .ProductsSideBar_menu.active {*/
-/*        !*text-align: center;*!*/
-/*        top: 7vh;*/
-/*        background-color: #fff;*/
-/*    }*/
-/*}*/
 
