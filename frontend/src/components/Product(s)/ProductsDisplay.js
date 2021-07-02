@@ -6,8 +6,9 @@ import {listProducts} from "../../actions/productActions";
 import {useDispatch, useSelector} from "react-redux";
 import ProductHeroAd from "./ProductHeroAd";
 import ProductsImgDisplay from "./ProductsImgDisplay";
+import './ProductsSideBar.css';
 
-const ProductsDisplay = () => {
+const ProductsDisplay = ({match, history}) => {
     const [sidebarOpen, setSidebarOpen] = useState(true);
 
     const [updateCat, setUpdateCat] = useState('');
@@ -165,7 +166,7 @@ const ProductsDisplay = () => {
                 open={sidebarOpen}
                 // onSetOpen={}
                 docked={sidebarOpen}
-                styles={{sidebar: {backgroundColor: "#fff", width: "40vh"}}}
+                styles={{sidebar: {backgroundColor: "#fff", width: "40vh", marginTop: "12vh"}}}
             >
                 <button onClick={() => setSidebarOpen(!sidebarOpen)}>
                     Open sidebar
@@ -196,8 +197,8 @@ const ProductsDisplay = () => {
 
                     <Col xs={11} className='px-1 global_white-bg'>
                         <ProductsImgDisplay products={products}
-                                            // history={history}
-                                            // match={match}
+                                            history={history}
+                                            match={match}
                                             // keyword={keyword}
                                             pages={pages}
                                             page={page}

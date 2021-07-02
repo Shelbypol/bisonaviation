@@ -6,23 +6,25 @@ import ProductsDisplay from "./ProductsDisplay";
 
 const ProductsScreen = ({match, history}) => {
 
-    const sidebarMenu = {
-        display: 'flex',
-        alignItems: 'flex-start'
-    };
+    // const sidebarMenu = {
+    //     display: 'flex',
+    //     alignItems: 'flex-start'
+    // };
 
     return (
         <>
-                    <>
-                        <Meta title='Bison | Products'/>
+            <>
+                <Meta title='Bison | Products'/>
 
-                        <ProductsDisplay/>
+                <Row className='bg-white'>
+                    <ProductsDisplay match={match} history={history}/>
+                </Row>
 
 
-                        {/*<Row className='bg-white' style={sidebarMenu}>*/}
-                        {/*    <ProductsPage match={match} history={history}/>*/}
-                        {/*</Row>*/}
-                    </>
+                {/*<Row className='bg-white' style={sidebarMenu}>*/}
+                {/*    <ProductsPage match={match} history={history}/>*/}
+                {/*</Row>*/}
+            </>
 
 
         </>
