@@ -56,21 +56,21 @@ const ProductsDisplay = () => {
                             {(updateManufacturer !== '' || updateCat !== '') && (
                                 <>
                                     <Row className='global_accentFont py-2 '>
-                                        <h4 className='global_cursor ProductsSideBar_sub-titles global_blood-red'>{updateManufacturer || updateCat}</h4>
+                                        <h4 className='global_cursor SideBar_titles global_blood-red'>{updateManufacturer || updateCat}</h4>
                                     </Row>
 
                                     {/* ALL PRODUCTS*/}
                                     <Row
                                         className='global_accentFont'
                                         onClick={displayAllHandler}>
-                                        <h6 className='global_cursor ProductsSideBar_sub-titles'>
+                                        <h6 className='global_cursor SideBar_titles'>
                                             All Products
                                         </h6>
                                     </Row>
 
                                     {/*   ALL CATEGORIES  */}
                                     <Row className='global_accentFont'>
-                                        <h6 className='global_cursor ProductsSideBar_sub-titles'>Categories</h6>
+                                        <h6 className='global_cursor SideBar_titles'>Categories</h6>
                                     </Row>
 
                                     <Row className='ProductsSideBar_items-bg'>
@@ -88,7 +88,7 @@ const ProductsDisplay = () => {
 
                                     {/*   ALL MANUFACTURES  */}
                                     <Row className='global_accentFont mt-4'>
-                                        <h6 className='global_cursor ProductsSideBar_sub-titles'>Manufactures</h6>
+                                        <h6 className='global_cursor SideBar_titles'>Manufactures</h6>
                                     </Row>
 
                                     <Row className='ProductsSideBar_items-bg'>
@@ -115,13 +115,13 @@ const ProductsDisplay = () => {
                                     <Row
                                         className='global_accentFont'
                                         onClick={displayAllHandler}>
-                                        <h6 className='global_cursor ProductsSideBar_sub-titles'>All
+                                        <h6 className='global_cursor SideBar_titles'>All
                                             Products</h6>
                                     </Row>
 
                                     <Row
                                         className='global_accentFont'>
-                                        <h6 className='global_cursor ProductsSideBar_sub-titles'>Categories</h6>
+                                        <h6 className='global_cursor SideBar_titles'>Categories</h6>
                                     </Row>
 
                                     <Row className='ProductsSideBar_items-bg'>
@@ -140,7 +140,7 @@ const ProductsDisplay = () => {
                                     <Row
                                         className='global_accentFont mt-3 global_cursor '>
                                         <h6 onClick={displayAllHandler}
-                                            className='ProductsSideBar_sub-titles'>Manufacturers</h6>
+                                            className='SideBar_titles'>Manufacturers</h6>
                                     </Row>
 
                                     <Row className='ProductsSideBar_items-bg'>

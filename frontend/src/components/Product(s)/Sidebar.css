@@ -1,13 +1,13 @@
 
 
-.ProductsSideBar_sub-titles {
+.SideBar_titles {
     font-weight: bolder;
     padding: 0 3vh 0 3vh;
     /*color: #fff;*/
     margin-top: 2vw;
 }
 
-.ProductsSideBar_sub-titles:hover {
+.SideBar_titles:hover {
     padding: 0 3vh 0 3vh;
 }
 
@@ -25,9 +25,9 @@
     color: black;
 }
 
-.ProductsSideBar_items-bg {
-    background-color: #fff;
-    padding: .5vw 0 .5vw 1vw;
-}
+/*.ProductsSideBar_items-bg {*/
+/*    background-color: #fff;*/
+/*    padding: .5vw 0 .5vw 1vw;*/
+/*}*/
 
 
