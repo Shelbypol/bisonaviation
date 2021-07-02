@@ -1,26 +1,38 @@
-
-
-.Sidebar_title {
+.Sidebar_selected-cat{
     font-weight: bolder;
-    padding: 0 3vh 0 3vh;
-    /*color: #fff;*/
+    padding-left: 4vh;
+    color: #fff;
     margin-top: 2vw;
 }
 
-.Sidebar_title:hover {
-    padding: 0 3vh 0 3vh;
+.Sidebar_title {
+    font-weight: bolder;
+    padding-left: 4vh;
+    color: #daa520;
+    margin-top: 1vw;
 }
 
-.ProductsSideBar_items {
-    padding-left: 2vh;
+.Sidebar_title:hover {
+    color: #fff;
+    padding-left: 4vh;
+}
+
+.Sidebar_title-bg{
+    background-color: #000;
+}
+
+.Sidebar_items-list {
+    padding-left: 4vh;
+    padding-top: 1vh;
+    padding-bottom: 0;
     color: black;
     font-weight: lighter;
     display: flex;
     justify-content: flex-start;
 }
 
-.ProductsSideBar_items:hover {
-    padding-left: 2vh;
+.Sidebar_items-list:hover {
+    padding-left: 4vh;
     background-color: lightgrey;
     color: black;
 }
