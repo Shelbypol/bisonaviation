@@ -53,29 +53,29 @@ const ProductsDisplay = () => {
                     <Col>
                         {(updateManufacturer !== '' || updateCat !== '') && (
                             <>
-                                <Row className='global_accentFont ProductsSideBar_text py-2 '>
-                                    <h4 className=' global_cursor global_blood-red'>{updateManufacturer || updateCat}</h4>
+                                <Row className='global_accentFont py-2 '>
+                                    <h4 className='global_cursor ProductsSideBar_sub-titles global_blood-red'>{updateManufacturer || updateCat}</h4>
                                 </Row>
 
                                 {/* ALL PRODUCTS*/}
                                 <Row
                                     className='global_accentFont'
                                     onClick={displayAllHandler}>
-                                    <h6 className='global_cursor ProductsSideBar_text ProductsSideBar_sub-titles'>
+                                    <h6 className='global_cursor ProductsSideBar_sub-titles'>
                                         All Products
                                     </h6>
                                 </Row>
 
                                 {/*   ALL CATEGORIES  */}
                                 <Row className='global_accentFont'>
-                                    <h6 className='global_cursor ProductsSideBar_text ProductsSideBar_sub-titles'>Categories</h6>
+                                    <h6 className='global_cursor ProductsSideBar_sub-titles'>Categories</h6>
                                 </Row>
 
                                 <Row className='ProductsSideBar_items-bg'>
                                     {catArr.map((product, index) => (
                                         <Col xs={12}
                                              onClick={(ev) => sortByCategoryHandler(product, ev)}
-                                             className='btn btn-block global_cursor ProductsSideBar_text ProductsSideBar_items'
+                                             className='btn btn-block global_cursor ProductsSideBar_items'
                                              type='button'
                                              key={index}
                                         >
@@ -86,14 +86,14 @@ const ProductsDisplay = () => {
 
                                 {/*   ALL MANUFACTURES  */}
                                 <Row className='global_accentFont mt-4'>
-                                    <h6 className='global_cursor ProductsSideBar_text ProductsSideBar_sub-titles'>Manufactures</h6>
+                                    <h6 className='global_cursor ProductsSideBar_sub-titles'>Manufactures</h6>
                                 </Row>
 
                                 <Row className='ProductsSideBar_items-bg'>
                                     {manufacturerArr.map((product, index) => (
                                         <Col xs={12}
                                              onClick={(ev) => sortByManufacturerHandler(product, ev)}
-                                             className='btn btn-block global_cursor ProductsSideBar_text ProductsSideBar_items'
+                                             className='btn btn-block global_cursor ProductsSideBar_items'
                                              type='button'
                                              key={index}
                                         >
@@ -113,20 +113,20 @@ const ProductsDisplay = () => {
                                 <Row
                                     className='global_accentFont'
                                     onClick={displayAllHandler}>
-                                    <h6 className='global_cursor ProductsSideBar_text ProductsSideBar_sub-titles'>All
+                                    <h6 className='global_cursor ProductsSideBar_sub-titles'>All
                                         Products</h6>
                                 </Row>
 
                                 <Row
                                     className='global_accentFont'>
-                                    <h6 className='global_cursor ProductsSideBar_text ProductsSideBar_sub-titles'>Categories</h6>
+                                    <h6 className='global_cursor ProductsSideBar_sub-titles'>Categories</h6>
                                 </Row>
 
                                 <Row className='ProductsSideBar_items-bg'>
                                     {catArr.map((product, index) => (
                                         <Col xs={12}
                                              onClick={(ev) => sortByCategoryHandler(product, ev)}
-                                             className='btn btn-block global_cursor ProductsSideBar_text ProductsSideBar_items'
+                                             className='btn btn-block global_cursor ProductsSideBar_items'
                                              type='button'
                                              key={index}
                                         >
@@ -136,7 +136,7 @@ const ProductsDisplay = () => {
                                 </Row>
 
                                 <Row
-                                    className='global_accentFont mt-3 ProductsSideBar_text global_cursor '>
+                                    className='global_accentFont mt-3 global_cursor '>
                                     <h6 onClick={displayAllHandler}
                                         className='ProductsSideBar_sub-titles'>Manufacturers</h6>
                                 </Row>
@@ -145,7 +145,7 @@ const ProductsDisplay = () => {
                                     {manufacturerArr.map((product, index) => (
                                         <Col xs={12}
                                              onClick={(ev) => sortByManufacturerHandler(product, ev)}
-                                             className='btn btn-block global_cursor ProductsSideBar_text ProductsSideBar_items'
+                                             className='btn btn-block global_cursor ProductsSideBar_items'
                                              type='button'
                                              key={index}
                                         >
@@ -163,7 +163,7 @@ const ProductsDisplay = () => {
             open={sidebarOpen}
             // onSetOpen={}
             docked={sidebarOpen}
-            styles={{sidebar: {background: "purple", top: "12.2vh"}}}
+            styles={{sidebar: {background: "black", top: "12.2vh", width: "40vh"}}}
         >
             <button onClick={() => setSidebarOpen(!sidebarOpen)}>
                 Open sidebar

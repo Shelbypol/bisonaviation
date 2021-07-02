@@ -1,91 +1,26 @@
-.ProductsSideBar_hamburger-menu {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 12.5vh;
-    display: flex;
-    justify-content: space-between;
-    z-index: 1000;
-    background-color: #fff;
-}
 
-.ProductsSideBar_selected-cat {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 13vh;
-    display: flex;
-    justify-content: start;
-    z-index: 1000;
-    background-color: #fff;
-}
-
-.ProductSideBar_sticky-search {
-    z-index: 1000;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 13vh;
-}
-
-.ProductsSideBar_search-bar {
-    color: black;
-    width: 50vw;
-    /*border-bottom: 1px solid #000;*/
-    /*border-bottom-left-radius: 10%;*/
-}
-
-.ProductsSideBar_search-btn {
-    padding-top: 1em;
-    padding-bottom: 1em;
-    color: white;
-}
-
-.ProductsSideBar_menu.active {
-    max-height: calc(100vh - 10rem);
-    min-height: calc(100vh - 10rem);
-    height: 100%;
-    overflow-y: auto;
-    position: -webkit-sticky;
-    position: sticky;
-    padding: 1vw 2vw;
-    margin-bottom: 5vw;
-    top: 18vh;
-    left: 0;
-    transition: 850ms;
-    background-color: #fff;
-}
-
-.ProductsSideBar_menu {
-    height: 0;
-    left: -1000px;
-    transition: 850ms;
-}
-
-.ProductsSideBar_text {
-    display: flex;
-    justify-content: start;
-}
 
 .ProductsSideBar_sub-titles {
     font-weight: bolder;
-    width: 100%;
-    color: #660708;
+    padding: 0 3vh 0 3vh;
+    color: #fff;
     margin-top: 2vw;
 }
 
 .ProductsSideBar_sub-titles:hover {
-    text-decoration: underline;
+    padding: 0 3vh 0 3vh;
 }
 
 .ProductsSideBar_items {
+    padding-left: 2vh;
     color: black;
-    margin: 0;
-    width: 100%;
-    padding: 0;
     font-weight: lighter;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .ProductsSideBar_items:hover {
-    padding-left: 1vh;
-    padding-right: 1vh;
+    padding-left: 2vh;
     background-color: lightgrey;
     color: black;
 }
@@ -95,52 +30,44 @@
     padding: .5vw 0 .5vw 1vw;
 }
 
-.ProductsSideBar_screen-bg {
-    background-color: rgba(255, 255, 255, 1);
-}
+/*.ProductsSideBar_screen-bg {*/
+/*    background-color: rgba(255, 255, 255, 1);*/
+/*}*/
 
-.ProductsSideBar_scroll {
-    overflow-y: scroll;
-}
+/*!*    ======   MOBILE RESPONSIVE    ======    *!*/
+/*@media (max-width: 1150px) {*/
 
-/*    ======   MOBILE RESPONSIVE    ======    */
-@media (max-width: 1150px) {
+/*    .ProductsSideBar_hamburger-menu {*/
+/*        top: 0;*/
+/*    }*/
 
-    .ProductsSideBar_hamburger-menu {
-        top: 0;
-    }
+/*    .ProductsSideBar_selected-cat {*/
+/*        top: 5vh;*/
+/*    }*/
 
-    .ProductsSideBar_selected-cat {
-        top: 5vh;
-    }
+/*    .ProductsSideBar_icon {*/
+/*        margin-top: 4vh;*/
+/*        top: 5vh;*/
+/*        background-color: #fff;*/
+/*    }*/
 
-    .ProductsSideBar_icon {
-        margin-top: 4vh;
-        top: 5vh;
-        background-color: #fff;
-    }
-
-    .ProductsSideBar_menu.active {
-        top: 6vh;
-        background-color: #fff;
-    }
-}
+/*}*/
 
 
-@media (max-width: 700px) {
+/*@media (max-width: 700px) {*/
 
-    .ProductsSideBar_selected-cat {
-        top: 5.5vh;
-    }
+/*    .ProductsSideBar_selected-cat {*/
+/*        top: 5.5vh;*/
+/*    }*/
 
-    .ProductsSideBar_items, .ProductsSideBar_text {
-        padding-left: 15vw;
-    }
+/*    .ProductsSideBar_items, .ProductsSideBar_text {*/
+/*        padding-left: 15vw;*/
+/*    }*/
 
-    .ProductsSideBar_menu.active {
-        /*text-align: center;*/
-        top: 7vh;
-        background-color: #fff;
-    }
-}
+/*    .ProductsSideBar_menu.active {*/
+/*        !*text-align: center;*!*/
+/*        top: 7vh;*/
+/*        background-color: #fff;*/
+/*    }*/
+/*}*/
 
