@@ -11,11 +11,12 @@ import ProductsSearchBox from "./ProductsSearchBox";
 import Paginate from "../Paginate";
 import ProductHeroAd from "./ProductHeroAd";
 
+import Sidebar from "react-sidebar";
+
 const ProductsPage = ({match, history}) => {
 
-    // const [sideBar, setSideBar] = useState(true);
-    // const [width, setWidth] = useState(window.innerWidth);
-    // const breakpoint = 1000;
+
+    const [sidebarOpen, setSidebarOpen] = useState(true);
 
     const [updateCat, setUpdateCat] = useState('');
     const [updateManufacturer, setUpdateManufacturer] = useState('');
@@ -54,13 +55,16 @@ const ProductsPage = ({match, history}) => {
     const showSideBar = () => {
         setSideBar(!sideBar);
         if (window.innerWidth < breakpoint) {
-                window.scrollTo(0, 0)
+            window.scrollTo(0, 0)
         }
     };
 
     const displayAllHandler = () => {
         setUpdateManufacturer('');
         setUpdateCat('');
+        if (window.innerWidth < breakpoint) {
+            setSideBar(false)
+        }
         setShowAd(true);
     };
 
@@ -68,6 +72,9 @@ const ProductsPage = ({match, history}) => {
     const sortByCategoryHandler = (a) => {
         setUpdateManufacturer('');
         setUpdateCat(a);
+        if (window.innerWidth < breakpoint) {
+            setSideBar(false)
+        }
         setShowAd(false);
     };
 
@@ -76,6 +83,9 @@ const ProductsPage = ({match, history}) => {
     const sortByManufacturerHandler = (a) => {
         setUpdateCat('');
         setUpdateManufacturer(a);
+        if (window.innerWidth < breakpoint) {
+            setSideBar(false)
+        }
         setShowAd(false);
     };
 
@@ -99,6 +109,7 @@ const ProductsPage = ({match, history}) => {
                     )
                     : (
                         <>
+
                             <Col xs={12}
                                  className='global_cursor ProductsSideBar_hamburger-menu global_black py-2'>
                                 <h6 className='pl-2 global_blood-red bg-white' onClick={showSideBar}><span><h3
@@ -115,8 +126,14 @@ const ProductsPage = ({match, history}) => {
                                     />
                                 }
                                 />
-
                             </Col>
+                            {!sideBar && (
+                                <Col xs={12} className='ProductsSideBar_selected-cat mx-2 my-0 py-2'>
+                                    <h4 className='global_blood-red'>
+                                        {updateManufacturer || updateCat}
+                                    </h4>
+                                </Col>
+                            )}
 
                             {/*===========   SIDE BAR    ============*/}
                             <Row className=''>

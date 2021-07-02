@@ -14,7 +14,7 @@ const ProductsImgDisplay = ({sideBar, history, match, updateCatProp, updateManuf
                     {(updateCatProp !== '') && (
                         <>
                             {products.filter(product => product.category === updateCatProp).map(filteredProduct => (
-                                <Col key={filteredProduct._id} lg={sideBar ? 3 : 2} md={4} sm={12}>
+                                <Col key={filteredProduct._id} lg={sideBar ? 3 : 3} md={4} sm={12}>
                                     <ProductCard product={filteredProduct} history={history} match={match}/>
                                 </Col>
 
@@ -25,7 +25,7 @@ const ProductsImgDisplay = ({sideBar, history, match, updateCatProp, updateManuf
                     {(updateManufacturerProp !== '') && (
                         <>
                             {products.filter(product => product.brand === updateManufacturerProp).map(filteredProduct => (
-                                <Col key={filteredProduct._id} lg={sideBar ? 3 : 2} md={4} sm={12}>
+                                <Col key={filteredProduct._id} lg={sideBar ? 3 : 3} md={4} sm={12}>
                                     <ProductCard product={filteredProduct} history={history} match={match}/>
                                 </Col>
                             ))}
@@ -35,7 +35,7 @@ const ProductsImgDisplay = ({sideBar, history, match, updateCatProp, updateManuf
                     {(updateManufacturerProp === '' && updateCatProp === '') && (
                         <>
                             {products.map(product => (
-                                <Col key={product._id} lg={sideBar ? 3 : 2} md={4} sm={12}>
+                                <Col key={product._id} lg={sideBar ? 3 : 3} md={4} sm={12}>
                                     <ProductCard product={product} history={history} match={match}
                                                  product_id={product._id}/>
                                 </Col>

@@ -36,13 +36,9 @@ const Header = () => {
             </>
             :
             <>
-                {/*<Row className='position-fixed m-0 p-0' style={{top: '1vh'}}>*/}
-                {/*    <Col xs={12} className='m-0 p-0'>*/}
-                {/*<Fade top duration={2000} className='position-fixed' style={{top: '1vh'}}>*/}
+                <Fade top duration={2000}>
                     <HeaderDesktop/>
-                {/*</Fade>*/}
-                {/*</Col>*/}
-                {/*</Row>*/}
+                </Fade>
             </>
 
     )

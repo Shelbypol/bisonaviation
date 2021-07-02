@@ -86,7 +86,7 @@ const IndProductScreen = ({history, match}) => {
             {/*<Jumbotron className='bg-white px-0 mt-n3 pb-5 '>*/}
             {/*    <Container className='mb-0 px-0 pt-3 pb-0'>*/}
 
-            <Row className='global_white-bg display-flex justify-content-center' style={{minHeight: '100vh'}}>
+            <Row className='global_white-bg display-flex justify-content-center' style={{minHeight: '75vh'}}>
                 <Col xs={10}>
 
                     <Link className='global_blood-red global_cursor bg-transparent btn btn-light mb-3 mt-4 pb-1 px-1'

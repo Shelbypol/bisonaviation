@@ -1,14 +1,10 @@
-import React, {useEffect, useState} from "react";
-import {Col, Row, Image, Button} from "react-bootstrap";
-import {useSelector, useDispatch} from "react-redux";
-import {listProducts} from "../../actions/productActions";
-import ProductDisplayByCatMan from "./ProductsImgDisplay";
+import React from "react";
+import {Col, Row, Image} from "react-bootstrap";
+
 import Loader from "../Loader";
 import Message from "../Message";
 import './ProductsSideBar.css'
 import ad1 from '../../images/uploads copy/image-1608754595861.jpg';
-import ad2 from '../../images/uploads copy/image-1608754966157.jpg';
-import ad3 from '../../images/uploads copy/image-1608754463191.jpg';
 
 const ProductHeroAd = ({products}) => {
 
@@ -40,7 +36,7 @@ const ProductHeroAd = ({products}) => {
                             </Row>
                         </Col>
                         <Col>
-                            <Image src={ad1} className='rounded w-100 '/>
+                            <Image src={ad1} className='rounded w-100 h-75'/>
                         </Col>
 
                     </Row>

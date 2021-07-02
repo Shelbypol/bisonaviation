@@ -1,0 +1,40 @@
+.Sidebar_selected-cat{
+    font-weight: bolder;
+    padding-left: 4vh;
+    color: #fff;
+    margin-top: 2vw;
+}
+
+.Sidebar_title {
+    font-weight: bolder;
+    padding-left: 4vh;
+    color: #daa520;
+    margin-top: 1vw;
+}
+
+.Sidebar_title:hover {
+    color: #fff;
+    padding-left: 4vh;
+}
+
+.Sidebar_title-bg{
+    background-color: #000;
+}
+
+.Sidebar_items-list {
+    padding-left: 4vh;
+    padding-top: 1vh;
+    padding-bottom: 0;
+    color: black;
+    font-weight: lighter;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.Sidebar_items-list:hover {
+    padding-left: 4vh;
+    background-color: lightgrey;
+    color: black;
+}
+
+
