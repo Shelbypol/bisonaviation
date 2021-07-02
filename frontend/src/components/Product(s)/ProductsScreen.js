@@ -2,6 +2,7 @@ import React from 'react'
 import {Row} from 'react-bootstrap'
 import Meta from "../Meta";
 import ProductsPage from "./ProductsPage";
+import ProductsDisplay from "./ProductsDisplay";
 
 const ProductsScreen = ({match, history}) => {
 
@@ -15,9 +16,11 @@ const ProductsScreen = ({match, history}) => {
                     <>
                         <Meta title='Bison | Products'/>
 
-                        <Row className='bg-white' style={sidebarMenu}>
-                            <ProductsPage match={match} history={history}/>
-                        </Row>
+                        <ProductsDisplay/>
+
+                        {/*<Row className='bg-white' style={sidebarMenu}>*/}
+                        {/*    <ProductsPage match={match} history={history}/>*/}
+                        {/*</Row>*/}
                     </>
 
 
