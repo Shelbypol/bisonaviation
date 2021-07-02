@@ -4,13 +4,15 @@ import './Sidebar.css'
 import Sidebar from "react-sidebar";
 import {listProducts} from "../../actions/productActions";
 import {useDispatch, useSelector} from "react-redux";
-
+import ProductHeroAd from "./ProductHeroAd";
+import ProductsImgDisplay from "./ProductsImgDisplay";
 
 const ProductsDisplay = () => {
     const [sidebarOpen, setSidebarOpen] = useState(true);
 
     const [updateCat, setUpdateCat] = useState('');
     const [updateManufacturer, setUpdateManufacturer] = useState('');
+    const [showAd, setShowAd] = useState(true);
 
     const dispatch = useDispatch();
 
@@ -45,130 +47,170 @@ const ProductsDisplay = () => {
 
 
     return (
-        <Sidebar
-            sidebar={
+        <>
+
+            <Sidebar
+                sidebar={
 
 
-                <Row className=''>
-                    <Col>
-                        {(updateManufacturer !== '' || updateCat !== '') && (
-                            <>
-                                <Row className='global_accentFont py-2 '>
-                                    <h4 className='global_cursor ProductsSideBar_sub-titles global_blood-red'>{updateManufacturer || updateCat}</h4>
-                                </Row>
+                    <Row className=''>
+                        <Col>
+                            {(updateManufacturer !== '' || updateCat !== '') && (
+                                <>
+                                    <Row className='global_accentFont py-2 '>
+                                        <h4 className='global_cursor ProductsSideBar_sub-titles global_blood-red'>{updateManufacturer || updateCat}</h4>
+                                    </Row>
 
-                                {/* ALL PRODUCTS*/}
-                                <Row
-                                    className='global_accentFont'
-                                    onClick={displayAllHandler}>
-                                    <h6 className='global_cursor ProductsSideBar_sub-titles'>
-                                        All Products
-                                    </h6>
-                                </Row>
+                                    {/* ALL PRODUCTS*/}
+                                    <Row
+                                        className='global_accentFont'
+                                        onClick={displayAllHandler}>
+                                        <h6 className='global_cursor ProductsSideBar_sub-titles'>
+                                            All Products
+                                        </h6>
+                                    </Row>
 
-                                {/*   ALL CATEGORIES  */}
-                                <Row className='global_accentFont'>
-                                    <h6 className='global_cursor ProductsSideBar_sub-titles'>Categories</h6>
-                                </Row>
+                                    {/*   ALL CATEGORIES  */}
+                                    <Row className='global_accentFont'>
+                                        <h6 className='global_cursor ProductsSideBar_sub-titles'>Categories</h6>
+                                    </Row>
 
-                                <Row className='ProductsSideBar_items-bg'>
-                                    {catArr.map((product, index) => (
-                                        <Col xs={12}
-                                             onClick={(ev) => sortByCategoryHandler(product, ev)}
-                                             className='btn btn-block global_cursor ProductsSideBar_items'
-                                             type='button'
-                                             key={index}
-                                        >
-                                            {product}
-                                        </Col>
-                                    ))}
-                                </Row>
+                                    <Row className='ProductsSideBar_items-bg'>
+                                        {catArr.map((product, index) => (
+                                            <Col xs={12}
+                                                 onClick={(ev) => sortByCategoryHandler(product, ev)}
+                                                 className='btn btn-block global_cursor ProductsSideBar_items'
+                                                 type='button'
+                                                 key={index}
+                                            >
+                                                {product}
+                                            </Col>
+                                        ))}
+                                    </Row>
 
-                                {/*   ALL MANUFACTURES  */}
-                                <Row className='global_accentFont mt-4'>
-                                    <h6 className='global_cursor ProductsSideBar_sub-titles'>Manufactures</h6>
-                                </Row>
+                                    {/*   ALL MANUFACTURES  */}
+                                    <Row className='global_accentFont mt-4'>
+                                        <h6 className='global_cursor ProductsSideBar_sub-titles'>Manufactures</h6>
+                                    </Row>
 
-                                <Row className='ProductsSideBar_items-bg'>
-                                    {manufacturerArr.map((product, index) => (
-                                        <Col xs={12}
-                                             onClick={(ev) => sortByManufacturerHandler(product, ev)}
-                                             className='btn btn-block global_cursor ProductsSideBar_items'
-                                             type='button'
-                                             key={index}
-                                        >
-                                            {product}
-                                        </Col>
-                                    ))}
-                                </Row>
-                            </>
+                                    <Row className='ProductsSideBar_items-bg'>
+                                        {manufacturerArr.map((product, index) => (
+                                            <Col xs={12}
+                                                 onClick={(ev) => sortByManufacturerHandler(product, ev)}
+                                                 className='btn btn-block global_cursor ProductsSideBar_items'
+                                                 type='button'
+                                                 key={index}
+                                            >
+                                                {product}
+                                            </Col>
+                                        ))}
+                                    </Row>
+                                </>
+                            )}
+
+                            {/*==============================================================================*/}
+
+                            {/*    ALL CAT & ALL MAN INITIAL DISPLAY    */}
+                            {(updateCat === '' && updateManufacturer === '') && (
+                                <>
+                                    {/* ALL PRODUCTS*/}
+                                    <Row
+                                        className='global_accentFont'
+                                        onClick={displayAllHandler}>
+                                        <h6 className='global_cursor ProductsSideBar_sub-titles'>All
+                                            Products</h6>
+                                    </Row>
+
+                                    <Row
+                                        className='global_accentFont'>
+                                        <h6 className='global_cursor ProductsSideBar_sub-titles'>Categories</h6>
+                                    </Row>
+
+                                    <Row className='ProductsSideBar_items-bg'>
+                                        {catArr.map((product, index) => (
+                                            <Col xs={12}
+                                                 onClick={(ev) => sortByCategoryHandler(product, ev)}
+                                                 className='btn btn-block global_cursor ProductsSideBar_items'
+                                                 type='button'
+                                                 key={index}
+                                            >
+                                                {product}
+                                            </Col>
+                                        ))}
+                                    </Row>
+
+                                    <Row
+                                        className='global_accentFont mt-3 global_cursor '>
+                                        <h6 onClick={displayAllHandler}
+                                            className='ProductsSideBar_sub-titles'>Manufacturers</h6>
+                                    </Row>
+
+                                    <Row className='ProductsSideBar_items-bg'>
+                                        {manufacturerArr.map((product, index) => (
+                                            <Col xs={12}
+                                                 onClick={(ev) => sortByManufacturerHandler(product, ev)}
+                                                 className='btn btn-block global_cursor ProductsSideBar_items'
+                                                 type='button'
+                                                 key={index}
+                                            >
+                                                {product}
+                                            </Col>
+                                        ))}
+                                    </Row>
+                                </>
+                            )}
+                        </Col>
+                    </Row>
+
+
+                }
+                open={sidebarOpen}
+                // onSetOpen={}
+                docked={sidebarOpen}
+                styles={{sidebar: {backgroundColor: "#fff", width: "40vh", minHeight: "100vh"}}}
+            >
+                <button onClick={() => setSidebarOpen(!sidebarOpen)}>
+                    Open sidebar
+                </button>
+            </Sidebar>
+
+
+
+                <Row
+                    className='d-flex justify-content-center'>
+                    <Col xs={11} className='d-flex justify-content-end'>
+                        <Button
+                            onClick={() => {
+                                setShowAd(!showAd)
+                            }}
+                            className='bg-transparent global_blood-red global_cursor'>
+                            {showAd && (
+                                <p>x</p>
+                            )}
+                        </Button>
+                    </Col>
+                    <Col xs={11} className='d-flex justify-content-center px-1'>
+
+                        {showAd && (
+                            <ProductHeroAd products={products}/>
                         )}
+                    </Col>
 
-                        {/*==============================================================================*/}
-
-                        {/*    ALL CAT & ALL MAN INITIAL DISPLAY    */}
-                        {(updateCat === '' && updateManufacturer === '') && (
-                            <>
-                                {/* ALL PRODUCTS*/}
-                                <Row
-                                    className='global_accentFont'
-                                    onClick={displayAllHandler}>
-                                    <h6 className='global_cursor ProductsSideBar_sub-titles'>All
-                                        Products</h6>
-                                </Row>
-
-                                <Row
-                                    className='global_accentFont'>
-                                    <h6 className='global_cursor ProductsSideBar_sub-titles'>Categories</h6>
-                                </Row>
-
-                                <Row className='ProductsSideBar_items-bg'>
-                                    {catArr.map((product, index) => (
-                                        <Col xs={12}
-                                             onClick={(ev) => sortByCategoryHandler(product, ev)}
-                                             className='btn btn-block global_cursor ProductsSideBar_items'
-                                             type='button'
-                                             key={index}
-                                        >
-                                            {product}
-                                        </Col>
-                                    ))}
-                                </Row>
-
-                                <Row
-                                    className='global_accentFont mt-3 global_cursor '>
-                                    <h6 onClick={displayAllHandler}
-                                        className='ProductsSideBar_sub-titles'>Manufacturers</h6>
-                                </Row>
-
-                                <Row className='ProductsSideBar_items-bg'>
-                                    {manufacturerArr.map((product, index) => (
-                                        <Col xs={12}
-                                             onClick={(ev) => sortByManufacturerHandler(product, ev)}
-                                             className='btn btn-block global_cursor ProductsSideBar_items'
-                                             type='button'
-                                             key={index}
-                                        >
-                                            {product}
-                                        </Col>
-                                    ))}
-                                </Row>
-                            </>
-                        )}
+                    <Col xs={11} className='px-1 global_white-bg'>
+                        <ProductsImgDisplay products={products}
+                                            // history={history}
+                                            // match={match}
+                                            // keyword={keyword}
+                                            pages={pages}
+                                            page={page}
+                                            updateCatProp={updateCat}
+                                            updateManufacturerProp={updateManufacturer}
+                        />
                     </Col>
                 </Row>
 
 
-            }
-            open={sidebarOpen}
-            // onSetOpen={}
-            docked={sidebarOpen}
-            styles={{sidebar: {background: "black", top: "12.2vh", width: "40vh"}}}
-        >
-            <button onClick={() => setSidebarOpen(!sidebarOpen)}>
-                Open sidebar
-            </button>
-        </Sidebar>
+        </>
     );
 
 };

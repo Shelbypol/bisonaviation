@@ -18,6 +18,7 @@ const ProductsScreen = ({match, history}) => {
 
                         <ProductsDisplay/>
 
+
                         {/*<Row className='bg-white' style={sidebarMenu}>*/}
                         {/*    <ProductsPage match={match} history={history}/>*/}
                         {/*</Row>*/}
