@@ -16,14 +16,14 @@ const ProductsScreen = ({match, history}) => {
             <>
                 <Meta title='Bison | Products'/>
 
-                <Row className='bg-white'>
-                    <ProductsDisplay match={match} history={history}/>
-                </Row>
-
-
-                {/*<Row className='bg-white' style={sidebarMenu}>*/}
-                {/*    <ProductsPage match={match} history={history}/>*/}
+                {/*<Row className='bg-white'>*/}
+                {/*    <ProductsDisplay match={match} history={history}/>*/}
                 {/*</Row>*/}
+
+
+                <Row className='bg-white'>
+                <ProductsPage match={match} history={history}/>
+            </Row>
             </>
 
 

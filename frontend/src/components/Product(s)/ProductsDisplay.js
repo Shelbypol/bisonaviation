@@ -183,9 +183,11 @@ const ProductsDisplay = ({match, history}) => {
                 open={sidebarOpen}
                 // onSetOpen={}
                 docked={sidebarOpen}
-                styles={{sidebar: {backgroundColor: "#fff", width: "40vh", marginTop: '12vh', border: '2px solid red'}}}
+                styles={{sidebar: {backgroundColor: "#fff", width: "40vh", marginTop: '12.5vh', border: '2px solid red'}}}
             >
-                <button onClick={() => setSidebarOpen(!sidebarOpen)}>
+                <button onClick={() => setSidebarOpen(!sidebarOpen)}
+                    style={{marginTop: "12.5vh"}}
+                >
                     Open sidebar
                 </button>
             </Sidebar>
