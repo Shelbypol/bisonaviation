@@ -13,8 +13,7 @@
     position: -webkit-sticky;
     position: sticky;
     top: 13vh;
-    display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     z-index: 1000;
     background-color: #fff;
 }
@@ -61,8 +60,7 @@
 }
 
 .ProductsSideBar_text {
-    display: flex;
-    justify-content: start;
+    justify-content: flex-start;
 }
 
 .ProductsSideBar_sub-titles {
