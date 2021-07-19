@@ -15,12 +15,10 @@
     background-color: rgba(0,0,0, 1);
     width: 20vw;
     height: 100vh;
-    display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     position: absolute;
     padding-left: 2vw;
     padding-top: 1vw;
-    z-index: 10000;
     top: 6.5vh;
     left: -100vw;
     transition: 850ms;
@@ -36,8 +34,7 @@
     background-image: url("./dots.png");
     background-color: rgba(0,0,0, 1);
     width: 30vw;
-    display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     position: absolute;
     padding: 2%;
     top: 12.5vh;
@@ -46,14 +43,12 @@
 }
 
 .SideBar-nav-menu-user-not-logged.active {
-    /*left: 0;*/
     right: 0;
     transition: 350ms;
 }
 
 .SideBar-nav-text {
-    display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     padding: 4px 0 4px 0;
     list-style: none;
@@ -61,11 +56,9 @@
 
 .SideBar-nav-menu-items {
     width: 100%;
-    z-index: 34500;
 }
 
 .SideBar_Login{
-    z-index: 98900;
     font-weight: lighter;
 }
 
