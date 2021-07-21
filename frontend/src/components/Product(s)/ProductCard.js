@@ -30,14 +30,14 @@ const ProductCard = ({product, history, match}) => {
 
 
     const like = () => {
-        setActiveHeart(!activeHeart);
+        // setActiveHeart(!activeHeart);
         dispatch(addToCart(product._id, 1));
 
         // history.push(`/cart/${id}?qty=1`);
     };
 
     const unlike = () => {
-        setActiveHeart(!activeHeart);
+        // setActiveHeart(!activeHeart);
         dispatch(removeFromCart(product._id))
         // history.push(`/cart/${id}?qty=1`);
     };
@@ -72,26 +72,36 @@ const ProductCard = ({product, history, match}) => {
                             {/*        </span>*/}
                             {/*)}*/}
 
-                            {cartItems.map(item => (
-                                item.product === product._id ? (
+                            {cartItems.length > 0 ? (
+
+                                cartItems.map(item => (
+                                    item.product === product._id && (
 
                                         <>
-                                                <span onClick={unlike}
-                                                      className='global_cursor'
-                                                      style={{color: 'rgba(200, 0, 0, 1)', fontSize: '1.3em'}}>
-                                                <i className="mt-auto fas fa-heart"> </i>
-                                                </span>
+                                                    <span onClick={unlike}
+                                                          className='global_cursor'
+                                                          style={{color: 'rgba(200, 0, 0, 1)', fontSize: '1.3em'}}>
+                                                    <i className="mt-auto fas fa-heart"> </i>
+                                                    </span>
                                         </>
-                                    ) : (
-
-                                        <span className='global_cursor' onClick={like}
-                                              style={{fontSize: '1.3em'}}>
-                                            <i className="mt-auto fas fa-heart "> </i>
-                                        </span>
                                     )
+                                    // : (
+                                    //
+                                    //     <span className='global_cursor' onClick={like}
+                                    //           style={{fontSize: '1.3em'}}>
+                                    //             <i className="mt-auto fas fa-heart "> </i>
+                                    //         </span>
+                                    // )
 
 
-                            ))}
+                                ))
+                            ) : (
+                                <span className='global_cursor' onClick={like}
+                                      style={{fontSize: '1.3em'}}>
+                                                <i className="mt-auto fas fa-heart "> </i>
+                                            </span>
+                            )
+                            }
 
                         </>
                     </Col>
@@ -112,18 +122,18 @@ const ProductCard = ({product, history, match}) => {
 
                 <Row>
                     <Col xs={12} className='p-3'>
-                    {product.description.length > MAX_LENGTH ?
-                        (
+                        {product.description.length > MAX_LENGTH ?
+                            (
+                                <Card.Text>
+                                    {`${product.description.substring(0, MAX_LENGTH)}`}<Link
+                                    to={`/product/${product._id}`} className='global_blood-red'><br/>...Read
+                                    more</Link>
+                                </Card.Text>
+                            ) :
                             <Card.Text>
-                                {`${product.description.substring(0, MAX_LENGTH)}`}<Link
-                                to={`/product/${product._id}`} className='global_blood-red'><br/>...Read
-                                more</Link>
+                                <p>{product.description}</p>
                             </Card.Text>
-                        ) :
-                        <Card.Text>
-                            <p>{product.description}</p>
-                        </Card.Text>
-                    }
+                        }
                     </Col>
                 </Row>
 
