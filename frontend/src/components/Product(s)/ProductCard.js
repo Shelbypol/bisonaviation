@@ -26,22 +26,34 @@ const ProductCard = ({product, history, match}) => {
         if (userInfo) {
             dispatch(listMyWishLists());
         }
+        checkCart();
     }, [dispatch, activeHeart, match, history, cartItems]);
 
 
     const like = () => {
-        // setActiveHeart(!activeHeart);
+        setActiveHeart(!activeHeart);
         dispatch(addToCart(product._id, 1));
 
         // history.push(`/cart/${id}?qty=1`);
     };
 
     const unlike = () => {
-        // setActiveHeart(!activeHeart);
+        setActiveHeart(!activeHeart);
         dispatch(removeFromCart(product._id))
         // history.push(`/cart/${id}?qty=1`);
     };
 
+    const checkCart = () => {
+        cartItems.length >= 0 ? (
+            cartItems.map(item => (
+                item.product === product._id && (
+                 setActiveHeart(true)
+                )
+            ))
+        ) : (
+            setActiveHeart(false)
+        )
+    };
 
     const MAX_LENGTH = 75;
 
@@ -56,52 +68,43 @@ const ProductCard = ({product, history, match}) => {
                 <Row className='py-3'>
                     <Col xs={6} className='d-flex justify-content-start'>
                         <>
-                            {/*{activeHeart ? (*/}
-                            {/*    <>*/}
+                            {activeHeart ? (
+                                <>
+                                            <span onClick={unlike}
+                                                  className='global_cursor'
+                                                  style={{color: 'rgba(200, 0, 0, 1)', fontSize: '1.3em'}}>
+                                            <i className="mt-auto fas fa-heart"> </i>
+                                            </span>
+                                </>
+                            ) : (
+
+                                <span className='global_cursor' onClick={like}
+                                      style={{fontSize: '1.3em'}}>
+                                        <i className="mt-auto fas fa-heart "> </i>
+                                    </span>
+                            )}
+
+                            {/*{cartItems.length >= 0 ? (*/}
+
+                            {/*    cartItems.map(item => (*/}
+                            {/*        item.product === product._id && (*/}
+                            {/*            <>*/}
                             {/*                <span onClick={unlike}*/}
                             {/*                      className='global_cursor'*/}
                             {/*                      style={{color: 'rgba(200, 0, 0, 1)', fontSize: '1.3em'}}>*/}
-                            {/*                <i className="mt-auto fas fa-heart"> </i>*/}
+                            {/*                        <i className="mt-auto fas fa-heart"> </i>*/}
                             {/*                </span>*/}
-                            {/*    </>*/}
-                            {/*) : (*/}
+                            {/*            </>*/}
+                            {/*        )*/}
+                            {/*    ))*/}
 
+                            {/*): (*/}
                             {/*    <span className='global_cursor' onClick={like}*/}
-                            {/*          style={{fontSize: '1.3em'}}>*/}
-                            {/*            <i className="mt-auto fas fa-heart "> </i>*/}
-                            {/*        </span>*/}
-                            {/*)}*/}
+                            {/*    style={{fontSize: '1.3em'}}>*/}
+                            {/*    <i className="mt-auto fas fa-heart "> </i>*/}
+                            {/*    </span>*/}
+                            {/*    )}*/}
 
-                            {cartItems.length > 0 ? (
-
-                                cartItems.map(item => (
-                                    item.product === product._id && (
-
-                                        <>
-                                                    <span onClick={unlike}
-                                                          className='global_cursor'
-                                                          style={{color: 'rgba(200, 0, 0, 1)', fontSize: '1.3em'}}>
-                                                    <i className="mt-auto fas fa-heart"> </i>
-                                                    </span>
-                                        </>
-                                    )
-                                    // : (
-                                    //
-                                    //     <span className='global_cursor' onClick={like}
-                                    //           style={{fontSize: '1.3em'}}>
-                                    //             <i className="mt-auto fas fa-heart "> </i>
-                                    //         </span>
-                                    // )
-
-
-                                ))
-                            ) : (
-                                <span className='global_cursor' onClick={like}
-                                      style={{fontSize: '1.3em'}}>
-                                                <i className="mt-auto fas fa-heart "> </i>
-                                            </span>
-                            )
-                            }
 
                         </>
                     </Col>
