@@ -113,17 +113,17 @@ const ProductsPage = ({match, history}) => {
                                 <h6 className='pl-2 global_blood-red bg-white' onClick={showSideBar}><span><h3
                                     className='d-inline global_blood-red'>|||</h3></span>
                                 </h6>
-                                <Route render={({history}) =>
-                                    <ProductsSearchBox history={history}
-                                                       formClasses={'pr-2'}
-                                                       searchSize={'sm'}
-                                                       searchClasses={'ProductsSideBar_search-bar'}
-                                                       btnSize={'sm'}
-                                                       btnClasses={'ProductsSideBar_search-btn px-3 rounded-right'}
-                                                       iconClass={'fal fa-search p-0 global_goldenrod'}
-                                    />
-                                }
-                                />
+                                {/*<Route render={({history}) =>*/}
+                                {/*    <ProductsSearchBox history={history}*/}
+                                {/*                       formClasses={'pr-2'}*/}
+                                {/*                       searchSize={'sm'}*/}
+                                {/*                       searchClasses={'ProductsSideBar_search-bar'}*/}
+                                {/*                       btnSize={'sm'}*/}
+                                {/*                       btnClasses={'ProductsSideBar_search-btn px-3 rounded-right'}*/}
+                                {/*                       iconClass={'fal fa-search p-0 global_goldenrod'}*/}
+                                {/*    />*/}
+                                {/*}*/}
+                                {/*/>*/}
                             </Col>
                             {!sideBar && (
                                 <Col xs={12} className='ProductsSideBar_selected-cat mx-2 my-0 py-2'>
