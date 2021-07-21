@@ -163,16 +163,16 @@ const IndProductScreen = ({history, match}) => {
                                                     {activeHeart ? (
                                                         <>
                                                         <span onClick={unlike}
-                                                              className='global_cursor'
-                                                              style={{color: 'rgba(200, 0, 0, 1)', fontSize: '1.5em'}}>
-                                                            <i className="mt-auto fas fa-heart bg-transparent"> </i>
+                                                              className='global_cursor global_blue'
+                                                              style={{ fontSize: '1.5em'}}>
+                                                            <i className="mt-auto fas fa-thumbs-up bg-transparent"> </i>
                                                         </span>
                                                         </>
                                                     ) : (
                                                         <>
                                                         <span className='global_cursor' onClick={like}
                                                               style={{fontSize: '1.5em'}}>
-                                                            <i className="mt-auto fas fa-heart bg-transparent"> </i>
+                                                            <i className="mt-auto fas fa-thumbs-up bg-transparent"> </i>
                                                         </span>
                                                         </>
                                                     )}

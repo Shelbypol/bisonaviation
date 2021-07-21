@@ -70,41 +70,22 @@ const ProductCard = ({product, history, match}) => {
                         <>
                             {activeHeart ? (
                                 <>
-                                            <span onClick={unlike}
-                                                  className='global_cursor'
-                                                  style={{color: 'rgba(200, 0, 0, 1)', fontSize: '1.3em'}}>
-                                            <i className="mt-auto fas fa-heart"> </i>
-                                            </span>
+                                <span onClick={unlike}
+                                      className='global_cursor global_blue'
+                                      style={{ fontSize: '1.3em'}}>
+                                    <i className="mt-auto fas fa-thumbs-up"> </i>
+                                {/*<i className="mt-auto fas fa-heart"> </i>*/}
+                                </span>
                                 </>
                             ) : (
 
-                                <span className='global_cursor' onClick={like}
+                                <span onClick={like}
+                                      className='global_cursor'
                                       style={{fontSize: '1.3em'}}>
-                                        <i className="mt-auto fas fa-heart "> </i>
+                                    <i className="mt-auto fas fa-thumbs-up"> </i>
+                                        {/*<i className="mt-auto fas fa-heart "> </i>*/}
                                     </span>
                             )}
-
-                            {/*{cartItems.length >= 0 ? (*/}
-
-                            {/*    cartItems.map(item => (*/}
-                            {/*        item.product === product._id && (*/}
-                            {/*            <>*/}
-                            {/*                <span onClick={unlike}*/}
-                            {/*                      className='global_cursor'*/}
-                            {/*                      style={{color: 'rgba(200, 0, 0, 1)', fontSize: '1.3em'}}>*/}
-                            {/*                        <i className="mt-auto fas fa-heart"> </i>*/}
-                            {/*                </span>*/}
-                            {/*            </>*/}
-                            {/*        )*/}
-                            {/*    ))*/}
-
-                            {/*): (*/}
-                            {/*    <span className='global_cursor' onClick={like}*/}
-                            {/*    style={{fontSize: '1.3em'}}>*/}
-                            {/*    <i className="mt-auto fas fa-heart "> </i>*/}
-                            {/*    </span>*/}
-                            {/*    )}*/}
-
 
                         </>
                     </Col>
