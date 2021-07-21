@@ -26,11 +26,14 @@ const ProductCard = ({product, history, match}) => {
         if (userInfo) {
             dispatch(listMyWishLists());
         }
+        checkCart();
     }, [dispatch, activeHeart, match, history, cartItems]);
+
 
     const like = () => {
         setActiveHeart(!activeHeart);
         dispatch(addToCart(product._id, 1));
+
         // history.push(`/cart/${id}?qty=1`);
     };
 
@@ -40,6 +43,17 @@ const ProductCard = ({product, history, match}) => {
         // history.push(`/cart/${id}?qty=1`);
     };
 
+    const checkCart = () => {
+        cartItems.length >= 0 ? (
+            cartItems.map(item => (
+                item.product === product._id && (
+                 setActiveHeart(true)
+                )
+            ))
+        ) : (
+            setActiveHeart(false)
+        )
+    };
 
     const MAX_LENGTH = 75;
 
@@ -56,19 +70,23 @@ const ProductCard = ({product, history, match}) => {
                         <>
                             {activeHeart ? (
                                 <>
-                                            <span onClick={unlike}
-                                                  className='global_cursor'
-                                                  style={{color: 'rgba(200, 0, 0, 1)', fontSize: '1.3em'}}>
-                                            <i className="mt-auto fas fa-heart"> </i>
-                                            </span>
+                                <span onClick={unlike}
+                                      className='global_cursor global_blue'
+                                      style={{ fontSize: '1.3em'}}>
+                                    <i className="mt-auto fas fa-thumbs-up"> </i>
+                                {/*<i className="mt-auto fas fa-heart"> </i>*/}
+                                </span>
                                 </>
                             ) : (
 
-                                <span className='global_cursor' onClick={like}
+                                <span onClick={like}
+                                      className='global_cursor'
                                       style={{fontSize: '1.3em'}}>
-                                        <i className="mt-auto fas fa-heart "> </i>
+                                    <i className="mt-auto fas fa-thumbs-up"> </i>
+                                        {/*<i className="mt-auto fas fa-heart "> </i>*/}
                                     </span>
                             )}
+
                         </>
                     </Col>
                     <Col xs={6} className='font-weight-bold d-flex justify-content-end'>
@@ -88,18 +106,18 @@ const ProductCard = ({product, history, match}) => {
 
                 <Row>
                     <Col xs={12} className='p-3'>
-                    {product.description.length > MAX_LENGTH ?
-                        (
+                        {product.description.length > MAX_LENGTH ?
+                            (
+                                <Card.Text>
+                                    {`${product.description.substring(0, MAX_LENGTH)}`}<Link
+                                    to={`/product/${product._id}`} className='global_blood-red'><br/>...Read
+                                    more</Link>
+                                </Card.Text>
+                            ) :
                             <Card.Text>
-                                {`${product.description.substring(0, MAX_LENGTH)}`}<Link
-                                to={`/product/${product._id}`} className='global_blood-red'><br/>...Read
-                                more</Link>
+                                <p>{product.description}</p>
                             </Card.Text>
-                        ) :
-                        <Card.Text>
-                            <p>{product.description}</p>
-                        </Card.Text>
-                    }
+                        }
                     </Col>
                 </Row>
 

@@ -32,7 +32,7 @@ const SignInForm = ({history, showSidebar, loginTitle}) => {
                     </div>
                 </>
             )}
-            <Form onSubmit={submitHandler} className='mx-2'>
+            <Form onSubmit={submitHandler} className='mx-2'  style={{zIndex: '10000'}}>
                 <h4>
                     <i className="fas fa-user-alt global_goldenrod d-inline"> </i>
                     <h4 className='global_white d-inline'>&nbsp;{loginTitle}</h4>

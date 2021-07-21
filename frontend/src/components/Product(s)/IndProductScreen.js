@@ -28,6 +28,9 @@ const IndProductScreen = ({history, match}) => {
     const userLogin = useSelector(state => state.userLogin);
     const {userInfo} = userLogin;
 
+    const cart = useSelector(state => state.cart);
+    const {cartItems} = cart;
+
     useLayoutEffect(() => {
         window.scrollTo(0, 0)
     });
@@ -37,11 +40,12 @@ const IndProductScreen = ({history, match}) => {
             alert('Review Submitted!');
             dispatch({type: PRODUCT_CREATE_REVIEW_RESET})
         }
+        checkCart();
         dispatch(listProductDetails(match.params.id));
         window.addEventListener("resize", handleWindowResize);
         return () => window.removeEventListener("resize", handleWindowResize);
 
-    }, [dispatch, match, successProductReview, activeHeart, match, wishList, width]);
+    }, [dispatch, match, successProductReview, activeHeart, match, wishList, width, cartItems]);
 
     const like = () => {
         setActiveHeart(!activeHeart);
@@ -53,6 +57,18 @@ const IndProductScreen = ({history, match}) => {
         setActiveHeart(!activeHeart);
         dispatch(removeFromCart(product._id))
         // history.push(`/cart/${id}?qty=1`);
+    };
+
+    const checkCart = () => {
+        cartItems.length >= 0 ? (
+            cartItems.map(item => (
+                item.product === product._id && (
+                    setActiveHeart(true)
+                )
+            ))
+        ) : (
+            setActiveHeart(false)
+        )
     };
 
     function ControlledTabs() {
@@ -79,6 +95,9 @@ const IndProductScreen = ({history, match}) => {
     const handleWindowResize = () => {
         setWidth(window.innerWidth);
     };
+
+
+
 
 
     return (
@@ -144,16 +163,16 @@ const IndProductScreen = ({history, match}) => {
                                                     {activeHeart ? (
                                                         <>
                                                         <span onClick={unlike}
-                                                              className='global_cursor'
-                                                              style={{color: 'rgba(200, 0, 0, 1)', fontSize: '1.5em'}}>
-                                                            <i className="mt-auto fas fa-heart bg-transparent"> </i>
+                                                              className='global_cursor global_blue'
+                                                              style={{ fontSize: '1.5em'}}>
+                                                            <i className="mt-auto fas fa-thumbs-up bg-transparent"> </i>
                                                         </span>
                                                         </>
                                                     ) : (
                                                         <>
                                                         <span className='global_cursor' onClick={like}
                                                               style={{fontSize: '1.5em'}}>
-                                                            <i className="mt-auto fas fa-heart bg-transparent"> </i>
+                                                            <i className="mt-auto fas fa-thumbs-up bg-transparent"> </i>
                                                         </span>
                                                         </>
                                                     )}
