@@ -3,7 +3,7 @@ import {BrowserRouter as Router, Route, Switch,} from 'react-router-dom';
 import Footer from "./components/HeaderFooter/Footer";
 import ProductsScreen from "./components/Product(s)/ProductsScreen";
 import IndProductScreen from "./components/Product(s)/IndProductScreen";
-import SignInScreen from "./components/SignIn/SignInScreen";
+import SignInMobileScreen from "./components/SignIn/SignInMobileScreen";
 import RegisterScreen from "./components/Register/RegisterScreen";
 import ProfileScreen from "./components/Profile/ProfileScreen";
 import UserListScreen from "./components/AdminScreens/UserListScreen";
@@ -39,7 +39,7 @@ const App = () => {
                     <Route path='/flir-terms' component={TermsFlirScreen}/>
                     <Route path='/register' component={RegisterScreen}/>
                     <Route path='/profile' component={ProfileScreen}/>
-                    <Route path='/login' component={SignInScreen}/>
+                    <Route path='/login' component={SignInMobileScreen}/>
 
                     <Route path='/flir' component={FlirScreen}/>
                     <Route path='/team' component={TeamScreen}/>
