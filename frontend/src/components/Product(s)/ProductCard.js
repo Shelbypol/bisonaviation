@@ -17,7 +17,7 @@ const ProductCard = ({product, history, match}) => {
     const {cartItems} = cart;
 
     const wishListMy = useSelector(state => state.wishListMy);
-    const {loading: loadingOrders, error: errorOrders, wishList} = wishListMy;
+    const {loading: loadingError, error: errorLoading, wishList} = wishListMy;
 
     const userLogin = useSelector(state => state.userLogin);
     const {userInfo} = userLogin;
@@ -58,13 +58,17 @@ const ProductCard = ({product, history, match}) => {
     const userAlreadySaved = () => {
         let wishProductIdArr = [];
 
-        wishList.map(wish => (
-                wish.wishListItems.map(item => (
-                       wishProductIdArr.push(item.product)
+        if(wishList) {
+            wishList.map(wish => (
+                    wish.wishListItems.map(item => (
+                            wishProductIdArr.push(item.product)
+                        )
                     )
                 )
-            )
-        );
+            );
+        }else{
+            setActiveHeart(false)
+        }
 
         console.log('arr')
         console.log(wishProductIdArr);
