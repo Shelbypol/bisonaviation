@@ -58,49 +58,6 @@ const HeaderMobile = () => {
                                    className={cartItems.length !== 0 && ('borderBlink')}/>
                     <Navbar.Collapse id="basic-navbar-nav border">
 
-
-                        {/*  PROFILE  /  SIGN IN  */}
-                        {userInfo && (
-
-                            <>
-                                <LinkContainer to='/profile'
-                                               className='HeaderMobile_text  border-0 d-flex justify-content-start ml-2'>
-                                    <Nav.Link>
-                                            <i className="fas fa-user-cog global_goldenrod HeaderMobile_social-icons"> </i>
-                                            &nbsp;&nbsp;{userInfo.name}
-                                    </Nav.Link>
-                                </LinkContainer>
-
-
-                                {/*  ADMIN DROPDOWN  */}
-                                {userInfo && userInfo.isAdmin && (
-                                    <>
-                                        <LinkContainer to='/admin/userlist'
-                                                       className='HeaderMobile_text border-0 d-flex justify-content-start ml-2'>
-                                            <Nav.Link className='global_goldenrodtxthoverwhite'>
-                                                Admin <span className=''>&nbsp;<i className='global_goldenrod-border-left pl-1'>Users </i></span>
-                                            </Nav.Link>
-                                        </LinkContainer>
-
-                                        <LinkContainer to='/admin/productlist'
-                                                       className='HeaderMobile_text border-0 d-flex justify-content-start ml-2 '>
-                                            <Nav.Link className='global_goldenrodtxthoverwhite'>
-                                                Admin <span className=''>&nbsp;<i className='global_goldenrod-border-left pl-1'>Products</i></span>
-                                            </Nav.Link>
-                                        </LinkContainer>
-                                    </>
-                                )}
-
-
-                                <Nav.Link onClick={logoutHandler}
-                                          className='HeaderMobile_text border-0 d-flex justify-content-start py-3 ml-2'>
-                                    <i className="fal fa-sign-out border-0 global_goldenrod HeaderMobile_social-icons"> </i>
-                                    &nbsp;&nbsp;
-                                </Nav.Link>
-                            </>
-                        )}
-
-
                         {/*  SOCIAL MEDIA ICONS  */}
                         <LinkContainer className='HeaderMobile_text HeaderMobile_top-rounded-border py-3'
                                        to='/'>
@@ -122,6 +79,49 @@ const HeaderMobile = () => {
                                 </Col>
                             </Row>
                         </LinkContainer>
+
+                        {/*  PROFILE  /  SIGN IN  */}
+                        {userInfo && (
+
+                            <>
+                                <LinkContainer to='/profile'
+                                               className='HeaderMobile_text d-flex justify-content-start'>
+                                    <Nav.Link>
+                                            <i className="fas fa-user-cog global_goldenrod HeaderMobile_social-icons"> </i>
+                                            &nbsp;&nbsp;{userInfo.name}
+                                    </Nav.Link>
+                                </LinkContainer>
+
+
+                                {/*  ADMIN DROPDOWN  */}
+                                {userInfo && userInfo.isAdmin && (
+                                    <>
+                                        <LinkContainer to='/admin/userlist'
+                                                       className='HeaderMobile_text d-flex justify-content-start'>
+                                            <Nav.Link className='global_goldenrodtxthoverwhite'>
+                                                 <span className='pl-3'>&nbsp;<i className='global_goldenrod-border-left'>&nbsp;Users </i></span>
+                                            </Nav.Link>
+                                        </LinkContainer>
+
+                                        <LinkContainer to='/admin/productlist'
+                                                       className='HeaderMobile_text d-flex justify-content-start'>
+                                            <Nav.Link className='global_goldenrodtxthoverwhite'>
+                                                 <span className='pl-3'>&nbsp;<i className='global_goldenrod-border-left '>&nbsp;Products</i></span>
+                                            </Nav.Link>
+                                        </LinkContainer>
+                                    </>
+                                )}
+
+
+                                {/*<Nav.Link onClick={logoutHandler}*/}
+                                {/*          className='HeaderMobile_text border-0 d-flex justify-content-start py-3 ml-2'>*/}
+                                {/*    <i className="fal fa-sign-out border-0 global_goldenrod HeaderMobile_social-icons"> </i>*/}
+                                {/*    &nbsp;&nbsp;*/}
+                                {/*</Nav.Link>*/}
+                            </>
+                        )}
+
+
 
 
                         {/*/!*  PROFILE  /  SIGN IN  *!/*/}
@@ -204,6 +204,11 @@ const HeaderMobile = () => {
                                 Contact
                             </Nav.Link>
                         </LinkContainer>
+
+                        <Nav.Link onClick={logoutHandler}
+                                  className='HeaderMobile_text border-0 d-flex justify-content-end py-3 ml-2'>
+                            <h6 className="fal fa-sign-out border-0 global_goldenrod HeaderMobile_social-icons"> </h6>
+                        </Nav.Link>
 
                     </Navbar.Collapse>
                 </Navbar>

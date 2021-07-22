@@ -46,7 +46,7 @@ const SignInBtn = () => {
                 {userInfo ? (
                     <>
 
-                        <li className='HeaderDesktop_user-btns ml-2'>
+                        <li className='HeaderDesktop_user-btns' style={{marginLeft: '1vw'}}>
                             <Link to='/profile'>
                                 <i className="fas fa-user border-0  "> </i>
                             </Link>

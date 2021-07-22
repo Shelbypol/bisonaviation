@@ -77,8 +77,8 @@ const HeaderDesktop = () => {
                             {/*{userInfo.isAdmin ? (*/}
                             <Link to='#' className='global_goldenrod-border-right'>
                                 <h6
-                                    className=' global_white pt-3 pr-3'
-                                    style={{fontWeight: 'lighter'}}>{userInfo.name}</h6>
+                                    className=' global_white pr-3'
+                                    style={{fontWeight: 'lighter', paddingTop: '2.5vh'}}>{userInfo.name}</h6>
                             </Link>
 
                         </>
@@ -88,12 +88,12 @@ const HeaderDesktop = () => {
                         <>
                             {(userInfo && userInfo.isAdmin) && (
                                 <>
-                                    <LinkContainer to='/admin/userlist' className='d-flex justify-content-center'>
+                                    <LinkContainer to='/admin/userlist' className='d-flex justify-content-center '>
                                         <Nav.Link className='HeaderDesktop_user-btns'>Users</Nav.Link>
                                     </LinkContainer>
 
                                     <LinkContainer to='/admin/productlist'
-                                                   className='d-flex justify-content-center'>
+                                                   className='d-flex justify-content-center '>
                                         <Nav.Link className='HeaderDesktop_user-btns'>
                                             Products
                                         </Nav.Link>
@@ -200,10 +200,10 @@ const HeaderDesktop = () => {
 
 
                 {/*============= WISHLIST / LOGIN / CONTACT BTNS ==============*/}
-                <Col xs={2} className='d-flex justify-content-end' style={{marginTop: '-5.75vh'}}>
+                <Col xs={2} className='d-flex justify-content-end' style={{marginTop: '-5vh'}}>
                     <LinkContainer to='/contact' className=''>
                         <Nav.Link className=''>
-                            <h6 className='global_goldenrod-to-white global_goldenrod-border-left pl-3'>Contact</h6>
+                            <h6 className='global_goldenrod-to-white pl-3'>Contact</h6>
                         </Nav.Link>
                     </LinkContainer>
                 </Col>

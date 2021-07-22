@@ -257,23 +257,23 @@ const ProductsPage = ({match, history}) => {
                                 >
                                     <Row
                                         className='d-flex justify-content-center'>
-                                        {/*<Col xs={11} className='d-flex justify-content-end'>*/}
-                                        {/*    <Button*/}
-                                        {/*        onClick={() => {*/}
-                                        {/*            setShowAd(!showAd)*/}
-                                        {/*        }}*/}
-                                        {/*        className='bg-transparent global_blood-red global_cursor'>*/}
-                                        {/*        {showAd && (*/}
-                                        {/*            <p>x</p>*/}
-                                        {/*        )}*/}
-                                        {/*    </Button>*/}
-                                        {/*</Col>*/}
-                                        {/*    <Col xs={11} className='d-flex justify-content-center px-1'>*/}
+                                        <Col xs={11} className='d-flex justify-content-end'>
+                                            <Button
+                                                onClick={() => {
+                                                    setShowAd(!showAd)
+                                                }}
+                                                className='bg-transparent global_blood-red global_cursor'>
+                                                {showAd && (
+                                                    <p>x</p>
+                                                )}
+                                            </Button>
+                                        </Col>
+                                            <Col xs={11} className='d-flex justify-content-center px-1'>
 
-                                        {/*        {showAd && (*/}
-                                        {/*            <ProductHeroAd products={products}/>*/}
-                                        {/*        )}*/}
-                                        {/*</Col>*/}
+                                                {showAd && (
+                                                    <ProductHeroAd products={products}/>
+                                                )}
+                                        </Col>
 
                                         <Col xs={11} className='px-1 global_white-bg'>
                                             <ProductsImgDisplay products={products}

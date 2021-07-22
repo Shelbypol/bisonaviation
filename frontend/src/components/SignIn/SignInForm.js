@@ -26,9 +26,9 @@ const SignInForm = ({history, showSidebar, loginTitle}) => {
         <>
             {error && (
                 <>
-                    <div className='text-center border-bottom mb-2 mt-n4'>
+                    <div className='text-center mb-2 mt-n4 mb-5'>
                         <h6 className='global_goldenrod'>ERROR</h6>
-                        <h6 className='global_white'>username and password do not match</h6>
+                        <h6 className='global_white text-lowercase'>username and password do not match</h6>
                     </div>
                 </>
             )}

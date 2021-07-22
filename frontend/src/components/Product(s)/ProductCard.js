@@ -16,8 +16,8 @@ const ProductCard = ({product, history, match}) => {
     const cart = useSelector(state => state.cart);
     const {cartItems} = cart;
 
-    // const wishListMy = useSelector(state => state.wishListMy);
-    // const {loading: loadingOrders, error: errorOrders, wishList} = wishListMy;
+    const wishListMy = useSelector(state => state.wishListMy);
+    const {loading: loadingWishList, error: errorLoadingWishList, wishList} = wishListMy;
 
     const userLogin = useSelector(state => state.userLogin);
     const {userInfo} = userLogin;
@@ -26,8 +26,9 @@ const ProductCard = ({product, history, match}) => {
         if (userInfo) {
             dispatch(listMyWishLists());
         }
+            // userAlreadySaved();
         checkCart();
-    }, [dispatch, activeHeart, match, history, cartItems]);
+    }, [dispatch, activeHeart, match, history, cartItems, wishList]);
 
 
     const like = () => {
@@ -44,16 +45,46 @@ const ProductCard = ({product, history, match}) => {
     };
 
     const checkCart = () => {
-        cartItems.length >= 0 ? (
+        cartItems.length >= 0 && (
             cartItems.map(item => (
                 item.product === product._id && (
-                 setActiveHeart(true)
+                    setActiveHeart(true)
                 )
             ))
-        ) : (
-            setActiveHeart(false)
         )
     };
+
+// console.log(wishList);
+    const userAlreadySaved = () => {
+        let wishProductIdArr = [];
+
+        if(wishList) {
+            wishList.map(wish => (
+                    wish.wishListItems.map(item => (
+                            wishProductIdArr.push(item.product)
+                        )
+                    )
+                )
+            );
+        }else{
+            setActiveHeart(false)
+        }
+
+        console.log('arr')
+        console.log(wishProductIdArr);
+
+        wishProductIdArr.map(userSavedProductId => (
+            // console.log(userSavedProductId.product)
+            userSavedProductId === product._id && (
+                setActiveHeart(true)
+            )
+        ))
+
+        // wishProductIdArr.map(wishId => (
+        //     wishId === product._id && ( setActiveHeart(true))
+        // ))
+    };
+
 
     const MAX_LENGTH = 75;
 
@@ -72,9 +103,9 @@ const ProductCard = ({product, history, match}) => {
                                 <>
                                 <span onClick={unlike}
                                       className='global_cursor global_blue'
-                                      style={{ fontSize: '1.3em'}}>
+                                      style={{fontSize: '1.3em'}}>
                                     <i className="mt-auto fas fa-thumbs-up"> </i>
-                                {/*<i className="mt-auto fas fa-heart"> </i>*/}
+                                    {/*<i className="mt-auto fas fa-heart"> </i>*/}
                                 </span>
                                 </>
                             ) : (
@@ -83,7 +114,7 @@ const ProductCard = ({product, history, match}) => {
                                       className='global_cursor'
                                       style={{fontSize: '1.3em'}}>
                                     <i className="mt-auto fas fa-thumbs-up"> </i>
-                                        {/*<i className="mt-auto fas fa-heart "> </i>*/}
+                                    {/*<i className="mt-auto fas fa-heart "> </i>*/}
                                     </span>
                             )}
 
