@@ -17,7 +17,7 @@ const ProductCard = ({product, history, match}) => {
     const {cartItems} = cart;
 
     const wishListMy = useSelector(state => state.wishListMy);
-    const {loading: loadingError, error: errorLoading, wishList} = wishListMy;
+    const {loading: loadingWishList, error: errorLoadingWishList, wishList} = wishListMy;
 
     const userLogin = useSelector(state => state.userLogin);
     const {userInfo} = userLogin;
@@ -25,9 +25,9 @@ const ProductCard = ({product, history, match}) => {
     useEffect(() => {
         if (userInfo) {
             dispatch(listMyWishLists());
-            userAlreadySaved();
         }
-        // checkCart();
+            // userAlreadySaved();
+        checkCart();
     }, [dispatch, activeHeart, match, history, cartItems, wishList]);
 
 
@@ -44,15 +44,15 @@ const ProductCard = ({product, history, match}) => {
         // history.push(`/cart/${id}?qty=1`);
     };
 
-    // const checkCart = () => {
-    //     cartItems.length >= 0 && (
-    //         cartItems.map(item => (
-    //             item.product === product._id && (
-    //                 setActiveHeart(true)
-    //             )
-    //         ))
-    //     )
-    // };
+    const checkCart = () => {
+        cartItems.length >= 0 && (
+            cartItems.map(item => (
+                item.product === product._id && (
+                    setActiveHeart(true)
+                )
+            ))
+        )
+    };
 
 // console.log(wishList);
     const userAlreadySaved = () => {
