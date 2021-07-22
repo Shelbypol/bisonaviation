@@ -31,6 +31,8 @@ const ProfileSavedWishList = ({match, history, userInfo}) => {
 
     }, [dispatch, history, successDelete]);
 
+    console.log(wishList);
+
     return (
         <>
             <h2 className='global_blood-red'>Saved Items</h2>
