@@ -43,9 +43,10 @@ const SignInMobileScreen = ({location, history}) => {
 
                     {error && (
                         <>
-                            <div className='text-center border-bottom mb-5 mt-n4'>
+                            <div className='text-center mt-3 mb-4
+                            '>
                                 <h6 className='global_goldenrod'>ERROR</h6>
-                                <h6 className='global_white'>username and password do not match</h6>
+                                <h6 className='global_white text-lowercase'>username and password do not match</h6>
                             </div>
                         </>
                     )}
