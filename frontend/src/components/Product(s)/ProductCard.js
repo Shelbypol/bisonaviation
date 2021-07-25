@@ -16,19 +16,21 @@ const ProductCard = ({product, history, match}) => {
     const cart = useSelector(state => state.cart);
     const {cartItems} = cart;
 
-    const wishListMy = useSelector(state => state.wishListMy);
-    const {loading: loadingWishList, error: errorLoadingWishList, wishList} = wishListMy;
+    // const wishListMy = useSelector(state => state.wishListMy);
+    // const {loading: loadingWishList, error: errorLoadingWishList, wishList} = wishListMy;
 
     const userLogin = useSelector(state => state.userLogin);
     const {userInfo} = userLogin;
 
     useEffect(() => {
-        if (userInfo) {
-            dispatch(listMyWishLists());
-        }
-            // userAlreadySaved();
         checkCart();
-    }, [dispatch, activeHeart, match, history, cartItems, wishList]);
+        // if (userInfo) {
+        //     dispatch(listMyWishLists());
+        // }
+        // checkCart()
+
+    }, [dispatch, activeHeart, match, history, cartItems, userInfo]);
+
 
 
     const like = () => {
@@ -45,45 +47,42 @@ const ProductCard = ({product, history, match}) => {
     };
 
     const checkCart = () => {
-        cartItems.length >= 0 && (
+        cartItems.length >= 0 ? (
             cartItems.map(item => (
                 item.product === product._id && (
                     setActiveHeart(true)
                 )
             ))
+        ):(
+            setActiveHeart(false)
         )
     };
+    // checkCart();
 
 // console.log(wishList);
-    const userAlreadySaved = () => {
-        let wishProductIdArr = [];
-
-        if(wishList) {
-            wishList.map(wish => (
-                    wish.wishListItems.map(item => (
-                            wishProductIdArr.push(item.product)
-                        )
-                    )
-                )
-            );
-        }else{
-            setActiveHeart(false)
-        }
-
-        console.log('arr')
-        console.log(wishProductIdArr);
-
-        wishProductIdArr.map(userSavedProductId => (
-            // console.log(userSavedProductId.product)
-            userSavedProductId === product._id && (
-                setActiveHeart(true)
-            )
-        ))
-
-        // wishProductIdArr.map(wishId => (
-        //     wishId === product._id && ( setActiveHeart(true))
-        // ))
-    };
+//     const userAlreadySaved = () => {
+//         let wishProductIdArr = [];
+//
+//         if (wishListMy.length > 0) {
+//             wishList.map(wish => (
+//                     wish.wishListItems.map(item => (
+//                             wishProductIdArr.push(item.product)
+//                         )
+//                     )
+//                 )
+//             )
+//         console.log('arr');
+//         console.log(wishProductIdArr);
+//             wishProductIdArr.map(userSavedProductId => (
+//                 userSavedProductId === product._id && (
+//                     setActiveHeart(true)
+//                 )
+//             ))
+//
+//         }
+//
+//
+//     };
 
 
     const MAX_LENGTH = 75;
