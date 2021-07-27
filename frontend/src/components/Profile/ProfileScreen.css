@@ -5,7 +5,6 @@
 }
 
 .ProfileScreen_wrapper-col{
-    border-left: 10px solid #daa520;
-    border-top-left-radius: 10%;
+    border-top-left-radius: 5%;
     border-top-right-radius: 5%;
 }
