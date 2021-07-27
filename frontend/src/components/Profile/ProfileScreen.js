@@ -17,8 +17,10 @@ const ProfileScreen = ({location, history}) => {
     return (
         <>
             {/*<Container className='mb-0 pb-0 min-vh-100'>*/}
-                <Jumbotron className='bg-white m-0 px-3 pt-5 pb-5 min-vh-100'>
-                    <h1>{userInfo.name}</h1>
+            <Row className='d-flex justify-content-center my-5 global_white-bg'>
+                <Col md={8} xs={12} className=' global_white-bg m-0 px-3 pb-5 min-vh-100 ProfileScreen_wrapper-col' >
+                {/*<Jumbotron className=' m-0 px-3 pt-5 pb-5 min-vh-100'>*/}
+                    <h1 className='global_black mt-md-5 mt-sm-2 ml-3'>{userInfo.name}</h1>
 
                     <Tab.Container id="left-tabs-example" defaultActiveKey="first">
                         <Row className=' d-flex justify-content-start'>
@@ -32,19 +34,21 @@ const ProfileScreen = ({location, history}) => {
                                     </Nav.Item>
                                 </Nav>
                             </Col>
-                            <Col md={8} xs={12} className='mr-5 border-0'>
-                                <Tab.Content>
-                                    <Tab.Pane eventKey="first">
+                            <Col md={8} xs={12} className='mr-5 ml-2 border-0'>
+                                <Tab.Content style={{borderLeft: '1vw solid #daa520'}} className='pl-md-5 pl-sm-2'>
+                                    <Tab.Pane eventKey="first" className='pl-2'>
                                         <ProfileSavedWishList userInfo={userInfo}/>
                                     </Tab.Pane>
-                                    <Tab.Pane eventKey="second" className='p-2'>
+                                    <Tab.Pane eventKey="second" className='pl-2'>
                                         <ProfileEdit/>
                                     </Tab.Pane>
                                 </Tab.Content>
                             </Col>
                         </Row>
                     </Tab.Container>
-                </Jumbotron>
+                {/*</Jumbotron>*/}
+                </Col>
+            </Row>
             {/*</Container>*/}
         </>
     )

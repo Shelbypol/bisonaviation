@@ -35,8 +35,8 @@ const ProfileSavedWishList = ({match, history, userInfo}) => {
 
     return (
         <>
-            <h2 className='global_blood-red'>Saved Items</h2>
-            <Row >
+            <h2>Saved Items</h2>
+            <Row>
                 <Col xs={12}>
                     {loadingOrders
                         ? <Loader/>

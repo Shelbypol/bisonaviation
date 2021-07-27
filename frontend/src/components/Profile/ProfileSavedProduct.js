@@ -8,9 +8,10 @@ import {deleteWishListItem, listMyWishLists} from "../../actions/wishListActions
 import {addToCart, removeFromCart} from "../../actions/cartActions";
 
 const ProfileSavedProduct = ({wishList, wishes, item, product, userInfo}) => {
-    const [activeHeart, setActiveHeart] = useState(false);
 
+    const [activeHeart, setActiveHeart] = useState(false);
     const [activeEmail, setActiveEmail] = useState(false);
+
     const [userProducts, setUserProducts] = useState(
         wishList.map(wishes => (
             wishes.wishListItems.map(item => (
@@ -54,27 +55,14 @@ const ProfileSavedProduct = ({wishList, wishes, item, product, userInfo}) => {
         dispatch(deleteWishListItem(id));
     };
 
-    const like = () => {
-        setActiveHeart(!activeHeart);
-        dispatch(addToCart(wishes.wishListItems[0].product, 1));
-        // history.push(`/cart/${id}?qty=1`);
-    };
-
-    const unlike = () => {
-        setActiveHeart(!activeHeart);
-        dispatch(removeFromCart(wishes.wishListItems[0].product))
-        // history.push(`/cart/${id}?qty=1`);
-    };
-
-
     return (
         <>
             <Row xs={12}>
                 <Col md={3}  xs={6}>
-                    {/*<Link to={`/product/${item.product}`}>*/}
+                    <Link to={`/product/${item.product}`}>
                     <Image src={item.image} alt={item.name} fluid
                            rounded/>
-                    {/*</Link>*/}
+                    </Link>
                 </Col>
                 <Col md={5} xs={6} className='d-flex align-items-center'>
                     <Link to={`/product/${item.product}`}>
@@ -82,29 +70,8 @@ const ProfileSavedProduct = ({wishList, wishes, item, product, userInfo}) => {
                     </Link>
                 </Col>
 
-                <Col md={2} xs={6} onClick={() => like(item._id)}
-                     className='pt-2 global_blue d-flex justify-content-center align-items-center'>
-
-                    {activeHeart ? (
-                        <>
-                                            <span onClick={unlike}
-                                                  className='global_cursor'
-                                                  style={{fontSize: '1.3em'}}>
-                                            <i className="mt-auto fas fa-envelope"> </i>
-                                            </span>
-                        </>
-                    ) : (
-
-                        <span className='global_cursor' onClick={like}
-                              style={{fontSize: '1.3em'}}>
-                                        <i className="mt-auto fas fa-envelope-open-text "> </i>
-                                    </span>
-                    )}
-
-                </Col>
-
                 <Col md={2} xs={6} onClick={() => deleteHandler(wishes._id)}
-                     className='pt-2 global_blood-red d-flex justify-content-center align-items-center'>
+                     className='pt-2 global_blood-red d-flex justify-content-end align-items-center'>
                     <i className='fas fa-trash'> </i>
                 </Col>
 

@@ -46,10 +46,10 @@ const SignInDropdown = ({showSidebar}) => {
                     <li className='mx-2'>
                         <h6 className='text-muted'>if not a user</h6>
                         <Link to='/Register' onClick={showSidebar}>
-                            <Button className='py-2 px-3 global_blood-red-bg global_cultured rounded'>
-                                Register
-                            </Button>
-                        </Link>
+                        <Button className='py-2 px-3 global_blood-red-bg global_cultured rounded'>
+                            Register
+                        </Button>
+                    </Link>
                     </li>
                 </>
             )}

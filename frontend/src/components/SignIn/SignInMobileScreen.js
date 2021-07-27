@@ -38,7 +38,7 @@ const SignInMobileScreen = ({location, history}) => {
 
     return (
         <>
-            <Row className='my-5 mx-3 d-flex justify-content-center'>
+            <Row className='my-5 pt-5 mx-3 d-flex justify-content-center min-vh-100'>
                 <Col xs={12} md={6}>
 
                     {error && (
@@ -76,38 +76,13 @@ const SignInMobileScreen = ({location, history}) => {
                                 type='submit' variant='primary'><i className="far fa-lock"> </i>&nbsp;Sign In</Button>
                     </Form>
 
-                    {/*<FormContainer className='my-5'>*/}
-                    {/*    <h1 className='global_blood-red'>Sign in</h1>*/}
-                    {/*    {error && <Message variant='danger'>{error}</Message>}*/}
-                    {/*    {loading && <Loader/>}*/}
-                    {/*    <Form onSubmit={submitHandler}>*/}
-                    {/*        <Form.Group controlId='email'>*/}
-                    {/*            <Form.Label>Email Address</Form.Label>*/}
-                    {/*            <Form.Control type='email'*/}
-                    {/*                          placeholder='Enter email'*/}
-                    {/*                          value={email}*/}
-                    {/*                          onChange={(e) => setEmail(e.target.value)}>*/}
-                    {/*            </Form.Control>*/}
-                    {/*        </Form.Group>*/}
 
-                    {/*        <Form.Group controlId='Password'>*/}
-                    {/*            <Form.Label>Password</Form.Label>*/}
-                    {/*            <Form.Control type='Password'*/}
-                    {/*                          placeholder='Enter Password'*/}
-                    {/*                          value={password}*/}
-                    {/*                          onChange={(e) => setPassword(e.target.value)}>*/}
-                    {/*            </Form.Control>*/}
-                    {/*        </Form.Group>*/}
-                    {/*        <Button type='submit' variant='primary' className='global_blood-red-bg'>Sign In</Button>*/}
-                    {/*    </Form>*/}
-                    {/*    <Row className='py-3'>*/}
-                    {/*        <Col>*/}
-                    {/*            New Customer? <Link*/}
-                    {/*            to={redirect ? `/register?redirect=${redirect}` : '/register'}><span className='global_blue'>Register</span></Link>*/}
-                    {/*        </Col>*/}
-                    {/*    </Row>*/}
-
-                    {/*</FormContainer>*/}
+                        <h6 className='text-muted mx-2 mt-5'>if not a user</h6>
+                        <Link to='/Register'>
+                            <Button className='py-2 px-3 mx-2 global_blood-red-bg global_cultured rounded'>
+                                Register
+                            </Button>
+                        </Link>
                 </Col>
             </Row>
         </>
