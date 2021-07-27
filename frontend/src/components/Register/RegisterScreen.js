@@ -55,11 +55,11 @@ const RegisterScreen = ({location, history}) => {
 
                     <Col xs={12} md={6} className='mt-3 text-center d-flex justify-content-center align-items-center'>
                         <Row>
-                            {/*<Col xs={12} className='text-white'>*/}
-                            {/*    <h3 className='global_blue'>BISON AVIATION WELCOMES YOU!</h3>*/}
-                            {/*</Col>*/}
+                            <Col xs={12} className='text-white d-none d-md-block'>
+                                <h3 className='global_blue'>BISON AVIATION WELCOMES YOU!</h3>
+                            </Col>
 
-                            <Col md={12} className='text-white d-sm-none d-md-block'>
+                            <Col md={12} className='text-white d-none d-md-block'>
                                 <p>Bison Aviation is an FAA certificated Part 145 Repair Station serving the general
                                     aviation community. Founded by an avid general aviation pilot and fellow aircraft
                                     owner, we hold ourselves to the highest standards of quality and safety so that we
@@ -73,7 +73,7 @@ const RegisterScreen = ({location, history}) => {
 
                     </Col>
 
-                    <Col xs={11} md={5} className='m-3 pb-3 text-dark global_light-grey-bg'>
+                    <Col xs={11} md={5} className='mx-3 mb-3 pb-3 text-dark global_light-grey-bg'>
 
                         {message && <Message variant='danger'>{message}</Message>}
 
@@ -117,7 +117,7 @@ const RegisterScreen = ({location, history}) => {
                                 </Form.Control>
                             </Form.Group>
 
-                            <Button className='global_blue-bg' type='submit' variant='primary'>Register</Button>
+                            <Button className='global_blood-red-bg' type='submit' variant='primary'>Register</Button>
                         </Form>
                         <Row className='my-3'>
                             <Col xs={12}>
@@ -125,7 +125,7 @@ const RegisterScreen = ({location, history}) => {
                                 Have an account?
                                     <Link
                                         to={redirect ? `/login?redirect=${redirect}` : '/login'}><span
-                                        className='global_blood-red'>&nbsp; Login</span>
+                                        className='global_blood-red Register_hover-terms'>&nbsp; Login</span>
                                     </Link>
                                     </span>
                             </Col>
@@ -149,6 +149,19 @@ const RegisterScreen = ({location, history}) => {
                         {/*</FormContainer>*/}
                     </Col>
 
+                    <Row>
+
+                        <Col md={12} className='text-white d-sm-block d-md-none text-center'>
+                            <p>Bison Aviation is an FAA certificated Part 145 Repair Station serving the general
+                                aviation community. Founded by an avid general aviation pilot and fellow aircraft
+                                owner, we hold ourselves to the highest standards of quality and safety so that we
+                                can deliver the very highest quality of service to our customers. We pride ourselves
+                                in going the extra mile to ensure that the goods and services we deliver are the
+                                best fit for our customer's aircraft and their specific mission profile. We know
+                                that our customers rely on us to provide them with an honest and frank assessment of
+                                the condition of their aircraft, and we are honored to accept that charge.</p>
+                        </Col>
+                    </Row>
 
                 </Row>
             </Container>
