@@ -55,11 +55,11 @@ const RegisterScreen = ({location, history}) => {
 
                     <Col xs={12} md={6} className='mt-3 text-center d-flex justify-content-center align-items-center'>
                         <Row>
-                            <Col xs={12} className='text-white'>
-                                <h4 className='global_blue'>BISON AVIATION WELCOMES YOU!</h4>
-                            </Col>
+                            {/*<Col xs={12} className='text-white'>*/}
+                            {/*    <h3 className='global_blue'>BISON AVIATION WELCOMES YOU!</h3>*/}
+                            {/*</Col>*/}
 
-                            <Col xs={12} className='text-white'>
+                            <Col md={12} className='text-white d-sm-none d-md-block'>
                                 <p>Bison Aviation is an FAA certificated Part 145 Repair Station serving the general
                                     aviation community. Founded by an avid general aviation pilot and fellow aircraft
                                     owner, we hold ourselves to the highest standards of quality and safety so that we
@@ -73,16 +73,16 @@ const RegisterScreen = ({location, history}) => {
 
                     </Col>
 
-                    <Col xs={11} md={5} className='m-3 pb-3 text-dark border rounded global_light-grey-bg'>
+                    <Col xs={11} md={5} className='m-3 pb-3 text-dark global_light-grey-bg'>
 
                         {message && <Message variant='danger'>{message}</Message>}
 
                         {error && <Message variant='danger'>{error}</Message>}
                         {loading && <Loader/>}
                         <Form onSubmit={submitHandler}>
-                            <h1 className='global_blood-red'>Register</h1>
+                            <h1 className='global_goldenrod'>Register</h1>
                             <Form.Group controlId='name'>
-                                <Form.Label>Name</Form.Label>
+                                <Form.Label className='global_goldenrod'>Name</Form.Label>
                                 <Form.Control type='name'
                                               placeholder='Enter name'
                                               value={name}
@@ -91,7 +91,7 @@ const RegisterScreen = ({location, history}) => {
                             </Form.Group>
 
                             <Form.Group controlId='email'>
-                                <Form.Label>Email Address</Form.Label>
+                                <Form.Label className='global_goldenrod'>Email Address</Form.Label>
                                 <Form.Control type='email'
                                               placeholder='Enter email'
                                               value={email}
@@ -100,7 +100,7 @@ const RegisterScreen = ({location, history}) => {
                             </Form.Group>
 
                             <Form.Group controlId='Password'>
-                                <Form.Label>Password</Form.Label>
+                                <Form.Label className='global_goldenrod'>Password</Form.Label>
                                 <Form.Control type='password'
                                               placeholder='Enter Password'
                                               value={password}
@@ -109,7 +109,7 @@ const RegisterScreen = ({location, history}) => {
                             </Form.Group>
 
                             <Form.Group controlId='confirmPassword'>
-                                <Form.Label>Confirm Password</Form.Label>
+                                <Form.Label className='global_goldenrod'>Confirm Password</Form.Label>
                                 <Form.Control type='password'
                                               placeholder='Confirm Password'
                                               value={confirmPassword}
@@ -121,21 +121,26 @@ const RegisterScreen = ({location, history}) => {
                         </Form>
                         <Row className='my-3'>
                             <Col xs={12}>
-                                Have an account? <Link
-                                to={redirect ? `/login?redirect=${redirect}` : '/login'}><span className='global_red'>Login</span></Link>
+                                <span className='global_cursor Register_hover-terms'>
+                                Have an account?
+                                    <Link
+                                        to={redirect ? `/login?redirect=${redirect}` : '/login'}><span
+                                        className='global_blood-red'>&nbsp; Login</span>
+                                    </Link>
+                                    </span>
                             </Col>
                         </Row>
                         <Row>
                             <Col xs={12}>
                                 <LinkContainer to='/terms'>
                             <span className='global_blue global_cursor Register_hover-terms'>
-                              GENERAL TERMS AND CONDITIONS
+                              general terms & conditions
                             </span>
                                 </LinkContainer>
                                 <br/>
                                 <LinkContainer to='/flir-terms'>
                             <span className='global_blue global_cursor Register_hover-terms'>
-                              FLIR TERMS AND CONDITIONS
+                              flir terms & conditions
                             </span>
                                 </LinkContainer>
                             </Col>
@@ -143,7 +148,6 @@ const RegisterScreen = ({location, history}) => {
 
                         {/*</FormContainer>*/}
                     </Col>
-
 
 
                 </Row>
