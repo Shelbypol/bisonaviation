@@ -38,7 +38,7 @@ const SignInMobileScreen = ({location, history}) => {
 
     return (
         <>
-            <Row className='my-5 mx-3 d-flex justify-content-center'>
+            <Row className='my-5 pt-5 mx-3 d-flex justify-content-center min-vh-100'>
                 <Col xs={12} md={6}>
 
                     {error && (
