@@ -145,8 +145,6 @@ const RegisterScreen = ({location, history}) => {
                                 </LinkContainer>
                             </Col>
                         </Row>
-
-                        {/*</FormContainer>*/}
                     </Col>
 
                     <Row>
