@@ -24,9 +24,11 @@ const TeamCard = ({img, headerName, headerPosition, name, position, certificatio
         //     setShow(false)
         // }
 
-        if (node.current.contains(e.target) === false) {
+
+        if (node.current.contains(e.target) === false || typeof node.current.contains(e.target) === 'undefined') {
             setShow(false);
         }
+
         //         if (node.current.contains(e.target) === false) {
         //     setShow(false);
         // }
@@ -42,7 +44,7 @@ const TeamCard = ({img, headerName, headerPosition, name, position, certificatio
                 <Card className='bg-transparent border-0 w-100 h-100 m-0 p-0' onClick={cardShow}>
                     <Card.Img src={img} className='rounded'/>
                     <Card.Header
-                        className='global_cultured global_rich-black-bg text-center d-flex justify-content-center align-items-center'
+                        className='global_cultured global_goldenrod text-center d-flex justify-content-center align-items-center'
                         style={{height: '12vh'}}>
                         {headerName}
                         <br/>
