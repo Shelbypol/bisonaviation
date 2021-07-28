@@ -14,25 +14,17 @@ const ProfileSavedProduct = ({wishList, wishes, item, product, userInfo}) => {
 
 
     const [userProducts, setUserProducts] = useState([]
-        // wishList.map(wishes => (
-        //     wishes.wishListItems.map(item => (
-        //         item._id
-            // ))))
     );
 
     console.log(userProducts);
 
     const dispatch = useDispatch();
 
-    // const cart = useSelector(state => state.cart);
-    // const {cartItems} = cart;
-
     // const email = useSelector(state => state.email);
     // const {emailItems} = email;
 
     useEffect(() => {
         checkRepeatId();
-        // wishListRepeatsCheck()
     }, [dispatch, activeHeart]);
 
 
@@ -64,17 +56,6 @@ const ProfileSavedProduct = ({wishList, wishes, item, product, userInfo}) => {
     const deleteHandler = (id) => {
         dispatch(deleteWishListItem(id));
     };
-
-    //passing item mapped in saved wishlist to check against new wishlist mapped item
-    // const wishListRepeatsCheck = () => {
-    //     {
-    //         wishList.map(wishes => (
-    //             wishes.wishListItems.map(nestedItem => (
-    //                 nestedItem._id !== item._id && setItemArr.push(nestedItem)
-    //             ))
-    //         ))
-    //     }
-    // };
 
     return (
         <>

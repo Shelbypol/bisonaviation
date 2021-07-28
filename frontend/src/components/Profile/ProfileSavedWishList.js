@@ -9,15 +9,10 @@ import ProfileEmailState from "./ProfileEmailState";
 
 const ProfileSavedWishList = ({match, history, userInfo}) => {
 
-    // const [activeEmail, setActiveEmail] = useState(false);
-
     const dispatch = useDispatch();
 
     const productDetails = useSelector(state => state.productDetails);
     const {product} = productDetails;
-
-    // const cart = useSelector(state => state.cart);
-    // const {cartItems} = cart;
 
     const wishListMy = useSelector(state => state.wishListMy);
     const {loading: loadingOrders, error: errorOrders, wishList} = wishListMy;
@@ -33,18 +28,6 @@ const ProfileSavedWishList = ({match, history, userInfo}) => {
         dispatch(listMyWishLists())
 
     }, [dispatch, history, successDelete]);
-
-    // const wishListRepeatsCheck = () => {
-    //     {
-    //         wishList.map(wishes => (
-    //             wishes.wishListItems.map(item => (
-    //
-    //             ))
-    //         ))
-    //     }
-    // };
-
-    // console.log(wishList);
 
     return (
         <>
