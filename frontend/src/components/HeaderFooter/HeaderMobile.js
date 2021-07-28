@@ -6,6 +6,7 @@ import {logout} from '../../actions/userActions'
 import './HeaderMobile.css'
 import {CART_RESET} from "../../constants/cartConstants";
 import logo from '../../images/bg-graphics/graphics/Final-Logo-Horizontal.png'
+import SocialIcons from "../SocialIcons/SocialIcons";
 
 
 const HeaderMobile = () => {
@@ -59,33 +60,34 @@ const HeaderMobile = () => {
                     <Navbar.Collapse id="basic-navbar-nav border">
 
                         {/*  SOCIAL MEDIA ICONS  */}
-                        <LinkContainer className='HeaderMobile_text HeaderMobile_top-rounded-border py-3'
-                                       to='/'>
-                            <Row className='m-0 p-0 '>
-                                <Col xs={4} className='m-0 p-0 d-flex justify-content-center'>
-                                    <Nav.Link className=''>
-                                        <i className="fab fa-facebook MobileHeader_social-icons global_whitehovergoldenrodtxt"> </i>
-                                    </Nav.Link>
-                                </Col>
-                                <Col xs={4} className='m-0 p-0 d-flex justify-content-center'>
-                                    <Nav.Link className=''>
-                                        <i className="fab fa-instagram MobileHeader_social-icons global_whitehovergoldenrodtxt"> </i>
-                                    </Nav.Link>
-                                </Col>
-                                <Col xs={4} className='m-0 p-0 d-flex justify-content-center'>
-                                    <Nav.Link className=''>
-                                        <i className="fab fa-twitter MobileHeader_social-icons global_whitehovergoldenrodtxt"> </i>
-                                    </Nav.Link>
-                                </Col>
-                            </Row>
-                        </LinkContainer>
+                        {/*<SocialIcons/>*/}
+                        {/*<LinkContainer className='HeaderMobile_text HeaderMobile_top-rounded-border py-3'*/}
+                        {/*               to='/'>*/}
+                        {/*    <Row className='m-0 p-0 '>*/}
+                        {/*        <Col xs={4} className='m-0 p-0 d-flex justify-content-center'>*/}
+                        {/*            <Nav.Link className=''>*/}
+                        {/*                <i className="fab fa-facebook MobileHeader_social-icons global_whitehovergoldenrodtxt"> </i>*/}
+                        {/*            </Nav.Link>*/}
+                        {/*        </Col>*/}
+                        {/*        <Col xs={4} className='m-0 p-0 d-flex justify-content-center'>*/}
+                        {/*            <Nav.Link className=''>*/}
+                        {/*                <i className="fab fa-instagram MobileHeader_social-icons global_whitehovergoldenrodtxt"> </i>*/}
+                        {/*            </Nav.Link>*/}
+                        {/*        </Col>*/}
+                        {/*        <Col xs={4} className='m-0 p-0 d-flex justify-content-center'>*/}
+                        {/*            <Nav.Link className=''>*/}
+                        {/*                <i className="fab fa-twitter MobileHeader_social-icons global_whitehovergoldenrodtxt"> </i>*/}
+                        {/*            </Nav.Link>*/}
+                        {/*        </Col>*/}
+                        {/*    </Row>*/}
+                        {/*</LinkContainer>*/}
 
                         {/*  PROFILE  /  SIGN IN  */}
                         {userInfo && (
 
                             <>
                                 <LinkContainer to='/profile'
-                                               className='HeaderMobile_text d-flex justify-content-start'>
+                                               className='HeaderMobile_text d-flex justify-content-start HeaderMobile_top-rounded-border'>
                                     <Nav.Link>
                                             <i className="fas fa-user-cog global_goldenrod HeaderMobile_social-icons"> </i>
                                             &nbsp;&nbsp;{userInfo.name}
@@ -129,7 +131,7 @@ const HeaderMobile = () => {
                             <>
 
                                 <LinkContainer to='/login'>
-                                    <Nav.Link className='HeaderMobile_text d-flex justify-content-start py-3'>
+                                    <Nav.Link className='HeaderMobile_text d-flex justify-content-start py-3 HeaderMobile_top-rounded-border'>
                                         <span className='global_goldenrod'>
                                         Login - Register
                                         </span>
@@ -198,7 +200,7 @@ const HeaderMobile = () => {
                         </LinkContainer>
 
                         <LinkContainer
-                            className='HeaderMobile_text global_goldenrod d-flex justify-content-start pb-5'
+                            className='HeaderMobile_text global_goldenrod d-flex justify-content-start'
                             to='/contact'>
                             <Nav.Link>
                                 Contact
