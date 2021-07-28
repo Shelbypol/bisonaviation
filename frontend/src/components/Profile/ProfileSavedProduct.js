@@ -11,13 +11,16 @@ const ProfileSavedProduct = ({wishList, wishes, item, product, userInfo}) => {
 
     const [activeHeart, setActiveHeart] = useState(false);
     const [activeEmail, setActiveEmail] = useState(false);
-    // const [itemArr, setItemArr] = useState([]);
 
-    const [userProducts, setUserProducts] = useState(
-        wishList.map(wishes => (
-            wishes.wishListItems.map(item => (
-                item
-            )))));
+
+    const [userProducts, setUserProducts] = useState([]
+        // wishList.map(wishes => (
+        //     wishes.wishListItems.map(item => (
+        //         item._id
+            // ))))
+    );
+
+    console.log(userProducts);
 
     const dispatch = useDispatch();
 
@@ -28,6 +31,7 @@ const ProfileSavedProduct = ({wishList, wishes, item, product, userInfo}) => {
     // const {emailItems} = email;
 
     useEffect(() => {
+        checkRepeatId();
         // wishListRepeatsCheck()
     }, [dispatch, activeHeart]);
 
@@ -47,11 +51,14 @@ const ProfileSavedProduct = ({wishList, wishes, item, product, userInfo}) => {
         // dispatch(addToEmail(item.product));
     };
 
-    // console.log(itemArr);
-
     const removeFromEmailListHandler = () => {
         setActiveEmail(!activeEmail);
         // dispatch(removeFromEmail(item.product))
+    };
+
+    const checkRepeatId = () => {
+
+        item._id !== item._id  && setUserProducts.push(item)
     };
 
     const deleteHandler = (id) => {
