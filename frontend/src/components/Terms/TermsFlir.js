@@ -31,7 +31,7 @@ const TermsFlir = () => {
 
                 <Col xs={12}>
                     <p>
-                        <span className='global_red'>
+                        <span className='global_goldenrod'>
                             1. CONTRACT. &nbsp;
                         </span>
                         The “Contract” is the legally binding agreement for Buyer’s purchase of the goods and services
@@ -47,7 +47,7 @@ const TermsFlir = () => {
                 </Col>
                 <Col xs={12}>
                     <p>
-                        <span className='global_red'>
+                        <span className='global_goldenrod'>
                             2. ACCEPTANCE OF CONTRACT. &nbsp;
                         </span>
                         Bison’s Quotation offer, unless it expressly states otherwise, may be accepted within 30 days of
@@ -58,7 +58,7 @@ const TermsFlir = () => {
                 </Col>
                 <Col xs={12}>
                     <p>
-                        <span className='global_red'>
+                        <span className='global_goldenrod'>
                             3. CHANGES. &nbsp;
                         </span>
                         Buyer, in writing, may: (1) make changes to drawings or specifications; (2) make additions to or
@@ -74,7 +74,7 @@ const TermsFlir = () => {
                 </Col>
                 <Col xs={12}>
                     <p>
-                        <span className='global_red'>
+                        <span className='global_goldenrod'>
                             4. PRICE AND PAYMENT.  &nbsp;
                         </span>
                         Unless expressly stated otherwise in writing by Bison, the Purchase Price excludes all charges
@@ -102,7 +102,7 @@ const TermsFlir = () => {
                 </Col>
                 <Col xs={12}>
                     <p>
-                        <span className='global_red'>
+                        <span className='global_goldenrod'>
                            5. ACCEPTANCE AND INSPECTION.  &nbsp;
                         </span>
                         If Buyer requests in writing on its purchase order, Bison shall provide Buyer at least seven
@@ -121,7 +121,7 @@ const TermsFlir = () => {
                 </Col>
                 <Col xs={12}>
                     <p>
-                        <span className='global_red'>
+                        <span className='global_goldenrod'>
                            6. TITLE AND RISK OF LOSS.   &nbsp;
                         </span>
                         Delivery shall be EXW Bison's plant, (ex works Incoterms 2000). Title and full risk of loss
@@ -138,7 +138,7 @@ const TermsFlir = () => {
                 </Col>
                 <Col xs={12}>
                     <p>
-                        <span className='global_red'>
+                        <span className='global_goldenrod'>
                            6. TITLE AND RISK OF LOSS.   &nbsp;
                         </span>
                         Delivery shall be EXW Bison's plant, (ex works Incoterms 2000). Title and full risk of loss
@@ -148,7 +148,7 @@ const TermsFlir = () => {
                 </Col>
                 <Col xs={12}>
                     <p>
-                        <span className='global_red'>
+                        <span className='global_goldenrod'>
                           7. DELIVERY AND DELAYS.  &nbsp;
                         </span>
                         Bison shall substantially meet quoted delivery dates, which are estimated based on conditions
@@ -166,7 +166,7 @@ const TermsFlir = () => {
                 </Col>
                 <Col xs={12}>
                     <p>
-                        <span className='global_red'>
+                        <span className='global_goldenrod'>
                           8. WARRANTY.  &nbsp;
                         </span>
                         Seller warrants that the Goods, will conform substantially to published specifications and be
@@ -201,7 +201,7 @@ const TermsFlir = () => {
                 </Col>
                 <Col xs={12}>
                     <p>
-                        <span className='global_red'>
+                        <span className='global_goldenrod'>
                           9. CONFIDENTIALITY AND INTELLECTUAL PROPERTY.  &nbsp;
                         </span>
                         All technical and commercial information and ideas which Bison has supplied or shall supply
@@ -222,7 +222,7 @@ const TermsFlir = () => {
                 </Col>
                 <Col xs={12}>
                     <p>
-                        <span className='global_red'>
+                        <span className='global_goldenrod'>
                           10. NO REVERSE ENGINEERING.  &nbsp;
                         </span>
                         It is an express condition of this Agreement that Buyer shall neither reverse engineer,
@@ -245,7 +245,7 @@ const TermsFlir = () => {
                 </Col>
                 <Col xs={12}>
                     <p>
-                        <span className='global_red'>
+                        <span className='global_goldenrod'>
                           11. PATENT INDEMNITY.  &nbsp;
                         </span>
                         If the Goods sold hereunder are to be prepared or manufactured according to Buyer’s
@@ -276,7 +276,7 @@ const TermsFlir = () => {
                 </Col>
                 <Col xs={12}>
                     <p>
-                        <span className='global_red'>
+                        <span className='global_goldenrod'>
                           12. LIMITATION OF LIABILITY.  &nbsp;
                         </span>
                         Bison shall in no event be liable for any consequential, incidental, indirect, special or
@@ -295,7 +295,7 @@ const TermsFlir = () => {
                 </Col>
                 <Col xs={12}>
                     <p>
-                        <span className='global_red'>
+                        <span className='global_goldenrod'>
                           13. APPLICABLE LAW. &nbsp;
                         </span>
                         The Contract shall be governed by the law of the State of Texas, exclusive of its conflicts of
@@ -308,7 +308,7 @@ const TermsFlir = () => {
                 </Col>
                 <Col xs={12}>
                     <p>
-                        <span className='global_red'>
+                        <span className='global_goldenrod'>
                           14. TERMINATION. &nbsp;
                         </span>
                         Buyer shall have the right to cancel the Contract upon
@@ -324,7 +324,7 @@ const TermsFlir = () => {
                 </Col>
                 <Col xs={12}>
                     <p>
-                        <span className='global_red'>
+                        <span className='global_goldenrod'>
                           15. EXPORT LAWS. &nbsp;
                         </span>
                         The Goods are subject to U.S. Government export laws and regulations. Buyer shall not export,
@@ -337,7 +337,7 @@ const TermsFlir = () => {
                 </Col>
                 <Col xs={12}>
                     <p>
-                        <span className='global_red'>
+                        <span className='global_goldenrod'>
                          16. SOFTWARE LICENSE. &nbsp;
                         </span>
                         If Seller provides restricted software with the Goods, that restricted software is proprietary to Seller or Seller’s suppliers. Seller grants Buyer a nonexclusive, perpetual license to use the software only on and in conjunction with the Goods. Buyer agrees that title remains with Seller (and its suppliers, if any) and Buyer shall not disassemble, decode, or translate the software, or copy or modify the software except for archival or back-up purposes as necessary for use on and with the Goods. Buyer will maintain all proprietary marks on software provided by Seller. Buyer may transfer this license if transferring the Goods also and if the transferee agrees to comply with the restrictions of this license. Upon such transfer, Buyer’s license terminates and Buyer shall destroy all copies of the software and related documentation in Buyer’s possession.
@@ -345,7 +345,7 @@ const TermsFlir = () => {
                 </Col>
                 <Col xs={12}>
                     <p>
-                        <span className='global_red'>
+                        <span className='global_goldenrod'>
                          17. ASSIGNMENT. &nbsp;
                         </span>
                         Neither party shall assign its rights or delegate its duties under this sale agreement without the prior written consent of the other. Refusal to consent to assignment must be commercially reasonable, however.
@@ -353,7 +353,7 @@ const TermsFlir = () => {
                 </Col>
                 <Col xs={12}>
                     <p>
-                        <span className='global_red'>
+                        <span className='global_goldenrod'>
                          18. TRADEMARKS. &nbsp;
                         </span>
                         Buyer agrees that it will not use any name or trademark of Bison Aviation, LLC without prior express written permission.
@@ -361,7 +361,7 @@ const TermsFlir = () => {
                 </Col>
                 <Col xs={12}>
                     <p>
-                        <span className='global_red'>
+                        <span className='global_goldenrod'>
                          19. U.S. TAXES. &nbsp;
                         </span>
                         The prices stated are exclusive of any federal, state, municipal, or other government tax that may be imposed upon the production, storage, sale, transportation, or use of the products described herein. The Buyer shall pay such taxes applied directly to the sale and levied prior to shipment from Bison’s Plant, or in lieu thereof the Buyer shall provide a tax exemption certificate acceptable to the taxing authorities. Unless a state issued tax exempt certificate is presented at the time of order placement, sales tax will be applied when shipping product to the following states: TX. Training is not taxable in any state. The U.S. Government is not taxable in any state. If taxable, please include amount and percentage on purchase order.
@@ -369,7 +369,7 @@ const TermsFlir = () => {
                 </Col>
                 <Col xs={12}>
                     <p>
-                        <span className='global_red'>
+                        <span className='global_goldenrod'>
                          20. U.S. GOVERNMENT ACQUISITION REGULATIONS. &nbsp;
                         </span>
                         When Buyer is a prime contractor or a subcontractor at a higher tier than Bison for a U.S. Government prime contract, applicable Federal Acquisition Regulations and Defense Federal Acquisition Regulation Supplement clauses (collectively, FAR Clauses) may be incorporated into this Contract only if there are other FAR clauses that make the subject incorporation in this Contract mandatory. Bison expressly rejects the incorporation of any FAR Clauses that do not meet the foregoing condition. In all incorporated FAR Clauses, the terms “Government” and “Contractor” shall be revised to identify properly the contracting parties under this Contract and effect the proper intent of the clause. Except with respect to termination for Bison’s default, Buyer shall exercise an incorporated FAR Clause against Bison only if, and to the extent that, the subject FAR Clause is exercised against the Buyer by Buyer’s customer.

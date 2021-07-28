@@ -45,14 +45,14 @@ const TermsGeneral = () => {
                 </Col>
 
                 <Col xs={12}>
-                    <p className='Terms_title'>
+                    <p className='Terms_title global_goldenrod'>
                         GENERAL TERMS AND CONDITIONS
                     </p>
                 </Col>
 
                 <Col xs={12}>
                     <p>
-                        <span className='global_red'>
+                        <span className='global_goldenrod'>
                             Authority to Execute: &nbsp;
                         </span>
                         The person signing this agreement (“customer”) has actual authority, as owner of the aircraft or
@@ -65,7 +65,7 @@ const TermsGeneral = () => {
 
                 <Col xs={12}>
                     <p>
-                        <span className='global_red'>
+                        <span className='global_goldenrod'>
                             Scope of Repairs: &nbsp;
                         </span>
                         Repair services include, but are not limited to, the furnishing of labor, parts, materials,
@@ -81,7 +81,7 @@ const TermsGeneral = () => {
 
                 <Col xs={12}>
                     <p>
-                        <span className='global_red'>
+                        <span className='global_goldenrod'>
                             Right of Possession: &nbsp;
                         </span>
                         Bison Aviation is entitled to payment for all repair services performed on the component or the
@@ -105,7 +105,7 @@ const TermsGeneral = () => {
 
                 <Col xs={12}>
                     <p>
-                        <span className='global_red'>
+                        <span className='global_goldenrod'>
                             Lien Enforcement: &nbsp;
                         </span>
                         If, prior to the time that full payment for repair services has been made, Bison Aviation
@@ -123,7 +123,7 @@ const TermsGeneral = () => {
 
                 <Col xs={12}>
                     <p>
-                        <span className='global_red'>
+                        <span className='global_goldenrod'>
                             Fees for Storage:  &nbsp;
                         </span>
                         In the event that Bison Aviation is required to maintain possession of the aircraft due to
@@ -137,7 +137,7 @@ const TermsGeneral = () => {
 
                 <Col xs={12}>
                     <p>
-                        <span className='global_red'>
+                        <span className='global_goldenrod'>
                            No Bailment:   &nbsp;
                         </span>
                         No bailment is created by Bison Aviation’s possession of the aircraft. The customer bears the
@@ -155,7 +155,7 @@ const TermsGeneral = () => {
 
                 <Col xs={12}>
                     <p>
-                        <span className='global_red'>
+                        <span className='global_goldenrod'>
                            No Waiver:   &nbsp;
                         </span>
                         The failure of Bison Aviation to immediately enforce any provision, right, or remedy of this
@@ -170,7 +170,7 @@ const TermsGeneral = () => {
 
                 <Col xs={12}>
                     <p>
-                        <span className='global_red'>
+                        <span className='global_goldenrod'>
                            Consent to Photography:   &nbsp;
                         </span>
                         Customer consents that Bison Aviation may photograph, video, or otherwise record images of
@@ -181,7 +181,7 @@ const TermsGeneral = () => {
 
                 <Col xs={12}>
                     <p>
-                        <span className='global_red'>
+                        <span className='global_goldenrod'>
                            Contract Construction:   &nbsp;
                         </span>
                         In interpreting this contract, the parties agree that it should be interpreted as if neither
@@ -191,7 +191,7 @@ const TermsGeneral = () => {
                 </Col>
                 <Col xs={12}>
                     <p>
-                        <span className='global_red'>
+                        <span className='global_goldenrod'>
                            Severability:   &nbsp;
                         </span>
                         If a court of competent jurisdiction determines that any section of this agreement is not
@@ -201,7 +201,7 @@ const TermsGeneral = () => {
                 </Col>
                 <Col xs={12}>
                     <p>
-                        <span className='global_red'>
+                        <span className='global_goldenrod'>
                            Applicable Law:  &nbsp;
                         </span>
                         This agreement is to be construed in accordance with the laws of the State of Texas, United
@@ -210,7 +210,7 @@ const TermsGeneral = () => {
                 </Col>
                 <Col xs={12}>
                     <p>
-                        <span className='global_red'>
+                        <span className='global_goldenrod'>
                            Dispute Resolution:  &nbsp;
                         </span>
                         Any disputes arising under this agreement, including claims regarding actions leading to the
@@ -222,7 +222,7 @@ const TermsGeneral = () => {
 
                 <Col xs={12}>
                     <p>
-                        <span className='global_red'>
+                        <span className='global_goldenrod'>
                            Attorney’s Fees:  &nbsp;
                         </span>
                         If Bison Aviation is required to take any action to enforce the provisions of this agreement,
@@ -231,13 +231,13 @@ const TermsGeneral = () => {
                     </p>
                 </Col>
                 <Col xs={12}>
-                    <h3 className='global_red'>
+                    <h3 className='global_goldenrod'>
                         PARTS EXTENDED LIMITED WARRANTY
                     </h3>
                 </Col>
                 <Col xs={12}>
                     <p>
-                        <span className='global_red'>
+                        <span className='global_goldenrod'>
                           1. REPAIRED / OVERHAULED EQUIPMENT:   &nbsp;
                         </span>
                         Bison Aviation, LLC (Bison Aviation.) warrants all equipment and spare parts which it repairs or
@@ -261,7 +261,7 @@ const TermsGeneral = () => {
                 </Col>
                 <Col xs={12}>
                     <p>
-                        <span className='global_red'>
+                        <span className='global_goldenrod'>
                           2. EXCHANGE POLICY:   &nbsp;
                         </span>
                         All exchange core units must be same identical part number and modification status unless
@@ -278,7 +278,7 @@ const TermsGeneral = () => {
                 </Col>
                 <Col xs={12}>
                     <p>
-                        <span className='global_red'>
+                        <span className='global_goldenrod'>
                           3. CORE RETURN CERTIFICATION REQUIREMENTS   &nbsp;
                         </span>
                         Due to the requirement of traceability of parts, Bison Aviation will provide a Repairable Core
@@ -292,7 +292,7 @@ const TermsGeneral = () => {
                 </Col>
                 <Col xs={12}>
                     <p>
-                        <span className='global_red'>
+                        <span className='global_goldenrod'>
                           4. MATERIAL RETURN POLICY:    &nbsp;
                         </span>
                         All returns for credit or refund must be accompanied by a return authorization number provided
@@ -303,7 +303,7 @@ const TermsGeneral = () => {
                 </Col>
                 <Col xs={12}>
                     <p>
-                        <span className='global_red'>
+                        <span className='global_goldenrod'>
                           5. GENERAL CONDITIONS AS TO COMPONENTS AND PARTS:     &nbsp;
                         </span>
                         All units are to be shipped prepaid to Bison Aviation in an appropriate shipping container to
@@ -319,7 +319,7 @@ const TermsGeneral = () => {
                 </Col>
                 <Col xs={12}>
                     <p>
-                        <span className='global_red'>
+                        <span className='global_goldenrod'>
                           6. CUSTOMER SUPPLIED PARTS:     &nbsp;
                         </span>
                         Parts supplied by customers will be subject to a handling fee of 20% (Twenty Percent) of
@@ -332,13 +332,13 @@ const TermsGeneral = () => {
                     </p>
                 </Col>
                 <Col xs={12}>
-                    <h3 className='global_red'>
+                    <h3 className='global_goldenrod'>
                         BISON AVIATION LABOR WARRANTY
                     </h3>
                 </Col>
                 <Col xs={12}>
-                    <p className='global_red'>
-                        <span className='global_red'>
+                    <p>
+                        <span className='global_goldenrod'>
                             1. LABOR FOR PARTS INSTALLED: &nbsp;
                         </span>
                         Bison Aviation, LLC (Bison Aviation) warrants all labor to be free of defects in workmanship for
@@ -360,7 +360,7 @@ const TermsGeneral = () => {
                     </p>
                 </Col>
                 <Col xs={12}>
-                    <h3 className='global_red'>
+                    <h3 className='global_goldenrod'>
                         LIMITATION OF LIABILITY
                     </h3>
                 </Col>
@@ -385,7 +385,7 @@ const TermsGeneral = () => {
                     </p>
                 </Col>
                 <Col xs={12}>
-                    <h3 className='global_red'>
+                    <h3 className='global_goldenrod'>
                         Web Site Privacy Policies
                     </h3>
                 </Col>
@@ -413,7 +413,7 @@ const TermsGeneral = () => {
                     </p>
                 </Col>
                 <Col xs={12}>
-                    <h3 className='global_red'>
+                    <h3 className='global_goldenrod'>
                         Identifying Information:
                     </h3>
                 </Col>
@@ -447,7 +447,7 @@ const TermsGeneral = () => {
                     </p>
                 </Col>
                 <Col xs={12}>
-                    <h3 className='global_red'>
+                    <h3 className='global_goldenrod'>
                         What Bison Aviation Aviation May Do with Your Information:
                     </h3>
                 </Col>
@@ -461,7 +461,7 @@ const TermsGeneral = () => {
                     </p>
                 </Col>
                 <Col xs={12}>
-                    <h3 className='global_red'>
+                    <h3 className='global_goldenrod'>
                         What Others May Do with Your Information:
                     </h3>
                 </Col>
@@ -481,7 +481,7 @@ const TermsGeneral = () => {
                     </p>
                 </Col>
                 <Col xs={12}>
-                    <h3 className='global_red'>
+                    <h3 className='global_goldenrod'>
                         Bison Aviation Aviation On-line Store:
                     </h3>
                 </Col>
@@ -505,7 +505,7 @@ const TermsGeneral = () => {
                     </p>
                 </Col>
                 <Col xs={12}>
-                    <h3 className='global_red'>
+                    <h3 className='global_goldenrod'>
                         Third Party Links:
                     </h3>
                 </Col>
@@ -518,7 +518,7 @@ const TermsGeneral = () => {
                     </p>
                 </Col>
                 <Col xs={12}>
-                    <h3 className='global_red'>
+                    <h3 className='global_goldenrod'>
                         Cookies:
                     </h3>
                 </Col>
@@ -534,7 +534,7 @@ const TermsGeneral = () => {
                     </p>
                 </Col>
                 <Col xs={12}>
-                    <h3 className='global_red'>
+                    <h3 className='global_goldenrod'>
                         Children's Privacy Protection:
                     </h3>
                 </Col>
@@ -548,7 +548,7 @@ const TermsGeneral = () => {
                     </p>
                 </Col>
                 <Col xs={12}>
-                    <h3 className='global_red'>
+                    <h3 className='global_goldenrod'>
                         Changes to this Policy:
                     </h3>
                 </Col>
@@ -561,7 +561,7 @@ const TermsGeneral = () => {
                     </p>
                 </Col>
                 <Col xs={12}>
-                    <h3 className='global_red'>
+                    <h3 className='global_goldenrod'>
                         Credit Card Security:
                     </h3>
                 </Col>
