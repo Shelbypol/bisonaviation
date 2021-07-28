@@ -11,10 +11,10 @@ const addWishListItems = asyncHandler(async (req, res) => {
 
     } = req.body;
 
-    if(wishListItems && wishListItems.length === 0 ){
+    if(wishListItems && wishListItems.length === 0 ) {
         res.status(400);
         throw new Error('No items in wish list');
-    }else {
+    } else {
         const wishList = new WishList ({
             wishListItems,
             user: req.user._id,
