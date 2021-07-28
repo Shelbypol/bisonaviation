@@ -7,13 +7,17 @@ import './animations.css'
 
 const SocialIcons = () => {
 
+    const handleFacebookClick = () => {
+        window.open('https://www.facebook.com/BisonAviation', '_blank');
+    };
+
     return (
         <>
             <Row className='SocialIcons_row'>
                 <Col className='m-0 p-0 d-flex justify-content-center'>
                     {/*  FACEBOOK */}
                     <LinkContainer className='SocialIcons_col-bg' to='/'>
-                        <Nav.Link className='flip-container'>
+                        <Nav.Link className='flip-container' onClick={handleFacebookClick}>
                             <div className='flipper'>
                             <span className='SocialIcons_socialIcons front pt-1'>
                                 <i className="m-auto fab fa-facebook"> </i>
