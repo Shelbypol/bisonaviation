@@ -32,9 +32,6 @@ const TeamScreen = () => {
                 title={'Meet the Bison Team'}
                 leftTitle={false}
             />
-
-
-
                     <Container className='mx-md-5 px-md-3 bg-transparent global_cultured global_HeroDivider-margin'
                            fluid>
                     <h1 className='px-md-5 mx-md-5 px-sm-0 mt-5 global_white d-flex d-sm-none d-md-block'>The Team</h1>
