@@ -14,13 +14,13 @@ const Footer = () => {
 
             <Zoom bottom duration={10000}>
                 <Jumbotron className='m-0 p-0 global_blood-red-bg global_white Footer_social-icons ' fluid>
-                    <Row>
-                        <Col xs={12} className=' Footer_social-icons-col'>
+                    {/*<Row>*/}
+                    {/*    <Col xs={12} className=' Footer_social-icons-col'>*/}
                             <Fade duration={1500} right>
                                 <SocialIcons contactClassName={'d-none'}/>
                             </Fade>
-                        </Col>
-                    </Row>
+                    {/*    </Col>*/}
+                    {/*</Row>*/}
                 </Jumbotron>
 
                 <Jumbotron className=' global_black-bg' fluid>

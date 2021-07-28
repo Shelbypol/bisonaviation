@@ -17,19 +17,14 @@
 }
 
 .SocialIcons_row{
-    /*height: 10vh;*/
-
-    /*width:auto;*/
+    width: 20vw;
 }
 
 .SocialIcons_col-bg{
     background-image: url("./social-icon-bg-blood-red.png");
     background-repeat: no-repeat;
-    /*height: 10vh;*/
     height: 65px;
     width: 64px;
-    /*border: 2px solid purple;*/
-    /*width: 20vw !important;*/
 }
 
 .SocialIcons_col-bg:hover{
