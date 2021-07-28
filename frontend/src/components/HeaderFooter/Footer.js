@@ -22,7 +22,7 @@ const Footer = () => {
                 </Jumbotron>
 
                 <Jumbotron className=' global_black-bg' fluid>
-                    <Row className='mt-4'>
+                    <Row className='mt-4 px-1 text-sm-center'>
                         <Col md={4} xs={12}>
                             <LinkContainer to='/avionics'
                                            className='d-flex justify-content-center global_whiteFontHover py-0'>
@@ -50,10 +50,7 @@ const Footer = () => {
                                            className='d-flex justify-content-center global_whiteFontHover py-0'>
                                 <p className='global_accentFont global_smallFont'>Contact</p>
                             </LinkContainer>
-
-
                         </Col>
-
 
                         <Col md={4} xs={12}>
                             <div className='global_whiteFontHover'>
@@ -78,13 +75,9 @@ const Footer = () => {
                             <p className='d-flex justify-content-center global_accentFont global_smallFont global_whiteFontHover'>
                                 F: 888-224-2127
                             </p>
-
-
                         </Col>
 
                         <Col xs={12} md={4}>
-
-
                             <p className='d-flex justify-content-center global_accentFont global_smallFont global_whiteFontHover'>
                                 24hr AOG Emergency Hotline:
                                 <br/>
@@ -104,8 +97,6 @@ const Footer = () => {
                                 <p className='global_accentFont global_smallFont'>EO/IR Flir Terms and Conditions</p>
                             </LinkContainer>
                         </Col>
-
-
                     </Row>
 
                     <Row>
