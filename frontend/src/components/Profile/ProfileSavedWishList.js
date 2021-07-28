@@ -5,9 +5,8 @@ import Loader from "../Loader";
 import Message from "../Message";
 import { listMyWishLists} from "../../actions/wishListActions";
 import ProfileSavedProduct from "./ProfileSavedProduct";
-import ProfileEmailState from "./ProfileEmailState";
 
-const ProfileSavedWishList = ({match, history, userInfo}) => {
+const ProfileSavedWishList = ({ history, userInfo}) => {
 
     const dispatch = useDispatch();
 

@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react";
 import {Col, Image,  Row} from "react-bootstrap";
 import {Link} from "react-router-dom";
 import {addToEmail} from "../../actions/emailActions";
-import {useDispatch, useSelector} from "react-redux";
+import {useDispatch} from "react-redux";
 
 import {deleteWishListItem, listMyWishLists} from "../../actions/wishListActions";
 import {addToCart, removeFromCart} from "../../actions/cartActions";
