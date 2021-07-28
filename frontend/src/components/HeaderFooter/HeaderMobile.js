@@ -59,29 +59,6 @@ const HeaderMobile = () => {
                                    className={cartItems.length !== 0 && ('borderBlink')}/>
                     <Navbar.Collapse id="basic-navbar-nav border">
 
-                        {/*  SOCIAL MEDIA ICONS  */}
-                        {/*<SocialIcons/>*/}
-                        {/*<LinkContainer className='HeaderMobile_text HeaderMobile_top-rounded-border py-3'*/}
-                        {/*               to='/'>*/}
-                        {/*    <Row className='m-0 p-0 '>*/}
-                        {/*        <Col xs={4} className='m-0 p-0 d-flex justify-content-center'>*/}
-                        {/*            <Nav.Link className=''>*/}
-                        {/*                <i className="fab fa-facebook MobileHeader_social-icons global_whitehovergoldenrodtxt"> </i>*/}
-                        {/*            </Nav.Link>*/}
-                        {/*        </Col>*/}
-                        {/*        <Col xs={4} className='m-0 p-0 d-flex justify-content-center'>*/}
-                        {/*            <Nav.Link className=''>*/}
-                        {/*                <i className="fab fa-instagram MobileHeader_social-icons global_whitehovergoldenrodtxt"> </i>*/}
-                        {/*            </Nav.Link>*/}
-                        {/*        </Col>*/}
-                        {/*        <Col xs={4} className='m-0 p-0 d-flex justify-content-center'>*/}
-                        {/*            <Nav.Link className=''>*/}
-                        {/*                <i className="fab fa-twitter MobileHeader_social-icons global_whitehovergoldenrodtxt"> </i>*/}
-                        {/*            </Nav.Link>*/}
-                        {/*        </Col>*/}
-                        {/*    </Row>*/}
-                        {/*</LinkContainer>*/}
-
                         {/*  PROFILE  /  SIGN IN  */}
                         {userInfo && (
 
@@ -113,18 +90,8 @@ const HeaderMobile = () => {
                                         </LinkContainer>
                                     </>
                                 )}
-
-
-                                {/*<Nav.Link onClick={logoutHandler}*/}
-                                {/*          className='HeaderMobile_text border-0 d-flex justify-content-start py-3 ml-2'>*/}
-                                {/*    <i className="fal fa-sign-out border-0 global_goldenrod HeaderMobile_social-icons"> </i>*/}
-                                {/*    &nbsp;&nbsp;*/}
-                                {/*</Nav.Link>*/}
                             </>
                         )}
-
-
-
 
                         {/*/!*  PROFILE  /  SIGN IN  *!/*/}
                         {!userInfo && (
