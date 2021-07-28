@@ -1,9 +1,14 @@
-import React from 'react';
+import React, {useLayoutEffect} from 'react';
 import {Jumbotron, Row, Col} from 'reactstrap';
 import Zoom from 'react-reveal/Zoom'
 import './Team.css'
 
 const Team = () => {
+
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0)
+    });
+
     return (
         <Jumbotron className=' mb-0 mx-0 p-0  d-flex justify-content-center' fluid>
             {/*<Container className='p-0 fluid'>*/}

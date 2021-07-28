@@ -7,7 +7,7 @@ const TeamCard = ({img, headerName, headerPosition, name, position, certificatio
     const [show, setShow] = useState(false);
 
     const cardShow = () => {
-            setShow(!show)
+        setShow(!show)
     };
 
     const node = useRef(show);
@@ -20,16 +20,25 @@ const TeamCard = ({img, headerName, headerPosition, name, position, certificatio
     }, []);
 
     const handleClick = (e) => {
+        // if (this?.ref?.current?.contains(e.target)) {
+        //     setShow(false)
+        // }
+
         if (node.current.contains(e.target) === false) {
-            setShow(false)
+            setShow(false);
         }
+        //         if (node.current.contains(e.target) === false) {
+        //     setShow(false);
+        // }
+        //
     };
 
     return (
 
         <>
-            <Col sm={1} md={2} className='my-2 p-0 mx-4 global_cursor' ref={node} onClick={(e) => {
+          <Col sm={1} md={2} className='my-2 p-0 mx-4 global_cursor' ref={node} onClick={(e) => {
                 handleClick(e)}}>
+
                 <Card className='bg-transparent border-0 w-100 h-100 m-0 p-0' onClick={cardShow}>
                     <Card.Img src={img} className='rounded'/>
                     <Card.Header
@@ -62,42 +71,42 @@ const TeamCard = ({img, headerName, headerPosition, name, position, certificatio
 
                                     {position ? (
                                         <Col xs={12}>
-                                        {/*POSITION*/}
-                                        <strong className='global_blue Team_underline '>POSITION:</strong>
-                                        &nbsp;
-                                        {position}
-                                    </Col>
-                                    ):('')}
+                                            {/*POSITION*/}
+                                            <strong className='global_blue Team_underline '>POSITION:</strong>
+                                            &nbsp;
+                                            {position}
+                                        </Col>
+                                    ) : ('')}
 
                                     {certifications ? (
-                                    <Col xs={12}>
-                                        {/*CERTIFICATIONS*/}
-                                        <strong className='global_blue Team_underline '>CERTIFICATION/s:</strong>
-                                        <br/>
-                                        {certifications}
-                                    </Col>
-                                        ):('')}
+                                        <Col xs={12}>
+                                            {/*CERTIFICATIONS*/}
+                                            <strong className='global_blue Team_underline '>CERTIFICATION/s:</strong>
+                                            <br/>
+                                            {certifications}
+                                        </Col>
+                                    ) : ('')}
 
 
                                     {locations ? (
-                                    <Col xs={12}>
-                                        {/*LOCATION*/}
-                                        <strong className='global_blue Team_underline '>LOCATION:</strong>
-                                        &nbsp;
-                                        {locations}
-                                    </Col>
-                                        ):('')}
+                                        <Col xs={12}>
+                                            {/*LOCATION*/}
+                                            <strong className='global_blue Team_underline '>LOCATION:</strong>
+                                            &nbsp;
+                                            {locations}
+                                        </Col>
+                                    ) : ('')}
 
                                     {specialTraining ? (
-                                    <Col xs={12}>
-                                        {/*SPECIAL TRAINING*/}
+                                        <Col xs={12}>
+                                            {/*SPECIAL TRAINING*/}
 
-                                        <strong className='global_blue Team_underline '> SPECIAL
-                                            TRAINING:</strong>
-                                        <br/>
-                                        {specialTraining}
-                                    </Col>
-                                    ):('')}
+                                            <strong className='global_blue Team_underline '> SPECIAL
+                                                TRAINING:</strong>
+                                            <br/>
+                                            {specialTraining}
+                                        </Col>
+                                    ) : ('')}
 
                                     <Col xs={12}>
                                         {/*BIO*/}
@@ -105,15 +114,15 @@ const TeamCard = ({img, headerName, headerPosition, name, position, certificatio
                                         <br/>
                                         {bio}
                                     </Col>
-                                        {favAircraft ? (
-                                    <Col xs={12}>
-                                        {/*BIO*/}
-                                        <strong className='global_blue Team_underline '>Favorite Aircraft to
-                                            Maintain:</strong>
-                                        <br/>
-                                        {favAircraft}
-                                    </Col>
-                                        ):('')}
+                                    {favAircraft ? (
+                                        <Col xs={12}>
+                                            {/*BIO*/}
+                                            <strong className='global_blue Team_underline '>Favorite Aircraft to
+                                                Maintain:</strong>
+                                            <br/>
+                                            {favAircraft}
+                                        </Col>
+                                    ) : ('')}
                                 </Col>
                             </Row>
                         </Col>
