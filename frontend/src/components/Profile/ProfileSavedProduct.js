@@ -3,11 +3,9 @@ import {Col, Image,  Row} from "react-bootstrap";
 import {Link} from "react-router-dom";
 import {addToEmail} from "../../actions/emailActions";
 import {useDispatch} from "react-redux";
+import {deleteWishListItem} from "../../actions/wishListActions";
 
-import {deleteWishListItem, listMyWishLists} from "../../actions/wishListActions";
-import {addToCart, removeFromCart} from "../../actions/cartActions";
-
-const ProfileSavedProduct = ({wishList, wishes, item, product, userInfo}) => {
+const ProfileSavedProduct = ({wishes, item, userInfo}) => {
 
     const [activeHeart, setActiveHeart] = useState(false);
     const [activeEmail, setActiveEmail] = useState(false);
