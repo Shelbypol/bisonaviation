@@ -1,7 +1,6 @@
 import React from "react";
-import {Nav, Navbar, Row, Col} from "react-bootstrap";
+import {Nav, Row, Col} from "react-bootstrap";
 import {LinkContainer} from "react-router-bootstrap";
-import WishListTab from "../Wishlist/WishListTab";
 import './SocialIcons.css'
 import './animations.css'
 
@@ -10,8 +9,8 @@ const SocialIcons = () => {
 
     return (
         <>
-            <Row className='SocialIcons_row' style={{border: '2px solid red'}}>
-                <Col className='m-0 p-0 d-flex justify-content-center' style={{border: '2px solid red'}}>
+            <Row className='SocialIcons_row'>
+                <Col className='m-0 p-0 d-flex justify-content-center'>
                     {/*  FACEBOOK */}
                     <LinkContainer className='SocialIcons_col-bg' to='/'>
                         <Nav.Link className='flip-container'>
