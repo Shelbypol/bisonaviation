@@ -1,11 +1,11 @@
 import React, {useLayoutEffect} from 'react'
-import {Row, Col, Tab, Nav, Jumbotron, Container} from 'react-bootstrap'
+import {Row, Col, Tab, Nav} from 'react-bootstrap'
 import ProfileEdit from "./ProfileEdit";
 import ProfileSavedWishList from "./ProfileSavedWishList";
 import './ProfileScreen.css'
 import {useSelector} from "react-redux";
 
-const ProfileScreen = ({location, history}) => {
+const ProfileScreen = () => {
 
     const userLogin = useSelector(state => state.userLogin);
     const {userInfo} = userLogin;
@@ -16,10 +16,8 @@ const ProfileScreen = ({location, history}) => {
 
     return (
         <>
-            {/*<Container className='mb-0 pb-0 min-vh-100'>*/}
-            <Row className='d-flex justify-content-center my-5 global_white-bg'>
+            <Row className='d-flex justify-content-center global_white-bg'>
                 <Col md={8} xs={12} className=' global_white-bg m-0 px-3 pb-5 min-vh-100 ProfileScreen_wrapper-col' >
-                {/*<Jumbotron className=' m-0 px-3 pt-5 pb-5 min-vh-100'>*/}
                     <h1 className='global_black mt-md-5 mt-sm-2 ml-3'>{userInfo.name}</h1>
 
                     <Tab.Container id="left-tabs-example" defaultActiveKey="first">
@@ -46,10 +44,8 @@ const ProfileScreen = ({location, history}) => {
                             </Col>
                         </Row>
                     </Tab.Container>
-                {/*</Jumbotron>*/}
                 </Col>
             </Row>
-            {/*</Container>*/}
         </>
     )
 };

@@ -17,37 +17,16 @@
 }
 
 .SocialIcons_row{
-    height: 10vh;
-
-    /*width:auto;*/
+    width: 250px;
 }
 
 .SocialIcons_col-bg{
     background-image: url("./social-icon-bg-blood-red.png");
     background-repeat: no-repeat;
-    height: 10vh;
-    width: 20vw !important;
+    height: 65px;
+    width: 64px;
 }
 
 .SocialIcons_col-bg:hover{
     background-image: url("./social-icon-bg-dark.png");
-}
-
-/*    ======   MOBILE RESPONSIVE    ======    */
-@media (max-width: 1200px) {
-    .SocialIcons_row{
-        width: 100vw;
-    }
-}
-
-@media (max-width: 800px) {
-    .SocialIcons_row{
-        width: 150vw;
-    }
-
-    .SocialIcons_col-bg{
-        width:20vw !important;
-    }
-
-
 }

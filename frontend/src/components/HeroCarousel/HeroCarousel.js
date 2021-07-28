@@ -86,9 +86,10 @@ const HeroCarousel = (
                             <Col md={7} xs={12}
                                  className='HeroCarousel_carousel-text-btm-bar global_blood-red-bg d-flex justify-content-sm-center justify-content-md-start mt-3'> </Col>
 
-                            <Col xs={12} className='ml-n3 d-none d-md-block mt-2'>
+                            <Col xs={12} className='d-flex justify-content-md-start justify-content-sm-center m-0 p-0'>
                                 <SocialIcons/>
                             </Col>
+
 
                         </Row>
                     </Carousel.Caption>
@@ -138,9 +139,10 @@ const HeroCarousel = (
                             <Col md={7} xs={12}
                                  className='HeroCarousel_carousel-text-btm-bar global_blood-red-bg d-flex justify-content-sm-center justify-content-md-start mt-3'> </Col>
 
-                            <Col xs={12} className='ml-n3 d-none d-md-block mt-2'>
+                            <Col xs={12} className='d-flex justify-content-md-start justify-content-sm-center m-0 p-0'>
                                 <SocialIcons/>
                             </Col>
+
 
                         </Row>
                     </Carousel.Caption>
@@ -192,9 +194,10 @@ const HeroCarousel = (
                             <Col md={7} xs={12}
                                  className='HeroCarousel_carousel-text-btm-bar global_blood-red-bg d-flex justify-content-sm-center justify-content-md-start mt-3'> </Col>
 
-                            <Col xs={12} className='ml-n3 d-none d-md-block mt-2'>
+                            <Col xs={12} className='d-flex justify-content-md-start justify-content-sm-center m-0 p-0'>
                                 <SocialIcons/>
                             </Col>
+
 
                         </Row>
                     </Carousel.Caption>
@@ -246,7 +249,7 @@ const HeroCarousel = (
                             <Col md={7} xs={12}
                                  className='HeroCarousel_carousel-text-btm-bar global_blood-red-bg d-flex justify-content-sm-center justify-content-md-start mt-3'> </Col>
 
-                            <Col xs={12} className='ml-n3 d-none d-md-block mt-2'>
+                            <Col xs={12} className='d-flex justify-content-md-start justify-content-sm-center m-0 p-0'>
                                 <SocialIcons/>
                             </Col>
 
@@ -299,9 +302,10 @@ const HeroCarousel = (
                                 <Col md={7} xs={12}
                                      className='HeroCarousel_carousel-text-btm-bar global_blood-red-bg d-flex justify-content-sm-center justify-content-md-start mt-3'> </Col>
 
-                                <Col xs={12} className='ml-n3 d-none d-md-block mt-2'>
+                                <Col xs={12} className='d-flex justify-content-md-start justify-content-sm-center m-0 p-0'>
                                     <SocialIcons/>
                                 </Col>
+
 
                             </Row>
                         </Carousel.Caption>

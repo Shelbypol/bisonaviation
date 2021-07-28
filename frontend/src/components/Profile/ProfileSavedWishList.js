@@ -5,11 +5,8 @@ import Loader from "../Loader";
 import Message from "../Message";
 import { listMyWishLists} from "../../actions/wishListActions";
 import ProfileSavedProduct from "./ProfileSavedProduct";
-import ProfileEmailState from "./ProfileEmailState";
 
-const ProfileSavedWishList = ({match, history, userInfo}) => {
-
-    // const [activeEmail, setActiveEmail] = useState(false);
+const ProfileSavedWishList = ({ history, userInfo}) => {
 
     const dispatch = useDispatch();
 
@@ -30,8 +27,6 @@ const ProfileSavedWishList = ({match, history, userInfo}) => {
         dispatch(listMyWishLists())
 
     }, [dispatch, history, successDelete]);
-
-    console.log(wishList);
 
     return (
         <>
