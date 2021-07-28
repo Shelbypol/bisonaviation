@@ -6,7 +6,6 @@ import {logout} from '../../actions/userActions'
 import './HeaderMobile.css'
 import {CART_RESET} from "../../constants/cartConstants";
 import logo from '../../images/bg-graphics/graphics/Final-Logo-Horizontal.png'
-import SocialIcons from "../SocialIcons/SocialIcons";
 
 
 const HeaderMobile = () => {
@@ -114,7 +113,7 @@ const HeaderMobile = () => {
                                        to='/wishlist'>
                             <Nav.Link>
                                 <p className={cartItems.length !== 0 && ('borderBlink')}>
-                                    <p className='global_white d-inline pl-2' style={{fontSize: '5vw'}}>
+                                    <p className='global_white d-inline pl-2 HeaderMobile_text'>
                                         {cartItems.length}&nbsp;
                                     </p>
 
