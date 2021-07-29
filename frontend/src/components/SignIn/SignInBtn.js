@@ -6,8 +6,6 @@ import {IconContext} from 'react-icons';
 import {useDispatch, useSelector} from "react-redux";
 import {CART_RESET} from "../../constants/cartConstants";
 import {logout} from "../../actions/userActions";
-import WishListTab from "../Wishlist/WishListTab";
-import {Nav} from "react-bootstrap";
 
 const SignInBtn = () => {
     const [sidebar, setSidebar] = useState(false);
