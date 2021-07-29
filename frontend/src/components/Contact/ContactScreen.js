@@ -13,12 +13,6 @@ const ContactScreen = () => {
     return (
         <>
             <ContactHero/>
-            {/*<HeroJumbotron*/}
-            {/*    img={hero}*/}
-            {/*    showImg={true}*/}
-            {/*    title={'Contact'}*/}
-            {/*    leftTitle={true}*/}
-            {/*/>*/}
             <ContactInfo/>
         </>
 
