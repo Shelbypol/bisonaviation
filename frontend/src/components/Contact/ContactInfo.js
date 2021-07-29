@@ -89,7 +89,7 @@ const ContactInfo = () => {
                                 </h6>
                             </Col>
                             <Col className='' xs={12}>
-                                <h6 className='global_goldenrod'>
+                                <h6 className='global_white'>
                                     PLEASE DO NOT HESITATE TO SEND US A MESSAGE
                                 </h6>
                             </Col>
