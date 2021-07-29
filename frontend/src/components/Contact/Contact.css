@@ -19,13 +19,6 @@
     border-right: 1px solid #2576e5;
 }
 
-
-.Contact_icons{
-    font-size: 4vw;
-    /*color: #daa520;*/
-    /*color: rgba(255,255,255,.5)*/
-}
-
 .Contact_icons-title{
     font-size: 1.5vw;
 }
@@ -52,10 +45,6 @@
 
 /*@media (max-width: 900px) {*/
 @media (max-width: 700px) {
-
-    .Contact_icons{
-        font-size: 8vw;
-    }
 
     .Contact_icons-title{
         font-size: 3vw;
@@ -86,12 +75,4 @@
         margin-top: 5vh;
     }
 
-}
-
-
-@media (max-width: 500px) {
-
-    .Contact_icons {
-        font-size: 12vw;
-    }
 }
