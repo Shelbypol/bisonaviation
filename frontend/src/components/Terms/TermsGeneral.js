@@ -279,7 +279,7 @@ const TermsGeneral = () => {
                 <Col xs={12}>
                     <p>
                         <span className='global_goldenrod'>
-                          3. CORE RETURN CERTIFICATION REQUIREMENTS   &nbsp;
+                          3. CORE RETURN CERTIFICATION REQUIREMENTS:   &nbsp;
                         </span>
                         Due to the requirement of traceability of parts, Bison Aviation will provide a Repairable Core
                         Return tag. This provided tag serves as a component history record for all exchange units. Bison

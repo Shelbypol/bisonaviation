@@ -6,11 +6,7 @@ const TeamCard = ({img, headerName, headerPosition, name, position, certificatio
 
     const [show, setShow] = useState(false);
 
-    const cardShow = () => {
-        setShow(!show)
-    };
-
-    const node = useRef(show);
+    const node = useRef();
 
     useEffect(() => {
         document.addEventListener("click", handleClick);
@@ -19,29 +15,26 @@ const TeamCard = ({img, headerName, headerPosition, name, position, certificatio
         };
     }, []);
 
-    const handleClick = (e) => {
-        // if (this?.ref?.current?.contains(e.target)) {
-        //     setShow(false)
-        // }
-
-
-        if (node.current.contains(e.target) === false || typeof node.current.contains(e.target) === 'undefined') {
-            setShow(false);
+    const handleClick = e => {
+        if (node.current.contains(e.target)) {
+        // if (node.current.contains(e.target)) {
+            setShow(true);
+            return;
         }
-
-        //         if (node.current.contains(e.target) === false) {
-        //     setShow(false);
-        // }
-        //
+        // outside click
+        // ... do whatever on click outside here ...
+        setShow(false);
     };
-
     return (
 
         <>
-          <Col sm={1} md={2} className='my-2 p-0 mx-4 global_cursor' ref={node} onClick={(e) => {
-                handleClick(e)}}>
 
-                <Card className='bg-transparent border-0 w-100 h-100 m-0 p-0' onClick={cardShow}>
+            <Col sm={1} md={2} className='my-2 p-0 mx-4 global_cursor'>
+
+                <Card className='bg-transparent border-0 w-100 h-100 m-0 p-0' ref={node} onClick={(e) => {
+                    handleClick(e)
+                }}>
+
                     <Card.Img src={img} className='rounded'/>
                     <Card.Header
                         className='global_cultured global_goldenrod text-center d-flex justify-content-center align-items-center'
@@ -132,9 +125,6 @@ const TeamCard = ({img, headerName, headerPosition, name, position, certificatio
                 </>
 
             )}
-
-
-            {/*</Col>*/}
         </>
     );
 };

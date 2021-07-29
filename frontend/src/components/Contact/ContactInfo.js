@@ -15,7 +15,7 @@ const ContactInfo = () => {
                     <Col md={4} sm={12}>
                         <Row>
                             <Col xs={12} className=''>
-                                <i className="Contact_icons fal fa-mobile-android global_goldenrod"> </i>
+                                <i className="global_icon-size fal fa-mobile-android global_goldenrod"> </i>
                             </Col>
                             <Col xs={12} className='my-3'>
                                 <p className='global_white'>PHONE</p>
@@ -43,7 +43,7 @@ const ContactInfo = () => {
                     <Col md={4} sm={12} className=' Contact_responsive-padding'>
                         <Row className=''>
                             <Col xs={12} className=''>
-                                <i className="Contact_icons fal fa-map-marker-alt global_goldenrod"> </i>
+                                <i className="global_icon-size fal fa-map-marker-alt global_goldenrod"> </i>
                             </Col>
                             <Col xs={12} className='my-3'>
                                 <p className=''>ADDRESS</p>
@@ -66,7 +66,7 @@ const ContactInfo = () => {
                     <Col md={4} sm={12} className='Contact_responsive-padding '>
                         <Row>
                             <Col xs={12} className=''>
-                                <i className="Contact_icons fal fa-envelope global_goldenrod"> </i>
+                                <i className="global_icon-size fal fa-envelope global_goldenrod"> </i>
                             </Col>
                             <Col xs={12} className='my-3'>
                                 <p className=' px-0 mx-0'>EMAIL</p>
@@ -89,7 +89,7 @@ const ContactInfo = () => {
                                 </h6>
                             </Col>
                             <Col className='' xs={12}>
-                                <h6 className='global_goldenrod'>
+                                <h6 className='global_white'>
                                     PLEASE DO NOT HESITATE TO SEND US A MESSAGE
                                 </h6>
                             </Col>

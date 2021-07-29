@@ -36,13 +36,13 @@ const TeamScreen = () => {
                            fluid>
                     <h1 className='px-md-5 mx-md-5 px-sm-0 mt-5 global_white d-flex d-sm-none d-md-block'>The Team</h1>
                     <br/>
-                    <p className='px-md-5 mt-n3 py-0 px-sm-0 mx-md-5 global_light-gray'>The Bison Aviation team is made up of professionally trained, highly skilled individuals, selected specifically for their particular expertise in the fields of general aviation maintenance and avionics. All of our primary technicians are fully FAA licensed (something which isn't true in most maintenance shops). The experience and skills of our team members is what makes Bison Aviation a leader in the aircraft service industry and we are proud to have each of these individuals as a part of the Bison Aviation Team!</p>
+                    <p className='px-md-5 mt-n3 py-0 px-sm-0 mx-md-5 global_white'>The Bison Aviation team is made up of professionally trained, highly skilled individuals, selected specifically for their particular expertise in the fields of general aviation maintenance and avionics. All of our primary technicians are fully FAA licensed (something which isn't true in most maintenance shops). The experience and skills of our team members is what makes Bison Aviation a leader in the aircraft service industry and we are proud to have each of these individuals as a part of the Bison Aviation Team!</p>
                 </Container>
 
-                <Container className='my-5 bg-transparent px-md-4 px-sm-0'
+                <Container className='my-5 bg-transparent px-md-4 px-sm-0 global_white'
                            fluid>
 
-                    <Row className='d-flex justify-content-center global_light-gray'>
+                    <Row className='d-flex justify-content-center'>
                             {/*   JOHN ATKIN   */}
                             <TeamCard
                                 eventKey={'0'}

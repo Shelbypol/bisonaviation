@@ -6,11 +6,13 @@ const SectionTitle = ({titleText}) => {
 
         const title = {
             textAlign: "center",
-            fontSize: "5vh"
+            fontSize: "5vh",
+            paddingBottom: "10vh"
         };
 
         const rowHeight = {
-            height: "40vh"
+            height: "40vh",
+            // paddingBottom: "12vh"
         };
 
 
@@ -18,15 +20,15 @@ const SectionTitle = ({titleText}) => {
 
         <Row style={rowHeight} className='
                                 d-flex
-                                align-content-center'>
+                                align-content-end'>
             <Col md={12} xs={12}
                  className='
                  p-0
                  mx-0
                  mb-sm-5
                  mb-md-n5
-                 global_goldenrod-border-right
-                 global_goldenrod-border-left
+                 {/*global_goldenrod-border-right*/}
+                 {/*global_goldenrod-border-left*/}
                  global_black-bg'>
                 <p style={title} className='global_white pt-3'>
                     <Fade top>
